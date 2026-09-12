@@ -1,11 +1,27 @@
 {
- "maj": "2026-09-12T21:46:42.584654+00:00",
+ "maj": "2026-09-12T22:02:13.116218+00:00",
  "salon": "1245400913066066099",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1548452990187343963",
+   "t": "2026-09-12T21:59:21.726000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 636x Pétrole Raffiné pour 6360$ par Eden Birds. 3180$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 636,
+   "montant": 6360,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1548449661294088275-0",
    "t": "2026-09-12T21:46:08.056000+00:00",
@@ -93938,30 +93954,6 @@
     "playername": "MDI",
     "playercharacter": "Junior Collins",
     "playerid": "285798",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1547710965309636679-0",
-   "t": "2026-09-10T20:50:49.209000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 126x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1841.18, 6523.61, 16.73\ntargetPosition : -1840.85, 6523.94, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1363\nplayerDiscord : 438358976141328404\nplayerName : Thomas Boyer\nplayerCharacter : Thomas Boyer\nplayerId : 160149\nitemId : refinedoil",
-   "nom": "Thomas Boyer",
-   "quantite": 126,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1841.18, 6523.61, 16.73",
-    "targetposition": "-1840.85, 6523.94, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "1363",
-    "playerdiscord": "438358976141328404",
-    "playername": "Thomas Boyer",
-    "playercharacter": "Thomas Boyer",
-    "playerid": "160149",
     "itemid": "refinedoil"
    }
   }
