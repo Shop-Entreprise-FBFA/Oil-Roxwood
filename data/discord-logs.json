@@ -1,11 +1,27 @@
 {
- "maj": "2026-09-13T07:34:27.736475+00:00",
+ "maj": "2026-09-13T07:48:22.309011+00:00",
  "salon": "1245400913066066099",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1548598129316597783",
+   "t": "2026-09-13T07:36:05.591000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 324x Pétrole Raffiné pour 3240$ par Cristóbal Perrera. 1620$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 324,
+   "montant": 3240,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1548589323241267296",
    "t": "2026-09-13T07:01:06.059000+00:00",
@@ -93748,30 +93764,6 @@
    "texte": "Coffre\na retiré 19x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -1851.72, 6501.68, 16.73\ntargetPosition : -1851.46, 6502.05, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3554\nplayerDiscord : 690537200689086537\nplayerName : Ec9Mugen\nplayerCharacter : Juan Sanchez\nplayerId : 200738\nitemId : oil",
    "nom": "Juan Sanchez",
    "quantite": 19,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1851.72, 6501.68, 16.73",
-    "targetposition": "-1851.46, 6502.05, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "3554",
-    "playerdiscord": "690537200689086537",
-    "playername": "Ec9Mugen",
-    "playercharacter": "Juan Sanchez",
-    "playerid": "200738",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1547716058360713326-2",
-   "t": "2026-09-10T21:11:03.487000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 5x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -1851.72, 6501.68, 16.73\ntargetPosition : -1851.46, 6502.05, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3554\nplayerDiscord : 690537200689086537\nplayerName : Ec9Mugen\nplayerCharacter : Juan Sanchez\nplayerId : 200738\nitemId : oil",
-   "nom": "Juan Sanchez",
-   "quantite": 5,
    "montant": null,
    "type": "coffre_retrait",
    "salon": "1245400913066066099",
