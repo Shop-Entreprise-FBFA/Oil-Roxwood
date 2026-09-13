@@ -17685,6 +17685,7 @@
     "moi",
     "agenda",
     "affiches",
+    "dlogs",
     "params"
    ],
    "commercial": [
@@ -17721,7 +17722,8 @@
     "profil",
     "moi",
     "agenda",
-    "affiches"
+    "affiches",
+    "dlogs"
    ],
    "assistdir": [
     "effectif",
@@ -17828,8 +17830,8 @@
   "postesV4": 1
  },
  "_cid": "5j2vf2zgj9",
- "_maj": 1789308333695,
- "_rev": "eq1ih4va1yk-mtzvzfjv",
+ "_maj": 1789308336797,
+ "_rev": "miz8v45q4v-mtzvzhs4",
  "_majSec": {
   "fer": 1789215604317,
   "fact": 1789215771989,
@@ -17838,13 +17840,13 @@
   "sheets": 1789227236561,
   "_qcFix1": 1789215604317,
   "_wkFix1": 1789215604317,
-  "journal": 1789308333695,
+  "journal": 1789308336797,
   "pending": 1789215604317,
   "prodDer": 1789215604317,
   "runners": 1789227624561,
   "absences": 1789215604317,
   "imported": 1789215604317,
-  "settings": 1789308333695,
+  "settings": 1789308336797,
   "closeUndo": 1789215604317,
   "quotasCom": 1789215839232,
   "bilanExtra": 1789215604317,
@@ -17867,6 +17869,16 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1789308337531,
+   "u": "Diego Herrera",
+   "a": "Permissions : RH · « dlogs » → accès complet ✓"
+  },
+  {
+   "t": 1789308335320,
+   "u": "Diego Herrera",
+   "a": "Permissions : Responsable commercial · « dlogs » → accès complet ✓"
+  },
   {
    "t": 1789308334429,
    "u": "Diego Herrera",
@@ -19356,16 +19368,6 @@
    "a": "Vente rapide sans facture : 1 bidon(s) — Employé Carlos Dupont (vendeur : Emma Collins)",
    "t": 1788096443056,
    "u": "Emma Collins"
-  },
-  {
-   "a": "Fer acheté noté : Julio Collins → 940",
-   "t": 1788096407929,
-   "u": "Julio Collins"
-  },
-  {
-   "a": "Fer acheté noté : William Rodriguez-collins → 940",
-   "t": 1788096400417,
-   "u": "Julio Collins"
   }
  ],
  "prodDer": {
@@ -19691,7 +19693,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-13T14:05:35.227Z",
+  "maj": "2026-09-13T14:05:38.116Z",
   "semaine": 36,
   "totalBarils": 119331,
   "ca": 596655,
