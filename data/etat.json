@@ -17702,7 +17702,8 @@
     "profil",
     "moi",
     "agenda",
-    "affiches"
+    "affiches",
+    "dlogs"
    ],
    "respcom": [
     "factures",
@@ -17827,8 +17828,8 @@
   "postesV4": 1
  },
  "_cid": "5j2vf2zgj9",
- "_maj": 1789308266529,
- "_rev": "0srrwpr227bi-mtzvz0fk",
+ "_maj": 1789308333695,
+ "_rev": "eq1ih4va1yk-mtzvzfjv",
  "_majSec": {
   "fer": 1789215604317,
   "fact": 1789215771989,
@@ -17837,13 +17838,13 @@
   "sheets": 1789227236561,
   "_qcFix1": 1789215604317,
   "_wkFix1": 1789215604317,
-  "journal": 1789216392119,
+  "journal": 1789308333695,
   "pending": 1789215604317,
   "prodDer": 1789215604317,
   "runners": 1789227624561,
   "absences": 1789215604317,
   "imported": 1789215604317,
-  "settings": 1789215604317,
+  "settings": 1789308333695,
   "closeUndo": 1789215604317,
   "quotasCom": 1789215839232,
   "bilanExtra": 1789215604317,
@@ -17866,6 +17867,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1789308334429,
+   "u": "Diego Herrera",
+   "a": "Permissions : Commercial · « dlogs » → accès complet ✓"
+  },
   {
    "t": 1789216393612,
    "u": "Stella Collins",
@@ -19360,11 +19366,6 @@
    "a": "Fer acheté noté : William Rodriguez-collins → 940",
    "t": 1788096400417,
    "u": "Julio Collins"
-  },
-  {
-   "a": "Fer acheté noté : Emma Collins-rodriguez → 940",
-   "t": 1788096388761,
-   "u": "Julio Collins"
   }
  ],
  "prodDer": {
@@ -19690,7 +19691,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-13T14:05:15.632Z",
+  "maj": "2026-09-13T14:05:35.227Z",
   "semaine": 36,
   "totalBarils": 119331,
   "ca": 596655,
