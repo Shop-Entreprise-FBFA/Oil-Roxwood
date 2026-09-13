@@ -17643,9 +17643,7 @@
    "respcom": [],
    "assistdir": [],
    "comptable": [],
-   "resprunner": [
-    "felig"
-   ],
+   "resprunner": [],
    "membre": [
     "felig",
     "overview",
@@ -17685,7 +17683,7 @@
     "moi",
     "agenda",
     "affiches",
-    "params"
+    "dlogs"
    ],
    "commercial": [
     "effectif",
@@ -17702,7 +17700,8 @@
     "profil",
     "moi",
     "agenda",
-    "affiches"
+    "affiches",
+    "dlogs"
    ],
    "respcom": [
     "factures",
@@ -17720,7 +17719,8 @@
     "profil",
     "moi",
     "agenda",
-    "affiches"
+    "affiches",
+    "dlogs"
    ],
    "assistdir": [
     "effectif",
@@ -17763,14 +17763,14 @@
     "dlogs"
    ],
    "resprunner": [
-    "overview",
     "semaine",
+    "overview",
+    "felig",
     "historique",
     "reunions",
-    "felig",
-    "moi",
-    "profil",
     "quotashist",
+    "profil",
+    "moi",
     "agenda",
     "affiches",
     "dlogs"
@@ -17826,9 +17826,9 @@
   "salonContrats": "1328076154586009660",
   "postesV4": 1
  },
- "_cid": "6y7cfb2ymhn",
- "_maj": 1789308806407,
- "_rev": "4ud585a95bc-mtzwb9ev",
+ "_cid": "5j2vf2zgj9",
+ "_maj": 1789308896239,
+ "_rev": "ya1n75rzeh-mtzwbkye",
  "_majSec": {
   "fer": 1789303821465,
   "fact": 1789303821465,
@@ -17837,13 +17837,13 @@
   "sheets": 1789303821465,
   "_qcFix1": 1789303821465,
   "_wkFix1": 1789303821465,
-  "journal": 1789303821465,
+  "journal": 1789308355785,
   "pending": 1789303821465,
   "prodDer": 1789303821465,
   "runners": 1789303821465,
   "absences": 1789303821465,
   "imported": 1789303821465,
-  "settings": 1789303821465,
+  "settings": 1789308355785,
   "closeUndo": 1789303821465,
   "quotasCom": 1789303821465,
   "bilanExtra": 1789303821465,
@@ -17851,7 +17851,7 @@
   "primesExtra": 1789303821465,
   "quotasComHist": 1789303821465,
   "profils": 1789303821465,
-  "_tables": 1789303819850,
+  "_tables": 1789308896239,
   "_permsFix1": 1789303821465,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1789303821465,
@@ -17866,6 +17866,41 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1789308356519,
+   "u": "Diego Herrera",
+   "a": "Permissions : Responsable Runner · « felig » → accès complet ✓"
+  },
+  {
+   "t": 1789308354882,
+   "u": "Diego Herrera",
+   "a": "Permissions : Responsable Runner · « felig » → aucun accès"
+  },
+  {
+   "t": 1789308346439,
+   "u": "Diego Herrera",
+   "a": "Permissions : RH · « params » → aucun accès"
+  },
+  {
+   "t": 1789308345737,
+   "u": "Diego Herrera",
+   "a": "Permissions : RH · « params » → lecture seule 👁"
+  },
+  {
+   "t": 1789308337531,
+   "u": "Diego Herrera",
+   "a": "Permissions : RH · « dlogs » → accès complet ✓"
+  },
+  {
+   "t": 1789308335320,
+   "u": "Diego Herrera",
+   "a": "Permissions : Responsable commercial · « dlogs » → accès complet ✓"
+  },
+  {
+   "t": 1789308334429,
+   "u": "Diego Herrera",
+   "a": "Permissions : Commercial · « dlogs » → accès complet ✓"
+  },
   {
    "t": 1789216393612,
    "u": "Stella Collins",
@@ -19330,41 +19365,6 @@
    "a": "Fer acheté noté : Juan Sanchez → 1 040",
    "t": 1788107189501,
    "u": "Emma Collins"
-  },
-  {
-   "a": "Fer acheté noté : William Rodriguez-collins → 1 040",
-   "t": 1788107185006,
-   "u": "Emma Collins"
-  },
-  {
-   "a": "Fer acheté noté : Emma Collins-rodriguez → 1 040",
-   "t": 1788107181872,
-   "u": "Emma Collins"
-  },
-  {
-   "a": "Fer acheté noté : Laurent Roquel → 725",
-   "t": 1788105266211,
-   "u": "Laurent Roquel"
-  },
-  {
-   "a": "Vente rapide sans facture : 1 bidon(s) — Employé Carlos Dupont (vendeur : Emma Collins)",
-   "t": 1788096443056,
-   "u": "Emma Collins"
-  },
-  {
-   "a": "Fer acheté noté : Julio Collins → 940",
-   "t": 1788096407929,
-   "u": "Julio Collins"
-  },
-  {
-   "a": "Fer acheté noté : William Rodriguez-collins → 940",
-   "t": 1788096400417,
-   "u": "Julio Collins"
-  },
-  {
-   "a": "Fer acheté noté : Emma Collins-rodriguez → 940",
-   "t": 1788096388761,
-   "u": "Julio Collins"
   }
  ],
  "prodDer": {
@@ -19690,7 +19690,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-13T14:14:47.143Z",
+  "maj": "2026-09-13T14:15:02.102Z",
   "semaine": 36,
   "totalBarils": 119331,
   "ca": 596655,
@@ -49389,6 +49389,13 @@
     "role": "direction",
     "vu": "2026-09-13T14:13:26.401Z",
     "id": 1789308807965
+   },
+   {
+    "uid": "826526979204841482",
+    "nom": "Diego Herrera",
+    "role": "direction",
+    "vu": "2026-09-13T14:14:56.236Z",
+    "id": 1789308897591
    }
   ],
   "oilroxwood_demandes": [],
