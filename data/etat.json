@@ -17763,13 +17763,14 @@
     "dlogs"
    ],
    "resprunner": [
-    "overview",
     "semaine",
+    "overview",
+    "felig",
     "historique",
     "reunions",
-    "moi",
-    "profil",
     "quotashist",
+    "profil",
+    "moi",
     "agenda",
     "affiches",
     "dlogs"
@@ -17826,8 +17827,8 @@
   "postesV4": 1
  },
  "_cid": "5j2vf2zgj9",
- "_maj": 1789308354148,
- "_rev": "er7gpfvpx3b-mtzvzv5z",
+ "_maj": 1789308356377,
+ "_rev": "dkdkijpu4l-mtzw001p",
  "_majSec": {
   "fer": 1789215604317,
   "fact": 1789215771989,
@@ -17836,13 +17837,13 @@
   "sheets": 1789227236561,
   "_qcFix1": 1789215604317,
   "_wkFix1": 1789215604317,
-  "journal": 1789308354148,
+  "journal": 1789308355785,
   "pending": 1789215604317,
   "prodDer": 1789215604317,
   "runners": 1789227624561,
   "absences": 1789215604317,
   "imported": 1789215604317,
-  "settings": 1789308354148,
+  "settings": 1789308355785,
   "closeUndo": 1789215604317,
   "quotasCom": 1789215839232,
   "bilanExtra": 1789215604317,
@@ -17850,7 +17851,7 @@
   "primesExtra": 1789215604317,
   "quotasComHist": 1789215604317,
   "profils": 1789228034523,
-  "_tables": 1789308266529,
+  "_tables": 1789308356377,
   "_permsFix1": 1789215604317,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1789215604317,
@@ -17865,6 +17866,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1789308356519,
+   "u": "Diego Herrera",
+   "a": "Permissions : Responsable Runner · « felig » → accès complet ✓"
+  },
   {
    "t": 1789308354882,
    "u": "Diego Herrera",
@@ -19359,11 +19365,6 @@
    "a": "Fer acheté noté : Juan Sanchez → 1 040",
    "t": 1788107189501,
    "u": "Emma Collins"
-  },
-  {
-   "a": "Fer acheté noté : William Rodriguez-collins → 1 040",
-   "t": 1788107185006,
-   "u": "Emma Collins"
   }
  ],
  "prodDer": {
@@ -19689,7 +19690,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-13T14:05:55.463Z",
+  "maj": "2026-09-13T14:06:01.789Z",
   "semaine": 36,
   "totalBarils": 119331,
   "ca": 596655,
@@ -49346,6 +49347,13 @@
     "role": "direction",
     "vu": "2026-09-13T14:04:26.360Z",
     "id": 1789308268191
+   },
+   {
+    "uid": "826526979204841482",
+    "nom": "Diego Herrera",
+    "role": "direction",
+    "vu": "2026-09-13T14:05:56.377Z",
+    "id": 1789308358026
    }
   ],
   "oilroxwood_demandes": [],
