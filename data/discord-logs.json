@@ -1,11 +1,43 @@
 {
- "maj": "2026-09-13T08:02:00.638037+00:00",
+ "maj": "2026-09-13T08:23:09.934360+00:00",
  "salon": "1245400913066066099",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1548607436506796103",
+   "t": "2026-09-13T08:13:04.598000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 49x Pétrole Raffiné pour 490$ par Cristóbal Perrera. 245$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 49,
+   "montant": 490,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1548606941029466133",
+   "t": "2026-09-13T08:11:06.467000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 275x Pétrole Raffiné pour 2750$ par Cristóbal Perrera. 1375$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 275,
+   "montant": 2750,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1548598129316597783",
    "t": "2026-09-13T07:36:05.591000+00:00",
@@ -93716,54 +93748,6 @@
    "texte": "Coffre\na retiré 11x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -1851.72, 6501.68, 16.73\ntargetPosition : -1851.46, 6502.05, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3554\nplayerDiscord : 690537200689086537\nplayerName : Ec9Mugen\nplayerCharacter : Juan Sanchez\nplayerId : 200738\nitemId : oil",
    "nom": "Juan Sanchez",
    "quantite": 11,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1851.72, 6501.68, 16.73",
-    "targetposition": "-1851.46, 6502.05, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "3554",
-    "playerdiscord": "690537200689086537",
-    "playername": "Ec9Mugen",
-    "playercharacter": "Juan Sanchez",
-    "playerid": "200738",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1547716058360713326-0",
-   "t": "2026-09-10T21:11:03.487000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 72x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3084.49, 6816.11, 44.73\ntargetPosition : -3084.39, 6815.87, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 4084\nplayerDiscord : 1278121596112080958\nplayerName : Llbvr\nplayerCharacter : Ashley Cooper\nplayerId : 342423\nitemId : oil",
-   "nom": "Ashley Cooper",
-   "quantite": 72,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-3084.49, 6816.11, 44.73",
-    "targetposition": "-3084.39, 6815.87, 43.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "4084",
-    "playerdiscord": "1278121596112080958",
-    "playername": "Llbvr",
-    "playercharacter": "Ashley Cooper",
-    "playerid": "342423",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1547716058360713326-1",
-   "t": "2026-09-10T21:11:03.487000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 19x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -1851.72, 6501.68, 16.73\ntargetPosition : -1851.46, 6502.05, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3554\nplayerDiscord : 690537200689086537\nplayerName : Ec9Mugen\nplayerCharacter : Juan Sanchez\nplayerId : 200738\nitemId : oil",
-   "nom": "Juan Sanchez",
-   "quantite": 19,
    "montant": null,
    "type": "coffre_retrait",
    "salon": "1245400913066066099",
