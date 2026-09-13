@@ -17643,7 +17643,9 @@
    "respcom": [],
    "assistdir": [],
    "comptable": [],
-   "resprunner": [],
+   "resprunner": [
+    "felig"
+   ],
    "membre": [
     "felig",
     "overview",
@@ -17683,7 +17685,7 @@
     "moi",
     "agenda",
     "affiches",
-    "dlogs"
+    "params"
    ],
    "commercial": [
     "effectif",
@@ -17700,8 +17702,7 @@
     "profil",
     "moi",
     "agenda",
-    "affiches",
-    "dlogs"
+    "affiches"
    ],
    "respcom": [
     "factures",
@@ -17719,8 +17720,7 @@
     "profil",
     "moi",
     "agenda",
-    "affiches",
-    "dlogs"
+    "affiches"
    ],
    "assistdir": [
     "effectif",
@@ -17763,14 +17763,14 @@
     "dlogs"
    ],
    "resprunner": [
-    "semaine",
     "overview",
-    "felig",
+    "semaine",
     "historique",
     "reunions",
-    "quotashist",
-    "profil",
+    "felig",
     "moi",
+    "profil",
+    "quotashist",
     "agenda",
     "affiches",
     "dlogs"
@@ -17826,81 +17826,46 @@
   "salonContrats": "1328076154586009660",
   "postesV4": 1
  },
- "_cid": "ekvqcosn3is",
+ "_cid": "6y7cfb2ymhn",
  "_maj": 1789308806407,
- "_rev": "79ng0b3ieum-mtzwb0ll",
+ "_rev": "4ud585a95bc-mtzwb9ev",
  "_majSec": {
-  "fer": 1789215604317,
-  "fact": 1789215771989,
-  "users": 1789215604317,
-  "weeks": 1789215604317,
-  "sheets": 1789227236561,
-  "_qcFix1": 1789215604317,
-  "_wkFix1": 1789215604317,
-  "journal": 1789308355785,
-  "pending": 1789215604317,
-  "prodDer": 1789215604317,
-  "runners": 1789227624561,
-  "absences": 1789215604317,
-  "imported": 1789215604317,
-  "settings": 1789308355785,
-  "closeUndo": 1789215604317,
-  "quotasCom": 1789215839232,
-  "bilanExtra": 1789215604317,
-  "bilanForce": 1789215604317,
-  "primesExtra": 1789215604317,
-  "quotasComHist": 1789215604317,
-  "profils": 1789228034523,
-  "_tables": 1789308270304,
-  "_permsFix1": 1789215604317,
+  "fer": 1789303821465,
+  "fact": 1789303821465,
+  "users": 1789303821465,
+  "weeks": 1789303821465,
+  "sheets": 1789303821465,
+  "_qcFix1": 1789303821465,
+  "_wkFix1": 1789303821465,
+  "journal": 1789303821465,
+  "pending": 1789303821465,
+  "prodDer": 1789303821465,
+  "runners": 1789303821465,
+  "absences": 1789303821465,
+  "imported": 1789303821465,
+  "settings": 1789303821465,
+  "closeUndo": 1789303821465,
+  "quotasCom": 1789303821465,
+  "bilanExtra": 1789303821465,
+  "bilanForce": 1789303821465,
+  "primesExtra": 1789303821465,
+  "quotasComHist": 1789303821465,
+  "profils": 1789303821465,
+  "_tables": 1789303819850,
+  "_permsFix1": 1789303821465,
   "_rolesFix4": 1788489352546,
-  "_rolesFix77": 1789215604317,
-  "affiches": 1789215604317,
-  "_affFix1": 1789215604317,
-  "produits": 1789215604317,
-  "_prodFix1": 1789215604317,
-  "_recruesIgnore": 1789215604317,
-  "ventesAlias": 1789215604317,
-  "_ventesIgnore": 1789215604317
+  "_rolesFix77": 1789303821465,
+  "affiches": 1789303821465,
+  "_affFix1": 1789303821465,
+  "produits": 1789303821465,
+  "_prodFix1": 1789303821465,
+  "_recruesIgnore": 1789303821465,
+  "ventesAlias": 1789303821465,
+  "_ventesIgnore": 1789303821465
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
-  {
-   "t": 1789308356519,
-   "u": "Diego Herrera",
-   "a": "Permissions : Responsable Runner · « felig » → accès complet ✓"
-  },
-  {
-   "t": 1789308354882,
-   "u": "Diego Herrera",
-   "a": "Permissions : Responsable Runner · « felig » → aucun accès"
-  },
-  {
-   "t": 1789308346439,
-   "u": "Diego Herrera",
-   "a": "Permissions : RH · « params » → aucun accès"
-  },
-  {
-   "t": 1789308345737,
-   "u": "Diego Herrera",
-   "a": "Permissions : RH · « params » → lecture seule 👁"
-  },
-  {
-   "t": 1789308337531,
-   "u": "Diego Herrera",
-   "a": "Permissions : RH · « dlogs » → accès complet ✓"
-  },
-  {
-   "t": 1789308335320,
-   "u": "Diego Herrera",
-   "a": "Permissions : Responsable commercial · « dlogs » → accès complet ✓"
-  },
-  {
-   "t": 1789308334429,
-   "u": "Diego Herrera",
-   "a": "Permissions : Commercial · « dlogs » → accès complet ✓"
-  },
   {
    "t": 1789216393612,
    "u": "Stella Collins",
@@ -19365,6 +19330,41 @@
    "a": "Fer acheté noté : Juan Sanchez → 1 040",
    "t": 1788107189501,
    "u": "Emma Collins"
+  },
+  {
+   "a": "Fer acheté noté : William Rodriguez-collins → 1 040",
+   "t": 1788107185006,
+   "u": "Emma Collins"
+  },
+  {
+   "a": "Fer acheté noté : Emma Collins-rodriguez → 1 040",
+   "t": 1788107181872,
+   "u": "Emma Collins"
+  },
+  {
+   "a": "Fer acheté noté : Laurent Roquel → 725",
+   "t": 1788105266211,
+   "u": "Laurent Roquel"
+  },
+  {
+   "a": "Vente rapide sans facture : 1 bidon(s) — Employé Carlos Dupont (vendeur : Emma Collins)",
+   "t": 1788096443056,
+   "u": "Emma Collins"
+  },
+  {
+   "a": "Fer acheté noté : Julio Collins → 940",
+   "t": 1788096407929,
+   "u": "Julio Collins"
+  },
+  {
+   "a": "Fer acheté noté : William Rodriguez-collins → 940",
+   "t": 1788096400417,
+   "u": "Julio Collins"
+  },
+  {
+   "a": "Fer acheté noté : Emma Collins-rodriguez → 940",
+   "t": 1788096388761,
+   "u": "Julio Collins"
   }
  ],
  "prodDer": {
@@ -19690,7 +19690,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-13T14:14:35.721Z",
+  "maj": "2026-09-13T14:14:47.143Z",
   "semaine": 36,
   "totalBarils": 119331,
   "ca": 596655,
