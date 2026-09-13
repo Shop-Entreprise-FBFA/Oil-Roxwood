@@ -1,11 +1,32 @@
 {
- "maj": "2026-09-13T04:35:14.450366+00:00",
+ "maj": "2026-09-13T04:47:56.309732+00:00",
  "salon": "1245400913066066099",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1548552818300944415",
+   "t": "2026-09-13T04:36:02.603000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 6676\nplayerDiscord : 1026082196500521012\nplayerName : IcyGoose7613\nplayerCharacter : Tarek Rodriguez\nplayerId : 251746\nvehiclePlate : HM1337JY\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Tarek Rodriguez",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "6676",
+    "playerdiscord": "1026082196500521012",
+    "playername": "IcyGoose7613",
+    "playercharacter": "Tarek Rodriguez",
+    "playerid": "251746",
+    "vehicleplate": "HM1337JY",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1548552315160764479-0",
    "t": "2026-09-13T04:34:02.645000+00:00",
@@ -93841,30 +93862,6 @@
     "playercharacter": "Stella Collins",
     "playerid": "232050",
     "itemid": "_menucheese"
-   }
-  },
-  {
-   "id": "1547714790649237541-6",
-   "t": "2026-09-10T21:06:01.241000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 124x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1844.44, 6516.21, 16.73\ntargetPosition : -1844.79, 6516.31, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3408\nplayerDiscord : 530397758520295465\nplayerName : Flogest13\nplayerCharacter : Fred Montaigu\nplayerId : 350955\nitemId : refinedoil",
-   "nom": "Fred Montaigu",
-   "quantite": 124,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1844.44, 6516.21, 16.73",
-    "targetposition": "-1844.79, 6516.31, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "3408",
-    "playerdiscord": "530397758520295465",
-    "playername": "Flogest13",
-    "playercharacter": "Fred Montaigu",
-    "playerid": "350955",
-    "itemid": "refinedoil"
    }
   }
  ]
