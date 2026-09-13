@@ -1,11 +1,53 @@
 {
- "maj": "2026-09-13T03:48:20.695290+00:00",
+ "maj": "2026-09-13T04:02:16.136368+00:00",
  "salon": "1245400913066066099",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1548542001710895236-0",
+   "t": "2026-09-13T03:53:03.727000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 6156\nplayerDiscord : 1225132652953210900\nplayerName : Micaelinho\nplayerCharacter : Kamara Doue\nplayerId : 379640\nvehiclePlate : BM4391ZM\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Kamara Doue",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "6156",
+    "playerdiscord": "1225132652953210900",
+    "playername": "Micaelinho",
+    "playercharacter": "Kamara Doue",
+    "playerid": "379640",
+    "vehicleplate": "BM4391ZM",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1548542001710895236-1",
+   "t": "2026-09-13T03:53:03.727000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 6283\nplayerDiscord : 1141131696792670318\nplayerName : ChillyRabbit2732\nplayerCharacter : Aníbal Santamaría\nplayerId : 157794\nvehiclePlate : DO6888RF\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Aníbal Santamaría",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "6283",
+    "playerdiscord": "1141131696792670318",
+    "playername": "ChillyRabbit2732",
+    "playercharacter": "Aníbal Santamaría",
+    "playerid": "157794",
+    "vehicleplate": "DO6888RF",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1548540241370157059-0",
    "t": "2026-09-13T03:46:04.029000+00:00",
@@ -93825,54 +93867,6 @@
     "playername": "Ec9Mugen",
     "playercharacter": "Juan Sanchez",
     "playerid": "200738",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1547714044516110358-1",
-   "t": "2026-09-10T21:03:03.349000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 5x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -1851.72, 6501.68, 16.73\ntargetPosition : -1851.46, 6502.05, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3554\nplayerDiscord : 690537200689086537\nplayerName : Ec9Mugen\nplayerCharacter : Juan Sanchez\nplayerId : 200738\nitemId : oil",
-   "nom": "Juan Sanchez",
-   "quantite": 5,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1851.72, 6501.68, 16.73",
-    "targetposition": "-1851.46, 6502.05, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "3554",
-    "playerdiscord": "690537200689086537",
-    "playername": "Ec9Mugen",
-    "playercharacter": "Juan Sanchez",
-    "playerid": "200738",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1547713790412464321-0",
-   "t": "2026-09-10T21:02:02.766000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 64x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3084.71, 6815.71, 44.73\ntargetPosition : -3084.39, 6815.87, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 4084\nplayerDiscord : 1278121596112080958\nplayerName : Llbvr\nplayerCharacter : Ashley Cooper\nplayerId : 342423\nitemId : oil",
-   "nom": "Ashley Cooper",
-   "quantite": 64,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-3084.71, 6815.71, 44.73",
-    "targetposition": "-3084.39, 6815.87, 43.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "4084",
-    "playerdiscord": "1278121596112080958",
-    "playername": "Llbvr",
-    "playercharacter": "Ashley Cooper",
-    "playerid": "342423",
     "itemid": "oil"
    }
   }
