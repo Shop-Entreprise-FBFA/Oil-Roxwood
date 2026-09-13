@@ -1,11 +1,27 @@
 {
- "maj": "2026-09-13T06:51:52.532051+00:00",
+ "maj": "2026-09-13T07:02:22.080415+00:00",
  "salon": "1245400913066066099",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1548589323241267296",
+   "t": "2026-09-13T07:01:06.059000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 324x Pétrole Raffiné pour 3240$ par Cristóbal Perrera. 1620$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 324,
+   "montant": 3240,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1548580254354767885",
    "t": "2026-09-13T06:25:03.868000+00:00",
@@ -93771,30 +93787,6 @@
     "playercharacter": "Juan Sanchez",
     "playerid": "200738",
     "itemid": "oil"
-   }
-  },
-  {
-   "id": "1547716058360713326-3",
-   "t": "2026-09-10T21:11:03.487000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 137x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1843.73, 6518.93, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 342\nplayerDiscord : 621418824658321449\nplayerName : BluntFish9943\nplayerCharacter : Victor Sulivane\nplayerId : 334570\nitemId : refinedoil",
-   "nom": "Victor Sulivane",
-   "quantite": 137,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1843.73, 6518.93, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "342",
-    "playerdiscord": "621418824658321449",
-    "playername": "BluntFish9943",
-    "playercharacter": "Victor Sulivane",
-    "playerid": "334570",
-    "itemid": "refinedoil"
    }
   }
  ]
