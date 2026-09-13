@@ -18873,8 +18873,8 @@
   "semaineDebut": "2026-09-14"
  },
  "_cid": "t0hsdn3clm",
- "_maj": 1789341319132,
- "_rev": "3ollkmj71j9-mu0fmike",
+ "_maj": 1789341336238,
+ "_rev": "9vuqcld6ni9-mu0fmvfm",
  "_majSec": {
   "fer": 1789341106480,
   "fact": 1789341106480,
@@ -18883,11 +18883,11 @@
   "sheets": 1789341111900,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
-  "journal": 1789341249811,
+  "journal": 1789341336238,
   "pending": 1789341106480,
   "prodDer": 1789341106480,
   "runners": 1789341106480,
-  "absences": 1789341106480,
+  "absences": 1789341336238,
   "imported": 1789341106480,
   "settings": 1789341106480,
   "closeUndo": 1789341106480,
@@ -18912,6 +18912,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1789341337700,
+   "u": "Diego Herrera",
+   "a": "7 absence(s) terminée(s) archivée(s) automatiquement"
+  },
   {
    "t": 1789341251273,
    "u": "Diego Herrera",
@@ -20406,11 +20411,6 @@
    "a": "Fer acheté noté : William Rodriguez-collins → 1 408",
    "t": 1788110426823,
    "u": "Emma Collins"
-  },
-  {
-   "a": "Fer acheté noté : Emma Collins-rodriguez → 1 408",
-   "t": 1788110422678,
-   "u": "Emma Collins"
   }
  ],
  "prodDer": {
@@ -20615,34 +20615,10 @@
  },
  "absences": [
   {
-   "au": "2026-08-31",
-   "du": "2026-08-24",
-   "id": 1787595162016,
-   "nom": "Elyra Collins"
-  },
-  {
-   "au": "2026-08-31",
-   "du": "2026-08-24",
-   "id": 1787595184354,
-   "nom": "Zack Ishua"
-  },
-  {
-   "au": "2026-09-02",
-   "du": "2026-08-26",
-   "id": 1787826260643,
-   "nom": "Larry Lewington"
-  },
-  {
    "au": "2026-09-15",
    "du": "2026-09-02",
    "id": 1787826302692,
    "nom": "John Scoupio"
-  },
-  {
-   "au": "2026-08-31",
-   "du": "2026-08-27",
-   "id": 1787837652723,
-   "nom": "Nico Whites"
   },
   {
    "au": "2026-09-14",
@@ -20657,32 +20633,10 @@
    "nom": "Alexis Lavollette"
   },
   {
-   "au": "2026-08-31",
-   "du": "2026-08-29",
-   "id": 1788012152138,
-   "nom": "Lucas Vettel"
-  },
-  {
    "au": "2026-09-07",
    "du": "2026-08-25",
    "id": 1788012188690,
    "nom": "Adel Dulax"
-  },
-  {
-   "au": "2026-09-02",
-   "du": "2026-08-30",
-   "id": 1788111121351,
-   "nom": "Henry Carry"
-  },
-  {
-   "id": 1788646246448,
-   "nom": "Diego Herrera",
-   "du": "2026-09-05",
-   "au": "2026-09-06",
-   "srcId": "1788604785919",
-   "motif": "test",
-   "par": "⚫ Diego Herrera",
-   "auto": true
   },
   {
    "id": 1788702817165,
@@ -20736,7 +20690,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-13T23:15:24.926Z",
+  "maj": "2026-09-13T23:15:41.603Z",
   "semaine": 38,
   "totalBarils": 239723,
   "ca": 1198615,
