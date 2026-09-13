@@ -1,11 +1,35 @@
 {
- "maj": "2026-09-13T03:01:54.731581+00:00",
+ "maj": "2026-09-13T03:22:27.943345+00:00",
  "salon": "1245400913066066099",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1548534198128873606",
+   "t": "2026-09-13T03:22:03.208000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 1x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3084.78, 6816.09, 44.73\ntargetPosition : -3084.39, 6815.87, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6526\nplayerDiscord : 826526979204841482\nplayerName : Orion\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : oil",
+   "nom": "Diego Herrera",
+   "quantite": 1,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-3084.78, 6816.09, 44.73",
+    "targetposition": "-3084.39, 6815.87, 43.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "6526",
+    "playerdiscord": "826526979204841482",
+    "playername": "Orion",
+    "playercharacter": "Diego Herrera",
+    "playerid": "231487",
+    "itemid": "oil"
+   }
+  },
   {
    "id": "1548488156196905074-0",
    "t": "2026-09-13T00:19:05.956000+00:00",
@@ -93850,30 +93874,6 @@
     "playercharacter": "Juan Sanchez",
     "playerid": "200738",
     "itemid": "oil"
-   }
-  },
-  {
-   "id": "1547713551928664125-2",
-   "t": "2026-09-10T21:01:05.907000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 79x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1850.48, 6514.73, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 4319\nplayerDiscord : 635041960369061888\nplayerName : BoldRabbit3414\nplayerCharacter : Keath Chop's\nplayerId : 191052\nitemId : refinedoil",
-   "nom": "Keath Chop's",
-   "quantite": 79,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1850.48, 6514.73, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "4319",
-    "playerdiscord": "635041960369061888",
-    "playername": "BoldRabbit3414",
-    "playercharacter": "Keath Chop's",
-    "playerid": "191052",
-    "itemid": "refinedoil"
    }
   }
  ]
