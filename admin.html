@@ -273,7 +273,7 @@ function load(){
    les contrats et les médias depuis la sortie de Supabase. Sans lui, mergeRemote
    ne reprenait JAMAIS ces tables du dépôt — le dernier qui enregistrait écrasait
    les lignes ajoutées par un autre admin, et toute écriture du bot était perdue. */
-const SEC_KEYS=['runners','weeks','sheets','fact','users','profils','pending','fer','_tables','settings','absences','primesExtra','quotasCom','quotasComHist','journal','bilanExtra','closeUndo','bilanForce','prodDer','imported','affiches','produits','_recruesIgnore','ventesAlias','_ventesIgnore','_qcFix1','_wkFix1','_permsFix1','_rolesFix77','_affFix1','_prodFix1'];
+const SEC_KEYS=['runners','weeks','sheets','fact','users','profils','pending','fer','_tables','settings','absences','primesExtra','quotasCom','quotasComHist','journal','bilanExtra','closeUndo','bilanForce','prodDer','imported','affiches','produits','_recruesIgnore','ventesAlias','_ventesIgnore','_qcFix1','_wkFix1','_permsFix1','_rolesFix77','_affFix1','_prodFix1','_avertVus'];
 /* ---- heure de référence : celle du serveur Supabase, pas celle du PC ----
    Un utilisateur avec une horloge décalée datait ses modifs « dans le futur » et écrasait tout. */
 let CLOCK_SKEW=0;
@@ -343,7 +343,7 @@ function save(){
    écriture du bot ferait donc disparaître la table des coffres de sa copie —
    puis l'effacerait du dépôt à son prochain envoi. Ces tables-là n'ont qu'un
    auteur, il n'y a rien à arbitrer : on les reprend toujours du dépôt. */
-const TABLES_BOT=['oilroxwood_coffres','oilroxwood_recrues','oilroxwood_absences'];
+const TABLES_BOT=['oilroxwood_coffres','oilroxwood_recrues','oilroxwood_absences','oilroxwood_avertissements'];
 /* `profils` a un auteur par fiche (chacun la sienne), mais se fusionnait comme
    les autres sections : en bloc, la plus récente gagne. Deux personnes qui
    enregistrent leur profil à quelques secondes d'écart depuis deux navigateurs
@@ -1196,7 +1196,7 @@ function logout(){
 }
 
 /* ---- Canari de version : prévient les onglets restés sur une vieille version ---- */
-const APP_VERSION='C-101';
+const APP_VERSION='C-102';
 /* Le bandeau ne doit dire qu'une chose : « une version plus récente existe ».
    Il comparait deux chaînes avec !==, donc il s'allumait aussi dans l'autre
    sens — quand la page ouverte était PLUS récente que version.json, ce qui
@@ -2241,6 +2241,41 @@ function importerRecrues(){
   return {ajoutes,completes,noms:[...new Set(noms)],renommages};
 }
 
+/* ---- Avertissements Discord → compteur de la fiche RH ----
+   /avertissement dépose une ligne dans _tables.oilroxwood_avertissements —
+   même mécanique que les recrues : une file à auteur unique (le bot),
+   jamais écrite par le dashboard, vidée à l'ouverture de la feuille RH.
+
+   On se contente d'incrémenter le compteur existant de la fiche (colonne
+   « Avert. », un simple nombre — c'est déjà comme ça qu'on l'augmente à la
+   main ailleurs dans le dashboard) plutôt que de changer ce que cette
+   colonne veut dire. Le motif, lui, part dans le journal : consultable,
+   sans avoir à transformer une case-compteur en case-texte.
+
+   Sans correspondance Discord dans la fiche RH, l'avertissement est ignoré
+   ici plutôt que de créer une fiche pour la seule occasion d'un avertissement
+   — une personne avertie a forcément déjà une fiche. */
+function importerAvertissements(){
+  const file=((S._tables&&S._tables.oilroxwood_avertissements)||[]);
+  if(!file.length||!S.sheets||!S.sheets.rh) return {ajoutes:0,noms:[],details:[]};
+  const rh=S.sheets.rh;
+  const vus=new Set((S._avertVus||[]).map(String));
+  let ajoutes=0; const noms=[], details=[];
+  file.forEach(a=>{
+    const id=String(a.id||''); if(!id||vus.has(id)) return;
+    vus.add(id);
+    const did=String(a.discord||'').trim(); if(!did) return;
+    const existe=rh.find(x=>String(x.discord||'').trim()===did);
+    if(!existe) return;                     // personne pas en fiche RH : rien à incrémenter
+    const n=(parseInt(String(existe.avert||'').replace(/\D/g,''),10)||0)+1;
+    existe.avert=String(n);
+    ajoutes++; noms.push(existe.nom);
+    details.push(`${existe.nom} (${n}) · ${a.raison||'sans motif'}`);
+  });
+  S._avertVus=[...vus].slice(-500);          // ne grossit pas indéfiniment
+  return {ajoutes,noms:[...new Set(noms)],details};
+}
+
 /* ---- Renommer quelqu'un PARTOUT ----
 
    Le dashboard identifie les gens par leur nom, dans une douzaine d'endroits.
@@ -2840,6 +2875,13 @@ async function feuilles(){
         : `👥 ${imp.completes} case(s) complétée(s) depuis Discord — ${qui} (déjà en fiche)`);
     }
     RECRUES_RENOM = imp.renommages || [];
+    const av=importerAvertissements();
+    if(av.ajoutes){
+      const qui=av.noms.slice(0,3).join(', ')+(av.noms.length>3?'…':'');
+      jlog(`Avertissements Discord : ${av.ajoutes} — ${av.details.join(' · ')}`);
+      save(); sbPushNow();
+      toast(`⚠️ ${av.ajoutes} avertissement(s) reçu(s) depuis Discord — ${qui}`);
+    }
   }
   /* Les ventes relevées par le bot entrent à l'ouverture de la feuille — c'est
      là qu'on les regarde, et c'est de cette feuille que sort la paie. */
@@ -4708,6 +4750,10 @@ function ferDel(id){
 
 /* ================== MISES À JOUR (changelog) ================== */
 const CHANGELOG=[
+ {v:'C-102',d:'14/09/2026',t:'/avertissement remplit la fiche RH',items:[
+   ['⚠️','Les avertissements Discord n\'atteignaient jamais la fiche RH','/avertissement enregistrait tout dans la base du bot — consultable sur Discord via /mes-stats — mais rien ne remontait au dashboard. Le compteur « Avert. » de la fiche RH restait donc à ce que le RH y tapait à la main, sans lien avec ce qui se passait vraiment sur Discord.'],
+   ['🔧','Même mécanique que les recrues et les absences','Le bot dépose l\'avertissement dans une file à son nom ; la feuille RH la vide à l\'ouverture, incrémente le compteur existant (sans changer ce qu\'il veut dire) et garde le motif dans le journal.'],
+ ]},
  {v:'C-101',d:'14/09/2026',t:'« Poster sur Discord » : ça marchait, mais le site n\'attendait pas assez',items:[
    ['⏳','156 secondes pour un ordre censé prendre 20','« Poster sur Discord » depuis Éligibilité dépose un ordre que le bot va chercher, fabrique l\'image et poste — mais lui et le site lisent le dépôt via une adresse qui garde une copie jusqu\'à 5 minutes. Le 13/09, l\'image est bien partie sur Discord, mais le site avait déjà renoncé et affiché un échec avant de la voir.'],
    ['🔧','Les deux bouts lisent maintenant l\'API, jamais mise en cache','Le bot voit l\'ordre dès son prochain passage (20 s), et le site voit sa réponse aussi vite. 180 s de patience au lieu de 90 restent en filet de sécurité.'],
