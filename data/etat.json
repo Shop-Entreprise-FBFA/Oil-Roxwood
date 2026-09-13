@@ -11267,7 +11267,7 @@
     "don": "",
     "nom": "Jason Harper",
     "date": "",
-    "grade": "Raffineur Confirmé",
+    "grade": "Raffineur Expert",
     "menus": false,
     "bidons": false,
     "permis": "",
@@ -11287,7 +11287,7 @@
     "don": "",
     "nom": "Andrew Clark",
     "date": "",
-    "grade": "Raffineur Expert",
+    "grade": "Raffineur Confirmé",
     "menus": false,
     "bidons": false,
     "permis": "",
@@ -11437,7 +11437,7 @@
     "don": "",
     "nom": "John Scoupio",
     "date": "",
-    "grade": "Responsable Runner",
+    "grade": "Raffineur",
     "menus": false,
     "bidons": false,
     "permis": "",
@@ -11457,7 +11457,7 @@
     "don": "",
     "nom": "Joseph Larose",
     "date": "",
-    "grade": "Intérimaire",
+    "grade": "Raffineur",
     "menus": false,
     "bidons": false,
     "permis": "",
@@ -11507,7 +11507,7 @@
     "don": "",
     "nom": "Marco Sanchez",
     "date": "",
-    "grade": "Intérimaire",
+    "grade": "Raffineur",
     "menus": false,
     "bidons": false,
     "permis": "",
@@ -11537,7 +11537,7 @@
     "don": "",
     "nom": "Tony Clark",
     "date": "",
-    "grade": "Intérimaire",
+    "grade": "Raffineur",
     "menus": false,
     "bidons": false,
     "permis": "",
@@ -11547,7 +11547,7 @@
     "don": "",
     "nom": "Xavier Collins",
     "date": "",
-    "grade": "Responsable Runner",
+    "grade": "Raffineur",
     "menus": false,
     "bidons": false,
     "permis": "",
@@ -11597,7 +11597,7 @@
     "don": "",
     "nom": "carlos dupont",
     "date": "",
-    "grade": "Raffineur",
+    "grade": "Intérimaire",
     "menus": false,
     "bidons": false,
     "permis": "",
@@ -11677,7 +11677,7 @@
     "don": "",
     "nom": "Miles Cole",
     "date": "",
-    "grade": "Raffineur",
+    "grade": "Intérimaire",
     "menus": false,
     "bidons": false,
     "permis": "",
@@ -14805,14 +14805,6 @@
    "role": "rh",
    "user": "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿",
    "avatar": "https://cdn.discordapp.com/avatars/690537200689086537/89422621d14f87124a4e8ea64b0ac191.png"
-  },
-  {
-   "id": 1789308828198,
-   "user": "L",
-   "did": "1278121596112080958",
-   "role": "resprunner",
-   "auto": true,
-   "avatar": "https://cdn.discordapp.com/avatars/1278121596112080958/7fce6b862532c392e72e8502b1ee4ba0.png"
   }
  ],
  "profils": {
@@ -17651,7 +17643,9 @@
    "respcom": [],
    "assistdir": [],
    "comptable": [],
-   "resprunner": [],
+   "resprunner": [
+    "felig"
+   ],
    "membre": [
     "felig",
     "overview",
@@ -17691,7 +17685,7 @@
     "moi",
     "agenda",
     "affiches",
-    "dlogs"
+    "params"
    ],
    "commercial": [
     "effectif",
@@ -17708,8 +17702,7 @@
     "profil",
     "moi",
     "agenda",
-    "affiches",
-    "dlogs"
+    "affiches"
    ],
    "respcom": [
     "factures",
@@ -17727,8 +17720,7 @@
     "profil",
     "moi",
     "agenda",
-    "affiches",
-    "dlogs"
+    "affiches"
    ],
    "assistdir": [
     "effectif",
@@ -17771,14 +17763,14 @@
     "dlogs"
    ],
    "resprunner": [
-    "semaine",
     "overview",
-    "felig",
+    "semaine",
     "historique",
     "reunions",
-    "quotashist",
-    "profil",
+    "felig",
     "moi",
+    "profil",
+    "quotashist",
     "agenda",
     "affiches",
     "dlogs"
@@ -17834,86 +17826,46 @@
   "salonContrats": "1328076154586009660",
   "postesV4": 1
  },
- "_cid": "ekvqcosn3is",
+ "_cid": "i3s64oi91o",
  "_maj": 1789309789986,
- "_rev": "ehs2mdzmnda-mtzwvxsq",
+ "_rev": "qux3d8cot-mtzwy1nc",
  "_majSec": {
-  "fer": 1789308828859,
-  "fact": 1789308828859,
-  "users": 1789308828879,
-  "weeks": 1789308828859,
-  "sheets": 1789308841522,
-  "_qcFix1": 1789308828859,
-  "_wkFix1": 1789308828859,
-  "journal": 1789308841522,
-  "pending": 1789308828859,
-  "prodDer": 1789308828859,
-  "runners": 1789308828859,
-  "absences": 1789308828859,
-  "imported": 1789308828859,
-  "settings": 1789308828859,
-  "closeUndo": 1789308828859,
-  "quotasCom": 1789308828859,
-  "bilanExtra": 1789308828859,
-  "bilanForce": 1789308828859,
-  "primesExtra": 1789308828859,
-  "quotasComHist": 1789308828859,
+  "fer": 1789303821465,
+  "fact": 1789303821465,
+  "users": 1789303821465,
+  "weeks": 1789303821465,
+  "sheets": 1789303821465,
+  "_qcFix1": 1789303821465,
+  "_wkFix1": 1789303821465,
+  "journal": 1789303821465,
+  "pending": 1789303821465,
+  "prodDer": 1789303821465,
+  "runners": 1789303821465,
+  "absences": 1789303821465,
+  "imported": 1789303821465,
+  "settings": 1789303821465,
+  "closeUndo": 1789303821465,
+  "quotasCom": 1789303821465,
+  "bilanExtra": 1789303821465,
+  "bilanForce": 1789303821465,
+  "primesExtra": 1789303821465,
+  "quotasComHist": 1789303821465,
   "profils": 1789308828859,
-  "_tables": 1789309789986,
-  "_permsFix1": 1789308828859,
+  "_tables": 1789303812419,
+  "_permsFix1": 1789303821465,
   "_rolesFix4": 1788489352546,
-  "_rolesFix77": 1789308828859,
-  "affiches": 1789308828859,
-  "_affFix1": 1789308828859,
-  "produits": 1789308828859,
-  "_prodFix1": 1789308828859,
-  "_recruesIgnore": 1789308828859,
-  "ventesAlias": 1789308828859,
-  "_ventesIgnore": 1789308828859
+  "_rolesFix77": 1789303821465,
+  "affiches": 1789303821465,
+  "_affFix1": 1789303821465,
+  "produits": 1789303821465,
+  "_prodFix1": 1789303821465,
+  "_recruesIgnore": 1789303821465,
+  "ventesAlias": 1789303821465,
+  "_ventesIgnore": 1789303821465
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
-  {
-   "t": 1789308840861,
-   "u": "L",
-   "a": "Éligibilité : 9 grade(s) réalignés sur l'effectif — Jason Harper : Raffineur Expert → Raffineur Confirmé · Andrew Clark : Raffineur Confirmé → Raffineur Expert · John Scoupio : Raffineur → Responsable Runner · Joseph Larose : Raffineur → Intérimaire…"
-  },
-  {
-   "t": 1789308356519,
-   "u": "Diego Herrera",
-   "a": "Permissions : Responsable Runner · « felig » → accès complet ✓"
-  },
-  {
-   "t": 1789308354882,
-   "u": "Diego Herrera",
-   "a": "Permissions : Responsable Runner · « felig » → aucun accès"
-  },
-  {
-   "t": 1789308346439,
-   "u": "Diego Herrera",
-   "a": "Permissions : RH · « params » → aucun accès"
-  },
-  {
-   "t": 1789308345737,
-   "u": "Diego Herrera",
-   "a": "Permissions : RH · « params » → lecture seule 👁"
-  },
-  {
-   "t": 1789308337531,
-   "u": "Diego Herrera",
-   "a": "Permissions : RH · « dlogs » → accès complet ✓"
-  },
-  {
-   "t": 1789308335320,
-   "u": "Diego Herrera",
-   "a": "Permissions : Responsable commercial · « dlogs » → accès complet ✓"
-  },
-  {
-   "t": 1789308334429,
-   "u": "Diego Herrera",
-   "a": "Permissions : Commercial · « dlogs » → accès complet ✓"
-  },
   {
    "t": 1789216393612,
    "u": "Stella Collins",
@@ -19373,6 +19325,46 @@
    "a": "Fer acheté noté : Laurent Roquel → 1 040",
    "t": 1788107193843,
    "u": "Emma Collins"
+  },
+  {
+   "a": "Fer acheté noté : Juan Sanchez → 1 040",
+   "t": 1788107189501,
+   "u": "Emma Collins"
+  },
+  {
+   "a": "Fer acheté noté : William Rodriguez-collins → 1 040",
+   "t": 1788107185006,
+   "u": "Emma Collins"
+  },
+  {
+   "a": "Fer acheté noté : Emma Collins-rodriguez → 1 040",
+   "t": 1788107181872,
+   "u": "Emma Collins"
+  },
+  {
+   "a": "Fer acheté noté : Laurent Roquel → 725",
+   "t": 1788105266211,
+   "u": "Laurent Roquel"
+  },
+  {
+   "a": "Vente rapide sans facture : 1 bidon(s) — Employé Carlos Dupont (vendeur : Emma Collins)",
+   "t": 1788096443056,
+   "u": "Emma Collins"
+  },
+  {
+   "a": "Fer acheté noté : Julio Collins → 940",
+   "t": 1788096407929,
+   "u": "Julio Collins"
+  },
+  {
+   "a": "Fer acheté noté : William Rodriguez-collins → 940",
+   "t": 1788096400417,
+   "u": "Julio Collins"
+  },
+  {
+   "a": "Fer acheté noté : Emma Collins-rodriguez → 940",
+   "t": 1788096388761,
+   "u": "Julio Collins"
   }
  ],
  "prodDer": {
@@ -19698,7 +19690,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-13T14:30:51.866Z",
+  "maj": "2026-09-13T14:32:30.168Z",
   "semaine": 36,
   "totalBarils": 119331,
   "ca": 596655,
