@@ -1,11 +1,27 @@
 {
- "maj": "2026-09-14T21:49:47.352732+00:00",
+ "maj": "2026-09-14T22:02:06.404885+00:00",
  "salon": "1245400913066066099",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1549177590798090383",
+   "t": "2026-09-14T21:58:39.974000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 732x Pétrole Raffiné pour 7320$ par Thomas Boyer. 3660$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 732,
+   "montant": 7320,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1549174246683574308-0",
    "t": "2026-09-14T21:45:22.675000+00:00",
@@ -94603,30 +94619,6 @@
    "quantite": 35,
    "montant": null,
    "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1815.69, 6566.11, 16.73",
-    "targetposition": "-1815.66, 6565.56, 15.98",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "8120",
-    "playerdiscord": "948542221429379112",
-    "playername": "IcyToad7886",
-    "playercharacter": "Stella Collins",
-    "playerid": "232050",
-    "itemid": "weapon_petrolcan"
-   }
-  },
-  {
-   "id": "1548661972818726972-4",
-   "t": "2026-09-13T11:49:47.068000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 35x Bidon d'essence du coffre de l'entreprise (Oil RoxWood)\nposition : -1815.69, 6566.11, 16.73\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 8120\nplayerDiscord : 948542221429379112\nplayerName : IcyToad7886\nplayerCharacter : Stella Collins\nplayerId : 232050\nitemId : weapon_petrolcan",
-   "nom": "Stella Collins",
-   "quantite": 35,
-   "montant": null,
-   "type": "coffre_retrait",
    "salon": "1245400913066066099",
    "coffre": "entreprise (Oil RoxWood)",
    "champs": {
