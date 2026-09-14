@@ -15530,6 +15530,16 @@
  "affiches": [],
  "produits": [
   {
+   "id": 1789391554820,
+   "par": "Diego Herrera",
+   "date": "2026-09-14",
+   "nom": "Piper",
+   "desc": "Piper, inspectrice des installations chez Oil Roxwood. Loupe en main, casque immaculé, rien ne lui échappe : une soudure douteuse, une vanne mal serrée, un baril mal étiqueté.",
+   "prix": "18 000 $",
+   "chemin": "assets/produits/1789391546340-9177u.png",
+   "actif": true
+  },
+  {
    "id": 1789391423002,
    "par": "Diego Herrera",
    "date": "2026-09-14",
@@ -18965,8 +18975,8 @@
   "semaineDebut": "2026-09-14"
  },
  "_cid": "ydqtx2hs8vi",
- "_maj": 1789391536988,
- "_rev": "hmxfg7cl68-mu19iuyd",
+ "_maj": 1789391552430,
+ "_rev": "rkpcytveek8-mu19j4eb",
  "_majSec": {
   "fer": 1789341106480,
   "fact": 1789385841734,
@@ -18975,7 +18985,7 @@
   "sheets": 1789385801586,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
-  "journal": 1789391420238,
+  "journal": 1789391552430,
   "pending": 1789341106480,
   "prodDer": 1789341106480,
   "runners": 1789341106480,
@@ -18995,7 +19005,7 @@
   "_rolesFix77": 1789341106480,
   "affiches": 1789341106480,
   "_affFix1": 1789341106480,
-  "produits": 1789391420238,
+  "produits": 1789391552430,
   "_prodFix1": 1789341106480,
   "_recruesIgnore": 1789341106480,
   "ventesAlias": 1789341106480,
@@ -19005,6 +19015,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1789391554353,
+   "u": "Diego Herrera",
+   "a": "Produit créé : Piper"
+  },
   {
    "t": 1789391422161,
    "u": "Diego Herrera",
@@ -20499,11 +20514,6 @@
    "a": "Fer acheté noté : William Rodriguez-collins → 1 448",
    "t": 1788112598099,
    "u": "Julio Collins"
-  },
-  {
-   "a": "Fer acheté noté : Emma Collins-rodriguez → 1 448",
-   "t": 1788112592456,
-   "u": "Julio Collins"
   }
  ],
  "prodDer": {
@@ -20803,7 +20813,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-14T13:12:22.837Z",
+  "maj": "2026-09-14T13:12:35.075Z",
   "semaine": 38,
   "totalBarils": 239723,
   "ca": 1198615,
@@ -20826,6 +20836,12 @@
   ],
   "runners": [],
   "produits": [
+   {
+    "nom": "Piper",
+    "desc": "Piper, inspectrice des installations chez Oil Roxwood. Loupe en main, casque immaculé, rien ne lui échappe : une soudure douteuse, une vanne mal serrée, un baril mal étiqueté.",
+    "prix": "18 000 $",
+    "photo": "https://raw.githubusercontent.com/Shop-Entreprise-FBFA/Oil-Roxwood/main/assets/produits/1789391546340-9177u.png"
+   },
    {
     "nom": "Crudo",
     "desc": "On l'a trouvé dans un bidon vide derrière la raffinerie, noir de la truffe aux bottes. C'est de là qu'il tient son nom. Depuis, Crudo dort dans l'atelier, vole les outils, et sait pourtant mieux que personne où siffle un",
