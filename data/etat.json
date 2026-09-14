@@ -27149,9 +27149,9 @@
   "postesV4": 1,
   "semaineDebut": "2026-09-14"
  },
- "_cid": "mwpm1a88nqm",
- "_maj": 1789395571069,
- "_rev": "iwwl5x5zjh-mu1bx3re",
+ "_cid": "76lbdcu69nq",
+ "_maj": 1789395590004,
+ "_rev": "pxb2mkuhae-mu1bxq15",
  "_majSec": {
   "fer": 1789393440819,
   "fact": 1789385841734,
@@ -27160,9 +27160,9 @@
   "sheets": 1789395346376,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
-  "journal": 1789395570540,
+  "journal": 1789395590004,
   "pending": 1789341106480,
-  "prodDer": 1789395570540,
+  "prodDer": 1789395590004,
   "runners": 1789341106480,
   "absences": 1789384371709,
   "imported": 1789341106480,
@@ -27190,6 +27190,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1789395591085,
+   "u": "Diego Herrera",
+   "a": "Produits dérivés : colonne « 4 objets » ajoutée"
+  },
   {
    "t": 1789395571621,
    "u": "Diego Herrera",
@@ -28684,11 +28689,6 @@
    "a": "Absence supprimée : Nikko Mount (du 30/07/2026 au 24/08/2026)",
    "t": 1788128861807,
    "u": "Diego Herrera"
-  },
-  {
-   "a": "Suppression de la facture n°253085",
-   "t": 1788127928190,
-   "u": "Diego Herrera"
   }
  ],
  "prodDer": {
@@ -28719,6 +28719,10 @@
    },
    {
     "n": "crudo",
+    "p": 0
+   },
+   {
+    "n": "4 objets",
     "p": 0
    }
   ],
@@ -29004,7 +29008,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-14T14:19:26.666Z",
+  "maj": "2026-09-14T14:19:55.529Z",
   "semaine": 38,
   "totalBarils": 239723,
   "ca": 1198615,
