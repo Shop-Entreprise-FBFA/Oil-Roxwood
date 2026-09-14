@@ -1,11 +1,27 @@
 {
- "maj": "2026-09-14T08:51:45.876234+00:00",
+ "maj": "2026-09-14T09:03:49.035330+00:00",
  "salon": "1245400913066066099",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1548982233086427177",
+   "t": "2026-09-14T09:02:23.066000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 650x Pétrole Raffiné pour 6500$ par Thomas Boyer. 3250$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 650,
+   "montant": 6500,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1548978950343229475-0",
    "t": "2026-09-14T08:49:20.399000+00:00",
@@ -94012,30 +94028,6 @@
     "playercharacter": "Jojo Lappach",
     "playerid": "111908",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1548266151790776349-4",
-   "t": "2026-09-12T09:36:55.981000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 27x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -1851.93, 6501.77, 16.73\ntargetPosition : -1851.46, 6502.05, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6606\nplayerDiscord : 438358976141328404\nplayerName : JumpyCrab4855\nplayerCharacter : Thomas Boyer\nplayerId : 160149\nitemId : oil",
-   "nom": "Thomas Boyer",
-   "quantite": 27,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1851.93, 6501.77, 16.73",
-    "targetposition": "-1851.46, 6502.05, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6606",
-    "playerdiscord": "438358976141328404",
-    "playername": "JumpyCrab4855",
-    "playercharacter": "Thomas Boyer",
-    "playerid": "160149",
-    "itemid": "oil"
    }
   }
  ]
