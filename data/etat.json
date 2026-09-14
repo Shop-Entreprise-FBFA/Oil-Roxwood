@@ -18872,9 +18872,9 @@
   "postesV4": 1,
   "semaineDebut": "2026-09-14"
  },
- "_cid": "bot",
- "_maj": 1789384292522,
- "_rev": "qmiilwhq7rg-mu156l6c",
+ "_cid": "3cwct0lf6h",
+ "_maj": 1789384371709,
+ "_rev": "zljqh3n5twh-mu1595x6",
  "_majSec": {
   "fer": 1789341106480,
   "fact": 1789341106480,
@@ -18883,11 +18883,11 @@
   "sheets": 1789374021687,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
-  "journal": 1789341369353,
+  "journal": 1789384371709,
   "pending": 1789341106480,
   "prodDer": 1789341106480,
   "runners": 1789341106480,
-  "absences": 1789341369353,
+  "absences": 1789384371709,
   "imported": 1789341106480,
   "settings": 1789341106480,
   "closeUndo": 1789341106480,
@@ -18897,7 +18897,7 @@
   "primesExtra": 1789341106480,
   "quotasComHist": 1789341106480,
   "profils": 1789341106480,
-  "_tables": 1789384292522,
+  "_tables": 1789384371709,
   "_permsFix1": 1789341106480,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1789341106480,
@@ -18913,6 +18913,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1789384371777,
+   "u": "Diego Herrera",
+   "a": "Absences Discord reprises : Darian Nguyen · Eden Birds"
+  },
   {
    "t": 1789341370815,
    "u": "Diego Herrera",
@@ -20407,11 +20412,6 @@
    "a": "Fer acheté noté : Laurent Roquel → 1 408",
    "t": 1788110436530,
    "u": "Emma Collins"
-  },
-  {
-   "a": "Fer acheté noté : Juan Sanchez → 1 408",
-   "t": 1788110432894,
-   "u": "Emma Collins"
   }
  ],
  "prodDer": {
@@ -20688,10 +20688,30 @@
    "motif": "Raison familiale",
    "par": "⚫ Juan Sanchez",
    "auto": true
+  },
+  {
+   "id": 1789384377353,
+   "nom": "Darian Nguyen",
+   "du": "2026-09-14",
+   "au": "2026-09-23",
+   "srcId": "1789380607649",
+   "motif": "Pas dispo",
+   "par": "⚫ Diego Herrera",
+   "auto": true
+  },
+  {
+   "id": 1789384374809,
+   "nom": "Eden Birds",
+   "du": "2026-09-14",
+   "au": "2026-09-20",
+   "srcId": "1789384291608",
+   "motif": "Semaine de congés",
+   "par": "⚫ Diego Herrera",
+   "auto": true
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-14T11:10:51.828Z",
+  "maj": "2026-09-14T11:12:52.026Z",
   "semaine": 38,
   "totalBarils": 239723,
   "ca": 1198615,
@@ -51497,6 +51517,20 @@
     "role": "direction",
     "vu": "2026-09-14T11:09:50.839Z",
     "id": 1789384191157
+   },
+   {
+    "uid": "826526979204841482",
+    "nom": "Diego Herrera",
+    "role": "direction",
+    "vu": "2026-09-14T11:11:50.845Z",
+    "id": 1789384311897
+   },
+   {
+    "uid": "826526979204841482",
+    "nom": "Diego Herrera",
+    "role": "direction",
+    "vu": "2026-09-14T11:12:50.833Z",
+    "id": 1789384371510
    }
   ],
   "oilroxwood_demandes": [],
