@@ -4079,7 +4079,11 @@
     "contrat": false,
     "recrut": "Thomas Boyer",
     "dernierService": "",
-    "flagOut": false
+    "flagOut": false,
+    "contratGen": {
+     "t": 1789412020900,
+     "par": "Thomas Boyer"
+    }
    },
    {
     "nom": "Jamal King",
@@ -27209,16 +27213,16 @@
  },
  "_cid": "z72ohq0bnd9",
  "_maj": 1789417007760,
- "_rev": "n98tlx4evtp-mu1orjxp",
+ "_rev": "q9s4cfcv6c-mu1ort0y",
  "_majSec": {
   "fer": 1789393440819,
   "fact": 1789385841734,
   "users": 1789385597340,
   "weeks": 1789341106480,
-  "sheets": 1789411999025,
+  "sheets": 1789412020900,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
-  "journal": 1789411999025,
+  "journal": 1789412020900,
   "pending": 1789341106480,
   "prodDer": 1789396105174,
   "runners": 1789341106480,
@@ -27248,6 +27252,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1789417149992,
+   "u": "Thomas Boyer",
+   "a": "Contrat de travail généré : Jake Smith (Runner)"
+  },
   {
    "t": 1789417128116,
    "u": "Thomas Boyer",
@@ -28742,11 +28751,6 @@
    "a": "Absence supprimée : Diego Teirzo (du 11/08/2026 au 16/08/2026)",
    "t": 1788128871007,
    "u": "Diego Herrera"
-  },
-  {
-   "a": "Absence supprimée : Tisso Gone (du 10/08/2026 au 24/08/2026)",
-   "t": 1788128869489,
-   "u": "Diego Herrera"
   }
  ],
  "prodDer": {
@@ -29117,7 +29121,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-14T20:19:02.701Z",
+  "maj": "2026-09-14T20:19:14.482Z",
   "semaine": 38,
   "totalBarils": 239723,
   "ca": 1198615,
