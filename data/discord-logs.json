@@ -1,11 +1,75 @@
 {
- "maj": "2026-09-14T16:53:10.410440+00:00",
+ "maj": "2026-09-14T17:02:00.486127+00:00",
  "salon": "1245400913066066099",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1549102539457437737",
+   "t": "2026-09-14T17:00:26.340000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 36x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1845.01, 6514.33, 16.73\ntargetPosition : -1845.91, 6514.70, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1697\nplayerDiscord : 597879541695905804\nplayerName : leo matza\nplayerCharacter : Hitachi Hydro\nplayerId : 80415\nitemId : refinedoil",
+   "nom": "Hitachi Hydro",
+   "quantite": 36,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1845.01, 6514.33, 16.73",
+    "targetposition": "-1845.91, 6514.70, 15.74",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "1697",
+    "playerdiscord": "597879541695905804",
+    "playername": "leo matza",
+    "playercharacter": "Hitachi Hydro",
+    "playerid": "80415",
+    "itemid": "refinedoil"
+   }
+  },
+  {
+   "id": "1549102019606749365",
+   "t": "2026-09-14T16:58:22.398000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 30x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1845.01, 6514.33, 16.73\ntargetPosition : -1845.91, 6514.70, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1697\nplayerDiscord : 597879541695905804\nplayerName : leo matza\nplayerCharacter : Hitachi Hydro\nplayerId : 80415\nitemId : refinedoil",
+   "nom": "Hitachi Hydro",
+   "quantite": 30,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1845.01, 6514.33, 16.73",
+    "targetposition": "-1845.91, 6514.70, 15.74",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "1697",
+    "playerdiscord": "597879541695905804",
+    "playername": "leo matza",
+    "playercharacter": "Hitachi Hydro",
+    "playerid": "80415",
+    "itemid": "refinedoil"
+   }
+  },
+  {
+   "id": "1549101313906839693",
+   "t": "2026-09-14T16:55:34.146000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 648x Pétrole Raffiné pour 6480$ par Alex Turner. 3240$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 648,
+   "montant": 6480,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1549100525356589098",
    "t": "2026-09-14T16:52:26.141000+00:00",
@@ -94667,62 +94731,6 @@
     "playercharacter": "Alex Turner",
     "playerid": "371783",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1548636403355615285-2",
-   "t": "2026-09-13T10:08:10.833000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 28x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1845.55, 6515.30, 16.73\ntargetPosition : -1845.91, 6514.70, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7194\nplayerDiscord : 1351242102985719829\nplayerName : Dimring\nplayerCharacter : Alex Turner\nplayerId : 371783\nitemId : refinedoil",
-   "nom": "Alex Turner",
-   "quantite": 28,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1845.55, 6515.30, 16.73",
-    "targetposition": "-1845.91, 6514.70, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7194",
-    "playerdiscord": "1351242102985719829",
-    "playername": "Dimring",
-    "playercharacter": "Alex Turner",
-    "playerid": "371783",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1548636139508727819",
-   "t": "2026-09-13T10:07:07.927000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 124x Pétrole Raffiné pour 1240$ par Savannah Brooks. 620$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 124,
-   "montant": 1240,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1548635157261455361",
-   "t": "2026-09-13T10:03:13.741000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 597x Pétrole Raffiné pour 5970$ par Savannah Brooks. 2985$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 597,
-   "montant": 5970,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
