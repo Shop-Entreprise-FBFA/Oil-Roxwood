@@ -1,11 +1,32 @@
 {
- "maj": "2026-09-14T14:38:56.268002+00:00",
+ "maj": "2026-09-14T14:53:49.410474+00:00",
  "salon": "1245400913066066099",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1549070328662204437",
+   "t": "2026-09-14T14:52:26.688000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 803\nplayerDiscord : 637720866821767237\nplayerName : MoodySpider9255\nplayerCharacter : Strya Ryuzen\nplayerId : 341782\nvehiclePlate : AY0298ZV\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Strya Ryuzen",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "803",
+    "playerdiscord": "637720866821767237",
+    "playername": "MoodySpider9255",
+    "playercharacter": "Strya Ryuzen",
+    "playerid": "341782",
+    "vehicleplate": "AY0298ZV",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1549066788300656782",
    "t": "2026-09-14T14:38:22.600000+00:00",
@@ -94304,30 +94325,6 @@
     "itemid": "refinedoil",
     "jobid": "76",
     "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1548415696147447962-0",
-   "t": "2026-09-12T19:31:10.134000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 132x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1847.35, 6513.89, 16.73\ntargetPosition : -1845.91, 6514.70, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1395\nplayerDiscord : 510842936053727242\nplayerName : SharpMouse3225\nplayerCharacter : Jojo Lappach\nplayerId : 111908\nitemId : refinedoil",
-   "nom": "Jojo Lappach",
-   "quantite": 132,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1847.35, 6513.89, 16.73",
-    "targetposition": "-1845.91, 6514.70, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "1395",
-    "playerdiscord": "510842936053727242",
-    "playername": "SharpMouse3225",
-    "playercharacter": "Jojo Lappach",
-    "playerid": "111908",
-    "itemid": "refinedoil"
    }
   }
  ]
