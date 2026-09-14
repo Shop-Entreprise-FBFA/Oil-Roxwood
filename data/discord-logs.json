@@ -1,11 +1,32 @@
 {
- "maj": "2026-09-14T22:02:06.404885+00:00",
+ "maj": "2026-09-14T22:23:44.501417+00:00",
  "salon": "1245400913066066099",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1549178558512103538",
+   "t": "2026-09-14T22:02:30.695000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 5476\nplayerDiscord : 554036471825301555\nplayerName : BreezyDeer8874\nplayerCharacter : Adel Dulax\nplayerId : 150053\nvehiclePlate : ZG7875QV\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Adel Dulax",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "5476",
+    "playerdiscord": "554036471825301555",
+    "playername": "BreezyDeer8874",
+    "playercharacter": "Adel Dulax",
+    "playerid": "150053",
+    "vehicleplate": "ZG7875QV",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1549177590798090383",
    "t": "2026-09-14T21:58:39.974000+00:00",
@@ -94608,30 +94629,6 @@
     "playercharacter": "Ray Buffalo",
     "playerid": "371918",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1548661972818726972-3",
-   "t": "2026-09-13T11:49:47.068000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 35x Bidon d'essence dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1815.69, 6566.11, 16.73\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 8120\nplayerDiscord : 948542221429379112\nplayerName : IcyToad7886\nplayerCharacter : Stella Collins\nplayerId : 232050\nitemId : weapon_petrolcan",
-   "nom": "Stella Collins",
-   "quantite": 35,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1815.69, 6566.11, 16.73",
-    "targetposition": "-1815.66, 6565.56, 15.98",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "8120",
-    "playerdiscord": "948542221429379112",
-    "playername": "IcyToad7886",
-    "playercharacter": "Stella Collins",
-    "playerid": "232050",
-    "itemid": "weapon_petrolcan"
    }
   }
  ]
