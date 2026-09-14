@@ -1,11 +1,43 @@
 {
- "maj": "2026-09-14T17:50:16.012855+00:00",
+ "maj": "2026-09-14T18:02:29.490641+00:00",
  "salon": "1245400913066066099",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1549116931280470047",
+   "t": "2026-09-14T17:57:37.618000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 651x Pétrole Raffiné pour 6510$ par Victor Sulivane. 3255$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 651,
+   "montant": 6510,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1549116663092482119",
+   "t": "2026-09-14T17:56:33.677000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 383x Pétrole Raffiné pour 3830$ par Frank Smite. 1915$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 383,
+   "montant": 3830,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1549114351355568211-0",
    "t": "2026-09-14T17:47:22.516000+00:00",
@@ -94677,54 +94709,6 @@
     "playername": "BreezyDeer8874",
     "playercharacter": "Adel Dulax",
     "playerid": "150053",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1548646962444632138-2",
-   "t": "2026-09-13T10:50:08.316000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 156x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1846.22, 6513.90, 16.73\ntargetPosition : -1845.91, 6514.70, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7572\nplayerDiscord : 554036471825301555\nplayerName : BreezyDeer8874\nplayerCharacter : Adel Dulax\nplayerId : 150053\nitemId : refinedoil",
-   "nom": "Adel Dulax",
-   "quantite": 156,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1846.22, 6513.90, 16.73",
-    "targetposition": "-1845.91, 6514.70, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7572",
-    "playerdiscord": "554036471825301555",
-    "playername": "BreezyDeer8874",
-    "playercharacter": "Adel Dulax",
-    "playerid": "150053",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1548646729878872116-0",
-   "t": "2026-09-13T10:49:12.868000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 94x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1846.26, 6514.07, 16.73\ntargetPosition : -1845.91, 6514.70, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7762\nplayerDiscord : 510842936053727242\nplayerName : SharpMouse3225\nplayerCharacter : Jojo Lappach\nplayerId : 111908\nitemId : refinedoil",
-   "nom": "Jojo Lappach",
-   "quantite": 94,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1846.26, 6514.07, 16.73",
-    "targetposition": "-1845.91, 6514.70, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7762",
-    "playerdiscord": "510842936053727242",
-    "playername": "SharpMouse3225",
-    "playercharacter": "Jojo Lappach",
-    "playerid": "111908",
     "itemid": "refinedoil"
    }
   }
