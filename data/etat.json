@@ -4079,7 +4079,11 @@
     "contrat": false,
     "recrut": "Thomas Boyer",
     "dernierService": "",
-    "flagOut": false
+    "flagOut": false,
+    "contratGen": {
+     "t": 1789488480108,
+     "par": "Thomas Boyer"
+    }
    },
    {
     "nom": "ya mount",
@@ -15764,14 +15768,6 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
-  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -15795,6 +15791,14 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T00:06:23.240Z"
+  },
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -27521,18 +27525,18 @@
   "postesV4": 1,
   "semaineDebut": "2026-09-14"
  },
- "_cid": "p7ozapii76s",
- "_maj": 1789488473953,
- "_rev": "0imicvexr31-mu2v8luj",
+ "_cid": "pd0bsf1enp",
+ "_maj": 1789488480109,
+ "_rev": "21xs96untrt-mu2v8nb6",
  "_majSec": {
   "fer": 1789486345135,
   "fact": 1789487951362,
   "users": 1789385597340,
   "weeks": 1789477366022,
-  "sheets": 1789487594679,
+  "sheets": 1789488480109,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
-  "journal": 1789487594698,
+  "journal": 1789488480109,
   "pending": 1789341106480,
   "prodDer": 1789396105174,
   "runners": 1789341106480,
@@ -27563,6 +27567,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1789488475972,
+   "u": "Thomas Boyer",
+   "a": "Contrat de travail généré : Corentin Baltre (Runner)"
+  },
   {
    "t": 1789487595645,
    "u": "Emma Collins",
@@ -29057,11 +29066,6 @@
    "t": 1788312004370,
    "u": "Diego Herrera",
    "a": "Rôles Discord : nouvelle ligne"
-  },
-  {
-   "t": 1788311991129,
-   "u": "Diego Herrera",
-   "a": "Rôles Discord : RH ← 1246581064219230250"
   }
  ],
  "prodDer": {
@@ -29432,7 +29436,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-15T16:08:02.203Z",
+  "maj": "2026-09-15T16:08:04.098Z",
   "semaine": 38,
   "totalBarils": 239723,
   "ca": 1198615,
