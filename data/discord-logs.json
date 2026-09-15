@@ -1,11 +1,32 @@
 {
- "maj": "2026-09-15T21:21:54.347460+00:00",
+ "maj": "2026-09-15T21:33:41.206090+00:00",
  "salon": "1245400913066066099",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1549531160504180737",
+   "t": "2026-09-15T21:23:37.561000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 5212\nplayerDiscord : 1323703478782132264\nplayerName : BoldOtter6314\nplayerCharacter : Amine Nasser\nplayerId : 356567\nvehiclePlate : WG4999VM\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Amine Nasser",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "5212",
+    "playerdiscord": "1323703478782132264",
+    "playername": "BoldOtter6314",
+    "playercharacter": "Amine Nasser",
+    "playerid": "356567",
+    "vehicleplate": "WG4999VM",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1549530407488327743",
    "t": "2026-09-15T21:20:38.028000+00:00",
@@ -94634,30 +94655,6 @@
     "playercharacter": "Morino Collins",
     "playerid": "245699",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1548827697260798035-0",
-   "t": "2026-09-13T22:48:18.854000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 20x Bidon d'essence du coffre de l'entreprise (Oil RoxWood)\nposition : -1840.63, 6524.08, 16.73\ntargetPosition : -1840.85, 6523.94, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 427\nplayerDiscord : 826526979204841482\nplayerName : Orion\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : weapon_petrolcan",
-   "nom": "Diego Herrera",
-   "quantite": 20,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1840.63, 6524.08, 16.73",
-    "targetposition": "-1840.85, 6523.94, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "427",
-    "playerdiscord": "826526979204841482",
-    "playername": "Orion",
-    "playercharacter": "Diego Herrera",
-    "playerid": "231487",
-    "itemid": "weapon_petrolcan"
    }
   }
  ]
