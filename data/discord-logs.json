@@ -1,11 +1,32 @@
 {
- "maj": "2026-09-15T07:52:58.140408+00:00",
+ "maj": "2026-09-15T08:03:00.065100+00:00",
  "salon": "1245400913066066099",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1549329275604303874",
+   "t": "2026-09-15T08:01:24.450000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 6884\nplayerDiscord : 423564334916960266\nplayerName : FunL[i]ve\nplayerCharacter : Helena Rhosé\nplayerId : 355128\nvehiclePlate : IL4818AV\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Helena Rhosé",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "6884",
+    "playerdiscord": "423564334916960266",
+    "playername": "FunL[i]ve",
+    "playercharacter": "Helena Rhosé",
+    "playerid": "355128",
+    "vehicleplate": "IL4818AV",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1549325492228988989",
    "t": "2026-09-15T07:46:22.423000+00:00",
@@ -94510,30 +94531,6 @@
     "playercharacter": "Emma Collins-rodriguez",
     "playerid": "227799",
     "itemid": "oil"
-   }
-  },
-  {
-   "id": "1548689244577337386-0",
-   "t": "2026-09-13T13:38:09.162000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 136x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1850.14, 6514.48, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7752\nplayerDiscord : 899270765227147265\nplayerName : doxryy\nplayerCharacter : Daniel Cooper\nplayerId : 379797\nitemId : refinedoil",
-   "nom": "Daniel Cooper",
-   "quantite": 136,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1850.14, 6514.48, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7752",
-    "playerdiscord": "899270765227147265",
-    "playername": "doxryy",
-    "playercharacter": "Daniel Cooper",
-    "playerid": "379797",
-    "itemid": "refinedoil"
    }
   }
  ]
