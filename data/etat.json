@@ -13843,18 +13843,19 @@
      {
       "ref": "CMD",
       "qte": 300,
-      "tva": 0.04,
+      "tva": 0,
+      "desc": "bidons d'essence ",
       "pu": 180,
       "ht": 54000,
-      "ttc": 56160,
-      "desc": "bidons d'essence "
+      "ttc": 54000
      }
     ],
     "offert": 0,
     "ht": 54000,
-    "ttc": 56160,
+    "ttc": 54000,
     "poids": 600,
-    "statut": "attente"
+    "statut": "attente",
+    "modifiee": 1789484260982
    },
    {
     "num": 253088,
@@ -27362,17 +27363,17 @@
   "semaineDebut": "2026-09-14"
  },
  "_cid": "j7ifljcn56l",
- "_maj": 1789484255030,
- "_rev": "k66x8jeql4-mu2sq2zl",
+ "_maj": 1789484260993,
+ "_rev": "c6d3i930rdd-mu2sqblz",
  "_majSec": {
   "fer": 1789393440819,
-  "fact": 1789484015509,
+  "fact": 1789484260982,
   "users": 1789385597340,
   "weeks": 1789477366022,
   "sheets": 1789484015509,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
-  "journal": 1789477366022,
+  "journal": 1789484260993,
   "pending": 1789341106480,
   "prodDer": 1789396105174,
   "runners": 1789341106480,
@@ -27403,6 +27404,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1789484269073,
+   "u": "Julio Collins",
+   "a": "Facture n°253089 modifiée — total 56 160 $ → 54 000 $"
+  },
   {
    "t": 1789477367392,
    "u": "Diego Herrera",
@@ -28897,11 +28903,6 @@
    "a": "Clôture de la semaine 35 — 370 374 barils · 595 196 $ de primes · promus : Jojo Lappach, Andrew Clark, Elliot Mayers, Sevan Vargas, Tommy Helfinger, Rico Garcia, Yuri Jing, Luca Morel, Joseph Larose, Calvin Praline, Tony Clark, Enzo Vargas, Johnatan Rodriguez, Xavier Collins, Eden Birds, Strya Ryuzen, Amine Nasser, Nills Truduk",
    "t": 1788130924763,
    "u": "Diego Herrera"
-  },
-  {
-   "a": "Absence supprimée : Tony Bellino (du 18/08/2026 au 23/08/2026)",
-   "t": 1788128892034,
-   "u": "Diego Herrera"
   }
  ],
  "prodDer": {
@@ -29272,7 +29273,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-15T14:57:38.721Z",
+  "maj": "2026-09-15T14:57:49.895Z",
   "semaine": 38,
   "totalBarils": 239723,
   "ca": 1198615,
