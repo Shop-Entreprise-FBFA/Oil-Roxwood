@@ -10715,6 +10715,27 @@
     "quantite": 140,
     "qui": "William Rodriguez-collins",
     "fact": 253090
+   },
+   {
+    "date": "2026-09-15",
+    "client": "Les Mugiwara",
+    "quantite": 67,
+    "qui": "Diego Herrera",
+    "fact": 253091
+   },
+   {
+    "date": "2026-09-15",
+    "client": "Les Mugiwara",
+    "quantite": 67,
+    "qui": "Julio Collins",
+    "fact": 253091
+   },
+   {
+    "date": "2026-09-15",
+    "client": "Les Mugiwara",
+    "quantite": 66,
+    "qui": "Laurent Roquel",
+    "fact": 253091
    }
   ],
   "collection": [
@@ -12190,7 +12211,7 @@
     "rib": "",
     "tel": "",
     "adresse": "Los Santos ",
-    "lastCmd": "2026-08-30"
+    "lastCmd": "2026-09-15"
    },
    {
     "nom": "Jamaïcain- Black- Corsairs",
@@ -13495,8 +13516,31 @@
     "prix": 120
    }
   ],
-  "compteur": 253091,
+  "compteur": 253092,
   "factures": [
+   {
+    "num": 253091,
+    "date": "2026-09-15",
+    "client": "Les Mugiwara",
+    "emetteur": "Diego Herrera, Julio Collins, Laurent Roquel",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 200,
+      "tva": 0.05,
+      "pu": 180,
+      "ht": 36000,
+      "ttc": 37800,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 36000,
+    "ttc": 37800,
+    "poids": 400,
+    "statut": "attente"
+   },
    {
     "num": 253090,
     "date": "2026-09-15",
@@ -27195,14 +27239,14 @@
   "semaineDebut": "2026-09-14"
  },
  "_cid": "hm7kne0y5sl",
- "_maj": 1789491313121,
- "_rev": "czqstcuzraf-mu2wyabs",
+ "_maj": 1789491381127,
+ "_rev": "hv56sz3apyj-mu2wys2n",
  "_majSec": {
   "fer": 1789489243000,
-  "fact": 1789487951362,
+  "fact": 1789491380994,
   "users": 1789385597340,
   "weeks": 1789477366022,
-  "sheets": 1789489395504,
+  "sheets": 1789491380994,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
   "journal": 1789489358064,
@@ -29105,13 +29149,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-15T16:55:59.944Z",
+  "maj": "2026-09-15T16:56:22.943Z",
   "semaine": 38,
   "totalBarils": 63106,
   "ca": 315530,
   "objectif": 375000,
   "effectif": 84,
-  "clientsServis": 77,
+  "clientsServis": 78,
   "top3": [
    {
     "nom": "Alex Turner",
