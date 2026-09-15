@@ -1,11 +1,51 @@
 {
- "maj": "2026-09-15T07:26:02.837785+00:00",
+ "maj": "2026-09-15T07:38:23.505036+00:00",
  "salon": "1245400913066066099",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1549322979668918303",
+   "t": "2026-09-15T07:36:23.382000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 640x Pétrole Raffiné pour 6400$ par Cristóbal Perrera. 3200$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 640,
+   "montant": 6400,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1549322729184825426",
+   "t": "2026-09-15T07:35:23.662000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\na retiré 2x Bidon d'essence du coffre de l'entreprise (Oil RoxWood)\nposition : -1850.28, 6503.24, 16.17\ntargetPosition : -1851.46, 6502.05, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3351\nplayerDiscord : 438358976141328404\nplayerName : JumpyCrab4855\nplayerCharacter : Thomas Boyer\nplayerId : 160149\nitemId : weapon_petrolcan",
+   "nom": "Thomas Boyer",
+   "quantite": 2,
+   "montant": null,
+   "type": "coffre_retrait",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1850.28, 6503.24, 16.17",
+    "targetposition": "-1851.46, 6502.05, 15.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "3351",
+    "playerdiscord": "438358976141328404",
+    "playername": "JumpyCrab4855",
+    "playercharacter": "Thomas Boyer",
+    "playerid": "160149",
+    "itemid": "weapon_petrolcan"
+   }
+  },
   {
    "id": "1549320208571703299",
    "t": "2026-09-15T07:25:22.701000+00:00",
@@ -94494,46 +94534,6 @@
     "playercharacter": "Ashley Cooper",
     "playerid": "342423",
     "itemid": "oil"
-   }
-  },
-  {
-   "id": "1548688515351445565",
-   "t": "2026-09-13T13:35:15.301000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 390x Pétrole Raffiné pour 3900$ par Keath Chop's. 1950$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 390,
-   "montant": 3900,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1548688256986652729-0",
-   "t": "2026-09-13T13:34:13.702000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 1x Tenue dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1842.75, 6521.31, 16.73\ntargetPosition : -1842.58, 6521.16, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 8207\nplayerDiscord : 1053366471574687844\nplayerName : SlowMouse3303\nplayerCharacter : Emma Collins-rodriguez\nplayerId : 227799\nitemId : tenue",
-   "nom": "Emma Collins-rodriguez",
-   "quantite": 1,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1842.75, 6521.31, 16.73",
-    "targetposition": "-1842.58, 6521.16, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "8207",
-    "playerdiscord": "1053366471574687844",
-    "playername": "SlowMouse3303",
-    "playercharacter": "Emma Collins-rodriguez",
-    "playerid": "227799",
-    "itemid": "tenue"
    }
   }
  ]
