@@ -4068,7 +4068,7 @@
  "sheets": {
   "rh": [
    {
-    "nom": "oiuhzag azohigf",
+    "nom": "ya mount",
     "grade": "Intérimaire",
     "tel": "5551203",
     "rib": "456123",
@@ -4079,7 +4079,7 @@
     "contrat": false,
     "recrut": "Diego Herrera",
     "dernierService": "",
-    "flagOut": true
+    "flagOut": false
    },
    {
     "nom": "Jake Smith",
@@ -27503,17 +27503,17 @@
   "semaineDebut": "2026-09-14"
  },
  "_cid": "sbfzpi7fdv",
- "_maj": 1789486851768,
- "_rev": "14iuf4k49ep-mu2uabg6",
+ "_maj": 1789486887965,
+ "_rev": "0i781znms2nv-mu2uahoy",
  "_majSec": {
   "fer": 1789486345135,
   "fact": 1789486334488,
   "users": 1789385597340,
   "weeks": 1789477366022,
-  "sheets": 1789485804812,
+  "sheets": 1789486884485,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
-  "journal": 1789485804812,
+  "journal": 1789486884485,
   "pending": 1789341106480,
   "prodDer": 1789396105174,
   "runners": 1789341106480,
@@ -27535,7 +27535,7 @@
   "_affFix1": 1789341106480,
   "produits": 1789391731576,
   "_prodFix1": 1789341106480,
-  "_recruesIgnore": 1789477366022,
+  "_recruesIgnore": 1789486887965,
   "ventesAlias": 1789341106480,
   "_ventesIgnore": 1789341106480,
   "_avertVus": 1789375217572,
@@ -27544,6 +27544,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1789486885795,
+   "u": "Diego Herrera",
+   "a": "Recrutements Discord : 1 fiche(s) créée(s), 0 case(s) complétée(s) — ya mount"
+  },
   {
    "t": 1789485805187,
    "u": "Laurent Roquel",
@@ -29038,11 +29043,6 @@
    "a": "Réinitialisation de la feuille « Tablette » (84 lignes)",
    "t": 1788130982013,
    "u": "Diego Herrera"
-  },
-  {
-   "a": "Réinitialisation de la feuille « Ventes de la semaine » (33 lignes)",
-   "t": 1788130929607,
-   "u": "Diego Herrera"
   }
  ],
  "prodDer": {
@@ -29413,12 +29413,12 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-15T15:41:22.422Z",
+  "maj": "2026-09-15T15:41:30.514Z",
   "semaine": 38,
   "totalBarils": 239723,
   "ca": 1198615,
   "objectif": 375000,
-  "effectif": 89,
+  "effectif": 90,
   "clientsServis": 77,
   "top3": [
    {
@@ -66363,7 +66363,8 @@
   "1789028277714",
   "1789476285329",
   "1789477173617",
-  "1789477199475"
+  "1789477199475",
+  "1789478557870"
  ],
  "_signeVus": [
   "1789477305650"
