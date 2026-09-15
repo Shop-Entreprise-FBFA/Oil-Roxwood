@@ -1,11 +1,67 @@
 {
- "maj": "2026-09-15T20:02:20.225655+00:00",
+ "maj": "2026-09-15T20:22:18.067157+00:00",
  "salon": "1245400913066066099",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1549515576081252567",
+   "t": "2026-09-15T20:21:41.945000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 152x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1843.13, 6519.22, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3892\nplayerDiscord : 1278121596112080958\nplayerName : Llbvr\nplayerCharacter : Ashley Cooper\nplayerId : 342423\nitemId : refinedoil",
+   "nom": "Ashley Cooper",
+   "quantite": 152,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1843.13, 6519.22, 16.73",
+    "targetposition": "-1843.83, 6518.10, 15.74",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "3892",
+    "playerdiscord": "1278121596112080958",
+    "playername": "Llbvr",
+    "playercharacter": "Ashley Cooper",
+    "playerid": "342423",
+    "itemid": "refinedoil"
+   }
+  },
+  {
+   "id": "1549511812410511492",
+   "t": "2026-09-15T20:06:44.616000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 748x Pétrole Raffiné pour 7480$ par Junior Clinton. 3740$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 748,
+   "montant": 7480,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1549511063366668419",
+   "t": "2026-09-15T20:03:46.030000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 326x Pétrole Raffiné pour 3260$ par Jamal King. 1630$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 326,
+   "montant": 3260,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1549509256955568240",
    "t": "2026-09-15T19:56:35.348000+00:00",
@@ -94588,78 +94644,6 @@
    "coffre": "entreprise (Oil RoxWood)",
    "champs": {
     "position": "-1846.48, 6514.44, 16.73",
-    "targetposition": "-1845.91, 6514.70, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "5028",
-    "playerdiscord": "1075144695111491594",
-    "playername": "Val.",
-    "playercharacter": "Alex Bren",
-    "playerid": "221626",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1548826451699175589-1",
-   "t": "2026-09-13T22:43:21.889000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 139x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1845.96, 6514.29, 16.73\ntargetPosition : -1845.91, 6514.70, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 5028\nplayerDiscord : 1075144695111491594\nplayerName : Val.\nplayerCharacter : Alex Bren\nplayerId : 221626\nitemId : refinedoil",
-   "nom": "Alex Bren",
-   "quantite": 139,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1845.96, 6514.29, 16.73",
-    "targetposition": "-1845.91, 6514.70, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "5028",
-    "playerdiscord": "1075144695111491594",
-    "playername": "Val.",
-    "playercharacter": "Alex Bren",
-    "playerid": "221626",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1548826451699175589-2",
-   "t": "2026-09-13T22:43:21.889000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 1x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1845.80, 6514.09, 16.73\ntargetPosition : -1845.91, 6514.70, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 5028\nplayerDiscord : 1075144695111491594\nplayerName : Val.\nplayerCharacter : Alex Bren\nplayerId : 221626\nitemId : refinedoil",
-   "nom": "Alex Bren",
-   "quantite": 1,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1845.80, 6514.09, 16.73",
-    "targetposition": "-1845.91, 6514.70, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "5028",
-    "playerdiscord": "1075144695111491594",
-    "playername": "Val.",
-    "playercharacter": "Alex Bren",
-    "playerid": "221626",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1548826451699175589-3",
-   "t": "2026-09-13T22:43:21.889000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 54x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1845.80, 6514.09, 16.73\ntargetPosition : -1845.91, 6514.70, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 5028\nplayerDiscord : 1075144695111491594\nplayerName : Val.\nplayerCharacter : Alex Bren\nplayerId : 221626\nitemId : refinedoil",
-   "nom": "Alex Bren",
-   "quantite": 54,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1845.80, 6514.09, 16.73",
     "targetposition": "-1845.91, 6514.70, 15.74",
     "jobid": "76",
     "jobname": "Oil RoxWood",
