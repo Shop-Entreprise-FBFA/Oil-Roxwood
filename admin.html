@@ -273,7 +273,7 @@ function load(){
    les contrats et les médias depuis la sortie de Supabase. Sans lui, mergeRemote
    ne reprenait JAMAIS ces tables du dépôt — le dernier qui enregistrait écrasait
    les lignes ajoutées par un autre admin, et toute écriture du bot était perdue. */
-const SEC_KEYS=['runners','weeks','sheets','fact','users','profils','pending','fer','_tables','settings','absences','primesExtra','quotasCom','quotasComHist','journal','bilanExtra','closeUndo','bilanForce','prodDer','imported','affiches','produits','_recruesIgnore','ventesAlias','_ventesIgnore','_qcFix1','_wkFix1','_permsFix1','_rolesFix77','_affFix1','_prodFix1','_avertVus'];
+const SEC_KEYS=['runners','weeks','sheets','fact','users','profils','pending','fer','_tables','settings','absences','primesExtra','quotasCom','quotasComHist','journal','bilanExtra','closeUndo','bilanForce','prodDer','imported','affiches','produits','_recruesIgnore','ventesAlias','_ventesIgnore','_qcFix1','_wkFix1','_permsFix1','_rolesFix77','_affFix1','_prodFix1','_avertVus','_signeVus'];
 /* ---- heure de référence : celle du serveur Supabase, pas celle du PC ----
    Un utilisateur avec une horloge décalée datait ses modifs « dans le futur » et écrasait tout. */
 let CLOCK_SKEW=0;
@@ -343,7 +343,7 @@ function save(){
    écriture du bot ferait donc disparaître la table des coffres de sa copie —
    puis l'effacerait du dépôt à son prochain envoi. Ces tables-là n'ont qu'un
    auteur, il n'y a rien à arbitrer : on les reprend toujours du dépôt. */
-const TABLES_BOT=['oilroxwood_coffres','oilroxwood_recrues','oilroxwood_absences','oilroxwood_avertissements'];
+const TABLES_BOT=['oilroxwood_coffres','oilroxwood_recrues','oilroxwood_absences','oilroxwood_avertissements','oilroxwood_contrats_signes'];
 /* `profils` a un auteur par fiche (chacun la sienne), mais se fusionnait comme
    les autres sections : en bloc, la plus récente gagne. Deux personnes qui
    enregistrent leur profil à quelques secondes d'écart depuis deux navigateurs
@@ -1196,7 +1196,7 @@ function logout(){
 }
 
 /* ---- Canari de version : prévient les onglets restés sur une vieille version ---- */
-const APP_VERSION='C-102';
+const APP_VERSION='C-103';
 /* Le bandeau ne doit dire qu'une chose : « une version plus récente existe ».
    Il comparait deux chaînes avec !==, donc il s'allumait aussi dans l'autre
    sens — quand la page ouverte était PLUS récente que version.json, ce qui
@@ -2276,6 +2276,32 @@ function importerAvertissements(){
   return {ajoutes,noms:[...new Set(noms)],details};
 }
 
+/* ---- Signature du contrat de travail (bouton Discord) → case RH ----
+   Le bouton « Signer le contrat » (posté par le bot juste après la
+   validation finale d'une candidature) dépose une ligne dans
+   `_tables.oilroxwood_contrats_signes` — même mécanique que les recrues,
+   absences et avertissements. On coche simplement la case existante
+   « Contrat signé » (un booléen, comme avant : plus besoin que le RH le
+   fasse à la main en se fiant à une réaction Discord). */
+function importerSignatures(){
+  const file=((S._tables&&S._tables.oilroxwood_contrats_signes)||[]);
+  if(!file.length||!S.sheets||!S.sheets.rh) return {ajoutes:0,noms:[]};
+  const rh=S.sheets.rh;
+  const vus=new Set((S._signeVus||[]).map(String));
+  let ajoutes=0; const noms=[];
+  file.forEach(a=>{
+    const id=String(a.id||''); if(!id||vus.has(id)) return;
+    vus.add(id);
+    const did=String(a.discord||'').trim(); if(!did) return;
+    const existe=rh.find(x=>String(x.discord||'').trim()===did);
+    if(!existe||existe.contrat===true) return;   // pas de fiche, ou déjà coché : rien à faire
+    existe.contrat=true;
+    ajoutes++; noms.push(existe.nom);
+  });
+  S._signeVus=[...vus].slice(-500);          // ne grossit pas indéfiniment
+  return {ajoutes,noms:[...new Set(noms)]};
+}
+
 /* ---- Renommer quelqu'un PARTOUT ----
 
    Le dashboard identifie les gens par leur nom, dans une douzaine d'endroits.
@@ -2881,6 +2907,13 @@ async function feuilles(){
       jlog(`Avertissements Discord : ${av.ajoutes} — ${av.details.join(' · ')}`);
       save(); sbPushNow();
       toast(`⚠️ ${av.ajoutes} avertissement(s) reçu(s) depuis Discord — ${qui}`);
+    }
+    const sig=importerSignatures();
+    if(sig.ajoutes){
+      const qui=sig.noms.slice(0,3).join(', ')+(sig.noms.length>3?'…':'');
+      jlog(`Contrat(s) signé(s) via Discord : ${qui}`);
+      save(); sbPushNow();
+      toast(`✍️ ${sig.ajoutes} contrat(s) signé(s) depuis Discord — ${qui}`);
     }
   }
   /* Les ventes relevées par le bot entrent à l'ouverture de la feuille — c'est
@@ -4750,6 +4783,10 @@ function ferDel(id){
 
 /* ================== MISES À JOUR (changelog) ================== */
 const CHANGELOG=[
+ {v:'C-103',d:'15/09/2026',t:'Contrat de travail : envoyé et signé sans repasser par le RH',items:[
+   ['✍️','De la validation de l\'entretien à la case cochée, sans manipulation','La chaîne était entièrement manuelle : générer le PDF depuis la fiche RH, le poster à la main avec l\'affiche de règlement, attendre une réaction et « Lu et approuvé », puis cocher soi-même la case sur le site. Valider l\'entretien final déclenche maintenant tout d\'un coup — contrat généré depuis le même gabarit que le bouton 📄, affiche postée, bouton de signature réservé à la personne concernée.'],
+   ['🔧','Un clic sur le bouton, une case cochée','Le bouton reste utilisable même si le bot redémarre entre l\'envoi du contrat et la signature. En cas d\'échec de la génération automatique, le bouton 📄 de la fiche RH reste disponible en secours.'],
+ ]},
  {v:'C-102',d:'14/09/2026',t:'/avertissement remplit la fiche RH',items:[
    ['⚠️','Les avertissements Discord n\'atteignaient jamais la fiche RH','/avertissement enregistrait tout dans la base du bot — consultable sur Discord via /mes-stats — mais rien ne remontait au dashboard. Le compteur « Avert. » de la fiche RH restait donc à ce que le RH y tapait à la main, sans lien avec ce qui se passait vraiment sur Discord.'],
    ['🔧','Même mécanique que les recrues et les absences','Le bot dépose l\'avertissement dans une file à son nom ; la feuille RH la vide à l\'ouverture, incrémente le compteur existant (sans changer ce qu\'il veut dire) et garde le motif dans le journal.'],

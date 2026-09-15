@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Contrat de travail — Oil Roxwood</title>
+<!--
+  PAGE-GABARIT POUR LE BOT (validation finale d'une candidature, commande
+  interne — pas une commande Discord visible).
+  Le bot lit la fiche RH qu'il vient de créer, l'encode en base64 et ouvre :
+      contrat.html#<base64 de {"nom":..,"idU":..,"tel":..,"arrivee":"AAAA-MM-JJ","grade":..}>
+  puis capture la page en image (Playwright) et la joint au message Discord,
+  à côté du bouton de signature. Même principe que facture.html — et le même
+  calcul de mise en page que le bouton 📄 de la fiche RH dans admin.html
+  (contratGen) : les deux doivent produire un contrat identique.
+-->
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#fff}
+  .vide{max-width:560px;margin:80px auto;font-family:system-ui,sans-serif;font-size:.95rem;color:#444;line-height:1.8;padding:0 20px}
+</style>
+</head>
+<body>
+<div id="zone"><div class="vide"><b>Oil Roxwood — gabarit de contrat.</b><br>
+Cette page sert au bot Discord à générer le contrat de travail à la validation d'une candidature.
+Elle n'affiche rien sans données.</div></div>
+<script>
+(function(){
+  const esc=x=>String(x==null?'':x).replace(/[<>&"]/g,c=>({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c]));
+
+  let brut=location.hash.slice(1);
+  if(!brut) return;
+  try{
+    // accepte base64 standard ET base64url ; décodage UTF-8 propre
+    brut=brut.replace(/-/g,'+').replace(/_/g,'/');
+    while(brut.length%4) brut+='=';
+    const octets=Uint8Array.from(atob(brut),c=>c.charCodeAt(0));
+    const r=JSON.parse(new TextDecoder('utf-8').decode(octets));
+
+    // ---- même dérivation que contratGen() dans admin.html : à garder identique ----
+    const full=String(r.nom||'').trim();
+    const parts=full.split(/\s+/), prenom=parts[0]||'', nomF=parts.slice(1).join(' ')||'';
+    const gr=String(r.grade||'').trim();
+    const poste=/^(stagiaire|int[ée]rimaire|raffineur)/i.test(gr)?'Runner':(gr||'Runner');
+    const d=String(r.arrivee||'').match(/^(\d{4})-(\d{2})-(\d{2})/);
+    const jo=d?d[3]:'', mo=d?d[2]:'', an=d?d[1]:'';
+    const posteSize=Math.max(8,Math.min(14,Math.floor(77/(Math.max(1,poste.length)*0.62))));
+    const sigSize=Math.max(16,Math.min(40,Math.floor(274/(Math.max(1,full.length)*0.52))));
+    const T=(x,y,txt,size,extra)=>`<span style="position:absolute;left:${x}px;top:${y-2}px;font-size:${size}px;line-height:1;color:#282624;font-family:'EB Garamond',Georgia,serif;white-space:nowrap;${extra||''}">${esc(txt)}</span>`;
+    const C=(x1,x2,y,txt,size)=>`<span style="position:absolute;left:${x1}px;top:${y-2}px;width:${x2-x1}px;text-align:center;font-size:${size}px;line-height:1;font-weight:700;color:#282624;font-family:'EB Garamond',Georgia,serif">${esc(txt)}</span>`;
+
+    document.title='Contrat de travail — '+full;
+    document.getElementById('zone').innerHTML=`<div id="pret" style="position:relative;width:793px;height:1121px">
+    <img src="assets/contrat-template.png" style="position:absolute;inset:0;width:793px;height:1121px" onerror="this.style.display='none'">
+    ${T(112,402,nomF||prenom,19)}
+    ${T(141,427,prenom,19)}
+    ${T(263,452,String(r.idU||'').trim(),19)}
+    ${T(222,477,r.tel||'',19)}
+    ${C(422,457,597,jo,14)}${C(464,490,597,mo,14)}${C(496,539,597,an,14)}
+    ${T(650,597,poste,posteSize,'font-weight:700')}
+    <span style="position:absolute;left:453px;top:998px;width:274px;height:77px;display:flex;align-items:center;justify-content:center;font-family:'Dancing Script',cursive;font-weight:700;font-size:${sigSize}px;color:#141E46">${esc(full)}</span>
+    </div>`;
+  }catch(e){
+    document.getElementById('zone').innerHTML='<div class="vide" id="erreur"><b>Données illisibles.</b><br>'+esc(e.message)+'</div>';
+  }
+})();
+</script>
+</body>
+</html>
