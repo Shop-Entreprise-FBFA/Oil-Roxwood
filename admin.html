@@ -1196,7 +1196,7 @@ function logout(){
 }
 
 /* ---- Canari de version : prévient les onglets restés sur une vieille version ---- */
-const APP_VERSION='C-103';
+const APP_VERSION='C-104';
 /* Le bandeau ne doit dire qu'une chose : « une version plus récente existe ».
    Il comparait deux chaînes avec !==, donc il s'allumait aussi dans l'autre
    sens — quand la page ouverte était PLUS récente que version.json, ce qui
@@ -2150,6 +2150,13 @@ function importerVentes(){
 
   // 1. les factures de la semaine de travail — BIDONS SEULEMENT
   let ecartees=0;
+  /* saveFact() (addVente) a déjà pu ajouter les lignes de cette facture à
+     l'enregistrement — une par émetteur, quantité répartie, taguée `fact`
+     (pas `src`). Sans ce test, une facture à plusieurs émetteurs se
+     retrouvait comptée deux fois : la comparaison par quantité totale
+     (dejaFrappe) ne matche jamais des lignes qui ne portent chacune qu'une
+     part de la quantité. */
+  const dejaFact=new Set(feuille.filter(x=>x.fact!=null).map(x=>String(x.fact)));
   ((S.fact&&S.fact.factures)||[]).forEach(f=>{
     const date=String(f.date||'').slice(0,10);
     if(!/^\d{4}-\d{2}-\d{2}$/.test(date)||date<lundi) return;
@@ -2158,6 +2165,7 @@ function importerVentes(){
     ecartees+=autres;
     qte=Math.round(qte);
     if(qte<=0) return;
+    if(dejaFact.has(String(f.num))) return;
     poser('f'+f.num, date, f.client, qte, String(f.emetteur||'').trim());
   });
 
@@ -4783,6 +4791,10 @@ function ferDel(id){
 
 /* ================== MISES À JOUR (changelog) ================== */
 const CHANGELOG=[
+ {v:'C-104',d:'15/09/2026',t:'Ventes de la semaine : factures à plusieurs émetteurs comptées deux fois',items:[
+   ['🐛','Une facture partagée entre plusieurs personnes se dupliquait','À l\'enregistrement, la facture ajoutait déjà une ligne par émetteur (quantité répartie) à « Ventes de la semaine ». Le rapprochement automatique qui relit les factures ne reconnaissait ces lignes que si une seule personne était émettrice ; à plusieurs, il ne retrouvait pas son compte et rajoutait la facture entière en plus.'],
+   ['🔧','Le rapprochement se fie maintenant au numéro de facture','Une facture déjà présente dans la feuille (peu importe comment sa quantité a été répartie) n\'est plus jamais réimportée. Les doublons déjà créés avant ce correctif restent à supprimer à la main dans la feuille.'],
+ ]},
  {v:'C-103',d:'15/09/2026',t:'Contrat de travail : envoyé et signé sans repasser par le RH',items:[
    ['✍️','De la validation de l\'entretien à la case cochée, sans manipulation','La chaîne était entièrement manuelle : générer le PDF depuis la fiche RH, le poster à la main avec l\'affiche de règlement, attendre une réaction et « Lu et approuvé », puis cocher soi-même la case sur le site. Valider l\'entretien final déclenche maintenant tout d\'un coup — contrat généré depuis le même gabarit que le bouton 📄, affiche postée, bouton de signature réservé à la personne concernée.'],
    ['🔧','Un clic sur le bouton, une case cochée','Le bouton reste utilisable même si le bot redémarre entre l\'envoi du contrat et la signature. En cas d\'échec de la génération automatique, le bouton 📄 de la fiche RH reste disponible en secours.'],
