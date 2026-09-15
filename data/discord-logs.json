@@ -1,11 +1,27 @@
 {
- "maj": "2026-09-15T21:47:04.220159+00:00",
+ "maj": "2026-09-15T22:02:16.859511+00:00",
  "salon": "1245400913066066099",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1549537462848721040",
+   "t": "2026-09-15T21:48:40.157000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 232x Pétrole Raffiné pour 2320$ par Alex Bren. 1160$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 232,
+   "montant": 2320,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1549536240582525141",
    "t": "2026-09-15T21:43:48.746000+00:00",
@@ -94603,30 +94619,6 @@
   },
   {
    "id": "1548828205291540539-0",
-   "t": "2026-09-13T22:50:19.978000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 1x Carte de visite dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1848.37, 6499.48, 16.29\ntargetPosition : -1849.11, 6498.65, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 427\nplayerDiscord : 826526979204841482\nplayerName : Orion\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : businessCard",
-   "nom": "Diego Herrera",
-   "quantite": 1,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1848.37, 6499.48, 16.29",
-    "targetposition": "-1849.11, 6498.65, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "427",
-    "playerdiscord": "826526979204841482",
-    "playername": "Orion",
-    "playercharacter": "Diego Herrera",
-    "playerid": "231487",
-    "itemid": "businessCard"
-   }
-  },
-  {
-   "id": "1548828205291540539-1",
    "t": "2026-09-13T22:50:19.978000+00:00",
    "auteur": "Logs - Coffre",
    "texte": "Coffre\ndépot de 1x Carte de visite dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1848.37, 6499.48, 16.29\ntargetPosition : -1849.11, 6498.65, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 427\nplayerDiscord : 826526979204841482\nplayerName : Orion\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : businessCard",
