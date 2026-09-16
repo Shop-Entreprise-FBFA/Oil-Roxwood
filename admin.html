@@ -96,6 +96,7 @@ window.ROXWOOD_CFG = {
     <button class="nav-item" data-view="frh">🗂️ <span class="txt">Fiches RH</span></button>
     <button class="nav-item" data-view="effectif">👥 <span class="txt">Effectif</span></button>
     <button class="nav-item" data-view="fblacklist">⛔ <span class="txt">Blacklist</span></button>
+    <button class="nav-item" data-view="integration">🎓 <span class="txt">Intégration</span></button>
     <div class="nav-sec" data-sec="commerce" tabindex="0" role="button" aria-expanded="true" onclick="navToggle('commerce')" onkeydown="navSecKey(event,'commerce')">Commerce <span class="chev">▾</span></div>
     <button class="nav-item" data-view="factures">🧾 <span class="txt">Factures</span></button>
     <button class="nav-item" data-view="relances">📞 <span class="txt">Relances</span></button>
@@ -849,7 +850,7 @@ const PERMS={
   /* L'ORDRE de cette liste est celui des lignes dans la grille des permissions.
      Il suit le menu, pôle par pôle, pour qu'on règle les droits en lisant la
      même chose des deux côtés. */
-  direction:['frh','effectif','fblacklist',
+  direction:['frh','effectif','fblacklist','integration',
              'factures','relances','fventes','quotascom','prodder',
              'ftablette','fcompta','frecues','bilan','cloture','semaine',
              'overview','felig','historique','reunions',
@@ -859,7 +860,7 @@ const PERMS={
 
   // RH : les personnes et ce qu'on leur doit. Ni compta, ni facturation.
   //      La semaine reste ouverte : c'est là qu'ils lisent les salaires à payer.
-  rh:       ['overview','effectif','semaine','historique','reunions','frh','fblacklist','felig','ftablette','moi','profil','quotashist','agenda','affiches','maj','dlogs'],
+  rh:       ['overview','effectif','semaine','historique','reunions','frh','fblacklist','integration','felig','ftablette','moi','profil','quotashist','agenda','affiches','maj','dlogs'],
 
   // Comptable : l'argent de l'entreprise. Pas les dossiers du personnel.
   comptable:['overview','reunions','factures','relances','bilan','fcompta','frecues','moi','profil','quotashist','agenda','affiches','maj'],
@@ -867,7 +868,7 @@ const PERMS={
   // Assistant de direction : le bras droit. Tout ce que voit la Direction, sauf
   //      les deux gestes qui n'appartiennent qu'au patron : clôturer la semaine
   //      (irréversible, elle fige les salaires) et changer les Paramètres.
-  assistdir:['overview','effectif','semaine','historique','reunions','ftablette','felig','fventes','frh','fblacklist','fcompta','factures','relances','bilan','prodder','quotascom','frecues','moi','produits','profil','quotashist','agenda','affiches','maj','dlogs','journal'],
+  assistdir:['overview','effectif','semaine','historique','reunions','ftablette','felig','fventes','frh','fblacklist','integration','fcompta','factures','relances','bilan','prodder','quotascom','frecues','moi','produits','profil','quotashist','agenda','affiches','maj','dlogs','journal'],
 
   // Commercial : le commerce, rien d'autre.
   commercial:['overview','reunions','fventes','factures','relances','quotascom','prodder','moi','produits','profil','quotashist','agenda','affiches','maj'],
@@ -1196,7 +1197,7 @@ function logout(){
 }
 
 /* ---- Canari de version : prévient les onglets restés sur une vieille version ---- */
-const APP_VERSION='C-104';
+const APP_VERSION='C-105';
 /* Le bandeau ne doit dire qu'une chose : « une version plus récente existe ».
    Il comparait deux chaînes avec !==, donc il s'allumait aussi dans l'autre
    sens — quand la page ouverte était PLUS récente que version.json, ce qui
@@ -1537,6 +1538,7 @@ document.querySelectorAll('.nav-item[data-view]').forEach(b=>b.onclick=()=>show(
     historique:'<path d="M3 20h18"/><path d="M5 20v-6h3v6M10.5 20V9h3v11M16 20v-9h3v9"/>',
     cloture:'<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18M9 15l2 2 4-4"/>',
     effectif:'<circle cx="9" cy="8" r="3.2"/><path d="M3.5 20c0-3 2.5-5 5.5-5s5.5 2 5.5 5"/><circle cx="17" cy="9" r="2.5"/><path d="M16 15.5c2.8.2 4.5 2 4.5 4.5"/>',
+    integration:'<path d="M12 3L2 8l10 5 10-5z"/><path d="M6 10.5v5c0 1.4 2.7 3 6 3s6-1.6 6-3v-5"/><path d="M22 8v7"/>',
     feuilles:'<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11M15 9v11"/>',
     factures:'<path d="M6 3h12v18l-2-1.5L14 21l-2-1.5L10 21l-2-1.5L6 21z"/><path d="M9 8h6M9 12h6"/>',
     relances:'<path d="M5 4h3l2 5-2.5 1.5a12 12 0 0 0 6 6L15 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/>',
@@ -1560,7 +1562,7 @@ document.querySelectorAll('.nav-item[data-view]').forEach(b=>b.onclick=()=>show(
   });
 })();
 /* ---- langue de l'interface (v1 : navigation & sections) ---- */
-const I18N_EN={"Vue d'ensemble":'Overview','Semaine & Primes':'Week & Bonuses','Historique':'History','Clôture du lundi':'Monday closing','Effectif':'Workforce','Runs':'Runs','Feuilles':'Sheets','Tablette':'Tablet','Éligibilité':'Eligibility','Ventes de la semaine':'Weekly sales','Fiches RH':'HR records','Blacklist':'Blacklist','Dépenses & retraits':'Expenses & withdrawals','Ancienneté RH':'HR seniority',"Demandes d'accès":'Access requests','Factures':'Invoices','Relances':'Follow-ups','Bilan compta':'Accounting','Produits dérivés':'Merchandise','Quotas commerciaux':'Sales quotas','Achats Fer':'Iron purchases','Factures reçues':'Received invoices','Ma semaine':'My week','Quotas 3 semaines':'Quotas (3 weeks)','Ma to-do':'My to-do','Mon agenda':'My agenda','Suggestions / Bugs':'Suggestions / Bugs','Mises à jour':'Updates','Logs Discord':'Discord logs','Logs en direct':'Live logs','Journal':'Activity log','Paramètres':'Settings','TV du dépôt':'Depot TV','Retour au site':'Back to site','Déconnexion':'Log out','Pilotage':'Steering','Gestion':'Management','Commerce':'Sales','Compta':'Accounting','Quotas':'Quotas','Ressources humaines':'Human resources','Responsable Runner':'Runner manager','Affiches':'Posters','Comptes-rendus':'Reports','Mon profil':'My profile','Quotas & fer':'Quotas & iron','Perso':'Personal','Système':'System','Accès rapides':'Quick access'};
+const I18N_EN={"Vue d'ensemble":'Overview','Semaine & Primes':'Week & Bonuses','Historique':'History','Clôture du lundi':'Monday closing','Effectif':'Workforce','Runs':'Runs','Feuilles':'Sheets','Tablette':'Tablet','Éligibilité':'Eligibility','Ventes de la semaine':'Weekly sales','Fiches RH':'HR records','Blacklist':'Blacklist','Intégration':'Onboarding','Dépenses & retraits':'Expenses & withdrawals','Ancienneté RH':'HR seniority',"Demandes d'accès":'Access requests','Factures':'Invoices','Relances':'Follow-ups','Bilan compta':'Accounting','Produits dérivés':'Merchandise','Quotas commerciaux':'Sales quotas','Achats Fer':'Iron purchases','Factures reçues':'Received invoices','Ma semaine':'My week','Quotas 3 semaines':'Quotas (3 weeks)','Ma to-do':'My to-do','Mon agenda':'My agenda','Suggestions / Bugs':'Suggestions / Bugs','Mises à jour':'Updates','Logs Discord':'Discord logs','Logs en direct':'Live logs','Journal':'Activity log','Paramètres':'Settings','TV du dépôt':'Depot TV','Retour au site':'Back to site','Déconnexion':'Log out','Pilotage':'Steering','Gestion':'Management','Commerce':'Sales','Compta':'Accounting','Quotas':'Quotas','Ressources humaines':'Human resources','Responsable Runner':'Runner manager','Affiches':'Posters','Comptes-rendus':'Reports','Mon profil':'My profile','Quotas & fer':'Quotas & iron','Perso':'Personal','Système':'System','Accès rapides':'Quick access'};
 function applyLang(){
   const en=localStorage.getItem('orx_lang')==='en';
   document.querySelectorAll('.nav-item .txt').forEach(e=>{
@@ -1624,7 +1626,7 @@ function show(v){
   VIEW=v;
   document.querySelectorAll('.nav-item[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===v));
   destroyCharts();
-  ({overview,effectif,semaine,historique,cloture,reunions,ftablette,felig,fventes,frh,fblacklist,fcompta,factures,relances,bilan,prodder,quotascom,frecues,moi,profil,quotashist,agenda,affiches,produits,maj,dlogs,journal,params})[v]();
+  ({overview,effectif,semaine,historique,cloture,reunions,ftablette,felig,fventes,frh,fblacklist,integration,fcompta,factures,relances,bilan,prodder,quotascom,frecues,moi,profil,quotashist,agenda,affiches,produits,maj,dlogs,journal,params})[v]();
   try{ nfRefresh(); applyRO(); }catch(e){}
   restaureEcran(repere);
 }
@@ -2826,6 +2828,23 @@ function felig(){ return ouvrirFeuille('eligibilite'); }
 function fventes(){ return ouvrirFeuille('ventesSem'); }
 function frh(){ return ouvrirFeuille('rh'); }
 function fblacklist(){ return ouvrirFeuille('blacklist'); }
+/* Le guide d'intégration vivait sur un lien externe (artefact Claude) — plus
+   pratique à relire pour l'écrire, mais externe au site, donc invisible pour
+   qui n'a pas le lien et hors de la synchro RH. Il est copié tel quel dans
+   integration.html (page autonome, comme facture.html/contrat.html) et
+   embarqué ici : plus de lien externe à distribuer, la page vit sur le site. */
+function integration(){
+  $('#main').innerHTML=`
+  <div class="topbar">
+    <div><h2>🎓 Intégration</h2><div class="sub">Guide d'intégration remis aux nouvelles recrues</div></div>
+    <div style="display:flex;gap:10px;align-items:center">
+      <a class="btn" href="integration.html" target="_blank" rel="noopener">↗ Plein écran</a>
+    </div>
+  </div>
+  <div class="panel" style="padding:0;overflow:hidden">
+    <iframe src="integration.html" title="Guide d'intégration Oil Roxwood" style="display:block;width:100%;height:calc(100vh - 190px);min-height:520px;border:0"></iframe>
+  </div>`;
+}
 function fcompta(){ return ouvrirFeuille('compta'); }
 
 let curSheet='tablette', sheetSearch='', sheetFull=false;
@@ -4791,6 +4810,10 @@ function ferDel(id){
 
 /* ================== MISES À JOUR (changelog) ================== */
 const CHANGELOG=[
+ {v:'C-105',d:'16/09/2026',t:'RH → Intégration : le guide d\'accueil est directement sur le site',items:[
+   ['✍️','Le guide d\'intégration vivait sur un lien externe','Utile pour l\'écrire, mais un lien externe ne se retrouve pas dans le menu, se perd facilement, et personne d\'autre que celui qui l\'a reçu ne peut le consulter depuis le dashboard.'],
+   ['🔧','Nouvelle rubrique RH → Intégration','Le guide est copié sur le site (integration.html) et s\'ouvre directement dans le dashboard, comme n\'importe quelle autre rubrique — plus de lien à retrouver ni à partager.'],
+ ]},
  {v:'C-104',d:'15/09/2026',t:'Ventes de la semaine : factures à plusieurs émetteurs comptées deux fois',items:[
    ['🐛','Une facture partagée entre plusieurs personnes se dupliquait','À l\'enregistrement, la facture ajoutait déjà une ligne par émetteur (quantité répartie) à « Ventes de la semaine ». Le rapprochement automatique qui relit les factures ne reconnaissait ces lignes que si une seule personne était émettrice ; à plusieurs, il ne retrouvait pas son compte et rajoutait la facture entière en plus.'],
    ['🔧','Le rapprochement se fie maintenant au numéro de facture','Une facture déjà présente dans la feuille (peu importe comment sa quantité a été répartie) n\'est plus jamais réimportée. Les doublons déjà créés avant ce correctif restent à supprimer à la main dans la feuille.'],
