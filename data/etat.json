@@ -27299,6 +27299,7 @@
    "assistdir": [
     "effectif",
     "fblacklist",
+    "integration",
     "factures",
     "prodder",
     "ftablette",
@@ -27402,8 +27403,8 @@
   "semaineDebut": "2026-09-14"
  },
  "_cid": "99gvuf6xbgv",
- "_maj": 1789567302297,
- "_rev": "fyf8lkw1x54-mu4661iv",
+ "_maj": 1789567303602,
+ "_rev": "m520jimi1on-mu4666gq",
  "_majSec": {
   "fer": 1789534470762,
   "fact": 1789561602433,
@@ -27412,13 +27413,13 @@
   "sheets": 1789566948382,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
-  "journal": 1789567302297,
+  "journal": 1789567303602,
   "pending": 1789341106480,
   "prodDer": 1789495343162,
   "runners": 1789489395535,
   "absences": 1789559389572,
   "imported": 1789341106480,
-  "settings": 1789567302297,
+  "settings": 1789567303602,
   "closeUndo": 1789341106480,
   "quotasCom": 1789564901151,
   "bilanExtra": 1789341106480,
@@ -27443,6 +27444,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1789567304934,
+   "u": "Diego Herrera",
+   "a": "Permissions : Assistant de direction · « integration » → accès complet ✓"
+  },
   {
    "t": 1789567303629,
    "u": "Diego Herrera",
@@ -28937,11 +28943,6 @@
    "t": 1788484536140,
    "u": "Diego Herrera",
    "a": "Recrutements Discord : 0 fiche(s) créée(s) · des cases vides complétées"
-  },
-  {
-   "t": 1788483963492,
-   "u": "Diego Herrera",
-   "a": "Recrutements Discord : 0 fiche(s) créée(s) · des cases vides complétées"
   }
  ],
  "prodDer": {
@@ -29335,7 +29336,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-16T14:01:44.503Z",
+  "maj": "2026-09-16T14:01:50.906Z",
   "semaine": 38,
   "totalBarils": 63106,
   "ca": 315530,
