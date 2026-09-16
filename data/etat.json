@@ -5318,7 +5318,7 @@
     "arrivee": "2026-09-16",
     "discord": "106428864942592000",
     "avert": "",
-    "contrat": false,
+    "contrat": true,
     "recrut": "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿",
     "dernierService": "",
     "flagOut": false
@@ -27440,18 +27440,18 @@
   "postesV4": 1,
   "semaineDebut": "2026-09-14"
  },
- "_cid": "99gvuf6xbgv",
- "_maj": 1789574828705,
- "_rev": "pn9ub6l9r28-mu4anrd4",
+ "_cid": "988r4y3y75m",
+ "_maj": 1789574856497,
+ "_rev": "ei1w3m0dia-mu4anxn2",
  "_majSec": {
   "fer": 1789569954398,
   "fact": 1789561602433,
   "users": 1789560928365,
   "weeks": 1789477366022,
-  "sheets": 1789574099154,
+  "sheets": 1789574856497,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
-  "journal": 1789570022724,
+  "journal": 1789574856497,
   "pending": 1789341106480,
   "prodDer": 1789495343162,
   "runners": 1789489395535,
@@ -27465,7 +27465,7 @@
   "primesExtra": 1789341106480,
   "quotasComHist": 1789341106480,
   "profils": 1789559236417,
-  "_tables": 1789574828705,
+  "_tables": 1789574853529,
   "_permsFix1": 1789341106480,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1789341106480,
@@ -27477,11 +27477,16 @@
   "ventesAlias": 1789341106480,
   "_ventesIgnore": 1789341106480,
   "_avertVus": 1789382976850,
-  "_signeVus": 1789566948382
+  "_signeVus": 1789574856497
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1789574856659,
+   "u": "Diego Herrera",
+   "a": "Contrat(s) signé(s) via Discord : Ragnar Gomez"
+  },
   {
    "t": 1789570012777,
    "u": "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿",
@@ -28976,11 +28981,6 @@
    "t": 1788485074430,
    "u": "Diego Herrera",
    "a": "Permissions : RH · « fventes » → accès complet ✓"
-  },
-  {
-   "t": 1788485074033,
-   "u": "Diego Herrera",
-   "a": "Permissions : RH · « felig » → accès complet ✓"
   }
  ],
  "prodDer": {
@@ -29374,7 +29374,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-16T16:07:29.608Z",
+  "maj": "2026-09-16T16:07:37.742Z",
   "semaine": 38,
   "totalBarils": 63106,
   "ca": 315530,
@@ -71281,6 +71281,13 @@
     "role": "rh",
     "vu": "2026-09-16T16:07:08.705Z",
     "id": 1789574822147
+   },
+   {
+    "uid": "826526979204841482",
+    "nom": "Diego Herrera",
+    "role": "direction",
+    "vu": "2026-09-16T16:07:33.376Z",
+    "id": 1789574854206
    }
   ],
   "oilroxwood_demandes": [],
@@ -72242,6 +72249,7 @@
  ],
  "_signeVus": [
   "1789477305650",
-  "1789559968921"
+  "1789559968921",
+  "1789572624314"
  ]
 }
