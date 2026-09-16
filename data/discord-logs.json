@@ -1,11 +1,27 @@
 {
- "maj": "2026-09-16T03:50:07.955011+00:00",
+ "maj": "2026-09-16T04:02:15.615084+00:00",
  "salon": "1245400913066066099",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1549630798838243349",
+   "t": "2026-09-16T03:59:33.191000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 648x Pétrole Raffiné pour 6480$ par Frank Smite. 3240$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 648,
+   "montant": 6480,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1549627768076243017-0",
    "t": "2026-09-16T03:47:30.601000+00:00",
@@ -94525,30 +94541,6 @@
     "playername": "ShyMoth1108",
     "playercharacter": "Mada Dillon",
     "playerid": "352844",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1548836765148647533-0",
-   "t": "2026-09-13T23:24:20.807000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 132x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1843.31, 6518.68, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3799\nplayerDiscord : 1142587715720851538\nplayerName : CleverBat1509\nplayerCharacter : Morino Collins\nplayerId : 245699\nitemId : refinedoil",
-   "nom": "Morino Collins",
-   "quantite": 132,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1843.31, 6518.68, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "3799",
-    "playerdiscord": "1142587715720851538",
-    "playername": "CleverBat1509",
-    "playercharacter": "Morino Collins",
-    "playerid": "245699",
     "itemid": "refinedoil"
    }
   }
