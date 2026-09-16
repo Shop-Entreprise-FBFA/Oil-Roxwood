@@ -1197,7 +1197,7 @@ function logout(){
 }
 
 /* ---- Canari de version : prévient les onglets restés sur une vieille version ---- */
-const APP_VERSION='C-105';
+const APP_VERSION='C-106';
 /* Le bandeau ne doit dire qu'une chose : « une version plus récente existe ».
    Il comparait deux chaînes avec !==, donc il s'allumait aussi dans l'autre
    sens — quand la page ouverte était PLUS récente que version.json, ce qui
@@ -2226,10 +2226,10 @@ function importerRecrues(){
   const file=((S._tables&&S._tables.oilroxwood_recrues)||[]);
   if(!file.length||!S.sheets||!S.sheets.rh) return {ajoutes:0,completes:0,renommages:[]};
   const rh=S.sheets.rh;
-  const ignores=(S._recruesIgnore||[]).map(String);
+  const ignores=new Set((S._recruesIgnore||[]).map(String));
   let ajoutes=0, completes=0; const noms=[], renommages=[];
   file.forEach(r=>{
-    const idu=chiffres(r.idU), did=String(r.discord||'').trim();
+    const idu=chiffres(r.idU), did=String(r.discord||'').trim(), rid=String(r.id||'');
     const existe=rh.find(x=>(idu&&chiffres(x.idU)===idu)||(did&&String(x.discord||'').trim()===did));
     if(existe){
       // on complète, on n'écrase pas : le travail des RH prime
@@ -2239,15 +2239,23 @@ function importerRecrues(){
       });
       if(n){ completes+=n; noms.push(existe.nom||r.nom); }
       const neufNom=String(r.nom||'').trim();
-      if(neufNom&&normNom(neufNom)!==normNom(existe.nom)&&!ignores.includes(String(r.id)))
-        renommages.push({src:String(r.id||''), ancien:String(existe.nom||''), nouveau:neufNom,
+      if(neufNom&&normNom(neufNom)!==normNom(existe.nom)&&!ignores.has(rid))
+        renommages.push({src:rid, ancien:String(existe.nom||''), nouveau:neufNom,
                          idU:String(r.idU||''), discord:did});
       return;
     }
+    /* Sans idU ni compte Discord reconnus dans la fiche RH, la recrue est
+       introuvable qu'elle existe encore ou qu'un RH l'ait supprimée comme
+       doublon/essai : les deux cas ont l'air identiques d'ici. On ne crée
+       donc une fiche qu'une seule fois par entrée de la file — la supprimer
+       ensuite est définitif, elle ne revient plus au prochain rechargement. */
+    if(rid&&ignores.has(rid)) return;
     const neuf=JSON.parse(JSON.stringify(SHEETS_DEF.rh.nouveau));
     ['nom','tel','rib','idU','grade','recrut','arrivee','discord'].forEach(k=>{ if(r[k]) neuf[k]=r[k]; });
     rh.unshift(neuf); ajoutes++; noms.push(neuf.nom);
+    if(rid) ignores.add(rid);
   });
+  S._recruesIgnore=[...ignores].slice(-200);
   return {ajoutes,completes,noms:[...new Set(noms)],renommages};
 }
 
@@ -4810,6 +4818,10 @@ function ferDel(id){
 
 /* ================== MISES À JOUR (changelog) ================== */
 const CHANGELOG=[
+ {v:'C-106',d:'16/09/2026',t:'Fiches RH : une recrue supprimée ne revenait pas toute seule — si, justement',items:[
+   ['🐛','Une fiche RH supprimée se recréait au rechargement','Une recrue validée sur Discord sans identifiant ni compte reconnu dans la fiche RH (essai, doublon, données incomplètes) n\'était retrouvée par aucun moyen une fois sa fiche supprimée : à la prochaine ouverture de Fiches RH, elle repartait de la file du bot comme si de rien n\'était.'],
+   ['🔧','Une entrée n\'est créée qu\'une seule fois','Chaque recrue de la file est désormais marquée dès la création de sa fiche. La supprimer est définitif : elle ne revient plus, même après un rechargement.'],
+ ]},
  {v:'C-105',d:'16/09/2026',t:'RH → Intégration : le guide d\'accueil est directement sur le site',items:[
    ['✍️','Le guide d\'intégration vivait sur un lien externe','Utile pour l\'écrire, mais un lien externe ne se retrouve pas dans le menu, se perd facilement, et personne d\'autre que celui qui l\'a reçu ne peut le consulter depuis le dashboard.'],
    ['🔧','Nouvelle rubrique RH → Intégration','Le guide est copié sur le site (integration.html) et s\'ouvre directement dans le dashboard, comme n\'importe quelle autre rubrique — plus de lien à retrouver ni à partager.'],
