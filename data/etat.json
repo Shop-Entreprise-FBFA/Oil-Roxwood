@@ -27245,6 +27245,7 @@
     "frh",
     "effectif",
     "fblacklist",
+    "integration",
     "factures",
     "prodder",
     "overview",
@@ -27400,9 +27401,9 @@
   "postesV4": 1,
   "semaineDebut": "2026-09-14"
  },
- "_cid": "gmjgd6p1q7l",
- "_maj": 1789567283977,
- "_rev": "6ynwf2tzq4r-mu465mo4",
+ "_cid": "99gvuf6xbgv",
+ "_maj": 1789567302297,
+ "_rev": "fyf8lkw1x54-mu4661iv",
  "_majSec": {
   "fer": 1789534470762,
   "fact": 1789561602433,
@@ -27411,13 +27412,13 @@
   "sheets": 1789566948382,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
-  "journal": 1789566948382,
+  "journal": 1789567302297,
   "pending": 1789341106480,
   "prodDer": 1789495343162,
   "runners": 1789489395535,
   "absences": 1789559389572,
   "imported": 1789341106480,
-  "settings": 1789341106480,
+  "settings": 1789567302297,
   "closeUndo": 1789341106480,
   "quotasCom": 1789564901151,
   "bilanExtra": 1789341106480,
@@ -27425,7 +27426,7 @@
   "primesExtra": 1789341106480,
   "quotasComHist": 1789341106480,
   "profils": 1789559236417,
-  "_tables": 1789567283977,
+  "_tables": 1789567300761,
   "_permsFix1": 1789341106480,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1789341106480,
@@ -27442,6 +27443,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1789567303629,
+   "u": "Diego Herrera",
+   "a": "Permissions : RH · « integration » → accès complet ✓"
+  },
   {
    "t": 1789566949713,
    "u": "Diego Herrera",
@@ -28936,11 +28942,6 @@
    "t": 1788483963492,
    "u": "Diego Herrera",
    "a": "Recrutements Discord : 0 fiche(s) créée(s) · des cases vides complétées"
-  },
-  {
-   "t": 1788482312436,
-   "u": "Diego Herrera",
-   "a": "Modification des paramètres"
   }
  ],
  "prodDer": {
@@ -29334,7 +29335,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-16T14:01:25.252Z",
+  "maj": "2026-09-16T14:01:44.503Z",
   "semaine": 38,
   "totalBarils": 63106,
   "ca": 315530,
@@ -70613,18 +70614,11 @@
     "id": 1789567212841
    },
    {
-    "uid": "438358976141328404",
-    "nom": "Thomas Boyer",
-    "role": "rh",
-    "vu": "2026-09-16T14:01:24.908Z",
-    "id": 1789567278259
-   },
-   {
-    "uid": "438358976141328404",
-    "nom": "Thomas Boyer",
-    "role": "rh",
-    "vu": "2026-09-16T14:01:23.840Z",
-    "id": 1789567284629
+    "uid": "826526979204841482",
+    "nom": "Diego Herrera",
+    "role": "direction",
+    "vu": "2026-09-16T14:01:40.761Z",
+    "id": 1789567302689
    }
   ],
   "oilroxwood_demandes": [],
