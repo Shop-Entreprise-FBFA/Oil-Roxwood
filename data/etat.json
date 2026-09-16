@@ -10730,6 +10730,20 @@
     "quantite": 150,
     "qui": "Julio Collins",
     "fact": 253095
+   },
+   {
+    "date": "2026-09-16",
+    "client": "Los Reyes Colombianos",
+    "quantite": 150,
+    "qui": "Julio Collins",
+    "fact": 253096
+   },
+   {
+    "date": "2026-09-16",
+    "client": "Los Reyes Colombianos",
+    "quantite": 150,
+    "qui": "William Rodriguez-collins",
+    "fact": 253096
    }
   ],
   "collection": [
@@ -13003,7 +13017,7 @@
     "rib": "",
     "tel": "",
     "adresse": "Cayo Perico",
-    "lastCmd": "2026-06-02"
+    "lastCmd": "2026-09-16"
    },
    {
     "nom": "Los Santos Fire Departement",
@@ -13526,8 +13540,31 @@
     "prix": 120
    }
   ],
-  "compteur": 253096,
+  "compteur": 253097,
   "factures": [
+   {
+    "num": 253096,
+    "date": "2026-09-16",
+    "client": "Los Reyes Colombianos",
+    "emetteur": "Julio Collins, William Rodriguez-collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 300,
+      "tva": 0.02,
+      "pu": 180,
+      "ht": 54000,
+      "ttc": 55080,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 54000,
+    "ttc": 55080,
+    "poids": 600,
+    "statut": "attente"
+   },
    {
     "num": 253095,
     "date": "2026-09-16",
@@ -15521,6 +15558,22 @@
    "public": true,
    "maj": "2026-09-16T11:47:16.417Z"
   },
+  "stella collins": {
+   "nom": "Stella Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-14T13:20:17.287Z"
+  },
+  "julio collins": {
+   "nom": "Julio Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T00:06:23.240Z"
+  },
   "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿": {
    "nom": "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿",
    "photo": "",
@@ -15544,22 +15597,6 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T16:48:15.042Z"
-  },
-  "stella collins": {
-   "nom": "Stella Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-14T13:20:17.287Z"
-  },
-  "julio collins": {
-   "nom": "Julio Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T00:06:23.240Z"
   },
   "william rodriguez-collins": {
    "nom": "William Rodriguez-collins",
@@ -27440,15 +27477,15 @@
   "postesV4": 1,
   "semaineDebut": "2026-09-14"
  },
- "_cid": "7u2vapdxh0w",
- "_maj": 1789591591194,
- "_rev": "8wh4cs0piv8-mu4kmo16",
+ "_cid": "a7c4deaqz1h",
+ "_maj": 1789591613668,
+ "_rev": "a09uzxyk3d-mu4kncqk",
  "_majSec": {
   "fer": 1789586569992,
-  "fact": 1789591574976,
+  "fact": 1789591613657,
   "users": 1789560928365,
   "weeks": 1789477366022,
-  "sheets": 1789588617036,
+  "sheets": 1789591613657,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
   "journal": 1789588617036,
@@ -29374,13 +29411,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-16T20:46:34.794Z",
+  "maj": "2026-09-16T20:47:06.812Z",
   "semaine": 38,
   "totalBarils": 63106,
   "ca": 315530,
   "objectif": 375000,
   "effectif": 87,
-  "clientsServis": 82,
+  "clientsServis": 83,
   "top3": [
    {
     "nom": "Alex Turner",
