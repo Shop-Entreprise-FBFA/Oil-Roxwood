@@ -10736,6 +10736,13 @@
     "quantite": 200,
     "qui": "",
     "fact": 253093
+   },
+   {
+    "date": "2026-09-16",
+    "client": "Klan Ozumiya",
+    "quantite": 150,
+    "qui": "William Rodriguez-collins",
+    "fact": 253094
    }
   ],
   "collection": [
@@ -12915,7 +12922,7 @@
     "rib": "",
     "tel": "555-824-485",
     "adresse": "Los Santos",
-    "lastCmd": "2026-08-25"
+    "lastCmd": "2026-09-16"
    },
    {
     "nom": "Klan Zambolie",
@@ -13523,8 +13530,31 @@
     "prix": 120
    }
   ],
-  "compteur": 253094,
+  "compteur": 253095,
   "factures": [
+   {
+    "num": 253094,
+    "date": "2026-09-16",
+    "client": "Klan Ozumiya",
+    "emetteur": "William Rodriguez-collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 150,
+      "tva": 0.05,
+      "pu": 180,
+      "ht": 27000,
+      "ttc": 28350,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 27000,
+    "ttc": 28350,
+    "poids": 300,
+    "statut": "attente"
+   },
    {
     "num": 253093,
     "date": "2026-09-16",
@@ -15487,6 +15517,14 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T20:11:53.537Z"
+  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -15510,14 +15548,6 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T00:06:23.240Z"
-  },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -27356,15 +27386,15 @@
   "postesV4": 1,
   "semaineDebut": "2026-09-14"
  },
- "_cid": "um2ambq4io",
- "_maj": 1789561018416,
- "_rev": "vp87ts55et8-mu42fzf4",
+ "_cid": "6yfn9ux2xyt",
+ "_maj": 1789561052613,
+ "_rev": "s9ah0zl6169-mu42g1yj",
  "_majSec": {
   "fer": 1789534470762,
-  "fact": 1789506324383,
+  "fact": 1789561052596,
   "users": 1789560928365,
   "weeks": 1789477366022,
-  "sheets": 1789506324383,
+  "sheets": 1789561052596,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
   "journal": 1789559389572,
@@ -29290,13 +29320,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-16T12:17:29.872Z",
+  "maj": "2026-09-16T12:17:33.163Z",
   "semaine": 38,
   "totalBarils": 63106,
   "ca": 315530,
   "objectif": 375000,
   "effectif": 84,
-  "clientsServis": 80,
+  "clientsServis": 81,
   "top3": [
    {
     "nom": "Alex Turner",
