@@ -3866,6 +3866,20 @@
  "sheets": {
   "rh": [
    {
+    "nom": "ya mount",
+    "grade": "Intérimaire",
+    "tel": "5551203",
+    "rib": "456123",
+    "idU": "376258",
+    "arrivee": "2026-09-15",
+    "discord": "1345355939334586409",
+    "avert": "",
+    "contrat": false,
+    "recrut": "Diego Herrera",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
     "idU": "232050",
     "nom": "Stella Collins",
     "rib": "374543",
@@ -5433,20 +5447,6 @@
     "discord": "1346541845949186092",
     "flagOut": true,
     "dernierService": "2026-09-12"
-   },
-   {
-    "nom": "ya mount",
-    "grade": "Intérimaire",
-    "tel": "5551203",
-    "rib": "456123",
-    "idU": "376258",
-    "arrivee": "2026-09-15",
-    "discord": "1345355939334586409",
-    "avert": "",
-    "contrat": false,
-    "recrut": "Diego Herrera",
-    "dernierService": "",
-    "flagOut": false
    },
    {
     "nom": "Daniel Cooper",
@@ -27441,17 +27441,17 @@
   "semaineDebut": "2026-09-14"
  },
  "_cid": "988r4y3y75m",
- "_maj": 1789574904476,
- "_rev": "kafg8zhbiib-mu4ap115",
+ "_maj": 1789574914260,
+ "_rev": "bw5mqps19v-mu4ap60l",
  "_majSec": {
   "fer": 1789569954398,
   "fact": 1789561602433,
   "users": 1789560928365,
   "weeks": 1789477366022,
-  "sheets": 1789574876833,
+  "sheets": 1789574914260,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
-  "journal": 1789574856497,
+  "journal": 1789574914260,
   "pending": 1789341106480,
   "prodDer": 1789495343162,
   "runners": 1789489395535,
@@ -27482,6 +27482,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1789574914422,
+   "u": "Diego Herrera",
+   "a": "Recrutements Discord : 1 fiche(s) créée(s), 0 case(s) complétée(s) — ya mount"
+  },
   {
    "t": 1789574856659,
    "u": "Diego Herrera",
@@ -28976,11 +28981,6 @@
    "t": 1788485075205,
    "u": "Diego Herrera",
    "a": "Permissions : RH · « frh » → accès complet ✓"
-  },
-  {
-   "t": 1788485074430,
-   "u": "Diego Herrera",
-   "a": "Permissions : RH · « fventes » → accès complet ✓"
   }
  ],
  "prodDer": {
@@ -29374,7 +29374,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-16T16:08:28.793Z",
+  "maj": "2026-09-16T16:08:35.253Z",
   "semaine": 38,
   "totalBarils": 63106,
   "ca": 315530,
