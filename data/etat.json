@@ -3866,6 +3866,20 @@
  "sheets": {
   "rh": [
    {
+    "nom": "Rodrygo Malo",
+    "grade": "Intérimaire",
+    "tel": "555506050",
+    "rib": "459615",
+    "idU": "301349",
+    "arrivee": "2026-09-16",
+    "discord": "1197202685070426194",
+    "avert": "",
+    "contrat": true,
+    "recrut": "Thomas Boyer",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
     "nom": "ya mount",
     "grade": "Intérimaire",
     "tel": "5551203",
@@ -27387,17 +27401,17 @@
   "semaineDebut": "2026-09-14"
  },
  "_cid": "99gvuf6xbgv",
- "_maj": 1789566940769,
- "_rev": "sibpqg9fdu-mu45ycvu",
+ "_maj": 1789566948382,
+ "_rev": "deczyztt40d-mu45ygc5",
  "_majSec": {
   "fer": 1789534470762,
   "fact": 1789561602433,
   "users": 1789560928365,
   "weeks": 1789477366022,
-  "sheets": 1789561052596,
+  "sheets": 1789566948382,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
-  "journal": 1789559389572,
+  "journal": 1789566948382,
   "pending": 1789341106480,
   "prodDer": 1789495343162,
   "runners": 1789489395535,
@@ -27423,11 +27437,21 @@
   "ventesAlias": 1789341106480,
   "_ventesIgnore": 1789341106480,
   "_avertVus": 1789382976850,
-  "_signeVus": 1789550770362
+  "_signeVus": 1789566948382
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1789566949713,
+   "u": "Diego Herrera",
+   "a": "Contrat(s) signé(s) via Discord : Rodrygo Malo"
+  },
+  {
+   "t": 1789566949675,
+   "u": "Diego Herrera",
+   "a": "Recrutements Discord : 1 fiche(s) créée(s), 0 case(s) complétée(s) — Rodrygo Malo"
+  },
   {
    "t": 1789559390198,
    "u": "Diego Herrera",
@@ -28917,16 +28941,6 @@
    "t": 1788482312436,
    "u": "Diego Herrera",
    "a": "Modification des paramètres"
-  },
-  {
-   "t": 1788482302607,
-   "u": "Diego Herrera",
-   "a": "Modification des paramètres"
-  },
-  {
-   "t": 1788475058527,
-   "u": "Diego Herrera",
-   "a": "Modification des paramètres"
   }
  ],
  "prodDer": {
@@ -29320,12 +29334,12 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-16T13:55:45.978Z",
+  "maj": "2026-09-16T13:55:50.453Z",
   "semaine": 38,
   "totalBarils": 63106,
   "ca": 315530,
   "objectif": 375000,
-  "effectif": 84,
+  "effectif": 85,
   "clientsServis": 81,
   "top3": [
    {
@@ -71520,6 +71534,7 @@
   "1789478557870"
  ],
  "_signeVus": [
-  "1789477305650"
+  "1789477305650",
+  "1789559968921"
  ]
 }
