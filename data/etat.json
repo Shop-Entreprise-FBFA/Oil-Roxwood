@@ -10695,6 +10695,13 @@
     "quantite": 100,
     "qui": "William Rodriguez-collins",
     "fact": 253093
+   },
+   {
+    "date": "2026-09-16",
+    "client": "La Main de Minuit",
+    "quantite": 150,
+    "qui": "Julio Collins",
+    "fact": 253095
    }
   ],
   "collection": [
@@ -12189,7 +12196,8 @@
     "nom": "La Main de Minuit",
     "rib": "",
     "tel": "",
-    "adresse": "Grapseed"
+    "adresse": "Grapseed",
+    "lastCmd": "2026-09-16"
    },
    {
     "nom": "Famiglia Virelli",
@@ -13490,8 +13498,31 @@
     "prix": 120
    }
   ],
-  "compteur": 253095,
+  "compteur": 253096,
   "factures": [
+   {
+    "num": 253095,
+    "date": "2026-09-16",
+    "client": "La Main de Minuit",
+    "emetteur": "Julio Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 150,
+      "tva": 0.05,
+      "pu": 180,
+      "ht": 27000,
+      "ttc": 28350,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 27000,
+    "ttc": 28350,
+    "poids": 300,
+    "statut": "attente"
+   },
    {
     "num": 253094,
     "date": "2026-09-16",
@@ -27373,15 +27404,15 @@
   "postesV4": 1,
   "semaineDebut": "2026-09-14"
  },
- "_cid": "0dm4qdjr2fj",
- "_maj": 1789584326329,
- "_rev": "pzmzgiv038h-mu4gb7h8",
+ "_cid": "whe496q4hv",
+ "_maj": 1789584346493,
+ "_rev": "2nygwys95x2-mu4gbbt9",
  "_majSec": {
   "fer": 1789569954398,
-  "fact": 1789578870128,
+  "fact": 1789584331214,
   "users": 1789560928365,
   "weeks": 1789477366022,
-  "sheets": 1789578482436,
+  "sheets": 1789584331214,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
   "journal": 1789578482451,
@@ -27398,7 +27429,7 @@
   "primesExtra": 1789341106480,
   "quotasComHist": 1789341106480,
   "profils": 1789559236417,
-  "_tables": 1789584326329,
+  "_tables": 1789584346493,
   "_permsFix1": 1789341106480,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1789341106480,
@@ -29307,13 +29338,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-16T18:45:41.660Z",
+  "maj": "2026-09-16T18:45:47.277Z",
   "semaine": 38,
   "totalBarils": 63106,
   "ca": 315530,
   "objectif": 375000,
   "effectif": 85,
-  "clientsServis": 81,
+  "clientsServis": 82,
   "top3": [
    {
     "nom": "Alex Turner",
@@ -71991,6 +72022,13 @@
     "role": "commercial",
     "vu": "2026-09-16T18:45:26.329Z",
     "id": 1789584338679
+   },
+   {
+    "uid": "767332288744128512",
+    "nom": "Julio Collins",
+    "role": "commercial",
+    "vu": "2026-09-16T18:45:46.440Z",
+    "id": 1789584347394
    }
   ],
   "oilroxwood_demandes": [],
