@@ -1,11 +1,32 @@
 {
- "maj": "2026-09-16T03:02:04.040972+00:00",
+ "maj": "2026-09-16T03:23:28.301403+00:00",
  "salon": "1245400913066066099",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1549616697445589073",
+   "t": "2026-09-16T03:03:31.157000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 2763\nplayerDiscord : 1301988329096482837\nplayerName : binobang\nplayerCharacter : Frank Smite\nplayerId : 339849\nvehiclePlate : AY0298ZV\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Frank Smite",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "2763",
+    "playerdiscord": "1301988329096482837",
+    "playername": "binobang",
+    "playercharacter": "Frank Smite",
+    "playerid": "339849",
+    "vehicleplate": "AY0298ZV",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1549614183065190452",
    "t": "2026-09-16T02:53:31.682000+00:00",
@@ -94520,30 +94541,6 @@
    "coffre": "entreprise (Oil RoxWood)",
    "champs": {
     "position": "-1843.66, 6517.99, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "3799",
-    "playerdiscord": "1142587715720851538",
-    "playername": "CleverBat1509",
-    "playercharacter": "Morino Collins",
-    "playerid": "245699",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1548836765148647533-7",
-   "t": "2026-09-13T23:24:20.807000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 17x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1843.96, 6518.02, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3799\nplayerDiscord : 1142587715720851538\nplayerName : CleverBat1509\nplayerCharacter : Morino Collins\nplayerId : 245699\nitemId : refinedoil",
-   "nom": "Morino Collins",
-   "quantite": 17,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1843.96, 6518.02, 16.73",
     "targetposition": "-1843.83, 6518.10, 15.74",
     "jobid": "76",
     "jobname": "Oil RoxWood",
