@@ -1197,7 +1197,7 @@ function logout(){
 }
 
 /* ---- Canari de version : prévient les onglets restés sur une vieille version ---- */
-const APP_VERSION='C-107';
+const APP_VERSION='C-108';
 /* Le bandeau ne doit dire qu'une chose : « une version plus récente existe ».
    Il comparait deux chaînes avec !==, donc il s'allumait aussi dans l'autre
    sens — quand la page ouverte était PLUS récente que version.json, ce qui
@@ -1300,8 +1300,14 @@ async function checkDiscordAuth(){
       }
     }
 
-    // Personne inconnue mais porteuse d'un rôle Discord reconnu : on ouvre, sans validation.
-    if(!u&&roleDsc){
+    /* Personne inconnue mais porteuse d'un rôle Discord reconnu : on ouvre,
+       sans validation manuelle — mais seulement pour Direction (Patron/Co
+       Patron) et RH. Le dashboard donne accès aux téléphones, RIB et
+       finances de tout le monde ; un Commercial, un Responsable Runner ou
+       un simple Runner ne doit pas l'obtenir automatiquement. Pour les
+       autres rôles, la demande part sur Discord et c'est la Direction qui
+       crée le compte à la main dans Paramètres (juste en dessous). */
+    if(!u&&(roleDsc==='direction'||roleDsc==='rh')){
       const nom=nomRP(did,pseudo);
       u={id:Date.now(),user:nom,did,role:roleDsc,auto:true};
       S.users=[...(S.users||[]),u];
@@ -4831,6 +4837,10 @@ function ferDel(id){
 
 /* ================== MISES À JOUR (changelog) ================== */
 const CHANGELOG=[
+ {v:'C-108',d:'17/09/2026',t:'Accès au dashboard : seuls Direction et RH l\'ouvrent automatiquement',items:[
+   ['🐛','N\'importe quel rôle Discord reconnu ouvrait un compte','Le dashboard donne accès aux téléphones, RIB et finances de tout le monde. N\'importe qui avec un rôle reconnu sur le serveur — Commercial, Responsable Runner, simple Runner — obtenait pourtant un compte automatiquement à la première connexion, sans validation.'],
+   ['🔧','Seuls Direction (Patron/Co Patron) et RH passent sans validation','Pour tous les autres rôles, la demande part sur Discord comme avant et c\'est la Direction qui crée le compte à la main dans Paramètres. Les comptes déjà ouverts pour d\'autres rôles ne sont pas touchés par ce changement — à retirer à la main si besoin.'],
+ ]},
  {v:'C-107',d:'17/09/2026',t:'Comptes d\'accès : le pseudo Discord ne remplace plus le nom RP',items:[
    ['🐛','Un compte ouvert automatiquement gardait le pseudo Discord','Quand quelqu\'un se connectait pour la première fois avec un rôle Discord reconnu, son compte d\'accès prenait son pseudo Discord tel quel — pas son nom RP. Résultat concret : les recrutements validés par cette personne étaient crédités à son pseudo, introuvable dans la fiche RH, au lieu de son vrai nom (8 recrues concernées, corrigées avec ce déploiement).'],
    ['🔧','Le nom RP est recherché dans la fiche RH à la création du compte','Le compte Discord de la personne est recherché dans la fiche RH ; si elle y est déjà, son nom RP est utilisé directement. Le pseudo Discord ne sert plus que si elle n\'a encore aucune fiche.'],
