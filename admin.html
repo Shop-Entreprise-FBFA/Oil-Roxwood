@@ -1197,7 +1197,7 @@ function logout(){
 }
 
 /* ---- Canari de version : prévient les onglets restés sur une vieille version ---- */
-const APP_VERSION='C-106';
+const APP_VERSION='C-107';
 /* Le bandeau ne doit dire qu'une chose : « une version plus récente existe ».
    Il comparait deux chaînes avec !==, donc il s'allumait aussi dans l'autre
    sens — quand la page ouverte était PLUS récente que version.json, ce qui
@@ -1242,6 +1242,16 @@ async function checkRescue(){
   }
 }
 
+/* ---- Quel nom donner à un compte d'accès créé automatiquement ? ----
+   Le pseudo Discord (pseudo/tag du compte) n'est pas le nom RP : la colonne
+   « Recruteur » de la fiche RH — et tout ce qui reconnaît quelqu'un par son
+   nom ailleurs sur le dashboard — attend le nom RP. On le retrouve dans la
+   fiche RH par le compte Discord ; à défaut (personne pas encore recrutée),
+   le pseudo Discord reste le seul repli possible. */
+function nomRP(did, repli){
+  const f=((S.sheets&&S.sheets.rh)||[]).find(x=>String(x.discord||'').trim()===String(did));
+  return (f&&String(f.nom||'').trim())||repli;
+}
 /* ---- Connexion via Discord (flux implicite, sans serveur ni secret) ----
    Discord renvoie un jeton dans le fragment de l'URL. On s'en sert une seule
    fois pour lire l'identité (id + pseudo), puis on l'oublie : le dashboard
@@ -1268,19 +1278,21 @@ async function checkDiscordAuth(){
 
     if(!u&&!(S.users&&S.users.length)){
       // premier lancement : le premier connecté devient Direction
-      u={id:Date.now(),user:pseudo,did,role:'direction'};
+      const nom=nomRP(did,pseudo);
+      u={id:Date.now(),user:nom,did,role:'direction'};
       S.users=[u]; save();
       await sbPushNow(true);
-      sendLog('👤 Premier compte créé', `**${pseudo}** (Direction) via Discord`, 0x5865F2);
+      sendLog('👤 Premier compte créé', `**${nom}** (Direction) via Discord`, 0x5865F2);
     }
 
     // La clé du développeur : compte créé s'il manque, et toujours en Direction.
     if(estDev(did)){
       if(!u){
-        u={id:Date.now(),user:pseudo,did,role:'direction'};
+        const nom=nomRP(did,pseudo);
+        u={id:Date.now(),user:nom,did,role:'direction'};
         S.users=[...(S.users||[]),u]; save();
         if(RoxwoodGH.peutEcrire()) await sbPushNow();
-        jlog(`Accès développeur : compte ${pseudo} recréé en Direction`);
+        jlog(`Accès développeur : compte ${nom} recréé en Direction`);
       } else if(u.role!=='direction'){
         u.role='direction'; save();
         if(RoxwoodGH.peutEcrire()) sbQueue();
@@ -1290,14 +1302,15 @@ async function checkDiscordAuth(){
 
     // Personne inconnue mais porteuse d'un rôle Discord reconnu : on ouvre, sans validation.
     if(!u&&roleDsc){
-      u={id:Date.now(),user:pseudo,did,role:roleDsc,auto:true};
+      const nom=nomRP(did,pseudo);
+      u={id:Date.now(),user:nom,did,role:roleDsc,auto:true};
       S.users=[...(S.users||[]),u];
       save();
       // Sans jeton, l'écriture dans le dépôt échouerait : le compte reste local,
       // ce qui suffit — le rôle Discord sera relu à chaque connexion.
       if(RoxwoodGH.peutEcrire()) await sbPushNow();
       sendLog('🔐 Accès ouvert par rôle Discord',
-              `**${pseudo}** entre en **${ROLES[roleDsc]}** — rôle reconnu sur le serveur`, 0x5865F2);
+              `**${nom}** entre en **${ROLES[roleDsc]}** — rôle reconnu sur le serveur`, 0x5865F2);
     }
 
     /* Le rôle a disparu du serveur Discord : l'accès se ferme.
@@ -4818,6 +4831,10 @@ function ferDel(id){
 
 /* ================== MISES À JOUR (changelog) ================== */
 const CHANGELOG=[
+ {v:'C-107',d:'17/09/2026',t:'Comptes d\'accès : le pseudo Discord ne remplace plus le nom RP',items:[
+   ['🐛','Un compte ouvert automatiquement gardait le pseudo Discord','Quand quelqu\'un se connectait pour la première fois avec un rôle Discord reconnu, son compte d\'accès prenait son pseudo Discord tel quel — pas son nom RP. Résultat concret : les recrutements validés par cette personne étaient crédités à son pseudo, introuvable dans la fiche RH, au lieu de son vrai nom (8 recrues concernées, corrigées avec ce déploiement).'],
+   ['🔧','Le nom RP est recherché dans la fiche RH à la création du compte','Le compte Discord de la personne est recherché dans la fiche RH ; si elle y est déjà, son nom RP est utilisé directement. Le pseudo Discord ne sert plus que si elle n\'a encore aucune fiche.'],
+ ]},
  {v:'C-106',d:'16/09/2026',t:'Fiches RH : une recrue supprimée ne revenait pas toute seule — si, justement',items:[
    ['🐛','Une fiche RH supprimée se recréait au rechargement','Une recrue validée sur Discord sans identifiant ni compte reconnu dans la fiche RH (essai, doublon, données incomplètes) n\'était retrouvée par aucun moyen une fois sa fiche supprimée : à la prochaine ouverture de Fiches RH, elle repartait de la file du bot comme si de rien n\'était.'],
    ['🔧','Une entrée n\'est créée qu\'une seule fois','Chaque recrue de la file est désormais marquée dès la création de sa fiche. La supprimer est définitif : elle ne revient plus, même après un rechargement.'],
