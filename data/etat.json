@@ -27875,9 +27875,9 @@
   "postesV4": 1,
   "semaineDebut": "2026-09-14"
  },
- "_cid": "61z7u4qfuot",
- "_maj": 1789666311534,
- "_rev": "k3hy0e5rn0q-mu5t47j6",
+ "_cid": "8e50d2f9z39",
+ "_maj": 1789666353783,
+ "_rev": "j228gx4whg-mu5t4ylm",
  "_majSec": {
   "fer": 1789650902351,
   "fact": 1789651609747,
@@ -27886,7 +27886,7 @@
   "sheets": 1789664735683,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
-  "journal": 1789664735683,
+  "journal": 1789666353783,
   "pending": 1789341106480,
   "prodDer": 1789495343162,
   "runners": 1789659975866,
@@ -27900,7 +27900,7 @@
   "primesExtra": 1789341106480,
   "quotasComHist": 1789341106480,
   "profils": 1789559236417,
-  "_tables": 1789666311534,
+  "_tables": 1789666353783,
   "_permsFix1": 1789341106480,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1789341106480,
@@ -27917,6 +27917,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1789666279858,
+   "u": "Stella Collins",
+   "a": "Facture reçue archivée : Linterna — 50 000 $"
+  },
   {
    "t": 1789664736412,
    "u": "Diego Herrera",
@@ -29411,11 +29416,6 @@
    "t": 1788489383213,
    "u": "Diego Herrera",
    "a": "Rôles Discord : 1513313167931871362 retiré"
-  },
-  {
-   "t": 1788489352498,
-   "u": "Diego Herrera",
-   "a": "Responsable commercial : réglages repris du rôle Commercial"
   }
  ],
  "prodDer": {
@@ -29809,7 +29809,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-17T17:31:56.322Z",
+  "maj": "2026-09-17T17:32:31.402Z",
   "semaine": 38,
   "totalBarils": 133845,
   "ca": 669225,
@@ -74076,15 +74076,33 @@
     "id": 1789666229072
    },
    {
-    "uid": "826526979204841482",
-    "nom": "Diego Herrera",
+    "uid": "948542221429379112",
+    "nom": "Stella Collins",
     "role": "direction",
-    "vu": "2026-09-17T17:31:51.534Z",
-    "id": 1789666312374
+    "vu": "2026-09-17T17:31:03.611Z",
+    "id": 1789666258532
+   },
+   {
+    "uid": "948542221429379112",
+    "nom": "Stella Collins",
+    "role": "direction",
+    "vu": "2026-09-17T17:32:33.783Z",
+    "id": 1789666348698
    }
   ],
   "oilroxwood_demandes": [],
-  "oilroxwood_frecues": [],
+  "oilroxwood_frecues": [
+   {
+    "entreprise": "Linterna",
+    "date": "2026-09-17",
+    "montant": 50000,
+    "lien": "",
+    "note": "",
+    "img": "data/factures-recues/1789666278551-3vwjn.jpg",
+    "auteur": "Stella Collins",
+    "id": 1789666280058
+   }
+  ],
   "oilroxwood_agenda": [
    {
     "uid": "826526979204841482",
