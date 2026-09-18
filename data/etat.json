@@ -16128,6 +16128,22 @@
    "public": true,
    "maj": "2026-09-16T11:47:16.417Z"
   },
+  "stella collins": {
+   "nom": "Stella Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-14T13:20:17.287Z"
+  },
+  "julio collins": {
+   "nom": "Julio Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T00:06:23.240Z"
+  },
   "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿": {
    "nom": "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿",
    "photo": "",
@@ -16151,22 +16167,6 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T16:48:15.042Z"
-  },
-  "stella collins": {
-   "nom": "Stella Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-14T13:20:17.287Z"
-  },
-  "julio collins": {
-   "nom": "Julio Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T00:06:23.240Z"
   },
   "william rodriguez-collins": {
    "nom": "William Rodriguez-collins",
@@ -28431,18 +28431,18 @@
   "postesV4": 1,
   "semaineDebut": "2026-09-14"
  },
- "_cid": "ofyqu2v92bj",
- "_maj": 1789754908971,
- "_rev": "z2r95nx5vtt-mu79vwou",
+ "_cid": "sp9319p19yl",
+ "_maj": 1789754976659,
+ "_rev": "9xgekygolb5-mu79wj69",
  "_majSec": {
   "fer": 1789752821549,
   "fact": 1789747636704,
-  "users": 1789752813475,
+  "users": 1789754956522,
   "weeks": 1789477366022,
   "sheets": 1789751068097,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
-  "journal": 1789752813475,
+  "journal": 1789754956522,
   "pending": 1789341106480,
   "prodDer": 1789495343162,
   "runners": 1789682859876,
@@ -28456,7 +28456,7 @@
   "primesExtra": 1789341106480,
   "quotasComHist": 1789341106480,
   "profils": 1789559236417,
-  "_tables": 1789754908971,
+  "_tables": 1789754976659,
   "_permsFix1": 1789341106480,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1789341106480,
@@ -28474,9 +28474,14 @@
  "_wkFix1": true,
  "journal": [
   {
-   "t": 1789752838212,
+   "t": 1789754973482,
    "u": "Julio Collins",
-   "a": "Achats de fer : 1 relevé(s) repris du salon"
+   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
+  },
+  {
+   "t": 1789754973286,
+   "u": "?",
+   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
   },
   {
    "t": 1789752830366,
@@ -29967,11 +29972,6 @@
    "t": 1788489418319,
    "u": "Diego Herrera",
    "a": "Permissions : Assistant de direction · « fventes » → lecture seule 👁"
-  },
-  {
-   "t": 1788489417581,
-   "u": "Diego Herrera",
-   "a": "Permissions : Assistant de direction · « felig » → aucun accès"
   }
  ],
  "prodDer": {
@@ -30385,7 +30385,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-18T18:09:08.670Z",
+  "maj": "2026-09-18T18:09:37.809Z",
   "semaine": 38,
   "totalBarils": 160608,
   "ca": 803040,
@@ -77611,6 +77611,20 @@
     "role": "direction",
     "vu": "2026-09-18T18:08:28.971Z",
     "id": 1789754899965
+   },
+   {
+    "uid": "767332288744128512",
+    "nom": "Julio Collins",
+    "role": "commercial",
+    "vu": "2026-09-18T18:09:16.326Z",
+    "id": 1789754974220
+   },
+   {
+    "uid": "767332288744128512",
+    "nom": "Julio Collins",
+    "role": "respcom",
+    "vu": "2026-09-18T18:09:36.602Z",
+    "id": 1789754976921
    }
   ],
   "oilroxwood_demandes": [],
