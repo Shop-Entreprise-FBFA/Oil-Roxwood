@@ -11198,6 +11198,13 @@
     "quantite": 100,
     "qui": "Emma Collins-rodriguez",
     "fact": 253098
+   },
+   {
+    "date": "2026-09-18",
+    "client": "Union Syndicat",
+    "quantite": 100,
+    "qui": "Emma Collins-rodriguez",
+    "fact": 253099
    }
   ],
   "collection": [
@@ -12658,7 +12665,8 @@
     "nom": "Union Syndicat",
     "adresse": "Los Santos",
     "tel": "",
-    "rib": ""
+    "rib": "",
+    "lastCmd": "2026-09-18"
    },
    {
     "nom": "Aube noire ",
@@ -14033,8 +14041,31 @@
     "prix": 120
    }
   ],
-  "compteur": 253099,
+  "compteur": 253100,
   "factures": [
+   {
+    "num": 253099,
+    "date": "2026-09-18",
+    "client": "Union Syndicat",
+    "emetteur": "Emma Collins-rodriguez",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 100,
+      "tva": 0.04,
+      "pu": 180,
+      "ht": 18000,
+      "ttc": 18720,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 18000,
+    "ttc": 18720,
+    "poids": 200,
+    "statut": "attente"
+   },
    {
     "num": 253098,
     "date": "2026-09-18",
@@ -28393,14 +28424,14 @@
   "semaineDebut": "2026-09-14"
  },
  "_cid": "valq4wdlxjl",
- "_maj": 1789747620555,
- "_rev": "xdanwv0hbpm-mu75iy7z",
+ "_maj": 1789747633297,
+ "_rev": "59ku34786gd-mu75j4t9",
  "_majSec": {
   "fer": 1789738169303,
-  "fact": 1789747620555,
+  "fact": 1789747633272,
   "users": 1789560928365,
   "weeks": 1789477366022,
-  "sheets": 1789746586850,
+  "sheets": 1789747633272,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
   "journal": 1789746624892,
@@ -30346,13 +30377,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-18T16:07:05.663Z",
+  "maj": "2026-09-18T16:07:14.205Z",
   "semaine": 38,
   "totalBarils": 160608,
   "ca": 803040,
   "objectif": 375000,
   "effectif": 92,
-  "clientsServis": 85,
+  "clientsServis": 86,
   "top3": [
    {
     "nom": "Alex Turner",
