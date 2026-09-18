@@ -16040,14 +16040,6 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
-  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -16071,6 +16063,14 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T00:06:23.240Z"
+  },
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -28287,9 +28287,9 @@
   "postesV4": 1,
   "semaineDebut": "2026-09-14"
  },
- "_cid": "k4a9si9793",
- "_maj": 1789731788087,
- "_rev": "26prgg89kmw-mu6w3r59",
+ "_cid": "wbfm1pew7dg",
+ "_maj": 1789731806860,
+ "_rev": "nau4ffnp03-mu6w3y9f",
  "_majSec": {
   "fer": 1789731788087,
   "fact": 1789667051764,
@@ -28312,7 +28312,7 @@
   "primesExtra": 1789341106480,
   "quotasComHist": 1789341106480,
   "profils": 1789559236417,
-  "_tables": 1789731785043,
+  "_tables": 1789731806860,
   "_permsFix1": 1789341106480,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1789341106480,
@@ -28329,11 +28329,6 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
-  {
-   "t": 1789731787726,
-   "u": "Emma Collins",
-   "a": "Achats de fer : 10 relevé(s) repris du salon"
-  },
   {
    "t": 1789730998359,
    "u": "Emma Collins",
@@ -29828,6 +29823,11 @@
    "t": 1788489409372,
    "u": "Diego Herrera",
    "a": "Permissions : Assistant de direction · « effectif » → lecture seule 👁"
+  },
+  {
+   "t": 1788489408710,
+   "u": "Diego Herrera",
+   "a": "Permissions : Assistant de direction · « overview » → lecture seule 👁"
   }
  ],
  "prodDer": {
@@ -30231,7 +30231,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-18T11:43:20.109Z",
+  "maj": "2026-09-18T11:43:29.331Z",
   "semaine": 38,
   "totalBarils": 160608,
   "ca": 803040,
@@ -75737,11 +75737,18 @@
     "id": 1789731684088
    },
    {
-    "uid": "1053366471574687844",
-    "nom": "Emma Collins",
-    "role": "respcom",
-    "vu": "2026-09-18T11:43:05.043Z",
-    "id": 1789731785382
+    "uid": "826526979204841482",
+    "nom": "Diego Herrera",
+    "role": "direction",
+    "vu": "2026-09-18T11:42:26.850Z",
+    "id": 1789731748710
+   },
+   {
+    "uid": "826526979204841482",
+    "nom": "Diego Herrera",
+    "role": "direction",
+    "vu": "2026-09-18T11:43:26.854Z",
+    "id": 1789731808752
    }
   ],
   "oilroxwood_demandes": [],
