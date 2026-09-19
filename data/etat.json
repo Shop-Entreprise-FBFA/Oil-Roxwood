@@ -28356,14 +28356,6 @@
    "quantite": 135,
    "montant": 675,
    "did": "235844738656239616"
-  },
-  {
-   "id": "1550776965701701643",
-   "t": "2026-09-19 09:54",
-   "nom": "Julio Collins",
-   "quantite": 2,
-   "montant": 10,
-   "did": "767332288744128512"
   }
  ],
  "settings": {
@@ -28573,32 +28565,32 @@
   "postesV4": 1,
   "semaineDebut": "2026-09-14"
  },
- "_cid": "djbt6ugppcu",
- "_maj": 1789813875831,
- "_rev": "c5n6q466efk-mu88ystg",
+ "_cid": "no5xh0c8qp",
+ "_maj": 1789813913529,
+ "_rev": "34xm9ferv8x-mu88zxm9",
  "_majSec": {
-  "fer": 1789734837832,
-  "fact": 1789734837832,
-  "users": 1789734837832,
+  "fer": 1789763308377,
+  "fact": 1789747636704,
+  "users": 1789780484559,
   "weeks": 1789477366022,
-  "sheets": 1789734837831,
+  "sheets": 1789771077407,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
-  "journal": 1789734837835,
+  "journal": 1789780484559,
   "pending": 1789341106480,
-  "prodDer": 1789734837835,
-  "runners": 1789734837831,
-  "absences": 1789734837835,
+  "prodDer": 1789758245770,
+  "runners": 1789765119778,
+  "absences": 1789746624892,
   "imported": 1789341106480,
   "settings": 1789567303602,
   "closeUndo": 1789341106480,
-  "quotasCom": 1789734837835,
+  "quotasCom": 1789780490270,
   "bilanExtra": 1789660507302,
   "bilanForce": 1789341106480,
   "primesExtra": 1789341106480,
   "quotasComHist": 1789341106480,
   "profils": 1789559236417,
-  "_tables": 1789813875831,
+  "_tables": 1789813913529,
   "_permsFix1": 1789341106480,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1789341106480,
@@ -28606,7 +28598,7 @@
   "_affFix1": 1789341106480,
   "produits": 1789391731576,
   "_prodFix1": 1789341106480,
-  "_recruesIgnore": 1789734837835,
+  "_recruesIgnore": 1789743164871,
   "ventesAlias": 1789341106480,
   "_ventesIgnore": 1789341106480,
   "_avertVus": 1789382976850,
@@ -28615,41 +28607,6 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
-  {
-   "t": 1789804727140,
-   "u": "Julio Collins",
-   "a": "Achats de fer : 1 relevé(s) repris du salon"
-  },
-  {
-   "t": 1789804721424,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1789804721295,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1789803732646,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1789803732453,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1789803573128,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1789803572928,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
   {
    "t": 1789780501804,
    "u": "Julio Collins",
@@ -30114,6 +30071,41 @@
    "t": 1788489432613,
    "u": "Diego Herrera",
    "a": "Permissions : Assistant de direction · « moi » → lecture seule 👁"
+  },
+  {
+   "t": 1788489431957,
+   "u": "Diego Herrera",
+   "a": "Permissions : Assistant de direction · « frecues » → lecture seule 👁"
+  },
+  {
+   "t": 1788489431284,
+   "u": "Diego Herrera",
+   "a": "Permissions : Assistant de direction · « quotascom » → lecture seule 👁"
+  },
+  {
+   "t": 1788489430661,
+   "u": "Diego Herrera",
+   "a": "Permissions : Assistant de direction · « prodder » → lecture seule 👁"
+  },
+  {
+   "t": 1788489426605,
+   "u": "Diego Herrera",
+   "a": "Permissions : Assistant de direction · « bilan » → aucun accès"
+  },
+  {
+   "t": 1788489426019,
+   "u": "Diego Herrera",
+   "a": "Permissions : Assistant de direction · « relances » → aucun accès"
+  },
+  {
+   "t": 1788489425432,
+   "u": "Diego Herrera",
+   "a": "Permissions : Assistant de direction · « factures » → aucun accès"
+  },
+  {
+   "t": 1788489424827,
+   "u": "Diego Herrera",
+   "a": "Permissions : Assistant de direction · « fcompta » → aucun accès"
   }
  ],
  "prodDer": {
@@ -30548,7 +30540,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-19T10:31:10.180Z",
+  "maj": "2026-09-19T10:32:03.057Z",
   "semaine": 38,
   "totalBarils": 181819,
   "ca": 909095,
@@ -79739,260 +79731,99 @@
     "uid": "826526979204841482",
     "nom": "Diego Herrera",
     "role": "direction",
-    "vu": "2026-09-19T01:18:26.476Z",
-    "id": 1789780707700
+    "vu": "2026-09-19T01:18:21.680Z",
+    "id": 1789780702564
    },
    {
     "uid": "826526979204841482",
     "nom": "Diego Herrera",
     "role": "direction",
-    "vu": "2026-09-19T01:19:26.482Z",
-    "id": 1789780767426
+    "vu": "2026-09-19T01:20:26.834Z",
+    "id": 1789780827182
    },
    {
     "uid": "826526979204841482",
     "nom": "Diego Herrera",
     "role": "direction",
-    "vu": "2026-09-19T01:21:25.950Z",
-    "id": 1789780887487
+    "vu": "2026-09-19T01:21:26.835Z",
+    "id": 1789780887848
    },
    {
     "uid": "826526979204841482",
     "nom": "Diego Herrera",
     "role": "direction",
-    "vu": "2026-09-19T01:22:25.954Z",
-    "id": 1789780947634
+    "vu": "2026-09-19T01:23:26.836Z",
+    "id": 1789781007636
    },
    {
     "uid": "826526979204841482",
     "nom": "Diego Herrera",
     "role": "direction",
-    "vu": "2026-09-19T01:24:25.963Z",
-    "id": 1789781067323
+    "vu": "2026-09-19T01:24:26.848Z",
+    "id": 1789781067249
    },
    {
     "uid": "826526979204841482",
     "nom": "Diego Herrera",
     "role": "direction",
-    "vu": "2026-09-19T01:25:25.950Z",
-    "id": 1789781127507
+    "vu": "2026-09-19T01:26:26.839Z",
+    "id": 1789781187499
    },
    {
     "uid": "826526979204841482",
     "nom": "Diego Herrera",
     "role": "direction",
-    "vu": "2026-09-19T01:27:25.963Z",
-    "id": 1789781247247
+    "vu": "2026-09-19T01:27:26.849Z",
+    "id": 1789781247542
    },
    {
     "uid": "826526979204841482",
     "nom": "Diego Herrera",
     "role": "direction",
-    "vu": "2026-09-19T01:28:25.964Z",
-    "id": 1789781307193
+    "vu": "2026-09-19T01:29:25.843Z",
+    "id": 1789781367476
    },
    {
     "uid": "826526979204841482",
     "nom": "Diego Herrera",
     "role": "direction",
-    "vu": "2026-09-19T01:30:25.990Z",
-    "id": 1789781427666
+    "vu": "2026-09-19T01:30:25.851Z",
+    "id": 1789781427602
    },
    {
     "uid": "826526979204841482",
     "nom": "Diego Herrera",
     "role": "direction",
-    "vu": "2026-09-19T01:31:25.990Z",
-    "id": 1789781487275
+    "vu": "2026-09-19T01:32:25.846Z",
+    "id": 1789781547467
    },
    {
     "uid": "826526979204841482",
     "nom": "Diego Herrera",
     "role": "direction",
-    "vu": "2026-09-19T01:33:25.988Z",
-    "id": 1789781607655
+    "vu": "2026-09-19T01:33:25.849Z",
+    "id": 1789781607384
    },
    {
     "uid": "826526979204841482",
     "nom": "Diego Herrera",
     "role": "direction",
-    "vu": "2026-09-19T01:34:25.988Z",
-    "id": 1789781667210
+    "vu": "2026-09-19T01:35:25.845Z",
+    "id": 1789781728122
    },
    {
     "uid": "826526979204841482",
     "nom": "Diego Herrera",
     "role": "direction",
-    "vu": "2026-09-19T01:36:25.990Z",
-    "id": 1789781787506
+    "vu": "2026-09-19T01:36:25.851Z",
+    "id": 1789781787820
    },
    {
     "uid": "826526979204841482",
     "nom": "Diego Herrera",
     "role": "direction",
-    "vu": "2026-09-19T01:37:25.991Z",
-    "id": 1789781847334
-   },
-   {
-    "uid": "767332288744128512",
-    "nom": "Julio Collins",
-    "role": "commercial",
-    "vu": "2026-09-19T07:39:14.332Z",
-    "id": 1789803573348
-   },
-   {
-    "uid": "767332288744128512",
-    "nom": "Julio Collins",
-    "role": "commercial",
-    "vu": "2026-09-19T07:42:12.455Z",
-    "id": 1789803732896
-   },
-   {
-    "uid": "767332288744128512",
-    "nom": "Julio Collins",
-    "role": "respcom",
-    "vu": "2026-09-19T07:42:15.491Z",
-    "id": 1789803735921
-   },
-   {
-    "uid": "767332288744128512",
-    "nom": "Julio Collins",
-    "role": "commercial",
-    "vu": "2026-09-19T07:58:22.341Z",
-    "id": 1789804721426
-   },
-   {
-    "uid": "767332288744128512",
-    "nom": "Julio Collins",
-    "role": "respcom",
-    "vu": "2026-09-19T07:58:44.736Z",
-    "id": 1789804725119
-   },
-   {
-    "uid": "948542221429379112",
-    "nom": "Stella Collins",
-    "role": "direction",
-    "vu": "2026-09-18T12:35:28.577Z",
-    "id": 1789812337704
-   },
-   {
-    "uid": "948542221429379112",
-    "nom": "Stella Collins",
-    "role": "direction",
-    "vu": "2026-09-18T12:36:58.571Z",
-    "id": 1789812427292
-   },
-   {
-    "uid": "948542221429379112",
-    "nom": "Stella Collins",
-    "role": "direction",
-    "vu": "2026-09-18T12:38:29.173Z",
-    "id": 1789812518292
-   },
-   {
-    "uid": "948542221429379112",
-    "nom": "Stella Collins",
-    "role": "direction",
-    "vu": "2026-09-19T10:10:15.840Z",
-    "id": 1789812606719
-   },
-   {
-    "uid": "948542221429379112",
-    "nom": "Stella Collins",
-    "role": "direction",
-    "vu": "2026-09-19T10:11:45.840Z",
-    "id": 1789812696978
-   },
-   {
-    "uid": "948542221429379112",
-    "nom": "Stella Collins",
-    "role": "direction",
-    "vu": "2026-09-19T10:13:15.841Z",
-    "id": 1789812786716
-   },
-   {
-    "uid": "948542221429379112",
-    "nom": "Stella Collins",
-    "role": "direction",
-    "vu": "2026-09-19T10:14:45.842Z",
-    "id": 1789812876733
-   },
-   {
-    "uid": "948542221429379112",
-    "nom": "Stella Collins",
-    "role": "direction",
-    "vu": "2026-09-19T10:16:15.843Z",
-    "id": 1789812967068
-   },
-   {
-    "uid": "948542221429379112",
-    "nom": "Stella Collins",
-    "role": "direction",
-    "vu": "2026-09-19T10:17:45.843Z",
-    "id": 1789813057136
-   },
-   {
-    "uid": "948542221429379112",
-    "nom": "Stella Collins",
-    "role": "direction",
-    "vu": "2026-09-19T10:19:15.844Z",
-    "id": 1789813147055
-   },
-   {
-    "uid": "948542221429379112",
-    "nom": "Stella Collins",
-    "role": "direction",
-    "vu": "2026-09-19T10:20:45.851Z",
-    "id": 1789813236408
-   },
-   {
-    "uid": "948542221429379112",
-    "nom": "Stella Collins",
-    "role": "direction",
-    "vu": "2026-09-19T10:22:15.852Z",
-    "id": 1789813326256
-   },
-   {
-    "uid": "948542221429379112",
-    "nom": "Stella Collins",
-    "role": "direction",
-    "vu": "2026-09-19T10:23:45.852Z",
-    "id": 1789813416191
-   },
-   {
-    "uid": "948542221429379112",
-    "nom": "Stella Collins",
-    "role": "direction",
-    "vu": "2026-09-19T10:25:15.853Z",
-    "id": 1789813506721
-   },
-   {
-    "uid": "948542221429379112",
-    "nom": "Stella Collins",
-    "role": "direction",
-    "vu": "2026-09-19T10:26:45.854Z",
-    "id": 1789813596437
-   },
-   {
-    "uid": "948542221429379112",
-    "nom": "Stella Collins",
-    "role": "direction",
-    "vu": "2026-09-19T10:28:15.854Z",
-    "id": 1789813686575
-   },
-   {
-    "uid": "948542221429379112",
-    "nom": "Stella Collins",
-    "role": "direction",
-    "vu": "2026-09-19T10:29:45.855Z",
-    "id": 1789813776748
-   },
-   {
-    "uid": "948542221429379112",
-    "nom": "Stella Collins",
-    "role": "direction",
-    "vu": "2026-09-19T10:31:15.831Z",
-    "id": 1789813866927
+    "vu": "2026-09-19T10:31:53.521Z",
+    "id": 1789813915741
    }
   ],
   "oilroxwood_demandes": [],
