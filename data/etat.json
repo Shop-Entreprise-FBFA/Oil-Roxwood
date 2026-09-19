@@ -28707,18 +28707,18 @@
  },
  "_cid": "jsc76kwix",
  "_maj": 1789837466829,
- "_rev": "7hg1rx8p09y-mu8n0i0j",
+ "_rev": "391d01cfdal-mu8n0slh",
  "_majSec": {
   "fer": 1789821421620,
-  "fact": 1789833869887,
-  "users": 1789833869887,
+  "fact": 1789833879535,
+  "users": 1789833879535,
   "weeks": 1789477366022,
-  "sheets": 1789833869886,
+  "sheets": 1789833879535,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
-  "journal": 1789833869896,
+  "journal": 1789833879540,
   "pending": 1789341106480,
-  "prodDer": 1789833869896,
+  "prodDer": 1789833879540,
   "runners": 1789822649713,
   "absences": 1789819348049,
   "imported": 1789341106480,
@@ -28730,7 +28730,7 @@
   "primesExtra": 1789341106480,
   "quotasComHist": 1789341106480,
   "profils": 1789559236417,
-  "_tables": 1789833869887,
+  "_tables": 1789833879536,
   "_permsFix1": 1789341106480,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1789341106480,
@@ -28747,16 +28747,6 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
-  {
-   "t": 1789837442922,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1789837442719,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
   {
    "t": 1789837213018,
    "u": "Julio Collins",
@@ -30246,6 +30236,16 @@
    "t": 1788490364545,
    "u": "Diego Herrera",
    "a": "Permissions : Assistant de direction · « historique » → accès complet ✓"
+  },
+  {
+   "t": 1788489907021,
+   "u": "Diego Herrera",
+   "a": "Permissions : RH · « overview » → aucun accès"
+  },
+  {
+   "t": 1788489906196,
+   "u": "Diego Herrera",
+   "a": "Permissions : RH · « semaine » → aucun accès"
   }
  ],
  "prodDer": {
@@ -30579,13 +30579,6 @@
     "q": {
      "crudo": 1
     }
-   },
-   {
-    "date": "2026-09-19",
-    "qui": "Julio Collins",
-    "q": {
-     "4 objets": 1
-    }
    }
   ]
  },
@@ -30732,7 +30725,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-19T17:04:24.116Z",
+  "maj": "2026-09-19T17:04:37.829Z",
   "semaine": 38,
   "totalBarils": 195275,
   "ca": 976375,
@@ -81957,32 +81950,25 @@
     "id": 1789837107725
    },
    {
-    "uid": "826526979204841482",
-    "nom": "Diego Herrera",
+    "uid": "948542221429379112",
+    "nom": "Stella Collins",
     "role": "direction",
-    "vu": "2026-09-19T17:00:26.827Z",
-    "id": 1789837227034
+    "vu": "2026-09-19T16:59:46.980Z",
+    "id": 1789837187458
    },
    {
-    "uid": "826526979204841482",
-    "nom": "Diego Herrera",
-    "role": "direction",
-    "vu": "2026-09-19T17:01:26.824Z",
-    "id": 1789837287646
+    "uid": "767332288744128512",
+    "nom": "Julio Collins",
+    "role": "commercial",
+    "vu": "2026-09-19T17:00:12.213Z",
+    "id": 1789837213843
    },
    {
-    "uid": "826526979204841482",
-    "nom": "Diego Herrera",
-    "role": "direction",
-    "vu": "2026-09-19T17:03:26.831Z",
-    "id": 1789837407628
-   },
-   {
-    "uid": "826526979204841482",
-    "nom": "Diego Herrera",
-    "role": "direction",
-    "vu": "2026-09-19T17:04:26.829Z",
-    "id": 1789837467450
+    "uid": "767332288744128512",
+    "nom": "Julio Collins",
+    "role": "respcom",
+    "vu": "2026-09-19T17:00:44.789Z",
+    "id": 1789837245700
    }
   ],
   "oilroxwood_demandes": [],
