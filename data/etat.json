@@ -11337,17 +11337,31 @@
    },
    {
     "date": "2026-09-19",
+    "client": "La Linterna",
+    "quantite": 500,
+    "qui": "Julio Collins",
+    "fact": 253101
+   },
+   {
+    "date": "2026-09-19",
     "client": "Devils Sons",
-    "quantite": 200,
+    "quantite": 67,
     "qui": "Julio Collins",
     "fact": 253100
    },
    {
     "date": "2026-09-19",
-    "client": "La Linterna",
-    "quantite": 500,
-    "qui": "Julio Collins",
-    "fact": 253101
+    "client": "Devils Sons",
+    "quantite": 67,
+    "qui": "Emma Collins-rodriguez",
+    "fact": 253100
+   },
+   {
+    "date": "2026-09-19",
+    "client": "Devils Sons",
+    "quantite": 66,
+    "qui": "William Rodriguez-collins",
+    "fact": 253100
    }
   ],
   "collection": [
@@ -14209,24 +14223,25 @@
     "num": 253100,
     "date": "2026-09-19",
     "client": "Devils Sons",
-    "emetteur": "Julio Collins",
+    "emetteur": "Julio Collins, Emma Collins-rodriguez, William Rodriguez-collins",
     "postop": false,
     "lignes": [
      {
       "ref": "CMD",
       "qte": 200,
       "tva": 0.04,
+      "desc": "bidons d'essence ",
       "pu": 180,
       "ht": 36000,
-      "ttc": 37440,
-      "desc": "bidons d'essence "
+      "ttc": 37440
      }
     ],
     "offert": 0,
     "ht": 36000,
     "ttc": 37440,
     "poids": 400,
-    "statut": "attente"
+    "statut": "payee",
+    "modifiee": 1789834018738
    },
    {
     "num": 253099,
@@ -16329,6 +16344,14 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T20:11:53.537Z"
+  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -16352,14 +16375,6 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T00:06:23.240Z"
-  },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -28672,18 +28687,18 @@
   "postesV4": 1,
   "semaineDebut": "2026-09-14"
  },
- "_cid": "dhdoqjeql4r",
- "_maj": 1789834001378,
- "_rev": "slezco0zio-mu8ky7za",
+ "_cid": "w3iqo0cit6k",
+ "_maj": 1789834020926,
+ "_rev": "e8dfzyxip2-mu8kypi2",
  "_majSec": {
   "fer": 1789821421620,
-  "fact": 1789829283939,
+  "fact": 1789834020926,
   "users": 1789829253557,
   "weeks": 1789477366022,
-  "sheets": 1789833149752,
+  "sheets": 1789834018738,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
-  "journal": 1789829380958,
+  "journal": 1789834018763,
   "pending": 1789341106480,
   "prodDer": 1789758245770,
   "runners": 1789822649713,
@@ -28714,6 +28729,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1789834018555,
+   "u": "Emma Collins",
+   "a": "Facture n°253100 modifiée — émetteur Julio Collins → Julio Collins, Emma Collins-rodriguez, William Rodriguez-collins"
+  },
   {
    "t": 1789829379930,
    "u": "L",
@@ -30208,11 +30228,6 @@
    "t": 1788489438411,
    "u": "Diego Herrera",
    "a": "Permissions : Assistant de direction · « maj » → aucun accès"
-  },
-  {
-   "t": 1788489437620,
-   "u": "Diego Herrera",
-   "a": "Permissions : Assistant de direction · « dlogs » → aucun accès"
   }
  ],
  "prodDer": {
@@ -30657,7 +30672,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-19T16:06:38.566Z",
+  "maj": "2026-09-19T16:07:01.274Z",
   "semaine": 38,
   "totalBarils": 195275,
   "ca": 976375,
