@@ -11461,6 +11461,13 @@
     "client": "Employé — Louka Romelu ⚡",
     "quantite": 1,
     "qui": "Thomas Boyer"
+   },
+   {
+    "date": "2026-09-20",
+    "client": "Horizon biotech",
+    "quantite": 200,
+    "qui": "Julio Collins",
+    "fact": 253102
    }
   ],
   "collection": [
@@ -13005,7 +13012,7 @@
     "rib": "21182",
     "tel": "2092",
     "adresse": "Sandy Shore",
-    "lastCmd": "2026-08-24"
+    "lastCmd": "2026-09-20"
    },
    {
     "nom": "404",
@@ -14293,8 +14300,31 @@
     "prix": 120
    }
   ],
-  "compteur": 253102,
+  "compteur": 253103,
   "factures": [
+   {
+    "num": 253102,
+    "date": "2026-09-20",
+    "client": "Horizon biotech",
+    "emetteur": "Julio Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 200,
+      "tva": 0,
+      "pu": 180,
+      "ht": 36000,
+      "ttc": 36000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 36000,
+    "ttc": 36000,
+    "poids": 400,
+    "statut": "attente"
+   },
    {
     "num": 253101,
     "date": "2026-09-19",
@@ -29075,14 +29105,14 @@
   "semaineDebut": "2026-09-14"
  },
  "_cid": "l5n4zq71hkr",
- "_maj": 1789893746569,
- "_rev": "dnkqae6qmy-mu9kjvif",
+ "_maj": 1789893808967,
+ "_rev": "3i7om82so73-mu9kk8t7",
  "_majSec": {
   "fer": 1789848806895,
-  "fact": 1789834020926,
+  "fact": 1789893808955,
   "users": 1789893737574,
   "weeks": 1789477366022,
-  "sheets": 1789856610457,
+  "sheets": 1789893808955,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
   "journal": 1789893737574,
@@ -31124,13 +31154,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-20T08:43:15.399Z",
+  "maj": "2026-09-20T08:43:32.635Z",
   "semaine": 38,
   "totalBarils": 206036,
   "ca": 1030180,
   "objectif": 375000,
   "effectif": 98,
-  "clientsServis": 88,
+  "clientsServis": 89,
   "top3": [
    {
     "nom": "Alex Turner",
