@@ -4264,7 +4264,7 @@
     "arrivee": "2026-09-20",
     "discord": "1488636209839345845",
     "avert": "",
-    "contrat": false,
+    "contrat": true,
     "recrut": "Thomas Boyer",
     "dernierService": "2026-09-20",
     "flagOut": false
@@ -29106,18 +29106,18 @@
   "postesV4": 1,
   "semaineDebut": "2026-09-14"
  },
- "_cid": "9o6uq149kt4",
- "_maj": 1789922485786,
- "_rev": "7tvtm0tx387-mua1myiz",
+ "_cid": "gdflkbesav",
+ "_maj": 1789922487306,
+ "_rev": "zrknbm2s7r-mua1n35l",
  "_majSec": {
   "fer": 1789922163973,
   "fact": 1789918890083,
   "users": 1789914224577,
   "weeks": 1789477366022,
-  "sheets": 1789922117072,
+  "sheets": 1789922487306,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
-  "journal": 1789922201813,
+  "journal": 1789922487306,
   "pending": 1789341106480,
   "prodDer": 1789845736125,
   "runners": 1789911172478,
@@ -29131,7 +29131,7 @@
   "primesExtra": 1789341106480,
   "quotasComHist": 1789341106480,
   "profils": 1789559236417,
-  "_tables": 1789922485786,
+  "_tables": 1789922487306,
   "_permsFix1": 1789341106480,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1789341106480,
@@ -29143,11 +29143,16 @@
   "ventesAlias": 1789341106480,
   "_ventesIgnore": 1789341106480,
   "_avertVus": 1789382976850,
-  "_signeVus": 1789917658106
+  "_signeVus": 1789922487306
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1789922488309,
+   "u": "Diego Herrera",
+   "a": "Contrat(s) signé(s) via Discord : Jawad Benraoud"
+  },
   {
    "t": 1789922164537,
    "u": "Stella Collins",
@@ -30642,11 +30647,6 @@
    "t": 1789146124991,
    "u": "Diego Herrera",
    "a": "Permissions : Comptable · « relances » → aucun accès"
-  },
-  {
-   "t": 1789146123978,
-   "u": "Diego Herrera",
-   "a": "Permissions : Comptable · « relances » → lecture seule 👁"
   }
  ],
  "prodDer": {
@@ -31156,7 +31156,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-20T16:41:32.750Z",
+  "maj": "2026-09-20T16:41:38.746Z",
   "semaine": 38,
   "totalBarils": 241315,
   "ca": 1206575,
@@ -90109,6 +90109,7 @@
   "1789837590288",
   "1789877181343",
   "1789877190476",
-  "1789917586984"
+  "1789917586984",
+  "1789922369780"
  ]
 }
