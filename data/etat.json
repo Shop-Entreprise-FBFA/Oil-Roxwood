@@ -16447,6 +16447,22 @@
    "public": true,
    "maj": "2026-09-16T11:47:16.417Z"
   },
+  "stella collins": {
+   "nom": "Stella Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-14T13:20:17.287Z"
+  },
+  "julio collins": {
+   "nom": "Julio Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T00:06:23.240Z"
+  },
   "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿": {
    "nom": "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿",
    "photo": "",
@@ -16470,22 +16486,6 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T16:48:15.042Z"
-  },
-  "stella collins": {
-   "nom": "Stella Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-14T13:20:17.287Z"
-  },
-  "julio collins": {
-   "nom": "Julio Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T00:06:23.240Z"
   },
   "william rodriguez-collins": {
    "nom": "William Rodriguez-collins",
@@ -29150,18 +29150,18 @@
   "postesV4": 1,
   "semaineDebut": "2026-09-14"
  },
- "_cid": "i0oxzuts2y",
- "_maj": 1789936417418,
- "_rev": "kzxy8fo0f98-mua9xp4a",
+ "_cid": "7m9t6j8gdw",
+ "_maj": 1789936434052,
+ "_rev": "xf87xd62yy-mua9xusn",
  "_majSec": {
   "fer": 1789924320939,
   "fact": 1789918890083,
-  "users": 1789936340079,
+  "users": 1789936434052,
   "weeks": 1789477366022,
   "sheets": 1789936186056,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
-  "journal": 1789936340079,
+  "journal": 1789936434052,
   "pending": 1789341106480,
   "prodDer": 1789845736125,
   "runners": 1789911172478,
@@ -29175,7 +29175,7 @@
   "primesExtra": 1789341106480,
   "quotasComHist": 1789341106480,
   "profils": 1789559236417,
-  "_tables": 1789936417418,
+  "_tables": 1789936434171,
   "_permsFix1": 1789341106480,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1789341106480,
@@ -29192,6 +29192,16 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1789936434278,
+   "u": "Julio Collins",
+   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
+  },
+  {
+   "t": 1789936434084,
+   "u": "?",
+   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
+  },
   {
    "t": 1789936341083,
    "u": "Julio Collins",
@@ -30681,16 +30691,6 @@
    "t": 1789146171879,
    "u": "Diego Herrera",
    "a": "Permissions : RH · « frecues » → lecture seule 👁"
-  },
-  {
-   "t": 1789146170652,
-   "u": "Diego Herrera",
-   "a": "Permissions : Assistant de direction · « frecues » → accès complet ✓"
-  },
-  {
-   "t": 1789146166038,
-   "u": "Diego Herrera",
-   "a": "Permissions : Commercial · « fcompta » → aucun accès"
   }
  ],
  "prodDer": {
@@ -31200,7 +31200,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-20T20:33:50.698Z",
+  "maj": "2026-09-20T20:33:58.055Z",
   "semaine": 38,
   "totalBarils": 241315,
   "ca": 1206575,
@@ -90048,39 +90048,46 @@
     "id": 1789936056103
    },
    {
-    "uid": "438358976141328404",
-    "nom": "Thomas Boyer",
-    "role": "rh",
-    "vu": "2026-09-20T20:28:35.690Z",
-    "id": 1789936118122
-   },
-   {
-    "uid": "438358976141328404",
-    "nom": "Thomas Boyer",
-    "role": "rh",
-    "vu": "2026-09-20T20:29:35.702Z",
-    "id": 1789936178877
-   },
-   {
-    "uid": "826526979204841482",
-    "nom": "Diego Herrera",
-    "role": "direction",
-    "vu": "2026-09-20T20:31:25.848Z",
-    "id": 1789936286975
-   },
-   {
-    "uid": "826526979204841482",
-    "nom": "Diego Herrera",
-    "role": "direction",
-    "vu": "2026-09-20T20:32:25.849Z",
-    "id": 1789936347196
-   },
-   {
-    "uid": "235844738656239616",
-    "nom": "William Rodriguez-collins",
+    "uid": "767332288744128512",
+    "nom": "Julio Collins",
     "role": "commercial",
-    "vu": "2026-09-20T20:33:37.417Z",
-    "id": 1789936418286
+    "vu": "2026-09-20T20:27:54.354Z",
+    "id": 1789936075748
+   },
+   {
+    "uid": "948542221429379112",
+    "nom": "Stella Collins",
+    "role": "direction",
+    "vu": "2026-09-20T20:29:34.836Z",
+    "id": 1789936175661
+   },
+   {
+    "uid": "948542221429379112",
+    "nom": "Stella Collins",
+    "role": "direction",
+    "vu": "2026-09-20T20:30:35.734Z",
+    "id": 1789936235516
+   },
+   {
+    "uid": "438358976141328404",
+    "nom": "Thomas Boyer",
+    "role": "rh",
+    "vu": "2026-09-20T20:31:35.693Z",
+    "id": 1789936298435
+   },
+   {
+    "uid": "438358976141328404",
+    "nom": "Thomas Boyer",
+    "role": "rh",
+    "vu": "2026-09-20T20:32:35.705Z",
+    "id": 1789936358431
+   },
+   {
+    "uid": "767332288744128512",
+    "nom": "Julio Collins",
+    "role": "commercial",
+    "vu": "2026-09-20T20:33:54.086Z",
+    "id": 1789936434682
    }
   ],
   "oilroxwood_demandes": [],
