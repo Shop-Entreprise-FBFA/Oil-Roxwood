@@ -1197,7 +1197,7 @@ function logout(){
 }
 
 /* ---- Canari de version : prévient les onglets restés sur une vieille version ---- */
-const APP_VERSION='C-109';
+const APP_VERSION='C-110';
 /* Le bandeau ne doit dire qu'une chose : « une version plus récente existe ».
    Il comparait deux chaînes avec !==, donc il s'allumait aussi dans l'autre
    sens — quand la page ouverte était PLUS récente que version.json, ce qui
@@ -1919,10 +1919,13 @@ function demote(id){
   toast(`📉 ${r.nom} redescend ${GRADES[r.grade].nom}${rhMaj?' · feuille RH mise à jour':''}`);
 }
 function estNouveau(nom){
-  // arrivé dans l'entreprise pendant la semaine en cours (date d'arrivée en fiche RH)
+  /* Arrivé dans la semaine de travail encore ouverte (date d'arrivée en fiche RH).
+     Pas le lundi du calendrier : la semaine de travail n'avance qu'à la clôture.
+     Le lundi où l'on traite la semaine S-1, les gens arrivés pendant S-1 sont
+     donc toujours « nouveaux » — sans quoi le ⚠ leur était proposé à tort. */
   const row=((S.sheets&&S.sheets.rh)||[]).find(x=>String(x.nom||'').toLowerCase().trim()===String(nom||'').toLowerCase().trim());
   if(!row||!row.arrivee) return false;
-  return String(row.arrivee)>=agISO(agMonday(0));
+  return String(row.arrivee)>=jourISO(lundiSemaineTravail());
 }
 /* Le bouton ⚠ ne faisait que compter : la personne n'apprenait rien. On dépose
    maintenant un ordre au bot, qui fait comme /avertissement — enregistrement,
@@ -1967,7 +1970,7 @@ async function avertirGhost(nom){
   const row=((S.sheets&&S.sheets.rh)||[]).find(x=>String(x.nom||'').toLowerCase().trim()===String(nom).toLowerCase().trim());
   if(!row) return;
   if(absDe(nom)) return toast('🌴 Absence déclarée — pas d\'avertissement');
-  if(estNouveau(nom)) return toast('🌱 Arrivé cette semaine — pas d\'avertissement');
+  if(estNouveau(nom)) return toast('🌱 Arrivé pendant la semaine à traiter — pas d\'avertissement');
   if(!confirm(`Donner un avertissement à ${row.nom} ?\n(Intérimaire · aucune prise de service cette semaine)\n\nL'avertissement sera compté dans la colonne « Avert. » de sa fiche RH et annoncé sur Discord, comme avec /avertissement.`)) return;
   const n=(parseInt(String(row.avert||'').replace(/\D/g,''),10)||0)+1; row.avert=String(n);
   const etat=await avertDiscord(row,'Aucune prise de service cette semaine');
@@ -4868,6 +4871,10 @@ function ferDel(id){
 
 /* ================== MISES À JOUR (changelog) ================== */
 const CHANGELOG=[
+ {v:'C-110',d:'21/09/2026',t:'Avertissements : les arrivés de la semaine à traiter sont épargnés',items:[
+   ['🐛','Le lundi, le ⚠ était proposé à ceux arrivés pendant S-1','Le filtre « arrivé cette semaine » comptait depuis le lundi du calendrier. Or on traite la semaine S-1 le lundi, et la semaine de travail n\'avance qu\'à la clôture : ceux recrutés pendant S-1 sortaient du filtre et se voyaient proposer un avertissement pour un quota qu\'ils n\'avaient pas eu le temps de faire.'],
+   ['🔧','Même définition de la semaine partout','Le filtre part maintenant du début de la semaine de travail, comme le compteur de recrues et le salaire recruteur : tant que la clôture n\'est pas faite, on est encore dans la semaine précédente.'],
+ ]},
  {v:'C-109',d:'20/09/2026',t:'Le bouton ⚠ des quotas prévient aussi la personne sur Discord',items:[
    ['⚠️','Le bouton ⚠ ne faisait que compter','Sous 80 % du quota, ou sans prise de service, le bouton ⚠ ajoutait 1 au compteur « Avert. » de la fiche RH — et c\'est tout : la personne n\'apprenait rien, contrairement à /avertissement sur Discord.'],
    ['🔧','Même effet que /avertissement','Le site dépose un ordre, le bot le prend dans les 20 s : avertissement enregistré (visible dans /mes-stats), log Direction, annonce dans le salon du ticket de la personne avec le motif. Le compteur de la fiche RH n\'est pas compté deux fois. Sans compte Discord dans la fiche RH, l\'avertissement reste sur le site seulement — et le message le dit.'],
