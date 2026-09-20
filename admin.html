@@ -1197,7 +1197,7 @@ function logout(){
 }
 
 /* ---- Canari de version : prévient les onglets restés sur une vieille version ---- */
-const APP_VERSION='C-108';
+const APP_VERSION='C-109';
 /* Le bandeau ne doit dire qu'une chose : « une version plus récente existe ».
    Il comparait deux chaînes avec !==, donc il s'allumait aussi dans l'autre
    sens — quand la page ouverte était PLUS récente que version.json, ce qui
@@ -1924,31 +1924,56 @@ function estNouveau(nom){
   if(!row||!row.arrivee) return false;
   return String(row.arrivee)>=agISO(agMonday(0));
 }
-function avertir(id){
+/* Le bouton ⚠ ne faisait que compter : la personne n'apprenait rien. On dépose
+   maintenant un ordre au bot, qui fait comme /avertissement — enregistrement,
+   log Direction, annonce dans le salon du ticket de la personne. Le compteur
+   « Avert. » est incrémenté ICI, au clic ; le bot ne le repasse pas par sa file
+   (il serait compté deux fois). Sans compte Discord dans la fiche RH, ou sans
+   jeton d'écriture, l'avertissement reste compté sur le site seulement. */
+async function avertDiscord(row, raison){
+  const did=String((row&&row.discord)||'').trim();
+  if(!/^\d{15,}$/.test(did)) return 'sans-discord';
+  if(!SYNC.cli||!RoxwoodGH.peutEcrire()) return 'lecture-seule';
+  const cu=currentUser();
+  try{
+    const {error}=await SYNC.cli.from('oilroxwood_bot_ordres')
+      .insert({type:'avertissement',payload:{discord:did,nom:row.nom,raison,par:(cu&&cu.user)||'dashboard'}});
+    return error?'erreur':'ok';
+  }catch(e){ return 'erreur'; }
+}
+function avertDiscordNote(etat){
+  return etat==='ok'?' · le bot prévient la personne sur Discord'
+    :etat==='sans-discord'?' · pas de compte Discord en fiche RH : Discord non prévenu'
+    :etat==='lecture-seule'?' · lecture seule : Discord non prévenu'
+    :etat==='erreur'?' · envoi au bot impossible : Discord non prévenu':'';
+}
+async function avertir(id){
   if(isMembre()) return toast('👀 Consultation seule pour les membres');
   const r=S.runners.find(x=>x.id===id); if(!r) return;
   const g=grade(r), pcA=g.quota?Math.round(r.barils/g.quota*100):0;
   const row=((S.sheets&&S.sheets.rh)||[]).find(x=>String(x.nom||'').toLowerCase().trim()===String(r.nom||'').toLowerCase().trim());
-  if(!confirm(`Donner un avertissement à ${r.nom} ?\n(Intérimaire · quota réalisé à ${pcA}% cette semaine)\n\nL'avertissement sera compté dans la colonne « Avert. » de sa fiche RH.`)) return;
+  if(!confirm(`Donner un avertissement à ${r.nom} ?\n(Intérimaire · quota réalisé à ${pcA}% cette semaine)\n\nL'avertissement sera compté dans la colonne « Avert. » de sa fiche RH et annoncé sur Discord, comme avec /avertissement.`)) return;
   let tot='?';
   if(row){ const n=(parseInt(String(row.avert||'').replace(/\D/g,''),10)||0)+1; row.avert=String(n); tot=n; }
+  const etat=row?await avertDiscord(row,`Quota non atteint (${pcA} % cette semaine)`):'sans-discord';
   jlog(`Avertissement : ${r.nom} (intérimaire, quota à ${pcA}%)${row?` — total : ${tot}`:''}`);
   save(); sbPushNow(); rerender();
-  toast(`⚠ Avertissement donné à ${r.nom}${row?` (total : ${tot})`:' — introuvable en fiche RH, pense à l\'y ajouter'}`);
+  toast(`⚠ Avertissement donné à ${r.nom}${row?` (total : ${tot})`:' — introuvable en fiche RH, pense à l\'y ajouter'}${avertDiscordNote(etat)}`,7000);
   sendLog('⚠️ Avertissement',`**${r.nom}** (Intérimaire) reçoit un avertissement — quota réalisé à **${pcA}%** cette semaine.${row?`\nTotal d'avertissements : **${tot}**`:''}`,0xffa500);
 }
-function avertirGhost(nom){
+async function avertirGhost(nom){
   // avertissement pour un intérimaire présent uniquement en fiche RH (aucune prise de service)
   if(isMembre()) return toast('👀 Consultation seule pour les membres');
   const row=((S.sheets&&S.sheets.rh)||[]).find(x=>String(x.nom||'').toLowerCase().trim()===String(nom).toLowerCase().trim());
   if(!row) return;
   if(absDe(nom)) return toast('🌴 Absence déclarée — pas d\'avertissement');
   if(estNouveau(nom)) return toast('🌱 Arrivé cette semaine — pas d\'avertissement');
-  if(!confirm(`Donner un avertissement à ${row.nom} ?\n(Intérimaire · aucune prise de service cette semaine)\n\nL'avertissement sera compté dans la colonne « Avert. » de sa fiche RH.`)) return;
+  if(!confirm(`Donner un avertissement à ${row.nom} ?\n(Intérimaire · aucune prise de service cette semaine)\n\nL'avertissement sera compté dans la colonne « Avert. » de sa fiche RH et annoncé sur Discord, comme avec /avertissement.`)) return;
   const n=(parseInt(String(row.avert||'').replace(/\D/g,''),10)||0)+1; row.avert=String(n);
+  const etat=await avertDiscord(row,'Aucune prise de service cette semaine');
   jlog(`Avertissement : ${row.nom} (intérimaire, aucune prise de service) — total : ${n}`);
   save(); sbPushNow(); rerender();
-  toast(`⚠ Avertissement donné à ${row.nom} (total : ${n})`);
+  toast(`⚠ Avertissement donné à ${row.nom} (total : ${n})${avertDiscordNote(etat)}`,7000);
   sendLog('⚠️ Avertissement',`**${row.nom}** (Intérimaire) reçoit un avertissement — **aucune prise de service** cette semaine.\nTotal d'avertissements : **${n}**`,0xffa500);
 }
 function titulariser(nom){
@@ -4843,6 +4868,10 @@ function ferDel(id){
 
 /* ================== MISES À JOUR (changelog) ================== */
 const CHANGELOG=[
+ {v:'C-109',d:'20/09/2026',t:'Le bouton ⚠ des quotas prévient aussi la personne sur Discord',items:[
+   ['⚠️','Le bouton ⚠ ne faisait que compter','Sous 80 % du quota, ou sans prise de service, le bouton ⚠ ajoutait 1 au compteur « Avert. » de la fiche RH — et c\'est tout : la personne n\'apprenait rien, contrairement à /avertissement sur Discord.'],
+   ['🔧','Même effet que /avertissement','Le site dépose un ordre, le bot le prend dans les 20 s : avertissement enregistré (visible dans /mes-stats), log Direction, annonce dans le salon du ticket de la personne avec le motif. Le compteur de la fiche RH n\'est pas compté deux fois. Sans compte Discord dans la fiche RH, l\'avertissement reste sur le site seulement — et le message le dit.'],
+ ]},
  {v:'C-108',d:'17/09/2026',t:'Fiche RH : le champ Recruteur ne propose plus que qui peut recruter',items:[
    ['🐛','N\'importe quel poste apparaissait comme recruteur possible','Le menu déroulant « Recruteur » de la fiche RH proposait tout le monde ayant un poste ou un compte d\'accès — Commercial, Responsable Runner, Comptable compris — alors que seuls RH, Assistant de direction, Patron et Co Patron peuvent valider une candidature.'],
    ['🔧','La liste se limite désormais à ces quatre grades','Le salaire de recrutement se calcule sur cette colonne : y faire apparaître quelqu\'un qui ne recrute jamais n\'avait pas de sens.'],
