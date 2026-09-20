@@ -4222,7 +4222,7 @@
     "arrivee": "2026-09-20",
     "discord": "1136072606722826281",
     "avert": "",
-    "contrat": false,
+    "contrat": true,
     "recrut": "Thomas Boyer",
     "dernierService": "",
     "flagOut": false
@@ -5021,24 +5021,6 @@
     "recrut": "Thomas Boyer",
     "dernierService": "2026-09-19",
     "flagOut": false
-   },
-   {
-    "idU": "220971",
-    "nom": "Alexis Lavollette",
-    "rib": "360416",
-    "tel": "555-0743-316",
-    "avert": "",
-    "grade": "Intérimaire",
-    "recrut": "Thomas Boyer",
-    "arrivee": "2026-08-07",
-    "contrat": true,
-    "discord": "1143592661287178410",
-    "flagOut": true,
-    "contratGen": {
-     "t": 1786117024712,
-     "par": "Thomas Boyer"
-    },
-    "dernierService": "2026-08-19"
    },
    {
     "nom": "Aníbal Santamaría",
@@ -29228,18 +29210,18 @@
   "postesV4": 1,
   "semaineDebut": "2026-09-14"
  },
- "_cid": "d2jx4t3n0pa",
- "_maj": 1789917649058,
- "_rev": "7z8kpfoykb3-mu9yre2y",
+ "_cid": "gdflkbesav",
+ "_maj": 1789917665209,
+ "_rev": "nv01f0wc4qq-mu9yrl1c",
  "_majSec": {
   "fer": 1789911388323,
   "fact": 1789914238582,
   "users": 1789914224577,
   "weeks": 1789477366022,
-  "sheets": 1789917567209,
+  "sheets": 1789917665209,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
-  "journal": 1789917567209,
+  "journal": 1789917658106,
   "pending": 1789341106480,
   "prodDer": 1789845736125,
   "runners": 1789911172478,
@@ -29265,11 +29247,16 @@
   "ventesAlias": 1789341106480,
   "_ventesIgnore": 1789341106480,
   "_avertVus": 1789382976850,
-  "_signeVus": 1789903264691
+  "_signeVus": 1789917658106
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1789917659114,
+   "u": "Diego Herrera",
+   "a": "Contrat(s) signé(s) via Discord : Manieta Gustavo"
+  },
   {
    "t": 1789917568217,
    "u": "Diego Herrera",
@@ -30764,11 +30751,6 @@
    "t": 1789146113751,
    "u": "Diego Herrera",
    "a": "Permissions : Membre · « effectif » → aucun accès"
-  },
-  {
-   "t": 1789146112913,
-   "u": "Diego Herrera",
-   "a": "Permissions : Membre · « effectif » → lecture seule 👁"
   }
  ],
  "prodDer": {
@@ -31278,7 +31260,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-20T15:21:00.682Z",
+  "maj": "2026-09-20T15:21:09.696Z",
   "semaine": 38,
   "totalBarils": 241315,
   "ca": 1206575,
@@ -89796,6 +89778,7 @@
   "1789834819242",
   "1789837590288",
   "1789877181343",
-  "1789877190476"
+  "1789877190476",
+  "1789917586984"
  ]
 }
