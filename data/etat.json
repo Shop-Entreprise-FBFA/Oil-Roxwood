@@ -4299,7 +4299,7 @@
     "idU": "370394",
     "arrivee": "2026-09-20",
     "discord": "1488636209839345845",
-    "avert": "",
+    "avert": "1",
     "contrat": true,
     "recrut": "Thomas Boyer",
     "dernierService": "2026-09-20",
@@ -29226,17 +29226,17 @@
   "semaineDebut": "2026-09-14"
  },
  "_cid": "i6fmjcs3vf",
- "_maj": 1789942566061,
- "_rev": "8qm3o2cps4f-muadlbf7",
+ "_maj": 1789942613998,
+ "_rev": "qbcwkc548xq-muadm9io",
  "_majSec": {
   "fer": 1789924320939,
   "fact": 1789918890083,
   "users": 1789936434052,
   "weeks": 1789477366022,
-  "sheets": 1789942253557,
+  "sheets": 1789942613962,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
-  "journal": 1789942253593,
+  "journal": 1789942613998,
   "pending": 1789341106480,
   "prodDer": 1789845736125,
   "runners": 1789941637722,
@@ -29250,7 +29250,7 @@
   "primesExtra": 1789341106480,
   "quotasComHist": 1789341106480,
   "profils": 1789559236417,
-  "_tables": 1789942566061,
+  "_tables": 1789942613962,
   "_permsFix1": 1789341106480,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1789341106480,
@@ -29267,6 +29267,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1789942614496,
+   "u": "Diego Herrera",
+   "a": "Avertissement : Jawad Benraoud (intérimaire, quota à 0%) — total : 1"
+  },
   {
    "t": 1789942254091,
    "u": "Diego Herrera",
@@ -30761,11 +30766,6 @@
    "t": 1789146203907,
    "u": "Diego Herrera",
    "a": "Permissions : Assistant de direction · « overview » → accès complet ✓"
-  },
-  {
-   "t": 1789146203213,
-   "u": "Diego Herrera",
-   "a": "Permissions : RH · « overview » → accès complet ✓"
   }
  ],
  "prodDer": {
@@ -31243,7 +31243,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-20T22:16:11.539Z",
+  "maj": "2026-09-20T22:16:55.728Z",
   "semaine": 38,
   "totalBarils": 273927,
   "ca": 1369635,
@@ -91121,6 +91121,16 @@
     "id": 1789942237113,
     "statut": "fait",
     "rapport": "Avertissement enregistre pour brewen0636 (total : 1)."
+   },
+   {
+    "type": "avertissement",
+    "payload": {
+     "discord": "1488636209839345845",
+     "nom": "Jawad Benraoud",
+     "raison": "Quota non atteint (0 % cette semaine)",
+     "par": "Diego Herrera"
+    },
+    "id": 1789942614484
    }
   ],
   "oilroxwood_coffres": [
