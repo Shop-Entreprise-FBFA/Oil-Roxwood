@@ -4214,6 +4214,20 @@
  "sheets": {
   "rh": [
    {
+    "nom": "Marco Sanchez",
+    "grade": "Intérimaire",
+    "tel": "555-803-725",
+    "rib": "559892",
+    "idU": "142012",
+    "arrivee": "2026-09-04",
+    "discord": "1383749459866812476",
+    "avert": "",
+    "contrat": false,
+    "recrut": "Thomas Boyer",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
     "nom": "Lip Stuarts",
     "grade": "Intérimaire",
     "tel": "555 216 520",
@@ -5436,20 +5450,6 @@
     "recrut": "Juan Sanchez",
     "dernierService": "2026-09-16",
     "flagOut": false
-   },
-   {
-    "nom": "Marco Sanchez",
-    "grade": "Intérimaire",
-    "tel": "555-803-725",
-    "rib": "559892",
-    "idU": "142012",
-    "arrivee": "2026-09-04",
-    "discord": "1383749459866812476",
-    "avert": "",
-    "contrat": false,
-    "recrut": "Thomas Boyer",
-    "dernierService": "",
-    "flagOut": true
    },
    {
     "idU": "374908",
@@ -29121,17 +29121,17 @@
   "semaineDebut": "2026-09-14"
  },
  "_cid": "gdflkbesav",
- "_maj": 1789918302963,
- "_rev": "yqd3oiwbplp-mu9z57fk",
+ "_maj": 1789918306261,
+ "_rev": "6ysutc5s92-mu9z5ch4",
  "_majSec": {
   "fer": 1789911388323,
   "fact": 1789914238582,
   "users": 1789914224577,
   "weeks": 1789477366022,
-  "sheets": 1789918302963,
+  "sheets": 1789918306261,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
-  "journal": 1789918302963,
+  "journal": 1789918306261,
   "pending": 1789341106480,
   "prodDer": 1789845736125,
   "runners": 1789911172478,
@@ -29153,7 +29153,7 @@
   "_affFix1": 1789341106480,
   "produits": 1789391731576,
   "_prodFix1": 1789341106480,
-  "_recruesIgnore": 1789918302963,
+  "_recruesIgnore": 1789918306261,
   "ventesAlias": 1789341106480,
   "_ventesIgnore": 1789341106480,
   "_avertVus": 1789382976850,
@@ -29162,6 +29162,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1789918307207,
+   "u": "Diego Herrera",
+   "a": "Recrutements Discord : 1 fiche(s) créée(s), 0 case(s) complétée(s) — Marco Sanchez"
+  },
   {
    "t": 1789918303908,
    "u": "Diego Herrera",
@@ -30656,11 +30661,6 @@
    "t": 1789146115964,
    "u": "Diego Herrera",
    "a": "Permissions : Responsable Runner · « effectif » → aucun accès"
-  },
-  {
-   "t": 1789146115260,
-   "u": "Diego Herrera",
-   "a": "Permissions : Responsable Runner · « effectif » → lecture seule 👁"
   }
  ],
  "prodDer": {
@@ -31170,12 +31170,12 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-20T15:31:45.248Z",
+  "maj": "2026-09-20T15:31:51.784Z",
   "semaine": 38,
   "totalBarils": 241315,
   "ca": 1206575,
   "objectif": 375000,
-  "effectif": 100,
+  "effectif": 101,
   "clientsServis": 89,
   "top3": [
    {
@@ -89734,7 +89734,8 @@
   "1789877179726",
   "1789905045477",
   "1789917559835",
-  "1788644677845"
+  "1788644677845",
+  "1788545207836"
  ],
  "_signeVus": [
   "1789477305650",
