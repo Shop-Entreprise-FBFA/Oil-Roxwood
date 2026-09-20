@@ -16538,14 +16538,6 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
-  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -16569,6 +16561,14 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T00:06:23.240Z"
+  },
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -29225,9 +29225,9 @@
   "postesV4": 1,
   "semaineDebut": "2026-09-14"
  },
- "_cid": "o8gsgoo1afc",
- "_maj": 1789941756494,
- "_rev": "6gtjsls4im-muad4ty2",
+ "_cid": "i6fmjcs3vf",
+ "_maj": 1789941798736,
+ "_rev": "155ml9yr0ch-muad4wf3",
  "_majSec": {
   "fer": 1789924320939,
   "fact": 1789918890083,
@@ -29236,11 +29236,11 @@
   "sheets": 1789941637722,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
-  "journal": 1789940247776,
+  "journal": 1789941798736,
   "pending": 1789341106480,
   "prodDer": 1789845736125,
   "runners": 1789941637722,
-  "absences": 1789819348049,
+  "absences": 1789941798736,
   "imported": 1789341106480,
   "settings": 1789567303602,
   "closeUndo": 1789341106480,
@@ -29267,6 +29267,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1789941799595,
+   "u": "Diego Herrera",
+   "a": "5 absence(s) terminée(s) archivée(s) automatiquement"
+  },
   {
    "t": 1789940253321,
    "u": "Thomas Boyer",
@@ -30761,11 +30766,6 @@
    "t": 1789146175585,
    "u": "Diego Herrera",
    "a": "Permissions : Responsable commercial · « frecues » → accès complet ✓"
-  },
-  {
-   "t": 1789146174239,
-   "u": "Diego Herrera",
-   "a": "Permissions : Comptable · « frecues » → aucun accès"
   }
  ],
  "prodDer": {
@@ -31146,38 +31146,6 @@
    "nom": "Nikko Mount"
   },
   {
-   "au": "2026-09-09",
-   "du": "2026-08-29",
-   "id": 1787992407835,
-   "nom": "Alexis Lavollette"
-  },
-  {
-   "au": "2026-09-07",
-   "du": "2026-08-25",
-   "id": 1788012188690,
-   "nom": "Adel Dulax"
-  },
-  {
-   "id": 1788702817165,
-   "nom": "Lucas Vettel",
-   "du": "2026-09-05",
-   "au": "2026-09-07",
-   "srcId": "1788702793387",
-   "motif": "",
-   "par": "⚫ Thomas Boyer",
-   "auto": true
-  },
-  {
-   "id": 1788702937117,
-   "nom": "Adel Dulax",
-   "du": "2026-09-02",
-   "au": "2026-09-07",
-   "srcId": "1788702817827",
-   "motif": "Prolongation de travail a l’étranger",
-   "par": "⚫ Thomas Boyer",
-   "auto": true
-  },
-  {
    "id": 1789129123507,
    "nom": "Carlos dupont",
    "du": "2026-09-09",
@@ -31185,16 +31153,6 @@
    "srcId": "1789026092659",
    "motif": "",
    "par": "⚫ Thomas Boyer",
-   "auto": true
-  },
-  {
-   "id": 1789129126696,
-   "nom": "Jack Hamilton",
-   "du": "2026-09-10",
-   "au": "2026-09-13",
-   "srcId": "1789061347532",
-   "motif": "AUCUN AGENT DE DISPO POUR POSER MON STUFF",
-   "par": "⚫ Juan Sanchez",
    "auto": true
   },
   {
@@ -31275,7 +31233,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-20T22:03:22.394Z",
+  "maj": "2026-09-20T22:03:25.599Z",
   "semaine": 38,
   "totalBarils": 273927,
   "ca": 1369635,
