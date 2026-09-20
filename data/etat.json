@@ -5492,7 +5492,7 @@
     "nom": "Maxime Letourneur",
     "rib": "554305",
     "tel": "555 114 019",
-    "avert": "",
+    "avert": "1",
     "grade": "Intérimaire",
     "recrut": "",
     "arrivee": "2026-07-23",
@@ -29225,18 +29225,18 @@
   "postesV4": 1,
   "semaineDebut": "2026-09-14"
  },
- "_cid": "i0oxzuts2y",
- "_maj": 1789942127572,
- "_rev": "o5ydgr1su7-muadcw3o",
+ "_cid": "i6fmjcs3vf",
+ "_maj": 1789942186183,
+ "_rev": "4smr4ygpfgi-muadd37h",
  "_majSec": {
   "fer": 1789924320939,
   "fact": 1789918890083,
   "users": 1789936434052,
   "weeks": 1789477366022,
-  "sheets": 1789942083249,
+  "sheets": 1789942186147,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
-  "journal": 1789942083284,
+  "journal": 1789942186183,
   "pending": 1789341106480,
   "prodDer": 1789845736125,
   "runners": 1789941637722,
@@ -29250,7 +29250,7 @@
   "primesExtra": 1789341106480,
   "quotasComHist": 1789341106480,
   "profils": 1789559236417,
-  "_tables": 1789942127572,
+  "_tables": 1789942186147,
   "_permsFix1": 1789341106480,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1789341106480,
@@ -29267,6 +29267,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1789942186681,
+   "u": "Diego Herrera",
+   "a": "Avertissement : Maxime Letourneur (intérimaire, aucune prise de service) — total : 1"
+  },
   {
    "t": 1789942084143,
    "u": "Diego Herrera",
@@ -30761,11 +30766,6 @@
    "t": 1789146181262,
    "u": "Diego Herrera",
    "a": "Permissions : RH · « bilan » → aucun accès"
-  },
-  {
-   "t": 1789146180495,
-   "u": "Diego Herrera",
-   "a": "Permissions : RH · « bilan » → lecture seule 👁"
   }
  ],
  "prodDer": {
@@ -31243,7 +31243,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-20T22:09:38.436Z",
+  "maj": "2026-09-20T22:09:47.645Z",
   "semaine": 38,
   "totalBarils": 273927,
   "ca": 1369635,
@@ -91017,9 +91017,17 @@
      "raison": "Aucune prise de service cette semaine",
      "par": "Diego Herrera"
     },
-    "id": 1789942084704,
-    "statut": "fait",
-    "rapport": "Avertissement enregistre pour mathisdht76 (total : 1)."
+    "id": 1789942084704
+   },
+   {
+    "type": "avertissement",
+    "payload": {
+     "discord": "908264886449094687",
+     "nom": "Maxime Letourneur",
+     "raison": "Aucune prise de service cette semaine",
+     "par": "Diego Herrera"
+    },
+    "id": 1789942186832
    }
   ],
   "oilroxwood_coffres": [
