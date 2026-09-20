@@ -29702,9 +29702,9 @@
   "postesV4": 1,
   "semaineDebut": "2026-09-21"
  },
- "_cid": "i0oxzuts2y",
- "_maj": 1789947313612,
- "_rev": "m71fsca8bc-muagffxq",
+ "_cid": "i6fmjcs3vf",
+ "_maj": 1789947328329,
+ "_rev": "l4m188b179-muagfd7k",
  "_majSec": {
   "fer": 1789924320939,
   "fact": 1789918890083,
@@ -29727,7 +29727,7 @@
   "primesExtra": 1789341106480,
   "quotasComHist": 1789944361063,
   "profils": 1789559236417,
-  "_tables": 1789947313612,
+  "_tables": 1789947328329,
   "_permsFix1": 1789341106480,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1789341106480,
@@ -29744,6 +29744,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1789947328858,
+   "u": "Diego Herrera",
+   "a": "Facture reçue archivée : cayo garage — 20 300 $"
+  },
   {
    "t": 1789945745371,
    "u": "Diego Herrera",
@@ -31238,11 +31243,6 @@
    "t": 1789146251401,
    "u": "Diego Herrera",
    "a": "Permissions : Responsable commercial · « historique » → accès complet ✓"
-  },
-  {
-   "t": 1789146249737,
-   "u": "Diego Herrera",
-   "a": "Permissions : Commercial · « historique » → accès complet ✓"
   }
  ],
  "prodDer": {
@@ -31720,7 +31720,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-20T23:35:36.302Z",
+  "maj": "2026-09-20T23:35:32.768Z",
   "semaine": 39,
   "totalBarils": 0,
   "ca": 0,
@@ -91481,18 +91481,18 @@
     "id": 1789947153061
    },
    {
-    "uid": "438358976141328404",
-    "nom": "Thomas Boyer",
-    "role": "rh",
-    "vu": "2026-09-20T23:34:13.612Z",
-    "id": 1789947273721
+    "uid": "826526979204841482",
+    "nom": "Diego Herrera",
+    "role": "direction",
+    "vu": "2026-09-20T23:33:25.832Z",
+    "id": 1789947206947
    },
    {
-    "uid": "438358976141328404",
-    "nom": "Thomas Boyer",
-    "role": "rh",
-    "vu": "2026-09-20T23:35:13.611Z",
-    "id": 1789947333798
+    "uid": "826526979204841482",
+    "nom": "Diego Herrera",
+    "role": "direction",
+    "vu": "2026-09-20T23:34:25.851Z",
+    "id": 1789947267255
    }
   ],
   "oilroxwood_demandes": [],
@@ -91516,6 +91516,16 @@
     "img": "data/factures-recues/1789945744352-yx4z1.jpg",
     "auteur": "Diego Herrera",
     "id": 1789945746119
+   },
+   {
+    "entreprise": "cayo garage",
+    "date": "2026-09-21",
+    "montant": 20300,
+    "lien": "",
+    "note": "contrat garage",
+    "img": "data/factures-recues/1789947327693-jjx4r.jpg",
+    "auteur": "Diego Herrera",
+    "id": 1789947329797
    }
   ],
   "oilroxwood_agenda": [
