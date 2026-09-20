@@ -5105,7 +5105,7 @@
     "nom": "Billy Dan",
     "rib": "558598",
     "tel": "555 190 100",
-    "avert": "",
+    "avert": "1",
     "grade": "Intérimaire",
     "recrut": "Thomas Boyer",
     "arrivee": "2026-08-20",
@@ -5140,7 +5140,7 @@
     "idU": "180519",
     "arrivee": "2026-09-05",
     "discord": "906662155171024987",
-    "avert": "",
+    "avert": "1",
     "contrat": false,
     "recrut": "Thomas Boyer",
     "dernierService": "2026-09-12",
@@ -5726,7 +5726,7 @@
     "idU": "234808",
     "arrivee": "",
     "discord": "928357780887339009",
-    "avert": "",
+    "avert": "1",
     "contrat": false,
     "recrut": "Thomas Boyer",
     "dernierService": "2026-09-01",
@@ -29225,18 +29225,18 @@
   "postesV4": 1,
   "semaineDebut": "2026-09-14"
  },
- "_cid": "bot",
+ "_cid": "i6fmjcs3vf",
  "_maj": 1789942260161,
- "_rev": "7rp0bl4jwny-muadeapt",
+ "_rev": "gwypcmziey-muadeqz0",
  "_majSec": {
   "fer": 1789924320939,
   "fact": 1789918890083,
   "users": 1789936434052,
   "weeks": 1789477366022,
-  "sheets": 1789942236278,
+  "sheets": 1789942253557,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
-  "journal": 1789942236317,
+  "journal": 1789942253593,
   "pending": 1789341106480,
   "prodDer": 1789845736125,
   "runners": 1789941637722,
@@ -29267,6 +29267,21 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1789942254091,
+   "u": "Diego Herrera",
+   "a": "Avertissement : Ben Abdel (intérimaire, aucune prise de service) — total : 1"
+  },
+  {
+   "t": 1789942250763,
+   "u": "Diego Herrera",
+   "a": "Avertissement : Billy Dan (intérimaire, aucune prise de service) — total : 1"
+  },
+  {
+   "t": 1789942245676,
+   "u": "Diego Herrera",
+   "a": "Avertissement : Brandon Parker (intérimaire, aucune prise de service) — total : 1"
+  },
   {
    "t": 1789942236815,
    "u": "Diego Herrera",
@@ -30751,21 +30766,6 @@
    "t": 1789146203213,
    "u": "Diego Herrera",
    "a": "Permissions : RH · « overview » → accès complet ✓"
-  },
-  {
-   "t": 1789146199163,
-   "u": "Diego Herrera",
-   "a": "Permissions : Comptable · « semaine » → accès complet ✓"
-  },
-  {
-   "t": 1789146194231,
-   "u": "Diego Herrera",
-   "a": "Permissions : RH · « cloture » → aucun accès"
-  },
-  {
-   "t": 1789146193451,
-   "u": "Diego Herrera",
-   "a": "Permissions : RH · « cloture » → lecture seule 👁"
   }
  ],
  "prodDer": {
@@ -31243,7 +31243,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-20T22:10:44.033Z",
+  "maj": "2026-09-20T22:11:05.100Z",
   "semaine": 38,
   "totalBarils": 273927,
   "ca": 1369635,
