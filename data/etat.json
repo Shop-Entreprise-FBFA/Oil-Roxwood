@@ -5649,7 +5649,7 @@
     "nom": "Tony Clark",
     "rib": "554523",
     "tel": "555099195",
-    "avert": "",
+    "avert": "1",
     "grade": "Intérimaire",
     "recrut": "Thomas Boyer",
     "arrivee": "2026-08-20",
@@ -29226,17 +29226,17 @@
   "semaineDebut": "2026-09-14"
  },
  "_cid": "i6fmjcs3vf",
- "_maj": 1789942025703,
- "_rev": "4f4olh5k6d9-muad9q8s",
+ "_maj": 1789942083284,
+ "_rev": "l5kmknm6jpq-muadawas",
  "_majSec": {
   "fer": 1789924320939,
   "fact": 1789918890083,
   "users": 1789936434052,
   "weeks": 1789477366022,
-  "sheets": 1789941637722,
+  "sheets": 1789942083249,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
-  "journal": 1789941818289,
+  "journal": 1789942083284,
   "pending": 1789341106480,
   "prodDer": 1789845736125,
   "runners": 1789941637722,
@@ -29250,7 +29250,7 @@
   "primesExtra": 1789341106480,
   "quotasComHist": 1789341106480,
   "profils": 1789559236417,
-  "_tables": 1789942025703,
+  "_tables": 1789942083249,
   "_permsFix1": 1789341106480,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1789341106480,
@@ -29267,6 +29267,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1789942084143,
+   "u": "Diego Herrera",
+   "a": "Avertissement : Tony Clark (intérimaire, aucune prise de service) — total : 1"
+  },
   {
    "t": 1789941826697,
    "u": "Thomas Boyer",
@@ -30761,11 +30766,6 @@
    "t": 1789146180495,
    "u": "Diego Herrera",
    "a": "Permissions : RH · « bilan » → lecture seule 👁"
-  },
-  {
-   "t": 1789146179569,
-   "u": "Diego Herrera",
-   "a": "Permissions : Assistant de direction · « bilan » → accès complet ✓"
   }
  ],
  "prodDer": {
@@ -31243,7 +31243,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-20T22:07:10.876Z",
+  "maj": "2026-09-20T22:08:05.380Z",
   "semaine": 38,
   "totalBarils": 273927,
   "ca": 1369635,
@@ -91001,6 +91001,16 @@
     "id": 1789339105443,
     "statut": "fait",
     "rapport": "Image d'eligibilite postee sur Discord."
+   },
+   {
+    "type": "avertissement",
+    "payload": {
+     "discord": "495583773887299614",
+     "nom": "Tony Clark",
+     "raison": "Aucune prise de service cette semaine",
+     "par": "Diego Herrera"
+    },
+    "id": 1789942084704
    }
   ],
   "oilroxwood_coffres": [
