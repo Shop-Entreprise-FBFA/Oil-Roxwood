@@ -16538,14 +16538,6 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
-  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -16569,6 +16561,14 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T00:06:23.240Z"
+  },
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -29225,9 +29225,9 @@
   "postesV4": 1,
   "semaineDebut": "2026-09-14"
  },
- "_cid": "o8gsgoo1afc",
- "_maj": 1789942280858,
- "_rev": "9t4so1ie73-muadf4fn",
+ "_cid": "i6fmjcs3vf",
+ "_maj": 1789942296061,
+ "_rev": "23xuprgaaggj-muadficq",
  "_majSec": {
   "fer": 1789924320939,
   "fact": 1789918890083,
@@ -29250,7 +29250,7 @@
   "primesExtra": 1789341106480,
   "quotasComHist": 1789341106480,
   "profils": 1789559236417,
-  "_tables": 1789942280858,
+  "_tables": 1789942296061,
   "_permsFix1": 1789341106480,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1789341106480,
@@ -31243,7 +31243,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-20T22:11:22.547Z",
+  "maj": "2026-09-20T22:11:40.586Z",
   "semaine": 38,
   "totalBarils": 273927,
   "ca": 1369635,
@@ -90588,18 +90588,18 @@
     "id": 1789942117865
    },
    {
-    "uid": "235844738656239616",
-    "nom": "William Rodriguez-collins",
-    "role": "commercial",
-    "vu": "2026-09-20T22:10:20.852Z",
-    "id": 1789942221934
+    "uid": "826526979204841482",
+    "nom": "Diego Herrera",
+    "role": "direction",
+    "vu": "2026-09-20T22:10:06.070Z",
+    "id": 1789942206597
    },
    {
-    "uid": "235844738656239616",
-    "nom": "William Rodriguez-collins",
-    "role": "commercial",
-    "vu": "2026-09-20T22:11:20.858Z",
-    "id": 1789942282127
+    "uid": "826526979204841482",
+    "nom": "Diego Herrera",
+    "role": "direction",
+    "vu": "2026-09-20T22:11:36.061Z",
+    "id": 1789942296600
    }
   ],
   "oilroxwood_demandes": [],
@@ -91031,9 +91031,75 @@
      "raison": "Aucune prise de service cette semaine",
      "par": "Diego Herrera"
     },
-    "id": 1789942084704,
+    "id": 1789942084704
+   },
+   {
+    "type": "avertissement",
+    "payload": {
+     "discord": "908264886449094687",
+     "nom": "Maxime Letourneur",
+     "raison": "Aucune prise de service cette semaine",
+     "par": "Diego Herrera"
+    },
+    "id": 1789942186832
+   },
+   {
+    "type": "avertissement",
+    "payload": {
+     "discord": "1546568394445160460",
+     "nom": "Lazario/Ramirez",
+     "raison": "Aucune prise de service cette semaine",
+     "par": "Diego Herrera"
+    },
+    "id": 1789942215221
+   },
+   {
+    "type": "avertissement",
+    "payload": {
+     "discord": "922995956763463730",
+     "nom": "Ilyes Dom",
+     "raison": "Aucune prise de service cette semaine",
+     "par": "Diego Herrera"
+    },
+    "id": 1789942225535,
+    "statut": "erreur",
+    "rapport": "Membre Discord 922995956763463730 introuvable sur les serveurs du bot"
+   },
+   {
+    "type": "avertissement",
+    "payload": {
+     "discord": "959082206322655303",
+     "nom": "Hirsute Maasai",
+     "raison": "Aucune prise de service cette semaine",
+     "par": "Diego Herrera"
+    },
+    "id": 1789942229279,
     "statut": "fait",
-    "rapport": "Avertissement enregistre pour mathisdht76 (total : 1)."
+    "rapport": "Avertissement enregistre pour azrod_tkt (total : 1)."
+   },
+   {
+    "type": "avertissement",
+    "payload": {
+     "discord": "1524182507594055680",
+     "nom": "Enzo Roy",
+     "raison": "Aucune prise de service cette semaine",
+     "par": "Diego Herrera"
+    },
+    "id": 1789942231969,
+    "statut": "fait",
+    "rapport": "Avertissement enregistre pour sylessv (total : 2)."
+   },
+   {
+    "type": "avertissement",
+    "payload": {
+     "discord": "1275907189684310028",
+     "nom": "Eddy Conor",
+     "raison": "Aucune prise de service cette semaine",
+     "par": "Diego Herrera"
+    },
+    "id": 1789942237113,
+    "statut": "fait",
+    "rapport": "Avertissement enregistre pour brewen0636 (total : 1)."
    }
   ],
   "oilroxwood_coffres": [
