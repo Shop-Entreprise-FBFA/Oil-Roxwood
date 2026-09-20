@@ -5243,7 +5243,7 @@
     "nom": "Enzo Roy",
     "rib": "553096",
     "tel": "555878469",
-    "avert": "",
+    "avert": "1",
     "grade": "Intérimaire",
     "recrut": "Thomas Boyer",
     "arrivee": "2026-08-28",
@@ -5275,7 +5275,7 @@
     "nom": "Hirsute Maasai",
     "rib": "529987",
     "tel": "555661437",
-    "avert": "",
+    "avert": "1",
     "grade": "Intérimaire",
     "recrut": "Thomas Boyer",
     "arrivee": "2026-08-29",
@@ -29226,17 +29226,17 @@
   "semaineDebut": "2026-09-14"
  },
  "_cid": "i6fmjcs3vf",
- "_maj": 1789942224724,
- "_rev": "3k1hffktggm-muaddxgc",
+ "_maj": 1789942230618,
+ "_rev": "fth34sbk6dh-muade1sl",
  "_majSec": {
   "fer": 1789924320939,
   "fact": 1789918890083,
   "users": 1789936434052,
   "weeks": 1789477366022,
-  "sheets": 1789942224687,
+  "sheets": 1789942230578,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
-  "journal": 1789942224724,
+  "journal": 1789942230618,
   "pending": 1789341106480,
   "prodDer": 1789845736125,
   "runners": 1789941637722,
@@ -29250,7 +29250,7 @@
   "primesExtra": 1789341106480,
   "quotasComHist": 1789341106480,
   "profils": 1789559236417,
-  "_tables": 1789942224687,
+  "_tables": 1789942230578,
   "_permsFix1": 1789341106480,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1789341106480,
@@ -29267,6 +29267,16 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1789942231116,
+   "u": "Diego Herrera",
+   "a": "Avertissement : Enzo Roy (intérimaire, aucune prise de service) — total : 1"
+  },
+  {
+   "t": 1789942228707,
+   "u": "Diego Herrera",
+   "a": "Avertissement : Hirsute Maasai (intérimaire, aucune prise de service) — total : 1"
+  },
   {
    "t": 1789942225222,
    "u": "Diego Herrera",
@@ -30756,16 +30766,6 @@
    "t": 1789146192165,
    "u": "Diego Herrera",
    "a": "Permissions : Comptable · « cloture » → accès complet ✓"
-  },
-  {
-   "t": 1789146187339,
-   "u": "Diego Herrera",
-   "a": "Permissions : Comptable · « bilan » → accès complet ✓"
-  },
-  {
-   "t": 1789146182855,
-   "u": "Diego Herrera",
-   "a": "Permissions : Comptable · « bilan » → aucun accès"
   }
  ],
  "prodDer": {
@@ -31243,7 +31243,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-20T22:10:26.844Z",
+  "maj": "2026-09-20T22:10:32.469Z",
   "semaine": 38,
   "totalBarils": 273927,
   "ca": 1369635,
@@ -91055,6 +91055,26 @@
      "par": "Diego Herrera"
     },
     "id": 1789942225535
+   },
+   {
+    "type": "avertissement",
+    "payload": {
+     "discord": "959082206322655303",
+     "nom": "Hirsute Maasai",
+     "raison": "Aucune prise de service cette semaine",
+     "par": "Diego Herrera"
+    },
+    "id": 1789942229279
+   },
+   {
+    "type": "avertissement",
+    "payload": {
+     "discord": "1524182507594055680",
+     "nom": "Enzo Roy",
+     "raison": "Aucune prise de service cette semaine",
+     "par": "Diego Herrera"
+    },
+    "id": 1789942231969
    }
   ],
   "oilroxwood_coffres": [
