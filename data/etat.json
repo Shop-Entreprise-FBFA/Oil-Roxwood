@@ -5453,7 +5453,7 @@
     "idU": "379240",
     "arrivee": "2026-09-11",
     "discord": "1546568394445160460",
-    "avert": "",
+    "avert": "1",
     "contrat": false,
     "recrut": "Juan Sanchez",
     "dernierService": "2026-09-12",
@@ -29226,17 +29226,17 @@
   "semaineDebut": "2026-09-14"
  },
  "_cid": "i6fmjcs3vf",
- "_maj": 1789942206070,
- "_rev": "8fxhe815h8n-muaddkqj",
+ "_maj": 1789942214053,
+ "_rev": "92kxpp4sbso-muaddopq",
  "_majSec": {
   "fer": 1789924320939,
   "fact": 1789918890083,
   "users": 1789936434052,
   "weeks": 1789477366022,
-  "sheets": 1789942186147,
+  "sheets": 1789942214018,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
-  "journal": 1789942186183,
+  "journal": 1789942214053,
   "pending": 1789341106480,
   "prodDer": 1789845736125,
   "runners": 1789941637722,
@@ -29250,7 +29250,7 @@
   "primesExtra": 1789341106480,
   "quotasComHist": 1789341106480,
   "profils": 1789559236417,
-  "_tables": 1789942206070,
+  "_tables": 1789942214018,
   "_permsFix1": 1789341106480,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1789341106480,
@@ -29267,6 +29267,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1789942214551,
+   "u": "Diego Herrera",
+   "a": "Avertissement : Lazario/Ramirez (intérimaire, aucune prise de service) — total : 1"
+  },
   {
    "t": 1789942186681,
    "u": "Diego Herrera",
@@ -30761,11 +30766,6 @@
    "t": 1789146182115,
    "u": "Diego Herrera",
    "a": "Permissions : Comptable · « bilan » → lecture seule 👁"
-  },
-  {
-   "t": 1789146181262,
-   "u": "Diego Herrera",
-   "a": "Permissions : RH · « bilan » → aucun accès"
   }
  ],
  "prodDer": {
@@ -31243,7 +31243,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-20T22:10:10.363Z",
+  "maj": "2026-09-20T22:10:15.518Z",
   "semaine": 38,
   "totalBarils": 273927,
   "ca": 1369635,
@@ -91035,6 +91035,16 @@
      "par": "Diego Herrera"
     },
     "id": 1789942186832
+   },
+   {
+    "type": "avertissement",
+    "payload": {
+     "discord": "1546568394445160460",
+     "nom": "Lazario/Ramirez",
+     "raison": "Aucune prise de service cette semaine",
+     "par": "Diego Herrera"
+    },
+    "id": 1789942215221
    }
   ],
   "oilroxwood_coffres": [
