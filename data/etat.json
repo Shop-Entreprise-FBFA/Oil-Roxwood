@@ -10677,6 +10677,13 @@
     "quantite": 500,
     "qui": "Emma Collins-rodriguez",
     "fact": 253105
+   },
+   {
+    "date": "2026-09-21",
+    "client": "La Fiera",
+    "quantite": 200,
+    "qui": "Julio Collins",
+    "fact": 253106
    }
   ],
   "collection": [
@@ -13012,7 +13019,7 @@
     "rib": "",
     "tel": "555-822-167",
     "adresse": "RoxWood",
-    "lastCmd": "2026-06-20"
+    "lastCmd": "2026-09-21"
    },
    {
     "nom": "La Linterna",
@@ -13629,8 +13636,31 @@
     "prix": 120
    }
   ],
-  "compteur": 253106,
+  "compteur": 253107,
   "factures": [
+   {
+    "num": 253106,
+    "date": "2026-09-21",
+    "client": "La Fiera",
+    "emetteur": "Julio Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 200,
+      "tva": 0.04,
+      "pu": 180,
+      "ht": 36000,
+      "ttc": 37440,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 36000,
+    "ttc": 37440,
+    "poids": 400,
+    "statut": "attente"
+   },
    {
     "num": 253105,
     "date": "2026-09-21",
@@ -15857,6 +15887,22 @@
    "public": true,
    "maj": "2026-09-16T11:47:16.417Z"
   },
+  "stella collins": {
+   "nom": "Stella Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-14T13:20:17.287Z"
+  },
+  "julio collins": {
+   "nom": "Julio Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T00:06:23.240Z"
+  },
   "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿": {
    "nom": "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿",
    "photo": "",
@@ -15880,22 +15926,6 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T16:48:15.042Z"
-  },
-  "stella collins": {
-   "nom": "Stella Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-14T13:20:17.287Z"
-  },
-  "julio collins": {
-   "nom": "Julio Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T00:06:23.240Z"
   },
   "william rodriguez-collins": {
    "nom": "William Rodriguez-collins",
@@ -28560,15 +28590,15 @@
   "postesV4": 1,
   "semaineDebut": "2026-09-21"
  },
- "_cid": "3vnbay5e967",
- "_maj": 1790008503585,
- "_rev": "9t67h4wtbti-mubguxv9",
+ "_cid": "eov6ds37cwe",
+ "_maj": 1790008537440,
+ "_rev": "mx8kp52i9pd-mubgv9rj",
  "_majSec": {
   "fer": 1789924320939,
-  "fact": 1789988554940,
+  "fact": 1790008537426,
   "users": 1790008503585,
   "weeks": 1789944361063,
-  "sheets": 1790002298919,
+  "sheets": 1790008537426,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
   "journal": 1790008503585,
@@ -30578,13 +30608,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-21T16:35:25.557Z",
+  "maj": "2026-09-21T16:35:40.975Z",
   "semaine": 39,
   "totalBarils": 21043,
   "ca": 105215,
   "objectif": 375000,
   "effectif": 90,
-  "clientsServis": 92,
+  "clientsServis": 93,
   "top3": [
    {
     "nom": "Alex Turner",
