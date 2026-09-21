@@ -4340,7 +4340,7 @@
     "tel": "555 133 990",
     "actif": true,
     "avert": "",
-    "grade": "Assistant de direction",
+    "grade": "RH",
     "recrut": "",
     "arrivee": "2025-01-15",
     "contrat": true,
@@ -15789,7 +15789,7 @@
   {
    "id": 1783448983109,
    "did": "334423976182939648",
-   "role": "direction",
+   "role": "rh",
    "user": "Nikko Mount"
   },
   {
@@ -28542,18 +28542,18 @@
   "postesV4": 1,
   "semaineDebut": "2026-09-21"
  },
- "_cid": "og8tfe0hoq",
- "_maj": 1789995583780,
- "_rev": "91wwil4kh5w-mub95lzf",
+ "_cid": "qqkbyffsrbj",
+ "_maj": 1789995614008,
+ "_rev": "7l0bn37ereg-mub96brp",
  "_majSec": {
   "fer": 1789924320939,
   "fact": 1789988554940,
-  "users": 1789936434052,
+  "users": 1789995614008,
   "weeks": 1789944361063,
-  "sheets": 1789992744082,
+  "sheets": 1789995614008,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
-  "journal": 1789990275153,
+  "journal": 1789995614008,
   "pending": 1789341106480,
   "prodDer": 1789845736125,
   "runners": 1789990267185,
@@ -28567,7 +28567,7 @@
   "primesExtra": 1789341106480,
   "quotasComHist": 1789944361063,
   "profils": 1789559236417,
-  "_tables": 1789995583780,
+  "_tables": 1789995613834,
   "_permsFix1": 1789341106480,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1789341106480,
@@ -28584,6 +28584,16 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1789995614332,
+   "u": "Diego Herrera",
+   "a": "Grades RH alignés sur Discord : Nikko Mount · Assistant de direction → RH"
+  },
+  {
+   "t": 1789995614329,
+   "u": "Diego Herrera",
+   "a": "Rôle aligné depuis Discord (relevé du bot) : Nikko Mount · Direction → RH"
+  },
   {
    "t": 1789990275958,
    "u": "Diego Herrera",
@@ -30073,16 +30083,6 @@
    "t": 1789146272446,
    "u": "Diego Herrera",
    "a": "Permissions : Membre · « quotashist » → lecture seule 👁"
-  },
-  {
-   "t": 1789146262403,
-   "u": "Diego Herrera",
-   "a": "Permissions : Membre · « reunions » → aucun accès"
-  },
-  {
-   "t": 1789146261511,
-   "u": "Diego Herrera",
-   "a": "Permissions : Membre · « reunions » → lecture seule 👁"
   }
  ],
  "prodDer": {
@@ -30560,7 +30560,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-21T12:59:46.443Z",
+  "maj": "2026-09-21T13:00:19.861Z",
   "semaine": 39,
   "totalBarils": 21043,
   "ca": 105215,
@@ -92189,11 +92189,11 @@
     "id": 1789995494476
    },
    {
-    "uid": "948542221429379112",
-    "nom": "Stella Collins",
+    "uid": "826526979204841482",
+    "nom": "Diego Herrera",
     "role": "direction",
-    "vu": "2026-09-21T12:59:43.780Z",
-    "id": 1789995582616
+    "vu": "2026-09-21T13:00:13.833Z",
+    "id": 1789995614262
    }
   ],
   "oilroxwood_demandes": [],
