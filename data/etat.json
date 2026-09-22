@@ -10820,6 +10820,13 @@
     "quantite": 100,
     "qui": "Julio Collins",
     "fact": 253108
+   },
+   {
+    "date": "2026-09-22",
+    "client": "Smokebro",
+    "quantite": 50,
+    "qui": "Laurent Roquel",
+    "fact": 253109
    }
   ],
   "collection": [
@@ -13564,7 +13571,8 @@
     "nom": "Smokebro",
     "rib": "",
     "tel": "555 334 643",
-    "adresse": ""
+    "adresse": "",
+    "lastCmd": "2026-09-22"
    },
    {
     "nom": "strada nostra",
@@ -13772,8 +13780,31 @@
     "prix": 120
    }
   ],
-  "compteur": 253109,
+  "compteur": 253110,
   "factures": [
+   {
+    "num": 253109,
+    "date": "2026-09-22",
+    "client": "Smokebro",
+    "emetteur": "Laurent Roquel",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 50,
+      "tva": 0.04,
+      "pu": 180,
+      "ht": 9000,
+      "ttc": 9360,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 9000,
+    "ttc": 9360,
+    "poids": 100,
+    "statut": "attente"
+   },
    {
     "num": 253108,
     "date": "2026-09-22",
@@ -28773,14 +28804,14 @@
   "semaineDebut": "2026-09-21"
  },
  "_cid": "udjimbhjsc",
- "_maj": 1790097099851,
- "_rev": "ipuz2cq6klh-mucxm0go",
+ "_maj": 1790097132634,
+ "_rev": "biw3jozsf7-mucxm4q7",
  "_majSec": {
   "fer": 1789924320939,
-  "fact": 1790095554371,
+  "fact": 1790097132534,
   "users": 1790095543217,
   "weeks": 1789944361063,
-  "sheets": 1790094905758,
+  "sheets": 1790097132534,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
   "journal": 1790095543217,
@@ -30800,13 +30831,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-22T17:12:08.664Z",
+  "maj": "2026-09-22T17:12:14.191Z",
   "semaine": 39,
   "totalBarils": 21043,
   "ca": 105215,
   "objectif": 375000,
   "effectif": 98,
-  "clientsServis": 95,
+  "clientsServis": 96,
   "top3": [
    {
     "nom": "Alex Turner",
