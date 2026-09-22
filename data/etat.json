@@ -10690,6 +10690,13 @@
     "client": "Employé — Elliot Adkins ⚡",
     "quantite": 50,
     "qui": "Stella Collins"
+   },
+   {
+    "date": "2026-09-22",
+    "client": "Klan Ozumiya",
+    "quantite": 100,
+    "qui": "Laurent Roquel",
+    "fact": 253107
    }
   ],
   "collection": [
@@ -13004,7 +13011,7 @@
     "rib": "",
     "tel": "555-824-485",
     "adresse": "Los Santos",
-    "lastCmd": "2026-09-16"
+    "lastCmd": "2026-09-22"
    },
    {
     "nom": "Klan Zambolie",
@@ -13642,8 +13649,31 @@
     "prix": 120
    }
   ],
-  "compteur": 253107,
+  "compteur": 253108,
   "factures": [
+   {
+    "num": 253107,
+    "date": "2026-09-22",
+    "client": "Klan Ozumiya",
+    "emetteur": "Laurent Roquel",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 100,
+      "tva": 0.05,
+      "pu": 180,
+      "ht": 18000,
+      "ttc": 18900,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 18000,
+    "ttc": 18900,
+    "poids": 200,
+    "statut": "attente"
+   },
    {
     "num": 253106,
     "date": "2026-09-21",
@@ -28597,14 +28627,14 @@
   "semaineDebut": "2026-09-21"
  },
  "_cid": "ybscp3ul0ed",
- "_maj": 1790072279002,
- "_rev": "6x769r1f4q-muciugfs",
+ "_maj": 1790072350602,
+ "_rev": "mkiqk10sl6m-muciuz3x",
  "_majSec": {
   "fer": 1789924320939,
-  "fact": 1790009707212,
+  "fact": 1790072350429,
   "users": 1790009975556,
   "weeks": 1789944361063,
-  "sheets": 1790034690594,
+  "sheets": 1790072350429,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
   "journal": 1790010472347,
@@ -30614,13 +30644,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-22T10:18:48.376Z",
+  "maj": "2026-09-22T10:19:12.573Z",
   "semaine": 39,
   "totalBarils": 21043,
   "ca": 105215,
   "objectif": 375000,
   "effectif": 90,
-  "clientsServis": 93,
+  "clientsServis": 94,
   "top3": [
    {
     "nom": "Alex Turner",
