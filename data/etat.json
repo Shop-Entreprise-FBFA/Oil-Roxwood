@@ -4089,6 +4089,20 @@
  "sheets": {
   "rh": [
    {
+    "nom": "Jason Garcia",
+    "grade": "Intérimaire",
+    "tel": "555096151",
+    "rib": "558986",
+    "idU": "378178",
+    "arrivee": "2026-09-22",
+    "discord": "971484671223402506",
+    "avert": "",
+    "contrat": true,
+    "recrut": "Thomas Boyer",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
     "nom": "Tony Sosa",
     "grade": "Intérimaire",
     "tel": "555594913",
@@ -28758,18 +28772,18 @@
   "postesV4": 1,
   "semaineDebut": "2026-09-21"
  },
- "_cid": "qqkbyffsrbj",
- "_maj": 1790094892146,
- "_rev": "cxtaufdy3pb-mucwakga",
+ "_cid": "q8jg8p6wg1",
+ "_maj": 1790094916739,
+ "_rev": "aj08wqig9-mucwaldc",
  "_majSec": {
   "fer": 1789924320939,
   "fact": 1790093591364,
   "users": 1790093624979,
   "weeks": 1789944361063,
-  "sheets": 1790093591364,
+  "sheets": 1790094905758,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
-  "journal": 1790093624987,
+  "journal": 1790094905758,
   "pending": 1789341106480,
   "prodDer": 1789845736125,
   "runners": 1789990267185,
@@ -28783,7 +28797,7 @@
   "primesExtra": 1789341106480,
   "quotasComHist": 1789944361063,
   "profils": 1789559236417,
-  "_tables": 1790094892146,
+  "_tables": 1790094916739,
   "_permsFix1": 1789341106480,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1789341106480,
@@ -28791,15 +28805,25 @@
   "_affFix1": 1789341106480,
   "produits": 1789391731576,
   "_prodFix1": 1789341106480,
-  "_recruesIgnore": 1790093092408,
+  "_recruesIgnore": 1790093671658,
   "ventesAlias": 1789341106480,
   "_ventesIgnore": 1789341106480,
   "_avertVus": 1789382976850,
-  "_signeVus": 1790093092457
+  "_signeVus": 1790094905758
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1790094903575,
+   "u": "Thomas Boyer",
+   "a": "Contrat(s) signé(s) via Discord : Jason Garcia"
+  },
+  {
+   "t": 1790094875834,
+   "u": "Thomas Boyer",
+   "a": "Recrutements Discord : 1 fiche(s) créée(s), 0 case(s) complétée(s) — Jason Garcia"
+  },
   {
    "t": 1790094748807,
    "u": "Julio Collins",
@@ -30289,16 +30313,6 @@
    "t": 1789146343563,
    "u": "Diego Herrera",
    "a": "Permissions : Comptable · « maj » → aucun accès"
-  },
-  {
-   "t": 1789146342929,
-   "u": "Diego Herrera",
-   "a": "Permissions : Comptable · « maj » → lecture seule 👁"
-  },
-  {
-   "t": 1789146342215,
-   "u": "Diego Herrera",
-   "a": "Permissions : RH · « maj » → aucun accès"
   }
  ],
  "prodDer": {
@@ -30786,12 +30800,12 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-22T16:35:15.082Z",
+  "maj": "2026-09-22T16:35:16.272Z",
   "semaine": 39,
   "totalBarils": 21043,
   "ca": 105215,
   "objectif": 375000,
-  "effectif": 97,
+  "effectif": 98,
   "clientsServis": 95,
   "top3": [
    {
@@ -99374,6 +99388,13 @@
     "role": "direction",
     "vu": "2026-09-22T16:34:12.836Z",
     "id": 1790094854968
+   },
+   {
+    "uid": "438358976141328404",
+    "nom": "Thomas Boyer",
+    "role": "rh",
+    "vu": "2026-09-22T16:35:16.738Z",
+    "id": 1790094914782
    }
   ],
   "oilroxwood_demandes": [],
@@ -100980,7 +101001,8 @@
   "1790078391603",
   "1790085730071",
   "1790085777817",
-  "1790094129613"
+  "1790094129613",
+  "1790094872298"
  ],
  "_signeVus": [
   "1789477305650",
@@ -101012,6 +101034,7 @@
   "1790078516830",
   "1790085783500",
   "1790085788892",
-  "1790094197879"
+  "1790094197879",
+  "1790094888730"
  ]
 }
