@@ -11680,6 +11680,13 @@
     "client": "Employé — Yann Zigzag ⚡",
     "quantite": 1,
     "qui": "Thomas Boyer"
+   },
+   {
+    "date": "2026-09-23",
+    "client": "Sandy Repairs",
+    "quantite": 100,
+    "qui": "Stella Collins",
+    "fact": 253110
    }
   ],
   "collection": [
@@ -13323,7 +13330,7 @@
     "rib": "21138",
     "tel": "2048",
     "adresse": "Sandy Shores",
-    "lastCmd": "2026-08-29"
+    "lastCmd": "2026-09-23"
    },
    {
     "nom": "Famillia-Ghost",
@@ -14637,8 +14644,31 @@
     "prix": 120
    }
   ],
-  "compteur": 253110,
+  "compteur": 253111,
   "factures": [
+   {
+    "num": 253110,
+    "date": "2026-09-23",
+    "client": "Sandy Repairs",
+    "emetteur": "Stella Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 100,
+      "tva": 0,
+      "pu": 180,
+      "ht": 18000,
+      "ttc": 18000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 18000,
+    "ttc": 18000,
+    "poids": 200,
+    "statut": "attente"
+   },
    {
     "num": 253109,
     "date": "2026-09-22",
@@ -29661,14 +29691,14 @@
   "semaineDebut": "2026-09-21"
  },
  "_cid": "k6mggwctg9",
- "_maj": 1790160193498,
- "_rev": "d8cxn133a5u-mudz5s93",
+ "_maj": 1790160203065,
+ "_rev": "wcmx4f4xgbf-mudz5x5o",
  "_majSec": {
   "fer": 1789924320939,
-  "fact": 1790106566645,
+  "fact": 1790160203035,
   "users": 1790106513471,
   "weeks": 1789944361063,
-  "sheets": 1790125275232,
+  "sheets": 1790160203035,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
   "journal": 1790159563667,
@@ -31698,13 +31728,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-23T10:43:16.935Z",
+  "maj": "2026-09-23T10:43:23.293Z",
   "semaine": 39,
   "totalBarils": 102757,
   "ca": 513785,
   "objectif": 375000,
   "effectif": 108,
-  "clientsServis": 96,
+  "clientsServis": 97,
   "top3": [
    {
     "nom": "Alex Turner",
