@@ -4557,6 +4557,34 @@
  "sheets": {
   "rh": [
    {
+    "nom": "Damien Brown",
+    "grade": "Intérimaire",
+    "tel": "555 350 542",
+    "rib": "509974",
+    "idU": "307442",
+    "arrivee": "2026-09-24",
+    "discord": "475992964720623616",
+    "avert": "",
+    "contrat": true,
+    "recrut": "Diego Herrera",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
+    "nom": "arturo diaz",
+    "grade": "Intérimaire",
+    "tel": "555254759",
+    "rib": "479701",
+    "idU": "317135",
+    "arrivee": "2026-09-24",
+    "discord": "570231547165147137",
+    "avert": "",
+    "contrat": true,
+    "recrut": "Diego Herrera",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
     "nom": "Raphael Vasquez",
     "grade": "Intérimaire",
     "tel": "555051777",
@@ -29741,17 +29769,17 @@
   "semaineDebut": "2026-09-21"
  },
  "_cid": "4dkpfni80sv",
- "_maj": 1790260777857,
- "_rev": "6mroez7hlhb-mufn243s",
+ "_maj": 1790260805254,
+ "_rev": "ct1q4poifji-mufn29ix",
  "_majSec": {
   "fer": 1789924320939,
   "fact": 1790160262590,
   "users": 1790106513471,
   "weeks": 1789944361063,
-  "sheets": 1790256936622,
+  "sheets": 1790260805254,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
-  "journal": 1790256936622,
+  "journal": 1790260805254,
   "pending": 1789341106480,
   "prodDer": 1789845736125,
   "runners": 1790123862598,
@@ -29773,15 +29801,25 @@
   "_affFix1": 1789341106480,
   "produits": 1789391731576,
   "_prodFix1": 1789341106480,
-  "_recruesIgnore": 1790173970606,
+  "_recruesIgnore": 1790260805225,
   "ventesAlias": 1789341106480,
   "_ventesIgnore": 1789341106480,
   "_avertVus": 1789382976850,
-  "_signeVus": 1790173970649
+  "_signeVus": 1790260805254
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1790260804369,
+   "u": "Stella Collins",
+   "a": "Contrat(s) signé(s) via Discord : arturo diaz, Damien Brown"
+  },
+  {
+   "t": 1790260804340,
+   "u": "Stella Collins",
+   "a": "Recrutements Discord : 2 fiche(s) créée(s), 0 case(s) complétée(s) — arturo diaz, Damien Brown"
+  },
   {
    "t": 1790256937998,
    "u": "Diego Herrera",
@@ -31271,16 +31309,6 @@
    "t": 1789170927179,
    "u": "Stella Collins",
    "a": "Permissions : Responsable commercial · « frh » → aucun accès"
-  },
-  {
-   "t": 1789170926486,
-   "u": "Stella Collins",
-   "a": "Permissions : Responsable commercial · « frh » → lecture seule 👁"
-  },
-  {
-   "t": 1789170918909,
-   "u": "Stella Collins",
-   "a": "Permissions : Commercial · « fblacklist » → aucun accès"
   }
  ],
  "prodDer": {
@@ -31778,12 +31806,12 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-24T14:40:02.632Z",
+  "maj": "2026-09-24T14:40:09.657Z",
   "semaine": 39,
   "totalBarils": 102757,
   "ca": 513785,
   "objectif": 375000,
-  "effectif": 109,
+  "effectif": 111,
   "clientsServis": 98,
   "top3": [
    {
@@ -109470,7 +109498,9 @@
   "1790094872298",
   "1790101922074",
   "1790104828140",
-  "1790163696338"
+  "1790163696338",
+  "1790249804065",
+  "1790252130027"
  ],
  "_signeVus": [
   "1789477305650",
@@ -109506,6 +109536,8 @@
   "1790094888730",
   "1790106424390",
   "1790107555485",
-  "1790163779824"
+  "1790163779824",
+  "1790249820749",
+  "1790252145227"
  ]
 }
