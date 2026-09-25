@@ -11764,24 +11764,31 @@
     "qui": "Diego Herrera"
    },
    {
+    "date": "2026-09-25",
+    "client": "Citoyen ⚡",
+    "quantite": 3,
+    "qui": "Stella Collins"
+   },
+   {
     "date": "2026-09-24",
     "client": "Burning Bush",
-    "quantite": 750,
+    "quantite": 500,
     "qui": "Diego Herrera",
     "fact": 253112
    },
    {
     "date": "2026-09-24",
     "client": "Burning Bush",
-    "quantite": 750,
+    "quantite": 500,
     "qui": "Stella Collins",
     "fact": 253112
    },
    {
-    "date": "2026-09-25",
-    "client": "Citoyen ⚡",
-    "quantite": 3,
-    "qui": "Stella Collins"
+    "date": "2026-09-24",
+    "client": "Burning Bush",
+    "quantite": 500,
+    "qui": "Tyler Collins",
+    "fact": 253112
    }
   ],
   "collection": [
@@ -14742,7 +14749,7 @@
     "num": 253112,
     "date": "2026-09-24",
     "client": "Burning Bush",
-    "emetteur": "Diego Herrera, Stella Collins",
+    "emetteur": "Diego Herrera, Stella Collins, Tyler Collins",
     "postop": false,
     "lignes": [
      {
@@ -14760,7 +14767,7 @@
     "ttc": 270000,
     "poids": 3000,
     "statut": "payee",
-    "modifiee": 1790321687936
+    "modifiee": 1790334025259
    },
    {
     "num": 253111,
@@ -29837,18 +29844,18 @@
   "postesV4": 1,
   "semaineDebut": "2026-09-21"
  },
- "_cid": "vy40hoiy3is",
- "_maj": 1790333972851,
- "_rev": "b9rji2t0ar-mugumiyl",
+ "_cid": "jpus8cxdgle",
+ "_maj": 1790334025289,
+ "_rev": "j9asujohim-mugunh84",
  "_majSec": {
   "fer": 1789924320939,
-  "fact": 1790332318806,
+  "fact": 1790334025260,
   "users": 1790106513471,
   "weeks": 1789944361063,
-  "sheets": 1790333682277,
+  "sheets": 1790334025260,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
-  "journal": 1790333682277,
+  "journal": 1790334025289,
   "pending": 1789341106480,
   "prodDer": 1789845736125,
   "runners": 1790123862598,
@@ -29879,6 +29886,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1790334021873,
+   "u": "Stella Collins",
+   "a": "Facture n°253112 modifiée — émetteur Diego Herrera, Stella Collins → Diego Herrera, Stella Collins, Tyler Collins"
+  },
   {
    "t": 1790333678909,
    "u": "Stella Collins",
@@ -31373,11 +31385,6 @@
    "t": 1789308335320,
    "u": "Diego Herrera",
    "a": "Permissions : Responsable commercial · « dlogs » → accès complet ✓"
-  },
-  {
-   "t": 1789308334429,
-   "u": "Diego Herrera",
-   "a": "Permissions : Commercial · « dlogs » → accès complet ✓"
   }
  ],
  "prodDer": {
@@ -31885,7 +31892,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-25T10:59:38.493Z",
+  "maj": "2026-09-25T11:00:22.900Z",
   "semaine": 39,
   "totalBarils": 102757,
   "ca": 513785,
