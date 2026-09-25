@@ -14728,18 +14728,19 @@
      {
       "ref": "CMD",
       "qte": 1500,
-      "tva": 0.05,
+      "tva": 0,
+      "desc": "bidons d'essence ",
       "pu": 180,
       "ht": 270000,
-      "ttc": 283500,
-      "desc": "bidons d'essence "
+      "ttc": 270000
      }
     ],
     "offert": 0,
     "ht": 270000,
-    "ttc": 283500,
+    "ttc": 270000,
     "poids": 3000,
-    "statut": "attente"
+    "statut": "attente",
+    "modifiee": 1790321687936
    },
    {
     "num": 253111,
@@ -29817,17 +29818,17 @@
   "semaineDebut": "2026-09-21"
  },
  "_cid": "vy40hoiy3is",
- "_maj": 1790321670698,
- "_rev": "1aosm4ig2ev-mugnaw9w",
+ "_maj": 1790321688008,
+ "_rev": "vz4yuponmkb-mugnb4x6",
  "_majSec": {
   "fer": 1789924320939,
-  "fact": 1790321670645,
+  "fact": 1790321687937,
   "users": 1790106513471,
   "weeks": 1789944361063,
   "sheets": 1790321670645,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
-  "journal": 1790283152761,
+  "journal": 1790321688008,
   "pending": 1789341106480,
   "prodDer": 1789845736125,
   "runners": 1790123862598,
@@ -29858,6 +29859,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1790321688596,
+   "u": "Diego Herrera",
+   "a": "Facture n°253112 modifiée — total 283 500 $ → 270 000 $"
+  },
   {
    "t": 1790283153718,
    "u": "Diego Herrera",
@@ -31352,11 +31358,6 @@
    "t": 1789215402356,
    "u": "Stella Collins",
    "a": "Renommage : Louka Romelu → Romelu Louka · effectif (1), feuille rh (1), feuille tablette (1), historique des semaines (2)"
-  },
-  {
-   "t": 1789215359423,
-   "u": "Stella Collins",
-   "a": "Contrat de travail généré : Alex Bren (Runner)"
   }
  ],
  "prodDer": {
@@ -31864,7 +31865,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-25T07:34:38.564Z",
+  "maj": "2026-09-25T07:34:49.770Z",
   "semaine": 39,
   "totalBarils": 102757,
   "ca": 513785,
