@@ -11748,6 +11748,20 @@
     "client": "Citoyen ⚡",
     "quantite": 5,
     "qui": "Diego Herrera"
+   },
+   {
+    "date": "2026-09-24",
+    "client": "Burning Bush",
+    "quantite": 750,
+    "qui": "Diego Herrera",
+    "fact": 253112
+   },
+   {
+    "date": "2026-09-24",
+    "client": "Burning Bush",
+    "quantite": 750,
+    "qui": "Stella Collins",
+    "fact": 253112
    }
   ],
   "collection": [
@@ -13572,10 +13586,7 @@
     "rib": "",
     "tel": "",
     "adresse": "Roxwood",
-    "relance": {
-     "par": "Juan Sanchez",
-     "date": "2026-07-14"
-    }
+    "lastCmd": "2026-09-24"
    },
    {
     "nom": "Cartel Madrazo",
@@ -14705,8 +14716,31 @@
     "prix": 120
    }
   ],
-  "compteur": 253112,
+  "compteur": 253113,
   "factures": [
+   {
+    "num": 253112,
+    "date": "2026-09-24",
+    "client": "Burning Bush",
+    "emetteur": "Diego Herrera, Stella Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 1500,
+      "tva": 0.05,
+      "pu": 180,
+      "ht": 270000,
+      "ttc": 283500,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 270000,
+    "ttc": 283500,
+    "poids": 3000,
+    "statut": "attente"
+   },
    {
     "num": 253111,
     "date": "2026-09-23",
@@ -29783,14 +29817,14 @@
   "semaineDebut": "2026-09-21"
  },
  "_cid": "vy40hoiy3is",
- "_maj": 1790321643594,
- "_rev": "lum1uzukl5d-mugnacbj",
+ "_maj": 1790321670698,
+ "_rev": "dm6t2u42b14-mugnardg",
  "_majSec": {
   "fer": 1789924320939,
-  "fact": 1790160262590,
+  "fact": 1790321670645,
   "users": 1790106513471,
   "weeks": 1789944361063,
-  "sheets": 1790283152761,
+  "sheets": 1790321670645,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
   "journal": 1790283152761,
@@ -31830,13 +31864,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-25T07:34:12.703Z",
+  "maj": "2026-09-25T07:34:32.212Z",
   "semaine": 39,
   "totalBarils": 102757,
   "ca": 513785,
   "objectif": 375000,
   "effectif": 111,
-  "clientsServis": 98,
+  "clientsServis": 99,
   "top3": [
    {
     "nom": "Alex Turner",
