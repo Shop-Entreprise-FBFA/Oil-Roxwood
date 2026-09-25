@@ -11795,6 +11795,13 @@
     "client": "Citoyen ⚡",
     "quantite": 100,
     "qui": "Emma Collins"
+   },
+   {
+    "date": "2026-09-25",
+    "client": "Post OP",
+    "quantite": 1298,
+    "qui": "Diego Herrera",
+    "fact": 253113
    }
   ],
   "collection": [
@@ -14451,7 +14458,7 @@
     "tel": "1983",
     "notes": [],
     "adresse": "Roxwood",
-    "lastCmd": "2026-07-22"
+    "lastCmd": "2026-09-25"
    },
    {
     "nom": "Quarta Corona",
@@ -14747,8 +14754,40 @@
     "prix": 150
    }
   ],
-  "compteur": 253113,
+  "compteur": 253114,
   "factures": [
+   {
+    "num": 253113,
+    "date": "2026-09-25",
+    "client": "Post OP",
+    "emetteur": "Diego Herrera",
+    "postop": true,
+    "lignes": [
+     {
+      "ref": "CMD%",
+      "qte": 723,
+      "tva": 0.04,
+      "pu": 150,
+      "ht": 108450,
+      "ttc": 112788,
+      "desc": "bidons d'essence promo"
+     },
+     {
+      "ref": "CMD",
+      "qte": 575,
+      "tva": 0.04,
+      "pu": 180,
+      "ht": 103500,
+      "ttc": 107640,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 211950,
+    "ttc": 220428,
+    "poids": 2596,
+    "statut": "attente"
+   },
    {
     "num": 253112,
     "date": "2026-09-24",
@@ -30017,14 +30056,14 @@
   "semaineDebut": "2026-09-21"
  },
  "_cid": "vy40hoiy3is",
- "_maj": 1790377749808,
- "_rev": "xy1mp1lwg2k-muhkot0s",
+ "_maj": 1790377794415,
+ "_rev": "6vzouqv6sii-muhkpoyo",
  "_majSec": {
   "fer": 1790360622505,
-  "fact": 1790375393430,
+  "fact": 1790377794359,
   "users": 1790374744305,
   "weeks": 1789944361063,
-  "sheets": 1790373172953,
+  "sheets": 1790377794359,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
   "journal": 1790374744305,
@@ -32074,13 +32113,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-25T23:09:14.860Z",
+  "maj": "2026-09-25T23:09:56.256Z",
   "semaine": 39,
   "totalBarils": 102757,
   "ca": 513785,
   "objectif": 375000,
   "effectif": 111,
-  "clientsServis": 99,
+  "clientsServis": 100,
   "top3": [
    {
     "nom": "Alex Turner",
