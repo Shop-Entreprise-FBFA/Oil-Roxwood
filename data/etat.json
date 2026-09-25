@@ -11802,6 +11802,13 @@
     "quantite": 1298,
     "qui": "Diego Herrera",
     "fact": 253113
+   },
+   {
+    "date": "2026-09-25",
+    "client": "LTD Little Seoul",
+    "quantite": 1000,
+    "qui": "Diego Herrera",
+    "fact": 253114
    }
   ],
   "collection": [
@@ -14275,7 +14282,7 @@
     "rib": "20003",
     "tel": "913",
     "adresse": "Los Santos",
-    "lastCmd": "2026-08-16"
+    "lastCmd": "2026-09-25"
    },
    {
     "nom": "LTD Mirror Park",
@@ -14754,8 +14761,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253114,
+  "compteur": 253115,
   "factures": [
+   {
+    "num": 253114,
+    "date": "2026-09-25",
+    "client": "LTD Little Seoul",
+    "emetteur": "Diego Herrera",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD%",
+      "qte": 1000,
+      "tva": 0,
+      "pu": 150,
+      "ht": 150000,
+      "ttc": 150000,
+      "desc": "bidons d'essence promo"
+     }
+    ],
+    "offert": 0,
+    "ht": 150000,
+    "ttc": 150000,
+    "poids": 2000,
+    "statut": "attente"
+   },
    {
     "num": 253113,
     "date": "2026-09-25",
@@ -30056,14 +30086,14 @@
   "semaineDebut": "2026-09-21"
  },
  "_cid": "vy40hoiy3is",
- "_maj": 1790377892239,
- "_rev": "ky0z2y5dhvd-muhkrusq",
+ "_maj": 1790377947751,
+ "_rev": "ic7v7osipol-muhkszhz",
  "_majSec": {
   "fer": 1790360622505,
-  "fact": 1790377794359,
+  "fact": 1790377947698,
   "users": 1790374744305,
   "weeks": 1789944361063,
-  "sheets": 1790377794359,
+  "sheets": 1790377947698,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
   "journal": 1790374744305,
@@ -32113,13 +32143,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-25T23:11:37.130Z",
+  "maj": "2026-09-25T23:12:29.879Z",
   "semaine": 39,
   "totalBarils": 102757,
   "ca": 513785,
   "objectif": 375000,
   "effectif": 111,
-  "clientsServis": 100,
+  "clientsServis": 101,
   "top3": [
    {
     "nom": "Alex Turner",
