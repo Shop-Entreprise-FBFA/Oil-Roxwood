@@ -11809,6 +11809,13 @@
     "quantite": 1000,
     "qui": "Diego Herrera",
     "fact": 253114
+   },
+   {
+    "date": "2026-09-25",
+    "client": "The Hen House",
+    "quantite": 275,
+    "qui": "Diego Herrera",
+    "fact": 253115
    }
   ],
   "collection": [
@@ -14597,7 +14604,7 @@
     "rib": "20026",
     "tel": "936",
     "adresse": "Paleto",
-    "lastCmd": "2026-07-22"
+    "lastCmd": "2026-09-25"
    },
    {
     "nom": "The Last Nightmare",
@@ -14761,8 +14768,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253115,
+  "compteur": 253116,
   "factures": [
+   {
+    "num": 253115,
+    "date": "2026-09-25",
+    "client": "The Hen House",
+    "emetteur": "Diego Herrera",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD%",
+      "qte": 275,
+      "tva": 0,
+      "pu": 150,
+      "ht": 41250,
+      "ttc": 41250,
+      "desc": "bidons d'essence promo"
+     }
+    ],
+    "offert": 0,
+    "ht": 41250,
+    "ttc": 41250,
+    "poids": 550,
+    "statut": "attente"
+   },
    {
     "num": 253114,
     "date": "2026-09-25",
@@ -30086,14 +30116,14 @@
   "semaineDebut": "2026-09-21"
  },
  "_cid": "vy40hoiy3is",
- "_maj": 1790378072283,
- "_rev": "gkbzehv79ak-muhkvppe",
+ "_maj": 1790378090113,
+ "_rev": "gerukavh0tl-muhkw154",
  "_majSec": {
   "fer": 1790360622505,
-  "fact": 1790377947698,
+  "fact": 1790378090054,
   "users": 1790374744305,
   "weeks": 1789944361063,
-  "sheets": 1790377947698,
+  "sheets": 1790378090054,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
   "journal": 1790374744305,
@@ -32143,13 +32173,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-25T23:14:37.154Z",
+  "maj": "2026-09-25T23:14:51.976Z",
   "semaine": 39,
   "totalBarils": 102757,
   "ca": 513785,
   "objectif": 375000,
   "effectif": 111,
-  "clientsServis": 101,
+  "clientsServis": 102,
   "top3": [
    {
     "nom": "Alex Turner",
