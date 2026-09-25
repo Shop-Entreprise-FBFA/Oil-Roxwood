@@ -5026,7 +5026,7 @@
     "tel": "555 133 990",
     "actif": true,
     "avert": "",
-    "grade": "RH",
+    "grade": "Assistant de Direction",
     "recrut": "",
     "arrivee": "2025-01-15",
     "contrat": true,
@@ -17083,7 +17083,7 @@
   {
    "id": 1783448983109,
    "did": "334423976182939648",
-   "role": "rh",
+   "role": "assistdir",
    "user": "Nikko Mount"
   },
   {
@@ -29844,18 +29844,18 @@
   "postesV4": 1,
   "semaineDebut": "2026-09-21"
  },
- "_cid": "z9qdnjds2ro",
- "_maj": 1790336602857,
- "_rev": "qeqj4j5v7e-mugw6s1u",
+ "_cid": "gd874io4uot",
+ "_maj": 1790336608389,
+ "_rev": "jw9jfmw2z2-mugw6xvj",
  "_majSec": {
   "fer": 1789924320939,
   "fact": 1790334025260,
-  "users": 1790106513471,
+  "users": 1790336608389,
   "weeks": 1789944361063,
-  "sheets": 1790334025260,
+  "sheets": 1790336608389,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
-  "journal": 1790336528952,
+  "journal": 1790336608389,
   "pending": 1789341106480,
   "prodDer": 1789845736125,
   "runners": 1790123862598,
@@ -29869,7 +29869,7 @@
   "primesExtra": 1789341106480,
   "quotasComHist": 1789944361063,
   "profils": 1789559236417,
-  "_tables": 1790336602857,
+  "_tables": 1790336608216,
   "_permsFix1": 1789341106480,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1789341106480,
@@ -29886,6 +29886,16 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1790336606873,
+   "u": "Emma Collins",
+   "a": "Grades RH alignés sur Discord : Nikko Mount · RH → Assistant de Direction"
+  },
+  {
+   "t": 1790336606873,
+   "u": "Emma Collins",
+   "a": "Rôle aligné depuis Discord (relevé du bot) : Nikko Mount · RH → Assistant de direction"
+  },
   {
    "t": 1790336530176,
    "u": "Diego Herrera",
@@ -31375,16 +31385,6 @@
    "t": 1789308354882,
    "u": "Diego Herrera",
    "a": "Permissions : Responsable Runner · « felig » → aucun accès"
-  },
-  {
-   "t": 1789308346439,
-   "u": "Diego Herrera",
-   "a": "Permissions : RH · « params » → aucun accès"
-  },
-  {
-   "t": 1789308345737,
-   "u": "Diego Herrera",
-   "a": "Permissions : RH · « params » → lecture seule 👁"
   }
  ],
  "prodDer": {
@@ -31892,7 +31892,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-25T11:43:23.010Z",
+  "maj": "2026-09-25T11:43:30.560Z",
   "semaine": 39,
   "totalBarils": 102757,
   "ca": 513785,
@@ -113192,6 +113192,13 @@
     "role": "respcom",
     "vu": "2026-09-25T11:43:22.856Z",
     "id": 1790336602386
+   },
+   {
+    "uid": "1053366471574687844",
+    "nom": "Emma Collins",
+    "role": "respcom",
+    "vu": "2026-09-25T11:43:28.047Z",
+    "id": 1790336607681
    }
   ],
   "oilroxwood_demandes": [],
