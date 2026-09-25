@@ -11813,7 +11813,7 @@
    {
     "date": "2026-09-25",
     "client": "The Hen House",
-    "quantite": 275,
+    "quantite": 225,
     "qui": "Diego Herrera",
     "fact": 253115
    }
@@ -14779,19 +14779,20 @@
     "lignes": [
      {
       "ref": "CMD%",
-      "qte": 275,
+      "qte": 225,
       "tva": 0,
+      "desc": "bidons d'essence promo",
       "pu": 150,
-      "ht": 41250,
-      "ttc": 41250,
-      "desc": "bidons d'essence promo"
+      "ht": 33750,
+      "ttc": 33750
      }
     ],
     "offert": 0,
-    "ht": 41250,
-    "ttc": 41250,
-    "poids": 550,
-    "statut": "attente"
+    "ht": 33750,
+    "ttc": 33750,
+    "poids": 450,
+    "statut": "attente",
+    "modifiee": 1790378254746
    },
    {
     "num": 253114,
@@ -17236,22 +17237,6 @@
    "public": true,
    "maj": "2026-09-16T11:47:16.417Z"
   },
-  "stella collins": {
-   "nom": "Stella Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-14T13:20:17.287Z"
-  },
-  "julio collins": {
-   "nom": "Julio Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T00:06:23.240Z"
-  },
   "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿": {
    "nom": "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿",
    "photo": "",
@@ -17275,6 +17260,22 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T16:48:15.042Z"
+  },
+  "stella collins": {
+   "nom": "Stella Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-14T13:20:17.287Z"
+  },
+  "julio collins": {
+   "nom": "Julio Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T00:06:23.240Z"
   },
   "william rodriguez-collins": {
    "nom": "William Rodriguez-collins",
@@ -30115,18 +30116,18 @@
   "postesV4": 1,
   "semaineDebut": "2026-09-21"
  },
- "_cid": "rp2282m1jf",
- "_maj": 1790378237251,
- "_rev": "kvalommpdoj-muhkz8zv",
+ "_cid": "vy40hoiy3is",
+ "_maj": 1790378254796,
+ "_rev": "zk48157y33r-muhkzk5x",
  "_majSec": {
   "fer": 1790360622505,
-  "fact": 1790378090054,
+  "fact": 1790378254746,
   "users": 1790378234700,
   "weeks": 1789944361063,
-  "sheets": 1790378090054,
+  "sheets": 1790378254746,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
-  "journal": 1790378234700,
+  "journal": 1790378254796,
   "pending": 1789341106480,
   "prodDer": 1789845736125,
   "runners": 1790123862598,
@@ -30140,7 +30141,7 @@
   "primesExtra": 1789341106480,
   "quotasComHist": 1789944361063,
   "profils": 1789559236417,
-  "_tables": 1790378234596,
+  "_tables": 1790378252267,
   "_permsFix1": 1789341106480,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1789341106480,
@@ -30158,14 +30159,9 @@
  "_wkFix1": true,
  "journal": [
   {
-   "t": 1790378235561,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1790378235375,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
+   "t": 1790378255615,
+   "u": "Diego Herrera",
+   "a": "Facture n°253115 modifiée — total 41 250 $ → 33 750 $"
   },
   {
    "t": 1790374744835,
@@ -31656,6 +31652,11 @@
    "t": 1789417089904,
    "u": "Thomas Boyer",
    "a": "Contrat de travail généré : Junior Clinton (Runner)"
+  },
+  {
+   "t": 1789416977965,
+   "u": "Thomas Boyer",
+   "a": "Recrutements Discord : 2 fiche(s) créée(s), 0 case(s) complétée(s) — Jamal King, Jake Smith"
   }
  ],
  "prodDer": {
@@ -32173,7 +32174,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-25T23:17:22.123Z",
+  "maj": "2026-09-25T23:17:36.597Z",
   "semaine": 39,
   "totalBarils": 102757,
   "ca": 513785,
@@ -116478,11 +116479,11 @@
     "id": 1790378171048
    },
    {
-    "uid": "767332288744128512",
-    "nom": "Julio Collins",
-    "role": "commercial",
-    "vu": "2026-09-25T23:17:14.516Z",
-    "id": 1790378235894
+    "uid": "826526979204841482",
+    "nom": "Diego Herrera",
+    "role": "direction",
+    "vu": "2026-09-25T23:17:32.267Z",
+    "id": 1790378254057
    }
   ],
   "oilroxwood_demandes": [],
