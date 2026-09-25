@@ -4557,6 +4557,20 @@
  "sheets": {
   "rh": [
    {
+    "nom": "Jacques Zitouning",
+    "grade": "Intérimaire",
+    "tel": "555-503-505",
+    "rib": "563458",
+    "idU": "381272",
+    "arrivee": "2026-09-24",
+    "discord": "320960786086363138",
+    "avert": "",
+    "contrat": true,
+    "recrut": "Thomas Boyer",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
     "nom": "Damien Brown",
     "grade": "Intérimaire",
     "tel": "555 350 542",
@@ -29818,17 +29832,17 @@
   "semaineDebut": "2026-09-21"
  },
  "_cid": "vy40hoiy3is",
- "_maj": 1790322310822,
- "_rev": "yachvdkjd0e-mugnp1vm",
+ "_maj": 1790322339602,
+ "_rev": "j8mvf23cxvp-mugnp8te",
  "_majSec": {
   "fer": 1789924320939,
   "fact": 1790321687937,
   "users": 1790106513471,
   "weeks": 1789944361063,
-  "sheets": 1790321670645,
+  "sheets": 1790322339602,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
-  "journal": 1790321688008,
+  "journal": 1790322339602,
   "pending": 1789341106480,
   "prodDer": 1789845736125,
   "runners": 1790123862598,
@@ -29850,15 +29864,25 @@
   "_affFix1": 1789341106480,
   "produits": 1789391731576,
   "_prodFix1": 1789341106480,
-  "_recruesIgnore": 1790260805225,
+  "_recruesIgnore": 1790322339541,
   "ventesAlias": 1789341106480,
   "_ventesIgnore": 1789341106480,
   "_avertVus": 1789382976850,
-  "_signeVus": 1790260805254
+  "_signeVus": 1790322339602
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1790322340416,
+   "u": "Diego Herrera",
+   "a": "Contrat(s) signé(s) via Discord : Jacques Zitouning"
+  },
+  {
+   "t": 1790322340354,
+   "u": "Diego Herrera",
+   "a": "Recrutements Discord : 1 fiche(s) créée(s), 0 case(s) complétée(s) — Jacques Zitouning"
+  },
   {
    "t": 1790321688596,
    "u": "Diego Herrera",
@@ -31348,16 +31372,6 @@
    "t": 1789216393612,
    "u": "Stella Collins",
    "a": "Recrutements Discord : 1 fiche(s) créée(s), 0 case(s) complétée(s) — Marco Sanchez"
-  },
-  {
-   "t": 1789215773368,
-   "u": "Stella Collins",
-   "a": "Suppression de la facture n°253086"
-  },
-  {
-   "t": 1789215402356,
-   "u": "Stella Collins",
-   "a": "Renommage : Louka Romelu → Romelu Louka · effectif (1), feuille rh (1), feuille tablette (1), historique des semaines (2)"
   }
  ],
  "prodDer": {
@@ -31865,12 +31879,12 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-25T07:45:39.010Z",
+  "maj": "2026-09-25T07:45:48.002Z",
   "semaine": 39,
   "totalBarils": 102757,
   "ca": 513785,
   "objectif": 375000,
-  "effectif": 111,
+  "effectif": 112,
   "clientsServis": 99,
   "top3": [
    {
@@ -113654,7 +113668,8 @@
   "1790104828140",
   "1790163696338",
   "1790249804065",
-  "1790252130027"
+  "1790252130027",
+  "1790272138774"
  ],
  "_signeVus": [
   "1789477305650",
@@ -113692,6 +113707,7 @@
   "1790107555485",
   "1790163779824",
   "1790249820749",
-  "1790252145227"
+  "1790252145227",
+  "1790272205265"
  ]
 }
