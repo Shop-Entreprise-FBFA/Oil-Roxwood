@@ -4685,7 +4685,7 @@
     "arrivee": "2026-09-26",
     "discord": "795315291257176074",
     "avert": "",
-    "contrat": false,
+    "contrat": true,
     "recrut": "Thomas Boyer",
     "dernierService": "",
     "flagOut": false
@@ -31081,18 +31081,18 @@
   "postesV4": 1,
   "semaineDebut": "2026-09-21"
  },
- "_cid": "l234pgjhpwr",
+ "_cid": "j939k2alwlq",
  "_maj": 1790458780764,
- "_rev": "lluoq4xxnrt-muiwy3wf",
+ "_rev": "hbynjzz3ab4-muiwy9gv",
  "_majSec": {
   "fer": 1790447277125,
   "fact": 1790378258697,
   "users": 1790406206568,
   "weeks": 1789944361063,
-  "sheets": 1790451996379,
+  "sheets": 1790458766015,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
-  "journal": 1790451996379,
+  "journal": 1790458766015,
   "pending": 1789341106480,
   "prodDer": 1789845736125,
   "runners": 1790410565427,
@@ -31118,11 +31118,16 @@
   "ventesAlias": 1789341106480,
   "_ventesIgnore": 1789341106480,
   "_avertVus": 1789382976850,
-  "_signeVus": 1790442368063
+  "_signeVus": 1790458766015
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1790458765590,
+   "u": "Thomas Boyer",
+   "a": "Contrat(s) signé(s) via Discord : vinchenzo waszcsykowski"
+  },
   {
    "t": 1790451996170,
    "u": "Thomas Boyer",
@@ -32617,11 +32622,6 @@
    "t": 1789492365677,
    "u": "Julio Collins",
    "a": "Achats de fer : 7 relevé(s) repris du salon"
-  },
-  {
-   "t": 1789492326017,
-   "u": "Diego Herrera",
-   "a": "Ventes : 1 facture(s) reprise(s)"
   }
  ],
  "prodDer": {
@@ -33139,7 +33139,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-26T21:40:10.431Z",
+  "maj": "2026-09-26T21:40:17.647Z",
   "semaine": 39,
   "totalBarils": 201209,
   "ca": 1006045,
@@ -125603,6 +125603,7 @@
   "1790272205265",
   "1790363792855",
   "1790364045082",
-  "1790366591657"
+  "1790366591657",
+  "1790458713244"
  ]
 }
