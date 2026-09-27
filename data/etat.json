@@ -6375,7 +6375,7 @@
     "nom": "Miles Cole",
     "rib": "544972",
     "tel": "555076693",
-    "avert": "1",
+    "avert": "2",
     "grade": "Intérimaire",
     "recrut": "Thomas Boyer",
     "arrivee": "2026-08-29",
@@ -32783,17 +32783,17 @@
   "semaineDebut": "2026-09-21"
  },
  "_cid": "trh5qesu8g",
- "_maj": 1790547059615,
- "_rev": "g7hh02mrwdb-mukdhm3s",
+ "_maj": 1790547066361,
+ "_rev": "rhp3n1v53xc-mukdhrl8",
  "_majSec": {
   "fer": 1790535742478,
   "fact": 1790544276070,
   "users": 1790535880586,
   "weeks": 1790189263047,
-  "sheets": 1790547059555,
+  "sheets": 1790547066309,
   "_qcFix1": 1790189263047,
   "_wkFix1": 1790189263047,
-  "journal": 1790547059615,
+  "journal": 1790547066361,
   "pending": 1790189263047,
   "prodDer": 1790189263047,
   "runners": 1790546613190,
@@ -32807,7 +32807,7 @@
   "primesExtra": 1790189263047,
   "quotasComHist": 1790189263047,
   "profils": 1790189263047,
-  "_tables": 1790547059555,
+  "_tables": 1790547066309,
   "_permsFix1": 1790189263047,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1790189263047,
@@ -32824,6 +32824,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1790547066739,
+   "u": "Diego Herrera",
+   "a": "Avertissement : Miles Cole (intérimaire, aucune prise de service) — total : 2"
+  },
   {
    "t": 1790547059994,
    "u": "Diego Herrera",
@@ -34318,11 +34323,6 @@
    "t": 1789820389542,
    "u": "?",
    "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1789819999218,
-   "u": "Julio Collins",
-   "a": "Vente rapide sans facture : 100 bidon(s) — Citoyen (vendeur : Julio Collins)"
   }
  ],
  "prodDer": {
@@ -34802,7 +34802,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-27T22:11:00.520Z",
+  "maj": "2026-09-27T22:11:07.628Z",
   "semaine": 39,
   "totalBarils": 258433,
   "ca": 1292165,
@@ -130420,6 +130420,16 @@
      "par": "Diego Herrera"
     },
     "id": 1790547060491
+   },
+   {
+    "type": "avertissement",
+    "payload": {
+     "discord": "714057749650210876",
+     "nom": "Miles Cole",
+     "raison": "Aucune prise de service cette semaine",
+     "par": "Diego Herrera"
+    },
+    "id": 1790547067432
    }
   ],
   "oilroxwood_coffres": [
