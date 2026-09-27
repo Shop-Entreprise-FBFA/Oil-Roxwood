@@ -12746,7 +12746,15 @@
     "entreprise": "klan-ozumiya"
    }
   ],
-  "ventesSem": [],
+  "ventesSem": [
+   {
+    "date": "2026-09-27",
+    "client": "The Black Order",
+    "quantite": 300,
+    "qui": "William Rodriguez-collins",
+    "fact": 253121
+   }
+  ],
   "collection": [
    {
     "nom": "Nom",
@@ -15424,7 +15432,7 @@
     "rib": "",
     "tel": "",
     "adresse": "Los Santos",
-    "lastCmd": "2026-04-27"
+    "lastCmd": "2026-09-27"
    },
    {
     "nom": "The Dark Syndicate",
@@ -15601,8 +15609,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253121,
+  "compteur": 253122,
   "factures": [
+   {
+    "num": 253121,
+    "date": "2026-09-27",
+    "client": "The Black Order",
+    "emetteur": "William Rodriguez-collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 300,
+      "tva": 0.05,
+      "pu": 180,
+      "ht": 54000,
+      "ttc": 56700,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 54000,
+    "ttc": 56700,
+    "poids": 600,
+    "statut": "attente"
+   },
    {
     "num": 253118,
     "date": "2026-09-27",
@@ -33030,14 +33061,14 @@
   "semaineDebut": "2026-09-28"
  },
  "_cid": "lyab7nkld4c",
- "_maj": 1790550518439,
- "_rev": "c7i2f42tqzw-mukfjzly",
+ "_maj": 1790550534443,
+ "_rev": "fyzfq1luayk-mukfk3xn",
  "_majSec": {
   "fer": 1790535742478,
-  "fact": 1790550492131,
+  "fact": 1790550534416,
   "users": 1790535880586,
   "weeks": 1790549423569,
-  "sheets": 1790550518439,
+  "sheets": 1790550534416,
   "_qcFix1": 1790189263047,
   "_wkFix1": 1790189263047,
   "journal": 1790549428971,
@@ -35049,13 +35080,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-27T23:08:50.566Z",
+  "maj": "2026-09-27T23:08:56.171Z",
   "semaine": 40,
   "totalBarils": 258433,
   "ca": 1292165,
   "objectif": 375000,
   "effectif": 107,
-  "clientsServis": 107,
+  "clientsServis": 108,
   "top3": [
    {
     "nom": "Alex Turner",
