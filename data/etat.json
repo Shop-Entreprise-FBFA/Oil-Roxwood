@@ -13537,7 +13537,7 @@
    },
    {
     "nom": "Drew Miller",
-    "grade": "Intérimaire",
+    "grade": "Raffineur",
     "menus": false,
     "boissons": false,
     "bidons": false,
@@ -13587,7 +13587,7 @@
    },
    {
     "nom": "Louka Romelu",
-    "grade": "Intérimaire",
+    "grade": "Raffineur",
     "menus": true,
     "boissons": true,
     "bidons": true,
@@ -13787,7 +13787,7 @@
    },
    {
     "nom": "Romain Pierres",
-    "grade": "Stagiaire",
+    "grade": "Intérimaire",
     "menus": false,
     "boissons": false,
     "bidons": false,
@@ -31283,17 +31283,17 @@
   "semaineDebut": "2026-09-21"
  },
  "_cid": "l234pgjhpwr",
- "_maj": 1790511687411,
- "_rev": "vrqp18t3jv-mujsfn15",
+ "_maj": 1790511706621,
+ "_rev": "l7ey2h01ewp-mujsfyly",
  "_majSec": {
   "fer": 1790503701862,
   "fact": 1790502418153,
   "users": 1790511335640,
   "weeks": 1789944361063,
-  "sheets": 1790503051053,
+  "sheets": 1790511706621,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
-  "journal": 1790511335640,
+  "journal": 1790511706621,
   "pending": 1789341106480,
   "prodDer": 1789845736125,
   "runners": 1790500530829,
@@ -31324,6 +31324,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1790511707442,
+   "u": "Diego Herrera",
+   "a": "Éligibilité : 3 grade(s) réalignés sur l'effectif — Drew Miller : Intérimaire → Raffineur · Louka Romelu : Intérimaire → Raffineur · Romain Pierres : Stagiaire → Intérimaire"
+  },
   {
    "t": 1790511335702,
    "u": "Julio Collins",
@@ -32818,11 +32823,6 @@
    "t": 1789588618411,
    "u": "Diego Herrera",
    "a": "Recrutements Discord : 2 fiche(s) créée(s), 0 case(s) complétée(s) — Patrick Dalton, Anna Lust"
-  },
-  {
-   "t": 1789578493847,
-   "u": "Julio Collins",
-   "a": "Facture n°253093 modifiée — total 36 000 $ → 37 800 $ · émetteur — → Julio Collins, William Rodriguez-collins"
   }
  ],
  "prodDer": {
@@ -33350,7 +33350,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-27T12:21:36.474Z",
+  "maj": "2026-09-27T12:21:51.478Z",
   "semaine": 39,
   "totalBarils": 233060,
   "ca": 1165300,
