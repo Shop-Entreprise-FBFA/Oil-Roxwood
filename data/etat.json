@@ -12750,8 +12750,15 @@
    {
     "date": "2026-09-27",
     "client": "The Black Order",
-    "quantite": 300,
+    "quantite": 150,
     "qui": "William Rodriguez-collins",
+    "fact": 253121
+   },
+   {
+    "date": "2026-09-27",
+    "client": "The Black Order",
+    "quantite": 150,
+    "qui": "Emma Collins-rodriguez",
     "fact": 253121
    }
   ],
@@ -15615,24 +15622,25 @@
     "num": 253121,
     "date": "2026-09-27",
     "client": "The Black Order",
-    "emetteur": "William Rodriguez-collins",
+    "emetteur": "William Rodriguez-collins, Emma Collins-rodriguez",
     "postop": false,
     "lignes": [
      {
       "ref": "CMD",
       "qte": 300,
       "tva": 0.05,
+      "desc": "bidons d'essence ",
       "pu": 180,
       "ht": 54000,
-      "ttc": 56700,
-      "desc": "bidons d'essence "
+      "ttc": 56700
      }
     ],
     "offert": 0,
     "ht": 54000,
     "ttc": 56700,
     "poids": 600,
-    "statut": "attente"
+    "statut": "attente",
+    "modifiee": 1790551569478
    },
    {
     "num": 253118,
@@ -33061,17 +33069,17 @@
   "semaineDebut": "2026-09-28"
  },
  "_cid": "lyab7nkld4c",
- "_maj": 1790551561857,
- "_rev": "uts76ucj96a-mukg66jt",
+ "_maj": 1790551569512,
+ "_rev": "wnex7wyd3sc-mukg6a28",
  "_majSec": {
   "fer": 1790535742478,
-  "fact": 1790550534416,
+  "fact": 1790551569479,
   "users": 1790535880586,
   "weeks": 1790549423569,
-  "sheets": 1790550549737,
+  "sheets": 1790551569479,
   "_qcFix1": 1790189263047,
   "_wkFix1": 1790189263047,
-  "journal": 1790550549737,
+  "journal": 1790551569512,
   "pending": 1790189263047,
   "prodDer": 1790189263047,
   "runners": 1790550518439,
@@ -33102,6 +33110,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1790551569595,
+   "u": "William Rodriguez-collins",
+   "a": "Facture n°253121 modifiée — émetteur William Rodriguez-collins → William Rodriguez-collins, Emma Collins-rodriguez"
+  },
   {
    "t": 1790550550096,
    "u": "Diego Herrera",
@@ -34596,11 +34609,6 @@
    "t": 1789837212870,
    "u": "?",
    "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1789836833354,
-   "u": "Julio Collins",
-   "a": "Vente rapide sans facture : 4 bidon(s) — Citoyen (vendeur : Julio Collins)"
   }
  ],
  "prodDer": {
@@ -35080,7 +35088,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-27T23:26:05.993Z",
+  "maj": "2026-09-27T23:26:10.545Z",
   "semaine": 40,
   "totalBarils": 258433,
   "ca": 1292165,
