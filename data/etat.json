@@ -12240,6 +12240,20 @@
     "client": "Employé — Bjorn Frost ⚡",
     "quantite": 10,
     "qui": "Julio Collins"
+   },
+   {
+    "date": "2026-09-27",
+    "client": "Concessionnaire moto bateau",
+    "quantite": 200,
+    "qui": "Julio Collins",
+    "fact": 253117
+   },
+   {
+    "date": "2026-09-27",
+    "client": "Concessionnaire moto bateau",
+    "quantite": 200,
+    "qui": "Emma Collins",
+    "fact": 253117
    }
   ],
   "collection": [
@@ -14212,10 +14226,7 @@
      }
     ],
     "adresse": "Sandy shores",
-    "relance": {
-     "par": "Juan Sanchez",
-     "date": "2026-07-29"
-    }
+    "lastCmd": "2026-09-27"
    },
    {
     "nom": "Corsia Nera",
@@ -15192,8 +15203,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253117,
+  "compteur": 253118,
   "factures": [
+   {
+    "num": 253117,
+    "date": "2026-09-27",
+    "client": "Concessionnaire moto bateau",
+    "emetteur": "Julio Collins, Emma Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 400,
+      "tva": 0.04,
+      "pu": 180,
+      "ht": 72000,
+      "ttc": 74880,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 72000,
+    "ttc": 74880,
+    "poids": 800,
+    "statut": "attente"
+   },
    {
     "num": 253116,
     "date": "2026-09-27",
@@ -31363,14 +31397,14 @@
   "semaineDebut": "2026-09-21"
  },
  "_cid": "xrt64g4qiwq",
- "_maj": 1790514395564,
- "_rev": "m6g2o8ouv5-muju2jcm",
+ "_maj": 1790514446304,
+ "_rev": "wrbumpcr33j-muju2m0d",
  "_majSec": {
   "fer": 1790514027441,
-  "fact": 1790502418153,
+  "fact": 1790514446281,
   "users": 1790514395564,
   "weeks": 1789944361063,
-  "sheets": 1790514395482,
+  "sheets": 1790514446281,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
   "journal": 1790514395564,
@@ -33430,13 +33464,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-27T13:07:24.406Z",
+  "maj": "2026-09-27T13:07:27.853Z",
   "semaine": 39,
   "totalBarils": 233060,
   "ca": 1165300,
   "objectif": 375000,
   "effectif": 107,
-  "clientsServis": 103,
+  "clientsServis": 104,
   "top3": [
    {
     "nom": "Alex Turner",
