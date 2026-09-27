@@ -12183,12 +12183,6 @@
     "qui": "Diego Herrera"
    },
    {
-    "date": "2026-09-25",
-    "client": "Citoyen ⚡",
-    "quantite": 3,
-    "qui": "Stella Collins"
-   },
-   {
     "date": "2026-09-24",
     "client": "Burning Bush",
     "quantite": 500,
@@ -12208,6 +12202,12 @@
     "quantite": 500,
     "qui": "Tyler Collins",
     "fact": 253112
+   },
+   {
+    "date": "2026-09-25",
+    "client": "Citoyen ⚡",
+    "quantite": 3,
+    "qui": "Stella Collins"
    },
    {
     "date": "2026-09-25",
@@ -12280,6 +12280,27 @@
     "client": "Citoyen ⚡",
     "quantite": 20,
     "qui": "Diego Herrera"
+   },
+   {
+    "date": "2026-09-27",
+    "client": "Die Erben",
+    "quantite": 100,
+    "qui": "Laurent Roquel",
+    "src": "f253118"
+   },
+   {
+    "date": "2026-09-27",
+    "client": "Ferme Roxwood",
+    "quantite": 150,
+    "qui": "Laurent Roquel",
+    "fact": 253119
+   },
+   {
+    "date": "2026-09-27",
+    "client": "Ferme Roxwood",
+    "quantite": 150,
+    "qui": "William Rodriguez-collins",
+    "fact": 253119
    }
   ],
   "collection": [
@@ -13857,6 +13878,13 @@
   "migRel": true,
   "clients": [
    {
+    "nom": "Die Erben",
+    "adresse": "Roxwood",
+    "tel": "555 097 374",
+    "rib": "",
+    "lastCmd": "2026-09-27"
+   },
+   {
     "nom": "Union Syndicat",
     "adresse": "Los Santos",
     "tel": "",
@@ -14501,9 +14529,9 @@
    {
     "nom": "Ferme Roxwood",
     "rib": "21146",
-    "tel": "",
+    "tel": "2056",
     "adresse": "Roxwood",
-    "lastCmd": "2026-08-17"
+    "lastCmd": "2026-09-27"
    },
    {
     "nom": "Gang Gorée 221",
@@ -15239,8 +15267,55 @@
     "prix": 150
    }
   ],
-  "compteur": 253118,
+  "compteur": 253120,
   "factures": [
+   {
+    "num": 253119,
+    "date": "2026-09-27",
+    "client": "Ferme Roxwood",
+    "emetteur": "Laurent Roquel, William Rodriguez-collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 300,
+      "tva": 0,
+      "desc": "bidons d'essence ",
+      "pu": 180,
+      "ht": 54000,
+      "ttc": 54000
+     }
+    ],
+    "offert": 0,
+    "ht": 54000,
+    "ttc": 54000,
+    "poids": 600,
+    "statut": "payee",
+    "modifiee": 1790538687767
+   },
+   {
+    "num": 253118,
+    "date": "2026-09-27",
+    "client": "Die Erben",
+    "emetteur": "Laurent Roquel",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 100,
+      "tva": 0.04,
+      "pu": 180,
+      "ht": 18000,
+      "ttc": 18720,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 18000,
+    "ttc": 18720,
+    "poids": 200,
+    "statut": "payee"
+   },
    {
     "num": 253117,
     "date": "2026-09-27",
@@ -32596,48 +32671,58 @@
   "postesV4": 1,
   "semaineDebut": "2026-09-21"
  },
- "_cid": "khq9sego8m",
+ "_cid": "6aa5q3rwyk7",
  "_maj": 1790539235849,
- "_rev": "66lvolg7tum-muk8u3h2",
+ "_rev": "dc9bq84a425-muk8ugk6",
  "_majSec": {
   "fer": 1790535742478,
-  "fact": 1790515682046,
+  "fact": 1790539004006,
   "users": 1790535880586,
-  "weeks": 1789944361063,
-  "sheets": 1790536354099,
-  "_qcFix1": 1789341106480,
-  "_wkFix1": 1789341106480,
-  "journal": 1790535880586,
-  "pending": 1789341106480,
-  "prodDer": 1789845736125,
+  "weeks": 1790189263047,
+  "sheets": 1790538338209,
+  "_qcFix1": 1790189263047,
+  "_wkFix1": 1790189263047,
+  "journal": 1790538687809,
+  "pending": 1790189263047,
+  "prodDer": 1790189263047,
   "runners": 1790514395482,
   "absences": 1790532485353,
-  "imported": 1789341106480,
+  "imported": 1790189263047,
   "settings": 1790336528952,
-  "closeUndo": 1789944361063,
-  "quotasCom": 1790531347042,
+  "closeUndo": 1790189263047,
+  "quotasCom": 1790536558881,
   "bilanExtra": 1790380171554,
-  "bilanForce": 1789341106480,
-  "primesExtra": 1789341106480,
-  "quotasComHist": 1789944361063,
-  "profils": 1789559236417,
+  "bilanForce": 1790189263047,
+  "primesExtra": 1790189263047,
+  "quotasComHist": 1790189263047,
+  "profils": 1790189263047,
   "_tables": 1790539235849,
-  "_permsFix1": 1789341106480,
+  "_permsFix1": 1790189263047,
   "_rolesFix4": 1788489352546,
-  "_rolesFix77": 1789341106480,
+  "_rolesFix77": 1790189263047,
   "affiches": 1790268302655,
-  "_affFix1": 1789341106480,
-  "produits": 1789391731576,
-  "_prodFix1": 1789341106480,
+  "_affFix1": 1790189263047,
+  "produits": 1790189263047,
+  "_prodFix1": 1790189263047,
   "_recruesIgnore": 1790516552146,
-  "ventesAlias": 1789341106480,
-  "_ventesIgnore": 1789341106480,
-  "_avertVus": 1789382976850,
+  "ventesAlias": 1790189263047,
+  "_ventesIgnore": 1790189263047,
+  "_avertVus": 1790189263047,
   "_signeVus": 1790529753816
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1790538688840,
+   "u": "Laurent Roquel",
+   "a": "Facture n°253119 modifiée — total 56 160 $ → 54 000 $"
+  },
+  {
+   "t": 1790536560329,
+   "u": "Laurent Roquel",
+   "a": "Ventes : 1 facture(s) reprise(s)"
+  },
   {
    "t": 1790535881643,
    "u": "Julio Collins",
@@ -34127,16 +34212,6 @@
    "t": 1789761678965,
    "u": "Julio Collins",
    "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1789761678782,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1789754988618,
-   "u": "Julio Collins",
-   "a": "Vente rapide sans facture : 200 bidon(s) — Citoyen (vendeur : Julio Collins)"
   }
  ],
  "prodDer": {
@@ -34674,13 +34749,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-27T20:00:44.822Z",
+  "maj": "2026-09-27T20:01:01.783Z",
   "semaine": 39,
   "totalBarils": 233060,
   "ca": 1165300,
   "objectif": 375000,
   "effectif": 108,
-  "clientsServis": 104,
+  "clientsServis": 106,
   "top3": [
    {
     "nom": "Alex Turner",
@@ -34799,9 +34874,9 @@
  "quotasCom": {
   "sem": 39,
   "achats": {},
-  "vendus": 8285,
-  "parPers": 2072,
-  "ferPers": 31
+  "vendus": 8385,
+  "parPers": 2097,
+  "ferPers": 81
  },
  "bilanExtra": [
   {
