@@ -6098,7 +6098,7 @@
     "nom": "Enzo Roy",
     "rib": "553096",
     "tel": "555878469",
-    "avert": "1",
+    "avert": "2",
     "grade": "Intérimaire",
     "recrut": "Thomas Boyer",
     "arrivee": "2026-08-28",
@@ -6130,7 +6130,7 @@
     "nom": "Hirsute Maasai",
     "rib": "529987",
     "tel": "555661437",
-    "avert": "1",
+    "avert": "2",
     "grade": "Intérimaire",
     "recrut": "Thomas Boyer",
     "arrivee": "2026-08-29",
@@ -6151,7 +6151,7 @@
     "idU": "139145",
     "arrivee": "2026-08-31",
     "discord": "922995956763463730",
-    "avert": "1",
+    "avert": "2",
     "contrat": false,
     "recrut": "Thomas Boyer",
     "dernierService": "2026-09-05",
@@ -32783,17 +32783,17 @@
   "semaineDebut": "2026-09-21"
  },
  "_cid": "trh5qesu8g",
- "_maj": 1790547114345,
- "_rev": "jurtan2y3ta-mukdisbc",
+ "_maj": 1790547120889,
+ "_rev": "xijj2xbq7na-mukdixqg",
  "_majSec": {
   "fer": 1790535742478,
   "fact": 1790544276070,
   "users": 1790535880586,
   "weeks": 1790189263047,
-  "sheets": 1790547114298,
+  "sheets": 1790547120838,
   "_qcFix1": 1790189263047,
   "_wkFix1": 1790189263047,
-  "journal": 1790547114345,
+  "journal": 1790547120889,
   "pending": 1790189263047,
   "prodDer": 1790189263047,
   "runners": 1790546613190,
@@ -32807,7 +32807,7 @@
   "primesExtra": 1790189263047,
   "quotasComHist": 1790189263047,
   "profils": 1790189263047,
-  "_tables": 1790547114298,
+  "_tables": 1790547120838,
   "_permsFix1": 1790189263047,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1790189263047,
@@ -32824,6 +32824,21 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1790547121278,
+   "u": "Diego Herrera",
+   "a": "Avertissement : Enzo Roy (intérimaire, aucune prise de service) — total : 2"
+  },
+  {
+   "t": 1790547118903,
+   "u": "Diego Herrera",
+   "a": "Avertissement : Hirsute Maasai (intérimaire, aucune prise de service) — total : 2"
+  },
+  {
+   "t": 1790547116915,
+   "u": "Diego Herrera",
+   "a": "Avertissement : Ilyes Dom (intérimaire, aucune prise de service) — total : 2"
+  },
   {
    "t": 1790547114734,
    "u": "Diego Herrera",
@@ -34308,21 +34323,6 @@
    "t": 1789836234667,
    "u": "Julio Collins",
    "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1789836234473,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1789836222327,
-   "u": "Emma Collins",
-   "a": "Vente rapide sans facture : 100 bidon(s) — Citoyen (vendeur : Emma Collins)"
-  },
-  {
-   "t": 1789835597618,
-   "u": "Julio Collins",
-   "a": "Vente rapide sans facture : 3 bidon(s) — Citoyen (vendeur : Julio Collins)"
   }
  ],
  "prodDer": {
@@ -34802,7 +34802,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-27T22:11:55.224Z",
+  "maj": "2026-09-27T22:12:02.248Z",
   "semaine": 39,
   "totalBarils": 258433,
   "ca": 1292165,
@@ -130597,6 +130597,36 @@
      "par": "Diego Herrera"
     },
     "id": 1790547115110
+   },
+   {
+    "type": "avertissement",
+    "payload": {
+     "discord": "922995956763463730",
+     "nom": "Ilyes Dom",
+     "raison": "Aucune prise de service cette semaine",
+     "par": "Diego Herrera"
+    },
+    "id": 1790547117213
+   },
+   {
+    "type": "avertissement",
+    "payload": {
+     "discord": "959082206322655303",
+     "nom": "Hirsute Maasai",
+     "raison": "Aucune prise de service cette semaine",
+     "par": "Diego Herrera"
+    },
+    "id": 1790547119040
+   },
+   {
+    "type": "avertissement",
+    "payload": {
+     "discord": "1524182507594055680",
+     "nom": "Enzo Roy",
+     "raison": "Aucune prise de service cette semaine",
+     "par": "Diego Herrera"
+    },
+    "id": 1790547121950
    }
   ],
   "oilroxwood_coffres": [
