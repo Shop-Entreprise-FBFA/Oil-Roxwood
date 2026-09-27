@@ -561,7 +561,7 @@
    "id": 1790124724028,
    "nom": "Samantha Rodriguez",
    "discord": "",
-   "grade": 1,
+   "grade": 0,
    "barils": 4723,
    "total": 4099,
    "runs": [],
@@ -4934,7 +4934,7 @@
    },
    {
     "nom": "Samantha Rodriguez",
-    "grade": "Raffineur",
+    "grade": "Intérimaire",
     "tel": "555181706",
     "rib": "242352",
     "idU": "126733",
@@ -17684,6 +17684,22 @@
    "public": true,
    "maj": "2026-09-16T11:47:16.417Z"
   },
+  "stella collins": {
+   "nom": "Stella Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-14T13:20:17.287Z"
+  },
+  "julio collins": {
+   "nom": "Julio Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T00:06:23.240Z"
+  },
   "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿": {
    "nom": "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿",
    "photo": "",
@@ -17700,14 +17716,6 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
-  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -17716,21 +17724,13 @@
    "public": true,
    "maj": "2026-09-12T16:48:15.042Z"
   },
-  "stella collins": {
-   "nom": "Stella Collins",
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
    "photo": "",
    "titre": "",
    "bio": "",
    "public": true,
-   "maj": "2026-09-14T13:20:17.287Z"
-  },
-  "julio collins": {
-   "nom": "Julio Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T00:06:23.240Z"
+   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -31362,21 +31362,21 @@
   "postesV4": 1,
   "semaineDebut": "2026-09-21"
  },
- "_cid": "3bhg6xixogx",
- "_maj": 1790514387264,
- "_rev": "vwegy23dhda-muju1f0d",
+ "_cid": "xrt64g4qiwq",
+ "_maj": 1790514395564,
+ "_rev": "gf40osbknpk-muju1izz",
  "_majSec": {
   "fer": 1790514027441,
   "fact": 1790502418153,
-  "users": 1790511335640,
+  "users": 1790514395564,
   "weeks": 1789944361063,
-  "sheets": 1790512887484,
+  "sheets": 1790514395482,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
-  "journal": 1790514117273,
+  "journal": 1790514395564,
   "pending": 1789341106480,
   "prodDer": 1789845736125,
-  "runners": 1790512887484,
+  "runners": 1790514395482,
   "absences": 1790461001484,
   "imported": 1789341106480,
   "settings": 1790336528952,
@@ -31387,7 +31387,7 @@
   "primesExtra": 1789341106480,
   "quotasComHist": 1789944361063,
   "profils": 1789559236417,
-  "_tables": 1790514387264,
+  "_tables": 1790514395406,
   "_permsFix1": 1789341106480,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1789341106480,
@@ -31404,6 +31404,16 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1790514396171,
+   "u": "Julio Collins",
+   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
+  },
+  {
+   "t": 1790514395920,
+   "u": "?",
+   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
+  },
   {
    "t": 1790514028301,
    "u": "Emma Collins",
@@ -32893,16 +32903,6 @@
    "t": 1789663233663,
    "u": "Julio Collins",
    "a": "Vente rapide sans facture : 10 bidon(s) — Citoyen (vendeur : Julio Collins)"
-  },
-  {
-   "t": 1789659944800,
-   "u": "Diego Herrera",
-   "a": "Contrat(s) signé(s) via Discord : Ilyes dryssi, timal limbobofoew, Kwamé Angloma"
-  },
-  {
-   "t": 1789659944762,
-   "u": "Diego Herrera",
-   "a": "Recrutements Discord : 3 fiche(s) créée(s), 0 case(s) complétée(s) — Ilyes dryssi, timal limbobofoew, Kwamé Angloma"
   }
  ],
  "prodDer": {
@@ -33430,7 +33430,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-27T13:06:32.125Z",
+  "maj": "2026-09-27T13:06:37.295Z",
   "semaine": 39,
   "totalBarils": 233060,
   "ca": 1165300,
@@ -125708,11 +125708,11 @@
     "id": 1790514299082
    },
    {
-    "uid": "1053366471574687844",
-    "nom": "Emma Collins",
-    "role": "respcom",
-    "vu": "2026-09-27T13:06:27.264Z",
-    "id": 1790514388785
+    "uid": "767332288744128512",
+    "nom": "Julio Collins",
+    "role": "commercial",
+    "vu": "2026-09-27T13:06:35.315Z",
+    "id": 1790514396502
    }
   ],
   "oilroxwood_demandes": [],
