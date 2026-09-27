@@ -12381,6 +12381,13 @@
     "quantite": 150,
     "qui": "William Rodriguez-collins",
     "fact": 253119
+   },
+   {
+    "date": "2026-09-27",
+    "client": "LTD Strawberry",
+    "quantite": 100,
+    "qui": "William Rodriguez-collins",
+    "fact": 253118
    }
   ],
   "collection": [
@@ -14915,7 +14922,7 @@
     "rib": "20020",
     "tel": "930",
     "adresse": "Los Santos",
-    "lastCmd": "2026-09-16"
+    "lastCmd": "2026-09-27"
    },
    {
     "nom": "Lunapark Billard",
@@ -15347,8 +15354,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253120,
+  "compteur": 253121,
   "factures": [
+   {
+    "num": 253118,
+    "date": "2026-09-27",
+    "client": "LTD Strawberry",
+    "emetteur": "William Rodriguez-collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 100,
+      "tva": 0.05,
+      "pu": 180,
+      "ht": 18000,
+      "ttc": 18900,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 18000,
+    "ttc": 18900,
+    "poids": 200,
+    "statut": "attente"
+   },
    {
     "num": 253119,
     "date": "2026-09-27",
@@ -17925,6 +17955,14 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T20:11:53.537Z"
+  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -17948,14 +17986,6 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T00:06:23.240Z"
-  },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -32751,15 +32781,15 @@
   "postesV4": 1,
   "semaineDebut": "2026-09-21"
  },
- "_cid": "zgoclyv1tcn",
- "_maj": 1790544111470,
- "_rev": "a1lz0ags4-mukbr0ax",
+ "_cid": "lyab7nkld4c",
+ "_maj": 1790544153482,
+ "_rev": "7y7wbsbl9ch-mukbrcn4",
  "_majSec": {
   "fer": 1790535742478,
-  "fact": 1790539004006,
+  "fact": 1790544153453,
   "users": 1790535880586,
   "weeks": 1790189263047,
-  "sheets": 1790541114673,
+  "sheets": 1790544153453,
   "_qcFix1": 1790189263047,
   "_wkFix1": 1790189263047,
   "journal": 1790541930830,
@@ -34829,13 +34859,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-27T21:22:19.593Z",
+  "maj": "2026-09-27T21:22:35.584Z",
   "semaine": 39,
   "totalBarils": 251945,
   "ca": 1259725,
   "objectif": 375000,
   "effectif": 110,
-  "clientsServis": 106,
+  "clientsServis": 107,
   "top3": [
    {
     "nom": "Alex Turner",
