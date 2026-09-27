@@ -12227,6 +12227,13 @@
     "client": "Citoyen ⚡",
     "quantite": 552,
     "qui": "Diego Herrera"
+   },
+   {
+    "date": "2026-09-27",
+    "client": "Les Ricains",
+    "quantite": 500,
+    "qui": "Julio Collins",
+    "fact": 253116
    }
   ],
   "collection": [
@@ -14603,7 +14610,7 @@
     "rib": "",
     "tel": "555 574 601",
     "adresse": "Los santos",
-    "lastCmd": "2026-09-18"
+    "lastCmd": "2026-09-27"
    },
    {
     "nom": "los caballeros de la muerte",
@@ -15179,8 +15186,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253116,
+  "compteur": 253117,
   "factures": [
+   {
+    "num": 253116,
+    "date": "2026-09-27",
+    "client": "Les Ricains",
+    "emetteur": "Julio Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 500,
+      "tva": 0.04,
+      "pu": 180,
+      "ht": 90000,
+      "ttc": 93600,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 90000,
+    "ttc": 93600,
+    "poids": 1000,
+    "statut": "attente"
+   },
    {
     "num": 253115,
     "date": "2026-09-25",
@@ -31215,14 +31245,14 @@
   "semaineDebut": "2026-09-21"
  },
  "_cid": "cg3q5gciu8o",
- "_maj": 1790501047844,
- "_rev": "8z7a6tvwd2r-mujm47r5",
+ "_maj": 1790501087237,
+ "_rev": "3qcxbr0nqb7-mujm4cjw",
  "_majSec": {
   "fer": 1790447277125,
-  "fact": 1790378258697,
+  "fact": 1790501087219,
   "users": 1790501033610,
   "weeks": 1789944361063,
-  "sheets": 1790500636757,
+  "sheets": 1790501087219,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
   "journal": 1790501033610,
@@ -33282,13 +33312,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-27T09:24:45.761Z",
+  "maj": "2026-09-27T09:24:51.980Z",
   "semaine": 39,
   "totalBarils": 233060,
   "ca": 1165300,
   "objectif": 375000,
   "effectif": 108,
-  "clientsServis": 102,
+  "clientsServis": 103,
   "top3": [
    {
     "nom": "Alex Turner",
