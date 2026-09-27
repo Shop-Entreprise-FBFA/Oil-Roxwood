@@ -15366,18 +15366,19 @@
      {
       "ref": "CMD",
       "qte": 100,
-      "tva": 0.05,
+      "tva": 0,
+      "desc": "bidons d'essence ",
       "pu": 180,
       "ht": 18000,
-      "ttc": 18900,
-      "desc": "bidons d'essence "
+      "ttc": 18000
      }
     ],
     "offert": 0,
     "ht": 18000,
-    "ttc": 18900,
+    "ttc": 18000,
     "poids": 200,
-    "statut": "attente"
+    "statut": "attente",
+    "modifiee": 1790544276069
    },
    {
     "num": 253119,
@@ -17955,6 +17956,14 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T20:11:53.537Z"
+  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -17978,14 +17987,6 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T00:06:23.240Z"
-  },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -32781,18 +32782,18 @@
   "postesV4": 1,
   "semaineDebut": "2026-09-21"
  },
- "_cid": "zgoclyv1tcn",
- "_maj": 1790544271005,
- "_rev": "041a6oa8oa96-mukbtwln",
+ "_cid": "lyab7nkld4c",
+ "_maj": 1790544276098,
+ "_rev": "xsyxoeof68-mukbu061",
  "_majSec": {
   "fer": 1790535742478,
-  "fact": 1790544153453,
+  "fact": 1790544276070,
   "users": 1790535880586,
   "weeks": 1790189263047,
   "sheets": 1790544153453,
   "_qcFix1": 1790189263047,
   "_wkFix1": 1790189263047,
-  "journal": 1790541930830,
+  "journal": 1790544276098,
   "pending": 1790189263047,
   "prodDer": 1790189263047,
   "runners": 1790541114673,
@@ -32823,6 +32824,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1790544276988,
+   "u": "William Rodriguez-collins",
+   "a": "Facture n°253118 modifiée — total 18 900 $ → 18 000 $"
+  },
   {
    "t": 1790541911398,
    "u": "Stella Collins",
@@ -34317,11 +34323,6 @@
    "t": 1789762271715,
    "u": "Julio Collins",
    "a": "Achats de fer : 2 relevé(s) repris du salon"
-  },
-  {
-   "t": 1789762265313,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
   }
  ],
  "prodDer": {
@@ -34859,7 +34860,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-27T21:24:34.763Z",
+  "maj": "2026-09-27T21:24:39.385Z",
   "semaine": 39,
   "totalBarils": 251945,
   "ca": 1259725,
