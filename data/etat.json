@@ -17700,6 +17700,14 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T20:11:53.537Z"
+  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -17723,14 +17731,6 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T00:06:23.240Z"
-  },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -31113,6 +31113,46 @@
    "quantite": 150,
    "montant": 750,
    "did": "1053366471574687844"
+  },
+  {
+   "id": "1553747706420269079:0",
+   "t": "2026-09-27 14:38",
+   "nom": "Emma Collins-rodriguez",
+   "quantite": 150,
+   "montant": 750,
+   "did": "1053366471574687844"
+  },
+  {
+   "id": "1553747706420269079:1",
+   "t": "2026-09-27 14:38",
+   "nom": "Emma Collins-rodriguez",
+   "quantite": 150,
+   "montant": 750,
+   "did": "1053366471574687844"
+  },
+  {
+   "id": "1553747706420269079:2",
+   "t": "2026-09-27 14:38",
+   "nom": "Emma Collins-rodriguez",
+   "quantite": 150,
+   "montant": 750,
+   "did": "1053366471574687844"
+  },
+  {
+   "id": "1553747464887210037:0",
+   "t": "2026-09-27 14:37",
+   "nom": "Emma Collins-rodriguez",
+   "quantite": 150,
+   "montant": 750,
+   "did": "1053366471574687844"
+  },
+  {
+   "id": "1553747464887210037:1",
+   "t": "2026-09-27 14:37",
+   "nom": "Emma Collins-rodriguez",
+   "quantite": 150,
+   "montant": 750,
+   "did": "1053366471574687844"
   }
  ],
  "settings": {
@@ -31322,11 +31362,11 @@
   "postesV4": 1,
   "semaineDebut": "2026-09-21"
  },
- "_cid": "31m2zrcay57",
- "_maj": 1790514026855,
- "_rev": "0t9455kb2i0f-mujttl7o",
+ "_cid": "3bhg6xixogx",
+ "_maj": 1790514027441,
+ "_rev": "wtmnbgnl55h-mujttpdp",
  "_majSec": {
-  "fer": 1790512767439,
+  "fer": 1790514027441,
   "fact": 1790502418153,
   "users": 1790511335640,
   "weeks": 1789944361063,
@@ -31347,7 +31387,7 @@
   "primesExtra": 1789341106480,
   "quotasComHist": 1789944361063,
   "profils": 1789559236417,
-  "_tables": 1790514026855,
+  "_tables": 1790514027324,
   "_permsFix1": 1789341106480,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1789341106480,
@@ -31364,6 +31404,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1790514028301,
+   "u": "Emma Collins",
+   "a": "Achats de fer : 5 relevé(s) repris du salon"
+  },
   {
    "t": 1790512888309,
    "u": "Diego Herrera",
@@ -32858,11 +32903,6 @@
    "t": 1789659944762,
    "u": "Diego Herrera",
    "a": "Recrutements Discord : 3 fiche(s) créée(s), 0 case(s) complétée(s) — Ilyes dryssi, timal limbobofoew, Kwamé Angloma"
-  },
-  {
-   "t": 1789650066727,
-   "u": "Stella Collins",
-   "a": "Vente rapide sans facture : 80 bidon(s) — Citoyen (vendeur : Stella Collins)"
   }
  ],
  "prodDer": {
@@ -33390,7 +33430,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-27T13:00:26.916Z",
+  "maj": "2026-09-27T13:00:32.317Z",
   "semaine": 39,
   "totalBarils": 233060,
   "ca": 1165300,
@@ -125626,18 +125666,25 @@
     "id": 1790513848217
    },
    {
-    "uid": "948542221429379112",
-    "nom": "Stella Collins",
-    "role": "direction",
-    "vu": "2026-09-27T12:59:26.865Z",
-    "id": 1790513966242
+    "uid": "1053366471574687844",
+    "nom": "Emma Collins",
+    "role": "respcom",
+    "vu": "2026-09-27T12:58:57.261Z",
+    "id": 1790513938865
    },
    {
-    "uid": "948542221429379112",
-    "nom": "Stella Collins",
+    "uid": "826526979204841482",
+    "nom": "Diego Herrera",
     "role": "direction",
-    "vu": "2026-09-27T13:00:26.855Z",
-    "id": 1790514026621
+    "vu": "2026-09-27T13:00:02.901Z",
+    "id": 1790514004359
+   },
+   {
+    "uid": "1053366471574687844",
+    "nom": "Emma Collins",
+    "role": "respcom",
+    "vu": "2026-09-27T13:00:27.324Z",
+    "id": 1790514028650
    }
   ],
   "oilroxwood_demandes": [],
