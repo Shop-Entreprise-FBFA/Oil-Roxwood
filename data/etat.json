@@ -13940,7 +13940,7 @@
    },
    {
     "nom": "Sali Dute",
-    "grade": "Raffineur Confirmé",
+    "grade": "Raffineur",
     "menus": false,
     "boissons": false,
     "bidons": false,
@@ -13950,7 +13950,7 @@
    },
    {
     "nom": "Samantha Rodriguez",
-    "grade": "Raffineur Confirmé",
+    "grade": "Raffineur",
     "menus": false,
     "boissons": false,
     "bidons": false,
@@ -13960,7 +13960,7 @@
    },
    {
     "nom": "Anis Wolkeur",
-    "grade": "Raffineur",
+    "grade": "Intérimaire",
     "menus": false,
     "boissons": false,
     "bidons": false,
@@ -13970,7 +13970,7 @@
    },
    {
     "nom": "Arturo Diaz",
-    "grade": "Raffineur",
+    "grade": "Intérimaire",
     "menus": false,
     "boissons": false,
     "bidons": false,
@@ -14010,7 +14010,7 @@
    },
    {
     "nom": "Jamal Dute",
-    "grade": "Raffineur",
+    "grade": "Intérimaire",
     "menus": false,
     "boissons": false,
     "bidons": false,
@@ -14020,7 +14020,7 @@
    },
    {
     "nom": "Katy Dute",
-    "grade": "Raffineur",
+    "grade": "Intérimaire",
     "menus": false,
     "boissons": false,
     "bidons": false,
@@ -14040,7 +14040,7 @@
    },
    {
     "nom": "Marcus Vance",
-    "grade": "Raffineur",
+    "grade": "Intérimaire",
     "menus": false,
     "boissons": false,
     "bidons": false,
@@ -14050,7 +14050,7 @@
    },
    {
     "nom": "Migouelle Dassilva",
-    "grade": "Raffineur",
+    "grade": "Intérimaire",
     "menus": false,
     "boissons": false,
     "bidons": false,
@@ -14060,7 +14060,7 @@
    },
    {
     "nom": "Romain Pierres",
-    "grade": "Raffineur",
+    "grade": "Intérimaire",
     "menus": false,
     "boissons": false,
     "bidons": false,
@@ -14070,7 +14070,7 @@
    },
    {
     "nom": "Sarah Dute",
-    "grade": "Raffineur",
+    "grade": "Intérimaire",
     "menus": false,
     "boissons": false,
     "bidons": false,
@@ -14090,7 +14090,7 @@
    },
    {
     "nom": "Vincent Kobayashi",
-    "grade": "Raffineur",
+    "grade": "Intérimaire",
     "menus": false,
     "boissons": false,
     "bidons": false,
@@ -33061,17 +33061,17 @@
   "semaineDebut": "2026-09-28"
  },
  "_cid": "trh5qesu8g",
- "_maj": 1790550547786,
- "_rev": "0z4ynby0m95-mukfkeai",
+ "_maj": 1790550549737,
+ "_rev": "7wlcltqj1t7-mukfkin6",
  "_majSec": {
   "fer": 1790535742478,
   "fact": 1790550534416,
   "users": 1790535880586,
   "weeks": 1790549423569,
-  "sheets": 1790550534416,
+  "sheets": 1790550549737,
   "_qcFix1": 1790189263047,
   "_wkFix1": 1790189263047,
-  "journal": 1790549428971,
+  "journal": 1790550549737,
   "pending": 1790189263047,
   "prodDer": 1790189263047,
   "runners": 1790550518439,
@@ -33102,6 +33102,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1790550550096,
+   "u": "Diego Herrera",
+   "a": "Éligibilité : 11 grade(s) réalignés sur l'effectif — Sali Dute : Raffineur Confirmé → Raffineur · Samantha Rodriguez : Raffineur Confirmé → Raffineur · Anis Wolkeur : Raffineur → Intérimaire · Arturo Diaz : Raffineur → Intérimaire…"
+  },
   {
    "t": 1790549429304,
    "u": "Diego Herrera",
@@ -34596,11 +34601,6 @@
    "t": 1789836833354,
    "u": "Julio Collins",
    "a": "Vente rapide sans facture : 4 bidon(s) — Citoyen (vendeur : Julio Collins)"
-  },
-  {
-   "t": 1789836824505,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
   }
  ],
  "prodDer": {
@@ -35080,7 +35080,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-27T23:09:09.594Z",
+  "maj": "2026-09-27T23:09:15.234Z",
   "semaine": 40,
   "totalBarils": 258433,
   "ca": 1292165,
