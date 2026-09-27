@@ -6623,9 +6623,21 @@
   "compta": [
    {
     "type": "Dépense déductible",
+    "date": "",
+    "justif": "",
+    "montant": 0
+   },
+   {
+    "type": "Dépense déductible",
+    "date": "",
+    "justif": "",
+    "montant": 0
+   },
+   {
+    "type": "Retrait",
     "date": "2026-09-27",
     "justif": "Atelier Komori",
-    "montant": 0
+    "montant": 100000
    },
    {
     "type": "Retrait",
@@ -32698,14 +32710,14 @@
   "semaineDebut": "2026-09-21"
  },
  "_cid": "trh5qesu8g",
- "_maj": 1790539804477,
- "_rev": "cdwytuqsk4b-muk966sd",
+ "_maj": 1790539816707,
+ "_rev": "gakwywtpmyf-muk96ddv",
  "_majSec": {
   "fer": 1790535742478,
   "fact": 1790539004006,
   "users": 1790535880586,
   "weeks": 1790189263047,
-  "sheets": 1790539804477,
+  "sheets": 1790539816707,
   "_qcFix1": 1790189263047,
   "_wkFix1": 1790189263047,
   "journal": 1790539297459,
@@ -32722,7 +32734,7 @@
   "primesExtra": 1790189263047,
   "quotasComHist": 1790189263047,
   "profils": 1790189263047,
-  "_tables": 1790539775796,
+  "_tables": 1790539812692,
   "_permsFix1": 1790189263047,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1790189263047,
@@ -34775,7 +34787,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-27T20:10:08.989Z",
+  "maj": "2026-09-27T20:10:17.540Z",
   "semaine": 39,
   "totalBarils": 233060,
   "ca": 1165300,
@@ -129116,6 +129128,13 @@
     "role": "rh",
     "vu": "2026-09-27T20:09:35.796Z",
     "id": 1790539776507
+   },
+   {
+    "uid": "826526979204841482",
+    "nom": "Diego Herrera",
+    "role": "direction",
+    "vu": "2026-09-27T20:10:12.691Z",
+    "id": 1790539813978
    }
   ],
   "oilroxwood_demandes": [],
