@@ -17956,6 +17956,14 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T20:11:53.537Z"
+  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -17979,14 +17987,6 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T00:06:23.240Z"
-  },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -32782,9 +32782,9 @@
   "postesV4": 1,
   "semaineDebut": "2026-09-21"
  },
- "_cid": "trh5qesu8g",
- "_maj": 1790547307807,
- "_rev": "xuhgl43br2q-mukdo8fm",
+ "_cid": "lyab7nkld4c",
+ "_maj": 1790547440831,
+ "_rev": "sge8s23bcj9-mukdpsyu",
  "_majSec": {
   "fer": 1790535742478,
   "fact": 1790544276070,
@@ -32807,7 +32807,7 @@
   "primesExtra": 1790189263047,
   "quotasComHist": 1790189263047,
   "profils": 1790189263047,
-  "_tables": 1790547307807,
+  "_tables": 1790547440831,
   "_permsFix1": 1790189263047,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1790189263047,
@@ -34802,7 +34802,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-27T22:16:09.394Z",
+  "maj": "2026-09-27T22:17:22.662Z",
   "semaine": 39,
   "totalBarils": 258433,
   "ca": 1292165,
@@ -129789,18 +129789,32 @@
     "id": 1790547104176
    },
    {
-    "uid": "826526979204841482",
-    "nom": "Diego Herrera",
-    "role": "direction",
-    "vu": "2026-09-27T22:13:13.815Z",
-    "id": 1790547194625
+    "uid": "235844738656239616",
+    "nom": "William Rodriguez-collins",
+    "role": "commercial",
+    "vu": "2026-09-27T22:13:20.854Z",
+    "id": 1790547202420
    },
    {
-    "uid": "826526979204841482",
-    "nom": "Diego Herrera",
-    "role": "direction",
-    "vu": "2026-09-27T22:15:07.806Z",
-    "id": 1790547308682
+    "uid": "235844738656239616",
+    "nom": "William Rodriguez-collins",
+    "role": "commercial",
+    "vu": "2026-09-27T22:14:20.858Z",
+    "id": 1790547262541
+   },
+   {
+    "uid": "235844738656239616",
+    "nom": "William Rodriguez-collins",
+    "role": "commercial",
+    "vu": "2026-09-27T22:16:20.866Z",
+    "id": 1790547381906
+   },
+   {
+    "uid": "235844738656239616",
+    "nom": "William Rodriguez-collins",
+    "role": "commercial",
+    "vu": "2026-09-27T22:17:20.831Z",
+    "id": 1790547442666
    }
   ],
   "oilroxwood_demandes": [],
@@ -130504,7 +130518,9 @@
      "raison": "Aucune prise de service cette semaine",
      "par": "Diego Herrera"
     },
-    "id": 1790547079843
+    "id": 1790547079843,
+    "statut": "fait",
+    "rapport": "Avertissement enregistre pour doxo0198 (total : 1)."
    },
    {
     "type": "avertissement",
@@ -130514,7 +130530,9 @@
      "raison": "Aucune prise de service cette semaine",
      "par": "Diego Herrera"
     },
-    "id": 1790547081794
+    "id": 1790547081794,
+    "statut": "fait",
+    "rapport": "Avertissement enregistre pour orochy54 (total : 4)."
    },
    {
     "type": "avertissement",
@@ -130524,7 +130542,9 @@
      "raison": "Aucune prise de service cette semaine",
      "par": "Diego Herrera"
     },
-    "id": 1790547084020
+    "id": 1790547084020,
+    "statut": "fait",
+    "rapport": "Avertissement enregistre pour law3398 (total : 2)."
    },
    {
     "type": "avertissement",
@@ -130534,7 +130554,9 @@
      "raison": "Aucune prise de service cette semaine",
      "par": "Diego Herrera"
     },
-    "id": 1790547089795
+    "id": 1790547089795,
+    "statut": "erreur",
+    "rapport": "Membre Discord 1225132652953210900 introuvable sur les serveurs du bot"
    },
    {
     "type": "avertissement",
@@ -130544,7 +130566,9 @@
      "raison": "Aucune prise de service cette semaine",
      "par": "Diego Herrera"
     },
-    "id": 1790547092526
+    "id": 1790547092526,
+    "statut": "fait",
+    "rapport": "Avertissement enregistre pour tireaccru (total : 2)."
    },
    {
     "type": "avertissement",
@@ -130554,7 +130578,9 @@
      "raison": "Aucune prise de service cette semaine",
      "par": "Diego Herrera"
     },
-    "id": 1790547094552
+    "id": 1790547094552,
+    "statut": "fait",
+    "rapport": "Avertissement enregistre pour j65 (total : 1)."
    },
    {
     "type": "avertissement",
@@ -130564,7 +130590,9 @@
      "raison": "Aucune prise de service cette semaine",
      "par": "Diego Herrera"
     },
-    "id": 1790547097695
+    "id": 1790547097695,
+    "statut": "erreur",
+    "rapport": "Membre Discord 397783751691730957 introuvable sur les serveurs du bot"
    },
    {
     "type": "avertissement",
@@ -130574,7 +130602,9 @@
      "raison": "Aucune prise de service cette semaine",
      "par": "Diego Herrera"
     },
-    "id": 1790547099842
+    "id": 1790547099842,
+    "statut": "fait",
+    "rapport": "Avertissement enregistre pour Oil Roxwood#3943 (total : 1)."
    },
    {
     "type": "avertissement",
@@ -130584,7 +130614,9 @@
      "raison": "Aucune prise de service cette semaine",
      "par": "Diego Herrera"
     },
-    "id": 1790547102148
+    "id": 1790547102148,
+    "statut": "fait",
+    "rapport": "Avertissement enregistre pour rytec_ (total : 1)."
    },
    {
     "type": "avertissement",
@@ -130594,7 +130626,9 @@
      "raison": "Aucune prise de service cette semaine",
      "par": "Diego Herrera"
     },
-    "id": 1790547104186
+    "id": 1790547104186,
+    "statut": "erreur",
+    "rapport": "Membre Discord 1313185029890900120 introuvable sur les serveurs du bot"
    },
    {
     "type": "avertissement",
@@ -130604,7 +130638,9 @@
      "raison": "Aucune prise de service cette semaine",
      "par": "Diego Herrera"
     },
-    "id": 1790547112697
+    "id": 1790547112697,
+    "statut": "fait",
+    "rapport": "Avertissement enregistre pour aziyxx (total : 2)."
    },
    {
     "type": "avertissement",
@@ -130614,7 +130650,9 @@
      "raison": "Aucune prise de service cette semaine",
      "par": "Diego Herrera"
     },
-    "id": 1790547115110
+    "id": 1790547115110,
+    "statut": "fait",
+    "rapport": "Avertissement enregistre pour iskrra__ (total : 3)."
    },
    {
     "type": "avertissement",
