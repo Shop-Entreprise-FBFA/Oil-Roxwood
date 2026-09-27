@@ -561,7 +561,7 @@
    "id": 1790124724028,
    "nom": "Samantha Rodriguez",
    "discord": "",
-   "grade": 0,
+   "grade": 1,
    "barils": 4723,
    "total": 4099,
    "runs": [],
@@ -4864,7 +4864,7 @@
    },
    {
     "nom": "Jason Dute",
-    "grade": "Stagiaire",
+    "grade": "Intérimaire",
     "tel": "555 106 711",
     "rib": "562808",
     "idU": "380776",
@@ -4934,7 +4934,7 @@
    },
    {
     "nom": "Samantha Rodriguez",
-    "grade": "Intérimaire",
+    "grade": "Raffineur",
     "tel": "555181706",
     "rib": "242352",
     "idU": "126733",
@@ -4943,7 +4943,7 @@
     "avert": "",
     "contrat": true,
     "recrut": "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿",
-    "dernierService": "2026-09-26",
+    "dernierService": "2026-09-27",
     "flagOut": false,
     "contratGen": {
      "t": 1790086753850,
@@ -4989,7 +4989,7 @@
     "avert": "",
     "contrat": true,
     "recrut": "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿",
-    "dernierService": "2026-09-26",
+    "dernierService": "2026-09-27",
     "flagOut": false
    },
    {
@@ -5133,7 +5133,7 @@
     "avert": "",
     "contrat": true,
     "recrut": "Thomas Boyer",
-    "dernierService": "2026-09-26",
+    "dernierService": "2026-09-27",
     "flagOut": false
    },
    {
@@ -5218,7 +5218,7 @@
     "contrat": true,
     "recrut": "Thomas Boyer",
     "dernierService": "2026-09-16",
-    "flagOut": false
+    "flagOut": true
    },
    {
     "idU": "232050",
@@ -5327,7 +5327,7 @@
     "contrat": true,
     "discord": "1053366471574687844",
     "flagOut": false,
-    "dernierService": "2026-09-26"
+    "dernierService": "2026-09-27"
    },
    {
     "idU": "356873",
@@ -5342,7 +5342,7 @@
     "contrat": true,
     "discord": "767332288744128512",
     "flagOut": false,
-    "dernierService": "2026-09-26"
+    "dernierService": "2026-09-27"
    },
    {
     "idU": "282 695",
@@ -5840,7 +5840,7 @@
     "contrat": true,
     "discord": "1470084619553472683",
     "flagOut": false,
-    "dernierService": "2026-09-26"
+    "dernierService": "2026-09-27"
    },
    {
     "idU": "371918",
@@ -5933,7 +5933,7 @@
     "contrat": true,
     "discord": "1096933851659517975",
     "flagOut": false,
-    "dernierService": "2026-09-26"
+    "dernierService": "2026-09-27"
    },
    {
     "nom": "Brandon Parker",
@@ -31323,20 +31323,20 @@
   "semaineDebut": "2026-09-21"
  },
  "_cid": "l234pgjhpwr",
- "_maj": 1790512867838,
- "_rev": "syiai64vg6-mujt4uv1",
+ "_maj": 1790512887484,
+ "_rev": "94uad37flw8-mujt584m",
  "_majSec": {
   "fer": 1790512767439,
   "fact": 1790502418153,
   "users": 1790511335640,
   "weeks": 1789944361063,
-  "sheets": 1790511884055,
+  "sheets": 1790512887484,
   "_qcFix1": 1789341106480,
   "_wkFix1": 1789341106480,
-  "journal": 1790512857243,
+  "journal": 1790512887484,
   "pending": 1789341106480,
   "prodDer": 1789845736125,
-  "runners": 1790500530829,
+  "runners": 1790512887484,
   "absences": 1790461001484,
   "imported": 1789341106480,
   "settings": 1790336528952,
@@ -31364,6 +31364,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1790512888309,
+   "u": "Diego Herrera",
+   "a": "Grade mis à jour via pointage : Samantha Rodriguez → Raffineur"
+  },
   {
    "t": 1790512768320,
    "u": "Emma Collins",
@@ -32858,11 +32863,6 @@
    "t": 1789650066727,
    "u": "Stella Collins",
    "a": "Vente rapide sans facture : 80 bidon(s) — Citoyen (vendeur : Stella Collins)"
-  },
-  {
-   "t": 1789588618448,
-   "u": "Diego Herrera",
-   "a": "Contrat(s) signé(s) via Discord : Anna Lust, Patrick Dalton"
   }
  ],
  "prodDer": {
@@ -33390,12 +33390,12 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-27T12:41:13.021Z",
+  "maj": "2026-09-27T12:41:30.214Z",
   "semaine": 39,
   "totalBarils": 233060,
   "ca": 1165300,
   "objectif": 375000,
-  "effectif": 108,
+  "effectif": 107,
   "clientsServis": 103,
   "top3": [
    {
