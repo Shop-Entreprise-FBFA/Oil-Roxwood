@@ -12801,6 +12801,13 @@
     "quantite": 150,
     "qui": "Laurent Roquel",
     "fact": 253125
+   },
+   {
+    "date": "2026-09-28",
+    "client": "Aube noire ",
+    "quantite": 100,
+    "qui": "Laurent Roquel",
+    "fact": 253126
    }
   ],
   "collection": [
@@ -14293,7 +14300,7 @@
     "adresse": "Los Santos ",
     "tel": "555 507 725",
     "rib": "",
-    "lastCmd": "2026-09-22"
+    "lastCmd": "2026-09-28"
    },
    {
     "nom": "Gaïa Lavyrinthos",
@@ -15664,8 +15671,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253126,
+  "compteur": 253127,
   "factures": [
+   {
+    "num": 253126,
+    "date": "2026-09-28",
+    "client": "Aube noire ",
+    "emetteur": "Laurent Roquel",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 100,
+      "tva": 0.04,
+      "pu": 180,
+      "ht": 18000,
+      "ttc": 18720,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 18000,
+    "ttc": 18720,
+    "poids": 200,
+    "statut": "payee"
+   },
    {
     "num": 253125,
     "date": "2026-09-28",
@@ -33210,14 +33240,14 @@
   "semaineDebut": "2026-09-28"
  },
  "_cid": "49v9s8t6wqj",
- "_maj": 1790605061627,
- "_rev": "wyx6axgub08-mulc10wf",
+ "_maj": 1790605076035,
+ "_rev": "tpxsbqpw36-mulc13uy",
  "_majSec": {
   "fer": 1790535742478,
-  "fact": 1790605055328,
+  "fact": 1790605076035,
   "users": 1790604890599,
   "weeks": 1790549423569,
-  "sheets": 1790605044065,
+  "sheets": 1790605074130,
   "_qcFix1": 1790189263047,
   "_wkFix1": 1790189263047,
   "journal": 1790604890599,
@@ -35229,13 +35259,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-28T14:17:53.103Z",
+  "maj": "2026-09-28T14:17:56.938Z",
   "semaine": 40,
   "totalBarils": 258433,
   "ca": 1292165,
   "objectif": 375000,
   "effectif": 107,
-  "clientsServis": 112,
+  "clientsServis": 113,
   "top3": [
    {
     "nom": "Alex Turner",
