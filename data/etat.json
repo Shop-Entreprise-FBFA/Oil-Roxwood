@@ -11170,6 +11170,20 @@
     "quantite": 150,
     "qui": "William Rodriguez-Collins",
     "fact": 253128
+   },
+   {
+    "date": "2026-09-28",
+    "client": "LTD Groove Street",
+    "quantite": 100,
+    "qui": "Emma Collins-rodriguez",
+    "fact": 253129
+   },
+   {
+    "date": "2026-09-28",
+    "client": "LTD Groove Street",
+    "quantite": 100,
+    "qui": "William Rodriguez-Collins",
+    "fact": 253129
    }
   ],
   "collection": [
@@ -13550,11 +13564,7 @@
     "rib": "",
     "tel": "",
     "adresse": "Los Santos",
-    "lastCmd": "2026-03-29",
-    "relance": {
-     "par": "Laurent Roquel",
-     "date": "2026-09-17"
-    }
+    "lastCmd": "2026-09-28"
    },
    {
     "nom": "LTD Little Seoul",
@@ -14040,8 +14050,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253129,
+  "compteur": 253130,
   "factures": [
+   {
+    "num": 253129,
+    "date": "2026-09-28",
+    "client": "LTD Groove Street",
+    "emetteur": "Emma Collins-rodriguez, William Rodriguez-Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 200,
+      "tva": 0,
+      "pu": 180,
+      "ht": 36000,
+      "ttc": 36000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 36000,
+    "ttc": 36000,
+    "poids": 400,
+    "statut": "attente"
+   },
    {
     "num": 253128,
     "date": "2026-09-28",
@@ -31655,14 +31688,14 @@
   "semaineDebut": "2026-09-28"
  },
  "_cid": "6t6clx6unif",
- "_maj": 1790639695828,
- "_rev": "bew00ur477w-mulwn76r",
+ "_maj": 1790639734948,
+ "_rev": "6u75ntp7ako-mulwnz7h",
  "_majSec": {
   "fer": 1790535742478,
-  "fact": 1790629199736,
+  "fact": 1790639734890,
   "users": 1790604890599,
   "weeks": 1790549423569,
-  "sheets": 1790635028773,
+  "sheets": 1790639734890,
   "_qcFix1": 1790189263047,
   "_wkFix1": 1790189263047,
   "journal": 1790617695218,
@@ -33684,13 +33717,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-28T23:55:00.003Z",
+  "maj": "2026-09-28T23:55:36.317Z",
   "semaine": 40,
   "totalBarils": 0,
   "ca": 0,
   "objectif": 375000,
   "effectif": 92,
-  "clientsServis": 115,
+  "clientsServis": 116,
   "top3": [],
   "runners": [],
   "produits": [
