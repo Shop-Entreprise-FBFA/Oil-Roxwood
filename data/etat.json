@@ -15662,18 +15662,19 @@
      {
       "ref": "CMD",
       "qte": 300,
-      "tva": 0.05,
+      "tva": 0,
+      "desc": "bidons d'essence ",
       "pu": 180,
       "ht": 54000,
-      "ttc": 56700,
-      "desc": "bidons d'essence "
+      "ttc": 54000
      }
     ],
     "offert": 0,
     "ht": 54000,
-    "ttc": 56700,
+    "ttc": 54000,
     "poids": 600,
-    "statut": "attente"
+    "statut": "attente",
+    "modifiee": 1790590973322
    },
    {
     "num": 253122,
@@ -18322,6 +18323,14 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T20:11:53.537Z"
+  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -18345,14 +18354,6 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T00:06:23.240Z"
-  },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -33148,18 +33149,18 @@
   "postesV4": 1,
   "semaineDebut": "2026-09-28"
  },
- "_cid": "95i2flcguou",
- "_maj": 1790590946325,
- "_rev": "ks2h060qouc-mul3moku",
+ "_cid": "6goqh7hjwhi",
+ "_maj": 1790590973373,
+ "_rev": "ulnrbzdqrsl-mul3mump",
  "_majSec": {
   "fer": 1790535742478,
-  "fact": 1790590922902,
+  "fact": 1790590973323,
   "users": 1790535880586,
   "weeks": 1790549423569,
   "sheets": 1790590910672,
   "_qcFix1": 1790189263047,
   "_wkFix1": 1790189263047,
-  "journal": 1790588266885,
+  "journal": 1790590973373,
   "pending": 1790189263047,
   "prodDer": 1790189263047,
   "runners": 1790550518439,
@@ -33190,6 +33191,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1790590972813,
+   "u": "Emma Collins",
+   "a": "Facture n°253123 modifiée — total 56 700 $ → 54 000 $"
+  },
   {
    "t": 1790588265384,
    "u": "Stella Collins",
@@ -34684,11 +34690,6 @@
    "t": 1789837442719,
    "u": "?",
    "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1789837213018,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
   }
  ],
  "prodDer": {
@@ -35168,7 +35169,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-28T10:22:47.022Z",
+  "maj": "2026-09-28T10:22:54.865Z",
   "semaine": 40,
   "totalBarils": 258433,
   "ca": 1292165,
