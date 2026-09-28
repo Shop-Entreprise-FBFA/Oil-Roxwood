@@ -18367,6 +18367,22 @@
    "public": true,
    "maj": "2026-09-16T11:47:16.417Z"
   },
+  "stella collins": {
+   "nom": "Stella Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-14T13:20:17.287Z"
+  },
+  "julio collins": {
+   "nom": "Julio Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T00:06:23.240Z"
+  },
   "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿": {
    "nom": "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿",
    "photo": "",
@@ -18390,22 +18406,6 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T16:48:15.042Z"
-  },
-  "stella collins": {
-   "nom": "Stella Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-14T13:20:17.287Z"
-  },
-  "julio collins": {
-   "nom": "Julio Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T00:06:23.240Z"
   },
   "william rodriguez-collins": {
    "nom": "William Rodriguez-collins",
@@ -33209,18 +33209,18 @@
   "postesV4": 1,
   "semaineDebut": "2026-09-28"
  },
- "_cid": "49v9s8t6wqj",
- "_maj": 1790604893832,
- "_rev": "bzb6ayoenbv-mulbx7fq",
+ "_cid": "z37x3o3fot",
+ "_maj": 1790604900263,
+ "_rev": "ckl4o1guug-mulbxebo",
  "_majSec": {
   "fer": 1790535742478,
   "fact": 1790592842253,
-  "users": 1790535880586,
+  "users": 1790604890599,
   "weeks": 1790549423569,
   "sheets": 1790597933705,
   "_qcFix1": 1790189263047,
   "_wkFix1": 1790189263047,
-  "journal": 1790590973373,
+  "journal": 1790604890599,
   "pending": 1790189263047,
   "prodDer": 1790189263047,
   "runners": 1790550518439,
@@ -33234,7 +33234,7 @@
   "primesExtra": 1790589630102,
   "quotasComHist": 1790549423569,
   "profils": 1790189263047,
-  "_tables": 1790604893832,
+  "_tables": 1790604900263,
   "_permsFix1": 1790189263047,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1790189263047,
@@ -33251,6 +33251,16 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1790604894660,
+   "u": "Julio Collins",
+   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
+  },
+  {
+   "t": 1790604894423,
+   "u": "?",
+   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
+  },
   {
    "t": 1790590972813,
    "u": "Emma Collins",
@@ -34740,16 +34750,6 @@
    "t": 1789838779961,
    "u": "Stella Collins",
    "a": "Vente rapide sans facture : 10 bidon(s) — Citoyen (vendeur : Stella Collins)"
-  },
-  {
-   "t": 1789837442922,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1789837442719,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
   }
  ],
  "prodDer": {
@@ -35229,7 +35229,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-28T14:14:54.950Z",
+  "maj": "2026-09-28T14:15:03.876Z",
   "semaine": 40,
   "totalBarils": 258433,
   "ca": 1292165,
@@ -132748,18 +132748,32 @@
     "id": 1790604726608
    },
    {
-    "uid": "707695913187016785",
-    "nom": "Laurent Roquel",
-    "role": "commercial",
-    "vu": "2026-09-28T14:13:53.822Z",
-    "id": 1790604834291
+    "uid": "826526979204841482",
+    "nom": "Diego Herrera",
+    "role": "direction",
+    "vu": "2026-09-28T14:13:05.987Z",
+    "id": 1790604787667
    },
    {
-    "uid": "707695913187016785",
-    "nom": "Laurent Roquel",
+    "uid": "826526979204841482",
+    "nom": "Diego Herrera",
+    "role": "direction",
+    "vu": "2026-09-28T14:14:05.980Z",
+    "id": 1790604847450
+   },
+   {
+    "uid": "767332288744128512",
+    "nom": "Julio Collins",
     "role": "commercial",
-    "vu": "2026-09-28T14:14:53.832Z",
-    "id": 1790604894144
+    "vu": "2026-09-28T14:14:50.365Z",
+    "id": 1790604894620
+   },
+   {
+    "uid": "767332288744128512",
+    "nom": "Julio Collins",
+    "role": "respcom",
+    "vu": "2026-09-28T14:15:00.199Z",
+    "id": 1790604901012
    }
   ],
   "oilroxwood_demandes": [],
