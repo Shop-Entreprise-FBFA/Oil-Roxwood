@@ -12773,6 +12773,20 @@
     "client": "Citoyen ⚡",
     "quantite": 50,
     "qui": "Stella Collins"
+   },
+   {
+    "date": "2026-09-28",
+    "client": "Dynasty 8",
+    "quantite": 150,
+    "qui": "Emma Collins-rodriguez",
+    "fact": 253123
+   },
+   {
+    "date": "2026-09-28",
+    "client": "Dynasty 8",
+    "quantite": 150,
+    "qui": "Stella Collins",
+    "fact": 253123
    }
   ],
   "collection": [
@@ -14728,7 +14742,7 @@
     "rib": "",
     "tel": "",
     "adresse": "",
-    "lastCmd": "2026-08-30"
+    "lastCmd": "2026-09-28"
    },
    {
     "nom": "ECO",
@@ -15636,8 +15650,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253123,
+  "compteur": 253124,
   "factures": [
+   {
+    "num": 253123,
+    "date": "2026-09-28",
+    "client": "Dynasty 8",
+    "emetteur": "Emma Collins-rodriguez, Stella Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 300,
+      "tva": 0.05,
+      "pu": 180,
+      "ht": 54000,
+      "ttc": 56700,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 54000,
+    "ttc": 56700,
+    "poids": 600,
+    "statut": "attente"
+   },
    {
     "num": 253122,
     "date": "2026-09-28",
@@ -15659,7 +15696,7 @@
     "ht": 27000,
     "ttc": 28080,
     "poids": 300,
-    "statut": "attente"
+    "statut": "payee"
    },
    {
     "num": 253121,
@@ -18285,6 +18322,14 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T20:11:53.537Z"
+  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -18308,14 +18353,6 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T00:06:23.240Z"
-  },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -33111,15 +33148,15 @@
   "postesV4": 1,
   "semaineDebut": "2026-09-28"
  },
- "_cid": "95i2flcguou",
- "_maj": 1790590911153,
- "_rev": "hs5clw0gn9t-mul3ln8c",
+ "_cid": "6goqh7hjwhi",
+ "_maj": 1790590922902,
+ "_rev": "58skrlyu46w-mul3lt0t",
  "_majSec": {
   "fer": 1790535742478,
-  "fact": 1790588259945,
+  "fact": 1790590922902,
   "users": 1790535880586,
   "weeks": 1790549423569,
-  "sheets": 1790588266885,
+  "sheets": 1790590910672,
   "_qcFix1": 1790189263047,
   "_wkFix1": 1790189263047,
   "journal": 1790588266885,
@@ -35131,13 +35168,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-28T10:21:58.620Z",
+  "maj": "2026-09-28T10:22:06.125Z",
   "semaine": 40,
   "totalBarils": 258433,
   "ca": 1292165,
   "objectif": 375000,
   "effectif": 107,
-  "clientsServis": 109,
+  "clientsServis": 110,
   "top3": [
    {
     "nom": "Alex Turner",
