@@ -12760,6 +12760,13 @@
     "quantite": 150,
     "qui": "Emma Collins-rodriguez",
     "fact": 253121
+   },
+   {
+    "date": "2026-09-28",
+    "client": "wintoria",
+    "quantite": 150,
+    "qui": "Stella Collins",
+    "fact": 253122
    }
   ],
   "collection": [
@@ -14230,7 +14237,8 @@
     "nom": "wintoria",
     "adresse": "Grapeseed",
     "tel": "",
-    "rib": ""
+    "rib": "",
+    "lastCmd": "2026-09-28"
    },
    {
     "nom": "Die Erben",
@@ -15622,8 +15630,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253122,
+  "compteur": 253123,
   "factures": [
+   {
+    "num": 253122,
+    "date": "2026-09-28",
+    "client": "wintoria",
+    "emetteur": "Stella Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 150,
+      "tva": 0.04,
+      "pu": 180,
+      "ht": 27000,
+      "ttc": 28080,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 27000,
+    "ttc": 28080,
+    "poids": 300,
+    "statut": "attente"
+   },
    {
     "num": 253121,
     "date": "2026-09-27",
@@ -33075,14 +33106,14 @@
   "semaineDebut": "2026-09-28"
  },
  "_cid": "95i2flcguou",
- "_maj": 1790588211172,
- "_rev": "kp7irh5tln-mul1zo2z",
+ "_maj": 1790588259986,
+ "_rev": "fo9zpiaa3ld-mul20nia",
  "_majSec": {
   "fer": 1790535742478,
-  "fact": 1790588107450,
+  "fact": 1790588259945,
   "users": 1790535880586,
   "weeks": 1790549423569,
-  "sheets": 1790551569479,
+  "sheets": 1790588259945,
   "_qcFix1": 1790189263047,
   "_wkFix1": 1790189263047,
   "journal": 1790551569512,
@@ -35094,13 +35125,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-28T09:36:53.675Z",
+  "maj": "2026-09-28T09:37:39.586Z",
   "semaine": 40,
   "totalBarils": 258433,
   "ca": 1292165,
   "objectif": 375000,
   "effectif": 107,
-  "clientsServis": 108,
+  "clientsServis": 109,
   "top3": [
    {
     "nom": "Alex Turner",
