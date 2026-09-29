@@ -11215,6 +11215,20 @@
     "client": "Employé — Elliot Adkins ⚡",
     "quantite": 50,
     "qui": "Bjorn Frost"
+   },
+   {
+    "date": "2026-09-29",
+    "client": "LTD Roxwood",
+    "quantite": 150,
+    "qui": "Bjorn Frost",
+    "fact": 253131
+   },
+   {
+    "date": "2026-09-29",
+    "client": "LTD Roxwood",
+    "quantite": 150,
+    "qui": "Laurent Roquel",
+    "fact": 253131
    }
   ],
   "collection": [
@@ -13616,11 +13630,7 @@
     "rib": "20072",
     "tel": "982",
     "adresse": "Roxwood",
-    "lastCmd": "2026-06-24",
-    "relance": {
-     "par": "Julio Collins",
-     "date": "2026-09-17"
-    },
+    "lastCmd": "2026-09-29",
     "notes": [
      {
       "t": 1789651609747,
@@ -14074,8 +14084,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253131,
+  "compteur": 253132,
   "factures": [
+   {
+    "num": 253131,
+    "date": "2026-09-29",
+    "client": "LTD Roxwood",
+    "emetteur": "Bjorn Frost, Laurent Roquel",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 300,
+      "tva": 0,
+      "pu": 180,
+      "ht": 54000,
+      "ttc": 54000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 54000,
+    "ttc": 54000,
+    "poids": 600,
+    "statut": "attente"
+   },
    {
     "num": 253130,
     "date": "2026-09-29",
@@ -31822,15 +31855,15 @@
   "postesV4": 1,
   "semaineDebut": "2026-09-28"
  },
- "_cid": "uejdciyzto8",
- "_maj": 1790704116740,
- "_rev": "8n8ifwrgcn-mumyzwut",
+ "_cid": "v72d0dgfuu",
+ "_maj": 1790704123989,
+ "_rev": "jsmklxcik2h-mumz03mm",
  "_majSec": {
   "fer": 1790701456835,
-  "fact": 1790701456835,
+  "fact": 1790704123935,
   "users": 1790701456896,
   "weeks": 1790701456835,
-  "sheets": 1790701626141,
+  "sheets": 1790704123935,
   "_qcFix1": 1790701456835,
   "_wkFix1": 1790701456835,
   "journal": 1790701626141,
@@ -33852,13 +33885,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-29T17:48:38.549Z",
+  "maj": "2026-09-29T17:48:47.326Z",
   "semaine": 40,
   "totalBarils": 0,
   "ca": 0,
   "objectif": 375000,
   "effectif": 89,
-  "clientsServis": 117,
+  "clientsServis": 118,
   "top3": [],
   "runners": [],
   "produits": [
