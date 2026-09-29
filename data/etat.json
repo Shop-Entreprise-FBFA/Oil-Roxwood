@@ -11184,6 +11184,13 @@
     "quantite": 100,
     "qui": "William Rodriguez-Collins",
     "fact": 253129
+   },
+   {
+    "date": "2026-09-29",
+    "client": "Smokebro",
+    "quantite": 50,
+    "qui": "Laurent Roquel",
+    "fact": 253130
    }
   ],
   "collection": [
@@ -13837,7 +13844,7 @@
     "rib": "",
     "tel": "555 334 643",
     "adresse": "Roxwood",
-    "lastCmd": "2026-09-22"
+    "lastCmd": "2026-09-29"
    },
    {
     "nom": "strada nostra",
@@ -14050,8 +14057,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253130,
+  "compteur": 253131,
   "factures": [
+   {
+    "num": 253130,
+    "date": "2026-09-29",
+    "client": "Smokebro",
+    "emetteur": "Laurent Roquel",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 50,
+      "tva": 0.04,
+      "pu": 180,
+      "ht": 9000,
+      "ttc": 9360,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 9000,
+    "ttc": 9360,
+    "poids": 100,
+    "statut": "attente"
+   },
    {
     "num": 253129,
     "date": "2026-09-28",
@@ -31688,14 +31718,14 @@
   "semaineDebut": "2026-09-28"
  },
  "_cid": "hncjiwmqjj4",
- "_maj": 1790684483165,
- "_rev": "rwwpdtvps8p-mumnb5um",
+ "_maj": 1790684498646,
+ "_rev": "9n7ua97qx1d-mumnbfi4",
  "_majSec": {
   "fer": 1790535742478,
-  "fact": 1790684483165,
+  "fact": 1790684498604,
   "users": 1790604890599,
   "weeks": 1790549423569,
-  "sheets": 1790682968544,
+  "sheets": 1790684498604,
   "_qcFix1": 1790189263047,
   "_wkFix1": 1790189263047,
   "journal": 1790617695218,
@@ -33717,13 +33747,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-29T12:21:28.030Z",
+  "maj": "2026-09-29T12:21:40.540Z",
   "semaine": 40,
   "totalBarils": 0,
   "ca": 0,
   "objectif": 375000,
   "effectif": 92,
-  "clientsServis": 116,
+  "clientsServis": 117,
   "top3": [],
   "runners": [],
   "produits": [
