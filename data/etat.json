@@ -12396,7 +12396,7 @@
    },
    {
     "nom": "Sali Dute",
-    "grade": "Raffineur",
+    "grade": "Raffineur Expert",
     "menus": true,
     "boissons": true,
     "bidons": true,
@@ -12406,7 +12406,7 @@
    },
    {
     "nom": "Samantha Rodriguez",
-    "grade": "Raffineur",
+    "grade": "Raffineur Expert",
     "menus": true,
     "boissons": true,
     "bidons": true,
@@ -12426,7 +12426,7 @@
    },
    {
     "nom": "Arturo Diaz",
-    "grade": "Intérimaire",
+    "grade": "Raffineur Expert",
     "menus": false,
     "boissons": false,
     "bidons": false,
@@ -12436,7 +12436,7 @@
    },
    {
     "nom": "Bjorn Frost",
-    "grade": "Raffineur",
+    "grade": "Commercial",
     "menus": false,
     "boissons": false,
     "bidons": false,
@@ -12466,7 +12466,7 @@
    },
    {
     "nom": "Jamal Dute",
-    "grade": "Intérimaire",
+    "grade": "Raffineur",
     "menus": false,
     "boissons": false,
     "bidons": false,
@@ -12476,7 +12476,7 @@
    },
    {
     "nom": "Katy Dute",
-    "grade": "Intérimaire",
+    "grade": "Raffineur",
     "menus": false,
     "boissons": false,
     "bidons": false,
@@ -12496,7 +12496,7 @@
    },
    {
     "nom": "Marcus Vance",
-    "grade": "Intérimaire",
+    "grade": "Raffineur Confirmé",
     "menus": true,
     "boissons": true,
     "bidons": true,
@@ -12506,7 +12506,7 @@
    },
    {
     "nom": "Migouelle Dassilva",
-    "grade": "Intérimaire",
+    "grade": "Raffineur",
     "menus": false,
     "boissons": false,
     "bidons": false,
@@ -12516,7 +12516,7 @@
    },
    {
     "nom": "Romain Pierres",
-    "grade": "Intérimaire",
+    "grade": "Raffineur Expert",
     "menus": true,
     "boissons": true,
     "bidons": true,
@@ -31801,17 +31801,17 @@
   "semaineDebut": "2026-09-28"
  },
  "_cid": "err3jwr4itk",
- "_maj": 1790701326844,
- "_rev": "8ie1n9up4h5-mumxdcmy",
+ "_maj": 1790701394772,
+ "_rev": "zjsdayokf9-mumxdjxl",
  "_majSec": {
   "fer": 1790696740050,
   "fact": 1790685049818,
   "users": 1790696737574,
   "weeks": 1790549423569,
-  "sheets": 1790701133055,
+  "sheets": 1790701389784,
   "_qcFix1": 1790189263047,
   "_wkFix1": 1790189263047,
-  "journal": 1790701133055,
+  "journal": 1790701389784,
   "pending": 1790189263047,
   "prodDer": 1790189263047,
   "runners": 1790616273744,
@@ -31825,7 +31825,7 @@
   "primesExtra": 1790589630102,
   "quotasComHist": 1790549423569,
   "profils": 1790189263047,
-  "_tables": 1790701326844,
+  "_tables": 1790701394772,
   "_permsFix1": 1790189263047,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1790189263047,
@@ -31842,6 +31842,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1790701390069,
+   "u": "Diego Herrera",
+   "a": "Éligibilité : 9 grade(s) réalignés sur l'effectif — Sali Dute : Raffineur → Raffineur Expert · Samantha Rodriguez : Raffineur → Raffineur Expert · Arturo Diaz : Intérimaire → Raffineur Expert · Bjorn Frost : Raffineur → Commercial…"
+  },
   {
    "t": 1790701130962,
    "u": "Stella Collins",
@@ -33336,11 +33341,6 @@
    "t": 1789894057617,
    "u": "?",
    "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1789893740241,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
   }
  ],
  "prodDer": {
@@ -33830,7 +33830,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-29T17:03:06.298Z",
+  "maj": "2026-09-29T17:03:15.753Z",
   "semaine": 40,
   "totalBarils": 0,
   "ca": 0,
@@ -138222,6 +138222,13 @@
     "role": "direction",
     "vu": "2026-09-29T17:02:06.844Z",
     "id": 1790701325238
+   },
+   {
+    "uid": "826526979204841482",
+    "nom": "Diego Herrera",
+    "role": "direction",
+    "vu": "2026-09-29T17:03:14.770Z",
+    "id": 1790701395842
    }
   ],
   "oilroxwood_demandes": [],
