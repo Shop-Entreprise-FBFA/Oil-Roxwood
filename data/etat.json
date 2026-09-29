@@ -4385,6 +4385,20 @@
  "sheets": {
   "rh": [
    {
+    "nom": "Dubois Bernard",
+    "grade": "Intérimaire",
+    "tel": "555-962-151",
+    "rib": "563822",
+    "idU": "381551",
+    "arrivee": "2026-09-29",
+    "discord": "778933843146965053",
+    "avert": "",
+    "contrat": true,
+    "recrut": "Diego Herrera",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
     "nom": "Brahan Djibril",
     "grade": "Intérimaire",
     "tel": "555098539",
@@ -31992,17 +32006,17 @@
   "semaineDebut": "2026-09-28"
  },
  "_cid": "err3jwr4itk",
- "_maj": 1790713743822,
- "_rev": "dlfdrrt7ia-mun4rbqm",
+ "_maj": 1790713795107,
+ "_rev": "1sibjpiopsc-mun4rhdo",
  "_majSec": {
   "fer": 1790706855657,
   "fact": 1790705012470,
   "users": 1790705282067,
   "weeks": 1790701456835,
-  "sheets": 1790706196922,
+  "sheets": 1790713795107,
   "_qcFix1": 1790701456835,
   "_wkFix1": 1790701456835,
-  "journal": 1790706913958,
+  "journal": 1790713795107,
   "pending": 1790701456835,
   "prodDer": 1790701456835,
   "runners": 1790701456835,
@@ -32024,15 +32038,25 @@
   "_affFix1": 1790701456835,
   "produits": 1790701456835,
   "_prodFix1": 1790701456835,
-  "_recruesIgnore": 1790701456835,
+  "_recruesIgnore": 1790713795056,
   "ventesAlias": 1790701456835,
   "_ventesIgnore": 1790701456835,
   "_avertVus": 1790701456835,
-  "_signeVus": 1790701456835
+  "_signeVus": 1790713795107
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1790713796204,
+   "u": "Diego Herrera",
+   "a": "Contrat(s) signé(s) via Discord : Dubois Bernard"
+  },
+  {
+   "t": 1790713796153,
+   "u": "Diego Herrera",
+   "a": "Recrutements Discord : 1 fiche(s) créée(s), 0 case(s) complétée(s) — Dubois Bernard"
+  },
   {
    "t": 1790706857951,
    "u": "Bjorn Frost",
@@ -33522,16 +33546,6 @@
    "t": 1789910375816,
    "u": "?",
    "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1789909782879,
-   "u": "Stella Collins",
-   "a": "Vente rapide sans facture : 30 bidon(s) — Employé Keath Chop's (vendeur : Stella Collins)"
-  },
-  {
-   "t": 1789907382730,
-   "u": "Diego Herrera",
-   "a": "Recrutements Discord : 1 fiche(s) créée(s), 0 case(s) complétée(s) — Jawad Benraoud"
   }
  ],
  "prodDer": {
@@ -34021,12 +34035,12 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-29T20:29:55.630Z",
+  "maj": "2026-09-29T20:30:02.940Z",
   "semaine": 40,
   "totalBarils": 0,
   "ca": 0,
   "objectif": 375000,
-  "effectif": 89,
+  "effectif": 90,
   "clientsServis": 118,
   "top3": [],
   "runners": [],
@@ -141774,7 +141788,8 @@
   "1790451982492",
   "1790464827483",
   "1790520130356",
-  "1790539263148"
+  "1790539263148",
+  "1790708269552"
  ],
  "_signeVus": [
   "1789477305650",
@@ -141820,6 +141835,7 @@
   "1790458713244",
   "1790464840731",
   "1790521909292",
-  "1790698642512"
+  "1790698642512",
+  "1790708388468"
  ]
 }
