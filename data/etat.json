@@ -12768,8 +12768,8 @@
     "nom": "La Main de Minuit",
     "rib": "",
     "tel": "",
-    "adresse": "Grapseed",
-    "lastCmd": "2026-09-16"
+    "adresse": "Los Santos",
+    "lastCmd": "2026-09-28"
    },
    {
     "nom": "Famiglia Virelli",
@@ -13500,13 +13500,6 @@
     ]
    },
    {
-    "nom": "La Main De Minuit",
-    "rib": "",
-    "tel": "",
-    "adresse": "RoxWood",
-    "lastCmd": "2026-06-23"
-   },
-   {
     "nom": "LD Organics",
     "rib": "",
     "tel": "",
@@ -13609,11 +13602,7 @@
     "rib": "",
     "tel": "",
     "adresse": "Los Santos",
-    "lastCmd": "2026-03-29",
-    "relance": {
-     "par": "Laurent Roquel",
-     "date": "2026-09-17"
-    }
+    "lastCmd": "2026-09-28"
    },
    {
     "nom": "LTD Little Seoul",
@@ -13641,11 +13630,7 @@
     "rib": "20072",
     "tel": "982",
     "adresse": "Roxwood",
-    "lastCmd": "2026-06-24",
-    "relance": {
-     "par": "Julio Collins",
-     "date": "2026-09-17"
-    },
+    "lastCmd": "2026-09-29",
     "notes": [
      {
       "t": 1789651609747,
@@ -13885,8 +13870,8 @@
     "nom": "Smokebro",
     "rib": "",
     "tel": "555 334 643",
-    "adresse": "",
-    "lastCmd": "2026-09-22"
+    "adresse": "Roxwood",
+    "lastCmd": "2026-09-29"
    },
    {
     "nom": "strada nostra",
@@ -14099,8 +14084,100 @@
     "prix": 150
    }
   ],
-  "compteur": 253128,
+  "compteur": 253132,
   "factures": [
+   {
+    "num": 253131,
+    "date": "2026-09-29",
+    "client": "LTD Roxwood",
+    "emetteur": "Bjorn Frost, Laurent Roquel",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 300,
+      "tva": 0,
+      "pu": 180,
+      "ht": 54000,
+      "ttc": 54000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 54000,
+    "ttc": 54000,
+    "poids": 600,
+    "statut": "payee"
+   },
+   {
+    "num": 253130,
+    "date": "2026-09-29",
+    "client": "Smokebro",
+    "emetteur": "Laurent Roquel",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 50,
+      "tva": 0.04,
+      "pu": 180,
+      "ht": 9000,
+      "ttc": 9360,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 9000,
+    "ttc": 9360,
+    "poids": 100,
+    "statut": "payee"
+   },
+   {
+    "num": 253129,
+    "date": "2026-09-28",
+    "client": "LTD Groove Street",
+    "emetteur": "Emma Collins-rodriguez, William Rodriguez-Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 200,
+      "tva": 0,
+      "pu": 180,
+      "ht": 36000,
+      "ttc": 36000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 36000,
+    "ttc": 36000,
+    "poids": 400,
+    "statut": "payee"
+   },
+   {
+    "num": 253128,
+    "date": "2026-09-28",
+    "client": "La Main De Minuit",
+    "emetteur": "William Rodriguez-Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 150,
+      "tva": 0.05,
+      "pu": 180,
+      "ht": 27000,
+      "ttc": 28350,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 27000,
+    "ttc": 28350,
+    "poids": 300,
+    "statut": "payee"
+   },
    {
     "num": 253127,
     "date": "2026-09-28",
@@ -16829,6 +16906,14 @@
    "role": "resprunner",
    "auto": true,
    "avatar": "https://cdn.discordapp.com/avatars/1278121596112080958/7fce6b862532c392e72e8502b1ee4ba0.png"
+  },
+  {
+   "id": 1790701458965,
+   "user": "Bjorn Frost",
+   "did": "1096933851659517975",
+   "role": "commercial",
+   "auto": true,
+   "avatar": "https://cdn.discordapp.com/avatars/1096933851659517975/4f470dd063f43e793312c15f24d16887.png"
   }
  ],
  "profils": {
@@ -31906,44 +31991,44 @@
   "postesV4": 1,
   "semaineDebut": "2026-09-28"
  },
- "_cid": "bot",
- "_maj": 1790708270329,
- "_rev": "v1874ibesv-mun1gt2g",
+ "_cid": "sq30hgu4tfq",
+ "_maj": 1790708279819,
+ "_rev": "bwk5qxrlu06-mun1h9hp",
  "_majSec": {
-  "fer": 1790589321040,
-  "fact": 1790589329139,
-  "users": 1790589329139,
-  "weeks": 1790589321038,
-  "sheets": 1790589321039,
-  "_qcFix1": 1790589321058,
-  "_wkFix1": 1790589321058,
-  "journal": 1790589321055,
-  "pending": 1790589321040,
-  "prodDer": 1790589321058,
-  "runners": 1790589329138,
-  "absences": 1790589329149,
-  "imported": 1790589321058,
-  "settings": 1790589321055,
-  "closeUndo": 1790589321056,
-  "quotasCom": 1790589321055,
-  "bilanExtra": 1790589321056,
-  "bilanForce": 1790589321058,
-  "primesExtra": 1790589329149,
-  "quotasComHist": 1790589321055,
+  "fer": 1790706855657,
+  "fact": 1790705012470,
+  "users": 1790705282067,
+  "weeks": 1790701456835,
+  "sheets": 1790706196922,
+  "_qcFix1": 1790701456835,
+  "_wkFix1": 1790701456835,
+  "journal": 1790706913958,
+  "pending": 1790701456835,
+  "prodDer": 1790701456835,
+  "runners": 1790701456835,
+  "absences": 1790701456835,
+  "imported": 1790701456835,
+  "settings": 1790701456835,
+  "closeUndo": 1790701456835,
+  "quotasCom": 1790705198378,
+  "bilanExtra": 1790701456835,
+  "bilanForce": 1790701456835,
+  "primesExtra": 1790701456835,
+  "quotasComHist": 1790701456835,
   "profils": 1790701553168,
-  "_tables": 1790708270329,
-  "_permsFix1": 1790589321058,
+  "_tables": 1790708279819,
+  "_permsFix1": 1790701456835,
   "_rolesFix4": 1788489352546,
-  "_rolesFix77": 1790589321058,
-  "affiches": 1790589321058,
-  "_affFix1": 1790589321058,
-  "produits": 1790589321058,
-  "_prodFix1": 1790589321058,
-  "_recruesIgnore": 1790589321058,
-  "ventesAlias": 1790589321058,
-  "_ventesIgnore": 1790589321058,
-  "_avertVus": 1790589321058,
-  "_signeVus": 1790589321058
+  "_rolesFix77": 1790701456835,
+  "affiches": 1790701456835,
+  "_affFix1": 1790701456835,
+  "produits": 1790701456835,
+  "_prodFix1": 1790701456835,
+  "_recruesIgnore": 1790701456835,
+  "ventesAlias": 1790701456835,
+  "_ventesIgnore": 1790701456835,
+  "_avertVus": 1790701456835,
+  "_signeVus": 1790701456835
  },
  "_qcFix1": true,
  "_wkFix1": true,
@@ -33936,13 +34021,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-29T18:57:46.024Z",
+  "maj": "2026-09-29T18:58:07.309Z",
   "semaine": 40,
   "totalBarils": 0,
   "ca": 0,
   "objectif": 375000,
   "effectif": 89,
-  "clientsServis": 114,
+  "clientsServis": 118,
   "top3": [],
   "runners": [],
   "produits": [
@@ -34029,7 +34114,7 @@
    {
     "nom": "Bjorn Frost",
     "titre": "Commercial",
-    "photo": "",
+    "photo": "https://cdn.discordapp.com/avatars/1096933851659517975/4f470dd063f43e793312c15f24d16887.png",
     "bio": ""
    },
    {
@@ -138987,11 +139072,11 @@
     "id": 1790708192411
    },
    {
-    "uid": "948542221429379112",
-    "nom": "Stella Collins",
-    "role": "direction",
-    "vu": "2026-09-29T18:57:36.695Z",
-    "id": 1790708255458
+    "uid": "1096933851659517975",
+    "nom": "Bjorn Frost",
+    "role": "commercial",
+    "vu": "2026-09-29T18:57:59.818Z",
+    "id": 1790708282248
    }
   ],
   "oilroxwood_demandes": [],
