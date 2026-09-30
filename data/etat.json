@@ -31822,6 +31822,22 @@
    "quantite": 106,
    "montant": 530,
    "did": "1096933851659517975"
+  },
+  {
+   "id": "1554780724815724566:0",
+   "t": "2026-09-30 11:03",
+   "nom": "Bjorn Frost",
+   "quantite": 30,
+   "montant": 150,
+   "did": "1096933851659517975"
+  },
+  {
+   "id": "1554780724815724566:1",
+   "t": "2026-09-30 11:03",
+   "nom": "Julio Collins",
+   "quantite": 30,
+   "montant": 150,
+   "did": "767332288744128512"
   }
  ],
  "settings": {
@@ -32031,18 +32047,18 @@
   "postesV4": 1,
   "semaineDebut": "2026-09-28"
  },
- "_cid": "19lif0zkvn3",
- "_maj": 1790759223833,
- "_rev": "k2r0fhp7i6-munvt1qx",
+ "_cid": "1ci70rm0g2y",
+ "_maj": 1790759238269,
+ "_rev": "ksvsfnfzfwj-munvtfhf",
  "_majSec": {
-  "fer": 1790706855657,
+  "fer": 1790759238116,
   "fact": 1790705012470,
   "users": 1790758622529,
   "weeks": 1790701456835,
   "sheets": 1790757961615,
   "_qcFix1": 1790701456835,
   "_wkFix1": 1790701456835,
-  "journal": 1790758622529,
+  "journal": 1790759238269,
   "pending": 1790701456835,
   "prodDer": 1790701456835,
   "runners": 1790701456835,
@@ -32056,7 +32072,7 @@
   "primesExtra": 1790701456835,
   "quotasComHist": 1790701456835,
   "profils": 1790701553168,
-  "_tables": 1790759223833,
+  "_tables": 1790759238269,
   "_permsFix1": 1790701456835,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1790701456835,
@@ -32073,6 +32089,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1790759239518,
+   "u": "Bjorn Frost",
+   "a": "Achats de fer : 2 relevé(s) repris du salon"
+  },
   {
    "t": 1790758624384,
    "u": "Julio Collins",
@@ -33567,11 +33588,6 @@
    "t": 1789916858731,
    "u": "Thomas Boyer",
    "a": "Grades RH alignés sur Discord : Julio Collins · Commercial → Responsable Commercial"
-  },
-  {
-   "t": 1789916849130,
-   "u": "Stella Collins",
-   "a": "Éligibilité : 1 grade(s) réalignés sur l'effectif — Daniel Cooper : Stagiaire → Intérimaire"
   }
  ],
  "prodDer": {
@@ -34061,7 +34077,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-30T09:07:05.625Z",
+  "maj": "2026-09-30T09:07:23.427Z",
   "semaine": 40,
   "totalBarils": 0,
   "ca": 0,
@@ -140804,6 +140820,13 @@
     "role": "direction",
     "vu": "2026-09-30T09:07:03.832Z",
     "id": 1790759224633
+   },
+   {
+    "uid": "1096933851659517975",
+    "nom": "Bjorn Frost",
+    "role": "commercial",
+    "vu": "2026-09-30T09:07:18.269Z",
+    "id": 1790759240245
    }
   ],
   "oilroxwood_demandes": [],
