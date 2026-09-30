@@ -11283,6 +11283,13 @@
     "quantite": 150,
     "qui": "Julio Collins",
     "fact": 253132
+   },
+   {
+    "date": "2026-09-30",
+    "client": "LTD Strawberry",
+    "quantite": 100,
+    "qui": "Laurent Roquel",
+    "fact": 253133
    }
   ],
   "collection": [
@@ -13730,7 +13737,7 @@
     "rib": "20020",
     "tel": "930",
     "adresse": "Los Santos",
-    "lastCmd": "2026-09-27"
+    "lastCmd": "2026-09-30"
    },
    {
     "nom": "Lunapark Billard",
@@ -14166,8 +14173,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253133,
+  "compteur": 253134,
   "factures": [
+   {
+    "num": 253133,
+    "date": "2026-09-30",
+    "client": "LTD Strawberry",
+    "emetteur": "Laurent Roquel",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 100,
+      "tva": 0,
+      "pu": 180,
+      "ht": 18000,
+      "ttc": 18000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 18000,
+    "ttc": 18000,
+    "poids": 200,
+    "statut": "attente"
+   },
    {
     "num": 253132,
     "date": "2026-09-30",
@@ -32129,14 +32159,14 @@
   "semaineDebut": "2026-09-28"
  },
  "_cid": "q3d2wzn1od",
- "_maj": 1790801792416,
- "_rev": "8wztwd50a1l-muol5iws",
+ "_maj": 1790801817948,
+ "_rev": "7w1ysc692ut-muol601l",
  "_majSec": {
   "fer": 1790786260317,
-  "fact": 1790786254664,
+  "fact": 1790801817911,
   "users": 1790786611310,
   "weeks": 1790701456835,
-  "sheets": 1790784495520,
+  "sheets": 1790801817911,
   "_qcFix1": 1790701456835,
   "_wkFix1": 1790701456835,
   "journal": 1790790245270,
@@ -34164,13 +34194,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-30T20:56:38.140Z",
+  "maj": "2026-09-30T20:57:00.345Z",
   "semaine": 40,
   "totalBarils": 0,
   "ca": 0,
   "objectif": 375000,
   "effectif": 91,
-  "clientsServis": 119,
+  "clientsServis": 120,
   "top3": [],
   "runners": [],
   "produits": [
