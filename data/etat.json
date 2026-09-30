@@ -14183,29 +14183,6 @@
   "compteur": 253135,
   "factures": [
    {
-    "num": 253134,
-    "date": "2026-09-30",
-    "client": "LTD Strawberry",
-    "emetteur": "",
-    "postop": false,
-    "lignes": [
-     {
-      "ref": "CMD",
-      "qte": 100,
-      "tva": 0,
-      "pu": 180,
-      "ht": 18000,
-      "ttc": 18000,
-      "desc": "bidons d'essence "
-     }
-    ],
-    "offert": 0,
-    "ht": 18000,
-    "ttc": 18000,
-    "poids": 200,
-    "statut": "attente"
-   },
-   {
     "num": 253133,
     "date": "2026-09-30",
     "client": "LTD Strawberry",
@@ -32188,18 +32165,18 @@
   "postesV4": 1,
   "semaineDebut": "2026-09-28"
  },
- "_cid": "n8y5nwdxp0n",
- "_maj": 1790802479838,
- "_rev": "d6banyi375-muolk9lm",
+ "_cid": "qoyz7dmtult",
+ "_maj": 1790802490151,
+ "_rev": "39pa5jllzok-muolkezx",
  "_majSec": {
   "fer": 1790786260317,
-  "fact": 1790802464880,
+  "fact": 1790802490151,
   "users": 1790786611310,
   "weeks": 1790701456835,
   "sheets": 1790802464880,
   "_qcFix1": 1790701456835,
   "_wkFix1": 1790701456835,
-  "journal": 1790790245270,
+  "journal": 1790802490151,
   "pending": 1790701456835,
   "prodDer": 1790701456835,
   "runners": 1790701456835,
@@ -32230,6 +32207,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1790802490973,
+   "u": "Diego Herrera",
+   "a": "Suppression de la facture n°253134"
+  },
   {
    "t": 1790790245532,
    "u": "Diego Herrera",
@@ -33724,11 +33706,6 @@
    "t": 1789923917459,
    "u": "Julio Collins",
    "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1789923917270,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
   }
  ],
  "prodDer": {
@@ -34224,13 +34201,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-09-30T21:08:05.914Z",
+  "maj": "2026-09-30T21:08:12.909Z",
   "semaine": 40,
   "totalBarils": 0,
   "ca": 0,
   "objectif": 375000,
   "effectif": 91,
-  "clientsServis": 121,
+  "clientsServis": 120,
   "top3": [],
   "runners": [],
   "produits": [
