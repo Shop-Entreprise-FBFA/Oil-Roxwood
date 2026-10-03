@@ -12511,6 +12511,13 @@
     "quantite": 250,
     "qui": "Julio Collins",
     "fact": 253137
+   },
+   {
+    "date": "2026-10-03",
+    "client": "LTD Strawberry",
+    "quantite": 100,
+    "qui": "Emma Collins-rodriguez",
+    "fact": 253138
    }
   ],
   "collection": [
@@ -14965,7 +14972,7 @@
     "rib": "20020",
     "tel": "930",
     "adresse": "Los Santos",
-    "lastCmd": "2026-09-30"
+    "lastCmd": "2026-10-03"
    },
    {
     "nom": "Lunapark Billard",
@@ -15401,8 +15408,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253138,
+  "compteur": 253139,
   "factures": [
+   {
+    "num": 253138,
+    "date": "2026-10-03",
+    "client": "LTD Strawberry",
+    "emetteur": "Emma Collins-rodriguez",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 100,
+      "tva": 0,
+      "pu": 180,
+      "ht": 18000,
+      "ttc": 18000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 18000,
+    "ttc": 18000,
+    "poids": 200,
+    "statut": "attente"
+   },
    {
     "num": 253137,
     "date": "2026-10-03",
@@ -18381,6 +18411,14 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T20:11:53.537Z"
+  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -18404,14 +18442,6 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T00:06:23.240Z"
-  },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -33487,15 +33517,15 @@
   "postesV4": 1,
   "semaineDebut": "2026-09-28"
  },
- "_cid": "zfqmjzxsxub",
- "_maj": 1791047254567,
- "_rev": "hjnf909c00f-musnamuw",
+ "_cid": "3en3wexn0lp",
+ "_maj": 1791047282608,
+ "_rev": "8xr999j1aua-musnb57v",
  "_majSec": {
   "fer": 1791019849217,
-  "fact": 1791047190219,
+  "fact": 1791047282560,
   "users": 1791047159677,
   "weeks": 1790701456835,
-  "sheets": 1791047190219,
+  "sheets": 1791047282560,
   "_qcFix1": 1790701456835,
   "_wkFix1": 1790701456835,
   "journal": 1791047159677,
@@ -35523,13 +35553,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-03T17:07:40.472Z",
+  "maj": "2026-10-03T17:08:04.267Z",
   "semaine": 40,
   "totalBarils": 169983,
   "ca": 849915,
   "objectif": 375000,
   "effectif": 100,
-  "clientsServis": 123,
+  "clientsServis": 124,
   "top3": [
    {
     "nom": "Sali Dute",
