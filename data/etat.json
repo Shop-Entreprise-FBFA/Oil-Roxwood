@@ -11330,6 +11330,13 @@
     "client": "Employé — Bjorn Frost ⚡",
     "quantite": 3,
     "qui": "Julio Collins"
+   },
+   {
+    "date": "2026-10-03",
+    "client": "Silver-Luna",
+    "quantite": 120,
+    "qui": "Julio Collins",
+    "fact": 253135
    }
   ],
   "collection": [
@@ -12800,7 +12807,8 @@
     "nom": "Silver-Luna",
     "adresse": "Cayo",
     "tel": "555837844",
-    "rib": ""
+    "rib": "",
+    "lastCmd": "2026-10-03"
    },
    {
     "nom": "Fyfty Boys",
@@ -14219,8 +14227,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253135,
+  "compteur": 253136,
   "factures": [
+   {
+    "num": 253135,
+    "date": "2026-10-03",
+    "client": "Silver-Luna",
+    "emetteur": "Julio Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 120,
+      "tva": 0,
+      "pu": 180,
+      "ht": 21600,
+      "ttc": 21600,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 21600,
+    "ttc": 21600,
+    "poids": 240,
+    "statut": "attente"
+   },
    {
     "num": 253133,
     "date": "2026-09-30",
@@ -32229,14 +32260,14 @@
   "semaineDebut": "2026-09-28"
  },
  "_cid": "gdo1qu12gdr",
- "_maj": 1791010067953,
- "_rev": "eayqjodmbwj-mus15l17",
+ "_maj": 1791010116996,
+ "_rev": "co6jv07r9cr-mus16k2v",
  "_majSec": {
   "fer": 1790957400023,
-  "fact": 1791009974000,
+  "fact": 1791010116974,
   "users": 1791009769066,
   "weeks": 1790701456835,
-  "sheets": 1790977216615,
+  "sheets": 1791010116974,
   "_qcFix1": 1790701456835,
   "_wkFix1": 1790701456835,
   "journal": 1791009769066,
@@ -34264,13 +34295,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-03T06:47:53.275Z",
+  "maj": "2026-10-03T06:48:38.695Z",
   "semaine": 40,
   "totalBarils": 0,
   "ca": 0,
   "objectif": 375000,
   "effectif": 93,
-  "clientsServis": 120,
+  "clientsServis": 121,
   "top3": [],
   "runners": [],
   "produits": [
