@@ -12516,7 +12516,7 @@
     "date": "2026-10-03",
     "client": "LTD Strawberry",
     "quantite": 100,
-    "qui": "Emma Collins-rodriguez",
+    "qui": "William Rodriguez-collins",
     "fact": 253138
    }
   ],
@@ -15414,24 +15414,25 @@
     "num": 253138,
     "date": "2026-10-03",
     "client": "LTD Strawberry",
-    "emetteur": "Emma Collins-rodriguez",
+    "emetteur": "William Rodriguez-collins",
     "postop": false,
     "lignes": [
      {
       "ref": "CMD",
       "qte": 100,
       "tva": 0,
+      "desc": "bidons d'essence ",
       "pu": 180,
       "ht": 18000,
-      "ttc": 18000,
-      "desc": "bidons d'essence "
+      "ttc": 18000
      }
     ],
     "offert": 0,
     "ht": 18000,
     "ttc": 18000,
     "poids": 200,
-    "statut": "payee"
+    "statut": "payee",
+    "modifiee": 1791054067556
    },
    {
     "num": 253137,
@@ -33542,17 +33543,17 @@
   "semaineDebut": "2026-09-28"
  },
  "_cid": "o4hfllnlvwi",
- "_maj": 1791054035821,
- "_rev": "wgart63tktm-musrc53i",
+ "_maj": 1791054067578,
+ "_rev": "23t23xa2l1q-musrclbd",
  "_majSec": {
   "fer": 1791050086594,
-  "fact": 1791054034752,
+  "fact": 1791054067556,
   "users": 1791054026616,
   "weeks": 1790701456835,
-  "sheets": 1791052811762,
+  "sheets": 1791054067556,
   "_qcFix1": 1790701456835,
   "_wkFix1": 1790701456835,
-  "journal": 1791054026616,
+  "journal": 1791054067578,
   "pending": 1790701456835,
   "prodDer": 1790701456835,
   "runners": 1791029699461,
@@ -33583,6 +33584,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1791054069501,
+   "u": "Julio Collins",
+   "a": "Facture n°253138 modifiée — émetteur Emma Collins-rodriguez → William Rodriguez-collins"
+  },
   {
    "t": 1791054028539,
    "u": "Julio Collins",
@@ -35077,11 +35083,6 @@
    "t": 1789990275958,
    "u": "Diego Herrera",
    "a": "Éligibilité : 5 grade(s) réalignés sur l'effectif — Julio Collins : Commercial → Responsable Commercial · Cristóbal Perrera : Intérimaire → Raffineur Expert · Frank Smite : Intérimaire → Raffineur · Strya Ryuzen : Intérimaire → Raffineur Expert…"
-  },
-  {
-   "t": 1789985116021,
-   "u": "Stella Collins",
-   "a": "Facture n°253103 modifiée — émetteur Stella Collins → Stella Collins, Diego Herrera, Emma Collins, Juan Sanchez, Tyler Collins"
   }
  ],
  "prodDer": {
@@ -35587,7 +35588,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-03T19:00:49.230Z",
+  "maj": "2026-10-03T19:01:10.249Z",
   "semaine": 40,
   "totalBarils": 169983,
   "ca": 849915,
