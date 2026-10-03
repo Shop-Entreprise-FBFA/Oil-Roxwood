@@ -13650,7 +13650,7 @@
    },
    {
     "nom": "Anis Wolkeur",
-    "grade": "Intérimaire",
+    "grade": "Raffineur",
     "menus": false,
     "boissons": false,
     "bidons": false,
@@ -13760,7 +13760,7 @@
    },
    {
     "nom": "Sarah Dute",
-    "grade": "Intérimaire",
+    "grade": "Raffineur Confirmé",
     "menus": true,
     "boissons": true,
     "bidons": true,
@@ -33374,17 +33374,17 @@
   "semaineDebut": "2026-09-28"
  },
  "_cid": "e1whyx0t5bd",
- "_maj": 1791025689334,
- "_rev": "na00njmedeh-musagfys",
+ "_maj": 1791025721554,
+ "_rev": "pf9rwe7k59s-musah401",
  "_majSec": {
   "fer": 1791019849217,
   "fact": 1791010135023,
   "users": 1791010262363,
   "weeks": 1790701456835,
-  "sheets": 1791019871440,
+  "sheets": 1791025721554,
   "_qcFix1": 1790701456835,
   "_wkFix1": 1790701456835,
-  "journal": 1791019871440,
+  "journal": 1791025721554,
   "pending": 1790701456835,
   "prodDer": 1790701456835,
   "runners": 1791019755005,
@@ -33415,6 +33415,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1791025723383,
+   "u": "Diego Herrera",
+   "a": "Éligibilité : 2 grade(s) réalignés sur l'effectif — Anis Wolkeur : Intérimaire → Raffineur · Sarah Dute : Intérimaire → Raffineur Confirmé"
+  },
   {
    "t": 1791019849730,
    "u": "Diego Herrera",
@@ -34909,11 +34914,6 @@
    "t": 1789942186681,
    "u": "Diego Herrera",
    "a": "Avertissement : Maxime Letourneur (intérimaire, aucune prise de service) — total : 1"
-  },
-  {
-   "t": 1789942084143,
-   "u": "Diego Herrera",
-   "a": "Avertissement : Tony Clark (intérimaire, aucune prise de service) — total : 1"
   }
  ],
  "prodDer": {
@@ -35409,7 +35409,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-03T11:08:16.468Z",
+  "maj": "2026-10-03T11:08:47.617Z",
   "semaine": 40,
   "totalBarils": 168327,
   "ca": 841635,
