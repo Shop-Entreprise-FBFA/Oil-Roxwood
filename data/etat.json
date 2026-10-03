@@ -12484,6 +12484,13 @@
     "client": "Citoyen ⚡",
     "quantite": 5,
     "qui": "Emma Collins"
+   },
+   {
+    "date": "2026-10-03",
+    "client": "Aube noire ",
+    "quantite": 100,
+    "qui": "Emma Collins-rodriguez",
+    "fact": 253136
    }
   ],
   "collection": [
@@ -13990,7 +13997,7 @@
     "adresse": "Los Santos ",
     "tel": "555 507 725",
     "rib": "",
-    "lastCmd": "2026-09-28"
+    "lastCmd": "2026-10-03"
    },
    {
     "nom": "Gaïa Lavyrinthos",
@@ -15374,8 +15381,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253136,
+  "compteur": 253137,
   "factures": [
+   {
+    "num": 253136,
+    "date": "2026-10-03",
+    "client": "Aube noire ",
+    "emetteur": "Emma Collins-rodriguez",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 100,
+      "tva": 0.04,
+      "pu": 180,
+      "ht": 18000,
+      "ttc": 18720,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 18000,
+    "ttc": 18720,
+    "poids": 200,
+    "statut": "attente"
+   },
    {
     "num": 253135,
     "date": "2026-10-03",
@@ -33415,14 +33445,14 @@
   "semaineDebut": "2026-09-28"
  },
  "_cid": "0ohxux4pmu6",
- "_maj": 1791041847129,
- "_rev": "x1n0loocpj-musk2r5o",
+ "_maj": 1791041868670,
+ "_rev": "6vwv7mjb5eo-musk32s1",
  "_majSec": {
   "fer": 1791019849217,
-  "fact": 1791010135023,
+  "fact": 1791041868625,
   "users": 1791038310590,
   "weeks": 1790701456835,
-  "sheets": 1791041847129,
+  "sheets": 1791041868625,
   "_qcFix1": 1790701456835,
   "_wkFix1": 1790701456835,
   "journal": 1791041847129,
@@ -35450,13 +35480,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-03T15:37:33.948Z",
+  "maj": "2026-10-03T15:37:49.009Z",
   "semaine": 40,
   "totalBarils": 169983,
   "ca": 849915,
   "objectif": 375000,
   "effectif": 100,
-  "clientsServis": 121,
+  "clientsServis": 122,
   "top3": [
    {
     "nom": "Sali Dute",
