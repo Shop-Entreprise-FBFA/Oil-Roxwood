@@ -1,11 +1,48 @@
 {
- "maj": "2026-10-04T18:47:21.115623+00:00",
+ "maj": "2026-10-04T18:49:19.633695+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1556377550329217106",
+   "t": "2026-10-04T18:48:44.095000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 657x Pétrole Raffiné pour 6570$ par Yann Zigzag. 3285$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 657,
+   "montant": 6570,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1556377507375087769",
+   "t": "2026-10-04T18:48:33.854000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 1998\nplayerDiscord : 1346352248841568326\nplayerName : Freeze\nplayerCharacter : Elliot Adkins\nplayerId : 369986\nvehiclePlate : AY4705SJ\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Elliot Adkins",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "1998",
+    "playerdiscord": "1346352248841568326",
+    "playername": "Freeze",
+    "playercharacter": "Elliot Adkins",
+    "playerid": "369986",
+    "vehicleplate": "AY4705SJ",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1556376255656628248-0",
    "t": "2026-10-04T18:43:35.421000+00:00",
@@ -94333,54 +94370,6 @@
     "playercharacter": "Juan Sanchez",
     "playerid": "200738",
     "itemid": "oil"
-   }
-  },
-  {
-   "id": "1555541235542790308-0",
-   "t": "2026-10-02T11:25:31.112000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 14x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -1851.32, 6500.73, 16.73\ntargetPosition : -1851.46, 6502.05, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7016\nplayerDiscord : 690537200689086537\nplayerName : Ec9Mugen\nplayerCharacter : Juan Sanchez\nplayerId : 200738\nitemId : oil",
-   "nom": "Juan Sanchez",
-   "quantite": 14,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1851.32, 6500.73, 16.73",
-    "targetposition": "-1851.46, 6502.05, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7016",
-    "playerdiscord": "690537200689086537",
-    "playername": "Ec9Mugen",
-    "playercharacter": "Juan Sanchez",
-    "playerid": "200738",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1555541235542790308-1",
-   "t": "2026-10-02T11:25:31.112000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 32x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1851.32, 6500.73, 16.73\ntargetPosition : -1851.46, 6502.05, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7016\nplayerDiscord : 690537200689086537\nplayerName : Ec9Mugen\nplayerCharacter : Juan Sanchez\nplayerId : 200738\nitemId : refinedoil",
-   "nom": "Juan Sanchez",
-   "quantite": 32,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1851.32, 6500.73, 16.73",
-    "targetposition": "-1851.46, 6502.05, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7016",
-    "playerdiscord": "690537200689086537",
-    "playername": "Ec9Mugen",
-    "playercharacter": "Juan Sanchez",
-    "playerid": "200738",
-    "itemid": "refinedoil"
    }
   }
  ]
