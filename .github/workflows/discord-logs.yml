@@ -31,9 +31,9 @@ name: Sync logs Discord
 # ═══════════════════════════════════════════════════════════════════════
 
 on:
-  schedule:
-    - cron: '*/15 * * * *'   # demandé toutes les 15 min, servi toutes les 2 à 4 h
-  workflow_dispatch:          # lancement manuel possible
+  # Plus de planification : les logs sont relus par le bot (cogs/logs_direct.py).
+  # Lancement manuel seulement, en secours.
+  workflow_dispatch:
 
 permissions:
   contents: write
