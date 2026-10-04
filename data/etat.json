@@ -18450,6 +18450,14 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T20:11:53.537Z"
+  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -18473,14 +18481,6 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T00:06:23.240Z"
-  },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -33587,6 +33587,22 @@
    "quantite": 120,
    "montant": 600,
    "did": "1096933851659517975"
+  },
+  {
+   "id": "1556275859625607231:0",
+   "t": "2026-10-04 14:04",
+   "nom": "William Rodriguez-collins",
+   "quantite": 125,
+   "montant": 625,
+   "did": "235844738656239616"
+  },
+  {
+   "id": "1556275859625607231:1",
+   "t": "2026-10-04 14:04",
+   "nom": "William Rodriguez-collins",
+   "quantite": 12,
+   "montant": 60,
+   "did": "235844738656239616"
   }
  ],
  "settings": {
@@ -33796,11 +33812,11 @@
   "postesV4": 1,
   "semaineDebut": "2026-09-28"
  },
- "_cid": "tn191aoc6e",
- "_maj": 1791115831840,
- "_rev": "o46skj9f6og-muts5psr",
+ "_cid": "8cxv9ouo95",
+ "_maj": 1791115896464,
+ "_rev": "nrgh89hxtq-muts5u1p",
  "_majSec": {
-  "fer": 1791115581480,
+  "fer": 1791115896464,
   "fact": 1791114879591,
   "users": 1791097236640,
   "weeks": 1790701456835,
@@ -33821,7 +33837,7 @@
   "primesExtra": 1790701456835,
   "quotasComHist": 1790701456835,
   "profils": 1790701553168,
-  "_tables": 1791115831840,
+  "_tables": 1791115896356,
   "_permsFix1": 1790701456835,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1790701456835,
@@ -33838,6 +33854,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1791115896816,
+   "u": "Emma Collins",
+   "a": "Achats de fer : 2 relevé(s) repris du salon"
+  },
   {
    "t": 1791115581742,
    "u": "Emma Collins",
@@ -35332,11 +35353,6 @@
    "t": 1790008506035,
    "u": "?",
    "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1790002358026,
-   "u": "Stella Collins",
-   "a": "Facture reçue archivée : LTD Roxwood — 15 600 $"
   }
  ],
  "prodDer": {
@@ -35849,7 +35865,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-04T12:11:35.260Z",
+  "maj": "2026-10-04T12:11:40.765Z",
   "semaine": 40,
   "totalBarils": 169983,
   "ca": 849915,
@@ -153140,6 +153156,13 @@
     "role": "commercial",
     "vu": "2026-10-04T12:10:31.839Z",
     "id": 1791115834896
+   },
+   {
+    "uid": "1053366471574687844",
+    "nom": "Emma Collins",
+    "role": "respcom",
+    "vu": "2026-10-04T12:11:36.356Z",
+    "id": 1791115897083
    }
   ],
   "oilroxwood_demandes": [],
