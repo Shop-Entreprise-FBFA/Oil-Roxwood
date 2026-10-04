@@ -1,11 +1,32 @@
 {
- "maj": "2026-10-04T19:17:19.815428+00:00",
+ "maj": "2026-10-04T19:19:18.441385+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1556384807154487501",
+   "t": "2026-10-04T19:17:34.257000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 3757\nplayerDiscord : 1203476936060575794\nplayerName : LoudToad9419\nplayerCharacter : Ilyes Marade\nplayerId : 379933\nvehiclePlate : YN6253GU\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Ilyes Marade",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "3757",
+    "playerdiscord": "1203476936060575794",
+    "playername": "LoudToad9419",
+    "playercharacter": "Ilyes Marade",
+    "playerid": "379933",
+    "vehicleplate": "YN6253GU",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1556383827016814744",
    "t": "2026-10-04T19:13:40.574000+00:00",
@@ -94314,30 +94335,6 @@
     "playercharacter": "Juan Sanchez",
     "playerid": "200738",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1555546018983059565-2",
-   "t": "2026-10-02T11:44:31.573000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 24x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -1851.32, 6500.73, 16.73\ntargetPosition : -1851.46, 6502.05, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7016\nplayerDiscord : 690537200689086537\nplayerName : Ec9Mugen\nplayerCharacter : Juan Sanchez\nplayerId : 200738\nitemId : oil",
-   "nom": "Juan Sanchez",
-   "quantite": 24,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1851.32, 6500.73, 16.73",
-    "targetposition": "-1851.46, 6502.05, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7016",
-    "playerdiscord": "690537200689086537",
-    "playername": "Ec9Mugen",
-    "playercharacter": "Juan Sanchez",
-    "playerid": "200738",
-    "itemid": "oil"
    }
   }
  ]
