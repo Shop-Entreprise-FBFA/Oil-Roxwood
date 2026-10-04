@@ -396,6 +396,13 @@ function mergeRemote(rem){
       }
     });
   }
+  const supp=new Set([...(S._agSupp||[]),...(rem._agSupp||[])].map(String));
+  S._agSupp=[...supp].slice(-500);
+  if(S._tables&&Array.isArray(S._tables.oilroxwood_agenda)){
+    const n=S._tables.oilroxwood_agenda.length;
+    S._tables.oilroxwood_agenda=S._tables.oilroxwood_agenda.filter(e=>!supp.has(String(e.id)));
+    if(S._tables.oilroxwood_agenda.length!==n) changed=true;
+  }
   S._maj=Math.max(S._maj||0,rem._maj||0);
   palDirty();
   return {changed,localNewer};
@@ -1197,7 +1204,7 @@ function logout(){
 }
 
 /* ---- Canari de version : prévient les onglets restés sur une vieille version ---- */
-const APP_VERSION='C-110';
+const APP_VERSION='C-111';
 /* Le bandeau ne doit dire qu'une chose : « une version plus récente existe ».
    Il comparait deux chaînes avec !==, donc il s'allumait aussi dans l'autre
    sens — quand la page ouverte était PLUS récente que version.json, ce qui
@@ -4871,6 +4878,10 @@ function ferDel(id){
 
 /* ================== MISES À JOUR (changelog) ================== */
 const CHANGELOG=[
+ {v:'C-111',d:'04/10/2026',t:'Registre des contrats : suppression définitive, ouverte à la gestion',items:[
+   ['🐛','Un contrat supprimé revenait la semaine suivante','La suppression ne retirait le contrat que de la copie locale : une autre écriture arrivant avant l\'envoi pouvait ramener la version distante, qui le contenait encore. Une suppression est désormais mémorisée et reste définitive, quelle que soit la copie gagnante.'],
+   ['🔧','Patron, Co Patron et Responsable commercial gèrent tous les contrats','Ils voient les contrats posés par quelqu\'un d\'autre dans le registre et peuvent les supprimer (🗑). Les autres ne peuvent supprimer que leurs propres contrats.'],
+ ]},
  {v:'C-110',d:'21/09/2026',t:'Avertissements : les arrivés de la semaine à traiter sont épargnés',items:[
    ['🐛','Le lundi, le ⚠ était proposé à ceux arrivés pendant S-1','Le filtre « arrivé cette semaine » comptait depuis le lundi du calendrier. Or on traite la semaine S-1 le lundi, et la semaine de travail n\'avance qu\'à la clôture : ceux recrutés pendant S-1 sortaient du filtre et se voyaient proposer un avertissement pour un quota qu\'ils n\'avaient pas eu le temps de faire.'],
    ['🔧','Même définition de la semaine partout','Le filtre part maintenant du début de la semaine de travail, comme le compteur de recrues et le salaire recruteur : tant que la clôture n\'est pas faite, on est encore dans la semaine précédente.'],
@@ -6762,7 +6773,11 @@ async function navBadges(){
 }
 
 /* ================== AGENDA PERSONNEL ================== */
-let AG_OFF=0, AG_EVS=null, AG_ERR=false, AG_SHARED=[]; // décalage de semaine · cache événements · table manquante ? · partagés par l'équipe
+let AG_OFF=0, AG_EVS=null, AG_ERR=false, AG_SHARED=[], AG_CONTRATS_AUTRES=[]; // décalage de semaine · cache événements · table manquante ? · partagés par l'équipe · contrats de tous (rôles de gestion)
+/* Patron, Co Patron et Responsable commercial voient et suppriment tous les
+   contrats, y compris ceux posés par quelqu'un d'autre. */
+function agGere(){ const cu=currentUser(); return sessionStorage.getItem('orx_user')==='SECOURS'||(!!cu&&(cu.role==='direction'||cu.role==='respcom')); }
+function agPeutSupprimer(e){ return e.uid===agKey()||agGere(); }
 let AG_TEAM=localStorage.getItem('orx_agteam')!=='0'; // afficher les événements partagés (rôles gestion)
 function agPeutVoirPartages(){ const cu=currentUser(); return sessionStorage.getItem('orx_user')==='SECOURS'||(cu&&cu.role!=='membre'); }
 function agProprio(uid){ const u=(S.users||[]).find(x=>String(x.did||'')===String(uid)); return u?u.user:'?'; }
@@ -6850,7 +6865,7 @@ function contratProchaine(e){
 }
 function agHM(mn){ mn=((mn%1440)+1440)%1440; return `${String(Math.floor(mn/60)).padStart(2,'0')}:${String(mn%60).padStart(2,'0')}`; }
 async function agLoad(){
-  AG_ERR=false; AG_SHARED=[];
+  AG_ERR=false; AG_SHARED=[]; AG_CONTRATS_AUTRES=[];
   if(!SYNC.cli){ AG_EVS=[]; return; }
   try{
     const {data,error}=await SYNC.cli.from('oilroxwood_agenda').select('*').eq('uid',agKey()).order('date');
@@ -6859,6 +6874,10 @@ async function agLoad(){
     if(agPeutVoirPartages()){
       const r2=await SYNC.cli.from('oilroxwood_agenda').select('*').eq('partage',true).neq('uid',agKey()).order('date');
       if(!r2.error) AG_SHARED=r2.data||[]; // colonne « partage » absente → simplement ignoré
+    }
+    if(agGere()){
+      const r3=await SYNC.cli.from('oilroxwood_agenda').select('*').eq('type','contrat').neq('uid',agKey()).order('date');
+      if(!r3.error) AG_CONTRATS_AUTRES=r3.data||[];
     }
   }catch(e){ AG_EVS=[]; AG_ERR=true; }
 }
@@ -6928,7 +6947,7 @@ async function agenda(){
 const JOURS_FR=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
 function registreContrats(){
   const miens=(AG_EVS||[]).filter(e=>e.type==='contrat');
-  const autres=(AG_TEAM?AG_SHARED:[]).filter(e=>e.type==='contrat');
+  const autres=(agGere()?AG_CONTRATS_AUTRES:(AG_TEAM?AG_SHARED:[])).filter(e=>e.type==='contrat');
   const tous=[...miens.map(e=>({e,mien:true})),...autres.map(e=>({e,mien:false}))];
   if(!tous.length) return `<div class="panel">
     <h3>📜 Registre des contrats</h3>
@@ -6971,7 +6990,8 @@ function registreContrats(){
       <td style="text-align:right;white-space:nowrap">${mien?`
         <button class="btn btn-sm btn-ghost" onclick="agEdit(${e.id})" title="Modifier ce contrat">✎</button>
         ${e.hebdo?`<button class="btn btn-sm btn-ghost" onclick="agStopHebdo(${e.id})" title="Arrêter la reconduction — le contrat reste à sa date d'origine">⏹</button>`:''}`
-        :'<span style="color:var(--muted);font-size:.78rem">lecture</span>'}</td>
+        :'<span style="color:var(--muted);font-size:.78rem">lecture</span>'}
+        ${agPeutSupprimer(e)?`<button class="btn btn-sm btn-ghost" style="color:#f87171" onclick="agDel(${e.id})" title="Supprimer ce contrat — il disparaît de toutes les semaines">🗑</button>`:''}</td>
     </tr>`;
   }).join('');
 
@@ -7089,8 +7109,15 @@ async function agSave(id){
     toast(type==='contrat'?contratPingInfo(row).msg:'📅 Événement enregistré');
   }catch(e){ toast('❌ Enregistrement impossible — table manquante ?'); }
 }
+/* Une suppression doit tenir. `_tables` se fusionne en bloc (la version la plus
+   récente gagne) : si une autre écriture arrive entre la suppression et son
+   envoi, la copie distante, qui contient encore le contrat, le ramène. On garde
+   donc la liste des identifiants supprimés et on la fusionne par union (voir
+   mergeRemote) : le contrat reste retiré, quelle que soit la copie gagnante. */
 async function agDel(id){
+  S._agSupp=[...new Set([...(S._agSupp||[]),String(id)])].slice(-500);
   try{ await SYNC.cli.from('oilroxwood_agenda').delete().eq('id',id); }catch(e){}
+  save(); await sbPushNow();
   closeModal(); await agLoad(); agenda(); toast('🗑 Événement supprimé');
 }
 
