@@ -12546,6 +12546,20 @@
     "quantite": 600,
     "qui": "Julio Collins",
     "fact": 253140
+   },
+   {
+    "date": "2026-10-04",
+    "client": "Devils Sons",
+    "quantite": 100,
+    "qui": "Bjorn Frost",
+    "fact": 253141
+   },
+   {
+    "date": "2026-10-04",
+    "client": "Devils Sons",
+    "quantite": 100,
+    "qui": "Julio Collins",
+    "fact": 253141
    }
   ],
   "collection": [
@@ -14503,7 +14517,7 @@
     "rib": "",
     "tel": "555 743 997",
     "adresse": "Roxwood",
-    "lastCmd": "2026-09-19"
+    "lastCmd": "2026-10-04"
    },
    {
     "nom": "Distric Alta",
@@ -15444,8 +15458,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253141,
+  "compteur": 253142,
   "factures": [
+   {
+    "num": 253141,
+    "date": "2026-10-04",
+    "client": "Devils Sons",
+    "emetteur": "Bjorn Frost, Julio Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 200,
+      "tva": 0.05,
+      "pu": 180,
+      "ht": 36000,
+      "ttc": 37800,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 36000,
+    "ttc": 37800,
+    "poids": 400,
+    "statut": "attente"
+   },
    {
     "num": 253140,
     "date": "2026-10-04",
@@ -33913,14 +33950,14 @@
   "semaineDebut": "2026-09-28"
  },
  "_cid": "wl07yhxs6of",
- "_maj": 1791125075182,
- "_rev": "tr7x327kr9p-mutxmn3q",
+ "_maj": 1791125095991,
+ "_rev": "9rbnkntb1so-mutxn0ez",
  "_majSec": {
   "fer": 1791120455782,
-  "fact": 1791119207993,
+  "fact": 1791125095939,
   "users": 1791124934081,
   "weeks": 1790701456835,
-  "sheets": 1791123991148,
+  "sheets": 1791125095939,
   "_qcFix1": 1790701456835,
   "_wkFix1": 1790701456835,
   "journal": 1791124934081,
@@ -35965,13 +36002,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-04T14:44:42.998Z",
+  "maj": "2026-10-04T14:45:00.251Z",
   "semaine": 40,
   "totalBarils": 169983,
   "ca": 849915,
   "objectif": 375000,
   "effectif": 100,
-  "clientsServis": 126,
+  "clientsServis": 127,
   "top3": [
    {
     "nom": "Sali Dute",
