@@ -6267,7 +6267,7 @@
     "nom": "Amine Nasser",
     "rib": "541295",
     "tel": "555 652 237",
-    "avert": "",
+    "avert": "1",
     "grade": "Intérimaire",
     "recrut": "Thomas Boyer",
     "arrivee": "2026-08-29",
@@ -52416,17 +52416,17 @@
   "semaineDebut": "2026-09-28"
  },
  "_cid": "fme2g2xn6qn",
- "_maj": 1791152145614,
- "_rev": "z36cgpab7sl-muudqv1z",
+ "_maj": 1791152191510,
+ "_rev": "31r54mhbpzh-muudrop5",
  "_majSec": {
   "fer": 1791146712296,
   "fact": 1791125962620,
   "users": 1791146125633,
   "weeks": 1790701456835,
-  "sheets": 1791151244682,
+  "sheets": 1791152191453,
   "_qcFix1": 1790701456835,
   "_wkFix1": 1790701456835,
-  "journal": 1791152145614,
+  "journal": 1791152191510,
   "pending": 1790701456835,
   "prodDer": 1791065666971,
   "runners": 1791150611549,
@@ -52440,7 +52440,7 @@
   "primesExtra": 1790701456835,
   "quotasComHist": 1790701456835,
   "profils": 1790701553168,
-  "_tables": 1791152096874,
+  "_tables": 1791152191453,
   "_permsFix1": 1790701456835,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1790701456835,
@@ -52457,6 +52457,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1791152191755,
+   "u": "Diego Herrera",
+   "a": "Avertissement : Amine Nasser (intérimaire, aucune prise de service) — total : 1"
+  },
   {
    "t": 1791152145858,
    "u": "Diego Herrera",
@@ -53951,11 +53956,6 @@
    "t": 1790334021873,
    "u": "Stella Collins",
    "a": "Facture n°253112 modifiée — émetteur Diego Herrera, Stella Collins → Diego Herrera, Stella Collins, Tyler Collins"
-  },
-  {
-   "t": 1790333678909,
-   "u": "Stella Collins",
-   "a": "Vente rapide sans facture : 3 bidon(s) — Citoyen (vendeur : Stella Collins)"
   }
  ],
  "prodDer": {
@@ -54428,7 +54428,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-04T22:15:53.783Z",
+  "maj": "2026-10-04T22:16:32.201Z",
   "semaine": 40,
   "totalBarils": 217859,
   "ca": 1089295,
@@ -174680,6 +174680,13 @@
     "role": "direction",
     "vu": "2026-10-04T22:14:56.874Z",
     "id": 1791152097242
+   },
+   {
+    "uid": "826526979204841482",
+    "nom": "Diego Herrera",
+    "role": "direction",
+    "vu": "2026-10-04T22:16:26.878Z",
+    "id": 1791152187287
    }
   ],
   "oilroxwood_demandes": [],
@@ -175596,6 +175603,16 @@
      ]
     },
     "id": 1790549447594
+   },
+   {
+    "type": "avertissement",
+    "payload": {
+     "discord": "1323703478782132264",
+     "nom": "Amine Nasser",
+     "raison": "Aucune prise de service cette semaine",
+     "par": "Diego Herrera"
+    },
+    "id": 1791152192108
    }
   ],
   "oilroxwood_coffres": [
