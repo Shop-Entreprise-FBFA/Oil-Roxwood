@@ -5130,6 +5130,20 @@
  "sheets": {
   "rh": [
    {
+    "nom": "Ragnar Gomez",
+    "grade": "Intérimaire",
+    "tel": "555 200 718",
+    "rib": "489328",
+    "idU": "324420",
+    "arrivee": "2026-09-16",
+    "discord": "106428864942592000",
+    "avert": "",
+    "contrat": false,
+    "recrut": "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
     "nom": "Teddy Flynn",
     "grade": "Intérimaire",
     "tel": "555-781-855",
@@ -6167,71 +6181,6 @@
     "recrut": "Thomas Boyer",
     "dernierService": "2026-09-22",
     "flagOut": false
-   },
-   {
-    "idU": "258721",
-    "nom": "Nova Cross",
-    "rib": "556747",
-    "tel": "555243403",
-    "actif": true,
-    "avert": "",
-    "grade": "Intérimaire",
-    "recrut": "Thomas Boyer",
-    "arrivee": "2026-08-05",
-    "contrat": true,
-    "discord": "1283362613811478563",
-    "flagOut": true,
-    "contratGen": {
-     "t": 1785935801945,
-     "par": "Thomas Boyer"
-    },
-    "dernierService": "2026-09-29"
-   },
-   {
-    "nom": "Pablo Escocha",
-    "grade": "Intérimaire",
-    "tel": "560060",
-    "rib": "560060",
-    "idU": "378555",
-    "arrivee": "2026-09-06",
-    "discord": "474805631824560129",
-    "avert": "1",
-    "contrat": false,
-    "recrut": "Thomas Boyer",
-    "dernierService": "2026-09-17",
-    "flagOut": true,
-    "contratGen": {
-     "t": 1788711331304,
-     "par": "Diego Herrera"
-    }
-   },
-   {
-    "nom": "Ragnar Gomez",
-    "grade": "Intérimaire",
-    "tel": "555 200 718",
-    "rib": "489328",
-    "idU": "324420",
-    "arrivee": "2026-09-16",
-    "discord": "106428864942592000",
-    "avert": "1",
-    "contrat": true,
-    "recrut": "Juan Sanchez",
-    "dernierService": "2026-09-17",
-    "flagOut": true
-   },
-   {
-    "nom": "Malo Rodrygo",
-    "grade": "Intérimaire",
-    "tel": "555506050",
-    "rib": "459615",
-    "idU": "301349",
-    "arrivee": "2026-09-16",
-    "discord": "1197202685070426194",
-    "avert": "1",
-    "contrat": true,
-    "recrut": "Thomas Boyer",
-    "dernierService": "2026-09-20",
-    "flagOut": true
    },
    {
     "idU": "377944",
@@ -51673,17 +51622,17 @@
   "semaineDebut": "2026-09-28"
  },
  "_cid": "fme2g2xn6qn",
- "_maj": 1791152816626,
- "_rev": "8pxf1pbn2h3-muue5692",
+ "_maj": 1791152874693,
+ "_rev": "nkyqziio8fr-muue6cos",
  "_majSec": {
   "fer": 1791146712296,
   "fact": 1791125962620,
   "users": 1791146125633,
   "weeks": 1790701456835,
-  "sheets": 1791152713041,
+  "sheets": 1791152874693,
   "_qcFix1": 1790701456835,
   "_wkFix1": 1790701456835,
-  "journal": 1791152191510,
+  "journal": 1791152874693,
   "pending": 1790701456835,
   "prodDer": 1791065666971,
   "runners": 1791150611549,
@@ -51705,7 +51654,7 @@
   "_affFix1": 1790701456835,
   "produits": 1790701456835,
   "_prodFix1": 1790701456835,
-  "_recruesIgnore": 1791150499587,
+  "_recruesIgnore": 1791152874693,
   "ventesAlias": 1790701456835,
   "_ventesIgnore": 1790701456835,
   "_avertVus": 1790701456835,
@@ -51714,6 +51663,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1791152875179,
+   "u": "Diego Herrera",
+   "a": "Recrutements Discord : 1 fiche(s) créée(s), 0 case(s) complétée(s) — Ragnar Gomez"
+  },
   {
    "t": 1791152191755,
    "u": "Diego Herrera",
@@ -53208,11 +53162,6 @@
    "t": 1790336482609,
    "u": "Diego Herrera",
    "a": "Modification des paramètres"
-  },
-  {
-   "t": 1790334021873,
-   "u": "Stella Collins",
-   "a": "Facture n°253112 modifiée — émetteur Diego Herrera, Stella Collins → Diego Herrera, Stella Collins, Tyler Collins"
   }
  ],
  "prodDer": {
@@ -53685,12 +53634,12 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-04T22:27:01.478Z",
+  "maj": "2026-10-04T22:27:56.476Z",
   "semaine": 40,
   "totalBarils": 217859,
   "ca": 1089295,
   "objectif": 375000,
-  "effectif": 97,
+  "effectif": 98,
   "clientsServis": 127,
   "top3": [
    {
@@ -176201,7 +176150,8 @@
   "1791138873887",
   "1791138885536",
   "1791145784744",
-  "1791145817848"
+  "1791145817848",
+  "1789569907304"
  ],
  "_signeVus": [
   "1789477305650",
