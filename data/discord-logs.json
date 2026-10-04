@@ -1,11 +1,53 @@
 {
- "maj": "2026-10-04T20:41:44.310700+00:00",
+ "maj": "2026-10-04T20:43:36.690456+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1556405981838188653-0",
+   "t": "2026-10-04T20:41:42.695000+00:00",
+   "auteur": "Logs - Achat fer",
+   "texte": "Achat fer\na acheté 32x fer pour 160$\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3756\nplayerDiscord : 767332288744128512\nplayerName : JULIO COLLINS\nplayerCharacter : Julio Collins\nplayerId : 356873\nitemId : iron",
+   "nom": "Julio Collins",
+   "quantite": 32,
+   "montant": 160,
+   "type": "achat_fer",
+   "salon": "1247565070423167100",
+   "champs": {
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "3756",
+    "playerdiscord": "767332288744128512",
+    "playername": "JULIO COLLINS",
+    "playercharacter": "Julio Collins",
+    "playerid": "356873",
+    "itemid": "iron"
+   }
+  },
+  {
+   "id": "1556405981838188653-1",
+   "t": "2026-10-04T20:41:42.695000+00:00",
+   "auteur": "Logs - Achat fer",
+   "texte": "Achat fer\na acheté 32x fer pour 160$\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 110\nplayerDiscord : 1096933851659517975\nplayerName : SoggyAnt2644\nplayerCharacter : Bjorn Frost\nplayerId : 361708\nitemId : iron",
+   "nom": "Bjorn Frost",
+   "quantite": 32,
+   "montant": 160,
+   "type": "achat_fer",
+   "salon": "1247565070423167100",
+   "champs": {
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "110",
+    "playerdiscord": "1096933851659517975",
+    "playername": "SoggyAnt2644",
+    "playercharacter": "Bjorn Frost",
+    "playerid": "361708",
+    "itemid": "iron"
+   }
+  },
   {
    "id": "1556405693756735544",
    "t": "2026-10-04T20:40:34.011000+00:00",
@@ -94138,54 +94180,6 @@
     "playercharacter": "Diego Herrera",
     "playerid": "231487",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1555553300785537108-2",
-   "t": "2026-10-02T12:13:27.690000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 26x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -1851.32, 6500.73, 16.73\ntargetPosition : -1851.46, 6502.05, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7016\nplayerDiscord : 690537200689086537\nplayerName : Ec9Mugen\nplayerCharacter : Juan Sanchez\nplayerId : 200738\nitemId : oil",
-   "nom": "Juan Sanchez",
-   "quantite": 26,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1851.32, 6500.73, 16.73",
-    "targetposition": "-1851.46, 6502.05, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7016",
-    "playerdiscord": "690537200689086537",
-    "playername": "Ec9Mugen",
-    "playercharacter": "Juan Sanchez",
-    "playerid": "200738",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1555553300785537108-3",
-   "t": "2026-10-02T12:13:27.690000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 20x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -1848.86, 6498.55, 16.73\ntargetPosition : -1849.11, 6498.65, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6657\nplayerDiscord : 826526979204841482\nplayerName : JumpyNewt1770\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : oil",
-   "nom": "Diego Herrera",
-   "quantite": 20,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1848.86, 6498.55, 16.73",
-    "targetposition": "-1849.11, 6498.65, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6657",
-    "playerdiscord": "826526979204841482",
-    "playername": "JumpyNewt1770",
-    "playercharacter": "Diego Herrera",
-    "playerid": "231487",
-    "itemid": "oil"
    }
   }
  ]
