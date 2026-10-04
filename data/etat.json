@@ -52416,8 +52416,8 @@
   "semaineDebut": "2026-09-28"
  },
  "_cid": "fme2g2xn6qn",
- "_maj": 1791151916860,
- "_rev": "07sx9glmn2qk-muudlvre",
+ "_maj": 1791151935552,
+ "_rev": "4v78pai2o1c-muudma20",
  "_majSec": {
   "fer": 1791146712296,
   "fact": 1791125962620,
@@ -52426,11 +52426,11 @@
   "sheets": 1791151244682,
   "_qcFix1": 1790701456835,
   "_wkFix1": 1790701456835,
-  "journal": 1791150499664,
+  "journal": 1791151935552,
   "pending": 1790701456835,
   "prodDer": 1791065666971,
   "runners": 1791150611549,
-  "absences": 1791048791072,
+  "absences": 1791151935552,
   "imported": 1790701456835,
   "settings": 1790701456835,
   "closeUndo": 1790701456835,
@@ -52457,6 +52457,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1791151935804,
+   "u": "Diego Herrera",
+   "a": "5 absence(s) terminée(s) archivée(s) automatiquement"
+  },
   {
    "t": 1791150500224,
    "u": "Diego Herrera",
@@ -53951,11 +53956,6 @@
    "t": 1790322340354,
    "u": "Diego Herrera",
    "a": "Recrutements Discord : 1 fiche(s) créée(s), 0 case(s) complétée(s) — Jacques Zitouning"
-  },
-  {
-   "t": 1790321688596,
-   "u": "Diego Herrera",
-   "a": "Facture n°253112 modifiée — total 283 500 $ → 270 000 $"
   }
  ],
  "prodDer": {
@@ -54331,46 +54331,6 @@
  },
  "absences": [
   {
-   "id": 1789384377353,
-   "nom": "Darian Nguyen",
-   "du": "2026-09-14",
-   "au": "2026-09-23",
-   "srcId": "1789380607649",
-   "motif": "Pas dispo",
-   "par": "⚫ Diego Herrera",
-   "auto": true
-  },
-  {
-   "id": 1789674986137,
-   "nom": "Jason White",
-   "du": "2026-09-17",
-   "au": "2026-09-21",
-   "srcId": "1789674986877",
-   "motif": "pas chez moi",
-   "par": "Stella Collins",
-   "auto": true
-  },
-  {
-   "id": 1789746633497,
-   "nom": "Carla Braz",
-   "du": "2026-09-21",
-   "au": "2026-09-27",
-   "srcId": "1789746616812",
-   "motif": "",
-   "par": "⚫ Thomas Boyer",
-   "auto": true
-  },
-  {
-   "id": 1789819348814,
-   "nom": "Corentin Baltre",
-   "du": "2026-09-19",
-   "au": "2026-09-27",
-   "srcId": "1789819330775",
-   "motif": "raison perso",
-   "par": "⚫ Thomas Boyer",
-   "auto": true
-  },
-  {
    "id": 1789941834081,
    "nom": "Jack Hamilton",
    "du": "2026-09-10",
@@ -54387,16 +54347,6 @@
    "au": "2026-10-02",
    "srcId": "1790082872438",
    "motif": "Raisons personnel",
-   "par": "⚫ Le Dictateur",
-   "auto": true
-  },
-  {
-   "id": 1790159565380,
-   "nom": "Bobby Rousseau",
-   "du": "2026-09-21",
-   "au": "2026-09-27",
-   "srcId": "1790157224719",
-   "motif": ".",
    "par": "⚫ Le Dictateur",
    "auto": true
   },
@@ -54468,7 +54418,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-04T22:12:01.418Z",
+  "maj": "2026-10-04T22:12:19.944Z",
   "semaine": 40,
   "totalBarils": 217859,
   "ca": 1089295,
