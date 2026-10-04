@@ -12518,6 +12518,13 @@
     "quantite": 100,
     "qui": "William Rodriguez-collins",
     "fact": 253138
+   },
+   {
+    "date": "2026-10-04",
+    "client": "Klan Ozumiya",
+    "quantite": 150,
+    "qui": "William Rodriguez-collins",
+    "fact": 253139
    }
   ],
   "collection": [
@@ -14790,7 +14797,7 @@
     "rib": "",
     "tel": "555-824-485",
     "adresse": "Los Santos",
-    "lastCmd": "2026-09-28"
+    "lastCmd": "2026-10-04"
    },
    {
     "nom": "Klan Zambolie",
@@ -15416,8 +15423,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253139,
+  "compteur": 253140,
   "factures": [
+   {
+    "num": 253139,
+    "date": "2026-10-04",
+    "client": "Klan Ozumiya",
+    "emetteur": "William Rodriguez-collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 150,
+      "tva": 0.05,
+      "pu": 180,
+      "ht": 27000,
+      "ttc": 28350,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 27000,
+    "ttc": 28350,
+    "poids": 300,
+    "statut": "attente"
+   },
    {
     "num": 253138,
     "date": "2026-10-03",
@@ -33551,14 +33581,14 @@
   "semaineDebut": "2026-09-28"
  },
  "_cid": "8cxv9ouo95",
- "_maj": 1791112149830,
- "_rev": "laqu18rqx1-mutpxr9x",
+ "_maj": 1791112183499,
+ "_rev": "uiy2pfritz-mutpy65j",
  "_majSec": {
   "fer": 1791050086594,
-  "fact": 1791069665991,
+  "fact": 1791112183455,
   "users": 1791097236640,
   "weeks": 1790701456835,
-  "sheets": 1791054067556,
+  "sheets": 1791112183455,
   "_qcFix1": 1790701456835,
   "_wkFix1": 1790701456835,
   "journal": 1791097236640,
@@ -35603,13 +35633,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-04T11:09:24.693Z",
+  "maj": "2026-10-04T11:09:43.975Z",
   "semaine": 40,
   "totalBarils": 169983,
   "ca": 849915,
   "objectif": 375000,
   "effectif": 100,
-  "clientsServis": 124,
+  "clientsServis": 125,
   "top3": [
    {
     "nom": "Sali Dute",
