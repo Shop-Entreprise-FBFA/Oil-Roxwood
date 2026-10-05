@@ -10823,7 +10823,36 @@
     "entreprise": "klan-ozumiya"
    }
   ],
-  "ventesSem": [],
+  "ventesSem": [
+   {
+    "date": "2026-10-05",
+    "client": "La Linterna",
+    "quantite": 250,
+    "qui": "Emma Collins-rodriguez",
+    "fact": 253142
+   },
+   {
+    "date": "2026-10-05",
+    "client": "La Linterna",
+    "quantite": 250,
+    "qui": "Julio Collins",
+    "fact": 253142
+   },
+   {
+    "date": "2026-10-05",
+    "client": "La Linterna",
+    "quantite": 250,
+    "qui": "Laurent Roquel",
+    "fact": 253142
+   },
+   {
+    "date": "2026-10-05",
+    "client": "La Linterna",
+    "quantite": 250,
+    "qui": "William Rodriguez-Collins",
+    "fact": 253142
+   }
+  ],
   "collection": [
    {
     "nom": "Nom",
@@ -13069,7 +13098,7 @@
     "rib": "20083",
     "tel": "",
     "adresse": "Cayo",
-    "lastCmd": "2026-09-19",
+    "lastCmd": "2026-10-05",
     "notes": [
      {
       "t": 1789578868934,
@@ -13686,8 +13715,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253142,
+  "compteur": 253143,
   "factures": [
+   {
+    "num": 253142,
+    "date": "2026-10-05",
+    "client": "La Linterna",
+    "emetteur": "Emma Collins-rodriguez, Julio Collins, Laurent Roquel, William Rodriguez-Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 1000,
+      "tva": 0,
+      "pu": 180,
+      "ht": 180000,
+      "ttc": 180000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 180000,
+    "ttc": 180000,
+    "poids": 2000,
+    "statut": "attente"
+   },
    {
     "num": 253141,
     "date": "2026-10-04",
@@ -16759,6 +16811,14 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T20:11:53.537Z"
+  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -16782,14 +16842,6 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T00:06:23.240Z"
-  },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -50412,15 +50464,15 @@
   "postesV4": 1,
   "semaineDebut": "2026-10-05"
  },
- "_cid": "l61i2fm9m5q",
- "_maj": 1791205135267,
- "_rev": "5fbli0psyop-muv9b315",
+ "_cid": "aoe0ju2oe1p",
+ "_maj": 1791205172030,
+ "_rev": "o8fnmtghpv-muv9b9iz",
  "_majSec": {
   "fer": 1791146712296,
-  "fact": 1791202602051,
+  "fact": 1791205171965,
   "users": 1791146125633,
   "weeks": 1791156592285,
-  "sheets": 1791204526474,
+  "sheets": 1791205171965,
   "_qcFix1": 1790701456835,
   "_wkFix1": 1790701456835,
   "journal": 1791156652389,
@@ -52429,13 +52481,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-05T12:59:25.337Z",
+  "maj": "2026-10-05T12:59:33.756Z",
   "semaine": 41,
   "totalBarils": 0,
   "ca": 0,
   "objectif": 375000,
   "effectif": 80,
-  "clientsServis": 127,
+  "clientsServis": 128,
   "top3": [],
   "runners": [],
   "produits": [
