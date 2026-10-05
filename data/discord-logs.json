@@ -1,11 +1,35 @@
 {
- "maj": "2026-10-05T14:53:39.199850+00:00",
+ "maj": "2026-10-05T14:55:41.041890+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1556680738198396969",
+   "t": "2026-10-05T14:53:29.716000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\na retiré 25x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -3090.40, 6814.97, 44.73\ntargetPosition : -3089.68, 6814.50, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 493\nplayerDiscord : 1096933851659517975\nplayerName : SoggyAnt2644\nplayerCharacter : Bjorn Frost\nplayerId : 361708\nitemId : oil",
+   "nom": "Bjorn Frost",
+   "quantite": 25,
+   "montant": null,
+   "type": "coffre_retrait",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-3090.40, 6814.97, 44.73",
+    "targetposition": "-3089.68, 6814.50, 43.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "493",
+    "playerdiscord": "1096933851659517975",
+    "playername": "SoggyAnt2644",
+    "playercharacter": "Bjorn Frost",
+    "playerid": "361708",
+    "itemid": "oil"
+   }
+  },
   {
    "id": "1556680488922521644-0",
    "t": "2026-10-05T14:52:30.284000+00:00",
@@ -95117,27 +95141,6 @@
     "playercharacter": "Bjorn Frost",
     "playerid": "361708",
     "itemid": "oil"
-   }
-  },
-  {
-   "id": "1556266014252212257-0",
-   "t": "2026-10-04T11:25:31.822000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 7242\nplayerDiscord : 1454487521005408319\nplayerName : FuzzyCat4460\nplayerCharacter : Anis Wolkeur\nplayerId : 361261\nvehiclePlate : CT2926BI\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Anis Wolkeur",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "7242",
-    "playerdiscord": "1454487521005408319",
-    "playername": "FuzzyCat4460",
-    "playercharacter": "Anis Wolkeur",
-    "playerid": "361261",
-    "vehicleplate": "CT2926BI",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
