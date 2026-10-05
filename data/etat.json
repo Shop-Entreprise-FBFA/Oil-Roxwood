@@ -11973,8 +11973,8 @@
     "boissons": true,
     "bidons": true,
     "date": "2026-10-05",
-    "don": "",
-    "permis": ""
+    "don": "julio",
+    "permis": "ok"
    },
    {
     "nom": "Bjorn Frost",
@@ -16634,6 +16634,22 @@
    "public": true,
    "maj": "2026-09-16T11:47:16.417Z"
   },
+  "stella collins": {
+   "nom": "Stella Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-14T13:20:17.287Z"
+  },
+  "julio collins": {
+   "nom": "Julio Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T00:06:23.240Z"
+  },
   "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿": {
    "nom": "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿",
    "photo": "",
@@ -16657,22 +16673,6 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T16:48:15.042Z"
-  },
-  "stella collins": {
-   "nom": "Stella Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-14T13:20:17.287Z"
-  },
-  "julio collins": {
-   "nom": "Julio Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T00:06:23.240Z"
   },
   "william rodriguez-collins": {
    "nom": "William Rodriguez-collins",
@@ -50431,18 +50431,18 @@
   "postesV4": 1,
   "semaineDebut": "2026-10-05"
  },
- "_cid": "e9ai2tqxpes",
- "_maj": 1791222926856,
- "_rev": "8r1s1z1iq8w-muvjvr4f",
+ "_cid": "pmqm7n8dzap",
+ "_maj": 1791222945042,
+ "_rev": "lqompjiaf5-muvjwcj4",
  "_majSec": {
   "fer": 1791218008551,
   "fact": 1791222467550,
-  "users": 1791222822512,
+  "users": 1791222945042,
   "weeks": 1791156592285,
-  "sheets": 1791222833316,
+  "sheets": 1791222844518,
   "_qcFix1": 1790701456835,
   "_wkFix1": 1790701456835,
-  "journal": 1791222822512,
+  "journal": 1791222945042,
   "pending": 1790701456835,
   "prodDer": 1791156656253,
   "runners": 1791156606865,
@@ -50456,7 +50456,7 @@
   "primesExtra": 1791156592285,
   "quotasComHist": 1791156592285,
   "profils": 1790701553168,
-  "_tables": 1791222926856,
+  "_tables": 1791222949354,
   "_permsFix1": 1790701456835,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1790701456835,
@@ -50473,6 +50473,16 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1791222949438,
+   "u": "Julio Collins",
+   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
+  },
+  {
+   "t": 1791222949310,
+   "u": "?",
+   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
+  },
   {
    "t": 1791222826651,
    "u": "Julio Collins",
@@ -51962,16 +51972,6 @@
    "t": 1790371349078,
    "u": "Julio Collins",
    "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1790371348866,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1790366755309,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
   }
  ],
  "prodDer": {
@@ -52448,7 +52448,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-05T17:55:25.839Z",
+  "maj": "2026-10-05T17:55:53.584Z",
   "semaine": 41,
   "totalBarils": 0,
   "ca": 0,
@@ -177840,18 +177840,25 @@
     "id": 1791222745866
    },
    {
-    "uid": "948542221429379112",
-    "nom": "Stella Collins",
-    "role": "direction",
-    "vu": "2026-10-05T17:54:26.869Z",
-    "id": 1791222865799
+    "uid": "767332288744128512",
+    "nom": "Julio Collins",
+    "role": "commercial",
+    "vu": "2026-10-05T17:53:42.374Z",
+    "id": 1791222827394
    },
    {
-    "uid": "948542221429379112",
-    "nom": "Stella Collins",
-    "role": "direction",
-    "vu": "2026-10-05T17:55:26.856Z",
-    "id": 1791222925725
+    "uid": "767332288744128512",
+    "nom": "Julio Collins",
+    "role": "respcom",
+    "vu": "2026-10-05T17:54:12.917Z",
+    "id": 1791222853382
+   },
+   {
+    "uid": "767332288744128512",
+    "nom": "Julio Collins",
+    "role": "commercial",
+    "vu": "2026-10-05T17:55:49.313Z",
+    "id": 1791222950021
    }
   ],
   "oilroxwood_demandes": [],
