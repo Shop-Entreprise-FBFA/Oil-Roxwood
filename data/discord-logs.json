@@ -1,11 +1,32 @@
 {
- "maj": "2026-10-05T05:41:38.372385+00:00",
+ "maj": "2026-10-05T05:43:38.998901+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1556541854550462546",
+   "t": "2026-10-05T05:41:37.274000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 5169\nplayerDiscord : 228152737701822465\nplayerName : SONIK\nplayerCharacter : Cristóbal Perrera\nplayerId : 379487\nvehiclePlate : AS5715VX\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Cristóbal Perrera",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "5169",
+    "playerdiscord": "228152737701822465",
+    "playername": "SONIK",
+    "playercharacter": "Cristóbal Perrera",
+    "playerid": "379487",
+    "vehicleplate": "AS5715VX",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1556450491884507241-0",
    "t": "2026-10-04T23:38:34.717000+00:00",
@@ -94154,30 +94175,6 @@
     "playername": "SlowMouse3303",
     "playercharacter": "Emma Collins-rodriguez",
     "playerid": "227799",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1555568660930633765-3",
-   "t": "2026-10-02T13:14:29.834000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 25x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -3089.68, 6813.92, 44.73\ntargetPosition : -3089.68, 6814.50, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7580\nplayerDiscord : 1096933851659517975\nplayerName : SoggyAnt2644\nplayerCharacter : Bjorn Frost\nplayerId : 361708\nitemId : oil",
-   "nom": "Bjorn Frost",
-   "quantite": 25,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-3089.68, 6813.92, 44.73",
-    "targetposition": "-3089.68, 6814.50, 43.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7580",
-    "playerdiscord": "1096933851659517975",
-    "playername": "SoggyAnt2644",
-    "playercharacter": "Bjorn Frost",
-    "playerid": "361708",
     "itemid": "oil"
    }
   }
