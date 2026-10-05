@@ -1,11 +1,43 @@
 {
- "maj": "2026-10-05T15:59:45.064568+00:00",
+ "maj": "2026-10-05T16:01:39.691593+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1556697388977234045-0",
+   "t": "2026-10-05T15:59:39.571000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 164x Pétrole Raffiné pour 1640$ par Diego Herrera. 820$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 164,
+   "montant": 1640,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1556697388977234045-1",
+   "t": "2026-10-05T15:59:39.571000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 347x Pétrole Raffiné pour 3470$ par Teddy Flynn. 1735$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 347,
+   "montant": 3470,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1556697098702037085",
    "t": "2026-10-05T15:58:30.364000+00:00",
@@ -95005,54 +95037,6 @@
    "coffre": "entreprise (Oil RoxWood)",
    "champs": {
     "position": "-1816.02, 6566.15, 16.73",
-    "targetposition": "-1815.66, 6565.56, 15.98",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7912",
-    "playerdiscord": "767332288744128512",
-    "playername": "JULIO COLLINS",
-    "playercharacter": "Julio Collins",
-    "playerid": "356873",
-    "itemid": "weapon_petrolcan"
-   }
-  },
-  {
-   "id": "1556298743324606526-4",
-   "t": "2026-10-04T13:35:35.041000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 37x Bidon d'essence du coffre de l'entreprise (Oil RoxWood)\nposition : -1815.93, 6565.48, 16.73\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6936\nplayerDiscord : 1096933851659517975\nplayerName : SoggyAnt2644\nplayerCharacter : Bjorn Frost\nplayerId : 361708\nitemId : weapon_petrolcan",
-   "nom": "Bjorn Frost",
-   "quantite": 37,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1815.93, 6565.48, 16.73",
-    "targetposition": "-1815.66, 6565.56, 15.98",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6936",
-    "playerdiscord": "1096933851659517975",
-    "playername": "SoggyAnt2644",
-    "playercharacter": "Bjorn Frost",
-    "playerid": "361708",
-    "itemid": "weapon_petrolcan"
-   }
-  },
-  {
-   "id": "1556298743324606526-5",
-   "t": "2026-10-04T13:35:35.041000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 30x Bidon d'essence du coffre de l'entreprise (Oil RoxWood)\nposition : -1816.36, 6566.11, 16.73\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7912\nplayerDiscord : 767332288744128512\nplayerName : JULIO COLLINS\nplayerCharacter : Julio Collins\nplayerId : 356873\nitemId : weapon_petrolcan",
-   "nom": "Julio Collins",
-   "quantite": 30,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1816.36, 6566.11, 16.73",
     "targetposition": "-1815.66, 6565.56, 15.98",
     "jobid": "76",
     "jobname": "Oil RoxWood",
