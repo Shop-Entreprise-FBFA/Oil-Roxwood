@@ -1204,7 +1204,7 @@ function logout(){
 }
 
 /* ---- Canari de version : prévient les onglets restés sur une vieille version ---- */
-const APP_VERSION='C-111';
+const APP_VERSION='C-112';
 /* Le bandeau ne doit dire qu'une chose : « une version plus récente existe ».
    Il comparait deux chaînes avec !==, donc il s'allumait aussi dans l'autre
    sens — quand la page ouverte était PLUS récente que version.json, ce qui
@@ -1818,7 +1818,7 @@ function rowRunner(r){
     <td><span class="badge ${gCls(r)}">${esc(gTitle(r))}</span><div style="font-size:.7rem;color:var(--muted);font-weight:700;margin-top:3px">💤 aucune prise de service</div>${ab?`<div style="font-size:.7rem;color:#22d3ee;font-weight:700;margin-top:3px">💤 absent jusqu'au ${frDate(ab.au)}</div>`:''}</td>
     <td><div class="prog"><i style="width:0%"></i></div><div class="pct">0 / ${fmt(g.quota)} (0%)</div></td>
     ${isMembre()?'':`<td>0</td><td style="text-align:right;white-space:nowrap;color:var(--muted);font-size:.78rem">
-      ${!r.poste&&r.grade>0&&!ab?`<button class="btn btn-sm btn-red" onclick="demoteGhost(decodeURIComponent('${encodeURIComponent(r.nom)}'))" title="Descendre de grade (aucune prise de service)">▼</button> `:''}
+      ${!r.poste&&r.grade>0&&!ab&&!absFinRecente(r.nom)?`<button class="btn btn-sm btn-red" onclick="demoteGhost(decodeURIComponent('${encodeURIComponent(r.nom)}'))" title="Descendre de grade (aucune prise de service)">▼</button> `:''}
       ${!r.poste&&r.grade===0&&!ab&&!estNouveau(r.nom)?`<button class="btn btn-sm btn-ghost" style="color:#ffa500;border-color:rgba(255,165,0,.4)" onclick="avertirGhost(decodeURIComponent('${encodeURIComponent(r.nom)}'))" title="Sans prise de service — donner un avertissement">⚠</button> `:''}
       ${estStagiaire(r)?`<button class="btn btn-sm btn-gold" onclick="titulariser(decodeURIComponent('${encodeURIComponent(r.nom)}'))" title="Titulariser (Stagiaire → Intérimaire)">🎓</button> `:''}
       apparaîtra ici après son 1ᵉʳ pointage</td>`}
@@ -1826,12 +1826,12 @@ function rowRunner(r){
   return `<tr>
     <td style="cursor:pointer" tabindex="0" role="button" onkeydown="actKey(event)" title="Ouvrir la fiche employé" onclick="ficheEmp(decodeURIComponent('${encodeURIComponent(r.nom)}'))">${przDot(r)}<b>${esc(r.nom)}</b><div style="color:var(--muted);font-size:.76rem">@${esc(r.discord)}</div></td>
     <td><span class="badge ${gCls(r)}">${esc(gTitle(r))}</span>${(r.absent||ab)?`<div style="font-size:.7rem;color:#22d3ee;font-weight:700;margin-top:3px">💤 ${ab?`absent du ${frDate(ab.du)} au ${frDate(ab.au)}`:'Congé / absence'}</div>`
-      :abPrec?`<div style="font-size:.7rem;color:#8fb4d9;font-weight:700;margin-top:3px" title="Sa production de la semaine passée est à lire en tenant compte de ça">🌴 était absent la semaine dernière (${frDate(abPrec.du)} → ${frDate(abPrec.au)})</div>`:''}${!r.poste&&eligible(r)?`<span class="promo-flag">▲ Montée dispo (${fmt(seuilMontee(r))} barils atteints)</span>`:''}</td>
+      :abPrec?`<div style="font-size:.7rem;color:#8fb4d9;font-weight:700;margin-top:3px" title="Absent dans les 15 derniers jours : sa production est à lire en tenant compte de ça">🌴 absent dans les 15 derniers jours (${frDate(abPrec.du)} → ${frDate(abPrec.au)})</div>`:''}${!r.poste&&eligible(r)?`<span class="promo-flag">▲ Montée dispo (${fmt(seuilMontee(r))} barils atteints)</span>`:''}</td>
     <td><div class="prog"><i class="${pc>=100?'full':pc<40?'low':''}" style="width:${pc}%"></i></div><div class="pct">${fmt(r.barils)} / ${fmt(g.quota)} (${pc}%)</div></td>
     ${isMembre()?'':`<td>${fmt(r.total)}</td>
     <td style="text-align:right;white-space:nowrap">
       ${eligible(r)?`<button class="btn btn-sm btn-gold" onclick="promote(${r.id})" title="Monter de grade">▲</button>`:''}
-      ${!r.poste&&r.grade>0&&!g.merite&&r.barils<g.quota*0.95&&!r.absent&&!ab?`<button class="btn btn-sm btn-red" onclick="demote(${r.id})" title="Descendre de grade (quota réalisé à ${pc}% — sous les 95%)">▼</button>`:''}
+      ${!r.poste&&r.grade>0&&!g.merite&&r.barils<g.quota*0.95&&!r.absent&&!ab&&!absFinRecente(r.nom)?`<button class="btn btn-sm btn-red" onclick="demote(${r.id})" title="Descendre de grade (quota réalisé à ${pc}% — sous les 95%)">▼</button>`:''}
       ${!r.poste&&r.grade===0&&r.barils<g.quota*0.80&&!r.absent&&!ab&&!estNouveau(r.nom)?`<button class="btn btn-sm btn-ghost" style="color:#ffa500;border-color:rgba(255,165,0,.4)" onclick="avertir(${r.id})" title="Sous 80 % du quota (${pc}%) — donner un avertissement">⚠</button>`:''}
       ${estStagiaire(r)?`<button class="btn btn-sm btn-gold" onclick="titulariser(decodeURIComponent('${encodeURIComponent(r.nom)}'))" title="Titulariser (Stagiaire → Intérimaire)">🎓</button>`:''}
       <button class="btn btn-sm btn-ghost" onclick="toggleAbsent(${r.id})" title="${r.absent?'Marquer de retour':'Mettre en congé / absence'}">${r.absent?'💼':'🌴'}</button>
@@ -1914,6 +1914,7 @@ function demote(id){
   if(!r||r.poste||r.grade<=0) return;
   if(grade(r).merite) return toast('🏅 Responsable Runner s\'attribue et se retire à la main — passe par « Modifier »');
   if(r.absent||absDe(r.nom)) return toast('🌴 Absence déclarée — descente de grade bloquée');
+  if(absFinRecente(r.nom)) return toast('🌴 Absence terminée il y a moins de 7 jours — pas de descente');
   const pcD=grade(r).quota?Math.round(r.barils/grade(r).quota*100):0;
   const ap=absSemPrec(r.nom);   // on ne bloque pas, mais on ne laisse pas la descente passer en aveugle
   if(!confirm(`Descendre ${r.nom} de ${GRADES[r.grade].nom} à ${GRADES[r.grade-1].nom} ?\n(quota réalisé à ${pcD}% cette semaine — sous les 95%)`
@@ -1925,14 +1926,18 @@ function demote(id){
   sendLog('📉 Descente de grade', `**${r.nom}** redescend **${GRADES[r.grade].nom}** (quota réalisé à ${pcD}% cette semaine)${rhMaj?' (feuille RH mise à jour)':''}`, 0xff5c5c);
   toast(`📉 ${r.nom} redescend ${GRADES[r.grade].nom}${rhMaj?' · feuille RH mise à jour':''}`);
 }
+/* Date ISO d'il y a `jours` jours, à l'heure de Paris. */
+function ilYa(jours){ const d=dateParis(); d.setDate(d.getDate()-jours); return jourISO(d); }
+/* Recrue depuis moins de 7 jours : pas d'avertissement, elle n'a pas eu le temps de faire son quota. */
 function estNouveau(nom){
-  /* Arrivé dans la semaine de travail encore ouverte (date d'arrivée en fiche RH).
-     Pas le lundi du calendrier : la semaine de travail n'avance qu'à la clôture.
-     Le lundi où l'on traite la semaine S-1, les gens arrivés pendant S-1 sont
-     donc toujours « nouveaux » — sans quoi le ⚠ leur était proposé à tort. */
-  const row=((S.sheets&&S.sheets.rh)||[]).find(x=>String(x.nom||'').toLowerCase().trim()===String(nom||'').toLowerCase().trim());
+  const row=rhRowOf(nom);
   if(!row||!row.arrivee) return false;
-  return String(row.arrivee)>=jourISO(lundiSemaineTravail());
+  return String(row.arrivee).slice(0,10)>=ilYa(7);
+}
+/* Absence qui s'est terminée dans les 7 derniers jours : pas de descente de grade (son quota n'est pas représentatif). */
+function absFinRecente(nom){
+  const low=String(nom||'').toLowerCase().trim(), auj=jourISO(dateParis()), il7=ilYa(7);
+  return (S.absences||[]).some(a=>String(a.nom||'').toLowerCase().trim()===low&&a.au>=il7&&a.au<auj);
 }
 /* Le bouton ⚠ ne faisait que compter : la personne n'apprenait rien. On dépose
    maintenant un ordre au bot, qui fait comme /avertissement — enregistrement,
@@ -1960,6 +1965,7 @@ function avertDiscordNote(etat){
 async function avertir(id){
   if(isMembre()) return toast('👀 Consultation seule pour les membres');
   const r=S.runners.find(x=>x.id===id); if(!r) return;
+  if(estNouveau(r.nom)) return toast('🌱 Recrue depuis moins de 7 jours — pas d\'avertissement');
   const g=grade(r), pcA=g.quota?Math.round(r.barils/g.quota*100):0;
   const row=((S.sheets&&S.sheets.rh)||[]).find(x=>String(x.nom||'').toLowerCase().trim()===String(r.nom||'').toLowerCase().trim());
   if(!confirm(`Donner un avertissement à ${r.nom} ?\n(Intérimaire · quota réalisé à ${pcA}% cette semaine)\n\nL'avertissement sera compté dans la colonne « Avert. » de sa fiche RH et annoncé sur Discord, comme avec /avertissement.`)) return;
@@ -1977,7 +1983,7 @@ async function avertirGhost(nom){
   const row=((S.sheets&&S.sheets.rh)||[]).find(x=>String(x.nom||'').toLowerCase().trim()===String(nom).toLowerCase().trim());
   if(!row) return;
   if(absDe(nom)) return toast('🌴 Absence déclarée — pas d\'avertissement');
-  if(estNouveau(nom)) return toast('🌱 Arrivé pendant la semaine à traiter — pas d\'avertissement');
+  if(estNouveau(nom)) return toast('🌱 Recrue depuis moins de 7 jours — pas d\'avertissement');
   if(!confirm(`Donner un avertissement à ${row.nom} ?\n(Intérimaire · aucune prise de service cette semaine)\n\nL'avertissement sera compté dans la colonne « Avert. » de sa fiche RH et annoncé sur Discord, comme avec /avertissement.`)) return;
   const n=(parseInt(String(row.avert||'').replace(/\D/g,''),10)||0)+1; row.avert=String(n);
   const etat=await avertDiscord(row,'Aucune prise de service cette semaine');
@@ -2009,6 +2015,7 @@ function demoteGhost(nom){
   if(gi<0){ const m=[4,3,2,1,0].find(i=>gn&&gn.includes(deacc(GRADES[i].nom))); gi=m===undefined?-1:m; }
   if(gi<=0) return toast('⚠️ Déjà au grade le plus bas (ou grade non reconnu)');
   if(absDe(row.nom)) return toast('🌴 Absence déclarée — descente de grade bloquée');
+  if(absFinRecente(row.nom)) return toast('🌴 Absence terminée il y a moins de 7 jours — pas de descente');
   if(!confirm(`Descendre ${row.nom} de ${GRADES[gi].nom} à ${GRADES[gi-1].nom} ?\n(aucune prise de service cette semaine)`)) return;
   row.grade=GRADES[gi-1].nom;
   jlog(`Descente de grade : ${row.nom} → ${GRADES[gi-1].nom} (aucune prise de service)`);
@@ -4878,6 +4885,11 @@ function ferDel(id){
 
 /* ================== MISES À JOUR (changelog) ================== */
 const CHANGELOG=[
+ {v:'C-112',d:'05/10/2026',t:'Avertissements et descentes : les délais se comptent en jours',items:[
+   ['⚠️','Pas d\'avertissement à une recrue de moins de 7 jours','Le filtre se basait sur la semaine de travail : une recrue validée la veille pouvait recevoir un ⚠. Il compte maintenant 7 jours à partir de sa date d\'arrivée.'],
+   ['📉','Pas de descente après une absence terminée depuis moins de 7 jours','Son quota ne reflète pas une semaine normale. Le bouton ▼ disparaît et l\'action est refusée.'],
+   ['🌴','Absence signalée sur 15 jours','Dans l\'Effectif, une personne absente à un moment des 15 derniers jours porte la mention « absent dans les 15 derniers jours », avec les dates.'],
+ ]},
  {v:'C-111',d:'04/10/2026',t:'Registre des contrats : suppression définitive, ouverte à la gestion',items:[
    ['🐛','Un contrat supprimé revenait la semaine suivante','La suppression ne retirait le contrat que de la copie locale : une autre écriture arrivant avant l\'envoi pouvait ramener la version distante, qui le contenait encore. Une suppression est désormais mémorisée et reste définitive, quelle que soit la copie gagnante.'],
    ['🔧','Patron, Co Patron et Responsable commercial gèrent tous les contrats','Ils voient les contrats posés par quelqu\'un d\'autre dans le registre et peuvent les supprimer (🗑). Les autres ne peuvent supprimer que leurs propres contrats.'],
@@ -6090,10 +6102,10 @@ function semainePrec(){
 }
 /* Absence qui a couvert tout ou partie de la semaine passée, hors absence en cours. */
 function absSemPrec(nom){
-  const sp=semainePrec(), auj=jourISO(dateParis());
+  const auj=jourISO(dateParis());
   if(absDe(nom,auj)) return null;                       // absent aujourd'hui : déjà signalé
-  const low=String(nom||'').toLowerCase().trim();
-  return (S.absences||[]).find(a=>String(a.nom||'').toLowerCase().trim()===low&&a.du<=sp.au&&a.au>=sp.du)||null;
+  const low=String(nom||'').toLowerCase().trim(), auj15=jourISO(dateParis()), il15=ilYa(15);
+  return (S.absences||[]).find(a=>String(a.nom||'').toLowerCase().trim()===low&&a.du<=auj15&&a.au>=il15)||null;
 }
 /* ---- Les absences validées sur Discord se déclarent toutes seules ----
 
