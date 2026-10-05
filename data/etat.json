@@ -10841,8 +10841,15 @@
    {
     "date": "2026-10-05",
     "client": "La Linterna",
-    "quantite": 1000,
+    "quantite": 500,
     "qui": "Emma Collins-rodriguez",
+    "fact": 253142
+   },
+   {
+    "date": "2026-10-05",
+    "client": "La Linterna",
+    "quantite": 500,
+    "qui": "William Rodriguez-Collins",
     "fact": 253142
    }
   ],
@@ -13552,7 +13559,7 @@
     "num": 253142,
     "date": "2026-10-05",
     "client": "La Linterna",
-    "emetteur": "Emma Collins-rodriguez",
+    "emetteur": "Emma Collins-rodriguez, William Rodriguez-Collins",
     "postop": true,
     "lignes": [
      {
@@ -13570,7 +13577,7 @@
     "ttc": 180000,
     "poids": 2000,
     "statut": "attente",
-    "modifiee": 1791206686458
+    "modifiee": 1791210596658
    },
    {
     "num": 253141,
@@ -50297,17 +50304,17 @@
   "semaineDebut": "2026-10-05"
  },
  "_cid": "k8ack3tv0ii",
- "_maj": 1791210582727,
- "_rev": "pwyfq7dx8k9-muvcjals",
+ "_maj": 1791210596695,
+ "_rev": "s9lmpmvoowl-muvcjizm",
  "_majSec": {
   "fer": 1791146712296,
-  "fact": 1791207962713,
+  "fact": 1791210596658,
   "users": 1791146125633,
   "weeks": 1791156592285,
-  "sheets": 1791206686459,
+  "sheets": 1791210596658,
   "_qcFix1": 1790701456835,
   "_wkFix1": 1790701456835,
-  "journal": 1791206686516,
+  "journal": 1791210596695,
   "pending": 1790701456835,
   "prodDer": 1791156656253,
   "runners": 1791156606865,
@@ -50338,6 +50345,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1791210597014,
+   "u": "William Rodriguez-collins",
+   "a": "Facture n°253142 modifiée — émetteur Emma Collins-rodriguez → Emma Collins-rodriguez, William Rodriguez-Collins"
+  },
   {
    "t": 1791206686855,
    "u": "Emma Collins",
@@ -51832,11 +51844,6 @@
    "t": 1790357710509,
    "u": "?",
    "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1790343182720,
-   "u": "Emma Collins",
-   "a": "Vente rapide sans facture : 100 bidon(s) — Citoyen (vendeur : Emma Collins)"
   }
  ],
  "prodDer": {
@@ -52313,7 +52320,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-05T14:29:47.248Z",
+  "maj": "2026-10-05T14:29:58.114Z",
   "semaine": 41,
   "totalBarils": 0,
   "ca": 0,
