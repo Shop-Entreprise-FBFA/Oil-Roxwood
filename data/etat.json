@@ -10851,6 +10851,13 @@
     "quantite": 500,
     "qui": "William Rodriguez-Collins",
     "fact": 253142
+   },
+   {
+    "date": "2026-10-05",
+    "client": "Oil Roxwood",
+    "quantite": 500,
+    "qui": "Julio Collins",
+    "fact": 253144
    }
   ],
   "collection": [
@@ -13236,7 +13243,7 @@
     "rib": "20076",
     "tel": "986",
     "adresse": "Roxwood",
-    "lastCmd": "2026-09-28"
+    "lastCmd": "2026-10-05"
    },
    {
     "nom": "Ombra Nera",
@@ -13530,8 +13537,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253144,
+  "compteur": 253145,
   "factures": [
+   {
+    "num": 253144,
+    "date": "2026-10-05",
+    "client": "Oil Roxwood",
+    "emetteur": "Julio Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 500,
+      "tva": 0,
+      "pu": 180,
+      "ht": 90000,
+      "ttc": 90000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 90000,
+    "ttc": 90000,
+    "poids": 1000,
+    "statut": "attente"
+   },
    {
     "num": 253143,
     "date": "2026-10-05",
@@ -16634,6 +16664,22 @@
    "public": true,
    "maj": "2026-09-16T11:47:16.417Z"
   },
+  "stella collins": {
+   "nom": "Stella Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-14T13:20:17.287Z"
+  },
+  "julio collins": {
+   "nom": "Julio Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T00:06:23.240Z"
+  },
   "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿": {
    "nom": "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿",
    "photo": "",
@@ -16657,22 +16703,6 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T16:48:15.042Z"
-  },
-  "stella collins": {
-   "nom": "Stella Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-14T13:20:17.287Z"
-  },
-  "julio collins": {
-   "nom": "Julio Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T00:06:23.240Z"
   },
   "william rodriguez-collins": {
    "nom": "William Rodriguez-collins",
@@ -50431,15 +50461,15 @@
   "postesV4": 1,
   "semaineDebut": "2026-10-05"
  },
- "_cid": "m3ebvt63ee9",
- "_maj": 1791226864798,
- "_rev": "nzefz4x5v7d-muvm8mn6",
+ "_cid": "g6ml366zbg",
+ "_maj": 1791226886609,
+ "_rev": "ftvu26nuaka-muvm8t0c",
  "_majSec": {
   "fer": 1791218008551,
-  "fact": 1791222467550,
+  "fact": 1791226886581,
   "users": 1791226862513,
   "weeks": 1791156592285,
-  "sheets": 1791222844518,
+  "sheets": 1791226886581,
   "_qcFix1": 1790701456835,
   "_wkFix1": 1790701456835,
   "journal": 1791226862513,
@@ -52448,13 +52478,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-05T19:01:25.794Z",
+  "maj": "2026-10-05T19:01:34.044Z",
   "semaine": 41,
   "totalBarils": 0,
   "ca": 0,
   "objectif": 375000,
   "effectif": 80,
-  "clientsServis": 129,
+  "clientsServis": 130,
   "top3": [],
   "runners": [],
   "produits": [
