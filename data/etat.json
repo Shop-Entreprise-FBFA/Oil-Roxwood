@@ -13550,17 +13550,18 @@
       "ref": "CMD",
       "qte": 500,
       "tva": 0,
+      "desc": "bidons d'essence ",
       "pu": 180,
       "ht": 90000,
-      "ttc": 90000,
-      "desc": "bidons d'essence "
+      "ttc": 90000
      }
     ],
     "offert": 0,
     "ht": 90000,
     "ttc": 90000,
     "poids": 1000,
-    "statut": "payee"
+    "statut": "payee",
+    "modifiee": 1791226905878
    },
    {
     "num": 253143,
@@ -50462,17 +50463,17 @@
   "semaineDebut": "2026-10-05"
  },
  "_cid": "g6ml366zbg",
- "_maj": 1791226897220,
- "_rev": "4wjfb2vudwo-muvm92my",
+ "_maj": 1791226905902,
+ "_rev": "yiq7ownjsf-muvm95zz",
  "_majSec": {
   "fer": 1791218008551,
-  "fact": 1791226897220,
+  "fact": 1791226905878,
   "users": 1791226862513,
   "weeks": 1791156592285,
   "sheets": 1791226886581,
   "_qcFix1": 1790701456835,
   "_wkFix1": 1790701456835,
-  "journal": 1791226862513,
+  "journal": 1791226905902,
   "pending": 1790701456835,
   "prodDer": 1791156656253,
   "runners": 1791156606865,
@@ -50503,6 +50504,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1791226909952,
+   "u": "Julio Collins",
+   "a": "Facture n°253144 modifiée (lignes retouchées)"
+  },
   {
    "t": 1791226866563,
    "u": "Julio Collins",
@@ -51997,11 +52003,6 @@
    "t": 1790372169898,
    "u": "?",
    "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1790371747678,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
   }
  ],
  "prodDer": {
@@ -52478,7 +52479,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-05T19:01:46.522Z",
+  "maj": "2026-10-05T19:01:50.879Z",
   "semaine": 41,
   "totalBarils": 0,
   "ca": 0,
