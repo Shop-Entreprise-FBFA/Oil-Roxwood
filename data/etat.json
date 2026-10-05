@@ -10851,6 +10851,20 @@
     "quantite": 250,
     "qui": "William Rodriguez-Collins",
     "fact": 253142
+   },
+   {
+    "date": "2026-10-05",
+    "client": "Les Ricains",
+    "quantite": 150,
+    "qui": "Emma Collins-rodriguez",
+    "fact": 253143
+   },
+   {
+    "date": "2026-10-05",
+    "client": "Les Ricains",
+    "quantite": 150,
+    "qui": "William Rodriguez-Collins",
+    "fact": 253143
    }
   ],
   "collection": [
@@ -13131,7 +13145,7 @@
     "rib": "",
     "tel": "555 574 601",
     "adresse": "Los santos",
-    "lastCmd": "2026-09-27"
+    "lastCmd": "2026-10-05"
    },
    {
     "nom": "los caballeros de la muerte",
@@ -13715,8 +13729,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253143,
+  "compteur": 253144,
   "factures": [
+   {
+    "num": 253143,
+    "date": "2026-10-05",
+    "client": "Les Ricains",
+    "emetteur": "Emma Collins-rodriguez, William Rodriguez-Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 300,
+      "tva": 0.05,
+      "pu": 180,
+      "ht": 54000,
+      "ttc": 56700,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 54000,
+    "ttc": 56700,
+    "poids": 600,
+    "statut": "attente"
+   },
    {
     "num": 253142,
     "date": "2026-10-05",
@@ -16811,6 +16848,14 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T20:11:53.537Z"
+  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -16834,14 +16879,6 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T00:06:23.240Z"
-  },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -50464,15 +50501,15 @@
   "postesV4": 1,
   "semaineDebut": "2026-10-05"
  },
- "_cid": "fme2g2xn6qn",
- "_maj": 1791205194525,
- "_rev": "zn5am2jmz7j-muv9buhw",
+ "_cid": "aoe0ju2oe1p",
+ "_maj": 1791205226266,
+ "_rev": "xraefusiar-muv9cf4n",
  "_majSec": {
   "fer": 1791146712296,
-  "fact": 1791205171965,
+  "fact": 1791205226199,
   "users": 1791146125633,
   "weeks": 1791156592285,
-  "sheets": 1791205171965,
+  "sheets": 1791205226199,
   "_qcFix1": 1790701456835,
   "_wkFix1": 1790701456835,
   "journal": 1791156652389,
@@ -50489,7 +50526,7 @@
   "primesExtra": 1791156592285,
   "quotasComHist": 1791156592285,
   "profils": 1790701553168,
-  "_tables": 1791205194525,
+  "_tables": 1791205225175,
   "_permsFix1": 1790701456835,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1790701456835,
@@ -52481,13 +52518,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-05T13:00:00.932Z",
+  "maj": "2026-10-05T13:00:27.671Z",
   "semaine": 41,
   "totalBarils": 0,
   "ca": 0,
   "objectif": 375000,
   "effectif": 80,
-  "clientsServis": 128,
+  "clientsServis": 129,
   "top3": [],
   "runners": [],
   "produits": [
@@ -176970,11 +177007,11 @@
     "id": 1791205135611
    },
    {
-    "uid": "826526979204841482",
-    "nom": "Diego Herrera",
-    "role": "direction",
-    "vu": "2026-10-05T12:59:54.524Z",
-    "id": 1791205197073
+    "uid": "1053366471574687844",
+    "nom": "Emma Collins",
+    "role": "respcom",
+    "vu": "2026-10-05T13:00:25.175Z",
+    "id": 1791205225496
    }
   ],
   "oilroxwood_demandes": [],
