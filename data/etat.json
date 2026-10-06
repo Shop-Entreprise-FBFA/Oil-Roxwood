@@ -10884,6 +10884,27 @@
     "client": "Citoyen ⚡",
     "quantite": 10,
     "qui": "Laurent Roquel"
+   },
+   {
+    "date": "2026-10-06",
+    "client": "LTD Strawberry",
+    "quantite": 167,
+    "qui": "Diego Herrera",
+    "fact": 253145
+   },
+   {
+    "date": "2026-10-06",
+    "client": "LTD Strawberry",
+    "quantite": 167,
+    "qui": "Bjorn Frost",
+    "fact": 253145
+   },
+   {
+    "date": "2026-10-06",
+    "client": "LTD Strawberry",
+    "quantite": 166,
+    "qui": "Stella Collins",
+    "fact": 253145
    }
   ],
   "collection": [
@@ -13229,7 +13250,7 @@
     "rib": "20020",
     "tel": "930",
     "adresse": "Los Santos",
-    "lastCmd": "2026-10-03"
+    "lastCmd": "2026-10-06"
    },
    {
     "nom": "Lunapark Billard",
@@ -13567,8 +13588,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253145,
+  "compteur": 253146,
   "factures": [
+   {
+    "num": 253145,
+    "date": "2026-10-06",
+    "client": "LTD Strawberry",
+    "emetteur": "Diego Herrera, Bjorn Frost, Stella Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 500,
+      "tva": 0,
+      "pu": 180,
+      "ht": 90000,
+      "ttc": 90000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 90000,
+    "ttc": 90000,
+    "poids": 1000,
+    "statut": "attente"
+   },
    {
     "num": 253144,
     "date": "2026-10-05",
@@ -50564,15 +50608,15 @@
   "postesV4": 1,
   "semaineDebut": "2026-10-05"
  },
- "_cid": "f09zd0z5slk",
- "_maj": 1791323405817,
- "_rev": "wox3nhp79k-mux7pfxe",
+ "_cid": "fpvmbu1re9g",
+ "_maj": 1791323412697,
+ "_rev": "x6qcfvpym4m-mux7pic9",
  "_majSec": {
   "fer": 1791311688482,
-  "fact": 1791281022303,
+  "fact": 1791323412656,
   "users": 1791226862513,
   "weeks": 1791156592285,
-  "sheets": 1791309845689,
+  "sheets": 1791323412656,
   "_qcFix1": 1790701456835,
   "_wkFix1": 1790701456835,
   "journal": 1791311746852,
@@ -52556,13 +52600,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-06T21:50:08.354Z",
+  "maj": "2026-10-06T21:50:11.481Z",
   "semaine": 41,
   "totalBarils": 0,
   "ca": 0,
   "objectif": 375000,
   "effectif": 81,
-  "clientsServis": 130,
+  "clientsServis": 131,
   "top3": [],
   "runners": [],
   "produits": [
