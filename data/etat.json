@@ -4836,6 +4836,20 @@
  "sheets": {
   "rh": [
    {
+    "nom": "Dylan Iko",
+    "grade": "Intérimaire",
+    "tel": "555 477 917",
+    "rib": "444666",
+    "idU": "70340",
+    "arrivee": "2026-10-05",
+    "discord": "325914226789056514",
+    "avert": "",
+    "contrat": true,
+    "recrut": "Diego Herrera",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
     "nom": "Ragnar Gomez",
     "grade": "Intérimaire",
     "tel": "555 200 718",
@@ -50466,18 +50480,18 @@
   "postesV4": 1,
   "semaineDebut": "2026-10-05"
  },
- "_cid": "fpvmbu1re9g",
- "_maj": 1791291832739,
- "_rev": "nua2z6auhhh-muwowrub",
+ "_cid": "z90qd7r1udg",
+ "_maj": 1791291843974,
+ "_rev": "u93pakgyax-muwowxca",
  "_majSec": {
   "fer": 1791218008551,
   "fact": 1791281022303,
   "users": 1791226862513,
   "weeks": 1791156592285,
-  "sheets": 1791290230543,
+  "sheets": 1791291835626,
   "_qcFix1": 1790701456835,
   "_wkFix1": 1790701456835,
-  "journal": 1791276263893,
+  "journal": 1791291835626,
   "pending": 1790701456835,
   "prodDer": 1791156656253,
   "runners": 1791156606865,
@@ -50491,7 +50505,7 @@
   "primesExtra": 1791156592285,
   "quotasComHist": 1791156592285,
   "profils": 1790701553168,
-  "_tables": 1791291832739,
+  "_tables": 1791291843974,
   "_permsFix1": 1790701456835,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1790701456835,
@@ -50499,15 +50513,25 @@
   "_affFix1": 1790701456835,
   "produits": 1790701456835,
   "_prodFix1": 1790701456835,
-  "_recruesIgnore": 1791152874693,
+  "_recruesIgnore": 1791291835566,
   "ventesAlias": 1790701456835,
   "_ventesIgnore": 1790701456835,
   "_avertVus": 1790701456835,
-  "_signeVus": 1791205302580
+  "_signeVus": 1791291835626
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1791291836231,
+   "u": "Diego Herrera",
+   "a": "Contrat(s) signé(s) via Discord : Dylan Iko"
+  },
+  {
+   "t": 1791291836171,
+   "u": "Diego Herrera",
+   "a": "Recrutements Discord : 1 fiche(s) créée(s), 0 case(s) complétée(s) — Dylan Iko"
+  },
   {
    "t": 1791276264421,
    "u": "Diego Herrera",
@@ -51997,16 +52021,6 @@
    "t": 1790372779472,
    "u": "?",
    "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1790372385509,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1790372385295,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
   }
  ],
  "prodDer": {
@@ -52503,12 +52517,12 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-06T13:03:57.683Z",
+  "maj": "2026-10-06T13:04:04.810Z",
   "semaine": 41,
   "totalBarils": 0,
   "ca": 0,
   "objectif": 375000,
-  "effectif": 80,
+  "effectif": 81,
   "clientsServis": 130,
   "top3": [],
   "runners": [],
@@ -180702,18 +180716,25 @@
     "id": 1791291668414
    },
    {
-    "uid": "948542221429379112",
-    "nom": "Stella Collins",
-    "role": "direction",
-    "vu": "2026-10-06T13:02:52.742Z",
-    "id": 1791291772469
+    "uid": "707695913187016785",
+    "nom": "Laurent Roquel",
+    "role": "commercial",
+    "vu": "2026-10-06T13:02:46.833Z",
+    "id": 1791291767835
    },
    {
-    "uid": "948542221429379112",
-    "nom": "Stella Collins",
+    "uid": "707695913187016785",
+    "nom": "Laurent Roquel",
+    "role": "commercial",
+    "vu": "2026-10-06T13:03:46.836Z",
+    "id": 1791291827583
+   },
+   {
+    "uid": "826526979204841482",
+    "nom": "Diego Herrera",
     "role": "direction",
-    "vu": "2026-10-06T13:03:52.739Z",
-    "id": 1791291831996
+    "vu": "2026-10-06T13:04:03.974Z",
+    "id": 1791291844806
    }
   ],
   "oilroxwood_demandes": [],
@@ -182989,7 +183010,8 @@
   "1791138885536",
   "1791145784744",
   "1791145817848",
-  "1789569907304"
+  "1789569907304",
+  "1791225142385"
  ],
  "_signeVus": [
   "1789477305650",
@@ -183047,7 +183069,8 @@
   "1791138888444",
   "1791138896868",
   "1791145804608",
-  "1791145834594"
+  "1791145834594",
+  "1791225158104"
  ],
  "_agSupp": [
   "1789145270913"
