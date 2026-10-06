@@ -1,11 +1,32 @@
 {
- "maj": "2026-10-05T23:59:46.146215+00:00",
+ "maj": "2026-10-06T00:01:44.820722+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1556818414792736852",
+   "t": "2026-10-06T00:00:34.374000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 5631\nplayerDiscord : 320960786086363138\nplayerName : LoudToad4942\nplayerCharacter : Jacques Zitouning\nplayerId : 381272\nvehiclePlate : AY0298ZV\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Jacques Zitouning",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "5631",
+    "playerdiscord": "320960786086363138",
+    "playername": "LoudToad4942",
+    "playercharacter": "Jacques Zitouning",
+    "playerid": "381272",
+    "vehicleplate": "AY0298ZV",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1556817396809863184-0",
    "t": "2026-10-05T23:56:31.668000+00:00",
@@ -95463,30 +95484,6 @@
    "texte": "Coffre\na retiré 130x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1848.25, 6499.70, 16.73\ntargetPosition : -1849.11, 6498.65, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 264\nplayerDiscord : 593431852291850281\nplayerName : llKyZerxll\nplayerCharacter : Tyler Collins\nplayerId : 209236\nitemId : refinedoil",
    "nom": "Tyler Collins",
    "quantite": 130,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1848.25, 6499.70, 16.73",
-    "targetposition": "-1849.11, 6498.65, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "264",
-    "playerdiscord": "593431852291850281",
-    "playername": "llKyZerxll",
-    "playercharacter": "Tyler Collins",
-    "playerid": "209236",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1556686534156091396-3",
-   "t": "2026-10-05T15:16:31.580000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 110x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1848.25, 6499.70, 16.73\ntargetPosition : -1849.11, 6498.65, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 264\nplayerDiscord : 593431852291850281\nplayerName : llKyZerxll\nplayerCharacter : Tyler Collins\nplayerId : 209236\nitemId : refinedoil",
-   "nom": "Tyler Collins",
-   "quantite": 110,
    "montant": null,
    "type": "coffre_retrait",
    "salon": "1245400913066066099",
