@@ -1,11 +1,35 @@
 {
- "maj": "2026-10-06T03:45:44.075700+00:00",
+ "maj": "2026-10-06T03:47:44.553468+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1556875277781700669",
+   "t": "2026-10-06T03:46:31.567000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 80x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1842.96, 6518.28, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6142\nplayerDiscord : 1056044944571248710\nplayerName : Denzel DAVID\nplayerCharacter : Kazuki Ishikawa\nplayerId : 368391\nitemId : refinedoil",
+   "nom": "Kazuki Ishikawa",
+   "quantite": 80,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1842.96, 6518.28, 16.73",
+    "targetposition": "-1843.83, 6518.10, 15.74",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "6142",
+    "playerdiscord": "1056044944571248710",
+    "playername": "Denzel DAVID",
+    "playercharacter": "Kazuki Ishikawa",
+    "playerid": "368391",
+    "itemid": "refinedoil"
+   }
+  },
   {
    "id": "1556865966531416158-0",
    "t": "2026-10-06T03:09:31.592000+00:00",
@@ -95454,22 +95478,6 @@
     "playercharacter": "Diego Herrera",
     "playerid": "231487",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1556688587876204766",
-   "t": "2026-10-05T15:24:41.225000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 631x Pétrole Raffiné pour 6310$ par Diego Herrera. 3155$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 631,
-   "montant": 6310,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
