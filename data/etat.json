@@ -50510,9 +50510,9 @@
   "postesV4": 1,
   "semaineDebut": "2026-10-05"
  },
- "_cid": "yizdjaurhos",
- "_maj": 1791306477833,
- "_rev": "rrhq02b7fh-muwxnj9w",
+ "_cid": "f09zd0z5slk",
+ "_maj": 1791306558411,
+ "_rev": "h8uc8to2qpu-muwxobpf",
  "_majSec": {
   "fer": 1791306240500,
   "fact": 1791281022303,
@@ -50521,9 +50521,9 @@
   "sheets": 1791300752240,
   "_qcFix1": 1790701456835,
   "_wkFix1": 1790701456835,
-  "journal": 1791306297612,
+  "journal": 1791306558411,
   "pending": 1790701456835,
-  "prodDer": 1791306425478,
+  "prodDer": 1791306558411,
   "runners": 1791156606865,
   "absences": 1791276263893,
   "imported": 1790701456835,
@@ -50535,7 +50535,7 @@
   "primesExtra": 1791156592285,
   "quotasComHist": 1791156592285,
   "profils": 1790701553168,
-  "_tables": 1791306477833,
+  "_tables": 1791306553589,
   "_permsFix1": 1790701456835,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1790701456835,
@@ -50552,6 +50552,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1791306558727,
+   "u": "Diego Herrera",
+   "a": "Produits dérivés : colonne « Bagues » supprimée"
+  },
   {
    "t": 1791306241177,
    "u": "Laurent Roquel",
@@ -52046,19 +52051,10 @@
    "t": 1790374087778,
    "u": "Julio Collins",
    "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1790374087567,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
   }
  ],
  "prodDer": {
   "cols": [
-   {
-    "n": "Bagues",
-    "p": 12000
-   },
    {
     "n": "Bracelets",
     "p": 12000
@@ -52095,7 +52091,6 @@
   "rows": [
    {
     "q": {
-     "Bagues": 0,
      "Bracelets": 0,
      "bracelets + bagues": 1,
      "Octobre Rose 2K26": 0
@@ -52111,9 +52106,7 @@
     "date": "2026-07-27"
    },
    {
-    "q": {
-     "Bagues": 1
-    },
+    "q": {},
     "qui": "Stella Collins",
     "date": "2026-07-27"
    },
@@ -52134,7 +52127,6 @@
    },
    {
     "q": {
-     "Bagues": 0,
      "Bracelets": 0,
      "bracelets + bagues": 1
     },
@@ -52164,7 +52156,6 @@
    },
    {
     "q": {
-     "Bagues": 1,
      "bracelets + bagues": 1
     },
     "qui": "Julio Collins",
@@ -52186,7 +52177,6 @@
    },
    {
     "q": {
-     "Bagues": 2,
      "bracelets + bagues": 1
     },
     "qui": "Diego Herrera",
@@ -52222,7 +52212,6 @@
    },
    {
     "q": {
-     "Bagues": 0,
      "Bracelets": 0,
      "bracelets + bagues": 1
     },
@@ -52408,7 +52397,6 @@
     "date": "2026-09-19",
     "qui": "Stella Collins",
     "q": {
-     "Bagues": 1,
      "bracelets + bagues": 1
     }
    },
@@ -52584,7 +52572,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-06T17:08:43.220Z",
+  "maj": "2026-10-06T17:09:20.067Z",
   "semaine": 41,
   "totalBarils": 0,
   "ca": 0,
@@ -182083,6 +182071,13 @@
     "role": "commercial",
     "vu": "2026-10-06T17:07:57.833Z",
     "id": 1791306479096
+   },
+   {
+    "uid": "826526979204841482",
+    "nom": "Diego Herrera",
+    "role": "direction",
+    "vu": "2026-10-06T17:09:13.589Z",
+    "id": 1791306554024
    }
   ],
   "oilroxwood_demandes": [],
