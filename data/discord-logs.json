@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-06T22:37:51.031308+00:00",
+ "maj": "2026-10-06T22:39:49.115215+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1557160202623787079",
+   "t": "2026-10-06T22:38:42.943000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 749x Pétrole Raffiné pour 7490$ par Samantha Rodriguez. 3745$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 749,
+   "montant": 7490,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1557157136763715686",
    "t": "2026-10-06T22:26:31.985000+00:00",
@@ -95425,30 +95441,6 @@
    "texte": "Coffre\ndépot de 5x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3090.11, 6818.36, 44.73\ntargetPosition : -3090.06, 6818.50, 43.97\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 264\nplayerDiscord : 593431852291850281\nplayerName : llKyZerxll\nplayerCharacter : Tyler Collins\nplayerId : 209236\nitemId : oil",
    "nom": "Tyler Collins",
    "quantite": 5,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-3090.11, 6818.36, 44.73",
-    "targetposition": "-3090.06, 6818.50, 43.97",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "264",
-    "playerdiscord": "593431852291850281",
-    "playername": "llKyZerxll",
-    "playercharacter": "Tyler Collins",
-    "playerid": "209236",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1556786190944833754-0",
-   "t": "2026-10-05T21:52:31.610000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 7x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3090.11, 6818.36, 44.73\ntargetPosition : -3090.06, 6818.50, 43.97\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 264\nplayerDiscord : 593431852291850281\nplayerName : llKyZerxll\nplayerCharacter : Tyler Collins\nplayerId : 209236\nitemId : oil",
-   "nom": "Tyler Collins",
-   "quantite": 7,
    "montant": null,
    "type": "coffre_depot",
    "salon": "1245400913066066099",
