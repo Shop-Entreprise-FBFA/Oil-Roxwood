@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-07T04:23:46.255930+00:00",
+ "maj": "2026-10-07T04:25:50.720994+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1557247206745047104",
+   "t": "2026-10-07T04:24:26.342000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 288x Pétrole Raffiné pour 2880$ par Elliot Adkins. 1440$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 288,
+   "montant": 2880,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1557239657971056713",
    "t": "2026-10-07T03:54:26.574000+00:00",
@@ -95347,30 +95363,6 @@
   },
   {
    "id": "1556788208380022788-8",
-   "t": "2026-10-05T22:00:32.604000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 65x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1851.52, 6502.48, 16.73\ntargetPosition : -1851.46, 6502.05, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 521\nplayerDiscord : 826526979204841482\nplayerName : JumpyNewt1770\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : oil",
-   "nom": "Diego Herrera",
-   "quantite": 65,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1851.52, 6502.48, 16.73",
-    "targetposition": "-1851.46, 6502.05, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "521",
-    "playerdiscord": "826526979204841482",
-    "playername": "JumpyNewt1770",
-    "playercharacter": "Diego Herrera",
-    "playerid": "231487",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1556788208380022788-9",
    "t": "2026-10-05T22:00:32.604000+00:00",
    "auteur": "Logs - Coffre",
    "texte": "Coffre\ndépot de 65x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1851.52, 6502.48, 16.73\ntargetPosition : -1851.46, 6502.05, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 521\nplayerDiscord : 826526979204841482\nplayerName : JumpyNewt1770\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : oil",
