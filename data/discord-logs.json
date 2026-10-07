@@ -1,11 +1,35 @@
 {
- "maj": "2026-10-07T16:49:50.212432+00:00",
+ "maj": "2026-10-07T16:51:52.557355+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1557434964859949107",
+   "t": "2026-10-07T16:50:31.365000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\na retiré 156x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1843.49, 6517.62, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1688\nplayerDiscord : 1011466363598012457\nplayerName : BlackHornet27\nplayerCharacter : Ryan Brooks\nplayerId : 251211\nitemId : refinedoil",
+   "nom": "Ryan Brooks",
+   "quantite": 156,
+   "montant": null,
+   "type": "coffre_retrait",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1843.49, 6517.62, 16.73",
+    "targetposition": "-1843.83, 6518.10, 15.74",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "1688",
+    "playerdiscord": "1011466363598012457",
+    "playername": "BlackHornet27",
+    "playercharacter": "Ryan Brooks",
+    "playerid": "251211",
+    "itemid": "refinedoil"
+   }
+  },
   {
    "id": "1557434491772076214",
    "t": "2026-10-07T16:48:38.572000+00:00",
@@ -95194,30 +95218,6 @@
     "playername": "ShySpider2463",
     "playercharacter": "Laurent Roquel",
     "playerid": "282695",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1557010668606197770-8",
-   "t": "2026-10-06T12:44:31.255000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 7x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3090.41, 6818.41, 44.73\ntargetPosition : -3090.06, 6818.50, 43.97\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6887\nplayerDiscord : 593431852291850281\nplayerName : BoldFish7448\nplayerCharacter : Tyler Collins\nplayerId : 209236\nitemId : oil",
-   "nom": "Tyler Collins",
-   "quantite": 7,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-3090.41, 6818.41, 44.73",
-    "targetposition": "-3090.06, 6818.50, 43.97",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6887",
-    "playerdiscord": "593431852291850281",
-    "playername": "BoldFish7448",
-    "playercharacter": "Tyler Collins",
-    "playerid": "209236",
     "itemid": "oil"
    }
   }
