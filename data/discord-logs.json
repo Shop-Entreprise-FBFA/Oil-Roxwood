@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-07T10:19:52.078800+00:00",
+ "maj": "2026-10-07T10:21:48.517997+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1557336555863937035",
+   "t": "2026-10-07T10:19:28.832000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 496x Pétrole Raffiné pour 4960$ par Jayson Simth. 2480$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 496,
+   "montant": 4960,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1557335556516487260",
    "t": "2026-10-07T10:15:30.569000+00:00",
@@ -95300,30 +95316,6 @@
    "coffre": "entreprise (Oil RoxWood)",
    "champs": {
     "position": "-1844.33, 6516.87, 16.73",
-    "targetposition": "-1844.79, 6516.31, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "5288",
-    "playerdiscord": "583022533377523754",
-    "playername": "Dreanne",
-    "playercharacter": "Sarah Dute",
-    "playerid": "380792",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1556812865585938535-1",
-   "t": "2026-10-05T23:38:31.340000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 148x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1844.22, 6517.06, 16.73\ntargetPosition : -1844.79, 6516.31, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 5288\nplayerDiscord : 583022533377523754\nplayerName : Dreanne\nplayerCharacter : Sarah Dute\nplayerId : 380792\nitemId : refinedoil",
-   "nom": "Sarah Dute",
-   "quantite": 148,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1844.22, 6517.06, 16.73",
     "targetposition": "-1844.79, 6516.31, 15.75",
     "jobid": "76",
     "jobname": "Oil RoxWood",
