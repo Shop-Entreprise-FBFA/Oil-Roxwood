@@ -6446,6 +6446,12 @@
   ],
   "compta": [
    {
+    "type": "Dépense déductible",
+    "date": "",
+    "justif": "",
+    "montant": 0
+   },
+   {
     "type": "Retrait",
     "date": "2026-09-27",
     "justif": "Objet de collection Ltd paleto / WWI",
@@ -51304,14 +51310,14 @@
   "semaineDebut": "2026-10-05"
  },
  "_cid": "f09zd0z5slk",
- "_maj": 1791368189168,
- "_rev": "b04pp730su-muxydbeb",
+ "_maj": 1791368201567,
+ "_rev": "57hrcghe1go-muxydju9",
  "_majSec": {
   "fer": 1791311688482,
   "fact": 1791323412656,
   "users": 1791226862513,
   "weeks": 1791156592285,
-  "sheets": 1791368189094,
+  "sheets": 1791368197329,
   "_qcFix1": 1790701456835,
   "_wkFix1": 1790701456835,
   "journal": 1791311746852,
@@ -51328,7 +51334,7 @@
   "primesExtra": 1791156592285,
   "quotasComHist": 1791156592285,
   "profils": 1790701553168,
-  "_tables": 1791368180649,
+  "_tables": 1791368201567,
   "_permsFix1": 1790701456835,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1790701456835,
@@ -53295,7 +53301,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-07T10:16:32.243Z",
+  "maj": "2026-10-07T10:16:43.185Z",
   "semaine": 41,
   "totalBarils": 75084,
   "ca": 375420,
@@ -185082,6 +185088,13 @@
     "role": "commercial",
     "vu": "2026-10-07T10:16:20.649Z",
     "id": 1791368182488
+   },
+   {
+    "uid": "826526979204841482",
+    "nom": "Diego Herrera",
+    "role": "direction",
+    "vu": "2026-10-07T10:16:41.566Z",
+    "id": 1791368203142
    }
   ],
   "oilroxwood_demandes": [],
