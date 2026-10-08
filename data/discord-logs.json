@@ -1,11 +1,35 @@
 {
- "maj": "2026-10-08T13:59:52.558473+00:00",
+ "maj": "2026-10-08T14:01:48.744315+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1557754571164618853",
+   "t": "2026-10-08T14:00:31.446000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\na retiré 30x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -1842.11, 6520.73, 16.73\ntargetPosition : -1842.58, 6521.16, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7351\nplayerDiscord : 235844738656239616\nplayerName : Wiken\nplayerCharacter : William Rodriguez-collins\nplayerId : 46658\nitemId : oil",
+   "nom": "William Rodriguez-collins",
+   "quantite": 30,
+   "montant": null,
+   "type": "coffre_retrait",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1842.11, 6520.73, 16.73",
+    "targetposition": "-1842.58, 6521.16, 15.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "7351",
+    "playerdiscord": "235844738656239616",
+    "playername": "Wiken",
+    "playercharacter": "William Rodriguez-collins",
+    "playerid": "46658",
+    "itemid": "oil"
+   }
+  },
   {
    "id": "1557754069836111967-0",
    "t": "2026-10-08T13:58:31.920000+00:00",
@@ -95077,30 +95101,6 @@
     "playername": "MoonBiirr",
     "playercharacter": "Hassan Cheb",
     "playerid": "321847",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1557323709109239872",
-   "t": "2026-10-07T09:28:25.927000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 42x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1843.37, 6517.82, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6400\nplayerDiscord : 228152737701822465\nplayerName : SONIK\nplayerCharacter : Cristóbal Perrera\nplayerId : 379487\nitemId : refinedoil",
-   "nom": "Cristóbal Perrera",
-   "quantite": 42,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1843.37, 6517.82, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6400",
-    "playerdiscord": "228152737701822465",
-    "playername": "SONIK",
-    "playercharacter": "Cristóbal Perrera",
-    "playerid": "379487",
     "itemid": "refinedoil"
    }
   }
