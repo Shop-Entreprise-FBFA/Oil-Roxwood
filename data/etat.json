@@ -17582,6 +17582,22 @@
    "public": true,
    "maj": "2026-09-16T11:47:16.417Z"
   },
+  "stella collins": {
+   "nom": "Stella Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-14T13:20:17.287Z"
+  },
+  "julio collins": {
+   "nom": "Julio Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T00:06:23.240Z"
+  },
   "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿": {
    "nom": "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿",
    "photo": "",
@@ -17598,14 +17614,6 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
-  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -17614,21 +17622,13 @@
    "public": true,
    "maj": "2026-09-12T16:48:15.042Z"
   },
-  "stella collins": {
-   "nom": "Stella Collins",
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
    "photo": "",
    "titre": "",
    "bio": "",
    "public": true,
-   "maj": "2026-09-14T13:20:17.287Z"
-  },
-  "julio collins": {
-   "nom": "Julio Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T00:06:23.240Z"
+   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -51563,18 +51563,18 @@
   "postesV4": 1,
   "semaineDebut": "2026-10-05"
  },
- "_cid": "qeu80l9rj1",
- "_maj": 1791495160441,
- "_rev": "6ew64naqtov-mv01yrye",
+ "_cid": "tdo4psjhe9",
+ "_maj": 1791495198925,
+ "_rev": "4prid2fqedr-mv01zlzf",
  "_majSec": {
   "fer": 1791480273708,
   "fact": 1791491324808,
-  "users": 1791491319598,
+  "users": 1791495196789,
   "weeks": 1791156592285,
   "sheets": 1791490836606,
   "_qcFix1": 1790701456835,
   "_wkFix1": 1790701456835,
-  "journal": 1791491319598,
+  "journal": 1791495196789,
   "pending": 1790701456835,
   "prodDer": 1791490568663,
   "runners": 1791449384375,
@@ -51582,13 +51582,13 @@
   "imported": 1790701456835,
   "settings": 1791156592285,
   "closeUndo": 1791156592285,
-  "quotasCom": 1791397259413,
+  "quotasCom": 1791495198925,
   "bilanExtra": 1791449428203,
   "bilanForce": 1790701456835,
   "primesExtra": 1791156592285,
   "quotasComHist": 1791156592285,
   "profils": 1790701553168,
-  "_tables": 1791495160441,
+  "_tables": 1791495196652,
   "_permsFix1": 1790701456835,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1790701456835,
@@ -51605,6 +51605,16 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1791495197435,
+   "u": "Julio Collins",
+   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
+  },
+  {
+   "t": 1791495197215,
+   "u": "?",
+   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
+  },
   {
    "t": 1791491320363,
    "u": "Julio Collins",
@@ -53094,16 +53104,6 @@
    "t": 1790434072582,
    "u": "Emma Collins",
    "a": "Achats de fer : 32 relevé(s) repris du salon"
-  },
-  {
-   "t": 1790434071452,
-   "u": "Emma Collins",
-   "a": "Éligibilité : 2 grade(s) réalignés sur l'effectif — Julio Collins : Commercial → Responsable Commercial · Fred Montaigu : Raffineur → Intérimaire"
-  },
-  {
-   "t": 1790406209114,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
   }
  ],
  "prodDer": {
@@ -53438,7 +53438,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-08T21:32:44.678Z",
+  "maj": "2026-10-08T21:33:23.596Z",
   "semaine": 41,
   "totalBarils": 97754,
   "ca": 488770,
@@ -53569,9 +53569,9 @@
  "quotasCom": {
   "sem": 41,
   "achats": {},
-  "vendus": 2510,
-  "parPers": 502,
-  "ferPers": 1004
+  "vendus": 3129,
+  "parPers": 626,
+  "ferPers": 1252
  },
  "bilanExtra": [
   {
@@ -191376,6 +191376,13 @@
     "role": "respcom",
     "vu": "2026-10-08T21:32:40.441Z",
     "id": 1791495161115
+   },
+   {
+    "uid": "767332288744128512",
+    "nom": "Julio Collins",
+    "role": "commercial",
+    "vu": "2026-10-08T21:33:16.571Z",
+    "id": 1791495198040
    }
   ],
   "oilroxwood_demandes": [],
