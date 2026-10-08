@@ -11658,6 +11658,13 @@
     "client": "Citoyen ⚡",
     "quantite": 19,
     "qui": "Laurent Roquel"
+   },
+   {
+    "date": "2026-10-08",
+    "client": "Burger Shot Nord",
+    "quantite": 300,
+    "qui": "Laurent Roquel",
+    "fact": 253147
    }
   ],
   "collection": [
@@ -13312,7 +13319,7 @@
     "rib": "20051",
     "tel": "961",
     "adresse": "Sandy shores",
-    "lastCmd": "2026-08-25"
+    "lastCmd": "2026-10-08"
    },
    {
     "nom": "Burning Bush",
@@ -14348,8 +14355,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253147,
+  "compteur": 253148,
   "factures": [
+   {
+    "num": 253147,
+    "date": "2026-10-08",
+    "client": "Burger Shot Nord",
+    "emetteur": "Laurent Roquel",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 300,
+      "tva": 0,
+      "pu": 180,
+      "ht": 54000,
+      "ttc": 54000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 54000,
+    "ttc": 54000,
+    "poids": 600,
+    "statut": "attente"
+   },
    {
     "num": 253146,
     "date": "2026-10-07",
@@ -17538,14 +17568,6 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
-  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -17569,6 +17591,14 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T00:06:23.240Z"
+  },
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -51503,15 +51533,15 @@
   "postesV4": 1,
   "semaineDebut": "2026-10-05"
  },
- "_cid": "qeu80l9rj1",
- "_maj": 1791481840317,
- "_rev": "u8dv4325gmh-muzu1a38",
+ "_cid": "q9isc1p41rm",
+ "_maj": 1791481867956,
+ "_rev": "me2a4bw6qtd-muzu1smy",
  "_majSec": {
   "fer": 1791480273708,
-  "fact": 1791466603822,
+  "fact": 1791481867905,
   "users": 1791466595726,
   "weeks": 1791156592285,
-  "sheets": 1791481331052,
+  "sheets": 1791481867905,
   "_qcFix1": 1790701456835,
   "_wkFix1": 1790701456835,
   "journal": 1791481331052,
@@ -53371,13 +53401,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-08T17:50:44.564Z",
+  "maj": "2026-10-08T17:51:08.602Z",
   "semaine": 41,
   "totalBarils": 97754,
   "ca": 488770,
   "objectif": 375000,
   "effectif": 85,
-  "clientsServis": 132,
+  "clientsServis": 133,
   "top3": [
    {
     "nom": "Tyler Collins",
