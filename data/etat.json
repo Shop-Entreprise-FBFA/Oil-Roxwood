@@ -11665,6 +11665,13 @@
     "quantite": 300,
     "qui": "Laurent Roquel",
     "fact": 253147
+   },
+   {
+    "date": "2026-10-08",
+    "client": "Horizon biotech",
+    "quantite": 300,
+    "qui": "Julio Collins",
+    "fact": 253148
    }
   ],
   "collection": [
@@ -13184,7 +13191,7 @@
     "rib": "21182",
     "tel": "2092",
     "adresse": "Sandy Shore",
-    "lastCmd": "2026-09-20"
+    "lastCmd": "2026-10-08"
    },
    {
     "nom": "404",
@@ -14355,8 +14362,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253148,
+  "compteur": 253149,
   "factures": [
+   {
+    "num": 253148,
+    "date": "2026-10-08",
+    "client": "Horizon biotech",
+    "emetteur": "Julio Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 300,
+      "tva": 0,
+      "pu": 180,
+      "ht": 54000,
+      "ttc": 54000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 54000,
+    "ttc": 54000,
+    "poids": 600,
+    "statut": "attente"
+   },
    {
     "num": 253147,
     "date": "2026-10-08",
@@ -17552,6 +17582,22 @@
    "public": true,
    "maj": "2026-09-16T11:47:16.417Z"
   },
+  "stella collins": {
+   "nom": "Stella Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-14T13:20:17.287Z"
+  },
+  "julio collins": {
+   "nom": "Julio Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T00:06:23.240Z"
+  },
   "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿": {
    "nom": "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿",
    "photo": "",
@@ -17575,22 +17621,6 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T16:48:15.042Z"
-  },
-  "stella collins": {
-   "nom": "Stella Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-14T13:20:17.287Z"
-  },
-  "julio collins": {
-   "nom": "Julio Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T00:06:23.240Z"
   },
   "william rodriguez-collins": {
    "nom": "William Rodriguez-collins",
@@ -51533,15 +51563,15 @@
   "postesV4": 1,
   "semaineDebut": "2026-10-05"
  },
- "_cid": "jiq9ugzlrde",
- "_maj": 1791490825708,
- "_rev": "pkdpl9m02x-muzzdw6w",
+ "_cid": "311tk83l9wn",
+ "_maj": 1791490836632,
+ "_rev": "dswmcgjrq35-muzze1iw",
  "_majSec": {
   "fer": 1791480273708,
-  "fact": 1791490038565,
+  "fact": 1791490836606,
   "users": 1791490802683,
   "weeks": 1791156592285,
-  "sheets": 1791481867905,
+  "sheets": 1791490836606,
   "_qcFix1": 1790701456835,
   "_wkFix1": 1790701456835,
   "journal": 1791490802683,
@@ -53408,13 +53438,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-08T20:20:31.160Z",
+  "maj": "2026-10-08T20:20:38.072Z",
   "semaine": 41,
   "totalBarils": 97754,
   "ca": 488770,
   "objectif": 375000,
   "effectif": 85,
-  "clientsServis": 133,
+  "clientsServis": 134,
   "top3": [
    {
     "nom": "Tyler Collins",
