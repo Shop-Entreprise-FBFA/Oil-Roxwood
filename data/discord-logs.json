@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-09T11:13:48.248079+00:00",
+ "maj": "2026-10-09T11:15:42.365163+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1558075150832762922",
+   "t": "2026-10-09T11:14:23.595000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 372x Pétrole Raffiné pour 3720$ par Diego Herrera. 1860$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 372,
+   "montant": 3720,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1558073133410549867-0",
    "t": "2026-10-09T11:06:22.604000+00:00",
@@ -94935,30 +94951,6 @@
    "texte": "Coffre\ndépot de 27x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3088.93, 6814.22, 44.73\ntargetPosition : -3089.68, 6814.50, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 424\nplayerDiscord : 235844738656239616\nplayerName : Wiken\nplayerCharacter : William Rodriguez-collins\nplayerId : 46658\nitemId : oil",
    "nom": "William Rodriguez-collins",
    "quantite": 27,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-3088.93, 6814.22, 44.73",
-    "targetposition": "-3089.68, 6814.50, 43.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "424",
-    "playerdiscord": "235844738656239616",
-    "playername": "Wiken",
-    "playercharacter": "William Rodriguez-collins",
-    "playerid": "46658",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1557419864472158272-2",
-   "t": "2026-10-07T15:50:31.152000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 4x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3088.93, 6814.22, 44.73\ntargetPosition : -3089.68, 6814.50, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 424\nplayerDiscord : 235844738656239616\nplayerName : Wiken\nplayerCharacter : William Rodriguez-collins\nplayerId : 46658\nitemId : oil",
-   "nom": "William Rodriguez-collins",
-   "quantite": 4,
    "montant": null,
    "type": "coffre_depot",
    "salon": "1245400913066066099",
