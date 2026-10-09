@@ -17669,6 +17669,14 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T20:11:53.537Z"
+  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -17692,14 +17700,6 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T00:06:23.240Z"
-  },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -51449,6 +51449,54 @@
    "quantite": 47,
    "montant": 235,
    "did": "767332288744128512"
+  },
+  {
+   "id": "1558148564570341488",
+   "t": "2026-10-09 18:06",
+   "nom": "Julio Collins",
+   "quantite": 64,
+   "montant": 320,
+   "did": "767332288744128512"
+  },
+  {
+   "id": "1558148331396534349:0",
+   "t": "2026-10-09 18:05",
+   "nom": "William Rodriguez-collins",
+   "quantite": 125,
+   "montant": 625,
+   "did": "235844738656239616"
+  },
+  {
+   "id": "1558148331396534349:1",
+   "t": "2026-10-09 18:05",
+   "nom": "William Rodriguez-collins",
+   "quantite": 125,
+   "montant": 625,
+   "did": "235844738656239616"
+  },
+  {
+   "id": "1558148331396534349:2",
+   "t": "2026-10-09 18:05",
+   "nom": "William Rodriguez-collins",
+   "quantite": 125,
+   "montant": 625,
+   "did": "235844738656239616"
+  },
+  {
+   "id": "1558148331396534349:3",
+   "t": "2026-10-09 18:05",
+   "nom": "William Rodriguez-collins",
+   "quantite": 125,
+   "montant": 625,
+   "did": "235844738656239616"
+  },
+  {
+   "id": "1558148331396534349:4",
+   "t": "2026-10-09 18:05",
+   "nom": "William Rodriguez-collins",
+   "quantite": 138,
+   "montant": 690,
+   "did": "235844738656239616"
   }
  ],
  "settings": {
@@ -51658,11 +51706,11 @@
   "postesV4": 1,
   "semaineDebut": "2026-10-05"
  },
- "_cid": "rmickq3jps",
- "_maj": 1791562024645,
- "_rev": "dbcfvlyodls-mv15ry62",
+ "_cid": "91e7owjii1m",
+ "_maj": 1791562065488,
+ "_rev": "v8nzrpr3gx-mv15ssff",
  "_majSec": {
-  "fer": 1791549429305,
+  "fer": 1791562065488,
   "fact": 1791561781819,
   "users": 1791561805628,
   "weeks": 1791156592285,
@@ -51683,7 +51731,7 @@
   "primesExtra": 1791156592285,
   "quotasComHist": 1791156592285,
   "profils": 1790701553168,
-  "_tables": 1791562024645,
+  "_tables": 1791562065388,
   "_permsFix1": 1790701456835,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1790701456835,
@@ -51700,6 +51748,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1791562065601,
+   "u": "William Rodriguez-collins",
+   "a": "Achats de fer : 6 relevé(s) repris du salon"
+  },
   {
    "t": 1791561808672,
    "u": "Julio Collins",
@@ -53194,11 +53247,6 @@
    "t": 1790451996170,
    "u": "Thomas Boyer",
    "a": "Recrutements Discord : 1 fiche(s) créée(s), 0 case(s) complétée(s) — vinchenzo waszcsykowski"
-  },
-  {
-   "t": 1790447278050,
-   "u": "William Rodriguez-collins",
-   "a": "Achats de fer : 6 relevé(s) repris du salon"
   }
  ],
  "prodDer": {
@@ -53533,7 +53581,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-09T16:07:10.778Z",
+  "maj": "2026-10-09T16:07:49.995Z",
   "semaine": 41,
   "totalBarils": 138297,
   "ca": 691485,
@@ -193802,6 +193850,13 @@
     "role": "direction",
     "vu": "2026-10-09T16:07:04.645Z",
     "id": 1791562023455
+   },
+   {
+    "uid": "235844738656239616",
+    "nom": "William Rodriguez-collins",
+    "role": "commercial",
+    "vu": "2026-10-09T16:07:45.388Z",
+    "id": 1791562065718
    }
   ],
   "oilroxwood_demandes": [],
