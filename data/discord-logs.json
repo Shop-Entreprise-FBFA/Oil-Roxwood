@@ -1,11 +1,35 @@
 {
- "maj": "2026-10-09T19:29:43.197747+00:00",
+ "maj": "2026-10-09T19:31:42.554276+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1558200139842330729",
+   "t": "2026-10-09T19:31:03.297000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\na retiré 32x Bidon d'essence du coffre de l'entreprise (Oil RoxWood)\nposition : -1815.23, 6565.61, 16.73\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 143\nplayerDiscord : 593431852291850281\nplayerName : BoldFish7448\nplayerCharacter : Tyler Collins\nplayerId : 209236\nitemId : weapon_petrolcan",
+   "nom": "Tyler Collins",
+   "quantite": 32,
+   "montant": null,
+   "type": "coffre_retrait",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1815.23, 6565.61, 16.73",
+    "targetposition": "-1815.66, 6565.56, 15.98",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "143",
+    "playerdiscord": "593431852291850281",
+    "playername": "BoldFish7448",
+    "playercharacter": "Tyler Collins",
+    "playerid": "209236",
+    "itemid": "weapon_petrolcan"
+   }
+  },
   {
    "id": "1558199617898680391",
    "t": "2026-10-09T19:28:58.856000+00:00",
@@ -94910,30 +94934,6 @@
     "playercharacter": "Stella Collins",
     "playerid": "232050",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1557745009137160228-3",
-   "t": "2026-10-08T13:22:31.681000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 38x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -1851.06, 6501.88, 16.73\ntargetPosition : -1851.46, 6502.05, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7092\nplayerDiscord : 948542221429379112\nplayerName : IcyToad7886\nplayerCharacter : Stella Collins\nplayerId : 232050\nitemId : oil",
-   "nom": "Stella Collins",
-   "quantite": 38,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1851.06, 6501.88, 16.73",
-    "targetposition": "-1851.46, 6502.05, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7092",
-    "playerdiscord": "948542221429379112",
-    "playername": "IcyToad7886",
-    "playercharacter": "Stella Collins",
-    "playerid": "232050",
-    "itemid": "oil"
    }
   }
  ]
