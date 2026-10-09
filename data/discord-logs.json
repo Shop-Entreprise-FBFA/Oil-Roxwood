@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-09T20:53:43.765235+00:00",
+ "maj": "2026-10-09T20:55:42.616053+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1558221017095217206",
+   "t": "2026-10-09T20:54:00.822000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 364x Pétrole Raffiné pour 3640$ par Stella Collins. 1820$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 364,
+   "montant": 3640,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1558220508141453374",
    "t": "2026-10-09T20:51:59.478000+00:00",
@@ -94877,30 +94893,6 @@
     "playername": "Wiken",
     "playercharacter": "William Rodriguez-collins",
     "playerid": "46658",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1557757596109111297",
-   "t": "2026-10-08T14:12:32.649000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 66x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1841.41, 6520.02, 16.73\ntargetPosition : -1842.58, 6521.16, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 8107\nplayerDiscord : 767332288744128512\nplayerName : JULIO COLLINS\nplayerCharacter : Julio Collins\nplayerId : 356873\nitemId : oil",
-   "nom": "Julio Collins",
-   "quantite": 66,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1841.41, 6520.02, 16.73",
-    "targetposition": "-1842.58, 6521.16, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "8107",
-    "playerdiscord": "767332288744128512",
-    "playername": "JULIO COLLINS",
-    "playercharacter": "Julio Collins",
-    "playerid": "356873",
     "itemid": "oil"
    }
   }
