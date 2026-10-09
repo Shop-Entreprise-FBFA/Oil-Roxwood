@@ -11806,6 +11806,13 @@
     "quantite": 100,
     "qui": "Julio Collins",
     "fact": 253150
+   },
+   {
+    "date": "2026-10-09",
+    "client": "Maja-13",
+    "quantite": 300,
+    "qui": "Julio Collins",
+    "fact": 253151
    }
   ],
   "collection": [
@@ -13206,7 +13213,8 @@
     "nom": "Maja-13",
     "adresse": "Los Santos",
     "tel": "",
-    "rib": ""
+    "rib": "",
+    "lastCmd": "2026-10-09"
    },
    {
     "nom": "Cayo News",
@@ -14502,8 +14510,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253151,
+  "compteur": 253152,
   "factures": [
+   {
+    "num": 253151,
+    "date": "2026-10-09",
+    "client": "Maja-13",
+    "emetteur": "Julio Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 300,
+      "tva": 0.05,
+      "pu": 180,
+      "ht": 54000,
+      "ttc": 56700,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 54000,
+    "ttc": 56700,
+    "poids": 600,
+    "statut": "attente"
+   },
    {
     "num": 253150,
     "date": "2026-10-09",
@@ -51911,14 +51942,14 @@
   "semaineDebut": "2026-10-05"
  },
  "_cid": "ax9quci8f6k",
- "_maj": 1791579743771,
- "_rev": "vth6hptd6m-mv1gbqx6",
+ "_maj": 1791579761008,
+ "_rev": "riucil0o68l-mv1gc221",
  "_majSec": {
   "fer": 1791576216183,
-  "fact": 1791578656907,
+  "fact": 1791579760982,
   "users": 1791579563987,
   "weeks": 1791569071023,
-  "sheets": 1791577556514,
+  "sheets": 1791579760982,
   "_qcFix1": 1791569071023,
   "_wkFix1": 1791569071023,
   "journal": 1791579563987,
@@ -53800,13 +53831,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-09T21:02:30.666Z",
+  "maj": "2026-10-09T21:02:45.097Z",
   "semaine": 41,
   "totalBarils": 170705,
   "ca": 853525,
   "objectif": 375000,
   "effectif": 88,
-  "clientsServis": 136,
+  "clientsServis": 137,
   "top3": [
    {
     "nom": "Tyler Collins",
