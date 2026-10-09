@@ -1,11 +1,35 @@
 {
- "maj": "2026-10-09T20:51:43.577204+00:00",
+ "maj": "2026-10-09T20:53:43.765235+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1558220508141453374",
+   "t": "2026-10-09T20:51:59.478000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 98x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1850.60, 6514.60, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 2811\nplayerDiscord : 864258254330265600\nplayerName : Ki_LoX-\nplayerCharacter : Tony Ryu\nplayerId : 292803\nitemId : refinedoil",
+   "nom": "Tony Ryu",
+   "quantite": 98,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1850.60, 6514.60, 16.73",
+    "targetposition": "-1850.63, 6515.15, 15.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "2811",
+    "playerdiscord": "864258254330265600",
+    "playername": "Ki_LoX-",
+    "playercharacter": "Tony Ryu",
+    "playerid": "292803",
+    "itemid": "refinedoil"
+   }
+  },
   {
    "id": "1558220250313527343-0",
    "t": "2026-10-09T20:50:58.007000+00:00",
@@ -94878,27 +94902,6 @@
     "playercharacter": "Julio Collins",
     "playerid": "356873",
     "itemid": "oil"
-   }
-  },
-  {
-   "id": "1557757591457763389",
-   "t": "2026-10-08T14:12:31.540000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 8397\nplayerDiscord : 1539275024354254858\nplayerName : IcyCrab2321\nplayerCharacter : Teddy Flynn\nplayerId : 266882\nvehiclePlate : XP1606YE\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Teddy Flynn",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "8397",
-    "playerdiscord": "1539275024354254858",
-    "playername": "IcyCrab2321",
-    "playercharacter": "Teddy Flynn",
-    "playerid": "266882",
-    "vehicleplate": "XP1606YE",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
