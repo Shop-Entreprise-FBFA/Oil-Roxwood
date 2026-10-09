@@ -11695,16 +11695,23 @@
    },
    {
     "date": "2026-10-08",
+    "client": "Citoyen ⚡",
+    "quantite": 10,
+    "qui": "Diego Herrera"
+   },
+   {
+    "date": "2026-10-08",
     "client": "Horizon biotech",
-    "quantite": 300,
+    "quantite": 150,
     "qui": "Julio Collins",
     "fact": 253148
    },
    {
     "date": "2026-10-08",
-    "client": "Citoyen ⚡",
-    "quantite": 10,
-    "qui": "Diego Herrera"
+    "client": "Horizon biotech",
+    "quantite": 150,
+    "qui": "William Rodriguez-collins",
+    "fact": 253148
    }
   ],
   "collection": [
@@ -14401,24 +14408,25 @@
     "num": 253148,
     "date": "2026-10-08",
     "client": "Horizon biotech",
-    "emetteur": "Julio Collins",
+    "emetteur": "Julio Collins, William Rodriguez-collins",
     "postop": false,
     "lignes": [
      {
       "ref": "CMD",
       "qte": 300,
       "tva": 0,
+      "desc": "bidons d'essence ",
       "pu": 180,
       "ht": 54000,
-      "ttc": 54000,
-      "desc": "bidons d'essence "
+      "ttc": 54000
      }
     ],
     "offert": 0,
     "ht": 54000,
     "ttc": 54000,
     "poids": 600,
-    "statut": "payee"
+    "statut": "payee",
+    "modifiee": 1791560734178
    },
    {
     "num": 253147,
@@ -51621,17 +51629,17 @@
   "semaineDebut": "2026-10-05"
  },
  "_cid": "91e7owjii1m",
- "_maj": 1791560714691,
- "_rev": "ul693flf97e-mv14zukz",
+ "_maj": 1791560734214,
+ "_rev": "hdf5adb2ems-mv1507ab",
  "_majSec": {
   "fer": 1791549429305,
-  "fact": 1791491324808,
+  "fact": 1791560734178,
   "users": 1791558143759,
   "weeks": 1791156592285,
-  "sheets": 1791544268908,
+  "sheets": 1791560734178,
   "_qcFix1": 1790701456835,
   "_wkFix1": 1790701456835,
-  "journal": 1791558143759,
+  "journal": 1791560734214,
   "pending": 1790701456835,
   "prodDer": 1791490568663,
   "runners": 1791543782722,
@@ -51662,6 +51670,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1791560735063,
+   "u": "William Rodriguez-collins",
+   "a": "Facture n°253148 modifiée — émetteur Julio Collins → Julio Collins, William Rodriguez-collins"
+  },
   {
    "t": 1791558146772,
    "u": "Julio Collins",
@@ -53156,11 +53169,6 @@
    "t": 1790445802301,
    "u": "William Rodriguez-collins",
    "a": "Achats de fer : 6 relevé(s) repris du salon"
-  },
-  {
-   "t": 1790444962662,
-   "u": "William Rodriguez-collins",
-   "a": "Achats de fer : 3 relevé(s) repris du salon"
   }
  ],
  "prodDer": {
@@ -53495,7 +53503,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-09T15:45:19.763Z",
+  "maj": "2026-10-09T15:45:36.227Z",
   "semaine": 41,
   "totalBarils": 138297,
   "ca": 691485,
