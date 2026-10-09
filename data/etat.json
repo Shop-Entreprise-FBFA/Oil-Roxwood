@@ -17669,14 +17669,6 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
-  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -17700,6 +17692,14 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T00:06:23.240Z"
+  },
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -51730,9 +51730,9 @@
   "postesV4": 1,
   "semaineDebut": "2026-10-05"
  },
- "_cid": "91e7owjii1m",
- "_maj": 1791564675458,
- "_rev": "p5irw3ntw6g-mv17doh5",
+ "_cid": "1x6klgfbb17",
+ "_maj": 1791564752698,
+ "_rev": "6hgfzhhb95i-mv17ef52",
  "_majSec": {
   "fer": 1791564667999,
   "fact": 1791562939922,
@@ -51741,7 +51741,7 @@
   "sheets": 1791561781819,
   "_qcFix1": 1790701456835,
   "_wkFix1": 1790701456835,
-  "journal": 1791562155388,
+  "journal": 1791564752698,
   "pending": 1790701456835,
   "prodDer": 1791490568663,
   "runners": 1791543782722,
@@ -51755,7 +51755,7 @@
   "primesExtra": 1791156592285,
   "quotasComHist": 1791156592285,
   "profils": 1790701553168,
-  "_tables": 1791564675458,
+  "_tables": 1791564752698,
   "_permsFix1": 1790701456835,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1790701456835,
@@ -51772,6 +51772,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1791564669011,
+   "u": "Laurent Roquel",
+   "a": "Achats de fer : 3 relevé(s) repris du salon"
+  },
   {
    "t": 1791562065601,
    "u": "William Rodriguez-collins",
@@ -53266,11 +53271,6 @@
    "t": 1790458765590,
    "u": "Thomas Boyer",
    "a": "Contrat(s) signé(s) via Discord : vinchenzo waszcsykowski"
-  },
-  {
-   "t": 1790451996170,
-   "u": "Thomas Boyer",
-   "a": "Recrutements Discord : 1 fiche(s) créée(s), 0 case(s) complétée(s) — vinchenzo waszcsykowski"
   }
  ],
  "prodDer": {
@@ -53605,7 +53605,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-09T16:52:04.265Z",
+  "maj": "2026-10-09T16:52:38.822Z",
   "semaine": 41,
   "totalBarils": 138297,
   "ca": 691485,
@@ -194107,18 +194107,25 @@
     "id": 1791564546242
    },
    {
-    "uid": "235844738656239616",
-    "nom": "William Rodriguez-collins",
+    "uid": "707695913187016785",
+    "nom": "Laurent Roquel",
     "role": "commercial",
-    "vu": "2026-10-09T16:49:45.460Z",
-    "id": 1791564586372
+    "vu": "2026-10-09T16:50:34.610Z",
+    "id": 1791564636181
    },
    {
-    "uid": "235844738656239616",
-    "nom": "William Rodriguez-collins",
+    "uid": "707695913187016785",
+    "nom": "Laurent Roquel",
     "role": "commercial",
-    "vu": "2026-10-09T16:51:15.458Z",
-    "id": 1791564676044
+    "vu": "2026-10-09T16:51:02.781Z",
+    "id": 1791564662989
+   },
+   {
+    "uid": "707695913187016785",
+    "nom": "Laurent Roquel",
+    "role": "commercial",
+    "vu": "2026-10-09T16:52:32.697Z",
+    "id": 1791564754417
    }
   ],
   "oilroxwood_demandes": [],
