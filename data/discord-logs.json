@@ -1,11 +1,32 @@
 {
- "maj": "2026-10-09T10:03:42.721213+00:00",
+ "maj": "2026-10-09T10:05:49.271627+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1558057776310255637",
+   "t": "2026-10-09T10:05:21.186000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nMise à jour des accès du véhicule gbvoyagerb (AY0298ZV): 3 membre(s)\nplayerNetId : 593\nplayerDiscord : 826526979204841482\nplayerName : JumpyNewt1770\nplayerCharacter : Diego Herrera\nplayerId : 231487\njobId : 76\njobName : Oil RoxWood\nvehiclePlate : AY0298ZV",
+   "nom": "Diego Herrera",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "593",
+    "playerdiscord": "826526979204841482",
+    "playername": "JumpyNewt1770",
+    "playercharacter": "Diego Herrera",
+    "playerid": "231487",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "vehicleplate": "AY0298ZV"
+   }
+  },
   {
    "id": "1558056261725978635",
    "t": "2026-10-09T09:59:20.081000+00:00",
@@ -94942,30 +94963,6 @@
     "playername": "ShyTurtle1862",
     "playercharacter": "Nikko Mount",
     "playerid": "276376",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1557413819717001237-3",
-   "t": "2026-10-07T15:26:29.970000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 45x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -1849.27, 6499.25, 16.73\ntargetPosition : -1849.11, 6498.65, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 628\nplayerDiscord : 826526979204841482\nplayerName : JumpyNewt1770\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : oil",
-   "nom": "Diego Herrera",
-   "quantite": 45,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1849.27, 6499.25, 16.73",
-    "targetposition": "-1849.11, 6498.65, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "628",
-    "playerdiscord": "826526979204841482",
-    "playername": "JumpyNewt1770",
-    "playercharacter": "Diego Herrera",
-    "playerid": "231487",
     "itemid": "oil"
    }
   }
