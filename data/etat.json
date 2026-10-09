@@ -11712,6 +11712,13 @@
     "quantite": 150,
     "qui": "William Rodriguez-collins",
     "fact": 253148
+   },
+   {
+    "date": "2026-10-09",
+    "client": "La Main de Minuit",
+    "quantite": 150,
+    "qui": "Laurent Roquel",
+    "fact": 253149
    }
   ],
   "collection": [
@@ -13196,7 +13203,7 @@
     "rib": "",
     "tel": "",
     "adresse": "Los Santos",
-    "lastCmd": "2026-09-28"
+    "lastCmd": "2026-10-09"
    },
    {
     "nom": "Famiglia Virelli",
@@ -14402,8 +14409,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253149,
+  "compteur": 253150,
   "factures": [
+   {
+    "num": 253149,
+    "date": "2026-10-09",
+    "client": "La Main de Minuit",
+    "emetteur": "Laurent Roquel",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 150,
+      "tva": 0.05,
+      "pu": 180,
+      "ht": 27000,
+      "ttc": 28350,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 27000,
+    "ttc": 28350,
+    "poids": 300,
+    "statut": "attente"
+   },
    {
     "num": 253148,
     "date": "2026-10-08",
@@ -51629,14 +51659,14 @@
   "semaineDebut": "2026-10-05"
  },
  "_cid": "rmickq3jps",
- "_maj": 1791561752246,
- "_rev": "xrli1z2wdiq-mv15m0gd",
+ "_maj": 1791561781872,
+ "_rev": "a72mg0bxwit-mv15mlo6",
  "_majSec": {
   "fer": 1791549429305,
-  "fact": 1791560734178,
+  "fact": 1791561781819,
   "users": 1791558143759,
   "weeks": 1791156592285,
-  "sheets": 1791560734178,
+  "sheets": 1791561781819,
   "_qcFix1": 1790701456835,
   "_wkFix1": 1790701456835,
   "journal": 1791560734214,
@@ -53503,13 +53533,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-09T16:02:33.805Z",
+  "maj": "2026-10-09T16:03:01.302Z",
   "semaine": 41,
   "totalBarils": 138297,
   "ca": 691485,
   "objectif": 375000,
   "effectif": 85,
-  "clientsServis": 134,
+  "clientsServis": 135,
   "top3": [
    {
     "nom": "Tyler Collins",
