@@ -11799,6 +11799,13 @@
     "client": "Citoyen ⚡",
     "quantite": 200,
     "qui": "Julio Collins"
+   },
+   {
+    "date": "2026-10-09",
+    "client": "Gaïa Lavyrinthos",
+    "quantite": 100,
+    "qui": "Julio Collins",
+    "fact": 253150
    }
   ],
   "collection": [
@@ -13255,7 +13262,7 @@
     "adresse": "Los Santos",
     "tel": "555 024 258",
     "rib": "",
-    "lastCmd": "2026-09-15"
+    "lastCmd": "2026-10-09"
    },
    {
     "nom": "Nox Reapers MC",
@@ -14495,8 +14502,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253150,
+  "compteur": 253151,
   "factures": [
+   {
+    "num": 253150,
+    "date": "2026-10-09",
+    "client": "Gaïa Lavyrinthos",
+    "emetteur": "Julio Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 100,
+      "tva": 0.05,
+      "pu": 180,
+      "ht": 18000,
+      "ttc": 18900,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 18000,
+    "ttc": 18900,
+    "poids": 200,
+    "statut": "attente"
+   },
    {
     "num": 253149,
     "date": "2026-10-09",
@@ -51881,14 +51911,14 @@
   "semaineDebut": "2026-10-05"
  },
  "_cid": "gjmukc7isb",
- "_maj": 1791577522767,
- "_rev": "l4y8m7wbia8-mv1f057x",
+ "_maj": 1791577556540,
+ "_rev": "9hcftwb6kyn-mv1f0t8x",
  "_majSec": {
   "fer": 1791576216183,
-  "fact": 1791574193268,
+  "fact": 1791577556514,
   "users": 1791577522767,
   "weeks": 1791569071023,
-  "sheets": 1791576965501,
+  "sheets": 1791577556514,
   "_qcFix1": 1791569071023,
   "_wkFix1": 1791569071023,
   "journal": 1791577522767,
@@ -53770,13 +53800,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-09T20:25:29.709Z",
+  "maj": "2026-10-09T20:26:00.849Z",
   "semaine": 41,
   "totalBarils": 170705,
   "ca": 853525,
   "objectif": 375000,
   "effectif": 88,
-  "clientsServis": 135,
+  "clientsServis": 136,
   "top3": [
    {
     "nom": "Tyler Collins",
