@@ -1,11 +1,51 @@
 {
- "maj": "2026-10-10T17:29:48.515306+00:00",
+ "maj": "2026-10-10T17:31:48.621614+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1558532334859325594",
+   "t": "2026-10-10T17:31:04.761000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 625x Pétrole Raffiné pour 6250$ par Tony Ryu. 3125$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 625,
+   "montant": 6250,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1558532319877271764",
+   "t": "2026-10-10T17:31:01.189000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 69x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3089.05, 6814.36, 44.73\ntargetPosition : -3089.68, 6814.50, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1576\nplayerDiscord : 235844738656239616\nplayerName : Wiken\nplayerCharacter : William Rodriguez-collins\nplayerId : 46658\nitemId : oil",
+   "nom": "William Rodriguez-collins",
+   "quantite": 69,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-3089.05, 6814.36, 44.73",
+    "targetposition": "-3089.68, 6814.50, 43.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "1576",
+    "playerdiscord": "235844738656239616",
+    "playername": "Wiken",
+    "playercharacter": "William Rodriguez-collins",
+    "playerid": "46658",
+    "itemid": "oil"
+   }
+  },
   {
    "id": "1558531333687484472",
    "t": "2026-10-10T17:27:06.063000+00:00",
@@ -94859,54 +94899,6 @@
    "texte": "Coffre\ndépot de 8x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3090.28, 6819.35, 44.73\ntargetPosition : -3090.06, 6818.50, 43.97\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 593\nplayerDiscord : 826526979204841482\nplayerName : JumpyNewt1770\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : oil",
    "nom": "Diego Herrera",
    "quantite": 8,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-3090.28, 6819.35, 44.73",
-    "targetposition": "-3090.06, 6818.50, 43.97",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "593",
-    "playerdiscord": "826526979204841482",
-    "playername": "JumpyNewt1770",
-    "playercharacter": "Diego Herrera",
-    "playerid": "231487",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1558060549344985161-2",
-   "t": "2026-10-09T10:16:22.329000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 11x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3090.28, 6819.35, 44.73\ntargetPosition : -3090.06, 6818.50, 43.97\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 593\nplayerDiscord : 826526979204841482\nplayerName : JumpyNewt1770\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : oil",
-   "nom": "Diego Herrera",
-   "quantite": 11,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-3090.28, 6819.35, 44.73",
-    "targetposition": "-3090.06, 6818.50, 43.97",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "593",
-    "playerdiscord": "826526979204841482",
-    "playername": "JumpyNewt1770",
-    "playercharacter": "Diego Herrera",
-    "playerid": "231487",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1558060294440488964-0",
-   "t": "2026-10-09T10:15:21.555000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 7x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3090.28, 6819.35, 44.73\ntargetPosition : -3090.06, 6818.50, 43.97\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 593\nplayerDiscord : 826526979204841482\nplayerName : JumpyNewt1770\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : oil",
-   "nom": "Diego Herrera",
-   "quantite": 7,
    "montant": null,
    "type": "coffre_depot",
    "salon": "1245400913066066099",
