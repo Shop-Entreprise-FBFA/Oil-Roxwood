@@ -1,11 +1,35 @@
 {
- "maj": "2026-10-10T18:45:46.846588+00:00",
+ "maj": "2026-10-10T18:47:43.565685+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1558551449745629185",
+   "t": "2026-10-10T18:47:02.105000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\na retiré 134x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1846.77, 6514.72, 16.73\ntargetPosition : -1845.91, 6514.70, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 2476\nplayerDiscord : 1454487521005408319\nplayerName : FuzzyCat4460\nplayerCharacter : Anis Wolkeur\nplayerId : 361261\nitemId : refinedoil",
+   "nom": "Anis Wolkeur",
+   "quantite": 134,
+   "montant": null,
+   "type": "coffre_retrait",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1846.77, 6514.72, 16.73",
+    "targetposition": "-1845.91, 6514.70, 15.74",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "2476",
+    "playerdiscord": "1454487521005408319",
+    "playername": "FuzzyCat4460",
+    "playercharacter": "Anis Wolkeur",
+    "playerid": "361261",
+    "itemid": "refinedoil"
+   }
+  },
   {
    "id": "1558549957986877483-0",
    "t": "2026-10-10T18:41:06.442000+00:00",
@@ -94865,30 +94889,6 @@
     "playercharacter": "Diego Herrera",
     "playerid": "231487",
     "itemid": "oil"
-   }
-  },
-  {
-   "id": "1558068089826971696-1",
-   "t": "2026-10-09T10:46:20.120000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 19x Burger Poisson dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3089.51, 6818.98, 44.73\ntargetPosition : -3090.06, 6818.50, 43.97\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 593\nplayerDiscord : 826526979204841482\nplayerName : JumpyNewt1770\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : _burgerpoisson",
-   "nom": "Diego Herrera",
-   "quantite": 19,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-3089.51, 6818.98, 44.73",
-    "targetposition": "-3090.06, 6818.50, 43.97",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "593",
-    "playerdiscord": "826526979204841482",
-    "playername": "JumpyNewt1770",
-    "playercharacter": "Diego Herrera",
-    "playerid": "231487",
-    "itemid": "_burgerpoisson"
    }
   }
  ]
