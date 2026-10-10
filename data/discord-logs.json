@@ -1,11 +1,32 @@
 {
- "maj": "2026-10-10T16:15:46.020923+00:00",
+ "maj": "2026-10-10T16:17:47.867776+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1558513445039509677",
+   "t": "2026-10-10T16:16:01.077000+00:00",
+   "auteur": "Logs - Achat fer",
+   "texte": "Achat fer\na acheté 80x fer pour 400$\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1576\nplayerDiscord : 235844738656239616\nplayerName : Wiken\nplayerCharacter : William Rodriguez-collins\nplayerId : 46658\nitemId : iron",
+   "nom": "William Rodriguez-collins",
+   "quantite": 80,
+   "montant": 400,
+   "type": "achat_fer",
+   "salon": "1247565070423167100",
+   "champs": {
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "1576",
+    "playerdiscord": "235844738656239616",
+    "playername": "Wiken",
+    "playercharacter": "William Rodriguez-collins",
+    "playerid": "46658",
+    "itemid": "iron"
+   }
+  },
   {
    "id": "1558513187853434951",
    "t": "2026-10-10T16:14:59.759000+00:00",
@@ -94859,22 +94880,6 @@
    "nom": null,
    "quantite": 656,
    "montant": 6560,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1557889820519301151",
-   "t": "2026-10-08T22:57:57.405000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 651x Pétrole Raffiné pour 6510$ par Ethan Hayes. 3255$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 651,
-   "montant": 6510,
    "type": "vente",
    "salon": "1245400913473179729",
    "champs": {
