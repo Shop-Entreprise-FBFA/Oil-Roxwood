@@ -1,11 +1,32 @@
 {
- "maj": "2026-10-10T21:51:43.302952+00:00",
+ "maj": "2026-10-10T21:53:45.726159+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1558597998663958541",
+   "t": "2026-10-10T21:52:00.232000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 3493\nplayerDiscord : 1346352248841568326\nplayerName : Freeze\nplayerCharacter : Elliot Adkins\nplayerId : 369986\nvehiclePlate : GB1899JF\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Elliot Adkins",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "3493",
+    "playerdiscord": "1346352248841568326",
+    "playername": "Freeze",
+    "playercharacter": "Elliot Adkins",
+    "playerid": "369986",
+    "vehicleplate": "GB1899JF",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1558590218154672170-0",
    "t": "2026-10-10T21:21:05.214000+00:00",
@@ -94827,30 +94848,6 @@
     "playercharacter": "Tyler Collins",
     "playerid": "209236",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1558086230632169531-6",
-   "t": "2026-10-09T11:58:25.225000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 16x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -1848.65, 6498.25, 16.73\ntargetPosition : -1849.11, 6498.65, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 965\nplayerDiscord : 593431852291850281\nplayerName : BoldFish7448\nplayerCharacter : Tyler Collins\nplayerId : 209236\nitemId : oil",
-   "nom": "Tyler Collins",
-   "quantite": 16,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1848.65, 6498.25, 16.73",
-    "targetposition": "-1849.11, 6498.65, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "965",
-    "playerdiscord": "593431852291850281",
-    "playername": "BoldFish7448",
-    "playercharacter": "Tyler Collins",
-    "playerid": "209236",
-    "itemid": "oil"
    }
   }
  ]
