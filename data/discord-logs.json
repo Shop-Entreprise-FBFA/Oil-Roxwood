@@ -1,11 +1,32 @@
 {
- "maj": "2026-10-10T14:27:47.558307+00:00",
+ "maj": "2026-10-10T14:29:46.026335+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1558486256969711711",
+   "t": "2026-10-10T14:27:58.936000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 491\nplayerDiscord : 398615462633668630\nplayerName : MoonBiirr\nplayerCharacter : Hassan Cheb\nplayerId : 321847\nvehiclePlate : AS5715VX\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Hassan Cheb",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "491",
+    "playerdiscord": "398615462633668630",
+    "playername": "MoonBiirr",
+    "playercharacter": "Hassan Cheb",
+    "playerid": "321847",
+    "vehicleplate": "AS5715VX",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1558484762585469052-0",
    "t": "2026-10-10T14:22:02.647000+00:00",
@@ -94850,30 +94871,6 @@
     "playername": "BlackHornet27",
     "playercharacter": "Ryan Brooks",
     "playerid": "251211",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1557864895372992635-1",
-   "t": "2026-10-08T21:18:54.787000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 153x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1846.81, 6515.10, 16.73\ntargetPosition : -1845.91, 6514.70, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3318\nplayerDiscord : 1176222824780800104\nplayerName : chretienlukas26\nplayerCharacter : Ethan Hayes\nplayerId : 381296\nitemId : refinedoil",
-   "nom": "Ethan Hayes",
-   "quantite": 153,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1846.81, 6515.10, 16.73",
-    "targetposition": "-1845.91, 6514.70, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "3318",
-    "playerdiscord": "1176222824780800104",
-    "playername": "chretienlukas26",
-    "playercharacter": "Ethan Hayes",
-    "playerid": "381296",
     "itemid": "refinedoil"
    }
   }
