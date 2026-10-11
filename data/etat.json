@@ -6599,6 +6599,12 @@
   "compta": [
    {
     "type": "Retrait",
+    "date": "2026-10-11",
+    "justif": "",
+    "montant": 0
+   },
+   {
+    "type": "Retrait",
     "date": "2026-10-09",
     "justif": "Safeguard ass",
     "montant": 80000
@@ -52412,18 +52418,18 @@
   "postesV4": 1,
   "semaineDebut": "2026-10-05"
  },
- "_cid": "njajalui9y",
- "_maj": 1791755662097,
- "_rev": "nh6rd95dak8-mv4d2np1",
+ "_cid": "jdw39vh37v",
+ "_maj": 1791755686523,
+ "_rev": "87ckbnfjpkb-mv4d2q18",
  "_majSec": {
   "fer": 1791747940676,
   "fact": 1791714262874,
   "users": 1791740420079,
   "weeks": 1791569071023,
-  "sheets": 1791730528800,
+  "sheets": 1791755686523,
   "_qcFix1": 1791569071023,
   "_wkFix1": 1791569071023,
-  "journal": 1791748028736,
+  "journal": 1791755679500,
   "pending": 1791569071023,
   "prodDer": 1791649801390,
   "runners": 1791716837031,
@@ -52454,6 +52460,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1791755663085,
+   "u": "Diego Herrera",
+   "a": "Facture reçue archivée : Post OP — 10 000 $"
+  },
   {
    "t": 1791747945632,
    "u": "Bjorn Frost",
@@ -53948,11 +53959,6 @@
    "t": 1790588265384,
    "u": "Stella Collins",
    "a": "Vente rapide sans facture : 50 bidon(s) — Citoyen (vendeur : Stella Collins)"
-  },
-  {
-   "t": 1790551569595,
-   "u": "William Rodriguez-collins",
-   "a": "Facture n°253121 modifiée — émetteur William Rodriguez-collins → William Rodriguez-collins, Emma Collins-rodriguez"
   }
  ],
  "prodDer": {
@@ -54330,7 +54336,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-11T21:54:46.262Z",
+  "maj": "2026-10-11T21:54:49.292Z",
   "semaine": 41,
   "totalBarils": 203092,
   "ca": 1015460,
