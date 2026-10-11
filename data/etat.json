@@ -52009,6 +52009,22 @@
    "quantite": 4,
    "montant": 20,
    "did": "1096933851659517975"
+  },
+  {
+   "id": "1558789502959493122:0",
+   "t": "2026-10-11 12:32",
+   "nom": "Bjorn Frost",
+   "quantite": 20,
+   "montant": 100,
+   "did": "1096933851659517975"
+  },
+  {
+   "id": "1558789502959493122:1",
+   "t": "2026-10-11 12:32",
+   "nom": "Julio Collins",
+   "quantite": 20,
+   "montant": 100,
+   "did": "767332288744128512"
   }
  ],
  "settings": {
@@ -52219,10 +52235,10 @@
   "semaineDebut": "2026-10-05"
  },
  "_cid": "m55omx2rfgs",
- "_maj": 1791714901858,
- "_rev": "krqc5hqep5-mv3otbs7",
+ "_maj": 1791714936742,
+ "_rev": "dmrs3b31zoi-mv3otfn1",
  "_majSec": {
-  "fer": 1791713857772,
+  "fer": 1791714936742,
   "fact": 1791714262874,
   "users": 1791714391075,
   "weeks": 1791569071023,
@@ -52260,6 +52276,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1791714941134,
+   "u": "Bjorn Frost",
+   "a": "Achats de fer : 2 relevé(s) repris du salon"
+  },
   {
    "t": 1791714393056,
    "u": "Julio Collins",
@@ -53754,11 +53775,6 @@
    "t": 1790547101339,
    "u": "Diego Herrera",
    "a": "Avertissement : Jason White (intérimaire, aucune prise de service) — total : 1"
-  },
-  {
-   "t": 1790547099057,
-   "u": "Diego Herrera",
-   "a": "Avertissement : John Scoupio (intérimaire, aucune prise de service) — total : 1"
   }
  ],
  "prodDer": {
@@ -54126,7 +54142,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-11T10:35:40.136Z",
+  "maj": "2026-10-11T10:35:45.134Z",
   "semaine": 41,
   "totalBarils": 170705,
   "ca": 853525,
