@@ -17869,22 +17869,6 @@
    "public": true,
    "maj": "2026-09-16T11:47:16.417Z"
   },
-  "stella collins": {
-   "nom": "Stella Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-14T13:20:17.287Z"
-  },
-  "julio collins": {
-   "nom": "Julio Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T00:06:23.240Z"
-  },
   "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿": {
    "nom": "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿",
    "photo": "",
@@ -17908,6 +17892,22 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T16:48:15.042Z"
+  },
+  "stella collins": {
+   "nom": "Stella Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-14T13:20:17.287Z"
+  },
+  "julio collins": {
+   "nom": "Julio Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T00:06:23.240Z"
   },
   "william rodriguez-collins": {
    "nom": "William Rodriguez-collins",
@@ -51993,6 +51993,22 @@
    "quantite": 100,
    "montant": 500,
    "did": "1096933851659517975"
+  },
+  {
+   "id": "1558765838067310594:0",
+   "t": "2026-10-11 10:58",
+   "nom": "Julio Collins",
+   "quantite": 4,
+   "montant": 20,
+   "did": "767332288744128512"
+  },
+  {
+   "id": "1558765838067310594:1",
+   "t": "2026-10-11 10:58",
+   "nom": "Bjorn Frost",
+   "quantite": 4,
+   "montant": 20,
+   "did": "1096933851659517975"
   }
  ],
  "settings": {
@@ -52202,18 +52218,18 @@
   "postesV4": 1,
   "semaineDebut": "2026-10-05"
  },
- "_cid": "b7li9e0u25",
- "_maj": 1791713863230,
- "_rev": "9z3eunxhhwj-mv3o6aqv",
+ "_cid": "m55omx2rfgs",
+ "_maj": 1791713867566,
+ "_rev": "68u747mkj08-mv3o6exo",
  "_majSec": {
-  "fer": 1791708961990,
+  "fer": 1791713857772,
   "fact": 1791713863202,
   "users": 1791713824736,
   "weeks": 1791569071023,
   "sheets": 1791713863202,
   "_qcFix1": 1791569071023,
   "_wkFix1": 1791569071023,
-  "journal": 1791713824736,
+  "journal": 1791713867566,
   "pending": 1791569071023,
   "prodDer": 1791649801390,
   "runners": 1791576965572,
@@ -52221,7 +52237,7 @@
   "imported": 1791569071023,
   "settings": 1791569071023,
   "closeUndo": 1791569071023,
-  "quotasCom": 1791709010414,
+  "quotasCom": 1791713867566,
   "bilanExtra": 1791569071023,
   "bilanForce": 1791569071023,
   "primesExtra": 1791569071023,
@@ -52244,6 +52260,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1791713861262,
+   "u": "Bjorn Frost",
+   "a": "Achats de fer : 2 relevé(s) repris du salon"
+  },
   {
    "t": 1791713826265,
    "u": "Julio Collins",
@@ -53738,11 +53759,6 @@
    "t": 1790547089518,
    "u": "Diego Herrera",
    "a": "Avertissement : Kamara Doue (intérimaire, aucune prise de service) — total : 1"
-  },
-  {
-   "t": 1790547083587,
-   "u": "Diego Herrera",
-   "a": "Avertissement : Larry Lewington (intérimaire, aucune prise de service) — total : 1"
   }
  ],
  "prodDer": {
@@ -54110,7 +54126,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-11T10:17:45.703Z",
+  "maj": "2026-10-11T10:17:51.133Z",
   "semaine": 41,
   "totalBarils": 170705,
   "ca": 853525,
@@ -54241,9 +54257,9 @@
  "quotasCom": {
   "sem": 41,
   "achats": {},
-  "vendus": 4024,
-  "parPers": 805,
-  "ferPers": 1610
+  "vendus": 4074,
+  "parPers": 815,
+  "ferPers": 1630
  },
  "bilanExtra": [
   {
