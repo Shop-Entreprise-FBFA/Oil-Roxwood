@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-11T12:25:43.414347+00:00",
+ "maj": "2026-10-11T12:27:41.811326+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1558817985018339400",
+   "t": "2026-10-11T12:26:09.066000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 646x Pétrole Raffiné pour 6460$ par Hakim Cheb. 3230$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 646,
+   "montant": 6460,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1558817704557805643-0",
    "t": "2026-10-11T12:25:02.199000+00:00",
@@ -94742,22 +94758,6 @@
     "playercharacter": "Diego Herrera",
     "playerid": "231487",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1558106877311848449",
-   "t": "2026-10-09T13:20:27.777000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 729x Pétrole Raffiné pour 7290$ par Diego Herrera. 3645$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 729,
-   "montant": 7290,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
