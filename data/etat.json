@@ -6249,7 +6249,7 @@
     "idU": "276005",
     "arrivee": "2026-09-02",
     "discord": "647050187168022528",
-    "avert": "",
+    "avert": "1",
     "contrat": false,
     "recrut": "Thomas Boyer",
     "dernierService": "2026-09-21",
@@ -6277,7 +6277,7 @@
     "idU": "144117",
     "arrivee": "2026-09-10",
     "discord": "1269633450332131368",
-    "avert": "1",
+    "avert": "2",
     "contrat": false,
     "recrut": "Thomas Boyer",
     "dernierService": "2026-09-21",
@@ -52265,17 +52265,17 @@
   "semaineDebut": "2026-10-05"
  },
  "_cid": "jdw39vh37v",
- "_maj": 1791756614468,
- "_rev": "ws7q8gi82v-mv4dmky9",
+ "_maj": 1791756620729,
+ "_rev": "eb10szanunh-mv4dmq6t",
  "_majSec": {
   "fer": 1791747940676,
   "fact": 1791714262874,
   "users": 1791740420079,
   "weeks": 1791569071023,
-  "sheets": 1791756614383,
+  "sheets": 1791756620654,
   "_qcFix1": 1791569071023,
   "_wkFix1": 1791569071023,
-  "journal": 1791756614468,
+  "journal": 1791756620729,
   "pending": 1791569071023,
   "prodDer": 1791649801390,
   "runners": 1791756068468,
@@ -52289,7 +52289,7 @@
   "primesExtra": 1791569071023,
   "quotasComHist": 1791569071023,
   "profils": 1791569071023,
-  "_tables": 1791756614383,
+  "_tables": 1791756620654,
   "_permsFix1": 1791569071023,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1791569071023,
@@ -52306,6 +52306,16 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1791756621544,
+   "u": "Diego Herrera",
+   "a": "Avertissement : Jean Michel (intérimaire, aucune prise de service) — total : 1"
+  },
+  {
+   "t": 1791756618001,
+   "u": "Diego Herrera",
+   "a": "Avertissement : Liam Doyle (intérimaire, aucune prise de service) — total : 2"
+  },
   {
    "t": 1791756615282,
    "u": "Diego Herrera",
@@ -53795,16 +53805,6 @@
    "t": 1790691880236,
    "u": "?",
    "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1790691680986,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1790691680828,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
   }
  ],
  "prodDer": {
@@ -54136,7 +54136,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-11T22:10:15.825Z",
+  "maj": "2026-10-11T22:10:22.614Z",
   "semaine": 41,
   "totalBarils": 219277,
   "ca": 1096385,
@@ -202807,6 +202807,26 @@
      "par": "Diego Herrera"
     },
     "id": 1791756615521
+   },
+   {
+    "type": "avertissement",
+    "payload": {
+     "discord": "1269633450332131368",
+     "nom": "Liam Doyle",
+     "raison": "Aucune prise de service cette semaine",
+     "par": "Diego Herrera"
+    },
+    "id": 1791756618169
+   },
+   {
+    "type": "avertissement",
+    "payload": {
+     "discord": "647050187168022528",
+     "nom": "Jean Michel",
+     "raison": "Aucune prise de service cette semaine",
+     "par": "Diego Herrera"
+    },
+    "id": 1791756621892
    }
   ],
   "oilroxwood_coffres": [
