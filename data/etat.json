@@ -52372,9 +52372,9 @@
   "postesV4": 1,
   "semaineDebut": "2026-10-05"
  },
- "_cid": "bot",
- "_maj": 1791727786133,
- "_rev": "4b4j37p71do-mv3wgkv7",
+ "_cid": "0yjnu9n0orq",
+ "_maj": 1791727799848,
+ "_rev": "r4zkqmticbl-mv3wgyu4",
  "_majSec": {
   "fer": 1791714936742,
   "fact": 1791714262874,
@@ -52383,11 +52383,11 @@
   "sheets": 1791723935877,
   "_qcFix1": 1791569071023,
   "_wkFix1": 1791569071023,
-  "journal": 1791723935877,
+  "journal": 1791727799848,
   "pending": 1791569071023,
   "prodDer": 1791649801390,
   "runners": 1791716837031,
-  "absences": 1791599526634,
+  "absences": 1791727799848,
   "imported": 1791569071023,
   "settings": 1791569071023,
   "closeUndo": 1791569071023,
@@ -52397,7 +52397,7 @@
   "primesExtra": 1791569071023,
   "quotasComHist": 1791569071023,
   "profils": 1791569071023,
-  "_tables": 1791727786133,
+  "_tables": 1791727799848,
   "_permsFix1": 1791569071023,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1791569071023,
@@ -52414,6 +52414,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1791727800243,
+   "u": "Diego Herrera",
+   "a": "Absences Discord reprises : Kobayashi Vincent"
+  },
   {
    "t": 1791723940195,
    "u": "Bjorn Frost",
@@ -53908,11 +53913,6 @@
    "t": 1790547114734,
    "u": "Diego Herrera",
    "a": "Avertissement : ivar frost (intérimaire, aucune prise de service) — total : 1"
-  },
-  {
-   "t": 1790547112209,
-   "u": "Diego Herrera",
-   "a": "Avertissement : Jake Smith (intérimaire, aucune prise de service) — total : 1"
   }
  ],
  "prodDer": {
@@ -54277,10 +54277,20 @@
    "motif": "Perso",
    "par": "⚫ Carter Fuente |『 TALANTA 』",
    "auto": true
+  },
+  {
+   "id": 1791727804391,
+   "nom": "Kobayashi Vincent",
+   "du": "2026-10-11",
+   "au": "2026-10-20",
+   "srcId": "1791727781736",
+   "motif": "Personnel + malade",
+   "par": "⚫ Carter Fuente",
+   "auto": true
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-11T14:09:42.307Z",
+  "maj": "2026-10-11T14:10:00.412Z",
   "semaine": 41,
   "totalBarils": 203092,
   "ca": 1015460,
@@ -199572,25 +199582,32 @@
     "id": 1791727530860
    },
    {
-    "uid": "948542221429379112",
-    "nom": "Stella Collins",
+    "uid": "826526979204841482",
+    "nom": "Diego Herrera",
     "role": "direction",
-    "vu": "2026-10-11T14:07:31.783Z",
-    "id": 1791727650038
+    "vu": "2026-10-11T14:06:58.788Z",
+    "id": 1791727619456
    },
    {
-    "uid": "948542221429379112",
-    "nom": "Stella Collins",
+    "uid": "826526979204841482",
+    "nom": "Diego Herrera",
     "role": "direction",
-    "vu": "2026-10-11T14:08:31.792Z",
-    "id": 1791727710875
+    "vu": "2026-10-11T14:07:58.792Z",
+    "id": 1791727680079
    },
    {
-    "uid": "1096933851659517975",
-    "nom": "Bjorn Frost",
-    "role": "commercial",
-    "vu": "2026-10-11T14:09:26.838Z",
-    "id": 1791727771873
+    "uid": "826526979204841482",
+    "nom": "Diego Herrera",
+    "role": "direction",
+    "vu": "2026-10-11T14:08:58.782Z",
+    "id": 1791727739570
+   },
+   {
+    "uid": "826526979204841482",
+    "nom": "Diego Herrera",
+    "role": "direction",
+    "vu": "2026-10-11T14:09:58.778Z",
+    "id": 1791727799626
    }
   ],
   "oilroxwood_demandes": [],
