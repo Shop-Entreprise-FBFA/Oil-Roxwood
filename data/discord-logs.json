@@ -1,11 +1,32 @@
 {
- "maj": "2026-10-11T08:41:47.808317+00:00",
+ "maj": "2026-10-11T08:43:46.837178+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1558761805587681341",
+   "t": "2026-10-11T08:42:54.846000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 6389\nplayerDiscord : 1399001084030353510\nplayerName : BreezyNewt9973\nplayerCharacter : Curtis James\nplayerId : 319574\nvehiclePlate : BM4391ZM\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Curtis James",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "6389",
+    "playerdiscord": "1399001084030353510",
+    "playername": "BreezyNewt9973",
+    "playercharacter": "Curtis James",
+    "playerid": "319574",
+    "vehicleplate": "BM4391ZM",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1558761303386882093-0",
    "t": "2026-10-11T08:40:55.112000+00:00",
@@ -94757,30 +94778,6 @@
    "coffre": "entreprise (Oil RoxWood)",
    "champs": {
     "position": "-1843.40, 6517.57, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "915",
-    "playerdiscord": "1011466363598012457",
-    "playername": "BlackHornet27",
-    "playercharacter": "Ryan Brooks",
-    "playerid": "251211",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1558096794431389820-1",
-   "t": "2026-10-09T12:40:23.831000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 156x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1843.27, 6517.90, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 915\nplayerDiscord : 1011466363598012457\nplayerName : BlackHornet27\nplayerCharacter : Ryan Brooks\nplayerId : 251211\nitemId : refinedoil",
-   "nom": "Ryan Brooks",
-   "quantite": 156,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1843.27, 6517.90, 16.73",
     "targetposition": "-1843.83, 6518.10, 15.74",
     "jobid": "76",
     "jobname": "Oil RoxWood",
