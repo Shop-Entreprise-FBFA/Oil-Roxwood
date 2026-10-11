@@ -52265,8 +52265,8 @@
   "semaineDebut": "2026-10-05"
  },
  "_cid": "jdw39vh37v",
- "_maj": 1791756273715,
- "_rev": "a80eqa80vg-mv4dfd3s",
+ "_maj": 1791756280284,
+ "_rev": "a1vksbb6stv-mv4dfi0x",
  "_majSec": {
   "fer": 1791747940676,
   "fact": 1791714262874,
@@ -52275,11 +52275,11 @@
   "sheets": 1791756273715,
   "_qcFix1": 1791569071023,
   "_wkFix1": 1791569071023,
-  "journal": 1791756081430,
+  "journal": 1791756279966,
   "pending": 1791569071023,
   "prodDer": 1791649801390,
   "runners": 1791756068468,
-  "absences": 1791727799848,
+  "absences": 1791756279966,
   "imported": 1791569071023,
   "settings": 1791569071023,
   "closeUndo": 1791569071023,
@@ -52289,7 +52289,7 @@
   "primesExtra": 1791569071023,
   "quotasComHist": 1791569071023,
   "profils": 1791569071023,
-  "_tables": 1791756222791,
+  "_tables": 1791756280284,
   "_permsFix1": 1791569071023,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1791569071023,
@@ -52306,6 +52306,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1791756280775,
+   "u": "Diego Herrera",
+   "a": "5 absence(s) terminée(s) archivée(s) automatiquement"
+  },
   {
    "t": 1791756082240,
    "u": "Diego Herrera",
@@ -53800,11 +53805,6 @@
    "t": 1790604894660,
    "u": "Julio Collins",
    "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1790604894423,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
   }
  ],
  "prodDer": {
@@ -54055,46 +54055,6 @@
    "auto": true
   },
   {
-   "id": 1790082884320,
-   "nom": "Eddy Conor",
-   "du": "2026-09-22",
-   "au": "2026-10-02",
-   "srcId": "1790082872438",
-   "motif": "Raisons personnel",
-   "par": "⚫ Le Dictateur",
-   "auto": true
-  },
-  {
-   "id": 1790266686522,
-   "nom": "Adel Dulax",
-   "du": "2026-09-22",
-   "au": "2026-10-01",
-   "srcId": "1790266645082",
-   "motif": "",
-   "par": "⚫ Thomas Boyer",
-   "auto": true
-  },
-  {
-   "id": 1790343077685,
-   "nom": "Strya Ryuzen",
-   "du": "2026-09-25",
-   "au": "2026-09-28",
-   "srcId": "1790343042172",
-   "motif": "",
-   "par": "⚫ Juan Sanchez",
-   "auto": true
-  },
-  {
-   "id": 1790461003879,
-   "nom": "Damien Brown",
-   "du": "2026-09-27",
-   "au": "2026-10-04",
-   "srcId": "1790460980189",
-   "motif": "Malade (HRP)",
-   "par": "Stella Collins",
-   "auto": true
-  },
-  {
    "id": 1790532493614,
    "nom": "Eddy Bricki",
    "du": "2026-09-28",
@@ -54113,12 +54073,6 @@
    "motif": "Perso",
    "par": "Stella Collins",
    "auto": true
-  },
-  {
-   "id": 1790790245531,
-   "nom": "Rayan Espada",
-   "du": "2026-09-28",
-   "au": "2026-10-02"
   },
   {
    "id": 1791048796734,
@@ -54182,7 +54136,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-11T22:04:39.064Z",
+  "maj": "2026-10-11T22:04:45.441Z",
   "semaine": 41,
   "totalBarils": 219277,
   "ca": 1096385,
@@ -201782,6 +201736,13 @@
     "role": "direction",
     "vu": "2026-10-11T22:03:42.791Z",
     "id": 1791756223899
+   },
+   {
+    "uid": "826526979204841482",
+    "nom": "Diego Herrera",
+    "role": "direction",
+    "vu": "2026-10-11T22:04:40.284Z",
+    "id": 1791756281651
    }
   ],
   "oilroxwood_demandes": [],
