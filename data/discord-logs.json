@@ -1,11 +1,32 @@
 {
- "maj": "2026-10-12T08:15:41.955575+00:00",
+ "maj": "2026-10-12T08:17:47.472932+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1559117680533966951",
+   "t": "2026-10-12T08:17:02.045000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 6506\nplayerDiscord : 228152737701822465\nplayerName : SONIK\nplayerCharacter : Cristóbal Perrera\nplayerId : 379487\nvehiclePlate : CT2926BI\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Cristóbal Perrera",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "6506",
+    "playerdiscord": "228152737701822465",
+    "playername": "SONIK",
+    "playercharacter": "Cristóbal Perrera",
+    "playerid": "379487",
+    "vehicleplate": "CT2926BI",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1559115161992699969-0",
    "t": "2026-10-12T08:07:01.578000+00:00",
@@ -94763,27 +94784,6 @@
    "nom": "Bjorn Frost",
    "quantite": 10,
    "montant": 50,
-   "type": "achat_fer",
-   "salon": "1247565070423167100",
-   "champs": {
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "3728",
-    "playerdiscord": "1096933851659517975",
-    "playername": "SoggyAnt2644",
-    "playercharacter": "Bjorn Frost",
-    "playerid": "361708",
-    "itemid": "iron"
-   }
-  },
-  {
-   "id": "1558206932928569358-2",
-   "t": "2026-10-09T19:58:02.895000+00:00",
-   "auteur": "Logs - Achat fer",
-   "texte": "Achat fer\na acheté 22x fer pour 110$\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3728\nplayerDiscord : 1096933851659517975\nplayerName : SoggyAnt2644\nplayerCharacter : Bjorn Frost\nplayerId : 361708\nitemId : iron",
-   "nom": "Bjorn Frost",
-   "quantite": 22,
-   "montant": 110,
    "type": "achat_fer",
    "salon": "1247565070423167100",
    "champs": {
