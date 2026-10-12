@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-12T06:47:44.893334+00:00",
+ "maj": "2026-10-12T06:49:42.050780+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1559095538576662629",
+   "t": "2026-10-12T06:49:02.991000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 657x Pétrole Raffiné pour 6570$ par Kazuki Ishikawa. 3285$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 657,
+   "montant": 6570,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1559092513959186456-0",
    "t": "2026-10-12T06:37:01.866000+00:00",
@@ -94784,27 +94800,6 @@
     "playercharacter": "Tyler Collins",
     "playerid": "209236",
     "itemid": "weapon_petrolcan"
-   }
-  },
-  {
-   "id": "1558205930125139990-0",
-   "t": "2026-10-09T19:54:03.808000+00:00",
-   "auteur": "Logs - Achat fer",
-   "texte": "Achat fer\na acheté 100x fer pour 500$\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1\nplayerDiscord : 767332288744128512\nplayerName : JULIO COLLINS\nplayerCharacter : Julio Collins\nplayerId : 356873\nitemId : iron",
-   "nom": "Julio Collins",
-   "quantite": 100,
-   "montant": 500,
-   "type": "achat_fer",
-   "salon": "1247565070423167100",
-   "champs": {
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "1",
-    "playerdiscord": "767332288744128512",
-    "playername": "JULIO COLLINS",
-    "playercharacter": "Julio Collins",
-    "playerid": "356873",
-    "itemid": "iron"
    }
   }
  ]
