@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-12T07:25:45.504185+00:00",
+ "maj": "2026-10-12T07:27:48.372721+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1559104848434044949",
+   "t": "2026-10-12T07:26:02.634000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 657x Pétrole Raffiné pour 6570$ par Kazuki Ishikawa. 3285$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 657,
+   "montant": 6570,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1559102076343033920-0",
    "t": "2026-10-12T07:15:01.716000+00:00",
@@ -94768,30 +94784,6 @@
    "champs": {
     "position": "-1849.42, 6498.99, 16.73",
     "targetposition": "-1849.11, 6498.65, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "143",
-    "playerdiscord": "593431852291850281",
-    "playername": "BoldFish7448",
-    "playercharacter": "Tyler Collins",
-    "playerid": "209236",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1558206409277968451-3",
-   "t": "2026-10-09T19:55:58.047000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 131x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1851.35, 6502.29, 16.73\ntargetPosition : -1851.46, 6502.05, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 143\nplayerDiscord : 593431852291850281\nplayerName : BoldFish7448\nplayerCharacter : Tyler Collins\nplayerId : 209236\nitemId : refinedoil",
-   "nom": "Tyler Collins",
-   "quantite": 131,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1851.35, 6502.29, 16.73",
-    "targetposition": "-1851.46, 6502.05, 15.75",
     "jobid": "76",
     "jobname": "Oil RoxWood",
     "playernetid": "143",
