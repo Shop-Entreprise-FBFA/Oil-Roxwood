@@ -12114,6 +12114,13 @@
     "quantite": 100,
     "qui": "Bjorn Frost",
     "fact": 253154
+   },
+   {
+    "date": "2026-10-12",
+    "client": "Oil Roxwood",
+    "quantite": 500,
+    "qui": "Julio Collins",
+    "fact": 253155
    }
   ],
   "collection": [
@@ -14457,7 +14464,7 @@
     "rib": "20076",
     "tel": "986",
     "adresse": "Roxwood",
-    "lastCmd": "2026-10-05"
+    "lastCmd": "2026-10-12"
    },
    {
     "nom": "Ombra Nera",
@@ -14751,8 +14758,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253155,
+  "compteur": 253156,
   "factures": [
+   {
+    "num": 253155,
+    "date": "2026-10-12",
+    "client": "Oil Roxwood",
+    "emetteur": "Julio Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 500,
+      "tva": 0,
+      "pu": 180,
+      "ht": 90000,
+      "ttc": 90000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 90000,
+    "ttc": 90000,
+    "poids": 1000,
+    "statut": "attente"
+   },
    {
     "num": 253154,
     "date": "2026-10-12",
@@ -18118,6 +18148,22 @@
    "public": true,
    "maj": "2026-09-16T11:47:16.417Z"
   },
+  "stella collins": {
+   "nom": "Stella Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-14T13:20:17.287Z"
+  },
+  "julio collins": {
+   "nom": "Julio Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T00:06:23.240Z"
+  },
   "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿": {
    "nom": "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿",
    "photo": "",
@@ -18141,22 +18187,6 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T16:48:15.042Z"
-  },
-  "stella collins": {
-   "nom": "Stella Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-14T13:20:17.287Z"
-  },
-  "julio collins": {
-   "nom": "Julio Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T00:06:23.240Z"
   },
   "william rodriguez-collins": {
    "nom": "William Rodriguez-collins",
@@ -52523,15 +52553,15 @@
   "postesV4": 1,
   "semaineDebut": "2026-10-12"
  },
- "_cid": "pos2x0l45rp",
- "_maj": 1791830097841,
- "_rev": "k1rsdhs5lq-mv5ldm0y",
+ "_cid": "yz3fpu2lqc",
+ "_maj": 1791830106141,
+ "_rev": "hcevpnwqrxw-mv5ldras",
  "_majSec": {
   "fer": 1791747940676,
-  "fact": 1791826177818,
+  "fact": 1791830106108,
   "users": 1791830077627,
   "weeks": 1791757960238,
-  "sheets": 1791829724540,
+  "sheets": 1791830106108,
   "_qcFix1": 1791569071023,
   "_wkFix1": 1791569071023,
   "journal": 1791830077627,
@@ -54395,13 +54425,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-12T18:35:00.423Z",
+  "maj": "2026-10-12T18:35:07.252Z",
   "semaine": 42,
   "totalBarils": 219277,
   "ca": 1096385,
   "objectif": 375000,
   "effectif": 83,
-  "clientsServis": 140,
+  "clientsServis": 141,
   "top3": [
    {
     "nom": "Tyler Collins",
