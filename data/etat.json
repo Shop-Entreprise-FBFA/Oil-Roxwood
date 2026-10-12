@@ -12107,6 +12107,13 @@
     "client": "Employé — Elliot Adkins ⚡",
     "quantite": 50,
     "qui": "Bjorn Frost"
+   },
+   {
+    "date": "2026-10-12",
+    "client": "wintoria",
+    "quantite": 100,
+    "qui": "Bjorn Frost",
+    "fact": 253154
    }
   ],
   "collection": [
@@ -13476,7 +13483,7 @@
     "adresse": "Grapeseed",
     "tel": "",
     "rib": "",
-    "lastCmd": "2026-09-28"
+    "lastCmd": "2026-10-12"
    },
    {
     "nom": "Die Erben",
@@ -14744,8 +14751,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253154,
+  "compteur": 253155,
   "factures": [
+   {
+    "num": 253154,
+    "date": "2026-10-12",
+    "client": "wintoria",
+    "emetteur": "Bjorn Frost",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 100,
+      "tva": 0.04,
+      "pu": 180,
+      "ht": 18000,
+      "ttc": 18720,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 18000,
+    "ttc": 18720,
+    "poids": 200,
+    "statut": "attente"
+   },
    {
     "num": 253153,
     "date": "2026-10-12",
@@ -52493,15 +52523,15 @@
   "postesV4": 1,
   "semaineDebut": "2026-10-12"
  },
- "_cid": "jdw39vh37v",
- "_maj": 1791826145912,
- "_rev": "e8afn3atb2-mv5j1abq",
+ "_cid": "tmybqav3je9",
+ "_maj": 1791826177876,
+ "_rev": "spm4wcrda8c-mv5j1nnn",
  "_majSec": {
   "fer": 1791747940676,
-  "fact": 1791805564384,
+  "fact": 1791826177818,
   "users": 1791740420079,
   "weeks": 1791757960238,
-  "sheets": 1791825333980,
+  "sheets": 1791826177818,
   "_qcFix1": 1791569071023,
   "_wkFix1": 1791569071023,
   "journal": 1791825333980,
@@ -54365,13 +54395,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-12T17:29:26.151Z",
+  "maj": "2026-10-12T17:29:43.427Z",
   "semaine": 42,
   "totalBarils": 219277,
   "ca": 1096385,
   "objectif": 375000,
   "effectif": 83,
-  "clientsServis": 139,
+  "clientsServis": 140,
   "top3": [
    {
     "nom": "Tyler Collins",
