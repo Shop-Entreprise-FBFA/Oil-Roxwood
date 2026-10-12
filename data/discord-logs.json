@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-12T22:41:40.866594+00:00",
+ "maj": "2026-10-12T22:43:40.433835+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1559335384171675730",
+   "t": "2026-10-12T22:42:06.637000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 402x Pétrole Raffiné pour 4020$ par Hassan Cheb. 2010$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 402,
+   "montant": 4020,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1559333087341453435-0",
    "t": "2026-10-12T22:32:59.030000+00:00",
@@ -94751,30 +94767,6 @@
   },
   {
    "id": "1558456289603100813-2",
-   "t": "2026-10-10T12:28:54.159000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 143x Fer dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1815.01, 6566.57, 16.73\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7550\nplayerDiscord : 235844738656239616\nplayerName : Wiken\nplayerCharacter : William Rodriguez-collins\nplayerId : 46658\nitemId : iron",
-   "nom": "William Rodriguez-collins",
-   "quantite": 143,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1815.01, 6566.57, 16.73",
-    "targetposition": "-1815.66, 6565.56, 15.98",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7550",
-    "playerdiscord": "235844738656239616",
-    "playername": "Wiken",
-    "playercharacter": "William Rodriguez-collins",
-    "playerid": "46658",
-    "itemid": "iron"
-   }
-  },
-  {
-   "id": "1558456289603100813-3",
    "t": "2026-10-10T12:28:54.159000+00:00",
    "auteur": "Logs - Coffre",
    "texte": "Coffre\ndépot de 143x Fer dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1815.01, 6566.57, 16.73\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7550\nplayerDiscord : 235844738656239616\nplayerName : Wiken\nplayerCharacter : William Rodriguez-collins\nplayerId : 46658\nitemId : iron",
