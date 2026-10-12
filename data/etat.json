@@ -18098,14 +18098,6 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
-  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -18129,6 +18121,14 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T00:06:23.240Z"
+  },
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -52487,9 +52487,9 @@
   "postesV4": 1,
   "semaineDebut": "2026-10-12"
  },
- "_cid": "3mbu37rdfp7",
- "_maj": 1791823085910,
- "_rev": "1drxegbg79t-mv5h7noz",
+ "_cid": "ietmec7ke1",
+ "_maj": 1791823123775,
+ "_rev": "7pxxh0b2lua-mv5h851l",
  "_majSec": {
   "fer": 1791747940676,
   "fact": 1791805564384,
@@ -52498,7 +52498,7 @@
   "sheets": 1791820719329,
   "_qcFix1": 1791569071023,
   "_wkFix1": 1791569071023,
-  "journal": 1791817991671,
+  "journal": 1791823123775,
   "pending": 1791569071023,
   "prodDer": 1791649801390,
   "runners": 1791763994327,
@@ -52512,7 +52512,7 @@
   "primesExtra": 1791569071023,
   "quotasComHist": 1791757960238,
   "profils": 1791569071023,
-  "_tables": 1791823085910,
+  "_tables": 1791823123775,
   "_permsFix1": 1791569071023,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1791569071023,
@@ -52529,6 +52529,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1791823084908,
+   "u": "Stella Collins",
+   "a": "Facture reçue archivée : cayo garage"
+  },
   {
    "t": 1791817924122,
    "u": "Stella Collins",
@@ -54023,11 +54028,6 @@
    "t": 1790705282309,
    "u": "?",
    "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1790705186985,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
   }
  ],
  "prodDer": {
@@ -54359,7 +54359,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-12T16:38:24.179Z",
+  "maj": "2026-10-12T16:38:46.665Z",
   "semaine": 42,
   "totalBarils": 219277,
   "ca": 1096385,
@@ -201097,6 +201097,13 @@
     "role": "commercial",
     "vu": "2026-10-12T16:37:17.820Z",
     "id": 1791823038925
+   },
+   {
+    "uid": "948542221429379112",
+    "nom": "Stella Collins",
+    "role": "direction",
+    "vu": "2026-10-12T16:38:43.775Z",
+    "id": 1791823123227
    }
   ],
   "oilroxwood_demandes": [],
