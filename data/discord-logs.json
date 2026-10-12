@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-12T20:13:40.721372+00:00",
+ "maj": "2026-10-12T20:15:40.470063+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1559298398325178509",
+   "t": "2026-10-12T20:15:08.524000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 56x Pétrole Raffiné pour 560$ par Yann Zigzag. 280$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 56,
+   "montant": 560,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1559297153850155163",
    "t": "2026-10-12T20:10:11.818000+00:00",
@@ -94718,30 +94734,6 @@
    "texte": "Coffre\ndépot de 12x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3090.84, 6818.57, 44.73\ntargetPosition : -3090.06, 6818.50, 43.97\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6792\nplayerDiscord : 948542221429379112\nplayerName : IcyToad7886\nplayerCharacter : Stella Collins\nplayerId : 232050\nitemId : oil",
    "nom": "Stella Collins",
    "quantite": 12,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-3090.84, 6818.57, 44.73",
-    "targetposition": "-3090.06, 6818.50, 43.97",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6792",
-    "playerdiscord": "948542221429379112",
-    "playername": "IcyToad7886",
-    "playercharacter": "Stella Collins",
-    "playerid": "232050",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1558442214172926200-2",
-   "t": "2026-10-10T11:32:58.315000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 3x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3090.84, 6818.57, 44.73\ntargetPosition : -3090.06, 6818.50, 43.97\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6792\nplayerDiscord : 948542221429379112\nplayerName : IcyToad7886\nplayerCharacter : Stella Collins\nplayerId : 232050\nitemId : oil",
-   "nom": "Stella Collins",
-   "quantite": 3,
    "montant": null,
    "type": "coffre_depot",
    "salon": "1245400913066066099",
