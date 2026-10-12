@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-12T00:23:47.678410+00:00",
+ "maj": "2026-10-12T00:25:42.570913+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1558998664259571897",
+   "t": "2026-10-12T00:24:06.354000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 404x Pétrole Raffiné pour 4040$ par Athéna Andershon. 2020$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 404,
+   "montant": 4040,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1558998161807249419",
    "t": "2026-10-12T00:22:06.560000+00:00",
@@ -94783,30 +94799,6 @@
    "quantite": 32,
    "montant": null,
    "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1815.23, 6565.61, 16.73",
-    "targetposition": "-1815.66, 6565.56, 15.98",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "143",
-    "playerdiscord": "593431852291850281",
-    "playername": "BoldFish7448",
-    "playercharacter": "Tyler Collins",
-    "playerid": "209236",
-    "itemid": "weapon_petrolcan"
-   }
-  },
-  {
-   "id": "1558200363671228536-7",
-   "t": "2026-10-09T19:31:56.662000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 32x Bidon d'essence du coffre de l'entreprise (Oil RoxWood)\nposition : -1815.23, 6565.61, 16.73\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 143\nplayerDiscord : 593431852291850281\nplayerName : BoldFish7448\nplayerCharacter : Tyler Collins\nplayerId : 209236\nitemId : weapon_petrolcan",
-   "nom": "Tyler Collins",
-   "quantite": 32,
-   "montant": null,
-   "type": "coffre_retrait",
    "salon": "1245400913066066099",
    "coffre": "entreprise (Oil RoxWood)",
    "champs": {
