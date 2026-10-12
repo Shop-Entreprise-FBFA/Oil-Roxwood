@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-12T19:27:44.359850+00:00",
+ "maj": "2026-10-12T19:29:44.437425+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1559286822654320731",
+   "t": "2026-10-12T19:29:08.669000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 663x Pétrole Raffiné pour 6630$ par Teddy Flynn. 3315$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 663,
+   "montant": 6630,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1559286027053437093-0",
    "t": "2026-10-12T19:25:58.983000+00:00",
@@ -94762,30 +94778,6 @@
     "playername": "JumpyNewt1770",
     "playercharacter": "Diego Herrera",
     "playerid": "231487",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1558439828125655170-5",
-   "t": "2026-10-10T11:23:29.437000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 122x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1844.51, 6516.11, 16.73\ntargetPosition : -1844.79, 6516.31, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6949\nplayerDiscord : 583022533377523754\nplayerName : ChillyMouse1684\nplayerCharacter : Sarah Dute\nplayerId : 380792\nitemId : refinedoil",
-   "nom": "Sarah Dute",
-   "quantite": 122,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1844.51, 6516.11, 16.73",
-    "targetposition": "-1844.79, 6516.31, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6949",
-    "playerdiscord": "583022533377523754",
-    "playername": "ChillyMouse1684",
-    "playercharacter": "Sarah Dute",
-    "playerid": "380792",
     "itemid": "refinedoil"
    }
   }
