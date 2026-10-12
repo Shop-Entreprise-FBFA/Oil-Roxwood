@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-12T18:29:41.447107+00:00",
+ "maj": "2026-10-12T18:31:38.972254+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1559272223649435672",
+   "t": "2026-10-12T18:31:07.995000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 140x Pétrole Raffiné pour 1400$ par Yann Zigzag. 700$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 140,
+   "montant": 1400,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1559271435925585965-0",
    "t": "2026-10-12T18:28:00.187000+00:00",
@@ -94738,30 +94754,6 @@
     "playercharacter": "Stella Collins",
     "playerid": "232050",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1558426339260768380-2",
-   "t": "2026-10-10T10:29:53.441000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 44x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -1848.67, 6498.76, 16.73\ntargetPosition : -1849.11, 6498.65, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6792\nplayerDiscord : 948542221429379112\nplayerName : IcyToad7886\nplayerCharacter : Stella Collins\nplayerId : 232050\nitemId : oil",
-   "nom": "Stella Collins",
-   "quantite": 44,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1848.67, 6498.76, 16.73",
-    "targetposition": "-1849.11, 6498.65, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6792",
-    "playerdiscord": "948542221429379112",
-    "playername": "IcyToad7886",
-    "playercharacter": "Stella Collins",
-    "playerid": "232050",
-    "itemid": "oil"
    }
   }
  ]
