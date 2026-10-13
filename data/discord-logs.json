@@ -1,11 +1,75 @@
 {
- "maj": "2026-10-13T16:23:41.657928+00:00",
+ "maj": "2026-10-13T16:25:39.926394+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1559602855575429202",
+   "t": "2026-10-13T16:24:56.789000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 630x Pétrole Raffiné pour 6300$ par Cristóbal Perrera. 3150$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 630,
+   "montant": 6300,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1559602576658534402-0",
+   "t": "2026-10-13T16:23:50.290000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 149x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1845.78, 6515.17, 16.73\ntargetPosition : -1845.91, 6514.70, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 308\nplayerDiscord : 423564334916960266\nplayerName : FunL[i]ve\nplayerCharacter : Helena Rhosé\nplayerId : 355128\nitemId : refinedoil",
+   "nom": "Helena Rhosé",
+   "quantite": 149,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1845.78, 6515.17, 16.73",
+    "targetposition": "-1845.91, 6514.70, 15.74",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "308",
+    "playerdiscord": "423564334916960266",
+    "playername": "FunL[i]ve",
+    "playercharacter": "Helena Rhosé",
+    "playerid": "355128",
+    "itemid": "refinedoil"
+   }
+  },
+  {
+   "id": "1559602576658534402-1",
+   "t": "2026-10-13T16:23:50.290000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\na retiré 51x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1845.73, 6515.13, 16.73\ntargetPosition : -1845.91, 6514.70, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 308\nplayerDiscord : 423564334916960266\nplayerName : FunL[i]ve\nplayerCharacter : Helena Rhosé\nplayerId : 355128\nitemId : refinedoil",
+   "nom": "Helena Rhosé",
+   "quantite": 51,
+   "montant": null,
+   "type": "coffre_retrait",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1845.73, 6515.13, 16.73",
+    "targetposition": "-1845.91, 6514.70, 15.74",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "308",
+    "playerdiscord": "423564334916960266",
+    "playername": "FunL[i]ve",
+    "playercharacter": "Helena Rhosé",
+    "playerid": "355128",
+    "itemid": "refinedoil"
+   }
+  },
   {
    "id": "1559602325520121890-0",
    "t": "2026-10-13T16:22:50.414000+00:00",
@@ -94689,70 +94753,6 @@
     "playercharacter": "Bjorn Frost",
     "playerid": "361708",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1558833582540333127",
-   "t": "2026-10-11T13:28:07.805000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 641x Pétrole Raffiné pour 6410$ par Bjorn Frost. 3205$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 641,
-   "montant": 6410,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1558833572872196098-0",
-   "t": "2026-10-11T13:28:05.500000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 2x Tacos Del Mar du coffre de l'entreprise (Oil RoxWood)\nposition : -3085.73, 6820.48, 44.21\ntargetPosition : -3086.26, 6819.89, 43.78\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7969\nplayerDiscord : 1301627104940785687\nplayerName : 403 | C'EST TOUJOURS MA FAUTE TU DIT HYN\nplayerCharacter : Carter Fuente\nplayerId : 291258\nitemId : _tacosdelMar",
-   "nom": "Carter Fuente",
-   "quantite": 2,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-3085.73, 6820.48, 44.21",
-    "targetposition": "-3086.26, 6819.89, 43.78",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7969",
-    "playerdiscord": "1301627104940785687",
-    "playername": "403 | C'EST TOUJOURS MA FAUTE TU DIT HYN",
-    "playercharacter": "Carter Fuente",
-    "playerid": "291258",
-    "itemid": "_tacosdelMar"
-   }
-  },
-  {
-   "id": "1558833572872196098-1",
-   "t": "2026-10-11T13:28:05.500000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 2x Cayo Oasis du coffre de l'entreprise (Oil RoxWood)\nposition : -3085.73, 6820.48, 44.21\ntargetPosition : -3086.26, 6819.89, 43.78\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7969\nplayerDiscord : 1301627104940785687\nplayerName : 403 | C'EST TOUJOURS MA FAUTE TU DIT HYN\nplayerCharacter : Carter Fuente\nplayerId : 291258\nitemId : _cayooasis",
-   "nom": "Carter Fuente",
-   "quantite": 2,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-3085.73, 6820.48, 44.21",
-    "targetposition": "-3086.26, 6819.89, 43.78",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7969",
-    "playerdiscord": "1301627104940785687",
-    "playername": "403 | C'EST TOUJOURS MA FAUTE TU DIT HYN",
-    "playercharacter": "Carter Fuente",
-    "playerid": "291258",
-    "itemid": "_cayooasis"
    }
   }
  ]
