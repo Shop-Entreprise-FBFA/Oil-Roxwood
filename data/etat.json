@@ -12152,8 +12152,29 @@
    {
     "date": "2026-10-13",
     "client": "Ferme Roxwood",
-    "quantite": 500,
+    "quantite": 125,
     "qui": "Stella Collins",
+    "fact": 253157
+   },
+   {
+    "date": "2026-10-13",
+    "client": "Ferme Roxwood",
+    "quantite": 125,
+    "qui": "Diego Herrera",
+    "fact": 253157
+   },
+   {
+    "date": "2026-10-13",
+    "client": "Ferme Roxwood",
+    "quantite": 125,
+    "qui": "William Rodriguez-collins",
+    "fact": 253157
+   },
+   {
+    "date": "2026-10-13",
+    "client": "Ferme Roxwood",
+    "quantite": 125,
+    "qui": "Tyler Collins",
     "fact": 253157
    }
   ],
@@ -14798,24 +14819,25 @@
     "num": 253157,
     "date": "2026-10-13",
     "client": "Ferme Roxwood",
-    "emetteur": "Stella Collins",
+    "emetteur": "Stella Collins, Diego Herrera, William Rodriguez-collins, Tyler Collins",
     "postop": false,
     "lignes": [
      {
       "ref": "CMD",
       "qte": 500,
       "tva": 0,
+      "desc": "bidons d'essence ",
       "pu": 180,
       "ht": 90000,
-      "ttc": 90000,
-      "desc": "bidons d'essence "
+      "ttc": 90000
      }
     ],
     "offert": 0,
     "ht": 90000,
     "ttc": 90000,
     "poids": 1000,
-    "statut": "payee"
+    "statut": "payee",
+    "modifiee": 1791898720983
    },
    {
     "num": 253156,
@@ -52634,17 +52656,17 @@
   "semaineDebut": "2026-10-12"
  },
  "_cid": "j508zz8xvi",
- "_maj": 1791898707765,
- "_rev": "zwhshfvth5q-mv6q85oo",
+ "_maj": 1791898721034,
+ "_rev": "8o0gq1fxfh4-mv6q8dmn",
  "_majSec": {
   "fer": 1791747940676,
-  "fact": 1791898702913,
+  "fact": 1791898720984,
   "users": 1791830131076,
   "weeks": 1791757960238,
-  "sheets": 1791896693337,
+  "sheets": 1791898720984,
   "_qcFix1": 1791569071023,
   "_wkFix1": 1791569071023,
-  "journal": 1791895189707,
+  "journal": 1791898721034,
   "pending": 1791569071023,
   "prodDer": 1791649801390,
   "runners": 1791763994327,
@@ -52675,6 +52697,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1791898719427,
+   "u": "Stella Collins",
+   "a": "Facture n°253157 modifiée — émetteur Stella Collins → Stella Collins, Diego Herrera, William Rodriguez-collins, Tyler Collins"
+  },
   {
    "t": 1791895188056,
    "u": "Stella Collins",
@@ -54169,11 +54196,6 @@
    "t": 1790757962377,
    "u": "Diego Herrera",
    "a": "Recrutements Discord : 1 fiche(s) créée(s), 0 case(s) complétée(s) — Hashh Sheepeur"
-  },
-  {
-   "t": 1790757773047,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
   }
  ],
  "prodDer": {
@@ -54515,7 +54537,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-13T13:38:30.216Z",
+  "maj": "2026-10-13T13:38:40.511Z",
   "semaine": 42,
   "totalBarils": 219277,
   "ca": 1096385,
