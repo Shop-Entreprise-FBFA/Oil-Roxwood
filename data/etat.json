@@ -12128,6 +12128,20 @@
     "quantite": 500,
     "qui": "Julio Collins",
     "fact": 253155
+   },
+   {
+    "date": "2026-10-13",
+    "client": "Sandy Repairs",
+    "quantite": 50,
+    "qui": "Diego Herrera",
+    "fact": 253156
+   },
+   {
+    "date": "2026-10-13",
+    "client": "Sandy Repairs",
+    "quantite": 50,
+    "qui": "Stella Collins",
+    "fact": 253156
    }
   ],
   "collection": [
@@ -13573,7 +13587,7 @@
     "rib": "21138",
     "tel": "2048",
     "adresse": "Sandy Shores",
-    "lastCmd": "2026-09-23"
+    "lastCmd": "2026-10-13"
    },
    {
     "nom": "Famillia-Ghost",
@@ -14765,8 +14779,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253156,
+  "compteur": 253157,
   "factures": [
+   {
+    "num": 253156,
+    "date": "2026-10-13",
+    "client": "Sandy Repairs",
+    "emetteur": "Diego Herrera, Stella Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 100,
+      "tva": 0,
+      "pu": 180,
+      "ht": 18000,
+      "ttc": 18000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 18000,
+    "ttc": 18000,
+    "poids": 200,
+    "statut": "attente"
+   },
    {
     "num": 253155,
     "date": "2026-10-12",
@@ -52560,15 +52597,15 @@
   "postesV4": 1,
   "semaineDebut": "2026-10-12"
  },
- "_cid": "pos2x0l45rp",
- "_maj": 1791894176823,
- "_rev": "v7f849s2juq-mv6njh16",
+ "_cid": "j508zz8xvi",
+ "_maj": 1791894208028,
+ "_rev": "7sb9j6dihqh-mv6njn1e",
  "_majSec": {
   "fer": 1791747940676,
-  "fact": 1791830112450,
+  "fact": 1791894207815,
   "users": 1791830131076,
   "weeks": 1791757960238,
-  "sheets": 1791843099644,
+  "sheets": 1791894207815,
   "_qcFix1": 1791569071023,
   "_wkFix1": 1791569071023,
   "journal": 1791837719892,
@@ -52585,7 +52622,7 @@
   "primesExtra": 1791569071023,
   "quotasComHist": 1791757960238,
   "profils": 1791569071023,
-  "_tables": 1791894176823,
+  "_tables": 1791894208028,
   "_permsFix1": 1791569071023,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1791569071023,
@@ -54442,13 +54479,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-13T12:23:19.292Z",
+  "maj": "2026-10-13T12:23:27.074Z",
   "semaine": 42,
   "totalBarils": 219277,
   "ca": 1096385,
   "objectif": 375000,
   "effectif": 89,
-  "clientsServis": 141,
+  "clientsServis": 142,
   "top3": [
    {
     "nom": "Tyler Collins",
@@ -202510,6 +202547,13 @@
     "role": "direction",
     "vu": "2026-10-13T12:22:56.823Z",
     "id": 1791894177692
+   },
+   {
+    "uid": "948542221429379112",
+    "nom": "Stella Collins",
+    "role": "direction",
+    "vu": "2026-10-13T12:23:28.028Z",
+    "id": 1791894206539
    }
   ],
   "oilroxwood_demandes": [],
