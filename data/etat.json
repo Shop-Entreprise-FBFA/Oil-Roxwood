@@ -12148,6 +12148,13 @@
     "client": "Citoyen ⚡",
     "quantite": 1,
     "qui": "Stella Collins"
+   },
+   {
+    "date": "2026-10-13",
+    "client": "Ferme Roxwood",
+    "quantite": 500,
+    "qui": "Stella Collins",
+    "fact": 253157
    }
   ],
   "collection": [
@@ -14167,7 +14174,7 @@
     "rib": "21146",
     "tel": "2056",
     "adresse": "Roxwood",
-    "lastCmd": "2026-09-27"
+    "lastCmd": "2026-10-13"
    },
    {
     "nom": "Gang Gorée 221",
@@ -14785,8 +14792,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253157,
+  "compteur": 253158,
   "factures": [
+   {
+    "num": 253157,
+    "date": "2026-10-13",
+    "client": "Ferme Roxwood",
+    "emetteur": "Stella Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 500,
+      "tva": 0,
+      "pu": 180,
+      "ht": 90000,
+      "ttc": 90000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 90000,
+    "ttc": 90000,
+    "poids": 1000,
+    "statut": "attente"
+   },
    {
     "num": 253156,
     "date": "2026-10-13",
@@ -52604,14 +52634,14 @@
   "semaineDebut": "2026-10-12"
  },
  "_cid": "j508zz8xvi",
- "_maj": 1791896647804,
- "_rev": "gd0wlo0lcrv-mv6p0bqp",
+ "_maj": 1791896693396,
+ "_rev": "wzfmvd1546-mv6p0wp2",
  "_majSec": {
   "fer": 1791747940676,
-  "fact": 1791895192755,
+  "fact": 1791896693337,
   "users": 1791830131076,
   "weeks": 1791757960238,
-  "sheets": 1791895189707,
+  "sheets": 1791896693337,
   "_qcFix1": 1791569071023,
   "_wkFix1": 1791569071023,
   "journal": 1791895189707,
@@ -54485,13 +54515,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-13T13:04:25.201Z",
+  "maj": "2026-10-13T13:04:52.358Z",
   "semaine": 42,
   "totalBarils": 219277,
   "ca": 1096385,
   "objectif": 375000,
   "effectif": 89,
-  "clientsServis": 142,
+  "clientsServis": 143,
   "top3": [
    {
     "nom": "Tyler Collins",
