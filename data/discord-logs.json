@@ -1,11 +1,48 @@
 {
- "maj": "2026-10-13T04:09:39.801890+00:00",
+ "maj": "2026-10-13T04:11:39.783761+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1559418147629563980",
+   "t": "2026-10-13T04:10:58.983000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 649x Pétrole Raffiné pour 6490$ par Kazuki Ishikawa. 3245$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 649,
+   "montant": 6490,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1559417893391962166",
+   "t": "2026-10-13T04:09:58.368000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 6232\nplayerDiscord : 526458946836496394\nplayerName : DustySnaily7263\nplayerCharacter : Sali Dute\nplayerId : 380486\nvehiclePlate : BM4391ZM\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Sali Dute",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "6232",
+    "playerdiscord": "526458946836496394",
+    "playername": "DustySnaily7263",
+    "playercharacter": "Sali Dute",
+    "playerid": "380486",
+    "vehicleplate": "BM4391ZM",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1559417395519422495",
    "t": "2026-10-13T04:07:59.666000+00:00",
@@ -94535,54 +94572,6 @@
    "texte": "Coffre\na retiré 62x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -1850.76, 6502.14, 16.73\ntargetPosition : -1851.46, 6502.05, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7782\nplayerDiscord : 1301627104940785687\nplayerName : 403 | C'EST TOUJOURS MA FAUTE TU DIT HYN\nplayerCharacter : Carter Fuente\nplayerId : 291258\nitemId : oil",
    "nom": "Carter Fuente",
    "quantite": 62,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1850.76, 6502.14, 16.73",
-    "targetposition": "-1851.46, 6502.05, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7782",
-    "playerdiscord": "1301627104940785687",
-    "playername": "403 | C'EST TOUJOURS MA FAUTE TU DIT HYN",
-    "playercharacter": "Carter Fuente",
-    "playerid": "291258",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1558475422558060612-2",
-   "t": "2026-10-10T13:44:55.811000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 63x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1850.76, 6502.14, 16.73\ntargetPosition : -1851.46, 6502.05, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7782\nplayerDiscord : 1301627104940785687\nplayerName : 403 | C'EST TOUJOURS MA FAUTE TU DIT HYN\nplayerCharacter : Carter Fuente\nplayerId : 291258\nitemId : oil",
-   "nom": "Carter Fuente",
-   "quantite": 63,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1850.76, 6502.14, 16.73",
-    "targetposition": "-1851.46, 6502.05, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7782",
-    "playerdiscord": "1301627104940785687",
-    "playername": "403 | C'EST TOUJOURS MA FAUTE TU DIT HYN",
-    "playercharacter": "Carter Fuente",
-    "playerid": "291258",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1558475422558060612-3",
-   "t": "2026-10-10T13:44:55.811000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 63x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -1850.76, 6502.14, 16.73\ntargetPosition : -1851.46, 6502.05, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7782\nplayerDiscord : 1301627104940785687\nplayerName : 403 | C'EST TOUJOURS MA FAUTE TU DIT HYN\nplayerCharacter : Carter Fuente\nplayerId : 291258\nitemId : oil",
-   "nom": "Carter Fuente",
-   "quantite": 63,
    "montant": null,
    "type": "coffre_retrait",
    "salon": "1245400913066066099",
