@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-13T17:49:43.799720+00:00",
+ "maj": "2026-10-13T17:51:40.178650+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1559624265387610164",
+   "t": "2026-10-13T17:50:01.286000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 663x Pétrole Raffiné pour 6630$ par Teddy Flynn. 3315$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 663,
+   "montant": 6630,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1559623718693769349",
    "t": "2026-10-13T17:47:50.944000+00:00",
@@ -94669,30 +94685,6 @@
     "playername": "LoudToad9419",
     "playercharacter": "Ilyes Marade",
     "playerid": "379933",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1558850425871015995-4",
-   "t": "2026-10-11T14:35:03.568000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 63x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -3084.18, 6816.32, 44.73\ntargetPosition : -3084.39, 6815.87, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 202\nplayerDiscord : 1454487521005408319\nplayerName : FuzzyCat4460\nplayerCharacter : Anis Wolkeur\nplayerId : 361261\nitemId : oil",
-   "nom": "Anis Wolkeur",
-   "quantite": 63,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-3084.18, 6816.32, 44.73",
-    "targetposition": "-3084.39, 6815.87, 43.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "202",
-    "playerdiscord": "1454487521005408319",
-    "playername": "FuzzyCat4460",
-    "playercharacter": "Anis Wolkeur",
-    "playerid": "361261",
     "itemid": "oil"
    }
   }
