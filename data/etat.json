@@ -18317,6 +18317,22 @@
    "public": true,
    "maj": "2026-09-16T11:47:16.417Z"
   },
+  "stella collins": {
+   "nom": "Stella Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-14T13:20:17.287Z"
+  },
+  "julio collins": {
+   "nom": "Julio Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T00:06:23.240Z"
+  },
   "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿": {
    "nom": "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿",
    "photo": "",
@@ -18333,14 +18349,6 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
-  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -18349,21 +18357,13 @@
    "public": true,
    "maj": "2026-09-12T16:48:15.042Z"
   },
-  "stella collins": {
-   "nom": "Stella Collins",
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
    "photo": "",
    "titre": "",
    "bio": "",
    "public": true,
-   "maj": "2026-09-14T13:20:17.287Z"
-  },
-  "julio collins": {
-   "nom": "Julio Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T00:06:23.240Z"
+   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -52834,18 +52834,18 @@
   "postesV4": 1,
   "semaineDebut": "2026-10-12"
  },
- "_cid": "vkgofqxyp6b",
- "_maj": 1791914896800,
- "_rev": "ylob4qa7uk-mv6zwf05",
+ "_cid": "l72xj08fd2o",
+ "_maj": 1791914999783,
+ "_rev": "eiyinegsl54-mv6zxftx",
  "_majSec": {
   "fer": 1791913091967,
   "fact": 1791909218925,
-  "users": 1791910730747,
+  "users": 1791914999783,
   "weeks": 1791757960238,
   "sheets": 1791909045660,
   "_qcFix1": 1791569071023,
   "_wkFix1": 1791569071023,
-  "journal": 1791913147720,
+  "journal": 1791914999783,
   "pending": 1791569071023,
   "prodDer": 1791649801390,
   "runners": 1791763994327,
@@ -52859,7 +52859,7 @@
   "primesExtra": 1791569071023,
   "quotasComHist": 1791757960238,
   "profils": 1791569071023,
-  "_tables": 1791914896800,
+  "_tables": 1791914999640,
   "_permsFix1": 1791569071023,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1791569071023,
@@ -52876,6 +52876,16 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1791915002385,
+   "u": "Julio Collins",
+   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
+  },
+  {
+   "t": 1791915002163,
+   "u": "?",
+   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
+  },
   {
    "t": 1791913090270,
    "u": "Stella Collins",
@@ -54365,16 +54375,6 @@
    "t": 1790784023273,
    "u": "?",
    "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1790782316648,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1790782316513,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
   }
  ],
  "prodDer": {
@@ -54716,7 +54716,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-13T18:09:18.582Z",
+  "maj": "2026-10-13T18:10:06.309Z",
   "semaine": 42,
   "totalBarils": 219277,
   "ca": 1096385,
@@ -204590,6 +204590,13 @@
     "role": "commercial",
     "vu": "2026-10-13T18:08:16.799Z",
     "id": 1791914898058
+   },
+   {
+    "uid": "767332288744128512",
+    "nom": "Julio Collins",
+    "role": "commercial",
+    "vu": "2026-10-13T18:09:59.563Z",
+    "id": 1791915003023
    }
   ],
   "oilroxwood_demandes": [],
