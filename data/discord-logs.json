@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-13T03:29:40.666840+00:00",
+ "maj": "2026-10-13T03:31:43.377596+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1559407830979715185",
+   "t": "2026-10-13T03:29:59.302000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 641x Pétrole Raffiné pour 6410$ par Sali Dute. 3205$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 641,
+   "montant": 6410,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1559405313382416425",
    "t": "2026-10-13T03:19:59.060000+00:00",
@@ -94625,30 +94641,6 @@
     "playercharacter": "Carter Fuente",
     "playerid": "291258",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1558472655223660638-3",
-   "t": "2026-10-10T13:33:56.027000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 62x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -1851.31, 6501.88, 16.73\ntargetPosition : -1851.46, 6502.05, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7782\nplayerDiscord : 1301627104940785687\nplayerName : 403 | C'EST TOUJOURS MA FAUTE TU DIT HYN\nplayerCharacter : Carter Fuente\nplayerId : 291258\nitemId : oil",
-   "nom": "Carter Fuente",
-   "quantite": 62,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1851.31, 6501.88, 16.73",
-    "targetposition": "-1851.46, 6502.05, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7782",
-    "playerdiscord": "1301627104940785687",
-    "playername": "403 | C'EST TOUJOURS MA FAUTE TU DIT HYN",
-    "playercharacter": "Carter Fuente",
-    "playerid": "291258",
-    "itemid": "oil"
    }
   }
  ]
