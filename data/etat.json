@@ -12183,6 +12183,20 @@
     "quantite": 300,
     "qui": "Julio Collins",
     "fact": 253158
+   },
+   {
+    "date": "2026-10-13",
+    "client": "Sandy Repairs",
+    "quantite": 100,
+    "qui": "Laurent Roquel",
+    "fact": 253159
+   },
+   {
+    "date": "2026-10-13",
+    "client": "Sandy Repairs",
+    "quantite": 100,
+    "qui": "Carter Fuente",
+    "fact": 253159
    }
   ],
   "collection": [
@@ -14820,8 +14834,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253159,
+  "compteur": 253160,
   "factures": [
+   {
+    "num": 253159,
+    "date": "2026-10-13",
+    "client": "Sandy Repairs",
+    "emetteur": "Laurent Roquel, Carter Fuente",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 200,
+      "tva": 0,
+      "pu": 180,
+      "ht": 36000,
+      "ttc": 36000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 36000,
+    "ttc": 36000,
+    "poids": 400,
+    "statut": "attente"
+   },
    {
     "num": 253158,
     "date": "2026-10-13",
@@ -18296,14 +18333,6 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
-  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -18327,6 +18356,14 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T00:06:23.240Z"
+  },
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -52733,15 +52770,15 @@
   "postesV4": 1,
   "semaineDebut": "2026-10-12"
  },
- "_cid": "vkgofqxyp6b",
- "_maj": 1791908970823,
- "_rev": "4b4tog66mbe-mv6wdggr",
+ "_cid": "ybmkljaqvqp",
+ "_maj": 1791909045717,
+ "_rev": "g0ncf1o6jo-mv6wdpfg",
  "_majSec": {
   "fer": 1791901658627,
-  "fact": 1791899895281,
+  "fact": 1791909045660,
   "users": 1791899972078,
   "weeks": 1791757960238,
-  "sheets": 1791902809762,
+  "sheets": 1791909045660,
   "_qcFix1": 1791569071023,
   "_wkFix1": 1791569071023,
   "journal": 1791901698976,
@@ -54615,13 +54652,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-13T16:30:35.163Z",
+  "maj": "2026-10-13T16:30:46.780Z",
   "semaine": 42,
   "totalBarils": 219277,
   "ca": 1096385,
   "objectif": 375000,
   "effectif": 89,
-  "clientsServis": 144,
+  "clientsServis": 145,
   "top3": [
    {
     "nom": "Tyler Collins",
