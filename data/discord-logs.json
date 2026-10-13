@@ -1,11 +1,32 @@
 {
- "maj": "2026-10-13T01:59:41.374911+00:00",
+ "maj": "2026-10-13T02:01:40.209294+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1559385432091922445",
+   "t": "2026-10-13T02:00:58.991000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 1713\nplayerDiscord : 1346352248841568326\nplayerName : Freeze\nplayerCharacter : Elliot Adkins\nplayerId : 369986\nvehiclePlate : GD7230WT\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Elliot Adkins",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "1713",
+    "playerdiscord": "1346352248841568326",
+    "playername": "Freeze",
+    "playercharacter": "Elliot Adkins",
+    "playerid": "369986",
+    "vehicleplate": "GD7230WT",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1559383417047613473-0",
    "t": "2026-10-13T01:52:58.567000+00:00",
@@ -94690,30 +94711,6 @@
     "playercharacter": "Carter Fuente",
     "playerid": "291258",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1558468626439340105-1",
-   "t": "2026-10-10T13:17:55.490000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 63x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -1850.95, 6502.35, 16.73\ntargetPosition : -1851.46, 6502.05, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7782\nplayerDiscord : 1301627104940785687\nplayerName : 403 | C'EST TOUJOURS MA FAUTE TU DIT HYN\nplayerCharacter : Carter Fuente\nplayerId : 291258\nitemId : oil",
-   "nom": "Carter Fuente",
-   "quantite": 63,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1850.95, 6502.35, 16.73",
-    "targetposition": "-1851.46, 6502.05, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7782",
-    "playerdiscord": "1301627104940785687",
-    "playername": "403 | C'EST TOUJOURS MA FAUTE TU DIT HYN",
-    "playercharacter": "Carter Fuente",
-    "playerid": "291258",
-    "itemid": "oil"
    }
   }
  ]
