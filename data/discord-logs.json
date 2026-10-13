@@ -1,11 +1,32 @@
 {
- "maj": "2026-10-13T07:01:39.564162+00:00",
+ "maj": "2026-10-13T07:03:41.087529+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1559461431076986893",
+   "t": "2026-10-13T07:02:58.561000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 6292\nplayerDiscord : 1056044944571248710\nplayerName : Denzel DAVID\nplayerCharacter : Kazuki Ishikawa\nplayerId : 368391\nvehiclePlate : DO6888RF\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Kazuki Ishikawa",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "6292",
+    "playerdiscord": "1056044944571248710",
+    "playername": "Denzel DAVID",
+    "playercharacter": "Kazuki Ishikawa",
+    "playerid": "368391",
+    "vehicleplate": "DO6888RF",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1559450862819221537",
    "t": "2026-10-13T06:20:58.892000+00:00",
@@ -94534,30 +94555,6 @@
    "coffre": "entreprise (Oil RoxWood)",
    "champs": {
     "position": "-1850.33, 6515.68, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "414",
-    "playerdiscord": "485873438993678371",
-    "playername": "SleepyTurtle9190",
-    "playercharacter": "Hakim Cheb",
-    "playerid": "321842",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1558492088080011347-1",
-   "t": "2026-10-10T14:51:09.181000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 148x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1850.40, 6514.19, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 414\nplayerDiscord : 485873438993678371\nplayerName : SleepyTurtle9190\nplayerCharacter : Hakim Cheb\nplayerId : 321842\nitemId : refinedoil",
-   "nom": "Hakim Cheb",
-   "quantite": 148,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1850.40, 6514.19, 16.73",
     "targetposition": "-1850.63, 6515.15, 15.75",
     "jobid": "76",
     "jobname": "Oil RoxWood",
