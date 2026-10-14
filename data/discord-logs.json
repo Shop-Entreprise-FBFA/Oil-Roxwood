@@ -1,11 +1,32 @@
 {
- "maj": "2026-10-14T11:01:20.809912+00:00",
+ "maj": "2026-10-14T11:03:20.833232+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1559883858059460690",
+   "t": "2026-10-14T11:01:33.002000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 809\nplayerDiscord : 1176222824780800104\nplayerName : chretienlukas26\nplayerCharacter : Ethan Hayes\nplayerId : 381296\nvehiclePlate : AY0298ZV\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Ethan Hayes",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "809",
+    "playerdiscord": "1176222824780800104",
+    "playername": "chretienlukas26",
+    "playercharacter": "Ethan Hayes",
+    "playerid": "381296",
+    "vehicleplate": "AY0298ZV",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1559883106205437993",
    "t": "2026-10-14T10:58:33.746000+00:00",
@@ -94318,30 +94339,6 @@
     "playercharacter": "Bjorn Frost",
     "playerid": "361708",
     "itemid": "weapon_petrolcan"
-   }
-  },
-  {
-   "id": "1558897231749193754-2",
-   "t": "2026-10-11T17:41:02.959000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 60x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1807.87, 6571.79, 17.30\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 678\nplayerDiscord : 1096933851659517975\nplayerName : SoggyAnt2644\nplayerCharacter : Bjorn Frost\nplayerId : 361708\nitemId : refinedoil",
-   "nom": "Bjorn Frost",
-   "quantite": 60,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1807.87, 6571.79, 17.30",
-    "targetposition": "-1815.66, 6565.56, 15.98",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "678",
-    "playerdiscord": "1096933851659517975",
-    "playername": "SoggyAnt2644",
-    "playercharacter": "Bjorn Frost",
-    "playerid": "361708",
-    "itemid": "refinedoil"
    }
   }
  ]
