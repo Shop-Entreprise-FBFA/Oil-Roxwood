@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-14T07:47:26.087020+00:00",
+ "maj": "2026-10-14T07:49:20.416621+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1559835034981105726",
+   "t": "2026-10-14T07:47:32.673000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 196x Pétrole Raffiné pour 1960$ par Miguel Brooks. 980$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 196,
+   "montant": 1960,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1559834788758691904",
    "t": "2026-10-14T07:46:33.969000+00:00",
@@ -94377,30 +94393,6 @@
     "playercharacter": "Stella Collins",
     "playerid": "232050",
     "itemid": "oil"
-   }
-  },
-  {
-   "id": "1558888931796320374-7",
-   "t": "2026-10-11T17:08:04.096000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 1x Bidon d'essence du coffre de l'entreprise (Oil RoxWood)\nposition : -3090.33, 6818.81, 44.73\ntargetPosition : -3090.06, 6818.50, 43.97\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 2443\nplayerDiscord : 593431852291850281\nplayerName : llKyZerxll\nplayerCharacter : Tyler Collins\nplayerId : 209236\nitemId : weapon_petrolcan",
-   "nom": "Tyler Collins",
-   "quantite": 1,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-3090.33, 6818.81, 44.73",
-    "targetposition": "-3090.06, 6818.50, 43.97",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "2443",
-    "playerdiscord": "593431852291850281",
-    "playername": "llKyZerxll",
-    "playercharacter": "Tyler Collins",
-    "playerid": "209236",
-    "itemid": "weapon_petrolcan"
    }
   }
  ]
