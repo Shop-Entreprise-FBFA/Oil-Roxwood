@@ -18168,6 +18168,22 @@
    "public": true,
    "maj": "2026-09-16T11:47:16.417Z"
   },
+  "stella collins": {
+   "nom": "Stella Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-14T13:20:17.287Z"
+  },
+  "julio collins": {
+   "nom": "Julio Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T00:06:23.240Z"
+  },
   "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿": {
    "nom": "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿",
    "photo": "",
@@ -18191,22 +18207,6 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T16:48:15.042Z"
-  },
-  "stella collins": {
-   "nom": "Stella Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-14T13:20:17.287Z"
-  },
-  "julio collins": {
-   "nom": "Julio Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T00:06:23.240Z"
   },
   "william rodriguez-collins": {
    "nom": "William Rodriguez-collins",
@@ -52693,18 +52693,18 @@
   "postesV4": 1,
   "semaineDebut": "2026-10-12"
  },
- "_cid": "q8fyj83dedr",
- "_maj": 1792001411702,
- "_rev": "7d2e4msjt5-mv8fdbjw",
+ "_cid": "3itqti9xfzk",
+ "_maj": 1792001459321,
+ "_rev": "fcw4npx1ols-mv8fen4n",
  "_majSec": {
   "fer": 1791915624625,
   "fact": 1791996220281,
-  "users": 1791988857745,
+  "users": 1792001456822,
   "weeks": 1791757960238,
   "sheets": 1791996220281,
   "_qcFix1": 1791569071023,
   "_wkFix1": 1791569071023,
-  "journal": 1791994134551,
+  "journal": 1792001456822,
   "pending": 1791569071023,
   "prodDer": 1791649801390,
   "runners": 1791917821892,
@@ -52712,13 +52712,13 @@
   "imported": 1791569071023,
   "settings": 1791757960238,
   "closeUndo": 1791757960238,
-  "quotasCom": 1791909068635,
+  "quotasCom": 1792001459321,
   "bilanExtra": 1791917964284,
   "bilanForce": 1791569071023,
   "primesExtra": 1791569071023,
   "quotasComHist": 1791757960238,
   "profils": 1791569071023,
-  "_tables": 1792001411702,
+  "_tables": 1792001456687,
   "_permsFix1": 1791569071023,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1791569071023,
@@ -52735,6 +52735,16 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1792001462670,
+   "u": "Julio Collins",
+   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
+  },
+  {
+   "t": 1792001462457,
+   "u": "?",
+   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
+  },
   {
    "t": 1791994058913,
    "u": "Stella Collins",
@@ -54224,16 +54234,6 @@
    "t": 1790866681057,
    "u": "Julio Collins",
    "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1790866680913,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1790802490973,
-   "u": "Diego Herrera",
-   "a": "Suppression de la facture n°253134"
   }
  ],
  "prodDer": {
@@ -54585,7 +54585,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-14T18:10:07.676Z",
+  "maj": "2026-10-14T18:11:09.335Z",
   "semaine": 42,
   "totalBarils": 55268,
   "ca": 276340,
@@ -54716,9 +54716,9 @@
  "quotasCom": {
   "sem": 42,
   "achats": {},
-  "vendus": 1923,
-  "parPers": 385,
-  "ferPers": 770
+  "vendus": 2323,
+  "parPers": 465,
+  "ferPers": 930
  },
  "bilanExtra": [
   {
@@ -206934,6 +206934,13 @@
     "role": "commercial",
     "vu": "2026-10-14T18:10:11.702Z",
     "id": 1792001412277
+   },
+   {
+    "uid": "767332288744128512",
+    "nom": "Julio Collins",
+    "role": "commercial",
+    "vu": "2026-10-14T18:10:56.611Z",
+    "id": 1792001463359
    }
   ],
   "oilroxwood_demandes": [],
