@@ -12004,6 +12004,27 @@
     "quantite": 100,
     "qui": "Carter Fuente",
     "fact": 253159
+   },
+   {
+    "date": "2026-10-14",
+    "client": "Les Ricains",
+    "quantite": 134,
+    "qui": "Diego Herrera",
+    "fact": 253160
+   },
+   {
+    "date": "2026-10-14",
+    "client": "Les Ricains",
+    "quantite": 133,
+    "qui": "Laurent Roquel",
+    "fact": 253160
+   },
+   {
+    "date": "2026-10-14",
+    "client": "Les Ricains",
+    "quantite": 133,
+    "qui": "William Rodriguez-collins",
+    "fact": 253160
    }
   ],
   "collection": [
@@ -14174,7 +14195,7 @@
     "rib": "",
     "tel": "555 574 601",
     "adresse": "Los santos",
-    "lastCmd": "2026-10-05"
+    "lastCmd": "2026-10-14"
    },
    {
     "nom": "los caballeros de la muerte",
@@ -14641,8 +14662,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253160,
+  "compteur": 253161,
   "factures": [
+   {
+    "num": 253160,
+    "date": "2026-10-14",
+    "client": "Les Ricains",
+    "emetteur": "Diego Herrera, Laurent Roquel, William Rodriguez-collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 400,
+      "tva": 0.04,
+      "pu": 180,
+      "ht": 72000,
+      "ttc": 74880,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 72000,
+    "ttc": 74880,
+    "poids": 800,
+    "statut": "attente"
+   },
    {
     "num": 253159,
     "date": "2026-10-13",
@@ -52650,14 +52694,14 @@
   "semaineDebut": "2026-10-12"
  },
  "_cid": "ek782vkb1wq",
- "_maj": 1791996209601,
- "_rev": "7p41ttgz0j-mv8ca2bg",
+ "_maj": 1791996220329,
+ "_rev": "le8mr37nbg-mv8ca5pf",
  "_majSec": {
   "fer": 1791915624625,
-  "fact": 1791922862673,
+  "fact": 1791996220281,
   "users": 1791988857745,
   "weeks": 1791757960238,
-  "sheets": 1791925455085,
+  "sheets": 1791996220281,
   "_qcFix1": 1791569071023,
   "_wkFix1": 1791569071023,
   "journal": 1791994134551,
@@ -54541,13 +54585,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-14T16:43:36.892Z",
+  "maj": "2026-10-14T16:43:41.283Z",
   "semaine": 42,
   "totalBarils": 55268,
   "ca": 276340,
   "objectif": 375000,
   "effectif": 86,
-  "clientsServis": 145,
+  "clientsServis": 146,
   "top3": [
    {
     "nom": "Kazuki Ishikawa",
