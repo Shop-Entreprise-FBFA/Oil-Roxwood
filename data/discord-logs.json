@@ -1,11 +1,51 @@
 {
- "maj": "2026-10-14T19:41:19.126483+00:00",
+ "maj": "2026-10-14T19:43:21.394490+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1560015076247871579",
+   "t": "2026-10-14T19:42:57.856000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 143x Pétrole Raffiné pour 1430$ par Hassan Cheb. 715$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 143,
+   "montant": 1430,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1560015046266851379",
+   "t": "2026-10-14T19:42:50.708000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 51x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3085.03, 6814.72, 44.73\ntargetPosition : -3084.39, 6815.87, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 2845\nplayerDiscord : 334423976182939648\nplayerName : MoodyCat2429\nplayerCharacter : Nikko Mount\nplayerId : 276376\nitemId : oil",
+   "nom": "Nikko Mount",
+   "quantite": 51,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-3085.03, 6814.72, 44.73",
+    "targetposition": "-3084.39, 6815.87, 43.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "2845",
+    "playerdiscord": "334423976182939648",
+    "playername": "MoodyCat2429",
+    "playercharacter": "Nikko Mount",
+    "playerid": "276376",
+    "itemid": "oil"
+   }
+  },
   {
    "id": "1560014540043980835",
    "t": "2026-10-14T19:40:50.015000+00:00",
@@ -94178,54 +94218,6 @@
    "coffre": "entreprise (Oil RoxWood)",
    "champs": {
     "position": "-1810.47, 6574.59, 16.90",
-    "targetposition": "-1815.66, 6565.56, 15.98",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7091",
-    "playerdiscord": "707695913187016785",
-    "playername": "ShySpider2463",
-    "playercharacter": "Laurent Roquel",
-    "playerid": "282695",
-    "itemid": "weapon_petrolcan"
-   }
-  },
-  {
-   "id": "1559166752330481709-1",
-   "t": "2026-10-12T11:32:01.673000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 5x Bidon d'essence du coffre de l'entreprise (Oil RoxWood)\nposition : -1814.20, 6564.67, 16.90\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7091\nplayerDiscord : 707695913187016785\nplayerName : ShySpider2463\nplayerCharacter : Laurent Roquel\nplayerId : 282695\nitemId : weapon_petrolcan",
-   "nom": "Laurent Roquel",
-   "quantite": 5,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1814.20, 6564.67, 16.90",
-    "targetposition": "-1815.66, 6565.56, 15.98",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7091",
-    "playerdiscord": "707695913187016785",
-    "playername": "ShySpider2463",
-    "playercharacter": "Laurent Roquel",
-    "playerid": "282695",
-    "itemid": "weapon_petrolcan"
-   }
-  },
-  {
-   "id": "1559166504891711541",
-   "t": "2026-10-12T11:31:02.679000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 14x Bidon d'essence dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1810.48, 6574.60, 16.90\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7091\nplayerDiscord : 707695913187016785\nplayerName : ShySpider2463\nplayerCharacter : Laurent Roquel\nplayerId : 282695\nitemId : weapon_petrolcan",
-   "nom": "Laurent Roquel",
-   "quantite": 14,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1810.48, 6574.60, 16.90",
     "targetposition": "-1815.66, 6565.56, 15.98",
     "jobid": "76",
     "jobname": "Oil RoxWood",
