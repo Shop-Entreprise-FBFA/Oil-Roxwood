@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-14T08:45:21.568783+00:00",
+ "maj": "2026-10-14T08:47:20.757093+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1559849882506760206",
+   "t": "2026-10-14T08:46:32.599000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 779x Pétrole Raffiné pour 7790$ par Cristóbal Perrera. 3895$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 779,
+   "montant": 7790,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1559848873118269442-0",
    "t": "2026-10-14T08:42:31.942000+00:00",
@@ -94345,30 +94361,6 @@
    "texte": "Coffre\na retiré 39x Bidon d'essence du coffre de l'entreprise (Oil RoxWood)\nposition : -1815.61, 6565.61, 16.73\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1941\nplayerDiscord : 707695913187016785\nplayerName : ShySpider2463\nplayerCharacter : Laurent Roquel\nplayerId : 282695\nitemId : weapon_petrolcan",
    "nom": "Laurent Roquel",
    "quantite": 39,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1815.61, 6565.61, 16.73",
-    "targetposition": "-1815.66, 6565.56, 15.98",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "1941",
-    "playerdiscord": "707695913187016785",
-    "playername": "ShySpider2463",
-    "playercharacter": "Laurent Roquel",
-    "playerid": "282695",
-    "itemid": "weapon_petrolcan"
-   }
-  },
-  {
-   "id": "1558889683952603151-4",
-   "t": "2026-10-11T17:11:03.424000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 33x Bidon d'essence du coffre de l'entreprise (Oil RoxWood)\nposition : -1815.61, 6565.61, 16.73\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1941\nplayerDiscord : 707695913187016785\nplayerName : ShySpider2463\nplayerCharacter : Laurent Roquel\nplayerId : 282695\nitemId : weapon_petrolcan",
-   "nom": "Laurent Roquel",
-   "quantite": 33,
    "montant": null,
    "type": "coffre_retrait",
    "salon": "1245400913066066099",
