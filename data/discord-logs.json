@@ -1,11 +1,32 @@
 {
- "maj": "2026-10-14T12:03:23.273848+00:00",
+ "maj": "2026-10-14T12:05:21.917762+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1559899713879146527",
+   "t": "2026-10-14T12:04:33.324000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 1251\nplayerDiscord : 1539275024354254858\nplayerName : IcyCrab2321\nplayerCharacter : Teddy Flynn\nplayerId : 266882\nvehiclePlate : WG4999VM\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Teddy Flynn",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "1251",
+    "playerdiscord": "1539275024354254858",
+    "playername": "IcyCrab2321",
+    "playercharacter": "Teddy Flynn",
+    "playerid": "266882",
+    "vehicleplate": "WG4999VM",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1559897705290141732",
    "t": "2026-10-14T11:56:34.439000+00:00",
@@ -94302,30 +94323,6 @@
     "playercharacter": "Bjorn Frost",
     "playerid": "361708",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1558901979873419344-7",
-   "t": "2026-10-11T17:59:55+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 1x Fer du coffre de l'entreprise (Oil RoxWood)\nposition : -1815.20, 6566.37, 16.73\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 999\nplayerDiscord : 767332288744128512\nplayerName : JULIO COLLINS\nplayerCharacter : Julio Collins\nplayerId : 356873\nitemId : iron",
-   "nom": "Julio Collins",
-   "quantite": 1,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1815.20, 6566.37, 16.73",
-    "targetposition": "-1815.66, 6565.56, 15.98",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "999",
-    "playerdiscord": "767332288744128512",
-    "playername": "JULIO COLLINS",
-    "playercharacter": "Julio Collins",
-    "playerid": "356873",
-    "itemid": "iron"
    }
   }
  ]
