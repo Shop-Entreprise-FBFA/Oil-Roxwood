@@ -1,11 +1,32 @@
 {
- "maj": "2026-10-14T01:17:21.468519+00:00",
+ "maj": "2026-10-14T01:19:22.686631+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1559737215431737375",
+   "t": "2026-10-14T01:18:50.675000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 2208\nplayerDiscord : 700916054301474887\nplayerName : ShyOtter3189\nplayerCharacter : Alfro Bensh\nplayerId : 382567\nvehiclePlate : AS5715VX\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Alfro Bensh",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "2208",
+    "playerdiscord": "700916054301474887",
+    "playername": "ShyOtter3189",
+    "playercharacter": "Alfro Bensh",
+    "playerid": "382567",
+    "vehicleplate": "AS5715VX",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1559736729521492099",
    "t": "2026-10-14T01:16:54.825000+00:00",
@@ -94439,30 +94460,6 @@
     "playername": "IcyToad7886",
     "playercharacter": "Stella Collins",
     "playerid": "232050",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1558885397776433208-1",
-   "t": "2026-10-11T16:54:01.520000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 79x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -1842.70, 6521.76, 16.73\ntargetPosition : -1842.58, 6521.16, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1941\nplayerDiscord : 707695913187016785\nplayerName : ShySpider2463\nplayerCharacter : Laurent Roquel\nplayerId : 282695\nitemId : oil",
-   "nom": "Laurent Roquel",
-   "quantite": 79,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1842.70, 6521.76, 16.73",
-    "targetposition": "-1842.58, 6521.16, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "1941",
-    "playerdiscord": "707695913187016785",
-    "playername": "ShySpider2463",
-    "playercharacter": "Laurent Roquel",
-    "playerid": "282695",
     "itemid": "oil"
    }
   }
