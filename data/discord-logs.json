@@ -1,11 +1,32 @@
 {
- "maj": "2026-10-14T21:55:20.213314+00:00",
+ "maj": "2026-10-14T21:57:19.148488+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1560048762393460770",
+   "t": "2026-10-14T21:56:49.259000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 4409\nplayerDiscord : 355065235154927617\nplayerName : SlowBat2011\nplayerCharacter : Romain Pierres\nplayerId : 380745\nvehiclePlate : GD7230WT\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Romain Pierres",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "4409",
+    "playerdiscord": "355065235154927617",
+    "playername": "SlowBat2011",
+    "playercharacter": "Romain Pierres",
+    "playerid": "380745",
+    "vehicleplate": "GD7230WT",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1560047002513973329",
    "t": "2026-10-14T21:49:49.671000+00:00",
@@ -94186,22 +94207,6 @@
    "nom": null,
    "quantite": 110,
    "montant": 1100,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1559178356690391133",
-   "t": "2026-10-12T12:18:08.368000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 212x Pétrole Raffiné pour 2120$ par Kurtis Coleman. 1060$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 212,
-   "montant": 2120,
    "type": "vente",
    "salon": "1245400913473179729",
    "champs": {
