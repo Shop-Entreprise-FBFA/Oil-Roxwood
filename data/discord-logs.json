@@ -1,11 +1,32 @@
 {
- "maj": "2026-10-14T17:01:18.446290+00:00",
+ "maj": "2026-10-14T17:03:18.356718+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1559974769598926963",
+   "t": "2026-10-14T17:02:48.002000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 173\nplayerDiscord : 726178701867221134\nplayerName : Cristale\nplayerCharacter : Athéna Andershon\nplayerId : 196876\nvehiclePlate : ZG7875QV\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Athéna Andershon",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "173",
+    "playerdiscord": "726178701867221134",
+    "playername": "Cristale",
+    "playercharacter": "Athéna Andershon",
+    "playerid": "196876",
+    "vehicleplate": "ZG7875QV",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1559974015672655955",
    "t": "2026-10-14T16:59:48.252000+00:00",
@@ -94147,30 +94168,6 @@
     "playercharacter": "Bjorn Frost",
     "playerid": "361708",
     "itemid": "iron"
-   }
-  },
-  {
-   "id": "1558906730673610772-5",
-   "t": "2026-10-11T18:18:47.679000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 2x Bidon d'essence dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1810.09, 6572.72, 17.48\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 678\nplayerDiscord : 1096933851659517975\nplayerName : SoggyAnt2644\nplayerCharacter : Bjorn Frost\nplayerId : 361708\nitemId : weapon_petrolcan",
-   "nom": "Bjorn Frost",
-   "quantite": 2,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1810.09, 6572.72, 17.48",
-    "targetposition": "-1815.66, 6565.56, 15.98",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "678",
-    "playerdiscord": "1096933851659517975",
-    "playername": "SoggyAnt2644",
-    "playercharacter": "Bjorn Frost",
-    "playerid": "361708",
-    "itemid": "weapon_petrolcan"
    }
   }
  ]
