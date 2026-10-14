@@ -1,11 +1,32 @@
 {
- "maj": "2026-10-14T21:47:21.778869+00:00",
+ "maj": "2026-10-14T21:51:21.781728+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1560047002513973329",
+   "t": "2026-10-14T21:49:49.671000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 4711\nplayerDiscord : 526892583574568972\nplayerName : G-L | Tizmax\nplayerCharacter : Vladimir Spoutnarov\nplayerId : 364310\nvehiclePlate : AS5715VX\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Vladimir Spoutnarov",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "4711",
+    "playerdiscord": "526892583574568972",
+    "playername": "G-L | Tizmax",
+    "playercharacter": "Vladimir Spoutnarov",
+    "playerid": "364310",
+    "vehicleplate": "AS5715VX",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1560024903296745476",
    "t": "2026-10-14T20:22:00.807000+00:00",
@@ -94181,22 +94202,6 @@
    "nom": null,
    "quantite": 212,
    "montant": 2120,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1559177587257909346",
-   "t": "2026-10-12T12:15:04.921000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 464x Pétrole Raffiné pour 4640$ par Jake Wesley. 2320$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 464,
-   "montant": 4640,
    "type": "vente",
    "salon": "1245400913473179729",
    "champs": {
