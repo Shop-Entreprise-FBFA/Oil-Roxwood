@@ -1,11 +1,32 @@
 {
- "maj": "2026-10-14T08:19:22.362817+00:00",
+ "maj": "2026-10-14T08:21:21.409547+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1559843088493445161",
+   "t": "2026-10-14T08:19:32.780000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 337\nplayerDiscord : 726178701867221134\nplayerName : Cristale\nplayerCharacter : Athéna Andershon\nplayerId : 196876\nvehiclePlate : XP1606YE\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Athéna Andershon",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "337",
+    "playerdiscord": "726178701867221134",
+    "playername": "Cristale",
+    "playercharacter": "Athéna Andershon",
+    "playerid": "196876",
+    "vehicleplate": "XP1606YE",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1559841829862641778-0",
    "t": "2026-10-14T08:14:32.699000+00:00",
@@ -94346,30 +94367,6 @@
   },
   {
    "id": "1558888931796320374-1",
-   "t": "2026-10-11T17:08:04.096000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 39x Bidon d'essence du coffre de l'entreprise (Oil RoxWood)\nposition : -1815.92, 6565.77, 16.73\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1941\nplayerDiscord : 707695913187016785\nplayerName : ShySpider2463\nplayerCharacter : Laurent Roquel\nplayerId : 282695\nitemId : weapon_petrolcan",
-   "nom": "Laurent Roquel",
-   "quantite": 39,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1815.92, 6565.77, 16.73",
-    "targetposition": "-1815.66, 6565.56, 15.98",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "1941",
-    "playerdiscord": "707695913187016785",
-    "playername": "ShySpider2463",
-    "playercharacter": "Laurent Roquel",
-    "playerid": "282695",
-    "itemid": "weapon_petrolcan"
-   }
-  },
-  {
-   "id": "1558888931796320374-2",
    "t": "2026-10-11T17:08:04.096000+00:00",
    "auteur": "Logs - Coffre",
    "texte": "Coffre\na retiré 39x Bidon d'essence du coffre de l'entreprise (Oil RoxWood)\nposition : -1815.92, 6565.77, 16.73\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1941\nplayerDiscord : 707695913187016785\nplayerName : ShySpider2463\nplayerCharacter : Laurent Roquel\nplayerId : 282695\nitemId : weapon_petrolcan",
