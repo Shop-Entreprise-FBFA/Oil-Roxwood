@@ -5663,6 +5663,94 @@
  "sheets": {
   "rh": [
    {
+    "nom": "Enzo Poliquitrique",
+    "grade": "Intérimaire",
+    "tel": "555453309",
+    "rib": "565800",
+    "idU": "382957",
+    "arrivee": "2026-10-15",
+    "discord": "168542992599220224",
+    "avert": "",
+    "contrat": true,
+    "recrut": "Thomas Boyer",
+    "dernierService": "",
+    "flagOut": false,
+    "contratGen": {
+     "t": 1792087417607,
+     "par": "Diego Herrera"
+    }
+   },
+   {
+    "nom": "Jacob Stebane",
+    "grade": "Intérimaire",
+    "tel": "555 362 424",
+    "rib": "457099",
+    "idU": "299457",
+    "arrivee": "2026-10-15",
+    "discord": "1306377660322287657",
+    "avert": "",
+    "contrat": false,
+    "recrut": "Carter Fuente",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
+    "nom": "Figarland Shanks",
+    "grade": "Expert",
+    "tel": "555226713",
+    "rib": "509295",
+    "idU": "339934",
+    "arrivee": "2026-10-15",
+    "discord": "1381705983478464733",
+    "avert": "",
+    "contrat": true,
+    "recrut": "Carter Fuente",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
+    "nom": "Jimmy Darze",
+    "grade": "Intérimaire",
+    "tel": "555 754 087",
+    "rib": "468197",
+    "idU": "308176",
+    "arrivee": "2026-10-15",
+    "discord": "1294568791086202880",
+    "avert": "",
+    "contrat": true,
+    "recrut": "Thomas Boyer",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
+    "nom": "Xavier Collins",
+    "grade": "Intérimaire",
+    "tel": "555 219 678",
+    "rib": "448707",
+    "idU": "292769",
+    "arrivee": "2026-10-14",
+    "discord": "1346541845949186092",
+    "avert": "",
+    "contrat": true,
+    "recrut": "Carter Fuente",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
+    "nom": "Vladimir Spoutnarov",
+    "grade": "Intérimaire",
+    "tel": "555-816-803",
+    "rib": "539778",
+    "idU": "364310",
+    "arrivee": "2026-10-14",
+    "discord": "526892583574568972",
+    "avert": "",
+    "contrat": true,
+    "recrut": "Thomas Boyer",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
     "nom": "Enzo Verdoix",
     "grade": "Intérimaire",
     "tel": "555087229",
@@ -13421,7 +13509,7 @@
    },
    {
     "nom": "Hakim Cheb",
-    "grade": "Raffineur",
+    "grade": "Intérimaire",
     "menus": false,
     "boissons": false,
     "bidons": false,
@@ -13441,7 +13529,7 @@
    },
    {
     "nom": "Tonio Munson",
-    "grade": "Raffineur",
+    "grade": "Intérimaire",
     "menus": false,
     "boissons": false,
     "bidons": false,
@@ -52864,18 +52952,18 @@
   "postesV4": 1,
   "semaineDebut": "2026-10-12"
  },
- "_cid": "5962xmn25j4",
- "_maj": 1792087552781,
- "_rev": "0n57gkttnfn-mv9up0mo",
+ "_cid": "cuc5ao2tcze",
+ "_maj": 1792087614396,
+ "_rev": "5kap32gnalb-mv9upqea",
  "_majSec": {
   "fer": 1792083211822,
   "fact": 1792083956446,
   "users": 1792067857732,
   "weeks": 1791757960238,
-  "sheets": 1792062197079,
+  "sheets": 1792087614396,
   "_qcFix1": 1791569071023,
   "_wkFix1": 1791569071023,
-  "journal": 1792085335085,
+  "journal": 1792087614396,
   "pending": 1791569071023,
   "prodDer": 1791649801390,
   "runners": 1792014499455,
@@ -52889,7 +52977,7 @@
   "primesExtra": 1791569071023,
   "quotasComHist": 1791757960238,
   "profils": 1791569071023,
-  "_tables": 1792087552781,
+  "_tables": 1792087557755,
   "_permsFix1": 1791569071023,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1791569071023,
@@ -52897,15 +52985,35 @@
   "_affFix1": 1791569071023,
   "produits": 1791569071023,
   "_prodFix1": 1791569071023,
-  "_recruesIgnore": 1791925454991,
+  "_recruesIgnore": 1792087390927,
   "ventesAlias": 1791569071023,
   "_ventesIgnore": 1791569071023,
   "_avertVus": 1791569071023,
-  "_signeVus": 1791925455085
+  "_signeVus": 1792087391045
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1792087615018,
+   "u": "Diego Herrera",
+   "a": "Éligibilité : 2 grade(s) réalignés sur l'effectif — Hakim Cheb : Raffineur → Intérimaire · Tonio Munson : Raffineur → Intérimaire"
+  },
+  {
+   "t": 1792087418229,
+   "u": "Diego Herrera",
+   "a": "Contrat de travail généré : Enzo Poliquitrique (Runner)"
+  },
+  {
+   "t": 1792087391667,
+   "u": "Diego Herrera",
+   "a": "Contrat(s) signé(s) via Discord : Vladimir Spoutnarov, Xavier Collins, Jimmy Darze…"
+  },
+  {
+   "t": 1792087391549,
+   "u": "Diego Herrera",
+   "a": "Recrutements Discord : 6 fiche(s) créée(s), 0 case(s) complétée(s) — Vladimir Spoutnarov, Xavier Collins, Jimmy Darze…"
+  },
   {
    "t": 1792085335662,
    "u": "Diego Herrera",
@@ -54385,26 +54493,6 @@
    "t": 1791009770161,
    "u": "Julio Collins",
    "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1791009770015,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1791009700707,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1791009700579,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1791009574631,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
   }
  ],
  "prodDer": {
@@ -54776,12 +54864,12 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-15T18:06:53.809Z",
+  "maj": "2026-10-15T18:07:27.202Z",
   "semaine": 42,
   "totalBarils": 92379,
   "ca": 461895,
   "objectif": 375000,
-  "effectif": 88,
+  "effectif": 92,
   "clientsServis": 146,
   "top3": [
    {
@@ -212839,32 +212927,39 @@
     "id": 1792087193259
    },
    {
-    "uid": "707695913187016785",
-    "nom": "Laurent Roquel",
-    "role": "commercial",
-    "vu": "2026-10-15T18:01:52.849Z",
-    "id": 1792087313439
+    "uid": "826526979204841482",
+    "nom": "Diego Herrera",
+    "role": "direction",
+    "vu": "2026-10-15T18:00:52.733Z",
+    "id": 1792087254208
    },
    {
-    "uid": "707695913187016785",
-    "nom": "Laurent Roquel",
-    "role": "commercial",
-    "vu": "2026-10-15T18:02:52.849Z",
-    "id": 1792087373569
+    "uid": "826526979204841482",
+    "nom": "Diego Herrera",
+    "role": "direction",
+    "vu": "2026-10-15T18:01:52.688Z",
+    "id": 1792087313384
    },
    {
-    "uid": "707695913187016785",
-    "nom": "Laurent Roquel",
-    "role": "commercial",
-    "vu": "2026-10-15T18:04:52.842Z",
-    "id": 1792087493540
+    "uid": "826526979204841482",
+    "nom": "Diego Herrera",
+    "role": "direction",
+    "vu": "2026-10-15T18:03:52.949Z",
+    "id": 1792087434060
    },
    {
-    "uid": "707695913187016785",
-    "nom": "Laurent Roquel",
-    "role": "commercial",
-    "vu": "2026-10-15T18:05:52.781Z",
-    "id": 1792087553327
+    "uid": "826526979204841482",
+    "nom": "Diego Herrera",
+    "role": "direction",
+    "vu": "2026-10-15T18:04:52.683Z",
+    "id": 1792087493875
+   },
+   {
+    "uid": "826526979204841482",
+    "nom": "Diego Herrera",
+    "role": "direction",
+    "vu": "2026-10-15T18:05:57.754Z",
+    "id": 1792087559264
    }
   ],
   "oilroxwood_demandes": [],
@@ -215331,7 +215426,13 @@
   "1791831760670",
   "1791831904362",
   "1791834064504",
-  "1791905943107"
+  "1791905943107",
+  "1791999502843",
+  "1792001309493",
+  "1792082123654",
+  "1792085464225",
+  "1792085498769",
+  "1792086376163"
  ],
  "_signeVus": [
   "1789477305650",
@@ -215404,7 +215505,12 @@
   "1791831814223",
   "1791831931648",
   "1791834074820",
-  "1791905956126"
+  "1791905956126",
+  "1791999533309",
+  "1792001875139",
+  "1792082378110",
+  "1792085487467",
+  "1792086386554"
  ],
  "_agSupp": [
   "1789145270913",
