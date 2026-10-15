@@ -1,11 +1,53 @@
 {
- "maj": "2026-10-15T20:09:19.270399+00:00",
+ "maj": "2026-10-15T20:11:18.071551+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1560384328888750182",
+   "t": "2026-10-15T20:10:14.546000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 1554\nplayerDiscord : 934582184965193749\nplayerName : XgT Juanito\nplayerCharacter : Jackson Edwards\nplayerId : 382571\nvehiclePlate : AY0298ZV\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Jackson Edwards",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "1554",
+    "playerdiscord": "934582184965193749",
+    "playername": "XgT Juanito",
+    "playercharacter": "Jackson Edwards",
+    "playerid": "382571",
+    "vehicleplate": "AY0298ZV",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1560384085778497609",
+   "t": "2026-10-15T20:09:16.584000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 3147\nplayerDiscord : 1206926377832550420\nplayerName : babyboll\nplayerCharacter : Marie Ohana\nplayerId : 382584\nvehiclePlate : AS5715VX\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Marie Ohana",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "3147",
+    "playerdiscord": "1206926377832550420",
+    "playername": "babyboll",
+    "playercharacter": "Marie Ohana",
+    "playerid": "382584",
+    "vehicleplate": "AS5715VX",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1560383886041550871",
    "t": "2026-10-15T20:08:28.963000+00:00",
@@ -91882,46 +91924,6 @@
     "itemid": "refinedoil",
     "jobid": "76",
     "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1559297153850155163",
-   "t": "2026-10-12T20:10:11.818000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 148x Pétrole Raffiné pour 1480$ par Yann Zigzag. 740$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 148,
-   "montant": 1480,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1559297105967714356",
-   "t": "2026-10-12T20:10:00.402000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 62x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1844.53, 6518.90, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3893\nplayerDiscord : 529992411032846358\nplayerName : ChillyGoose6797\nplayerCharacter : Samantha Rodriguez\nplayerId : 126733\nitemId : refinedoil",
-   "nom": "Samantha Rodriguez",
-   "quantite": 62,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1844.53, 6518.90, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "3893",
-    "playerdiscord": "529992411032846358",
-    "playername": "ChillyGoose6797",
-    "playercharacter": "Samantha Rodriguez",
-    "playerid": "126733",
-    "itemid": "refinedoil"
    }
   }
  ]
