@@ -1,11 +1,32 @@
 {
- "maj": "2026-10-15T17:51:18.701350+00:00",
+ "maj": "2026-10-15T17:53:15.872834+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1560349352923365458",
+   "t": "2026-10-15T17:51:15.626000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbesperta\nplayerNetId : 165\nplayerDiscord : 168542992599220224\nplayerName : Limpori\nplayerCharacter : Enzo Poliquitrique\nplayerId : 382957\nvehiclePlate : KZ1932QE\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Enzo Poliquitrique",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "165",
+    "playerdiscord": "168542992599220224",
+    "playername": "Limpori",
+    "playercharacter": "Enzo Poliquitrique",
+    "playerid": "382957",
+    "vehicleplate": "KZ1932QE",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1560349103811072103-0",
    "t": "2026-10-15T17:50:16.233000+00:00",
@@ -93843,30 +93864,6 @@
     "playercharacter": "William Rodriguez-collins",
     "playerid": "46658",
     "itemid": "weapon_petrolcan"
-   }
-  },
-  {
-   "id": "1559263629197574147-1",
-   "t": "2026-10-12T17:56:58.918000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 60x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1808.15, 6575.13, 16.88\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1769\nplayerDiscord : 235844738656239616\nplayerName : Wiken\nplayerCharacter : William Rodriguez-collins\nplayerId : 46658\nitemId : refinedoil",
-   "nom": "William Rodriguez-collins",
-   "quantite": 60,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1808.15, 6575.13, 16.88",
-    "targetposition": "-1815.66, 6565.56, 15.98",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "1769",
-    "playerdiscord": "235844738656239616",
-    "playername": "Wiken",
-    "playercharacter": "William Rodriguez-collins",
-    "playerid": "46658",
-    "itemid": "refinedoil"
    }
   }
  ]
