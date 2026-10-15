@@ -52832,9 +52832,9 @@
   "postesV4": 1,
   "semaineDebut": "2026-10-12"
  },
- "_cid": "pos2x0l45rp",
- "_maj": 1792059172800,
- "_rev": "a8pq17r16ns-mv9ds55j",
+ "_cid": "jdw39vh37v",
+ "_maj": 1792059214831,
+ "_rev": "zq38mo8dl79-mv9dsgrb",
  "_majSec": {
   "fer": 1792003142557,
   "fact": 1791996220281,
@@ -52843,7 +52843,7 @@
   "sheets": 1792014580042,
   "_qcFix1": 1791569071023,
   "_wkFix1": 1791569071023,
-  "journal": 1792009821839,
+  "journal": 1792059214831,
   "pending": 1791569071023,
   "prodDer": 1791649801390,
   "runners": 1792014499455,
@@ -52857,7 +52857,7 @@
   "primesExtra": 1791569071023,
   "quotasComHist": 1791757960238,
   "profils": 1791569071023,
-  "_tables": 1792059172800,
+  "_tables": 1792059214831,
   "_permsFix1": 1791569071023,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1791569071023,
@@ -52874,6 +52874,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1792059159510,
+   "u": "Diego Herrera",
+   "a": "Facture reçue archivée : casa del gusto — 50 000 $"
+  },
   {
    "t": 1792009817803,
    "u": "Stella Collins",
@@ -54368,11 +54373,6 @@
    "t": 1790950133098,
    "u": "?",
    "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1790897687312,
-   "u": "Emma Collins",
-   "a": "Vente rapide sans facture : 5 bidon(s) — Citoyen (vendeur : Emma Collins)"
   }
  ],
  "prodDer": {
@@ -54724,7 +54724,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-15T10:13:26.167Z",
+  "maj": "2026-10-15T10:13:41.207Z",
   "semaine": 42,
   "totalBarils": 92379,
   "ca": 461895,
@@ -210963,8 +210963,15 @@
     "uid": "826526979204841482",
     "nom": "Diego Herrera",
     "role": "direction",
-    "vu": "2026-10-15T10:12:52.799Z",
-    "id": 1792059173887
+    "vu": "2026-10-15T10:12:22.529Z",
+    "id": 1792059144351
+   },
+   {
+    "uid": "826526979204841482",
+    "nom": "Diego Herrera",
+    "role": "direction",
+    "vu": "2026-10-15T10:13:34.831Z",
+    "id": 1792059216572
    }
   ],
   "oilroxwood_demandes": [],
@@ -211028,6 +211035,16 @@
     "img": "data/factures-recues/1791823083562-uslnr.jpg",
     "auteur": "Stella Collins",
     "id": 1791823085662
+   },
+   {
+    "entreprise": "casa del gusto",
+    "date": "2026-10-15",
+    "montant": 50000,
+    "lien": "",
+    "note": "",
+    "img": "data/factures-recues/1792059157838-e8ck9.jpg",
+    "auteur": "Diego Herrera",
+    "id": 1792059160252
    }
   ],
   "oilroxwood_agenda": [
