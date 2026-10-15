@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-15T20:31:17.861715+00:00",
+ "maj": "2026-10-15T20:49:18.380938+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1560393684342546464",
+   "t": "2026-10-15T20:47:25.060000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 301x Pétrole Raffiné pour 3010$ par Marie Ohana. 1505$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 301,
+   "montant": 3010,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1560389126795169924",
    "t": "2026-10-15T20:29:18.456000+00:00",
@@ -91884,22 +91900,6 @@
     "playercharacter": "Laurent Roquel",
     "playerid": "282695",
     "itemid": "oil"
-   }
-  },
-  {
-   "id": "1559306211088932938",
-   "t": "2026-10-12T20:46:11.232000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 324x Pétrole Raffiné pour 3240$ par Jackson Edwards. 1620$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 324,
-   "montant": 3240,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
