@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-15T04:51:24.441304+00:00",
+ "maj": "2026-10-15T04:53:20.571948+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1560153447427211316",
+   "t": "2026-10-15T04:52:48.116000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 100x Pétrole Raffiné pour 1000$ par Helena Rhosé. 500$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 100,
+   "montant": 1000,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1560152193200562257",
    "t": "2026-10-15T04:47:49.085000+00:00",
@@ -94132,30 +94148,6 @@
     "playercharacter": "Bjorn Frost",
     "playerid": "361708",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1559226632101957776-1",
-   "t": "2026-10-12T15:29:58.123000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 4x Bidon d'essence dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1809.77, 6574.15, 17.32\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 860\nplayerDiscord : 1096933851659517975\nplayerName : SoggyAnt2644\nplayerCharacter : Bjorn Frost\nplayerId : 361708\nitemId : weapon_petrolcan",
-   "nom": "Bjorn Frost",
-   "quantite": 4,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1809.77, 6574.15, 17.32",
-    "targetposition": "-1815.66, 6565.56, 15.98",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "860",
-    "playerdiscord": "1096933851659517975",
-    "playername": "SoggyAnt2644",
-    "playercharacter": "Bjorn Frost",
-    "playerid": "361708",
-    "itemid": "weapon_petrolcan"
    }
   }
  ]
