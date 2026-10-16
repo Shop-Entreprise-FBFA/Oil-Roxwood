@@ -1,11 +1,32 @@
 {
- "maj": "2026-10-16T07:45:15.969293+00:00",
+ "maj": "2026-10-16T07:57:17.644551+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1560561999568445481",
+   "t": "2026-10-16T07:56:14.537000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 5878\nplayerDiscord : 228152737701822465\nplayerName : SONIK\nplayerCharacter : Cristóbal Perrera\nplayerId : 379487\nvehiclePlate : AS5715VX\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Cristóbal Perrera",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "5878",
+    "playerdiscord": "228152737701822465",
+    "playername": "SONIK",
+    "playercharacter": "Cristóbal Perrera",
+    "playerid": "379487",
+    "vehicleplate": "AS5715VX",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1560558980131196929",
    "t": "2026-10-16T07:44:14.647000+00:00",
@@ -89989,30 +90010,6 @@
    "coffre": "entreprise (Oil RoxWood)",
    "champs": {
     "position": "-1850.35, 6514.89, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6566",
-    "playerdiscord": "1188523026795462748",
-    "playername": "JLTZK",
-    "playercharacter": "Jordan Coleman",
-    "playerid": "181277",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1559474769701769297",
-   "t": "2026-10-13T07:55:58.737000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 72x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1850.52, 6514.93, 16.76\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6566\nplayerDiscord : 1188523026795462748\nplayerName : JLTZK\nplayerCharacter : Jordan Coleman\nplayerId : 181277\nitemId : refinedoil",
-   "nom": "Jordan Coleman",
-   "quantite": 72,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1850.52, 6514.93, 16.76",
     "targetposition": "-1850.63, 6515.15, 15.75",
     "jobid": "76",
     "jobname": "Oil RoxWood",
