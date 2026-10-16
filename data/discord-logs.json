@@ -1,11 +1,48 @@
 {
- "maj": "2026-10-16T09:03:15.379599+00:00",
+ "maj": "2026-10-16T09:13:18.441784+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1560581121115164747",
+   "t": "2026-10-16T09:12:13.469000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 5878\nplayerDiscord : 228152737701822465\nplayerName : SONIK\nplayerCharacter : Cristóbal Perrera\nplayerId : 379487\nvehiclePlate : AS5715VX\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Cristóbal Perrera",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "5878",
+    "playerdiscord": "228152737701822465",
+    "playername": "SONIK",
+    "playercharacter": "Cristóbal Perrera",
+    "playerid": "379487",
+    "vehicleplate": "AS5715VX",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1560580895390310491",
+   "t": "2026-10-16T09:11:19.652000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 501x Pétrole Raffiné pour 5010$ par Cristóbal Perrera. 2505$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 501,
+   "montant": 5010,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1560578363586904126-0",
    "t": "2026-10-16T09:01:16.023000+00:00",
@@ -89768,22 +89805,6 @@
     "playercharacter": "Kazuki Ishikawa",
     "playerid": "368391",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1559492897202638910",
-   "t": "2026-10-13T09:08:00.670000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 322x Pétrole Raffiné pour 3220$ par Jordan Coleman. 1610$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 322,
-   "montant": 3220,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
