@@ -12261,13 +12261,6 @@
     "fact": 253154
    },
    {
-    "date": "2026-10-12",
-    "client": "Oil Roxwood",
-    "quantite": 500,
-    "qui": "Julio Collins",
-    "fact": 253155
-   },
-   {
     "date": "2026-10-13",
     "client": "Sandy Repairs",
     "quantite": 50,
@@ -12368,6 +12361,13 @@
     "client": "Employé — Xavier Collins ⚡",
     "quantite": 50,
     "qui": "Diego Herrera"
+   },
+   {
+    "date": "2026-10-12",
+    "client": "Oil Roxwood",
+    "quantite": 1000,
+    "qui": "Julio Collins",
+    "fact": 253155
    }
   ],
   "collection": [
@@ -15150,19 +15150,20 @@
     "lignes": [
      {
       "ref": "CMD",
-      "qte": 500,
+      "qte": 1000,
       "tva": 0,
+      "desc": "bidons d'essence ",
       "pu": 180,
-      "ht": 90000,
-      "ttc": 90000,
-      "desc": "bidons d'essence "
+      "ht": 180000,
+      "ttc": 180000
      }
     ],
     "offert": 0,
-    "ht": 90000,
-    "ttc": 90000,
-    "poids": 1000,
-    "statut": "payee"
+    "ht": 180000,
+    "ttc": 180000,
+    "poids": 2000,
+    "statut": "payee",
+    "modifiee": 1792149636672
    },
    {
     "num": 253154,
@@ -53087,17 +53088,17 @@
   "semaineDebut": "2026-10-12"
  },
  "_cid": "pos2x0l45rp",
- "_maj": 1792149621181,
- "_rev": "licfsdcvlyg-mvavm90d",
+ "_maj": 1792149636761,
+ "_rev": "5dt32timgrv-mvavmf61",
  "_majSec": {
   "fer": 1792090599970,
-  "fact": 1792149621181,
+  "fact": 1792149636673,
   "users": 1792090600002,
   "weeks": 1792090599970,
-  "sheets": 1792148620176,
+  "sheets": 1792149636673,
   "_qcFix1": 1792090599970,
   "_wkFix1": 1792090599970,
-  "journal": 1792090599970,
+  "journal": 1792149636761,
   "pending": 1792090599970,
   "prodDer": 1792090599970,
   "runners": 1792148620176,
@@ -53128,6 +53129,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1792149636949,
+   "u": "Diego Herrera",
+   "a": "Facture n°253155 modifiée — total 90 000 $ → 180 000 $"
+  },
   {
    "t": 1792087615018,
    "u": "Diego Herrera",
@@ -54622,11 +54628,6 @@
    "t": 1791010263522,
    "u": "?",
    "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1791009770161,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
   }
  ],
  "prodDer": {
@@ -54998,7 +54999,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-16T11:20:30.493Z",
+  "maj": "2026-10-16T11:20:38.473Z",
   "semaine": 42,
   "totalBarils": 124498,
   "ca": 622490,
