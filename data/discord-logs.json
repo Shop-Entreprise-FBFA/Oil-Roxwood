@@ -1,11 +1,48 @@
 {
- "maj": "2026-10-16T08:25:17.898234+00:00",
+ "maj": "2026-10-16T08:37:16.149004+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1560572062530150451",
+   "t": "2026-10-16T08:36:13.734000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 5878\nplayerDiscord : 228152737701822465\nplayerName : SONIK\nplayerCharacter : Cristóbal Perrera\nplayerId : 379487\nvehiclePlate : AS5715VX\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Cristóbal Perrera",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "5878",
+    "playerdiscord": "228152737701822465",
+    "playername": "SONIK",
+    "playercharacter": "Cristóbal Perrera",
+    "playerid": "379487",
+    "vehicleplate": "AS5715VX",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1560571826227249153",
+   "t": "2026-10-16T08:35:17.395000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 640x Pétrole Raffiné pour 6400$ par Cristóbal Perrera. 3200$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 640,
+   "montant": 6400,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1560569053322551339",
    "t": "2026-10-16T08:24:16.283000+00:00",
@@ -89834,126 +89871,6 @@
     "playername": "Cristale",
     "playercharacter": "Athéna Andershon",
     "playerid": "196876",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1559484838828843069",
-   "t": "2026-10-13T08:35:59.404000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 34x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1850.52, 6515.05, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6566\nplayerDiscord : 1188523026795462748\nplayerName : JLTZK\nplayerCharacter : Jordan Coleman\nplayerId : 181277\nitemId : refinedoil",
-   "nom": "Jordan Coleman",
-   "quantite": 34,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1850.52, 6515.05, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6566",
-    "playerdiscord": "1188523026795462748",
-    "playername": "JLTZK",
-    "playercharacter": "Jordan Coleman",
-    "playerid": "181277",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1559484333767663637",
-   "t": "2026-10-13T08:33:58.988000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 72x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1851.03, 6514.97, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6566\nplayerDiscord : 1188523026795462748\nplayerName : JLTZK\nplayerCharacter : Jordan Coleman\nplayerId : 181277\nitemId : refinedoil",
-   "nom": "Jordan Coleman",
-   "quantite": 72,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1851.03, 6514.97, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6566",
-    "playerdiscord": "1188523026795462748",
-    "playername": "JLTZK",
-    "playercharacter": "Jordan Coleman",
-    "playerid": "181277",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1559483578893602837",
-   "t": "2026-10-13T08:30:59.012000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 72x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1851.06, 6514.75, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6566\nplayerDiscord : 1188523026795462748\nplayerName : JLTZK\nplayerCharacter : Jordan Coleman\nplayerId : 181277\nitemId : refinedoil",
-   "nom": "Jordan Coleman",
-   "quantite": 72,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1851.06, 6514.75, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6566",
-    "playerdiscord": "1188523026795462748",
-    "playername": "JLTZK",
-    "playercharacter": "Jordan Coleman",
-    "playerid": "181277",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1559482822756925522",
-   "t": "2026-10-13T08:27:58.735000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 72x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1850.48, 6513.98, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6566\nplayerDiscord : 1188523026795462748\nplayerName : JLTZK\nplayerCharacter : Jordan Coleman\nplayerId : 181277\nitemId : refinedoil",
-   "nom": "Jordan Coleman",
-   "quantite": 72,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1850.48, 6513.98, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6566",
-    "playerdiscord": "1188523026795462748",
-    "playername": "JLTZK",
-    "playercharacter": "Jordan Coleman",
-    "playerid": "181277",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1559482320149418016",
-   "t": "2026-10-13T08:25:58.904000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 72x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1850.73, 6514.92, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6566\nplayerDiscord : 1188523026795462748\nplayerName : JLTZK\nplayerCharacter : Jordan Coleman\nplayerId : 181277\nitemId : refinedoil",
-   "nom": "Jordan Coleman",
-   "quantite": 72,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1850.73, 6514.92, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6566",
-    "playerdiscord": "1188523026795462748",
-    "playername": "JLTZK",
-    "playercharacter": "Jordan Coleman",
-    "playerid": "181277",
     "itemid": "refinedoil"
    }
   }
