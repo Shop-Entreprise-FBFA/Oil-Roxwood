@@ -1,11 +1,32 @@
 {
- "maj": "2026-10-16T16:01:17.559989+00:00",
+ "maj": "2026-10-16T16:03:18.724753+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1560684394543321099",
+   "t": "2026-10-16T16:02:35.773000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 735\nplayerDiscord : 1499848677986930882\nplayerName : CleverBeetle1673\nplayerCharacter : Clara Soules\nplayerId : 380202\nvehiclePlate : AS5715VX\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Clara Soules",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "735",
+    "playerdiscord": "1499848677986930882",
+    "playername": "CleverBeetle1673",
+    "playercharacter": "Clara Soules",
+    "playerid": "380202",
+    "vehicleplate": "AS5715VX",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1560683949200638117",
    "t": "2026-10-16T16:00:49.595000+00:00",
@@ -77857,30 +77878,6 @@
    "coffre": "entreprise (Oil RoxWood)",
    "champs": {
     "position": "-3083.00, 6816.24, 44.73",
-    "targetposition": "-3084.39, 6815.87, 43.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "284",
-    "playerdiscord": "529992411032846358",
-    "playername": "ChillyGoose6797",
-    "playercharacter": "Samantha Rodriguez",
-    "playerid": "126733",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1559597291059290175",
-   "t": "2026-10-13T16:02:50.105000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 82x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -3083.09, 6816.32, 44.73\ntargetPosition : -3084.39, 6815.87, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 284\nplayerDiscord : 529992411032846358\nplayerName : ChillyGoose6797\nplayerCharacter : Samantha Rodriguez\nplayerId : 126733\nitemId : oil",
-   "nom": "Samantha Rodriguez",
-   "quantite": 82,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-3083.09, 6816.32, 44.73",
     "targetposition": "-3084.39, 6815.87, 43.75",
     "jobid": "76",
     "jobname": "Oil RoxWood",
