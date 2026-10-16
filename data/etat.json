@@ -12368,6 +12368,13 @@
     "quantite": 1000,
     "qui": "Julio Collins",
     "fact": 253155
+   },
+   {
+    "date": "2026-10-16",
+    "client": "strada nostra",
+    "quantite": 100,
+    "qui": "William Rodriguez-collins",
+    "fact": 253161
    }
   ],
   "collection": [
@@ -14888,7 +14895,7 @@
     "rib": "",
     "tel": "555-989-971",
     "adresse": "Los Santos",
-    "lastCmd": "2026-08-30"
+    "lastCmd": "2026-10-16"
    },
    {
     "nom": "Tequilala",
@@ -15023,8 +15030,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253161,
+  "compteur": 253162,
   "factures": [
+   {
+    "num": 253161,
+    "date": "2026-10-16",
+    "client": "strada nostra",
+    "emetteur": "William Rodriguez-collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 100,
+      "tva": 0.05,
+      "pu": 180,
+      "ht": 18000,
+      "ttc": 18900,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 18000,
+    "ttc": 18900,
+    "poids": 200,
+    "statut": "attente"
+   },
    {
     "num": 253160,
     "date": "2026-10-14",
@@ -53088,14 +53118,14 @@
   "semaineDebut": "2026-10-12"
  },
  "_cid": "nkghdngu2q",
- "_maj": 1792152441701,
- "_rev": "nc6x6rrbrad-mvaxalhi",
+ "_maj": 1792152456175,
+ "_rev": "91hyv8xo3yi-mvaxau0h",
  "_majSec": {
   "fer": 1792090599970,
-  "fact": 1792149636673,
+  "fact": 1792152456108,
   "users": 1792090600002,
   "weeks": 1792090599970,
-  "sheets": 1792150396105,
+  "sheets": 1792152456108,
   "_qcFix1": 1792090599970,
   "_wkFix1": 1792090599970,
   "journal": 1792149636761,
@@ -54999,13 +55029,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-16T12:07:26.022Z",
+  "maj": "2026-10-16T12:07:37.073Z",
   "semaine": 42,
   "totalBarils": 124498,
   "ca": 622490,
   "objectif": 375000,
   "effectif": 95,
-  "clientsServis": 146,
+  "clientsServis": 147,
   "top3": [
    {
     "nom": "Teddy Flynn",
