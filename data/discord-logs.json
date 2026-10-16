@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-16T17:17:18.852754+00:00",
+ "maj": "2026-10-16T17:21:16.722138+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1560703808764641285",
+   "t": "2026-10-16T17:19:44.484000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 446x Pétrole Raffiné pour 4460$ par Roberto Carlos. 2230$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 446,
+   "montant": 4460,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1560703049503350918",
    "t": "2026-10-16T17:16:43.462000+00:00",
@@ -76458,150 +76474,6 @@
     "playername": "ChillyGoose6797",
     "playercharacter": "Samantha Rodriguez",
     "playerid": "126733",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1559616920054009973",
-   "t": "2026-10-13T17:20:50.022000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 9x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1844.84, 6517.69, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 602\nplayerDiscord : 1539275024354254858\nplayerName : IcyCrab2321\nplayerCharacter : Teddy Flynn\nplayerId : 266882\nitemId : refinedoil",
-   "nom": "Teddy Flynn",
-   "quantite": 9,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1844.84, 6517.69, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "602",
-    "playerdiscord": "1539275024354254858",
-    "playername": "IcyCrab2321",
-    "playercharacter": "Teddy Flynn",
-    "playerid": "266882",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1559616670337736800-0",
-   "t": "2026-10-13T17:19:50.485000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 28x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1850.19, 6515.10, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 2010\nplayerDiscord : 726178701867221134\nplayerName : Cristale\nplayerCharacter : Athéna Andershon\nplayerId : 196876\nitemId : refinedoil",
-   "nom": "Athéna Andershon",
-   "quantite": 28,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1850.19, 6515.10, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "2010",
-    "playerdiscord": "726178701867221134",
-    "playername": "Cristale",
-    "playercharacter": "Athéna Andershon",
-    "playerid": "196876",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1559616670337736800-1",
-   "t": "2026-10-13T17:19:50.485000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 161x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1843.99, 6518.20, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 602\nplayerDiscord : 1539275024354254858\nplayerName : IcyCrab2321\nplayerCharacter : Teddy Flynn\nplayerId : 266882\nitemId : refinedoil",
-   "nom": "Teddy Flynn",
-   "quantite": 161,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1843.99, 6518.20, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "602",
-    "playerdiscord": "1539275024354254858",
-    "playername": "IcyCrab2321",
-    "playercharacter": "Teddy Flynn",
-    "playerid": "266882",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1559616670337736800-2",
-   "t": "2026-10-13T17:19:50.485000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 161x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1843.71, 6518.03, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 602\nplayerDiscord : 1539275024354254858\nplayerName : IcyCrab2321\nplayerCharacter : Teddy Flynn\nplayerId : 266882\nitemId : refinedoil",
-   "nom": "Teddy Flynn",
-   "quantite": 161,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1843.71, 6518.03, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "602",
-    "playerdiscord": "1539275024354254858",
-    "playername": "IcyCrab2321",
-    "playercharacter": "Teddy Flynn",
-    "playerid": "266882",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1559616414304833632-0",
-   "t": "2026-10-13T17:18:49.442000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 148x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1850.11, 6514.97, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 2010\nplayerDiscord : 726178701867221134\nplayerName : Cristale\nplayerCharacter : Athéna Andershon\nplayerId : 196876\nitemId : refinedoil",
-   "nom": "Athéna Andershon",
-   "quantite": 148,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1850.11, 6514.97, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "2010",
-    "playerdiscord": "726178701867221134",
-    "playername": "Cristale",
-    "playercharacter": "Athéna Andershon",
-    "playerid": "196876",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1559616414304833632-1",
-   "t": "2026-10-13T17:18:49.442000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 148x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1850.39, 6514.09, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 2010\nplayerDiscord : 726178701867221134\nplayerName : Cristale\nplayerCharacter : Athéna Andershon\nplayerId : 196876\nitemId : refinedoil",
-   "nom": "Athéna Andershon",
-   "quantite": 148,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1850.39, 6514.09, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "2010",
-    "playerdiscord": "726178701867221134",
-    "playername": "Cristale",
-    "playercharacter": "Athéna Andershon",
-    "playerid": "196876",
     "itemid": "refinedoil"
    }
   }
