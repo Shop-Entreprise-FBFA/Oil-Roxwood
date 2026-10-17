@@ -18658,6 +18658,22 @@
    "public": true,
    "maj": "2026-09-16T11:47:16.417Z"
   },
+  "stella collins": {
+   "nom": "Stella Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-14T13:20:17.287Z"
+  },
+  "julio collins": {
+   "nom": "Julio Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T00:06:23.240Z"
+  },
   "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿": {
    "nom": "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿",
    "photo": "",
@@ -18681,22 +18697,6 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T16:48:15.042Z"
-  },
-  "stella collins": {
-   "nom": "Stella Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-14T13:20:17.287Z"
-  },
-  "julio collins": {
-   "nom": "Julio Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T00:06:23.240Z"
   },
   "william rodriguez-collins": {
    "nom": "William Rodriguez-collins",
@@ -53022,6 +53022,14 @@
    "quantite": 40,
    "montant": 200,
    "did": "767332288744128512"
+  },
+  {
+   "id": "1560778312765276211",
+   "t": "2026-10-17 00:15",
+   "nom": "Julio Collins",
+   "quantite": 4,
+   "montant": 20,
+   "did": "767332288744128512"
   }
  ],
  "settings": {
@@ -53231,18 +53239,18 @@
   "postesV4": 1,
   "semaineDebut": "2026-10-12"
  },
- "_cid": "pos2x0l45rp",
- "_maj": 1792229330841,
- "_rev": "of2tmc9vww-mvc72jks",
+ "_cid": "s6rkpjgawgf",
+ "_maj": 1792229336189,
+ "_rev": "yhkwiamdo5h-mvc72x0k",
  "_majSec": {
-  "fer": 1792158550551,
+  "fer": 1792229336189,
   "fact": 1792155408869,
-  "users": 1792188136866,
+  "users": 1792229332733,
   "weeks": 1792090599970,
   "sheets": 1792188138987,
   "_qcFix1": 1792090599970,
   "_wkFix1": 1792090599970,
-  "journal": 1792188138987,
+  "journal": 1792229332733,
   "pending": 1792090599970,
   "prodDer": 1792090599970,
   "runners": 1792148620176,
@@ -53256,7 +53264,7 @@
   "primesExtra": 1792090599970,
   "quotasComHist": 1792090599970,
   "profils": 1792090599970,
-  "_tables": 1792229330841,
+  "_tables": 1792229332607,
   "_permsFix1": 1792090599970,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792090599970,
@@ -53273,6 +53281,21 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1792229349403,
+   "u": "Julio Collins",
+   "a": "Achats de fer : 1 relevé(s) repris du salon"
+  },
+  {
+   "t": 1792229345916,
+   "u": "Julio Collins",
+   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
+  },
+  {
+   "t": 1792229345711,
+   "u": "?",
+   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
+  },
   {
    "t": 1792188139458,
    "u": "Stella Collins",
@@ -54757,21 +54780,6 @@
    "t": 1791048792453,
    "u": "Diego Herrera",
    "a": "Absences Discord reprises : Adel Dulax"
-  },
-  {
-   "t": 1791048080226,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1791048080001,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1791048026500,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
   }
  ],
  "prodDer": {
@@ -55153,7 +55161,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-17T09:28:52.636Z",
+  "maj": "2026-10-17T09:29:10.052Z",
   "semaine": 42,
   "totalBarils": 124498,
   "ca": 622490,
@@ -220713,18 +220721,11 @@
     "id": 1792229151092
    },
    {
-    "uid": "826526979204841482",
-    "nom": "Diego Herrera",
-    "role": "direction",
-    "vu": "2026-10-17T09:27:50.834Z",
-    "id": 1792229271761
-   },
-   {
-    "uid": "826526979204841482",
-    "nom": "Diego Herrera",
-    "role": "direction",
-    "vu": "2026-10-17T09:28:50.841Z",
-    "id": 1792229331713
+    "uid": "767332288744128512",
+    "nom": "Julio Collins",
+    "role": "commercial",
+    "vu": "2026-10-17T09:28:52.530Z",
+    "id": 1792229346340
    }
   ],
   "oilroxwood_demandes": [],
