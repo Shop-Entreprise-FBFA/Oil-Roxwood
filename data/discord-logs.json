@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-17T22:53:11.392402+00:00",
+ "maj": "2026-10-17T22:57:14.102678+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1561150713185177683",
+   "t": "2026-10-17T22:55:34.801000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 300x Pétrole Raffiné pour 3000$ par Mouloud Gnakouri. 1500$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 300,
+   "montant": 3000,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1561149925826367590",
    "t": "2026-10-17T22:52:27.080000+00:00",
@@ -40604,22 +40620,6 @@
    "nom": null,
    "quantite": 616,
    "montant": 6160,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1560063639610986537",
-   "t": "2026-10-14T22:55:56.264000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 119x Pétrole Raffiné pour 1190$ par Vladimir Spoutnarov. 595$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 119,
-   "montant": 1190,
    "type": "vente",
    "salon": "1245400913473179729",
    "champs": {
