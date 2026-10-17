@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-17T20:03:10.062940+00:00",
+ "maj": "2026-10-17T20:07:12.278701+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1561108201364263073",
+   "t": "2026-10-17T20:06:39.193000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 351x Pétrole Raffiné pour 3510$ par Hassan Cheb. 1755$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 351,
+   "montant": 3510,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1561106925741940787",
    "t": "2026-10-17T20:01:35.061000+00:00",
@@ -40987,22 +41003,6 @@
     "playercharacter": "Hassan Cheb",
     "playerid": "321847",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1560021122823749667",
-   "t": "2026-10-14T20:06:59.472000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 650x Pétrole Raffiné pour 6500$ par Hassan Cheb. 3250$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 650,
-   "montant": 6500,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
