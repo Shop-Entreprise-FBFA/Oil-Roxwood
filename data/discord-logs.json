@@ -1,11 +1,51 @@
 {
- "maj": "2026-10-17T21:11:10.246334+00:00",
+ "maj": "2026-10-17T21:13:12.046981+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1561124557383925803",
+   "t": "2026-10-17T21:11:38.772000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 474x Pétrole Raffiné pour 4740$ par Enzo Verdoix. 2370$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 474,
+   "montant": 4740,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1561124533702758442",
+   "t": "2026-10-17T21:11:33.126000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 90x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1850.90, 6515.58, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1986\nplayerDiscord : 1133001106105045012\nplayerName : killian.grember62117\nplayerCharacter : Kiki Debondi\nplayerId : 383168\nitemId : refinedoil",
+   "nom": "Kiki Debondi",
+   "quantite": 90,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1850.90, 6515.58, 16.73",
+    "targetposition": "-1850.63, 6515.15, 15.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "1986",
+    "playerdiscord": "1133001106105045012",
+    "playername": "killian.grember62117",
+    "playercharacter": "Kiki Debondi",
+    "playerid": "383168",
+    "itemid": "refinedoil"
+   }
+  },
   {
    "id": "1561124293381857421",
    "t": "2026-10-17T21:10:35.829000+00:00",
