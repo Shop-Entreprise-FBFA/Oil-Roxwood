@@ -12598,6 +12598,20 @@
     "quantite": 150,
     "qui": "Laurent Roquel",
     "fact": 253162
+   },
+   {
+    "date": "2026-10-17",
+    "client": "Fyfty Boys",
+    "quantite": 50,
+    "qui": "Laurent Roquel",
+    "fact": 253163
+   },
+   {
+    "date": "2026-10-17",
+    "client": "Fyfty Boys",
+    "quantite": 50,
+    "qui": "William Rodriguez-collins",
+    "fact": 253163
    }
   ],
   "collection": [
@@ -13960,7 +13974,7 @@
     "adresse": "Los Santos ",
     "tel": "",
     "rib": "",
-    "lastCmd": "2026-09-28"
+    "lastCmd": "2026-10-17"
    },
    {
     "nom": "wintoria",
@@ -15253,8 +15267,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253163,
+  "compteur": 253164,
   "factures": [
+   {
+    "num": 253163,
+    "date": "2026-10-17",
+    "client": "Fyfty Boys",
+    "emetteur": "Laurent Roquel, William Rodriguez-collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 100,
+      "tva": 0.05,
+      "pu": 180,
+      "ht": 18000,
+      "ttc": 18900,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 18000,
+    "ttc": 18900,
+    "poids": 200,
+    "statut": "payee"
+   },
    {
     "num": 253162,
     "date": "2026-10-17",
@@ -53396,14 +53433,14 @@
   "semaineDebut": "2026-10-12"
  },
  "_cid": "9upq3cfsc6g",
- "_maj": 1792240423207,
- "_rev": "wqj6ukyk8ef-mvcdoeyo",
+ "_maj": 1792240434100,
+ "_rev": "oecvfopmdfn-mvcdokx9",
  "_majSec": {
   "fer": 1792229336189,
-  "fact": 1792237886753,
+  "fact": 1792240434100,
   "users": 1792229332733,
   "weeks": 1792090599970,
-  "sheets": 1792237982750,
+  "sheets": 1792240430081,
   "_qcFix1": 1792090599970,
   "_wkFix1": 1792090599970,
   "journal": 1792229332733,
@@ -55317,13 +55354,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-17T12:33:50.784Z",
+  "maj": "2026-10-17T12:33:58.509Z",
   "semaine": 42,
   "totalBarils": 147555,
   "ca": 737775,
   "objectif": 375000,
   "effectif": 100,
-  "clientsServis": 148,
+  "clientsServis": 149,
   "top3": [
    {
     "nom": "Teddy Flynn",
