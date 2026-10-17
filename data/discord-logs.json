@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-17T18:39:09.966401+00:00",
+ "maj": "2026-10-17T18:43:10.520717+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1561086790994235443",
+   "t": "2026-10-17T18:41:34.563000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 182x Pétrole Raffiné pour 1820$ par Xavier Collins. 910$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 182,
+   "montant": 1820,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1561086002594971731",
    "t": "2026-10-17T18:38:26.594000+00:00",
@@ -43949,118 +43965,6 @@
     "vehicleplate": "WG4999VM",
     "jobid": "76",
     "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1559999984152219743",
-   "t": "2026-10-14T18:42:59.620000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 663x Pétrole Raffiné pour 6630$ par Teddy Flynn. 3315$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 663,
-   "montant": 6630,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1559999942926401660-0",
-   "t": "2026-10-14T18:42:49.791000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 65x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -3083.54, 6816.88, 44.73\ntargetPosition : -3084.39, 6815.87, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 2179\nplayerDiscord : 422167625460744192\nplayerName : PaleNewt4194\nplayerCharacter : Jj Junior\nplayerId : 382570\nitemId : oil",
-   "nom": "Jj Junior",
-   "quantite": 65,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-3083.54, 6816.88, 44.73",
-    "targetposition": "-3084.39, 6815.87, 43.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "2179",
-    "playerdiscord": "422167625460744192",
-    "playername": "PaleNewt4194",
-    "playercharacter": "Jj Junior",
-    "playerid": "382570",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1559999942926401660-1",
-   "t": "2026-10-14T18:42:49.791000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 65x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -3083.67, 6817.06, 44.73\ntargetPosition : -3084.39, 6815.87, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 2179\nplayerDiscord : 422167625460744192\nplayerName : PaleNewt4194\nplayerCharacter : Jj Junior\nplayerId : 382570\nitemId : oil",
-   "nom": "Jj Junior",
-   "quantite": 65,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-3083.67, 6817.06, 44.73",
-    "targetposition": "-3084.39, 6815.87, 43.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "2179",
-    "playerdiscord": "422167625460744192",
-    "playername": "PaleNewt4194",
-    "playercharacter": "Jj Junior",
-    "playerid": "382570",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1559999942926401660-2",
-   "t": "2026-10-14T18:42:49.791000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 27x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -3083.76, 6817.40, 44.73\ntargetPosition : -3084.39, 6815.87, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 2179\nplayerDiscord : 422167625460744192\nplayerName : PaleNewt4194\nplayerCharacter : Jj Junior\nplayerId : 382570\nitemId : oil",
-   "nom": "Jj Junior",
-   "quantite": 27,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-3083.76, 6817.40, 44.73",
-    "targetposition": "-3084.39, 6815.87, 43.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "2179",
-    "playerdiscord": "422167625460744192",
-    "playername": "PaleNewt4194",
-    "playercharacter": "Jj Junior",
-    "playerid": "382570",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1559999191089029152",
-   "t": "2026-10-14T18:39:50.539000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 1x Cola du coffre de l'entreprise (Oil RoxWood)\nposition : -3090.01, 6818.56, 44.73\ntargetPosition : -3090.06, 6818.50, 43.97\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 2845\nplayerDiscord : 334423976182939648\nplayerName : MoodyCat2429\nplayerCharacter : Nikko Mount\nplayerId : 276376\nitemId : coca",
-   "nom": "Nikko Mount",
-   "quantite": 1,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-3090.01, 6818.56, 44.73",
-    "targetposition": "-3090.06, 6818.50, 43.97",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "2845",
-    "playerdiscord": "334423976182939648",
-    "playername": "MoodyCat2429",
-    "playercharacter": "Nikko Mount",
-    "playerid": "276376",
-    "itemid": "coca"
    }
   }
  ]
