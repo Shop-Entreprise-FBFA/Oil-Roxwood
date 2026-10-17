@@ -1,11 +1,51 @@
 {
- "maj": "2026-10-17T21:05:14.523534+00:00",
+ "maj": "2026-10-17T21:09:10.236331+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1561123802136445073",
+   "t": "2026-10-17T21:08:38.707000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 478x Pétrole Raffiné pour 4780$ par Jordan Impreza. 2390$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 478,
+   "montant": 4780,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1561123772654952502",
+   "t": "2026-10-17T21:08:31.678000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 70x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1850.27, 6514.62, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1966\nplayerDiscord : 1001949594432839741\nplayerName : CleverMouse0176\nplayerCharacter : Sku Desaantos\nplayerId : 360584\nitemId : refinedoil",
+   "nom": "Sku Desaantos",
+   "quantite": 70,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1850.27, 6514.62, 16.73",
+    "targetposition": "-1850.63, 6515.15, 15.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "1966",
+    "playerdiscord": "1001949594432839741",
+    "playername": "CleverMouse0176",
+    "playercharacter": "Sku Desaantos",
+    "playerid": "360584",
+    "itemid": "refinedoil"
+   }
+  },
   {
    "id": "1561122779510607964",
    "t": "2026-10-17T21:04:34.894000+00:00",
