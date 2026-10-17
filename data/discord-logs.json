@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-17T16:27:13.357056+00:00",
+ "maj": "2026-10-17T16:29:11.131918+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1561053075337384002",
+   "t": "2026-10-17T16:27:36.124000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 290x Pétrole Raffiné pour 2900$ par Bingo Dallas. 1450$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 290,
+   "montant": 2900,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1561052836152873041",
    "t": "2026-10-17T16:26:39.098000+00:00",
@@ -54574,27 +54590,6 @@
    "salon": "1245400913473179729",
    "champs": {
     "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1559965962122436609",
-   "t": "2026-10-14T16:27:48.136000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 220\nplayerDiscord : 1555644918075097190\nplayerName : IcyCrab2321\nplayerCharacter : Teddy Flynn\nplayerId : 266882\nvehiclePlate : WG4999VM\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Teddy Flynn",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "220",
-    "playerdiscord": "1555644918075097190",
-    "playername": "IcyCrab2321",
-    "playercharacter": "Teddy Flynn",
-    "playerid": "266882",
-    "vehicleplate": "WG4999VM",
     "jobid": "76",
     "jobname": "Oil RoxWood"
    }
