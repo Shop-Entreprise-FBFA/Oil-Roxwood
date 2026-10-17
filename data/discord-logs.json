@@ -1,11 +1,43 @@
 {
- "maj": "2026-10-17T19:41:12.599160+00:00",
+ "maj": "2026-10-17T19:43:12.600422+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1561102146076672101",
+   "t": "2026-10-17T19:42:35.500000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 42x Pétrole Raffiné pour 420$ par Jj Junior. 210$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 42,
+   "montant": 420,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1561101896280838266",
+   "t": "2026-10-17T19:41:35.944000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 244x Pétrole Raffiné pour 2440$ par Jj Junior. 1220$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 244,
+   "montant": 2440,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1561101396139442268",
    "t": "2026-10-17T19:39:36.701000+00:00",
@@ -40772,46 +40804,6 @@
     "playercharacter": "Hassan Cheb",
     "playerid": "321847",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1560015076247871579",
-   "t": "2026-10-14T19:42:57.856000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 143x Pétrole Raffiné pour 1430$ par Hassan Cheb. 715$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 143,
-   "montant": 1430,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1560015046266851379",
-   "t": "2026-10-14T19:42:50.708000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 51x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3085.03, 6814.72, 44.73\ntargetPosition : -3084.39, 6815.87, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 2845\nplayerDiscord : 334423976182939648\nplayerName : MoodyCat2429\nplayerCharacter : Nikko Mount\nplayerId : 276376\nitemId : oil",
-   "nom": "Nikko Mount",
-   "quantite": 51,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-3085.03, 6814.72, 44.73",
-    "targetposition": "-3084.39, 6815.87, 43.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "2845",
-    "playerdiscord": "334423976182939648",
-    "playername": "MoodyCat2429",
-    "playercharacter": "Nikko Mount",
-    "playerid": "276376",
-    "itemid": "oil"
    }
   }
  ]
