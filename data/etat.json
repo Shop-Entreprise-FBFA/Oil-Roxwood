@@ -12618,6 +12618,13 @@
     "client": "Citoyen ⚡",
     "quantite": 44,
     "qui": "Emma Collins"
+   },
+   {
+    "date": "2026-10-17",
+    "client": "Klan Zarkanov",
+    "quantite": 75,
+    "qui": "Emma Collins-rodriguez",
+    "fact": 253164
    }
   ],
   "collection": [
@@ -13958,7 +13965,8 @@
     "nom": "Klan Zarkanov",
     "adresse": "Paleto",
     "tel": "",
-    "rib": ""
+    "rib": "",
+    "lastCmd": "2026-10-17"
    },
    {
     "nom": "Maja-13",
@@ -15279,8 +15287,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253164,
+  "compteur": 253165,
   "factures": [
+   {
+    "num": 253164,
+    "date": "2026-10-17",
+    "client": "Klan Zarkanov",
+    "emetteur": "Emma Collins-rodriguez",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 75,
+      "tva": 0.04,
+      "pu": 180,
+      "ht": 13500,
+      "ttc": 14040,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 13500,
+    "ttc": 14040,
+    "poids": 150,
+    "statut": "attente"
+   },
    {
     "num": 253163,
     "date": "2026-10-17",
@@ -53605,14 +53636,14 @@
   "semaineDebut": "2026-10-12"
  },
  "_cid": "uwdg6bku7uj",
- "_maj": 1792274456808,
- "_rev": "w5pz0h1dtop-mvcxxxwt",
+ "_maj": 1792274491749,
+ "_rev": "xr2rvey0l4h-mvcxygh7",
  "_majSec": {
   "fer": 1792249854203,
-  "fact": 1792274456808,
+  "fact": 1792274491670,
   "users": 1792229332733,
   "weeks": 1792090599970,
-  "sheets": 1792274428092,
+  "sheets": 1792274491670,
   "_qcFix1": 1792090599970,
   "_wkFix1": 1792090599970,
   "journal": 1792274428092,
@@ -55526,13 +55557,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-17T22:01:07.565Z",
+  "maj": "2026-10-17T22:01:31.627Z",
   "semaine": 42,
   "totalBarils": 147555,
   "ca": 737775,
   "objectif": 375000,
   "effectif": 100,
-  "clientsServis": 149,
+  "clientsServis": 150,
   "top3": [
    {
     "nom": "Teddy Flynn",
