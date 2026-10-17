@@ -1,11 +1,43 @@
 {
- "maj": "2026-10-17T06:49:17.272785+00:00",
+ "maj": "2026-10-17T06:59:10.646378+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1560909882948063344-0",
+   "t": "2026-10-17T06:58:36.398000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 641x Pétrole Raffiné pour 6410$ par Cristóbal Perrera. 3205$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 641,
+   "montant": 6410,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1560909882948063344-1",
+   "t": "2026-10-17T06:58:36.398000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 318x Pétrole Raffiné pour 3180$ par Kurtis Coleman. 1590$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 318,
+   "montant": 3180,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1560907116095737891-0",
    "t": "2026-10-17T06:47:36.729000+00:00",
@@ -54721,78 +54753,6 @@
     "itemid": "refinedoil",
     "jobid": "76",
     "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1559821953051787270-0",
-   "t": "2026-10-14T06:55:33.698000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 157x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1843.38, 6518.14, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 75\nplayerDiscord : 1056044944571248710\nplayerName : Denzel DAVID\nplayerCharacter : Kazuki Ishikawa\nplayerId : 368391\nitemId : refinedoil",
-   "nom": "Kazuki Ishikawa",
-   "quantite": 157,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1843.38, 6518.14, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "75",
-    "playerdiscord": "1056044944571248710",
-    "playername": "Denzel DAVID",
-    "playercharacter": "Kazuki Ishikawa",
-    "playerid": "368391",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1559821953051787270-1",
-   "t": "2026-10-14T06:55:33.698000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 157x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1843.38, 6518.14, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 75\nplayerDiscord : 1056044944571248710\nplayerName : Denzel DAVID\nplayerCharacter : Kazuki Ishikawa\nplayerId : 368391\nitemId : refinedoil",
-   "nom": "Kazuki Ishikawa",
-   "quantite": 157,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1843.38, 6518.14, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "75",
-    "playerdiscord": "1056044944571248710",
-    "playername": "Denzel DAVID",
-    "playercharacter": "Kazuki Ishikawa",
-    "playerid": "368391",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1559821953051787270-2",
-   "t": "2026-10-14T06:55:33.698000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 12x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1843.38, 6518.14, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 75\nplayerDiscord : 1056044944571248710\nplayerName : Denzel DAVID\nplayerCharacter : Kazuki Ishikawa\nplayerId : 368391\nitemId : refinedoil",
-   "nom": "Kazuki Ishikawa",
-   "quantite": 12,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1843.38, 6518.14, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "75",
-    "playerdiscord": "1056044944571248710",
-    "playername": "Denzel DAVID",
-    "playercharacter": "Kazuki Ishikawa",
-    "playerid": "368391",
-    "itemid": "refinedoil"
    }
   }
  ]
