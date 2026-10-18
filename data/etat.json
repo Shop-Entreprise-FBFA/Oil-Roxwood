@@ -12631,6 +12631,13 @@
     "client": "Employé — Bjorn Frost ⚡",
     "quantite": 50,
     "qui": "Julio Collins"
+   },
+   {
+    "date": "2026-10-18",
+    "client": "Devils Sons",
+    "quantite": 200,
+    "qui": "Laurent Roquel",
+    "fact": 253165
    }
   ],
   "collection": [
@@ -14473,7 +14480,7 @@
     "rib": "",
     "tel": "555 743 997",
     "adresse": "Roxwood",
-    "lastCmd": "2026-10-04"
+    "lastCmd": "2026-10-18"
    },
    {
     "nom": "Distric Alta",
@@ -15293,8 +15300,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253165,
+  "compteur": 253166,
   "factures": [
+   {
+    "num": 253165,
+    "date": "2026-10-18",
+    "client": "Devils Sons",
+    "emetteur": "Laurent Roquel",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 200,
+      "tva": 0.05,
+      "pu": 180,
+      "ht": 36000,
+      "ttc": 37800,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 36000,
+    "ttc": 37800,
+    "poids": 400,
+    "statut": "payee"
+   },
    {
     "num": 253164,
     "date": "2026-10-17",
@@ -53568,6 +53598,14 @@
    "quantite": 153,
    "montant": 765,
    "did": "1096933851659517975"
+  },
+  {
+   "id": "1561410452179914876",
+   "t": "2026-10-18 18:07",
+   "nom": "Julio Collins",
+   "quantite": 20,
+   "montant": 100,
+   "did": "767332288744128512"
   }
  ],
  "settings": {
@@ -53777,15 +53815,15 @@
   "postesV4": 1,
   "semaineDebut": "2026-10-12"
  },
- "_cid": "pos2x0l45rp",
- "_maj": 1792348707637,
- "_rev": "ccq0z8ynnfi-mve65nmu",
+ "_cid": "sgfpluw3ihr",
+ "_maj": 1792348779500,
+ "_rev": "0b4xbfqnny59-mve66pvp",
  "_majSec": {
-  "fer": 1792318437812,
-  "fact": 1792274495014,
+  "fer": 1792348779500,
+  "fact": 1792347943367,
   "users": 1792339533621,
   "weeks": 1792090599970,
-  "sheets": 1792342029960,
+  "sheets": 1792347939716,
   "_qcFix1": 1792090599970,
   "_wkFix1": 1792090599970,
   "journal": 1792342029960,
@@ -53796,13 +53834,13 @@
   "imported": 1792090599970,
   "settings": 1792090599970,
   "closeUndo": 1792090599970,
-  "quotasCom": 1792330948167,
+  "quotasCom": 1792348779295,
   "bilanExtra": 1792148706201,
   "bilanForce": 1792090599970,
   "primesExtra": 1792090599970,
   "quotasComHist": 1792090599970,
   "profils": 1792090599970,
-  "_tables": 1792348707637,
+  "_tables": 1792348775934,
   "_permsFix1": 1792090599970,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792090599970,
@@ -53819,6 +53857,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1792348779634,
+   "u": "Laurent Roquel",
+   "a": "Achats de fer : 1 relevé(s) repris du salon"
+  },
   {
    "t": 1792342026497,
    "u": "LeJ",
@@ -55313,11 +55356,6 @@
    "t": 1791119181625,
    "u": "Julio Collins",
    "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1791119181391,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
   }
  ],
  "prodDer": {
@@ -55709,13 +55747,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-18T18:38:50.598Z",
+  "maj": "2026-10-18T18:39:40.165Z",
   "semaine": 42,
   "totalBarils": 147555,
   "ca": 737775,
   "objectif": 375000,
   "effectif": 100,
-  "clientsServis": 150,
+  "clientsServis": 151,
   "top3": [
    {
     "nom": "Teddy Flynn",
@@ -55840,9 +55878,9 @@
  "quotasCom": {
   "sem": 42,
   "achats": {},
-  "vendus": 3432,
-  "parPers": 687,
-  "ferPers": 1374
+  "vendus": 3632,
+  "parPers": 727,
+  "ferPers": 1454
  },
  "bilanExtra": [
   {
@@ -229982,6 +230020,13 @@
     "role": "rh",
     "vu": "2026-10-18T18:38:27.637Z",
     "id": 1792348704910
+   },
+   {
+    "uid": "707695913187016785",
+    "nom": "Laurent Roquel",
+    "role": "commercial",
+    "vu": "2026-10-18T18:39:35.728Z",
+    "id": 1792348776448
    }
   ],
   "oilroxwood_demandes": [],
