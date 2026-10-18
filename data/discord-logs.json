@@ -1,11 +1,48 @@
 {
- "maj": "2026-10-18T09:49:11.042862+00:00",
+ "maj": "2026-10-18T09:51:12.700754+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1561315522715455599",
+   "t": "2026-10-18T09:50:28.455000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 6835\nplayerDiscord : 565941356892258324\nplayerName : le ted\nplayerCharacter : Kurtis Coleman\nplayerId : 269424\nvehiclePlate : FE3726MZ\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Kurtis Coleman",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "6835",
+    "playerdiscord": "565941356892258324",
+    "playername": "le ted",
+    "playercharacter": "Kurtis Coleman",
+    "playerid": "269424",
+    "vehicleplate": "FE3726MZ",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1561315299033354243",
+   "t": "2026-10-18T09:49:35.125000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 645x Pétrole Raffiné pour 6450$ par Hakim Cheb. 3225$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 645,
+   "montant": 6450,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1561315030983774233-0",
    "t": "2026-10-18T09:48:31.217000+00:00",
@@ -42524,27 +42561,6 @@
     "playercharacter": "Bjorn Frost",
     "playerid": "361708",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1560228188657946625",
-   "t": "2026-10-15T09:49:47.814000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 6455\nplayerDiscord : 398615462633668630\nplayerName : MoonBiirr\nplayerCharacter : Hassan Cheb\nplayerId : 321847\nvehiclePlate : AS5715VX\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Hassan Cheb",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "6455",
-    "playerdiscord": "398615462633668630",
-    "playername": "MoonBiirr",
-    "playercharacter": "Hassan Cheb",
-    "playerid": "321847",
-    "vehicleplate": "AS5715VX",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
