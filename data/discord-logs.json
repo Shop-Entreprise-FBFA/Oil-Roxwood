@@ -1,11 +1,35 @@
 {
- "maj": "2026-10-18T10:39:09.977141+00:00",
+ "maj": "2026-10-18T10:43:11.245842+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1561328369302507612",
+   "t": "2026-10-18T10:41:31.320000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\na retiré 1x Bidon d'essence du coffre de l'entreprise (Oil RoxWood)\nposition : -1848.69, 6497.87, 16.00\ntargetPosition : -1849.11, 6498.65, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7655\nplayerDiscord : 593431852291850281\nplayerName : BoldFish7448\nplayerCharacter : Tyler Collins\nplayerId : 209236\nitemId : weapon_petrolcan",
+   "nom": "Tyler Collins",
+   "quantite": 1,
+   "montant": null,
+   "type": "coffre_retrait",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1848.69, 6497.87, 16.00",
+    "targetposition": "-1849.11, 6498.65, 15.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "7655",
+    "playerdiscord": "593431852291850281",
+    "playername": "BoldFish7448",
+    "playercharacter": "Tyler Collins",
+    "playerid": "209236",
+    "itemid": "weapon_petrolcan"
+   }
+  },
   {
    "id": "1561327367576625265-0",
    "t": "2026-10-18T10:37:32.490000+00:00",
@@ -43648,22 +43672,6 @@
     "playercharacter": "Hassan Cheb",
     "playerid": "321847",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1560240794919768136",
-   "t": "2026-10-15T10:39:53.381000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 646x Pétrole Raffiné pour 6460$ par Bjorn Frost. 3230$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 646,
-   "montant": 6460,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
