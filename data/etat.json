@@ -13898,7 +13898,7 @@
    },
    {
     "nom": "Hakim Cheb",
-    "grade": "Intérimaire",
+    "grade": "Raffineur",
     "menus": false,
     "boissons": false,
     "bidons": false,
@@ -13918,7 +13918,7 @@
    },
    {
     "nom": "Tonio Munson",
-    "grade": "Intérimaire",
+    "grade": "Raffineur",
     "menus": true,
     "boissons": true,
     "bidons": true,
@@ -53778,17 +53778,17 @@
   "semaineDebut": "2026-10-12"
  },
  "_cid": "8i43kn786ds",
- "_maj": 1792342008800,
- "_rev": "htmc3q2y8xo-mve25sf1",
+ "_maj": 1792342029960,
+ "_rev": "fkut36m3k47-mve261v5",
  "_majSec": {
   "fer": 1792318437812,
   "fact": 1792274495014,
   "users": 1792339533621,
   "weeks": 1792090599970,
-  "sheets": 1792330878269,
+  "sheets": 1792342029960,
   "_qcFix1": 1792090599970,
   "_wkFix1": 1792090599970,
-  "journal": 1792339533621,
+  "journal": 1792342029960,
   "pending": 1792090599970,
   "prodDer": 1792090599970,
   "runners": 1792237982871,
@@ -53819,6 +53819,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1792342026497,
+   "u": "LeJ",
+   "a": "Éligibilité : 2 grade(s) réalignés sur l'effectif — Hakim Cheb : Intérimaire → Raffineur · Tonio Munson : Intérimaire → Raffineur"
+  },
   {
    "t": 1792339534370,
    "u": "Julio Collins",
@@ -55313,11 +55318,6 @@
    "t": 1791119181391,
    "u": "?",
    "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1791118130423,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
   }
  ],
  "prodDer": {
@@ -55709,7 +55709,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-18T16:46:58.333Z",
+  "maj": "2026-10-18T16:47:10.577Z",
   "semaine": 42,
   "totalBarils": 147555,
   "ca": 737775,
