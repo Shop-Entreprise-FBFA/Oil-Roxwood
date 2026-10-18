@@ -1,11 +1,64 @@
 {
- "maj": "2026-10-18T17:37:11.421903+00:00",
+ "maj": "2026-10-18T17:39:11.554925+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1561433295743484047",
+   "t": "2026-10-18T17:38:27.733000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 1501\nplayerDiscord : 800421218694987807\nplayerName : wyya13k\nplayerCharacter : Jayson Simth\nplayerId : 375244\nvehiclePlate : YN6253GU\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Jayson Simth",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "1501",
+    "playerdiscord": "800421218694987807",
+    "playername": "wyya13k",
+    "playercharacter": "Jayson Simth",
+    "playerid": "375244",
+    "vehicleplate": "YN6253GU",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1561433094261837888-0",
+   "t": "2026-10-18T17:37:39.696000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 664x Pétrole Raffiné pour 6640$ par Jayson Simth. 3320$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 664,
+   "montant": 6640,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1561433094261837888-1",
+   "t": "2026-10-18T17:37:39.696000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 74x Pétrole Raffiné pour 740$ par Mero Duval. 370$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 74,
+   "montant": 740,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1561432563447234691",
    "t": "2026-10-18T17:35:33.140000+00:00",
@@ -58868,22 +58921,6 @@
     "playercharacter": "Enzo Poliquitrique",
     "playerid": "382957",
     "vehicleplate": "AS5715VX",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1560345854349414501",
-   "t": "2026-10-15T17:37:21.501000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 349x Pétrole Raffiné pour 3490$ par Jj Junior. 1745$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 349,
-   "montant": 3490,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
     "jobid": "76",
     "jobname": "Oil RoxWood"
    }
