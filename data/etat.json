@@ -53638,6 +53638,22 @@
    "quantite": 125,
    "montant": 625,
    "did": "707695913187016785"
+  },
+  {
+   "id": "1561455501718323384:0",
+   "t": "2026-10-18 21:06",
+   "nom": "Laurent Roquel",
+   "quantite": 100,
+   "montant": 500,
+   "did": "707695913187016785"
+  },
+  {
+   "id": "1561455501718323384:1",
+   "t": "2026-10-18 21:06",
+   "nom": "Laurent Roquel",
+   "quantite": 54,
+   "montant": 270,
+   "did": "707695913187016785"
   }
  ],
  "settings": {
@@ -53847,11 +53863,11 @@
   "postesV4": 1,
   "semaineDebut": "2026-10-12"
  },
- "_cid": "pos2x0l45rp",
- "_maj": 1792350828796,
- "_rev": "3zdgo4gk7mn-mve7eoxo",
+ "_cid": "qoj8p4vonpa",
+ "_maj": 1792350889285,
+ "_rev": "2vvvm0g8xvm-mve7fxkq",
  "_majSec": {
-  "fer": 1792349563695,
+  "fer": 1792350889285,
   "fact": 1792347943367,
   "users": 1792339533621,
   "weeks": 1792090599970,
@@ -53872,7 +53888,7 @@
   "primesExtra": 1792090599970,
   "quotasComHist": 1792090599970,
   "profils": 1792090599970,
-  "_tables": 1792350828796,
+  "_tables": 1792350885938,
   "_permsFix1": 1792090599970,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792090599970,
@@ -53889,6 +53905,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1792350888761,
+   "u": "Laurent Roquel",
+   "a": "Achats de fer : 2 relevé(s) repris du salon"
+  },
   {
    "t": 1792349563010,
    "u": "Laurent Roquel",
@@ -55383,11 +55404,6 @@
    "t": 1791119618845,
    "u": "Julio Collins",
    "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1791119618631,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
   }
  ],
  "prodDer": {
@@ -55779,7 +55795,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-18T19:13:51.805Z",
+  "maj": "2026-10-18T19:14:49.659Z",
   "semaine": 42,
   "totalBarils": 147555,
   "ca": 737775,
@@ -230248,6 +230264,13 @@
     "role": "direction",
     "vu": "2026-10-18T19:13:48.795Z",
     "id": 1792350829629
+   },
+   {
+    "uid": "707695913187016785",
+    "nom": "Laurent Roquel",
+    "role": "commercial",
+    "vu": "2026-10-18T19:14:45.725Z",
+    "id": 1792350886336
    }
   ],
   "oilroxwood_demandes": [],
