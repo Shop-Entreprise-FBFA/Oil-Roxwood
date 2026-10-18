@@ -1,11 +1,32 @@
 {
- "maj": "2026-10-18T20:25:11.170756+00:00",
+ "maj": "2026-10-18T20:33:11.201168+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1561476838277251184",
+   "t": "2026-10-18T20:31:29.082000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 1501\nplayerDiscord : 800421218694987807\nplayerName : wyya13k\nplayerCharacter : Jayson Simth\nplayerId : 375244\nvehiclePlate : YN6253GU\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Jayson Simth",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "1501",
+    "playerdiscord": "800421218694987807",
+    "playername": "wyya13k",
+    "playercharacter": "Jayson Simth",
+    "playerid": "375244",
+    "vehicleplate": "YN6253GU",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1561474823937597453-0",
    "t": "2026-10-18T20:23:28.826000+00:00",
@@ -57992,46 +58013,6 @@
    "nom": null,
    "quantite": 301,
    "montant": 3010,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1560389126795169924",
-   "t": "2026-10-15T20:29:18.456000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 144x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1850.90, 6515.10, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3177\nplayerDiscord : 1294568791086202880\nplayerName : Vyren\nplayerCharacter : Jimmy Darze\nplayerId : 308176\nitemId : refinedoil",
-   "nom": "Jimmy Darze",
-   "quantite": 144,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1850.90, 6515.10, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "3177",
-    "playerdiscord": "1294568791086202880",
-    "playername": "Vyren",
-    "playercharacter": "Jimmy Darze",
-    "playerid": "308176",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1560388390627573774",
-   "t": "2026-10-15T20:26:22.940000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 472x Pétrole Raffiné pour 4720$ par Roberto Carlos. 2360$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 472,
-   "montant": 4720,
    "type": "vente",
    "salon": "1245400913473179729",
    "champs": {
