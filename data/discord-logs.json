@@ -1,11 +1,32 @@
 {
- "maj": "2026-10-18T11:11:09.543159+00:00",
+ "maj": "2026-10-18T11:15:09.894302+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1561336415403507804",
+   "t": "2026-10-18T11:13:29.660000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbesperta\nplayerNetId : 7596\nplayerDiscord : 1313800083283906621\nplayerName : QuietOtter3308\nplayerCharacter : Mouloud Gnakouri\nplayerId : 266900\nvehiclePlate : OT7014BP\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Mouloud Gnakouri",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "7596",
+    "playerdiscord": "1313800083283906621",
+    "playername": "QuietOtter3308",
+    "playercharacter": "Mouloud Gnakouri",
+    "playerid": "266900",
+    "vehicleplate": "OT7014BP",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1561335685292499096",
    "t": "2026-10-18T11:10:35.588000+00:00",
@@ -43245,54 +43266,6 @@
     "playercharacter": "Hassan Cheb",
     "playerid": "321847",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1560248830270767116-0",
-   "t": "2026-10-15T11:11:49.158000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 25x Bidon d'essence du coffre de l'entreprise (Oil RoxWood)\nposition : -1815.05, 6565.56, 16.73\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6451\nplayerDiscord : 826526979204841482\nplayerName : JumpyNewt1770\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : weapon_petrolcan",
-   "nom": "Diego Herrera",
-   "quantite": 25,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1815.05, 6565.56, 16.73",
-    "targetposition": "-1815.66, 6565.56, 15.98",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6451",
-    "playerdiscord": "826526979204841482",
-    "playername": "JumpyNewt1770",
-    "playercharacter": "Diego Herrera",
-    "playerid": "231487",
-    "itemid": "weapon_petrolcan"
-   }
-  },
-  {
-   "id": "1560248830270767116-1",
-   "t": "2026-10-15T11:11:49.158000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 25x Bidon d'essence du coffre de l'entreprise (Oil RoxWood)\nposition : -1816.02, 6565.83, 16.73\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6451\nplayerDiscord : 826526979204841482\nplayerName : JumpyNewt1770\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : weapon_petrolcan",
-   "nom": "Diego Herrera",
-   "quantite": 25,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1816.02, 6565.83, 16.73",
-    "targetposition": "-1815.66, 6565.56, 15.98",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6451",
-    "playerdiscord": "826526979204841482",
-    "playername": "JumpyNewt1770",
-    "playercharacter": "Diego Herrera",
-    "playerid": "231487",
-    "itemid": "weapon_petrolcan"
    }
   }
  ]
