@@ -1,11 +1,35 @@
 {
- "maj": "2026-10-18T12:03:12.548495+00:00",
+ "maj": "2026-10-18T12:05:12.582869+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1561349014002073681",
+   "t": "2026-10-18T12:03:33.400000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\na retiré 20x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1842.67, 6517.31, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7988\nplayerDiscord : 529992411032846358\nplayerName : ChillyGoose6797\nplayerCharacter : Samantha Rodriguez\nplayerId : 126733\nitemId : refinedoil",
+   "nom": "Samantha Rodriguez",
+   "quantite": 20,
+   "montant": null,
+   "type": "coffre_retrait",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1842.67, 6517.31, 16.73",
+    "targetposition": "-1843.83, 6518.10, 15.74",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "7988",
+    "playerdiscord": "529992411032846358",
+    "playername": "ChillyGoose6797",
+    "playercharacter": "Samantha Rodriguez",
+    "playerid": "126733",
+    "itemid": "refinedoil"
+   }
+  },
   {
    "id": "1561348778672267287-0",
    "t": "2026-10-18T12:02:37.293000+00:00",
@@ -44313,22 +44337,6 @@
    "nom": null,
    "quantite": 145,
    "montant": 1450,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1560261935587524640",
-   "t": "2026-10-15T12:03:53.709000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 487x Pétrole Raffiné pour 4870$ par Xavier Collins. 2435$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 487,
-   "montant": 4870,
    "type": "vente",
    "salon": "1245400913473179729",
    "champs": {
