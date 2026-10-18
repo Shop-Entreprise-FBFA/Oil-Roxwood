@@ -1,11 +1,32 @@
 {
- "maj": "2026-10-18T19:13:13.042227+00:00",
+ "maj": "2026-10-18T19:37:12.325242+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1561462999636516917",
+   "t": "2026-10-18T19:36:29.693000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 3869\nplayerDiscord : 422167625460744192\nplayerName : Wanobey\nplayerCharacter : Jj Junior\nplayerId : 382570\nvehiclePlate : XP1606YE\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Jj Junior",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "3869",
+    "playerdiscord": "422167625460744192",
+    "playername": "Wanobey",
+    "playercharacter": "Jj Junior",
+    "playerid": "382570",
+    "vehicleplate": "XP1606YE",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1561456958379270275",
    "t": "2026-10-18T19:12:29.345000+00:00",
@@ -57578,43 +57599,6 @@
     "playercharacter": "Jimmy Darze",
     "playerid": "308176",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1560373006541262990",
-   "t": "2026-10-15T19:25:15.088000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 3177\nplayerDiscord : 1294568791086202880\nplayerName : Vyren\nplayerCharacter : Jimmy Darze\nplayerId : 308176\nvehiclePlate : BM4391ZM\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Jimmy Darze",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "3177",
-    "playerdiscord": "1294568791086202880",
-    "playername": "Vyren",
-    "playercharacter": "Jimmy Darze",
-    "playerid": "308176",
-    "vehicleplate": "BM4391ZM",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1560372810050830517",
-   "t": "2026-10-15T19:24:28.241000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 314x Pétrole Raffiné pour 3140$ par Roberto Carlos. 1570$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 314,
-   "montant": 3140,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
