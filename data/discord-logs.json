@@ -1,11 +1,51 @@
 {
- "maj": "2026-10-18T12:19:09.758087+00:00",
+ "maj": "2026-10-18T12:21:11.233838+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1561353053213433958",
+   "t": "2026-10-18T12:19:36.423000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 644x Pétrole Raffiné pour 6440$ par Marcus Deromanet. 3220$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 644,
+   "montant": 6440,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1561353031524814890",
+   "t": "2026-10-18T12:19:31.252000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\na retiré 20x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1843.78, 6518.08, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7988\nplayerDiscord : 529992411032846358\nplayerName : ChillyGoose6797\nplayerCharacter : Samantha Rodriguez\nplayerId : 126733\nitemId : refinedoil",
+   "nom": "Samantha Rodriguez",
+   "quantite": 20,
+   "montant": null,
+   "type": "coffre_retrait",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1843.78, 6518.08, 16.73",
+    "targetposition": "-1843.83, 6518.10, 15.74",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "7988",
+    "playerdiscord": "529992411032846358",
+    "playername": "ChillyGoose6797",
+    "playercharacter": "Samantha Rodriguez",
+    "playerid": "126733",
+    "itemid": "refinedoil"
+   }
+  },
   {
    "id": "1561352782429290570-0",
    "t": "2026-10-18T12:18:31.863000+00:00",
