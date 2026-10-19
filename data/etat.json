@@ -6380,7 +6380,7 @@
     "arrivee": "2026-10-19",
     "discord": "920315449542082570",
     "avert": "",
-    "contrat": false,
+    "contrat": true,
     "recrut": "LeJ",
     "dernierService": "",
     "flagOut": false
@@ -54534,17 +54534,17 @@
   "semaineDebut": "2026-10-19"
  },
  "_cid": "9xpxt57fygn",
- "_maj": 1792434471776,
- "_rev": "5gj7eic9uyi-mvfl6yff",
+ "_maj": 1792434476857,
+ "_rev": "bp9kp79s30b-mvfl75c1",
  "_majSec": {
   "fer": 1792428371151,
   "fact": 1792419745821,
   "users": 1792420883789,
   "weeks": 1792400944983,
-  "sheets": 1792434471776,
+  "sheets": 1792434476857,
   "_qcFix1": 1792090599970,
   "_wkFix1": 1792090599970,
-  "journal": 1792434471776,
+  "journal": 1792434476857,
   "pending": 1792090599970,
   "prodDer": 1792090599970,
   "runners": 1792410495912,
@@ -54558,7 +54558,7 @@
   "primesExtra": 1792090599970,
   "quotasComHist": 1792400944983,
   "profils": 1792090599970,
-  "_tables": 1792434471776,
+  "_tables": 1792434476857,
   "_permsFix1": 1792090599970,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792090599970,
@@ -54570,11 +54570,16 @@
   "ventesAlias": 1792090599970,
   "_ventesIgnore": 1792090599970,
   "_avertVus": 1792090599970,
-  "_signeVus": 1792428664602
+  "_signeVus": 1792434476857
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1792434452463,
+   "u": "Thomas Boyer",
+   "a": "Contrat(s) signé(s) via Discord : Mikaël Owens"
+  },
   {
    "t": 1792434447384,
    "u": "Thomas Boyer",
@@ -56069,11 +56074,6 @@
    "t": 1791146126246,
    "u": "Julio Collins",
    "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1791146126015,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
   }
  ],
  "prodDer": {
@@ -56445,7 +56445,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-19T18:27:31.660Z",
+  "maj": "2026-10-19T18:27:40.610Z",
   "semaine": 43,
   "totalBarils": 204334,
   "ca": 1021670,
@@ -240246,7 +240246,8 @@
   "1792342083559",
   "1792342327369",
   "1792344530276",
-  "1792428657998"
+  "1792428657998",
+  "1792434467218"
  ],
  "_agSupp": [
   "1789145270913",
