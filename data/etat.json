@@ -6386,7 +6386,7 @@
     "flagOut": false
    },
    {
-    "nom": "Francky gallagher",
+    "nom": "Francky Gallagher",
     "grade": "Intérimaire",
     "tel": "555415413",
     "rib": "566158",
@@ -6397,7 +6397,11 @@
     "contrat": true,
     "recrut": "Thomas Boyer",
     "dernierService": "",
-    "flagOut": false
+    "flagOut": false,
+    "contratGen": {
+     "t": 1792446925576,
+     "par": "Thomas Boyer"
+    }
    },
    {
     "nom": "Jordan Myers",
@@ -54534,17 +54538,17 @@
   "semaineDebut": "2026-10-19"
  },
  "_cid": "wtp6c1mcmef",
- "_maj": 1792446915422,
- "_rev": "evh5fb3zsfe-mvfslpe9",
+ "_maj": 1792446955047,
+ "_rev": "dquepz4112q-mvfsmflf",
  "_majSec": {
   "fer": 1792428371151,
   "fact": 1792419745821,
   "users": 1792420883789,
   "weeks": 1792400944983,
-  "sheets": 1792434476857,
+  "sheets": 1792446955047,
   "_qcFix1": 1792090599970,
   "_wkFix1": 1792090599970,
-  "journal": 1792434476857,
+  "journal": 1792446925577,
   "pending": 1792090599970,
   "prodDer": 1792090599970,
   "runners": 1792410495912,
@@ -54575,6 +54579,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1792446900185,
+   "u": "Thomas Boyer",
+   "a": "Contrat de travail généré : Francky gallagher (Runner)"
+  },
   {
    "t": 1792434452463,
    "u": "Thomas Boyer",
@@ -56069,11 +56078,6 @@
    "t": 1791146712947,
    "u": "Diego Herrera",
    "a": "Achats de fer : 2 relevé(s) repris du salon"
-  },
-  {
-   "t": 1791146126246,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
   }
  ],
  "prodDer": {
@@ -56445,7 +56449,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-19T21:54:57.105Z",
+  "maj": "2026-10-19T21:55:31.059Z",
   "semaine": 43,
   "totalBarils": 204334,
   "ca": 1021670,
