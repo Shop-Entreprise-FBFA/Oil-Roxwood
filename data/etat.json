@@ -13104,7 +13104,36 @@
     "entreprise": "klan-ozumiya"
    }
   ],
-  "ventesSem": [],
+  "ventesSem": [
+   {
+    "date": "2026-10-19",
+    "client": "Famille Krueger",
+    "quantite": 125,
+    "qui": "Laurent Roquel",
+    "fact": 253166
+   },
+   {
+    "date": "2026-10-19",
+    "client": "Famille Krueger",
+    "quantite": 125,
+    "qui": "Diego Herrera",
+    "fact": 253166
+   },
+   {
+    "date": "2026-10-19",
+    "client": "Famille Krueger",
+    "quantite": 125,
+    "qui": "Stella Collins",
+    "fact": 253166
+   },
+   {
+    "date": "2026-10-19",
+    "client": "Famille Krueger",
+    "quantite": 125,
+    "qui": "Tyler Collins",
+    "fact": 253166
+   }
+  ],
   "collection": [
    {
     "nom": "Nom",
@@ -15147,7 +15176,7 @@
     "rib": "",
     "tel": "555 201 755",
     "adresse": "roxwood",
-    "lastCmd": "2026-08-19"
+    "lastCmd": "2026-10-19"
    },
    {
     "nom": "Famille Lockwood",
@@ -15865,8 +15894,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253166,
+  "compteur": 253167,
   "factures": [
+   {
+    "num": 253166,
+    "date": "2026-10-19",
+    "client": "Famille Krueger",
+    "emetteur": "Laurent Roquel, Diego Herrera, Stella Collins, Tyler Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 500,
+      "tva": 0.04,
+      "pu": 180,
+      "ht": 90000,
+      "ttc": 93600,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 90000,
+    "ttc": 93600,
+    "poids": 1000,
+    "statut": "attente"
+   },
    {
     "num": 253165,
     "date": "2026-10-18",
@@ -54429,14 +54481,14 @@
   "semaineDebut": "2026-10-19"
  },
  "_cid": "n3oix3lijx",
- "_maj": 1792419651760,
- "_rev": "o9cyagb214q-mvfcek9j",
+ "_maj": 1792419696751,
+ "_rev": "99wzy2tfyy6-mvfceqq6",
  "_majSec": {
   "fer": 1792350889285,
-  "fact": 1792347943367,
+  "fact": 1792419696680,
   "users": 1792419651760,
   "weeks": 1792400944983,
-  "sheets": 1792411818533,
+  "sheets": 1792419696680,
   "_qcFix1": 1792090599970,
   "_wkFix1": 1792090599970,
   "journal": 1792419651760,
@@ -56340,13 +56392,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-19T14:21:30.007Z",
+  "maj": "2026-10-19T14:21:38.382Z",
   "semaine": 43,
   "totalBarils": 204334,
   "ca": 1021670,
   "objectif": 375000,
   "effectif": 105,
-  "clientsServis": 151,
+  "clientsServis": 152,
   "top3": [
    {
     "nom": "Jj Junior",
