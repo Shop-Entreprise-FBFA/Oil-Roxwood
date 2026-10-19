@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-19T16:23:54.816196+00:00",
+ "maj": "2026-10-19T16:25:54.142343+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1561777125948923935",
+   "t": "2026-10-19T16:24:43.242000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 486x Pétrole Raffiné pour 4860$ par Bingo Dallas. 2430$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 486,
+   "montant": 4860,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1561776799908765781-0",
    "t": "2026-10-19T16:23:25.508000+00:00",
@@ -79642,27 +79658,6 @@
    "salon": "1245400913473179729",
    "champs": {
     "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1560690187296571443",
-   "t": "2026-10-16T16:25:36.873000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 1744\nplayerDiscord : 675684620339249162\nplayerName : ZIRROX\nplayerCharacter : Roberto Carlos\nplayerId : 199893\nvehiclePlate : UF1325CR\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Roberto Carlos",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "1744",
-    "playerdiscord": "675684620339249162",
-    "playername": "ZIRROX",
-    "playercharacter": "Roberto Carlos",
-    "playerid": "199893",
-    "vehicleplate": "UF1325CR",
     "jobid": "76",
     "jobname": "Oil RoxWood"
    }
