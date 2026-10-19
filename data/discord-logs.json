@@ -1,11 +1,48 @@
 {
- "maj": "2026-10-19T22:11:52.967097+00:00",
+ "maj": "2026-10-19T22:21:53.180059+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1561866928795160577",
+   "t": "2026-10-19T22:21:33.909000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 488x Pétrole Raffiné pour 4880$ par Mikaël Owens. 2440$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 488,
+   "montant": 4880,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1561866897668968569",
+   "t": "2026-10-19T22:21:26.488000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 5497\nplayerDiscord : 1461371532373921938\nplayerName : JumpyGoose3368\nplayerCharacter : Mero Duval\nplayerId : 383055\nvehiclePlate : FE3726MZ\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Mero Duval",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "5497",
+    "playerdiscord": "1461371532373921938",
+    "playername": "JumpyGoose3368",
+    "playercharacter": "Mero Duval",
+    "playerid": "383055",
+    "vehicleplate": "FE3726MZ",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1561864379689869386",
    "t": "2026-10-19T22:11:26.155000+00:00",
@@ -84265,27 +84302,6 @@
     "itemid": "refinedoil",
     "jobid": "76",
     "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1560778312765276211",
-   "t": "2026-10-16T22:15:47.622000+00:00",
-   "auteur": "Logs - Achat fer",
-   "texte": "Achat fer\na acheté 4x fer pour 20$\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 9\nplayerDiscord : 767332288744128512\nplayerName : JULIO COLLINS\nplayerCharacter : Julio Collins\nplayerId : 356873\nitemId : iron",
-   "nom": "Julio Collins",
-   "quantite": 4,
-   "montant": 20,
-   "type": "achat_fer",
-   "salon": "1247565070423167100",
-   "champs": {
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "9",
-    "playerdiscord": "767332288744128512",
-    "playername": "JULIO COLLINS",
-    "playercharacter": "Julio Collins",
-    "playerid": "356873",
-    "itemid": "iron"
    }
   }
  ]
