@@ -1,11 +1,43 @@
 {
- "maj": "2026-10-19T22:27:57.313590+00:00",
+ "maj": "2026-10-19T22:33:53.604566+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1561869947238617191",
+   "t": "2026-10-19T22:33:33.562000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 72x Pétrole Raffiné pour 720$ par Mero Duval. 360$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 72,
+   "montant": 720,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1561869708867928146",
+   "t": "2026-10-19T22:32:36.730000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 145x Pétrole Raffiné pour 1450$ par Hassan Cheb. 725$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 145,
+   "montant": 1450,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1561868149723500567",
    "t": "2026-10-19T22:26:25.001000+00:00",
@@ -84334,46 +84366,6 @@
     "playercharacter": "Ethan Hayes",
     "playerid": "381296",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1560782558944305163",
-   "t": "2026-10-16T22:32:39.990000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 4x Fer dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1815.10, 6565.53, 16.36\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 9\nplayerDiscord : 767332288744128512\nplayerName : JULIO COLLINS\nplayerCharacter : Julio Collins\nplayerId : 356873\nitemId : iron",
-   "nom": "Julio Collins",
-   "quantite": 4,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1815.10, 6565.53, 16.36",
-    "targetposition": "-1815.66, 6565.56, 15.98",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "9",
-    "playerdiscord": "767332288744128512",
-    "playername": "JULIO COLLINS",
-    "playercharacter": "Julio Collins",
-    "playerid": "356873",
-    "itemid": "iron"
-   }
-  },
-  {
-   "id": "1560782079396946021",
-   "t": "2026-10-16T22:30:45.657000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 188x Pétrole Raffiné pour 1880$ par Bingo Dallas. 940$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 188,
-   "montant": 1880,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
