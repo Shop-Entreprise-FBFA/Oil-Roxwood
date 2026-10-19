@@ -6372,6 +6372,20 @@
  "sheets": {
   "rh": [
    {
+    "nom": "fransesco moully",
+    "grade": "Intérimaire",
+    "tel": "555752135",
+    "rib": "413931",
+    "idU": "263368",
+    "arrivee": "2026-10-20",
+    "discord": "1307134142214836307",
+    "avert": "",
+    "contrat": true,
+    "recrut": "LeJ",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
     "nom": "david richelieu",
     "grade": "Intérimaire",
     "tel": "555 424 30",
@@ -54551,18 +54565,18 @@
   "postesV4": 1,
   "semaineDebut": "2026-10-19"
  },
- "_cid": "pos2x0l45rp",
- "_maj": 1792451862227,
- "_rev": "v94qoa26pz-mvfvkefs",
+ "_cid": "y2d4gdz2g",
+ "_maj": 1792451958624,
+ "_rev": "35btrklzor6-mvfvm4p9",
  "_majSec": {
   "fer": 1792428371151,
   "fact": 1792419745821,
   "users": 1792420883789,
   "weeks": 1792400944983,
-  "sheets": 1792450558465,
+  "sheets": 1792451958624,
   "_qcFix1": 1792090599970,
   "_wkFix1": 1792090599970,
-  "journal": 1792450558465,
+  "journal": 1792451958624,
   "pending": 1792090599970,
   "prodDer": 1792090599970,
   "runners": 1792410495912,
@@ -54576,7 +54590,7 @@
   "primesExtra": 1792090599970,
   "quotasComHist": 1792400944983,
   "profils": 1792090599970,
-  "_tables": 1792451862227,
+  "_tables": 1792451954712,
   "_permsFix1": 1792090599970,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792090599970,
@@ -54584,15 +54598,25 @@
   "_affFix1": 1792090599970,
   "produits": 1792090599970,
   "_prodFix1": 1792090599970,
-  "_recruesIgnore": 1792450558436,
+  "_recruesIgnore": 1792451958594,
   "ventesAlias": 1792090599970,
   "_ventesIgnore": 1792090599970,
   "_avertVus": 1792090599970,
-  "_signeVus": 1792450558465
+  "_signeVus": 1792451958624
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1792451954331,
+   "u": "LeJ",
+   "a": "Contrat(s) signé(s) via Discord : fransesco moully"
+  },
+  {
+   "t": 1792451954301,
+   "u": "LeJ",
+   "a": "Recrutements Discord : 1 fiche(s) créée(s), 0 case(s) complétée(s) — fransesco moully"
+  },
   {
    "t": 1792450554254,
    "u": "LeJ",
@@ -56082,16 +56106,6 @@
    "t": 1791152145802,
    "u": "Diego Herrera",
    "a": "Avertissement : Louka Romelu (intérimaire, quota à 0%)"
-  },
-  {
-   "t": 1791151935804,
-   "u": "Diego Herrera",
-   "a": "5 absence(s) terminée(s) archivée(s) automatiquement"
-  },
-  {
-   "t": 1791150500224,
-   "u": "Diego Herrera",
-   "a": "Contrat(s) signé(s) via Discord : Hakim CHEB, Momo Banci, BROOKS ELIJAH…"
   }
  ],
  "prodDer": {
@@ -56463,12 +56477,12 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-19T23:17:55.096Z",
+  "maj": "2026-10-19T23:19:15.790Z",
   "semaine": 43,
   "totalBarils": 204334,
   "ca": 1021670,
   "objectif": 375000,
-  "effectif": 105,
+  "effectif": 106,
   "clientsServis": 152,
   "top3": [
    {
@@ -238372,6 +238386,13 @@
     "role": "rh",
     "vu": "2026-10-19T23:17:42.227Z",
     "id": 1792451858616
+   },
+   {
+    "uid": "1479222400326308032",
+    "nom": "LeJ",
+    "role": "rh",
+    "vu": "2026-10-19T23:19:14.711Z",
+    "id": 1792451951231
    }
   ],
   "oilroxwood_demandes": [],
@@ -241042,7 +241063,8 @@
   "1792344729447",
   "1792428645512",
   "1792434446783",
-  "1792448727634"
+  "1792448727634",
+  "1792451786019"
  ],
  "_signeVus": [
   "1789477305650",
@@ -241138,7 +241160,8 @@
   "1792344530276",
   "1792428657998",
   "1792434467218",
-  "1792448744709"
+  "1792448744709",
+  "1792451802970"
  ],
  "_agSupp": [
   "1789145270913",
