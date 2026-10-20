@@ -1,11 +1,43 @@
 {
- "maj": "2026-10-20T17:00:02.095531+00:00",
+ "maj": "2026-10-20T17:02:01.258097+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1562148762506502276",
+   "t": "2026-10-20T17:01:28.302000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 296x Pétrole Raffiné pour 2960$ par Mero Duval. 1480$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 296,
+   "montant": 2960,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1562148518531956818",
+   "t": "2026-10-20T17:00:30.134000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 664x Pétrole Raffiné pour 6640$ par Jayson Simth. 3320$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 664,
+   "montant": 6640,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1562147736374091833-0",
    "t": "2026-10-20T16:57:23.653000+00:00",
@@ -93760,54 +93792,6 @@
    "champs": {
     "position": "-1842.46, 6521.51, 16.73",
     "targetposition": "-1842.58, 6521.16, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "3185",
-    "playerdiscord": "826526979204841482",
-    "playername": "JumpyNewt1770",
-    "playercharacter": "Diego Herrera",
-    "playerid": "231487",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1561166549803475100-0",
-   "t": "2026-10-17T23:58:30.545000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 122x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1842.59, 6520.64, 16.73\ntargetPosition : -1842.58, 6521.16, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3185\nplayerDiscord : 826526979204841482\nplayerName : JumpyNewt1770\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : refinedoil",
-   "nom": "Diego Herrera",
-   "quantite": 122,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1842.59, 6520.64, 16.73",
-    "targetposition": "-1842.58, 6521.16, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "3185",
-    "playerdiscord": "826526979204841482",
-    "playername": "JumpyNewt1770",
-    "playercharacter": "Diego Herrera",
-    "playerid": "231487",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1561166549803475100-1",
-   "t": "2026-10-17T23:58:30.545000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 122x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1843.78, 6518.44, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3185\nplayerDiscord : 826526979204841482\nplayerName : JumpyNewt1770\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : refinedoil",
-   "nom": "Diego Herrera",
-   "quantite": 122,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1843.78, 6518.44, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
     "jobid": "76",
     "jobname": "Oil RoxWood",
     "playernetid": "3185",
