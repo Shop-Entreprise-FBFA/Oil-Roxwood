@@ -667,9 +667,19 @@ html.halloween #app::before{
     radial-gradient(50% 42% at 94% -6%,rgba(139,95,191,.16),transparent 62%),
     radial-gradient(45% 36% at 2% 106%,rgba(232,160,32,.12),transparent 62%);
 }
+@keyframes hwDerive{
+  0%,100%{transform:translate(0,0) rotate(-8deg)}
+  25%{transform:translate(16px,-12px) rotate(3deg)}
+  50%{transform:translate(-8px,8px) rotate(-4deg)}
+  75%{transform:translate(10px,14px) rotate(6deg)}
+}
 html.halloween #app::after{
   content:"🦇";position:fixed;z-index:1;pointer-events:none;opacity:.16;font-size:22px;
-  top:64px;right:9%;transform:rotate(-8deg);
+  top:64px;right:9%;animation:hwDerive 21s ease-in-out infinite;
+}
+html.halloween #login .login-card::after{
+  content:"🦇";position:absolute;top:-34px;right:6%;z-index:3;pointer-events:none;
+  opacity:.3;font-size:20px;animation:hwDerive 17s ease-in-out infinite 2s;
 }
 html.halloween main,html.halloween #main{position:relative;z-index:1}
 html.halloween aside{
@@ -688,7 +698,14 @@ html.halloween .panel:hover{border-color:rgba(139,95,191,.38);box-shadow:0 16px 
 html.halloween .btn-gold{background:linear-gradient(90deg,var(--accent),#8B5FBF);border-color:#8B5FBF;box-shadow:0 4px 18px rgba(139,95,191,.35)}
 html.halloween .btn-gold:hover{box-shadow:0 8px 30px rgba(139,95,191,.5)}
 html.halloween .btn-gold::before{background:#8B5FBF}
+/* écran de chargement */
+html.halloween .chg-pompe .contrepoids{fill:#8B5FBF}
+html.halloween .chg-pompe .axe{stroke:#8B5FBF}
+html.halloween .chg-cuve i{background:linear-gradient(90deg,#8B5FBF,var(--accent,#E8A020))}
+html.halloween .chg-txt b{background:linear-gradient(90deg,var(--accent),#8B5FBF);-webkit-background-clip:text;background-clip:text;color:transparent}
+html.halloween .chg-marque b{background:linear-gradient(90deg,var(--accent),#8B5FBF);-webkit-background-clip:text;background-clip:text;color:transparent}
 
 @media (prefers-reduced-motion:reduce){
   .chg-bras,.chg-tige{animation:none}
+  html.halloween #app::after,html.halloween #login .login-card::after{animation:none}
 }

@@ -319,7 +319,7 @@ footer{border-top:1px solid var(--trait-fort);padding:32px 0 46px;position:relat
 /* révélations */
 .rev{opacity:0;transform:translateY(26px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
 .rev.vue{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){.rev{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.rev{opacity:1;transform:none} html.halloween header#accueil .hero-grid::after{animation:none}}
 
 /* ---------- responsive ---------- */
 @media (max-width:980px){
@@ -503,6 +503,16 @@ html.halloween header#accueil h1 em{color:#8B5FBF}
 }
 html.halloween .card{border-color:rgba(139,95,191,.3)}
 html.halloween .hero-stats > div:hover,html.halloween .card:hover{border-color:#8B5FBF}
+@keyframes hwDerive{
+  0%,100%{transform:translate(0,0) rotate(-8deg)}
+  25%{transform:translate(16px,-12px) rotate(3deg)}
+  50%{transform:translate(-8px,8px) rotate(-4deg)}
+  75%{transform:translate(10px,14px) rotate(6deg)}
+}
+html.halloween header#accueil .hero-grid::after{
+  content:"🦇";position:absolute;top:0;right:8%;z-index:3;pointer-events:none;
+  opacity:.22;font-size:24px;animation:hwDerive 20s ease-in-out infinite;
+}
 html.halloween nav.barre::before{
   content:"";position:absolute;top:0;left:0;width:64px;height:64px;pointer-events:none;opacity:.35;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cg fill='none' stroke='%23897B70' stroke-width='1'%3E%3Cpath d='M0 0 L64 64 M0 0 L34 0 M0 0 L0 34'/%3E%3Cpath d='M11 0 Q11 11 0 11'/%3E%3Cpath d='M23 0 Q23 23 0 23'/%3E%3Cpath d='M37 0 Q37 37 0 37'/%3E%3Cpath d='M50 0 Q50 50 0 50'/%3E%3C/g%3E%3C/svg%3E");

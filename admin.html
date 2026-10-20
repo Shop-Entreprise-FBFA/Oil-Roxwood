@@ -1248,7 +1248,7 @@ function logout(){
 }
 
 /* ---- Canari de version : prévient les onglets restés sur une vieille version ---- */
-const APP_VERSION='C-115';
+const APP_VERSION='C-116';
 /* Le bandeau ne doit dire qu'une chose : « une version plus récente existe ».
    Il comparait deux chaînes avec !==, donc il s'allumait aussi dans l'autre
    sens — quand la page ouverte était PLUS récente que version.json, ce qui
@@ -4782,6 +4782,10 @@ function ferDel(id){
 
 /* ================== MISES À JOUR (changelog) ================== */
 const CHANGELOG=[
+ {v:'C-116',d:'20/10/2026',t:'Halloween : chauves-souris qui dérivent, écran de chargement thématisé',items:[
+   ['🦇','Les chauves-souris dérivent doucement à l\'écran','Au lieu d\'être fixes : connexion, menu et vitrine. Coupé automatiquement si l\'appareil demande moins d\'animations.'],
+   ['🎃','Écran de chargement du dashboard thématisé','Le contrepoids de la pompe, la jauge de progression et les textes passent aux couleurs Halloween pendant l\'ouverture des vannes.'],
+ ]},
  {v:'C-115',d:'20/10/2026',t:'Halloween : immersion complète + la vitrine se mettait à jour trop tard',items:[
    ['🐛','La vitrine ne reprenait pas le changement d\'habillage','Le bot ne republie data/stats-public.json que si un chiffre qu\'il surveille a changé (barils, CA…) — le nouveau champ "halloween" n\'était pas dans cette liste, donc cocher la case seule ne suffisait pas à mettre à jour la vitrine.'],
    ['🎃','Habillage Halloween étendu à tout l\'écran','Fond du dashboard et de la vitrine, panneaux, cartes, boutons dorés, toile d\'araignée dans le menu et la vitrine, chauve-souris discrète, logo en grand format dans le hero de la vitrine (écrans larges).'],
