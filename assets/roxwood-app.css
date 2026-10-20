@@ -19,7 +19,7 @@ html{color-scheme:dark}
   --green:#4FA97B; --ok:#4FA97B; --red:#D9534F; --alerte:#D9534F;
   --blue:#6C8BB0; --attente:#6C8BB0; --violet:#C0862B;
   --radius:2px;
-  --grain-op:.05; --rouille-op:.85; --torche-a:.14; --reflet-a:.09;
+  --grain-op:.05; --reflet-a:.09;
   --danger:repeating-linear-gradient(45deg,#0A0806 0 12px,#E8A020 12px 24px);
 }
 
@@ -51,6 +51,7 @@ h1,h2,h3,h4,.brand span,.nav-sec{font-family:var(--f-display);letter-spacing:.02
 .login-card img{width:84px;height:84px;object-fit:contain;animation:float 4.5s ease-in-out infinite}
 .login-card h1{font-size:34px;font-weight:800;margin:14px 0 6px;letter-spacing:.05em;text-transform:uppercase;line-height:1}
 .login-card h1 b{color:var(--accent)}
+html.halloween .login-card h1 b{background:linear-gradient(90deg,var(--accent),#8B5FBF);-webkit-background-clip:text;background-clip:text;color:transparent}
 .login-card p{color:var(--muted);font-size:13.5px;margin-bottom:22px}
 .login-card p small{font-family:var(--f-mono);font-size:11px;letter-spacing:.1em}
 .login-card input{
@@ -123,6 +124,9 @@ aside::after{content:"";position:absolute;top:0;bottom:0;right:0;width:3px;backg
 .nav-item svg{flex:none}
 .nav-item:hover{background:rgba(232,160,32,.08);color:var(--ink);transform:translateX(3px)}
 .nav-item.active{background:rgba(232,160,32,.13);color:var(--ink);font-weight:600;box-shadow:inset 3px 0 0 var(--accent)}
+/* ---- habillage Halloween (Paramètres → Économie) ---- */
+html.halloween .nav-item.active{box-shadow:inset 3px 0 0 #8B5FBF,0 0 14px rgba(232,160,32,.3)}
+html.halloween .brand b{background:linear-gradient(90deg,var(--accent),#8B5FBF);-webkit-background-clip:text;background-clip:text;color:transparent}
 aside .spacer{flex:1;min-height:10px}
 #logout{color:#E39B98}
 #logout:hover{background:rgba(217,83,79,.12);color:#F2A6A4}

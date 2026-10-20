@@ -1,7 +1,6 @@
 /* ============================================================
    OIL ROXWOOD — COMPORTEMENTS COMMUNS
    Chargé par index.html ET admin.html.
-   · lampe torche qui suit le curseur et révèle la rouille
    · plaques inclinables en 3D + reflet métallique
    · rivets posés automatiquement sur les plaques
    · bandeau raffinerie animé en fond (admin)
@@ -12,28 +11,6 @@
 
   var reduit = matchMedia("(prefers-reduced-motion: reduce)").matches;
   var survol = matchMedia("(hover:hover)").matches && !reduit;
-
-  /* ---------- 1. LAMPE TORCHE ---------- */
-  function torche() {
-    if (!survol || document.getElementById("torche")) return;
-    ["rouille", "torche"].forEach(function (id) {
-      var d = document.createElement("div");
-      d.id = id;
-      d.setAttribute("aria-hidden", "true");
-      document.body.appendChild(d);
-    });
-    var x = -600, y = -600, attente = false, racine = document.documentElement;
-    addEventListener("pointermove", function (e) {
-      x = e.clientX; y = e.clientY;
-      if (attente) return;
-      attente = true;
-      requestAnimationFrame(function () {
-        racine.style.setProperty("--mx", x + "px");
-        racine.style.setProperty("--my", y + "px");
-        attente = false;
-      });
-    }, { passive: true });
-  }
 
   /* ---------- 2. PLAQUES INCLINABLES ---------- */
   function brancherTilt(el, force) {
@@ -220,16 +197,11 @@
   global.Roxwood = {
     reduit: reduit,
     survol: survol,
-    torche: torche,
     habiller: habiller,
     surveiller: surveiller,
     brancherTilt: brancherTilt,
     bandeauRaffinerie: bandeauRaffinerie,
     ruban: ruban
   };
-
-  if (document.readyState === "loading")
-    document.addEventListener("DOMContentLoaded", torche);
-  else torche();
 
 })(window);

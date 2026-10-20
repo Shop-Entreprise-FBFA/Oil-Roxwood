@@ -52,8 +52,8 @@ JavaScript servis tels quels. On ouvre un fichier, on modifie, on pousse.
 ├── equipe.html             Redirection
 │
 ├── assets/
-│   ├── roxwood-core.css    Socle commun : couleurs, typo, textures, torche, rivets
-│   ├── roxwood-ui.js       Comportements communs : torche, inclinaison, silhouette
+│   ├── roxwood-core.css    Socle commun : couleurs, typo, textures, rivets
+│   ├── roxwood-ui.js       Comportements communs : inclinaison, silhouette
 │   ├── roxwood-site.css    Mise en page de la vitrine
 │   ├── roxwood-site.js     Thème jour/nuit, hero animé, simulateur, mur de clients
 │   ├── roxwood-app.css     Socle du poste de contrôle
@@ -77,9 +77,8 @@ seul endroit à toucher.
 ### Le socle graphique
 
 Direction artistique « raffinerie brute » : noir charbon et ambre, typographie de
-signalétique industrielle, plaques d'acier boulonnées, rubans de chantier. Une
-lampe torche suit le curseur et révèle la rouille ; les plaques s'inclinent en 3D
-sous la souris. Le vert, le rouge et le bleu acier sont **réservés aux états**
+signalétique industrielle, plaques d'acier boulonnées, rubans de chantier. Les
+plaques s'inclinent en 3D sous la souris. Le vert, le rouge et le bleu acier sont **réservés aux états**
 (validé, en retard, en attente) et ne servent jamais de décoration.
 
 Le détail de la refonte et la liste complète du vocabulaire de classes sont dans

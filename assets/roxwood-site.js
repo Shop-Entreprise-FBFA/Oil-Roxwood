@@ -384,10 +384,19 @@
   var F = function (n) { return Math.round(n || 0).toLocaleString("fr-FR"); };
   var $ = function (id) { return document.getElementById(id); };
 
+  /* ---- habillage Halloween (activé/désactivé depuis le dashboard, Paramètres) ---- */
+  function halloween(on) {
+    document.documentElement.classList.toggle("halloween", on);
+    var logo = "assets/logo" + (on ? "-halloween" : "") + ".png";
+    var nl = $("navLogo"); if (nl) nl.src = logo;
+    var hk = $("heroKicker"); if (hk) hk.textContent = on ? "🎃 Édition Halloween · Roxwood County" : "FlashbackFA · Roxwood County";
+  }
+
   fetch("data/stats-public.json?t=" + Date.now(), { cache: "no-store" })
     .then(function (r) { return r.ok ? r.json() : null; })
     .then(function (d) {
       if (!d) return;
+      halloween(!!d.halloween);
       equipe(d.equipe);                              // l'équipe ne dépend pas de la production
       catalogue(d.produits);                         // les produits non plus
 

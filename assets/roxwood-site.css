@@ -55,6 +55,10 @@ nav.barre.collee{background:color-mix(in srgb,var(--fond) 90%,transparent);backd
 .nav-cta::after,.nav-membre::after{display:none}
 .nav-links > a.nav-cta{background:var(--ambre);color:#120C05}
 .nav-links > a.nav-membre{color:var(--ambre-texte)}
+
+/* ---- habillage Halloween (activable depuis le dashboard, Paramètres) ---- */
+html.halloween .logo b{background:linear-gradient(90deg,var(--ambre),#8B5FBF);-webkit-background-clip:text;background-clip:text;color:transparent}
+html.halloween .nav-links > a.nav-cta,html.halloween #heroCta{background:linear-gradient(90deg,var(--ambre),#8B5FBF)!important;color:#120C05!important;box-shadow:0 0 18px rgba(139,95,191,.35)}
 .nav-membre:hover{background:rgba(232,160,32,.12)}
 .theme-btn{background:none;border:1px solid var(--trait-fort);color:var(--ink);padding:8px 10px;margin-left:8px;font-size:14px;line-height:1;border-radius:var(--radius)}
 .theme-btn:hover{border-color:var(--ambre)}

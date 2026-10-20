@@ -76,7 +76,7 @@
 
 <nav class="barre">
   <a class="logo" href="#accueil">
-    <img src="assets/logo.png" alt="Logo Oil Roxwood" width="34" height="34" decoding="async" fetchpriority="high">
+    <img id="navLogo" src="assets/logo.png" alt="Logo Oil Roxwood" width="34" height="34" decoding="async" fetchpriority="high">
     <span>OIL <b>ROXWOOD</b></span>
   </a>
   <button class="burger" aria-expanded="false" aria-label="Ouvrir le menu">☰</button>
@@ -89,7 +89,7 @@
     <a href="#grades">Grades &amp; Salaires</a>
     <a href="#recrutement">Recrutement</a>
     <a href="#contact">Contact</a>
-    <a href="#recrutement" class="nav-cta">Postuler</a>
+    <a href="#recrutement" class="nav-cta" id="navCta">Postuler</a>
     <a href="admin.html" class="nav-membre">Espace membre</a>
     <button class="theme-btn" id="themeBtn" onclick="toggleTheme()" title="Mode clair / sombre" aria-label="Changer de thème">🌙</button>
   </div>
@@ -99,7 +99,7 @@
 <header id="accueil">
   <canvas id="heroCanvas" aria-hidden="true"></canvas>
   <div class="wrap hero-grid">
-    <span class="tag kicker">FlashbackFA · Roxwood County</span>
+    <span class="tag kicker" id="heroKicker">FlashbackFA · Roxwood County</span>
     <h1>L'or noir de Roxwood,<br><span class="creux">livré</span> <em>par des pros</em></h1>
     <p class="hero-sub">
       Oil Roxwood est la référence de la collecte et du transport de pétrole sur le comté
@@ -107,7 +107,7 @@
       à toute heure.
     </p>
     <div class="hero-cta">
-      <a href="#recrutement" class="btn" style="background:var(--ambre);color:#120C05"><span>Rejoindre l'équipe</span></a>
+      <a href="#recrutement" class="btn" id="heroCta" style="background:var(--ambre);color:#120C05"><span>Rejoindre l'équipe</span></a>
       <a href="#presentation" class="btn"><span>Découvrir l'entreprise</span></a>
     </div>
 

@@ -58,12 +58,9 @@
   --f-mono:"IBM Plex Mono","JetBrains Mono",ui-monospace,Menlo,monospace;
 
   --grain:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
-  --rouille:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='420' height='420'%3E%3Cfilter id='r'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.012 .022' numOctaves='5' seed='7'/%3E%3CfeColorMatrix values='0.9 0 0 0 0.45  0 0.42 0 0 0.16  0 0 0.15 0 0.04  0 0 0 -1.4 1.05'/%3E%3C/filter%3E%3Crect width='420' height='420' filter='url(%23r)'/%3E%3C/svg%3E");
   --danger:repeating-linear-gradient(45deg,#1C1410 0 14px,#E8A020 14px 28px);
 
   --grain-op:.05;
-  --rouille-op:.5;
-  --torche-a:.10;
   --reflet-a:.06;
 }
 
@@ -105,8 +102,6 @@ html.dark{
   --danger:repeating-linear-gradient(45deg,#0A0806 0 14px,#E8A020 14px 28px);
 
   --grain-op:.055;
-  --rouille-op:.85;
-  --torche-a:.15;
   --reflet-a:.10;
 }
 
@@ -135,21 +130,6 @@ h1,h2,h3,h4{font-family:var(--f-display);font-weight:800;margin:0;line-height:.9
 ::-webkit-scrollbar-track{background:transparent}
 ::-webkit-scrollbar-thumb{background:var(--trait-fort);border-radius:99px;border:2px solid var(--fond)}
 ::-webkit-scrollbar-thumb:hover{background:var(--ambre)}
-
-/* ---------- 3. LAMPE TORCHE ---------- */
-#rouille,#torche{position:fixed;inset:0;pointer-events:none;z-index:110}
-#rouille{
-  background-image:var(--rouille);background-size:520px;
-  opacity:var(--rouille-op);mix-blend-mode:overlay;
-  -webkit-mask-image:radial-gradient(circle 250px at var(--mx,-600px) var(--my,-600px),#000 0%,rgba(0,0,0,.4) 48%,transparent 74%);
-          mask-image:radial-gradient(circle 250px at var(--mx,-600px) var(--my,-600px),#000 0%,rgba(0,0,0,.4) 48%,transparent 74%);
-}
-#torche{
-  z-index:111;mix-blend-mode:screen;
-  background:radial-gradient(circle 300px at var(--mx,-600px) var(--my,-600px),
-    rgba(255,170,64,var(--torche-a)),rgba(255,110,30,.04) 45%,transparent 70%);
-}
-@media (hover:none),(prefers-reduced-motion:reduce){#rouille,#torche{display:none}}
 
 /* ---------- 4. RIVETS & PLAQUES INCLINABLES ---------- */
 .rivet{

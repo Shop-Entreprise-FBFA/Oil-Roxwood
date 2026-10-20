@@ -41,7 +41,7 @@ window.ROXWOOD_CFG = {
   <div class="login-card">
     <i class="rivet a"></i><i class="rivet b"></i><i class="rivet c"></i><i class="rivet d"></i>
     <span class="enseigne" aria-hidden="true">ACCÈS</span>
-    <img src="assets/logo.png" alt="Oil Roxwood">
+    <img id="loginLogo" src="assets/logo.png" alt="Oil Roxwood">
     <h1>OIL <b>ROXWOOD</b></h1>
     <p>Espace membre — connexion sécurisée<br><small>version <span id="verTag">C-98</span></small></p>
     <button type="button" class="btn-discord" onclick="loginDiscord()">
@@ -91,11 +91,10 @@ window.ROXWOOD_CFG = {
          et l'animation au survol, l'entrée de menu « Voir le site public » ne
          faisait que répéter une affordance existante. Le voyant de synchro reste
          cliquable à l'intérieur : son gestionnaire arrête la navigation. -->
-    <div class="brand"><a href="index.html" target="_blank" rel="noopener" title="Ouvrir le site public dans un nouvel onglet" style="display:flex;align-items:center;gap:11px;text-decoration:none;color:inherit;min-width:0"><img src="assets/logo.png" alt="" width="32" height="32" style="object-fit:contain"> <span>OIL <b>ROXWOOD</b><small>ESPACE MEMBRE <span id="syncDot" title="État de la synchro — cliquer pour régler le jeton" style="display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--muted);margin-left:5px;vertical-align:middle;cursor:pointer"></span></small></span></a></div>
+    <div class="brand"><a href="index.html" target="_blank" rel="noopener" title="Ouvrir le site public dans un nouvel onglet" style="display:flex;align-items:center;gap:11px;text-decoration:none;color:inherit;min-width:0"><img id="brandLogo" src="assets/logo.png" alt="" width="32" height="32" style="object-fit:contain"> <span>OIL <b>ROXWOOD</b><small>ESPACE MEMBRE <span id="syncDot" title="État de la synchro — cliquer pour régler le jeton" style="display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--muted);margin-left:5px;vertical-align:middle;cursor:pointer"></span></small></span></a></div>
     <div class="nav-sec" data-sec="rh" tabindex="0" role="button" aria-expanded="true" onclick="navToggle('rh')" onkeydown="navSecKey(event,'rh')">Ressources humaines <span class="chev">▾</span></div>
     <button class="nav-item" data-view="frh">🗂️ <span class="txt">Fiches RH</span></button>
     <button class="nav-item" data-view="effectif">👥 <span class="txt">Effectif</span></button>
-    <button class="nav-item" data-view="fblacklist">⛔ <span class="txt">Blacklist</span></button>
     <button class="nav-item" data-view="integration">🎓 <span class="txt">Intégration</span></button>
     <div class="nav-sec" data-sec="commerce" tabindex="0" role="button" aria-expanded="true" onclick="navToggle('commerce')" onkeydown="navSecKey(event,'commerce')">Commerce <span class="chev">▾</span></div>
     <button class="nav-item" data-view="factures">🧾 <span class="txt">Factures</span></button>
@@ -114,7 +113,6 @@ window.ROXWOOD_CFG = {
     <button class="nav-item active" data-view="overview">📊 <span class="txt">Vue d'ensemble</span></button>
     <button class="nav-item" data-view="felig">✅ <span class="txt">Éligibilité</span></button>
     <button class="nav-item" data-view="historique">📈 <span class="txt">Historique</span></button>
-    <button class="nav-item" data-view="reunions">📋 <span class="txt">Comptes-rendus</span></button>
     <div class="nav-sec" data-sec="quotas" tabindex="0" role="button" aria-expanded="true" onclick="navToggle('quotas')" onkeydown="navSecKey(event,'quotas')">Quotas <span class="chev">▾</span></div>
     <button class="nav-item" data-view="quotashist">📊 <span class="txt">Quotas 3 semaines</span></button>
     <div class="nav-sec" data-sec="vitrine" tabindex="0" role="button" aria-expanded="true" onclick="navToggle('vitrine')" onkeydown="navSecKey(event,'vitrine')">Vitrine <span class="chev">▾</span></div>
@@ -344,7 +342,24 @@ function save(){
    écriture du bot ferait donc disparaître la table des coffres de sa copie —
    puis l'effacerait du dépôt à son prochain envoi. Ces tables-là n'ont qu'un
    auteur, il n'y a rien à arbitrer : on les reprend toujours du dépôt. */
-const TABLES_BOT=['oilroxwood_coffres','oilroxwood_recrues','oilroxwood_absences','oilroxwood_avertissements','oilroxwood_contrats_signes'];
+const TABLES_BOT=['oilroxwood_coffres','oilroxwood_recrues','oilroxwood_absences','oilroxwood_avertissements','oilroxwood_contrats_signes','oilroxwood_ventes'];
+/* Tables où PLUSIEURS admins (ou le bot ET un admin) posent chacun leurs
+   propres lignes : fusionnées ligne par ligne (union par identifiant),
+   jamais en bloc. `_tables` entier portait une seule date de fraîcheur :
+   un contrat de livraison fraîchement créé pouvait disparaître quelques
+   secondes après sa création si le bot écrivait sur n'importe quelle AUTRE
+   table (coffres, commandes…) entre-temps — cette écriture faisait gagner
+   toute la section au dépôt, qui ne contenait pas encore le contrat.
+   Diagnostiqué en octobre 2026. Valeur = le champ qui identifie une ligne. */
+const TABLES_LIGNE={oilroxwood_agenda:'id',oilroxwood_media:'id',oilroxwood_frecues:'id',oilroxwood_bot_ordres:'id',oilroxwood_online:'uid'};
+/* Suppressions dans une table fusionnée ligne par ligne : comme pour l'agenda
+   (`_agSupp`), une union toute seule ferait revenir une ligne supprimée
+   localement si le dépôt ne connaît pas encore la suppression. Mémorisée ici
+   pour oilroxwood_media et oilroxwood_frecues (l'agenda garde son propre
+   `_agSupp`, déjà en place et éprouvé — inutile d'y toucher). */
+function tombeLigne(table,id){
+  S._tablesSupp=[...new Set([...(S._tablesSupp||[]),`${table}:${id}`])].slice(-1000);
+}
 /* `profils` a un auteur par fiche (chacun la sienne), mais se fusionnait comme
    les autres sections : en bloc, la plus récente gagne. Deux personnes qui
    enregistrent leur profil à quelques secondes d'écart depuis deux navigateurs
@@ -380,6 +395,7 @@ function mergeRemote(rem){
       }
       return;
     }
+    if(k==='_tables') return;                                     // fusionné table par table, plus bas
     let rt=(rem._majSec&&rem._majSec[k])||rem._maj||0;
     let lt=S._majSec[k]||S._maj||0;
     if(rt>lim) rt=nowSrv();
@@ -389,11 +405,26 @@ function mergeRemote(rem){
   });
   if(rem._tables){
     S._tables=S._tables||{};
-    TABLES_BOT.forEach(k=>{
-      if(rem._tables[k]===undefined) return;
-      if(JSON.stringify(S._tables[k])!==JSON.stringify(rem._tables[k])){
-        S._tables[k]=rem._tables[k]; changed=true;
+    Object.keys(rem._tables).forEach(nom=>{
+      const r=rem._tables[nom];
+      if(TABLES_BOT.includes(nom)){                                // un seul auteur (le bot) : le dépôt fait foi
+        if(JSON.stringify(S._tables[nom])!==JSON.stringify(r)){ S._tables[nom]=r; changed=true; }
+        return;
       }
+      const cleLigne=TABLES_LIGNE[nom];
+      if(cleLigne&&Array.isArray(r)){                              // plusieurs auteurs : union ligne par ligne
+        const loc=Array.isArray(S._tables[nom])?S._tables[nom]:[];
+        const fusion=new Map(loc.map(x=>[String(x&&x[cleLigne]),x]));
+        const avant=fusion.size;
+        r.forEach(x=>{
+          const cle=String(x&&x[cleLigne]);
+          if(!fusion.has(cle)||JSON.stringify(fusion.get(cle))!==JSON.stringify(x)){ fusion.set(cle,x); changed=true; }
+        });
+        if(fusion.size!==avant) changed=true;
+        S._tables[nom]=[...fusion.values()];
+        return;
+      }
+      if(JSON.stringify(S._tables[nom])!==JSON.stringify(r)){ S._tables[nom]=r; changed=true; }   // table non classée : comme avant
     });
   }
   const supp=new Set([...(S._agSupp||[]),...(rem._agSupp||[])].map(String));
@@ -403,6 +434,14 @@ function mergeRemote(rem){
     S._tables.oilroxwood_agenda=S._tables.oilroxwood_agenda.filter(e=>!supp.has(String(e.id)));
     if(S._tables.oilroxwood_agenda.length!==n) changed=true;
   }
+  const suppLigne=new Set([...(S._tablesSupp||[]),...(rem._tablesSupp||[])].map(String));
+  S._tablesSupp=[...suppLigne].slice(-1000);
+  if(S._tables) Object.keys(TABLES_LIGNE).forEach(nom=>{
+    if(nom==='oilroxwood_agenda'||!Array.isArray(S._tables[nom])) return;   // l'agenda a déjà son filtre ci-dessus
+    const cleLigne=TABLES_LIGNE[nom], n=S._tables[nom].length;
+    S._tables[nom]=S._tables[nom].filter(x=>!suppLigne.has(`${nom}:${x&&x[cleLigne]}`));
+    if(S._tables[nom].length!==n) changed=true;
+  });
   S._maj=Math.max(S._maj||0,rem._maj||0);
   palDirty();
   return {changed,localNewer};
@@ -857,41 +896,41 @@ const PERMS={
   /* L'ORDRE de cette liste est celui des lignes dans la grille des permissions.
      Il suit le menu, pôle par pôle, pour qu'on règle les droits en lisant la
      même chose des deux côtés. */
-  direction:['frh','effectif','fblacklist','integration',
+  direction:['frh','effectif','integration',
              'factures','relances','fventes','quotascom','prodder',
              'ftablette','fcompta','frecues','bilan','cloture','semaine',
-             'overview','felig','historique','reunions',
+             'overview','felig','historique',
              'quotashist',
              'produits','profil','moi','agenda','affiches',
              'dlogs','journal','params','maj'],
 
   // RH : les personnes et ce qu'on leur doit. Ni compta, ni facturation.
   //      La semaine reste ouverte : c'est là qu'ils lisent les salaires à payer.
-  rh:       ['overview','effectif','semaine','historique','reunions','frh','fblacklist','integration','felig','ftablette','moi','profil','quotashist','agenda','affiches','maj','dlogs'],
+  rh:       ['overview','effectif','semaine','historique','frh','integration','felig','ftablette','moi','profil','quotashist','agenda','affiches','maj','dlogs'],
 
   // Comptable : l'argent de l'entreprise. Pas les dossiers du personnel.
-  comptable:['overview','reunions','factures','relances','bilan','fcompta','frecues','moi','profil','quotashist','agenda','affiches','maj'],
+  comptable:['overview','factures','relances','bilan','fcompta','frecues','moi','profil','quotashist','agenda','affiches','maj'],
 
   // Assistant de direction : le bras droit. Tout ce que voit la Direction, sauf
   //      les deux gestes qui n'appartiennent qu'au patron : clôturer la semaine
   //      (irréversible, elle fige les salaires) et changer les Paramètres.
-  assistdir:['overview','effectif','semaine','historique','reunions','ftablette','felig','fventes','frh','fblacklist','integration','fcompta','factures','relances','bilan','prodder','quotascom','frecues','moi','produits','profil','quotashist','agenda','affiches','maj','dlogs','journal'],
+  assistdir:['overview','effectif','semaine','historique','ftablette','felig','fventes','frh','integration','fcompta','factures','relances','bilan','prodder','quotascom','frecues','moi','produits','profil','quotashist','agenda','affiches','maj','dlogs','journal'],
 
   // Commercial : le commerce, rien d'autre.
-  commercial:['overview','reunions','fventes','factures','relances','quotascom','prodder','moi','produits','profil','quotashist','agenda','affiches','maj'],
+  commercial:['overview','fventes','factures','relances','quotascom','prodder','moi','produits','profil','quotashist','agenda','affiches','maj'],
 
   // Responsable commercial : pour l'instant exactement un commercial. Le rôle
   //      existe pour qu'on puisse lui ouvrir des cases sans les ouvrir à toute
   //      l'équipe — Paramètres → Permissions par rôle, colonne par colonne.
-  respcom:  ['overview','reunions','fventes','factures','relances','quotascom','prodder','moi','produits','profil','quotashist','agenda','affiches','maj'],
+  respcom:  ['overview','fventes','factures','relances','quotascom','prodder','moi','produits','profil','quotashist','agenda','affiches','maj'],
 
   // Responsable Runner : il encadre la production au quotidien. Effectif,
   //      éligibilité, tablette et logs — mais ni la paie détaillée, ni les
   //      factures, ni les fiches du personnel.
-  resprunner:['overview','effectif','semaine','historique','reunions','felig','ftablette','prodder','moi','profil','quotashist','agenda','affiches','maj','dlogs'],
+  resprunner:['overview','effectif','semaine','historique','felig','ftablette','prodder','moi','profil','quotashist','agenda','affiches','maj','dlogs'],
 
   // Runner : lecture de l'entreprise et son espace personnel.
-  membre:   ['overview','effectif','reunions','moi','profil','quotashist','agenda','affiches','maj']
+  membre:   ['overview','effectif','moi','profil','quotashist','agenda','affiches','maj']
 };
 function isMembre(){
   if(sessionStorage.getItem('orx_user')==='SECOURS') return false; // clé de secours = Direction
@@ -934,7 +973,7 @@ function migrerPerms(){
      connexion figé, plus personne ne pouvait entrer. Le piège n'apparaissait
      qu'avec des permissions personnalisées enregistrées : sans elles, la
      fonction sortait avant d'atteindre ces lignes. */
-  const SHEET_VUES_TOUTES=['ftablette','felig','fventes','frh','fblacklist','fcompta'];
+  const SHEET_VUES_TOUTES=['ftablette','felig','fventes','frh','fcompta'];
   const VUES_DISPARUES=['acces','runs','fer','retention','todo','feedback','tv'];
   let touche=0;
   ['permsCustom','permsRO'].forEach(cle=>{
@@ -1164,6 +1203,11 @@ function enter(){
   chgOuvrir();
   whoami();
   applyPerms(); navBadges();
+  aplHalloween();
+  if(S.settings.halloween&&sessionStorage.getItem('orx_hw_toast')!=='1'){
+    sessionStorage.setItem('orx_hw_toast','1');
+    setTimeout(()=>toast("🎃 Joyeux Halloween, l'équipe Oil Roxwood !",6000),1200);
+  }
   const bell=document.getElementById('nfBell'); if(bell) bell.style.display='flex';
   nfRefresh();
   przLoad().then(()=>{ if(VIEW==='effectif') rerender(); }); setInterval(przLoad,5*60*1000); // présence Discord (widget) rafraîchie
@@ -1204,7 +1248,7 @@ function logout(){
 }
 
 /* ---- Canari de version : prévient les onglets restés sur une vieille version ---- */
-const APP_VERSION='C-113';
+const APP_VERSION='C-114';
 /* Le bandeau ne doit dire qu'une chose : « une version plus récente existe ».
    Il comparait deux chaînes avec !==, donc il s'allumait aussi dans l'autre
    sens — quand la page ouverte était PLUS récente que version.json, ce qui
@@ -1593,8 +1637,20 @@ document.querySelectorAll('.nav-item[data-view]').forEach(b=>b.onclick=()=>show(
     b.insertAdjacentHTML('afterbegin',`<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${p}</svg>`);
   });
 })();
+/* ---- habillage Halloween (activable/désactivable à tout moment, Paramètres) ----
+   Volontairement discret : le logo (connexion + menu + vitrine) et un léger
+   halo sur l'onglet actif. Les icônes de nav ne sont pas touchées — la plupart
+   sont déjà remplacées par des pictos en traits fins juste au-dessus, et y
+   superposer un emoji aurait doublé l'icône plutôt que de la remplacer. */
+function aplHalloween(){
+  const on=!!(S.settings&&S.settings.halloween);
+  document.documentElement.classList.toggle('halloween',on);
+  const logo=on?'assets/logo-halloween.png':'assets/logo.png';
+  const lg=document.getElementById('loginLogo'); if(lg) lg.src=logo;
+  const bl=document.getElementById('brandLogo'); if(bl) bl.src=logo;
+}
 /* ---- langue de l'interface (v1 : navigation & sections) ---- */
-const I18N_EN={"Vue d'ensemble":'Overview','Semaine & Primes':'Week & Bonuses','Historique':'History','Clôture du lundi':'Monday closing','Effectif':'Workforce','Runs':'Runs','Feuilles':'Sheets','Tablette':'Tablet','Éligibilité':'Eligibility','Ventes de la semaine':'Weekly sales','Fiches RH':'HR records','Blacklist':'Blacklist','Intégration':'Onboarding','Dépenses & retraits':'Expenses & withdrawals','Ancienneté RH':'HR seniority',"Demandes d'accès":'Access requests','Factures':'Invoices','Relances':'Follow-ups','Bilan compta':'Accounting','Produits dérivés':'Merchandise','Quotas commerciaux':'Sales quotas','Achats Fer':'Iron purchases','Factures reçues':'Received invoices','Ma semaine':'My week','Quotas 3 semaines':'Quotas (3 weeks)','Ma to-do':'My to-do','Mon agenda':'My agenda','Suggestions / Bugs':'Suggestions / Bugs','Mises à jour':'Updates','Logs Discord':'Discord logs','Logs en direct':'Live logs','Journal':'Activity log','Paramètres':'Settings','TV du dépôt':'Depot TV','Retour au site':'Back to site','Déconnexion':'Log out','Pilotage':'Steering','Gestion':'Management','Commerce':'Sales','Compta':'Accounting','Quotas':'Quotas','Ressources humaines':'Human resources','Responsable Runner':'Runner manager','Affiches':'Posters','Comptes-rendus':'Reports','Mon profil':'My profile','Quotas & fer':'Quotas & iron','Perso':'Personal','Système':'System','Accès rapides':'Quick access'};
+const I18N_EN={"Vue d'ensemble":'Overview','Semaine & Primes':'Week & Bonuses','Historique':'History','Clôture du lundi':'Monday closing','Effectif':'Workforce','Runs':'Runs','Feuilles':'Sheets','Tablette':'Tablet','Éligibilité':'Eligibility','Ventes de la semaine':'Weekly sales','Fiches RH':'HR records','Intégration':'Onboarding','Dépenses & retraits':'Expenses & withdrawals','Ancienneté RH':'HR seniority',"Demandes d'accès":'Access requests','Factures':'Invoices','Relances':'Follow-ups','Bilan compta':'Accounting','Produits dérivés':'Merchandise','Quotas commerciaux':'Sales quotas','Achats Fer':'Iron purchases','Factures reçues':'Received invoices','Ma semaine':'My week','Quotas 3 semaines':'Quotas (3 weeks)','Ma to-do':'My to-do','Mon agenda':'My agenda','Suggestions / Bugs':'Suggestions / Bugs','Mises à jour':'Updates','Logs Discord':'Discord logs','Logs en direct':'Live logs','Journal':'Activity log','Paramètres':'Settings','TV du dépôt':'Depot TV','Retour au site':'Back to site','Déconnexion':'Log out','Pilotage':'Steering','Gestion':'Management','Commerce':'Sales','Compta':'Accounting','Quotas':'Quotas','Ressources humaines':'Human resources','Responsable Runner':'Runner manager','Affiches':'Posters','Mon profil':'My profile','Quotas & fer':'Quotas & iron','Perso':'Personal','Système':'System','Accès rapides':'Quick access'};
 function applyLang(){
   const en=localStorage.getItem('orx_lang')==='en';
   document.querySelectorAll('.nav-item .txt').forEach(e=>{
@@ -1658,7 +1714,7 @@ function show(v){
   VIEW=v;
   document.querySelectorAll('.nav-item[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===v));
   destroyCharts();
-  ({overview,effectif,semaine,historique,cloture,reunions,ftablette,felig,fventes,frh,fblacklist,integration,fcompta,factures,relances,bilan,prodder,quotascom,frecues,moi,profil,quotashist,agenda,affiches,produits,maj,dlogs,journal,params})[v]();
+  ({overview,effectif,semaine,historique,cloture,ftablette,felig,fventes,frh,integration,fcompta,factures,relances,bilan,prodder,quotascom,frecues,moi,profil,quotashist,agenda,affiches,produits,maj,dlogs,journal,params})[v]();
   try{ nfRefresh(); applyRO(); }catch(e){}
   restaureEcran(repere);
 }
@@ -2656,22 +2712,21 @@ function undoClose(){
    La vitrine annonçait donc « — » à la place du nombre d'employés pendant les
    premiers jours de chaque semaine, alors que l'entreprise n'avait perdu
    personne. On compte désormais le registre RH, qui ne se vide pas : les
-   personnes encore inscrites, sans celles marquées sorties ni celles passées
-   en liste noire. La Tablette s'y ajoute, pour les runners pointés avant que
-   leur fiche RH n'existe. */
-function effectifPublie(){
-  const bl=new Set(((S.sheets&&S.sheets.blacklist)||[]).map(x=>normNom(x&&x.nom)).filter(Boolean));
+   personnes encore inscrites, sans celles marquées sorties. La Tablette s'y
+   ajoute, pour les runners pointés avant que leur fiche RH n'existe. */
+function effectifActifSet(){
   const vus=new Set();
   ((S.sheets&&S.sheets.rh)||[]).forEach(x=>{
     const n=normNom(x&&x.nom);
-    if(n&&!x.flagOut&&!bl.has(n)) vus.add(n);
+    if(n&&!x.flagOut) vus.add(n);
   });
   (S.runners||[]).forEach(r=>{
     const n=normNom(r&&r.nom);
-    if(n&&!bl.has(n)) vus.add(n);
+    if(n) vus.add(n);
   });
-  return vus.size;
+  return vus;
 }
+function effectifPublie(){ return effectifActifSet().size; }
 function statsData(){
   const sorted=[...S.runners].sort((a,b)=>b.barils-a.barils);
   return {
@@ -2681,6 +2736,7 @@ function statsData(){
     objectif:S.settings.objectif||0,
     effectif:effectifPublie(),
     clientsServis:(S.fact&&S.fact.factures.length)||0,
+    halloween:!!(S.settings&&S.settings.halloween),
     top3:sorted.slice(0,3).filter(r=>r.barils>0).map(r=>({nom:r.nom,barils:r.barils})),
     /* Ce fichier est lisible par n'importe qui sur GitHub Pages, et rien ne lisait
        le détail par personne — ni la vitrine, ni les robots. Il contenait pourtant
@@ -2693,9 +2749,12 @@ function statsData(){
        n'a pas à savoir comment nos fichiers sont rangés. */
     produits:(S.produits||[]).filter(p=>p&&p.actif!==false&&p.nom).map(p=>({
       nom:p.nom, desc:p.desc||'', prix:p.prix||'', photo:p.chemin?affSrc(p):''})),
-    /* L'équipe : uniquement les personnes qui ont coché la case dans Mon profil. */
+    /* L'équipe : uniquement les personnes qui ont coché la case dans Mon profil
+       ET qui sont toujours dans l'effectif (même filtre que le chiffre publié
+       ci-dessus) — sinon quelqu'un qui est parti reste affiché indéfiniment,
+       personne ne décochant jamais sa case après son départ. */
     equipe:Object.values(S.profils||{})
-      .filter(p=>p&&p.public&&p.nom)
+      .filter(p=>p&&p.public&&p.nom&&effectifActifSet().has(normNom(p.nom)))
       .map(p=>({nom:p.nom,titre:p.titre||profilTitreAuto(p.nom)||'',photo:photoOk(p.photo)||profilPhotoAuto(p.nom)||'',bio:p.bio||''}))
       .sort((a,b)=>bilanOrdGrade(a.titre)-bilanOrdGrade(b.titre)||String(a.nom).localeCompare(String(b.nom)))
   };
@@ -2828,27 +2887,17 @@ const SHEETS_DEF = {
     {k:'discord',l:'Discord',t:'text'},{k:'avert',l:'Avert.',t:'text'},{k:'contrat',l:'Contrat signé',t:'bool'},
     {k:'recrut',l:'Recruteur',t:'choice',opts:()=>['',...nomsRecruteurs()]},{k:'dernierService',l:'Dernière prise de service',t:'date'},
     {k:'_actif',l:'Actif',t:'html',f:r=>{
-      // alerte si l'ID unique figure aussi dans la feuille Blacklist
-      const idu=String(r.idU||'').trim();
-      const bl=idu&&((S.sheets&&S.sheets.blacklist)||[]).find(b=>String(b.idU||'').trim()===idu);
-      const warn=bl?`<span style="color:var(--red);font-weight:800;white-space:nowrap" title="${esc(bl.comm||'raison non renseignée')}">⛔ BLACKLISTÉ !</span><br>`:'';
       const ab=absDe(r.nom);
       const abs=ab?`<span style="color:#22d3ee;font-weight:800;white-space:nowrap">💤 zzz — absent jusqu'au ${frDate(ab.au)}</span><br>`:'';
       const d=Date.parse(r.dernierService);
       const j=isNaN(d)?null:Math.floor((Date.now()-d)/86400000);
-      if(r.flagOut) return warn+abs+`<span style="color:var(--red);font-weight:700;white-space:nowrap">🔴 absent du pointage${j!==null?' · '+j+' j':''} — démission ?</span>`;
-      if(j===null) return warn+abs+'<span style="color:var(--muted)">—</span>';
+      if(r.flagOut) return abs+`<span style="color:var(--red);font-weight:700;white-space:nowrap">🔴 absent du pointage${j!==null?' · '+j+' j':''} — démission ?</span>`;
+      if(j===null) return abs+'<span style="color:var(--muted)">—</span>';
       const col=j<=2?'var(--green)':j<=6?'var(--accent)':'var(--red)';
-      return warn+abs+`<span style="color:${col};font-weight:700">${j} j sans service</span>`;
+      return abs+`<span style="color:${col};font-weight:700">${j} j sans service</span>`;
     }}],
     lite:['_ctr','idU','nom','grade','tel','rib','discord','recrut','dernierService','_actif'],
     tot:[], nouveau:{nom:'',grade:'Intérimaire',tel:'',rib:'',idU:'',arrivee:'',discord:'',avert:'',contrat:false,recrut:'',dernierService:'',flagOut:false}},
-  blacklist:{ico:'⛔',label:'Blacklist',cols:[
-    {k:'nom',l:'Nom',t:'text'},{k:'grade',l:'Grade',t:'text'},{k:'tel',l:'Téléphone',t:'text'},
-    {k:'idU',l:'ID unique',t:'text'},{k:'date',l:'Date',t:'date'},{k:'discord',l:'Discord',t:'text'},
-    {k:'comm',l:'Raison',t:'text'}],
-    tot:[], nouveau:{nom:'',grade:'',tel:'',idU:'',date:'',discord:'',comm:''},
-    note:'Liste interne — personnes à ne pas recruter'},
   compta:{ico:'💸',label:'Dépenses & retraits',cols:[
     {k:'type',l:'Type',t:'choice',opts:['Dépense déductible','Retrait']},{k:'date',l:'Date',t:'date'},{k:'justif',l:'Justificatif',t:'text'},
     {k:'montant',l:'Montant',t:'num'}],
@@ -2863,7 +2912,7 @@ const nn = x => +x||0;
 
    Il y en avait deux, et elles réglaient la même chose. Depuis C-59, chaque
    feuille EST une rubrique du menu (Tablette, Éligibilité, Ventes, RH,
-   Blacklist, Compta) : la grille « Permissions par rôle » lui donne déjà ses
+   Compta) : la grille « Permissions par rôle » lui donne déjà ses
    trois états — accès complet ✓, lecture seule 👁, aucun accès —. La grille
    « Permissions fines » faisait exactement le même travail par-dessous, et les
    deux pouvaient se contredire : une case verte en haut, une feuille cachée en
@@ -2871,7 +2920,7 @@ const nn = x => +x||0;
 
    La feuille suit donc désormais sa rubrique, et rien d'autre. */
 const VUE_DE_FEUILLE={tablette:'ftablette',eligibilite:'felig',ventesSem:'fventes',
-                      rh:'frh',blacklist:'fblacklist',compta:'fcompta'};
+                      rh:'frh',compta:'fcompta'};
 function sheetAllowed(k){
   if(sessionStorage.getItem('orx_user')==='SECOURS') return true;
   const cu=currentUser(); if(!cu) return true;
@@ -2889,7 +2938,7 @@ function sheetRO(k){
    Les six tableaux vivaient sous une seule entree « Feuilles », avec des onglets.
    Ils appartiennent en realite a des metiers differents : la Tablette et les
    depenses a la gestion, l'Eligibilite au Responsable Runner, les ventes au
-   commerce, les fiches RH et la blacklist aux RH. Chacune a donc sa place dans
+   commerce, les fiches RH aux RH. Chacune a donc sa place dans
    le menu, dans son pole.
 
    Le rendu n'a pas bouge : `feuilles()` reste le moteur, ces six fonctions ne
@@ -2897,13 +2946,12 @@ function sheetRO(k){
    (Parametres -> Permissions feuilles) continuent de s'appliquer telles quelles,
    et masquent aussi l'entree de menu correspondante. */
 const SHEET_VIEWS={ftablette:'tablette',felig:'eligibilite',fventes:'ventesSem',
-                   frh:'rh',fblacklist:'blacklist',fcompta:'compta'};
+                   frh:'rh',fcompta:'compta'};
 function ouvrirFeuille(k){ if(curSheet!==k){ curSheet=k; sheetSearch=''; } return feuilles(); }
 function ftablette(){ return ouvrirFeuille('tablette'); }
 function felig(){ return ouvrirFeuille('eligibilite'); }
 function fventes(){ return ouvrirFeuille('ventesSem'); }
 function frh(){ return ouvrirFeuille('rh'); }
-function fblacklist(){ return ouvrirFeuille('blacklist'); }
 /* Le guide d'intégration vivait sur un lien externe (artefact Claude) — plus
    pratique à relire pour l'écrire, mais externe au site, donc invisible pour
    qui n'a pas le lien et hors de la synchro RH. Il est copié tel quel dans
@@ -3433,14 +3481,9 @@ function rhApplyPaste(){
     const id=String(x.idU||'').replace(/\D/g,'');
     if(id){ x.flagOut=!seen.has(id)&&!absDe(x.nom); if(x.flagOut) absents++; } // absence déclarée → pas d'alerte démission
   });
-  // contrôle blacklist : un ID du pointage figure-t-il dans la feuille Blacklist ?
-  const blNoms=S.sheets.rh.filter(x=>{
-    const id=String(x.idU||'').replace(/\D/g,'');
-    return id&&seen.has(id)&&(S.sheets.blacklist||[]).some(b=>String(b.idU||'').replace(/\D/g,'')===id);
-  }).map(x=>x.nom||x.idU);
   save(); sbPushNow(); closeModal(); feuilles();
-  toast(`🕒 Pointage importé : ${maj} mis à jour${grUpd?` (dont ${grUpd} changement(s) de grade)`:''} · ${crees} créé(s)${absents?` · 🔴 ${absents} absent(s) du pointage`:''}${blNoms.length?` · ⛔ ${blNoms.length} BLACKLISTÉ(S) !`:''}`);
-  sendLog('🕒 Pointage RH importé', `${maj} mise(s) à jour · ${crees} création(s)${absents?` · 🔴 **${absents} absent(s)** — démissions possibles`:''}${blNoms.length?`\n\n⛔ **ALERTE BLACKLIST** : ${blNoms.map(n=>'**'+esc(n)+'**').join(', ')} figure(nt) dans la blacklist !`:''}`, (absents||blNoms.length)?0xff5c5c:0x3ddc84);
+  toast(`🕒 Pointage importé : ${maj} mis à jour${grUpd?` (dont ${grUpd} changement(s) de grade)`:''} · ${crees} créé(s)${absents?` · 🔴 ${absents} absent(s) du pointage`:''}`);
+  sendLog('🕒 Pointage RH importé', `${maj} mise(s) à jour · ${crees} création(s)${absents?` · 🔴 **${absents} absent(s)** — démissions possibles`:''}`, absents?0xff5c5c:0x3ddc84);
 }
 
 /* ---- Import tablette par copier-coller (Excel / Google Sheets) ---- */
@@ -4240,7 +4283,7 @@ async function relNoteDel(i,t){
   try{
     const vieilles=(CM_CACHE[c.nom]||[]).filter(m=>m.note_t===t);
     await SYNC.cli.from('oilroxwood_media').delete().eq('client',c.nom).eq('note_t',t);
-    vieilles.forEach(m=>pieceJointeSuppr(m.img,'Capture de note retirée'));
+    vieilles.forEach(m=>{ tombeLigne('oilroxwood_media',m.id); pieceJointeSuppr(m.img,'Capture de note retirée'); });
   }catch(e){}
   save(); sbPushNow(); await cmLoad(c.nom); relNotes(i); relances();
 }
@@ -4302,7 +4345,7 @@ function fcLieu(i,inp){
     try{
       const vieux=(CM_CACHE[c.nom]||[]).filter(m=>m.type==='lieu');
       await SYNC.cli.from('oilroxwood_media').delete().eq('client',c.nom).eq('type','lieu');
-      vieux.forEach(m=>pieceJointeSuppr(m.img,'Ancienne photo de lieu remplacée'));
+      vieux.forEach(m=>{ tombeLigne('oilroxwood_media',m.id); pieceJointeSuppr(m.img,'Ancienne photo de lieu remplacée'); });
       const chemin=await pieceJointe(d,'data/medias-notes','Lieu de livraison — '+c.nom);
       const {error}=await SYNC.cli.from('oilroxwood_media').insert({client:c.nom,type:'lieu',img:chemin});
       if(error) throw error;
@@ -4620,171 +4663,6 @@ async function cloture(){
   </div>`:''}`;
 }
 
-/* ================== COMPTES-RENDUS DE RÉUNION ==================
-   L'encadrement rédige, les membres lisent. À la publication, on
-   choisit au cas par cas : envoi Discord et/ou création des tâches. */
-const REU_TYPES={direction:'Direction',generale:'Générale',rh:'RH',commerciale:'Commerciale',autre:'Autre'};
-
-function reuPeutEcrire(){ return !isMembre(); }
-function reuListe(){ return (S.reunions=S.reunions||[]).slice().sort((a,b)=>String(b.date).localeCompare(String(a.date))); }
-function reuGet(id){ return (S.reunions||[]).find(r=>String(r.id)===String(id)); }
-/* « Pseudo : action » sur une ligne → {qui, txt} ; sans deux-points, action sans destinataire */
-function reuParseActions(txt){
-  return String(txt||'').split('\n').map(l=>l.trim()).filter(Boolean).map(l=>{
-    const i=l.indexOf(':');
-    return i>0 ? {qui:l.slice(0,i).trim(), txt:l.slice(i+1).trim()} : {qui:'', txt:l};
-  }).filter(a=>a.txt);
-}
-const reuLignes = t => String(t||'').split('\n').map(l=>l.trim()).filter(Boolean);
-
-function reunions(){
-  const L=reuListe(), ecrit=reuPeutEcrire();
-  $('#main').innerHTML=`
-  <div class="topbar">
-    <div><h2>Comptes-rendus</h2><div class="sub">${L.length} réunion(s) archivée(s)${ecrit?'':' · consultation'}</div></div>
-    ${ecrit?`<button class="btn btn-gold" onclick="reuForm()">➕ Nouveau compte-rendu</button>`:''}
-  </div>
-  ${L.length?`<div class="grid g2">${L.map(r=>{
-    const nA=(r.actions||[]).length, nD=(r.decisions||[]).length;
-    return `<div class="panel link" style="cursor:pointer" tabindex="0" role="button" onkeydown="actKey(event)" onclick="reuVoir('${r.id}')">
-      <div style="display:flex;align-items:flex-start;gap:12px;justify-content:space-between">
-        <div style="min-width:0">
-          <div style="font-family:var(--f-mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)">
-            ${esc(new Date(r.date+'T12:00:00').toLocaleDateString('fr-FR',{weekday:'long',day:'numeric',month:'long'}))}</div>
-          <h3 style="margin:6px 0 0;border:0;padding:0">${esc(r.titre||'Sans titre')}</h3>
-        </div>
-        <span class="badge bgrole">${esc(REU_TYPES[r.type]||r.type||'Autre')}</span>
-      </div>
-      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:12px">
-        <span class="chip">👥 <b>${(r.participants||[]).length}</b></span>
-        <span class="chip">⚖️ <b>${nD}</b> décision${nD>1?'s':''}</span>
-        <span class="chip">✅ <b>${nA}</b> action${nA>1?'s':''}</span>
-        ${r.publie&&r.publie.quand?`<span class="badge bg3">publié</span>`:`<span class="badge bgrole">brouillon</span>`}
-      </div>
-    </div>`;}).join('')}</div>`
-  :`<div class="panel"><div class="empty">Aucun compte-rendu pour le moment.${ecrit?'<br>Le bouton en haut à droite en crée un.':''}</div></div>`}`;
-}
-
-function reuVoir(id){
-  const r=reuGet(id); if(!r) return;
-  const ecrit=reuPeutEcrire();
-  const bloc=(titre,items,puce)=>items&&items.length
-    ? `<div style="margin-top:18px"><div class="f-lbl">${titre}</div>
-       ${items.map(x=>`<div style="display:flex;gap:10px;padding:7px 0;border-bottom:1px solid var(--line)">
-         <span style="color:var(--accent);flex:none">${puce}</span><span>${x}</span></div>`).join('')}</div>` : '';
-  openModal(`
-    <h3>${esc(r.titre||'Sans titre')}</h3>
-    <div style="display:flex;gap:8px;flex-wrap:wrap;margin:-8px 0 4px">
-      <span class="chip">${esc(new Date(r.date+'T12:00:00').toLocaleDateString('fr-FR',{dateStyle:'long'}))}</span>
-      <span class="badge bgrole">${esc(REU_TYPES[r.type]||r.type||'Autre')}</span>
-      ${r.publie&&r.publie.quand?'<span class="badge bg3">publié</span>':'<span class="badge bgrole">brouillon</span>'}
-    </div>
-    ${(r.participants||[]).length?`<div style="margin-top:16px"><div class="f-lbl">Participants</div>
-      <div style="display:flex;gap:6px;flex-wrap:wrap">${r.participants.map(p=>`<span class="em-chip">${esc(p)}</span>`).join('')}</div></div>`:''}
-    ${bloc('Ordre du jour',(r.ordre||[]).map(esc),'—')}
-    ${bloc('Décisions',(r.decisions||[]).map(esc),'⚖')}
-    ${bloc('Actions',(r.actions||[]).map(a=>`${a.qui?`<b>${esc(a.qui)}</b> — `:''}${esc(a.txt)}`),'✅')}
-    <div style="margin-top:18px;padding-top:12px;border-top:1px solid var(--line);color:var(--muted);font-size:.78rem">
-      Rédigé par ${esc(r.auteur||'?')} · ${esc(new Date(r.cree||Date.now()).toLocaleString('fr-FR'))}
-      ${r.publie&&r.publie.quand?`<br>Publié le ${esc(new Date(r.publie.quand).toLocaleString('fr-FR'))}${r.publie.discord?' · Discord':''}${r.publie.taches?' · tâches créées':''}`:''}
-    </div>
-    ${ecrit?`<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:16px">
-      <button class="btn btn-sm btn-gold" onclick="reuPublier('${r.id}')">📢 Publier</button>
-      <button class="btn btn-sm btn-ghost" onclick="reuForm('${r.id}')">✏️ Modifier</button>
-      <button class="btn btn-sm btn-red" onclick="reuSuppr('${r.id}')">🗑 Supprimer</button>
-    </div>`:''}`);
-}
-
-function reuForm(id){
-  const r=id?reuGet(id):null;
-  const noms=(S.runners||[]).map(x=>x.nom).concat((S.users||[]).map(u=>u.user));
-  const uniq=[...new Set(noms.filter(Boolean))].sort();
-  openModal(`<h3>${r?'Modifier le compte-rendu':'Nouveau compte-rendu'}</h3>
-    <div class="f-row"><label class="f-lbl">Date</label>
-      <input class="field" type="date" id="reuDate" value="${esc((r&&r.date)||new Date().toISOString().slice(0,10))}"></div>
-    <div class="f-row"><label class="f-lbl">Titre</label>
-      <input class="field" id="reuTitre" placeholder="Réunion hebdomadaire du staff" value="${esc((r&&r.titre)||'')}"></div>
-    <div class="f-row"><label class="f-lbl">Type</label>
-      <select class="field" id="reuType">${Object.entries(REU_TYPES).map(([k,v])=>
-        `<option value="${k}"${r&&r.type===k?' selected':''}>${v}</option>`).join('')}</select></div>
-    <div class="f-row"><label class="f-lbl">Participants — séparés par une virgule</label>
-      <input class="field" id="reuPart" list="reuNoms" placeholder="Thomas, Léa, Marcus" value="${esc(((r&&r.participants)||[]).join(', '))}">
-      <datalist id="reuNoms">${uniq.map(n=>`<option value="${esc(n)}">`).join('')}</datalist></div>
-    <div class="f-row"><label class="f-lbl">Ordre du jour — une ligne par point</label>
-      <textarea class="field" id="reuOrdre" rows="3" placeholder="Bilan de la semaine&#10;Tarifs des bidons">${esc(((r&&r.ordre)||[]).join('\n'))}</textarea></div>
-    <div class="f-row"><label class="f-lbl">Décisions — une ligne par décision</label>
-      <textarea class="field" id="reuDec" rows="3" placeholder="Le bidon passe à 190 $&#10;Recrutement rouvert">${esc(((r&&r.decisions)||[]).join('\n'))}</textarea></div>
-    <div class="f-row"><label class="f-lbl">Actions — « Pseudo : ce qu'il doit faire »</label>
-      <textarea class="field" id="reuAct" rows="3" placeholder="Léa : relancer Ferme Grapeseed&#10;Marcus : commander 200 u de fer">${esc(((r&&r.actions)||[]).map(a=>(a.qui?a.qui+' : ':'')+a.txt).join('\n'))}</textarea>
-      <p class="note" style="margin-top:6px">Le pseudo doit correspondre à un compte pour que la tâche lui arrive.</p></div>
-    <button class="btn btn-gold" style="width:100%" onclick="reuSave('${id||''}')">${r?'Enregistrer':'Créer le compte-rendu'}</button>`);
-}
-
-function reuSave(id){
-  const titre=$('#reuTitre').value.trim();
-  if(!titre) return toast('⚠️ Donne un titre à la réunion');
-  S.reunions=S.reunions||[];
-  const r=id?reuGet(id):{id:'R'+Date.now(), cree:new Date().toISOString(), auteur:(currentUser()||{}).user||'?'};
-  r.date=$('#reuDate').value||new Date().toISOString().slice(0,10);
-  r.titre=titre;
-  r.type=$('#reuType').value;
-  r.participants=$('#reuPart').value.split(',').map(s=>s.trim()).filter(Boolean);
-  r.ordre=reuLignes($('#reuOrdre').value);
-  r.decisions=reuLignes($('#reuDec').value);
-  r.actions=reuParseActions($('#reuAct').value);
-  r.maj=new Date().toISOString();
-  if(!id) S.reunions.push(r);
-  save(); sbQueue(); closeModal(); reunions();
-  jlog(`Compte-rendu ${id?'modifié':'créé'} : ${titre}`);
-  toast(id?'✅ Compte-rendu enregistré':'✅ Compte-rendu créé');
-}
-
-function reuSuppr(id){
-  const r=reuGet(id); if(!r) return;
-  if(!confirm(`Supprimer le compte-rendu « ${r.titre} » ?\n\nC'est définitif.`)) return;
-  S.reunions=(S.reunions||[]).filter(x=>String(x.id)!==String(id));
-  save(); sbQueue(); closeModal(); reunions();
-  jlog(`Compte-rendu supprimé : ${r.titre}`);
-  toast('🗑 Compte-rendu supprimé');
-}
-
-/* Publication : les deux options se cochent réunion par réunion. */
-function reuPublier(id){
-  const r=reuGet(id); if(!r) return;
-  const nA=(r.actions||[]).length;
-  const webhookOK=String((S.settings||{}).webhook||'').startsWith('https://discord.com/api/webhooks/');
-  openModal(`<h3>📢 Publier « ${esc(r.titre)} »</h3>
-    <p style="color:var(--muted);font-size:.85rem;margin-bottom:16px">Choisis ce qui part. Rien n'est obligatoire.</p>
-    <label class="f-row" style="display:flex;gap:12px;align-items:flex-start;cursor:${webhookOK?'pointer':'not-allowed'};opacity:${webhookOK?1:.5}">
-      <input type="checkbox" id="reuPubDis" ${webhookOK?'checked':'disabled'} style="width:18px;height:18px;accent-color:var(--accent);margin-top:2px">
-      <span><b>Envoyer dans Discord</b><br><span style="color:var(--muted);font-size:.82rem">
-        ${webhookOK?'Le compte-rendu part dans le salon des logs.':'Aucun webhook configuré (Paramètres).'}</span></span>
-    </label>
-    <button class="btn btn-gold" style="width:100%;margin-top:8px" onclick="reuPublierGo('${id}')">Publier</button>`);
-}
-
-async function reuPublierGo(id){
-  const r=reuGet(id); if(!r) return;
-  const dis=$('#reuPubDis')&&$('#reuPubDis').checked;
-  /* La to-do a été supprimée : les actions ne deviennent plus des tâches.
-     Elles restent listées dans le compte-rendu lui-même et partent sur Discord. */
-
-  if(dis){
-    const L=[];
-    if(r.participants&&r.participants.length) L.push(`**Participants** — ${r.participants.join(', ')}`);
-    if(r.ordre&&r.ordre.length)     L.push('\n**Ordre du jour**\n'+r.ordre.map(x=>'• '+x).join('\n'));
-    if(r.decisions&&r.decisions.length) L.push('\n**Décisions**\n'+r.decisions.map(x=>'⚖ '+x).join('\n'));
-    if(r.actions&&r.actions.length) L.push('\n**Actions**\n'+r.actions.map(a=>'✅ '+(a.qui?`**${a.qui}** — `:'')+a.txt).join('\n'));
-    sendLog(`📋 ${r.titre} — ${new Date(r.date+'T12:00:00').toLocaleDateString('fr-FR',{dateStyle:'long'})}`,
-            L.join('\n').slice(0,3900), 0xe8a020);
-  }
-
-  r.publie={quand:new Date().toISOString(), discord:!!dis};
-  save(); sbQueue(); closeModal(); reunions();
-  jlog(`Compte-rendu publié : ${r.titre}`);
-  toast(`📢 Publié${dis?' · Discord':''}`);
-}
-
 /* ================== ACHATS DE FER (Direction) ================== */
 /* ---- Reprise automatique du relevé du bot (C-96) ----
 
@@ -4904,6 +4782,15 @@ function ferDel(id){
 
 /* ================== MISES À JOUR (changelog) ================== */
 const CHANGELOG=[
+ {v:'C-114',d:'20/10/2026',t:'Habillage Halloween, contrats fiables, ping élargi, nettoyage',items:[
+   ['🎃','Habillage Halloween activable à tout moment','Paramètres → Économie : une case à cocher change le logo et les couleurs du dashboard et de la vitrine, et se désactive aussi simplement.'],
+   ['🐛','Les contrats de livraison ne disparaissent plus','`_tables` se fusionnait en bloc : une écriture du bot sur n\'importe quelle autre table (coffres, commandes…) pouvait faire gagner au dépôt une version qui ne contenait pas encore un contrat tout juste créé. L\'agenda, les médias clients et les factures reçues se fusionnent désormais ligne par ligne.'],
+   ['🔧','Le rappel d\'agenda s\'ouvre à RH et à la direction, pour tous les types d\'événement','« Qui prévenir » n\'était réservé qu\'aux commerciaux, et seul le type « Contrat » proposait un rappel. Les deux restrictions sautent ; trois salons Discord possibles selon qui est prévenu (commercial, RH, direction).'],
+   ['🐛','Le Recruteur ne prend plus le nom Discord par erreur','Quand le valideur d\'une candidature n\'avait pas de compte lié, le bot inscrivait son pseudo Discord dans la colonne Recruteur — invisible aux yeux de recruesAuto(), qui attend un nom RP exact, et donc à la prime. La case reste vide plutôt que fausse si aucun nom RP n\'est trouvé.'],
+   ['🐛','D\'anciens employés ne restent plus affichés sur la vitrine','« Les visages de l\'équipe » ne vérifiait que la case « public » du profil, jamais si la personne était encore dans l\'effectif.'],
+   ['🗑️','Blacklist et Comptes-rendus supprimés','Fonctionnalités retirées à la demande : menu, permissions, alertes liées et feuilles correspondantes.'],
+   ['🗑️','La lampe torche a disparu','L\'effet qui suivait le curseur sur la vitrine et le dashboard est retiré.'],
+ ]},
  {v:'C-113',d:'20/10/2026',t:'Corrections : fer collé en double, numéro de facture, avertissement au-dessus de 49',items:[
    ['🐛','Coller deux fois le même relevé de fer ne double plus le montant','ferApplyPaste() n\'avait aucune vérification, contrairement aux deux autres imports de fer. Un collage identique est désormais ignoré et signalé comme doublon.'],
    ['🐛','Le numéro de facture ne peut plus entrer en collision','Modifiable sans contrôle, il pouvait créer deux factures portant le même numéro. Il reste désormais fixe pendant une modification, et une création refuse un numéro déjà pris.'],
@@ -5760,6 +5647,7 @@ function frZoom(id){
 async function frDel(id){
   const f=(FR_CACHE||[]).find(x=>x.id===id);
   if(!confirm(`Supprimer cette facture${f?' de '+f.entreprise:''} de l'archive ?`)) return;
+  tombeLigne('oilroxwood_frecues',id);
   try{ await SYNC.cli.from('oilroxwood_frecues').delete().eq('id',id); }catch(e){}
   if(f) pieceJointeSuppr(f.img,'Facture reçue supprimée');
   jlog(`Facture reçue supprimée de l'archive${f?' : '+f.entreprise+' ('+frDate(f.date)+')':''}`);
@@ -6294,7 +6182,6 @@ function tourSteps(){
       add('frh','Fiches RH — 7/8',"Génère le contrat en cliquant sur le bouton en début de ligne.",'table.sheet tbody .btn-gold','rh');
       add('frh','Fiches RH — 8/8',"Il ne reste plus qu'à l'envoyer.",null,'rh');
     }
-    if(sv('blacklist')) add('fblacklist','Blacklist',"Renseigne ici les personnes blacklistées de l'entreprise.",null,'blacklist');
     if(sv('compta')) add('fcompta','Dépenses & retraits',"Réservé Patron / Comptable : dépenses déductibles et retraits du compte entreprise.",null,'compta');
   }
   add('factures','Factures',"Ici tu vas créer les factures : dans « Émetteur », indique ton prénom, choisis ton client, renseigne la quantité commandée ainsi que la TVA en application. Si la livraison est effectuée par Post Op, n'oublie pas de cocher la case, puis génère la facture et envoie-la. Une fois payée, déclare-la comme payée dans l'historique. Si c'est un nouveau client ou que des données ont changé, retrouve tout dans « Base client ».");
@@ -6818,27 +6705,61 @@ let AG_TEAM=localStorage.getItem('orx_agteam')!=='0'; // afficher les événemen
 function agPeutVoirPartages(){ const cu=currentUser(); return sessionStorage.getItem('orx_user')==='SECOURS'||(cu&&cu.role!=='membre'); }
 function agProprio(uid){ const u=(S.users||[]).find(x=>String(x.did||'')===String(uid)); return u?u.user:'?'; }
 const AG_TYPES={rdv:{lbl:'RDV',c:'#B8431E'},commande:{lbl:'Commande',c:'#E8622C'},contrat:{lbl:'Contrat',c:'#E8A020'},entretien:{lbl:'Entretien',c:'#22c55e'},autre:{lbl:'Autre',c:'#38bdf8'}};
-/* Salon où le robot annonce les contrats 3 h avant. Vide = aucun rappel. */
+/* Salon où le robot annonce les rappels 3 h avant. Vide = aucun rappel.
+   Depuis C-114, trois salons possibles selon qui est prévenu : certains
+   (RH, direction) n'avaient pas accès au salon commercial historique. */
 function salonContrats(){ return String((S.settings&&S.settings.salonContrats)||'').trim(); }
-/* ---- Qui prévenir pour un contrat (C-56) ----
-   Le menu proposait `nomsPostes()`, c'est-à-dire tout l'encadrement : RH,
-   comptables, direction. Un contrat ne concerne que le pôle commercial, et
-   chercher le bon nom au milieu de quinze autres n'aide personne.
+function salonRappelRH(){ return String((S.settings&&S.settings.salonRappelRH)||'').trim(); }
+function salonRappelDirection(){ return String((S.settings&&S.settings.salonRappelDirection)||'').trim(); }
+function salonPour(commercial){
+  const g=commercial===AG_COM_ROLE?'commercial':groupePrevenir(commercial);
+  if(g==='rh') return salonRappelRH();
+  if(g==='direction') return salonRappelDirection();
+  return salonContrats();
+}
+/* ---- Qui prévenir pour un événement (C-56, élargi en C-114) ----
+   Le menu proposait `nomsPostes()`, c'est-à-dire tout l'encadrement. À
+   l'origine le rappel ne concernait que le pôle commercial, et chercher le
+   bon nom au milieu de quinze autres n'aidait personne.
 
-   On réunit donc les trois endroits où « être commercial » s'écrit dans le
-   dashboard — le poste en effectif, le grade en fiche RH, le rôle du compte —
-   parce qu'aucun des trois n'est renseigné pour tout le monde. Les absents
-   restent listés : un contrat se pose souvent pour la semaine suivante, et
-   qui est en congé aujourd'hui ne l'est pas forcément jeudi.
+   On réunit donc les trois endroits où un rôle s'écrit dans le dashboard —
+   le poste en effectif, le grade en fiche RH, le rôle du compte — parce
+   qu'aucun des trois n'est renseigné pour tout le monde. Les absents
+   restent listés : un événement se pose souvent pour la semaine suivante,
+   et qui est en congé aujourd'hui ne l'est pas forcément jeudi.
 
-   Si aucune de ces trois pistes ne donne rien (rôles pas encore attribués,
-   effectif vide), on retombe sur la liste complète : un menu vide serait
-   pire que trop long. */
-function nomsCommerciaux(){
+   Élargi en C-114 à RH et à la direction (Patron, Co Patron, Assistant de
+   direction) : eux non plus n'avaient pas accès au salon commercial où
+   partaient les rappels. `groupePrevenir()` dit à quel salon (commercial,
+   RH ou direction) router l'annonce Discord pour un nom donné.
+
+   Si aucune piste ne donne rien (rôles pas encore attribués, effectif
+   vide), on retombe sur la liste complète : un menu vide serait pire que
+   trop long. */
+function groupePrevenir(nom){
+  const n=normNom(nom); if(!n) return '';
+  const run=(S.runners||[]).find(r=>normNom(r.nom)===n);
+  if(run&&estCommercial(run)) return 'commercial';
+  const rh=((S.sheets&&S.sheets.rh)||[]).find(x=>normNom(x.nom)===n);
+  if(rh){
+    const g=String(rh.grade||'').trim();
+    if(/commercial/i.test(g)) return 'commercial';
+    if(/^rh$/i.test(g)) return 'rh';
+    if(/patron|assistant de direction/i.test(g)) return 'direction';
+  }
+  const u=(S.users||[]).find(x=>normNom(x.user)===n);
+  if(u){
+    if(u.role==='commercial'||u.role==='respcom') return 'commercial';
+    if(u.role==='rh') return 'rh';
+    if(u.role==='direction'||u.role==='assistdir') return 'direction';
+  }
+  return '';
+}
+function nomsAPrevenir(){
   const m=new Map(), add=n=>{ n=String(n||'').trim(); if(n&&!m.has(n.toLowerCase())) m.set(n.toLowerCase(),n); };
   (S.runners||[]).filter(r=>estCommercial(r)).forEach(r=>add(r.nom));
-  ((S.sheets&&S.sheets.rh)||[]).forEach(x=>{ if(/commercial/i.test(String(x.grade||''))) add(x.nom); });
-  (S.users||[]).filter(u=>u.role==='commercial'||u.role==='respcom').forEach(u=>add(u.user));
+  ((S.sheets&&S.sheets.rh)||[]).forEach(x=>{ if(/commercial|^rh$|patron|assistant de direction/i.test(String(x.grade||'').trim())) add(x.nom); });
+  (S.users||[]).filter(u=>['commercial','respcom','rh','direction','assistdir'].includes(u.role)).forEach(u=>add(u.user));
   const l=[...m.values()].sort((a,b)=>a.localeCompare(b));
   return l.length?l:nomsPostes();
 }
@@ -6881,7 +6802,7 @@ function agDateObj(iso){ const [a,m,j]=String(iso||'').slice(0,10).split('-').ma
 function agJourSem(iso){ const d=agDateObj(iso); return d?d.getDay():-1; }
 function agTombeLe(e,iso){
   if(e.date===iso) return true;
-  if(!e.hebdo||e.type!=='contrat') return false;
+  if(!e.hebdo) return false;
   if(String(e.date).slice(0,10)>iso) return false;          // pas encore commencé
   return agJourSem(e.date)===agJourSem(iso);                 // même jour de la semaine = N semaines plus tard
 }
@@ -6912,8 +6833,9 @@ async function agLoad(){
       if(!r2.error) AG_SHARED=r2.data||[]; // colonne « partage » absente → simplement ignoré
     }
     if(agGere()){
-      const r3=await SYNC.cli.from('oilroxwood_agenda').select('*').eq('type','contrat').neq('uid',agKey()).order('date');
-      if(!r3.error) AG_CONTRATS_AUTRES=r3.data||[];
+      // tous types confondus désormais : registreContrats() garde ensuite ceux avec un rappel réglé
+      const r3=await SYNC.cli.from('oilroxwood_agenda').select('*').neq('uid',agKey()).order('date');
+      if(!r3.error) AG_CONTRATS_AUTRES=(r3.data||[]).filter(e=>e.commercial);
     }
   }catch(e){ AG_EVS=[]; AG_ERR=true; }
 }
@@ -6982,13 +6904,15 @@ async function agenda(){
    l'heure réelle du rappel plutôt que la promesse « 3 h avant ». */
 const JOURS_FR=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
 function registreContrats(){
-  const miens=(AG_EVS||[]).filter(e=>e.type==='contrat');
-  const autres=(agGere()?AG_CONTRATS_AUTRES:(AG_TEAM?AG_SHARED:[])).filter(e=>e.type==='contrat');
+  // depuis C-114 : tout événement (quel que soit son type) avec « qui prévenir »
+  // réglé entre dans le registre, pas seulement les contrats.
+  const miens=(AG_EVS||[]).filter(e=>e.commercial);
+  const autres=(agGere()?AG_CONTRATS_AUTRES:(AG_TEAM?AG_SHARED:[])).filter(e=>e.commercial);
   const tous=[...miens.map(e=>({e,mien:true})),...autres.map(e=>({e,mien:false}))];
   if(!tous.length) return `<div class="panel">
-    <h3>📜 Registre des contrats</h3>
-    <div class="empty">Aucun contrat à l'agenda. Crée un événement de type « Contrat » : il apparaîtra ici,
-    et le bot préviendra le commercial 3 h avant.</div></div>`;
+    <h3>📜 Registre des rappels</h3>
+    <div class="empty">Aucun rappel à l'agenda. Crée ou modifie un événement et règle « Qui prévenir » : il apparaîtra ici,
+    et le bot préviendra la personne (ou le service) 3 h avant.</div></div>`;
 
   const maintenant=Date.now();
   tous.forEach(x=>{ x.proch=contratProchaine(x.e); });
@@ -7002,9 +6926,9 @@ function registreContrats(){
   const heb=tous.filter(x=>x.e.hebdo).length;
 
   const dt=d=>d?d.toLocaleString('fr-FR',{weekday:'long',day:'numeric',month:'long',hour:'2-digit',minute:'2-digit'}):'—';
-  const salon=salonContrats();
 
   const lignes=tous.map(({e,mien,proch})=>{
+    const salon=salonPour(e.commercial);
     const passe=!proch||proch.getTime()<maintenant;
     const rappel=proch?new Date(proch.getTime()-3*3600e3):null;
     const rappelPasse=!rappel||rappel.getTime()<maintenant;
@@ -7031,14 +6955,15 @@ function registreContrats(){
     </tr>`;
   }).join('');
 
+  const auMoinsUnSalon=!!(salonContrats()||salonRappelRH()||salonRappelDirection());
   return `<div class="panel" style="overflow-x:auto">
-    <h3>📜 Registre des contrats <small style="color:var(--muted);font-weight:400;font-size:.8rem">— ${tous.length} au total · ${actifs} à venir · ${heb} hebdomadaire(s)</small></h3>
+    <h3>📜 Registre des rappels <small style="color:var(--muted);font-weight:400;font-size:.8rem">— ${tous.length} au total · ${actifs} à venir · ${heb} hebdomadaire(s)</small></h3>
     <p style="color:var(--muted);font-size:.78rem;margin-bottom:10px">
-      ${salon?'Le bot vérifie chaque minute et annonce chaque contrat <b>3 h avant</b> dans le salon réglé en Paramètres. Si le bot est arrêté, aucun rappel ne part.'
-             :'⚠️ <b style="color:var(--red,#ff5c5c)">Aucun salon de contrats réglé dans Paramètres</b> — aucun rappel ne partira, quels que soient les contrats ci-dessous.'}
+      ${auMoinsUnSalon?'Le bot vérifie chaque minute et annonce chaque rappel <b>3 h avant</b> dans le salon réglé en Paramètres pour le groupe concerné (commercial, RH ou direction). Si le bot est arrêté, aucun rappel ne part.'
+             :'⚠️ <b style="color:var(--red,#ff5c5c)">Aucun salon de rappel réglé dans Paramètres</b> — aucun rappel ne partira, quels que soient les événements ci-dessous.'}
     </p>
     <table><thead><tr>
-      <th>Contrat</th><th>Rythme</th><th>Horaire</th><th>Qui est prévenu</th><th>Prochaine fois</th><th>Rappel Discord</th><th></th>
+      <th>Événement</th><th>Rythme</th><th>Horaire</th><th>Qui est prévenu</th><th>Prochaine fois</th><th>Rappel Discord</th><th></th>
     </tr></thead><tbody>${lignes}</tbody></table>
   </div>`;
 }
@@ -7063,24 +6988,21 @@ function agEdit(id,iso,deb){
   const fin=e.fin||agHM(agMin(e.deb)+60);
   openModal(`<h3>${id?'✎ Modifier l\'':'📅 Nouvel '}événement</h3>
   <div class="f-row"><label class="f-lbl">Titre</label><input class="field" id="agT" value="${esc(e.titre)}" placeholder="RDV client, entretien recrue…"></div>
-  <div class="f-row"><label class="f-lbl">Type</label><select class="field" id="agTy" onchange="agTypeMaj()">${Object.entries(AG_TYPES).map(([k,t])=>`<option value="${k}" ${e.type===k?'selected':''}>${t.lbl}</option>`).join('')}</select></div>
-  <div id="agContrat" style="display:none;border:1px dashed rgba(232,160,32,.45);background:rgba(232,160,32,.05);border-radius:10px;padding:12px 14px;margin-bottom:14px">
-    <div class="f-row" style="margin-bottom:10px"><label class="f-lbl">Qui prévenir</label>
-      <select class="field" id="agCom">
-        <option value="${AG_COM_ROLE}" ${(e.commercial===AG_COM_ROLE||(!e.id&&!e.commercial))?'selected':''}>📣 Service commercial — tout le rôle</option>
-        <option value="" ${(e.id&&!e.commercial)?'selected':''}>— personne —</option>
+  <div class="f-row"><label class="f-lbl">Type</label><select class="field" id="agTy">${Object.entries(AG_TYPES).map(([k,t])=>`<option value="${k}" ${e.type===k?'selected':''}>${t.lbl}</option>`).join('')}</select></div>
+  <div id="agContrat" style="border:1px dashed rgba(232,160,32,.45);background:rgba(232,160,32,.05);border-radius:10px;padding:12px 14px;margin-bottom:14px">
+    <div class="f-row" style="margin-bottom:10px"><label class="f-lbl">Qui prévenir (optionnel)</label>
+      <select class="field" id="agCom" onchange="agSalonMaj()">
+        <option value="" ${(!e.commercial)?'selected':''}>— personne —</option>
+        <option value="${AG_COM_ROLE}" ${e.commercial===AG_COM_ROLE?'selected':''}>📣 Service commercial — tout le rôle</option>
         <optgroup label="Une personne en particulier">
-        ${nomsCommerciaux().map(n=>`<option ${String(e.commercial||'')===n?'selected':''}>${esc(n)}</option>`).join('')}
+        ${nomsAPrevenir().map(n=>`<option ${String(e.commercial||'')===n?'selected':''}>${esc(n)}</option>`).join('')}
         </optgroup>
       </select></div>
     <label style="display:flex;align-items:center;gap:9px;cursor:pointer;font-size:.84rem">
       <input type="checkbox" id="agHebdo" style="width:17px;height:17px;accent-color:var(--accent)" ${e.hebdo?'checked':''}>
-      <span>🔁 <b>Contrat hebdomadaire</b> — se reconduit chaque semaine, même jour, même heure</span>
+      <span>🔁 <b>Se reconduit chaque semaine</b> — même jour, même heure</span>
     </label>
-    <p style="color:var(--muted);font-size:.75rem;margin:9px 0 0">
-      ${salonContrats()?'Le <b>bot Discord</b> annoncera ce contrat <b>3 h avant</b> dans le salon réglé en Paramètres. Il vérifie chaque minute — encore faut-il qu\'il tourne.'
-                      :'⚠️ Aucun salon réglé dans Paramètres : aucun rappel ne partira.'}
-    </p>
+    <p id="agSalonInfo" style="color:var(--muted);font-size:.75rem;margin:9px 0 0"></p>
   </div>
   <div class="f-row" style="display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:10px">
     <div><label class="f-lbl">Date</label><input class="field" type="date" id="agD" value="${e.date}"></div>
@@ -7096,11 +7018,18 @@ function agEdit(id,iso,deb){
     <button class="btn btn-gold" style="flex:1" onclick="agSave(${id||'null'})">Enregistrer</button>
     ${id?`<button class="btn btn-ghost" style="color:#f87171" onclick="agDel(${id})">🗑 Supprimer</button>`:''}
   </div>`);
-  agTypeMaj();
+  agSalonMaj();
 }
-function agTypeMaj(){
-  const z=document.getElementById('agContrat');
-  if(z) z.style.display=$('#agTy').value==='contrat'?'':'none';
+/* Le salon de rappel dépend de QUI est prévenu (commercial, RH, direction) :
+   on le dit tout de suite dans la modale plutôt qu'après enregistrement. */
+function agSalonMaj(){
+  const z=document.getElementById('agSalonInfo'); if(!z) return;
+  const v=($('#agCom')&&$('#agCom').value)||'';
+  if(!v){ z.innerHTML='Laisse vide si personne n\'a besoin d\'être prévenu — aucun rappel Discord ne partira.'; return; }
+  const salon=salonPour(v);
+  z.innerHTML=salon
+    ?'Le <b>bot Discord</b> annoncera ce rappel <b>3 h avant</b> dans le salon réglé en Paramètres. Il vérifie chaque minute — encore faut-il qu\'il tourne.'
+    :'⚠️ Aucun salon réglé dans Paramètres pour ce groupe : aucun rappel ne partira.';
 }
 /* ---- Quand le rappel partira-t-il, au juste ? (C-63) ----
    Le rappel part 3 h AVANT le début du contrat. Un contrat créé pour tout de
@@ -7110,8 +7039,8 @@ function agTypeMaj(){
    enregistré », et on attendait un ping qui ne pouvait pas venir.
    Il annonce maintenant l'heure exacte du rappel, ou la raison de son absence. */
 function contratPingInfo(row){
-  if(!salonContrats())
-    return {ok:false,msg:'📅 Enregistré — ⚠️ aucun salon de contrats réglé dans Paramètres, aucun rappel ne partira'};
+  if(!salonPour(row.commercial))
+    return {ok:false,msg:'📅 Enregistré — ⚠️ aucun salon de rappel réglé dans Paramètres pour ce groupe, aucun rappel ne partira'};
   const [h,m]=String(row.deb||'0:0').split(':').map(n=>parseInt(n,10)||0);
   let debut=new Date(String(row.date)+'T00:00:00');
   if(isNaN(debut)) return {ok:false,msg:'📅 Enregistré — date illisible, pas de rappel'};
@@ -7132,17 +7061,14 @@ async function agSave(id){
   let deb=$('#agDe').value||'14:00', fin=$('#agF').value;
   if(!fin||agMin(fin)<=agMin(deb)) fin=agHM(agMin(deb)+60);
   const type=$('#agTy').value;
-  const row={titre,type,date:$('#agD').value,deb,fin,note:$('#agN').value.trim(),partage:!!($('#agPart')&&$('#agPart').checked)};
-  if(type==='contrat'){
-    row.commercial=($('#agCom')&&$('#agCom').value)||'';
-    row.hebdo=!!($('#agHebdo')&&$('#agHebdo').checked);
-  } else { row.commercial=''; row.hebdo=false; }
+  const row={titre,type,date:$('#agD').value,deb,fin,note:$('#agN').value.trim(),partage:!!($('#agPart')&&$('#agPart').checked),
+    commercial:($('#agCom')&&$('#agCom').value)||'',hebdo:!!($('#agHebdo')&&$('#agHebdo').checked)};
   try{
     const q=SYNC.cli.from('oilroxwood_agenda');
     const {error}=id?await q.update(row).eq('id',id):await q.insert(Object.assign({uid:agKey()},row));
     if(error) throw error;
     closeModal(); await agLoad(); agenda(); sbPushNow();
-    toast(type==='contrat'?contratPingInfo(row).msg:'📅 Événement enregistré');
+    toast(row.commercial?contratPingInfo(row).msg:'📅 Événement enregistré');
   }catch(e){ toast('❌ Enregistrement impossible — table manquante ?'); }
 }
 /* Une suppression doit tenir. `_tables` se fusionne en bloc (la version la plus
@@ -8029,8 +7955,14 @@ async function params(){
         <div class="f-row"><label class="f-lbl">N° de semaine</label><input class="field" id="p_sem" type="number" value="${S.settings.semaine}"></div>
         <div class="f-row"><label class="f-lbl">🎯 Objectif collectif (barils/sem., 0 = off)</label><input class="field" id="p_obj" type="number" value="${S.settings.objectif??0}"></div>
         <div class="f-row"><label class="f-lbl">⛽ Bidons max par employé et par semaine (0 = sans limite)</label><input class="field" id="p_cap" type="number" min="0" value="${capBidons()}"></div>
-        <div class="f-row"><label class="f-lbl">📜 Salon Discord des contrats (identifiant, vide = pas de rappel)</label><input class="field" id="p_salon" value="${esc(salonContrats())}" placeholder="ex. 1246584841785446480"></div>
+        <div class="f-row"><label class="f-lbl">📜 Salon Discord des rappels — commercial (identifiant, vide = pas de rappel)</label><input class="field" id="p_salon" value="${esc(salonContrats())}" placeholder="ex. 1246584841785446480"></div>
+        <div class="f-row"><label class="f-lbl">📜 Salon Discord des rappels — RH</label><input class="field" id="p_salonRH" value="${esc(salonRappelRH())}" placeholder="ex. 1246584841785446480"></div>
+        <div class="f-row"><label class="f-lbl">📜 Salon Discord des rappels — Patron, Co Patron, Assistant de direction</label><input class="field" id="p_salonDir" value="${esc(salonRappelDirection())}" placeholder="ex. 1246584841785446480"></div>
       </div>
+      <label style="display:flex;align-items:center;gap:10px;cursor:pointer;margin:16px 0 0;padding:10px 14px;border-radius:10px;border:1px dashed rgba(139,95,191,.5);background:rgba(139,95,191,.06)">
+        <input type="checkbox" id="p_halloween" style="width:19px;height:19px;accent-color:#8B5FBF" ${S.settings.halloween?'checked':''}>
+        <span style="font-size:.85rem">🎃 <b>Habillage Halloween</b><br><small style="color:var(--muted)">Logo, icônes et couleurs de saison sur le dashboard et la vitrine — activable/désactivable à tout moment, ici.</small></span>
+      </label>
       <div style="margin:6px 0 16px;border-top:1px solid var(--line);padding-top:16px">
         <label class="f-lbl">💼 Salaires fixes minimum par poste (direction & co)</label>
         ${(()=>{
@@ -8220,6 +8152,10 @@ function saveParams(){
   S.settings.objectif=numOr($('#p_obj').value,0);
   S.settings.capBidons=numOr($('#p_cap').value,50);
   S.settings.salonContrats=String($('#p_salon').value||'').replace(/\D/g,'');
+  S.settings.salonRappelRH=String(($('#p_salonRH')&&$('#p_salonRH').value)||'').replace(/\D/g,'');
+  S.settings.salonRappelDirection=String(($('#p_salonDir')&&$('#p_salonDir').value)||'').replace(/\D/g,'');
+  S.settings.halloween=!!($('#p_halloween')&&$('#p_halloween').checked);
+  aplHalloween();
   jlog('Modification des paramètres');
   save();
   sbPushNow(); // envoi immédiat vers la base partagée, sans différé
@@ -8385,10 +8321,11 @@ new MutationObserver(()=>animateCounters()).observe(document.getElementById('mai
   const hint=document.getElementById('lg_hint');
   const majHint=()=>{ if(hint) hint.style.display=(S.users&&S.users.length)?'none':'block'; };
   majHint();
+  aplHalloween();
   checkRescue();
   checkVersion();
   initSync();
-  sbPull().then(()=>{ majHint(); checkDiscordAuth(); });
+  sbPull().then(()=>{ majHint(); aplHalloween(); checkDiscordAuth(); });
 })();
 </script>
 
