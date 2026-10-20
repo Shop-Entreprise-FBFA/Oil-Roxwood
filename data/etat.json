@@ -6372,6 +6372,20 @@
  "sheets": {
   "rh": [
    {
+    "nom": "Korlane Lison",
+    "grade": "Intérimaire",
+    "tel": "555 300 988",
+    "rib": "542 592",
+    "idU": "366531",
+    "arrivee": "2026-10-20",
+    "discord": "1197988794939474000",
+    "avert": "",
+    "contrat": true,
+    "recrut": "LeJ",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
     "nom": "mouly fransesco",
     "grade": "Intérimaire",
     "tel": "555752135",
@@ -54686,17 +54700,17 @@
   "semaineDebut": "2026-10-19"
  },
  "_cid": "vd66md8mfz",
- "_maj": 1792511192033,
- "_rev": "fepnj8e5tdv-mvguvyte",
+ "_maj": 1792511205271,
+ "_rev": "cfqtvlta7g-mvguw6kf",
  "_majSec": {
   "fer": 1792510012100,
   "fact": 1792504368462,
   "users": 1792510008974,
   "weeks": 1792400944983,
-  "sheets": 1792504368462,
+  "sheets": 1792511205271,
   "_qcFix1": 1792090599970,
   "_wkFix1": 1792090599970,
-  "journal": 1792510008974,
+  "journal": 1792511205271,
   "pending": 1792090599970,
   "prodDer": 1792090599970,
   "runners": 1792410495912,
@@ -54718,15 +54732,25 @@
   "_affFix1": 1792090599970,
   "produits": 1792090599970,
   "_prodFix1": 1792090599970,
-  "_recruesIgnore": 1792451958594,
+  "_recruesIgnore": 1792511205147,
   "ventesAlias": 1792090599970,
   "_ventesIgnore": 1792090599970,
   "_avertVus": 1792090599970,
-  "_signeVus": 1792498685596
+  "_signeVus": 1792511205271
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1792511205418,
+   "u": "Diego Herrera",
+   "a": "Contrat(s) signé(s) via Discord : Korlane Lison"
+  },
+  {
+   "t": 1792511205294,
+   "u": "Diego Herrera",
+   "a": "Recrutements Discord : 1 fiche(s) créée(s), 0 case(s) complétée(s) — Korlane Lison"
+  },
   {
    "t": 1792510015622,
    "u": "Julio Collins",
@@ -56216,16 +56240,6 @@
    "t": 1791156607246,
    "u": "Diego Herrera",
    "a": "Réinitialisation de la feuille « Tablette » (62 lignes)"
-  },
-  {
-   "t": 1791156597206,
-   "u": "Diego Herrera",
-   "a": "Réinitialisation de la feuille « Ventes de la semaine » (33 lignes)"
-  },
-  {
-   "t": 1791156592720,
-   "u": "Diego Herrera",
-   "a": "Clôture de la semaine 39 — 217 859 barils · 388 405 $ de primes · promus : Ryan Brooks, Yann Zigzag, Miguel Brooks, Ethan Hayes"
   }
  ],
  "prodDer": {
@@ -56607,12 +56621,12 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-20T15:46:41.282Z",
+  "maj": "2026-10-20T15:46:51.327Z",
   "semaine": 43,
   "totalBarils": 204334,
   "ca": 1021670,
   "objectif": 375000,
-  "effectif": 106,
+  "effectif": 107,
   "clientsServis": 155,
   "top3": [
    {
@@ -245550,7 +245564,8 @@
   "1792428645512",
   "1792434446783",
   "1792448727634",
-  "1792451786019"
+  "1792451786019",
+  "1792509467664"
  ],
  "_signeVus": [
   "1789477305650",
@@ -245648,7 +245663,9 @@
   "1792434467218",
   "1792448744709",
   "1792451802970",
-  "1792495529396"
+  "1792495529396",
+  "1792509422718",
+  "1792509479402"
  ],
  "_agSupp": [
   "1789145270913",
