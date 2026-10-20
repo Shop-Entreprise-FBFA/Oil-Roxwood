@@ -13248,6 +13248,13 @@
     "client": "Employé — Bjorn Frost ⚡",
     "quantite": 50,
     "qui": "Laurent Roquel"
+   },
+   {
+    "date": "2026-10-20",
+    "client": "Oil Roxwood",
+    "quantite": 210,
+    "qui": "Laurent Roquel",
+    "fact": 253170
    }
   ],
   "collection": [
@@ -15723,7 +15730,7 @@
     "rib": "20076",
     "tel": "986",
     "adresse": "Roxwood",
-    "lastCmd": "2026-10-12"
+    "lastCmd": "2026-10-20"
    },
    {
     "nom": "Ombra Nera",
@@ -16017,8 +16024,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253170,
+  "compteur": 253171,
   "factures": [
+   {
+    "num": 253170,
+    "date": "2026-10-20",
+    "client": "Oil Roxwood",
+    "emetteur": "Laurent Roquel",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 210,
+      "tva": 0,
+      "pu": 180,
+      "ht": 37800,
+      "ttc": 37800,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 37800,
+    "ttc": 37800,
+    "poids": 420,
+    "statut": "attente"
+   },
    {
     "num": 253169,
     "date": "2026-10-20",
@@ -54708,15 +54738,15 @@
   "salonRappelDirection": "",
   "halloween": true
  },
- "_cid": "6o2ckgmtww8",
- "_maj": 1792517446585,
- "_rev": "6o05qv94sh5-mvgyly48",
+ "_cid": "9rt4uhqm9o",
+ "_maj": 1792517497466,
+ "_rev": "0rkrjjtpsc4a-mvgymymp",
  "_majSec": {
   "fer": 1792510012100,
-  "fact": 1792504368462,
+  "fact": 1792517497444,
   "users": 1792510008974,
   "weeks": 1792400944983,
-  "sheets": 1792515393342,
+  "sheets": 1792517497444,
   "_qcFix1": 1792090599970,
   "_wkFix1": 1792090599970,
   "journal": 1792516214515,
@@ -54733,7 +54763,7 @@
   "primesExtra": 1792090599970,
   "quotasComHist": 1792400944983,
   "profils": 1792090599970,
-  "_tables": 1792517385815,
+  "_tables": 1792517497444,
   "_permsFix1": 1792090599970,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792090599970,
@@ -56630,13 +56660,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-20T17:30:52.281Z",
+  "maj": "2026-10-20T17:31:39.601Z",
   "semaine": 43,
   "totalBarils": 204334,
   "ca": 1021670,
   "objectif": 375000,
   "effectif": 107,
-  "clientsServis": 155,
+  "clientsServis": 156,
   "halloween": true,
   "top3": [
    {
