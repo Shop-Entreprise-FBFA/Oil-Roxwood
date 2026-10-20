@@ -1204,7 +1204,7 @@ function logout(){
 }
 
 /* ---- Canari de version : prévient les onglets restés sur une vieille version ---- */
-const APP_VERSION='C-112';
+const APP_VERSION='C-113';
 /* Le bandeau ne doit dire qu'une chose : « une version plus récente existe ».
    Il comparait deux chaînes avec !==, donc il s'allumait aussi dans l'autre
    sens — quand la page ouverte était PLUS récente que version.json, ce qui
@@ -1832,7 +1832,7 @@ function rowRunner(r){
     <td style="text-align:right;white-space:nowrap">
       ${eligible(r)?`<button class="btn btn-sm btn-gold" onclick="promote(${r.id})" title="Monter de grade">▲</button>`:''}
       ${!r.poste&&r.grade>0&&!g.merite&&r.barils<g.quota*0.95&&!r.absent&&!ab&&!absFinRecente(r.nom)?`<button class="btn btn-sm btn-red" onclick="demote(${r.id})" title="Descendre de grade (quota réalisé à ${pc}% — sous les 95%)">▼</button>`:''}
-      ${!r.poste&&r.grade===0&&r.barils<g.quota*0.80&&!r.absent&&!ab&&!estNouveau(r.nom)?`<button class="btn btn-sm btn-ghost" style="color:#ffa500;border-color:rgba(255,165,0,.4)" onclick="avertir(${r.id})" title="Sous 80 % du quota (${pc}%) — donner un avertissement">⚠</button>`:''}
+      ${!r.poste&&r.grade===0&&r.barils<g.quota*0.80&&r.barils<=49&&!r.absent&&!ab&&!estNouveau(r.nom)?`<button class="btn btn-sm btn-ghost" style="color:#ffa500;border-color:rgba(255,165,0,.4)" onclick="avertir(${r.id})" title="Sous 80 % du quota (${pc}%) — donner un avertissement">⚠</button>`:''}
       ${estStagiaire(r)?`<button class="btn btn-sm btn-gold" onclick="titulariser(decodeURIComponent('${encodeURIComponent(r.nom)}'))" title="Titulariser (Stagiaire → Intérimaire)">🎓</button>`:''}
       <button class="btn btn-sm btn-ghost" onclick="toggleAbsent(${r.id})" title="${r.absent?'Marquer de retour':'Mettre en congé / absence'}">${r.absent?'💼':'🌴'}</button>
       <button class="btn btn-sm btn-ghost" onclick="openRunnerModal(${r.id})">✎</button>
@@ -1966,6 +1966,7 @@ async function avertir(id){
   if(isMembre()) return toast('👀 Consultation seule pour les membres');
   const r=S.runners.find(x=>x.id===id); if(!r) return;
   if(estNouveau(r.nom)) return toast('🌱 Recrue depuis moins de 7 jours — pas d\'avertissement');
+  if(r.barils>49) return toast('✔ Plus de 49 de production cette semaine — pas d\'avertissement');
   const g=grade(r), pcA=g.quota?Math.round(r.barils/g.quota*100):0;
   const row=((S.sheets&&S.sheets.rh)||[]).find(x=>String(x.nom||'').toLowerCase().trim()===String(r.nom||'').toLowerCase().trim());
   if(!confirm(`Donner un avertissement à ${r.nom} ?\n(Intérimaire · quota réalisé à ${pcA}% cette semaine)\n\nL'avertissement sera compté dans la colonne « Avert. » de sa fiche RH et annoncé sur Discord, comme avec /avertissement.`)) return;
@@ -3666,7 +3667,7 @@ function fNew(){
   <div class="grid g3" style="margin-bottom:16px;position:relative;z-index:5">
     <div class="panel"><h3>Facture</h3>
       <div class="grid g2" style="gap:10px">
-        <div class="f-row"><label class="f-lbl">N°</label><input class="field" type="number" value="${FD.num}" onchange="FD.num=+this.value||1;fNew()"></div>
+        <div class="f-row"><label class="f-lbl">N°</label><input class="field" type="number" value="${FD.num}" ${FD._modifie!=null?'readonly title="Le numéro ne change pas pendant une modification — voir le bandeau ci-dessus"':''} onchange="FD.num=+this.value||1;fNew()"></div>
         <div class="f-row"><label class="f-lbl">Date</label><input class="field" type="date" value="${FD.date}" onchange="FD.date=this.value"></div>
       </div>
       <div class="f-row"><label class="f-lbl">Émetteur(s) — direction & commerciaux</label>
@@ -3826,6 +3827,9 @@ function saveFact(){
   if(edition){
     const i=S.fact.factures.findIndex(f=>f.num===FD._modifie);
     if(i<0){ FD._modifie=null; return toast('⚠️ Facture introuvable — elle a dû être supprimée'); }
+    // le champ N° est en lecture seule pendant une modification, mais on se protège quand même :
+    // la facture garde SON numéro, jamais celui tapé dans le brouillon.
+    FD.num=FD._modifie;
     avant=S.fact.factures[i];
     const nouvelle=draftAsFact();
     nouvelle.statut=avant.statut;                       // on ne repasse pas une facture payée en attente
@@ -3836,6 +3840,9 @@ function saveFact(){
     if(liees.length) S.sheets.ventesSem=V.filter(v=>v.fact!==FD._modifie);
     else if(V.some(v=>normNom(v.client)===normNom(avant.client))) ventesOrphelines=true;
   } else {
+    // deux factures avec le même numéro se mélangeraient partout (historique, fiche client, impression)
+    if(S.fact.factures.some(f=>f.num===FD.num))
+      return toast(`⚠️ Le n°${FD.num} est déjà utilisé par une autre facture — choisis-en un autre`);
     S.fact.factures.unshift(draftAsFact());
     S.fact.compteur=Math.max(S.fact.compteur+1,FD.num+1);
   }
@@ -4869,12 +4876,24 @@ function ferParseLine(l){
 }
 function ferApplyPaste(){
   const lines=$('#ferZone').value.split(/\r?\n/);
-  let n=0;
-  lines.forEach(l=>{ const a=ferParseLine(l); if(a){ S.fer.push(a); n++; } });
-  if(!n) return toast('⚠️ Aucune ligne reconnue — vérifie qu\'il y a une quantité de fer ou un montant $');
+  /* Un collage n'a pas d'identifiant stable (contrairement au relevé du bot) :
+     on dédoublonne donc sur le contenu — même date, même nom, même quantité,
+     même montant, c'est le même achat. Protège contre un collage fait deux
+     fois (par erreur, ou par deux personnes). */
+  const cle=x=>`${x.t}|${normNom(x.nom)}|${nn(x.quantite)}|${nn(x.montant)}`;
+  const vus=new Set((S.fer||[]).map(cle));
+  let n=0, doublons=0;
+  lines.forEach(l=>{
+    const a=ferParseLine(l); if(!a) return;
+    const k=cle(a);
+    if(vus.has(k)){ doublons++; return; }
+    vus.add(k); S.fer.push(a); n++;
+  });
+  if(!n&&!doublons) return toast('⚠️ Aucune ligne reconnue — vérifie qu\'il y a une quantité de fer ou un montant $');
+  if(!n) return toast(`⚠️ ${doublons} ligne(s) déjà enregistrée(s) — rien importé`);
   save(); sbPushNow(); closeModal(); quotascom();
-  toast(`📋 ${n} achat(s) de fer importés`);
-  sendLog('🔩 Achats de Fer importés', `**${n} ligne(s)** ajoutées par ${currentUser()?currentUser().user:'?'}`, 0x8b5cf6);
+  toast(`📋 ${n} achat(s) de fer importés${doublons?` · ${doublons} doublon(s) ignoré(s)`:''}`);
+  sendLog('🔩 Achats de Fer importés', `**${n} ligne(s)** ajoutées par ${currentUser()?currentUser().user:'?'}${doublons?` · ${doublons} doublon(s) ignoré(s)`:''}`, 0x8b5cf6);
 }
 function ferDel(id){
   if(confirm('Supprimer cet achat ?')){
@@ -4885,6 +4904,11 @@ function ferDel(id){
 
 /* ================== MISES À JOUR (changelog) ================== */
 const CHANGELOG=[
+ {v:'C-113',d:'20/10/2026',t:'Corrections : fer collé en double, numéro de facture, avertissement au-dessus de 49',items:[
+   ['🐛','Coller deux fois le même relevé de fer ne double plus le montant','ferApplyPaste() n\'avait aucune vérification, contrairement aux deux autres imports de fer. Un collage identique est désormais ignoré et signalé comme doublon.'],
+   ['🐛','Le numéro de facture ne peut plus entrer en collision','Modifiable sans contrôle, il pouvait créer deux factures portant le même numéro. Il reste désormais fixe pendant une modification, et une création refuse un numéro déjà pris.'],
+   ['⚠️','Pas d\'avertissement à qui a dépassé 49 de production','Même sous 80 % du quota, le bouton ⚠ ne propose plus d\'avertissement si la production de la semaine dépasse 49 bidons.'],
+ ]},
  {v:'C-112',d:'05/10/2026',t:'Avertissements et descentes : les délais se comptent en jours',items:[
    ['⚠️','Pas d\'avertissement à une recrue de moins de 7 jours','Le filtre se basait sur la semaine de travail : une recrue validée la veille pouvait recevoir un ⚠. Il compte maintenant 7 jours à partir de sa date d\'arrivée.'],
    ['📉','Pas de descente après une absence terminée depuis moins de 7 jours','Son quota ne reflète pas une semaine normale. Le bouton ▼ disparaît et l\'action est refusée.'],
