@@ -1,11 +1,56 @@
 {
- "maj": "2026-10-20T01:09:53.584694+00:00",
+ "maj": "2026-10-20T01:33:52.525498+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1561915214356680805",
+   "t": "2026-10-20T01:33:26.084000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 6406\nplayerDiscord : 422167625460744192\nplayerName : PaleNewt4194\nplayerCharacter : Jj Junior\nplayerId : 382570\nvehiclePlate : XP1606YE\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Jj Junior",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "6406",
+    "playerdiscord": "422167625460744192",
+    "playername": "PaleNewt4194",
+    "playercharacter": "Jj Junior",
+    "playerid": "382570",
+    "vehicleplate": "XP1606YE",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1561915212830081025",
+   "t": "2026-10-20T01:33:25.720000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 120x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1850.82, 6515.17, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 2751\nplayerDiscord : 1307134142214836307\nplayerName : yalaouianice25\nplayerCharacter : Mouly Franseco\nplayerId : 263368\nitemId : refinedoil",
+   "nom": "Mouly Franseco",
+   "quantite": 120,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1850.82, 6515.17, 16.73",
+    "targetposition": "-1850.63, 6515.15, 15.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "2751",
+    "playerdiscord": "1307134142214836307",
+    "playername": "yalaouianice25",
+    "playercharacter": "Mouly Franseco",
+    "playerid": "263368",
+    "itemid": "refinedoil"
+   }
+  },
   {
    "id": "1561908417705156642",
    "t": "2026-10-20T01:06:25.636000+00:00",
@@ -84913,48 +84958,6 @@
     "playercharacter": "Romain Pierres",
     "playerid": "380745",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1560826833828581428-0",
-   "t": "2026-10-17T01:28:35.945000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 2133\nplayerDiscord : 355065235154927617\nplayerName : SlowBat2011\nplayerCharacter : Romain Pierres\nplayerId : 380745\nvehiclePlate : EO3801SO\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Romain Pierres",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "2133",
-    "playerdiscord": "355065235154927617",
-    "playername": "SlowBat2011",
-    "playercharacter": "Romain Pierres",
-    "playerid": "380745",
-    "vehicleplate": "EO3801SO",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1560826833828581428-1",
-   "t": "2026-10-17T01:28:35.945000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 1358\nplayerDiscord : 228152737701822465\nplayerName : SONIK\nplayerCharacter : Cristóbal Perrera\nplayerId : 379487\nvehiclePlate : AS5715VX\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Cristóbal Perrera",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "1358",
-    "playerdiscord": "228152737701822465",
-    "playername": "SONIK",
-    "playercharacter": "Cristóbal Perrera",
-    "playerid": "379487",
-    "vehicleplate": "AS5715VX",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
