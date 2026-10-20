@@ -13200,6 +13200,13 @@
     "quantite": 125,
     "qui": "Tyler Collins",
     "fact": 253166
+   },
+   {
+    "date": "2026-10-20",
+    "client": "dutch-order",
+    "quantite": 100,
+    "qui": "Laurent Roquel",
+    "fact": 253167
    }
   ],
   "collection": [
@@ -14640,7 +14647,8 @@
     "nom": "dutch-order",
     "adresse": "Roxwood",
     "tel": "555 990 267",
-    "rib": ""
+    "rib": "",
+    "lastCmd": "2026-10-20"
    },
    {
     "nom": "Klan Zarkanov",
@@ -15968,8 +15976,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253167,
+  "compteur": 253168,
   "factures": [
+   {
+    "num": 253167,
+    "date": "2026-10-20",
+    "client": "dutch-order",
+    "emetteur": "Laurent Roquel",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 100,
+      "tva": 0.04,
+      "pu": 180,
+      "ht": 18000,
+      "ttc": 18720,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 18000,
+    "ttc": 18720,
+    "poids": 200,
+    "statut": "attente"
+   },
    {
     "num": 253166,
     "date": "2026-10-19",
@@ -54571,15 +54602,15 @@
   "postesV4": 1,
   "semaineDebut": "2026-10-19"
  },
- "_cid": "pos2x0l45rp",
- "_maj": 1792493926815,
- "_rev": "ltuyz63n45m-mvgklr73",
+ "_cid": "k01lyzc0ux",
+ "_maj": 1792493968676,
+ "_rev": "q0dsot3qqrh-mvgkmo4a",
  "_majSec": {
   "fer": 1792428371151,
-  "fact": 1792493714284,
+  "fact": 1792493968599,
   "users": 1792420883789,
   "weeks": 1792400944983,
-  "sheets": 1792485605664,
+  "sheets": 1792493968599,
   "_qcFix1": 1792090599970,
   "_wkFix1": 1792090599970,
   "journal": 1792491768540,
@@ -56493,13 +56524,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-20T10:58:48.687Z",
+  "maj": "2026-10-20T10:59:31.354Z",
   "semaine": 43,
   "totalBarils": 204334,
   "ca": 1021670,
   "objectif": 375000,
   "effectif": 106,
-  "clientsServis": 152,
+  "clientsServis": 153,
   "top3": [
    {
     "nom": "Jj Junior",
