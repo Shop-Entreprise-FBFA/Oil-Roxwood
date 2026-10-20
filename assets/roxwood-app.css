@@ -704,8 +704,15 @@ html.halloween .chg-pompe .axe{stroke:#8B5FBF}
 html.halloween .chg-cuve i{background:linear-gradient(90deg,#8B5FBF,var(--accent,#E8A020))}
 html.halloween .chg-txt b{background:linear-gradient(90deg,var(--accent),#8B5FBF);-webkit-background-clip:text;background-clip:text;color:transparent}
 html.halloween .chg-marque b{background:linear-gradient(90deg,var(--accent),#8B5FBF);-webkit-background-clip:text;background-clip:text;color:transparent}
+/* l'ambiance continue au-delà du menu et des cartes */
+html.halloween aside::after{background:linear-gradient(180deg,var(--accent),#8B5FBF);opacity:.6}
+html.halloween #main::before{
+  content:"🎃";position:fixed;z-index:0;pointer-events:none;opacity:.12;font-size:26px;
+  bottom:40px;right:4%;animation:hwDerive 26s ease-in-out infinite 3s;
+}
+html.halloween #whoami{border-top-color:rgba(139,95,191,.35)}
 
 @media (prefers-reduced-motion:reduce){
   .chg-bras,.chg-tige{animation:none}
-  html.halloween #app::after,html.halloween #login .login-card::after{animation:none}
+  html.halloween #app::after,html.halloween #login .login-card::after,html.halloween #main::before{animation:none}
 }

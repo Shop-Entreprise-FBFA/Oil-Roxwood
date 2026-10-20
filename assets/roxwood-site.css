@@ -517,3 +517,16 @@ html.halloween nav.barre::before{
   content:"";position:absolute;top:0;left:0;width:64px;height:64px;pointer-events:none;opacity:.35;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cg fill='none' stroke='%23897B70' stroke-width='1'%3E%3Cpath d='M0 0 L64 64 M0 0 L34 0 M0 0 L0 34'/%3E%3Cpath d='M11 0 Q11 11 0 11'/%3E%3Cpath d='M23 0 Q23 23 0 23'/%3E%3Cpath d='M37 0 Q37 37 0 37'/%3E%3Cpath d='M50 0 Q50 50 0 50'/%3E%3C/g%3E%3C/svg%3E");
 }
+
+/* ---- l'ambiance continue en descendant la page, pas seulement dans le hero ---- */
+html.halloween section{position:relative;isolation:isolate}
+html.halloween section::before{
+  content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+  background:radial-gradient(42% 38% at var(--hwx,8%) var(--hwy,0%),rgba(139,95,191,.10),transparent 68%);
+}
+html.halloween section:nth-of-type(odd)::before{--hwx:92%;--hwy:100%;background:radial-gradient(42% 38% at var(--hwx) var(--hwy),rgba(232,160,32,.08),transparent 68%)}
+html.halloween body::after{
+  content:"🎃";position:fixed;z-index:4;pointer-events:none;opacity:.14;font-size:20px;
+  top:40%;left:3%;animation:hwDerive 26s ease-in-out infinite 3s;
+}
+@media (prefers-reduced-motion:reduce){html.halloween body::after{animation:none}}

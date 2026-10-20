@@ -130,6 +130,9 @@ h1,h2,h3,h4{font-family:var(--f-display);font-weight:800;margin:0;line-height:.9
 ::-webkit-scrollbar-track{background:transparent}
 ::-webkit-scrollbar-thumb{background:var(--trait-fort);border-radius:99px;border:2px solid var(--fond)}
 ::-webkit-scrollbar-thumb:hover{background:var(--ambre)}
+/* habillage Halloween — commun aux deux pages (activé depuis le dashboard, Paramètres) */
+html.halloween ::-webkit-scrollbar-thumb{background:linear-gradient(180deg,var(--ambre),#8B5FBF)}
+html.halloween ::-webkit-scrollbar-thumb:hover{background:#8B5FBF}
 
 /* ---------- 4. RIVETS & PLAQUES INCLINABLES ---------- */
 .rivet{

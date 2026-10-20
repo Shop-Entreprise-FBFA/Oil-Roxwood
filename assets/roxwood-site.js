@@ -385,11 +385,20 @@
   var $ = function (id) { return document.getElementById(id); };
 
   /* ---- habillage Halloween (activé/désactivé depuis le dashboard, Paramètres) ---- */
+  var RUBAN1 = ["Bidon d'essence · 180 $ HT", "Pétrole brut · 10 $ / unité", "Livraison 24 h sur San Andreas",
+    "Recrutement ouvert", "Devis au 986", "4 grades · primes ×2.5"];
+  var RUBAN1_HW = ["🎃 Édition Halloween au dépôt", "Bidon d'essence · 180 $ HT", "🦇 Livraison même les nuits noires",
+    "Recrutement ouvert", "Devis au 986", "🕸️ 4 grades · primes ×2.5"];
+  var RUBAN2 = ["Extraction", "Transport", "Raffinage", "Revente", "Roxwood County", "FlashbackFA"];
+  var RUBAN2_HW = ["Extraction", "Transport", "🎃 Halloween", "Revente", "Roxwood County", "🦇 FlashbackFA"];
   function halloween(on) {
     document.documentElement.classList.toggle("halloween", on);
     var logo = "assets/logo" + (on ? "-halloween" : "") + ".png";
     var nl = $("navLogo"); if (nl) nl.src = logo;
     var hk = $("heroKicker"); if (hk) hk.textContent = on ? "🎃 Édition Halloween · Roxwood County" : "FlashbackFA · Roxwood County";
+    var r1 = $("ruban1"), r2 = $("ruban2");
+    if (r1 && window.Roxwood) Roxwood.ruban(r1, (on ? RUBAN1_HW : RUBAN1).concat(on ? RUBAN1_HW : RUBAN1));
+    if (r2 && window.Roxwood) Roxwood.ruban(r2, (on ? RUBAN2_HW : RUBAN2).concat(on ? RUBAN2_HW : RUBAN2));
   }
 
   fetch("data/stats-public.json?t=" + Date.now(), { cache: "no-store" })
