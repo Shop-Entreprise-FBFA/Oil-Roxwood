@@ -54565,9 +54565,9 @@
   "postesV4": 1,
   "semaineDebut": "2026-10-19"
  },
- "_cid": "bot",
- "_maj": 1792491749760,
- "_rev": "1zffthsiyg8-mvgj8w4m",
+ "_cid": "pos2x0l45rp",
+ "_maj": 1792491768540,
+ "_rev": "8axheitwm5-mvgjbgzw",
  "_majSec": {
   "fer": 1792428371151,
   "fact": 1792419745821,
@@ -54576,11 +54576,11 @@
   "sheets": 1792485605664,
   "_qcFix1": 1792090599970,
   "_wkFix1": 1792090599970,
-  "journal": 1792451958624,
+  "journal": 1792491768540,
   "pending": 1792090599970,
   "prodDer": 1792090599970,
   "runners": 1792410495912,
-  "absences": 1792367040551,
+  "absences": 1792491768540,
   "imported": 1792090599970,
   "settings": 1792400944983,
   "closeUndo": 1792400944983,
@@ -54590,7 +54590,7 @@
   "primesExtra": 1792090599970,
   "quotasComHist": 1792400944983,
   "profils": 1792090599970,
-  "_tables": 1792491749760,
+  "_tables": 1792491768540,
   "_permsFix1": 1792090599970,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792090599970,
@@ -54607,6 +54607,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1792491768782,
+   "u": "Diego Herrera",
+   "a": "Absences Discord reprises : Kobayashi Vincent"
+  },
   {
    "t": 1792451954331,
    "u": "LeJ",
@@ -56101,11 +56106,6 @@
    "t": 1791152145858,
    "u": "Diego Herrera",
    "a": "Absences Discord reprises : Corentin Baltre"
-  },
-  {
-   "t": 1791152145802,
-   "u": "Diego Herrera",
-   "a": "Avertissement : Louka Romelu (intérimaire, quota à 0%)"
   }
  ],
  "prodDer": {
@@ -56474,10 +56474,20 @@
    "motif": "Perso",
    "par": "🥈⚫ Diego Herrera",
    "auto": true
+  },
+  {
+   "id": 1792491772516,
+   "nom": "Kobayashi Vincent",
+   "du": "2026-10-20",
+   "au": "2026-10-30",
+   "srcId": "1792491748962",
+   "motif": "Personnel",
+   "par": "⚫ Diego Herrera",
+   "auto": true
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-20T10:20:48.934Z",
+  "maj": "2026-10-20T10:22:49.292Z",
   "semaine": 43,
   "totalBarils": 204334,
   "ca": 1021670,
@@ -241501,6 +241511,20 @@
     "role": "direction",
     "vu": "2026-10-20T10:19:46.917Z",
     "id": 1792491587485
+   },
+   {
+    "uid": "826526979204841482",
+    "nom": "Diego Herrera",
+    "role": "direction",
+    "vu": "2026-10-20T10:21:46.836Z",
+    "id": 1792491707892
+   },
+   {
+    "uid": "826526979204841482",
+    "nom": "Diego Herrera",
+    "role": "direction",
+    "vu": "2026-10-20T10:22:46.837Z",
+    "id": 1792491767669
    }
   ],
   "oilroxwood_demandes": [],
