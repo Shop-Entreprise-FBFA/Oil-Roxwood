@@ -13207,6 +13207,20 @@
     "quantite": 100,
     "qui": "Laurent Roquel",
     "fact": 253167
+   },
+   {
+    "date": "2026-10-20",
+    "client": "LTD Strawberry",
+    "quantite": 250,
+    "qui": "Laurent Roquel",
+    "fact": 253168
+   },
+   {
+    "date": "2026-10-20",
+    "client": "LTD Strawberry",
+    "quantite": 250,
+    "qui": "Emma Collins-rodriguez",
+    "fact": 253168
    }
   ],
   "collection": [
@@ -15638,7 +15652,7 @@
     "rib": "20020",
     "tel": "930",
     "adresse": "Los Santos",
-    "lastCmd": "2026-10-06"
+    "lastCmd": "2026-10-20"
    },
    {
     "nom": "Lunapark Billard",
@@ -15976,8 +15990,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253168,
+  "compteur": 253169,
   "factures": [
+   {
+    "num": 253168,
+    "date": "2026-10-20",
+    "client": "LTD Strawberry",
+    "emetteur": "Laurent Roquel, Emma Collins-rodriguez",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 500,
+      "tva": 0,
+      "pu": 180,
+      "ht": 90000,
+      "ttc": 90000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 90000,
+    "ttc": 90000,
+    "poids": 1000,
+    "statut": "attente"
+   },
    {
     "num": 253167,
     "date": "2026-10-20",
@@ -54603,14 +54640,14 @@
   "semaineDebut": "2026-10-19"
  },
  "_cid": "acs46jnlnvu",
- "_maj": 1792494004131,
- "_rev": "ge4gxf59rdw-mvgko0hw",
+ "_maj": 1792494036002,
+ "_rev": "w7pfhbfse7n-mvgko3vz",
  "_majSec": {
   "fer": 1792428371151,
-  "fact": 1792493971864,
+  "fact": 1792494035938,
   "users": 1792420883789,
   "weeks": 1792400944983,
-  "sheets": 1792493968599,
+  "sheets": 1792494035938,
   "_qcFix1": 1792090599970,
   "_wkFix1": 1792090599970,
   "journal": 1792491768540,
@@ -56524,13 +56561,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-20T11:00:34.052Z",
+  "maj": "2026-10-20T11:00:38.447Z",
   "semaine": 43,
   "totalBarils": 204334,
   "ca": 1021670,
   "objectif": 375000,
   "effectif": 106,
-  "clientsServis": 153,
+  "clientsServis": 154,
   "top3": [
    {
     "nom": "Jj Junior",
