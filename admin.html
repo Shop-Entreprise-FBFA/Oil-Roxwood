@@ -29,9 +29,9 @@ window.ROXWOOD_CFG = {
   discordGuild    : "1245400912835510283"   // serveur Oil Roxwood — surchargeable dans Paramètres → Connexion par rôle Discord
 };
 </script>
-<script src="assets/roxwood-github.js"></script>
-<link rel="stylesheet" href="assets/roxwood-core.css">
-<link rel="stylesheet" href="assets/roxwood-app.css">
+<script src="assets/roxwood-github.js?v=C-119"></script>
+<link rel="stylesheet" href="assets/roxwood-core.css?v=C-119">
+<link rel="stylesheet" href="assets/roxwood-app.css?v=C-119">
 </head>
 <body>
 
@@ -148,7 +148,7 @@ window.ROXWOOD_CFG = {
 <div id="modalBg" onclick="if(event.target===this)closeModal()"><div class="modal" id="modalBox" role="dialog" aria-modal="true" tabindex="-1"></div></div>
 <div id="toast"></div>
 
-<script src="assets/roxwood-ui.js"></script>
+<script src="assets/roxwood-ui.js?v=C-119"></script>
 
 <script>
 /* ================== CONSTANTES ================== */
@@ -1248,7 +1248,7 @@ function logout(){
 }
 
 /* ---- Canari de version : prévient les onglets restés sur une vieille version ---- */
-const APP_VERSION='C-118';
+const APP_VERSION='C-119';
 /* Le bandeau ne doit dire qu'une chose : « une version plus récente existe ».
    Il comparait deux chaînes avec !==, donc il s'allumait aussi dans l'autre
    sens — quand la page ouverte était PLUS récente que version.json, ce qui
@@ -4782,6 +4782,10 @@ function ferDel(id){
 
 /* ================== MISES À JOUR (changelog) ================== */
 const CHANGELOG=[
+ {v:'C-119',d:'20/10/2026',t:'Les fichiers partagés (styles, scripts) étaient parfois servis en version ancienne',items:[
+   ['🐛','Deux vraies causes identifiées avant celle-ci','La vitrine ne republiait pas quand seul le drapeau Halloween changeait (C-115), puis un navigateur avec un dashboard ancien en cache a republié sans ce drapeau et écrasé la bonne valeur (corrigé côté bot : la valeur fait désormais foi depuis Paramètres, jamais depuis le calcul d\'un navigateur au hasard).'],
+   ['🐛','Les fichiers assets/roxwood-*.css et .js n\'avaient aucun numéro de version','Le navigateur (ou le réseau de diffusion de GitHub Pages) pouvait donc continuer à servir une copie ancienne un moment, même après un rechargement forcé. Chaque fichier partagé porte maintenant la version courante dans son adresse — un changement de version force un téléchargement neuf, sans exception.'],
+ ]},
  {v:'C-118',d:'20/10/2026',t:'Halloween : le grand logo ne disparaît plus, ambiance renforcée partout',items:[
    ['🐛','Le grand logo du hero disparaissait sous 980 px de large','Il était réservé aux grands écrans pour ne pas gêner la mise en page mobile. Il reste maintenant toujours visible, en haut du hero sur petit écran, en grand à droite sur desktop.'],
    ['🎃','Halloween en plus marqué','Halos plus visibles (vitrine et dashboard), fond teinté sur toute la page, panneaux et cartes avec un glacis violet permanent, chauves-souris et citrouille plus visibles.'],
