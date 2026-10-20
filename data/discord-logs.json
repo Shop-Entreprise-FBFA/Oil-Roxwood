@@ -1,11 +1,56 @@
 {
- "maj": "2026-10-20T10:45:53.072526+00:00",
+ "maj": "2026-10-20T10:49:53.601965+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1562055143418105857",
+   "t": "2026-10-20T10:49:27.772000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 7907\nplayerDiscord : 1095216838566219836\nplayerName : Anderson Impreza\nplayerCharacter : Jordan Impreza\nplayerId : 383034\nvehiclePlate : AS5715VX\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Jordan Impreza",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "7907",
+    "playerdiscord": "1095216838566219836",
+    "playername": "Anderson Impreza",
+    "playercharacter": "Jordan Impreza",
+    "playerid": "383034",
+    "vehicleplate": "AS5715VX",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1562055131720192052",
+   "t": "2026-10-20T10:49:24.983000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\na retiré 34x Bidon d'essence du coffre de l'entreprise (Oil RoxWood)\nposition : -1815.88, 6566.52, 16.73\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7838\nplayerDiscord : 707695913187016785\nplayerName : ShySpider2463\nplayerCharacter : Laurent Roquel\nplayerId : 282695\nitemId : weapon_petrolcan",
+   "nom": "Laurent Roquel",
+   "quantite": 34,
+   "montant": null,
+   "type": "coffre_retrait",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1815.88, 6566.52, 16.73",
+    "targetposition": "-1815.66, 6565.56, 15.98",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "7838",
+    "playerdiscord": "707695913187016785",
+    "playername": "ShySpider2463",
+    "playercharacter": "Laurent Roquel",
+    "playerid": "282695",
+    "itemid": "weapon_petrolcan"
+   }
+  },
   {
    "id": "1562053875685527647-0",
    "t": "2026-10-20T10:44:25.521000+00:00",
@@ -86323,147 +86368,6 @@
     "playercharacter": "Laurent Roquel",
     "playerid": "282695",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1560968030039838806-0",
-   "t": "2026-10-17T10:49:39.745000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 140x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1850.69, 6515.17, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7366\nplayerDiscord : 707695913187016785\nplayerName : ShySpider2463\nplayerCharacter : Laurent Roquel\nplayerId : 282695\nitemId : refinedoil",
-   "nom": "Laurent Roquel",
-   "quantite": 140,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1850.69, 6515.17, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7366",
-    "playerdiscord": "707695913187016785",
-    "playername": "ShySpider2463",
-    "playercharacter": "Laurent Roquel",
-    "playerid": "282695",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1560968030039838806-1",
-   "t": "2026-10-17T10:49:39.745000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 140x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1850.69, 6515.17, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7366\nplayerDiscord : 707695913187016785\nplayerName : ShySpider2463\nplayerCharacter : Laurent Roquel\nplayerId : 282695\nitemId : refinedoil",
-   "nom": "Laurent Roquel",
-   "quantite": 140,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1850.69, 6515.17, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7366",
-    "playerdiscord": "707695913187016785",
-    "playername": "ShySpider2463",
-    "playercharacter": "Laurent Roquel",
-    "playerid": "282695",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1560968030039838806-2",
-   "t": "2026-10-17T10:49:39.745000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 140x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1850.69, 6515.17, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7366\nplayerDiscord : 707695913187016785\nplayerName : ShySpider2463\nplayerCharacter : Laurent Roquel\nplayerId : 282695\nitemId : refinedoil",
-   "nom": "Laurent Roquel",
-   "quantite": 140,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1850.69, 6515.17, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7366",
-    "playerdiscord": "707695913187016785",
-    "playername": "ShySpider2463",
-    "playercharacter": "Laurent Roquel",
-    "playerid": "282695",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1560968030039838806-3",
-   "t": "2026-10-17T10:49:39.745000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 140x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1850.69, 6515.17, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7366\nplayerDiscord : 707695913187016785\nplayerName : ShySpider2463\nplayerCharacter : Laurent Roquel\nplayerId : 282695\nitemId : refinedoil",
-   "nom": "Laurent Roquel",
-   "quantite": 140,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1850.69, 6515.17, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7366",
-    "playerdiscord": "707695913187016785",
-    "playername": "ShySpider2463",
-    "playercharacter": "Laurent Roquel",
-    "playerid": "282695",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1560968030039838806-4",
-   "t": "2026-10-17T10:49:39.745000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 60x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1850.69, 6515.17, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7366\nplayerDiscord : 707695913187016785\nplayerName : ShySpider2463\nplayerCharacter : Laurent Roquel\nplayerId : 282695\nitemId : refinedoil",
-   "nom": "Laurent Roquel",
-   "quantite": 60,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1850.69, 6515.17, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7366",
-    "playerdiscord": "707695913187016785",
-    "playername": "ShySpider2463",
-    "playercharacter": "Laurent Roquel",
-    "playerid": "282695",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1560967767849574453",
-   "t": "2026-10-17T10:48:37.234000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbesperta\nplayerNetId : 7358\nplayerDiscord : 1559916250929434727\nplayerName : BreezyCrab1027\nplayerCharacter : Bingo Dallas\nplayerId : 383174\nvehiclePlate : KZ1932QE\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Bingo Dallas",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "7358",
-    "playerdiscord": "1559916250929434727",
-    "playername": "BreezyCrab1027",
-    "playercharacter": "Bingo Dallas",
-    "playerid": "383174",
-    "vehicleplate": "KZ1932QE",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
