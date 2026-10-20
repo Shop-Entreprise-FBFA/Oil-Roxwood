@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-20T18:33:27.906967+00:00",
+ "maj": "2026-10-20T18:34:33.680288+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1562171930025660467",
+   "t": "2026-10-20T18:33:31.869000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 621x Pétrole Raffiné pour 6210$ par Nikko Mount. 3105$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 621,
+   "montant": 6210,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1562171683312242749",
    "t": "2026-10-20T18:32:33.048000+00:00",
@@ -93758,30 +93774,6 @@
   },
   {
    "id": "1561280543021207564-0",
-   "t": "2026-10-18T07:31:28.646000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 18x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3089.87, 6814.25, 44.73\ntargetPosition : -3089.68, 6814.50, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6866\nplayerDiscord : 1096933851659517975\nplayerName : SoggyAnt2644\nplayerCharacter : Bjorn Frost\nplayerId : 361708\nitemId : oil",
-   "nom": "Bjorn Frost",
-   "quantite": 18,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-3089.87, 6814.25, 44.73",
-    "targetposition": "-3089.68, 6814.50, 43.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6866",
-    "playerdiscord": "1096933851659517975",
-    "playername": "SoggyAnt2644",
-    "playercharacter": "Bjorn Frost",
-    "playerid": "361708",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1561280543021207564-1",
    "t": "2026-10-18T07:31:28.646000+00:00",
    "auteur": "Logs - Coffre",
    "texte": "Coffre\ndépot de 18x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3089.87, 6814.25, 44.73\ntargetPosition : -3089.68, 6814.50, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6866\nplayerDiscord : 1096933851659517975\nplayerName : SoggyAnt2644\nplayerCharacter : Bjorn Frost\nplayerId : 361708\nitemId : oil",
