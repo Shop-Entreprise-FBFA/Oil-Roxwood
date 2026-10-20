@@ -1,11 +1,56 @@
 {
- "maj": "2026-10-20T10:49:53.601965+00:00",
+ "maj": "2026-10-20T10:51:53.504970+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1562055384301174885",
+   "t": "2026-10-20T10:50:25.203000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 7907\nplayerDiscord : 1095216838566219836\nplayerName : Anderson Impreza\nplayerCharacter : Jordan Impreza\nplayerId : 383034\nvehiclePlate : DO6888RF\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Jordan Impreza",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "7907",
+    "playerdiscord": "1095216838566219836",
+    "playername": "Anderson Impreza",
+    "playercharacter": "Jordan Impreza",
+    "playerid": "383034",
+    "vehicleplate": "DO6888RF",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1562055383055466559",
+   "t": "2026-10-20T10:50:24.906000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\na retiré 4x Bidon d'essence du coffre de l'entreprise (Oil RoxWood)\nposition : -1815.88, 6566.52, 16.73\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7838\nplayerDiscord : 707695913187016785\nplayerName : ShySpider2463\nplayerCharacter : Laurent Roquel\nplayerId : 282695\nitemId : weapon_petrolcan",
+   "nom": "Laurent Roquel",
+   "quantite": 4,
+   "montant": null,
+   "type": "coffre_retrait",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1815.88, 6566.52, 16.73",
+    "targetposition": "-1815.66, 6565.56, 15.98",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "7838",
+    "playerdiscord": "707695913187016785",
+    "playername": "ShySpider2463",
+    "playercharacter": "Laurent Roquel",
+    "playerid": "282695",
+    "itemid": "weapon_petrolcan"
+   }
+  },
   {
    "id": "1562055143418105857",
    "t": "2026-10-20T10:49:27.772000+00:00",
