@@ -642,6 +642,53 @@ tbody tr:nth-child(7){animation-delay:.20s}tbody tr:nth-child(8){animation-delay
 }
 .chg-txt b{color:var(--accent,#E8A020); font-weight:600}
 
+/* ============================================================
+   HABILLAGE HALLOWEEN — immersion (Paramètres → Économie)
+   Les trois règles ciblées (logo, texte de marque, onglet actif)
+   vivent plus haut, près de leurs sélecteurs d'origine. Tout le
+   reste — fond, panneaux, boutons, toile et chauves-souris — est
+   regroupé ici pour rester facile à retirer d'un bloc.
+   ============================================================ */
+html.halloween #login{
+  background:
+    radial-gradient(80% 60% at 50% 108%,rgba(232,160,32,.22),transparent 62%),
+    radial-gradient(60% 45% at 18% -10%,rgba(139,95,191,.30),transparent 60%),
+    var(--brut);
+}
+html.halloween #login::before{
+  content:"";position:absolute;top:0;left:0;width:96px;height:96px;z-index:2;pointer-events:none;opacity:.4;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'%3E%3Cg fill='none' stroke='%23A2948A' stroke-width='1'%3E%3Cpath d='M0 0 L96 96 M0 0 L52 0 M0 0 L0 52'/%3E%3Cpath d='M16 0 Q16 16 0 16'/%3E%3Cpath d='M34 0 Q34 34 0 34'/%3E%3Cpath d='M54 0 Q54 54 0 54'/%3E%3Cpath d='M74 0 Q74 74 0 74'/%3E%3C/g%3E%3Ccircle cx='11' cy='11' r='2.2' fill='%23C9BDB2'/%3E%3C/svg%3E");
+}
+html.halloween .login-card::before{background:linear-gradient(90deg,#E8A020 0 33%,#8B5FBF 33% 66%,#E8A020 66% 100%)}
+html.halloween #app{position:relative}
+html.halloween #app::before{
+  content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:
+    radial-gradient(50% 42% at 94% -6%,rgba(139,95,191,.16),transparent 62%),
+    radial-gradient(45% 36% at 2% 106%,rgba(232,160,32,.12),transparent 62%);
+}
+html.halloween #app::after{
+  content:"🦇";position:fixed;z-index:1;pointer-events:none;opacity:.16;font-size:22px;
+  top:64px;right:9%;transform:rotate(-8deg);
+}
+html.halloween main,html.halloween #main{position:relative;z-index:1}
+html.halloween aside{
+  background:
+    radial-gradient(60% 34% at 0% 0%,rgba(139,95,191,.20),transparent 62%),
+    linear-gradient(180deg,var(--panel-2),var(--panel) 22%);
+}
+html.halloween aside::before{
+  content:"";position:absolute;top:0;left:0;width:78px;height:78px;z-index:1;pointer-events:none;opacity:.4;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 78 78'%3E%3Cg fill='none' stroke='%23897B70' stroke-width='1'%3E%3Cpath d='M0 0 L78 78 M0 0 L42 0 M0 0 L0 42'/%3E%3Cpath d='M13 0 Q13 13 0 13'/%3E%3Cpath d='M28 0 Q28 28 0 28'/%3E%3Cpath d='M44 0 Q44 44 0 44'/%3E%3Cpath d='M60 0 Q60 60 0 60'/%3E%3C/g%3E%3Ccircle cx='9' cy='9' r='1.8' fill='%23B9AEA3'/%3E%3C/svg%3E");
+}
+html.halloween .panel h3::after{background:linear-gradient(90deg,var(--accent),#8B5FBF)}
+html.halloween .kpi::before{background:linear-gradient(90deg,var(--accent),#8B5FBF)}
+html.halloween .kpi::after{background:radial-gradient(circle,rgba(139,95,191,.22),transparent 70%)}
+html.halloween .panel:hover{border-color:rgba(139,95,191,.38);box-shadow:0 16px 44px rgba(0,0,0,.4),0 0 0 1px rgba(139,95,191,.12)}
+html.halloween .btn-gold{background:linear-gradient(90deg,var(--accent),#8B5FBF);border-color:#8B5FBF;box-shadow:0 4px 18px rgba(139,95,191,.35)}
+html.halloween .btn-gold:hover{box-shadow:0 8px 30px rgba(139,95,191,.5)}
+html.halloween .btn-gold::before{background:#8B5FBF}
+
 @media (prefers-reduced-motion:reduce){
   .chg-bras,.chg-tige{animation:none}
 }

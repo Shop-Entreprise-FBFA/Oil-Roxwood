@@ -472,3 +472,38 @@ footer{border-top:1px solid var(--trait-fort);padding:32px 0 46px;position:relat
   .nav-links a,.contact-chip,footer .pied a{min-height:34px;display:inline-flex;align-items:center}
   .ruban .defile,.tag,.sec-kicker{font-size:11px}
 }
+
+/* ============================================================
+   HABILLAGE HALLOWEEN — immersion (activé depuis le dashboard,
+   Paramètres → Économie ; lu via data/stats-public.json).
+   Les règles du logo/CTA/texte de marque vivent plus haut, près
+   de leurs sélecteurs d'origine. Tout le reste — fond du hero,
+   toile d'araignée, logo en vedette, cartes — est ici.
+   ============================================================ */
+#heroLogoHW{display:none}
+html.halloween header#accueil::before{
+  content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background:
+    radial-gradient(55% 45% at 86% 0%,rgba(139,95,191,.26),transparent 62%),
+    radial-gradient(60% 50% at 10% 100%,rgba(232,160,32,.18),transparent 62%);
+}
+html.halloween header#accueil::after{
+  background:
+    linear-gradient(180deg,color-mix(in srgb,var(--fond) 82%,transparent) 0%,transparent 40%),
+    linear-gradient(90deg,color-mix(in srgb,var(--fond) 76%,transparent) 0%,transparent 80%),
+    linear-gradient(0deg,color-mix(in srgb,var(--fond) 70%,transparent) 0%,transparent 22%);
+}
+html.halloween header#accueil h1 em{color:#8B5FBF}
+@media (min-width:980px){
+  html.halloween #heroLogoHW{
+    display:block;position:absolute;right:clamp(10px,4vw,70px);top:50%;transform:translateY(-46%);
+    height:min(62vh,520px);width:auto;z-index:1;pointer-events:none;
+    filter:drop-shadow(0 24px 50px rgba(0,0,0,.55));
+  }
+}
+html.halloween .card{border-color:rgba(139,95,191,.3)}
+html.halloween .hero-stats > div:hover,html.halloween .card:hover{border-color:#8B5FBF}
+html.halloween nav.barre::before{
+  content:"";position:absolute;top:0;left:0;width:64px;height:64px;pointer-events:none;opacity:.35;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cg fill='none' stroke='%23897B70' stroke-width='1'%3E%3Cpath d='M0 0 L64 64 M0 0 L34 0 M0 0 L0 34'/%3E%3Cpath d='M11 0 Q11 11 0 11'/%3E%3Cpath d='M23 0 Q23 23 0 23'/%3E%3Cpath d='M37 0 Q37 37 0 37'/%3E%3Cpath d='M50 0 Q50 50 0 50'/%3E%3C/g%3E%3C/svg%3E");
+}
