@@ -1248,7 +1248,7 @@ function logout(){
 }
 
 /* ---- Canari de version : prévient les onglets restés sur une vieille version ---- */
-const APP_VERSION='C-117';
+const APP_VERSION='C-118';
 /* Le bandeau ne doit dire qu'une chose : « une version plus récente existe ».
    Il comparait deux chaînes avec !==, donc il s'allumait aussi dans l'autre
    sens — quand la page ouverte était PLUS récente que version.json, ce qui
@@ -4782,6 +4782,10 @@ function ferDel(id){
 
 /* ================== MISES À JOUR (changelog) ================== */
 const CHANGELOG=[
+ {v:'C-118',d:'20/10/2026',t:'Halloween : le grand logo ne disparaît plus, ambiance renforcée partout',items:[
+   ['🐛','Le grand logo du hero disparaissait sous 980 px de large','Il était réservé aux grands écrans pour ne pas gêner la mise en page mobile. Il reste maintenant toujours visible, en haut du hero sur petit écran, en grand à droite sur desktop.'],
+   ['🎃','Halloween en plus marqué','Halos plus visibles (vitrine et dashboard), fond teinté sur toute la page, panneaux et cartes avec un glacis violet permanent, chauves-souris et citrouille plus visibles.'],
+ ]},
  {v:'C-117',d:'20/10/2026',t:'Halloween : l\'ambiance continue sur toute la page, bandeau défilant, citrouille',items:[
    ['🎃','Une citrouille dérive aussi, en plus des chauves-souris','Dashboard et vitrine.'],
    ['🕸️','L\'ambiance Halloween continue en descendant la page','Chaque section de la vitrine (pas seulement le hero) porte un léger halo orange/violet ; le bandeau défilant change de message ; la barre de défilement passe aux couleurs de saison.'],

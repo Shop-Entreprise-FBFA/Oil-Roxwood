@@ -664,8 +664,8 @@ html.halloween #app{position:relative}
 html.halloween #app::before{
   content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
   background:
-    radial-gradient(50% 42% at 94% -6%,rgba(139,95,191,.16),transparent 62%),
-    radial-gradient(45% 36% at 2% 106%,rgba(232,160,32,.12),transparent 62%);
+    radial-gradient(55% 46% at 94% -6%,rgba(139,95,191,.22),transparent 62%),
+    radial-gradient(50% 40% at 2% 106%,rgba(232,160,32,.17),transparent 62%);
 }
 @keyframes hwDerive{
   0%,100%{transform:translate(0,0) rotate(-8deg)}
@@ -674,7 +674,7 @@ html.halloween #app::before{
   75%{transform:translate(10px,14px) rotate(6deg)}
 }
 html.halloween #app::after{
-  content:"🦇";position:fixed;z-index:1;pointer-events:none;opacity:.16;font-size:22px;
+  content:"🦇";position:fixed;z-index:1;pointer-events:none;opacity:.26;font-size:26px;
   top:64px;right:9%;animation:hwDerive 21s ease-in-out infinite;
 }
 html.halloween #login .login-card::after{
@@ -684,13 +684,14 @@ html.halloween #login .login-card::after{
 html.halloween main,html.halloween #main{position:relative;z-index:1}
 html.halloween aside{
   background:
-    radial-gradient(60% 34% at 0% 0%,rgba(139,95,191,.20),transparent 62%),
+    radial-gradient(65% 40% at 0% 0%,rgba(139,95,191,.28),transparent 62%),
     linear-gradient(180deg,var(--panel-2),var(--panel) 22%);
 }
 html.halloween aside::before{
   content:"";position:absolute;top:0;left:0;width:78px;height:78px;z-index:1;pointer-events:none;opacity:.4;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 78 78'%3E%3Cg fill='none' stroke='%23897B70' stroke-width='1'%3E%3Cpath d='M0 0 L78 78 M0 0 L42 0 M0 0 L0 42'/%3E%3Cpath d='M13 0 Q13 13 0 13'/%3E%3Cpath d='M28 0 Q28 28 0 28'/%3E%3Cpath d='M44 0 Q44 44 0 44'/%3E%3Cpath d='M60 0 Q60 60 0 60'/%3E%3C/g%3E%3Ccircle cx='9' cy='9' r='1.8' fill='%23B9AEA3'/%3E%3C/svg%3E");
 }
+html.halloween .panel{background:radial-gradient(130% 100% at 100% 0%,rgba(139,95,191,.09),transparent 55%),linear-gradient(168deg,var(--panel-2),var(--panel) 45%)}
 html.halloween .panel h3::after{background:linear-gradient(90deg,var(--accent),#8B5FBF)}
 html.halloween .kpi::before{background:linear-gradient(90deg,var(--accent),#8B5FBF)}
 html.halloween .kpi::after{background:radial-gradient(circle,rgba(139,95,191,.22),transparent 70%)}

@@ -481,11 +481,17 @@ footer{border-top:1px solid var(--trait-fort);padding:32px 0 46px;position:relat
    toile d'araignée, logo en vedette, cartes — est ici.
    ============================================================ */
 #heroLogoHW{display:none}
+html.halloween body{
+  background:
+    radial-gradient(55% 35% at 12% 0%,rgba(139,95,191,.07),transparent 62%),
+    radial-gradient(55% 35% at 88% 100%,rgba(232,160,32,.06),transparent 62%),
+    var(--fond);
+}
 html.halloween header#accueil::before{
   content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
   background:
-    radial-gradient(55% 45% at 86% 0%,rgba(139,95,191,.26),transparent 62%),
-    radial-gradient(60% 50% at 10% 100%,rgba(232,160,32,.18),transparent 62%);
+    radial-gradient(55% 45% at 86% 0%,rgba(139,95,191,.36),transparent 62%),
+    radial-gradient(60% 50% at 10% 100%,rgba(232,160,32,.26),transparent 62%);
 }
 html.halloween header#accueil::after{
   background:
@@ -494,14 +500,22 @@ html.halloween header#accueil::after{
     linear-gradient(0deg,color-mix(in srgb,var(--fond) 70%,transparent) 0%,transparent 22%);
 }
 html.halloween header#accueil h1 em{color:#8B5FBF}
+/* visible à toutes les tailles d'écran : en haut du hero sur mobile/tablette
+   (pleine largeur raisonnable, dans le flux), en grand à droite sur desktop
+   (superposé, absolu) — jamais complètement caché. */
+html.halloween #heroLogoHW{
+  display:block;position:relative;z-index:1;margin:0 auto clamp(10px,2vw,18px);
+  max-width:min(72vw,280px);height:auto;pointer-events:none;
+  filter:drop-shadow(0 16px 34px rgba(0,0,0,.5));
+}
 @media (min-width:980px){
   html.halloween #heroLogoHW{
-    display:block;position:absolute;right:clamp(10px,4vw,70px);top:50%;transform:translateY(-46%);
-    height:min(62vh,520px);width:auto;z-index:1;pointer-events:none;
+    position:absolute;right:clamp(10px,4vw,70px);top:50%;transform:translateY(-46%);
+    height:min(62vh,520px);width:auto;max-width:none;margin:0;
     filter:drop-shadow(0 24px 50px rgba(0,0,0,.55));
   }
 }
-html.halloween .card{border-color:rgba(139,95,191,.3)}
+html.halloween .card{border-color:rgba(139,95,191,.3);background:radial-gradient(120% 120% at 100% 0%,rgba(139,95,191,.10),transparent 60%),linear-gradient(160deg,var(--plaque-2),var(--plaque))}
 html.halloween .hero-stats > div:hover,html.halloween .card:hover{border-color:#8B5FBF}
 @keyframes hwDerive{
   0%,100%{transform:translate(0,0) rotate(-8deg)}
@@ -511,10 +525,10 @@ html.halloween .hero-stats > div:hover,html.halloween .card:hover{border-color:#
 }
 html.halloween header#accueil .hero-grid::after{
   content:"🦇";position:absolute;top:0;right:8%;z-index:3;pointer-events:none;
-  opacity:.22;font-size:24px;animation:hwDerive 20s ease-in-out infinite;
+  opacity:.34;font-size:28px;animation:hwDerive 20s ease-in-out infinite;
 }
 html.halloween nav.barre::before{
-  content:"";position:absolute;top:0;left:0;width:64px;height:64px;pointer-events:none;opacity:.35;
+  content:"";position:absolute;top:0;left:0;width:64px;height:64px;pointer-events:none;opacity:.5;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cg fill='none' stroke='%23897B70' stroke-width='1'%3E%3Cpath d='M0 0 L64 64 M0 0 L34 0 M0 0 L0 34'/%3E%3Cpath d='M11 0 Q11 11 0 11'/%3E%3Cpath d='M23 0 Q23 23 0 23'/%3E%3Cpath d='M37 0 Q37 37 0 37'/%3E%3Cpath d='M50 0 Q50 50 0 50'/%3E%3C/g%3E%3C/svg%3E");
 }
 
@@ -522,11 +536,11 @@ html.halloween nav.barre::before{
 html.halloween section{position:relative;isolation:isolate}
 html.halloween section::before{
   content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
-  background:radial-gradient(42% 38% at var(--hwx,8%) var(--hwy,0%),rgba(139,95,191,.10),transparent 68%);
+  background:radial-gradient(46% 42% at var(--hwx,8%) var(--hwy,0%),rgba(139,95,191,.16),transparent 68%);
 }
-html.halloween section:nth-of-type(odd)::before{--hwx:92%;--hwy:100%;background:radial-gradient(42% 38% at var(--hwx) var(--hwy),rgba(232,160,32,.08),transparent 68%)}
+html.halloween section:nth-of-type(odd)::before{--hwx:92%;--hwy:100%;background:radial-gradient(46% 42% at var(--hwx) var(--hwy),rgba(232,160,32,.13),transparent 68%)}
 html.halloween body::after{
-  content:"🎃";position:fixed;z-index:4;pointer-events:none;opacity:.14;font-size:20px;
+  content:"🎃";position:fixed;z-index:4;pointer-events:none;opacity:.26;font-size:24px;
   top:40%;left:3%;animation:hwDerive 26s ease-in-out infinite 3s;
 }
 @media (prefers-reduced-motion:reduce){html.halloween body::after{animation:none}}
