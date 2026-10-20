@@ -54703,11 +54703,14 @@
   "capBidons": 50,
   "salonContrats": "1328076154586009660",
   "postesV4": 1,
-  "semaineDebut": "2026-10-19"
+  "semaineDebut": "2026-10-19",
+  "salonRappelRH": "",
+  "salonRappelDirection": "",
+  "halloween": true
  },
  "_cid": "rqhpclkc6ko",
- "_maj": 1792516180429,
- "_rev": "j11vec6upg-mvgxus7i",
+ "_maj": 1792516214515,
+ "_rev": "956xrozg5lk-mvgxvg4j",
  "_majSec": {
   "fer": 1792510012100,
   "fact": 1792504368462,
@@ -54716,13 +54719,13 @@
   "sheets": 1792515384929,
   "_qcFix1": 1792090599970,
   "_wkFix1": 1792090599970,
-  "journal": 1792514169459,
+  "journal": 1792516214515,
   "pending": 1792090599970,
   "prodDer": 1792090599970,
   "runners": 1792410495912,
   "absences": 1792491768540,
   "imported": 1792090599970,
-  "settings": 1792400944983,
+  "settings": 1792516214515,
   "closeUndo": 1792400944983,
   "quotasCom": 1792510011902,
   "bilanExtra": 1792366008206,
@@ -54730,7 +54733,7 @@
   "primesExtra": 1792090599970,
   "quotasComHist": 1792400944983,
   "profils": 1792090599970,
-  "_tables": 1792516180429,
+  "_tables": 1792516214515,
   "_permsFix1": 1792090599970,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792090599970,
@@ -54747,6 +54750,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1792516214901,
+   "u": "Diego Herrera",
+   "a": "Modification des paramètres"
+  },
   {
    "t": 1792514170611,
    "u": "Laurent Roquel",
@@ -56241,11 +56249,6 @@
    "t": 1791206686855,
    "u": "Emma Collins",
    "a": "Facture n°253142 modifiée — émetteur Emma Collins-rodriguez, Julio Collins, Laurent Roquel, William Rodriguez-Collins → Emma Collins-rodriguez"
-  },
-  {
-   "t": 1791156652828,
-   "u": "Diego Herrera",
-   "a": "Produits dérivés : colonne « Octobre Rose 2K26 » ajoutée"
   }
  ],
  "prodDer": {
@@ -56627,14 +56630,14 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-20T17:09:44.911Z",
+  "maj": "2026-10-20T17:10:15.907Z",
   "semaine": 43,
   "totalBarils": 204334,
   "ca": 1021670,
   "objectif": 375000,
   "effectif": 107,
   "clientsServis": 155,
-  "halloween": false,
+  "halloween": true,
   "top3": [
    {
     "nom": "Jj Junior",
