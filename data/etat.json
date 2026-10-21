@@ -13282,6 +13282,13 @@
     "quantite": 166,
     "qui": "Julio Collins",
     "fact": 253171
+   },
+   {
+    "date": "2026-10-21",
+    "client": "Smokebro",
+    "quantite": 100,
+    "qui": "Bjorn Frost",
+    "fact": 253172
    }
   ],
   "collection": [
@@ -15909,7 +15916,7 @@
     "rib": "",
     "tel": "555 334 643",
     "adresse": "Roxwood",
-    "lastCmd": "2026-09-29"
+    "lastCmd": "2026-10-21"
    },
    {
     "nom": "strada nostra",
@@ -16051,8 +16058,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253172,
+  "compteur": 253173,
   "factures": [
+   {
+    "num": 253172,
+    "date": "2026-10-21",
+    "client": "Smokebro",
+    "emetteur": "Bjorn Frost",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 100,
+      "tva": 0.04,
+      "pu": 180,
+      "ht": 18000,
+      "ttc": 18720,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 18000,
+    "ttc": 18720,
+    "poids": 200,
+    "statut": "attente"
+   },
    {
     "num": 253171,
     "date": "2026-10-21",
@@ -19837,14 +19867,6 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
-  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -19868,6 +19890,14 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T00:06:23.240Z"
+  },
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -54845,15 +54875,15 @@
   "salonRappelDirection": "",
   "theme": "halloween"
  },
- "_cid": "gojd6yj9qs6",
- "_maj": 1792592494350,
- "_rev": "iyzjsvgfe8k-mvi7as9n",
+ "_cid": "px0w1e0cwus",
+ "_maj": 1792592515794,
+ "_rev": "7wst1slbgln-mvi7avbc",
  "_majSec": {
   "fer": 1792590466231,
-  "fact": 1792590415351,
+  "fact": 1792592515769,
   "users": 1792589633515,
   "weeks": 1792400944983,
-  "sheets": 1792592253452,
+  "sheets": 1792592515769,
   "_qcFix1": 1792090599970,
   "_wkFix1": 1792090599970,
   "journal": 1792590524824,
@@ -54870,7 +54900,7 @@
   "primesExtra": 1792090599970,
   "quotasComHist": 1792400944983,
   "profils": 1792090599970,
-  "_tables": 1792592494350,
+  "_tables": 1792592515769,
   "_permsFix1": 1792090599970,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792090599970,
@@ -56767,13 +56797,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-21T14:21:54.203Z",
+  "maj": "2026-10-21T14:21:58.152Z",
   "semaine": 43,
   "totalBarils": 204334,
   "ca": 1021670,
   "objectif": 375000,
   "effectif": 107,
-  "clientsServis": 157,
+  "clientsServis": 158,
   "theme": "halloween",
   "top3": [
    {
