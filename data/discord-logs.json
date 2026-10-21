@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-21T16:42:37.595317+00:00",
+ "maj": "2026-10-21T16:44:40.013127+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1562506647371259925",
+   "t": "2026-10-21T16:43:34.703000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 486x Pétrole Raffiné pour 4860$ par David Richelieu. 2430$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 486,
+   "montant": 4860,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1562505109227708417",
    "t": "2026-10-21T16:37:27.981000+00:00",
@@ -93733,30 +93749,6 @@
    "champs": {
     "position": "-1843.41, 6518.28, 16.73",
     "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "1437",
-    "playerdiscord": "355065235154927617",
-    "playername": "SlowBat2011",
-    "playercharacter": "Romain Pierres",
-    "playerid": "380745",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1561427260991479911-0",
-   "t": "2026-10-18T17:14:28.936000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 34x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1849.85, 6515.09, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1437\nplayerDiscord : 355065235154927617\nplayerName : SlowBat2011\nplayerCharacter : Romain Pierres\nplayerId : 380745\nitemId : refinedoil",
-   "nom": "Romain Pierres",
-   "quantite": 34,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1849.85, 6515.09, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
     "jobid": "76",
     "jobname": "Oil RoxWood",
     "playernetid": "1437",
