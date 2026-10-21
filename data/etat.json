@@ -13289,6 +13289,27 @@
     "quantite": 100,
     "qui": "Bjorn Frost",
     "fact": 253172
+   },
+   {
+    "date": "2026-10-21",
+    "client": "LTD Cayo",
+    "quantite": 334,
+    "qui": "Julio Collins",
+    "fact": 253173
+   },
+   {
+    "date": "2026-10-21",
+    "client": "LTD Cayo",
+    "quantite": 333,
+    "qui": "Stella Collins",
+    "fact": 253173
+   },
+   {
+    "date": "2026-10-21",
+    "client": "LTD Cayo",
+    "quantite": 333,
+    "qui": "Tyler Collins",
+    "fact": 253173
    }
   ],
   "collection": [
@@ -15663,7 +15684,7 @@
     "rib": "20046",
     "tel": "956",
     "adresse": "Cayo",
-    "lastCmd": "2026-07-31"
+    "lastCmd": "2026-10-21"
    },
    {
     "nom": "LTD Groove Street",
@@ -16058,8 +16079,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253173,
+  "compteur": 253174,
   "factures": [
+   {
+    "num": 253173,
+    "date": "2026-10-21",
+    "client": "LTD Cayo",
+    "emetteur": "Julio Collins, Stella Collins, Tyler Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 1000,
+      "tva": 0,
+      "pu": 180,
+      "ht": 180000,
+      "ttc": 180000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 180000,
+    "ttc": 180000,
+    "poids": 2000,
+    "statut": "attente"
+   },
    {
     "num": 253172,
     "date": "2026-10-21",
@@ -19851,6 +19895,22 @@
    "public": true,
    "maj": "2026-09-16T11:47:16.417Z"
   },
+  "stella collins": {
+   "nom": "Stella Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-14T13:20:17.287Z"
+  },
+  "julio collins": {
+   "nom": "Julio Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T00:06:23.240Z"
+  },
   "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿": {
    "nom": "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿",
    "photo": "",
@@ -19874,22 +19934,6 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T16:48:15.042Z"
-  },
-  "stella collins": {
-   "nom": "Stella Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-14T13:20:17.287Z"
-  },
-  "julio collins": {
-   "nom": "Julio Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T00:06:23.240Z"
   },
   "william rodriguez-collins": {
    "nom": "William Rodriguez-collins",
@@ -54883,15 +54927,15 @@
   "salonRappelDirection": "",
   "theme": "halloween"
  },
- "_cid": "4osjt5xrd2",
- "_maj": 1792599751349,
- "_rev": "iydajb56gsd-mvibm2xt",
+ "_cid": "jraluyaohmb",
+ "_maj": 1792599760688,
+ "_rev": "co73tnfc6t-mvibm9es",
  "_majSec": {
   "fer": 1792594366150,
-  "fact": 1792592521367,
+  "fact": 1792599760679,
   "users": 1792599661490,
   "weeks": 1792400944983,
-  "sheets": 1792592515769,
+  "sheets": 1792599760679,
   "_qcFix1": 1792090599970,
   "_wkFix1": 1792090599970,
   "journal": 1792599661490,
@@ -54908,7 +54952,7 @@
   "primesExtra": 1792090599970,
   "quotasComHist": 1792400944983,
   "profils": 1792090599970,
-  "_tables": 1792599711092,
+  "_tables": 1792599760679,
   "_permsFix1": 1792090599970,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792090599970,
@@ -56805,13 +56849,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-21T16:22:39.713Z",
+  "maj": "2026-10-21T16:22:48.101Z",
   "semaine": 43,
   "totalBarils": 204334,
   "ca": 1021670,
   "objectif": 375000,
   "effectif": 107,
-  "clientsServis": 158,
+  "clientsServis": 159,
   "theme": "halloween",
   "top3": [
    {
