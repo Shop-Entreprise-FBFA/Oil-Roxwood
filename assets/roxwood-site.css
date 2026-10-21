@@ -56,9 +56,9 @@ nav.barre.collee{background:color-mix(in srgb,var(--fond) 90%,transparent);backd
 .nav-links > a.nav-cta{background:var(--ambre);color:#120C05}
 .nav-links > a.nav-membre{color:var(--ambre-texte)}
 
-/* ---- habillage Halloween (activable depuis le dashboard, Paramètres) ---- */
-html.halloween .logo b{background:linear-gradient(90deg,var(--ambre),#8B5FBF);-webkit-background-clip:text;background-clip:text;color:transparent}
-html.halloween .nav-links > a.nav-cta,html.halloween #heroCta{background:linear-gradient(90deg,var(--ambre),#8B5FBF)!important;color:#120C05!important;box-shadow:0 0 18px rgba(139,95,191,.35)}
+/* ---- habillage saisonnier (un seul à la fois, depuis le dashboard, Paramètres) ---- */
+html.halloween .logo b,html.noel .logo b{background:linear-gradient(90deg,var(--ambre),var(--saison));-webkit-background-clip:text;background-clip:text;color:transparent}
+html.halloween .nav-links > a.nav-cta,html.noel .nav-links > a.nav-cta,html.halloween #heroCta,html.noel #heroCta{background:linear-gradient(90deg,var(--ambre),var(--saison))!important;color:#120C05!important;box-shadow:0 0 18px color-mix(in srgb,var(--saison) 35%,transparent)}
 .nav-membre:hover{background:rgba(232,160,32,.12)}
 .theme-btn{background:none;border:1px solid var(--trait-fort);color:var(--ink);padding:8px 10px;margin-left:8px;font-size:14px;line-height:1;border-radius:var(--radius)}
 .theme-btn:hover{border-color:var(--ambre)}
@@ -319,7 +319,7 @@ footer{border-top:1px solid var(--trait-fort);padding:32px 0 46px;position:relat
 /* révélations */
 .rev{opacity:0;transform:translateY(26px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
 .rev.vue{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){.rev{opacity:1;transform:none} html.halloween header#accueil .hero-grid::after{animation:none}}
+@media (prefers-reduced-motion:reduce){.rev{opacity:1;transform:none} html.halloween header#accueil .hero-grid::after,html.noel header#accueil .hero-grid::after{animation:none}}
 
 /* ---------- responsive ---------- */
 @media (max-width:980px){
@@ -474,35 +474,36 @@ footer{border-top:1px solid var(--trait-fort);padding:32px 0 46px;position:relat
 }
 
 /* ============================================================
-   HABILLAGE HALLOWEEN — immersion (activé depuis le dashboard,
-   Paramètres → Économie ; lu via data/stats-public.json).
-   Les règles du logo/CTA/texte de marque vivent plus haut, près
-   de leurs sélecteurs d'origine. Tout le reste — fond du hero,
-   toile d'araignée, logo en vedette, cartes — est ici.
-   ============================================================ */
+   HABILLAGE SAISONNIER — immersion (activé depuis le dashboard,
+   Paramètres → Économie, un seul thème à la fois ; lu via
+   data/stats-public.json). Les règles du logo/CTA/texte de marque
+   vivent plus haut, près de leurs sélecteurs d'origine. Tout le
+   reste — fond du hero, coin décoratif, cartes — est ici.
+   --heroLogoHW (grand logo en vedette) reste Halloween SEUL : pas
+   d'image dédiée pour Noël, qui ne joue que sur les couleurs. */
 #heroLogoHW{display:none}
-html.halloween body{
+html.halloween body,html.noel body{
   background:
-    radial-gradient(55% 35% at 12% 0%,rgba(139,95,191,.07),transparent 62%),
+    radial-gradient(55% 35% at 12% 0%,color-mix(in srgb,var(--saison) 7%,transparent),transparent 62%),
     radial-gradient(55% 35% at 88% 100%,rgba(232,160,32,.06),transparent 62%),
     var(--fond);
 }
-html.halloween header#accueil::before{
+html.halloween header#accueil::before,html.noel header#accueil::before{
   content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
   background:
-    radial-gradient(55% 45% at 86% 0%,rgba(139,95,191,.36),transparent 62%),
+    radial-gradient(55% 45% at 86% 0%,color-mix(in srgb,var(--saison) 36%,transparent),transparent 62%),
     radial-gradient(60% 50% at 10% 100%,rgba(232,160,32,.26),transparent 62%);
 }
-html.halloween header#accueil::after{
+html.halloween header#accueil::after,html.noel header#accueil::after{
   background:
     linear-gradient(180deg,color-mix(in srgb,var(--fond) 82%,transparent) 0%,transparent 40%),
     linear-gradient(90deg,color-mix(in srgb,var(--fond) 76%,transparent) 0%,transparent 80%),
     linear-gradient(0deg,color-mix(in srgb,var(--fond) 70%,transparent) 0%,transparent 22%);
 }
-html.halloween header#accueil h1 em{color:#8B5FBF}
+html.halloween header#accueil h1 em,html.noel header#accueil h1 em{color:var(--saison)}
 /* visible à toutes les tailles d'écran : en haut du hero sur mobile/tablette
    (pleine largeur raisonnable, dans le flux), en grand à droite sur desktop
-   (superposé, absolu) — jamais complètement caché. */
+   (superposé, absolu) — jamais complètement caché. Halloween seulement. */
 html.halloween #heroLogoHW{
   display:block;position:relative;z-index:1;margin:0 auto clamp(10px,2vw,18px);
   max-width:min(72vw,280px);height:auto;pointer-events:none;
@@ -515,32 +516,32 @@ html.halloween #heroLogoHW{
     filter:drop-shadow(0 24px 50px rgba(0,0,0,.55));
   }
 }
-html.halloween .card{border-color:rgba(139,95,191,.3);background:radial-gradient(120% 120% at 100% 0%,rgba(139,95,191,.10),transparent 60%),linear-gradient(160deg,var(--plaque-2),var(--plaque))}
-html.halloween .hero-stats > div:hover,html.halloween .card:hover{border-color:#8B5FBF}
+html.halloween .card,html.noel .card{border-color:color-mix(in srgb,var(--saison) 30%,transparent);background:radial-gradient(120% 120% at 100% 0%,color-mix(in srgb,var(--saison) 10%,transparent),transparent 60%),linear-gradient(160deg,var(--plaque-2),var(--plaque))}
+html.halloween .hero-stats > div:hover,html.noel .hero-stats > div:hover,html.halloween .card:hover,html.noel .card:hover{border-color:var(--saison)}
 @keyframes hwDerive{
   0%,100%{transform:translate(0,0) rotate(-8deg)}
   25%{transform:translate(16px,-12px) rotate(3deg)}
   50%{transform:translate(-8px,8px) rotate(-4deg)}
   75%{transform:translate(10px,14px) rotate(6deg)}
 }
-html.halloween header#accueil .hero-grid::after{
-  content:"🦇";position:absolute;top:0;right:8%;z-index:3;pointer-events:none;
+html.halloween header#accueil .hero-grid::after,html.noel header#accueil .hero-grid::after{
+  content:var(--deco-vole);position:absolute;top:0;right:8%;z-index:3;pointer-events:none;
   opacity:.34;font-size:28px;animation:hwDerive 20s ease-in-out infinite;
 }
-html.halloween nav.barre::before{
+html.halloween nav.barre::before,html.noel nav.barre::before{
   content:"";position:absolute;top:0;left:0;width:64px;height:64px;pointer-events:none;opacity:.5;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cg fill='none' stroke='%23897B70' stroke-width='1'%3E%3Cpath d='M0 0 L64 64 M0 0 L34 0 M0 0 L0 34'/%3E%3Cpath d='M11 0 Q11 11 0 11'/%3E%3Cpath d='M23 0 Q23 23 0 23'/%3E%3Cpath d='M37 0 Q37 37 0 37'/%3E%3Cpath d='M50 0 Q50 50 0 50'/%3E%3C/g%3E%3C/svg%3E");
+  background-image:var(--deco-coin);background-size:contain;
 }
 
 /* ---- l'ambiance continue en descendant la page, pas seulement dans le hero ---- */
-html.halloween section{position:relative;isolation:isolate}
-html.halloween section::before{
+html.halloween section,html.noel section{position:relative;isolation:isolate}
+html.halloween section::before,html.noel section::before{
   content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
-  background:radial-gradient(46% 42% at var(--hwx,8%) var(--hwy,0%),rgba(139,95,191,.16),transparent 68%);
+  background:radial-gradient(46% 42% at var(--hwx,8%) var(--hwy,0%),color-mix(in srgb,var(--saison) 16%,transparent),transparent 68%);
 }
-html.halloween section:nth-of-type(odd)::before{--hwx:92%;--hwy:100%;background:radial-gradient(46% 42% at var(--hwx) var(--hwy),rgba(232,160,32,.13),transparent 68%)}
-html.halloween body::after{
-  content:"🎃";position:fixed;z-index:4;pointer-events:none;opacity:.26;font-size:24px;
+html.halloween section:nth-of-type(odd)::before,html.noel section:nth-of-type(odd)::before{--hwx:92%;--hwy:100%;background:radial-gradient(46% 42% at var(--hwx) var(--hwy),rgba(232,160,32,.13),transparent 68%)}
+html.halloween body::after,html.noel body::after{
+  content:var(--deco-flotte);position:fixed;z-index:4;pointer-events:none;opacity:.26;font-size:24px;
   top:40%;left:3%;animation:hwDerive 26s ease-in-out infinite 3s;
 }
-@media (prefers-reduced-motion:reduce){html.halloween body::after{animation:none}}
+@media (prefers-reduced-motion:reduce){html.halloween body::after,html.noel body::after{animation:none}}

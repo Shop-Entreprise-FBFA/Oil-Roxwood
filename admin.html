@@ -1203,10 +1203,11 @@ function enter(){
   chgOuvrir();
   whoami();
   applyPerms(); navBadges();
-  aplHalloween();
-  if(S.settings.halloween&&sessionStorage.getItem('orx_hw_toast')!=='1'){
-    sessionStorage.setItem('orx_hw_toast','1');
-    setTimeout(()=>toast("🎃 Joyeux Halloween, l'équipe Oil Roxwood !",6000),1200);
+  aplTheme();
+  const THEME_TOASTS={halloween:"🎃 Joyeux Halloween, l'équipe Oil Roxwood !",noel:"🎄 Joyeux Noël, l'équipe Oil Roxwood !"};
+  if(THEME_TOASTS[S.settings.theme]&&sessionStorage.getItem('orx_theme_toast')!==S.settings.theme){
+    sessionStorage.setItem('orx_theme_toast',S.settings.theme);
+    setTimeout(()=>toast(THEME_TOASTS[S.settings.theme],6000),1200);
   }
   const bell=document.getElementById('nfBell'); if(bell) bell.style.display='flex';
   nfRefresh();
@@ -1248,7 +1249,7 @@ function logout(){
 }
 
 /* ---- Canari de version : prévient les onglets restés sur une vieille version ---- */
-const APP_VERSION='C-120';
+const APP_VERSION='C-121';
 /* Le bandeau ne doit dire qu'une chose : « une version plus récente existe ».
    Il comparait deux chaînes avec !==, donc il s'allumait aussi dans l'autre
    sens — quand la page ouverte était PLUS récente que version.json, ce qui
@@ -1637,15 +1638,26 @@ document.querySelectorAll('.nav-item[data-view]').forEach(b=>b.onclick=()=>show(
     b.insertAdjacentHTML('afterbegin',`<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${p}</svg>`);
   });
 })();
-/* ---- habillage Halloween (activable/désactivable à tout moment, Paramètres) ----
-   Volontairement discret : le logo (connexion + menu + vitrine) et un léger
-   halo sur l'onglet actif. Les icônes de nav ne sont pas touchées — la plupart
-   sont déjà remplacées par des pictos en traits fins juste au-dessus, et y
-   superposer un emoji aurait doublé l'icône plutôt que de la remplacer. */
-function aplHalloween(){
-  const on=!!(S.settings&&S.settings.halloween);
-  document.documentElement.classList.toggle('halloween',on);
-  const logo=on?'assets/logo-halloween.png':'assets/logo.png';
+/* ---- habillage saisonnier (un seul à la fois — Paramètres) ----
+   S.settings.theme : '' (aucun) | 'halloween' | 'noel'. Un seul sélecteur,
+   jamais deux cases indépendantes : les deux classes CSS s'excluent (pas de
+   fond Halloween ET Noël superposés si on oublie d'en décocher un).
+   Seul Halloween change le logo (image fournie) ; Noël reste sur le logo
+   normal et ne joue que sur les couleurs/décorations. Les icônes de nav ne
+   sont pas touchées — la plupart sont déjà remplacées par des pictos en
+   traits fins juste au-dessus, et y superposer un emoji aurait doublé
+   l'icône plutôt que de la remplacer. */
+const THEMES_SAISON=['halloween','noel'];
+function aplTheme(){
+  // migration unique : l'ancien réglage était une case à cocher (S.settings.halloween,
+  // booléen) ; le nouveau est ce sélecteur à choix unique. Reprend la valeur en place
+  // une fois, pour ne pas éteindre l'habillage de qui l'avait déjà activé.
+  if(S.settings&&S.settings.halloween&&!S.settings.theme){
+    S.settings.theme='halloween'; delete S.settings.halloween; save();
+  }
+  const theme=(S.settings&&S.settings.theme)||'';
+  THEMES_SAISON.forEach(t=>document.documentElement.classList.toggle(t,t===theme));
+  const logo=theme==='halloween'?'assets/logo-halloween.png':'assets/logo.png';
   const lg=document.getElementById('loginLogo'); if(lg) lg.src=logo;
   const bl=document.getElementById('brandLogo'); if(bl) bl.src=logo;
 }
@@ -2736,7 +2748,7 @@ function statsData(){
     objectif:S.settings.objectif||0,
     effectif:effectifPublie(),
     clientsServis:(S.fact&&S.fact.factures.length)||0,
-    halloween:!!(S.settings&&S.settings.halloween),
+    theme:String((S.settings&&S.settings.theme)||''),
     top3:sorted.slice(0,3).filter(r=>r.barils>0).map(r=>({nom:r.nom,barils:r.barils})),
     /* Ce fichier est lisible par n'importe qui sur GitHub Pages, et rien ne lisait
        le détail par personne — ni la vitrine, ni les robots. Il contenait pourtant
@@ -4795,11 +4807,16 @@ function ferDel(id){
 
 /* ================== MISES À JOUR (changelog) ================== */
 const CHANGELOG=[
+ {v:'C-121',d:'21/10/2026',t:'Habillage saisonnier : Noël rejoint Halloween, un seul à la fois',items:[
+   ['🎄','Nouveau thème « Noël »','Mêmes effets qu\'Halloween (fond teinté, panneaux, cartes, bouton doré, décor qui dérive, écran de chargement, bandeau défilant) en rouge/or — logo inchangé, sans image dédiée.'],
+   ['🔧','Un seul habillage à la fois','La case à cocher Halloween devient un sélecteur « Aucun / 🎃 Halloween / 🎄 Noël » (Paramètres → Économie) : impossible d\'avoir les deux en même temps par erreur. Qui avait déjà Halloween activé n\'a rien à refaire, la bascule se fait toute seule.'],
+ ]},
  {v:'C-120',d:'21/10/2026',t:'Dates/heures en sélecteurs, « Qui prévenir » ne propose plus les partis, guide d\'intégration',items:[
    ['🗓️','Dates et heures en sélecteurs, plus en texte libre','« Heures service » (Tablette) : deux sélecteurs heures/minutes. Côté bot Discord : rendez-vous d\'entretien, déclaration d\'absence (début/fin) et date de livraison client passent par des menus déroulants (semaine + jour, heure + minute) au lieu d\'une saisie libre.'],
    ['🐛','« Qui prévenir » dans l\'agenda ne propose plus une personne partie','Un ex-RH (fiche marquée « plus vue au pointage ») restait sélectionnable indéfiniment.'],
    ['📘','Guide d\'intégration mis à jour','Paleto Garage ajouté au contrat garage ; la carte « Responsables runner » et la photo du poste de garde retirées.'],
  ]},
+ {v:'C-119',d:'20/10/2026',t:'Halloween sur la vitrine : correction du cache qui bloquait la mise à jour',items:[
    ['🐛','Deux vraies causes identifiées avant celle-ci','La vitrine ne republiait pas quand seul le drapeau Halloween changeait (C-115), puis un navigateur avec un dashboard ancien en cache a republié sans ce drapeau et écrasé la bonne valeur (corrigé côté bot : la valeur fait désormais foi depuis Paramètres, jamais depuis le calcul d\'un navigateur au hasard).'],
    ['🐛','Les fichiers assets/roxwood-*.css et .js n\'avaient aucun numéro de version','Le navigateur (ou le réseau de diffusion de GitHub Pages) pouvait donc continuer à servir une copie ancienne un moment, même après un rechargement forcé. Chaque fichier partagé porte maintenant la version courante dans son adresse — un changement de version force un téléchargement neuf, sans exception.'],
  ]},
@@ -7999,10 +8016,15 @@ async function params(){
         <div class="f-row"><label class="f-lbl">📜 Salon Discord des rappels — RH</label><input class="field" id="p_salonRH" value="${esc(salonRappelRH())}" placeholder="ex. 1246584841785446480"></div>
         <div class="f-row"><label class="f-lbl">📜 Salon Discord des rappels — Patron, Co Patron, Assistant de direction</label><input class="field" id="p_salonDir" value="${esc(salonRappelDirection())}" placeholder="ex. 1246584841785446480"></div>
       </div>
-      <label style="display:flex;align-items:center;gap:10px;cursor:pointer;margin:16px 0 0;padding:10px 14px;border-radius:10px;border:1px dashed rgba(139,95,191,.5);background:rgba(139,95,191,.06)">
-        <input type="checkbox" id="p_halloween" style="width:19px;height:19px;accent-color:#8B5FBF" ${S.settings.halloween?'checked':''}>
-        <span style="font-size:.85rem">🎃 <b>Habillage Halloween</b><br><small style="color:var(--muted)">Logo, icônes et couleurs de saison sur le dashboard et la vitrine — activable/désactivable à tout moment, ici.</small></span>
-      </label>
+      <div class="f-row" style="margin-top:16px">
+        <label class="f-lbl">🎉 Habillage saisonnier</label>
+        <select class="field" id="p_theme">
+          <option value="" ${!S.settings.theme?'selected':''}>Aucun</option>
+          <option value="halloween" ${S.settings.theme==='halloween'?'selected':''}>🎃 Halloween</option>
+          <option value="noel" ${S.settings.theme==='noel'?'selected':''}>🎄 Noël</option>
+        </select>
+        <p style="color:var(--muted);font-size:.76rem;margin-top:6px">Couleurs et décorations sur le dashboard et la vitrine — un seul à la fois, activable/désactivable ici à tout moment.</p>
+      </div>
       <div style="margin:6px 0 16px;border-top:1px solid var(--line);padding-top:16px">
         <label class="f-lbl">💼 Salaires fixes minimum par poste (direction & co)</label>
         ${(()=>{
@@ -8194,8 +8216,8 @@ function saveParams(){
   S.settings.salonContrats=String($('#p_salon').value||'').replace(/\D/g,'');
   S.settings.salonRappelRH=String(($('#p_salonRH')&&$('#p_salonRH').value)||'').replace(/\D/g,'');
   S.settings.salonRappelDirection=String(($('#p_salonDir')&&$('#p_salonDir').value)||'').replace(/\D/g,'');
-  S.settings.halloween=!!($('#p_halloween')&&$('#p_halloween').checked);
-  aplHalloween();
+  S.settings.theme=String(($('#p_theme')&&$('#p_theme').value)||'');
+  aplTheme();
   jlog('Modification des paramètres');
   save();
   sbPushNow(); // envoi immédiat vers la base partagée, sans différé
@@ -8361,11 +8383,11 @@ new MutationObserver(()=>animateCounters()).observe(document.getElementById('mai
   const hint=document.getElementById('lg_hint');
   const majHint=()=>{ if(hint) hint.style.display=(S.users&&S.users.length)?'none':'block'; };
   majHint();
-  aplHalloween();
+  aplTheme();
   checkRescue();
   checkVersion();
   initSync();
-  sbPull().then(()=>{ majHint(); aplHalloween(); checkDiscordAuth(); });
+  sbPull().then(()=>{ majHint(); aplTheme(); checkDiscordAuth(); });
 })();
 </script>
 

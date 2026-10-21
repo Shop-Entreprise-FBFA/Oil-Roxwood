@@ -384,28 +384,43 @@
   var F = function (n) { return Math.round(n || 0).toLocaleString("fr-FR"); };
   var $ = function (id) { return document.getElementById(id); };
 
-  /* ---- habillage Halloween (activé/désactivé depuis le dashboard, Paramètres) ---- */
+  /* ---- habillage saisonnier (activé/désactivé depuis le dashboard, Paramètres) ----
+     Un seul thème à la fois : '' (aucun) | 'halloween' | 'noel'. */
   var RUBAN1 = ["Bidon d'essence · 180 $ HT", "Pétrole brut · 10 $ / unité", "Livraison 24 h sur San Andreas",
     "Recrutement ouvert", "Devis au 986", "4 grades · primes ×2.5"];
-  var RUBAN1_HW = ["🎃 Édition Halloween au dépôt", "Bidon d'essence · 180 $ HT", "🦇 Livraison même les nuits noires",
-    "Recrutement ouvert", "Devis au 986", "🕸️ 4 grades · primes ×2.5"];
   var RUBAN2 = ["Extraction", "Transport", "Raffinage", "Revente", "Roxwood County", "FlashbackFA"];
-  var RUBAN2_HW = ["Extraction", "Transport", "🎃 Halloween", "Revente", "Roxwood County", "🦇 FlashbackFA"];
-  function halloween(on) {
-    document.documentElement.classList.toggle("halloween", on);
-    var logo = "assets/logo" + (on ? "-halloween" : "") + ".png";
+  var THEMES = {
+    halloween: {
+      kicker: "🎃 Édition Halloween · Roxwood County",
+      ruban1: ["🎃 Édition Halloween au dépôt", "Bidon d'essence · 180 $ HT", "🦇 Livraison même les nuits noires",
+        "Recrutement ouvert", "Devis au 986", "🕸️ 4 grades · primes ×2.5"],
+      ruban2: ["Extraction", "Transport", "🎃 Halloween", "Revente", "Roxwood County", "🦇 FlashbackFA"],
+    },
+    noel: {
+      kicker: "🎄 Édition Noël · Roxwood County",
+      ruban1: ["🎄 Édition Noël au dépôt", "Bidon d'essence · 180 $ HT", "🎁 Livraison même sous la neige",
+        "Recrutement ouvert", "Devis au 986", "❄️ 4 grades · primes ×2.5"],
+      ruban2: ["Extraction", "Transport", "🎄 Noël", "Revente", "Roxwood County", "❄️ FlashbackFA"],
+    },
+  };
+  function appliquerTheme(theme) {
+    var t = THEMES[theme];
+    ["halloween", "noel"].forEach(function (nom) {
+      document.documentElement.classList.toggle(nom, nom === theme);
+    });
+    var logo = "assets/logo" + (theme === "halloween" ? "-halloween" : "") + ".png";
     var nl = $("navLogo"); if (nl) nl.src = logo;
-    var hk = $("heroKicker"); if (hk) hk.textContent = on ? "🎃 Édition Halloween · Roxwood County" : "FlashbackFA · Roxwood County";
+    var hk = $("heroKicker"); if (hk) hk.textContent = t ? t.kicker : "FlashbackFA · Roxwood County";
     var r1 = $("ruban1"), r2 = $("ruban2");
-    if (r1 && window.Roxwood) Roxwood.ruban(r1, (on ? RUBAN1_HW : RUBAN1).concat(on ? RUBAN1_HW : RUBAN1));
-    if (r2 && window.Roxwood) Roxwood.ruban(r2, (on ? RUBAN2_HW : RUBAN2).concat(on ? RUBAN2_HW : RUBAN2));
+    if (r1 && window.Roxwood) Roxwood.ruban(r1, (t ? t.ruban1 : RUBAN1).concat(t ? t.ruban1 : RUBAN1));
+    if (r2 && window.Roxwood) Roxwood.ruban(r2, (t ? t.ruban2 : RUBAN2).concat(t ? t.ruban2 : RUBAN2));
   }
 
   fetch("data/stats-public.json?t=" + Date.now(), { cache: "no-store" })
     .then(function (r) { return r.ok ? r.json() : null; })
     .then(function (d) {
       if (!d) return;
-      halloween(!!d.halloween);
+      appliquerTheme(String(d.theme || ""));
       equipe(d.equipe);                              // l'équipe ne dépend pas de la production
       catalogue(d.produits);                         // les produits non plus
 
