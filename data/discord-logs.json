@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-21T06:30:31.611108+00:00",
+ "maj": "2026-10-21T06:32:31.435444+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1562352594129653913",
+   "t": "2026-10-21T06:31:25.548000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 403x Pétrole Raffiné pour 4030$ par Danté Mendez. 2015$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 403,
+   "montant": 4030,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1562350326923788361",
    "t": "2026-10-21T06:22:25.004000+00:00",
@@ -93574,30 +93590,6 @@
     "playercharacter": "Diego Herrera",
     "playerid": "231487",
     "itemid": "oil"
-   }
-  },
-  {
-   "id": "1561332401337274492-1",
-   "t": "2026-10-18T10:57:32.632000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 144x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1849.58, 6514.93, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7072\nplayerDiscord : 473956733329342484\nplayerName : Marcus de Romanet\nplayerCharacter : Marcus Deromanet\nplayerId : 383067\nitemId : refinedoil",
-   "nom": "Marcus Deromanet",
-   "quantite": 144,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1849.58, 6514.93, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7072",
-    "playerdiscord": "473956733329342484",
-    "playername": "Marcus de Romanet",
-    "playercharacter": "Marcus Deromanet",
-    "playerid": "383067",
-    "itemid": "refinedoil"
    }
   }
  ]
