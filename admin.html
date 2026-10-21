@@ -1248,7 +1248,7 @@ function logout(){
 }
 
 /* ---- Canari de version : prévient les onglets restés sur une vieille version ---- */
-const APP_VERSION='C-119';
+const APP_VERSION='C-120';
 /* Le bandeau ne doit dire qu'une chose : « une version plus récente existe ».
    Il comparait deux chaînes avec !==, donc il s'allumait aussi dans l'autre
    sens — quand la page ouverte était PLUS récente que version.json, ce qui
@@ -2861,7 +2861,7 @@ const SHEETS_DEF = {
     {k:'nom',l:'Nom',t:'text'},{k:'rang',l:'Rang',t:'text'},
     {k:'factures',l:'Factures',t:'num'},{k:'runs',l:'Runs',t:'num'},{k:'ventes',l:'Ventes',t:'num'},
     {k:'_total',l:'Total',t:'calc',f:r=>nn(r.factures)+nn(r.runs)+nn(r.ventes)},
-    {k:'part',l:'Part employé',t:'num'},{k:'heures',l:'Heures service',t:'text'}],
+    {k:'part',l:'Part employé',t:'num'},{k:'heures',l:'Heures service',t:'duree'}],
     tot:['factures','runs','ventes','_total','part'], nouveau:{nom:'',rang:'Intérimaire',factures:0,runs:0,ventes:0,part:0,heures:''}},
   eligibilite:{ico:'✅',label:'Éligibilité',drag:true,cols:[
     {k:'nom',l:'Nom employé',t:'text'},{k:'grade',l:'Grade',t:'text'},{k:'menus',l:'Menus',t:'bool'},{k:'boissons',l:'Boissons',t:'bool'},
@@ -2994,6 +2994,9 @@ function corpsFeuille(){
       if(c.t==='choice') return `<td><select style="background:var(--panel-2);border:1px solid var(--line);color:var(--ink);border-radius:6px;padding:6px 8px;font-size:.82rem" onchange="cellEdit(${i},'${c.k}',this.value)">${(typeof c.opts==='function'?c.opts():c.opts).map(o=>`<option ${r[c.k]===o?'selected':''}>${esc(o)}</option>`).join('')}</select></td>`;
       if(c.t==='date'){ const d=/^\d{4}-\d{2}-\d{2}/.test(r[c.k]||'')?String(r[c.k]).slice(0,10):'';
         return `<td><input type="date" value="${d}" onchange="cellEdit(${i},'${c.k}',this.value)"></td>`; }
+      if(c.t==='duree'){ const m=String(r[c.k]||'').match(/^(\d+)h(\d{1,2})?/); const h=m?+m[1]:0, mn=m&&m[2]?+m[2]:0;
+        return `<td style="white-space:nowrap"><input type="number" min="0" value="${h}" style="width:52px" onchange="cellEditDuree(${i},'${c.k}',this.value,null)"> h
+          <input type="number" min="0" max="59" value="${mn}" style="width:52px" onchange="cellEditDuree(${i},'${c.k}',null,this.value)"> min</td>`; }
       return `<td><input type="text" value="${esc(r[c.k])}" onchange="cellEdit(${i},'${c.k}',this.value)"></td>`;
     }).join('');
     const handle=dragOk?`<td draggable="true" style="cursor:grab;color:var(--muted);text-align:center" title="Glisser pour déplacer la ligne" ondragstart="dragI=${i}">⠿</td>`:'';
@@ -3181,6 +3184,16 @@ function cellEdit(i,k,val){
   save();
   if(curSheet==='tablette') syncRunners(false);
   majCalculsFeuille(i);
+}
+/* Colonne « durée » (ex. Heures service) : deux sélecteurs nombre (heures,
+   minutes) combinés en une seule chaîne « XhYYmin » — même format que ce que
+   le copier-coller depuis la tablette dépose déjà dans cette colonne. */
+function cellEditDuree(i,k,hVal,mnVal){
+  const cur=String(S.sheets[curSheet][i][k]||'');
+  const m=cur.match(/^(\d+)h(\d{1,2})?/);
+  const h=hVal!==null?Math.max(0,+hVal||0):(m?+m[1]:0);
+  const mn=mnVal!==null?Math.min(59,Math.max(0,+mnVal||0)):(m&&m[2]?+m[2]:0);
+  cellEdit(i,k,`${h}h${String(mn).padStart(2,'0')}min`);
 }
 /* Recalcule les colonnes « calc » d'une ligne et les totaux, sur place. */
 function majCalculsFeuille(i){
@@ -4782,7 +4795,11 @@ function ferDel(id){
 
 /* ================== MISES À JOUR (changelog) ================== */
 const CHANGELOG=[
- {v:'C-119',d:'20/10/2026',t:'Les fichiers partagés (styles, scripts) étaient parfois servis en version ancienne',items:[
+ {v:'C-120',d:'21/10/2026',t:'Dates/heures en sélecteurs, « Qui prévenir » ne propose plus les partis, guide d\'intégration',items:[
+   ['🗓️','Dates et heures en sélecteurs, plus en texte libre','« Heures service » (Tablette) : deux sélecteurs heures/minutes. Côté bot Discord : rendez-vous d\'entretien, déclaration d\'absence (début/fin) et date de livraison client passent par des menus déroulants (semaine + jour, heure + minute) au lieu d\'une saisie libre.'],
+   ['🐛','« Qui prévenir » dans l\'agenda ne propose plus une personne partie','Un ex-RH (fiche marquée « plus vue au pointage ») restait sélectionnable indéfiniment.'],
+   ['📘','Guide d\'intégration mis à jour','Paleto Garage ajouté au contrat garage ; la carte « Responsables runner » et la photo du poste de garde retirées.'],
+ ]},
    ['🐛','Deux vraies causes identifiées avant celle-ci','La vitrine ne republiait pas quand seul le drapeau Halloween changeait (C-115), puis un navigateur avec un dashboard ancien en cache a republié sans ce drapeau et écrasé la bonne valeur (corrigé côté bot : la valeur fait désormais foi depuis Paramètres, jamais depuis le calcul d\'un navigateur au hasard).'],
    ['🐛','Les fichiers assets/roxwood-*.css et .js n\'avaient aucun numéro de version','Le navigateur (ou le réseau de diffusion de GitHub Pages) pouvait donc continuer à servir une copie ancienne un moment, même après un rechargement forcé. Chaque fichier partagé porte maintenant la version courante dans son adresse — un changement de version force un téléchargement neuf, sans exception.'],
  ]},
@@ -6776,7 +6793,10 @@ function groupePrevenir(nom){
   return '';
 }
 function nomsAPrevenir(){
-  const m=new Map(), add=n=>{ n=String(n||'').trim(); if(n&&!m.has(n.toLowerCase())) m.set(n.toLowerCase(),n); };
+  // une fiche RH marquée « partie » (flagOut, plus vue au pointage) ne doit
+  // plus être proposée — sinon un ex-RH reste sélectionnable indéfiniment.
+  const partis=new Set(((S.sheets&&S.sheets.rh)||[]).filter(x=>x.flagOut).map(x=>normNom(x.nom)));
+  const m=new Map(), add=n=>{ n=String(n||'').trim(); if(n&&!partis.has(normNom(n))&&!m.has(n.toLowerCase())) m.set(n.toLowerCase(),n); };
   (S.runners||[]).filter(r=>estCommercial(r)).forEach(r=>add(r.nom));
   ((S.sheets&&S.sheets.rh)||[]).forEach(x=>{ if(/commercial|^rh$|patron|assistant de direction/i.test(String(x.grade||'').trim())) add(x.nom); });
   (S.users||[]).filter(u=>['commercial','respcom','rh','direction','assistdir'].includes(u.role)).forEach(u=>add(u.user));
