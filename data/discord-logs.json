@@ -1,11 +1,48 @@
 {
- "maj": "2026-10-21T22:16:38.445240+00:00",
+ "maj": "2026-10-21T22:18:38.511232+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1562590466640191622",
+   "t": "2026-10-21T22:16:38.774000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 412x Pétrole Raffiné pour 4120$ par Korlane Lison. 2060$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 412,
+   "montant": 4120,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1562590422403125260",
+   "t": "2026-10-21T22:16:28.227000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 5730\nplayerDiscord : 473956733329342484\nplayerName : Marcus de Romanet\nplayerCharacter : Marcus Deromanet\nplayerId : 383067\nvehiclePlate : HM1337JY\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Marcus Deromanet",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "5730",
+    "playerdiscord": "473956733329342484",
+    "playername": "Marcus de Romanet",
+    "playercharacter": "Marcus Deromanet",
+    "playerid": "383067",
+    "vehicleplate": "HM1337JY",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1562589962409615371",
    "t": "2026-10-21T22:14:38.556000+00:00",
