@@ -1,11 +1,35 @@
 {
- "maj": "2026-10-21T07:14:32.234468+00:00",
+ "maj": "2026-10-21T07:16:31.314814+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1562363416574959688",
+   "t": "2026-10-21T07:14:25.820000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\na retiré 50x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1844.47, 6515.64, 16.73\ntargetPosition : -1844.79, 6516.31, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7385\nplayerDiscord : 726178701867221134\nplayerName : Cristale\nplayerCharacter : Athéna Andershon\nplayerId : 196876\nitemId : refinedoil",
+   "nom": "Athéna Andershon",
+   "quantite": 50,
+   "montant": null,
+   "type": "coffre_retrait",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1844.47, 6515.64, 16.73",
+    "targetposition": "-1844.79, 6516.31, 15.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "7385",
+    "playerdiscord": "726178701867221134",
+    "playername": "Cristale",
+    "playercharacter": "Athéna Andershon",
+    "playerid": "196876",
+    "itemid": "refinedoil"
+   }
+  },
   {
    "id": "1562363161426919528-0",
    "t": "2026-10-21T07:13:24.988000+00:00",
@@ -93552,30 +93576,6 @@
     "playercharacter": "Bjorn Frost",
     "playerid": "361708",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1561334904367747166-2",
-   "t": "2026-10-18T11:07:29.401000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 46x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3084.33, 6815.67, 44.73\ntargetPosition : -3084.39, 6815.87, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7620\nplayerDiscord : 826526979204841482\nplayerName : JumpyNewt1770\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : oil",
-   "nom": "Diego Herrera",
-   "quantite": 46,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-3084.33, 6815.67, 44.73",
-    "targetposition": "-3084.39, 6815.87, 43.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7620",
-    "playerdiscord": "826526979204841482",
-    "playername": "JumpyNewt1770",
-    "playercharacter": "Diego Herrera",
-    "playerid": "231487",
-    "itemid": "oil"
    }
   }
  ]
