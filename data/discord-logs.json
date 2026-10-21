@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-21T22:52:40.481894+00:00",
+ "maj": "2026-10-21T22:54:37.970361+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1562599505700978831",
+   "t": "2026-10-21T22:52:33.854000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 432x Pétrole Raffiné pour 4320$ par Cristóbal Perrera. 2160$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 432,
+   "montant": 4320,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1562598225548943544",
    "t": "2026-10-21T22:47:28.642000+00:00",
@@ -93875,30 +93891,6 @@
     "playercharacter": "Diego Herrera",
     "playerid": "231487",
     "itemid": "_aloevera"
-   }
-  },
-  {
-   "id": "1561527421042167854-1",
-   "t": "2026-10-18T23:52:28.953000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 14x Poulet Karaage dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1842.42, 6522.16, 16.73\ntargetPosition : -1842.58, 6521.16, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 4653\nplayerDiscord : 826526979204841482\nplayerName : JumpyNewt1770\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : _pouletkar",
-   "nom": "Diego Herrera",
-   "quantite": 14,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1842.42, 6522.16, 16.73",
-    "targetposition": "-1842.58, 6521.16, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "4653",
-    "playerdiscord": "826526979204841482",
-    "playername": "JumpyNewt1770",
-    "playercharacter": "Diego Herrera",
-    "playerid": "231487",
-    "itemid": "_pouletkar"
    }
   }
  ]
