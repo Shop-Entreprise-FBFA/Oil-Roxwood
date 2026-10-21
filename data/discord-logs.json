@@ -1,11 +1,35 @@
 {
- "maj": "2026-10-21T18:48:42.169946+00:00",
+ "maj": "2026-10-21T18:52:39.032058+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1562538587248001140",
+   "t": "2026-10-21T18:50:29.763000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 58x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3089.42, 6813.65, 44.73\ntargetPosition : -3089.68, 6814.50, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 8\nplayerDiscord : 767332288744128512\nplayerName : JULIO COLLINS\nplayerCharacter : Julio Collins\nplayerId : 356873\nitemId : oil",
+   "nom": "Julio Collins",
+   "quantite": 58,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-3089.42, 6813.65, 44.73",
+    "targetposition": "-3089.68, 6814.50, 43.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "8",
+    "playerdiscord": "767332288744128512",
+    "playername": "JULIO COLLINS",
+    "playercharacter": "Julio Collins",
+    "playerid": "356873",
+    "itemid": "oil"
+   }
+  },
   {
    "id": "1562537575858831374-0",
    "t": "2026-10-21T18:46:28.629000+00:00",
@@ -92312,22 +92336,6 @@
     "playercharacter": "Laurent Roquel",
     "playerid": "282695",
     "itemid": "iron"
-   }
-  },
-  {
-   "id": "1561451210270052373",
-   "t": "2026-10-18T18:49:38.889000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 633x Pétrole Raffiné pour 6330$ par Clara Soules. 3165$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 633,
-   "montant": 6330,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
