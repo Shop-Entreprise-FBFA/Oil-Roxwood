@@ -1249,7 +1249,7 @@ function logout(){
 }
 
 /* ---- Canari de version : prévient les onglets restés sur une vieille version ---- */
-const APP_VERSION='C-121';
+const APP_VERSION='C-122';
 /* Le bandeau ne doit dire qu'une chose : « une version plus récente existe ».
    Il comparait deux chaînes avec !==, donc il s'allumait aussi dans l'autre
    sens — quand la page ouverte était PLUS récente que version.json, ce qui
@@ -3249,18 +3249,20 @@ function syncRunners(silent){
   S.sheets.tablette.forEach(row=>{
     const nom=String(row.nom||'').trim();
     if(!nom||norm(nom).startsWith('nom')||norm(nom).startsWith('total')||/^[\d.,\s]+$/.test(nom)) return; // ignore en-têtes, totaux et lignes parasites
-    const known=MAP[norm(row.rang)];
-    const g=known!==undefined?known:0; // hors grades raffineur : quota Intérimaire
+    const rangNorm=norm(row.rang);
+    const estStg=rangNorm==='stagiaire'; // période d'essai : jamais traitée comme un poste de direction
+    const known=MAP[rangNorm];
+    const g=known!==undefined?known:0; // hors grades raffineur (et stagiaire) : quota Intérimaire
     const rang=String(row.rang||'').trim();
-    const poste=(known===undefined&&rang&&rang!=='-')?rang:null; // Patron, Commercial, RH…
+    const poste=(!estStg&&known===undefined&&rang&&rang!=='-')?rang:null; // Patron, Commercial, RH…
     present.add(nom.toLowerCase());
     // barils de la semaine = colonne Runs de la Tablette ($ ÷ 5)
     const barilsSem=Math.round(nn(row.runs)/5);
     let r=S.runners.find(x=>x.nom.toLowerCase()===nom.toLowerCase());
-    if(r){ if(r.grade!==g&&r.src==='tablette'){ r.grade=g; updated++; syncRhGrade(r); } r.src='tablette'; r.poste=poste; }
+    if(r){ if(r.grade!==g&&r.src==='tablette'){ r.grade=g; updated++; syncRhGrade(r); } r.src='tablette'; r.poste=poste; r.stagiaire=estStg; }
     else{
       r={id:Date.now()+Math.floor(Math.random()*1e6),nom,discord:'',grade:g,
-        barils:0,total:0,runs:[],src:'tablette',poste};
+        barils:0,total:0,runs:[],src:'tablette',poste,stagiaire:estStg};
       S.runners.push(r); added++;
     }
     if(r.src==='tablette'){
@@ -4807,6 +4809,10 @@ function ferDel(id){
 
 /* ================== MISES À JOUR (changelog) ================== */
 const CHANGELOG=[
+ {v:'C-122',d:'21/10/2026',t:'Sélecteur date/heure du bot corrigé, stagiaires retirés des émetteurs',items:[
+   ['🐛','Le sélecteur date + heure du bot plantait au premier clic','La commande client, le rendez-vous d\'entretien… tombaient en erreur dès qu\'on touchait un menu. Corrigé.'],
+   ['🐛','Des stagiaires apparaissaient dans la liste des émetteurs de facture','La synchro tablette traitait le rang « Stagiaire » comme un poste de direction (comme Patron ou RH) au lieu du grade spécial qu\'il est — il pouvait alors être choisi comme émetteur. Se corrige tout seul à la prochaine synchro tablette.'],
+ ]},
  {v:'C-121',d:'21/10/2026',t:'Habillage saisonnier : Noël rejoint Halloween, un seul à la fois',items:[
    ['🎄','Nouveau thème « Noël »','Mêmes effets qu\'Halloween (fond teinté, panneaux, cartes, bouton doré, décor qui dérive, écran de chargement, bandeau défilant) en rouge/or — logo inchangé, sans image dédiée.'],
    ['🔧','Un seul habillage à la fois','La case à cocher Halloween devient un sélecteur « Aucun / 🎃 Halloween / 🎄 Noël » (Paramètres → Économie) : impossible d\'avoir les deux en même temps par erreur. Qui avait déjà Halloween activé n\'a rien à refaire, la bascule se fait toute seule.'],
