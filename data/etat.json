@@ -13265,15 +13265,22 @@
    {
     "date": "2026-10-21",
     "client": "Vigneron",
-    "quantite": 250,
+    "quantite": 167,
     "qui": "Emma Collins-rodriguez",
     "fact": 253171
    },
    {
     "date": "2026-10-21",
     "client": "Vigneron",
-    "quantite": 250,
+    "quantite": 167,
     "qui": "William Rodriguez-collins",
+    "fact": 253171
+   },
+   {
+    "date": "2026-10-21",
+    "client": "Vigneron",
+    "quantite": 166,
+    "qui": "Julio Collins",
     "fact": 253171
    }
   ],
@@ -16050,24 +16057,25 @@
     "num": 253171,
     "date": "2026-10-21",
     "client": "Vigneron",
-    "emetteur": "Emma Collins-rodriguez, William Rodriguez-collins",
+    "emetteur": "Emma Collins-rodriguez, William Rodriguez-collins, Julio Collins",
     "postop": false,
     "lignes": [
      {
       "ref": "CMD",
       "qte": 500,
       "tva": 0,
+      "desc": "bidons d'essence ",
       "pu": 180,
       "ht": 90000,
-      "ttc": 90000,
-      "desc": "bidons d'essence "
+      "ttc": 90000
      }
     ],
     "offert": 0,
     "ht": 90000,
     "ttc": 90000,
     "poids": 1000,
-    "statut": "attente"
+    "statut": "attente",
+    "modifiee": 1792590415351
    },
    {
     "num": 253170,
@@ -54830,17 +54838,17 @@
   "theme": "halloween"
  },
  "_cid": "g829xivdaon",
- "_maj": 1792590409322,
- "_rev": "qjmbntsnz6-mvi61qzq",
+ "_maj": 1792590415364,
+ "_rev": "dkyg57lfaij-mvi61wag",
  "_majSec": {
   "fer": 1792590336932,
-  "fact": 1792589644440,
+  "fact": 1792590415351,
   "users": 1792589633515,
   "weeks": 1792400944983,
-  "sheets": 1792589553496,
+  "sheets": 1792590415351,
   "_qcFix1": 1792090599970,
   "_wkFix1": 1792090599970,
-  "journal": 1792589633515,
+  "journal": 1792590415364,
   "pending": 1792090599970,
   "prodDer": 1792090599970,
   "runners": 1792410495912,
@@ -54854,7 +54862,7 @@
   "primesExtra": 1792090599970,
   "quotasComHist": 1792400944983,
   "profils": 1792090599970,
-  "_tables": 1792590409322,
+  "_tables": 1792590415351,
   "_permsFix1": 1792090599970,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792090599970,
@@ -54871,6 +54879,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1792590415416,
+   "u": "William Rodriguez-collins",
+   "a": "Facture n°253171 modifiée — émetteur Emma Collins-rodriguez, William Rodriguez-collins → Emma Collins-rodriguez, William Rodriguez-collins, Julio Collins"
+  },
   {
    "t": 1792589639569,
    "u": "Julio Collins",
@@ -56365,11 +56378,6 @@
    "t": 1791222949310,
    "u": "?",
    "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1791222826651,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
   }
  ],
  "prodDer": {
@@ -56751,7 +56759,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-21T13:46:53.030Z",
+  "maj": "2026-10-21T13:46:59.896Z",
   "semaine": 43,
   "totalBarils": 204334,
   "ca": 1021670,
