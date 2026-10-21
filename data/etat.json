@@ -13261,6 +13261,20 @@
     "client": "Citoyen ⚡",
     "quantite": 100,
     "qui": "Stella Collins"
+   },
+   {
+    "date": "2026-10-21",
+    "client": "Vigneron",
+    "quantite": 250,
+    "qui": "Emma Collins-rodriguez",
+    "fact": 253171
+   },
+   {
+    "date": "2026-10-21",
+    "client": "Vigneron",
+    "quantite": 250,
+    "qui": "William Rodriguez-collins",
+    "fact": 253171
    }
   ],
   "collection": [
@@ -15968,7 +15982,7 @@
     "rib": "20013",
     "tel": "",
     "adresse": "Los Santos",
-    "lastCmd": "2026-09-21"
+    "lastCmd": "2026-10-21"
    },
    {
     "nom": "Vinewood Visual Studio",
@@ -16030,8 +16044,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253171,
+  "compteur": 253172,
   "factures": [
+   {
+    "num": 253171,
+    "date": "2026-10-21",
+    "client": "Vigneron",
+    "emetteur": "Emma Collins-rodriguez, William Rodriguez-collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 500,
+      "tva": 0,
+      "pu": 180,
+      "ht": 90000,
+      "ttc": 90000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 90000,
+    "ttc": 90000,
+    "poids": 1000,
+    "statut": "attente"
+   },
    {
     "num": 253170,
     "date": "2026-10-20",
@@ -54745,14 +54782,14 @@
   "theme": "halloween"
  },
  "_cid": "g829xivdaon",
- "_maj": 1792589509574,
- "_rev": "7p9aem9ose-mvi5ign0",
+ "_maj": 1792589553508,
+ "_rev": "jegwqecjqgk-mvi5jew9",
  "_majSec": {
   "fer": 1792510012100,
-  "fact": 1792517497444,
+  "fact": 1792589553496,
   "users": 1792510008974,
   "weeks": 1792400944983,
-  "sheets": 1792531766580,
+  "sheets": 1792589553496,
   "_qcFix1": 1792090599970,
   "_wkFix1": 1792090599970,
   "journal": 1792588779726,
@@ -54769,7 +54806,7 @@
   "primesExtra": 1792090599970,
   "quotasComHist": 1792400944983,
   "profils": 1792090599970,
-  "_tables": 1792589509574,
+  "_tables": 1792589553496,
   "_permsFix1": 1792090599970,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792090599970,
@@ -56666,13 +56703,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-21T13:31:53.148Z",
+  "maj": "2026-10-21T13:32:37.545Z",
   "semaine": 43,
   "totalBarils": 204334,
   "ca": 1021670,
   "objectif": 375000,
   "effectif": 107,
-  "clientsServis": 156,
+  "clientsServis": 157,
   "theme": "halloween",
   "top3": [
    {
