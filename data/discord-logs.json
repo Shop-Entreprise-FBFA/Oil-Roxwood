@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-21T19:04:39.170470+00:00",
+ "maj": "2026-10-21T19:10:40.375204+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1562542899957080066",
+   "t": "2026-10-21T19:07:37.993000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 200x Pétrole Raffiné pour 2000$ par Korlane Lison. 1000$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 200,
+   "montant": 2000,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1562541887833907243",
    "t": "2026-10-21T19:03:36.684000+00:00",
@@ -92542,48 +92558,6 @@
    "champs": {
     "position": "-1816.72, 6565.71, 16.73",
     "targetposition": "-1815.66, 6565.56, 15.98",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "3498",
-    "playerdiscord": "707695913187016785",
-    "playername": "ShySpider2463",
-    "playercharacter": "Laurent Roquel",
-    "playerid": "282695",
-    "itemid": "iron"
-   }
-  },
-  {
-   "id": "1561455501718323384-0",
-   "t": "2026-10-18T19:06:42.050000+00:00",
-   "auteur": "Logs - Achat fer",
-   "texte": "Achat fer\na acheté 100x fer pour 500$\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3498\nplayerDiscord : 707695913187016785\nplayerName : ShySpider2463\nplayerCharacter : Laurent Roquel\nplayerId : 282695\nitemId : iron",
-   "nom": "Laurent Roquel",
-   "quantite": 100,
-   "montant": 500,
-   "type": "achat_fer",
-   "salon": "1247565070423167100",
-   "champs": {
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "3498",
-    "playerdiscord": "707695913187016785",
-    "playername": "ShySpider2463",
-    "playercharacter": "Laurent Roquel",
-    "playerid": "282695",
-    "itemid": "iron"
-   }
-  },
-  {
-   "id": "1561455501718323384-1",
-   "t": "2026-10-18T19:06:42.050000+00:00",
-   "auteur": "Logs - Achat fer",
-   "texte": "Achat fer\na acheté 54x fer pour 270$\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3498\nplayerDiscord : 707695913187016785\nplayerName : ShySpider2463\nplayerCharacter : Laurent Roquel\nplayerId : 282695\nitemId : iron",
-   "nom": "Laurent Roquel",
-   "quantite": 54,
-   "montant": 270,
-   "type": "achat_fer",
-   "salon": "1247565070423167100",
-   "champs": {
     "jobid": "76",
     "jobname": "Oil RoxWood",
     "playernetid": "3498",
