@@ -1,11 +1,35 @@
 {
- "maj": "2026-10-22T17:16:46.642538+00:00",
+ "maj": "2026-10-22T17:18:43.984406+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1562877772081405984",
+   "t": "2026-10-22T17:18:17.729000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 36x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1844.81, 6515.72, 16.73\ntargetPosition : -1844.79, 6516.31, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1358\nplayerDiscord : 726178701867221134\nplayerName : Cristale\nplayerCharacter : Athéna Andershon\nplayerId : 196876\nitemId : refinedoil",
+   "nom": "Athéna Andershon",
+   "quantite": 36,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1844.81, 6515.72, 16.73",
+    "targetposition": "-1844.79, 6516.31, 15.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "1358",
+    "playerdiscord": "726178701867221134",
+    "playername": "Cristale",
+    "playercharacter": "Athéna Andershon",
+    "playerid": "196876",
+    "itemid": "refinedoil"
+   }
+  },
   {
    "id": "1562877270958411779-0",
    "t": "2026-10-22T17:16:18.252000+00:00",
@@ -72916,27 +72940,6 @@
     "playercharacter": "Bjorn Frost",
     "playerid": "361708",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1561790652721795153",
-   "t": "2026-10-19T17:18:28.276000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 2486\nplayerDiscord : 1461371532373921938\nplayerName : JumpyGoose3368\nplayerCharacter : Mero Duval\nplayerId : 383055\nvehiclePlate : AY0298ZV\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Mero Duval",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "2486",
-    "playerdiscord": "1461371532373921938",
-    "playername": "JumpyGoose3368",
-    "playercharacter": "Mero Duval",
-    "playerid": "383055",
-    "vehicleplate": "AY0298ZV",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
