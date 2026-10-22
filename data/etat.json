@@ -13376,6 +13376,20 @@
     "client": "Citoyen ⚡",
     "quantite": 100,
     "qui": "Julio Collins"
+   },
+   {
+    "date": "2026-10-22",
+    "client": "La Main de Minuit",
+    "quantite": 150,
+    "qui": "Laurent Roquel",
+    "fact": 253174
+   },
+   {
+    "date": "2026-10-22",
+    "client": "La Main de Minuit",
+    "quantite": 150,
+    "qui": "Julio Collins",
+    "fact": 253174
    }
   ],
   "collection": [
@@ -14921,7 +14935,7 @@
     "rib": "",
     "tel": "",
     "adresse": "Los Santos",
-    "lastCmd": "2026-10-09"
+    "lastCmd": "2026-10-22"
    },
    {
     "nom": "Famiglia Virelli",
@@ -16145,8 +16159,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253174,
+  "compteur": 253175,
   "factures": [
+   {
+    "num": 253174,
+    "date": "2026-10-22",
+    "client": "La Main de Minuit",
+    "emetteur": "Laurent Roquel, Julio Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 300,
+      "tva": 0.05,
+      "pu": 180,
+      "ht": 54000,
+      "ttc": 56700,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 54000,
+    "ttc": 56700,
+    "poids": 600,
+    "statut": "attente"
+   },
    {
     "num": 253173,
     "date": "2026-10-21",
@@ -55034,14 +55071,14 @@
   "theme": "halloween"
  },
  "_cid": "pc6azdm98fp",
- "_maj": 1792688804751,
- "_rev": "lvz3y2ussoq-mvjsn8c9",
+ "_maj": 1792688861123,
+ "_rev": "j43glu9afy8-mvjsnwa8",
  "_majSec": {
   "fer": 1792678160057,
-  "fact": 1792600918439,
+  "fact": 1792688861113,
   "users": 1792688782516,
   "weeks": 1792400944983,
-  "sheets": 1792668627696,
+  "sheets": 1792688861113,
   "_qcFix1": 1792090599970,
   "_wkFix1": 1792090599970,
   "journal": 1792688782516,
@@ -55058,7 +55095,7 @@
   "primesExtra": 1792090599970,
   "quotasComHist": 1792400944983,
   "profils": 1792090599970,
-  "_tables": 1792688782415,
+  "_tables": 1792688861113,
   "_permsFix1": 1792090599970,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792090599970,
@@ -56962,13 +56999,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-22T17:07:13.017Z",
+  "maj": "2026-10-22T17:07:44.048Z",
   "semaine": 43,
   "totalBarils": 204334,
   "ca": 1021670,
   "objectif": 375000,
   "effectif": 107,
-  "clientsServis": 159,
+  "clientsServis": 160,
   "theme": "halloween",
   "top3": [
    {
