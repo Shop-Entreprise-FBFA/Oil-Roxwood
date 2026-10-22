@@ -1,11 +1,35 @@
 {
- "maj": "2026-10-22T22:06:50.834389+00:00",
+ "maj": "2026-10-22T22:10:47.488049+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1562951258044629003",
+   "t": "2026-10-22T22:10:18.148000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 78x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1850.87, 6514.65, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 4719\nplayerDiscord : 1324446830922170483\nplayerName : samaxsimon2010\nplayerCharacter : Tony Ernandez\nplayerId : 383610\nitemId : refinedoil",
+   "nom": "Tony Ernandez",
+   "quantite": 78,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1850.87, 6514.65, 16.73",
+    "targetposition": "-1850.63, 6515.15, 15.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "4719",
+    "playerdiscord": "1324446830922170483",
+    "playername": "samaxsimon2010",
+    "playercharacter": "Tony Ernandez",
+    "playerid": "383610",
+    "itemid": "refinedoil"
+   }
+  },
   {
    "id": "1562950247120904286",
    "t": "2026-10-22T22:06:17.125000+00:00",
@@ -77664,70 +77688,6 @@
     "playercharacter": "Mero Duval",
     "playerid": "383055",
     "vehicleplate": "GD7230WT",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1561863630432239779-0",
-   "t": "2026-10-19T22:08:27.518000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 78x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1843.49, 6519.31, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 4483\nplayerDiscord : 398615462633668630\nplayerName : MoonBiirr\nplayerCharacter : Hassan Cheb\nplayerId : 321847\nitemId : refinedoil",
-   "nom": "Hassan Cheb",
-   "quantite": 78,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1843.49, 6519.31, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "4483",
-    "playerdiscord": "398615462633668630",
-    "playername": "MoonBiirr",
-    "playercharacter": "Hassan Cheb",
-    "playerid": "321847",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1561863630432239779-1",
-   "t": "2026-10-19T22:08:27.518000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 73x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -1843.49, 6519.31, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 4483\nplayerDiscord : 398615462633668630\nplayerName : MoonBiirr\nplayerCharacter : Hassan Cheb\nplayerId : 321847\nitemId : oil",
-   "nom": "Hassan Cheb",
-   "quantite": 73,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1843.49, 6519.31, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "4483",
-    "playerdiscord": "398615462633668630",
-    "playername": "MoonBiirr",
-    "playercharacter": "Hassan Cheb",
-    "playerid": "321847",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1561863414970712108",
-   "t": "2026-10-19T22:07:36.148000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 72x Pétrole Raffiné pour 720$ par Mero Duval. 360$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 72,
-   "montant": 720,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
     "jobid": "76",
     "jobname": "Oil RoxWood"
    }
