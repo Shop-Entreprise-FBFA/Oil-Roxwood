@@ -1,11 +1,32 @@
 {
- "maj": "2026-10-22T21:06:46.914000+00:00",
+ "maj": "2026-10-22T21:18:48.742269+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1562938165596266548",
+   "t": "2026-10-22T21:18:16.665000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 4719\nplayerDiscord : 1324446830922170483\nplayerName : samaxsimon2010\nplayerCharacter : Tony Ernandez\nplayerId : 383610\nvehiclePlate : AS5715VX\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Tony Ernandez",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "4719",
+    "playerdiscord": "1324446830922170483",
+    "playername": "samaxsimon2010",
+    "playercharacter": "Tony Ernandez",
+    "playerid": "383610",
+    "vehicleplate": "AS5715VX",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1562934921025028109-0",
    "t": "2026-10-22T21:05:23.099000+00:00",
@@ -78279,22 +78300,6 @@
     "playercharacter": "Hassan Cheb",
     "playerid": "321847",
     "itemid": "oil"
-   }
-  },
-  {
-   "id": "1561850871350829219",
-   "t": "2026-10-19T21:17:45.516000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 486x Pétrole Raffiné pour 4860$ par Mikaël Owens. 2430$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 486,
-   "montant": 4860,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
