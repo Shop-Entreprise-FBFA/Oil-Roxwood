@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-22T08:23:04.025910+00:00",
+ "maj": "2026-10-22T08:25:06.387422+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1562743431288332419",
+   "t": "2026-10-22T08:24:28.388000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 492x Pétrole Raffiné pour 4920$ par Francky Gallagher. 2460$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 492,
+   "montant": 4920,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1562741663770738739",
    "t": "2026-10-22T08:17:26.979000+00:00",
@@ -93709,30 +93725,6 @@
   },
   {
    "id": "1561687204898676799-0",
-   "t": "2026-10-19T10:27:24.393000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 69x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -3090.94, 6818.89, 44.73\ntargetPosition : -3090.06, 6818.50, 43.97\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 8162\nplayerDiscord : 948542221429379112\nplayerName : IcyToad7886\nplayerCharacter : Stella Collins\nplayerId : 232050\nitemId : oil",
-   "nom": "Stella Collins",
-   "quantite": 69,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-3090.94, 6818.89, 44.73",
-    "targetposition": "-3090.06, 6818.50, 43.97",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "8162",
-    "playerdiscord": "948542221429379112",
-    "playername": "IcyToad7886",
-    "playercharacter": "Stella Collins",
-    "playerid": "232050",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1561687204898676799-1",
    "t": "2026-10-19T10:27:24.393000+00:00",
    "auteur": "Logs - Coffre",
    "texte": "Coffre\na retiré 69x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -3090.94, 6818.89, 44.73\ntargetPosition : -3090.06, 6818.50, 43.97\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 8162\nplayerDiscord : 948542221429379112\nplayerName : IcyToad7886\nplayerCharacter : Stella Collins\nplayerId : 232050\nitemId : oil",
