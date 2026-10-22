@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-22T21:28:47.192412+00:00",
+ "maj": "2026-10-22T21:30:48.057919+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1562941218118439083",
+   "t": "2026-10-22T21:30:24.443000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 56x Pétrole Raffiné pour 560$ par Alexander Bart. 280$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 56,
+   "montant": 560,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1562940715686821971",
    "t": "2026-10-22T21:28:24.654000+00:00",
@@ -78058,78 +78074,6 @@
    "texte": "Coffre\na retiré 7x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -1844.70, 6519.13, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 4483\nplayerDiscord : 398615462633668630\nplayerName : MoonBiirr\nplayerCharacter : Hassan Cheb\nplayerId : 321847\nitemId : oil",
    "nom": "Hassan Cheb",
    "quantite": 7,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1844.70, 6519.13, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "4483",
-    "playerdiscord": "398615462633668630",
-    "playername": "MoonBiirr",
-    "playercharacter": "Hassan Cheb",
-    "playerid": "321847",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1561854058128736268-0",
-   "t": "2026-10-19T21:30:25.303000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 74x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1844.70, 6519.13, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 4483\nplayerDiscord : 398615462633668630\nplayerName : MoonBiirr\nplayerCharacter : Hassan Cheb\nplayerId : 321847\nitemId : refinedoil",
-   "nom": "Hassan Cheb",
-   "quantite": 74,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1844.70, 6519.13, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "4483",
-    "playerdiscord": "398615462633668630",
-    "playername": "MoonBiirr",
-    "playercharacter": "Hassan Cheb",
-    "playerid": "321847",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1561854058128736268-1",
-   "t": "2026-10-19T21:30:25.303000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 57x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -1844.70, 6519.13, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 4483\nplayerDiscord : 398615462633668630\nplayerName : MoonBiirr\nplayerCharacter : Hassan Cheb\nplayerId : 321847\nitemId : oil",
-   "nom": "Hassan Cheb",
-   "quantite": 57,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1844.70, 6519.13, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "4483",
-    "playerdiscord": "398615462633668630",
-    "playername": "MoonBiirr",
-    "playercharacter": "Hassan Cheb",
-    "playerid": "321847",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1561853805300289600",
-   "t": "2026-10-19T21:29:25.024000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 49x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -1844.70, 6519.13, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 4483\nplayerDiscord : 398615462633668630\nplayerName : MoonBiirr\nplayerCharacter : Hassan Cheb\nplayerId : 321847\nitemId : oil",
-   "nom": "Hassan Cheb",
-   "quantite": 49,
    "montant": null,
    "type": "coffre_retrait",
    "salon": "1245400913066066099",
