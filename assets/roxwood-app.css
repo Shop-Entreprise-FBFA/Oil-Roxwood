@@ -713,9 +713,21 @@ html.halloween #main::before,html.noel #main::before{
   bottom:40px;right:4%;animation:hwDerive 26s ease-in-out infinite 3s;
 }
 html.halloween #whoami,html.noel #whoami{border-top-color:color-mix(in srgb,var(--saison) 35%,transparent)}
+/* scintillement doré sur les cartes, Noël seulement */
+html.noel .panel::after{
+  content:"";position:absolute;inset:0;pointer-events:none;border-radius:inherit;
+  background-image:
+    radial-gradient(1.6px 1.6px at 85% 15%, var(--saison) 50%, transparent 52%),
+    radial-gradient(1.3px 1.3px at 92% 48%, var(--accent) 50%, transparent 52%),
+    radial-gradient(1.3px 1.3px at 78% 78%, var(--saison) 50%, transparent 52%),
+    radial-gradient(1.1px 1.1px at 12% 85%, var(--accent) 50%, transparent 52%);
+  animation:noelScintille 3.4s ease-in-out infinite;
+}
+@keyframes noelScintille{0%,100%{opacity:.2}50%{opacity:.95}}
 
 @media (prefers-reduced-motion:reduce){
   .chg-bras,.chg-tige{animation:none}
+  html.noel .panel::after{animation:none}
   html.halloween #app::after,html.noel #app::after,
   html.halloween #login .login-card::after,html.noel #login .login-card::after,
   html.halloween #main::before,html.noel #main::before{animation:none}

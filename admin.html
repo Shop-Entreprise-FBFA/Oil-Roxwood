@@ -34,6 +34,8 @@ window.ROXWOOD_CFG = {
 <link rel="stylesheet" href="assets/roxwood-app.css?v=C-119">
 </head>
 <body>
+<div id="noelNeige" aria-hidden="true"></div>
+<div id="noelGuirlande" aria-hidden="true"></div>
 
 <!-- ============ LOGIN ============ -->
 <div id="login">
@@ -41,7 +43,7 @@ window.ROXWOOD_CFG = {
   <div class="login-card">
     <i class="rivet a"></i><i class="rivet b"></i><i class="rivet c"></i><i class="rivet d"></i>
     <span class="enseigne" aria-hidden="true">ACCÈS</span>
-    <img id="loginLogo" src="assets/logo.png" alt="Oil Roxwood">
+    <span class="logo-wrap"><img id="loginLogo" src="assets/logo.png" alt="Oil Roxwood"></span>
     <h1>OIL <b>ROXWOOD</b></h1>
     <p>Espace membre — connexion sécurisée<br><small>version <span id="verTag">C-98</span></small></p>
     <button type="button" class="btn-discord" onclick="loginDiscord()">
@@ -91,7 +93,7 @@ window.ROXWOOD_CFG = {
          et l'animation au survol, l'entrée de menu « Voir le site public » ne
          faisait que répéter une affordance existante. Le voyant de synchro reste
          cliquable à l'intérieur : son gestionnaire arrête la navigation. -->
-    <div class="brand"><a href="index.html" target="_blank" rel="noopener" title="Ouvrir le site public dans un nouvel onglet" style="display:flex;align-items:center;gap:11px;text-decoration:none;color:inherit;min-width:0"><img id="brandLogo" src="assets/logo.png" alt="" width="32" height="32" style="object-fit:contain"> <span>OIL <b>ROXWOOD</b><small>ESPACE MEMBRE <span id="syncDot" title="État de la synchro — cliquer pour régler le jeton" style="display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--muted);margin-left:5px;vertical-align:middle;cursor:pointer"></span></small></span></a></div>
+    <div class="brand"><a href="index.html" target="_blank" rel="noopener" title="Ouvrir le site public dans un nouvel onglet" style="display:flex;align-items:center;gap:11px;text-decoration:none;color:inherit;min-width:0"><span class="logo-wrap"><img id="brandLogo" src="assets/logo.png" alt="" width="32" height="32" style="object-fit:contain"></span> <span>OIL <b>ROXWOOD</b><small>ESPACE MEMBRE <span id="syncDot" title="État de la synchro — cliquer pour régler le jeton" style="display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--muted);margin-left:5px;vertical-align:middle;cursor:pointer"></span></small></span></a></div>
     <div class="nav-sec" data-sec="rh" tabindex="0" role="button" aria-expanded="true" onclick="navToggle('rh')" onkeydown="navSecKey(event,'rh')">Ressources humaines <span class="chev">▾</span></div>
     <button class="nav-item" data-view="frh">🗂️ <span class="txt">Fiches RH</span></button>
     <button class="nav-item" data-view="effectif">👥 <span class="txt">Effectif</span></button>
@@ -1249,7 +1251,7 @@ function logout(){
 }
 
 /* ---- Canari de version : prévient les onglets restés sur une vieille version ---- */
-const APP_VERSION='C-122';
+const APP_VERSION='C-123';
 /* Le bandeau ne doit dire qu'une chose : « une version plus récente existe ».
    Il comparait deux chaînes avec !==, donc il s'allumait aussi dans l'autre
    sens — quand la page ouverte était PLUS récente que version.json, ce qui
@@ -4809,6 +4811,9 @@ function ferDel(id){
 
 /* ================== MISES À JOUR (changelog) ================== */
 const CHANGELOG=[
+ {v:'C-123',d:'22/10/2026',t:'Noël prend vie : neige, guirlande, bonnet et scintillement',items:[
+   ['🎄','Noël beaucoup plus visible','Noël n\'a pas de logo dédié (choix volontaire) — il gagne à la place : une neige qui tombe en continu, une guirlande lumineuse qui clignote en haut de l\'écran, un bonnet de Père Noël posé sur le logo existant et un scintillement doré sur les cartes.'],
+ ]},
  {v:'C-122',d:'21/10/2026',t:'Sélecteur date/heure du bot corrigé, stagiaires retirés des émetteurs',items:[
    ['🐛','Le sélecteur date + heure du bot plantait au premier clic','La commande client, le rendez-vous d\'entretien… tombaient en erreur dès qu\'on touchait un menu. Corrigé.'],
    ['🐛','Des stagiaires apparaissaient dans la liste des émetteurs de facture','La synchro tablette traitait le rang « Stagiaire » comme un poste de direction (comme Patron ou RH) au lieu du grade spécial qu\'il est — il pouvait alors être choisi comme émetteur. Se corrige tout seul à la prochaine synchro tablette.'],
