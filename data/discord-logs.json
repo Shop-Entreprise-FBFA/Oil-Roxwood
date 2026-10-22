@@ -1,11 +1,48 @@
 {
- "maj": "2026-10-22T20:08:46.898345+00:00",
+ "maj": "2026-10-22T20:16:46.017512+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1562922565645631539",
+   "t": "2026-10-22T20:16:17.347000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbesperta\nplayerNetId : 1583\nplayerDiscord : 540282853590827009\nplayerName : [SA-RR-RF-GE] Aize\nplayerCharacter : Aize Devinci\nplayerId : 366823\nvehiclePlate : OT7014BP\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Aize Devinci",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "1583",
+    "playerdiscord": "540282853590827009",
+    "playername": "[SA-RR-RF-GE] Aize",
+    "playercharacter": "Aize Devinci",
+    "playerid": "366823",
+    "vehicleplate": "OT7014BP",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1562922338339520575",
+   "t": "2026-10-22T20:15:23.153000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 138x Pétrole Raffiné pour 1380$ par Clara Soules. 690$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 138,
+   "montant": 1380,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1562920561926217749",
    "t": "2026-10-22T20:08:19.623000+00:00",
@@ -78313,27 +78350,6 @@
     "playercharacter": "Hassan Cheb",
     "playerid": "321847",
     "itemid": "oil"
-   }
-  },
-  {
-   "id": "1561833928510283848",
-   "t": "2026-10-19T20:10:26.028000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 4637\nplayerDiscord : 1559916250929434727\nplayerName : BreezyCrab1027\nplayerCharacter : Bingo Dallas\nplayerId : 383174\nvehiclePlate : DO6888RF\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Bingo Dallas",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "4637",
-    "playerdiscord": "1559916250929434727",
-    "playername": "BreezyCrab1027",
-    "playercharacter": "Bingo Dallas",
-    "playerid": "383174",
-    "vehicleplate": "DO6888RF",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
