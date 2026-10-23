@@ -1,11 +1,48 @@
 {
- "maj": "2026-10-23T20:36:46.102878+00:00",
+ "maj": "2026-10-23T20:42:48.223809+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1563291571837861929",
+   "t": "2026-10-23T20:42:35.279000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 324x Pétrole Raffiné pour 3240$ par Jacob Stebane. 1620$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 324,
+   "montant": 3240,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1563291305931575367",
+   "t": "2026-10-23T20:41:31.882000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 3458\nplayerDiscord : 877190238433333258\nplayerName : many.\nplayerCharacter : Many Carlos\nplayerId : 166386\nvehiclePlate : AS5715VX\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Many Carlos",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "3458",
+    "playerdiscord": "877190238433333258",
+    "playername": "many.",
+    "playercharacter": "Many Carlos",
+    "playerid": "166386",
+    "vehicleplate": "AS5715VX",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1563289822423027793",
    "t": "2026-10-23T20:35:38.186000+00:00",
@@ -74566,75 +74603,6 @@
     "playercharacter": "Jordan Impreza",
     "playerid": "383034",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1562204133329739828",
-   "t": "2026-10-20T20:41:29.735000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 4744\nplayerDiscord : 1559916250929434727\nplayerName : momomeddah345\nplayerCharacter : Bingo Dallas\nplayerId : 383174\nvehiclePlate : AY4705SJ\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Bingo Dallas",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "4744",
-    "playerdiscord": "1559916250929434727",
-    "playername": "momomeddah345",
-    "playercharacter": "Bingo Dallas",
-    "playerid": "383174",
-    "vehicleplate": "AY4705SJ",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1562204128833310721",
-   "t": "2026-10-20T20:41:28.663000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 490x Pétrole Raffiné pour 4900$ par Mikaël Owens. 2450$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 490,
-   "montant": 4900,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1562203623264493640-0",
-   "t": "2026-10-20T20:39:28.126000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 645x Pétrole Raffiné pour 6450$ par Jordan Impreza. 3225$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 645,
-   "montant": 6450,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1562203623264493640-1",
-   "t": "2026-10-20T20:39:28.126000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 324x Pétrole Raffiné pour 3240$ par Bingo Dallas. 1620$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 324,
-   "montant": 3240,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
