@@ -13364,6 +13364,13 @@
     "quantite": 100,
     "qui": "Emma Collins-rodriguez",
     "fact": 253175
+   },
+   {
+    "date": "2026-10-23",
+    "client": "Cayo Fish and Grill",
+    "quantite": 100,
+    "qui": "Julio Collins",
+    "fact": 253176
    }
   ],
   "collection": [
@@ -15181,10 +15188,7 @@
     "rib": "",
     "tel": "2114",
     "adresse": "Cayo",
-    "relance": {
-     "par": "Stella Collins",
-     "date": "2026-07-14"
-    }
+    "lastCmd": "2026-10-23"
    },
    {
     "nom": "Cayo Medical Center",
@@ -16133,8 +16137,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253176,
+  "compteur": 253177,
   "factures": [
+   {
+    "num": 253176,
+    "date": "2026-10-23",
+    "client": "Cayo Fish and Grill",
+    "emetteur": "Julio Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 100,
+      "tva": 0,
+      "pu": 180,
+      "ht": 18000,
+      "ttc": 18000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 18000,
+    "ttc": 18000,
+    "poids": 200,
+    "statut": "attente"
+   },
    {
     "num": 253175,
     "date": "2026-10-23",
@@ -55188,14 +55215,14 @@
   "theme": "halloween"
  },
  "_cid": "afkyzt3lq4l",
- "_maj": 1792779680319,
- "_rev": "ot58siazg3-mvlarfxt",
+ "_maj": 1792779739225,
+ "_rev": "pq2ftvstv1s-mvlarosk",
  "_majSec": {
   "fer": 1792775778598,
-  "fact": 1792766956662,
+  "fact": 1792779739216,
   "users": 1792779590449,
   "weeks": 1792400944983,
-  "sheets": 1792771625836,
+  "sheets": 1792779739216,
   "_qcFix1": 1792090599970,
   "_wkFix1": 1792090599970,
   "journal": 1792779590449,
@@ -55212,7 +55239,7 @@
   "primesExtra": 1792090599970,
   "quotasComHist": 1792400944983,
   "profils": 1792090599970,
-  "_tables": 1792779680319,
+  "_tables": 1792779739216,
   "_permsFix1": 1792090599970,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792090599970,
@@ -57136,13 +57163,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-23T18:22:08.753Z",
+  "maj": "2026-10-23T18:22:20.228Z",
   "semaine": 43,
   "totalBarils": 120163,
   "ca": 600815,
   "objectif": 375000,
   "effectif": 100,
-  "clientsServis": 161,
+  "clientsServis": 162,
   "theme": "halloween",
   "top3": [
    {
