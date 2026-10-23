@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-23T00:02:46.431003+00:00",
+ "maj": "2026-10-23T00:08:44.174420+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1562980716034129952",
+   "t": "2026-10-23T00:07:21.480000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 638x Pétrole Raffiné pour 6380$ par Jordan Coleman. 3190$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 638,
+   "montant": 6380,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1562979186543427616",
    "t": "2026-10-23T00:01:16.821000+00:00",
@@ -78022,30 +78038,6 @@
     "playercharacter": "Mouly Franseco",
     "playerid": "263368",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1561892814634094604",
-   "t": "2026-10-20T00:04:25.574000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 68x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1851.22, 6515.16, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 2751\nplayerDiscord : 1307134142214836307\nplayerName : yalaouianice25\nplayerCharacter : Mouly Franseco\nplayerId : 263368\nitemId : oil",
-   "nom": "Mouly Franseco",
-   "quantite": 68,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1851.22, 6515.16, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "2751",
-    "playerdiscord": "1307134142214836307",
-    "playername": "yalaouianice25",
-    "playercharacter": "Mouly Franseco",
-    "playerid": "263368",
-    "itemid": "oil"
    }
   }
  ]
