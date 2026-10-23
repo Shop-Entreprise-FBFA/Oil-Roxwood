@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-23T18:44:51.352631+00:00",
+ "maj": "2026-10-23T18:54:46.951068+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1563263904761647220",
+   "t": "2026-10-23T18:52:38.934000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 350x Pétrole Raffiné pour 3500$ par Xavier Collins. 1750$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 350,
+   "montant": 3500,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1563261620661125193-0",
    "t": "2026-10-23T18:43:34.362000+00:00",
@@ -75010,43 +75026,6 @@
     "playercharacter": "Jayson Simth",
     "playerid": "375244",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1562176960367566889",
-   "t": "2026-10-20T18:53:31.196000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 753x Pétrole Raffiné pour 7530$ par Nikko Mount. 3765$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 753,
-   "montant": 7530,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1562176455255924750",
-   "t": "2026-10-20T18:51:30.768000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 3714\nplayerDiscord : 920315449542082570\nplayerName : Miikoraaa\nplayerCharacter : Mikaël Owens\nplayerId : 383556\nvehiclePlate : AY0298ZV\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Mikaël Owens",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "3714",
-    "playerdiscord": "920315449542082570",
-    "playername": "Miikoraaa",
-    "playercharacter": "Mikaël Owens",
-    "playerid": "383556",
-    "vehicleplate": "AY0298ZV",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
