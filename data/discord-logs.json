@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-23T23:42:46.598040+00:00",
+ "maj": "2026-10-23T23:44:46.725251+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1563337119156674613",
+   "t": "2026-10-23T23:43:34.606000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 765x Pétrole Raffiné pour 7650$ par Tonio Munson. 3825$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 765,
+   "montant": 7650,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1563336861127278734",
    "t": "2026-10-23T23:42:33.087000+00:00",
@@ -70864,78 +70880,6 @@
     "itemid": "refinedoil",
     "jobid": "76",
     "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1562250169209192523-0",
-   "t": "2026-10-20T23:44:25.544000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 148x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1846.65, 6514.51, 16.73\ntargetPosition : -1845.91, 6514.70, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6232\nplayerDiscord : 1095216838566219836\nplayerName : Anderson Impreza\nplayerCharacter : Jordan Impreza\nplayerId : 383034\nitemId : refinedoil",
-   "nom": "Jordan Impreza",
-   "quantite": 148,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1846.65, 6514.51, 16.73",
-    "targetposition": "-1845.91, 6514.70, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6232",
-    "playerdiscord": "1095216838566219836",
-    "playername": "Anderson Impreza",
-    "playercharacter": "Jordan Impreza",
-    "playerid": "383034",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1562250169209192523-1",
-   "t": "2026-10-20T23:44:25.544000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 148x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1845.51, 6514.94, 16.73\ntargetPosition : -1845.91, 6514.70, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6232\nplayerDiscord : 1095216838566219836\nplayerName : Anderson Impreza\nplayerCharacter : Jordan Impreza\nplayerId : 383034\nitemId : refinedoil",
-   "nom": "Jordan Impreza",
-   "quantite": 148,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1845.51, 6514.94, 16.73",
-    "targetposition": "-1845.91, 6514.70, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6232",
-    "playerdiscord": "1095216838566219836",
-    "playername": "Anderson Impreza",
-    "playercharacter": "Jordan Impreza",
-    "playerid": "383034",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1562250169209192523-2",
-   "t": "2026-10-20T23:44:25.544000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 28x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1845.43, 6514.60, 16.73\ntargetPosition : -1845.91, 6514.70, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6232\nplayerDiscord : 1095216838566219836\nplayerName : Anderson Impreza\nplayerCharacter : Jordan Impreza\nplayerId : 383034\nitemId : refinedoil",
-   "nom": "Jordan Impreza",
-   "quantite": 28,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1845.43, 6514.60, 16.73",
-    "targetposition": "-1845.91, 6514.70, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6232",
-    "playerdiscord": "1095216838566219836",
-    "playername": "Anderson Impreza",
-    "playercharacter": "Jordan Impreza",
-    "playerid": "383034",
-    "itemid": "refinedoil"
    }
   }
  ]
