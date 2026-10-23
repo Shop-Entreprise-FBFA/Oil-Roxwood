@@ -1,11 +1,32 @@
 {
- "maj": "2026-10-23T07:38:46.613800+00:00",
+ "maj": "2026-10-23T08:06:47.815636+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1563101237036060693",
+   "t": "2026-10-23T08:06:15.926000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 8381\nplayerDiscord : 1346352248841568326\nplayerName : Freeze\nplayerCharacter : Elliot Adkins\nplayerId : 369986\nvehiclePlate : XP1606YE\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Elliot Adkins",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "8381",
+    "playerdiscord": "1346352248841568326",
+    "playername": "Freeze",
+    "playercharacter": "Elliot Adkins",
+    "playerid": "369986",
+    "vehicleplate": "XP1606YE",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1563094188554190860",
    "t": "2026-10-23T07:38:15.437000+00:00",
@@ -77474,126 +77495,6 @@
     "itemid": "refinedoil",
     "jobid": "76",
     "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1562013886767562844",
-   "t": "2026-10-20T08:05:31.420000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 80x Pétrole Raffiné pour 800$ par Cristóbal Perrera. 400$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 80,
-   "montant": 800,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1562013110796288041",
-   "t": "2026-10-20T08:02:26.414000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 280x Pétrole Raffiné pour 2800$ par Cristóbal Perrera. 1400$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 280,
-   "montant": 2800,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1562011860713218119",
-   "t": "2026-10-20T07:57:28.371000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 234x Pétrole Raffiné pour 2340$ par Cristóbal Perrera. 1170$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 234,
-   "montant": 2340,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1562010085486755975-0",
-   "t": "2026-10-20T07:50:25.124000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 139x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1843.53, 6517.81, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7047\nplayerDiscord : 228152737701822465\nplayerName : SONIK\nplayerCharacter : Cristóbal Perrera\nplayerId : 379487\nitemId : refinedoil",
-   "nom": "Cristóbal Perrera",
-   "quantite": 139,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1843.53, 6517.81, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7047",
-    "playerdiscord": "228152737701822465",
-    "playername": "SONIK",
-    "playercharacter": "Cristóbal Perrera",
-    "playerid": "379487",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1562010085486755975-1",
-   "t": "2026-10-20T07:50:25.124000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 139x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1843.62, 6518.15, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7047\nplayerDiscord : 228152737701822465\nplayerName : SONIK\nplayerCharacter : Cristóbal Perrera\nplayerId : 379487\nitemId : refinedoil",
-   "nom": "Cristóbal Perrera",
-   "quantite": 139,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1843.62, 6518.15, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7047",
-    "playerdiscord": "228152737701822465",
-    "playername": "SONIK",
-    "playercharacter": "Cristóbal Perrera",
-    "playerid": "379487",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1562010085486755975-2",
-   "t": "2026-10-20T07:50:25.124000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 40x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1843.67, 6517.91, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7047\nplayerDiscord : 228152737701822465\nplayerName : SONIK\nplayerCharacter : Cristóbal Perrera\nplayerId : 379487\nitemId : refinedoil",
-   "nom": "Cristóbal Perrera",
-   "quantite": 40,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1843.67, 6517.91, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7047",
-    "playerdiscord": "228152737701822465",
-    "playername": "SONIK",
-    "playercharacter": "Cristóbal Perrera",
-    "playerid": "379487",
-    "itemid": "refinedoil"
    }
   }
  ]
