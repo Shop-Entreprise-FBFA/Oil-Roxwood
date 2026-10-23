@@ -55101,9 +55101,9 @@
   "salonRappelDirection": "",
   "theme": "halloween"
  },
- "_cid": "otsol73e49",
- "_maj": 1792771031284,
- "_rev": "ts6bf1gk2ig-mvl5m950",
+ "_cid": "frur7dvu3gt",
+ "_maj": 1792771089913,
+ "_rev": "gn5zwt6r4j-mvl5me96",
  "_majSec": {
   "fer": 1792770436994,
   "fact": 1792766956662,
@@ -55112,11 +55112,11 @@
   "sheets": 1792770738096,
   "_qcFix1": 1792090599970,
   "_wkFix1": 1792090599970,
-  "journal": 1792770676361,
+  "journal": 1792771089913,
   "pending": 1792090599970,
   "prodDer": 1792703656052,
   "runners": 1792767531654,
-  "absences": 1792767521125,
+  "absences": 1792771089913,
   "imported": 1792090599970,
   "settings": 1792635878449,
   "closeUndo": 1792400944983,
@@ -55126,7 +55126,7 @@
   "primesExtra": 1792090599970,
   "quotasComHist": 1792400944983,
   "profils": 1792090599970,
-  "_tables": 1792771028769,
+  "_tables": 1792771089878,
   "_permsFix1": 1792090599970,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792090599970,
@@ -55143,6 +55143,16 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1792771091137,
+   "u": "Diego Herrera",
+   "a": "Absences Discord reprises : Jack Hamilton"
+  },
+  {
+   "t": 1792771091103,
+   "u": "Diego Herrera",
+   "a": "Absence supprimée : Jack Hamilton (du 10/09/2026 au 13/08/2027)"
+  },
   {
    "t": 1792770677585,
    "u": "Diego Herrera",
@@ -56632,16 +56642,6 @@
    "t": 1791576219671,
    "u": "Bjorn Frost",
    "a": "Achats de fer : 3 relevé(s) repris du salon"
-  },
-  {
-   "t": 1791575987127,
-   "u": "Stella Collins",
-   "a": "Achats de fer : 2 relevé(s) repris du salon"
-  },
-  {
-   "t": 1791575899778,
-   "u": "Bjorn Frost",
-   "a": "Achats de fer : 2 relevé(s) repris du salon"
   }
  ],
  "prodDer": {
@@ -56889,16 +56889,6 @@
  },
  "absences": [
   {
-   "id": 1789941834081,
-   "nom": "Jack Hamilton",
-   "du": "2026-09-10",
-   "au": "2027-08-13",
-   "srcId": "1789061347532",
-   "motif": "AUCUN AGENT DE DISPO POUR POSER MON STUFF",
-   "par": "⚫ Juan Sanchez",
-   "auto": true
-  },
-  {
    "id": 1790617704431,
    "nom": "Thomas Boyer",
    "du": "2026-09-29",
@@ -57047,10 +57037,20 @@
    "motif": "Voyage Professionnel au CONGO",
    "par": "⚫ Carter Fuente",
    "auto": true
+  },
+  {
+   "id": 1792771097046,
+   "nom": "Jack Hamilton",
+   "du": "2026-09-10",
+   "au": "2027-08-13",
+   "srcId": "1789061347532",
+   "motif": "AUCUN AGENT DE DISPO POUR POSER MON STUFF",
+   "par": "⚫ Juan Sanchez",
+   "auto": true
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-23T15:58:08.580Z",
+  "maj": "2026-10-23T15:58:15.210Z",
   "semaine": 43,
   "totalBarils": 120163,
   "ca": 600815,
