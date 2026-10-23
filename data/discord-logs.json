@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-23T19:18:45.312521+00:00",
+ "maj": "2026-10-23T19:22:48.780160+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1563271199428059288",
+   "t": "2026-10-23T19:21:38.118000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 149x Pétrole Raffiné pour 1490$ par Mouly Franseco. 745$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 149,
+   "montant": 1490,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1563270194585936014",
    "t": "2026-10-23T19:17:38.545000+00:00",
@@ -74828,46 +74844,6 @@
    "nom": null,
    "quantite": 288,
    "montant": 2880,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1562184231755587639",
-   "t": "2026-10-20T19:22:24.830000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 1x Bidon d'essence du coffre de l'entreprise (Oil RoxWood)\nposition : -3090.42, 6819.46, 44.73\ntargetPosition : -3090.06, 6818.50, 43.97\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 2907\nplayerDiscord : 334423976182939648\nplayerName : MoodyCat2429\nplayerCharacter : Nikko Mount\nplayerId : 276376\nitemId : weapon_petrolcan",
-   "nom": "Nikko Mount",
-   "quantite": 1,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-3090.42, 6819.46, 44.73",
-    "targetposition": "-3090.06, 6818.50, 43.97",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "2907",
-    "playerdiscord": "334423976182939648",
-    "playername": "MoodyCat2429",
-    "playercharacter": "Nikko Mount",
-    "playerid": "276376",
-    "itemid": "weapon_petrolcan"
-   }
-  },
-  {
-   "id": "1562183488059478129",
-   "t": "2026-10-20T19:19:27.519000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 753x Pétrole Raffiné pour 7530$ par Nikko Mount. 3765$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 753,
-   "montant": 7530,
    "type": "vente",
    "salon": "1245400913473179729",
    "champs": {
