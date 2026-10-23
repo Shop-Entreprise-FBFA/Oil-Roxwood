@@ -13385,6 +13385,20 @@
     "quantite": 100,
     "qui": "Julio Collins",
     "fact": 253176
+   },
+   {
+    "date": "2026-10-23",
+    "client": "LTD Strawberry",
+    "quantite": 50,
+    "qui": "Julio Collins",
+    "fact": 253177
+   },
+   {
+    "date": "2026-10-23",
+    "client": "LTD Strawberry",
+    "quantite": 50,
+    "qui": "Stella Collins",
+    "fact": 253177
    }
   ],
   "collection": [
@@ -15813,7 +15827,7 @@
     "rib": "20020",
     "tel": "930",
     "adresse": "Los Santos",
-    "lastCmd": "2026-10-20"
+    "lastCmd": "2026-10-23"
    },
    {
     "nom": "Lunapark Billard",
@@ -16151,8 +16165,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253177,
+  "compteur": 253178,
   "factures": [
+   {
+    "num": 253177,
+    "date": "2026-10-23",
+    "client": "LTD Strawberry",
+    "emetteur": "Julio Collins, Stella Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 100,
+      "tva": 0,
+      "pu": 180,
+      "ht": 18000,
+      "ttc": 18000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 18000,
+    "ttc": 18000,
+    "poids": 200,
+    "statut": "attente"
+   },
    {
     "num": 253176,
     "date": "2026-10-23",
@@ -55229,14 +55266,14 @@
   "theme": "halloween"
  },
  "_cid": "o3rz5gyqf7",
- "_maj": 1792794269427,
- "_rev": "5scyxizc0ye-mvljg52e",
+ "_maj": 1792794322189,
+ "_rev": "oumiegnyrd-mvljg95n",
  "_majSec": {
   "fer": 1792775778598,
-  "fact": 1792781823518,
+  "fact": 1792794322180,
   "users": 1792794269427,
   "weeks": 1792400944983,
-  "sheets": 1792785910085,
+  "sheets": 1792794322180,
   "_qcFix1": 1792090599970,
   "_wkFix1": 1792090599970,
   "journal": 1792794269427,
@@ -55253,7 +55290,7 @@
   "primesExtra": 1792090599970,
   "quotasComHist": 1792400944983,
   "profils": 1792090599970,
-  "_tables": 1792794269380,
+  "_tables": 1792794322180,
   "_permsFix1": 1792090599970,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792090599970,
@@ -57185,13 +57222,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-23T22:25:17.990Z",
+  "maj": "2026-10-23T22:25:23.291Z",
   "semaine": 43,
   "totalBarils": 120163,
   "ca": 600815,
   "objectif": 375000,
   "effectif": 101,
-  "clientsServis": 162,
+  "clientsServis": 163,
   "theme": "halloween",
   "top3": [
    {
