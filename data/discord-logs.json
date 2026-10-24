@@ -1,11 +1,56 @@
 {
- "maj": "2026-10-24T09:52:42.790994+00:00",
+ "maj": "2026-10-24T09:54:45.704683+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1563490864540557314",
+   "t": "2026-10-24T09:54:30.362000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 7046\nplayerDiscord : 1346352248841568326\nplayerName : Freeze\nplayerCharacter : Elliot Adkins\nplayerId : 369986\nvehiclePlate : OV3413QR\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Elliot Adkins",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "7046",
+    "playerdiscord": "1346352248841568326",
+    "playername": "Freeze",
+    "playercharacter": "Elliot Adkins",
+    "playerid": "369986",
+    "vehicleplate": "OV3413QR",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1563490612957941831",
+   "t": "2026-10-24T09:53:30.380000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 24x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1849.73, 6514.07, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6941\nplayerDiscord : 998227857316790404\nplayerName : lafuine84\nplayerCharacter : Mason Walker\nplayerId : 101364\nitemId : refinedoil",
+   "nom": "Mason Walker",
+   "quantite": 24,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1849.73, 6514.07, 16.73",
+    "targetposition": "-1850.63, 6515.15, 15.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "6941",
+    "playerdiscord": "998227857316790404",
+    "playername": "lafuine84",
+    "playercharacter": "Mason Walker",
+    "playerid": "101364",
+    "itemid": "refinedoil"
+   }
+  },
   {
    "id": "1563490121901150275-0",
    "t": "2026-10-24T09:51:33.303000+00:00",
