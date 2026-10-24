@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-24T20:25:06.062766+00:00",
+ "maj": "2026-10-24T20:27:04.672725+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1563649983587024907",
+   "t": "2026-10-24T20:26:47.299000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 255x Pétrole Raffiné pour 2550$ par Merill Danielson. 1275$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 255,
+   "montant": 2550,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1563649227857465477-0",
    "t": "2026-10-24T20:23:47.119000+00:00",
@@ -67780,27 +67796,6 @@
     "playercharacter": "Clara Soules",
     "playerid": "380202",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1562562495602884649",
-   "t": "2026-10-21T20:25:29.959000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 4070\nplayerDiscord : 565941356892258324\nplayerName : le ted\nplayerCharacter : Kurtis Coleman\nplayerId : 269424\nvehiclePlate : AY4705SJ\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Kurtis Coleman",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "4070",
-    "playerdiscord": "565941356892258324",
-    "playername": "le ted",
-    "playercharacter": "Kurtis Coleman",
-    "playerid": "269424",
-    "vehicleplate": "AY4705SJ",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
