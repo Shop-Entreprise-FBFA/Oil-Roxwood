@@ -1,11 +1,32 @@
 {
- "maj": "2026-10-24T12:02:48.728473+00:00",
+ "maj": "2026-10-24T12:06:45.730112+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1563524103732858891",
+   "t": "2026-10-24T12:06:35.203000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 7276\nplayerDiscord : 726178701867221134\nplayerName : Cristale\nplayerCharacter : Athéna Andershon\nplayerId : 196876\nvehiclePlate : AS5715VX\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Athéna Andershon",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "7276",
+    "playerdiscord": "726178701867221134",
+    "playername": "Cristale",
+    "playercharacter": "Athéna Andershon",
+    "playerid": "196876",
+    "vehicleplate": "AS5715VX",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1563523093278761064-0",
    "t": "2026-10-24T12:02:34.292000+00:00",
@@ -65031,54 +65052,6 @@
     "playercharacter": "Diego Herrera",
     "playerid": "231487",
     "itemid": "weapon_petrolcan"
-   }
-  },
-  {
-   "id": "1562436394788593746",
-   "t": "2026-10-21T12:04:25.182000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 116x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1844.06, 6516.71, 16.73\ntargetPosition : -1844.79, 6516.31, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 8615\nplayerDiscord : 800421218694987807\nplayerName : wyya13k\nplayerCharacter : Jayson Simth\nplayerId : 375244\nitemId : refinedoil",
-   "nom": "Jayson Simth",
-   "quantite": 116,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1844.06, 6516.71, 16.73",
-    "targetposition": "-1844.79, 6516.31, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "8615",
-    "playerdiscord": "800421218694987807",
-    "playername": "wyya13k",
-    "playercharacter": "Jayson Simth",
-    "playerid": "375244",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1562436142396088444",
-   "t": "2026-10-21T12:03:25.007000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 164x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1844.20, 6516.59, 16.73\ntargetPosition : -1844.79, 6516.31, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 8615\nplayerDiscord : 800421218694987807\nplayerName : wyya13k\nplayerCharacter : Jayson Simth\nplayerId : 375244\nitemId : refinedoil",
-   "nom": "Jayson Simth",
-   "quantite": 164,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1844.20, 6516.59, 16.73",
-    "targetposition": "-1844.79, 6516.31, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "8615",
-    "playerdiscord": "800421218694987807",
-    "playername": "wyya13k",
-    "playercharacter": "Jayson Simth",
-    "playerid": "375244",
-    "itemid": "refinedoil"
    }
   }
  ]
