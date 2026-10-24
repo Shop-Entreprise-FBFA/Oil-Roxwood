@@ -1,11 +1,56 @@
 {
- "maj": "2026-10-24T16:09:04.133316+00:00",
+ "maj": "2026-10-24T16:11:02.502757+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1563585546142617782",
+   "t": "2026-10-24T16:10:44.215000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 1565\nplayerDiscord : 1499848677986930882\nplayerName : CleverBeetle1673\nplayerCharacter : Clara Soules\nplayerId : 380202\nvehiclePlate : GD7230WT\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Clara Soules",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "1565",
+    "playerdiscord": "1499848677986930882",
+    "playername": "CleverBeetle1673",
+    "playercharacter": "Clara Soules",
+    "playerid": "380202",
+    "vehicleplate": "GD7230WT",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1563585535962775664",
+   "t": "2026-10-24T16:10:41.788000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 52x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3089.29, 6814.38, 44.73\ntargetPosition : -3089.68, 6814.50, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1254\nplayerDiscord : 767332288744128512\nplayerName : JULIO COLLINS\nplayerCharacter : Julio Collins\nplayerId : 356873\nitemId : oil",
+   "nom": "Julio Collins",
+   "quantite": 52,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-3089.29, 6814.38, 44.73",
+    "targetposition": "-3089.68, 6814.50, 43.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "1254",
+    "playerdiscord": "767332288744128512",
+    "playername": "JULIO COLLINS",
+    "playercharacter": "Julio Collins",
+    "playerid": "356873",
+    "itemid": "oil"
+   }
+  },
   {
    "id": "1563585039264907349-0",
    "t": "2026-10-24T16:08:43.366000+00:00",
@@ -60116,22 +60161,6 @@
    "nom": null,
    "quantite": 324,
    "montant": 3240,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1562498351201521747",
-   "t": "2026-10-21T16:10:36.742000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 66x Pétrole Raffiné pour 660$ par Mouly Franseco. 330$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 66,
-   "montant": 660,
    "type": "vente",
    "salon": "1245400913473179729",
    "champs": {
