@@ -1,11 +1,32 @@
 {
- "maj": "2026-10-24T12:31:56.282916+00:00",
+ "maj": "2026-10-24T12:36:05.105812+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1563531144786612226",
+   "t": "2026-10-24T12:34:33.921000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 8174\nplayerDiscord : 502871348381483028\nplayerName : BoldRabbit4194\nplayerCharacter : Salva Trucha\nplayerId : 100766\nvehiclePlate : ZG7875QV\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Salva Trucha",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "8174",
+    "playerdiscord": "502871348381483028",
+    "playername": "BoldRabbit4194",
+    "playercharacter": "Salva Trucha",
+    "playerid": "100766",
+    "vehicleplate": "ZG7875QV",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1563530132415582333-0",
    "t": "2026-10-24T12:30:32.553000+00:00",
@@ -64780,30 +64801,6 @@
     "vehicleplate": "KM3946BG",
     "jobid": "76",
     "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1562443945521455116",
-   "t": "2026-10-21T12:34:25.417000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 98x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1850.90, 6515.64, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 8782\nplayerDiscord : 920315449542082570\nplayerName : Miikoraaa\nplayerCharacter : Mikaël Owens\nplayerId : 383556\nitemId : refinedoil",
-   "nom": "Mikaël Owens",
-   "quantite": 98,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1850.90, 6515.64, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "8782",
-    "playerdiscord": "920315449542082570",
-    "playername": "Miikoraaa",
-    "playercharacter": "Mikaël Owens",
-    "playerid": "383556",
-    "itemid": "refinedoil"
    }
   }
  ]
