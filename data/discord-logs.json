@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-24T09:32:46.038525+00:00",
+ "maj": "2026-10-24T09:36:46.153530+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1563486090239672352",
+   "t": "2026-10-24T09:35:32.080000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 574x Pétrole Raffiné pour 5740$ par Xavier Collins. 2870$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 574,
+   "montant": 5740,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1563485084538110063",
    "t": "2026-10-24T09:31:32.302000+00:00",
@@ -68325,27 +68341,6 @@
     "playercharacter": "Bjorn Frost",
     "playerid": "361708",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1562398902173564999",
-   "t": "2026-10-21T09:35:26.246000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 1702\nplayerDiscord : 1307134142214836307\nplayerName : yalaouianice25\nplayerCharacter : Mouly Franseco\nplayerId : 263368\nvehiclePlate : BM4391ZM\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Mouly Franseco",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "1702",
-    "playerdiscord": "1307134142214836307",
-    "playername": "yalaouianice25",
-    "playercharacter": "Mouly Franseco",
-    "playerid": "263368",
-    "vehicleplate": "BM4391ZM",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
