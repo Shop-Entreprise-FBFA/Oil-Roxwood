@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-24T21:11:04.294817+00:00",
+ "maj": "2026-10-24T21:13:05.602172+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1563661577662767146",
+   "t": "2026-10-24T21:12:51.542000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 86x Pétrole Raffiné pour 860$ par Mouly Franseco. 430$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 86,
+   "montant": 860,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1563660818862571696",
    "t": "2026-10-24T21:09:50.630000+00:00",
@@ -67638,59 +67654,6 @@
     "playercharacter": "Jordan Coleman",
     "playerid": "181277",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1562574364610658315",
-   "t": "2026-10-21T21:12:39.751000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 328x Pétrole Raffiné pour 3280$ par Mikaël Owens. 1640$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 328,
-   "montant": 3280,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1562574325511626806",
-   "t": "2026-10-21T21:12:30.429000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 5696\nplayerDiscord : 398615462633668630\nplayerName : MoonBiirr\nplayerCharacter : Hassan Cheb\nplayerId : 321847\nvehiclePlate : CT2926BI\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Hassan Cheb",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "5696",
-    "playerdiscord": "398615462633668630",
-    "playername": "MoonBiirr",
-    "playercharacter": "Hassan Cheb",
-    "playerid": "321847",
-    "vehicleplate": "CT2926BI",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1562574110301749342",
-   "t": "2026-10-21T21:11:39.119000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 320x Pétrole Raffiné pour 3200$ par Mouly Franseco. 1600$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 320,
-   "montant": 3200,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
