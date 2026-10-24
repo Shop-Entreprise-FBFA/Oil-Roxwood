@@ -1235,6 +1235,7 @@ function enter(){
       initSync();
       chgEtape('Relevé des feuilles', 52);
       await ensureSheets();
+      corrigerRecruteursInverses();
       chgEtape('Comptage des barils', 80);
       const r=isMembre()?null:syncRunners(true);
       if(!S.settings.semaine) S.settings.semaine=semaineCal(); // idem : jamais de bascule automatique
@@ -1251,7 +1252,7 @@ function logout(){
 }
 
 /* ---- Canari de version : prévient les onglets restés sur une vieille version ---- */
-const APP_VERSION='C-123';
+const APP_VERSION='C-124';
 /* Le bandeau ne doit dire qu'une chose : « une version plus récente existe ».
    Il comparait deux chaînes avec !==, donc il s'allumait aussi dans l'autre
    sens — quand la page ouverte était PLUS récente que version.json, ce qui
@@ -1324,6 +1325,25 @@ async function checkDiscordAuth(){
 
     let u=(S.users||[]).find(x=>x.did===did)
         ||(S.users||[]).find(x=>String(x.user).toLowerCase()===String(pseudo).toLowerCase());
+
+    /* Le compte existait déjà avant que sa fiche RH ait un nom RP (ou avant
+       que le champ « discord » de cette fiche soit rempli) : à la création,
+       nomRP() n'avait trouvé personne et était reparti sur le pseudo Discord.
+       Depuis, la fiche s'est complétée, mais rien ne revenait corriger le
+       compte — il restait figé sur le pseudo pour toujours, et ce pseudo
+       polluait au passage les menus déroulants (Recruteur, émetteurs…) d'une
+       seconde entrée fantôme à côté du vrai nom. On rattrape ça à chaque
+       connexion : si la fiche RH donne maintenant un nom différent, le
+       compte le reprend. */
+    if(u){
+      const nomActuel=nomRP(did,null);
+      if(nomActuel&&nomActuel!==u.user){
+        const ancien=u.user;
+        u.user=nomActuel; save();
+        if(RoxwoodGH.peutEcrire()) sbQueue();
+        jlog(`Compte d'accès resynchronisé : « ${ancien} » → « ${nomActuel} » (nom RP trouvé en fiche RH)`);
+      }
+    }
 
     // Ce que le serveur Discord dit de cette personne
     //   undefined = on n'a pas pu savoir · null = plus aucun rôle · 'rh' = le rôle
@@ -2395,6 +2415,21 @@ function importerRecrues(){
   });
   S._recruesIgnore=[...ignores].slice(-200);
   return {ajoutes,completes,noms:[...new Set(noms)],renommages};
+}
+/* ---- Correctif unique (C-124) ----
+   19 fiches recrutées par Marco Bellini portaient « Bellini Marco » (ordre
+   inversé) dans la colonne Recruteur, au lieu de « Marco Bellini » comme sur
+   sa propre fiche RH. recruesAuto() compare les deux chaînes telles quelles :
+   l'ordre inversé ne correspondait jamais, donc son salaire de recrutement
+   tombait à 0 $ malgré ses 19 recrues. Se corrige une seule fois, au premier
+   chargement qui voit encore l'ancienne valeur. */
+function corrigerRecruteursInverses(){
+  if(!S.sheets||!S.sheets.rh||(S.settings&&S.settings._fixRecrutBellini)) return;
+  let n=0;
+  S.sheets.rh.forEach(x=>{ if(x&&String(x.recrut||'').trim()==='Bellini Marco'){ x.recrut='Marco Bellini'; n++; } });
+  S.settings._fixRecrutBellini=true;
+  if(n) jlog(`Correctif : ${n} fiche(s) recrue(s) de Marco Bellini — « Bellini Marco » → « Marco Bellini » dans Recruteur`);
+  save(); if(n) sbQueue();
 }
 
 /* ---- Avertissements Discord → compteur de la fiche RH ----
@@ -4811,6 +4846,10 @@ function ferDel(id){
 
 /* ================== MISES À JOUR (changelog) ================== */
 const CHANGELOG=[
+ {v:'C-124',d:'24/10/2026',t:'Salaire de recrutement de Marco Bellini (et un compte qui restait bloqué sur le pseudo Discord)',items:[
+   ['🐛','19 recrues de Marco Bellini invisibles pour son salaire','Sa colonne Recruteur portait « Bellini Marco » (ordre inversé) au lieu de « Marco Bellini » comme sur sa fiche RH — aucune des deux chaînes ne correspond à l\'autre, donc son salaire de recrutement tombait à 0 $. Corrigé une fois pour toutes les fiches concernées.'],
+   ['🐛','Un compte d\'accès restait bloqué sur le pseudo Discord à vie','Quand un compte s\'ouvre tout seul avant que sa fiche RH ait un nom RP, il garde le pseudo Discord — pour toujours, même une fois la fiche complétée : rien ne revenait le corriger. Ça polluait au passage les menus « Recruteur » et autres d\'une seconde entrée fantôme à côté du vrai nom. Le compte se resynchronise maintenant tout seul à chaque connexion.'],
+ ]},
  {v:'C-123',d:'22/10/2026',t:'Noël prend vie : neige, guirlande, bonnet et scintillement',items:[
    ['🎄','Noël beaucoup plus visible','Noël n\'a pas de logo dédié (choix volontaire) — il gagne à la place : une neige qui tombe en continu, une guirlande lumineuse qui clignote en haut de l\'écran, un bonnet de Père Noël posé sur le logo existant et un scintillement doré sur les cartes.'],
  ]},
