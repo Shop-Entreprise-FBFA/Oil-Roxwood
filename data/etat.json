@@ -16459,18 +16459,19 @@
      {
       "ref": "CMD",
       "qte": 1000,
-      "tva": 0.04,
+      "tva": 0,
+      "desc": "bidons d'essence ",
       "pu": 180,
       "ht": 180000,
-      "ttc": 187200,
-      "desc": "bidons d'essence "
+      "ttc": 180000
      }
     ],
     "offert": 0,
     "ht": 180000,
-    "ttc": 187200,
+    "ttc": 180000,
     "poids": 2000,
-    "statut": "attente"
+    "statut": "attente",
+    "modifiee": 1792851364089
    },
    {
     "num": 253177,
@@ -55580,17 +55581,17 @@
   "_fixRecrutBellini": true
  },
  "_cid": "vgmn72e3dg",
- "_maj": 1792851355878,
- "_rev": "12r9u77024tk-mvmhetja",
+ "_maj": 1792851364106,
+ "_rev": "rgpby65m76-mvmhey2v",
  "_majSec": {
   "fer": 1792825117403,
-  "fact": 1792851343849,
+  "fact": 1792851364090,
   "users": 1792851231052,
   "weeks": 1792400944983,
   "sheets": 1792851343849,
   "_qcFix1": 1792090599970,
   "_wkFix1": 1792090599970,
-  "journal": 1792851231252,
+  "journal": 1792851364106,
   "pending": 1792090599970,
   "prodDer": 1792780246437,
   "runners": 1792839917674,
@@ -55621,6 +55622,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1792851365303,
+   "u": "Laurent Roquel",
+   "a": "Facture n°253178 modifiée — total 187 200 $ → 180 000 $"
+  },
   {
    "t": 1792851231169,
    "u": "?",
@@ -57115,11 +57121,6 @@
    "t": 1791670127622,
    "u": "Julio Collins",
    "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1791670127402,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
   }
  ],
  "prodDer": {
@@ -57536,7 +57537,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-24T14:16:03.334Z",
+  "maj": "2026-10-24T14:16:09.223Z",
   "semaine": 43,
   "totalBarils": 153350,
   "ca": 766750,
