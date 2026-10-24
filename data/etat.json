@@ -13681,6 +13681,20 @@
     "quantite": 500,
     "qui": "Emma Collins-rodriguez",
     "fact": 253178
+   },
+   {
+    "date": "2026-10-24",
+    "client": "Oil Roxwood",
+    "quantite": 100,
+    "qui": "Emma Collins-rodriguez",
+    "fact": 253179
+   },
+   {
+    "date": "2026-10-24",
+    "client": "Oil Roxwood",
+    "quantite": 100,
+    "qui": "Laurent Roquel",
+    "fact": 253179
    }
   ],
   "collection": [
@@ -16153,7 +16167,7 @@
     "rib": "20076",
     "tel": "986",
     "adresse": "Roxwood",
-    "lastCmd": "2026-10-20"
+    "lastCmd": "2026-10-24"
    },
    {
     "nom": "Ombra Nera",
@@ -16447,8 +16461,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253179,
+  "compteur": 253180,
   "factures": [
+   {
+    "num": 253179,
+    "date": "2026-10-24",
+    "client": "Oil Roxwood",
+    "emetteur": "Emma Collins-rodriguez, Laurent Roquel",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 200,
+      "tva": 0,
+      "pu": 180,
+      "ht": 36000,
+      "ttc": 36000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 36000,
+    "ttc": 36000,
+    "poids": 400,
+    "statut": "attente"
+   },
    {
     "num": 253178,
     "date": "2026-10-24",
@@ -55581,14 +55618,14 @@
   "_fixRecrutBellini": true
  },
  "_cid": "r5lri9agvq8",
- "_maj": 1792851457994,
- "_rev": "z5zng987e1f-mvmhgv3u",
+ "_maj": 1792851477056,
+ "_rev": "uyh4c4bxkga-mvmhhak6",
  "_majSec": {
   "fer": 1792825117403,
-  "fact": 1792851364090,
+  "fact": 1792851477033,
   "users": 1792851231052,
   "weeks": 1792400944983,
-  "sheets": 1792851343849,
+  "sheets": 1792851477033,
   "_qcFix1": 1792090599970,
   "_wkFix1": 1792090599970,
   "journal": 1792851364106,
@@ -55605,7 +55642,7 @@
   "primesExtra": 1792090599970,
   "quotasComHist": 1792400944983,
   "profils": 1792090599970,
-  "_tables": 1792851457994,
+  "_tables": 1792851477033,
   "_permsFix1": 1792090599970,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792090599970,
@@ -57537,13 +57574,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-24T14:17:38.682Z",
+  "maj": "2026-10-24T14:17:58.710Z",
   "semaine": 43,
   "totalBarils": 153350,
   "ca": 766750,
   "objectif": 375000,
   "effectif": 106,
-  "clientsServis": 164,
+  "clientsServis": 165,
   "theme": "halloween",
   "top3": [
    {
