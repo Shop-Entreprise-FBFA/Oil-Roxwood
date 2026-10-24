@@ -6332,6 +6332,20 @@
  "sheets": {
   "rh": [
    {
+    "nom": "john alvarez",
+    "grade": "Intérimaire",
+    "tel": "555074921",
+    "rib": "528386",
+    "idU": "237213",
+    "arrivee": "2026-10-24",
+    "discord": "1450864776824492073",
+    "avert": "",
+    "contrat": true,
+    "recrut": "Carter Fuente",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
     "nom": "Antonio Saint",
     "grade": "Intérimaire",
     "tel": "555-154-163",
@@ -20115,22 +20129,6 @@
    "public": true,
    "maj": "2026-09-16T11:47:16.417Z"
   },
-  "stella collins": {
-   "nom": "Stella Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-14T13:20:17.287Z"
-  },
-  "julio collins": {
-   "nom": "Julio Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T00:06:23.240Z"
-  },
   "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿": {
    "nom": "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿",
    "photo": "",
@@ -20154,6 +20152,22 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T16:48:15.042Z"
+  },
+  "stella collins": {
+   "nom": "Stella Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-14T13:20:17.287Z"
+  },
+  "julio collins": {
+   "nom": "Julio Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T00:06:23.240Z"
   },
   "william rodriguez-collins": {
    "nom": "William Rodriguez-collins",
@@ -55315,18 +55329,18 @@
   "salonRappelDirection": "",
   "theme": "halloween"
  },
- "_cid": "bot",
- "_maj": 1792826811606,
- "_rev": "d6mjh18i3e-mvm1sexn",
+ "_cid": "f1d66xbeldd",
+ "_maj": 1792836718116,
+ "_rev": "6po24uipqsb-mvm8oyvr",
  "_majSec": {
   "fer": 1792825117403,
   "fact": 1792794678404,
   "users": 1792825109575,
   "weeks": 1792400944983,
-  "sheets": 1792798871308,
+  "sheets": 1792836718116,
   "_qcFix1": 1792090599970,
   "_wkFix1": 1792090599970,
-  "journal": 1792825109575,
+  "journal": 1792836718116,
   "pending": 1792090599970,
   "prodDer": 1792780246437,
   "runners": 1792767531654,
@@ -55340,7 +55354,7 @@
   "primesExtra": 1792090599970,
   "quotasComHist": 1792400944983,
   "profils": 1792090599970,
-  "_tables": 1792826811606,
+  "_tables": 1792836718096,
   "_permsFix1": 1792090599970,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792090599970,
@@ -55348,15 +55362,25 @@
   "_affFix1": 1792090599970,
   "produits": 1792090599970,
   "_prodFix1": 1792090599970,
-  "_recruesIgnore": 1792798871237,
+  "_recruesIgnore": 1792836718096,
   "ventesAlias": 1792090599970,
   "_ventesIgnore": 1792090599970,
   "_avertVus": 1792090599970,
-  "_signeVus": 1792798871308
+  "_signeVus": 1792836718116
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1792836719408,
+   "u": "Diego Herrera",
+   "a": "Contrat(s) signé(s) via Discord : john alvarez"
+  },
+  {
+   "t": 1792836719389,
+   "u": "Diego Herrera",
+   "a": "Recrutements Discord : 1 fiche(s) créée(s), 0 case(s) complétée(s) — john alvarez"
+  },
   {
    "t": 1792825119909,
    "u": "Julio Collins",
@@ -56846,16 +56870,6 @@
    "t": 1791661392048,
    "u": "?",
    "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1791649053534,
-   "u": "William Rodriguez-collins",
-   "a": "Achats de fer : 4 relevé(s) repris du salon"
-  },
-  {
-   "t": 1791645824501,
-   "u": "Emma Collins",
-   "a": "Achats de fer : 5 relevé(s) repris du salon"
   }
  ],
  "prodDer": {
@@ -57272,12 +57286,12 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-24T06:58:43.739Z",
+  "maj": "2026-10-24T10:12:00.279Z",
   "semaine": 43,
   "totalBarils": 120163,
   "ca": 600815,
   "objectif": 375000,
-  "effectif": 104,
+  "effectif": 105,
   "clientsServis": 163,
   "theme": "halloween",
   "top3": [
@@ -60553,7 +60567,8 @@
   "1792785869271",
   "1792797348029",
   "1792798737044",
-  "1792798772062"
+  "1792798772062",
+  "1792826768817"
  ],
  "_signeVus": [
   "1789477305650",
@@ -60668,7 +60683,8 @@
   "1792785881772",
   "1792797365747",
   "1792798747977",
-  "1792798781863"
+  "1792798781863",
+  "1792826811095"
  ],
  "_agSupp": [
   "1789145270913",
