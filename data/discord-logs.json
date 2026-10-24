@@ -1,11 +1,32 @@
 {
- "maj": "2026-10-24T20:37:03.043352+00:00",
+ "maj": "2026-10-24T20:41:07.863092+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1563653491832914041",
+   "t": "2026-10-24T20:40:43.730000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 1738\nplayerDiscord : 1559916250929434727\nplayerName : BreezyCrab1027\nplayerCharacter : Bingo Dallas\nplayerId : 383174\nvehiclePlate : BM4391ZM\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Bingo Dallas",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "1738",
+    "playerdiscord": "1559916250929434727",
+    "playername": "BreezyCrab1027",
+    "playercharacter": "Bingo Dallas",
+    "playerid": "383174",
+    "vehicleplate": "BM4391ZM",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1563652516464562291",
    "t": "2026-10-24T20:36:51.184000+00:00",
@@ -67736,43 +67757,6 @@
    "nom": null,
    "quantite": 486,
    "montant": 4860,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1562566264793206795",
-   "t": "2026-10-21T20:40:28.604000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 1083\nplayerDiscord : 228152737701822465\nplayerName : SONIK\nplayerCharacter : Cristóbal Perrera\nplayerId : 379487\nvehiclePlate : BM4391ZM\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Cristóbal Perrera",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "1083",
-    "playerdiscord": "228152737701822465",
-    "playername": "SONIK",
-    "playercharacter": "Cristóbal Perrera",
-    "playerid": "379487",
-    "vehicleplate": "BM4391ZM",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1562565792321634446",
-   "t": "2026-10-21T20:38:35.958000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 328x Pétrole Raffiné pour 3280$ par Mikaël Owens. 1640$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 328,
-   "montant": 3280,
    "type": "vente",
    "salon": "1245400913473179729",
    "champs": {
