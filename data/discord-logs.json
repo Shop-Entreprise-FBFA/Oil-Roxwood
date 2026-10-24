@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-24T12:57:56.704565+00:00",
+ "maj": "2026-10-24T13:01:58.133017+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1563537963873468539",
+   "t": "2026-10-24T13:01:39.718000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 264x Pétrole Raffiné pour 2640$ par Salva Trucha. 1320$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 264,
+   "montant": 2640,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1563536944065937583-0",
    "t": "2026-10-24T12:57:36.577000+00:00",
@@ -64652,78 +64668,6 @@
     "itemid": "refinedoil",
     "jobid": "76",
     "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1562450489994518591-0",
-   "t": "2026-10-21T13:00:25.741000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 117x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1844.78, 6516.79, 16.73\ntargetPosition : -1844.79, 6516.31, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7856\nplayerDiscord : 473956733329342484\nplayerName : Marcus de Romanet\nplayerCharacter : Marcus Deromanet\nplayerId : 383067\nitemId : refinedoil",
-   "nom": "Marcus Deromanet",
-   "quantite": 117,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1844.78, 6516.79, 16.73",
-    "targetposition": "-1844.79, 6516.31, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7856",
-    "playerdiscord": "473956733329342484",
-    "playername": "Marcus de Romanet",
-    "playercharacter": "Marcus Deromanet",
-    "playerid": "383067",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1562450489994518591-1",
-   "t": "2026-10-21T13:00:25.741000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 147x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1844.89, 6516.84, 16.73\ntargetPosition : -1844.79, 6516.31, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7856\nplayerDiscord : 473956733329342484\nplayerName : Marcus de Romanet\nplayerCharacter : Marcus Deromanet\nplayerId : 383067\nitemId : refinedoil",
-   "nom": "Marcus Deromanet",
-   "quantite": 147,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1844.89, 6516.84, 16.73",
-    "targetposition": "-1844.79, 6516.31, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7856",
-    "playerdiscord": "473956733329342484",
-    "playername": "Marcus de Romanet",
-    "playercharacter": "Marcus Deromanet",
-    "playerid": "383067",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1562450489994518591-2",
-   "t": "2026-10-21T13:00:25.741000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 61x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1844.89, 6516.84, 16.73\ntargetPosition : -1844.79, 6516.31, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7856\nplayerDiscord : 473956733329342484\nplayerName : Marcus de Romanet\nplayerCharacter : Marcus Deromanet\nplayerId : 383067\nitemId : refinedoil",
-   "nom": "Marcus Deromanet",
-   "quantite": 61,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1844.89, 6516.84, 16.73",
-    "targetposition": "-1844.79, 6516.31, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7856",
-    "playerdiscord": "473956733329342484",
-    "playername": "Marcus de Romanet",
-    "playercharacter": "Marcus Deromanet",
-    "playerid": "383067",
-    "itemid": "refinedoil"
    }
   }
  ]
