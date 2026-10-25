@@ -32,7 +32,7 @@ window.ROXWOOD_CFG = {
 <script src="assets/roxwood-github.js?v=C-119"></script>
 <link rel="stylesheet" href="assets/roxwood-core.css?v=C-119">
 <link rel="stylesheet" href="assets/roxwood-app.css?v=C-119">
-<link rel="stylesheet" href="assets/roxwood-refonte.css?v=R-8">
+<link rel="stylesheet" href="assets/roxwood-refonte.css?v=R-9">
 </head>
 <body>
 <div id="noelNeige" aria-hidden="true"></div>
@@ -152,7 +152,7 @@ window.ROXWOOD_CFG = {
     <button class="nav-item" data-view="agenda">📅 <span class="txt">Mon agenda</span></button>
     <button class="nav-item" data-view="affiches">🖼️ <span class="txt">Affiches</span></button>
     </div>
-    <div class="nav-grp nav-grp-vis">
+    <div class="nav-grp">
     <div class="nav-sec" data-sec="systeme">Système</div>
     <button class="nav-item" data-view="dlogs">📡 <span class="txt">Logs en direct</span></button>
     <button class="nav-item" data-view="journal">📜 <span class="txt">Journal</span></button>
@@ -1219,7 +1219,7 @@ function actKey(e){
 function applyPerms(){
   const al=allowedViews();
   /* Menu du haut : un bouton non autorisé disparaît, comme avant dans la barre latérale. */
-  document.querySelectorAll('#navTop .nav-item[data-view]').forEach(b=>{ b.style.display=al.includes(b.dataset.view)?'':'none'; });
+  document.querySelectorAll('#navTop .nav-item[data-view]').forEach(b=>{ b.style.display=(al.includes(b.dataset.view)||(b.dataset.view==='params'&&['dlogs','journal','maj'].some(x=>al.includes(x))))?'':'none'; });
   /* Menu « Plus » : mêmes règles qu'avant — un titre de section sans aucun onglet autorisé est masqué.
      Plus de sections repliables : le menu est déjà un tiroir qu'on ouvre et referme. */
   document.querySelectorAll('#navMore .nav-sec').forEach(h=>{
@@ -1834,13 +1834,17 @@ function show(v){
              setTimeout(()=>toast(`🌴 ${abs.length} absence(s) reprise(s) depuis Discord — ${abs.join(', ')}`,7000),400); }
   }
   const al=allowedViews();
+  if(v==='params'&&!al.includes('params')){ const sv=['dlogs','journal','maj'].find(x=>al.includes(x)); if(sv) v=sv; } // pas de réglages : on atterrit sur sa page système
   if(!al.includes(v)) v=al[0]||'accueil'; // vue non autorisée → première vue permise
   const memeVue=(v===VIEW);
   const repere=memeVue?repereEcran():null;
   VIEW=v;
-  document.querySelectorAll('.nav-item[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===v));
+  const sysV=['dlogs','journal','maj'].includes(v);
+  document.querySelectorAll('.nav-item[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===v||(sysV&&!!b.closest('#navTop')&&b.dataset.view==='params')));
+  if(v!=='params') delete $('#main').dataset.ptab;
   destroyCharts();
   ({accueil,rh,commercial,comptable,overview,effectif,semaine,historique,cloture,ftablette,felig,fventes,frh,integration,fcompta,factures,relances,bilan,prodder,quotascom,frecues,moi,profil,quotashist,agenda,affiches,produits,maj,dlogs,journal,params})[v]();
+  if(sysV) $('#main').insertAdjacentHTML('afterbegin',paramsTabsHTML(v));
   try{ applyRO(); }catch(e){}
   restaureEcran(repere);
 }
@@ -1889,7 +1893,7 @@ function cartesHTML(CARTES){
   if(!CARTES.length) return '<div class="empty">Aucune section accessible avec ton rôle actuel.</div>';
   const al=allowedViews();
   return `<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px">
-    ${CARTES.map(c=>{ const col=c.couleur||'var(--accent)', ok=al.includes(c.view);
+    ${CARTES.map(c=>{ const col=c.couleur||'var(--accent)', ok=al.includes(c.view)||(c.view==='params'&&['dlogs','journal','maj'].some(x=>al.includes(x)));
       return ok?`<div class="panel kpi link pole-carte" style="--pc:${col}" onclick="show('${c.view}')" onkeydown="actKey(event)" tabindex="0" role="button" title="Ouvrir ${esc(c.titre)}">
       <div class="pole-ico">${c.emoji}</div>
       <div class="pole-titre">${esc(c.titre)}</div>
@@ -6961,7 +6965,7 @@ async function navBadges(){
   if(m){ const old=m.querySelector('.nvb'); if(old) old.remove();
     const neuf=localStorage.getItem('orx_seenver')!==APP_VERSION;
     if(neuf) m.insertAdjacentHTML('beforeend','<span class="nvb dot" title="Nouvelle version !"></span>');
-    const wb=document.getElementById('whoamiBtn'); if(wb) wb.classList.toggle('neuf',neuf);
+    const wb=document.querySelector('#navTop .nav-item[data-view="params"]'); if(wb) wb.classList.toggle('neuf',neuf);
   }
 }
 
@@ -8214,12 +8218,32 @@ function enteteRepliable(cle,titre,extra){
 
 /* Plus de demandes d'accès à traiter : depuis C-75 c'est le rôle Discord qui
    ouvre la porte. Personne ne « demande » un accès — on lui donne le rôle. */
+/* ---- Paramètres à onglets ----
+   Les réglages tiennent en une seule page ; chaque panneau porte data-ptab et seul celui de l'onglet actif
+   s'affiche (CSS). Les champs restent dans la page, donc saveParams() lit toujours tout. Logs en direct,
+   Journal et Mises à jour sont des pages à part, rattachées à la même barre d'onglets. */
+let PARAM_TAB='eco';
+const PARAM_ONGLETS=[['eco','💼 Économie'],['apparence','🖼️ Apparence'],['acces','🔐 Accès & permissions'],['grades','📐 Grades & barèmes'],['donnees','💾 Données & Discord']];
+const PARAM_SYS=[['dlogs','📡 Logs en direct'],['journal','📜 Journal'],['maj','🆕 Mises à jour']];
+function paramsTabsHTML(actif){
+  const al=allowedViews(), reglages=al.includes('params');
+  const neuf=localStorage.getItem('orx_seenver')!==APP_VERSION;
+  return `<div class="tabs" id="paramTabs" role="tablist" aria-label="Sections des paramètres">
+    ${reglages?PARAM_ONGLETS.map(([k,l])=>`<button class="tab${actif==='params'&&PARAM_TAB===k?' active':''}" role="tab" onclick="paramTab('${k}')">${l}</button>`).join(''):''}
+    ${PARAM_SYS.filter(([v])=>al.includes(v)).map(([v,l])=>`<button class="tab${actif===v?' active':''}" role="tab" onclick="show('${v}')">${l}${v==='maj'&&neuf?' <span class="nvb dot" title="Nouvelle version !"></span>':''}</button>`).join('')}
+  </div>`;
+}
+function paramTab(k){
+  PARAM_TAB=k; $('#main').dataset.ptab=k;
+  document.querySelectorAll('#paramTabs .tab').forEach((b,i)=>b.classList.toggle('active',i<PARAM_ONGLETS.length&&PARAM_ONGLETS[i][0]===k));
+}
 async function params(){
   $('#main').innerHTML = `
   ${heroHTML('params','Paramètres','Configuration et administration')}
+  ${paramsTabsHTML('params')}
   <div class="topbar"><div><h2>Paramètres</h2><div class="sub">Configuration de l'entreprise et des données</div></div></div>
-  <div class="grid g2">
-    <div class="panel">
+  <div class="grid g2 params-g2">
+    <div class="panel" data-ptab="eco">
       <h3>💼 Économie</h3>
       <div class="grid g2">
         <div class="f-row"><label class="f-lbl">Prix du pétrole ($/u)</label><input class="field" id="p_prix" type="number" value="${S.settings.prix}"></div>
@@ -8263,7 +8287,7 @@ async function params(){
       <button class="btn btn-gold" style="width:100%;margin-top:16px" onclick="saveParams()">Enregistrer</button>
     </div>
     <div>
-      <div class="panel" style="margin-bottom:18px">
+      <div class="panel" data-ptab="apparence" style="margin-bottom:18px">
         <h3>🖼️ Fonds d'écran par section</h3>
         <p style="color:var(--muted);font-size:.8rem;margin-bottom:14px">
           Une image en bandeau au-dessus de chaque pôle du menu (Accueil et les 5 sections). Colle l'adresse d'une image (URL) — vide, la section garde son fond sombre actuel.
@@ -8277,7 +8301,7 @@ async function params(){
       <!-- « Comptes d'accès » a été retiré en C-75 : les comptes ne se gèrent plus
            ici mais sur Discord. On garde un état des lieux, en lecture seule —
            savoir qui a un accès reste utile, le régler à la main ne l'est plus. -->
-      <div class="panel" style="margin-bottom:18px">
+      <div class="panel" data-ptab="acces" style="margin-bottom:18px">
         <h3>👤 Qui a un accès (${(S.users||[]).length})${(()=>{const c=currentUser();return c?` — connecté : ${esc(c.user)}`:''})()}</h3>
         <p style="color:var(--muted);font-size:.8rem;margin-bottom:12px">
           Les rôles viennent du serveur Discord et s'y règlent. Donner un accès : attribuer le rôle.
@@ -8292,7 +8316,7 @@ async function params(){
         </tr>`).join('')||'<tr><td colspan="3"><div class="empty">Aucun compte</div></td></tr>'}
         </tbody></table>
       </div>
-      <div class="panel" style="margin-bottom:18px">
+      <div class="panel" data-ptab="donnees" style="margin-bottom:18px">
         <h3>🔑 Le jeton d'écriture a déménagé</h3>
         <p style="color:var(--muted);font-size:.85rem;line-height:1.55">
           Il est désormais dans <b style="color:var(--ink)">👤 Mon profil</b>, que tout le monde a.
@@ -8300,7 +8324,7 @@ async function params(){
         </p>
         <button class="btn btn-ghost" style="margin-top:10px" onclick="show('profil')">Aller à Mon profil</button>
       </div>
-      <div class="panel" style="margin-bottom:18px">
+      <div class="panel" data-ptab="donnees" style="margin-bottom:18px">
         <h3>📡 Logs Discord (compte entreprise)</h3>
         <div class="f-row"><input class="field" id="p_wh" type="text" value="${esc(S.settings.webhook||'')}" placeholder="https://discord.com/api/webhooks/…"></div>
         <div style="display:flex;gap:10px">
@@ -8309,7 +8333,7 @@ async function params(){
         </div>
         <p style="color:var(--muted);font-size:.78rem;margin-top:12px">Chaque run, recrutement, promotion, départ et clôture de semaine est envoyé automatiquement sur ce salon Discord.</p>
       </div>
-      <div class="panel">
+      <div class="panel" data-ptab="donnees">
         <h3>💾 Données</h3>
         <p style="color:var(--muted);font-size:.82rem;margin-bottom:14px">Les données vivent dans ce navigateur. Exporte régulièrement un fichier JSON pour sauvegarder ou partager avec un autre admin.</p>
         <div style="display:flex;gap:10px;flex-wrap:wrap">
@@ -8323,7 +8347,7 @@ async function params(){
       </div>
     </div>
   </div>
-  <div class="panel" style="margin-top:18px;overflow-x:auto">
+  <div class="panel" data-ptab="grades" style="margin-top:18px;overflow-x:auto">
     <h3 style="display:flex;justify-content:space-between;align-items:center">📐 Barème des grades
       ${gradesPersonnalises()?`<button class="btn btn-sm btn-ghost" onclick="grReset()">↺ Valeurs d'usine</button>`:''}</h3>
     <p style="color:var(--muted);font-size:.78rem;margin-bottom:10px">
@@ -8356,7 +8380,7 @@ async function params(){
       ${gradesPersonnalises()?'<b style="color:var(--accent)"> Barème personnalisé actif.</b>':''}
     </p>
   </div>
-  <div class="panel" style="margin-top:18px;overflow-x:auto">
+  <div class="panel" data-ptab="acces" style="margin-top:18px;overflow-x:auto">
     <h3>🎖️ Connexion par rôle Discord</h3>
     <p style="color:var(--muted);font-size:.78rem;margin-bottom:10px">
       Au lieu de valider chaque arrivée à la main, le serveur Discord fait foi : qui porte un rôle listé ici
@@ -8393,7 +8417,7 @@ async function params(){
       automatiquement — sinon plus personne ne pourrait ouvrir les Paramètres.
     </p>
   </div>
-  <div class="panel" style="margin-top:18px;overflow-x:auto">
+  <div class="panel" data-ptab="acces" style="margin-top:18px;overflow-x:auto">
     ${enteteRepliable('perms','🔐 Permissions par rôle',
       (S.settings.permsCustom||S.settings.permsRO)?`<button class="btn btn-sm btn-ghost" onclick="if(confirm('Revenir aux permissions par défaut pour tous les rôles ?')){delete S.settings.permsCustom;delete S.settings.permsRO;jlog('Permissions : retour aux valeurs par défaut');save();sbPushNow();applyPerms();applyRO();params();}">↺ Permissions par défaut</button>`:'')}
     <div id="rp_perms" ${replie('perms')?'hidden':''}>
@@ -8412,7 +8436,7 @@ async function params(){
     })()}
     </div>
   </div>
-  <div class="panel" style="margin-top:18px;overflow-x:auto">
+  <div class="panel" data-ptab="grades" style="margin-top:18px;overflow-x:auto">
     ${enteteRepliable('bareme','📐 Barème progressif d\'imposition (référence)',
       `<button class="btn btn-sm btn-ghost" onclick="if(confirm('Restaurer le barème par défaut (valeurs de Thomas) ?')){S.settings.bareme=JSON.parse(JSON.stringify(BAREME_DEF));palDirty();jlog('Barème d\\'imposition restauré aux valeurs par défaut');save();sbPushNow();params();}">↺ Valeurs par défaut</button>`)}
     <div id="rp_bareme" ${replie('bareme')?'hidden':''}>
@@ -8423,7 +8447,7 @@ async function params(){
     </tr>`).join('')}</tbody></table>
     </div>
   </div>
-  <div class="panel" style="margin-top:18px">
+  <div class="panel" data-ptab="grades" style="margin-top:18px">
     <h3>📐 Règles de grades (rappel)</h3>
     <table><thead><tr><th>Grade</th><th>Quota hebdo</th><th>Multiplicateur prime</th><th>Montée de grade</th></tr></thead><tbody>
     ${GRADES.map((g,i)=>`<tr><td><span class="badge ${g.cls}">${g.nom}</span></td><td>${fmt(g.quota)} barils</td><td>×${g.mult}</td><td>${g.merite?'🏅 attribué au mérite par la direction — pas de montée automatique':i>0?fmt(g.montee)+' barils/sem. pour y accéder':'grade d\'entrée'}</td></tr>`).join('')}
@@ -8431,6 +8455,7 @@ async function params(){
     <tr><td><span class="badge bgstg">Stagiaire</span> <small style="color:var(--muted)">période d'essai</small></td><td>${fmt(STG_GRADE.quota)} barils</td><td>×${STG_GRADE.mult}</td><td>titularisation manuelle → Intérimaire (bouton 🎓 dans l'Effectif)</td></tr>
     </tbody></table>
   </div>`;
+  $('#main').dataset.ptab=PARAM_TAB;
 }
 function saveParams(){
   const numOr=(v,d)=>{ const n=parseFloat(v); return isNaN(n)?d:n; }; // accepte 0 comme valeur valide

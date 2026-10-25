@@ -124,5 +124,18 @@ html.halloween #app::after,html.noel #app::after{top:calc(var(--refonte-h) + 10p
 #navMore{width:290px;column-count:1;right:var(--refonte-px)}
 #navMore .nav-grp:not(.nav-grp-vis){display:none}
 #navMore .nav-grp-vis .nav-sec{padding-top:6px}
-#whoamiBtn{position:relative;cursor:pointer}
-#whoamiBtn.neuf::after{content:"";position:absolute;top:6px;right:6px;width:9px;height:9px;border-radius:50%;background:#ff6a2b;box-shadow:0 0 0 2px #0e1622}
+#whoamiBtn{cursor:pointer}
+#navTop .nav-item{position:relative}
+#navTop .nav-item.neuf::after{content:"";position:absolute;top:7px;right:4px;width:8px;height:8px;border-radius:50%;background:#ff6a2b;box-shadow:0 0 0 2px #0e1622}
+
+/* ---- Paramètres à onglets ---- */
+#paramTabs{display:flex;flex-wrap:wrap;gap:6px;margin:34px 0 4px;border-bottom:1px solid rgba(255,255,255,.1)}
+#main>.hero-sec + #paramTabs{margin-top:0}
+#paramTabs .tab{border-radius:8px 8px 0 0;font-family:var(--f-display);font-size:14px;letter-spacing:.07em;text-transform:uppercase}
+#paramTabs .tab .nvb{margin-left:6px;vertical-align:middle}
+.params-g2{grid-template-columns:repeat(auto-fit,minmax(460px,1fr))}
+.params-g2>div:not(.panel){display:contents}
+.params-g2 .panel{margin-bottom:0!important}
+#main[data-ptab] [data-ptab]{display:none!important}
+#main[data-ptab="eco"] [data-ptab="eco"],#main[data-ptab="apparence"] [data-ptab="apparence"],#main[data-ptab="acces"] [data-ptab="acces"],
+#main[data-ptab="grades"] [data-ptab="grades"],#main[data-ptab="donnees"] [data-ptab="donnees"]{display:block!important}
