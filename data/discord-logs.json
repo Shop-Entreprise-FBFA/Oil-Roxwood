@@ -1,11 +1,48 @@
 {
- "maj": "2026-10-25T12:23:03.454940+00:00",
+ "maj": "2026-10-25T12:25:03.535338+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1563891078166482986",
+   "t": "2026-10-25T12:24:48.726000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 310x Pétrole Raffiné pour 3100$ par Lorenzo Shiva. 1550$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 310,
+   "montant": 3100,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1563891057639563307",
+   "t": "2026-10-25T12:24:43.832000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 8277\nplayerDiscord : 1188523026795462748\nplayerName : JLTzk\nplayerCharacter : Jordan Coleman\nplayerId : 181277\nvehiclePlate : AS5715VX\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Jordan Coleman",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "8277",
+    "playerdiscord": "1188523026795462748",
+    "playername": "JLTzk",
+    "playercharacter": "Jordan Coleman",
+    "playerid": "181277",
+    "vehicleplate": "AS5715VX",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1563890565664481353",
    "t": "2026-10-25T12:22:46.536000+00:00",
@@ -68096,27 +68133,6 @@
     "playercharacter": "Hakim Cheb",
     "playerid": "321842",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1562803575418126358",
-   "t": "2026-10-22T12:23:27.866000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 9115\nplayerDiscord : 1306377660322287657\nplayerName : Synerax3g\nplayerCharacter : Jacob Stebane\nplayerId : 299457\nvehiclePlate : FE3726MZ\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Jacob Stebane",
-   "quantite": 3,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "9115",
-    "playerdiscord": "1306377660322287657",
-    "playername": "Synerax3g",
-    "playercharacter": "Jacob Stebane",
-    "playerid": "299457",
-    "vehicleplate": "FE3726MZ",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
