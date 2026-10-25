@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-25T22:51:02.916399+00:00",
+ "maj": "2026-10-25T22:53:03.491453+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1564049010212474991",
+   "t": "2026-10-25T22:52:22.660000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 322x Pétrole Raffiné pour 3220$ par Merill Danielson. 1610$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 322,
+   "montant": 3220,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1564048474641662025-0",
    "t": "2026-10-25T22:50:14.970000+00:00",
@@ -92826,27 +92842,6 @@
    "salon": "1245400913473179729",
    "champs": {
     "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1562990766576635925",
-   "t": "2026-10-23T00:47:17.716000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 7436\nplayerDiscord : 422167625460744192\nplayerName : PaleNewt4194\nplayerCharacter : Jj Junior\nplayerId : 382570\nvehiclePlate : XP1606YE\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Jj Junior",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "7436",
-    "playerdiscord": "422167625460744192",
-    "playername": "PaleNewt4194",
-    "playercharacter": "Jj Junior",
-    "playerid": "382570",
-    "vehicleplate": "XP1606YE",
     "jobid": "76",
     "jobname": "Oil RoxWood"
    }
