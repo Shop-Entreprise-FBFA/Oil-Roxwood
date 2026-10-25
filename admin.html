@@ -32,7 +32,7 @@ window.ROXWOOD_CFG = {
 <script src="assets/roxwood-github.js?v=C-119"></script>
 <link rel="stylesheet" href="assets/roxwood-core.css?v=C-119">
 <link rel="stylesheet" href="assets/roxwood-app.css?v=C-119">
-<link rel="stylesheet" href="assets/roxwood-refonte.css?v=R-11">
+<link rel="stylesheet" href="assets/roxwood-refonte.css?v=R-13">
 </head>
 <body>
 <div id="noelNeige" aria-hidden="true"></div>
@@ -4196,24 +4196,104 @@ function saveFact(){
   else { factures(); toast('💾 Facture enregistrée'); }
 }
 /* ---- historique ---- */
+/* ---- Historique des factures : par client (cartes, clic = tout son historique) ou par semaine ----
+   Les actions sont celles de l'ancien tableau (modifier, imprimer, supprimer, payée/en attente) ;
+   seule la présentation change. */
+let HIST_VUE='client', HIST_Q='', HIST_SEM=null, HIST_CLI=null;
+function histLundi(d){                     // lundi (AAAA-MM-JJ) de la semaine d'une date — la semaine de l'entreprise court du lundi au dimanche
+  const m=String(d||'').slice(0,10).match(/^(\d{4})-(\d{2})-(\d{2})$/); if(!m) return '';
+  const t=new Date(Date.UTC(+m[1],+m[2]-1,+m[3])); t.setUTCDate(t.getUTCDate()-((t.getUTCDay()+6)%7));
+  return t.toISOString().slice(0,10);
+}
+function histSemInfo(lundi){
+  const [y,m,d]=lundi.split('-').map(Number), a=new Date(y,m-1,d), z=new Date(y,m-1,d+6);
+  const f=x=>String(x.getDate()).padStart(2,'0')+'/'+String(x.getMonth()+1).padStart(2,'0');
+  return {num:isoWeek(a), txt:`du ${f(a)} au ${f(z)}/${z.getFullYear()}`};
+}
+function histDecale(lundi,n){ const [y,m,d]=lundi.split('-').map(Number); const t=new Date(Date.UTC(y,m-1,d+7*n)); return t.toISOString().slice(0,10); }
+function histLigne(i){
+  const f=S.fact.factures[i], payee=f.statut==='payee';
+  return `<div class="hist-fact ${payee?'payee':'attente'}">
+    <div class="hist-num"><b>n°${f.num}</b><span>${frDate(f.date)}</span></div>
+    <div class="hist-cli"><span class="hist-lien" tabindex="0" role="button" onkeydown="actKey(event)" onclick="histOpen(decodeURIComponent('${encodeURIComponent(f.client||'')}'))">${esc(f.client||'—')}</span>${f.postop?' <span title="Livraison Post OP">🚚</span>':''}<small>${esc(f.emetteur||'—')}</small></div>
+    <div class="hist-ttc">${money(f.ttc)}</div>
+    <span class="badge ${payee?'bg3':'bg0'}" style="cursor:pointer" tabindex="0" role="button" onkeydown="actKey(event)" title="Cliquer pour changer" onclick="togglePay(${i})">${payee?'✔ Payée':'⏳ En attente'}</span>
+    <div class="hist-act">
+      <button class="btn btn-sm btn-ghost" onclick="closeModal();fEdit(${f.num})" title="Modifier cette facture">✎</button>
+      <button class="btn btn-sm btn-ghost" onclick="printFact(S.fact.factures[${i}])" title="Imprimer">🖨️</button>
+      <button class="btn btn-sm btn-red" title="Supprimer" onclick="if(confirm('Supprimer la facture n°${f.num} ?')){jlog('Suppression de la facture n°${f.num}');S.fact.factures.splice(${i},1);save();fHist();}">✕</button>
+    </div>
+  </div>`;
+}
+function histOpen(nom){ HIST_CLI=nom; histModal(nom); }
+function histModal(nom){
+  const ids=S.fact.factures.map((f,i)=>i).filter(i=>String(S.fact.factures[i].client||'')===nom).sort((x,y)=>String(S.fact.factures[y].date).localeCompare(String(S.fact.factures[x].date)));
+  const T=ids.reduce((a,i)=>a+nn(S.fact.factures[i].ttc),0), W=ids.filter(i=>S.fact.factures[i].statut!=='payee').reduce((a,i)=>a+nn(S.fact.factures[i].ttc),0);
+  const par={}; ids.forEach(i=>{ const l=histLundi(S.fact.factures[i].date)||'?'; (par[l]=par[l]||[]).push(i); });
+  openModal(`<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:12px">
+    <div><h3 style="margin:0">🏢 ${esc(nom||'Sans nom')}</h3><div style="color:var(--muted);font-size:.8rem;margin-top:3px">${ids.length} facture(s) · total <b class="gold">${money(T)}</b> · en attente <b style="color:${W?'#f5b04a':'var(--muted)'}">${money(W)}</b></div></div>
+    <button class="btn btn-sm btn-ghost" onclick="HIST_CLI=null;closeModal()">Fermer</button></div>
+  <div style="max-height:62vh;overflow-y:auto;padding-right:4px">
+  ${ids.length?Object.keys(par).sort().reverse().map(l=>{ const inf=l==='?'?null:histSemInfo(l); const tot=par[l].reduce((a,i)=>a+nn(S.fact.factures[i].ttc),0);
+    return `<div class="hist-sem-t">${inf?`Semaine ${inf.num} · ${inf.txt}`:'Date inconnue'}<span>${par[l].length} fact. · ${money(tot)}</span></div>${par[l].map(histLigne).join('')}`; }).join(''):'<div class="empty">Aucune facture pour ce client</div>'}
+  </div>`);
+  $('#modalBox').style.maxWidth='820px'; $('#modalBox').style.width='min(820px,94vw)';
+}
 function fHist(){
   const F=S.fact.factures;
-  $('#factBody').innerHTML=`<div class="panel" style="padding:8px 16px">
-  ${F.length?`<table><thead><tr><th>N°</th><th>Date</th><th>Client</th><th>Total TTC</th><th>Émetteur</th><th>Statut</th><th style="text-align:right">Actions</th></tr></thead><tbody>
-  ${F.map((f,i)=>`<tr>
-    <td><b>n°${f.num}</b></td><td>${frDate(f.date)}</td><td>${esc(f.client)}${f.postop?' <span title="Livraison Post OP">🚚</span>':''}</td>
-    <td class="gold" style="font-weight:700">${money(f.ttc)}</td><td>${esc(f.emetteur||'—')}</td>
-    <td><span class="badge ${f.statut==='payee'?'bg3':'bg0'}" style="cursor:pointer" tabindex="0" role="button" onkeydown="actKey(event)" title="Cliquer pour changer" onclick="togglePay(${i})">${f.statut==='payee'?'✔ Payée':'⏳ En attente'}</span></td>
-    <td style="text-align:right;white-space:nowrap">
-      <button class="btn btn-sm btn-ghost" onclick="fEdit(${f.num})" title="Modifier cette facture">✎</button>
-      <button class="btn btn-sm btn-ghost" onclick="printFact(S.fact.factures[${i}])">🖨️</button>
-      <button class="btn btn-sm btn-red" onclick="if(confirm('Supprimer la facture n°${f.num} ?')){jlog('Suppression de la facture n°${f.num}');S.fact.factures.splice(${i},1);save();fHist();}">✕</button></td>
-  </tr>`).join('')}</tbody></table>`:'<div class="empty">Aucune facture enregistrée</div>'}
-  </div>
-  ${F.length?`<div class="grid g2" style="margin-top:16px">
-    <div class="panel kpi"><div class="lbl">CA facturé (TTC)</div><div class="val gold">${money(F.reduce((a,f)=>a+f.ttc,0))}</div></div>
-    <div class="panel kpi"><div class="lbl">En attente de paiement</div><div class="val">${money(F.filter(f=>f.statut!=='payee').reduce((a,f)=>a+f.ttc,0))}</div></div>
-  </div>`:''}`;
+  if(!F.length){ $('#factBody').innerHTML='<div class="panel"><div class="empty">Aucune facture enregistrée</div></div>'; return; }
+  // semaine affichée : celle de la dernière facture tant que l'utilisateur n'a pas choisi
+  const lundis=[...new Set(F.map(f=>histLundi(f.date)).filter(Boolean))].sort().reverse();
+  if(!HIST_SEM||!/^\d{4}-\d{2}-\d{2}$/.test(HIST_SEM)) HIST_SEM=lundis[0]||histLundi(new Date().toISOString());
+  const barre=`<div class="rel-barre">
+    <div class="rel-seg" role="tablist">
+      <button class="${HIST_VUE==='client'?'on':''}" onclick="HIST_VUE='client';fHist()">🏢 Par client</button>
+      <button class="${HIST_VUE==='semaine'?'on':''}" onclick="HIST_VUE='semaine';fHist()">📅 Par semaine</button>
+    </div>
+    ${HIST_VUE==='client'?`<input class="field" id="histSearch" placeholder="🔍 Client…" value="${esc(HIST_Q)}" oninput="HIST_Q=this.value;fHist();const e=document.getElementById('histSearch');e.focus();e.setSelectionRange(e.value.length,e.value.length)">`:''}
+  </div>`;
+  let corps='';
+  if(HIST_VUE==='client'){
+    const q=HIST_Q.trim().toLowerCase(), g={};
+    F.forEach((f,i)=>{ const k=String(f.client||''); (g[k]=g[k]||[]).push(i); });
+    const cartes=Object.entries(g).filter(([n])=>!q||n.toLowerCase().includes(q)).map(([n,ids])=>{
+      const tot=ids.reduce((a,i)=>a+nn(F[i].ttc),0), att=ids.filter(i=>F[i].statut!=='payee'), W=att.reduce((a,i)=>a+nn(F[i].ttc),0);
+      const der=ids.map(i=>String(F[i].date||'')).sort().pop();
+      return {n,ids,tot,att:att.length,W,der};
+    }).sort((x,y)=>String(y.der).localeCompare(String(x.der)));
+    corps=`<div class="rel-legende"><span>${cartes.length} client(s) · clique sur une carte pour voir tout son historique</span></div>
+    <div class="rel-grille">${cartes.map(c=>`<div class="rel-card ${c.att?'moyen':'cours'} hist-card" tabindex="0" role="button" onkeydown="actKey(event)" onclick="histOpen(decodeURIComponent('${encodeURIComponent(c.n)}'))">
+      <div class="rel-top"><b class="rel-nom">${esc(c.n||'Sans nom')}</b><span class="rel-age neutre">${c.ids.length} fact.</span></div>
+      <div class="hist-chiffres"><div><small>Total TTC</small><b class="gold">${money(c.tot)}</b></div><div><small>En attente</small><b style="color:${c.att?'#f5b04a':'var(--muted)'}">${money(c.W)}</b></div></div>
+      <div class="rel-meta"><span>Dernière facture · ${frDate(c.der)}</span>${c.att?`<span>⏳ ${c.att} à encaisser</span>`:'<span>✔ tout payé</span>'}</div>
+    </div>`).join('')||'<div class="empty">Aucun client trouvé</div>'}</div>`;
+  } else {
+    const ids=F.map((f,i)=>i).filter(i=>histLundi(F[i].date)===HIST_SEM).sort((x,y)=>String(F[y].date).localeCompare(String(F[x].date))||F[y].num-F[x].num);
+    const T=ids.reduce((a,i)=>a+nn(F[i].ttc),0), W=ids.filter(i=>F[i].statut!=='payee').reduce((a,i)=>a+nn(F[i].ttc),0), inf=histSemInfo(HIST_SEM);
+    const cur=histLundi(new Date().toISOString());
+    corps=`<div class="hist-nav">
+      <button class="btn btn-sm btn-ghost" onclick="HIST_SEM=histDecale(HIST_SEM,-1);fHist()" title="Semaine précédente">◀</button>
+      <div class="hist-nav-t"><b>Semaine ${inf.num}</b><span>${inf.txt}</span></div>
+      <button class="btn btn-sm btn-ghost" onclick="HIST_SEM=histDecale(HIST_SEM,1);fHist()" title="Semaine suivante">▶</button>
+      ${HIST_SEM!==cur?`<button class="btn btn-sm btn-ghost" onclick="HIST_SEM='${cur}';fHist()">Cette semaine</button>`:''}
+    </div>
+    <div class="grid g3" style="margin-bottom:14px">
+      <div class="panel kpi"><div class="lbl">Factures</div><div class="val">${ids.length}</div></div>
+      <div class="panel kpi"><div class="lbl">Total TTC</div><div class="val gold">${money(T)}</div></div>
+      <div class="panel kpi"><div class="lbl">En attente</div><div class="val">${money(W)}</div></div>
+    </div>
+    ${ids.length?`<div class="hist-liste">${ids.map(histLigne).join('')}</div>`:'<div class="panel"><div class="empty">Aucune facture cette semaine</div></div>'}
+    <div class="hist-sem-t" style="margin-top:22px">Toutes les semaines</div>
+    <div class="hist-chips">${lundis.map(l=>{ const i2=histSemInfo(l), n=F.filter(f=>histLundi(f.date)===l), t=n.reduce((a,f)=>a+nn(f.ttc),0);
+      return `<button class="${l===HIST_SEM?'on':''}" onclick="HIST_SEM='${l}';fHist()"><b>S${i2.num}</b><span>${n.length} fact. · ${money(t)}</span></button>`; }).join('')}</div>`;
+  }
+  $('#factBody').innerHTML=`${barre}${corps}
+  <div class="grid g2" style="margin-top:18px">
+    <div class="panel kpi"><div class="lbl">CA facturé (TTC) — total</div><div class="val gold">${money(F.reduce((a,f)=>a+f.ttc,0))}</div></div>
+    <div class="panel kpi"><div class="lbl">En attente de paiement — total</div><div class="val">${money(F.filter(f=>f.statut!=='payee').reduce((a,f)=>a+f.ttc,0))}</div></div>
+  </div>`;
+  // une carte ouverte reste à jour après un changement de statut ou une suppression
+  if(HIST_CLI&&$('#modalBg').classList.contains('open')) histModal(HIST_CLI);
 }
 /* Rouvre une facture émise dans le formulaire. Le brouillon en cours est écrasé :
    on prévient s'il contenait quelque chose. */
@@ -8530,6 +8610,7 @@ function resetAll(){
 let MODAL_RETOUR=null; // élément à refocaliser une fois la fenêtre refermée
 function openModal(html){
   MODAL_RETOUR=document.activeElement;
+  $('#modalBox').style.maxWidth=''; $('#modalBox').style.width=''; // une fenêtre élargie (historique client) ne doit pas déteindre sur les autres
   $('#modalBox').innerHTML=html;
   $('#modalBg').classList.add('open');
   $('#modalBox').focus(); // porte le focus clavier dans la fenêtre : sans ça il reste sur l'élément derrière, invisible sous le fond
