@@ -7337,7 +7337,7 @@
     "idU": "213129",
     "arrivee": "2026-09-27",
     "discord": "1189934245062389760",
-    "avert": "",
+    "avert": "1",
     "contrat": true,
     "recrut": "Stella Collins",
     "dernierService": "2026-09-30",
@@ -7351,7 +7351,7 @@
     "idU": "378834",
     "arrivee": "2026-09-09",
     "discord": "870991671960145920",
-    "avert": "",
+    "avert": "1",
     "contrat": false,
     "recrut": "Juan Sanchez",
     "dernierService": "2026-09-29",
@@ -56317,17 +56317,17 @@
   }
  },
  "_cid": "z8owwbguce",
- "_maj": 1792970394361,
- "_rev": "dlsw92ofb39-mvoga53q",
+ "_maj": 1792970397766,
+ "_rev": "ko3n87iwhb-mvoga87x",
  "_majSec": {
   "fer": 1792961656047,
   "fact": 1792941392401,
   "users": 1792946648058,
   "weeks": 1792400944983,
-  "sheets": 1792970394332,
+  "sheets": 1792970397732,
   "_qcFix1": 1792090599970,
   "_wkFix1": 1792090599970,
-  "journal": 1792970394361,
+  "journal": 1792970397766,
   "pending": 1792090599970,
   "prodDer": 1792875193989,
   "runners": 1792969282757,
@@ -56341,7 +56341,7 @@
   "primesExtra": 1792090599970,
   "quotasComHist": 1792400944983,
   "profils": 1792090599970,
-  "_tables": 1792970394332,
+  "_tables": 1792970397732,
   "_permsFix1": 1792090599970,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792090599970,
@@ -56358,6 +56358,16 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1792970400572,
+   "u": "Diego Herrera",
+   "a": "Avertissement : Bratan LEONETI (intérimaire, aucune prise de service) — total : 1"
+  },
+  {
+   "t": 1792970398858,
+   "u": "Diego Herrera",
+   "a": "Avertissement : Brahan Djibril (intérimaire, aucune prise de service) — total : 1"
+  },
   {
    "t": 1792970397166,
    "u": "Diego Herrera",
@@ -57847,16 +57857,6 @@
    "t": 1791756604302,
    "u": "Diego Herrera",
    "a": "Avertissement : Rayan Espada (intérimaire, aucune prise de service) — total : 1"
-  },
-  {
-   "t": 1791756602160,
-   "u": "Diego Herrera",
-   "a": "Avertissement : Romelu Louka (intérimaire, aucune prise de service) — total : 1"
-  },
-  {
-   "t": 1791756599345,
-   "u": "Diego Herrera",
-   "a": "Avertissement : Stéphane Lucien (intérimaire, aucune prise de service) — total : 2"
   }
  ],
  "prodDer": {
@@ -58230,7 +58230,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-25T23:19:57.782Z",
+  "maj": "2026-10-25T23:20:01.821Z",
   "semaine": 43,
   "totalBarils": 219518,
   "ca": 1097590,
@@ -59782,6 +59782,26 @@
      "par": "Diego Herrera"
     },
     "id": 1792970397509
+   },
+   {
+    "type": "avertissement",
+    "payload": {
+     "discord": "1189934245062389760",
+     "nom": "Brahan Djibril",
+     "raison": "Aucune prise de service cette semaine",
+     "par": "Diego Herrera"
+    },
+    "id": 1792970399150
+   },
+   {
+    "type": "avertissement",
+    "payload": {
+     "discord": "870991671960145920",
+     "nom": "Bratan LEONETI",
+     "raison": "Aucune prise de service cette semaine",
+     "par": "Diego Herrera"
+    },
+    "id": 1792970400891
    }
   ],
   "oilroxwood_coffres": [
