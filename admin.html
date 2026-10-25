@@ -32,7 +32,7 @@ window.ROXWOOD_CFG = {
 <script src="assets/roxwood-github.js?v=C-119"></script>
 <link rel="stylesheet" href="assets/roxwood-core.css?v=C-119">
 <link rel="stylesheet" href="assets/roxwood-app.css?v=C-119">
-<link rel="stylesheet" href="assets/roxwood-refonte.css?v=R-9">
+<link rel="stylesheet" href="assets/roxwood-refonte.css?v=R-10">
 </head>
 <body>
 <div id="noelNeige" aria-hidden="true"></div>
@@ -4355,7 +4355,7 @@ function printFact(f){
 }
 
 /* ================== RELANCES COMMERCIALES ================== */
-let REL_J=30, REL_SEARCH='';
+let REL_J=30, REL_SEARCH='', REL_VUE='todo';  // REL_VUE : todo (à relancer) · cours (relances en cours) · prospects (jamais commandé)
 async function ensureSheets(){
   // charge le seed pour les feuilles manquantes (première fois OU nouvelles feuilles ajoutées)
   const manquantes=()=> S.sheets ? Object.keys(SHEETS_DEF).filter(k=>!S.sheets[k]) : Object.keys(SHEETS_DEF);
@@ -4395,61 +4395,55 @@ async function relances(){
   const match=x=>!q||String(x.c.nom||'').toLowerCase().includes(q)||String(x.c.tel||'').toLowerCase().includes(q);
   const rows=all.filter(x=>x.a!==null&&x.a>=REL_J&&match(x)).sort((x,y)=>y.a-x.a);
   const jamais=all.filter(x=>x.a===null&&match(x)).sort((x,y)=>x.c.nom.localeCompare(y.c.nom));
-  const dot=x=> (x.a!==null&&x.a>=90)?'🔴':(x.c.relance?'🟢':'🟠');
-  const enCours=all.filter(x=>x.c.relance).length;
+  /* Une carte par client plutôt qu'un tableau : l'urgence se lit à la couleur et au nombre de jours,
+     le statut est une pastille, et l'action possible tient dans un seul bouton. Trois vues, choisies
+     par les pastilles du haut, remplacent les deux longs tableaux. */
+  const todo=rows.filter(x=>!x.c.relance);
+  const cours=[...rows,...jamais].filter(x=>x.c.relance).sort((x,y)=>String(y.c.relance.date).localeCompare(String(x.c.relance.date)));
+  const prospects=jamais.filter(x=>!x.c.relance);
+  const VUES={todo:{l:'À relancer',n:todo.length,liste:todo,vide:'Aucun client à relancer sur cette période 🎉'},
+              cours:{l:'Relances en cours',n:cours.length,liste:cours,vide:'Aucune relance en cours pour le moment'},
+              prospects:{l:'Prospects (jamais commandé)',n:prospects.length,liste:prospects,vide:'Aucun prospect — tout le monde a déjà commandé 💪'}};
+  if(!VUES[REL_VUE]) REL_VUE='todo';
+  const V=VUES[REL_VUE];
+  const carte=x=>{
+    const c=x.c, prosp=x.a===null, urgent=!prosp&&x.a>=90, moyen=!prosp&&x.a>=30;
+    const etat=c.relance?'cours':urgent?'urgent':moyen?'moyen':'calme';
+    const nn=(c.notes||[]).length, der=nn?c.notes[nn-1].txt:'';
+    return `<div class="rel-card ${etat}">
+      <div class="rel-top">
+        <b class="rel-nom" tabindex="0" role="button" onkeydown="actKey(event)" title="Ouvrir la fiche client" onclick="ficheClient(${x.i})">${esc(c.nom)}</b>
+        ${prosp?'<span class="rel-age neutre">Jamais commandé</span>':`<span class="rel-age ${urgent?'rouge':moyen?'orange':'neutre'}">${x.a} j<small>sans commande</small></span>`}
+      </div>
+      <div class="rel-meta">
+        <span>${c.tel?'📞 '+esc(c.tel):'<span class="rel-sans">Pas de numéro</span>'}</span>
+        ${prosp?'':`<span>Dernière commande · ${frDate(c.lastCmd)}</span>`}
+      </div>
+      ${der?`<div class="rel-note" title="${esc(der)}">📝 ${esc(der.slice(0,90))}${der.length>90?'…':''}</div>`:''}
+      ${c.relance?`<div class="rel-statut">🟢 ${prosp?'Démarchage':'Relance'} en cours · <b>${esc(c.relance.par)}</b> · ${frDate(c.relance.date)}</div>`:''}
+      <div class="rel-actions">
+        <button class="btn btn-sm btn-ghost" onclick="relNotes(${x.i})" title="Notes de suivi du démarchage">📝 Notes${nn?' ('+nn+')':''}</button>
+        ${c.relance
+          ?`<button class="btn btn-sm btn-ghost" onclick="annuleRelance(${x.i})">↩ Annuler</button>`
+          :`<button class="btn btn-sm btn-gold" onclick="marqueRelance(${x.i})">✓ ${prosp?'Démarché':'Relancé'}</button>`}
+      </div>
+    </div>`;
+  };
   $('#main').innerHTML=`
   <div class="topbar">
-    <div><h2>Relances commerciales</h2><div class="sub">${rows.length} client(s) à relancer · ${jamais.length} jamais commandé · ${enCours} relance(s) en cours · mise à jour automatique à chaque facture</div></div>
-    <div class="tabs" style="margin:0">
+    <div><h2>Relances commerciales</h2><div class="sub">${all.length} clients suivis · mise à jour automatique à chaque facture</div></div>
+    <div class="tabs" style="margin:0" title="Ne montrer que les clients inactifs depuis…">
       ${[0,30,60,90].map(j=>`<button class="tab ${REL_J===j?'on':''}" onclick="REL_J=${j};relances()">${j===0?'Tous':'+'+j+' jours'}</button>`).join('')}
     </div>
   </div>
-  <div class="grid g3" style="margin-bottom:16px">
-    <div class="panel kpi"><div class="lbl">À relancer</div><div class="val">${rows.length}</div><div class="delta">clients inactifs ${REL_J?REL_J+' j ou +':''}</div></div>
-    <div class="panel kpi"><div class="lbl">Jamais commandé</div><div class="val">${jamais.length}</div><div class="delta">prospects à démarcher</div></div>
-    <div class="panel kpi"><div class="lbl">Relances en cours</div><div class="val ${enCours?'up':''}">${enCours}</div><div class="delta">prises en charge par l'équipe</div></div>
+  <div class="rel-barre">
+    <div class="rel-seg" role="tablist">
+      ${Object.entries(VUES).map(([k,v])=>`<button class="${REL_VUE===k?'on':''}" role="tab" onclick="REL_VUE='${k}';relances()">${v.l} <span>${v.n}</span></button>`).join('')}
+    </div>
+    <input class="field" id="relSearchInput" placeholder="🔍 Rechercher un client ou un numéro…" value="${esc(REL_SEARCH)}" oninput="REL_SEARCH=this.value;relances()">
   </div>
-  <div style="display:flex;gap:14px;margin-bottom:14px;font-size:.8rem;color:var(--muted);align-items:center;flex-wrap:wrap">
-    <input class="field" id="relSearchInput" style="max-width:250px" placeholder="🔍 Rechercher un client…" value="${esc(REL_SEARCH)}" oninput="REL_SEARCH=this.value;relances()">
-    <span>🟠 à relancer</span><span>🟢 relance en cours</span><span>🔴 +90 jours sans commande</span>
-    ${q?`<span style="color:var(--accent)">filtre : « ${esc(REL_SEARCH)} » · ${rows.length+jamais.length} résultat(s)</span>`:''}
-  </div>
-  <div class="panel" style="margin-bottom:18px;padding:8px 16px;overflow-x:auto">
-    <h3 style="padding:12px 0 4px">💰 Clients à relancer (déjà commandé)</h3>
-    ${rows.length?`<table><thead><tr><th>Client</th><th>Dernière commande</th><th>Inactif</th><th>Contact</th><th>Statut</th><th style="text-align:right"></th></tr></thead><tbody>
-    ${rows.map(x=>`<tr>
-      <td>${dot(x)} <b style="cursor:pointer" tabindex="0" role="button" onkeydown="actKey(event)" title="Ouvrir la fiche client" onclick="ficheClient(${x.i})">${esc(x.c.nom)}</b>${(x.c.notes||[]).length?`<div style="color:var(--muted);font-size:.74rem;margin-top:2px">📝 ${esc(x.c.notes[x.c.notes.length-1].txt.slice(0,70))}${x.c.notes[x.c.notes.length-1].txt.length>70?'…':''}</div>`:''}</td>
-      <td>${frDate(x.c.lastCmd)}</td>
-      <td><b class="${x.a>=90?'down':'gold'}">${x.a} j</b></td>
-      <td style="color:var(--muted);font-size:.8rem">${x.c.tel?'📞 '+esc(x.c.tel):'—'}</td>
-      <td>${x.c.relance
-        ?`<span class="badge" style="background:rgba(74,157,111,.14);color:var(--green)">en cours · ${esc(x.c.relance.par)} · ${frDate(x.c.relance.date)}</span>`
-        :'<span class="badge bg0">à relancer</span>'}</td>
-      <td style="text-align:right;white-space:nowrap">
-        <button class="btn btn-sm btn-ghost" onclick="relNotes(${x.i})" title="Notes de suivi du démarchage">📝${(x.c.notes||[]).length||''}</button>
-        ${x.c.relance
-        ?`<button class="btn btn-sm btn-ghost" onclick="annuleRelance(${x.i})">↩ Annuler</button>`
-        :`<button class="btn btn-sm btn-gold" onclick="marqueRelance(${x.i})">✓ Relancé</button>`}</td>
-    </tr>`).join('')}
-    </tbody></table>`:'<div class="empty">Aucun client à relancer sur cette période 🎉</div>'}
-  </div>
-  <div class="panel" style="padding:8px 16px;overflow-x:auto">
-    <h3 style="padding:12px 0 4px">🌱 Prospects — jamais commandé (${jamais.length})</h3>
-    ${jamais.length?`<table><thead><tr><th>Client</th><th>Contact</th><th>Statut</th><th style="text-align:right"></th></tr></thead><tbody>
-    ${jamais.map(x=>`<tr>
-      <td>${x.c.relance?'🟢':'🟠'} <b style="cursor:pointer" tabindex="0" role="button" onkeydown="actKey(event)" title="Ouvrir la fiche client" onclick="ficheClient(${x.i})">${esc(x.c.nom)}</b>${(x.c.notes||[]).length?`<div style="color:var(--muted);font-size:.74rem;margin-top:2px">📝 ${esc(x.c.notes[x.c.notes.length-1].txt.slice(0,70))}${x.c.notes[x.c.notes.length-1].txt.length>70?'…':''}</div>`:''}</td>
-      <td style="color:var(--muted);font-size:.8rem">${x.c.tel?'📞 '+esc(x.c.tel):'—'}</td>
-      <td>${x.c.relance
-        ?`<span class="badge" style="background:rgba(74,157,111,.14);color:var(--green)">démarchage en cours · ${esc(x.c.relance.par)} · ${frDate(x.c.relance.date)}</span>`
-        :'<span class="badge bg0">à démarcher</span>'}</td>
-      <td style="text-align:right;white-space:nowrap">
-        <button class="btn btn-sm btn-ghost" onclick="relNotes(${x.i})" title="Notes de suivi du démarchage">📝${(x.c.notes||[]).length||''}</button>
-        ${x.c.relance
-        ?`<button class="btn btn-sm btn-ghost" onclick="annuleRelance(${x.i})">↩ Annuler</button>`
-        :`<button class="btn btn-sm btn-gold" onclick="marqueRelance(${x.i})">✓ Démarché</button>`}</td>
-    </tr>`).join('')}
-    </tbody></table>`:'<div class="empty">Aucun prospect — tout le monde a déjà commandé 💪</div>'}
-  </div>`;
+  <div class="rel-legende"><span><i class="d rouge"></i>+90 jours sans commande</span><span><i class="d orange"></i>30 à 90 jours</span><span><i class="d vert"></i>relance en cours</span>${q?`<span style="color:var(--accent)">filtre « ${esc(REL_SEARCH)} »</span>`:''}</div>
+  ${V.liste.length?`<div class="rel-grille">${V.liste.map(carte).join('')}</div>`:`<div class="panel"><div class="empty">${V.vide}</div></div>`}`;
   // frappe fluide : le curseur revient dans la recherche après chaque caractère
   if(REL_SEARCH){ const el=document.getElementById('relSearchInput'); if(el){ el.focus(); el.setSelectionRange(el.value.length,el.value.length); } }
 }
