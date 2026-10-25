@@ -6514,6 +6514,20 @@
  "sheets": {
   "rh": [
    {
+    "nom": "lys pell",
+    "grade": "Intérimaire",
+    "tel": "555833292",
+    "rib": "526995",
+    "idU": "354370",
+    "arrivee": "2026-10-25",
+    "discord": "632605382681821185",
+    "avert": "",
+    "contrat": true,
+    "recrut": "Marco Bellini",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
     "nom": "Ricardo Diaz",
     "grade": "Intérimaire",
     "tel": "555 664 767",
@@ -56156,32 +56170,32 @@
   "theme": "",
   "_fixRecrutBellini": true,
   "fonds": {
-   "accueil": "file:///C:/Users/thoma/Downloads/banniere_oil_roxwood.png",
-   "rh": "file:///C:/Users/thoma/Downloads/banniere_oil_roxwood.png",
-   "commercial": "file:///C:/Users/thoma/Downloads/banniere_oil_roxwood.png",
-   "comptable": "file:///C:/Users/thoma/Downloads/banniere_oil_roxwood.png",
-   "overview": "file:///C:/Users/thoma/Downloads/banniere_oil_roxwood.png",
-   "params": "file:///C:/Users/thoma/Downloads/banniere_oil_roxwood.png"
+   "accueil": "file:///C:/Users/thoma/Downloads/Oil-Roxwood-Refonte-Etape1/assets/banniere-oil-roxwood.png",
+   "rh": "file:///C:/Users/thoma/Downloads/Oil-Roxwood-Refonte-Etape1/assets/banniere-oil-roxwood.png",
+   "commercial": "file:///C:/Users/thoma/Downloads/Oil-Roxwood-Refonte-Etape1/assets/banniere-oil-roxwood.png",
+   "comptable": "file:///C:/Users/thoma/Downloads/Oil-Roxwood-Refonte-Etape1/assets/banniere-oil-roxwood.png",
+   "overview": "file:///C:/Users/thoma/Downloads/Oil-Roxwood-Refonte-Etape1/assets/banniere-oil-roxwood.png",
+   "params": "file:///C:/Users/thoma/Downloads/Oil-Roxwood-Refonte-Etape1/assets/banniere-oil-roxwood.png"
   }
  },
- "_cid": "vop94cuug8d",
- "_maj": 1792960517111,
- "_rev": "a6yrhrouai-mvoaejlc",
+ "_cid": "l7j5phrb2gj",
+ "_maj": 1792960569559,
+ "_rev": "3l8y34trypu-mvoafqp8",
  "_majSec": {
   "fer": 1792958777637,
   "fact": 1792941392401,
   "users": 1792946648058,
   "weeks": 1792400944983,
-  "sheets": 1792952101840,
+  "sheets": 1792960493003,
   "_qcFix1": 1792090599970,
   "_wkFix1": 1792090599970,
-  "journal": 1792952101840,
+  "journal": 1792960493003,
   "pending": 1792090599970,
   "prodDer": 1792875193989,
   "runners": 1792926589764,
   "absences": 1792771162506,
   "imported": 1792090599970,
-  "settings": 1792948454136,
+  "settings": 1792960483306,
   "closeUndo": 1792400944983,
   "quotasCom": 1792952124402,
   "bilanExtra": 1792882987253,
@@ -56189,7 +56203,7 @@
   "primesExtra": 1792090599970,
   "quotasComHist": 1792400944983,
   "profils": 1792090599970,
-  "_tables": 1792960517111,
+  "_tables": 1792960569559,
   "_permsFix1": 1792090599970,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792090599970,
@@ -56197,15 +56211,25 @@
   "_affFix1": 1792090599970,
   "produits": 1792090599970,
   "_prodFix1": 1792090599970,
-  "_recruesIgnore": 1792941116323,
+  "_recruesIgnore": 1792960492978,
   "ventesAlias": 1792090599970,
   "_ventesIgnore": 1792090599970,
   "_avertVus": 1792090599970,
-  "_signeVus": 1792941116343
+  "_signeVus": 1792960493003
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1792960496107,
+   "u": "Diego Herrera",
+   "a": "Contrat(s) signé(s) via Discord : lys pell"
+  },
+  {
+   "t": 1792960496082,
+   "u": "Diego Herrera",
+   "a": "Recrutements Discord : 1 fiche(s) créée(s), 0 case(s) complétée(s) — lys pell"
+  },
   {
    "t": 1792952103273,
    "u": "Laurent Roquel",
@@ -57695,16 +57719,6 @@
    "t": 1791740203474,
    "u": "Julio Collins",
    "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1791740203249,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1791740143917,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
   }
  ],
  "prodDer": {
@@ -58128,12 +58142,12 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-25T20:35:25.488Z",
+  "maj": "2026-10-25T20:36:21.356Z",
   "semaine": 43,
   "totalBarils": 185666,
   "ca": 928330,
   "objectif": 375000,
-  "effectif": 113,
+  "effectif": 114,
   "clientsServis": 164,
   "theme": "",
   "top3": [
@@ -61411,7 +61425,8 @@
   "1792844415878",
   "1792852946711",
   "1792855281294",
-  "1792933147617"
+  "1792933147617",
+  "1792959177879"
  ],
  "_signeVus": [
   "1789477305650",
@@ -61533,7 +61548,8 @@
   "1792844435258",
   "1792852964537",
   "1792855305190",
-  "1792933174629"
+  "1792933174629",
+  "1792959203517"
  ],
  "_agSupp": [
   "1789145270913",
