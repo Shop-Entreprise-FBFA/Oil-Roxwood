@@ -207,3 +207,25 @@ html.halloween #app::after,html.noel #app::after{top:calc(var(--refonte-h) + 10p
 .hist-chips button b{display:block;font-family:var(--f-display);font-size:1.05rem}.hist-chips button span{font-size:.72rem;color:var(--muted)}
 .hist-chips button:hover{border-color:#e4a34e}.hist-chips button.on{border-color:#eaa13b;background:rgba(239,154,40,.15);color:#ffcb78}
 @media(max-width:760px){.hist-fact{grid-template-columns:1fr auto;}.hist-ttc{text-align:left}}
+
+/* ---- Fiches RH : cartes ---- */
+.rh-grille{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:14px}
+.rh-card{position:relative;display:flex;flex-direction:column;gap:11px;padding:16px 18px 14px 20px;border-radius:12px;cursor:pointer;background:linear-gradient(145deg,#162334,#101a28);border:1px solid rgba(177,196,214,.16);transition:transform .15s,border-color .15s}
+.rh-card::before{content:"";position:absolute;left:0;top:12px;bottom:12px;width:4px;border-radius:0 4px 4px 0;background:#6b7a8d}
+.rh-card.vert::before{background:#4fa97b}.rh-card.orange::before{background:#f0a030}.rh-card.rouge::before{background:#e0524e}.rh-card.abs::before{background:#22d3ee}
+.rh-card:hover{transform:translateY(-2px);border-color:rgba(228,163,78,.6)}
+.rh-top{display:flex;gap:13px;align-items:center}
+.rh-id{display:flex;flex-direction:column;gap:5px;min-width:0;align-items:flex-start}
+.rh-nom{font-family:var(--f-display);font-size:1.3rem;font-weight:800;letter-spacing:.02em;line-height:1.1;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+.rh-etat{font-size:.78rem;font-weight:700;padding:5px 10px;border-radius:7px;background:rgba(255,255,255,.05);color:var(--muted);width:fit-content;margin-bottom:0}
+.rh-etat.vert{color:#7fd1a4;background:rgba(74,157,111,.14)}.rh-etat.orange{color:#f5b04a;background:rgba(240,160,48,.13)}.rh-etat.rouge{color:#ff8a84;background:rgba(224,82,78,.14)}.rh-etat.abs{color:#22d3ee;background:rgba(34,211,238,.1)}
+.rh-infos{display:grid;grid-template-columns:1fr 1fr;gap:5px 12px;font-size:.8rem;color:#b9c5d4}
+.rh-infos span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.rh-pied{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;border-top:1px solid rgba(255,255,255,.07);padding-top:10px}
+.rh-chip{font-size:.72rem;font-weight:700;padding:3px 9px;border-radius:99px}
+.rh-chip.ok{color:#7fd1a4;background:rgba(74,157,111,.14)}.rh-chip.ko{color:#f5b04a;background:rgba(240,160,48,.13)}
+.rh-sous{font-size:.74rem;color:var(--muted);flex-basis:100%}
+.rh-actions{display:flex;gap:8px;justify-content:flex-end;margin-top:auto}
+.rh-form{display:grid;grid-template-columns:1fr 1fr;gap:12px 14px}
+.rh-check{display:flex;align-items:center;gap:9px;font-size:.88rem;grid-column:1/-1;padding:6px 0}
+@media(max-width:620px){.rh-form{grid-template-columns:1fr}}

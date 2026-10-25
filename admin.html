@@ -32,7 +32,7 @@ window.ROXWOOD_CFG = {
 <script src="assets/roxwood-github.js?v=C-119"></script>
 <link rel="stylesheet" href="assets/roxwood-core.css?v=C-119">
 <link rel="stylesheet" href="assets/roxwood-app.css?v=C-119">
-<link rel="stylesheet" href="assets/roxwood-refonte.css?v=R-13">
+<link rel="stylesheet" href="assets/roxwood-refonte.css?v=R-14">
 </head>
 <body>
 <div id="noelNeige" aria-hidden="true"></div>
@@ -3341,7 +3341,8 @@ async function feuilles(){
       ${curSheet==='eligibilite'?'<button class="btn btn-ghost" onclick="eligTriGrade()" title="Complète les grades manquants et réordonne : Patron → Co Patron → … → Intérimaire">⇅ Trier par grade</button><button class="btn btn-ghost" onclick="eligCopyNoms()" title="Copie uniquement les noms, un par ligne — prêt à coller sur Discord">📋 Copier les noms</button><button class="btn btn-ghost" onclick="eligEnvoyerDiscord()" title="Envoie la liste au bot, qui la met en image et la poste sur Discord">🖼️ Poster sur Discord</button>':''}
       ${(curSheet==='rh'||curSheet==='tablette')?`<button class="btn btn-ghost" onclick="sheetUndo()" title="Annule la dernière modification de cette feuille (15 niveaux, session en cours)">↩ Annuler${(SHEET_UNDO[curSheet]||[]).length?` (${SHEET_UNDO[curSheet].length})`:''}</button>`:''}
       <span class="vsep"></span>
-      ${def.lite?`<button class="btn btn-ghost" onclick="sheetFull=!sheetFull;feuilles()">${sheetFull?'👁 Colonnes essentielles':'👁 Toutes les colonnes'}</button>`:''}
+      ${curSheet==='rh'?`<button class="btn btn-ghost" onclick="RH_VUE=RH_VUE==='cartes'?'tableau':'cartes';feuilles()" title="Changer de présentation">${RH_VUE==='cartes'?'☰ Vue tableau':'▦ Vue cartes'}</button>`:''}
+      ${(def.lite&&!(curSheet==='rh'&&RH_VUE==='cartes'))?`<button class="btn btn-ghost" onclick="sheetFull=!sheetFull;feuilles()">${sheetFull?'👁 Colonnes essentielles':'👁 Toutes les colonnes'}</button>`:''}
       <button class="btn btn-ghost" onclick="sheetCsv()">⬇ CSV</button>
       <span class="vsep"></span>
       <button class="btn btn-gold" onclick="rowAdd()">＋ Ligne</button>
@@ -3389,14 +3390,91 @@ async function feuilles(){
   </div>`:''}
   ${def.note?`<div class="warn" style="border-color:rgba(232,98,44,.35);background:rgba(232,98,44,.07);color:var(--accent)">ℹ️ ${def.note}</div>`:''}
   ${sheetRO(curSheet)?'<div class="warn" style="border-color:rgba(90,160,255,.35);background:rgba(90,160,255,.07);color:#9fc3ff">👁 Feuille en consultation seule pour ton rôle</div>':''}
-  <div class="panel ${sheetRO(curSheet)?'ro-zone':''}" style="padding:10px 16px;overflow-x:auto">
+  ${(curSheet==='rh'&&RH_VUE==='cartes')?`<div class="${sheetRO(curSheet)?'ro-zone':''}">${rhCartesHTML()}</div>`:`  <div class="panel ${sheetRO(curSheet)?'ro-zone':''}" style="padding:10px 16px;overflow-x:auto">
     <input class="field" id="sheetSearchInput" style="max-width:240px;margin:6px 0 10px" placeholder="🔍 Rechercher…" value="${esc(sheetSearch)}" oninput="chercherFeuille(this.value)">
     <table class="sheet"><thead><tr>${head}<th></th></tr></thead><tbody>${body||`<tr><td colspan="${cols.length+2}"><div class="empty">Aucune ligne</div></td></tr>`}</tbody>${foot}</table>
-  </div>
+  </div>`}
   <datalist id="dlSheetClients">${((S.fact&&S.fact.clients)||[]).map(c=>`<option value="${esc(c.nom)}">`).join('')}</datalist>`;
   // le champ de recherche n'est plus recréé à chaque frappe (chercherFeuille) ;
   // ce rattrapage ne sert que quand on revient sur la feuille avec un filtre actif
   if(sheetSearch){ const el=document.getElementById('sheetSearchInput'); if(el&&document.activeElement!==el){ el.focus(); el.setSelectionRange(el.value.length,el.value.length); } }
+}
+/* ---- Fiches RH en cartes ----
+   Même feuille, mêmes données (S.sheets.rh), mêmes écritures (cellEdit) : seule la présentation change.
+   Le tableau reste disponible (bouton « Vue tableau ») pour le glisser-déposer, l'annulation et le CSV. */
+let RH_VUE='cartes', RH_FILT='tous', RH_DIRTY=false;
+function rhEtat(r){
+  const d=Date.parse(r.dernierService), j=isNaN(d)?null:Math.floor((Date.now()-d)/86400000), ab=absDe(r.nom);
+  if(ab) return {k:'abs',txt:`💤 Absent jusqu'au ${frDate(ab.au)}`,cls:'abs'};
+  if(r.flagOut) return {k:'out',txt:`🔴 Absent du pointage${j!==null?' · '+j+' j':''} — démission ?`,cls:'rouge'};
+  if(j===null) return {k:'jamais',txt:'Jamais pointé',cls:'neutre'};
+  return {k:j<=6?'actif':'inactif',txt:j===0?'Pointé aujourd\'hui':j+' j sans service',cls:j<=2?'vert':j<=6?'orange':'rouge'};
+}
+function rhGradeCls(g){
+  const deacc=x=>String(x||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim(), n=deacc(g);
+  const i=GRADES.findIndex(x=>deacc(x.nom)===n);
+  return i>=0?GRADES[i].cls:(/stagiaire/.test(n)?'bgstg':'bgrole');
+}
+function rhCartesHTML(){
+  const rows=(S.sheets&&S.sheets.rh)||[], q=sheetSearch.toLowerCase(), ro=sheetRO('rh');
+  const tous=rows.map((r,i)=>({r,i,e:rhEtat(r)})).filter(x=>!q||Object.values(x.r).join(' ').toLowerCase().includes(q));
+  const F={tous:{l:'Tous',f:()=>true},actif:{l:'Actifs',f:x=>x.e.k==='actif'},inactif:{l:'Inactifs',f:x=>x.e.k==='inactif'||x.e.k==='out'||x.e.k==='jamais'},
+           abs:{l:'Absents',f:x=>x.e.k==='abs'},contrat:{l:'Contrat à signer',f:x=>!x.r.contrat},avert:{l:'Avertis',f:x=>String(x.r.avert||'').trim()&&String(x.r.avert).trim()!=='0'}};
+  if(!F[RH_FILT]) RH_FILT='tous';
+  const liste=tous.filter(F[RH_FILT].f);
+  const carte=x=>{ const r=x.r, e=x.e, av=String(r.avert||'').trim(), avert=av&&av!=='0';
+    const btnCtr=(SHEETS_DEF.rh.cols[0]&&SHEETS_DEF.rh.cols[0].f)?SHEETS_DEF.rh.cols[0].f(r):'';
+    return `<div class="rh-card ${e.cls}" tabindex="0" role="button" onkeydown="actKey(event)" onclick="rhFiche(${x.i})" title="Ouvrir la fiche">
+      <div class="rh-top">
+        ${avatarHTML(r.nom||'?','width:52px;height:52px;font-size:1.05rem')}
+        <div class="rh-id"><b class="rh-nom">${esc(r.nom||'Sans nom')}</b><span class="badge ${rhGradeCls(r.grade)}">${esc(r.grade||'—')}</span></div>
+      </div>
+      <div class="rh-etat ${e.cls}">${esc(e.txt)}</div>
+      <div class="rh-infos">
+        <span>📞 ${esc(r.tel||'—')}</span><span>🎮 ${esc(r.discord||'—')}</span><span>🆔 ${esc(r.idU||'—')}</span><span>🏦 ${esc(r.rib||'—')}</span>
+      </div>
+      <div class="rh-pied">
+        <span class="rh-chip ${r.contrat?'ok':'ko'}">${r.contrat?'✔ Contrat signé':'✗ Contrat non signé'}</span>
+        ${avert?`<span class="rh-chip ko">⚠ ${esc(av)} avert.</span>`:''}
+        <span class="rh-sous">${r.arrivee?'Arrivé le '+frDate(r.arrivee):''}${r.recrut?' · par '+esc(r.recrut):''}</span>
+      </div>
+      <div class="rh-actions" onclick="event.stopPropagation()">${btnCtr}<button class="btn btn-sm btn-ghost" onclick="rhFiche(${x.i})">✎ Fiche</button></div>
+    </div>`; };
+  return `<div class="rel-barre">
+    <div class="rel-seg" role="tablist">${Object.entries(F).map(([k,v])=>`<button class="${RH_FILT===k?'on':''}" onclick="RH_FILT='${k}';feuilles()">${v.l} <span>${tous.filter(v.f).length}</span></button>`).join('')}</div>
+    <input class="field" id="sheetSearchInput" placeholder="🔍 Nom, Discord, téléphone…" value="${esc(sheetSearch)}" oninput="chercherFeuille(this.value)">
+  </div>
+  <div class="rel-legende"><span>${liste.length} fiche(s) · clique sur une carte pour la modifier</span></div>
+  ${liste.length?`<div class="rh-grille">${liste.map(carte).join('')}</div>`:'<div class="panel"><div class="empty">Aucune fiche</div></div>'}`;
+}
+function rhFiche(i){
+  const r=S.sheets.rh[i]; if(!r) return;
+  const ro=sheetRO('rh'), dis=ro?' disabled':'';
+  const t=(k,l,ph='')=>`<label class="cli-f"><span>${l}</span><input type="text" value="${esc(r[k])}" placeholder="${ph}"${dis} onchange="cellEdit(${i},'${k}',this.value);RH_DIRTY=true"></label>`;
+  const d=(k,l)=>{ const v=/^\d{4}-\d{2}-\d{2}/.test(r[k]||'')?String(r[k]).slice(0,10):''; return `<label class="cli-f"><span>${l}</span><input type="date" value="${v}"${dis} onchange="cellEdit(${i},'${k}',this.value);RH_DIRTY=true"></label>`; };
+  const e=rhEtat(r), btnCtr=SHEETS_DEF.rh.cols[0].f(r);
+  openModal(`<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:14px">
+    <div style="display:flex;gap:14px;align-items:center;min-width:0">${avatarHTML(r.nom||'?','width:60px;height:60px;font-size:1.2rem')}
+      <div style="min-width:0"><h3 style="margin:0">${esc(r.nom||'Sans nom')}</h3><div style="margin-top:5px;display:flex;gap:8px;flex-wrap:wrap;align-items:center"><span class="badge ${rhGradeCls(r.grade)}">${esc(r.grade||'—')}</span><span class="rh-etat ${e.cls}" style="margin:0">${esc(e.txt)}</span></div></div></div>
+    <button class="btn btn-sm btn-ghost" onclick="closeModal()">Fermer</button></div>
+  ${ro?'<div class="warn" style="margin-bottom:10px">👁 Consultation seule pour ton rôle</div>':''}
+  <div class="rh-form">
+    ${t('nom','👤 Employé')}${t('grade','🎖️ Grade')}
+    ${t('idU','🆔 ID unique')}${t('discord','🎮 Discord')}
+    ${t('tel','📞 Téléphone')}${t('rib','🏦 RIB')}
+    ${d('arrivee','📅 Arrivée')}${d('dernierService','🕒 Dernière prise de service')}
+    ${t('avert','⚠ Avertissements')}
+    <label class="cli-f"><span>🤝 Recruteur</span><select class="field"${dis} onchange="cellEdit(${i},'recrut',this.value);RH_DIRTY=true">${['',...nomsRecruteurs()].map(o=>`<option ${o===r.recrut?'selected':''}>${esc(o)}</option>`).join('')}</select></label>
+    <label class="rh-check"><input type="checkbox" ${r.contrat?'checked':''}${dis} onchange="cellEdit(${i},'contrat',this.checked);RH_DIRTY=true"> Contrat signé</label>
+  </div>
+  <div style="display:flex;gap:10px;justify-content:space-between;align-items:center;margin-top:16px;flex-wrap:wrap">
+    <div>${btnCtr}</div>
+    <div style="display:flex;gap:8px">
+      <button class="btn btn-ghost btn-sm" onclick="closeModal();ficheEmp(decodeURIComponent('${encodeURIComponent(r.nom||'')}'))" title="Barils, quotas, journal…">📊 Activité</button>
+      ${ro?'':`<button class="btn btn-red btn-sm" onclick="if(confirm('Supprimer cette fiche ?')){closeModal();rowDel(${i});}">🗑 Supprimer</button>`}
+    </div>
+  </div>`);
+  $('#modalBox').style.maxWidth='760px'; $('#modalBox').style.width='min(760px,94vw)';
 }
 /* Les changements de nom repérés au dernier import : la vue les affiche,
    et seules les Fiches RH s'en servent. Vidée à chaque import. */
@@ -8617,6 +8695,7 @@ function openModal(html){
 }
 function closeModal(){
   $('#modalBg').classList.remove('open');
+  if(RH_DIRTY){ RH_DIRTY=false; if(typeof VIEW!=='undefined'&&VIEW==='frh'&&RH_VUE==='cartes') setTimeout(feuilles,0); }
   RN_CTX=null; // fin d'édition de note client
   if(MODAL_RETOUR&&document.body.contains(MODAL_RETOUR)) MODAL_RETOUR.focus();
   MODAL_RETOUR=null;
