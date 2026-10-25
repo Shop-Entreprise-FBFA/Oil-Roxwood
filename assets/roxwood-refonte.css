@@ -116,3 +116,8 @@ html.halloween #app::after,html.noel #app::after{top:calc(var(--refonte-h) + 10p
 /* six cartes (Comptabilité) : 3 × 2 plutôt que 5 + 1 */
 @media(min-width:900px){#main .hero-sec + div:has(> .pole-carte:nth-child(6):last-child){grid-template-columns:repeat(3,minmax(0,1fr))!important}}
 #main .hero-sec + div:has(> .pole-carte){margin-bottom:30px}
+/* carte verrouillée : visible mais éteinte, cadenas à la place de la flèche */
+#main .pole-verrou{cursor:not-allowed;filter:grayscale(.75);opacity:.55}
+#main .pole-verrou:hover{transform:none;border-color:rgba(176,194,214,.18);filter:grayscale(.75)}
+#main .pole-verrou .pole-fleche{border-color:#8192a5;color:#c3cedb;font-size:.9rem}
+#main .pole-verrou:hover .pole-fleche{background:none;color:#c3cedb}

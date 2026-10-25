@@ -32,7 +32,7 @@ window.ROXWOOD_CFG = {
 <script src="assets/roxwood-github.js?v=C-119"></script>
 <link rel="stylesheet" href="assets/roxwood-core.css?v=C-119">
 <link rel="stylesheet" href="assets/roxwood-app.css?v=C-119">
-<link rel="stylesheet" href="assets/roxwood-refonte.css?v=R-5">
+<link rel="stylesheet" href="assets/roxwood-refonte.css?v=R-6">
 </head>
 <body>
 <div id="noelNeige" aria-hidden="true"></div>
@@ -1875,13 +1875,22 @@ function heroHTML(sec,titre,sousTitre){
    carte — c'est elle qui différencie les pôles d'un coup d'œil, pas l'icône. */
 const COULEURS_POLES={rh:'#E8A020',commercial:'#5AA0FF',comptable:'#4FA97B',overview:'#D9534F',params:'#9B6BE0'};
 function cartesHTML(CARTES){
+  /* Toutes les cartes s'affichent ; celles dont le rôle n'a pas l'accès montrent un cadenas à la place
+     de la flèche et ne mènent nulle part (show() revérifie de toute façon les permissions). */
   if(!CARTES.length) return '<div class="empty">Aucune section accessible avec ton rôle actuel.</div>';
+  const al=allowedViews();
   return `<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px">
-    ${CARTES.map(c=>{ const col=c.couleur||'var(--accent)'; return `<div class="panel kpi link pole-carte" style="--pc:${col}" onclick="show('${c.view}')" onkeydown="actKey(event)" tabindex="0" role="button" title="Ouvrir ${esc(c.titre)}">
+    ${CARTES.map(c=>{ const col=c.couleur||'var(--accent)', ok=al.includes(c.view);
+      return ok?`<div class="panel kpi link pole-carte" style="--pc:${col}" onclick="show('${c.view}')" onkeydown="actKey(event)" tabindex="0" role="button" title="Ouvrir ${esc(c.titre)}">
       <div class="pole-ico">${c.emoji}</div>
       <div class="pole-titre">${esc(c.titre)}</div>
       <div class="pole-sub">${esc(c.sub)}</div>
       <div class="pole-fleche">→</div>
+    </div>`:`<div class="panel kpi pole-carte pole-verrou" style="--pc:${col}" onclick="toast('🔒 Accès non autorisé avec ton rôle actuel')" onkeydown="actKey(event)" tabindex="0" role="button" aria-disabled="true" title="Accès non autorisé : ${esc(c.titre)}">
+      <div class="pole-ico">${c.emoji}</div>
+      <div class="pole-titre">${esc(c.titre)}</div>
+      <div class="pole-sub">${esc(c.sub)}</div>
+      <div class="pole-fleche">🔒</div>
     </div>`; }).join('')}
   </div>`;
 }
@@ -1893,7 +1902,7 @@ function accueil(){
     {emoji:'💸',titre:'Comptable',sub:'Suivi financier et reporting',view:'comptable',couleur:COULEURS_POLES.comptable},
     {emoji:'📊',titre:'Général',sub:"Vue d'ensemble de l'entreprise",view:'overview',couleur:COULEURS_POLES.overview},
     {emoji:'⚙️',titre:'Paramètres',sub:'Configuration et administration',view:'params',couleur:COULEURS_POLES.params},
-  ].filter(c=>al.includes(c.view));
+  ];
   $('#main').innerHTML = heroHTML('accueil','Notre énergie fait avancer le monde','Bienvenue sur le dashboard Oil Roxwood')
     + cartesHTML(CARTES);
 }
@@ -1903,7 +1912,7 @@ function rh(){
     {emoji:'🗂️',titre:'Fiches RH',sub:'Consulter et gérer les fiches du personnel',view:'frh',couleur:col},
     {emoji:'👥',titre:'Effectif',sub:'Suivre les effectifs et les mouvements',view:'effectif',couleur:col},
     {emoji:'🎓',titre:'Intégration',sub:"Gérer l'intégration des nouveaux collaborateurs",view:'integration',couleur:col},
-  ].filter(c=>al.includes(c.view));
+  ];
   $('#main').innerHTML = heroHTML('rh','Ressources Humaines','Nos collaborateurs, notre force')
     + cartesHTML(CARTES);
 }
@@ -1915,7 +1924,7 @@ function commercial(){
     {emoji:'🛒',titre:'Ventes de la semaine',sub:'Suivi des ventes et des performances',view:'fventes',couleur:col},
     {emoji:'⚖️',titre:'Quotas & fer',sub:'Suivre les quotas et le fer racheté',view:'quotascom',couleur:col},
     {emoji:'🗡️',titre:'Produits dérivés',sub:'Gérer les produits dérivés',view:'prodder',couleur:col},
-  ].filter(c=>al.includes(c.view));
+  ];
   $('#main').innerHTML = heroHTML('commercial','Commercial','Développer nos partenariats')
     + cartesHTML(CARTES);
 }
@@ -1928,7 +1937,7 @@ function comptable(){
     {emoji:'🏦',titre:'Bilan compta',sub:"Bilan complet de l'entreprise",view:'bilan',couleur:col},
     {emoji:'🗓️',titre:'Clôture du lundi',sub:'Clôturer la semaine de travail',view:'cloture',couleur:col},
     {emoji:'💰',titre:'Semaine & Primes',sub:'Salaires et primes de la semaine',view:'semaine',couleur:col},
-  ].filter(c=>al.includes(c.view));
+  ];
   $('#main').innerHTML = heroHTML('comptable','Comptabilité','Suivi financier et reporting')
     + cartesHTML(CARTES);
 }
@@ -1941,7 +1950,7 @@ function overview(){
     {emoji:'📅',titre:'Mon agenda',sub:'Ton agenda et celui de l’équipe',view:'agenda',couleur:col},
     {emoji:'🖼️',titre:'Affiches',sub:'Affiches et visuels de l’entreprise',view:'affiches',couleur:col},
     {emoji:'📊',titre:'Quotas',sub:'Quotas sur les 3 dernières semaines',view:'quotashist',couleur:col},
-  ].filter(c=>al.includes(c.view));
+  ];
   const R=S.runners, tot=R.reduce((a,r)=>a+r.barils,0), ok=R.filter(quotaOK).length;
   const sorted=[...R].sort((a,b)=>b.barils-a.barils);
   const lastW = S.weeks[S.weeks.length-1];
