@@ -7475,7 +7475,7 @@
     "idU": "377624",
     "arrivee": "2026-10-13",
     "discord": "394129285838929932",
-    "avert": "",
+    "avert": "1",
     "contrat": true,
     "recrut": "Carter Fuente",
     "dernierService": "2026-10-18",
@@ -7507,7 +7507,7 @@
     "idU": "381892",
     "arrivee": "2026-09-29",
     "discord": "584448192331120670",
-    "avert": "1",
+    "avert": "2",
     "contrat": true,
     "recrut": "Juan Sanchez",
     "dernierService": "2026-09-30",
@@ -7521,7 +7521,7 @@
     "idU": "80415",
     "arrivee": "2026-09-02",
     "discord": "597879541695905804",
-    "avert": "1",
+    "avert": "2",
     "contrat": false,
     "recrut": "Thomas Boyer",
     "dernierService": "2026-09-26",
@@ -56317,17 +56317,17 @@
   }
  },
  "_cid": "z8owwbguce",
- "_maj": 1792970404797,
- "_rev": "2935hftoyur-mvogad9k",
+ "_maj": 1792970408958,
+ "_rev": "py7rx3v1j9e-mvogages",
  "_majSec": {
   "fer": 1792961656047,
   "fact": 1792941392401,
   "users": 1792946648058,
   "weeks": 1792400944983,
-  "sheets": 1792970404769,
+  "sheets": 1792970408930,
   "_qcFix1": 1792090599970,
   "_wkFix1": 1792090599970,
-  "journal": 1792970404797,
+  "journal": 1792970408958,
   "pending": 1792090599970,
   "prodDer": 1792875193989,
   "runners": 1792969282757,
@@ -56341,7 +56341,7 @@
   "primesExtra": 1792090599970,
   "quotasComHist": 1792400944983,
   "profils": 1792090599970,
-  "_tables": 1792970404769,
+  "_tables": 1792970408930,
   "_permsFix1": 1792090599970,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792090599970,
@@ -56358,6 +56358,21 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1792970411763,
+   "u": "Diego Herrera",
+   "a": "Avertissement : Hitachi Hydro (intérimaire, aucune prise de service) — total : 2"
+  },
+  {
+   "t": 1792970410438,
+   "u": "Diego Herrera",
+   "a": "Avertissement : Hashh Sheepeur (intérimaire, aucune prise de service) — total : 2"
+  },
+  {
+   "t": 1792970409120,
+   "u": "Diego Herrera",
+   "a": "Avertissement : Enzo Verdoix (intérimaire, aucune prise de service) — total : 1"
+  },
   {
    "t": 1792970407603,
    "u": "Diego Herrera",
@@ -57842,21 +57857,6 @@
    "t": 1791756633950,
    "u": "Diego Herrera",
    "a": "Avertissement : Jamal King (intérimaire, aucune prise de service) — total : 2"
-  },
-  {
-   "t": 1791756630751,
-   "u": "Diego Herrera",
-   "a": "Avertissement : James Shapeard (intérimaire, aucune prise de service) — total : 1"
-  },
-  {
-   "t": 1791756621544,
-   "u": "Diego Herrera",
-   "a": "Avertissement : Jean Michel (intérimaire, aucune prise de service) — total : 1"
-  },
-  {
-   "t": 1791756618001,
-   "u": "Diego Herrera",
-   "a": "Avertissement : Liam Doyle (intérimaire, aucune prise de service) — total : 2"
   }
  ],
  "prodDer": {
@@ -58230,7 +58230,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-25T23:20:08.360Z",
+  "maj": "2026-10-25T23:20:12.436Z",
   "semaine": 43,
   "totalBarils": 219518,
   "ca": 1097590,
@@ -59832,6 +59832,36 @@
      "par": "Diego Herrera"
     },
     "id": 1792970407692
+   },
+   {
+    "type": "avertissement",
+    "payload": {
+     "discord": "394129285838929932",
+     "nom": "Enzo Verdoix",
+     "raison": "Aucune prise de service cette semaine",
+     "par": "Diego Herrera"
+    },
+    "id": 1792970409925
+   },
+   {
+    "type": "avertissement",
+    "payload": {
+     "discord": "584448192331120670",
+     "nom": "Hashh Sheepeur",
+     "raison": "Aucune prise de service cette semaine",
+     "par": "Diego Herrera"
+    },
+    "id": 1792970410959
+   },
+   {
+    "type": "avertissement",
+    "payload": {
+     "discord": "597879541695905804",
+     "nom": "Hitachi Hydro",
+     "raison": "Aucune prise de service cette semaine",
+     "par": "Diego Herrera"
+    },
+    "id": 1792970411775
    }
   ],
   "oilroxwood_coffres": [
