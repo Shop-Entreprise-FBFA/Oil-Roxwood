@@ -58,11 +58,11 @@ body{background:#080f19}
 
 /* ---- grande bannière : raffinerie au coucher du soleil ----
    Le fond réglé par section (Paramètres → Fonds d'écran) reste prioritaire : il est posé en style en ligne. */
-#main .hero-sec{margin:0 calc(-1 * var(--refonte-px)) 28px;min-height:330px;padding:56px clamp(24px,5vw,86px) 64px;isolation:isolate;
+#main .hero-sec{margin:0 calc(-1 * var(--refonte-px)) 28px;min-height:360px;padding:56px clamp(24px,5vw,86px) 64px;isolation:isolate;
   border-bottom:1px solid rgba(236,155,55,.4);
-  background-image:linear-gradient(90deg,rgba(5,11,20,.9),rgba(5,11,20,.55) 40%,rgba(5,11,20,0) 72%),linear-gradient(0deg,#080f19,transparent 30%),url('roxwood-refonte-raffinerie.svg');
+  background-image:linear-gradient(90deg,rgba(5,11,20,.82),rgba(5,11,20,.42) 38%,rgba(5,11,20,0) 66%),linear-gradient(0deg,#080f19,transparent 14%),url('roxwood-refonte-raffinerie.svg');
   background-position:center,center,center bottom;background-size:cover}
-#main .hero-sec.vide{background-image:linear-gradient(90deg,rgba(5,11,20,.9),rgba(5,11,20,.55) 40%,rgba(5,11,20,0) 72%),linear-gradient(0deg,#080f19,transparent 30%),url('roxwood-refonte-raffinerie.svg')}
+#main .hero-sec.vide{background-image:linear-gradient(90deg,rgba(5,11,20,.82),rgba(5,11,20,.42) 38%,rgba(5,11,20,0) 66%),linear-gradient(0deg,#080f19,transparent 14%),url('roxwood-refonte-raffinerie.svg')}
 #main .hero-sec::after{content:'OIL ROXWOOD  /  OPERATIONS';position:absolute;top:34px;left:clamp(24px,5vw,86px);font-family:var(--f-mono);font-size:11px;letter-spacing:.28em;color:#f3ac56;opacity:.9}
 #main .hero-sec .in h2{font-size:clamp(44px,5.8vw,82px);line-height:.98;letter-spacing:.025em;text-shadow:0 4px 30px #000}
 #main .hero-sec .in .sub{font-size:12px;letter-spacing:.13em;color:#e0e8ee;margin-top:18px}
@@ -111,3 +111,7 @@ html.halloween #app::after,html.noel #app::after{top:calc(var(--refonte-h) + 10p
 @media(max-width:520px){#navMore{column-count:1}#topbarApp .brand span:not(.logo-wrap){font-size:17px}}
 /* app.css cache le libellé des entrées de menu sous 760 px (ancien ruban d'icônes) : ici ce sont des mots. */
 @media(max-width:760px){#topbarApp .nav-item .txt{display:inline}#navTop .nav-item{width:auto}}
+/* titre des pages sans bandeau (Factures…) : un peu d'air sous la barre du haut */
+#main>.topbar:first-child{margin-top:30px}
+/* six cartes (Comptabilité) : 3 × 2 plutôt que 5 + 1 */
+@media(min-width:900px){#main .hero-sec + div:has(> .pole-carte:nth-child(6):last-child){grid-template-columns:repeat(3,minmax(0,1fr))!important}}
