@@ -55919,6 +55919,7 @@
   "prixRecrue": 4000,
   "permsCustom": {
    "rh": [
+    "accueil",
     "frh",
     "effectif",
     "fblacklist",
@@ -55934,9 +55935,12 @@
     "moi",
     "agenda",
     "affiches",
-    "dlogs"
+    "dlogs",
+    "rh",
+    "commercial"
    ],
    "commercial": [
+    "accueil",
     "effectif",
     "factures",
     "relances",
@@ -55952,9 +55956,12 @@
     "moi",
     "agenda",
     "affiches",
-    "dlogs"
+    "dlogs",
+    "rh",
+    "commercial"
    ],
    "respcom": [
+    "accueil",
     "factures",
     "relances",
     "fventes",
@@ -55971,9 +55978,12 @@
     "moi",
     "agenda",
     "affiches",
-    "dlogs"
+    "dlogs",
+    "commercial",
+    "comptable"
    ],
    "assistdir": [
+    "accueil",
     "effectif",
     "fblacklist",
     "integration",
@@ -55994,9 +56004,13 @@
     "affiches",
     "dlogs",
     "journal",
-    "maj"
+    "maj",
+    "rh",
+    "commercial",
+    "comptable"
    ],
    "comptable": [
+    "accueil",
     "factures",
     "prodder",
     "ftablette",
@@ -56012,9 +56026,12 @@
     "moi",
     "agenda",
     "affiches",
-    "dlogs"
+    "dlogs",
+    "commercial",
+    "comptable"
    ],
    "resprunner": [
+    "accueil",
     "semaine",
     "overview",
     "felig",
@@ -56025,9 +56042,11 @@
     "moi",
     "agenda",
     "affiches",
-    "dlogs"
+    "dlogs",
+    "comptable"
    ],
    "membre": [
+    "accueil",
     "overview",
     "felig",
     "quotashist",
@@ -56083,9 +56102,9 @@
   "theme": "halloween",
   "_fixRecrutBellini": true
  },
- "_cid": "jttf3azmw",
- "_maj": 1792948030379,
- "_rev": "rs8d3t8cc1p-mvo300nl",
+ "_cid": "gnxuakswrt8",
+ "_maj": 1792948102514,
+ "_rev": "ycsb4p9eupd-mvo30ak6",
  "_majSec": {
   "fer": 1792946942172,
   "fact": 1792941392401,
@@ -56094,13 +56113,13 @@
   "sheets": 1792941421983,
   "_qcFix1": 1792090599970,
   "_wkFix1": 1792090599970,
-  "journal": 1792947060794,
+  "journal": 1792948102458,
   "pending": 1792090599970,
   "prodDer": 1792875193989,
   "runners": 1792926589764,
   "absences": 1792771162506,
   "imported": 1792090599970,
-  "settings": 1792941316484,
+  "settings": 1792948102458,
   "closeUndo": 1792400944983,
   "quotasCom": 1792941424231,
   "bilanExtra": 1792882987253,
@@ -56108,7 +56127,7 @@
   "primesExtra": 1792090599970,
   "quotasComHist": 1792400944983,
   "profils": 1792090599970,
-  "_tables": 1792948026983,
+  "_tables": 1792948102514,
   "_permsFix1": 1792090599970,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792090599970,
@@ -56125,6 +56144,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1792948102458,
+   "u": "Diego Herrera",
+   "a": "Accueil : page de lancement et hubs de pôle ouverts à 7 rôle(s) aux permissions personnalisées"
+  },
   {
    "t": 1792946943899,
    "u": "Laurent Roquel",
@@ -57619,11 +57643,6 @@
    "t": 1791727800243,
    "u": "Diego Herrera",
    "a": "Absences Discord reprises : Kobayashi Vincent"
-  },
-  {
-   "t": 1791723940195,
-   "u": "Bjorn Frost",
-   "a": "Vente rapide sans facture : 50 bidon(s) — Employé Maximilien Hover (vendeur : Bjorn Frost)"
   }
  ],
  "prodDer": {
@@ -58047,7 +58066,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-25T17:08:10.449Z",
+  "maj": "2026-10-25T17:08:23.287Z",
   "semaine": 43,
   "totalBarils": 185666,
   "ca": 928330,
@@ -61454,5 +61473,6 @@
   "1791234656608",
   "1792452306681"
  ],
- "_tablesSupp": []
+ "_tablesSupp": [],
+ "_accFix1": true
 }
