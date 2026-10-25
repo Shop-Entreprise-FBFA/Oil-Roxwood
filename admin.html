@@ -32,6 +32,7 @@ window.ROXWOOD_CFG = {
 <script src="assets/roxwood-github.js?v=C-119"></script>
 <link rel="stylesheet" href="assets/roxwood-core.css?v=C-119">
 <link rel="stylesheet" href="assets/roxwood-app.css?v=C-119">
+<link rel="stylesheet" href="assets/roxwood-refonte.css?v=R-2">
 </head>
 <body>
 <div id="noelNeige" aria-hidden="true"></div>
@@ -88,49 +89,17 @@ window.ROXWOOD_CFG = {
 
 <!-- ============ APP ============ -->
 <div id="app">
-  <aside>
-    <!-- Le logo EST le lien vers la vitrine (C-60) : il avait déjà le curseur main
-         et l'animation au survol, l'entrée de menu « Voir le site public » ne
-         faisait que répéter une affordance existante. Le voyant de synchro reste
-         cliquable à l'intérieur : son gestionnaire arrête la navigation. -->
-    <div class="brand"><a href="index.html" target="_blank" rel="noopener" title="Ouvrir le site public dans un nouvel onglet" style="display:flex;align-items:center;gap:11px;text-decoration:none;color:inherit;min-width:0"><span class="logo-wrap"><img id="brandLogo" src="assets/logo.png" alt="" width="32" height="32" style="object-fit:contain"></span> <span>OIL <b>ROXWOOD</b><small>ESPACE MEMBRE <span id="syncDot" title="État de la synchro — cliquer pour régler le jeton" style="display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--muted);margin-left:5px;vertical-align:middle;cursor:pointer"></span></small></span></a></div>
-    <div class="nav-sec" data-sec="rh" tabindex="0" role="button" aria-expanded="true" onclick="navToggle('rh')" onkeydown="navSecKey(event,'rh')">Ressources humaines <span class="chev">▾</span></div>
-    <button class="nav-item" data-view="frh">🗂️ <span class="txt">Fiches RH</span></button>
-    <button class="nav-item" data-view="effectif">👥 <span class="txt">Effectif</span></button>
-    <button class="nav-item" data-view="integration">🎓 <span class="txt">Intégration</span></button>
-    <div class="nav-sec" data-sec="commerce" tabindex="0" role="button" aria-expanded="true" onclick="navToggle('commerce')" onkeydown="navSecKey(event,'commerce')">Commerce <span class="chev">▾</span></div>
-    <button class="nav-item" data-view="factures">🧾 <span class="txt">Factures</span></button>
-    <button class="nav-item" data-view="relances">📞 <span class="txt">Relances</span></button>
-    <button class="nav-item" data-view="fventes">🛒 <span class="txt">Ventes de la semaine</span></button>
-    <button class="nav-item" data-view="quotascom">⚖️ <span class="txt">Quotas &amp; fer</span></button>
-    <button class="nav-item" data-view="prodder">🗡️ <span class="txt">Produits dérivés</span></button>
-    <div class="nav-sec" data-sec="compta" tabindex="0" role="button" aria-expanded="true" onclick="navToggle('compta')" onkeydown="navSecKey(event,'compta')">Compta <span class="chev">▾</span></div>
-    <button class="nav-item" data-view="ftablette">🖥️ <span class="txt">Tablette</span></button>
-    <button class="nav-item" data-view="fcompta">💸 <span class="txt">Dépenses &amp; retraits</span></button>
-    <button class="nav-item" data-view="frecues">📥 <span class="txt">Factures reçues</span></button>
-    <button class="nav-item" data-view="bilan">🏦 <span class="txt">Bilan compta</span></button>
-    <button class="nav-item" data-view="cloture">🗓️ <span class="txt">Clôture du lundi</span></button>
-    <button class="nav-item" data-view="semaine">💰 <span class="txt">Semaine &amp; Primes</span></button>
-    <div class="nav-sec" data-sec="terrain" tabindex="0" role="button" aria-expanded="true" onclick="navToggle('terrain')" onkeydown="navSecKey(event,'terrain')">Responsable Runner <span class="chev">▾</span></div>
-    <button class="nav-item" data-view="felig">✅ <span class="txt">Éligibilité</span></button>
-    <button class="nav-item" data-view="historique">📈 <span class="txt">Historique</span></button>
-    <div class="nav-sec" data-sec="quotas" tabindex="0" role="button" aria-expanded="true" onclick="navToggle('quotas')" onkeydown="navSecKey(event,'quotas')">Quotas <span class="chev">▾</span></div>
-    <button class="nav-item" data-view="quotashist">📊 <span class="txt">Quotas 3 semaines</span></button>
-    <div class="nav-sec" data-sec="vitrine" tabindex="0" role="button" aria-expanded="true" onclick="navToggle('vitrine')" onkeydown="navSecKey(event,'vitrine')">Vitrine <span class="chev">▾</span></div>
-    <button class="nav-item" data-view="produits">🛢️ <span class="txt">Nouveaux produits</span></button>
-    <div class="nav-sec" data-sec="perso" tabindex="0" role="button" aria-expanded="true" onclick="navToggle('perso')" onkeydown="navSecKey(event,'perso')">Perso <span class="chev">▾</span></div>
-    <button class="nav-item" data-view="agenda">📅 <span class="txt">Mon agenda</span></button>
-    <button class="nav-item" data-view="affiches">🖼️ <span class="txt">Affiches</span></button>
-    <div class="nav-sec" data-sec="systeme" tabindex="0" role="button" aria-expanded="true" onclick="navToggle('systeme')" onkeydown="navSecKey(event,'systeme')">Système <span class="chev">▾</span></div>
-    <button class="nav-item" data-view="dlogs">📡 <span class="txt">Logs en direct</span></button>
-    <button class="nav-item" data-view="journal">📜 <span class="txt">Journal</span></button>
-    <button class="nav-item" data-view="params">⚙️ <span class="txt">Paramètres</span></button>
-    <button class="nav-item" data-view="maj">🆕 <span class="txt">Mises à jour</span></button>
-    <div class="spacer"></div>
-    <button class="nav-item" onclick="localStorage.setItem('orx_lang',localStorage.getItem('orx_lang')==='en'?'fr':'en');applyLang()" title="Changer la langue de l'interface / Switch interface language">🌐 <span class="txt" data-nolang="1">FR / EN</span></button>
-    <button class="nav-item" id="logout" onclick="logout()"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v8"/><path d="M6.3 6.5a8 8 0 1 0 11.4 0"/></svg> <span class="txt">Déconnexion</span></button>
-  </aside>
   <header id="topbarApp">
+    <div class="brand"><a href="index.html" target="_blank" rel="noopener" title="Ouvrir le site public dans un nouvel onglet" style="display:flex;align-items:center;gap:11px;text-decoration:none;color:inherit;min-width:0"><span class="logo-wrap"><img id="brandLogo" src="assets/logo.png" alt="" width="32" height="32" style="object-fit:contain"></span> <span>OIL <b>ROXWOOD</b><small>ESPACE MEMBRE <span id="syncDot" title="État de la synchro — cliquer pour régler le jeton" style="display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--muted);margin-left:5px;vertical-align:middle;cursor:pointer"></span></small></span></a></div>
+    <nav id="navTop" aria-label="Navigation principale">
+      <button class="nav-item" data-view="accueil"><span class="txt">Accueil</span></button>
+      <button class="nav-item" data-view="rh"><span class="txt">RH</span></button>
+      <button class="nav-item" data-view="commercial"><span class="txt">Commercial</span></button>
+      <button class="nav-item" data-view="comptable"><span class="txt">Comptabilité</span></button>
+      <button class="nav-item" data-view="overview"><span class="txt">Générale</span></button>
+      <button class="nav-item" data-view="params"><span class="txt">Paramètres</span></button>
+      <button class="nav-more-btn" id="navMoreBtn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="navMore" onclick="navMoreToggle()">Plus <span class="chev">▾</span></button>
+    </nav>
     <button class="gk-trigger" onclick="gkOpen()" title="Recherche globale">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
       <span>Rechercher…</span>
@@ -139,6 +108,58 @@ window.ROXWOOD_CFG = {
     <button id="whoamiBtn" onclick="show('profil')" title="Mon profil">
       <div id="whoami" style="padding:8px 14px;font-size:.78rem;color:var(--muted)"></div>
     </button>
+      <div id="navMore" role="menu" hidden>
+    <div class="nav-grp">
+    <div class="nav-sec" data-sec="rh">Ressources humaines</div>
+    <button class="nav-item" data-view="frh">🗂️ <span class="txt">Fiches RH</span></button>
+    <button class="nav-item" data-view="effectif">👥 <span class="txt">Effectif</span></button>
+    <button class="nav-item" data-view="integration">🎓 <span class="txt">Intégration</span></button>
+    </div>
+    <div class="nav-grp">
+    <div class="nav-sec" data-sec="commerce">Commerce</div>
+    <button class="nav-item" data-view="factures">🧾 <span class="txt">Factures</span></button>
+    <button class="nav-item" data-view="relances">📞 <span class="txt">Relances</span></button>
+    <button class="nav-item" data-view="fventes">🛒 <span class="txt">Ventes de la semaine</span></button>
+    <button class="nav-item" data-view="quotascom">⚖️ <span class="txt">Quotas &amp; fer</span></button>
+    <button class="nav-item" data-view="prodder">🗡️ <span class="txt">Produits dérivés</span></button>
+    </div>
+    <div class="nav-grp">
+    <div class="nav-sec" data-sec="compta">Compta</div>
+    <button class="nav-item" data-view="ftablette">🖥️ <span class="txt">Tablette</span></button>
+    <button class="nav-item" data-view="fcompta">💸 <span class="txt">Dépenses &amp; retraits</span></button>
+    <button class="nav-item" data-view="frecues">📥 <span class="txt">Factures reçues</span></button>
+    <button class="nav-item" data-view="bilan">🏦 <span class="txt">Bilan compta</span></button>
+    <button class="nav-item" data-view="cloture">🗓️ <span class="txt">Clôture du lundi</span></button>
+    <button class="nav-item" data-view="semaine">💰 <span class="txt">Semaine &amp; Primes</span></button>
+    </div>
+    <div class="nav-grp">
+    <div class="nav-sec" data-sec="terrain">Responsable Runner</div>
+    <button class="nav-item" data-view="felig">✅ <span class="txt">Éligibilité</span></button>
+    <button class="nav-item" data-view="historique">📈 <span class="txt">Historique</span></button>
+    </div>
+    <div class="nav-grp">
+    <div class="nav-sec" data-sec="quotas">Quotas</div>
+    <button class="nav-item" data-view="quotashist">📊 <span class="txt">Quotas 3 semaines</span></button>
+    </div>
+    <div class="nav-grp">
+    <div class="nav-sec" data-sec="vitrine">Vitrine</div>
+    <button class="nav-item" data-view="produits">🛢️ <span class="txt">Nouveaux produits</span></button>
+    </div>
+    <div class="nav-grp">
+    <div class="nav-sec" data-sec="perso">Perso</div>
+    <button class="nav-item" data-view="agenda">📅 <span class="txt">Mon agenda</span></button>
+    <button class="nav-item" data-view="affiches">🖼️ <span class="txt">Affiches</span></button>
+    </div>
+    <div class="nav-grp">
+    <div class="nav-sec" data-sec="systeme">Système</div>
+    <button class="nav-item" data-view="dlogs">📡 <span class="txt">Logs en direct</span></button>
+    <button class="nav-item" data-view="journal">📜 <span class="txt">Journal</span></button>
+    <button class="nav-item" data-view="maj">🆕 <span class="txt">Mises à jour</span></button>
+    </div>
+    <div class="spacer"></div>
+    <button class="nav-item" onclick="localStorage.setItem('orx_lang',localStorage.getItem('orx_lang')==='en'?'fr':'en');applyLang()" title="Changer la langue de l'interface / Switch interface language">🌐 <span class="txt" data-nolang="1">FR / EN</span></button>
+    <button class="nav-item" id="logout" onclick="logout()"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v8"/><path d="M6.3 6.5a8 8 0 1 0 11.4 0"/></svg> <span class="txt">Déconnexion</span></button>
+    </div>
   </header>
   <main id="main"></main>
 </div>
@@ -1187,24 +1208,37 @@ function actKey(e){
   if(e.key==='Enter'||e.key===' '){ e.preventDefault(); e.currentTarget.click(); }
 }
 function applyPerms(){
-  const al=allowedViews(), col=navCollapsed();
-  const isMob=window.matchMedia&&matchMedia('(max-width:760px)').matches; // mobile : jamais replié (titres cachés)
-  document.querySelectorAll('.nav-sec').forEach(h=>{
-    const closed=!isMob&&col.includes(h.dataset.sec);
+  const al=allowedViews();
+  /* Menu du haut : un bouton non autorisé disparaît, comme avant dans la barre latérale. */
+  document.querySelectorAll('#navTop .nav-item[data-view]').forEach(b=>{ b.style.display=al.includes(b.dataset.view)?'':'none'; });
+  /* Menu « Plus » : mêmes règles qu'avant — un titre de section sans aucun onglet autorisé est masqué.
+     Plus de sections repliables : le menu est déjà un tiroir qu'on ouvre et referme. */
+  document.querySelectorAll('#navMore .nav-sec').forEach(h=>{
     let el=h.nextElementSibling, any=false;
     while(el&&!el.classList.contains('nav-sec')&&!el.classList.contains('spacer')){
       if(el.classList.contains('nav-item')){
         const okPerm=!el.dataset.view||al.includes(el.dataset.view);
         if(okPerm) any=true;
-        el.style.display=(okPerm&&!closed)?'':'none'; // caché si non autorisé OU section repliée
+        el.style.display=okPerm?'':'none';
       }
       el=el.nextElementSibling;
     }
-    h.style.display=any?'':'none'; // titre masqué si aucun onglet autorisé dans la section
-    h.setAttribute('aria-expanded',closed?'false':'true');
-    const ch=h.querySelector('.chev'); if(ch) ch.style.transform=closed?'rotate(-90deg)':'';
+    h.style.display=any?'':'none';
   });
 }
+/* ---- Menu « Plus » (remplace la barre latérale) : toutes les pages secondaires,
+   la langue et la déconnexion. Fermé par clic ailleurs, Échap, ou choix d'une page. ---- */
+function navMoreToggle(force){
+  const m=document.getElementById('navMore'), b=document.getElementById('navMoreBtn'); if(!m||!b) return;
+  const open=typeof force==='boolean'?force:m.hidden;
+  m.hidden=!open; b.setAttribute('aria-expanded',open?'true':'false'); b.classList.toggle('open',open);
+}
+document.addEventListener('click',e=>{
+  const m=document.getElementById('navMore'); if(!m||m.hidden) return;
+  if(e.target.closest('#navMoreBtn')) return;
+  if(!e.target.closest('#navMore')||e.target.closest('#navMore .nav-item')) navMoreToggle(false);
+});
+document.addEventListener('keydown',e=>{ if(e.key==='Escape') navMoreToggle(false); });
 function currentUser(){
   const u=sessionStorage.getItem('orx_user');
   return (S.users||[]).find(x=>x.user.toLowerCase()===String(u||'').toLowerCase())||null;
@@ -1732,7 +1766,7 @@ function aplTheme(){
   const bl=document.getElementById('brandLogo'); if(bl) bl.src=logo;
 }
 /* ---- langue de l'interface (v1 : navigation & sections) ---- */
-const I18N_EN={"Vue d'ensemble":'Overview','Semaine & Primes':'Week & Bonuses','Historique':'History','Clôture du lundi':'Monday closing','Effectif':'Workforce','Runs':'Runs','Feuilles':'Sheets','Tablette':'Tablet','Éligibilité':'Eligibility','Ventes de la semaine':'Weekly sales','Fiches RH':'HR records','Intégration':'Onboarding','Dépenses & retraits':'Expenses & withdrawals','Ancienneté RH':'HR seniority',"Demandes d'accès":'Access requests','Factures':'Invoices','Relances':'Follow-ups','Bilan compta':'Accounting','Produits dérivés':'Merchandise','Quotas commerciaux':'Sales quotas','Achats Fer':'Iron purchases','Factures reçues':'Received invoices','Ma semaine':'My week','Quotas 3 semaines':'Quotas (3 weeks)','Ma to-do':'My to-do','Mon agenda':'My agenda','Suggestions / Bugs':'Suggestions / Bugs','Mises à jour':'Updates','Logs Discord':'Discord logs','Logs en direct':'Live logs','Journal':'Activity log','Paramètres':'Settings','TV du dépôt':'Depot TV','Retour au site':'Back to site','Déconnexion':'Log out','Pilotage':'Steering','Gestion':'Management','Commerce':'Sales','Compta':'Accounting','Quotas':'Quotas','Ressources humaines':'Human resources','Responsable Runner':'Runner manager','Affiches':'Posters','Mon profil':'My profile','Quotas & fer':'Quotas & iron','Perso':'Personal','Système':'System','Accès rapides':'Quick access'};
+const I18N_EN={"Vue d'ensemble":'Overview','Semaine & Primes':'Week & Bonuses','Historique':'History','Clôture du lundi':'Monday closing','Effectif':'Workforce','Runs':'Runs','Feuilles':'Sheets','Tablette':'Tablet','Éligibilité':'Eligibility','Ventes de la semaine':'Weekly sales','Fiches RH':'HR records','Intégration':'Onboarding','Dépenses & retraits':'Expenses & withdrawals','Ancienneté RH':'HR seniority',"Demandes d'accès":'Access requests','Factures':'Invoices','Relances':'Follow-ups','Bilan compta':'Accounting','Produits dérivés':'Merchandise','Quotas commerciaux':'Sales quotas','Achats Fer':'Iron purchases','Factures reçues':'Received invoices','Ma semaine':'My week','Quotas 3 semaines':'Quotas (3 weeks)','Ma to-do':'My to-do','Mon agenda':'My agenda','Suggestions / Bugs':'Suggestions / Bugs','Mises à jour':'Updates','Logs Discord':'Discord logs','Logs en direct':'Live logs','Journal':'Activity log','Paramètres':'Settings','TV du dépôt':'Depot TV','Retour au site':'Back to site','Déconnexion':'Log out','Pilotage':'Steering','Gestion':'Management','Commerce':'Sales','Compta':'Accounting','Quotas':'Quotas','Ressources humaines':'Human resources','Responsable Runner':'Runner manager','Affiches':'Posters','Mon profil':'My profile','Quotas & fer':'Quotas & iron','Perso':'Personal','Système':'System','Accès rapides':'Quick access','Accueil':'Home','Commercial':'Sales','Comptabilité':'Accounting','Générale':'General'};
 function applyLang(){
   const en=localStorage.getItem('orx_lang')==='en';
   document.querySelectorAll('.nav-item .txt').forEach(e=>{

@@ -1,0 +1,113 @@
+/* OIL ROXWOOD — refonte « industriel premium » R-2.
+   Se pose APRÈS roxwood-app.css : change la mise en page (menu horizontal, plus de barre
+   latérale), le bandeau et les cartes. Aucune logique métier n'est touchée. */
+:root{--refonte-h:76px;--refonte-px:clamp(16px,2.6vw,46px)}
+body{background:#080f19}
+#app{background:radial-gradient(ellipse at 92% 0%,rgba(215,111,28,.12),transparent 52%),#080f19}
+
+/* ---- barre du haut : marque · menu · recherche · identité ---- */
+#topbarApp{left:0;right:0;height:var(--refonte-h);padding:0 var(--refonte-px);gap:14px;justify-content:flex-start;
+  background:linear-gradient(180deg,rgba(14,22,34,.98),rgba(8,15,25,.97));border-bottom:1px solid rgba(226,154,60,.28);
+  box-shadow:0 8px 32px rgba(0,0,0,.32);backdrop-filter:blur(16px)}
+#topbarApp::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;pointer-events:none;
+  background:linear-gradient(90deg,transparent,#e29a3c 30%,#ff6a2b 60%,transparent);opacity:.55}
+#topbarApp .brand{flex:none;padding:0;margin:0;border:0;gap:12px}
+#topbarApp .brand .logo-wrap{width:44px;height:44px;display:grid;place-items:center}
+#topbarApp .brand #brandLogo{width:40px!important;height:40px!important}
+#topbarApp .brand span:not(.logo-wrap){font-size:21px;letter-spacing:.055em}
+#topbarApp .brand small{margin-top:4px}
+
+#navTop{display:flex;align-items:center;gap:3px;margin-left:clamp(6px,1.6vw,28px);flex:1 1 auto;min-width:0}
+#navTop .nav-item,#navTop .nav-more-btn{width:auto;flex:none;white-space:nowrap;margin:0;border:0;border-radius:6px;cursor:pointer;
+  padding:14px clamp(8px,1vw,16px);color:#b9c5d4;font-family:var(--f-display);font-size:15px;font-weight:700;
+  text-transform:uppercase;letter-spacing:.09em;background:none;transition:background .18s,color .18s}
+#navTop .nav-item svg{display:none}
+#navTop .nav-item:hover,#navTop .nav-more-btn:hover,#navTop .nav-more-btn.open{background:rgba(236,161,62,.12);color:#fff;transform:none}
+#navTop .nav-item.active{background:linear-gradient(180deg,rgba(239,154,40,.22),rgba(239,154,40,.06));box-shadow:inset 0 -3px #eaa13b;color:#ffcb78}
+#navTop .nav-more-btn{margin-left:auto;display:inline-flex;gap:6px;align-items:center;border:1px solid rgba(255,255,255,.12)}
+#navTop .nav-more-btn .chev{font-size:.8em;transition:transform .2s}
+#navTop .nav-more-btn.open .chev{transform:rotate(180deg)}
+
+#topbarApp .gk-trigger{flex:none;background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.12);width:200px;max-width:16vw}
+#whoamiBtn{flex:none;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04)}
+
+/* ---- menu « Plus » : les pages secondaires, la langue, la déconnexion ---- */
+#navMore{position:absolute;top:calc(100% + 1px);right:var(--refonte-px);width:min(760px,calc(100vw - 24px));max-height:calc(100vh - var(--refonte-h) - 20px);overflow-y:auto;
+  column-count:3;column-gap:22px;padding:10px 18px 16px;z-index:60;
+  background:linear-gradient(160deg,#162334,#0e1826);border:1px solid rgba(226,154,60,.32);border-top:0;border-radius:0 0 12px 12px;
+  box-shadow:0 26px 60px rgba(0,0,0,.6)}
+#navMore[hidden]{display:none}
+#navMore .nav-grp{break-inside:avoid;padding:6px 0 8px}
+#navMore .nav-sec{cursor:default;margin-top:0;padding:10px 6px 6px;border-top:0;color:#d8a15a;display:block}
+#navMore .nav-sec:hover{color:#d8a15a}
+#navMore .nav-item{padding:8px 10px;font-size:13.5px;color:#c3cedb}
+#navMore .nav-item:hover{transform:none;background:rgba(236,161,62,.12);color:#fff}
+#navMore .nav-item.active{background:rgba(236,161,62,.16);color:#ffcb78;box-shadow:inset 3px 0 #eaa13b}
+#navMore .spacer{display:block;column-span:all;flex:none;min-height:0;height:1px;margin:6px 0 8px;background:rgba(255,255,255,.1)}
+#navMore>.nav-item{display:inline-flex;width:auto;min-width:170px;margin-right:10px}
+
+/* ---- contenu : plus de marge pour la barre latérale ---- */
+#main{margin-left:0;margin-top:var(--refonte-h);padding:0 var(--refonte-px) 64px;min-height:calc(100vh - var(--refonte-h))}
+#main::before{left:0;top:var(--refonte-h)}
+#main .topbar{margin:14px 0 24px;padding-bottom:18px;border-bottom:1px solid rgba(255,255,255,.09)}
+#main .topbar h2{font-size:clamp(32px,3.4vw,46px);color:#f6f8fc}
+#main .panel{background:linear-gradient(145deg,#162334,#101a28);border:1px solid rgba(177,196,214,.16);border-radius:12px;box-shadow:0 12px 30px rgba(0,0,0,.16)}
+#main .panel h3{color:#f1c07c}
+#main .tabs{gap:8px;flex-wrap:wrap}
+#main .field,#main input,#main select,#main textarea,#main .btn{border-radius:7px}
+
+/* ---- grande bannière : raffinerie au coucher du soleil ----
+   Le fond réglé par section (Paramètres → Fonds d'écran) reste prioritaire : il est posé en style en ligne. */
+#main .hero-sec{margin:0 calc(-1 * var(--refonte-px)) 28px;min-height:330px;padding:56px clamp(24px,5vw,86px) 64px;isolation:isolate;
+  border-bottom:1px solid rgba(236,155,55,.4);
+  background-image:linear-gradient(90deg,rgba(5,11,20,.9),rgba(5,11,20,.55) 40%,rgba(5,11,20,0) 72%),linear-gradient(0deg,#080f19,transparent 30%),url('roxwood-refonte-raffinerie.svg');
+  background-position:center,center,center bottom;background-size:cover}
+#main .hero-sec.vide{background-image:linear-gradient(90deg,rgba(5,11,20,.9),rgba(5,11,20,.55) 40%,rgba(5,11,20,0) 72%),linear-gradient(0deg,#080f19,transparent 30%),url('roxwood-refonte-raffinerie.svg')}
+#main .hero-sec::after{content:'OIL ROXWOOD  /  OPERATIONS';position:absolute;top:34px;left:clamp(24px,5vw,86px);font-family:var(--f-mono);font-size:11px;letter-spacing:.28em;color:#f3ac56;opacity:.9}
+#main .hero-sec .in h2{font-size:clamp(44px,5.8vw,82px);line-height:.98;letter-spacing:.025em;text-shadow:0 4px 30px #000}
+#main .hero-sec .in .sub{font-size:12px;letter-spacing:.13em;color:#e0e8ee;margin-top:18px}
+
+/* ---- cartes de navigation des rubriques ---- */
+#main .pole-carte{position:relative;min-height:176px;border-radius:12px;background:linear-gradient(155deg,rgba(31,45,61,.97),rgba(15,25,39,.98));border:1px solid rgba(176,194,214,.18)}
+#main .pole-carte:hover{transform:translateY(-3px);border-color:var(--pc,#e4a34e);background:linear-gradient(155deg,#2a4058,#16263a)}
+
+/* ---- thèmes saisonniers : la décoration de l'ancienne barre latérale passe sur la barre du haut ---- */
+html.halloween #topbarApp,html.noel #topbarApp{background:radial-gradient(60% 160% at 0% 0%,color-mix(in srgb,var(--saison) 26%,transparent),transparent 62%),linear-gradient(180deg,rgba(14,22,34,.98),rgba(8,15,25,.97))}
+html.halloween #topbarApp::after,html.noel #topbarApp::after{background:linear-gradient(90deg,var(--accent),var(--saison));opacity:.7}
+html.halloween #navTop .nav-item.active,html.noel #navTop .nav-item.active{box-shadow:inset 0 -3px var(--saison);color:var(--saison)}
+html.halloween #app::after,html.noel #app::after{top:calc(var(--refonte-h) + 10px)}
+
+/* ---- écrans moyens, tablettes, téléphones ---- */
+@media(max-width:1400px){
+  #topbarApp .gk-trigger{width:44px;padding:10px;justify-content:center}
+  #topbarApp .gk-trigger span,#topbarApp .gk-trigger kbd{display:none}
+  #navTop .nav-item,#navTop .nav-more-btn{font-size:14px;padding:12px 9px}
+}
+@media(max-width:1120px){
+  #topbarApp .brand span:not(.logo-wrap){display:none}
+  #topbarApp .brand .logo-wrap{width:40px}
+  #topbarApp .brand span.logo-wrap{display:grid}
+  #topbarApp .brand span:not(.logo-wrap) small{display:none}
+}
+@media(max-width:900px){
+  :root{--refonte-h:118px}
+  #topbarApp{height:auto;min-height:76px;flex-wrap:wrap;padding:10px 16px 0;position:fixed}
+  #topbarApp .brand span:not(.logo-wrap){display:block}
+  #navTop{order:5;flex:1 0 100%;margin-left:0;overflow-x:auto;scrollbar-width:none;padding-bottom:4px}
+  #navTop::-webkit-scrollbar{display:none}
+  #topbarApp .gk-trigger{margin-left:auto}
+  #navMore{position:fixed;left:12px;right:12px;top:var(--refonte-h);width:auto;column-count:2}
+}
+@media(max-width:760px){
+  :root{--refonte-h:112px}
+  #topbarApp{position:fixed;width:100%;height:auto}
+  #main{margin-left:0;margin-top:var(--refonte-h);padding:0 16px 36px}
+  #main::before{top:var(--refonte-h)}
+  #main .hero-sec{margin:0 -16px 20px;min-height:230px;padding:60px 22px 34px}
+  #main .hero-sec::after{left:22px;top:22px;font-size:9px}
+  #main .hero-sec .in h2{font-size:42px}
+  #main .panel{overflow-x:auto}
+}
+@media(max-width:520px){#navMore{column-count:1}#topbarApp .brand span:not(.logo-wrap){font-size:17px}}
+/* app.css cache le libellé des entrées de menu sous 760 px (ancien ruban d'icônes) : ici ce sont des mots. */
+@media(max-width:760px){#topbarApp .nav-item .txt{display:inline}#navTop .nav-item{width:auto}}
