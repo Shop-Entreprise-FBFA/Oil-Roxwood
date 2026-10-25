@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-25T09:53:01.666344+00:00",
+ "maj": "2026-10-25T09:54:59.909847+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1563853331154346106",
+   "t": "2026-10-25T09:54:49.137000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 546x Pétrole Raffiné pour 5460$ par Alexander Bart. 2730$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 546,
+   "montant": 5460,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1563852574011170817",
    "t": "2026-10-25T09:51:48.620000+00:00",
@@ -61695,78 +61711,6 @@
     "playercharacter": "Bjorn Frost",
     "playerid": "361708",
     "itemid": "oil"
-   }
-  },
-  {
-   "id": "1562765822370254874-0",
-   "t": "2026-10-22T09:53:26.838000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 149x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1843.08, 6520.77, 16.73\ntargetPosition : -1842.58, 6521.16, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 8257\nplayerDiscord : 1096933851659517975\nplayerName : SoggyAnt2644\nplayerCharacter : Bjorn Frost\nplayerId : 361708\nitemId : refinedoil",
-   "nom": "Bjorn Frost",
-   "quantite": 149,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1843.08, 6520.77, 16.73",
-    "targetposition": "-1842.58, 6521.16, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "8257",
-    "playerdiscord": "1096933851659517975",
-    "playername": "SoggyAnt2644",
-    "playercharacter": "Bjorn Frost",
-    "playerid": "361708",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1562765822370254874-1",
-   "t": "2026-10-22T09:53:26.838000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 149x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1842.78, 6520.87, 16.73\ntargetPosition : -1842.58, 6521.16, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 8257\nplayerDiscord : 1096933851659517975\nplayerName : SoggyAnt2644\nplayerCharacter : Bjorn Frost\nplayerId : 361708\nitemId : refinedoil",
-   "nom": "Bjorn Frost",
-   "quantite": 149,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1842.78, 6520.87, 16.73",
-    "targetposition": "-1842.58, 6521.16, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "8257",
-    "playerdiscord": "1096933851659517975",
-    "playername": "SoggyAnt2644",
-    "playercharacter": "Bjorn Frost",
-    "playerid": "361708",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1562765822370254874-2",
-   "t": "2026-10-22T09:53:26.838000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 26x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1842.42, 6521.45, 16.73\ntargetPosition : -1842.58, 6521.16, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 8257\nplayerDiscord : 1096933851659517975\nplayerName : SoggyAnt2644\nplayerCharacter : Bjorn Frost\nplayerId : 361708\nitemId : refinedoil",
-   "nom": "Bjorn Frost",
-   "quantite": 26,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1842.42, 6521.45, 16.73",
-    "targetposition": "-1842.58, 6521.16, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "8257",
-    "playerdiscord": "1096933851659517975",
-    "playername": "SoggyAnt2644",
-    "playercharacter": "Bjorn Frost",
-    "playerid": "361708",
-    "itemid": "refinedoil"
    }
   }
  ]
