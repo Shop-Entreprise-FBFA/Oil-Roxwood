@@ -32,7 +32,7 @@ window.ROXWOOD_CFG = {
 <script src="assets/roxwood-github.js?v=C-119"></script>
 <link rel="stylesheet" href="assets/roxwood-core.css?v=C-119">
 <link rel="stylesheet" href="assets/roxwood-app.css?v=C-119">
-<link rel="stylesheet" href="assets/roxwood-refonte.css?v=R-4">
+<link rel="stylesheet" href="assets/roxwood-refonte.css?v=R-5">
 </head>
 <body>
 <div id="noelNeige" aria-hidden="true"></div>
@@ -1933,11 +1933,21 @@ function comptable(){
     + cartesHTML(CARTES);
 }
 function overview(){
+  const al=allowedViews(), col=COULEURS_POLES.overview;
+  const CARTES=[
+    {emoji:'✅',titre:'Éligibilité',sub:'Éligibilité des runners aux montées de grade',view:'felig',couleur:col},
+    {emoji:'📈',titre:'Historique',sub:'Historique des semaines clôturées',view:'historique',couleur:col},
+    {emoji:'🛢️',titre:'Nouveaux produits',sub:'Produits à afficher sur la vitrine',view:'produits',couleur:col},
+    {emoji:'📅',titre:'Mon agenda',sub:'Ton agenda et celui de l’équipe',view:'agenda',couleur:col},
+    {emoji:'🖼️',titre:'Affiches',sub:'Affiches et visuels de l’entreprise',view:'affiches',couleur:col},
+    {emoji:'📊',titre:'Quotas',sub:'Quotas sur les 3 dernières semaines',view:'quotashist',couleur:col},
+  ].filter(c=>al.includes(c.view));
   const R=S.runners, tot=R.reduce((a,r)=>a+r.barils,0), ok=R.filter(quotaOK).length;
   const sorted=[...R].sort((a,b)=>b.barils-a.barils);
   const lastW = S.weeks[S.weeks.length-1];
   $('#main').innerHTML = `
   ${heroHTML('overview','Général',"Vue d'ensemble de l'entreprise")}
+  ${CARTES.length?cartesHTML(CARTES):''}
   <div class="topbar">
     <div><h2>Vue d'ensemble</h2><div class="sub">Semaine ${S.settings.semaine} · ${weekRange()}</div></div>
     <div style="display:flex;gap:10px;align-items:center">

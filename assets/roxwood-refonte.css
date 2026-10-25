@@ -115,3 +115,4 @@ html.halloween #app::after,html.noel #app::after{top:calc(var(--refonte-h) + 10p
 #main>.topbar:first-child{margin-top:30px}
 /* six cartes (Comptabilité) : 3 × 2 plutôt que 5 + 1 */
 @media(min-width:900px){#main .hero-sec + div:has(> .pole-carte:nth-child(6):last-child){grid-template-columns:repeat(3,minmax(0,1fr))!important}}
+#main .hero-sec + div:has(> .pole-carte){margin-bottom:30px}
