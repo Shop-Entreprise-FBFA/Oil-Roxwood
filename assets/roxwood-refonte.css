@@ -18,15 +18,12 @@ body{background:#080f19}
 #topbarApp .brand small{margin-top:4px}
 
 #navTop{display:flex;align-items:center;gap:3px;margin-left:clamp(6px,1.6vw,28px);flex:1 1 auto;min-width:0}
-#navTop .nav-item,#navTop .nav-more-btn{width:auto;flex:none;white-space:nowrap;margin:0;border:0;border-radius:6px;cursor:pointer;
+#navTop .nav-item{width:auto;flex:none;white-space:nowrap;margin:0;border:0;border-radius:6px;cursor:pointer;
   padding:14px clamp(8px,1vw,16px);color:#b9c5d4;font-family:var(--f-display);font-size:15px;font-weight:700;
   text-transform:uppercase;letter-spacing:.09em;background:none;transition:background .18s,color .18s}
 #navTop .nav-item svg{display:none}
-#navTop .nav-item:hover,#navTop .nav-more-btn:hover,#navTop .nav-more-btn.open{background:rgba(236,161,62,.12);color:#fff;transform:none}
+#navTop .nav-item:hover{background:rgba(236,161,62,.12);color:#fff;transform:none}
 #navTop .nav-item.active{background:linear-gradient(180deg,rgba(239,154,40,.22),rgba(239,154,40,.06));box-shadow:inset 0 -3px #eaa13b;color:#ffcb78}
-#navTop .nav-more-btn{margin-left:auto;display:inline-flex;gap:6px;align-items:center;border:1px solid rgba(255,255,255,.12)}
-#navTop .nav-more-btn .chev{font-size:.8em;transition:transform .2s}
-#navTop .nav-more-btn.open .chev{transform:rotate(180deg)}
 
 #topbarApp .gk-trigger{flex:none;background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.12);width:200px;max-width:16vw}
 #whoamiBtn{flex:none;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04)}
@@ -81,7 +78,7 @@ html.halloween #app::after,html.noel #app::after{top:calc(var(--refonte-h) + 10p
 @media(max-width:1400px){
   #topbarApp .gk-trigger{width:44px;padding:10px;justify-content:center}
   #topbarApp .gk-trigger span,#topbarApp .gk-trigger kbd{display:none}
-  #navTop .nav-item,#navTop .nav-more-btn{font-size:14px;padding:12px 9px}
+  #navTop .nav-item{font-size:14px;padding:12px 9px}
 }
 @media(max-width:1120px){
   #topbarApp .brand span:not(.logo-wrap){display:none}
@@ -112,7 +109,7 @@ html.halloween #app::after,html.noel #app::after{top:calc(var(--refonte-h) + 10p
 /* app.css cache le libellé des entrées de menu sous 760 px (ancien ruban d'icônes) : ici ce sont des mots. */
 @media(max-width:760px){#topbarApp .nav-item .txt{display:inline}#navTop .nav-item{width:auto}}
 /* titre des pages sans bandeau (Factures…) : un peu d'air sous la barre du haut */
-#main>.topbar:first-child{margin-top:30px}
+#main>.topbar:first-child{margin-top:0;padding-top:34px}
 /* six cartes (Comptabilité) : 3 × 2 plutôt que 5 + 1 */
 @media(min-width:900px){#main .hero-sec + div:has(> .pole-carte:nth-child(6):last-child){grid-template-columns:repeat(3,minmax(0,1fr))!important}}
 #main .hero-sec + div:has(> .pole-carte){margin-bottom:30px}
@@ -121,3 +118,11 @@ html.halloween #app::after,html.noel #app::after{top:calc(var(--refonte-h) + 10p
 #main .pole-verrou:hover{transform:none;border-color:rgba(176,194,214,.18);filter:grayscale(.75)}
 #main .pole-verrou .pole-fleche{border-color:#8192a5;color:#c3cedb;font-size:.9rem}
 #main .pole-verrou:hover .pole-fleche{background:none;color:#c3cedb}
+
+/* menu du compte (ouvert depuis le profil) : seuls « Mon compte » et « Système » s'affichent,
+   les autres pages passent par les cartes ; leurs boutons restent dans le DOM pour la recherche Ctrl+K. */
+#navMore{width:290px;column-count:1;right:var(--refonte-px)}
+#navMore .nav-grp:not(.nav-grp-vis){display:none}
+#navMore .nav-grp-vis .nav-sec{padding-top:6px}
+#whoamiBtn{position:relative;cursor:pointer}
+#whoamiBtn.neuf::after{content:"";position:absolute;top:6px;right:6px;width:9px;height:9px;border-radius:50%;background:#ff6a2b;box-shadow:0 0 0 2px #0e1622}

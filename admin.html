@@ -32,7 +32,7 @@ window.ROXWOOD_CFG = {
 <script src="assets/roxwood-github.js?v=C-119"></script>
 <link rel="stylesheet" href="assets/roxwood-core.css?v=C-119">
 <link rel="stylesheet" href="assets/roxwood-app.css?v=C-119">
-<link rel="stylesheet" href="assets/roxwood-refonte.css?v=R-6">
+<link rel="stylesheet" href="assets/roxwood-refonte.css?v=R-8">
 </head>
 <body>
 <div id="noelNeige" aria-hidden="true"></div>
@@ -98,17 +98,19 @@ window.ROXWOOD_CFG = {
       <button class="nav-item" data-view="comptable"><span class="txt">Comptabilité</span></button>
       <button class="nav-item" data-view="overview"><span class="txt">Générale</span></button>
       <button class="nav-item" data-view="params"><span class="txt">Paramètres</span></button>
-      <button class="nav-more-btn" id="navMoreBtn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="navMore" onclick="navMoreToggle()">Plus <span class="chev">▾</span></button>
     </nav>
     <button class="gk-trigger" onclick="gkOpen()" title="Recherche globale">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
       <span>Rechercher…</span>
-      <kbd>Ctrl K</kbd>
     </button>
-    <button id="whoamiBtn" onclick="show('profil')" title="Mon profil">
+    <button id="whoamiBtn" onclick="navMoreToggle()" title="Mon compte" aria-haspopup="true" aria-expanded="false" aria-controls="navMore">
       <div id="whoami" style="padding:8px 14px;font-size:.78rem;color:var(--muted)"></div>
     </button>
       <div id="navMore" role="menu" hidden>
+    <div class="nav-grp nav-grp-vis">
+    <div class="nav-sec" data-sec="compte">Mon compte</div>
+    <button class="nav-item" data-view="profil">👤 <span class="txt">Mon profil</span></button>
+    </div>
     <div class="nav-grp">
     <div class="nav-sec" data-sec="rh">Ressources humaines</div>
     <button class="nav-item" data-view="frh">🗂️ <span class="txt">Fiches RH</span></button>
@@ -150,7 +152,7 @@ window.ROXWOOD_CFG = {
     <button class="nav-item" data-view="agenda">📅 <span class="txt">Mon agenda</span></button>
     <button class="nav-item" data-view="affiches">🖼️ <span class="txt">Affiches</span></button>
     </div>
-    <div class="nav-grp">
+    <div class="nav-grp nav-grp-vis">
     <div class="nav-sec" data-sec="systeme">Système</div>
     <button class="nav-item" data-view="dlogs">📡 <span class="txt">Logs en direct</span></button>
     <button class="nav-item" data-view="journal">📜 <span class="txt">Journal</span></button>
@@ -910,6 +912,12 @@ function rdUp(i){
 
 /* Pastille d'identité : la photo Discord si on la connaît, les initiales sinon.
    `qui` accepte un compte (objet) ou un simple nom. */
+/* Photo cassée (lien perso refusé par son hébergeur, par ex.) : on retombe sur l'avatar Discord,
+   puis seulement sur les initiales. */
+function imgRepli(i){
+  if(i.dataset.alt){ const a=i.dataset.alt; i.dataset.alt=''; i.src=a; }
+  else if(i.parentNode) i.parentNode.textContent=i.dataset.ini;
+}
 function avatarHTML(qui, style){
   const u = (typeof qui==='string')
     ? (S.users||[]).find(x=>String(x.user).toLowerCase()===String(qui).toLowerCase())
@@ -918,9 +926,10 @@ function avatarHTML(qui, style){
   const ini = String(nom||'?').trim().split(/\s+/).map(w=>w[0]||'').slice(0,2).join('').toUpperCase();
   const st = style ? ` style="${style}"` : '';
   const pf=profilDe(nom);
-  const photo=(pf&&pf.photo)||(u&&u.avatar)||'';
+  const perso=photoOk(pf&&pf.photo), disc=(u&&u.avatar)||profilPhotoAuto(nom)||'';
+  const photo=perso||disc;
   return photo
-    ? `<span class="avat"${st}><img src="${esc(photo)}" alt="" loading="lazy" data-ini="${esc(ini)}" onerror="if(this.parentNode)this.parentNode.textContent=this.dataset.ini"></span>`
+    ? `<span class="avat"${st}><img src="${esc(photo)}" alt="" loading="lazy" data-ini="${esc(ini)}" data-alt="${perso&&disc&&disc!==perso?esc(disc):''}" onerror="imgRepli(this)"></span>`
     : `<span class="avat"${st}>${esc(ini)}</span>`;
 }
 /* Onglets visibles par rôle — la Direction voit tout, un Membre ne voit que la vue d'ensemble */
@@ -1229,13 +1238,13 @@ function applyPerms(){
 /* ---- Menu « Plus » (remplace la barre latérale) : toutes les pages secondaires,
    la langue et la déconnexion. Fermé par clic ailleurs, Échap, ou choix d'une page. ---- */
 function navMoreToggle(force){
-  const m=document.getElementById('navMore'), b=document.getElementById('navMoreBtn'); if(!m||!b) return;
+  const m=document.getElementById('navMore'), b=document.getElementById('whoamiBtn'); if(!m||!b) return;
   const open=typeof force==='boolean'?force:m.hidden;
   m.hidden=!open; b.setAttribute('aria-expanded',open?'true':'false'); b.classList.toggle('open',open);
 }
 document.addEventListener('click',e=>{
   const m=document.getElementById('navMore'); if(!m||m.hidden) return;
-  if(e.target.closest('#navMoreBtn')) return;
+  if(e.target.closest('#whoamiBtn')) return;
   if(!e.target.closest('#navMore')||e.target.closest('#navMore .nav-item')) navMoreToggle(false);
 });
 document.addEventListener('keydown',e=>{ if(e.key==='Escape') navMoreToggle(false); });
@@ -6801,7 +6810,7 @@ function profil(){
       <p style="color:var(--muted);font-size:.78rem;margin-bottom:14px">Voilà ta carte, exactement comme elle apparaîtra.</p>
       <div style="text-align:center;padding:10px 6px 4px">
         <span class="avat avat-xl" id="pfApercu">${
-          photo?`<img src="${esc(photo)}" alt="" loading="lazy" data-ini="${esc(ini)}" onerror="if(this.parentNode)this.parentNode.textContent=this.dataset.ini">`:esc(ini)}</span>
+          photo?`<img src="${esc(photo)}" alt="" loading="lazy" data-ini="${esc(ini)}" data-alt="${photoOk(pf.photo)&&profilPhotoAuto(nom)&&profilPhotoAuto(nom)!==photoOk(pf.photo)?esc(profilPhotoAuto(nom)):''}" onerror="imgRepli(this)">`:esc(ini)}</span>
         <div style="font-family:var(--f-display);font-size:1.35rem;font-weight:800;letter-spacing:.01em;color:var(--ink)">${esc(nom)}</div>
         <div id="pfTitreApercu" style="font-family:var(--f-mono);font-size:.76rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-top:5px">${esc(titre||'—')}</div>
         <p id="pfBioApercu" style="color:var(--muted);font-size:.84rem;line-height:1.55;margin-top:12px;min-height:1.2em">${esc(bio)}</p>
@@ -6865,7 +6874,8 @@ function profilApercu(){
   const cible=$('#pfApercu');
   const url=ph||profilPhotoAuto(nom);
   const ini=String(nom).trim().split(/\s+/).map(w=>w[0]||'').slice(0,2).join('').toUpperCase();
-  cible.innerHTML=url?`<img src="${esc(url)}" alt="" data-ini="${esc(ini)}" onerror="if(this.parentNode)this.parentNode.textContent=this.dataset.ini">`:esc(ini);
+  const alt=profilPhotoAuto(nom);
+  cible.innerHTML=url?`<img src="${esc(url)}" alt="" data-ini="${esc(ini)}" data-alt="${ph&&alt&&alt!==ph?esc(alt):''}" onerror="imgRepli(this)">`:esc(ini);
   $('#pfTitreApercu').textContent=$('#pf_titre').value.trim()||profilTitreAuto(nom)||'—';
   $('#pfBioApercu').textContent=$('#pf_bio').value.trim();
   $('#pf_cpt').textContent=$('#pf_bio').value.length;
@@ -6949,7 +6959,9 @@ function moi(){
 async function navBadges(){
   const m=document.querySelector('.nav-item[data-view="maj"]');
   if(m){ const old=m.querySelector('.nvb'); if(old) old.remove();
-    if(localStorage.getItem('orx_seenver')!==APP_VERSION) m.insertAdjacentHTML('beforeend','<span class="nvb dot" title="Nouvelle version !"></span>');
+    const neuf=localStorage.getItem('orx_seenver')!==APP_VERSION;
+    if(neuf) m.insertAdjacentHTML('beforeend','<span class="nvb dot" title="Nouvelle version !"></span>');
+    const wb=document.getElementById('whoamiBtn'); if(wb) wb.classList.toggle('neuf',neuf);
   }
 }
 
