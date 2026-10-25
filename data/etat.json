@@ -56317,8 +56317,8 @@
   }
  },
  "_cid": "z8owwbguce",
- "_maj": 1792969282757,
- "_rev": "049xousi8j8t-mvofmgo1",
+ "_maj": 1792969290404,
+ "_rev": "ns1q8w3ilr-mvofmjzv",
  "_majSec": {
   "fer": 1792961656047,
   "fact": 1792941392401,
@@ -56327,11 +56327,11 @@
   "sheets": 1792969282734,
   "_qcFix1": 1792090599970,
   "_wkFix1": 1792090599970,
-  "journal": 1792966962712,
+  "journal": 1792969290404,
   "pending": 1792090599970,
   "prodDer": 1792875193989,
   "runners": 1792969282757,
-  "absences": 1792771162506,
+  "absences": 1792969290404,
   "imported": 1792090599970,
   "settings": 1792961604071,
   "closeUndo": 1792400944983,
@@ -56358,6 +56358,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1792969293264,
+   "u": "Diego Herrera",
+   "a": "5 absence(s) terminée(s) archivée(s) automatiquement"
+  },
   {
    "t": 1792966965677,
    "u": "Diego Herrera",
@@ -57852,11 +57857,6 @@
    "t": 1791756082240,
    "u": "Diego Herrera",
    "a": "Contrat(s) signé(s) via Discord : Mendez Danté, Athéna Andershon, jamal kara…"
-  },
-  {
-   "t": 1791756082157,
-   "u": "Diego Herrera",
-   "a": "Recrutements Discord : 5 fiche(s) créée(s), 0 case(s) complétée(s) — Mendez Danté, Athéna Andershon, jamal kara…"
   }
  ],
  "prodDer": {
@@ -58119,16 +58119,6 @@
  },
  "absences": [
   {
-   "id": 1790617704431,
-   "nom": "Thomas Boyer",
-   "du": "2026-09-29",
-   "au": "2026-10-13",
-   "srcId": "1790617682083",
-   "motif": "Perso",
-   "par": "Stella Collins",
-   "auto": true
-  },
-  {
    "id": 1791048796734,
    "nom": "Adel Dulax",
    "du": "2026-10-04",
@@ -58146,26 +58136,6 @@
    "srcId": "1789819330775",
    "motif": "raison perso",
    "par": "⚫ Thomas Boyer",
-   "auto": true
-  },
-  {
-   "id": 1791229030627,
-   "nom": "Miguel Brooks",
-   "du": "2026-10-05",
-   "au": "2026-10-12",
-   "srcId": "1791228973437",
-   "motif": "Personnel",
-   "par": "🥉⚫ Diego Herrera",
-   "auto": true
-  },
-  {
-   "id": 1791599529989,
-   "nom": "Marcus Vance",
-   "du": "2026-10-10",
-   "au": "2026-10-13",
-   "srcId": "1791595048162",
-   "motif": "Perso",
-   "par": "⚫ Carter Fuente |『 TALANTA 』",
    "auto": true
   },
   {
@@ -58189,16 +58159,6 @@
    "auto": true
   },
   {
-   "id": 1791986391856,
-   "nom": "Hakim CHEB",
-   "du": "2026-10-12",
-   "au": "2026-10-17",
-   "srcId": "1791981699037",
-   "motif": "Opération LCA",
-   "par": "⚫ Carter Fuente",
-   "auto": true
-  },
-  {
    "id": 1792061939280,
    "nom": "Ryan Brooks",
    "du": "2026-10-15",
@@ -58215,16 +58175,6 @@
    "au": "2026-10-21",
    "srcId": "1792085314412",
    "motif": "problème familiale",
-   "par": "Stella Collins",
-   "auto": true
-  },
-  {
-   "id": 1792188150964,
-   "nom": "Ethan Hayes",
-   "du": "2026-10-12",
-   "au": "2026-10-18",
-   "srcId": "1792188098363",
-   "motif": "Je n’ai pas fini le quota car le travail me prend beaucoup de temps, je rattraperais sa la semaine qui arrive.",
    "par": "Stella Collins",
    "auto": true
   },
@@ -58280,7 +58230,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-25T23:01:33.025Z",
+  "maj": "2026-10-25T23:01:37.339Z",
   "semaine": 43,
   "totalBarils": 219518,
   "ca": 1097590,
