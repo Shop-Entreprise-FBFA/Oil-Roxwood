@@ -158,7 +158,7 @@ aside .spacer{flex:1;min-height:10px}
   background:linear-gradient(180deg,var(--panel-2),var(--panel) 70%);
   border-bottom:1px solid var(--trait-fort);
   display:flex;align-items:center;justify-content:space-between;
-  padding:0 86px 0 24px; /* le padding droit laisse la place à la cloche #nfBell, flottante */
+  padding:0 24px;
 }
 .gk-trigger{
   display:flex;align-items:center;gap:10px;background:var(--plaque-2);border:1px solid var(--trait);
@@ -185,6 +185,23 @@ main::before{
 .topbar .sub{
   font-family:var(--f-mono);color:var(--cendre);font-size:11px;letter-spacing:.14em;
   text-transform:uppercase;margin-top:6px;
+}
+
+/* ---- bandeau de pôle (Accueil, RH, Commercial, Comptable, Général, Paramètres) ----
+   Fond photo réglable par section (Paramètres → Fonds d'écran) ; sans image réglée,
+   .vide retombe sur le dégradé sombre habituel du dashboard, rien ne casse. */
+.hero-sec{
+  position:relative;margin:-30px -30px 24px;min-height:220px;display:flex;flex-direction:column;
+  justify-content:flex-end;padding:30px 34px;overflow:hidden;border-bottom:1px solid var(--trait-fort);
+}
+.hero-sec.vide{background:linear-gradient(160deg,var(--panel-2),var(--panel) 75%)}
+.hero-sec .in h2{
+  font-family:var(--f-display);font-size:2.5rem;font-weight:800;text-transform:uppercase;
+  color:#fff;line-height:1;text-shadow:0 2px 14px rgba(0,0,0,.5);
+}
+.hero-sec .in .sub{
+  font-family:var(--f-mono);color:rgba(255,255,255,.8);font-size:.78rem;letter-spacing:.12em;
+  text-transform:uppercase;margin-top:9px;text-shadow:0 1px 8px rgba(0,0,0,.5);
 }
 
 /* ══════════════ 3. COMPOSANTS ══════════════ */
@@ -417,23 +434,7 @@ table.sheet{width:auto;min-width:100%}
   text-transform:uppercase;border-bottom:1px solid var(--trait);
 }
 
-/* ══════════════ 11. NOTIFICATIONS, RECHERCHE, VISITE ══════════════ */
-#nfBell{
-  position:fixed;top:14px;right:20px;z-index:160;width:42px;height:42px;border-radius:var(--radius);
-  background:var(--panel-2);border:1px solid var(--trait-fort);color:var(--muted);
-  display:none;align-items:center;justify-content:center;transition:color .15s,border-color .15s;
-}
-#nfBell:hover{color:var(--accent);border-color:var(--accent)}
-#nfBadge{
-  position:absolute;top:-5px;right:-5px;background:var(--flamme);color:#140D05;font-family:var(--f-mono);
-  font-size:9.5px;font-weight:700;border-radius:99px;min-width:16px;height:16px;padding:0 4px;
-  display:none;align-items:center;justify-content:center;
-}
-#nfPanel{
-  position:fixed;top:64px;right:20px;width:min(360px,92vw);max-height:70vh;overflow:auto;
-  background:linear-gradient(168deg,var(--panel-2),var(--panel));border:1px solid var(--trait-fort);
-  border-radius:var(--radius);z-index:160;display:none;box-shadow:0 24px 70px rgba(0,0,0,.6);padding:14px;
-}
+/* ══════════════ 11. RECHERCHE, VISITE ══════════════ */
 #gkOv{position:fixed;inset:0;background:rgba(6,4,3,.75);backdrop-filter:blur(4px);z-index:300;display:none;align-items:flex-start;justify-content:center;padding-top:14vh}
 #gkBox{
   background:linear-gradient(168deg,var(--panel-3),var(--panel));border:1px solid var(--trait-fort);
@@ -554,12 +555,12 @@ tbody tr:nth-child(7){animation-delay:.20s}tbody tr:nth-child(8){animation-delay
   .gk-trigger kbd{display:none}
   main{margin-left:0;margin-top:0;padding:16px}
   main::before{left:0;top:0}
+  .hero-sec{margin:-16px -16px 18px;min-height:170px;padding:20px}
+  .hero-sec .in h2{font-size:1.8rem}
   .topbar h2{font-size:28px}
   .g4{grid-template-columns:1fr 1fr}
   .panel{overflow-x:auto}
   .modal{padding:20px}
-  #nfBell{top:auto;bottom:18px;right:18px}
-  #nfPanel{top:auto;bottom:70px;right:18px}
 }
 @media(max-width:620px){
   .g4{grid-template-columns:1fr}

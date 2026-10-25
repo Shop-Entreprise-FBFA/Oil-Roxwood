@@ -147,8 +147,6 @@ window.ROXWOOD_CFG = {
   ⚠️ Une nouvelle version du dashboard est disponible — <a href="#" onclick="rechargerVraiment();return false" style="color:#fff;text-decoration:underline">recharger maintenant</a>
 </div>
 <div id="printZone"></div>
-<button id="nfBell" onclick="nfToggle()" title="Notifications"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 1 0-12 0c0 7-2 8-2 8h16s-2-1-2-8"/><path d="M10.5 20a1.8 1.8 0 0 0 3 0"/></svg><span id="nfBadge"></span></button>
-<div id="nfPanel"></div>
 <div id="gkOv" onclick="if(event.target===this)gkClose()"><div id="gkBox">
   <input class="field" id="gkIn" placeholder="🔍 Employé, client, facture, page…  (↑↓ naviguer · ↵ ouvrir · Échap fermer)" oninput="gkList()" onkeydown="gkKey(event)" autocomplete="off">
   <div id="gkRes" style="margin-top:8px"></div>
@@ -630,6 +628,18 @@ async function sha(t){
 const ROLES={direction:'Direction',assistdir:'Assistant de direction',rh:'RH',comptable:'Comptable',
              respcom:'Responsable commercial',commercial:'Commercial',resprunner:'Responsable Runner',membre:'Membre'};
 
+/* Les 6 pôles qui peuvent avoir leur propre image en bandeau (Paramètres →
+   Fonds d'écran par section). Mêmes clés que les vues « hub » (accueil, rh,
+   commercial, comptable) plus les deux destinations directes (overview,
+   params) qui n'ont pas de hub propre. */
+const FONDS_SECTIONS={accueil:'Accueil',rh:'Ressources humaines',commercial:'Commercial',comptable:'Comptable',overview:'Général',params:'Paramètres'};
+function fondSet(sec,url){
+  S.settings.fonds=S.settings.fonds||{};
+  S.settings.fonds[sec]=String(url||'').trim();
+  save(); sbPushNow();
+  toast(`🖼️ Fond « ${FONDS_SECTIONS[sec]||sec} » enregistré`);
+}
+
 /* ================== CONNEXION PAR RÔLE DISCORD ==================
    Plutôt que d'attendre qu'un admin valide chaque arrivée à la main, on peut
    laisser le serveur Discord faire foi : « tu as le rôle X là-bas, tu as le
@@ -904,7 +914,7 @@ const PERMS={
   /* L'ORDRE de cette liste est celui des lignes dans la grille des permissions.
      Il suit le menu, pôle par pôle, pour qu'on règle les droits en lisant la
      même chose des deux côtés. */
-  direction:['frh','effectif','integration',
+  direction:['accueil','rh','commercial','comptable','frh','effectif','integration',
              'factures','relances','fventes','quotascom','prodder',
              'ftablette','fcompta','frecues','bilan','cloture','semaine',
              'overview','felig','historique',
@@ -914,31 +924,34 @@ const PERMS={
 
   // RH : les personnes et ce qu'on leur doit. Ni compta, ni facturation.
   //      La semaine reste ouverte : c'est là qu'ils lisent les salaires à payer.
-  rh:       ['overview','effectif','semaine','historique','frh','integration','felig','ftablette','moi','profil','quotashist','agenda','affiches','maj','dlogs'],
+  //      Le hub « comptable » reste ouvert malgré le nom du rôle : il voit déjà
+  //      la Tablette et Semaine & Primes individuellement, le hub ne fait que
+  //      les regrouper.
+  rh:       ['accueil','rh','comptable','overview','effectif','semaine','historique','frh','integration','felig','ftablette','moi','profil','quotashist','agenda','affiches','maj','dlogs'],
 
   // Comptable : l'argent de l'entreprise. Pas les dossiers du personnel.
-  comptable:['overview','factures','relances','bilan','fcompta','frecues','moi','profil','quotashist','agenda','affiches','maj'],
+  comptable:['accueil','commercial','comptable','overview','factures','relances','bilan','fcompta','frecues','moi','profil','quotashist','agenda','affiches','maj'],
 
   // Assistant de direction : le bras droit. Tout ce que voit la Direction, sauf
   //      les deux gestes qui n'appartiennent qu'au patron : clôturer la semaine
   //      (irréversible, elle fige les salaires) et changer les Paramètres.
-  assistdir:['overview','effectif','semaine','historique','ftablette','felig','fventes','frh','integration','fcompta','factures','relances','bilan','prodder','quotascom','frecues','moi','produits','profil','quotashist','agenda','affiches','maj','dlogs','journal'],
+  assistdir:['accueil','rh','commercial','comptable','overview','effectif','semaine','historique','ftablette','felig','fventes','frh','integration','fcompta','factures','relances','bilan','prodder','quotascom','frecues','moi','produits','profil','quotashist','agenda','affiches','maj','dlogs','journal'],
 
   // Commercial : le commerce, rien d'autre.
-  commercial:['overview','fventes','factures','relances','quotascom','prodder','moi','produits','profil','quotashist','agenda','affiches','maj'],
+  commercial:['accueil','commercial','overview','fventes','factures','relances','quotascom','prodder','moi','produits','profil','quotashist','agenda','affiches','maj'],
 
   // Responsable commercial : pour l'instant exactement un commercial. Le rôle
   //      existe pour qu'on puisse lui ouvrir des cases sans les ouvrir à toute
   //      l'équipe — Paramètres → Permissions par rôle, colonne par colonne.
-  respcom:  ['overview','fventes','factures','relances','quotascom','prodder','moi','produits','profil','quotashist','agenda','affiches','maj'],
+  respcom:  ['accueil','commercial','overview','fventes','factures','relances','quotascom','prodder','moi','produits','profil','quotashist','agenda','affiches','maj'],
 
   // Responsable Runner : il encadre la production au quotidien. Effectif,
   //      éligibilité, tablette et logs — mais ni la paie détaillée, ni les
   //      factures, ni les fiches du personnel.
-  resprunner:['overview','effectif','semaine','historique','felig','ftablette','prodder','moi','profil','quotashist','agenda','affiches','maj','dlogs'],
+  resprunner:['accueil','rh','commercial','comptable','overview','effectif','semaine','historique','felig','ftablette','prodder','moi','profil','quotashist','agenda','affiches','maj','dlogs'],
 
   // Runner : lecture de l'entreprise et son espace personnel.
-  membre:   ['overview','effectif','moi','profil','quotashist','agenda','affiches','maj']
+  membre:   ['accueil','rh','overview','effectif','moi','profil','quotashist','agenda','affiches','maj']
 };
 function isMembre(){
   if(sessionStorage.getItem('orx_user')==='SECOURS') return false; // clé de secours = Direction
@@ -1028,6 +1041,37 @@ function migrerAffiches(){
     n++;
   });
   if(n) jlog(`Affiches : rubrique ouverte à ${n} rôle(s) aux permissions personnalisées`);
+  return n>0;
+}
+
+/* ---- Même reprise pour Accueil et les hubs de pôle (C-126) ----
+   Accueil est la nouvelle page de lancement à la connexion : sans cette
+   reprise, aucun rôle aux permissions personnalisées (c'est le cas de tous
+   sauf Direction, vérifié en donnée réelle) n'y atterrirait jamais, et
+   retomberait sur la première rubrique de sa propre liste à la place.
+   Les hubs RH/Commercial/Comptable ne sont ajoutés que si le rôle a déjà au
+   moins une des pages qu'ils regroupent — jamais un accès neuf, juste un
+   point d'entrée vers ce qu'il voyait déjà. */
+function migrerAccueil(){
+  if(S._accFix1) return false;
+  S._accFix1=true;
+  const c=S.settings&&S.settings.permsCustom;
+  if(!c||typeof c!=='object') return false;
+  const RH_VUES=['frh','effectif','integration'];
+  const COM_VUES=['factures','relances','fventes','quotascom','prodder'];
+  const CPT_VUES=['ftablette','fcompta','frecues','bilan','cloture','semaine'];
+  let n=0;
+  Object.keys(c).forEach(role=>{
+    const l=c[role];
+    if(!Array.isArray(l)||!l.length) return;
+    let touche=false;
+    if(!l.includes('accueil')){ l.unshift('accueil'); touche=true; }
+    if(!l.includes('rh')&&RH_VUES.some(v=>l.includes(v))){ l.push('rh'); touche=true; }
+    if(!l.includes('commercial')&&COM_VUES.some(v=>l.includes(v))){ l.push('commercial'); touche=true; }
+    if(!l.includes('comptable')&&CPT_VUES.some(v=>l.includes(v))){ l.push('comptable'); touche=true; }
+    if(touche) n++;
+  });
+  if(n) jlog(`Accueil : page de lancement et hubs de pôle ouverts à ${n} rôle(s) aux permissions personnalisées`);
   return n>0;
 }
 
@@ -1217,8 +1261,6 @@ function enter(){
     sessionStorage.setItem('orx_theme_toast',S.settings.theme);
     setTimeout(()=>toast(THEME_TOASTS[S.settings.theme],6000),1200);
   }
-  const bell=document.getElementById('nfBell'); if(bell) bell.style.display='flex';
-  nfRefresh();
   przLoad().then(()=>{ if(VIEW==='effectif') rerender(); }); setInterval(przLoad,5*60*1000); // présence Discord (widget) rafraîchie
   alignerRolesBot(); setInterval(alignerRolesBot,5*60*1000);  // rôles Discord relevés par le bot (C-97)
   hbSend(); hbLoad(); setInterval(()=>{ hbSend(); hbLoad(); },90*1000); // présence sur le SITE (battement de cœur)
@@ -1233,7 +1275,7 @@ function enter(){
      dans les Paramètres). Avant, elle basculait toute seule le lundi à 00h00, et la clôture faite
      le lundi matin comptait déjà les recrutements sur la semaine neuve. */
   if(!S.settings.semaine){ S.settings.semaine=semaineCal(); save(); } // première installation uniquement
-  show('overview');
+  show('accueil');
   // effectif ← tablette (le pull Supabase a déjà eu lieu au chargement de la page)
   setTimeout(async()=>{
     try{
@@ -1258,7 +1300,7 @@ function logout(){
 }
 
 /* ---- Canari de version : prévient les onglets restés sur une vieille version ---- */
-const APP_VERSION='C-125';
+const APP_VERSION='C-126';
 /* Le bandeau ne doit dire qu'une chose : « une version plus récente existe ».
    Il comparait deux chaînes avec !==, donc il s'allumait aussi dans l'autre
    sens — quand la page ouverte était PLUS récente que version.json, ce qui
@@ -1707,7 +1749,7 @@ function applyLang(){
   });
 }
 applyLang();
-let VIEW='overview';
+let VIEW='accueil';
 /* ---- Redessiner sans faire sauter l'écran ----
 
    Beaucoup de gestes (cocher une case, changer un menu, filtrer) refont la vue
@@ -1742,20 +1784,21 @@ function show(v){
   if(migrerPerms()&&!isMembre()){ save(); sbQueue(); }       // listes de permissions citant d'anciennes rubriques
   if(migrerAffiches()&&!isMembre()){ save(); sbQueue(); }    // rubrique Affiches ajoutée après coup
   if(migrerProduits()&&!isMembre()){ save(); sbQueue(); }    // rubrique Nouveaux produits, idem
+  if(migrerAccueil()&&!isMembre()){ save(); sbQueue(); }     // page Accueil + hubs de pôle, idem
   if(!isMembre()){                                           // absences validées sur Discord
     const abs=importerAbsences();
     if(abs){ jlog(`Absences Discord reprises : ${abs.join(' · ')}`); save(); sbQueue();
              setTimeout(()=>toast(`🌴 ${abs.length} absence(s) reprise(s) depuis Discord — ${abs.join(', ')}`,7000),400); }
   }
   const al=allowedViews();
-  if(!al.includes(v)) v=al[0]||'overview'; // vue non autorisée → première vue permise
+  if(!al.includes(v)) v=al[0]||'accueil'; // vue non autorisée → première vue permise
   const memeVue=(v===VIEW);
   const repere=memeVue?repereEcran():null;
   VIEW=v;
   document.querySelectorAll('.nav-item[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===v));
   destroyCharts();
-  ({overview,effectif,semaine,historique,cloture,ftablette,felig,fventes,frh,integration,fcompta,factures,relances,bilan,prodder,quotascom,frecues,moi,profil,quotashist,agenda,affiches,produits,maj,dlogs,journal,params})[v]();
-  try{ nfRefresh(); applyRO(); }catch(e){}
+  ({accueil,rh,commercial,comptable,overview,effectif,semaine,historique,cloture,ftablette,felig,fventes,frh,integration,fcompta,factures,relances,bilan,prodder,quotascom,frecues,moi,profil,quotashist,agenda,affiches,produits,maj,dlogs,journal,params})[v]();
+  try{ applyRO(); }catch(e){}
   restaureEcran(repere);
 }
 function rerender(){ show(VIEW); }
@@ -1777,11 +1820,84 @@ function softRerender(){
 document.addEventListener('focusout',()=>{ setTimeout(()=>{ if(RERENDER_WAIT&&!editionEnCours()){ RERENDER_WAIT=false; rerender(); } },300); });
 
 /* ================== VUE D'ENSEMBLE ================== */
+/* ================== ACCUEIL & HUBS DE PÔLE ==================
+   Deux niveaux de navigation par cartes : Accueil (cinq pôles) puis, pour
+   les trois pôles qui ont plusieurs pages (RH, Commercial, Comptable), un
+   hub qui liste les siennes. Général et Paramètres n'ont qu'une seule page
+   chacun : leur carte d'Accueil y mène directement, pas de hub.
+   Chaque pôle peut avoir sa propre image en bandeau (Paramètres → Fonds
+   d'écran par section) ; sans image, le bandeau garde le fond sombre
+   habituel du dashboard — rien ne casse tant que personne n'en a réglé une. */
+function heroHTML(sec,titre,sousTitre){
+  const url=(S.settings.fonds&&S.settings.fonds[sec])||'';
+  const bg=url?`background-image:linear-gradient(180deg, rgba(10,8,6,.25) 0%, rgba(10,8,6,.7) 78%, var(--panel) 100%), url('${esc(url)}');background-size:cover;background-position:center`:'';
+  return `<div class="hero-sec${url?'':' vide'}" style="${bg}">
+    <div class="in"><h2>${esc(titre)}</h2>${sousTitre?`<div class="sub">${esc(sousTitre)}</div>`:''}</div>
+  </div>`;
+}
+function cartesHTML(CARTES){
+  if(!CARTES.length) return '<div class="empty">Aucune section accessible avec ton rôle actuel.</div>';
+  return `<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px">
+    ${CARTES.map(c=>`<div class="panel kpi link" style="min-height:160px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center" onclick="show('${c.view}')" onkeydown="actKey(event)" tabindex="0" role="button" title="Ouvrir ${esc(c.titre)}">
+      <div style="font-size:2.3rem">${c.emoji}</div>
+      <div style="font-family:var(--f-display);font-size:1.25rem;font-weight:800;text-transform:uppercase;letter-spacing:.02em">${esc(c.titre)}</div>
+      <div style="color:var(--muted);font-size:.82rem">${esc(c.sub)}</div>
+    </div>`).join('')}
+  </div>`;
+}
+function accueil(){
+  const al=allowedViews();
+  const CARTES=[
+    {emoji:'🗂️',titre:'Ressources humaines',sub:'Nos collaborateurs, notre force',view:'rh'},
+    {emoji:'🧾',titre:'Commercial',sub:'Développer nos partenariats',view:'commercial'},
+    {emoji:'💸',titre:'Comptable',sub:'Suivi financier et reporting',view:'comptable'},
+    {emoji:'📊',titre:'Général',sub:"Vue d'ensemble de l'entreprise",view:'overview'},
+    {emoji:'⚙️',titre:'Paramètres',sub:'Configuration et administration',view:'params'},
+  ].filter(c=>al.includes(c.view));
+  $('#main').innerHTML = heroHTML('accueil','Notre énergie fait avancer le monde','Bienvenue sur le dashboard Oil Roxwood')
+    + cartesHTML(CARTES);
+}
+function rh(){
+  const al=allowedViews();
+  const CARTES=[
+    {emoji:'🗂️',titre:'Fiches RH',sub:'Consulter et gérer les fiches du personnel',view:'frh'},
+    {emoji:'👥',titre:'Effectif',sub:'Suivre les effectifs et les mouvements',view:'effectif'},
+    {emoji:'🎓',titre:'Intégration',sub:"Gérer l'intégration des nouveaux collaborateurs",view:'integration'},
+  ].filter(c=>al.includes(c.view));
+  $('#main').innerHTML = heroHTML('rh','Ressources Humaines','Nos collaborateurs, notre force')
+    + cartesHTML(CARTES);
+}
+function commercial(){
+  const al=allowedViews();
+  const CARTES=[
+    {emoji:'🧾',titre:'Factures',sub:'Gérer et consulter les factures clients',view:'factures'},
+    {emoji:'📞',titre:'Relances',sub:'Suivre les relances clients et impayés',view:'relances'},
+    {emoji:'🛒',titre:'Ventes de la semaine',sub:'Suivi des ventes et des performances',view:'fventes'},
+    {emoji:'⚖️',titre:'Quotas & fer',sub:'Suivre les quotas et le fer racheté',view:'quotascom'},
+    {emoji:'🗡️',titre:'Produits dérivés',sub:'Gérer les produits dérivés',view:'prodder'},
+  ].filter(c=>al.includes(c.view));
+  $('#main').innerHTML = heroHTML('commercial','Commercial','Développer nos partenariats')
+    + cartesHTML(CARTES);
+}
+function comptable(){
+  const al=allowedViews();
+  const CARTES=[
+    {emoji:'🖥️',titre:'Tablette',sub:'Relevé de la tablette de production',view:'ftablette'},
+    {emoji:'💸',titre:'Dépenses & retraits',sub:"Suivi des dépenses de l'entreprise",view:'fcompta'},
+    {emoji:'📥',titre:'Factures reçues',sub:'Factures fournisseurs reçues',view:'frecues'},
+    {emoji:'🏦',titre:'Bilan compta',sub:"Bilan complet de l'entreprise",view:'bilan'},
+    {emoji:'🗓️',titre:'Clôture du lundi',sub:'Clôturer la semaine de travail',view:'cloture'},
+    {emoji:'💰',titre:'Semaine & Primes',sub:'Salaires et primes de la semaine',view:'semaine'},
+  ].filter(c=>al.includes(c.view));
+  $('#main').innerHTML = heroHTML('comptable','Comptabilité','Suivi financier et reporting')
+    + cartesHTML(CARTES);
+}
 function overview(){
   const R=S.runners, tot=R.reduce((a,r)=>a+r.barils,0), ok=R.filter(quotaOK).length;
   const sorted=[...R].sort((a,b)=>b.barils-a.barils);
   const lastW = S.weeks[S.weeks.length-1];
   $('#main').innerHTML = `
+  ${heroHTML('overview','Général',"Vue d'ensemble de l'entreprise")}
   <div class="topbar">
     <div><h2>Vue d'ensemble</h2><div class="sub">Semaine ${S.settings.semaine} · ${weekRange()}</div></div>
     <div style="display:flex;gap:10px;align-items:center">
@@ -4852,6 +4968,12 @@ function ferDel(id){
 
 /* ================== MISES À JOUR (changelog) ================== */
 const CHANGELOG=[
+ {v:'C-126',d:'26/10/2026',t:'Nouvelle page Accueil avec les pôles RH/Commercial/Comptable, cloche de notifications retirée',items:[
+   ['🏠','Nouvelle page Accueil','Cinq grandes cartes à la connexion — RH, Commercial, Comptable, Général, Paramètres — chacune filtrée selon ce que peut voir la personne.'],
+   ['🗂️','Trois nouveaux hubs de pôle','RH, Commercial et Comptable ont maintenant leur propre page de lancement qui liste leurs pages (ex. RH → Fiches RH / Effectif / Intégration) avant d\'ouvrir la bonne.'],
+   ['🖼️','Fonds d\'écran par section','Paramètres → une image en bandeau réglable pour Accueil et chacun des 5 pôles. Vide, le fond sombre habituel reste — rien ne change tant que personne n\'en règle une.'],
+   ['🔔','Cloche de notifications retirée','Le centre de notifications (cloche, pastille, panneau) a été supprimé du dashboard.'],
+ ]},
  {v:'C-125',d:'25/10/2026',t:'Nouvelle barre du haut : recherche et profil ne vivent plus dans le menu',items:[
    ['🪪','Le pseudo devient un bouton','En haut à droite du dashboard, pas enterré en bas du menu — cliquer dessus ouvre directement Mon profil.'],
    ['🔍','Recherche globale accessible en un clic','Le même Ctrl+K qu\'avant, mais maintenant aussi un bouton visible en haut, pour ceux qui ne connaissaient pas le raccourci.'],
@@ -6345,7 +6467,7 @@ function tourEnd(fini){
   const c=document.getElementById('tourCard'); if(c) c.style.display='none';
   TOUR=null;
   localStorage.setItem('orx_tour_'+agKey(),'1');
-  if(fini){ toast('🎓 Visite terminée — bienvenue à bord, bon jeu !'); show('overview'); }
+  if(fini){ toast('🎓 Visite terminée — bienvenue à bord, bon jeu !'); show('accueil'); }
 }
 
 /* ================== PRÉSENCE SUR LE SITE (qui est connecté) ================== */
@@ -6478,48 +6600,6 @@ function ficheEmp(nom){
   </div>`}`);
 }
 
-/* ================== CENTRE DE NOTIFICATIONS ================== */
-function notifs(){
-  const N=[], now=nowSrv(), al=allowedViews();
-  if(al.includes('factures'))
-    ((S.fact&&S.fact.factures)||[]).filter(f=>f.statut!=='payee'&&f.date&&(now-Date.parse(f.date))/86400000>7).slice(0,8)
-      .forEach(f=>N.push({k:'f'+f.num,g:'var(--red)',t:`Facture n°${f.num} en retard`,d:`${f.client} · ${money(f.ttc)} · émise le ${frDate(f.date)}`,v:'factures'}));
-  if(al.includes('effectif')){
-    const sq=S.runners.filter(r=>!r.poste&&!r.absent&&!absDe(r.nom)&&grade(r).quota&&r.barils<grade(r).quota).length;
-    if(sq) N.push({k:'q'+sq,g:'var(--accent)',t:`${sq} runner(s) sous quota`,d:'quotas de la semaine pas encore atteints',v:'effectif'});
-    ((S.absences||[])).filter(a=>{const fin=Date.parse(a.au);return !isNaN(fin)&&fin<now&&(now-fin)/86400000<=3;})
-      .forEach(a=>N.push({k:'a'+a.id,g:'var(--green)',t:`${a.nom} : absence terminée`,d:`de retour depuis le ${frDate(a.au)}`,v:'effectif'}));
-  }
-  if(al.some(v=>SHEET_VIEWS[v])){
-    const inact=((S.sheets&&S.sheets.rh)||[]).filter(x=>{const d=Date.parse(x.dernierService);return String(x.nom||'').trim()&&!isNaN(d)&&(now-d)/86400000>=5&&!absDe(x.nom);});
-    if(inact.length) N.push({k:'i'+inact.length,g:'var(--accent)',t:`${inact.length} employé(s) sans service depuis 5 j ou +`,d:inact.slice(0,4).map(x=>x.nom).join(', ')+(inact.length>4?'…':''),v:'frh'});
-    const nc=((S.sheets&&S.sheets.rh)||[]).filter(x=>String(x.nom||'').trim()&&x.contrat!==true);
-    if(nc.length) N.push({k:'c'+nc.length,g:'#5aa0ff',t:`${nc.length} contrat(s) non signé(s)`,d:nc.slice(0,4).map(x=>x.nom).join(', ')+(nc.length>4?'…':''),v:'frh'});
-  }
-  return N;
-}
-function nfSeen(){ try{ return JSON.parse(localStorage.getItem('orx_nfseen'))||[]; }catch(e){ return []; } }
-function nfRefresh(){
-  const b=document.getElementById('nfBadge'); if(!b) return;
-  const seen=nfSeen(), n=notifs().filter(x=>!seen.includes(x.k)).length;
-  b.style.display=n?'flex':'none'; b.textContent=n>9?'9+':n;
-}
-function nfAllRead(){ localStorage.setItem('orx_nfseen',JSON.stringify(notifs().map(x=>x.k).slice(0,200))); nfRender(); nfRefresh(); }
-function nfRender(){
-  const p=document.getElementById('nfPanel'), N=notifs(), seen=nfSeen();
-  p.innerHTML=`<h3 style="margin-bottom:10px;display:flex;justify-content:space-between;align-items:center;gap:10px">Notifications
-    ${N.length?`<button class="btn btn-sm btn-ghost" onclick="nfAllRead()">Tout marquer lu</button>`:''}</h3>
-  ${N.length?N.map(x=>`<div onclick="document.getElementById('nfPanel').style.display='none';show('${x.v}')" onkeydown="actKey(event)" tabindex="0" role="button" style="display:flex;gap:10px;padding:9px 4px;border-bottom:1px solid var(--line);cursor:pointer;align-items:flex-start">
-    <span style="width:9px;height:9px;border-radius:50%;background:${x.g};flex:none;margin-top:5px"></span>
-    <span style="min-width:0"><b style="font-size:.84rem">${esc(x.t)}${seen.includes(x.k)?'':' <span style="color:var(--accent);font-size:.65rem;font-weight:800">NOUVEAU</span>'}</b>
-    <div style="color:var(--muted);font-size:.76rem;margin-top:2px">${esc(x.d)}</div></span>
-  </div>`).join(''):'<div class="empty" style="padding:14px">Rien à signaler — tout roule 🛢️</div>'}`;
-}
-function nfToggle(){
-  const p=document.getElementById('nfPanel');
-  if(p.style.display==='block'){ p.style.display='none'; return; }
-  nfRender(); p.style.display='block';
-}
 
 /* ================== RECHERCHE GLOBALE (Ctrl+K) ================== */
 let GK_ITEMS=[], GK_SEL=0;
@@ -8061,6 +8141,7 @@ function enteteRepliable(cle,titre,extra){
    ouvre la porte. Personne ne « demande » un accès — on lui donne le rôle. */
 async function params(){
   $('#main').innerHTML = `
+  ${heroHTML('params','Paramètres','Configuration et administration')}
   <div class="topbar"><div><h2>Paramètres</h2><div class="sub">Configuration de l'entreprise et des données</div></div></div>
   <div class="grid g2">
     <div class="panel">
@@ -8107,6 +8188,17 @@ async function params(){
       <button class="btn btn-gold" style="width:100%;margin-top:16px" onclick="saveParams()">Enregistrer</button>
     </div>
     <div>
+      <div class="panel" style="margin-bottom:18px">
+        <h3>🖼️ Fonds d'écran par section</h3>
+        <p style="color:var(--muted);font-size:.8rem;margin-bottom:14px">
+          Une image en bandeau au-dessus de chaque pôle du menu (Accueil et les 5 sections). Colle l'adresse d'une image (URL) — vide, la section garde son fond sombre actuel.
+        </p>
+        ${Object.entries(FONDS_SECTIONS).map(([k,label])=>`<div class="f-row" style="margin-bottom:10px">
+          <label class="f-lbl">${esc(label)}</label>
+          <input class="field" value="${esc((S.settings.fonds&&S.settings.fonds[k])||'')}" placeholder="https://…"
+            onchange="fondSet('${k}',this.value)">
+        </div>`).join('')}
+      </div>
       <!-- « Comptes d'accès » a été retiré en C-75 : les comptes ne se gèrent plus
            ici mais sur Discord. On garde un état des lieux, en lecture seule —
            savoir qui a un accès reste utile, le régler à la main ne l'est plus. -->
@@ -8233,7 +8325,8 @@ async function params(){
     <p style="color:var(--muted);font-size:.78rem;margin-bottom:10px"><b>Clique sur une case</b> pour donner ou retirer un onglet à un rôle — appliqué immédiatement à tous les comptes du rôle. Le rôle de chaque personne vient de son rôle Discord (correspondance ci-dessus) — il ne se règle plus compte par compte.</p>
     ${(()=>{
       const roles=Object.entries(ROLES); // dérivé de ROLES : un rôle ajouté apparaît ici tout seul
-      const lbl=v=>{ const b=document.querySelector(`.nav-item[data-view="${v}"] .txt`); return b?b.textContent:v; };
+      const LBL_HUBS={accueil:'Accueil',rh:'Pôle RH (hub)',commercial:'Pôle Commercial (hub)',comptable:'Pôle Comptable (hub)'};
+      const lbl=v=>{ if(LBL_HUBS[v]) return LBL_HUBS[v]; const b=document.querySelector(`.nav-item[data-view="${v}"] .txt`); return b?b.textContent:v; };
       return `<table><thead><tr><th>Onglet</th>${roles.map(([,l])=>`<th style="text-align:center">${l}</th>`).join('')}</tr></thead><tbody>
       ${PERMS.direction.map(v=>`<tr><td><b>${lbl(v)}</b></td>${roles.map(([k])=>{
         const on=permsDe(k).includes(v), ro=permRO(k).includes(v), verrou=(k==='direction'&&v==='params');
