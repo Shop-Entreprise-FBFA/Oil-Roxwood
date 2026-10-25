@@ -1,11 +1,32 @@
 {
- "maj": "2026-10-25T08:23:01.451616+00:00",
+ "maj": "2026-10-25T08:45:03.465964+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1563835434612691008",
+   "t": "2026-10-25T08:43:42.269000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 7187\nplayerDiscord : 293408058783301638\nplayerName : smqz\nplayerCharacter : Nemesio Rosario\nplayerId : 382544\nvehiclePlate : AS5715VX\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Nemesio Rosario",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "7187",
+    "playerdiscord": "293408058783301638",
+    "playername": "smqz",
+    "playercharacter": "Nemesio Rosario",
+    "playerid": "382544",
+    "vehicleplate": "AS5715VX",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1563830147914661889",
    "t": "2026-10-25T08:22:41.822000+00:00",
@@ -61586,94 +61607,6 @@
    "nom": null,
    "quantite": 652,
    "montant": 6520,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1562747957755772991",
-   "t": "2026-10-22T08:42:27.582000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 22x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1845.38, 6515.08, 16.73\ntargetPosition : -1845.91, 6514.70, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7733\nplayerDiscord : 423564334916960266\nplayerName : FunL[i]ve\nplayerCharacter : Helena Rhosé\nplayerId : 355128\nitemId : refinedoil",
-   "nom": "Helena Rhosé",
-   "quantite": 22,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1845.38, 6515.08, 16.73",
-    "targetposition": "-1845.91, 6514.70, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7733",
-    "playerdiscord": "423564334916960266",
-    "playername": "FunL[i]ve",
-    "playercharacter": "Helena Rhosé",
-    "playerid": "355128",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1562747706852646935-0",
-   "t": "2026-10-22T08:41:27.762000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 152x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1846.09, 6514.84, 16.73\ntargetPosition : -1845.91, 6514.70, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7733\nplayerDiscord : 423564334916960266\nplayerName : FunL[i]ve\nplayerCharacter : Helena Rhosé\nplayerId : 355128\nitemId : refinedoil",
-   "nom": "Helena Rhosé",
-   "quantite": 152,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1846.09, 6514.84, 16.73",
-    "targetposition": "-1845.91, 6514.70, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7733",
-    "playerdiscord": "423564334916960266",
-    "playername": "FunL[i]ve",
-    "playercharacter": "Helena Rhosé",
-    "playerid": "355128",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1562747706852646935-1",
-   "t": "2026-10-22T08:41:27.762000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 152x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1846.21, 6515.26, 16.73\ntargetPosition : -1845.91, 6514.70, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7733\nplayerDiscord : 423564334916960266\nplayerName : FunL[i]ve\nplayerCharacter : Helena Rhosé\nplayerId : 355128\nitemId : refinedoil",
-   "nom": "Helena Rhosé",
-   "quantite": 152,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1846.21, 6515.26, 16.73",
-    "targetposition": "-1845.91, 6514.70, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7733",
-    "playerdiscord": "423564334916960266",
-    "playername": "FunL[i]ve",
-    "playercharacter": "Helena Rhosé",
-    "playerid": "355128",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1562743431288332419",
-   "t": "2026-10-22T08:24:28.388000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 492x Pétrole Raffiné pour 4920$ par Francky Gallagher. 2460$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 492,
-   "montant": 4920,
    "type": "vente",
    "salon": "1245400913473179729",
    "champs": {
