@@ -7365,7 +7365,7 @@
     "idU": "379702",
     "arrivee": "2026-09-15",
     "discord": "1518237922288078893",
-    "avert": "",
+    "avert": "1",
     "contrat": false,
     "recrut": "Thomas Boyer",
     "dernierService": "2026-09-15",
@@ -7383,7 +7383,7 @@
     "idU": "307442",
     "arrivee": "2026-09-24",
     "discord": "475992964720623616",
-    "avert": "",
+    "avert": "1",
     "contrat": true,
     "recrut": "Diego Herrera",
     "dernierService": "2026-10-01",
@@ -7457,7 +7457,7 @@
     "idU": "382957",
     "arrivee": "2026-10-15",
     "discord": "168542992599220224",
-    "avert": "",
+    "avert": "1",
     "contrat": true,
     "recrut": "Thomas Boyer",
     "dernierService": "2026-10-16",
@@ -20624,14 +20624,6 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
-  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -20655,6 +20647,14 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T00:06:23.240Z"
+  },
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -56316,18 +56316,18 @@
    "params": ""
   }
  },
- "_cid": "n720i99csi",
- "_maj": 1792970397766,
- "_rev": "38sjwav73gt-mvoga99w",
+ "_cid": "z8owwbguce",
+ "_maj": 1792970404797,
+ "_rev": "2935hftoyur-mvogad9k",
  "_majSec": {
   "fer": 1792961656047,
   "fact": 1792941392401,
   "users": 1792946648058,
   "weeks": 1792400944983,
-  "sheets": 1792970397732,
+  "sheets": 1792970404769,
   "_qcFix1": 1792090599970,
   "_wkFix1": 1792090599970,
-  "journal": 1792970397766,
+  "journal": 1792970404797,
   "pending": 1792090599970,
   "prodDer": 1792875193989,
   "runners": 1792969282757,
@@ -56341,7 +56341,7 @@
   "primesExtra": 1792090599970,
   "quotasComHist": 1792400944983,
   "profils": 1792090599970,
-  "_tables": 1792970334802,
+  "_tables": 1792970404769,
   "_permsFix1": 1792090599970,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792090599970,
@@ -56358,6 +56358,21 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1792970407603,
+   "u": "Diego Herrera",
+   "a": "Avertissement : Enzo Poliquitrique (intérimaire, aucune prise de service) — total : 1"
+  },
+  {
+   "t": 1792970403988,
+   "u": "Diego Herrera",
+   "a": "Avertissement : Damien Brown (intérimaire, aucune prise de service) — total : 1"
+  },
+  {
+   "t": 1792970402381,
+   "u": "Diego Herrera",
+   "a": "Avertissement : Corentin Baltre (intérimaire, aucune prise de service) — total : 1"
+  },
   {
    "t": 1792970400572,
    "u": "Diego Herrera",
@@ -57842,21 +57857,6 @@
    "t": 1791756618001,
    "u": "Diego Herrera",
    "a": "Avertissement : Liam Doyle (intérimaire, aucune prise de service) — total : 2"
-  },
-  {
-   "t": 1791756615282,
-   "u": "Diego Herrera",
-   "a": "Avertissement : Maximilien Hover (intérimaire, aucune prise de service) — total : 1"
-  },
-  {
-   "t": 1791756612608,
-   "u": "Diego Herrera",
-   "a": "Avertissement : Ray Buffalo (intérimaire, aucune prise de service) — total : 1"
-  },
-  {
-   "t": 1791756604302,
-   "u": "Diego Herrera",
-   "a": "Avertissement : Rayan Espada (intérimaire, aucune prise de service) — total : 1"
   }
  ],
  "prodDer": {
@@ -58230,7 +58230,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-25T23:20:03.188Z",
+  "maj": "2026-10-25T23:20:08.360Z",
   "semaine": 43,
   "totalBarils": 219518,
   "ca": 1097590,
@@ -59802,6 +59802,36 @@
      "par": "Diego Herrera"
     },
     "id": 1792970400891
+   },
+   {
+    "type": "avertissement",
+    "payload": {
+     "discord": "1518237922288078893",
+     "nom": "Corentin Baltre",
+     "raison": "Aucune prise de service cette semaine",
+     "par": "Diego Herrera"
+    },
+    "id": 1792970402354
+   },
+   {
+    "type": "avertissement",
+    "payload": {
+     "discord": "475992964720623616",
+     "nom": "Damien Brown",
+     "raison": "Aucune prise de service cette semaine",
+     "par": "Diego Herrera"
+    },
+    "id": 1792970404616
+   },
+   {
+    "type": "avertissement",
+    "payload": {
+     "discord": "168542992599220224",
+     "nom": "Enzo Poliquitrique",
+     "raison": "Aucune prise de service cette semaine",
+     "par": "Diego Herrera"
+    },
+    "id": 1792970407692
    }
   ],
   "oilroxwood_coffres": [
@@ -61730,5 +61760,6 @@
   "1791234656608",
   "1792452306681"
  ],
- "_tablesSupp": []
+ "_tablesSupp": [],
+ "_accFix1": true
 }
