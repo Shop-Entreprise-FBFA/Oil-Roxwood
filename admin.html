@@ -112,7 +112,6 @@ window.ROXWOOD_CFG = {
     <button class="nav-item" data-view="cloture">🗓️ <span class="txt">Clôture du lundi</span></button>
     <button class="nav-item" data-view="semaine">💰 <span class="txt">Semaine &amp; Primes</span></button>
     <div class="nav-sec" data-sec="terrain" tabindex="0" role="button" aria-expanded="true" onclick="navToggle('terrain')" onkeydown="navSecKey(event,'terrain')">Responsable Runner <span class="chev">▾</span></div>
-    <button class="nav-item active" data-view="overview">📊 <span class="txt">Vue d'ensemble</span></button>
     <button class="nav-item" data-view="felig">✅ <span class="txt">Éligibilité</span></button>
     <button class="nav-item" data-view="historique">📈 <span class="txt">Historique</span></button>
     <div class="nav-sec" data-sec="quotas" tabindex="0" role="button" aria-expanded="true" onclick="navToggle('quotas')" onkeydown="navSecKey(event,'quotas')">Quotas <span class="chev">▾</span></div>
@@ -120,8 +119,6 @@ window.ROXWOOD_CFG = {
     <div class="nav-sec" data-sec="vitrine" tabindex="0" role="button" aria-expanded="true" onclick="navToggle('vitrine')" onkeydown="navSecKey(event,'vitrine')">Vitrine <span class="chev">▾</span></div>
     <button class="nav-item" data-view="produits">🛢️ <span class="txt">Nouveaux produits</span></button>
     <div class="nav-sec" data-sec="perso" tabindex="0" role="button" aria-expanded="true" onclick="navToggle('perso')" onkeydown="navSecKey(event,'perso')">Perso <span class="chev">▾</span></div>
-    <button class="nav-item" data-view="profil">👤 <span class="txt">Mon profil</span></button>
-    <button class="nav-item" data-view="moi">🙋 <span class="txt">Ma semaine</span></button>
     <button class="nav-item" data-view="agenda">📅 <span class="txt">Mon agenda</span></button>
     <button class="nav-item" data-view="affiches">🖼️ <span class="txt">Affiches</span></button>
     <div class="nav-sec" data-sec="systeme" tabindex="0" role="button" aria-expanded="true" onclick="navToggle('systeme')" onkeydown="navSecKey(event,'systeme')">Système <span class="chev">▾</span></div>
@@ -131,9 +128,18 @@ window.ROXWOOD_CFG = {
     <button class="nav-item" data-view="maj">🆕 <span class="txt">Mises à jour</span></button>
     <div class="spacer"></div>
     <button class="nav-item" onclick="localStorage.setItem('orx_lang',localStorage.getItem('orx_lang')==='en'?'fr':'en');applyLang()" title="Changer la langue de l'interface / Switch interface language">🌐 <span class="txt" data-nolang="1">FR / EN</span></button>
-    <div id="whoami" style="padding:8px 14px;font-size:.78rem;color:var(--muted)"></div>
     <button class="nav-item" id="logout" onclick="logout()"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v8"/><path d="M6.3 6.5a8 8 0 1 0 11.4 0"/></svg> <span class="txt">Déconnexion</span></button>
   </aside>
+  <header id="topbarApp">
+    <button class="gk-trigger" onclick="gkOpen()" title="Recherche globale">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      <span>Rechercher…</span>
+      <kbd>Ctrl K</kbd>
+    </button>
+    <button id="whoamiBtn" onclick="show('profil')" title="Mon profil">
+      <div id="whoami" style="padding:8px 14px;font-size:.78rem;color:var(--muted)"></div>
+    </button>
+  </header>
   <main id="main"></main>
 </div>
 
@@ -1252,7 +1258,7 @@ function logout(){
 }
 
 /* ---- Canari de version : prévient les onglets restés sur une vieille version ---- */
-const APP_VERSION='C-124';
+const APP_VERSION='C-125';
 /* Le bandeau ne doit dire qu'une chose : « une version plus récente existe ».
    Il comparait deux chaînes avec !==, donc il s'allumait aussi dans l'autre
    sens — quand la page ouverte était PLUS récente que version.json, ce qui
@@ -4846,6 +4852,11 @@ function ferDel(id){
 
 /* ================== MISES À JOUR (changelog) ================== */
 const CHANGELOG=[
+ {v:'C-125',d:'25/10/2026',t:'Nouvelle barre du haut : recherche et profil ne vivent plus dans le menu',items:[
+   ['🪪','Le pseudo devient un bouton','En haut à droite du dashboard, pas enterré en bas du menu — cliquer dessus ouvre directement Mon profil.'],
+   ['🔍','Recherche globale accessible en un clic','Le même Ctrl+K qu\'avant, mais maintenant aussi un bouton visible en haut, pour ceux qui ne connaissaient pas le raccourci.'],
+   ['🔧','Menu simplifié','« Mon profil » et « Ma semaine » ne sont plus dans Perso (le profil vit en haut) ; « Vue d\'ensemble » n\'est plus listée sous Responsable Runner — c\'est toujours l\'écran d\'accueil par défaut à la connexion.'],
+ ]},
  {v:'C-124',d:'24/10/2026',t:'Salaire de recrutement de Marco Bellini (et un compte qui restait bloqué sur le pseudo Discord)',items:[
    ['🐛','19 recrues de Marco Bellini invisibles pour son salaire','Sa colonne Recruteur portait « Bellini Marco » (ordre inversé) au lieu de « Marco Bellini » comme sur sa fiche RH — aucune des deux chaînes ne correspond à l\'autre, donc son salaire de recrutement tombait à 0 $. Corrigé une fois pour toutes les fiches concernées.'],
    ['🐛','Un compte d\'accès restait bloqué sur le pseudo Discord à vie','Quand un compte s\'ouvre tout seul avant que sa fiche RH ait un nom RP, il garde le pseudo Discord — pour toujours, même une fois la fiche complétée : rien ne revenait le corriger. Ça polluait au passage les menus « Recruteur » et autres d\'une seconde entrée fantôme à côté du vrai nom. Le compte se resynchronise maintenant tout seul à chaque connexion.'],
