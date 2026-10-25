@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-25T13:11:03.776488+00:00",
+ "maj": "2026-10-25T13:13:01.753225+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1563902926190157835",
+   "t": "2026-10-25T13:11:53.515000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 606x Pétrole Raffiné pour 6060$ par Marcus Deromanet. 3030$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 606,
+   "montant": 6060,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1563902390757761057",
    "t": "2026-10-25T13:09:45.858000+00:00",
@@ -68247,78 +68263,6 @@
     "itemid": "refinedoil",
     "jobid": "76",
     "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1562815909788389470-0",
-   "t": "2026-10-22T13:12:28.609000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 160x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1844.93, 6515.01, 16.73\ntargetPosition : -1845.91, 6514.70, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 8954\nplayerDiscord : 389512098574499855\nplayerName : CleverDeer3469\nplayerCharacter : Tonio Munson\nplayerId : 358783\nitemId : refinedoil",
-   "nom": "Tonio Munson",
-   "quantite": 160,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1844.93, 6515.01, 16.73",
-    "targetposition": "-1845.91, 6514.70, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "8954",
-    "playerdiscord": "389512098574499855",
-    "playername": "CleverDeer3469",
-    "playercharacter": "Tonio Munson",
-    "playerid": "358783",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1562815909788389470-1",
-   "t": "2026-10-22T13:12:28.609000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 160x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1845.67, 6514.75, 16.73\ntargetPosition : -1845.91, 6514.70, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 8954\nplayerDiscord : 389512098574499855\nplayerName : CleverDeer3469\nplayerCharacter : Tonio Munson\nplayerId : 358783\nitemId : refinedoil",
-   "nom": "Tonio Munson",
-   "quantite": 160,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1845.67, 6514.75, 16.73",
-    "targetposition": "-1845.91, 6514.70, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "8954",
-    "playerdiscord": "389512098574499855",
-    "playername": "CleverDeer3469",
-    "playercharacter": "Tonio Munson",
-    "playerid": "358783",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1562815909788389470-2",
-   "t": "2026-10-22T13:12:28.609000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 60x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1845.39, 6515.10, 16.73\ntargetPosition : -1845.91, 6514.70, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 8954\nplayerDiscord : 389512098574499855\nplayerName : CleverDeer3469\nplayerCharacter : Tonio Munson\nplayerId : 358783\nitemId : refinedoil",
-   "nom": "Tonio Munson",
-   "quantite": 60,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1845.39, 6515.10, 16.73",
-    "targetposition": "-1845.91, 6514.70, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "8954",
-    "playerdiscord": "389512098574499855",
-    "playername": "CleverDeer3469",
-    "playercharacter": "Tonio Munson",
-    "playerid": "358783",
-    "itemid": "refinedoil"
    }
   }
  ]
