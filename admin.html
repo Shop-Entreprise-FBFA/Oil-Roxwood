@@ -32,7 +32,7 @@ window.ROXWOOD_CFG = {
 <script src="assets/roxwood-github.js?v=C-119"></script>
 <link rel="stylesheet" href="assets/roxwood-core.css?v=C-119">
 <link rel="stylesheet" href="assets/roxwood-app.css?v=C-119">
-<link rel="stylesheet" href="assets/roxwood-refonte.css?v=R-16">
+<link rel="stylesheet" href="assets/roxwood-refonte.css?v=R-17">
 </head>
 <body>
 <div id="noelNeige" aria-hidden="true"></div>
@@ -3422,8 +3422,12 @@ function rhCartesHTML(){
            abs:{l:'Absents',f:x=>x.e.k==='abs'},contrat:{l:'Contrat à signer',f:x=>!x.r.contrat},avert:{l:'Avertis',f:x=>String(x.r.avert||'').trim()&&String(x.r.avert).trim()!=='0'}};
   if(!F[RH_FILT]) RH_FILT='tous';
   // choix par grade : une pastille par grade présent dans la feuille, du plus haut au plus bas
-  const gk=r=>String(r.grade||'').trim()||'—';
-  const grades=[...new Set(rows.map(gk))].sort((a,b)=>bilanOrdGrade(a)-bilanOrdGrade(b)||a.localeCompare(b));
+  // Direction = tous les grades qui ne sont ni des grades de runner ni Stagiaire (Patron, Co Patron, Assistant de direction, RH, Commercial…)
+  const deaccG=x=>String(x||'').normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase().trim();
+  const gk=r=>{ const g=String(r.grade||'').trim(); if(!g) return '—';
+    return (GRADES.some(x=>deaccG(x.nom)===deaccG(g))||/stagiaire/i.test(g))?g:'Direction'; };
+  const ordG=g=>g==='Direction'?-1:bilanOrdGrade(g);
+  const grades=[...new Set(rows.map(gk))].sort((a,b)=>ordG(a)-ordG(b)||a.localeCompare(b));
   if(RH_GRADE&&!grades.includes(RH_GRADE)) RH_GRADE='';
   const liste=tous.filter(F[RH_FILT].f).filter(x=>!RH_GRADE||gk(x.r)===RH_GRADE);
   const carte=x=>{ const r=x.r, e=x.e, av=String(r.avert||'').trim(), avert=av&&av!=='0';
@@ -3451,7 +3455,7 @@ function rhCartesHTML(){
   <div class="rh-grades" role="tablist" aria-label="Filtrer par grade">
     <button class="${!RH_GRADE?'on':''}" onclick="RH_GRADE='';feuilles()">Tous les grades</button>
     ${grades.map(g=>{ const n=tous.filter(x=>gk(x.r)===g&&F[RH_FILT].f(x)).length; const cle=encodeURIComponent(g);
-      return `<button class="${RH_GRADE===g?'on':''} ${rhGradeCls(g)}" onclick="RH_GRADE=decodeURIComponent('${cle}');feuilles()">${esc(/^patron$/i.test(g)?'Direction':g)} <span>${n}</span></button>`; }).join('')}
+      return `<button class="${RH_GRADE===g?'on':''} ${rhGradeCls(g)}" onclick="RH_GRADE=decodeURIComponent('${cle}');feuilles()">${esc(g)} <span>${n}</span></button>`; }).join('')}
   </div>
   <div class="rel-legende"><span>${liste.length} fiche(s) · clique sur une carte pour la modifier</span></div>
   ${liste.length?`<div class="rh-grille">${liste.map(carte).join('')}</div>`:'<div class="panel"><div class="empty">Aucune fiche</div></div>'}`;
