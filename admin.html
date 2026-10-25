@@ -32,7 +32,7 @@ window.ROXWOOD_CFG = {
 <script src="assets/roxwood-github.js?v=C-119"></script>
 <link rel="stylesheet" href="assets/roxwood-core.css?v=C-119">
 <link rel="stylesheet" href="assets/roxwood-app.css?v=C-119">
-<link rel="stylesheet" href="assets/roxwood-refonte.css?v=R-15">
+<link rel="stylesheet" href="assets/roxwood-refonte.css?v=R-16">
 </head>
 <body>
 <div id="noelNeige" aria-hidden="true"></div>
@@ -3451,7 +3451,7 @@ function rhCartesHTML(){
   <div class="rh-grades" role="tablist" aria-label="Filtrer par grade">
     <button class="${!RH_GRADE?'on':''}" onclick="RH_GRADE='';feuilles()">Tous les grades</button>
     ${grades.map(g=>{ const n=tous.filter(x=>gk(x.r)===g&&F[RH_FILT].f(x)).length; const cle=encodeURIComponent(g);
-      return `<button class="${RH_GRADE===g?'on':''} ${rhGradeCls(g)}" onclick="RH_GRADE=decodeURIComponent('${cle}');feuilles()">${esc(g)} <span>${n}</span></button>`; }).join('')}
+      return `<button class="${RH_GRADE===g?'on':''} ${rhGradeCls(g)}" onclick="RH_GRADE=decodeURIComponent('${cle}');feuilles()">${esc(/^patron$/i.test(g)?'Direction':g)} <span>${n}</span></button>`; }).join('')}
   </div>
   <div class="rel-legende"><span>${liste.length} fiche(s) · clique sur une carte pour la modifier</span></div>
   ${liste.length?`<div class="rh-grille">${liste.map(carte).join('')}</div>`:'<div class="panel"><div class="empty">Aucune fiche</div></div>'}`;
