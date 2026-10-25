@@ -16840,29 +16840,6 @@
     "statut": "payee"
    },
    {
-    "num": 253169,
-    "date": "2026-10-20",
-    "client": "Klan Zarkanov",
-    "emetteur": "Emma Collins-rodriguez",
-    "postop": false,
-    "lignes": [
-     {
-      "ref": "CMD",
-      "qte": 150,
-      "tva": 0,
-      "pu": 180,
-      "ht": 27000,
-      "ttc": 27000,
-      "desc": "bidons d'essence "
-     }
-    ],
-    "offert": 0,
-    "ht": 27000,
-    "ttc": 27000,
-    "poids": 300,
-    "statut": "attente"
-   },
-   {
     "num": 253168,
     "date": "2026-10-20",
     "client": "LTD Strawberry",
@@ -55842,17 +55819,17 @@
   "_fixRecrutBellini": true
  },
  "_cid": "jlr7uepp55l",
- "_maj": 1792941373798,
- "_rev": "ql4un6cy07-mvnz09k8",
+ "_maj": 1792941392401,
+ "_rev": "mng175ac8h-mvnz0lm1",
  "_majSec": {
   "fer": 1792938901469,
-  "fact": 1792852523417,
+  "fact": 1792941392401,
   "users": 1792941316382,
   "weeks": 1792400944983,
   "sheets": 1792941116343,
   "_qcFix1": 1792090599970,
   "_wkFix1": 1792090599970,
-  "journal": 1792941316434,
+  "journal": 1792941392401,
   "pending": 1792090599970,
   "prodDer": 1792875193989,
   "runners": 1792926589764,
@@ -55883,6 +55860,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1792941395320,
+   "u": "Diego Herrera",
+   "a": "Suppression de la facture n°253169"
+  },
   {
    "t": 1792941307502,
    "u": "?",
@@ -57377,11 +57359,6 @@
    "t": 1791714232337,
    "u": "Julio Collins",
    "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1791714232118,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
   }
  ],
  "prodDer": {
@@ -57805,13 +57782,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-25T15:16:23.528Z",
+  "maj": "2026-10-25T15:16:39.145Z",
   "semaine": 43,
   "totalBarils": 185666,
   "ca": 928330,
   "objectif": 375000,
   "effectif": 113,
-  "clientsServis": 165,
+  "clientsServis": 164,
   "theme": "halloween",
   "top3": [
    {
