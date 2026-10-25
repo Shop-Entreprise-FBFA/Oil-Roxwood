@@ -229,3 +229,9 @@ html.halloween #app::after,html.noel #app::after{top:calc(var(--refonte-h) + 10p
 .rh-form{display:grid;grid-template-columns:1fr 1fr;gap:12px 14px}
 .rh-check{display:flex;align-items:center;gap:9px;font-size:.88rem;grid-column:1/-1;padding:6px 0}
 @media(max-width:620px){.rh-form{grid-template-columns:1fr}}
+
+.rh-grades{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 12px}
+.rh-grades button{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);color:#c3cedb;border-radius:8px;padding:6px 12px;font-size:.78rem;font-weight:700;cursor:pointer;transition:.15s}
+.rh-grades button span{margin-left:5px;opacity:.7;font-family:var(--f-mono)}
+.rh-grades button:hover{border-color:#e4a34e;color:#fff}
+.rh-grades button.on{background:rgba(239,154,40,.2);border-color:#eaa13b;color:#ffcb78}

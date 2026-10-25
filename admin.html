@@ -32,7 +32,7 @@ window.ROXWOOD_CFG = {
 <script src="assets/roxwood-github.js?v=C-119"></script>
 <link rel="stylesheet" href="assets/roxwood-core.css?v=C-119">
 <link rel="stylesheet" href="assets/roxwood-app.css?v=C-119">
-<link rel="stylesheet" href="assets/roxwood-refonte.css?v=R-14">
+<link rel="stylesheet" href="assets/roxwood-refonte.css?v=R-15">
 </head>
 <body>
 <div id="noelNeige" aria-hidden="true"></div>
@@ -3402,7 +3402,7 @@ async function feuilles(){
 /* ---- Fiches RH en cartes ----
    Même feuille, mêmes données (S.sheets.rh), mêmes écritures (cellEdit) : seule la présentation change.
    Le tableau reste disponible (bouton « Vue tableau ») pour le glisser-déposer, l'annulation et le CSV. */
-let RH_VUE='cartes', RH_FILT='tous', RH_DIRTY=false;
+let RH_VUE='cartes', RH_FILT='tous', RH_GRADE='', RH_DIRTY=false;
 function rhEtat(r){
   const d=Date.parse(r.dernierService), j=isNaN(d)?null:Math.floor((Date.now()-d)/86400000), ab=absDe(r.nom);
   if(ab) return {k:'abs',txt:`💤 Absent jusqu'au ${frDate(ab.au)}`,cls:'abs'};
@@ -3421,7 +3421,11 @@ function rhCartesHTML(){
   const F={tous:{l:'Tous',f:()=>true},actif:{l:'Actifs',f:x=>x.e.k==='actif'},inactif:{l:'Inactifs',f:x=>x.e.k==='inactif'||x.e.k==='out'||x.e.k==='jamais'},
            abs:{l:'Absents',f:x=>x.e.k==='abs'},contrat:{l:'Contrat à signer',f:x=>!x.r.contrat},avert:{l:'Avertis',f:x=>String(x.r.avert||'').trim()&&String(x.r.avert).trim()!=='0'}};
   if(!F[RH_FILT]) RH_FILT='tous';
-  const liste=tous.filter(F[RH_FILT].f);
+  // choix par grade : une pastille par grade présent dans la feuille, du plus haut au plus bas
+  const gk=r=>String(r.grade||'').trim()||'—';
+  const grades=[...new Set(rows.map(gk))].sort((a,b)=>bilanOrdGrade(a)-bilanOrdGrade(b)||a.localeCompare(b));
+  if(RH_GRADE&&!grades.includes(RH_GRADE)) RH_GRADE='';
+  const liste=tous.filter(F[RH_FILT].f).filter(x=>!RH_GRADE||gk(x.r)===RH_GRADE);
   const carte=x=>{ const r=x.r, e=x.e, av=String(r.avert||'').trim(), avert=av&&av!=='0';
     const btnCtr=(SHEETS_DEF.rh.cols[0]&&SHEETS_DEF.rh.cols[0].f)?SHEETS_DEF.rh.cols[0].f(r):'';
     return `<div class="rh-card ${e.cls}" tabindex="0" role="button" onkeydown="actKey(event)" onclick="rhFiche(${x.i})" title="Ouvrir la fiche">
@@ -3443,6 +3447,11 @@ function rhCartesHTML(){
   return `<div class="rel-barre">
     <div class="rel-seg" role="tablist">${Object.entries(F).map(([k,v])=>`<button class="${RH_FILT===k?'on':''}" onclick="RH_FILT='${k}';feuilles()">${v.l} <span>${tous.filter(v.f).length}</span></button>`).join('')}</div>
     <input class="field" id="sheetSearchInput" placeholder="🔍 Nom, Discord, téléphone…" value="${esc(sheetSearch)}" oninput="chercherFeuille(this.value)">
+  </div>
+  <div class="rh-grades" role="tablist" aria-label="Filtrer par grade">
+    <button class="${!RH_GRADE?'on':''}" onclick="RH_GRADE='';feuilles()">Tous les grades</button>
+    ${grades.map(g=>{ const n=tous.filter(x=>gk(x.r)===g&&F[RH_FILT].f(x)).length; const cle=encodeURIComponent(g);
+      return `<button class="${RH_GRADE===g?'on':''} ${rhGradeCls(g)}" onclick="RH_GRADE=decodeURIComponent('${cle}');feuilles()">${esc(g)} <span>${n}</span></button>`; }).join('')}
   </div>
   <div class="rel-legende"><span>${liste.length} fiche(s) · clique sur une carte pour la modifier</span></div>
   ${liste.length?`<div class="rh-grille">${liste.map(carte).join('')}</div>`:'<div class="panel"><div class="empty">Aucune fiche</div></div>'}`;
