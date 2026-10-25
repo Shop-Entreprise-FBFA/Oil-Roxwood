@@ -7549,7 +7549,7 @@
     "idU": "379933",
     "arrivee": "2026-09-21",
     "discord": "1203476936060575794",
-    "avert": "",
+    "avert": "1",
     "contrat": true,
     "recrut": "Juan Sanchez",
     "dernierService": "2026-10-13",
@@ -7563,7 +7563,7 @@
     "idU": "382571",
     "arrivee": "2026-10-12",
     "discord": "934582184965193749",
-    "avert": "",
+    "avert": "1",
     "contrat": true,
     "recrut": "Carter Fuente",
     "dernierService": "2026-10-16",
@@ -7605,7 +7605,7 @@
     "idU": "381272",
     "arrivee": "2026-09-24",
     "discord": "320960786086363138",
-    "avert": "",
+    "avert": "1",
     "contrat": true,
     "recrut": "Thomas Boyer",
     "dernierService": "2026-10-09",
@@ -56316,18 +56316,18 @@
    "params": ""
   }
  },
- "_cid": "bot",
+ "_cid": "z8owwbguce",
  "_maj": 1792970423797,
- "_rev": "kz0mhnwiosg-mvogals7",
+ "_rev": "nl26phv2p8m-mvogaugq",
  "_majSec": {
   "fer": 1792961656047,
   "fact": 1792941392401,
   "users": 1792946648058,
   "weeks": 1792400944983,
-  "sheets": 1792970408930,
+  "sheets": 1792970413017,
   "_qcFix1": 1792090599970,
   "_wkFix1": 1792090599970,
-  "journal": 1792970408958,
+  "journal": 1792970413040,
   "pending": 1792090599970,
   "prodDer": 1792875193989,
   "runners": 1792969282757,
@@ -56341,7 +56341,7 @@
   "primesExtra": 1792090599970,
   "quotasComHist": 1792400944983,
   "profils": 1792090599970,
-  "_tables": 1792970423797,
+  "_tables": 1792970413017,
   "_permsFix1": 1792090599970,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792090599970,
@@ -56358,6 +56358,21 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1792970415846,
+   "u": "Diego Herrera",
+   "a": "Avertissement : Jacques Zitouning (intérimaire, aucune prise de service) — total : 1"
+  },
+  {
+   "t": 1792970414493,
+   "u": "Diego Herrera",
+   "a": "Avertissement : Jackson Edwards (intérimaire, aucune prise de service) — total : 1"
+  },
+  {
+   "t": 1792970413048,
+   "u": "Diego Herrera",
+   "a": "Avertissement : ilyes marade (intérimaire, aucune prise de service) — total : 1"
+  },
   {
    "t": 1792970411763,
    "u": "Diego Herrera",
@@ -57842,21 +57857,6 @@
    "t": 1791756643972,
    "u": "Diego Herrera",
    "a": "Avertissement : Frank Smite (intérimaire, aucune prise de service) — total : 1"
-  },
-  {
-   "t": 1791756641427,
-   "u": "Diego Herrera",
-   "a": "Avertissement : Hashh Sheepeur (intérimaire, aucune prise de service) — total : 1"
-  },
-  {
-   "t": 1791756638557,
-   "u": "Diego Herrera",
-   "a": "Avertissement : Hitachi Hydro (intérimaire, aucune prise de service) — total : 1"
-  },
-  {
-   "t": 1791756633950,
-   "u": "Diego Herrera",
-   "a": "Avertissement : Jamal King (intérimaire, aucune prise de service) — total : 2"
   }
  ],
  "prodDer": {
@@ -58230,7 +58230,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-25T23:20:19.399Z",
+  "maj": "2026-10-25T23:20:30.650Z",
   "semaine": 43,
   "totalBarils": 219518,
   "ca": 1097590,
@@ -59868,6 +59868,36 @@
      "par": "Diego Herrera"
     },
     "id": 1792970411775
+   },
+   {
+    "type": "avertissement",
+    "payload": {
+     "discord": "1203476936060575794",
+     "nom": "ilyes marade",
+     "raison": "Aucune prise de service cette semaine",
+     "par": "Diego Herrera"
+    },
+    "id": 1792970413769
+   },
+   {
+    "type": "avertissement",
+    "payload": {
+     "discord": "934582184965193749",
+     "nom": "Jackson Edwards",
+     "raison": "Aucune prise de service cette semaine",
+     "par": "Diego Herrera"
+    },
+    "id": 1792970415260
+   },
+   {
+    "type": "avertissement",
+    "payload": {
+     "discord": "320960786086363138",
+     "nom": "Jacques Zitouning",
+     "raison": "Aucune prise de service cette semaine",
+     "par": "Diego Herrera"
+    },
+    "id": 1792970416273
    }
   ],
   "oilroxwood_coffres": [
