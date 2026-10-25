@@ -168,3 +168,18 @@ html.halloween #app::after,html.noel #app::after{top:calc(var(--refonte-h) + 10p
 .rel-note{font-size:.78rem;color:var(--muted);background:rgba(255,255,255,.04);border-radius:7px;padding:6px 9px;line-height:1.4}
 .rel-statut{font-size:.78rem;color:#7fd1a4;background:rgba(74,157,111,.12);border-radius:7px;padding:6px 9px}
 .rel-actions{display:flex;gap:8px;justify-content:flex-end;margin-top:auto;padding-top:4px}
+
+/* ---- Base clients : cartes modifiables sur place ---- */
+.cli-grille{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:14px}
+.cli-card{display:flex;flex-direction:column;gap:10px;padding:14px 16px;border-radius:12px;background:linear-gradient(145deg,#162334,#101a28);border:1px solid rgba(177,196,214,.16);transition:border-color .15s}
+.cli-card:hover,.cli-card:focus-within{border-color:rgba(228,163,78,.6)}
+.cli-top{display:flex;gap:8px;align-items:center}
+.cli-nom{flex:1;min-width:0;font-family:var(--f-display);font-size:1.25rem;font-weight:800;letter-spacing:.02em;background:transparent;border:0;border-bottom:1px dashed transparent;color:var(--ink);padding:2px 0}
+.cli-nom:hover,.cli-nom:focus{border-bottom-color:rgba(228,163,78,.6);outline:none}
+.cli-f{display:flex;flex-direction:column;gap:3px;min-width:0}
+.cli-f span{font-family:var(--f-mono);font-size:.64rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.cli-f input{width:100%;background:rgba(255,255,255,.04);border:1px solid transparent;border-radius:7px;padding:7px 9px;color:var(--ink);font-size:.86rem}
+.cli-f input:hover{border-color:rgba(255,255,255,.14)}
+.cli-f input:focus{outline:none;border-color:#eaa13b;background:rgba(0,0,0,.25)}
+.cli-duo{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.cli-pied{font-size:.74rem;color:var(--muted);border-top:1px solid rgba(255,255,255,.07);padding-top:8px}

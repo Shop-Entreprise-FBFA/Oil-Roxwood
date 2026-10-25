@@ -32,7 +32,7 @@ window.ROXWOOD_CFG = {
 <script src="assets/roxwood-github.js?v=C-119"></script>
 <link rel="stylesheet" href="assets/roxwood-core.css?v=C-119">
 <link rel="stylesheet" href="assets/roxwood-app.css?v=C-119">
-<link rel="stylesheet" href="assets/roxwood-refonte.css?v=R-10">
+<link rel="stylesheet" href="assets/roxwood-refonte.css?v=R-11">
 </head>
 <body>
 <div id="noelNeige" aria-hidden="true"></div>
@@ -4236,19 +4236,27 @@ function fEditAnnuler(){ newDraft(); factTab='hist'; factures(); toast('↩ Modi
 function togglePay(i){ const f=S.fact.factures[i]; f.statut=f.statut==='payee'?'attente':'payee'; save(); sbPushNow(); fHist(); toast(f.statut==='payee'?`✔ Facture n°${f.num} marquée payée`:`⏳ Facture n°${f.num} repassée en attente`); }
 /* ---- bases ---- */
 function fClients(){
-  $('#factBody').innerHTML=`<div class="panel" style="padding:10px 16px;overflow-x:auto">
-  <div style="display:flex;gap:10px;margin:6px 0 10px">
-    <input class="field" style="max-width:240px" placeholder="🔍 Rechercher…" oninput="filtreBase(this.value)">
-    <button class="btn btn-gold btn-sm" onclick="S.fact.clients.unshift({nom:'',adresse:'',tel:'',rib:''});save();sbPushNow();fClients();toast('✅ Client ajouté et synchronisé')">＋ Client</button>
+  /* Une carte par client : les mêmes quatre champs, modifiables sur place comme dans l'ancien tableau
+     (mêmes onchange), mais lisibles d'un coup d'œil, avec la fiche et la suppression à portée de main. */
+  const champ=(i,k,lbl,ph)=>`<label class="cli-f"><span>${lbl}</span><input type="text" value="${esc(S.fact.clients[i][k])}" placeholder="${ph}" onchange="S.fact.clients[${i}].${k}=this.value;save()"></label>`;
+  $('#factBody').innerHTML=`
+  <div class="rel-barre">
+    <input class="field" id="baseSearch" placeholder="🔍 Client, adresse, numéro…" oninput="filtreBase(this.value)">
+    <button class="btn btn-gold btn-sm" onclick="S.fact.clients.unshift({nom:'',adresse:'',tel:'',rib:''});save();sbPushNow();fClients();toast('✅ Client ajouté et synchronisé')">＋ Nouveau client</button>
   </div>
-  <table class="sheet" id="baseTable"><thead><tr><th>Nom</th><th>Adresse</th><th>Téléphone</th><th>RIB</th><th></th></tr></thead><tbody>
-  ${S.fact.clients.map((c,i)=>`<tr data-s="${esc((c.nom+' '+c.adresse).toLowerCase())}">
-    <td><input type="text" value="${esc(c.nom)}" onchange="S.fact.clients[${i}].nom=this.value;save()"></td>
-    <td><input type="text" value="${esc(c.adresse)}" onchange="S.fact.clients[${i}].adresse=this.value;save()"></td>
-    <td><input type="text" value="${esc(c.tel)}" onchange="S.fact.clients[${i}].tel=this.value;save()"></td>
-    <td><input type="text" value="${esc(c.rib)}" onchange="S.fact.clients[${i}].rib=this.value;save()"></td>
-    <td><button class="btn btn-sm btn-red" onclick="if(confirm('Supprimer ce client ?')){S.fact.clients.splice(${i},1);save();sbPushNow();fClients();toast('🗑️ Client supprimé et synchronisé');}">✕</button></td></tr>`).join('')}
-  </tbody></table></div>`;
+  <div class="rel-legende"><span id="baseCount">${S.fact.clients.length} client(s)</span></div>
+  <div class="cli-grille" id="baseGrid">
+  ${S.fact.clients.map((c,i)=>`<div class="cli-card" data-s="${esc(((c.nom||'')+' '+(c.adresse||'')+' '+(c.tel||'')).toLowerCase())}">
+    <div class="cli-top">
+      <input type="text" class="cli-nom" value="${esc(c.nom)}" placeholder="Nom du client" onchange="S.fact.clients[${i}].nom=this.value;save()">
+      <button class="btn btn-sm btn-ghost" title="Ouvrir la fiche client" onclick="ficheClient(${i})">📋 Fiche</button>
+      <button class="btn btn-sm btn-red" title="Supprimer ce client" onclick="if(confirm('Supprimer ce client ?')){S.fact.clients.splice(${i},1);save();sbPushNow();fClients();toast('🗑️ Client supprimé et synchronisé');}">✕</button>
+    </div>
+    ${champ(i,'adresse','📍 Adresse','Adresse')}
+    <div class="cli-duo">${champ(i,'tel','📞 Téléphone','Téléphone')}${champ(i,'rib','🏦 RIB','RIB')}</div>
+    ${c.lastCmd?`<div class="cli-pied">Dernière commande · ${frDate(c.lastCmd)}</div>`:''}
+  </div>`).join('')}
+  </div>`;
 }
 function fArticles(){
   $('#factBody').innerHTML=`<div class="panel" style="padding:10px 16px;overflow-x:auto">
@@ -4275,7 +4283,9 @@ async function artDel(i){
 }
 function filtreBase(q){
   q=q.toLowerCase();
-  document.querySelectorAll('#baseTable tbody tr').forEach(tr=>tr.style.display=!q||tr.dataset.s.includes(q)?'':'none');
+  let n=0;
+  document.querySelectorAll('#baseGrid .cli-card').forEach(tr=>{ const ok=!q||tr.dataset.s.includes(q); tr.style.display=ok?'':'none'; if(ok) n++; });
+  const c=document.getElementById('baseCount'); if(c) c.textContent=n+' client(s)'+(q?' trouvé(s)':'');
 }
 /* ---- impression ---- */
 function printFact(f){
