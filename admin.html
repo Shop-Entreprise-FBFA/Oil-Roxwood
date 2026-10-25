@@ -32,7 +32,7 @@ window.ROXWOOD_CFG = {
 <script src="assets/roxwood-github.js?v=C-119"></script>
 <link rel="stylesheet" href="assets/roxwood-core.css?v=C-119">
 <link rel="stylesheet" href="assets/roxwood-app.css?v=C-119">
-<link rel="stylesheet" href="assets/roxwood-refonte.css?v=R-3">
+<link rel="stylesheet" href="assets/roxwood-refonte.css?v=R-4">
 </head>
 <body>
 <div id="noelNeige" aria-hidden="true"></div>
@@ -1863,7 +1863,9 @@ document.addEventListener('focusout',()=>{ setTimeout(()=>{ if(RERENDER_WAIT&&!e
    d'écran par section) ; sans image, le bandeau garde le fond sombre
    habituel du dashboard — rien ne casse tant que personne n'en a réglé une. */
 function heroHTML(sec,titre,sousTitre){
-  const url=(S.settings.fonds&&S.settings.fonds[sec])||'';
+  let url=(S.settings.fonds&&S.settings.fonds[sec])||'';
+  // un chemin file:/// ou un lecteur Windows n'existe que sur le PC de celui qui l'a saisi : image cassée pour tous les autres.
+  if(/^\s*(file:|[a-z]:[\/])/i.test(url)) url='';
   const bg=url?`background-image:linear-gradient(180deg, rgba(10,8,6,.25) 0%, rgba(10,8,6,.7) 78%, var(--panel) 100%), url('${esc(url)}');background-size:cover;background-position:center`:'';
   return `<div class="hero-sec${url?'':' vide'}" style="${bg}">
     <div class="in"><h2>${esc(titre)}</h2>${sousTitre?`<div class="sub">${esc(sousTitre)}</div>`:''}</div>
