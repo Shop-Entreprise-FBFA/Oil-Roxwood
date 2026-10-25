@@ -1,11 +1,35 @@
 {
- "maj": "2026-10-25T12:59:03.100590+00:00",
+ "maj": "2026-10-25T13:00:59.882292+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1563900115956146217",
+   "t": "2026-10-25T13:00:43.503000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\na retiré 155x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1844.58, 6516.70, 16.73\ntargetPosition : -1844.79, 6516.31, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7373\nplayerDiscord : 473956733329342484\nplayerName : Marcus de Romanet\nplayerCharacter : Marcus Deromanet\nplayerId : 383067\nitemId : refinedoil",
+   "nom": "Marcus Deromanet",
+   "quantite": 155,
+   "montant": null,
+   "type": "coffre_retrait",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1844.58, 6516.70, 16.73",
+    "targetposition": "-1844.79, 6516.31, 15.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "7373",
+    "playerdiscord": "473956733329342484",
+    "playername": "Marcus de Romanet",
+    "playercharacter": "Marcus Deromanet",
+    "playerid": "383067",
+    "itemid": "refinedoil"
+   }
+  },
   {
    "id": "1563899636647727176",
    "t": "2026-10-25T12:58:49.227000+00:00",
@@ -68332,22 +68356,6 @@
    "nom": null,
    "quantite": 486,
    "montant": 4860,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1562812653540478987",
-   "t": "2026-10-22T12:59:32.259000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 154x Pétrole Raffiné pour 1540$ par Hassan Cheb. 770$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 154,
-   "montant": 1540,
    "type": "vente",
    "salon": "1245400913473179729",
    "champs": {
