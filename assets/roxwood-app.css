@@ -204,6 +204,26 @@ main::before{
   text-transform:uppercase;margin-top:9px;text-shadow:0 1px 8px rgba(0,0,0,.5);
 }
 
+/* ---- cartes de pôle (Accueil + hubs RH/Commercial/Comptable) ----
+   Chaque carte porte sa couleur de pôle dans --pc ; le filet et le halo
+   hérités de .kpi (toujours ambrés par défaut) se recolorent avec. */
+.pole-carte{min-height:190px;padding:28px 20px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center}
+.pole-carte.kpi::before{background:var(--pc,var(--accent))}
+.pole-carte.kpi::after{background:radial-gradient(circle,color-mix(in srgb,var(--pc,var(--accent)) 22%,transparent),transparent 70%)}
+.pole-ico{
+  width:58px;height:58px;border-radius:14px;display:flex;align-items:center;justify-content:center;
+  font-size:1.75rem;background:color-mix(in srgb,var(--pc,var(--accent)) 18%,transparent);
+  box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--pc,var(--accent)) 38%,transparent);
+}
+.pole-titre{font-family:var(--f-display);font-size:1.2rem;font-weight:800;text-transform:uppercase;letter-spacing:.02em;color:var(--ink)}
+.pole-sub{color:var(--muted);font-size:.82rem}
+.pole-fleche{
+  width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  border:1.5px solid var(--pc,var(--accent));color:var(--pc,var(--accent));font-size:1.05rem;margin-top:2px;
+  transition:background .18s,color .18s;
+}
+.pole-carte:hover .pole-fleche{background:var(--pc,var(--accent));color:#140D05}
+
 /* ══════════════ 3. COMPOSANTS ══════════════ */
 .grid{display:grid;gap:14px}
 .g4{grid-template-columns:repeat(4,1fr)}

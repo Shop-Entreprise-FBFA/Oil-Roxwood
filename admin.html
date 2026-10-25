@@ -1300,7 +1300,7 @@ function logout(){
 }
 
 /* ---- Canari de version : prévient les onglets restés sur une vieille version ---- */
-const APP_VERSION='C-126';
+const APP_VERSION='C-127';
 /* Le bandeau ne doit dire qu'une chose : « une version plus récente existe ».
    Il comparait deux chaînes avec !==, donc il s'allumait aussi dans l'autre
    sens — quand la page ouverte était PLUS récente que version.json, ce qui
@@ -1835,59 +1835,63 @@ function heroHTML(sec,titre,sousTitre){
     <div class="in"><h2>${esc(titre)}</h2>${sousTitre?`<div class="sub">${esc(sousTitre)}</div>`:''}</div>
   </div>`;
 }
+/* Une couleur par pôle, reprise sur le badge, le filet et la flèche de chaque
+   carte — c'est elle qui différencie les pôles d'un coup d'œil, pas l'icône. */
+const COULEURS_POLES={rh:'#E8A020',commercial:'#5AA0FF',comptable:'#4FA97B',overview:'#D9534F',params:'#9B6BE0'};
 function cartesHTML(CARTES){
   if(!CARTES.length) return '<div class="empty">Aucune section accessible avec ton rôle actuel.</div>';
   return `<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px">
-    ${CARTES.map(c=>`<div class="panel kpi link" style="min-height:160px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center" onclick="show('${c.view}')" onkeydown="actKey(event)" tabindex="0" role="button" title="Ouvrir ${esc(c.titre)}">
-      <div style="font-size:2.3rem">${c.emoji}</div>
-      <div style="font-family:var(--f-display);font-size:1.25rem;font-weight:800;text-transform:uppercase;letter-spacing:.02em">${esc(c.titre)}</div>
-      <div style="color:var(--muted);font-size:.82rem">${esc(c.sub)}</div>
-    </div>`).join('')}
+    ${CARTES.map(c=>{ const col=c.couleur||'var(--accent)'; return `<div class="panel kpi link pole-carte" style="--pc:${col}" onclick="show('${c.view}')" onkeydown="actKey(event)" tabindex="0" role="button" title="Ouvrir ${esc(c.titre)}">
+      <div class="pole-ico">${c.emoji}</div>
+      <div class="pole-titre">${esc(c.titre)}</div>
+      <div class="pole-sub">${esc(c.sub)}</div>
+      <div class="pole-fleche">→</div>
+    </div>`; }).join('')}
   </div>`;
 }
 function accueil(){
   const al=allowedViews();
   const CARTES=[
-    {emoji:'🗂️',titre:'Ressources humaines',sub:'Nos collaborateurs, notre force',view:'rh'},
-    {emoji:'🧾',titre:'Commercial',sub:'Développer nos partenariats',view:'commercial'},
-    {emoji:'💸',titre:'Comptable',sub:'Suivi financier et reporting',view:'comptable'},
-    {emoji:'📊',titre:'Général',sub:"Vue d'ensemble de l'entreprise",view:'overview'},
-    {emoji:'⚙️',titre:'Paramètres',sub:'Configuration et administration',view:'params'},
+    {emoji:'🗂️',titre:'Ressources humaines',sub:'Nos collaborateurs, notre force',view:'rh',couleur:COULEURS_POLES.rh},
+    {emoji:'🧾',titre:'Commercial',sub:'Développer nos partenariats',view:'commercial',couleur:COULEURS_POLES.commercial},
+    {emoji:'💸',titre:'Comptable',sub:'Suivi financier et reporting',view:'comptable',couleur:COULEURS_POLES.comptable},
+    {emoji:'📊',titre:'Général',sub:"Vue d'ensemble de l'entreprise",view:'overview',couleur:COULEURS_POLES.overview},
+    {emoji:'⚙️',titre:'Paramètres',sub:'Configuration et administration',view:'params',couleur:COULEURS_POLES.params},
   ].filter(c=>al.includes(c.view));
   $('#main').innerHTML = heroHTML('accueil','Notre énergie fait avancer le monde','Bienvenue sur le dashboard Oil Roxwood')
     + cartesHTML(CARTES);
 }
 function rh(){
-  const al=allowedViews();
+  const al=allowedViews(), col=COULEURS_POLES.rh;
   const CARTES=[
-    {emoji:'🗂️',titre:'Fiches RH',sub:'Consulter et gérer les fiches du personnel',view:'frh'},
-    {emoji:'👥',titre:'Effectif',sub:'Suivre les effectifs et les mouvements',view:'effectif'},
-    {emoji:'🎓',titre:'Intégration',sub:"Gérer l'intégration des nouveaux collaborateurs",view:'integration'},
+    {emoji:'🗂️',titre:'Fiches RH',sub:'Consulter et gérer les fiches du personnel',view:'frh',couleur:col},
+    {emoji:'👥',titre:'Effectif',sub:'Suivre les effectifs et les mouvements',view:'effectif',couleur:col},
+    {emoji:'🎓',titre:'Intégration',sub:"Gérer l'intégration des nouveaux collaborateurs",view:'integration',couleur:col},
   ].filter(c=>al.includes(c.view));
   $('#main').innerHTML = heroHTML('rh','Ressources Humaines','Nos collaborateurs, notre force')
     + cartesHTML(CARTES);
 }
 function commercial(){
-  const al=allowedViews();
+  const al=allowedViews(), col=COULEURS_POLES.commercial;
   const CARTES=[
-    {emoji:'🧾',titre:'Factures',sub:'Gérer et consulter les factures clients',view:'factures'},
-    {emoji:'📞',titre:'Relances',sub:'Suivre les relances clients et impayés',view:'relances'},
-    {emoji:'🛒',titre:'Ventes de la semaine',sub:'Suivi des ventes et des performances',view:'fventes'},
-    {emoji:'⚖️',titre:'Quotas & fer',sub:'Suivre les quotas et le fer racheté',view:'quotascom'},
-    {emoji:'🗡️',titre:'Produits dérivés',sub:'Gérer les produits dérivés',view:'prodder'},
+    {emoji:'🧾',titre:'Factures',sub:'Gérer et consulter les factures clients',view:'factures',couleur:col},
+    {emoji:'📞',titre:'Relances',sub:'Suivre les relances clients et impayés',view:'relances',couleur:col},
+    {emoji:'🛒',titre:'Ventes de la semaine',sub:'Suivi des ventes et des performances',view:'fventes',couleur:col},
+    {emoji:'⚖️',titre:'Quotas & fer',sub:'Suivre les quotas et le fer racheté',view:'quotascom',couleur:col},
+    {emoji:'🗡️',titre:'Produits dérivés',sub:'Gérer les produits dérivés',view:'prodder',couleur:col},
   ].filter(c=>al.includes(c.view));
   $('#main').innerHTML = heroHTML('commercial','Commercial','Développer nos partenariats')
     + cartesHTML(CARTES);
 }
 function comptable(){
-  const al=allowedViews();
+  const al=allowedViews(), col=COULEURS_POLES.comptable;
   const CARTES=[
-    {emoji:'🖥️',titre:'Tablette',sub:'Relevé de la tablette de production',view:'ftablette'},
-    {emoji:'💸',titre:'Dépenses & retraits',sub:"Suivi des dépenses de l'entreprise",view:'fcompta'},
-    {emoji:'📥',titre:'Factures reçues',sub:'Factures fournisseurs reçues',view:'frecues'},
-    {emoji:'🏦',titre:'Bilan compta',sub:"Bilan complet de l'entreprise",view:'bilan'},
-    {emoji:'🗓️',titre:'Clôture du lundi',sub:'Clôturer la semaine de travail',view:'cloture'},
-    {emoji:'💰',titre:'Semaine & Primes',sub:'Salaires et primes de la semaine',view:'semaine'},
+    {emoji:'🖥️',titre:'Tablette',sub:'Relevé de la tablette de production',view:'ftablette',couleur:col},
+    {emoji:'💸',titre:'Dépenses & retraits',sub:"Suivi des dépenses de l'entreprise",view:'fcompta',couleur:col},
+    {emoji:'📥',titre:'Factures reçues',sub:'Factures fournisseurs reçues',view:'frecues',couleur:col},
+    {emoji:'🏦',titre:'Bilan compta',sub:"Bilan complet de l'entreprise",view:'bilan',couleur:col},
+    {emoji:'🗓️',titre:'Clôture du lundi',sub:'Clôturer la semaine de travail',view:'cloture',couleur:col},
+    {emoji:'💰',titre:'Semaine & Primes',sub:'Salaires et primes de la semaine',view:'semaine',couleur:col},
   ].filter(c=>al.includes(c.view));
   $('#main').innerHTML = heroHTML('comptable','Comptabilité','Suivi financier et reporting')
     + cartesHTML(CARTES);
@@ -4968,6 +4972,10 @@ function ferDel(id){
 
 /* ================== MISES À JOUR (changelog) ================== */
 const CHANGELOG=[
+ {v:'C-127',d:'26/10/2026',t:'Accueil : une couleur par pôle, badge et flèche sur chaque carte',items:[
+   ['🎨','Chaque pôle a sa couleur','RH ambré, Commercial bleu, Comptable vert, Général rouge, Paramètres violet — reprise sur le badge de l\'icône, le filet du haut et la flèche de la carte, pour reconnaître un pôle d\'un coup d\'œil.'],
+   ['➜','Flèche sur chaque carte','Un bouton rond en bas de carte, coloré comme le pôle, qui se remplit au survol.'],
+ ]},
  {v:'C-126',d:'26/10/2026',t:'Nouvelle page Accueil avec les pôles RH/Commercial/Comptable, cloche de notifications retirée',items:[
    ['🏠','Nouvelle page Accueil','Cinq grandes cartes à la connexion — RH, Commercial, Comptable, Général, Paramètres — chacune filtrée selon ce que peut voir la personne.'],
    ['🗂️','Trois nouveaux hubs de pôle','RH, Commercial et Comptable ont maintenant leur propre page de lancement qui liste leurs pages (ex. RH → Fiches RH / Effectif / Intégration) avant d\'ouvrir la bonne.'],
