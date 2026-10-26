@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-26T10:45:02.825511+00:00",
+ "maj": "2026-10-26T10:47:02.860569+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1564228675480719432",
+   "t": "2026-10-26T10:46:18.198000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 310x Pétrole Raffiné pour 3100$ par Lorenzo Shiva. 1550$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 310,
+   "montant": 3100,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1564223888567570553",
    "t": "2026-10-26T10:27:16.909000+00:00",
@@ -92691,27 +92707,6 @@
     "playercharacter": "Stella Collins",
     "playerid": "232050",
     "itemid": "oil"
-   }
-  },
-  {
-   "id": "1563153835881537577",
-   "t": "2026-10-23T11:35:16.468000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 9368\nplayerDiscord : 1559916250929434727\nplayerName : BreezyCrab1027\nplayerCharacter : Bingo Dallas\nplayerId : 383174\nvehiclePlate : CT2926BI\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Bingo Dallas",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "9368",
-    "playerdiscord": "1559916250929434727",
-    "playername": "BreezyCrab1027",
-    "playercharacter": "Bingo Dallas",
-    "playerid": "383174",
-    "vehicleplate": "CT2926BI",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
