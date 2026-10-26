@@ -15416,7 +15416,7 @@
    },
    {
     "nom": "Athéna Andershon",
-    "grade": "Raffineur Expert",
+    "grade": "Raffineur Confirmé",
     "menus": false,
     "boissons": false,
     "bidons": false,
@@ -15446,7 +15446,7 @@
    },
    {
     "nom": "Jayson Simth",
-    "grade": "Raffineur Expert",
+    "grade": "Raffineur Confirmé",
     "menus": false,
     "boissons": false,
     "bidons": false,
@@ -15466,7 +15466,7 @@
    },
    {
     "nom": "Hakim Cheb",
-    "grade": "Raffineur Confirmé",
+    "grade": "Raffineur",
     "menus": false,
     "boissons": false,
     "bidons": false,
@@ -15476,7 +15476,7 @@
    },
    {
     "nom": "Jordan Impreza",
-    "grade": "Raffineur Confirmé",
+    "grade": "Raffineur",
     "menus": false,
     "boissons": false,
     "bidons": false,
@@ -15506,7 +15506,7 @@
    },
    {
     "nom": "Alexander Bart",
-    "grade": "Raffineur",
+    "grade": "Intérimaire",
     "menus": false,
     "boissons": false,
     "bidons": false,
@@ -15516,7 +15516,7 @@
    },
    {
     "nom": "Bingo Dallas",
-    "grade": "Raffineur",
+    "grade": "Intérimaire",
     "menus": false,
     "boissons": false,
     "bidons": false,
@@ -15576,7 +15576,7 @@
    },
    {
     "nom": "Lorenzo Shiva",
-    "grade": "Raffineur",
+    "grade": "Intérimaire",
     "menus": false,
     "boissons": false,
     "bidons": false,
@@ -15586,7 +15586,7 @@
    },
    {
     "nom": "Merill Danielson",
-    "grade": "Raffineur",
+    "grade": "Intérimaire",
     "menus": false,
     "boissons": false,
     "bidons": false,
@@ -15596,7 +15596,7 @@
    },
    {
     "nom": "Mikaël Owens",
-    "grade": "Raffineur",
+    "grade": "Intérimaire",
     "menus": false,
     "boissons": false,
     "bidons": false,
@@ -15606,7 +15606,7 @@
    },
    {
     "nom": "Mouly Franseco",
-    "grade": "Raffineur",
+    "grade": "Intérimaire",
     "menus": false,
     "boissons": false,
     "bidons": false,
@@ -56855,17 +56855,17 @@
   }
  },
  "_cid": "ccdjlafpdio",
- "_maj": 1793021126377,
- "_rev": "icyyzey4fy-mvpahi2a",
+ "_maj": 1793021131000,
+ "_rev": "ujb4uor8ek-mvpaho22",
  "_majSec": {
   "fer": 1792961656047,
   "fact": 1793020466739,
   "users": 1792946648058,
   "weeks": 1792976185966,
-  "sheets": 1793014381573,
+  "sheets": 1793021131000,
   "_qcFix1": 1792090599970,
   "_wkFix1": 1792090599970,
-  "journal": 1792982385225,
+  "journal": 1793021131000,
   "pending": 1792090599970,
   "prodDer": 1792875193989,
   "runners": 1793014381573,
@@ -56879,7 +56879,7 @@
   "primesExtra": 1792090599970,
   "quotasComHist": 1792976185966,
   "profils": 1792090599970,
-  "_tables": 1793021126377,
+  "_tables": 1793021131000,
   "_permsFix1": 1792090599970,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792090599970,
@@ -56896,6 +56896,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1793021133319,
+   "u": "Diego Herrera",
+   "a": "Éligibilité : 10 grade(s) réalignés sur l'effectif — Athéna Andershon : Raffineur Expert → Raffineur Confirmé · Jayson Simth : Raffineur Expert → Raffineur Confirmé · Hakim Cheb : Raffineur Confirmé → Raffineur · Jordan Impreza : Raffineur Confirmé → Raffineur…"
+  },
   {
    "t": 1792982388034,
    "u": "Diego Herrera",
@@ -58390,11 +58395,6 @@
    "t": 1791757961133,
    "u": "Diego Herrera",
    "a": "Clôture de la semaine 40 — 219 277 barils · 425 520 $ de primes · promus : Anis Wolkeur"
-  },
-  {
-   "t": 1791757868855,
-   "u": "Diego Herrera",
-   "a": "Réinitialisation de la feuille « Tablette » (43 lignes)"
   }
  ],
  "prodDer": {
@@ -58768,7 +58768,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-26T13:25:29.650Z",
+  "maj": "2026-10-26T13:25:37.418Z",
   "semaine": 44,
   "totalBarils": 219518,
   "ca": 1097590,
