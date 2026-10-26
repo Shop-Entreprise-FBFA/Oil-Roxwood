@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-26T07:09:05.948197+00:00",
+ "maj": "2026-10-26T07:11:06.755451+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1564174298829160530",
+   "t": "2026-10-26T07:10:13.794000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 613x Pétrole Raffiné pour 6130$ par Salva Trucha. 3065$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 613,
+   "montant": 6130,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1564165742285430877",
    "t": "2026-10-26T06:36:13.755000+00:00",
@@ -92766,30 +92782,6 @@
     "playercharacter": "Stella Collins",
     "playerid": "232050",
     "itemid": "oil"
-   }
-  },
-  {
-   "id": "1563151074813153347-0",
-   "t": "2026-10-23T11:24:18.178000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 1x Kiwi Bellini dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1848.59, 6500.27, 16.00\ntargetPosition : -1849.11, 6498.65, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 8860\nplayerDiscord : 826526979204841482\nplayerName : JumpyNewt1770\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : _kiwibellini",
-   "nom": "Diego Herrera",
-   "quantite": 1,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1848.59, 6500.27, 16.00",
-    "targetposition": "-1849.11, 6498.65, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "8860",
-    "playerdiscord": "826526979204841482",
-    "playername": "JumpyNewt1770",
-    "playercharacter": "Diego Herrera",
-    "playerid": "231487",
-    "itemid": "_kiwibellini"
    }
   }
  ]
