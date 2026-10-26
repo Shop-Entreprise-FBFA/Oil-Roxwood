@@ -1,11 +1,32 @@
 {
- "maj": "2026-10-26T14:13:03.747645+00:00",
+ "maj": "2026-10-26T14:15:03.536063+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1564281004108152983",
+   "t": "2026-10-26T14:14:14.315000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 8678\nplayerDiscord : 877190238433333258\nplayerName : PaleMouse8705\nplayerCharacter : Many Carlos\nplayerId : 166386\nvehiclePlate : AY4705SJ\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Many Carlos",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "8678",
+    "playerdiscord": "877190238433333258",
+    "playername": "PaleMouse8705",
+    "playercharacter": "Many Carlos",
+    "playerid": "166386",
+    "vehicleplate": "AY4705SJ",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1564280532768923781",
    "t": "2026-10-26T14:12:21.939000+00:00",
@@ -92728,30 +92749,6 @@
     "playername": "Kaelix",
     "playercharacter": "Danté Mendez",
     "playerid": "275233",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1563211020804165697-0",
-   "t": "2026-10-23T15:22:30.416000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 130x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1844.18, 6518.31, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 324\nplayerDiscord : 355065235154927617\nplayerName : SlowBat2011\nplayerCharacter : Romain Pierres\nplayerId : 380745\nitemId : refinedoil",
-   "nom": "Romain Pierres",
-   "quantite": 130,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1844.18, 6518.31, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "324",
-    "playerdiscord": "355065235154927617",
-    "playername": "SlowBat2011",
-    "playercharacter": "Romain Pierres",
-    "playerid": "380745",
     "itemid": "refinedoil"
    }
   }
