@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-26T18:19:03.876700+00:00",
+ "maj": "2026-10-26T18:21:01.498610+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1564342977717866649",
+   "t": "2026-10-26T18:20:29.975000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 718x Pétrole Raffiné pour 7180$ par Cillian Veselov. 3590$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 718,
+   "montant": 7180,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1564342435713261623",
    "t": "2026-10-26T18:18:20.751000+00:00",
@@ -93184,30 +93200,6 @@
    "coffre": "entreprise (Oil RoxWood)",
    "champs": {
     "position": "-1844.40, 6516.83, 16.73",
-    "targetposition": "-1844.79, 6516.31, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7167",
-    "playerdiscord": "1346541845949186092",
-    "playername": "SoggyGoose0922",
-    "playercharacter": "Xavier Collins",
-    "playerid": "292769",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1563480806150905860-2",
-   "t": "2026-10-24T09:14:32.255000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 121x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1844.60, 6516.74, 16.73\ntargetPosition : -1844.79, 6516.31, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7167\nplayerDiscord : 1346541845949186092\nplayerName : SoggyGoose0922\nplayerCharacter : Xavier Collins\nplayerId : 292769\nitemId : refinedoil",
-   "nom": "Xavier Collins",
-   "quantite": 121,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1844.60, 6516.74, 16.73",
     "targetposition": "-1844.79, 6516.31, 15.75",
     "jobid": "76",
     "jobname": "Oil RoxWood",
