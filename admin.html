@@ -32,7 +32,7 @@ window.ROXWOOD_CFG = {
 <script src="assets/roxwood-github.js?v=C-119"></script>
 <link rel="stylesheet" href="assets/roxwood-core.css?v=C-119">
 <link rel="stylesheet" href="assets/roxwood-app.css?v=C-119">
-<link rel="stylesheet" href="assets/roxwood-refonte.css?v=R-17">
+<link rel="stylesheet" href="assets/roxwood-refonte.css?v=R-18">
 </head>
 <body>
 <div id="noelNeige" aria-hidden="true"></div>
@@ -2333,6 +2333,12 @@ function delRun(rid,t){
 
 /* ================== SEMAINE & PRIMES ================== */
 function prixRecrue(){ return S.settings.prixRecrue??4000; }
+/* Bonus recruteur : à partir de 10 recrutements dans la semaine de travail, 30 % du salaire maximum d'un employé
+   (le plafond du palier en cours) s'ajoutent AU-DESSUS du plafond. Seuil et pourcentage : settings.recBonusSeuil / recBonusPct. */
+function bonusRecrue(nom){
+  const seuil=S.settings.recBonusSeuil??10, pct=S.settings.recBonusPct??30;
+  return recruesAuto(nom)>=seuil?Math.round(caps().empSal*pct/100):0;
+}
 /* ---- rémunération commerciale : 45 $/bidon produit ---- */
 function estCommercial(r){ return !!(r.poste&&/commercial/i.test(r.poste)); }
 function commerciauxActifs(){
@@ -2371,7 +2377,7 @@ function salaireDe(r){
   const rec=r.poste?recruesAuto(r.nom)*prixRecrue():0; // recrues comptées automatiquement (colonne Recruteur de la RH)
   const base=salFixeDe(r.poste||'')+salaireProdCom(r)+rec;
   const C=caps();
-  return Math.min(base, r.poste&&/patron/i.test(r.poste)?C.patSal:C.empSal);
+  return Math.min(base, r.poste&&/patron/i.test(r.poste)?C.patSal:C.empSal)+(r.poste?bonusRecrue(r.nom):0); // le bonus recruteur dépasse le plafond
 }
 /* ---- Le début de la semaine de TRAVAIL (C-67) ----
    Ce n'est pas le lundi du calendrier. La semaine de travail n'avance qu'à la
@@ -2850,7 +2856,7 @@ async function semaine(){
       <td>${okk?'<span class="up">✔ atteint</span>':`<span style="color:var(--muted)">${fmt(g.quota-r.barils)} restants</span>`}</td>
       <td>×${g.mult}</td>
       <td class="${okk?'gold':''}" style="font-weight:700">${okk?money(pr):'—'}${okk&&i<3?`<div style="font-size:.7rem;color:var(--muted)">dont TOP ${i+1} : ${money(S.settings.top[i])}</div>`:''}</td>
-      <td>${r.poste?`<b>${recruesAuto(r.nom)}</b> <small style="color:var(--muted)" title="Compté automatiquement : fiches RH où ${esc(r.nom)} est Recruteur, arrivées depuis le début de la semaine de travail (remise à zéro à la clôture, pas le lundi)">auto</small>`:'<span style="color:var(--muted)">—</span>'}</td>
+      <td>${r.poste?`<b>${recruesAuto(r.nom)}</b>${bonusRecrue(r.nom)?` <span class="badge bg3" title="10 recrutements ou plus : +30 % du salaire max employé">+${money(bonusRecrue(r.nom))}</span>`:''} <small style="color:var(--muted)" title="Compté automatiquement : fiches RH où ${esc(r.nom)} est Recruteur, arrivées depuis le début de la semaine de travail (remise à zéro à la clôture, pas le lundi)">auto</small>`:'<span style="color:var(--muted)">—</span>'}</td>
       <td>${sal?money(sal):'—'}</td>
       <td style="font-weight:700">${sal+pr?money(sal+pr):'—'}</td>
     </tr>`;};
@@ -4884,7 +4890,7 @@ function bilanData(){
     const nCom=commerciauxActifs().length;
     const prodCom=(estCom&&!absCom&&nCom)?Math.round(bidonsVendusSem()/nCom)*(S.settings.prixBidonCom??45):0;
     const base=salFixeDe(r.rang)+prodCom+rec; // additif, comme la feuille Excel d'origine
-    const sal=Math.min(base, isPatron(r)?C.patSal:C.empSal);
+    const sal=Math.min(base, isPatron(r)?C.patSal:C.empSal)+((run&&run.poste)?bonusRecrue(r.nom):0); // bonus recruteur au-dessus du plafond
     const topB=(!PRIMES_OFF&&run&&rangTop.get(run.id)<3&&run.barils>0)?S.settings.top[rangTop.get(run.id)]:0;
     const prime=(run?Math.min(primeProj(run)+topB,isPatron(r)?C.patPrime:C.empPrime):0)+primeExtraDe(r.nom);
     // grade vide ou « - » → pas de salaire ni de prime ; absent déclaré → idem (il ne produit pas)
