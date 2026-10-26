@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-26T14:43:03.414968+00:00",
+ "maj": "2026-10-26T14:45:01.194141+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1564288577813094444",
+   "t": "2026-10-26T14:44:20.027000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 290x Pétrole Raffiné pour 2900$ par Santino Rivera. 1450$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 290,
+   "montant": 2900,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1564286791991828523-0",
    "t": "2026-10-26T14:37:14.254000+00:00",
@@ -92723,30 +92739,6 @@
     "playername": "Cristale",
     "playercharacter": "Athéna Andershon",
     "playerid": "196876",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1563214297784520711-3",
-   "t": "2026-10-23T15:35:31.709000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 44x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -3083.59, 6815.75, 44.73\ntargetPosition : -3084.39, 6815.87, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1055\nplayerDiscord : 780113908714831912\nplayerName : Kaelix\nplayerCharacter : Danté Mendez\nplayerId : 275233\nitemId : oil",
-   "nom": "Danté Mendez",
-   "quantite": 44,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-3083.59, 6815.75, 44.73",
-    "targetposition": "-3084.39, 6815.87, 43.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "1055",
-    "playerdiscord": "780113908714831912",
-    "playername": "Kaelix",
-    "playercharacter": "Danté Mendez",
-    "playerid": "275233",
     "itemid": "oil"
    }
   }
