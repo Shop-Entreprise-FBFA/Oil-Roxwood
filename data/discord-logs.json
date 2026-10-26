@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-26T20:01:06.298007+00:00",
+ "maj": "2026-10-26T20:03:06.073798+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1564368417086247066",
+   "t": "2026-10-26T20:01:35.193000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 66x Pétrole Raffiné pour 660$ par Louis Varellan. 330$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 66,
+   "montant": 660,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1564368106501968075-0",
    "t": "2026-10-26T20:00:21.144000+00:00",
@@ -93269,30 +93285,6 @@
    "quantite": 1,
    "montant": null,
    "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1815.36, 6565.74, 16.73",
-    "targetposition": "-1815.66, 6565.56, 15.98",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "133",
-    "playerdiscord": "948542221429379112",
-    "playername": "IcyToad7886",
-    "playercharacter": "Stella Collins",
-    "playerid": "232050",
-    "itemid": "weapon_petrolcan"
-   }
-  },
-  {
-   "id": "1563565658459996175-2",
-   "t": "2026-10-24T14:51:42.622000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 33x Bidon d'essence du coffre de l'entreprise (Oil RoxWood)\nposition : -1815.36, 6565.74, 16.73\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 133\nplayerDiscord : 948542221429379112\nplayerName : IcyToad7886\nplayerCharacter : Stella Collins\nplayerId : 232050\nitemId : weapon_petrolcan",
-   "nom": "Stella Collins",
-   "quantite": 33,
-   "montant": null,
-   "type": "coffre_retrait",
    "salon": "1245400913066066099",
    "coffre": "entreprise (Oil RoxWood)",
    "champs": {
