@@ -32,7 +32,7 @@ window.ROXWOOD_CFG = {
 <script src="assets/roxwood-github.js?v=C-119"></script>
 <link rel="stylesheet" href="assets/roxwood-core.css?v=C-119">
 <link rel="stylesheet" href="assets/roxwood-app.css?v=C-119">
-<link rel="stylesheet" href="assets/roxwood-refonte.css?v=R-18">
+<link rel="stylesheet" href="assets/roxwood-refonte.css?v=R-19">
 </head>
 <body>
 <div id="noelNeige" aria-hidden="true"></div>
@@ -4412,28 +4412,44 @@ function fEdit(num){
 function fEditAnnuler(){ newDraft(); factTab='hist'; factures(); toast('↩ Modification abandonnée'); }
 function togglePay(i){ const f=S.fact.factures[i]; f.statut=f.statut==='payee'?'attente':'payee'; save(); sbPushNow(); fHist(); toast(f.statut==='payee'?`✔ Facture n°${f.num} marquée payée`:`⏳ Facture n°${f.num} repassée en attente`); }
 /* ---- bases ---- */
+/* Catégorie d'un client : Entreprise · Organisation · Famille (client.type). Vide = pas encore classé. */
+const CLI_TYPES=[['entreprise','🏢 Entreprise'],['organisation','🏛️ Organisation'],['famille','👨‍👩‍👧 Famille']];
+let CLI_TYPE='', CLI_Q='';
+function cliSetType(i,t){
+  const c=S.fact.clients[i]; c.type=(c.type===t)?'':t;   // recliquer le type actif le retire
+  save(); sbPushNow(); const o=repereEcran(); fClients(); restaureEcran(o);
+}
 function fClients(){
   /* Une carte par client : les mêmes quatre champs, modifiables sur place comme dans l'ancien tableau
      (mêmes onchange), mais lisibles d'un coup d'œil, avec la fiche et la suppression à portée de main. */
   const champ=(i,k,lbl,ph)=>`<label class="cli-f"><span>${lbl}</span><input type="text" value="${esc(S.fact.clients[i][k])}" placeholder="${ph}" onchange="S.fact.clients[${i}].${k}=this.value;save()"></label>`;
+  const nT=t=>S.fact.clients.filter(c=>(c.type||'')===t).length;
+  const chips=[['','Tous',S.fact.clients.length],...CLI_TYPES.map(([k,l])=>[k,l,nT(k)])];
+  if(nT('')&&nT('')<S.fact.clients.length) chips.push(['_none','Non classés',nT('')]);
+  if(CLI_TYPE&&!chips.some(x=>x[0]===CLI_TYPE)) CLI_TYPE='';
   $('#factBody').innerHTML=`
   <div class="rel-barre">
-    <input class="field" id="baseSearch" placeholder="🔍 Client, adresse, numéro…" oninput="filtreBase(this.value)">
-    <button class="btn btn-gold btn-sm" onclick="S.fact.clients.unshift({nom:'',adresse:'',tel:'',rib:''});save();sbPushNow();fClients();toast('✅ Client ajouté et synchronisé')">＋ Nouveau client</button>
+    <div class="rel-seg" role="tablist">${chips.map(([k,l,n])=>`<button class="${CLI_TYPE===k?'on':''}" onclick="CLI_TYPE='${k}';fClients()">${l} <span>${n}</span></button>`).join('')}</div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <input class="field" id="baseSearch" placeholder="🔍 Client, adresse, numéro…" value="${esc(CLI_Q)}" oninput="filtreBase(this.value)">
+      <button class="btn btn-gold btn-sm" onclick="S.fact.clients.unshift({nom:'',adresse:'',tel:'',rib:'',type:CLI_TYPE&&CLI_TYPE!=='_none'?CLI_TYPE:''});save();sbPushNow();fClients();toast('✅ Client ajouté et synchronisé')">＋ Nouveau client</button>
+    </div>
   </div>
   <div class="rel-legende"><span id="baseCount">${S.fact.clients.length} client(s)</span></div>
   <div class="cli-grille" id="baseGrid">
-  ${S.fact.clients.map((c,i)=>`<div class="cli-card" data-s="${esc(((c.nom||'')+' '+(c.adresse||'')+' '+(c.tel||'')).toLowerCase())}">
+  ${S.fact.clients.map((c,i)=>`<div class="cli-card" data-t="${esc(c.type||'')}" data-s="${esc(((c.nom||'')+' '+(c.adresse||'')+' '+(c.tel||'')).toLowerCase())}">
     <div class="cli-top">
       <input type="text" class="cli-nom" value="${esc(c.nom)}" placeholder="Nom du client" onchange="S.fact.clients[${i}].nom=this.value;save()">
       <button class="btn btn-sm btn-ghost" title="Ouvrir la fiche client" onclick="ficheClient(${i})">📋 Fiche</button>
       <button class="btn btn-sm btn-red" title="Supprimer ce client" onclick="if(confirm('Supprimer ce client ?')){S.fact.clients.splice(${i},1);save();sbPushNow();fClients();toast('🗑️ Client supprimé et synchronisé');}">✕</button>
     </div>
+    <div class="cli-types" role="group" aria-label="Catégorie du client">${CLI_TYPES.map(([k,l])=>`<button type="button" class="${c.type===k?'on '+k:''}" onclick="cliSetType(${i},'${k}')">${l}</button>`).join('')}</div>
     ${champ(i,'adresse','📍 Adresse','Adresse')}
     <div class="cli-duo">${champ(i,'tel','📞 Téléphone','Téléphone')}${champ(i,'rib','🏦 RIB','RIB')}</div>
     ${c.lastCmd?`<div class="cli-pied">Dernière commande · ${frDate(c.lastCmd)}</div>`:''}
   </div>`).join('')}
   </div>`;
+  filtreBase(CLI_Q);
 }
 function fArticles(){
   $('#factBody').innerHTML=`<div class="panel" style="padding:10px 16px;overflow-x:auto">
@@ -4459,10 +4475,12 @@ async function artDel(i){
   toast('🗑️ Article supprimé et synchronisé');
 }
 function filtreBase(q){
-  q=q.toLowerCase();
+  CLI_Q=q; q=String(q||'').toLowerCase();
   let n=0;
-  document.querySelectorAll('#baseGrid .cli-card').forEach(tr=>{ const ok=!q||tr.dataset.s.includes(q); tr.style.display=ok?'':'none'; if(ok) n++; });
-  const c=document.getElementById('baseCount'); if(c) c.textContent=n+' client(s)'+(q?' trouvé(s)':'');
+  document.querySelectorAll('#baseGrid .cli-card').forEach(tr=>{
+    const t=tr.dataset.t||'', okT=!CLI_TYPE||(CLI_TYPE==='_none'?t==='':t===CLI_TYPE);
+    const ok=okT&&(!q||tr.dataset.s.includes(q)); tr.style.display=ok?'':'none'; if(ok) n++; });
+  const c=document.getElementById('baseCount'); if(c) c.textContent=n+' client(s)'+((q||CLI_TYPE)?' trouvé(s)':'');
 }
 /* ---- impression ---- */
 function printFact(f){
