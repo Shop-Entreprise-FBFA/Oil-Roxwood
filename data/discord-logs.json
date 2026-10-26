@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-26T17:39:01.789970+00:00",
+ "maj": "2026-10-26T17:41:05.564534+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1564332919194001460",
+   "t": "2026-10-26T17:40:31.836000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 632x Pétrole Raffiné pour 6320$ par Louis Varellan. 3160$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 632,
+   "montant": 6320,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1564330859660845062-0",
    "t": "2026-10-26T17:32:20.805000+00:00",
@@ -93162,27 +93178,6 @@
     "playercharacter": "Athéna Andershon",
     "playerid": "196876",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1563458910986178561",
-   "t": "2026-10-24T07:47:32.041000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 7022\nplayerDiscord : 726178701867221134\nplayerName : Cristale\nplayerCharacter : Athéna Andershon\nplayerId : 196876\nvehiclePlate : WG4999VM\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Athéna Andershon",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "7022",
-    "playerdiscord": "726178701867221134",
-    "playername": "Cristale",
-    "playercharacter": "Athéna Andershon",
-    "playerid": "196876",
-    "vehicleplate": "WG4999VM",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
