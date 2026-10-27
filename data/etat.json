@@ -17486,18 +17486,19 @@
      {
       "ref": "CMD",
       "qte": 450,
-      "tva": 0.04,
+      "tva": 0,
+      "desc": "bidons d'essence ",
       "pu": 180,
       "ht": 81000,
-      "ttc": 84240,
-      "desc": "bidons d'essence "
+      "ttc": 81000
      }
     ],
     "offert": 0,
     "ht": 81000,
-    "ttc": 84240,
+    "ttc": 81000,
     "poids": 900,
-    "statut": "attente"
+    "statut": "attente",
+    "modifiee": 1793102144620
    },
    {
     "num": 253180,
@@ -21468,6 +21469,14 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T20:11:53.537Z"
+  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -21491,14 +21500,6 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T00:06:23.240Z"
-  },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -57160,18 +57161,18 @@
    "params": ""
   }
  },
- "_cid": "wdfv0lgzy7h",
- "_maj": 1793102104138,
- "_rev": "brksce7r0x-mvqmpk4y",
+ "_cid": "n1bdcutxhp",
+ "_maj": 1793102144651,
+ "_rev": "1guqvcbk9l3-mvqmpy9s",
  "_majSec": {
   "fer": 1792961656047,
-  "fact": 1793100599288,
+  "fact": 1793102144621,
   "users": 1793030480438,
   "weeks": 1792976185966,
   "sheets": 1793101903074,
   "_qcFix1": 1792090599970,
   "_wkFix1": 1792090599970,
-  "journal": 1793101903074,
+  "journal": 1793102144651,
   "pending": 1792090599970,
   "prodDer": 1792875193989,
   "runners": 1793014381573,
@@ -57185,7 +57186,7 @@
   "primesExtra": 1792090599970,
   "quotasComHist": 1792976185966,
   "profils": 1792090599970,
-  "_tables": 1793102077526,
+  "_tables": 1793102144621,
   "_permsFix1": 1792090599970,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792090599970,
@@ -57202,6 +57203,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1793102144549,
+   "u": "Emma Collins-rodriguez",
+   "a": "Facture n°253181 modifiée — total 84 240 $ → 81 000 $"
+  },
   {
    "t": 1793101904401,
    "u": "Diego Herrera",
@@ -58696,11 +58702,6 @@
    "t": 1791834211587,
    "u": "Carter Fuente",
    "a": "Recrutements Discord : 6 fiche(s) créée(s), 0 case(s) complétée(s) — kurtis coleman, jordan coleman, Alfro Bensh…"
-  },
-  {
-   "t": 1791830132159,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
   }
  ],
  "prodDer": {
@@ -59090,7 +59091,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-27T11:55:27.154Z",
+  "maj": "2026-10-27T11:55:45.472Z",
   "semaine": 44,
   "totalBarils": 219518,
   "ca": 1097590,
