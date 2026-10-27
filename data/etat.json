@@ -7079,48 +7079,6 @@
  "sheets": {
   "rh": [
    {
-    "nom": "Treyvon Delcruz",
-    "grade": "Intérimaire",
-    "tel": "555 335 587",
-    "rib": "56 68 01",
-    "idU": "267008",
-    "arrivee": "2026-10-27",
-    "discord": "1206010400890560514",
-    "avert": "",
-    "contrat": true,
-    "recrut": "Marco Bellini",
-    "dernierService": "",
-    "flagOut": false
-   },
-   {
-    "nom": "Théo Duggins",
-    "grade": "Intérimaire",
-    "tel": "555-416-271",
-    "rib": "433105",
-    "idU": "279522",
-    "arrivee": "2026-10-27",
-    "discord": "1234614699589501008",
-    "avert": "",
-    "contrat": true,
-    "recrut": "Carter Fuente",
-    "dernierService": "",
-    "flagOut": false
-   },
-   {
-    "nom": "Angel Cruz",
-    "grade": "Intérimaire",
-    "tel": "555 215 203",
-    "rib": "350268",
-    "idU": "212406",
-    "arrivee": "2026-10-27",
-    "discord": "490974564814159882",
-    "avert": "",
-    "contrat": true,
-    "recrut": "Carter Fuente",
-    "dernierService": "",
-    "flagOut": false
-   },
-   {
     "nom": "Luc Rouza",
     "grade": "Intérimaire",
     "tel": "555.986.535",
@@ -14564,6 +14522,13 @@
     "client": "Employé — Marco Bellini ⚡",
     "quantite": 50,
     "qui": "Laurent Roquel"
+   },
+   {
+    "date": "2026-10-27",
+    "client": "Dynasty 8",
+    "quantite": 300,
+    "qui": "Laurent Roquel",
+    "fact": 253183
    }
   ],
   "collection": [
@@ -16657,7 +16622,7 @@
     "rib": "",
     "tel": "",
     "adresse": "",
-    "lastCmd": "2026-10-13",
+    "lastCmd": "2026-10-27",
     "type": "entreprise"
    },
    {
@@ -17541,8 +17506,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253183,
+  "compteur": 253184,
   "factures": [
+   {
+    "num": 253183,
+    "date": "2026-10-27",
+    "client": "Dynasty 8",
+    "emetteur": "Laurent Roquel",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 300,
+      "tva": 0,
+      "pu": 180,
+      "ht": 54000,
+      "ttc": 54000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 54000,
+    "ttc": 54000,
+    "poids": 600,
+    "statut": "attente"
+   },
    {
     "num": 253182,
     "date": "2026-10-27",
@@ -57283,15 +57271,15 @@
    "params": ""
   }
  },
- "_cid": "wdfv0lgzy7h",
- "_maj": 1793120707344,
- "_rev": "tmyt2e0eib-mvqxrwvw",
+ "_cid": "5ug2ffg5rkb",
+ "_maj": 1793120712891,
+ "_rev": "krcfglled2b-mvqxs051",
  "_majSec": {
   "fer": 1793110236779,
-  "fact": 1793117407329,
+  "fact": 1793120712875,
   "users": 1793110276471,
   "weeks": 1792976185966,
-  "sheets": 1793120686290,
+  "sheets": 1793120712875,
   "_qcFix1": 1792090599970,
   "_wkFix1": 1792090599970,
   "journal": 1793120686290,
@@ -57308,7 +57296,7 @@
   "primesExtra": 1792090599970,
   "quotasComHist": 1792976185966,
   "profils": 1792090599970,
-  "_tables": 1793120707344,
+  "_tables": 1793120712875,
   "_permsFix1": 1792090599970,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792090599970,
@@ -59213,13 +59201,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-27T17:05:12.764Z",
+  "maj": "2026-10-27T17:05:16.981Z",
   "semaine": 44,
   "totalBarils": 219518,
   "ca": 1097590,
   "objectif": 375000,
-  "effectif": 120,
-  "clientsServis": 167,
+  "effectif": 117,
+  "clientsServis": 168,
   "theme": "",
   "top3": [
    {
