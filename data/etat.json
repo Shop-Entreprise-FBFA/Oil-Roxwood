@@ -57068,6 +57068,14 @@
    "quantite": 100,
    "montant": 500,
    "did": "767332288744128512"
+  },
+  {
+   "id": "1564644224736034958",
+   "t": "2026-10-27 15:17",
+   "nom": "Julio Collins",
+   "quantite": 20,
+   "montant": 100,
+   "did": "767332288744128512"
   }
  ],
  "settings": {
@@ -57309,10 +57317,10 @@
   }
  },
  "_cid": "5ug2ffg5rkb",
- "_maj": 1793122130754,
- "_rev": "bnb8vbxmo5e-mvqymp8k",
+ "_maj": 1793122150954,
+ "_rev": "8jtfv2pt8q2-mvqymtzc",
  "_majSec": {
-  "fer": 1793110236779,
+  "fer": 1793122150954,
   "fact": 1793121908454,
   "users": 1793121879431,
   "weeks": 1792976185966,
@@ -57327,13 +57335,13 @@
   "imported": 1792090599970,
   "settings": 1792982385225,
   "closeUndo": 1792976185966,
-  "quotasCom": 1793110236579,
+  "quotasCom": 1793122150755,
   "bilanExtra": 1792969756678,
   "bilanForce": 1792090599970,
   "primesExtra": 1792090599970,
   "quotasComHist": 1792976185966,
   "profils": 1792090599970,
-  "_tables": 1793122130754,
+  "_tables": 1793122150755,
   "_permsFix1": 1792090599970,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792090599970,
@@ -57350,6 +57358,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1793122151476,
+   "u": "Laurent Roquel",
+   "a": "Achats de fer : 1 relevé(s) repris du salon"
+  },
   {
    "t": 1793121891083,
    "u": "Julio Collins",
@@ -58844,11 +58857,6 @@
    "t": 1791910733626,
    "u": "?",
    "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1791909848092,
-   "u": "Stella Collins",
-   "a": "Achats de fer : 1 relevé(s) repris du salon"
   }
  ],
  "prodDer": {
@@ -59238,7 +59246,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-27T17:29:09.188Z",
+  "maj": "2026-10-27T17:29:15.336Z",
   "semaine": 44,
   "totalBarils": 219518,
   "ca": 1097590,
@@ -59352,9 +59360,9 @@
  "quotasCom": {
   "sem": 44,
   "achats": {},
-  "vendus": 1004,
-  "parPers": 201,
-  "ferPers": 402
+  "vendus": 1504,
+  "parPers": 301,
+  "ferPers": 602
  },
  "bilanExtra": [
   {
