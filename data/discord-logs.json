@@ -1,11 +1,74 @@
 {
- "maj": "2026-10-27T15:19:09.982207+00:00",
+ "maj": "2026-10-27T15:21:06.591785+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1564660053519114283",
+   "t": "2026-10-27T15:20:26.737000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbesperta\nplayerNetId : 370\nplayerDiscord : 826526979204841482\nplayerName : Orion\nplayerCharacter : Diego Herrera\nplayerId : 231487\nvehiclePlate : TO6030NK\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Diego Herrera",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "370",
+    "playerdiscord": "826526979204841482",
+    "playername": "Orion",
+    "playercharacter": "Diego Herrera",
+    "playerid": "231487",
+    "vehicleplate": "TO6030NK",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1564659804209811508-0",
+   "t": "2026-10-27T15:19:27.297000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 477\nplayerDiscord : 1499848677986930882\nplayerName : CleverBeetle1673\nplayerCharacter : Clara Soules\nplayerId : 380202\nvehiclePlate : EO3801SO\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Clara Soules",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "477",
+    "playerdiscord": "1499848677986930882",
+    "playername": "CleverBeetle1673",
+    "playercharacter": "Clara Soules",
+    "playerid": "380202",
+    "vehicleplate": "EO3801SO",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1564659804209811508-1",
+   "t": "2026-10-27T15:19:27.297000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 371\nplayerDiscord : 1300796315629916300\nplayerName : CleverBat4408\nplayerCharacter : Santino Rivera\nplayerId : 288517\nvehiclePlate : GD7230WT\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Santino Rivera",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "371",
+    "playerdiscord": "1300796315629916300",
+    "playername": "CleverBat4408",
+    "playercharacter": "Santino Rivera",
+    "playerid": "288517",
+    "vehicleplate": "GD7230WT",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1564659577591697450-0",
    "t": "2026-10-27T15:18:33.267000+00:00",
@@ -93554,78 +93617,6 @@
     "playercharacter": "Julio Collins",
     "playerid": "356873",
     "itemid": "weapon_petrolcan"
-   }
-  },
-  {
-   "id": "1563947804869795860-1",
-   "t": "2026-10-25T16:10:13.426000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 4x Fer du coffre de l'entreprise (Oil RoxWood)\nposition : -1811.42, 6572.14, 16.90\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 121\nplayerDiscord : 767332288744128512\nplayerName : JULIO COLLINS\nplayerCharacter : Julio Collins\nplayerId : 356873\nitemId : iron",
-   "nom": "Julio Collins",
-   "quantite": 4,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1811.42, 6572.14, 16.90",
-    "targetposition": "-1815.66, 6565.56, 15.98",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "121",
-    "playerdiscord": "767332288744128512",
-    "playername": "JULIO COLLINS",
-    "playercharacter": "Julio Collins",
-    "playerid": "356873",
-    "itemid": "iron"
-   }
-  },
-  {
-   "id": "1563947804869795860-2",
-   "t": "2026-10-25T16:10:13.426000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 2x Bidon d'essence dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1811.42, 6572.14, 16.90\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 121\nplayerDiscord : 767332288744128512\nplayerName : JULIO COLLINS\nplayerCharacter : Julio Collins\nplayerId : 356873\nitemId : weapon_petrolcan",
-   "nom": "Julio Collins",
-   "quantite": 2,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1811.42, 6572.14, 16.90",
-    "targetposition": "-1815.66, 6565.56, 15.98",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "121",
-    "playerdiscord": "767332288744128512",
-    "playername": "JULIO COLLINS",
-    "playercharacter": "Julio Collins",
-    "playerid": "356873",
-    "itemid": "weapon_petrolcan"
-   }
-  },
-  {
-   "id": "1563947804869795860-3",
-   "t": "2026-10-25T16:10:13.426000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 8x Fer du coffre de l'entreprise (Oil RoxWood)\nposition : -1811.43, 6572.14, 16.90\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 121\nplayerDiscord : 767332288744128512\nplayerName : JULIO COLLINS\nplayerCharacter : Julio Collins\nplayerId : 356873\nitemId : iron",
-   "nom": "Julio Collins",
-   "quantite": 8,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1811.43, 6572.14, 16.90",
-    "targetposition": "-1815.66, 6565.56, 15.98",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "121",
-    "playerdiscord": "767332288744128512",
-    "playername": "JULIO COLLINS",
-    "playercharacter": "Julio Collins",
-    "playerid": "356873",
-    "itemid": "iron"
    }
   }
  ]
