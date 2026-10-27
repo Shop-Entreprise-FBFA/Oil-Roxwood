@@ -15982,11 +15982,11 @@
    {
     "nom": "Elliot Adkins",
     "grade": "Intérimaire",
-    "menus": false,
-    "boissons": false,
-    "bidons": false,
-    "date": "",
-    "don": "",
+    "menus": true,
+    "boissons": true,
+    "bidons": true,
+    "date": "2026-10-27",
+    "don": "diego",
     "permis": ""
    },
    {
@@ -21657,14 +21657,6 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
-  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -21688,6 +21680,14 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T00:06:23.240Z"
+  },
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -57477,15 +57477,15 @@
    "params": ""
   }
  },
- "_cid": "mpo2ngivrb",
- "_maj": 1793133829879,
- "_rev": "1gwycq7y5ci-mvr5l5li",
+ "_cid": "3t35uqwt8p8",
+ "_maj": 1793133860118,
+ "_rev": "33xccnizddk-mvr5lqb6",
  "_majSec": {
   "fer": 1793123427218,
   "fact": 1793133757338,
   "users": 1793133724348,
   "weeks": 1792976185966,
-  "sheets": 1793133749508,
+  "sheets": 1793133860118,
   "_qcFix1": 1792704634769,
   "_wkFix1": 1792704634769,
   "journal": 1793133724348,
@@ -57502,7 +57502,7 @@
   "primesExtra": 1792704634769,
   "quotasComHist": 1792976185966,
   "profils": 1793132547984,
-  "_tables": 1793133829879,
+  "_tables": 1793133852126,
   "_permsFix1": 1792704634769,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792704634769,
@@ -59407,7 +59407,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-27T20:43:54.390Z",
+  "maj": "2026-10-27T20:44:21.234Z",
   "semaine": 44,
   "totalBarils": 219518,
   "ca": 1097590,
