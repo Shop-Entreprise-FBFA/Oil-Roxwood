@@ -1,11 +1,53 @@
 {
- "maj": "2026-10-27T15:11:08.254448+00:00",
+ "maj": "2026-10-27T15:13:06.291572+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1564657789622820949-0",
+   "t": "2026-10-27T15:11:26.982000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 212\nplayerDiscord : 490974564814159882\nplayerName : axelvdd34\nplayerCharacter : Angel Cruz\nplayerId : 212406\nvehiclePlate : FE3726MZ\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Angel Cruz",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "212",
+    "playerdiscord": "490974564814159882",
+    "playername": "axelvdd34",
+    "playercharacter": "Angel Cruz",
+    "playerid": "212406",
+    "vehicleplate": "FE3726MZ",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1564657789622820949-1",
+   "t": "2026-10-27T15:11:26.982000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 193\nplayerDiscord : 1188523026795462748\nplayerName : JLTzk\nplayerCharacter : Jordan Coleman\nplayerId : 181277\nvehiclePlate : XP1606YE\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Jordan Coleman",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "193",
+    "playerdiscord": "1188523026795462748",
+    "playername": "JLTzk",
+    "playercharacter": "Jordan Coleman",
+    "playerid": "181277",
+    "vehicleplate": "XP1606YE",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1564657539746897962",
    "t": "2026-10-27T15:10:27.407000+00:00",
@@ -93584,54 +93626,6 @@
    "coffre": "entreprise (Oil RoxWood)",
    "champs": {
     "position": "-1811.42, 6572.14, 16.90",
-    "targetposition": "-1815.66, 6565.56, 15.98",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "121",
-    "playerdiscord": "767332288744128512",
-    "playername": "JULIO COLLINS",
-    "playercharacter": "Julio Collins",
-    "playerid": "356873",
-    "itemid": "iron"
-   }
-  },
-  {
-   "id": "1563947529979043840-4",
-   "t": "2026-10-25T16:09:07.887000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 2x Bidon d'essence dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1811.42, 6572.14, 16.90\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 121\nplayerDiscord : 767332288744128512\nplayerName : JULIO COLLINS\nplayerCharacter : Julio Collins\nplayerId : 356873\nitemId : weapon_petrolcan",
-   "nom": "Julio Collins",
-   "quantite": 2,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1811.42, 6572.14, 16.90",
-    "targetposition": "-1815.66, 6565.56, 15.98",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "121",
-    "playerdiscord": "767332288744128512",
-    "playername": "JULIO COLLINS",
-    "playercharacter": "Julio Collins",
-    "playerid": "356873",
-    "itemid": "weapon_petrolcan"
-   }
-  },
-  {
-   "id": "1563947529979043840-5",
-   "t": "2026-10-25T16:09:07.887000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 8x Fer du coffre de l'entreprise (Oil RoxWood)\nposition : -1811.45, 6572.15, 16.90\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 121\nplayerDiscord : 767332288744128512\nplayerName : JULIO COLLINS\nplayerCharacter : Julio Collins\nplayerId : 356873\nitemId : iron",
-   "nom": "Julio Collins",
-   "quantite": 8,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1811.45, 6572.15, 16.90",
     "targetposition": "-1815.66, 6565.56, 15.98",
     "jobid": "76",
     "jobname": "Oil RoxWood",
