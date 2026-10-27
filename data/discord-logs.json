@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-27T01:25:04.927960+00:00",
+ "maj": "2026-10-27T01:27:09.852934+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1564450162229776416",
+   "t": "2026-10-27T01:26:24.754000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 544x Pétrole Raffiné pour 5440$ par Merill Danielson. 2720$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 544,
+   "montant": 5440,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1564447903307538453",
    "t": "2026-10-27T01:17:26.185000+00:00",
@@ -93493,27 +93509,6 @@
    "salon": "1245400913473179729",
    "champs": {
     "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1563639909913469040",
-   "t": "2026-10-24T19:46:45.548000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 3800\nplayerDiscord : 355065235154927617\nplayerName : SlowBat2011\nplayerCharacter : Romain Pierres\nplayerId : 380745\nvehiclePlate : HQ0696KP\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Romain Pierres",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "3800",
-    "playerdiscord": "355065235154927617",
-    "playername": "SlowBat2011",
-    "playercharacter": "Romain Pierres",
-    "playerid": "380745",
-    "vehicleplate": "HQ0696KP",
     "jobid": "76",
     "jobname": "Oil RoxWood"
    }
