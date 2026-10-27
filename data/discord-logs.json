@@ -1,11 +1,48 @@
 {
- "maj": "2026-10-27T10:25:08.479698+00:00",
+ "maj": "2026-10-27T10:27:03.884979+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1564586068232372296",
+   "t": "2026-10-27T10:26:27.270000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 44x Pétrole Raffiné pour 440$ par Jules Habay. 220$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 44,
+   "montant": 440,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1564586051857817632",
+   "t": "2026-10-27T10:26:23.366000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 7131\nplayerDiscord : 831877007545204806\nplayerName : carmélia cortez\nplayerCharacter : Carmelia Cortez\nplayerId : 368287\nvehiclePlate : BM4391ZM\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Carmelia Cortez",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "7131",
+    "playerdiscord": "831877007545204806",
+    "playername": "carmélia cortez",
+    "playercharacter": "Carmelia Cortez",
+    "playerid": "368287",
+    "vehicleplate": "BM4391ZM",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1564583031094775942",
    "t": "2026-10-27T10:14:23.160000+00:00",
@@ -93468,38 +93505,6 @@
    "nom": null,
    "quantite": 86,
    "montant": 860,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1563660818862571696",
-   "t": "2026-10-24T21:09:50.630000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 200x Pétrole Raffiné pour 2000$ par Mouly Franseco. 1000$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 200,
-   "montant": 2000,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1563660332290019461",
-   "t": "2026-10-24T21:07:54.622000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 359x Pétrole Raffiné pour 3590$ par Merill Danielson. 1795$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 359,
-   "montant": 3590,
    "type": "vente",
    "salon": "1245400913473179729",
    "champs": {
