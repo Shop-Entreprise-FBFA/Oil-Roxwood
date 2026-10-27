@@ -1,11 +1,31 @@
 {
- "maj": "2026-10-27T09:43:05.137518+00:00",
+ "maj": "2026-10-27T09:45:05.198019+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1564575479497883729",
+   "t": "2026-10-27T09:44:22.719000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 6979\nplayerName : SlowCat2255\nplayerCharacter : Jules Habay\nplayerId : 99774\nvehiclePlate : GB1899JF\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Jules Habay",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "6979",
+    "playername": "SlowCat2255",
+    "playercharacter": "Jules Habay",
+    "playerid": "99774",
+    "vehicleplate": "GB1899JF",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1564572701216211067",
    "t": "2026-10-27T09:33:20.325000+00:00",
@@ -93486,22 +93506,6 @@
     "playercharacter": "Jayson Simth",
     "playerid": "375244",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1563646981556015158",
-   "t": "2026-10-24T20:14:51.559000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 466x Pétrole Raffiné pour 4660$ par Many Carlos. 2330$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 466,
-   "montant": 4660,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
