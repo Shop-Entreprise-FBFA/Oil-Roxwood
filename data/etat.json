@@ -14498,16 +14498,9 @@
    },
    {
     "date": "2026-10-27",
-    "client": "Les Ricains",
-    "quantite": 225,
+    "client": "Oil Roxwood",
+    "quantite": 300,
     "qui": "Emma Collins-rodriguez",
-    "fact": 253181
-   },
-   {
-    "date": "2026-10-27",
-    "client": "Les Ricains",
-    "quantite": 225,
-    "qui": "William Rodriguez-collins",
     "fact": 253181
    }
   ],
@@ -17148,7 +17141,7 @@
     "rib": "20076",
     "tel": "986",
     "adresse": "Roxwood",
-    "lastCmd": "2026-10-26",
+    "lastCmd": "2026-10-27",
     "type": "entreprise"
    },
    {
@@ -17479,26 +17472,26 @@
    {
     "num": 253181,
     "date": "2026-10-27",
-    "client": "Les Ricains",
-    "emetteur": "Emma Collins-rodriguez, William Rodriguez-collins",
+    "client": "Oil Roxwood",
+    "emetteur": "Emma Collins-rodriguez",
     "postop": false,
     "lignes": [
      {
       "ref": "CMD",
-      "qte": 450,
+      "qte": 300,
       "tva": 0,
       "desc": "bidons d'essence ",
       "pu": 180,
-      "ht": 81000,
-      "ttc": 81000
+      "ht": 54000,
+      "ttc": 54000
      }
     ],
     "offert": 0,
-    "ht": 81000,
-    "ttc": 81000,
-    "poids": 900,
+    "ht": 54000,
+    "ttc": 54000,
+    "poids": 600,
     "statut": "payee",
-    "modifiee": 1793102144620
+    "modifiee": 1793102597050
    },
    {
     "num": 253180,
@@ -57162,17 +57155,17 @@
   }
  },
  "_cid": "n1bdcutxhp",
- "_maj": 1793102554126,
- "_rev": "yhnkwecgbf-mvqmysfr",
+ "_maj": 1793102597076,
+ "_rev": "74bser1yumr-mvqmzn6c",
  "_majSec": {
   "fer": 1792961656047,
-  "fact": 1793102147547,
+  "fact": 1793102597050,
   "users": 1793030480438,
   "weeks": 1792976185966,
-  "sheets": 1793101903074,
+  "sheets": 1793102597050,
   "_qcFix1": 1792090599970,
   "_wkFix1": 1792090599970,
-  "journal": 1793102144651,
+  "journal": 1793102597076,
   "pending": 1792090599970,
   "prodDer": 1792875193989,
   "runners": 1793014381573,
@@ -57186,7 +57179,7 @@
   "primesExtra": 1792090599970,
   "quotasComHist": 1792976185966,
   "profils": 1792090599970,
-  "_tables": 1793102554126,
+  "_tables": 1793102597050,
   "_permsFix1": 1792090599970,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792090599970,
@@ -57203,6 +57196,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1793102596974,
+   "u": "Emma Collins-rodriguez",
+   "a": "Facture n°253181 modifiée — client Les Ricains → Oil Roxwood · total 81 000 $ → 54 000 $ · émetteur Emma Collins-rodriguez, William Rodriguez-collins → Emma Collins-rodriguez"
+  },
   {
    "t": 1793102144549,
    "u": "Emma Collins-rodriguez",
@@ -58697,11 +58695,6 @@
    "t": 1791834211640,
    "u": "Carter Fuente",
    "a": "Contrat(s) signé(s) via Discord : jordan coleman, kurtis coleman, Alfro Bensh…"
-  },
-  {
-   "t": 1791834211587,
-   "u": "Carter Fuente",
-   "a": "Recrutements Discord : 6 fiche(s) créée(s), 0 case(s) complétée(s) — kurtis coleman, jordan coleman, Alfro Bensh…"
   }
  ],
  "prodDer": {
@@ -59091,7 +59084,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-27T12:02:37.815Z",
+  "maj": "2026-10-27T12:03:17.652Z",
   "semaine": 44,
   "totalBarils": 219518,
   "ca": 1097590,
