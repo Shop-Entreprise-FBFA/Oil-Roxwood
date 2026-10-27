@@ -14481,6 +14481,20 @@
     "quantite": 200,
     "qui": "",
     "fact": 253180
+   },
+   {
+    "date": "2026-10-27",
+    "client": "Les Ricains",
+    "quantite": 225,
+    "qui": "Emma Collins-rodriguez",
+    "fact": 253181
+   },
+   {
+    "date": "2026-10-27",
+    "client": "Les Ricains",
+    "quantite": 225,
+    "qui": "William Rodriguez-collins",
+    "fact": 253181
    }
   ],
   "collection": [
@@ -16922,7 +16936,7 @@
     "rib": "",
     "tel": "555 574 601",
     "adresse": "Los santos",
-    "lastCmd": "2026-10-14",
+    "lastCmd": "2026-10-27",
     "type": "famille"
    },
    {
@@ -17446,8 +17460,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253181,
+  "compteur": 253182,
   "factures": [
+   {
+    "num": 253181,
+    "date": "2026-10-27",
+    "client": "Les Ricains",
+    "emetteur": "Emma Collins-rodriguez, William Rodriguez-collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 450,
+      "tva": 0.04,
+      "pu": 180,
+      "ht": 81000,
+      "ttc": 84240,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 81000,
+    "ttc": 84240,
+    "poids": 900,
+    "statut": "attente"
+   },
    {
     "num": 253180,
     "date": "2026-10-26",
@@ -57110,14 +57147,14 @@
   }
  },
  "_cid": "k3l2wnf31p",
- "_maj": 1793100550375,
- "_rev": "42q2mgm0thj-mvqlrtkn",
+ "_maj": 1793100599304,
+ "_rev": "jc8y6yasyg-mvqlssyj",
  "_majSec": {
   "fer": 1792961656047,
-  "fact": 1793034603247,
+  "fact": 1793100599288,
   "users": 1793030480438,
   "weeks": 1792976185966,
-  "sheets": 1793057557492,
+  "sheets": 1793100599288,
   "_qcFix1": 1792090599970,
   "_wkFix1": 1792090599970,
   "journal": 1793057352866,
@@ -57134,7 +57171,7 @@
   "primesExtra": 1792090599970,
   "quotasComHist": 1792976185966,
   "profils": 1792090599970,
-  "_tables": 1793100550375,
+  "_tables": 1793100599288,
   "_permsFix1": 1792090599970,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792090599970,
@@ -59039,13 +59076,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-27T11:29:13.079Z",
+  "maj": "2026-10-27T11:29:58.939Z",
   "semaine": 44,
   "totalBarils": 219518,
   "ca": 1097590,
   "objectif": 375000,
   "effectif": 116,
-  "clientsServis": 165,
+  "clientsServis": 166,
   "theme": "",
   "top3": [
    {
