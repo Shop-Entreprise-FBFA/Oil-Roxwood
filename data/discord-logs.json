@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-27T10:51:10.104351+00:00",
+ "maj": "2026-10-27T10:53:03.434563+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1564592346526392382",
+   "t": "2026-10-27T10:51:24.132000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 488x Pétrole Raffiné pour 4880$ par Pablo Elshooter. 2440$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 488,
+   "montant": 4880,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1564592107262320723",
    "t": "2026-10-27T10:50:27.087000+00:00",
@@ -93463,27 +93479,6 @@
    "salon": "1245400913473179729",
    "champs": {
     "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1563663557583831161",
-   "t": "2026-10-24T21:20:43.592000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 4773\nplayerDiscord : 1461371532373921938\nplayerName : JumpyGoose3368\nplayerCharacter : Mero Duval\nplayerId : 383055\nvehiclePlate : DO6888RF\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Mero Duval",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "4773",
-    "playerdiscord": "1461371532373921938",
-    "playername": "JumpyGoose3368",
-    "playercharacter": "Mero Duval",
-    "playerid": "383055",
-    "vehicleplate": "DO6888RF",
     "jobid": "76",
     "jobname": "Oil RoxWood"
    }
