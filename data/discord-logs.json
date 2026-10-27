@@ -1,11 +1,32 @@
 {
- "maj": "2026-10-27T17:23:06.366744+00:00",
+ "maj": "2026-10-27T17:25:06.326572+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1564691007105138789",
+   "t": "2026-10-27T17:23:26.647000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 1635\nplayerDiscord : 877190238433333258\nplayerName : PaleMouse8705\nplayerCharacter : Many Carlos\nplayerId : 166386\nvehiclePlate : FE3726MZ\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Many Carlos",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "1635",
+    "playerdiscord": "877190238433333258",
+    "playername": "PaleMouse8705",
+    "playercharacter": "Many Carlos",
+    "playerid": "166386",
+    "vehicleplate": "FE3726MZ",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1564690779622875299-0",
    "t": "2026-10-27T17:22:32.411000+00:00",
@@ -93528,30 +93549,6 @@
     "itemid": "refinedoil",
     "jobid": "76",
     "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1563957367501094967-0",
-   "t": "2026-10-25T16:48:13.335000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 29x Bidon d'essence dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1810.11, 6572.89, 16.90\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 56\nplayerDiscord : 707695913187016785\nplayerName : ShySpider2463\nplayerCharacter : Laurent Roquel\nplayerId : 282695\nitemId : weapon_petrolcan",
-   "nom": "Laurent Roquel",
-   "quantite": 29,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1810.11, 6572.89, 16.90",
-    "targetposition": "-1815.66, 6565.56, 15.98",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "56",
-    "playerdiscord": "707695913187016785",
-    "playername": "ShySpider2463",
-    "playercharacter": "Laurent Roquel",
-    "playerid": "282695",
-    "itemid": "weapon_petrolcan"
    }
   }
  ]
