@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-27T10:11:06.726810+00:00",
+ "maj": "2026-10-27T10:13:04.455139+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1564582527153479793",
+   "t": "2026-10-27T10:12:23.011000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 131x Pétrole Raffiné pour 1310$ par Ana Fox. 655$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 131,
+   "montant": 1310,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1564582021215289467",
    "t": "2026-10-27T10:10:22.386000+00:00",
@@ -93484,22 +93500,6 @@
    "nom": null,
    "quantite": 316,
    "montant": 3160,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1563658558841692201",
-   "t": "2026-10-24T21:00:51.799000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 544x Pétrole Raffiné pour 5440$ par Alexander Bart. 2720$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 544,
-   "montant": 5440,
    "type": "vente",
    "salon": "1245400913473179729",
    "champs": {
