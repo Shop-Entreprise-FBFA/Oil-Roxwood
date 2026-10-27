@@ -57402,9 +57402,9 @@
    "params": ""
   }
  },
- "_cid": "567prcl39ke",
- "_maj": 1793128824624,
- "_rev": "5qqs8jd2d79-mvr2lngk",
+ "_cid": "qsgzrl4zcjm",
+ "_maj": 1793128844142,
+ "_rev": "t91kf7e40g8-mvr2m8yt",
  "_majSec": {
   "fer": 1793123427218,
   "fact": 1793122302262,
@@ -57413,11 +57413,11 @@
   "sheets": 1793124932662,
   "_qcFix1": 1792090599970,
   "_wkFix1": 1792090599970,
-  "journal": 1793124932662,
+  "journal": 1793128844142,
   "pending": 1792090599970,
   "prodDer": 1792875193989,
   "runners": 1793014381573,
-  "absences": 1793034723844,
+  "absences": 1793128844142,
   "imported": 1792090599970,
   "settings": 1792982385225,
   "closeUndo": 1792976185966,
@@ -57427,7 +57427,7 @@
   "primesExtra": 1792090599970,
   "quotasComHist": 1792976185966,
   "profils": 1792090599970,
-  "_tables": 1793128822787,
+  "_tables": 1793128844103,
   "_permsFix1": 1792090599970,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792090599970,
@@ -57444,6 +57444,16 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1793128845911,
+   "u": "Diego Herrera",
+   "a": "Absences Discord reprises : CHEB Hassan"
+  },
+  {
+   "t": 1793128845872,
+   "u": "Diego Herrera",
+   "a": "Absence supprimée : CHEB Hassan (du 27/10/2026 au 16/11/2026)"
+  },
   {
    "t": 1793124933246,
    "u": "Laurent Roquel",
@@ -58933,16 +58943,6 @@
    "t": 1791922854983,
    "u": "Julio Collins",
    "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1791922854808,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1791915624528,
-   "u": "Laurent Roquel",
-   "a": "Achats de fer : 1 relevé(s) repris du salon"
   }
  ],
  "prodDer": {
@@ -59295,16 +59295,6 @@
    "auto": true
   },
   {
-   "id": 1792767526124,
-   "nom": "CHEB Hassan",
-   "du": "2026-10-27",
-   "au": "2026-11-16",
-   "srcId": "1792713361192",
-   "motif": "Voyage Professionnel au CONGO",
-   "par": "⚫ Carter Fuente",
-   "auto": true
-  },
-  {
    "id": 1792771097046,
    "nom": "Jack Hamilton",
    "du": "2026-09-10",
@@ -59329,10 +59319,20 @@
    "nom": "Jordan Impreza",
    "du": "2026-10-26",
    "au": "2026-11-12"
+  },
+  {
+   "id": 1793128850417,
+   "nom": "CHEB Hassan",
+   "du": "2026-10-27",
+   "au": "2026-11-16",
+   "srcId": "1792713361192",
+   "motif": "Voyage Professionnel au CONGO",
+   "par": "⚫ Carter Fuente",
+   "auto": true
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-27T19:20:18.692Z",
+  "maj": "2026-10-27T19:20:46.565Z",
   "semaine": 44,
   "totalBarils": 219518,
   "ca": 1097590,
