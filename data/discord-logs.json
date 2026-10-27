@@ -1,11 +1,32 @@
 {
- "maj": "2026-10-27T09:13:07.479266+00:00",
+ "maj": "2026-10-27T09:15:05.385332+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1564567923815620750",
+   "t": "2026-10-27T09:14:21.304000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 6856\nplayerDiscord : 293408058783301638\nplayerName : sm\nplayerCharacter : Nemesio Rosario\nplayerId : 382544\nvehiclePlate : AY0298ZV\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Nemesio Rosario",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "6856",
+    "playerdiscord": "293408058783301638",
+    "playername": "sm",
+    "playercharacter": "Nemesio Rosario",
+    "playerid": "382544",
+    "vehicleplate": "AY0298ZV",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1564566411395731488",
    "t": "2026-10-27T09:08:20.715000+00:00",
@@ -93480,30 +93501,6 @@
    "coffre": "entreprise (Oil RoxWood)",
    "champs": {
     "position": "-1849.58, 6514.80, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "3800",
-    "playerdiscord": "355065235154927617",
-    "playername": "SlowBat2011",
-    "playercharacter": "Romain Pierres",
-    "playerid": "380745",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1563644172257202340-0",
-   "t": "2026-10-24T20:03:41.770000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 92x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1850.16, 6515.68, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3800\nplayerDiscord : 355065235154927617\nplayerName : SlowBat2011\nplayerCharacter : Romain Pierres\nplayerId : 380745\nitemId : refinedoil",
-   "nom": "Romain Pierres",
-   "quantite": 92,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1850.16, 6515.68, 16.73",
     "targetposition": "-1850.63, 6515.15, 15.75",
     "jobid": "76",
     "jobname": "Oil RoxWood",
