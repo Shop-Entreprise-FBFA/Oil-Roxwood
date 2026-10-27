@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-27T23:53:13.456401+00:00",
+ "maj": "2026-10-27T23:55:08.504165+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1564789179328626761",
+   "t": "2026-10-27T23:53:32.729000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 108x Pétrole Raffiné pour 1080$ par Jeppy Xious. 540$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 108,
+   "montant": 1080,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1564788945160634440",
    "t": "2026-10-27T23:52:36.899000+00:00",
@@ -93089,30 +93105,6 @@
    "champs": {
     "position": "-1842.51, 6521.31, 16.73",
     "targetposition": "-1842.58, 6521.16, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "1164",
-    "playerdiscord": "1053366471574687844",
-    "playername": "Emma Collins-Rodriguez",
-    "playercharacter": "Emma Collins-rodriguez",
-    "playerid": "227799",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1563985303533002818-5",
-   "t": "2026-10-25T18:39:13.804000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 114x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1815.39, 6565.60, 16.73\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1164\nplayerDiscord : 1053366471574687844\nplayerName : Emma Collins-Rodriguez\nplayerCharacter : Emma Collins-rodriguez\nplayerId : 227799\nitemId : refinedoil",
-   "nom": "Emma Collins-rodriguez",
-   "quantite": 114,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1815.39, 6565.60, 16.73",
-    "targetposition": "-1815.66, 6565.56, 15.98",
     "jobid": "76",
     "jobname": "Oil RoxWood",
     "playernetid": "1164",
