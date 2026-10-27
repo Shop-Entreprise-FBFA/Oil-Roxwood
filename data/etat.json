@@ -14502,6 +14502,20 @@
     "quantite": 300,
     "qui": "Emma Collins-rodriguez",
     "fact": 253181
+   },
+   {
+    "date": "2026-10-27",
+    "client": "Les Ricains",
+    "quantite": 227,
+    "qui": "Emma Collins-rodriguez",
+    "fact": 253182
+   },
+   {
+    "date": "2026-10-27",
+    "client": "Les Ricains",
+    "quantite": 227,
+    "qui": "William Rodriguez-collins",
+    "fact": 253182
    }
   ],
   "collection": [
@@ -17467,8 +17481,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253182,
+  "compteur": 253183,
   "factures": [
+   {
+    "num": 253182,
+    "date": "2026-10-27",
+    "client": "Les Ricains",
+    "emetteur": "Emma Collins-rodriguez, William Rodriguez-collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 454,
+      "tva": 0.04,
+      "pu": 180,
+      "ht": 81720,
+      "ttc": 84988.8,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 81720,
+    "ttc": 84988.8,
+    "poids": 908,
+    "statut": "attente"
+   },
    {
     "num": 253181,
     "date": "2026-10-27",
@@ -57155,14 +57192,14 @@
   }
  },
  "_cid": "mpo2ngivrb",
- "_maj": 1793102779956,
- "_rev": "hmj9cqwomvl-mvqn3mzf",
+ "_maj": 1793102790853,
+ "_rev": "wqsbfcptq8-mvqn3ss0",
  "_majSec": {
   "fer": 1792961656047,
-  "fact": 1793102606439,
+  "fact": 1793102790828,
   "users": 1793030480438,
   "weeks": 1792976185966,
-  "sheets": 1793102597050,
+  "sheets": 1793102790828,
   "_qcFix1": 1792090599970,
   "_wkFix1": 1792090599970,
   "journal": 1793102597076,
@@ -57179,7 +57216,7 @@
   "primesExtra": 1792090599970,
   "quotasComHist": 1792976185966,
   "profils": 1792090599970,
-  "_tables": 1793102779956,
+  "_tables": 1793102790828,
   "_permsFix1": 1792090599970,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792090599970,
@@ -59084,13 +59121,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-27T12:06:24.027Z",
+  "maj": "2026-10-27T12:06:31.536Z",
   "semaine": 44,
   "totalBarils": 219518,
   "ca": 1097590,
   "objectif": 375000,
   "effectif": 117,
-  "clientsServis": 166,
+  "clientsServis": 167,
   "theme": "",
   "top3": [
    {
