@@ -1,11 +1,51 @@
 {
- "maj": "2026-10-28T16:17:30.556228+00:00",
+ "maj": "2026-10-28T16:19:28.707405+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1565037138766995587",
+   "t": "2026-10-28T16:18:50.866000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 322x Pétrole Raffiné pour 3220$ par Jack Berthier. 1610$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 322,
+   "montant": 3220,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1565037124913463367",
+   "t": "2026-10-28T16:18:47.563000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 48x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3085.75, 6814.87, 44.73\ntargetPosition : -3084.39, 6815.87, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6\nplayerDiscord : 767332288744128512\nplayerName : JULIO COLLINS\nplayerCharacter : Julio Collins\nplayerId : 356873\nitemId : oil",
+   "nom": "Julio Collins",
+   "quantite": 48,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-3085.75, 6814.87, 44.73",
+    "targetposition": "-3084.39, 6815.87, 43.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "6",
+    "playerdiscord": "767332288744128512",
+    "playername": "JULIO COLLINS",
+    "playercharacter": "Julio Collins",
+    "playerid": "356873",
+    "itemid": "oil"
+   }
+  },
   {
    "id": "1565036630824321155",
    "t": "2026-10-28T16:16:49.763000+00:00",
@@ -93003,46 +93043,6 @@
    "nom": null,
    "quantite": 57,
    "montant": 570,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1564087227330338909",
-   "t": "2026-10-26T01:24:14.331000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 2x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1843.95, 6518.06, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6300\nplayerDiscord : 726178701867221134\nplayerName : Athena Andershon\nplayerCharacter : Athéna Andershon\nplayerId : 196876\nitemId : refinedoil",
-   "nom": "Athéna Andershon",
-   "quantite": 2,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1843.95, 6518.06, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6300",
-    "playerdiscord": "726178701867221134",
-    "playername": "Athena Andershon",
-    "playercharacter": "Athéna Andershon",
-    "playerid": "196876",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1564086998484910141",
-   "t": "2026-10-26T01:23:19.770000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 72x Pétrole Raffiné pour 720$ par Jeppy Xious. 360$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 72,
-   "montant": 720,
    "type": "vente",
    "salon": "1245400913473179729",
    "champs": {
