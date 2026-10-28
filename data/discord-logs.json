@@ -1,11 +1,35 @@
 {
- "maj": "2026-10-28T16:31:30.028530+00:00",
+ "maj": "2026-10-28T16:33:29.570845+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1565040640998248599",
+   "t": "2026-10-28T16:32:45.863000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\na retiré 137x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1840.07, 6524.69, 16.90\ntargetPosition : -1840.85, 6523.94, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6\nplayerDiscord : 767332288744128512\nplayerName : JULIO COLLINS\nplayerCharacter : Julio Collins\nplayerId : 356873\nitemId : refinedoil",
+   "nom": "Julio Collins",
+   "quantite": 137,
+   "montant": null,
+   "type": "coffre_retrait",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1840.07, 6524.69, 16.90",
+    "targetposition": "-1840.85, 6523.94, 15.74",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "6",
+    "playerdiscord": "767332288744128512",
+    "playername": "JULIO COLLINS",
+    "playercharacter": "Julio Collins",
+    "playerid": "356873",
+    "itemid": "refinedoil"
+   }
+  },
   {
    "id": "1565039875504472258-0",
    "t": "2026-10-28T16:29:43.355000+00:00",
@@ -93028,27 +93052,6 @@
     "playercharacter": "Merill Danielson",
     "playerid": "129485",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1564099808933978123",
-   "t": "2026-10-26T02:14:14.019000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 6440\nplayerDiscord : 706453716059947079\nplayerName : CleverGoose9528\nplayerCharacter : Merill Danielson\nplayerId : 129485\nvehiclePlate : EO3801SO\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Merill Danielson",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "6440",
-    "playerdiscord": "706453716059947079",
-    "playername": "CleverGoose9528",
-    "playercharacter": "Merill Danielson",
-    "playerid": "129485",
-    "vehicleplate": "EO3801SO",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
