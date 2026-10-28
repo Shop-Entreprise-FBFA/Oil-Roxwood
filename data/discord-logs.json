@@ -1,11 +1,53 @@
 {
- "maj": "2026-10-28T19:39:28.874756+00:00",
+ "maj": "2026-10-28T19:41:25.220561+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1565087682009374854-0",
+   "t": "2026-10-28T19:39:41.314000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 2289\nplayerDiscord : 1284252197747687534\nplayerName : DustyAnt9093\nplayerCharacter : Lorenzo Shiva\nplayerId : 160460\nvehiclePlate : AY4705SJ\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Lorenzo Shiva",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "2289",
+    "playerdiscord": "1284252197747687534",
+    "playername": "DustyAnt9093",
+    "playercharacter": "Lorenzo Shiva",
+    "playerid": "160460",
+    "vehicleplate": "AY4705SJ",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1565087682009374854-1",
+   "t": "2026-10-28T19:39:41.314000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 1940\nplayerDiscord : 706453716059947079\nplayerName : CleverGoose9528\nplayerCharacter : Merill Danielson\nplayerId : 129485\nvehiclePlate : AY0298ZV\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Merill Danielson",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "1940",
+    "playerdiscord": "706453716059947079",
+    "playername": "CleverGoose9528",
+    "playercharacter": "Merill Danielson",
+    "playerid": "129485",
+    "vehicleplate": "AY0298ZV",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1565087205246894091",
    "t": "2026-10-28T19:37:47.645000+00:00",
@@ -93359,54 +93401,6 @@
     "playercharacter": "Jayson Simth",
     "playerid": "375244",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1564327588866949143-2",
-   "t": "2026-10-26T17:19:20.987000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 86x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1843.11, 6518.29, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 253\nplayerDiscord : 800421218694987807\nplayerName : wyya13k\nplayerCharacter : Jayson Simth\nplayerId : 375244\nitemId : refinedoil",
-   "nom": "Jayson Simth",
-   "quantite": 86,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1843.11, 6518.29, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "253",
-    "playerdiscord": "800421218694987807",
-    "playername": "wyya13k",
-    "playercharacter": "Jayson Simth",
-    "playerid": "375244",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1564326079496192195-0",
-   "t": "2026-10-26T17:13:21.125000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 1x Bidon d'essence du coffre de l'entreprise (Oil RoxWood)\nposition : -1848.42, 6498.30, 16.73\ntargetPosition : -1849.11, 6498.65, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1271\nplayerDiscord : 948542221429379112\nplayerName : IcyToad7886\nplayerCharacter : Stella Collins\nplayerId : 232050\nitemId : weapon_petrolcan",
-   "nom": "Stella Collins",
-   "quantite": 1,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1848.42, 6498.30, 16.73",
-    "targetposition": "-1849.11, 6498.65, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "1271",
-    "playerdiscord": "948542221429379112",
-    "playername": "IcyToad7886",
-    "playercharacter": "Stella Collins",
-    "playerid": "232050",
-    "itemid": "weapon_petrolcan"
    }
   }
  ]
