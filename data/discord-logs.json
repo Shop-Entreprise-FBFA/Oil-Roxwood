@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-28T13:37:08.049941+00:00",
+ "maj": "2026-10-28T13:39:05.885762+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1564996535110865088",
+   "t": "2026-10-28T13:37:30.200000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 595x Pétrole Raffiné pour 5950$ par Nemesio Rosario. 2975$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 595,
+   "montant": 5950,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1564996016640626749",
    "t": "2026-10-28T13:35:26.587000+00:00",
@@ -93080,30 +93096,6 @@
    "coffre": "entreprise (Oil RoxWood)",
    "champs": {
     "position": "-1844.07, 6517.73, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "1163",
-    "playerdiscord": "826526979204841482",
-    "playername": "Orion",
-    "playercharacter": "Diego Herrera",
-    "playerid": "231487",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1564059796204691656-0",
-   "t": "2026-10-25T23:35:14.241000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 123x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1843.89, 6517.82, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1163\nplayerDiscord : 826526979204841482\nplayerName : Orion\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : refinedoil",
-   "nom": "Diego Herrera",
-   "quantite": 123,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1843.89, 6517.82, 16.73",
     "targetposition": "-1843.83, 6518.10, 15.74",
     "jobid": "76",
     "jobname": "Oil RoxWood",
