@@ -1,11 +1,53 @@
 {
- "maj": "2026-10-28T07:39:09.788339+00:00",
+ "maj": "2026-10-28T07:41:06.807803+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1564906425325457450-0",
+   "t": "2026-10-28T07:39:26.353000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 6675\nplayerDiscord : 1499848677986930882\nplayerName : CleverBeetle1673\nplayerCharacter : Clara Soules\nplayerId : 380202\nvehiclePlate : AS5715VX\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Clara Soules",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "6675",
+    "playerdiscord": "1499848677986930882",
+    "playername": "CleverBeetle1673",
+    "playercharacter": "Clara Soules",
+    "playerid": "380202",
+    "vehicleplate": "AS5715VX",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1564906425325457450-1",
+   "t": "2026-10-28T07:39:26.353000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 6675\nplayerDiscord : 1499848677986930882\nplayerName : CleverBeetle1673\nplayerCharacter : Clara Soules\nplayerId : 380202\nvehiclePlate : DO6888RF\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Clara Soules",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "6675",
+    "playerdiscord": "1499848677986930882",
+    "playername": "CleverBeetle1673",
+    "playercharacter": "Clara Soules",
+    "playerid": "380202",
+    "vehicleplate": "DO6888RF",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1564882015281741856-0",
    "t": "2026-10-28T06:02:26.545000+00:00",
@@ -92964,46 +93006,6 @@
     "playercharacter": "Emma Collins-rodriguez",
     "playerid": "227799",
     "itemid": "iron"
-   }
-  },
-  {
-   "id": "1563989584113832065-2",
-   "t": "2026-10-25T18:56:14.374000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 74x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1813.00, 6574.77, 16.90\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1164\nplayerDiscord : 1053366471574687844\nplayerName : Emma Collins-Rodriguez\nplayerCharacter : Emma Collins-rodriguez\nplayerId : 227799\nitemId : refinedoil",
-   "nom": "Emma Collins-rodriguez",
-   "quantite": 74,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1813.00, 6574.77, 16.90",
-    "targetposition": "-1815.66, 6565.56, 15.98",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "1164",
-    "playerdiscord": "1053366471574687844",
-    "playername": "Emma Collins-Rodriguez",
-    "playercharacter": "Emma Collins-rodriguez",
-    "playerid": "227799",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1563989383093166081",
-   "t": "2026-10-25T18:55:26.447000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 122x Pétrole Raffiné pour 1220$ par Hassan Cheb. 610$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 122,
-   "montant": 1220,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
