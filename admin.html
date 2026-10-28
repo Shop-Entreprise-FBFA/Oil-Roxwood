@@ -787,6 +787,7 @@ function estPosteRH(g){
   if(!s||s==='-') return false;
   return !/raffineur|interimaire|stagiaire/.test(s);
 }
+var ROLES_BOT=null;   // relevé des rôles Discord du bot (data/roles-discord.json), null tant qu'il n'est pas lu
 async function alignerRolesBot(){
   try{
     if(!RoxwoodGH.peutEcrire()) return 0;
@@ -795,6 +796,7 @@ async function alignerRolesBot(){
     const d=await r.json();
     const membres=(d&&d.membres)||null;
     if(!membres) return 0;
+    ROLES_BOT=membres;                    // gardé en mémoire : la liste publique de l'équipe s'en sert (statsData)
     let n=0;
     (S.users||[]).forEach(u=>{
       const did=String(u.did||''); if(!did||estDev(did)) return;
@@ -2963,6 +2965,21 @@ function undoClose(){
    personne. On compte désormais le registre RH, qui ne se vide pas : les
    personnes encore inscrites, sans celles marquées sorties. La Tablette s'y
    ajoute, pour les runners pointés avant que leur fiche RH n'existe. */
+/* Vrai si le bot voit la personne sur le serveur Discord mais qu'elle n'y a plus AUCUN rôle de l'entreprise
+   (rôle retiré à son départ). Sa fiche RH peut rester « active » des jours : on ne l'affiche plus en public.
+   Prudence : sans relevé, ou si la personne est absente du relevé (parti du serveur, identifiant inconnu),
+   on ne conclut rien — comme alignerRolesBot, on ne suppose jamais. */
+function aQuitteDiscord(nom){
+  if(!ROLES_BOT) return false;
+  const n=normNom(nom);
+  const u=(S.users||[]).find(x=>normNom(x.user)===n);
+  const r=((S.sheets&&S.sheets.rh)||[]).find(x=>normNom(x.nom)===n);
+  const did=String((u&&u.did)||(r&&r.discord)||'').trim();
+  if(!did) return false;
+  const roles=ROLES_BOT[did];
+  if(!Array.isArray(roles)) return false;
+  return roleDiscordConnu(roles)===null;
+}
 function effectifActifSet(){
   const vus=new Set();
   ((S.sheets&&S.sheets.rh)||[]).forEach(x=>{
@@ -3003,12 +3020,13 @@ function statsData(){
        ci-dessus) — sinon quelqu'un qui est parti reste affiché indéfiniment,
        personne ne décochant jamais sa case après son départ. */
     equipe:Object.values(S.profils||{})
-      .filter(p=>p&&p.public&&p.nom&&effectifActifSet().has(normNom(p.nom)))
+      .filter(p=>p&&p.public&&p.nom&&effectifActifSet().has(normNom(p.nom))&&!aQuitteDiscord(p.nom))
       .map(p=>({nom:p.nom,titre:p.titre||profilTitreAuto(p.nom)||'',photo:photoOk(p.photo)||profilPhotoAuto(p.nom)||'',bio:p.bio||''}))
       .sort((a,b)=>bilanOrdGrade(a.titre)-bilanOrdGrade(b.titre)||String(a.nom).localeCompare(String(b.nom)))
   };
 }
 async function publishStats(){
+  try{ await alignerRolesBot(); }catch(e){}   // relevé des rôles à jour avant de décider qui s'affiche
   if(!RoxwoodGH.peutEcrire()){ toast('⚠️ Il faut un jeton d\'écriture — clique sur le voyant de synchro'); return; }
   const C=window.ROXWOOD_CFG||{};
   const api=`https://api.github.com/repos/${C.owner}/${C.repo}/contents/data/stats-public.json`;
