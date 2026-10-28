@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-28T10:33:06.051697+00:00",
+ "maj": "2026-10-28T10:35:12.812405+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1564950480658894869",
+   "t": "2026-10-28T10:34:29.963000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 418x Pétrole Raffiné pour 4180$ par Ana Fox. 2090$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 418,
+   "montant": 4180,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1564948464260092008",
    "t": "2026-10-28T10:26:29.216000+00:00",
@@ -92954,30 +92970,6 @@
     "itemid": "refinedoil",
     "jobid": "76",
     "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1563997387519823875-0",
-   "t": "2026-10-25T19:27:14.851000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 144x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1850.72, 6515.24, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1137\nplayerDiscord : 340880694203121664\nplayerName : JaiPasDeNom\nplayerCharacter : Ricardo Diaz\nplayerId : 331414\nitemId : refinedoil",
-   "nom": "Ricardo Diaz",
-   "quantite": 144,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1850.72, 6515.24, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "1137",
-    "playerdiscord": "340880694203121664",
-    "playername": "JaiPasDeNom",
-    "playercharacter": "Ricardo Diaz",
-    "playerid": "331414",
-    "itemid": "refinedoil"
    }
   }
  ]
