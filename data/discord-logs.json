@@ -1,11 +1,32 @@
 {
- "maj": "2026-10-28T21:05:28.875436+00:00",
+ "maj": "2026-10-28T21:07:27.715569+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1565109581615726774",
+   "t": "2026-10-28T21:06:42.587000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 3421\nplayerDiscord : 1454487521005408319\nplayerName : FuzzyCat4460\nplayerCharacter : Anis Wolkeur\nplayerId : 361261\nvehiclePlate : AY4705SJ\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Anis Wolkeur",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "3421",
+    "playerdiscord": "1454487521005408319",
+    "playername": "FuzzyCat4460",
+    "playercharacter": "Anis Wolkeur",
+    "playerid": "361261",
+    "vehicleplate": "AY4705SJ",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1565108365292736614-0",
    "t": "2026-10-28T21:01:52.593000+00:00",
@@ -93383,30 +93404,6 @@
    "texte": "Coffre\na retiré 151x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1848.16, 6498.00, 16.73\ntargetPosition : -1849.11, 6498.65, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3364\nplayerDiscord : 334423976182939648\nplayerName : MoodyCat2429\nplayerCharacter : Nikko Mount\nplayerId : 276376\nitemId : refinedoil",
    "nom": "Nikko Mount",
    "quantite": 151,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1848.16, 6498.00, 16.73",
-    "targetposition": "-1849.11, 6498.65, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "3364",
-    "playerdiscord": "334423976182939648",
-    "playername": "MoodyCat2429",
-    "playercharacter": "Nikko Mount",
-    "playerid": "276376",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1564360812255248492-4",
-   "t": "2026-10-26T19:31:22.060000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 49x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1848.16, 6498.00, 16.73\ntargetPosition : -1849.11, 6498.65, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3364\nplayerDiscord : 334423976182939648\nplayerName : MoodyCat2429\nplayerCharacter : Nikko Mount\nplayerId : 276376\nitemId : refinedoil",
-   "nom": "Nikko Mount",
-   "quantite": 49,
    "montant": null,
    "type": "coffre_retrait",
    "salon": "1245400913066066099",
