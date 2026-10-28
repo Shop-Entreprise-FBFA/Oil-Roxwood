@@ -17787,7 +17787,14 @@
     "ttc": 54000,
     "poids": 600,
     "statut": "payee",
-    "modifiee": 1793102597050
+    "modifiee": 1793102597050,
+    "envoi": {
+     "t": 1793200481750,
+     "par": "Diego Herrera",
+     "statut": "en_cours",
+     "ordre": 1793200482593,
+     "rapport": ""
+    }
    },
    {
     "num": 253180,
@@ -57587,11 +57594,11 @@
   }
  },
  "_cid": "itqw655nmgl",
- "_maj": 1793200469293,
- "_rev": "clbdvzw3p3q-mvs99gmt",
+ "_maj": 1793200481750,
+ "_rev": "1i13z29rx1c-mvs99nsb",
  "_majSec": {
   "fer": 1793123427218,
-  "fact": 1793200469293,
+  "fact": 1793200481750,
   "users": 1793199318373,
   "weeks": 1792976185966,
   "sheets": 1793198782437,
@@ -57611,7 +57618,7 @@
   "primesExtra": 1792704634769,
   "quotasComHist": 1792976185966,
   "profils": 1793132547984,
-  "_tables": 1793200469293,
+  "_tables": 1793200481732,
   "_permsFix1": 1792704634769,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792704634769,
@@ -59526,7 +59533,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-28T15:14:33.461Z",
+  "maj": "2026-10-28T15:14:42.731Z",
   "semaine": 44,
   "totalBarils": 219518,
   "ca": 1097590,
@@ -61295,6 +61302,49 @@
     "id": 1792976219245,
     "statut": "fait",
     "rapport": "Image d'eligibilite postee sur Discord."
+   },
+   {
+    "type": "facture_ticket",
+    "payload": {
+     "num": 253181,
+     "salon": "1479199890855825551",
+     "reedition": false,
+     "facture": {
+      "num": 253181,
+      "date": "2026-10-27",
+      "client": "Oil Roxwood",
+      "emetteur": "Emma Collins-rodriguez",
+      "postop": false,
+      "lignes": [
+       {
+        "ref": "CMD",
+        "qte": 300,
+        "tva": 0,
+        "desc": "bidons d'essence ",
+        "pu": 180,
+        "ht": 54000,
+        "ttc": 54000
+       }
+      ],
+      "offert": 0,
+      "ht": 54000,
+      "ttc": 54000,
+      "poids": 600,
+      "statut": "payee",
+      "modifiee": 1793102597050
+     },
+     "client": {
+      "nom": "Oil Roxwood",
+      "rib": "20076",
+      "tel": "986",
+      "adresse": "Roxwood",
+      "lastCmd": "2026-10-27",
+      "type": "entreprise",
+      "salon": "1479199890855825551"
+     },
+     "par": "Diego Herrera"
+    },
+    "id": 1793200482593
    }
   ],
   "oilroxwood_coffres": [
