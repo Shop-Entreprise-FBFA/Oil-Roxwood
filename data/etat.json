@@ -17817,7 +17817,14 @@
     "ht": 36000,
     "ttc": 36000,
     "poids": 400,
-    "statut": "payee"
+    "statut": "payee",
+    "envoi": {
+     "t": 1793200517143,
+     "par": "Diego Herrera",
+     "statut": "en_cours",
+     "ordre": 1793200517852,
+     "rapport": ""
+    }
    },
    {
     "num": 253179,
@@ -57594,11 +57601,11 @@
   }
  },
  "_cid": "itqw655nmgl",
- "_maj": 1793200481750,
- "_rev": "f9upo4yy8wq-mvs99q3m",
+ "_maj": 1793200517143,
+ "_rev": "7o1ss87m9yt-mvs9af5d",
  "_majSec": {
   "fer": 1793123427218,
-  "fact": 1793200481750,
+  "fact": 1793200517143,
   "users": 1793199318373,
   "weeks": 1792976185966,
   "sheets": 1793198782437,
@@ -57618,7 +57625,7 @@
   "primesExtra": 1792704634769,
   "quotasComHist": 1792976185966,
   "profils": 1793132547984,
-  "_tables": 1793200481732,
+  "_tables": 1793200517125,
   "_permsFix1": 1792704634769,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792704634769,
@@ -59533,7 +59540,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-28T15:14:45.730Z",
+  "maj": "2026-10-28T15:15:18.193Z",
   "semaine": 44,
   "totalBarils": 219518,
   "ca": 1097590,
@@ -61345,6 +61352,48 @@
      "par": "Diego Herrera"
     },
     "id": 1793200482593
+   },
+   {
+    "type": "facture_ticket",
+    "payload": {
+     "num": 253180,
+     "salon": "1479199890855825551",
+     "reedition": false,
+     "facture": {
+      "num": 253180,
+      "date": "2026-10-26",
+      "client": "Oil Roxwood",
+      "emetteur": "",
+      "postop": false,
+      "lignes": [
+       {
+        "ref": "CMD",
+        "qte": 200,
+        "tva": 0,
+        "pu": 180,
+        "ht": 36000,
+        "ttc": 36000,
+        "desc": "bidons d'essence "
+       }
+      ],
+      "offert": 0,
+      "ht": 36000,
+      "ttc": 36000,
+      "poids": 400,
+      "statut": "payee"
+     },
+     "client": {
+      "nom": "Oil Roxwood",
+      "rib": "20076",
+      "tel": "986",
+      "adresse": "Roxwood",
+      "lastCmd": "2026-10-27",
+      "type": "entreprise",
+      "salon": "1479199890855825551"
+     },
+     "par": "Diego Herrera"
+    },
+    "id": 1793200517852
    }
   ],
   "oilroxwood_coffres": [
