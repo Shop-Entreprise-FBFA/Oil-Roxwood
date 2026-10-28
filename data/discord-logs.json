@@ -1,11 +1,43 @@
 {
- "maj": "2026-10-27T23:59:04.913390+00:00",
+ "maj": "2026-10-28T00:01:13.594772+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1564790945042534534",
+   "t": "2026-10-28T00:00:33.708000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 108x Pétrole Raffiné pour 1080$ par Jeppy Xious. 540$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 108,
+   "montant": 1080,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1564790693191229641",
+   "t": "2026-10-27T23:59:33.662000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 750x Pétrole Raffiné pour 7500$ par Cillian Veselov. 3750$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 750,
+   "montant": 7500,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1564790185512800459",
    "t": "2026-10-27T23:57:32.622000+00:00",
@@ -93048,54 +93080,6 @@
     "playername": "Wiken",
     "playercharacter": "William Rodriguez-collins",
     "playerid": "46658",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1563985303533002818-1",
-   "t": "2026-10-25T18:39:13.804000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 126x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1815.92, 6565.85, 16.73\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1176\nplayerDiscord : 235844738656239616\nplayerName : Wiken\nplayerCharacter : William Rodriguez-collins\nplayerId : 46658\nitemId : refinedoil",
-   "nom": "William Rodriguez-collins",
-   "quantite": 126,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1815.92, 6565.85, 16.73",
-    "targetposition": "-1815.66, 6565.56, 15.98",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "1176",
-    "playerdiscord": "235844738656239616",
-    "playername": "Wiken",
-    "playercharacter": "William Rodriguez-collins",
-    "playerid": "46658",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1563985303533002818-2",
-   "t": "2026-10-25T18:39:13.804000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 96x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1842.54, 6521.29, 16.73\ntargetPosition : -1842.58, 6521.16, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1164\nplayerDiscord : 1053366471574687844\nplayerName : Emma Collins-Rodriguez\nplayerCharacter : Emma Collins-rodriguez\nplayerId : 227799\nitemId : refinedoil",
-   "nom": "Emma Collins-rodriguez",
-   "quantite": 96,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1842.54, 6521.29, 16.73",
-    "targetposition": "-1842.58, 6521.16, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "1164",
-    "playerdiscord": "1053366471574687844",
-    "playername": "Emma Collins-Rodriguez",
-    "playercharacter": "Emma Collins-rodriguez",
-    "playerid": "227799",
     "itemid": "refinedoil"
    }
   }
