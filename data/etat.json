@@ -17273,7 +17273,14 @@
     "ht": 135000,
     "ttc": 135000,
     "poids": 1500,
-    "statut": "attente"
+    "statut": "attente",
+    "envoi": {
+     "t": 1793206878324,
+     "par": "Diego Herrera",
+     "statut": "en_cours",
+     "ordre": 1793206879341,
+     "rapport": ""
+    }
    },
    {
     "num": 253186,
@@ -57227,11 +57234,11 @@
   }
  },
  "_cid": "itqw655nmgl",
- "_maj": 1793206817807,
- "_rev": "87g359jaspv-mvsd1je0",
+ "_maj": 1793206878324,
+ "_rev": "i432qig94hs-mvsd2roj",
  "_majSec": {
   "fer": 1793123427218,
-  "fact": 1793202171144,
+  "fact": 1793206878324,
   "users": 1793199318373,
   "weeks": 1792976185966,
   "sheets": 1793198782437,
@@ -57251,7 +57258,7 @@
   "primesExtra": 1792704634769,
   "quotasComHist": 1792976185966,
   "profils": 1793132547984,
-  "_tables": 1793206817807,
+  "_tables": 1793206878299,
   "_permsFix1": 1792704634769,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792704634769,
@@ -59166,7 +59173,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-28T17:00:22.248Z",
+  "maj": "2026-10-28T17:01:19.651Z",
   "semaine": 44,
   "totalBarils": 219518,
   "ca": 1097590,
@@ -61065,6 +61072,48 @@
     "id": 1793200713667,
     "statut": "fait",
     "rapport": "Facture n°253181 postee dans le salon 1496967713992478780."
+   },
+   {
+    "type": "facture_ticket",
+    "payload": {
+     "num": 253187,
+     "salon": "1553822095018827909",
+     "reedition": false,
+     "facture": {
+      "num": 253187,
+      "date": "2026-10-28",
+      "client": "Die Erben",
+      "emetteur": "Julio Collins",
+      "postop": false,
+      "lignes": [
+       {
+        "ref": "CMD",
+        "qte": 750,
+        "tva": 0,
+        "pu": 180,
+        "ht": 135000,
+        "ttc": 135000,
+        "desc": "bidons d'essence "
+       }
+      ],
+      "offert": 0,
+      "ht": 135000,
+      "ttc": 135000,
+      "poids": 1500,
+      "statut": "attente"
+     },
+     "client": {
+      "nom": "Die Erben",
+      "adresse": "Roxwood",
+      "tel": "555 097 374",
+      "rib": "",
+      "lastCmd": "2026-10-28",
+      "type": "famille",
+      "salon": "1553822095018827909"
+     },
+     "par": "Diego Herrera"
+    },
+    "id": 1793206879341
    }
   ],
   "oilroxwood_coffres": [
