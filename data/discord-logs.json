@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-28T14:45:10.046107+00:00",
+ "maj": "2026-10-28T14:47:07.236881+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1565013902109179906",
+   "t": "2026-10-28T14:46:30.815000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 542x Pétrole Raffiné pour 5420$ par Alexander Bart. 2710$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 542,
+   "montant": 5420,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1565012637446832207",
    "t": "2026-10-28T14:41:29.296000+00:00",
@@ -92997,30 +93013,6 @@
    "champs": {
     "position": "-1845.55, 6515.16, 16.73",
     "targetposition": "-1845.91, 6514.70, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "1163",
-    "playerdiscord": "826526979204841482",
-    "playername": "Orion",
-    "playercharacter": "Diego Herrera",
-    "playerid": "231487",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1564060544997130260-9",
-   "t": "2026-10-25T23:38:12.767000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 123x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1845.15, 6515.96, 16.73\ntargetPosition : -1844.79, 6516.31, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1163\nplayerDiscord : 826526979204841482\nplayerName : Orion\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : refinedoil",
-   "nom": "Diego Herrera",
-   "quantite": 123,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1845.15, 6515.96, 16.73",
-    "targetposition": "-1844.79, 6516.31, 15.75",
     "jobid": "76",
     "jobname": "Oil RoxWood",
     "playernetid": "1163",
