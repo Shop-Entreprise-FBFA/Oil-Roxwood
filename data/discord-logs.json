@@ -1,11 +1,59 @@
 {
- "maj": "2026-10-28T10:49:12.805264+00:00",
+ "maj": "2026-10-28T10:51:09.484399+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1564954497858666528-0",
+   "t": "2026-10-28T10:50:27.738000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 64x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1847.88, 6498.90, 16.73\ntargetPosition : -1849.11, 6498.65, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7140\nplayerDiscord : 948542221429379112\nplayerName : SleepyMoth4273\nplayerCharacter : Stella Collins\nplayerId : 232050\nitemId : refinedoil",
+   "nom": "Stella Collins",
+   "quantite": 64,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1847.88, 6498.90, 16.73",
+    "targetposition": "-1849.11, 6498.65, 15.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "7140",
+    "playerdiscord": "948542221429379112",
+    "playername": "SleepyMoth4273",
+    "playercharacter": "Stella Collins",
+    "playerid": "232050",
+    "itemid": "refinedoil"
+   }
+  },
+  {
+   "id": "1564954497858666528-1",
+   "t": "2026-10-28T10:50:27.738000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\na retiré 64x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -1847.88, 6498.90, 16.73\ntargetPosition : -1849.11, 6498.65, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7140\nplayerDiscord : 948542221429379112\nplayerName : SleepyMoth4273\nplayerCharacter : Stella Collins\nplayerId : 232050\nitemId : oil",
+   "nom": "Stella Collins",
+   "quantite": 64,
+   "montant": null,
+   "type": "coffre_retrait",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1847.88, 6498.90, 16.73",
+    "targetposition": "-1849.11, 6498.65, 15.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "7140",
+    "playerdiscord": "948542221429379112",
+    "playername": "SleepyMoth4273",
+    "playercharacter": "Stella Collins",
+    "playerid": "232050",
+    "itemid": "oil"
+   }
+  },
   {
    "id": "1564953746297852008-0",
    "t": "2026-10-28T10:47:28.552000+00:00",
@@ -92951,48 +92999,6 @@
    "nom": "Bjorn Frost",
    "quantite": 147,
    "montant": 735,
-   "type": "achat_fer",
-   "salon": "1247565070423167100",
-   "champs": {
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "3717",
-    "playerdiscord": "1096933851659517975",
-    "playername": "guiyotine1",
-    "playercharacter": "Bjorn Frost",
-    "playerid": "361708",
-    "itemid": "iron"
-   }
-  },
-  {
-   "id": "1564006769100066954-4",
-   "t": "2026-10-25T20:04:31.594000+00:00",
-   "auteur": "Logs - Achat fer",
-   "texte": "Achat fer\na acheté 112x fer pour 560$\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3717\nplayerDiscord : 1096933851659517975\nplayerName : guiyotine1\nplayerCharacter : Bjorn Frost\nplayerId : 361708\nitemId : iron",
-   "nom": "Bjorn Frost",
-   "quantite": 112,
-   "montant": 560,
-   "type": "achat_fer",
-   "salon": "1247565070423167100",
-   "champs": {
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "3717",
-    "playerdiscord": "1096933851659517975",
-    "playername": "guiyotine1",
-    "playercharacter": "Bjorn Frost",
-    "playerid": "361708",
-    "itemid": "iron"
-   }
-  },
-  {
-   "id": "1564006769100066954-5",
-   "t": "2026-10-25T20:04:31.594000+00:00",
-   "auteur": "Logs - Achat fer",
-   "texte": "Achat fer\na acheté 1x fer pour 5$\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3717\nplayerDiscord : 1096933851659517975\nplayerName : guiyotine1\nplayerCharacter : Bjorn Frost\nplayerId : 361708\nitemId : iron",
-   "nom": "Bjorn Frost",
-   "quantite": 1,
-   "montant": 5,
    "type": "achat_fer",
    "salon": "1247565070423167100",
    "champs": {
