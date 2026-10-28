@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-28T08:31:05.814169+00:00",
+ "maj": "2026-10-28T08:33:09.268931+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1564919513491701812",
+   "t": "2026-10-28T08:31:26.815000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 490x Pétrole Raffiné pour 4900$ par Clara Soules. 2450$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 490,
+   "montant": 4900,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1564917004068978770-0",
    "t": "2026-10-28T08:21:28.522000+00:00",
@@ -92966,30 +92982,6 @@
     "playercharacter": "William Rodriguez-collins",
     "playerid": "46658",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1563991092737876006-0",
-   "t": "2026-10-25T19:02:14.058000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 37x Bidon d'essence dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1812.96, 6574.76, 16.90\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1164\nplayerDiscord : 1053366471574687844\nplayerName : Emma Collins-Rodriguez\nplayerCharacter : Emma Collins-rodriguez\nplayerId : 227799\nitemId : weapon_petrolcan",
-   "nom": "Emma Collins-rodriguez",
-   "quantite": 37,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1812.96, 6574.76, 16.90",
-    "targetposition": "-1815.66, 6565.56, 15.98",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "1164",
-    "playerdiscord": "1053366471574687844",
-    "playername": "Emma Collins-Rodriguez",
-    "playercharacter": "Emma Collins-rodriguez",
-    "playerid": "227799",
-    "itemid": "weapon_petrolcan"
    }
   }
  ]
