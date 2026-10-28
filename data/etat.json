@@ -14632,6 +14632,13 @@
     "client": "Employé — Elliot Adkins ⚡",
     "quantite": 35,
     "qui": "Diego Herrera"
+   },
+   {
+    "date": "2026-10-28",
+    "client": "Silver-Luna",
+    "quantite": 150,
+    "qui": "Julio Collins",
+    "fact": 253186
    }
   ],
   "collection": [
@@ -16145,7 +16152,7 @@
     "adresse": "Cayo",
     "tel": "555837844",
     "rib": "",
-    "lastCmd": "2026-10-03",
+    "lastCmd": "2026-10-28",
     "type": "famille"
    },
    {
@@ -17610,8 +17617,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253186,
+  "compteur": 253187,
   "factures": [
+   {
+    "num": 253186,
+    "date": "2026-10-28",
+    "client": "Silver-Luna",
+    "emetteur": "Julio Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 150,
+      "tva": 0,
+      "pu": 180,
+      "ht": 27000,
+      "ttc": 27000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 27000,
+    "ttc": 27000,
+    "poids": 300,
+    "statut": "attente"
+   },
    {
     "num": 253185,
     "date": "2026-10-27",
@@ -57526,14 +57556,14 @@
   }
  },
  "_cid": "gs5mkedbptf",
- "_maj": 1793198488148,
- "_rev": "why4ou18b2g-mvs848o6",
+ "_maj": 1793198545042,
+ "_rev": "h1fisuct0uc-mvs84gef",
  "_majSec": {
   "fer": 1793123427218,
-  "fact": 1793133757338,
+  "fact": 1793198545034,
   "users": 1793198398301,
   "weeks": 1792976185966,
-  "sheets": 1793198216992,
+  "sheets": 1793198545034,
   "_qcFix1": 1792704634769,
   "_wkFix1": 1792704634769,
   "journal": 1793198398301,
@@ -57550,7 +57580,7 @@
   "primesExtra": 1792704634769,
   "quotasComHist": 1792976185966,
   "profils": 1793132547984,
-  "_tables": 1793198488148,
+  "_tables": 1793198545034,
   "_permsFix1": 1792704634769,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792704634769,
@@ -59465,13 +59495,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-28T14:42:30.246Z",
+  "maj": "2026-10-28T14:42:40.263Z",
   "semaine": 44,
   "totalBarils": 219518,
   "ca": 1097590,
   "objectif": 375000,
   "effectif": 122,
-  "clientsServis": 170,
+  "clientsServis": 171,
   "theme": "",
   "top3": [
    {
