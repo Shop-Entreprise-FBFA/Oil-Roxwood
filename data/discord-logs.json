@@ -1,11 +1,32 @@
 {
- "maj": "2026-10-28T09:25:15.601890+00:00",
+ "maj": "2026-10-28T09:27:09.574127+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1564933353692471379",
+   "t": "2026-10-28T09:26:26.576000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 6904\nplayerDiscord : 439722284760956928\nplayerName : Ice\nplayerCharacter : Ana Fox\nplayerId : 244445\nvehiclePlate : AY4705SJ\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Ana Fox",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "6904",
+    "playerdiscord": "439722284760956928",
+    "playername": "Ice",
+    "playercharacter": "Ana Fox",
+    "playerid": "244445",
+    "vehicleplate": "AY4705SJ",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1564929077041823925",
    "t": "2026-10-28T09:09:26.943000+00:00",
@@ -92960,22 +92981,6 @@
     "playercharacter": "Xavier Collins",
     "playerid": "292769",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1563992666495123520",
-   "t": "2026-10-25T19:08:29.271000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 124x Pétrole Raffiné pour 1240$ par Many Carlos. 620$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 124,
-   "montant": 1240,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
