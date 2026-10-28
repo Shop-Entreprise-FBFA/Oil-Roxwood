@@ -244,3 +244,10 @@ html.halloween #app::after,html.noel #app::after{top:calc(var(--refonte-h) + 10p
 .cli-types button.on.organisation{background:rgba(155,107,224,.2);border-color:#9b6be0;color:#c9a9f2}
 .cli-types button.on.famille{background:rgba(79,169,123,.18);border-color:#4fa97b;color:#7fd1a4}
 .cli-card[data-t="entreprise"]{border-left:3px solid #5aa0ff}.cli-card[data-t="organisation"]{border-left:3px solid #9b6be0}.cli-card[data-t="famille"]{border-left:3px solid #4fa97b}
+
+/* ---- Envoi des factures au ticket ---- */
+.hist-envoi{display:block;margin-top:2px;color:var(--muted)}
+.hist-envoi.ok{color:#7fd1a4}.hist-envoi.ko{color:#ff8a84}
+.fact-ticket{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin:0 0 14px;padding:10px 14px;border-radius:10px;background:rgba(88,101,242,.1);border:1px solid rgba(88,101,242,.35);font-size:.88rem;cursor:pointer}
+.fact-ticket small{color:var(--muted)}
+.hist-act{flex-wrap:wrap;justify-content:flex-end}

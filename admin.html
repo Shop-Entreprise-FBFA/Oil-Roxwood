@@ -32,7 +32,7 @@ window.ROXWOOD_CFG = {
 <script src="assets/roxwood-github.js?v=C-119"></script>
 <link rel="stylesheet" href="assets/roxwood-core.css?v=C-119">
 <link rel="stylesheet" href="assets/roxwood-app.css?v=C-119">
-<link rel="stylesheet" href="assets/roxwood-refonte.css?v=R-19">
+<link rel="stylesheet" href="assets/roxwood-refonte.css?v=R-20">
 </head>
 <body>
 <div id="noelNeige" aria-hidden="true"></div>
@@ -4121,6 +4121,7 @@ function fNew(){
     </span>
     ${FD.postop?'<span style="margin-left:auto;color:#4A9D6F;font-weight:800;font-size:1rem;white-space:nowrap">✔ Activée</span>':'<span style="margin-left:auto;color:var(--muted);font-size:.85rem;white-space:nowrap">cocher pour activer</span>'}
   </label>
+  ${FD._modifie==null?`<label class="fact-ticket"><input type="checkbox" ${FACT_TICKET?'checked':''} onchange="FACT_TICKET=this.checked"> 📨 Envoyer aussi dans le ticket Discord du client <small>(si son ID salon est renseigné dans la Base clients)</small></label>`:''}
   <div style="display:flex;gap:12px;flex-wrap:wrap">
     <button class="btn btn-gold" onclick="saveFact()">${FD._modifie!=null?`💾 Enregistrer les modifications (n°${FD._modifie})`:'💾 Enregistrer la facture'}</button>
     <button class="btn btn-ghost" onclick="printSmart()">🖨️ Imprimer / PDF</button>
@@ -4288,7 +4289,9 @@ function saveFact(){
     sendLog('🧾 Facture n°'+FD.num, `Client : **${FD.client}**\nTotal TTC : **${money(factTotaux().ttc)}**\nÉmise par : ${FD.emetteur||'—'}`, 0xa78bfa);
   }
   const numFait=FD.num, etaitEdition=edition;
+  const aEnvoyer=!edition&&FACT_TICKET&&!!salonDe(FD.client);   // nouvelle facture : envoi auto ; une modification se renvoie à la main (↻ Rééditer)
   newDraft(); save(); sbPushNow();
+  if(aEnvoyer) setTimeout(()=>factEnvoyerTicket(numFait),500);
   if(etaitEdition){ factTab='hist'; factures(); toast(`✎ Facture n°${numFait} mise à jour`+(ventesOrphelines?' — vérifie les Ventes de la semaine':'')); }
   else { factures(); toast('💾 Facture enregistrée'); }
 }
@@ -4312,15 +4315,70 @@ function histLigne(i){
   const f=S.fact.factures[i], payee=f.statut==='payee';
   return `<div class="hist-fact ${payee?'payee':'attente'}">
     <div class="hist-num"><b>n°${f.num}</b><span>${frDate(f.date)}</span></div>
-    <div class="hist-cli"><span class="hist-lien" tabindex="0" role="button" onkeydown="actKey(event)" onclick="histOpen(decodeURIComponent('${encodeURIComponent(f.client||'')}'))">${esc(f.client||'—')}</span>${f.postop?' <span title="Livraison Post OP">🚚</span>':''}<small>${esc(f.emetteur||'—')}</small></div>
+    <div class="hist-cli"><span class="hist-lien" tabindex="0" role="button" onkeydown="actKey(event)" onclick="histOpen(decodeURIComponent('${encodeURIComponent(f.client||'')}'))">${esc(f.client||'—')}</span>${f.postop?' <span title="Livraison Post OP">🚚</span>':''}<small>${esc(f.emetteur||'—')}</small>${histEnvoiEtat(f)}</div>
     <div class="hist-ttc">${money(f.ttc)}</div>
     <span class="badge ${payee?'bg3':'bg0'}" style="cursor:pointer" tabindex="0" role="button" onkeydown="actKey(event)" title="Cliquer pour changer" onclick="togglePay(${i})">${payee?'✔ Payée':'⏳ En attente'}</span>
     <div class="hist-act">
+      ${salonDe(f.client)
+        ?`<button class="btn btn-sm ${f.envoi?'btn-ghost':'btn-gold'}" ${f.envoi&&f.envoi.statut==='en_cours'?'disabled':''} onclick="factEnvoyerTicket(${f.num})" title="${f.envoi?'Renvoie la version actuelle de la facture dans le ticket':'Envoie la facture en PNG dans le ticket Discord du client'}">${f.envoi?'↻ Rééditer':'📨 Envoyer'}</button>`
+        :`<button class="btn btn-sm btn-ghost" disabled title="Renseigne l'ID du salon ticket dans la Base clients">📨</button>`}
       <button class="btn btn-sm btn-ghost" onclick="closeModal();fEdit(${f.num})" title="Modifier cette facture">✎</button>
       <button class="btn btn-sm btn-ghost" onclick="printFact(S.fact.factures[${i}])" title="Imprimer">🖨️</button>
       <button class="btn btn-sm btn-red" title="Supprimer" onclick="if(confirm('Supprimer la facture n°${f.num} ?')){jlog('Suppression de la facture n°${f.num}');S.fact.factures.splice(${i},1);save();fHist();}">✕</button>
     </div>
   </div>`;
+}
+/* ---- Envoi de la facture au ticket Discord du client ----
+   Le site est statique : il ne parle pas à Discord lui-même. Il dépose un « ordre » (type facture_ticket) dans la
+   boîte aux lettres du bot — comme pour l'éligibilité ou les avertissements — avec la facture, le client et l'ID du
+   salon (champ « ID du salon ticket » de la Base clients). Le bot fabrique le PNG (même rendu que /facture) et le
+   poste dans le salon. L'état d'envoi est gardé sur la facture : f.envoi = {t, par, statut, rapport}. */
+let FACT_TICKET=true;      // case « envoyer aussi au ticket » du formulaire
+function salonDe(nom){ const c=cli(nom); const s=String((c&&c.salon)||'').replace(/\D/g,''); return /^\d{15,25}$/.test(s)?s:''; }
+async function factEnvoyerTicket(num){
+  const trouve=()=>S.fact.factures.find(x=>x.num===num);
+  let f=trouve(); if(!f) return toast('⚠️ Facture introuvable');
+  const salon=salonDe(f.client);
+  if(!salon) return toast('⚠️ Ce client n\'a pas d\'ID salon — renseigne-le dans la Base clients');
+  if(!SYNC.cli) return toast('⚠️ Synchro non connectée — recharge la page et réessaie');
+  if(!RoxwoodGH.peutEcrire()) return toast('⚠️ Lecture seule — ajoute ton jeton d\'écriture pour envoyer au bot');
+  if(f.envoi&&f.envoi.statut==='en_cours') return toast('⏳ Cette facture est déjà en cours d\'envoi');
+  const reedition=!!f.envoi, cu=currentUser(), par=(cu&&cu.user)||'dashboard';
+  const {envoi,...facture}=f, client={...(cli(f.client)||{})};
+  toast(`📤 ${reedition?'Réédition':'Envoi'} de la facture n°${num} au ticket…`);
+  const {data,error}=await SYNC.cli.from('oilroxwood_bot_ordres')
+    .insert({type:'facture_ticket',payload:{num,salon,reedition,facture,client,par}}).select('id').single();
+  if(error) return toast('⚠️ Échec de l\'envoi : '+error.message);
+  f.envoi={t:nowSrv(),par,statut:'en_cours',ordre:data.id,rapport:''};
+  save(); await sbPushNow();                 // l'ordre doit être DANS le dépôt, pas seulement en mémoire
+  const rafraichir=()=>{ try{ if(VIEW==='factures'&&factTab==='hist') fHist(); }catch(e){} };
+  rafraichir();
+  const id=data.id, limite=Date.now()+180000;
+  while(Date.now()<limite){
+    await new Promise(r=>setTimeout(r,8000));
+    let o=null;
+    try{
+      const rem=(await RoxwoodGH.lireAvecSha()).data;   // l'API, jamais le cache de raw.githubusercontent
+      o=((rem&&rem._tables&&rem._tables.oilroxwood_bot_ordres)||[]).find(x=>x&&x.id===id)||null;
+    }catch(e){ continue; }
+    if(!o||(o.statut||'en_attente')==='en_attente') continue;
+    f=trouve(); if(!f) return;
+    f.envoi={...(f.envoi||{}),statut:o.statut==='fait'?'envoye':'erreur',rapport:o.rapport||'',fin:nowSrv()};
+    save(); sbPushNow(); rafraichir();
+    return o.statut==='fait'
+      ?toast(`✅ Facture n°${num} ${reedition?'rééditée et renvoyée':'envoyée'} dans le ticket`)
+      :toast('⚠️ Le bot n\'a pas pu l\'envoyer : '+(o.rapport||'sans détail'),9000);
+  }
+  f=trouve(); if(f){ f.envoi={...(f.envoi||{}),statut:'attente'}; save(); sbPushNow(); rafraichir(); }
+  toast('⏳ Pas de réponse du bot après 3 min — il est sans doute éteint, il enverra la facture à son réveil',9000);
+}
+function histEnvoiEtat(f){
+  const e=f.envoi; if(!e) return '';
+  const d=e.t?new Date(e.t).toLocaleString('fr-FR',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'}):'';
+  if(e.statut==='envoye') return `<small class="hist-envoi ok">📨 Envoyée au ticket · ${d}${e.par?' · '+esc(e.par):''}</small>`;
+  if(e.statut==='erreur') return `<small class="hist-envoi ko" title="${esc(e.rapport||'')}">⚠ Envoi échoué · ${esc(String(e.rapport||'').slice(0,60))}</small>`;
+  if(e.statut==='attente') return '<small class="hist-envoi">⏳ En attente du bot</small>';
+  return '<small class="hist-envoi">⏳ Envoi en cours…</small>';
 }
 function histOpen(nom){ HIST_CLI=nom; histModal(nom); }
 function histModal(nom){
@@ -4445,6 +4503,7 @@ function fClients(){
     </div>
     <div class="cli-types" role="group" aria-label="Catégorie du client">${CLI_TYPES.map(([k,l])=>`<button type="button" class="${c.type===k?'on '+k:''}" onclick="cliSetType(${i},'${k}')">${l}</button>`).join('')}</div>
     ${champ(i,'adresse','📍 Adresse','Adresse')}
+    ${champ(i,'salon','💬 ID du salon ticket (Discord)','ex. 1246584841785446480')}
     <div class="cli-duo">${champ(i,'tel','📞 Téléphone','Téléphone')}${champ(i,'rib','🏦 RIB','RIB')}</div>
     ${c.lastCmd?`<div class="cli-pied">Dernière commande · ${frDate(c.lastCmd)}</div>`:''}
   </div>`).join('')}
