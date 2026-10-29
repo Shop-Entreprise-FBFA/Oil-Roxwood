@@ -6,45 +6,127 @@
 <meta name="robots" content="noindex">
 <title>Facture — Oil Roxwood</title>
 <!--
-  PAGE-GABARIT POUR LE BOT (commande /facture sur Discord).
-  Le bot lit la facture dans la base, l'encode en base64 et ouvre :
-      facture.html#<base64 de {"f": {...facture}, "c": {...client}}>
-  puis imprime la page en PDF (Puppeteer page.pdf) et la poste sur Discord.
-  Aucune donnée n'est stockée ici : la page ne fait que dessiner ce qu'on
-  lui donne. Sans données (#), elle affiche une explication.
+  PAGE-GABARIT DE LA FACTURE — une seule source pour :
+    · le bot Discord  (commande /facture et envoi dans le ticket) : il ouvre facture.html#<base64url de {"f": facture, "c": client}>
+      puis en fait une image (PNG) ;
+    · le dashboard    (bouton 🖨️) : il ouvre facture.html?imprimer=1#<même charge> ; la page lance l'impression d'elle-même.
+  Aucune donnée n'est stockée ici : la page ne fait que dessiner ce qu'on lui donne. Sans données (#), elle explique à quoi elle sert.
+  Le bot attend l'apparition de #pret (polices et images chargées) avant de la photographier.
 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Cinzel:wght@600;700;800&family=Great+Vibes&display=swap" rel="stylesheet">
 <style>
-  body{font-family:'Segoe UI',system-ui,sans-serif;color:#111;background:#fff;margin:0}
-  .inv{max-width:760px;margin:0 auto;padding:40px}
-  .inv-head{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:3px solid #E8622C;padding-bottom:18px}
-  h1{font-size:1.6rem;color:#1b2739;margin:0}
-  h1 b{color:#c4841a}
-  .co{font-size:.82rem;color:#444;line-height:1.6}
-  .inv-num{text-align:right;font-size:.9rem}
-  .inv-num .n{font-size:1.3rem;font-weight:800;color:#c4841a}
-  .inv-client{margin:24px 0;display:flex;justify-content:flex-end}
-  .inv-client div{background:#f5f6f8;border-radius:8px;padding:14px 20px;font-size:.88rem;line-height:1.7;min-width:240px}
-  table{width:100%;border-collapse:collapse;font-size:.85rem;margin:10px 0 20px}
-  th{background:#1b2739;color:#fff;padding:9px 10px;text-align:left;font-size:.75rem;letter-spacing:1px;text-transform:uppercase;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-  td{padding:8px 10px;border-bottom:1px solid #e3e5e9;color:#222}
-  .tots{display:flex;justify-content:flex-end}
-  .tots table{width:auto;min-width:300px}
-  .tots td{border:none;padding:5px 10px}
-  .tots tr:last-child td{border-top:2px solid #1b2739;font-weight:800;font-size:1rem;color:#c4841a}
-  .foot{margin-top:34px;display:flex;justify-content:space-between;font-size:.78rem;color:#555}
-  .sig{text-align:center}
-  .sig .script{font-family:'Segoe Script','Brush Script MT','Lucida Handwriting',cursive;font-size:1.6rem;color:#1b2739;display:inline-block;transform:rotate(-3deg);margin-top:14px}
-  .sig .line{margin-top:6px;border-top:1px solid #999;padding-top:6px;min-width:190px}
-  .legal{margin-top:26px;padding-top:12px;border-top:1px solid #e3e5e9;font-size:.68rem;color:#8a94a3;text-align:center}
-  .vide{max-width:560px;margin:80px auto;font-size:.95rem;color:#444;line-height:1.8;padding:0 20px}
-  @media print{ @page{margin:12mm} }
+  :root{
+    --or:#e8b04a; --or-clair:#f9d98a; --or-fonce:#b8802a; --texte:#f4ecdd; --doux:#bdb3a2;
+    --or-metal:linear-gradient(180deg,#fbe3a0 0%,#f0bd55 38%,#d8a23a 70%,#b8802a 100%);
+    --fond:#060504; --carte:#0e0b07;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--fond);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  body{font-family:'Montserrat','Segoe UI',system-ui,sans-serif;color:var(--texte)}
+
+  .inv{position:relative;width:860px;min-height:1290px;margin:0 auto;display:flex;flex-direction:column;overflow:hidden;
+    background:radial-gradient(90% 40% at 70% 36%,#1d140a 0%,transparent 70%),linear-gradient(180deg,#0a0805 0%,#060504 50%,#090705 100%)}
+
+  /* ---------- bandeau du haut ---------- */
+  .haut{position:relative;height:376px;flex:none;overflow:hidden;border-bottom:2px solid var(--or-fonce)}
+  .haut .scene{position:absolute;right:0;top:0;height:100%;width:72%;object-fit:cover;object-position:60% 100%}
+  .haut::before{content:"";position:absolute;inset:0;z-index:1;
+    background:linear-gradient(90deg,#060504 0%,#060504 30%,rgba(6,5,4,.86) 44%,rgba(6,5,4,0) 70%),linear-gradient(0deg,rgba(6,5,4,.55),rgba(6,5,4,0) 40%)}
+  .coin{position:absolute;z-index:3;top:0;left:0;width:170px;height:120px;background:var(--or-metal);clip-path:polygon(0 0,100% 0,0 100%);opacity:.95}
+  .coin::after{content:"";position:absolute;inset:0;background:#060504;clip-path:polygon(0 0,86% 0,0 86%);opacity:.0}
+  .logo-grand{position:absolute;z-index:3;left:46px;top:22px;width:322px;filter:drop-shadow(0 8px 24px rgba(0,0,0,.7))}
+  .baseline{position:absolute;z-index:3;left:46px;top:336px;width:322px;text-align:center;font-size:10.5px;letter-spacing:.34em;text-transform:uppercase;color:var(--or)}
+  .baseline small{display:block;margin-top:5px;font-size:9px;letter-spacing:.3em;color:var(--doux)}
+  .logo-reservoir{position:absolute;z-index:2;right:62px;top:164px;width:150px;opacity:.55;filter:drop-shadow(0 4px 14px rgba(0,0,0,.6))}
+  .slogan{position:absolute;z-index:3;right:34px;top:26px;font-size:11px;font-weight:500;letter-spacing:.42em;line-height:1.95;text-transform:uppercase;color:#f3e4c4;text-align:left}
+  .slogan::after{content:"";display:block;width:100px;height:2px;margin-top:8px;background:var(--or-metal)}
+  .diag{position:absolute;z-index:3;right:-40px;bottom:-1px;width:330px;height:60px;
+    background:linear-gradient(135deg,transparent 0 38%,var(--or) 38% 43%,transparent 43% 52%,var(--or-fonce) 52% 56%,transparent 56%)}
+
+  /* ---------- titre + coordonnées ---------- */
+  .titre{display:flex;justify-content:space-between;align-items:center;padding:26px 46px 4px}
+  .titre h1{margin:0;font-size:64px;line-height:1;font-weight:900;letter-spacing:.015em;color:#fff;text-transform:uppercase}
+  .titre .num{margin-top:10px;font-size:34px;font-weight:800;letter-spacing:.05em;color:var(--or)}
+  .titre .date{margin-top:6px;font-size:17px;color:var(--texte)}
+  .coords{border-left:1px solid rgba(232,176,74,.45);padding-left:30px;display:grid;gap:15px;min-width:290px}
+  .coords div{display:flex;align-items:center;gap:16px;font-size:15px;line-height:1.35}
+  .ico{flex:none;width:30px;height:30px;stroke:var(--or);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+
+  /* ---------- facturé à ---------- */
+  .client{margin:18px 38px 0;display:flex;align-items:center;gap:22px;padding:14px 26px;border-radius:16px;
+    border:1.5px solid var(--or);background:linear-gradient(135deg,#120e08,#0a0805)}
+  .avatar{flex:none;width:62px;height:62px;border-radius:50%;background:var(--or-metal);display:grid;place-items:center}
+  .avatar svg{width:38px;height:38px;fill:#1a1206}
+  .client .sep{width:1px;align-self:stretch;background:rgba(232,176,74,.4)}
+  .client .qui{display:grid;gap:3px;font-size:15px;color:var(--texte)}
+  .client .qui small{font-size:12.5px;font-weight:800;letter-spacing:.08em;color:var(--or);text-transform:uppercase}
+  .client .qui b{font-size:21px;font-weight:700;color:#fff}
+  .client .qui span{color:var(--doux);font-size:13.5px}
+
+  /* ---------- tableau ---------- */
+  .tab{margin:20px 38px 0;border-radius:12px;overflow:hidden;border:1px solid var(--or-fonce)}
+  table{width:100%;border-collapse:collapse;font-size:14.5px}
+  thead th{background:var(--or-metal);color:#2a1a06;padding:12px 10px;text-align:center;font-size:13px;font-weight:800;letter-spacing:.03em;text-transform:uppercase}
+  tbody td{background:#fff;color:#1e1a14;padding:13px 10px;text-align:center;border-left:1px solid #e6dcc8}
+  tbody td:first-child{border-left:0}
+  tbody td.ttc{font-weight:800;color:#c4811a;font-size:17px}
+  tbody tr+tr td{border-top:1px solid #e6dcc8}
+  tbody td.desc{text-align:center}
+
+  /* ---------- totaux + décor ---------- */
+  .mid{display:flex;gap:0;margin:20px 38px 0;align-items:stretch;min-height:200px}
+  .deco{position:relative;flex:1;border-radius:14px 0 0 14px;overflow:hidden}
+  .deco img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:35% 100%;filter:grayscale(1) contrast(1.2) brightness(1.15);transform:scaleX(-1)}
+  .deco::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,5,4,0),#060504 97%),linear-gradient(0deg,rgba(6,5,4,0),rgba(6,5,4,.45))}
+  .tot{width:468px;flex:none;border:1.5px solid var(--or);border-radius:16px;overflow:hidden;background:linear-gradient(145deg,#120e08,#0a0805);align-self:flex-start;position:relative;z-index:2;box-shadow:0 10px 40px rgba(0,0,0,.6)}
+  .tot .l{display:flex;justify-content:space-between;align-items:center;padding:13px 24px;font-size:16px;border-bottom:1px solid rgba(232,176,74,.35)}
+  .tot .l span:last-child{font-weight:500}
+  .tot .ttc{display:flex;justify-content:space-between;align-items:center;padding:16px 24px;background:var(--or-metal);color:#1a1206;border-bottom:0}
+  .tot .ttc span:first-child{font-size:18px;font-weight:700}
+  .tot .ttc span:last-child{font-size:30px;font-weight:900}
+
+  .postop{margin:22px 38px 0;display:flex;align-items:center;gap:16px;padding:14px 22px;border-radius:12px;border:1px solid var(--or-fonce);background:#120e08;font-size:14px}
+  .postop img{height:44px}
+  .postop small{display:block;margin-top:2px;color:var(--doux);font-size:12px}
+
+  /* ---------- infos + signature ---------- */
+  .infos{margin:auto 38px 0;padding-top:24px;display:flex;align-items:stretch}
+  .info{flex:1;display:flex;gap:11px;align-items:flex-start;padding:0 14px;border-left:1px solid rgba(232,176,74,.3);font-size:12px;line-height:1.45;color:var(--doux)}
+  .info:first-child{padding-left:0;border-left:0}
+  .info .rond{flex:none;width:46px;height:46px;border-radius:50%;border:1.5px solid var(--or);display:grid;place-items:center}
+  .info .rond .ico{width:23px;height:23px}
+  .info b{display:block;margin-bottom:2px;color:#fff;font-size:12.5px}
+  .sig{flex:none;width:236px;padding:0 0 0 20px;border-left:1px solid rgba(232,176,74,.3);font-size:13px;color:var(--texte)}
+  .sig .script{display:block;margin:4px 0 0;font-family:'Great Vibes','Segoe Script','Brush Script MT',cursive;font-size:40px;line-height:1.1;color:var(--or);transform:rotate(-4deg);transform-origin:left}
+  .sig .ligne{margin-top:4px;padding-top:7px;border-top:1px solid var(--or);color:var(--texte);text-align:center;font-size:13px}
+
+  /* ---------- bande du bas ---------- */
+  .bas{position:relative;flex:none;margin-top:22px;height:118px;border-top:2px solid var(--or-fonce);overflow:hidden;
+    background:linear-gradient(90deg,#0b0805 0%,#0a0805 55%,#14100a 100%)}
+  .bas::before{content:"";position:absolute;left:-30px;top:-1px;width:170px;height:100%;background:linear-gradient(135deg,var(--or-clair),var(--or-fonce) 60%,#4a3513);clip-path:polygon(0 0,70% 0,22% 100%,0 100%);opacity:.9}
+  .bas::after{content:"";position:absolute;left:300px;top:0;width:150px;height:100%;background:linear-gradient(115deg,transparent 0 34%,rgba(255,255,255,.12) 34% 46%,transparent 46% 56%,rgba(255,255,255,.08) 56% 62%,transparent 62%)}
+  .bas .marque{position:absolute;left:118px;top:18px;font-family:'Cinzel',Georgia,serif;font-weight:800;font-size:38px;letter-spacing:.02em;line-height:1;background:var(--or-metal);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .bas .marque small{display:block;margin-top:9px;font-family:'Montserrat',sans-serif;font-weight:400;font-size:14px;letter-spacing:.18em;-webkit-text-fill-color:#e6dccb;text-transform:none}
+  .bas .contact{position:absolute;right:46px;top:20px;display:flex;gap:26px;align-items:center;font-size:13px}
+  .bas .contact div{display:flex;align-items:center;gap:10px}
+  .bas .contact .ico{width:24px;height:24px}
+  .bas .contact .sep{width:1px;height:26px;background:rgba(232,176,74,.45)}
+  .bas .merci{position:absolute;right:46px;bottom:16px;display:flex;align-items:center;gap:14px;font-size:10.5px;font-weight:500;letter-spacing:.32em;text-transform:uppercase;color:var(--or)}
+  .bas .merci::before{content:"";width:130px;height:1px;background:var(--or-fonce)}
+
+  .vide{max-width:560px;margin:80px auto;font-size:.95rem;color:#ddd;line-height:1.8;padding:0 20px;font-family:'Segoe UI',system-ui,sans-serif}
+
+  /* ---------- impression : A4 pleine page, sans marges ---------- */
+  @page{size:A4;margin:0}
+  @media print{ html,body{background:var(--fond)} }
 </style>
 </head>
 <body>
 <div id="zone"><div class="vide"><b>Oil Roxwood — gabarit de facture.</b><br>
-Cette page est utilisée par le bot Discord (commande <code>/facture</code>) pour
-générer les PDF. Elle n'affiche rien sans données : passe par Discord pour
-obtenir une facture.</div></div>
+Cette page est utilisée par le bot Discord (commande <code>/facture</code> et envoi dans les tickets) et par le dashboard
+(impression). Elle n'affiche rien sans données : passe par le dashboard ou par Discord pour obtenir une facture.</div></div>
 <script>
 (function(){
   const SOCIETE={nom:'OIL ROXWOOD',tel:'986',rib:'20076',lieu:'Roxwood County — San Andreas'};
@@ -53,8 +135,18 @@ obtenir une facture.</div></div>
   const fmt=n=>Number(n||0).toLocaleString('fr-FR');
   const frDate=d=>{const t=new Date(d);return isNaN(t)?esc(d):t.toLocaleDateString('fr-FR',{day:'2-digit',month:'2-digit',year:'numeric'});};
 
+  const I={ // icônes en traits fins
+    pin:'<svg class="ico" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.2A7 7 0 0 1 19 9.8C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.6"/></svg>',
+    tel:'<svg class="ico" viewBox="0 0 24 24"><path d="M5 4h3.5l1.8 4.6-2.2 1.4a11 11 0 0 0 5.9 5.9l1.4-2.2L20 15.5V19a2 2 0 0 1-2.2 2A16 16 0 0 1 3 6.2 2 2 0 0 1 5 4z"/></svg>',
+    banque:'<svg class="ico" viewBox="0 0 24 24"><path d="M3 9.5 12 4l9 5.5M5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 20h18M3 9.5h18"/></svg>',
+    doc:'<svg class="ico" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 15.5h6M9 8.5h3"/></svg>',
+    carte:'<svg class="ico" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10.5h18M6.5 15h4"/></svg>',
+    camion:'<svg class="ico" viewBox="0 0 24 24"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg>'
+  };
+
   let brut=location.hash.slice(1);
   if(!brut) return;
+  const imprimer=/(^|[?&])imprimer/.test(location.search);
   try{
     // accepte base64 standard ET base64url ; décodage UTF-8 propre
     brut=brut.replace(/-/g,'+').replace(/_/g,'/');
@@ -67,40 +159,95 @@ obtenir une facture.</div></div>
     const totHT=nn(f.ht)||lignes.reduce((a,l)=>a+nn(l.ht),0);
     const totTTC=nn(f.ttc)||lignes.reduce((a,l)=>a+nn(l.ttc),0);
     const poids=nn(f.poids)||lignes.reduce((a,l)=>a+nn(l.qte),0)*2;
+    const taux=[...new Set(lignes.map(l=>(nn(l.tva)*100).toFixed(0)))];
+    const libTva='Montant TVA'+(taux.length===1?' ('+taux[0]+' %)':'');
     document.title='Facture n°'+f.num+' — Oil Roxwood';
-    document.getElementById('zone').innerHTML=`<div class="inv" id="pret">
-    <div class="inv-head">
-      <div style="display:flex;gap:16px;align-items:center">
-        <img src="assets/logo.png?v=2" style="width:80px;height:80px;object-fit:contain" onerror="this.style.display='none'">
-        <div><h1>OIL <b>ROXWOOD</b></h1>
-        <div class="co">${SOCIETE.lieu}<br>Téléphone : ${SOCIETE.tel} · RIB : ${SOCIETE.rib}</div></div>
+
+    const coordClient=[cl.tel?'Tél : '+esc(cl.tel):'',cl.rib?'RIB : '+esc(cl.rib):''].filter(Boolean).join(' · ');
+    const lignesHTML=lignes.map(l=>`<tr>
+      <td>${esc(l.ref||'—')}</td><td class="desc">${esc(l.desc)}</td><td>${fmt(nn(l.qte))}</td><td>${fmt(l.pu)} $</td>
+      <td>${fmt(Math.round(nn(l.ht)))} $</td><td>${(nn(l.tva)*100).toFixed(0)} %</td><td class="ttc">${fmt(Math.round(nn(l.ttc)))} $</td></tr>`).join('')
+      +(f.offert?`<tr><td>OFFERT</td><td class="desc">Bidons d'essence offerts</td><td>${esc(f.offert)}</td><td>0 $</td><td>0 $</td><td>—</td><td class="ttc">0 $</td></tr>`:'');
+
+    document.getElementById('zone').innerHTML=`<div class="inv">
+      <div class="haut">
+        <img class="scene" src="assets/roxwood-vitrine-or.svg" alt="">
+        <i class="coin"></i>
+        <img class="logo-grand" src="assets/logo-complet.png?v=2" alt="Oil Roxwood">
+        <div class="baseline">${esc(SOCIETE.lieu)}<small>Énergie · Qualité · Confiance</small></div>
+        <img class="logo-reservoir" src="assets/logo.png?v=2" alt="">
+        <div class="slogan">Extraire<br>Fournir<br>Avancer<br>Ensemble</div>
+        <i class="diag"></i>
       </div>
-      <div class="inv-num">FACTURE<div class="n">n°${esc(f.num)}</div>Date : ${frDate(f.date)}</div>
-    </div>
-    <div class="inv-client"><div><b>Facturé à :</b><br>${esc(f.client)}<br>${esc(cl.adresse||'')}<br>${cl.tel?'Tél : '+esc(cl.tel):''} ${cl.rib?'· RIB : '+esc(cl.rib):''}</div></div>
-    <table><thead><tr><th>Référence</th><th>Description</th><th style="text-align:right">Qté</th><th style="text-align:right">PU HT</th><th style="text-align:right">Total HT</th><th style="text-align:right">TVA</th><th style="text-align:right">Total TTC</th></tr></thead><tbody>
-    ${lignes.map(l=>`<tr><td>${esc(l.ref||'—')}</td><td>${esc(l.desc)}</td><td style="text-align:right">${fmt(nn(l.qte))}</td><td style="text-align:right">${fmt(l.pu)} $</td><td style="text-align:right">${fmt(Math.round(nn(l.ht)))} $</td><td style="text-align:right">${(nn(l.tva)*100).toFixed(0)} %</td><td style="text-align:right">${fmt(Math.round(nn(l.ttc)))} $</td></tr>`).join('')}
-    ${f.offert?`<tr><td>OFFERT</td><td>Bidons d'essence offerts</td><td style="text-align:right">${esc(f.offert)}</td><td style="text-align:right">0 $</td><td style="text-align:right">0 $</td><td style="text-align:right">—</td><td style="text-align:right">0 $</td></tr>`:''}
-    </tbody></table>
-    <div class="tots"><table>
-      <tr><td>Total Hors Taxes</td><td style="text-align:right">${fmt(Math.round(totHT))} $</td></tr>
-      <tr><td>Montant TVA</td><td style="text-align:right">${fmt(Math.round(totTTC-totHT))} $</td></tr>
-      ${poids?`<tr><td>Poids total de la livraison</td><td style="text-align:right">${fmt(poids)} kg</td></tr>`:''}
-      <tr><td>Total TTC en Dollars</td><td style="text-align:right">${fmt(Math.round(totTTC))} $</td></tr>
-    </table></div>
-    ${f.postop?`<div style="margin-top:20px;display:flex;align-items:center;gap:14px;background:#fff7ec;border:1px solid #E8622C;border-radius:8px;padding:12px 18px;font-size:.9rem">
-      <img src="assets/postop.png" alt="Post OP" style="height:44px" onerror="this.style.display='none'">
-      <span><b>Livraison assurée par Post OP</b><br><span style="color:#555;font-size:.8rem">Service de livraison partenaire — sans frais supplémentaires.</span></span>
-    </div>`:''}
-    <div class="foot">
-      <div><b>Conditions de paiement</b><br>Paiement à réception de la facture.<br>Modes acceptés : virement bancaire, TPE.<br><br>${f.emetteur?`Dossier suivi par : ${esc(f.emetteur)}`:''}</div>
-      <div class="sig">Pour Oil Roxwood,<br>La Direction
-        <div class="script">Stella Collins</div>
-        <div class="line">Stella Collins — Patron</div>
+
+      <div class="titre">
+        <div><h1>Facture</h1><div class="num">N° ${esc(f.num)}</div><div class="date">Date : ${frDate(f.date)}</div></div>
+        <div class="coords">
+          <div>${I.pin}<span>Roxwood County<br>San Andreas</span></div>
+          <div>${I.tel}<span>+ ${esc(SOCIETE.tel)}</span></div>
+          <div>${I.banque}<span>RIB : ${esc(SOCIETE.rib)}</span></div>
+        </div>
       </div>
-    </div>
-    <div class="legal">OIL ROXWOOD · ${SOCIETE.lieu} · Téléphone ${SOCIETE.tel} · RIB ${SOCIETE.rib} — Merci de votre confiance 🛢</div>
+
+      <div class="client">
+        <div class="avatar"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4.2"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></div>
+        <div class="sep"></div>
+        <div class="qui"><small>Facturé à :</small><b>${esc(f.client)}</b>${cl.adresse?`<span>${esc(cl.adresse)}</span>`:''}${coordClient?`<span>${coordClient}</span>`:''}</div>
+      </div>
+
+      <div class="tab"><table>
+        <thead><tr><th>Référence</th><th>Description</th><th>Qté</th><th>PU HT</th><th>Total HT</th><th>TVA</th><th>Total TTC</th></tr></thead>
+        <tbody>${lignesHTML}</tbody>
+      </table></div>
+
+      <div class="mid">
+        <div class="deco"><img src="assets/roxwood-vitrine-or.svg" alt=""></div>
+        <div class="tot">
+          <div class="l"><span>Total Hors Taxes</span><span>${fmt(Math.round(totHT))} $</span></div>
+          <div class="l"><span>${libTva}</span><span>${fmt(Math.round(totTTC-totHT))} $</span></div>
+          ${poids?`<div class="l"><span>Poids total de la livraison</span><span>${fmt(poids)} kg</span></div>`:''}
+          <div class="l ttc"><span>Total TTC en Dollars</span><span>${fmt(Math.round(totTTC))} $</span></div>
+        </div>
+      </div>
+
+      ${f.postop?`<div class="postop"><img src="assets/postop.png" alt="Post OP"><span><b>Livraison assurée par Post OP</b><small>Service de livraison partenaire — sans frais supplémentaires.</small></span></div>`:''}
+
+      <div class="infos">
+        <div class="info"><span class="rond">${I.doc}</span><span><b>Conditions de paiement</b>Paiement à réception de la facture.</span></div>
+        <div class="info"><span class="rond">${I.carte}</span><span><b>Modes acceptés</b>Virement bancaire, TPE.</span></div>
+        <div class="info"><span class="rond">${I.camion}</span><span><b>Dossier suivi par</b>${esc(f.emetteur||'Service commercial')}</span></div>
+        <div class="sig">Pour OIL Roxwood,<br>La Direction<span class="script">Stella Collins</span><div class="ligne">Stella Collins — Patron</div></div>
+      </div>
+
+      <div class="bas">
+        <div class="marque">OIL ROXWOOD<small>${esc(SOCIETE.lieu)}</small></div>
+        <div class="contact">
+          <div>${I.tel}<span>Téléphone : ${esc(SOCIETE.tel)}</span></div><i class="sep"></i>
+          <div>${I.banque}<span>RIB : ${esc(SOCIETE.rib)}</span></div>
+        </div>
+        <div class="merci">Merci de votre confiance</div>
+      </div>
     </div>`;
+
+    // « prêt » = polices ET images chargées : c'est ce que le bot attend avant de photographier la page,
+    // et ce que l'impression attend avant de s'ouvrir.
+    const inv=document.querySelector('#zone .inv');
+    const images=[...inv.querySelectorAll('img')].map(i=>i.complete?Promise.resolve():new Promise(r=>{i.onload=i.onerror=r;}));
+    const polices=document.fonts&&document.fonts.ready?document.fonts.ready:Promise.resolve();
+    // impression : la facture est réduite pour tenir sur UNE page A4 (793 x 1122 px à 96 dpi) ; si elle est vraiment
+    // très longue, elle déborde sur une deuxième page plutôt que de devenir illisible.
+    const A4L=790, A4H=1108;                                  // un peu moins que 793 x 1122 : marge contre les arrondis du navigateur
+    window.addEventListener('beforeprint',()=>{
+      inv.style.zoom=''; inv.style.minHeight='';
+      const h=inv.offsetHeight, w=inv.offsetWidth;
+      const z=Math.max(.62,Math.min(A4L/w,A4H/h));
+      inv.style.zoom=z; inv.style.minHeight=Math.floor(A4H/z)+'px';
+    });
+    window.addEventListener('afterprint',()=>{ inv.style.zoom=''; inv.style.minHeight=''; });
+    Promise.race([Promise.all([polices,...images]),new Promise(r=>setTimeout(r,6000))]).then(()=>{
+      inv.id='pret';
+      if(imprimer) setTimeout(()=>window.print(),350);
+    });
   }catch(e){
     document.getElementById('zone').innerHTML='<div class="vide" id="erreur"><b>Données illisibles.</b><br>'+esc(e.message)+'</div>';
   }
