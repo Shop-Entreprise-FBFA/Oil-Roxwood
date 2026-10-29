@@ -1,11 +1,32 @@
 {
- "maj": "2026-10-29T00:53:29.291857+00:00",
+ "maj": "2026-10-29T00:55:26.083682+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1565166703350906891",
+   "t": "2026-10-29T00:53:41.470000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 5140\nplayerDiscord : 877190238433333258\nplayerName : PaleMouse8705\nplayerCharacter : Many Carlos\nplayerId : 166386\nvehiclePlate : AY0298ZV\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Many Carlos",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "5140",
+    "playerdiscord": "877190238433333258",
+    "playername": "PaleMouse8705",
+    "playercharacter": "Many Carlos",
+    "playerid": "166386",
+    "vehicleplate": "AY0298ZV",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1565156136976384073",
    "t": "2026-10-29T00:11:42.250000+00:00",
@@ -93140,30 +93161,6 @@
     "playercharacter": "Nikko Mount",
     "playerid": "276376",
     "itemid": "oil"
-   }
-  },
-  {
-   "id": "1564373140342046728-1",
-   "t": "2026-10-26T20:20:21.305000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 48x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1851.40, 6514.62, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3831\nplayerDiscord : 340880694203121664\nplayerName : JaiPasDeNom\nplayerCharacter : Ricardo Diaz\nplayerId : 331414\nitemId : refinedoil",
-   "nom": "Ricardo Diaz",
-   "quantite": 48,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1851.40, 6514.62, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "3831",
-    "playerdiscord": "340880694203121664",
-    "playername": "JaiPasDeNom",
-    "playercharacter": "Ricardo Diaz",
-    "playerid": "331414",
-    "itemid": "refinedoil"
    }
   }
  ]
