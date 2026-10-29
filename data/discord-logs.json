@@ -1,11 +1,75 @@
 {
- "maj": "2026-10-29T22:34:16.763325+00:00",
+ "maj": "2026-10-29T22:36:16.249802+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1565494342691328082-0",
+   "t": "2026-10-29T22:35:36.776000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 132x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1844.57, 6515.95, 16.73\ntargetPosition : -1844.79, 6516.31, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 745\nplayerDiscord : 1346541845949186092\nplayerName : SoggyGoose0922\nplayerCharacter : Xavier Collins\nplayerId : 292769\nitemId : refinedoil",
+   "nom": "Xavier Collins",
+   "quantite": 132,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1844.57, 6515.95, 16.73",
+    "targetposition": "-1844.79, 6516.31, 15.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "745",
+    "playerdiscord": "1346541845949186092",
+    "playername": "SoggyGoose0922",
+    "playercharacter": "Xavier Collins",
+    "playerid": "292769",
+    "itemid": "refinedoil"
+   }
+  },
+  {
+   "id": "1565494342691328082-1",
+   "t": "2026-10-29T22:35:36.776000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 132x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1844.97, 6516.01, 16.73\ntargetPosition : -1844.79, 6516.31, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 745\nplayerDiscord : 1346541845949186092\nplayerName : SoggyGoose0922\nplayerCharacter : Xavier Collins\nplayerId : 292769\nitemId : refinedoil",
+   "nom": "Xavier Collins",
+   "quantite": 132,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1844.97, 6516.01, 16.73",
+    "targetposition": "-1844.79, 6516.31, 15.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "745",
+    "playerdiscord": "1346541845949186092",
+    "playername": "SoggyGoose0922",
+    "playercharacter": "Xavier Collins",
+    "playerid": "292769",
+    "itemid": "refinedoil"
+   }
+  },
+  {
+   "id": "1565494089745567755",
+   "t": "2026-10-29T22:34:36.469000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 181x Pétrole Raffiné pour 1810$ par Jeff Beaumont. 905$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 181,
+   "montant": 1810,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1565493333197987861",
    "t": "2026-10-29T22:31:36.094000+00:00",
@@ -94188,64 +94252,6 @@
    "salon": "1245400913473179729",
    "champs": {
     "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1564998280180535398",
-   "t": "2026-10-28T13:44:26.257000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 8253\nplayerDiscord : 1257591862705782784\nplayerName : Jack Berthier\nplayerCharacter : Jack Berthier\nplayerId : 276642\nvehiclePlate : GB1899JF\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Jack Berthier",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "8253",
-    "playerdiscord": "1257591862705782784",
-    "playername": "Jack Berthier",
-    "playercharacter": "Jack Berthier",
-    "playerid": "276642",
-    "vehicleplate": "GB1899JF",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1564996535110865088",
-   "t": "2026-10-28T13:37:30.200000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 595x Pétrole Raffiné pour 5950$ par Nemesio Rosario. 2975$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 595,
-   "montant": 5950,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1564996016640626749",
-   "t": "2026-10-28T13:35:26.587000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 8152\nplayerDiscord : 706453716059947079\nplayerName : CleverGoose9528\nplayerCharacter : Merill Danielson\nplayerId : 129485\nvehiclePlate : AY0298ZV\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Merill Danielson",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "8152",
-    "playerdiscord": "706453716059947079",
-    "playername": "CleverGoose9528",
-    "playercharacter": "Merill Danielson",
-    "playerid": "129485",
-    "vehicleplate": "AY0298ZV",
     "jobid": "76",
     "jobname": "Oil RoxWood"
    }
