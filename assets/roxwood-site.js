@@ -408,7 +408,7 @@
     ["halloween", "noel"].forEach(function (nom) {
       document.documentElement.classList.toggle(nom, nom === theme);
     });
-    var logo = "assets/logo" + (theme === "halloween" ? "-halloween" : "") + ".png";
+    var logo = "assets/logo" + (theme === "halloween" ? "-halloween" : "") + ".png?v=2";
     var nl = $("navLogo"); if (nl) nl.src = logo;
     var hk = $("heroKicker"); if (hk) hk.textContent = t ? t.kicker : "FlashbackFA · Roxwood County";
     var r1 = $("ruban1"), r2 = $("ruban2");

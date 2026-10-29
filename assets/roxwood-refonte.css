@@ -251,3 +251,6 @@ html.halloween #app::after,html.noel #app::after{top:calc(var(--refonte-h) + 10p
 .fact-ticket{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin:0 0 14px;padding:10px 14px;border-radius:10px;background:rgba(88,101,242,.1);border:1px solid rgba(88,101,242,.35);font-size:.88rem;cursor:pointer}
 .fact-ticket small{color:var(--muted)}
 .hist-act{flex-wrap:wrap;justify-content:flex-end}
+
+/* écran de connexion : le logo complet (avec le texte) a besoin de plus de place */
+#loginLogo{width:190px!important;height:auto!important;max-height:none!important}
