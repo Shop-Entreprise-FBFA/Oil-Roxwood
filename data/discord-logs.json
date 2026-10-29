@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-29T21:12:15.321001+00:00",
+ "maj": "2026-10-29T21:14:16.504738+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1565473475966148682",
+   "t": "2026-10-29T21:12:41.761000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 652x Pétrole Raffiné pour 6520$ par Merill Danielson. 3260$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 652,
+   "montant": 6520,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1565473184810270732",
    "t": "2026-10-29T21:11:32.344000+00:00",
@@ -94295,30 +94311,6 @@
    "champs": {
     "position": "-1840.47, 6524.04, 16.73",
     "targetposition": "-1840.85, 6523.94, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7318",
-    "playerdiscord": "826526979204841482",
-    "playername": "Orion",
-    "playercharacter": "Diego Herrera",
-    "playerid": "231487",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1564992752440311816-6",
-   "t": "2026-10-28T13:22:28.341000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 120x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1845.03, 6516.80, 16.73\ntargetPosition : -1844.79, 6516.31, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7318\nplayerDiscord : 826526979204841482\nplayerName : Orion\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : refinedoil",
-   "nom": "Diego Herrera",
-   "quantite": 120,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1845.03, 6516.80, 16.73",
-    "targetposition": "-1844.79, 6516.31, 15.75",
     "jobid": "76",
     "jobname": "Oil RoxWood",
     "playernetid": "7318",
