@@ -64,3 +64,27 @@ html.dark .btn,html.dark .nav-links > a.nav-cta,html.dark .nav-links > a.nav-mem
 html.dark #heroCta,html.dark .nav-links > a.nav-cta{background:var(--or-metal)!important;color:#1a1005!important;border-color:#f7c463;box-shadow:0 6px 22px rgba(240,176,58,.3)}
 html.dark .tag,html.dark .sec-kicker{border-radius:6px}
 html.dark footer{background:#030302;border-top:1px solid rgba(247,196,99,.25)}
+
+/* ---- bouton « Commander » dans le menu : doré en contour, à côté de « Postuler » ---- */
+html.dark .nav-links > a.nav-commander{color:#ffd77a;border-color:#f0b03a;background:rgba(240,176,58,.08)}
+html.dark .nav-links > a.nav-commander:hover{background:rgba(240,176,58,.2);color:#fff}
+/* le menu s'adapte : compact sous 1560 px, très compact sous 1380 px, menu « burger » sous 1250 px */
+@media(max-width:1680px){
+  html.dark .nav-links > a{padding:9px 6px;font-size:14px;letter-spacing:.05em}
+  html.dark .nav-links > a.nav-cta,html.dark .nav-links > a.nav-membre{padding:9px 10px;margin-left:4px}
+  nav.barre{gap:10px}
+}
+@media(max-width:1380px){
+  html.dark .nav-links > a{padding:9px 4px;font-size:13px;letter-spacing:.03em}
+  html.dark .nav-links > a.nav-cta,html.dark .nav-links > a.nav-membre{padding:8px 8px;margin-left:3px}
+}
+@media(max-width:1250px){
+  .nav-links{position:fixed;inset:68px 0 auto 0;flex-direction:column;align-items:stretch;gap:0;margin-left:0;
+    background:rgba(6,5,4,.97);backdrop-filter:blur(16px);border-bottom:1px solid rgba(247,196,99,.3);
+    padding:8px 17px 18px;display:none}
+  .nav-links.open{display:flex}
+  html.dark .nav-links > a{padding:14px 4px;border-bottom:1px solid var(--trait);font-size:15px}
+  html.dark .nav-links > a.nav-cta,html.dark .nav-links > a.nav-membre{margin:10px 0 0;padding:12px 14px;justify-content:center;display:flex;border-bottom:1px solid #f0b03a}
+  .theme-btn{margin:10px 0 0;align-self:flex-start}
+  .burger{display:block}
+}

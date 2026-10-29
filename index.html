@@ -64,7 +64,7 @@
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap"></noscript>
 <link rel="stylesheet" href="assets/roxwood-core.css?v=C-119">
 <link rel="stylesheet" href="assets/roxwood-site.css?v=C-119">
-<link rel="stylesheet" href="assets/roxwood-vitrine-or.css?v=V-2">
+<link rel="stylesheet" href="assets/roxwood-vitrine-or.css?v=V-5">
 <link rel="stylesheet" href="assets/roxwood-intro.css?v=1">
 <link rel="stylesheet" href="assets/roxwood-portail.css?v=1">
 <link rel="stylesheet" href="assets/roxwood-postuler.css?v=1">
@@ -104,11 +104,11 @@
     <a href="#presentation">L'entreprise</a>
     <a href="#organigramme">Organigramme</a>
     <a href="#devenir-client">Devenir client</a>
-    <a href="#direct" id="navDirect" hidden>En direct</a>
     <a href="#produits" id="navProduits" hidden>Nos produits</a>
     <a href="#grades">Grades &amp; Salaires</a>
     <a href="#recrutement">Recrutement</a>
     <a href="#contact">Contact</a>
+    <a href="#devenir-client" class="nav-membre nav-commander" data-commander>⛽ Commander</a>
     <a href="#recrutement" class="nav-cta" id="navCta">Postuler</a>
     <a href="admin.html" class="nav-membre">Espace membre</a>
     <button class="theme-btn" id="themeBtn" onclick="toggleTheme()" title="Mode clair / sombre" aria-label="Changer de thème">🌙</button>
@@ -328,34 +328,6 @@
   </div>
 </section>
 
-<!-- ================= LE DÉPÔT EN DIRECT ================= -->
-<section id="direct" hidden>
-  <span class="geant" style="top:1vw;right:-5vw" aria-hidden="true">SEMAINE</span>
-  <div class="wrap">
-    <span class="tag sec-kicker rev">Le dépôt en direct</span>
-    <h2 class="rev">La semaine <span class="creux" id="dirSem">en cours</span></h2>
-    <p class="sec-intro rev" id="dirMaj"></p>
-
-    <div class="hero-stats" style="margin-top:clamp(30px,4vw,52px)">
-      <div><strong id="dirBarils">—</strong><span>Barils raffinés</span></div>
-      <div><strong id="dirEffectif">—</strong><span>Runners en poste</span></div>
-      <div><strong id="dirClients">—</strong><span>Commandes livrées</span></div>
-    </div>
-
-    <div id="dirObjWrap" class="rev" style="margin-top:clamp(26px,3vw,40px)" hidden>
-      <div style="display:flex;justify-content:space-between;align-items:baseline;gap:14px;margin-bottom:10px">
-        <span class="tag">Objectif de la semaine</span>
-        <span class="mono" id="dirObjTxt" style="color:var(--fumee);font-size:13px"></span>
-      </div>
-      <div style="height:14px;background:var(--plaque);border:1px solid var(--trait-fort);position:relative;overflow:hidden">
-        <i id="dirObjBar" style="position:absolute;inset:0 100% 0 0;background:var(--ambre);transition:right 1.2s var(--ease)"></i>
-      </div>
-    </div>
-
-    <div id="dirTop" class="cards" style="margin-top:clamp(30px,4vw,50px)" hidden></div>
-  </div>
-</section>
-
 <!-- ================= NOUVEAUX PRODUITS =================
      Rempli depuis data/stats-public.json, publié par l'espace membre.
      Tant qu'aucun produit n'est en ligne, la section reste cachée : mieux
@@ -525,7 +497,7 @@
     "Extraction","Transport","Raffinage","Revente","Roxwood County","FlashbackFA"
   ]);
 </script>
-<script src="assets/roxwood-site.js?v=C-119"></script>
+<script src="assets/roxwood-site.js?v=C-120"></script>
 <script src="assets/roxwood-intro.js?v=1"></script>
 <script src="assets/roxwood-portail.js?v=1"></script>
 <script>
