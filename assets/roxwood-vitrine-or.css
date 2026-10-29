@@ -1,0 +1,66 @@
+/* OIL ROXWOOD — vitrine, direction artistique « OR & NOIR » (V-2), tirée du nouveau logo :
+   noir profond, or métallique, argent, raffinerie dorée. Proposition alternative à roxwood-vitrine-refonte.css
+   (les deux ne se cumulent pas). Thème sombre seulement. */
+html.dark{
+  --brut:#030302; --fond:#060504; --bg:#060504;
+  --plaque:#0f0c08; --plaque-2:#17110a; --plaque-3:#201709; --acier:#201709; --white:#0f0c08;
+  --trait:#2b2113; --trait-fort:#5a4420;
+  --ink:#f6efe2; --vapeur:#f6efe2; --fumee:#bbb2a3; --cendre:#948b7d;
+  --ambre:#f0b03a; --ambre-clair:#ffd77a; --accent:#f0b03a;
+  --radius:12px;
+  --or-metal:linear-gradient(180deg,#fff0b3 0%,#f7c463 30%,#e8a020 55%,#b8752a 85%,#7a4a18 100%);
+  --or-bord:linear-gradient(145deg,#f7c463,#6b4416 38%,#d9b255 68%,#4a3513);
+}
+html.dark body{background:#060504}
+
+/* ---- navigation ---- */
+html.dark nav.barre{background:rgba(6,5,4,.5);backdrop-filter:blur(14px);border-bottom:1px solid rgba(247,196,99,.14)}
+html.dark nav.barre.collee{background:rgba(6,5,4,.96);border-bottom-color:rgba(247,196,99,.35);box-shadow:0 8px 32px rgba(0,0,0,.5)}
+html.dark nav.barre::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;pointer-events:none;
+  background:linear-gradient(90deg,transparent,#f7c463 35%,#b8752a 65%,transparent);opacity:.6}
+html.dark .nav-links > a{font-family:var(--f-display);font-size:15px;font-weight:700;letter-spacing:.09em;color:#d4cbbb}
+html.dark .nav-links > a:hover{color:#ffd77a}
+html.dark .logo img{width:44px;height:44px;filter:drop-shadow(0 2px 10px rgba(240,176,58,.45))}
+
+/* ---- bannière : la raffinerie dorée + le grand logo ---- */
+html.dark #heroCanvas{display:none}
+html.dark header#accueil{
+  background:url('roxwood-vitrine-or.svg') center bottom/100% auto no-repeat,
+             linear-gradient(180deg,#030302 0%,#0b0805 calc(100% - 22.4vw),#0b0805 100%);
+}
+html.dark header#accueil::after{
+  background:linear-gradient(90deg,rgba(3,3,2,.92),rgba(3,3,2,.55) 42%,rgba(3,3,2,0) 70%),
+             linear-gradient(0deg,#060504 0,rgba(6,5,4,0) 16%),
+             linear-gradient(180deg,#0b0805,rgba(11,8,5,0)) left bottom 18.4vw/100% 4vw no-repeat;
+}
+html.dark header#accueil::before{
+  content:"";position:absolute;z-index:0;right:max(3vw,calc((100vw - var(--wrap))/2));top:15%;
+  width:min(27vw,420px);aspect-ratio:640/596;background:url('logo-complet.png?v=2') center/contain no-repeat;
+  filter:drop-shadow(0 18px 50px rgba(240,176,58,.4));pointer-events:none;
+}
+@media(max-width:1000px){html.dark header#accueil::before{display:none}html.dark header#accueil{background-size:auto 46%,cover}}
+html.dark header#accueil h1{text-shadow:0 4px 30px #000}
+html.dark header#accueil h1 em{background:var(--or-metal);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none;filter:drop-shadow(0 3px 14px rgba(0,0,0,.6))}
+html.dark .creux{-webkit-text-stroke:2px #f0b03a}
+
+/* ---- plus d'inclinaison ---- */
+html.dark [data-tilt]{transform:none!important}
+html.dark .cards > .card:nth-child(3n+2){margin-top:0}
+html.dark .step:nth-child(even){margin-top:0}
+
+/* ---- cartes : fond noir, filet d'or métallique ---- */
+html.dark :is(.card,.step,.org-card,.equipe-carte,.hero-stats > div,.table-card,.simu,.simu-card,.cli-chip,.org-quote,.offre .card,.devis){
+  border:1px solid transparent;border-radius:14px;
+  background:linear-gradient(145deg,#17110a,#0b0805) padding-box,var(--or-bord) border-box;
+  box-shadow:0 14px 34px rgba(0,0,0,.4);
+}
+html.dark .card:hover,html.dark .equipe-carte:hover,html.dark .org-card:hover{box-shadow:0 14px 40px rgba(240,176,58,.18)}
+html.dark .equipe-carte .pp{border-radius:22px;border-color:#f0b03a}
+html.dark .table-card{overflow:hidden}
+html.dark .geant{opacity:.45}
+
+/* ---- boutons, étiquettes, pied ---- */
+html.dark .btn,html.dark .nav-links > a.nav-cta,html.dark .nav-links > a.nav-membre{border-radius:8px}
+html.dark #heroCta,html.dark .nav-links > a.nav-cta{background:var(--or-metal)!important;color:#1a1005!important;border-color:#f7c463;box-shadow:0 6px 22px rgba(240,176,58,.3)}
+html.dark .tag,html.dark .sec-kicker{border-radius:6px}
+html.dark footer{background:#030302;border-top:1px solid rgba(247,196,99,.25)}
