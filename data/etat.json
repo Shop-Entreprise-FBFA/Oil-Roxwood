@@ -17323,7 +17323,14 @@
     "ttc": 18000,
     "poids": 200,
     "statut": "attente",
-    "modifiee": 1793275577447
+    "modifiee": 1793275577447,
+    "envoi": {
+     "t": 1793275582883,
+     "par": "Diego Herrera",
+     "statut": "en_cours",
+     "ordre": 1793275584778,
+     "rapport": ""
+    }
    },
    {
     "num": 253187,
@@ -57372,11 +57379,11 @@
   }
  },
  "_cid": "w2qzft3dg9",
- "_maj": 1793275577472,
- "_rev": "9hycqpuoq4b-mvthzb6o",
+ "_maj": 1793275582883,
+ "_rev": "pnkaqnv0q79-mvthzg5c",
  "_majSec": {
   "fer": 1793208805345,
-  "fact": 1793275577448,
+  "fact": 1793275582883,
   "users": 1793210250598,
   "weeks": 1792976185966,
   "sheets": 1793275500716,
@@ -57396,7 +57403,7 @@
   "primesExtra": 1792704634769,
   "quotasComHist": 1792976185966,
   "profils": 1793132547984,
-  "_tables": 1793275577448,
+  "_tables": 1793275582861,
   "_permsFix1": 1792704634769,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792704634769,
@@ -59311,7 +59318,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-29T12:06:22.560Z",
+  "maj": "2026-10-29T12:06:28.992Z",
   "semaine": 44,
   "totalBarils": 219518,
   "ca": 1097590,
@@ -61316,6 +61323,49 @@
     "id": 1793275503153,
     "statut": "fait",
     "rapport": "Facture n°253188 postee dans le salon 1247271293317812264."
+   },
+   {
+    "type": "facture_ticket",
+    "payload": {
+     "num": 253188,
+     "salon": "1247271293317812264",
+     "reedition": false,
+     "facture": {
+      "num": 253188,
+      "date": "2026-10-29",
+      "client": "LTD Strawberry",
+      "emetteur": "Emma Collins-rodriguez",
+      "postop": false,
+      "lignes": [
+       {
+        "ref": "CMD",
+        "qte": 100,
+        "tva": 0,
+        "desc": "bidons d'essence ",
+        "pu": 180,
+        "ht": 18000,
+        "ttc": 18000
+       }
+      ],
+      "offert": 0,
+      "ht": 18000,
+      "ttc": 18000,
+      "poids": 200,
+      "statut": "attente",
+      "modifiee": 1793275577447
+     },
+     "client": {
+      "nom": "LTD Strawberry",
+      "rib": "20020",
+      "tel": "930",
+      "adresse": "Los Santos",
+      "lastCmd": "2026-10-29",
+      "type": "entreprise",
+      "salon": "1247271293317812264"
+     },
+     "par": "Diego Herrera"
+    },
+    "id": 1793275584778
    }
   ],
   "oilroxwood_coffres": [
