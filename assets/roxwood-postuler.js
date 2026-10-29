@@ -53,14 +53,18 @@
           champ("pstRib", "RIB", "Ton RIB (RP)", "text", 'maxlength="100" required') +
           champ("pstDispo", "Disponibilités pour l\'entretien", "Ex : soirs en semaine, week-ends", "text", 'maxlength="200" required') +
           '<input type="text" id="pstPiege" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0">' +
-          '<p class="pst-info">📎 Ta carte d\'identité et ton permis te seront demandés <b>directement dans ton ticket</b> sur Discord.</p>' +
+          '<div class="pst-duo">' +
+            fichier("pstCI", "Carte d\'identité (photo)") +
+            fichier("pstPermis", "Permis (photo)") +
+          '</div>' +
+          '<p class="pst-info">📎 Deux images obligatoires (capture ou photo). Elles sont réduites automatiquement et ne sont visibles que du staff, dans ton ticket.</p>' +
           '<div id="pstErreur" class="pst-erreur" role="alert" hidden></div>' +
           '<button type="submit" class="btn pst-envoyer" id="pstEnvoyer" style="background:var(--ambre);color:#120C05"><span>Envoyer ma candidature</span></button>' +
         '</form>' +
         '<div id="pstMerci" class="pst-merci" hidden>' +
           '<div class="pst-coche">✓</div><h3>Candidature envoyée !</h3>' +
           '<p>Le bot ouvre ton ticket de recrutement sur Discord — c\'est une question de secondes.<br>' +
-          'Tu recevras aussi un message privé. Ouvre Discord pour retrouver ton ticket et envoyer ta carte d\'identité et ton permis.</p>' +
+          'Tu recevras aussi un message privé. Ton dossier est déjà complet : ta carte d\'identité et ton permis ont été transmis. Ouvre Discord pour retrouver ton ticket.</p>' +
           '<a class="btn" href="' + esc(INVITE) + '" target="_blank" rel="noopener" style="background:var(--ambre);color:#120C05"><span>Ouvrir le Discord</span></a>' +
         '</div>' +
         '<div id="pstIndispo" class="pst-merci" hidden>' +
@@ -76,7 +80,19 @@
     document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !fond.hidden) fermer(); });
     $("#pstSurDiscord", fond).addEventListener("change", majEtape);
     $("#pstForm", fond).addEventListener("submit", envoyer);
+    ["pstCI", "pstPermis"].forEach(function (id) {
+      $("#" + id, fond).addEventListener("change", function () {
+        var f = this.files && this.files[0];
+        $("#" + id + "Nom", fond).textContent = f ? "✓ " + f.name : "Aucun fichier choisi";
+      });
+    });
     return fond;
+  }
+
+  function fichier(id, label) {
+    return '<div class="pst-champ pst-fichier"><label for="' + id + '">' + label + '</label>' +
+           '<input id="' + id + '" type="file" accept="image/*" required>' +
+           '<span class="pst-nom" id="' + id + 'Nom">Aucun fichier choisi</span></div>';
   }
 
   function champ(id, label, ph, type, attrs, apres) {
@@ -112,6 +128,23 @@
     document.documentElement.classList.remove("pst-ouvert");
   }
 
+  // réduit une image (côté le plus long : 1600 px, JPEG) pour rester bien en dessous des limites de Discord
+  function reduire(fichier, nom) {
+    return new Promise(function (ok, ko) {
+      if (!fichier || !/^image\//.test(fichier.type)) return ko(new Error("pas une image"));
+      var url = URL.createObjectURL(fichier), img = new Image();
+      img.onload = function () {
+        var k = Math.min(1, 1600 / Math.max(img.width, img.height)), c = document.createElement("canvas");
+        c.width = Math.max(1, Math.round(img.width * k)); c.height = Math.max(1, Math.round(img.height * k));
+        var g = c.getContext("2d"); g.fillStyle = "#fff"; g.fillRect(0, 0, c.width, c.height); g.drawImage(img, 0, 0, c.width, c.height);
+        URL.revokeObjectURL(url);
+        c.toBlob(function (b) { b ? ok({ blob: b, nom: nom + ".jpg" }) : ko(new Error("compression")); }, "image/jpeg", 0.82);
+      };
+      img.onerror = function () { URL.revokeObjectURL(url); ko(new Error("image illisible")); };
+      img.src = url;
+    });
+  }
+
   function erreur(msg) {
     var b = $("#pstErreur", fond);
     b.textContent = msg; b.hidden = !msg;
@@ -136,26 +169,35 @@
           Math.ceil((ATTENTE_MIN * 60000 - (Date.now() - dernier)) / 60000) + " min.");
     } catch (x) {}
 
+    var fCI = $("#pstCI", fond).files[0], fPermis = $("#pstPermis", fond).files[0];
+    if (!fCI || !fPermis) return erreur("La carte d'identité et le permis sont obligatoires : ajoute les deux photos.");
+    if (!/^image\//.test(fCI.type) || !/^image\//.test(fPermis.type)) return erreur("Les deux fichiers doivent être des images.");
+
     // les ``` casseraient le bloc de code lu par le bot
     var propre = {}; for (var c in d) propre[c] = String(d[c]).replace(/`{3,}/g, "'''");
-    propre.v = 1; propre.src = "site"; propre.t = new Date().toISOString();
+    propre.v = 2; propre.src = "site"; propre.t = new Date().toISOString();
 
     var btn = $("#pstEnvoyer", fond); btn.disabled = true; btn.firstChild.textContent = "Envoi…";
-    fetch(HOOK, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
+    Promise.all([reduire(fCI, "carte-identite"), reduire(fPermis, "permis")]).then(function (pieces) {
+      var form = new FormData();
+      form.append("payload_json", JSON.stringify({
         username: "Candidatures · site",
         allowed_mentions: { parse: [] },
         content: "ORX-CANDIDATURE\n```json\n" + JSON.stringify(propre) + "\n```"
-      })
+      }));
+      form.append("files[0]", pieces[0].blob, pieces[0].nom);
+      form.append("files[1]", pieces[1].blob, pieces[1].nom);
+      return fetch(HOOK, { method: "POST", body: form });
     }).then(function (r) {
       if (!r.ok) throw new Error("http " + r.status);
       try { localStorage.setItem(CLE_LAST, String(Date.now())); } catch (x) {}
       $("#pstEtape1", fond).hidden = true; $("#pstForm", fond).hidden = true; $("#pstMerci", fond).hidden = false;
       $("#pstForm", fond).reset();
-    }).catch(function () {
-      erreur("L'envoi a échoué. Réessaie dans un instant, ou postule directement sur notre Discord.");
+      ["pstCI", "pstPermis"].forEach(function (id) { $("#" + id + "Nom", fond).textContent = "Aucun fichier choisi"; });
+    }).catch(function (e) {
+      erreur(e && e.message === "image illisible"
+        ? "Une des images n'a pas pu être lue. Essaie avec une capture d'écran au format PNG ou JPEG."
+        : "L'envoi a échoué. Réessaie dans un instant, ou postule directement sur notre Discord.");
     }).then(function () { btn.disabled = false; btn.firstChild.textContent = "Envoyer ma candidature"; });
   }
 

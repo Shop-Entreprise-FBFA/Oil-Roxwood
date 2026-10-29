@@ -44,3 +44,7 @@ html.pst-ouvert{overflow:hidden}
 
 .pst-estim{padding:11px 14px;border-radius:9px;background:rgba(240,176,58,.08);border:1px solid var(--trait-fort,#5a4420);font-size:14px;color:var(--fumee,#bbb2a3)}
 .pst-estim b{color:#ffd77a}.pst-estim small{display:block;margin-top:4px;color:var(--cendre,#948b7d);font-size:12px}
+
+.pst-fichier input[type=file]{padding:10px;font-size:13px;cursor:pointer}
+.pst-fichier input[type=file]::file-selector-button{margin-right:10px;padding:7px 12px;border:0;border-radius:6px;background:#f0b03a;color:#1a1005;font-weight:700;cursor:pointer}
+.pst-nom{font-size:12px;color:var(--cendre,#948b7d);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}

@@ -37,10 +37,17 @@ l'ID doit être celui d'un vrai membre du serveur, un seul ticket à la fois par
 6 candidatures par minute au maximum. Le pire cas est du bruit dans un salon privé. Si besoin : supprimer le webhook dans
 Discord, en créer un autre, remplacer l'URL dans `index.html`.
 
-## Ce que le site ne peut pas faire
+## Carte d'identité et permis
 
-Envoyer la carte d'identité et le permis : ils sont demandés **dans le ticket**, comme avant, et le bot les reconnaît
-toujours automatiquement.
+Le formulaire demande **deux photos obligatoires** (carte d'identité et permis). Le site les réduit (1600 px, JPEG) puis les
+envoie avec la candidature. Le bot vérifie que ce sont des images (8 Mo maximum), les **republie dans le ticket**, les
+enregistre comme si le candidat les avait envoyées lui-même (dossier complet d'emblée) et **supprime le message d'arrivée**,
+pour que les pièces ne restent pas dans `#candidatures-site`. Le bot doit donc avoir le droit **Gérer les messages** dans ce salon.
+
+## Messages privés
+
+Le bot n'envoie **aucun message privé** par défaut (règle de ton bot). Pour activer une confirmation privée au candidat
+ou au client : ajouter `ORX_SITE_MP=1` dans `cogs/.env`.
 
 ---
 
