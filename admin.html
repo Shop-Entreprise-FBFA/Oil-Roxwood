@@ -1331,6 +1331,7 @@ function enter(){
       chgEtape('Relevé des feuilles', 52);
       await ensureSheets();
       corrigerRecruteursInverses();
+      verifierEquipePubliee();                                  // liste publique de l'équipe à jour ? (sans bloquer l'ouverture)
       chgEtape('Comptage des barils', 80);
       const r=isMembre()?null:syncRunners(true);
       if(!S.settings.semaine) S.settings.semaine=semaineCal(); // idem : jamais de bascule automatique
@@ -2995,6 +2996,27 @@ function effectifActifSet(){
   return vus;
 }
 function effectifPublie(){ return effectifActifSet().size; }
+/* Remet la liste publique « Visages de l'équipe » à jour sans attendre qu'on enregistre autre chose.
+   Cette liste n'est recalculée QUE lorsqu'un admin sauvegarde le dashboard (elle part dans le paquet _statsPub, que le bot
+   recopie sur le site). Après un changement de direction, elle restait donc périmée des heures. À l'ouverture du dashboard,
+   un admin avec jeton compare la liste PUBLIÉE (fichier public) à la direction réelle ; s'il y a un écart, il enregistre une fois :
+   le paquet est recalculé et le bot republie. Au plus une vérification toutes les 20 min et par navigateur. */
+async function verifierEquipePubliee(){
+  try{
+    if(!RoxwoodGH.peutEcrire()||isMembre()) return;
+    if(!(S.sheets&&S.sheets.rh)) return;                       // sans les fiches RH, la liste calculée serait incomplète
+    const dernier=+(localStorage.getItem('orx_equipe_verif')||0);
+    if(Date.now()-dernier<20*60*1000) return;
+    try{ await alignerRolesBot(); }catch(e){}                   // départs Discord pris en compte avant de comparer
+    const r=await fetch('data/stats-public.json?ts='+Date.now(),{cache:'no-store'}); if(!r.ok) return;
+    const pub=((await r.json()).equipe||[]);
+    const sig=l=>JSON.stringify(l.map(x=>[x.nom,x.titre,x.photo||'']).sort((a,b)=>String(a[0]).localeCompare(String(b[0]))));
+    if(sig(pub)===sig(equipeDirection())) return;               // déjà à jour
+    localStorage.setItem('orx_equipe_verif',String(Date.now()));
+    jlog('Visages de l’équipe : liste publique périmée, republication demandée ('+equipeDirection().length+' personne(s))');
+    save(); sbQueue();
+  }catch(e){ console.warn('[OilRoxwood] verifierEquipePubliee',e); }
+}
 function equipeDirection(){
   const noms=new Map();                                   // clé normalisée -> nom affiché
   (S.runners||[]).forEach(r=>{ const n=normNom(r&&r.nom); if(n&&!noms.has(n)) noms.set(n,r.nom); });
