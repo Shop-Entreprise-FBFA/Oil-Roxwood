@@ -14688,6 +14688,13 @@
     "quantite": 750,
     "qui": "Julio Collins",
     "fact": 253187
+   },
+   {
+    "date": "2026-10-29",
+    "client": "LTD Strawberry",
+    "quantite": 100,
+    "qui": "Emma Collins-rodriguez",
+    "fact": 253188
    }
   ],
   "collection": [
@@ -17010,7 +17017,7 @@
     "rib": "20020",
     "tel": "930",
     "adresse": "Los Santos",
-    "lastCmd": "2026-10-23",
+    "lastCmd": "2026-10-29",
     "type": "entreprise",
     "salon": "1247271293317812264"
    },
@@ -17292,8 +17299,38 @@
     "prix": 150
    }
   ],
-  "compteur": 253188,
+  "compteur": 253189,
   "factures": [
+   {
+    "num": 253188,
+    "date": "2026-10-29",
+    "client": "LTD Strawberry",
+    "emetteur": "Emma Collins-rodriguez",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 100,
+      "tva": 0.05,
+      "pu": 180,
+      "ht": 18000,
+      "ttc": 18900,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 18000,
+    "ttc": 18900,
+    "poids": 200,
+    "statut": "attente",
+    "envoi": {
+     "t": 1793275501299,
+     "par": "Diego Herrera",
+     "statut": "en_cours",
+     "ordre": 1793275503153,
+     "rapport": ""
+    }
+   },
    {
     "num": 253187,
     "date": "2026-10-28",
@@ -57341,14 +57378,14 @@
   }
  },
  "_cid": "w2qzft3dg9",
- "_maj": 1793275408674,
- "_rev": "m0g326jpzkj-mvthvp4w",
+ "_maj": 1793275501300,
+ "_rev": "jhc5tu4ggqh-mvthxlro",
  "_majSec": {
   "fer": 1793208805345,
-  "fact": 1793206952297,
+  "fact": 1793275501300,
   "users": 1793210250598,
   "weeks": 1792976185966,
-  "sheets": 1793239062776,
+  "sheets": 1793275500716,
   "_qcFix1": 1792704634769,
   "_wkFix1": 1792704634769,
   "journal": 1793210347064,
@@ -57365,7 +57402,7 @@
   "primesExtra": 1792704634769,
   "quotasComHist": 1792976185966,
   "profils": 1793132547984,
-  "_tables": 1793275408674,
+  "_tables": 1793275501274,
   "_permsFix1": 1792704634769,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792704634769,
@@ -59280,13 +59317,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-29T12:03:34.016Z",
+  "maj": "2026-10-29T12:05:02.964Z",
   "semaine": 44,
   "totalBarils": 219518,
   "ca": 1097590,
   "objectif": 375000,
   "effectif": 119,
-  "clientsServis": 172,
+  "clientsServis": 173,
   "theme": "",
   "top3": [
    {
@@ -61241,6 +61278,48 @@
     "id": 1793206879341,
     "statut": "fait",
     "rapport": "Facture n°253187 postee dans le salon 1553822095018827909."
+   },
+   {
+    "type": "facture_ticket",
+    "payload": {
+     "num": 253188,
+     "salon": "1247271293317812264",
+     "reedition": false,
+     "facture": {
+      "num": 253188,
+      "date": "2026-10-29",
+      "client": "LTD Strawberry",
+      "emetteur": "Emma Collins-rodriguez",
+      "postop": false,
+      "lignes": [
+       {
+        "ref": "CMD",
+        "qte": 100,
+        "tva": 0.05,
+        "pu": 180,
+        "ht": 18000,
+        "ttc": 18900,
+        "desc": "bidons d'essence "
+       }
+      ],
+      "offert": 0,
+      "ht": 18000,
+      "ttc": 18900,
+      "poids": 200,
+      "statut": "attente"
+     },
+     "client": {
+      "nom": "LTD Strawberry",
+      "rib": "20020",
+      "tel": "930",
+      "adresse": "Los Santos",
+      "lastCmd": "2026-10-29",
+      "type": "entreprise",
+      "salon": "1247271293317812264"
+     },
+     "par": "Diego Herrera"
+    },
+    "id": 1793275503153
    }
   ],
   "oilroxwood_coffres": [
