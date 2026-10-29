@@ -2995,6 +2995,20 @@ function effectifActifSet(){
   return vus;
 }
 function effectifPublie(){ return effectifActifSet().size; }
+function equipeDirection(){
+  const noms=new Map();                                   // clé normalisée -> nom affiché
+  (S.runners||[]).forEach(r=>{ const n=normNom(r&&r.nom); if(n&&!noms.has(n)) noms.set(n,r.nom); });
+  ((S.sheets&&S.sheets.rh)||[]).forEach(x=>{ const n=normNom(x&&x.nom); if(n&&!noms.has(n)) noms.set(n,x.nom); });
+  const actifs=effectifActifSet();
+  const out=[];
+  noms.forEach((nom,cle)=>{
+    const poste=posteDe(nom);
+    if(!poste||!actifs.has(cle)||aQuitteDiscord(nom)) return;
+    const pf=profilDe(nom)||{};
+    out.push({nom:pf.nom||nom, titre:pf.titre||poste, photo:photoOk(pf.photo)||profilPhotoAuto(nom)||'', bio:pf.bio||''});
+  });
+  return out.sort((a,b)=>bilanOrdGrade(a.titre)-bilanOrdGrade(b.titre)||String(a.nom).localeCompare(String(b.nom)));
+}
 function statsData(){
   const sorted=[...S.runners].sort((a,b)=>b.barils-a.barils);
   return {
@@ -3017,14 +3031,12 @@ function statsData(){
        n'a pas à savoir comment nos fichiers sont rangés. */
     produits:(S.produits||[]).filter(p=>p&&p.actif!==false&&p.nom).map(p=>({
       nom:p.nom, desc:p.desc||'', prix:p.prix||'', photo:p.chemin?affSrc(p):''})),
-    /* L'équipe : uniquement les personnes qui ont coché la case dans Mon profil
-       ET qui sont toujours dans l'effectif (même filtre que le chiffre publié
-       ci-dessus) — sinon quelqu'un qui est parti reste affiché indéfiniment,
-       personne ne décochant jamais sa case après son départ. */
-    equipe:Object.values(S.profils||{})
-      .filter(p=>p&&p.public&&p.nom&&effectifActifSet().has(normNom(p.nom))&&!aQuitteDiscord(p.nom))
-      .map(p=>({nom:p.nom,titre:p.titre||profilTitreAuto(p.nom)||'',photo:photoOk(p.photo)||profilPhotoAuto(p.nom)||'',bio:p.bio||''}))
-      .sort((a,b)=>bilanOrdGrade(a.titre)-bilanOrdGrade(b.titre)||String(a.nom).localeCompare(String(b.nom)))
+    /* L'équipe : TOUTE la direction, automatiquement — plus aucune case à cocher. Est « direction » toute personne
+       qui occupe un poste (Patron, Co Patron, Assistant de direction, RH, Comptable, Responsables, Commerciaux…),
+       qu'elle figure dans l'effectif ou seulement en fiche RH. On retire ceux qui ne sont plus dans l'effectif
+       actif ni sur le serveur Discord. Photo, titre et « à propos » viennent de « Mon profil » s'ils sont remplis,
+       sinon de l'avatar Discord et du poste. */
+    equipe:equipeDirection()
   };
 }
 async function publishStats(){
@@ -7132,12 +7144,9 @@ function profil(){
 
       <div class="panel" style="margin-top:18px">
         <h3>Sur la page publique</h3>
-        <label style="display:flex;gap:10px;align-items:flex-start;cursor:pointer;font-size:.85rem">
-          <input type="checkbox" id="pf_public" ${pf.public?'checked':''} style="margin-top:3px">
-          <span>Afficher ma carte sur le site, sous l'organigramme.<br>
-          <small style="color:var(--muted)">Photo, nom, titre et « à propos » uniquement. Jamais tes barils, ton quota ni ta prime.
-          Décoche quand tu veux : ta carte disparaît à la prochaine publication des stats.</small></span>
-        </label>
+        <p style="color:var(--muted);font-size:.85rem;margin:0">Si tu fais partie de la direction, ta carte apparaît <b>automatiquement</b> sur le site,
+        sous l'organigramme : photo, nom, titre et « à propos » uniquement. Jamais tes barils, ton quota ni ta prime.
+        Complète ta photo, ton titre et ton « à propos » ci-dessus pour qu'elle soit soignée.</p>
       </div>
 
       <button class="btn btn-gold" style="width:100%;margin-top:18px" onclick="profilSave()">Enregistrer mon profil</button>
@@ -7172,12 +7181,11 @@ function profilSave(){
     nom, photo:ph,
     titre:$('#pf_titre').value.trim().slice(0,60),
     bio:$('#pf_bio').value.trim().slice(0,220),
-    public:$('#pf_public').checked,
     maj:new Date(nowSrv()).toISOString()
   };
   save(); sbPushNow();
   whoami();
-  toast('👤 Profil enregistré'+($('#pf_public').checked?' · visible sur le site à la prochaine publication':''));
+  toast('👤 Profil enregistré');
   profil();
 }
 function profilPhotoDiscord(){
