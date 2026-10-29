@@ -3,12 +3,14 @@
    À l'envoi, le site dépose la candidature dans un salon privé de Discord (webhook) ; le bot la lit, ouvre un ticket
    de recrutement au nom de la personne (grâce à son ID Discord) et lui en donne l'accès.
 
-   Réglage : window.ROXWOOD_SITE.webhookCandidature (voir index.html). Tant qu'il est vide, le formulaire n'envoie rien
+   Réglage : window.ROXWOOD_SITE.relais (voir index.html). Tant qu'il est vide, le formulaire n'envoie rien
    et renvoie simplement vers le Discord : on peut donc publier le site avant d'avoir branché le bot. */
 (function () {
   var CFG = window.ROXWOOD_SITE || {};
   var INVITE = CFG.discordInvite || "https://discord.com/invite/99AuEX3Kpz";
-  var HOOK = String(CFG.webhookCandidature || "").trim();
+  // adresse du relais Cloudflare (voir relais-cloudflare/) : jamais un webhook Discord, qui serait supprimé par Discord
+  var RELAIS = String(CFG.relais || "").trim().replace(/\/$/, "");
+  var HOOK = RELAIS ? RELAIS + "/candidature" : "";
   var ATTENTE_MIN = 30;                       // une candidature par navigateur toutes les 30 minutes
   var CLE_LAST = "orx_candidature_t";
 
@@ -104,7 +106,10 @@
     var ok = $("#pstSurDiscord", fond).checked;
     $("#pstRejoindre", fond).hidden = ok;
     $("#pstForm", fond).hidden = !ok;
-    if (ok) setTimeout(function () { var i = $("#pstDiscord", fond); if (i) i.focus(); }, 50);
+    if (ok) setTimeout(function () {
+      var i = $("#pstDiscord", fond), a = document.activeElement;
+      if (i && (!a || a === document.body || a.type === "checkbox")) i.focus();   // ne vole pas le curseur à qui a déjà commencé à écrire
+    }, 50);
   }
 
   function ouvrir(e) {
@@ -199,7 +204,7 @@
       var st = e && e.statut;
       erreur(e && e.message === "image illisible"
         ? "Une des images n'a pas pu être lue. Essaie avec une capture d'écran au format PNG ou JPEG."
-        : st === 404 || st === 401 || st === 403
+        : st === 404 || st === 401 || st === 403 || st === 503
           ? "La candidature en ligne est momentanément indisponible. Postule directement sur notre Discord, ça marche tout de suite."
         : st === 429
           ? "Trop de demandes en même temps. Réessaie dans une minute."

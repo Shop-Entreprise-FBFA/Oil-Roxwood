@@ -3,11 +3,12 @@
    de Discord (webhook) ; le bot (cogs/commande_site.py) ouvre le ticket commande du client, grâce à son ID Discord, avec
    les mêmes informations que son bouton « Nouvelle commande ».
 
-   Réglage : window.ROXWOOD_SITE.webhookCommande (voir index.html). Vide = le bouton renvoie simplement vers le Discord. */
+   Réglage : window.ROXWOOD_SITE.relais (voir index.html). Vide = le bouton renvoie simplement vers le Discord. */
 (function () {
   var CFG = window.ROXWOOD_SITE || {};
   var INVITE = CFG.discordInvite || "https://discord.com/invite/99AuEX3Kpz";
-  var HOOK = String(CFG.webhookCommande || "").trim();
+  var RELAIS = String(CFG.relais || "").trim().replace(/\/$/, "");
+  var HOOK = RELAIS ? RELAIS + "/commande" : "";
   var PRIX_HT = 180;                          // $ HT par bidon (même tarif que la section « Devenir client »)
   var ATTENTE_MIN = 10;
   var CLE_LAST = "orx_commande_t";
@@ -102,7 +103,10 @@
     var ok = $("#cmdSurDiscord", fond).checked;
     $("#cmdRejoindre", fond).hidden = ok;
     $("#cmdForm", fond).hidden = !ok;
-    if (ok) setTimeout(function () { var i = $("#cmdDiscord", fond); if (i) i.focus(); }, 50);
+    if (ok) setTimeout(function () {
+      var i = $("#cmdDiscord", fond), a = document.activeElement;
+      if (i && (!a || a === document.body || a.type === "checkbox")) i.focus();   // ne vole pas le curseur à qui a déjà commencé à écrire
+    }, 50);
   }
 
   function ouvrir(e) {
@@ -174,7 +178,7 @@
       $("#cmdForm", fond).reset();
     }).catch(function (e) {
       var st = e && e.statut;
-      erreur(st === 404 || st === 401 || st === 403
+      erreur(st === 404 || st === 401 || st === 403 || st === 503
         ? "La commande en ligne est momentanément indisponible. Commande directement sur notre Discord ou au 986."
         : st === 429
           ? "Trop de demandes en même temps. Réessaie dans une minute."

@@ -1,5 +1,11 @@
 # 📨 Candidature directe depuis le site → ticket Discord
 
+> ⚠️ **Mise à jour du 29/10 : le site ne parle plus directement à un webhook.** Discord supprime tout webhook publié dans un
+> dépôt public. Le site passe maintenant par un **relais Cloudflare** : voir `SETUP-RELAIS-CLOUDFLARE.md`. Là où ce guide dit
+> « colle l'URL du webhook dans `index.html` », lis : « colle l'adresse du relais dans `relais` ». Le webhook lui-même n'est
+> plus qu'un secret Cloudflare. Côté bot, rien ne change.
+
+
 Le bouton **Postuler** du site ouvre un formulaire (ID Discord, pseudo RP, téléphone, ID unique, RIB, disponibilités).
 À l'envoi, le bot ouvre un **ticket de recrutement au nom de la personne** (retrouvée par son ID Discord), avec toutes
 ses informations et les boutons « Passer à l'entretien / Refuser » habituels. Elle reçoit aussi un message privé.

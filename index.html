@@ -501,12 +501,13 @@
 <script src="assets/roxwood-intro.js?v=1"></script>
 <script src="assets/roxwood-portail.js?v=1"></script>
 <script>
-/* Candidature directe : colle ici l'adresse du webhook du salon privé « candidatures-site » (voir SETUP-CANDIDATURE-SITE.md).
-   Tant que webhookCandidature est vide, le bouton Postuler renvoie simplement vers le Discord. */
-window.ROXWOOD_SITE={discordInvite:"https://discord.com/invite/99AuEX3Kpz",webhookCandidature:"https://discord.com/api/webhooks/1565207556543225978/9g2I8HnGTUz2WQYzekk0OhKwEycIP-KJrR69SvDKwcjZf2x9RMEq_0pPrVa-c2BMPLVS",
-  webhookCommande:"https://discord.com/api/webhooks/1565207556543225978/9g2I8HnGTUz2WQYzekk0OhKwEycIP-KJrR69SvDKwcjZf2x9RMEq_0pPrVa-c2BMPLVS"};
+/* Candidature et commande directes : colle ici l'adresse du RELAIS Cloudflare (voir SETUP-RELAIS-CLOUDFLARE.md),
+   par exemple "https://oilroxwood-relais.TON-COMPTE.workers.dev". Surtout PAS l'adresse d'un webhook Discord :
+   écrite dans ce dépôt public, elle serait supprimée par Discord. Tant que relais est vide, les boutons Postuler
+   et Commander renvoient simplement vers le Discord. */
+window.ROXWOOD_SITE={discordInvite:"https://discord.com/invite/99AuEX3Kpz",relais:""};
 </script>
-<script src="assets/roxwood-postuler.js?v=1"></script>
-<script src="assets/roxwood-commander.js?v=1"></script>
+<script src="assets/roxwood-postuler.js?v=2"></script>
+<script src="assets/roxwood-commander.js?v=2"></script>
 </body>
 </html>
