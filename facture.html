@@ -29,21 +29,9 @@
   .inv{position:relative;width:860px;min-height:1290px;margin:0 auto;display:flex;flex-direction:column;overflow:hidden;
     background:radial-gradient(90% 40% at 70% 36%,#1d140a 0%,transparent 70%),linear-gradient(180deg,#0a0805 0%,#060504 50%,#090705 100%)}
 
-  /* ---------- bandeau du haut ---------- */
-  .haut{position:relative;height:376px;flex:none;overflow:hidden;border-bottom:2px solid var(--or-fonce)}
-  .haut .scene{position:absolute;right:0;top:0;height:100%;width:72%;object-fit:cover;object-position:60% 100%}
-  .haut::before{content:"";position:absolute;inset:0;z-index:1;
-    background:linear-gradient(90deg,#060504 0%,#060504 30%,rgba(6,5,4,.86) 44%,rgba(6,5,4,0) 70%),linear-gradient(0deg,rgba(6,5,4,.55),rgba(6,5,4,0) 40%)}
-  .coin{position:absolute;z-index:3;top:0;left:0;width:170px;height:120px;background:var(--or-metal);clip-path:polygon(0 0,100% 0,0 100%);opacity:.95}
-  .coin::after{content:"";position:absolute;inset:0;background:#060504;clip-path:polygon(0 0,86% 0,0 86%);opacity:.0}
-  .logo-grand{position:absolute;z-index:3;left:46px;top:22px;width:322px;filter:drop-shadow(0 8px 24px rgba(0,0,0,.7))}
-  .baseline{position:absolute;z-index:3;left:46px;top:336px;width:322px;text-align:center;font-size:10.5px;letter-spacing:.34em;text-transform:uppercase;color:var(--or)}
-  .baseline small{display:block;margin-top:5px;font-size:9px;letter-spacing:.3em;color:var(--doux)}
-  .logo-reservoir{position:absolute;z-index:2;right:62px;top:164px;width:150px;opacity:.55;filter:drop-shadow(0 4px 14px rgba(0,0,0,.6))}
-  .slogan{position:absolute;z-index:3;right:34px;top:26px;font-size:11px;font-weight:500;letter-spacing:.42em;line-height:1.95;text-transform:uppercase;color:#f3e4c4;text-align:left}
-  .slogan::after{content:"";display:block;width:100px;height:2px;margin-top:8px;background:var(--or-metal)}
-  .diag{position:absolute;z-index:3;right:-40px;bottom:-1px;width:330px;height:60px;
-    background:linear-gradient(135deg,transparent 0 38%,var(--or) 38% 43%,transparent 43% 52%,var(--or-fonce) 52% 56%,transparent 56%)}
+  /* ---------- bandeau du haut et bande du bas : images du modèle (partie fixe de la facture) ---------- */
+  .entete{display:block;width:100%;height:auto;flex:none}
+  .pied{display:block;width:100%;height:auto;flex:none;margin-top:22px}
 
   /* ---------- titre + coordonnées ---------- */
   .titre{display:flex;justify-content:space-between;align-items:center;padding:26px 46px 4px}
@@ -76,11 +64,11 @@
   tbody td.desc{text-align:center}
 
   /* ---------- totaux + décor ---------- */
-  .mid{display:flex;gap:0;margin:20px 38px 0;align-items:stretch;min-height:200px}
-  .deco{position:relative;flex:1;border-radius:14px 0 0 14px;overflow:hidden}
-  .deco img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:35% 100%;filter:grayscale(1) contrast(1.2) brightness(1.15);transform:scaleX(-1)}
-  .deco::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,5,4,0),#060504 97%),linear-gradient(0deg,rgba(6,5,4,0),rgba(6,5,4,.45))}
-  .tot{width:468px;flex:none;border:1.5px solid var(--or);border-radius:16px;overflow:hidden;background:linear-gradient(145deg,#120e08,#0a0805);align-self:flex-start;position:relative;z-index:2;box-shadow:0 10px 40px rgba(0,0,0,.6)}
+  .mid{display:flex;margin:20px 36px 0 0;align-items:stretch;min-height:230px}
+  .deco{position:relative;flex:1;overflow:hidden}
+  .deco img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:0 100%}
+  .deco::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#080604 0,rgba(8,6,4,0) 26%),linear-gradient(90deg,rgba(8,6,4,0) 62%,#080604 100%)}
+  .tot{width:416px;flex:none;border:1.5px solid var(--or);border-radius:16px;overflow:hidden;background:linear-gradient(145deg,#120e08,#0a0805);align-self:flex-start;position:relative;z-index:2;box-shadow:0 10px 40px rgba(0,0,0,.6)}
   .tot .l{display:flex;justify-content:space-between;align-items:center;padding:13px 24px;font-size:16px;border-bottom:1px solid rgba(232,176,74,.35)}
   .tot .l span:last-child{font-weight:500}
   .tot .ttc{display:flex;justify-content:space-between;align-items:center;padding:16px 24px;background:var(--or-metal);color:#1a1206;border-bottom:0}
@@ -93,28 +81,14 @@
 
   /* ---------- infos + signature ---------- */
   .infos{margin:auto 38px 0;padding-top:24px;display:flex;align-items:stretch}
-  .info{flex:1;display:flex;gap:11px;align-items:flex-start;padding:0 14px;border-left:1px solid rgba(232,176,74,.3);font-size:12px;line-height:1.45;color:var(--doux)}
+  .info{flex:1;display:flex;flex-direction:column;gap:10px;align-items:flex-start;padding:0 16px;border-left:1px solid rgba(232,176,74,.3);font-size:12px;line-height:1.45;color:var(--doux)}
   .info:first-child{padding-left:0;border-left:0}
-  .info .rond{flex:none;width:46px;height:46px;border-radius:50%;border:1.5px solid var(--or);display:grid;place-items:center}
-  .info .rond .ico{width:23px;height:23px}
-  .info b{display:block;margin-bottom:2px;color:#fff;font-size:12.5px}
+  .info .rond{flex:none;width:52px;height:52px;border-radius:50%;border:1.5px solid var(--or);display:grid;place-items:center}
+  .info .rond .ico{width:26px;height:26px}
+  .info b{display:block;margin-bottom:3px;color:#fff;font-size:13px}
   .sig{flex:none;width:236px;padding:0 0 0 20px;border-left:1px solid rgba(232,176,74,.3);font-size:13px;color:var(--texte)}
   .sig .script{display:block;margin:4px 0 0;font-family:'Great Vibes','Segoe Script','Brush Script MT',cursive;font-size:40px;line-height:1.1;color:var(--or);transform:rotate(-4deg);transform-origin:left}
   .sig .ligne{margin-top:4px;padding-top:7px;border-top:1px solid var(--or);color:var(--texte);text-align:center;font-size:13px}
-
-  /* ---------- bande du bas ---------- */
-  .bas{position:relative;flex:none;margin-top:22px;height:118px;border-top:2px solid var(--or-fonce);overflow:hidden;
-    background:linear-gradient(90deg,#0b0805 0%,#0a0805 55%,#14100a 100%)}
-  .bas::before{content:"";position:absolute;left:-30px;top:-1px;width:170px;height:100%;background:linear-gradient(135deg,var(--or-clair),var(--or-fonce) 60%,#4a3513);clip-path:polygon(0 0,70% 0,22% 100%,0 100%);opacity:.9}
-  .bas::after{content:"";position:absolute;left:300px;top:0;width:150px;height:100%;background:linear-gradient(115deg,transparent 0 34%,rgba(255,255,255,.12) 34% 46%,transparent 46% 56%,rgba(255,255,255,.08) 56% 62%,transparent 62%)}
-  .bas .marque{position:absolute;left:118px;top:18px;font-family:'Cinzel',Georgia,serif;font-weight:800;font-size:38px;letter-spacing:.02em;line-height:1;background:var(--or-metal);-webkit-background-clip:text;background-clip:text;color:transparent}
-  .bas .marque small{display:block;margin-top:9px;font-family:'Montserrat',sans-serif;font-weight:400;font-size:14px;letter-spacing:.18em;-webkit-text-fill-color:#e6dccb;text-transform:none}
-  .bas .contact{position:absolute;right:46px;top:20px;display:flex;gap:26px;align-items:center;font-size:13px}
-  .bas .contact div{display:flex;align-items:center;gap:10px}
-  .bas .contact .ico{width:24px;height:24px}
-  .bas .contact .sep{width:1px;height:26px;background:rgba(232,176,74,.45)}
-  .bas .merci{position:absolute;right:46px;bottom:16px;display:flex;align-items:center;gap:14px;font-size:10.5px;font-weight:500;letter-spacing:.32em;text-transform:uppercase;color:var(--or)}
-  .bas .merci::before{content:"";width:130px;height:1px;background:var(--or-fonce)}
 
   .vide{max-width:560px;margin:80px auto;font-size:.95rem;color:#ddd;line-height:1.8;padding:0 20px;font-family:'Segoe UI',system-ui,sans-serif}
 
@@ -170,15 +144,7 @@ Cette page est utilisée par le bot Discord (commande <code>/facture</code> et e
       +(f.offert?`<tr><td>OFFERT</td><td class="desc">Bidons d'essence offerts</td><td>${esc(f.offert)}</td><td>0 $</td><td>0 $</td><td>—</td><td class="ttc">0 $</td></tr>`:'');
 
     document.getElementById('zone').innerHTML=`<div class="inv">
-      <div class="haut">
-        <img class="scene" src="assets/roxwood-vitrine-or.svg" alt="">
-        <i class="coin"></i>
-        <img class="logo-grand" src="assets/logo-complet.png?v=2" alt="Oil Roxwood">
-        <div class="baseline">${esc(SOCIETE.lieu)}<small>Énergie · Qualité · Confiance</small></div>
-        <img class="logo-reservoir" src="assets/logo.png?v=2" alt="">
-        <div class="slogan">Extraire<br>Fournir<br>Avancer<br>Ensemble</div>
-        <i class="diag"></i>
-      </div>
+      <img class="entete" src="assets/facture-entete.jpg" alt="Oil Roxwood — Roxwood County, San Andreas">
 
       <div class="titre">
         <div><h1>Facture</h1><div class="num">N° ${esc(f.num)}</div><div class="date">Date : ${frDate(f.date)}</div></div>
@@ -201,7 +167,7 @@ Cette page est utilisée par le bot Discord (commande <code>/facture</code> et e
       </table></div>
 
       <div class="mid">
-        <div class="deco"><img src="assets/roxwood-vitrine-or.svg" alt=""></div>
+        <div class="deco"><img src="assets/facture-nuit.jpg" alt=""></div>
         <div class="tot">
           <div class="l"><span>Total Hors Taxes</span><span>${fmt(Math.round(totHT))} $</span></div>
           <div class="l"><span>${libTva}</span><span>${fmt(Math.round(totTTC-totHT))} $</span></div>
@@ -219,14 +185,7 @@ Cette page est utilisée par le bot Discord (commande <code>/facture</code> et e
         <div class="sig">Pour OIL Roxwood,<br>La Direction<span class="script">Stella Collins</span><div class="ligne">Stella Collins — Patron</div></div>
       </div>
 
-      <div class="bas">
-        <div class="marque">OIL ROXWOOD<small>${esc(SOCIETE.lieu)}</small></div>
-        <div class="contact">
-          <div>${I.tel}<span>Téléphone : ${esc(SOCIETE.tel)}</span></div><i class="sep"></i>
-          <div>${I.banque}<span>RIB : ${esc(SOCIETE.rib)}</span></div>
-        </div>
-        <div class="merci">Merci de votre confiance</div>
-      </div>
+      <img class="pied" src="assets/facture-pied.jpg" alt="Oil Roxwood — Merci de votre confiance">
     </div>`;
 
     // « prêt » = polices ET images chargées : c'est ce que le bot attend avant de photographier la page,
