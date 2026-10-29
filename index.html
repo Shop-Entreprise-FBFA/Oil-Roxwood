@@ -39,7 +39,7 @@
 /* applique le thème avant le rendu pour éviter le flash */
 (function(){
   const s=localStorage.getItem('orx_theme');
-  if(s==='dark'||(!s&&matchMedia('(prefers-color-scheme: dark)').matches))
+  if(s==='dark'||!s)   // nouvelle DA : sombre par défaut ; le bouton lune/soleil garde le choix du visiteur
     document.documentElement.classList.add('dark');
 })();
 </script>
@@ -57,6 +57,7 @@
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap"></noscript>
 <link rel="stylesheet" href="assets/roxwood-core.css?v=C-119">
 <link rel="stylesheet" href="assets/roxwood-site.css?v=C-119">
+<link rel="stylesheet" href="assets/roxwood-vitrine-refonte.css?v=V-1">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Organization",
  "name":"Oil Roxwood",
