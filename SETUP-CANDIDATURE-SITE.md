@@ -41,3 +41,28 @@ Discord, en créer un autre, remplacer l'URL dans `index.html`.
 
 Envoyer la carte d'identité et le permis : ils sont demandés **dans le ticket**, comme avant, et le bot les reconnaît
 toujours automatiquement.
+
+---
+
+# ⛽ Commande de bidons depuis le site → ticket commande
+
+Même principe, pour le service commercial. Le bouton **« Commander des bidons »** (section « Entreprises & familles »)
+ouvre un formulaire : ID Discord, nom de l'entreprise ou de la famille, téléphone, quantité (avec estimation à
+180 $ HT le bidon), lieu de livraison, date et heure souhaitées. La personne coche d'abord « Je suis déjà sur le Discord »
+(sinon bouton « Rejoindre »).
+
+Le bot (`cogs/commande_site.py`) ouvre un **ticket commande** dans `COMMERCIAL_CATEGORY_ID` au nom du client — ou ajoute la
+commande à son ticket s'il en a déjà un — enregistre les mêmes données que le bouton « Nouvelle commande », ping le rôle
+commercial avec « Commande prise en compte », demande la photo du lieu et envoie un message privé au client.
+
+## Mise en service
+
+1. **Discord** — salon privé `#commandes-site` (staff et bot) + un webhook dedans ; note l'URL et l'ID du salon.
+2. **Bot** — dans `cogs/.env` : `ORX_SITE_COMMANDES_CHANNEL=ID_DU_SALON`. Envoie dans `/root/Bot/` :
+   `cogs/commande_site.py` (nouveau), `cogs/commercial.py` et `main.py` (modifiés), puis `systemctl restart botoilroxwood`.
+   Le bot a besoin de **Gérer les salons** et de voir / écrire / joindre des fichiers dans la catégorie des commandes.
+3. **Site** — colle l'URL du webhook dans `index.html`, `window.ROXWOOD_SITE.webhookCommande`, puis publie.
+   Tant qu'elle est vide, le bouton renvoie vers le Discord (et le 986).
+
+Mêmes garde-fous que pour les candidatures (ID de membre réel, 5 min entre deux commandes d'une même personne, 10 par minute
+au maximum). Ce circuit utilise un **second** webhook et un **second** salon : ne mélange pas avec `#candidatures-site`.

@@ -1,8 +1,8 @@
 /* OIL ROXWOOD — formulaire de candidature directe (voir roxwood-postuler.js). */
 html.pst-ouvert{overflow:hidden}
-#postuler{position:fixed;inset:0;z-index:9000;display:flex;align-items:flex-start;justify-content:center;overflow-y:auto;
+#postuler,.pst-fond{position:fixed;inset:0;z-index:9000;display:flex;align-items:flex-start;justify-content:center;overflow-y:auto;
   padding:clamp(14px,4vh,48px) 14px;background:rgba(3,3,2,.82);backdrop-filter:blur(6px)}
-#postuler[hidden]{display:none}
+#postuler[hidden],.pst-fond[hidden]{display:none}
 .pst-boite{position:relative;width:min(100%,640px);margin:auto;padding:clamp(22px,3.4vw,38px);border-radius:16px;
   border:1px solid transparent;background:linear-gradient(145deg,var(--plaque-2,#17110a),var(--plaque,#0b0805)) padding-box,
   linear-gradient(145deg,#f7c463,#6b4416 38%,#d9b255 68%,#4a3513) border-box;box-shadow:0 30px 80px rgba(0,0,0,.6);color:var(--ink,#f6efe2)}
@@ -18,8 +18,8 @@ html.pst-ouvert{overflow:hidden}
 .pst-rejoindre{margin-top:16px;padding:18px;border-radius:10px;border:1px dashed rgba(88,101,242,.6);background:rgba(88,101,242,.08);display:grid;gap:12px;justify-items:start}
 .pst-rejoindre p{margin:0;font-size:14px;color:var(--fumee,#bbb2a3)}
 .pst-note{font-size:13px!important;color:var(--cendre,#948b7d)!important}
-#pstForm{display:grid;gap:14px;margin-top:20px}
-#pstForm[hidden]{display:none}
+#pstForm,.pst-form{display:grid;gap:14px;margin-top:20px}
+#pstForm[hidden],.pst-form[hidden]{display:none}
 .pst-duo{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .pst-champ{display:grid;gap:6px}
 .pst-champ label{font-family:var(--f-mono,monospace);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--fumee,#bbb2a3)}
@@ -40,4 +40,7 @@ html.pst-ouvert{overflow:hidden}
 .pst-coche{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font-size:30px;font-weight:800;color:#1a1005;
   background:linear-gradient(180deg,#fff0b3,#e8a020 60%,#b8752a);box-shadow:0 8px 28px rgba(240,176,58,.45)}
 @media(max-width:560px){.pst-duo{grid-template-columns:1fr}.pst-envoyer{justify-self:stretch}}
-.pst-rejoindre[hidden],#pstEtape1[hidden]{display:none}
+.pst-rejoindre[hidden],#pstEtape1[hidden],#cmdEtape1[hidden]{display:none}
+
+.pst-estim{padding:11px 14px;border-radius:9px;background:rgba(240,176,58,.08);border:1px solid var(--trait-fort,#5a4420);font-size:14px;color:var(--fumee,#bbb2a3)}
+.pst-estim b{color:#ffd77a}.pst-estim small{display:block;margin-top:4px;color:var(--cendre,#948b7d);font-size:12px}

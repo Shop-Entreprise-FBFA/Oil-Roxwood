@@ -299,7 +299,8 @@
     </div>
 
     <div class="devis rev">
-      <a href="#contact" class="btn" style="background:var(--ambre);color:#120C05"><span>📞 Demander un devis : 986</span></a>
+      <button type="button" data-commander class="btn" style="background:var(--ambre);color:#120C05"><span>⛽ Commander des bidons</span></button>
+      <a href="#contact" class="btn" style="margin-left:10px"><span>📞 Demander un devis : 986</span></a>
       <p class="note" style="margin-top:14px">Ou passez directement au dépôt de Roxwood County — nos commerciaux vous reçoivent à toute heure.</p>
     </div>
 
@@ -530,8 +531,9 @@
 <script>
 /* Candidature directe : colle ici l'adresse du webhook du salon privé « candidatures-site » (voir SETUP-CANDIDATURE-SITE.md).
    Tant que webhookCandidature est vide, le bouton Postuler renvoie simplement vers le Discord. */
-window.ROXWOOD_SITE={discordInvite:"https://discord.com/invite/99AuEX3Kpz",webhookCandidature:""};
+window.ROXWOOD_SITE={discordInvite:"https://discord.com/invite/99AuEX3Kpz",webhookCandidature:"",webhookCommande:""};
 </script>
 <script src="assets/roxwood-postuler.js?v=1"></script>
+<script src="assets/roxwood-commander.js?v=1"></script>
 </body>
 </html>
