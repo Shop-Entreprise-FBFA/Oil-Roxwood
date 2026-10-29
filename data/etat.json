@@ -17311,26 +17311,19 @@
      {
       "ref": "CMD",
       "qte": 100,
-      "tva": 0.05,
+      "tva": 0,
+      "desc": "bidons d'essence ",
       "pu": 180,
       "ht": 18000,
-      "ttc": 18900,
-      "desc": "bidons d'essence "
+      "ttc": 18000
      }
     ],
     "offert": 0,
     "ht": 18000,
-    "ttc": 18900,
+    "ttc": 18000,
     "poids": 200,
     "statut": "attente",
-    "envoi": {
-     "t": 1793275501299,
-     "par": "Diego Herrera",
-     "statut": "envoye",
-     "ordre": 1793275503153,
-     "rapport": "Facture n°253188 postee dans le salon 1247271293317812264.",
-     "fin": 1793275537495
-    }
+    "modifiee": 1793275577447
    },
    {
     "num": 253187,
@@ -57379,17 +57372,17 @@
   }
  },
  "_cid": "w2qzft3dg9",
- "_maj": 1793275537495,
- "_rev": "rpoaw8lg6hq-mvthygqt",
+ "_maj": 1793275577472,
+ "_rev": "7dt5d08adtm-mvthz8z0",
  "_majSec": {
   "fer": 1793208805345,
-  "fact": 1793275537495,
+  "fact": 1793275577448,
   "users": 1793210250598,
   "weeks": 1792976185966,
   "sheets": 1793275500716,
   "_qcFix1": 1792704634769,
   "_wkFix1": 1792704634769,
-  "journal": 1793210347064,
+  "journal": 1793275577472,
   "pending": 1792704634769,
   "prodDer": 1792875193989,
   "runners": 1793239062776,
@@ -57403,7 +57396,7 @@
   "primesExtra": 1792704634769,
   "quotasComHist": 1792976185966,
   "profils": 1793132547984,
-  "_tables": 1793275537495,
+  "_tables": 1793275577448,
   "_permsFix1": 1792704634769,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792704634769,
@@ -57420,6 +57413,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1793275578902,
+   "u": "Diego Herrera",
+   "a": "Facture n°253188 modifiée — total 18 900 $ → 18 000 $"
+  },
   {
    "t": 1793210347474,
    "u": "Diego Herrera",
@@ -58914,11 +58912,6 @@
    "t": 1792229345711,
    "u": "?",
    "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1792188139458,
-   "u": "Stella Collins",
-   "a": "Contrat(s) signé(s) via Discord : Clara SouleS, Bingo Dallas"
   }
  ],
  "prodDer": {
@@ -59318,7 +59311,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-29T12:05:43.109Z",
+  "maj": "2026-10-29T12:06:19.692Z",
   "semaine": 44,
   "totalBarils": 219518,
   "ca": 1097590,
