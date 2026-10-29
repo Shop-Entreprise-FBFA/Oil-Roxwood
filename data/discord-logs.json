@@ -1,11 +1,32 @@
 {
- "maj": "2026-10-29T21:10:12.764242+00:00",
+ "maj": "2026-10-29T21:12:15.321001+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1565473184810270732",
+   "t": "2026-10-29T21:11:32.344000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 3708\nplayerDiscord : 950886433508450344\nplayerName : BreezyCat1053\nplayerCharacter : Tyrese Jackson\nplayerId : 384737\nvehiclePlate : AY4705SJ\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Tyrese Jackson",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "3708",
+    "playerdiscord": "950886433508450344",
+    "playername": "BreezyCat1053",
+    "playercharacter": "Tyrese Jackson",
+    "playerid": "384737",
+    "vehicleplate": "AY4705SJ",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1565470915871899650",
    "t": "2026-10-29T21:02:31.387000+00:00",
@@ -94298,30 +94319,6 @@
    "champs": {
     "position": "-1845.03, 6516.80, 16.73",
     "targetposition": "-1844.79, 6516.31, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7318",
-    "playerdiscord": "826526979204841482",
-    "playername": "Orion",
-    "playercharacter": "Diego Herrera",
-    "playerid": "231487",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1564992752440311816-7",
-   "t": "2026-10-28T13:22:28.341000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 120x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1840.96, 6523.89, 16.73\ntargetPosition : -1840.85, 6523.94, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7318\nplayerDiscord : 826526979204841482\nplayerName : Orion\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : refinedoil",
-   "nom": "Diego Herrera",
-   "quantite": 120,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1840.96, 6523.89, 16.73",
-    "targetposition": "-1840.85, 6523.94, 15.74",
     "jobid": "76",
     "jobname": "Oil RoxWood",
     "playernetid": "7318",
