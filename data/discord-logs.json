@@ -1,11 +1,32 @@
 {
- "maj": "2026-10-29T07:48:56.671741+00:00",
+ "maj": "2026-10-29T07:50:56.439426+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1565271387080359970",
+   "t": "2026-10-29T07:49:40.016000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 6784\nplayerDiscord : 1284252197747687534\nplayerName : DustyAnt9093\nplayerCharacter : Lorenzo Shiva\nplayerId : 160460\nvehiclePlate : BM4391ZM\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Lorenzo Shiva",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "6784",
+    "playerdiscord": "1284252197747687534",
+    "playername": "DustyAnt9093",
+    "playercharacter": "Lorenzo Shiva",
+    "playerid": "160460",
+    "vehicleplate": "BM4391ZM",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1565265098124169318-0",
    "t": "2026-10-29T07:24:40.612000+00:00",
@@ -93440,30 +93461,6 @@
    "quantite": 126,
    "montant": null,
    "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1849.81, 6514.75, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7097",
-    "playerdiscord": "826526979204841482",
-    "playername": "Orion",
-    "playercharacter": "Diego Herrera",
-    "playerid": "231487",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1564607430065782838-1",
-   "t": "2026-10-27T11:51:20.328000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 126x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1849.81, 6514.75, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7097\nplayerDiscord : 826526979204841482\nplayerName : Orion\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : refinedoil",
-   "nom": "Diego Herrera",
-   "quantite": 126,
-   "montant": null,
-   "type": "coffre_depot",
    "salon": "1245400913066066099",
    "coffre": "entreprise (Oil RoxWood)",
    "champs": {
