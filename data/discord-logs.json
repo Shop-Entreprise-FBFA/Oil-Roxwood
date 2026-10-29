@@ -1,11 +1,48 @@
 {
- "maj": "2026-10-29T16:48:16.947154+00:00",
+ "maj": "2026-10-29T16:50:15.405009+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1565407265475792897",
+   "t": "2026-10-29T16:49:35.950000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 322x Pétrole Raffiné pour 3220$ par Jack Berthier. 1610$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 322,
+   "montant": 3220,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1565406999389413477",
+   "t": "2026-10-29T16:48:32.510000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 88\nplayerDiscord : 706453716059947079\nplayerName : CleverGoose9528\nplayerCharacter : Merill Danielson\nplayerId : 129485\nvehiclePlate : DO6888RF\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Merill Danielson",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "88",
+    "playerdiscord": "706453716059947079",
+    "playername": "CleverGoose9528",
+    "playercharacter": "Merill Danielson",
+    "playerid": "129485",
+    "vehicleplate": "DO6888RF",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1565406777275588659",
    "t": "2026-10-29T16:47:39.554000+00:00",
@@ -93969,38 +94006,6 @@
    "nom": null,
    "quantite": 322,
    "montant": 3220,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1564750697348726795",
-   "t": "2026-10-27T21:20:37.910000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 570x Pétrole Raffiné pour 5700$ par Luc Rouza. 2850$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 570,
-   "montant": 5700,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1564749668968300575",
-   "t": "2026-10-27T21:16:32.725000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 176x Pétrole Raffiné pour 1760$ par Carmelia Cortez. 880$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 176,
-   "montant": 1760,
    "type": "vente",
    "salon": "1245400913473179729",
    "champs": {
