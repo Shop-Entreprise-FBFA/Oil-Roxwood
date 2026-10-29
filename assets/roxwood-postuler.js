@@ -112,6 +112,7 @@
     construire();
     $("#pstMerci", fond).hidden = true;
     $("#pstIndispo", fond).hidden = true;
+    var intro = $(".pst-entete p", fond); if (intro) intro.hidden = !HOOK;   // pas de « remplis ce formulaire » s'il n'y en a pas
     if (!HOOK) {                                   // pas encore branché au bot : on renvoie vers le Discord
       $("#pstEtape1", fond).hidden = true; $("#pstForm", fond).hidden = true; $("#pstIndispo", fond).hidden = false;
     } else {

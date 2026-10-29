@@ -110,6 +110,7 @@
     construire();
     $("#cmdMerci", fond).hidden = true;
     $("#cmdIndispo", fond).hidden = true;
+    var intro = $(".pst-entete p", fond); if (intro) intro.hidden = !HOOK;   // pas de « remplis ce formulaire » s'il n'y en a pas
     if (!HOOK) {
       $("#cmdEtape1", fond).hidden = true; $("#cmdForm", fond).hidden = true; $("#cmdIndispo", fond).hidden = false;
     } else {
