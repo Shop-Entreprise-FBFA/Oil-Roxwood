@@ -1,11 +1,32 @@
 {
- "maj": "2026-10-29T10:41:00.130234+00:00",
+ "maj": "2026-10-29T10:42:55.111628+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1565314672046112809",
+   "t": "2026-10-29T10:41:39.956000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 7271\nplayerDiscord : 831877007545204806\nplayerName : carmélia cortez\nplayerCharacter : Carmelia Cortez\nplayerId : 368287\nvehiclePlate : GD7230WT\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Carmelia Cortez",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "7271",
+    "playerdiscord": "831877007545204806",
+    "playername": "carmélia cortez",
+    "playercharacter": "Carmelia Cortez",
+    "playerid": "368287",
+    "vehicleplate": "GD7230WT",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1565313171118358572-0",
    "t": "2026-10-29T10:35:42.107000+00:00",
@@ -93465,30 +93486,6 @@
    "coffre": "entreprise (Oil RoxWood)",
    "champs": {
     "position": "-1844.58, 6515.50, 16.73",
-    "targetposition": "-1844.79, 6516.31, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7004",
-    "playerdiscord": "485873438993678371",
-    "playername": "SleepyTurtle9190",
-    "playercharacter": "Hakim Cheb",
-    "playerid": "321842",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1564616744461537368-1",
-   "t": "2026-10-27T12:28:21.053000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 161x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1844.58, 6515.49, 16.73\ntargetPosition : -1844.79, 6516.31, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7004\nplayerDiscord : 485873438993678371\nplayerName : SleepyTurtle9190\nplayerCharacter : Hakim Cheb\nplayerId : 321842\nitemId : refinedoil",
-   "nom": "Hakim Cheb",
-   "quantite": 161,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1844.58, 6515.49, 16.73",
     "targetposition": "-1844.79, 6516.31, 15.75",
     "jobid": "76",
     "jobname": "Oil RoxWood",
