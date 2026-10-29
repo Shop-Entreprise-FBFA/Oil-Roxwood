@@ -67,6 +67,7 @@
 <link rel="stylesheet" href="assets/roxwood-vitrine-or.css?v=V-2">
 <link rel="stylesheet" href="assets/roxwood-intro.css?v=1">
 <link rel="stylesheet" href="assets/roxwood-portail.css?v=1">
+<link rel="stylesheet" href="assets/roxwood-postuler.css?v=1">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Organization",
  "name":"Oil Roxwood",
@@ -474,8 +475,9 @@
     <div class="discord-card rev">
       <svg width="52" height="52" viewBox="0 0 24 24" fill="#5865F2" aria-hidden="true"><path d="M20.3 4.4A19.8 19.8 0 0 0 15.4 3l-.2.4c1.7.4 2.5 1 3.3 1.7A16.2 16.2 0 0 0 12 3.8a16.2 16.2 0 0 0-6.5 1.3c.8-.7 1.7-1.3 3.3-1.7L8.6 3a19.8 19.8 0 0 0-4.9 1.4A20.4 20.4 0 0 0 .1 18.1a19.9 19.9 0 0 0 6 3l.5-.7a12.6 12.6 0 0 1-2.6-1.3l.6-.4a14.2 14.2 0 0 0 12.8 0l.6.4c-.8.5-1.7 1-2.6 1.3l.5.7a19.9 19.9 0 0 0 6-3A20.4 20.4 0 0 0 20.3 4.4zM8.7 15.4c-1 0-1.9-1-1.9-2.1s.8-2.1 1.9-2.1 1.9 1 1.9 2.1-.9 2.1-1.9 2.1zm6.6 0c-1 0-1.9-1-1.9-2.1s.9-2.1 1.9-2.1 1.9 1 1.9 2.1-.8 2.1-1.9 2.1z"/></svg>
       <h3>Candidature sur Discord</h3>
-      <p>Tout le recrutement se passe sur notre serveur Discord : rejoins-nous et dépose ta candidature directement là-bas.</p>
-      <a href="https://discord.com/invite/99AuEX3Kpz" target="_blank" rel="noopener" class="btn" style="background:var(--ambre);color:#120C05;width:100%"><span>Rejoindre le Discord Oil Roxwood</span></a>
+      <p>Tout le recrutement se passe sur notre serveur Discord : postule depuis le site (ton ticket s'ouvre tout seul) ou rejoins-nous directement là-bas.</p>
+      <button type="button" data-postuler class="btn" style="background:var(--ambre);color:#120C05;width:100%;margin-bottom:10px"><span>Postuler depuis le site</span></button>
+      <a href="https://discord.com/invite/99AuEX3Kpz" target="_blank" rel="noopener" class="btn" style="width:100%"><span>Rejoindre le Discord Oil Roxwood</span></a>
     </div>
   </div>
 </section>
@@ -525,5 +527,11 @@
 <script src="assets/roxwood-site.js?v=C-119"></script>
 <script src="assets/roxwood-intro.js?v=1"></script>
 <script src="assets/roxwood-portail.js?v=1"></script>
+<script>
+/* Candidature directe : colle ici l'adresse du webhook du salon privé « candidatures-site » (voir SETUP-CANDIDATURE-SITE.md).
+   Tant que webhookCandidature est vide, le bouton Postuler renvoie simplement vers le Discord. */
+window.ROXWOOD_SITE={discordInvite:"https://discord.com/invite/99AuEX3Kpz",webhookCandidature:""};
+</script>
+<script src="assets/roxwood-postuler.js?v=1"></script>
 </body>
 </html>
