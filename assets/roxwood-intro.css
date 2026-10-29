@@ -1,0 +1,48 @@
+/* OIL ROXWOOD — animation d'entrée de la vitrine.
+   Un écran noir et or : le logo apparaît, un reflet doré le traverse, une barre se remplit, puis l'écran se dissipe.
+   Joué une fois par visite (sessionStorage), passable d'un clic, coupé si l'on a demandé moins d'animations. */
+#intro{display:none}
+html.intro-on #intro{
+  display:flex;position:fixed;inset:0;z-index:9999;flex-direction:column;align-items:center;justify-content:center;gap:26px;
+  background:radial-gradient(60% 55% at 50% 46%,#2a1a08 0%,#0c0804 55%,#030302 100%);cursor:pointer;
+  transition:opacity .9s cubic-bezier(.4,0,.2,1),transform .9s cubic-bezier(.4,0,.2,1),visibility 0s linear .9s;
+}
+html.intro-on{overflow:hidden}
+html.intro-on #intro.sortie{opacity:0;transform:scale(1.06);visibility:hidden;pointer-events:none}
+html.intro-fini #intro{display:none}
+
+/* rubans de chantier en haut et en bas */
+#intro::before,#intro::after{content:"";position:absolute;left:0;right:0;height:14px;
+  background:repeating-linear-gradient(45deg,#050403 0 14px,#e8a020 14px 28px);background-size:56px 100%;animation:introRuban 1.4s linear infinite}
+#intro::before{top:0}#intro::after{bottom:0;animation-direction:reverse}
+@keyframes introRuban{to{background-position:56px 0}}
+
+/* halo qui respire derrière le logo */
+.intro-halo{position:absolute;width:min(70vw,640px);aspect-ratio:1;border-radius:50%;
+  background:radial-gradient(circle,rgba(240,176,58,.4),rgba(240,176,58,0) 66%);opacity:0;animation:introHalo 2.2s ease-out .15s forwards}
+@keyframes introHalo{0%{opacity:0;transform:scale(.6)}60%{opacity:1}100%{opacity:.75;transform:scale(1.08)}}
+
+/* le logo : entrée en fondu + léger zoom, puis reflet doré qui passe dessus */
+.intro-logo{position:relative;width:min(56vw,330px);aspect-ratio:640/596;opacity:0;transform:scale(.86) translateY(14px);filter:blur(10px) drop-shadow(0 0 0 rgba(240,176,58,0));
+  animation:introLogo 1.1s cubic-bezier(.2,.8,.2,1) .2s forwards}
+.intro-logo img{display:block;width:100%;height:100%;object-fit:contain}
+.intro-logo::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(105deg,transparent 38%,rgba(255,244,196,.95) 50%,transparent 62%) 150% 0/260% 100% no-repeat;
+  -webkit-mask:url('logo-complet.png?v=2') center/contain no-repeat;mask:url('logo-complet.png?v=2') center/contain no-repeat;
+  animation:introReflet 1.3s ease-in-out 1s forwards}
+@keyframes introLogo{to{opacity:1;transform:none;filter:blur(0) drop-shadow(0 16px 44px rgba(240,176,58,.45))}}
+@keyframes introReflet{from{background-position:150% 0}to{background-position:-60% 0}}
+
+/* légende et barre de progression */
+.intro-legende{font-family:var(--f-mono,ui-monospace,monospace);font-size:12px;letter-spacing:.38em;text-transform:uppercase;color:#d8a85a;opacity:0;animation:introTexte .8s ease-out 1s forwards;text-align:center;padding:0 20px}
+.intro-barre{width:min(60vw,320px);height:3px;border-radius:3px;background:rgba(255,255,255,.1);overflow:hidden;opacity:0;animation:introTexte .5s ease-out .9s forwards}
+.intro-barre i{display:block;height:100%;width:0;background:linear-gradient(90deg,#b8752a,#f7c463,#fff0b3);box-shadow:0 0 14px rgba(247,196,99,.8);animation:introRemplit 1.7s cubic-bezier(.5,0,.2,1) 1s forwards}
+@keyframes introTexte{to{opacity:1}}
+@keyframes introRemplit{to{width:100%}}
+.intro-passer{position:absolute;right:22px;bottom:34px;font-family:var(--f-mono,ui-monospace,monospace);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#8f877b;opacity:0;animation:introTexte .6s ease-out 1.4s forwards}
+
+@media (prefers-reduced-motion:reduce){
+  html.intro-on #intro,html.intro-on #intro *{animation:none!important;transition:none!important}
+  html.intro-on #intro .intro-logo,html.intro-on #intro .intro-legende,html.intro-on #intro .intro-barre{opacity:1;transform:none;filter:none}
+  html.intro-on #intro .intro-barre i{width:100%}
+}

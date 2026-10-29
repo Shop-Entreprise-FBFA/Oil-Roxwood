@@ -43,6 +43,13 @@
     document.documentElement.classList.add('dark');
 })();
 </script>
+<script>
+/* animation d'entrée : une fois par visite, jamais si le visiteur a demandé moins d'animations (?sansintro pour la couper) */
+(function(){try{
+  if(!sessionStorage.getItem('orx_intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches&&!/[?&]sansintro/.test(location.search))
+    document.documentElement.classList.add('intro-on');
+}catch(e){}})();
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <!-- Les polices ne bloquent plus l'affichage. Elles arrivaient en feuille de
@@ -58,6 +65,7 @@
 <link rel="stylesheet" href="assets/roxwood-core.css?v=C-119">
 <link rel="stylesheet" href="assets/roxwood-site.css?v=C-119">
 <link rel="stylesheet" href="assets/roxwood-vitrine-or.css?v=V-2">
+<link rel="stylesheet" href="assets/roxwood-intro.css?v=1">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Organization",
  "name":"Oil Roxwood",
@@ -70,6 +78,13 @@
 </script>
 </head>
 <body>
+<div id="intro" aria-hidden="true">
+  <div class="intro-halo"></div>
+  <div class="intro-logo"><img src="assets/logo-complet.png?v=2" alt="" width="640" height="596"></div>
+  <div class="intro-legende">Roxwood County · Pétrole · Transport</div>
+  <div class="intro-barre"><i></i></div>
+  <span class="intro-passer">Cliquer pour passer</span>
+</div>
 <div id="noelNeige" aria-hidden="true"></div>
 <div id="noelGuirlande" aria-hidden="true"></div>
 <a class="evitement" href="#accueil">Aller au contenu</a>
@@ -507,5 +522,6 @@
   ]);
 </script>
 <script src="assets/roxwood-site.js?v=C-119"></script>
+<script src="assets/roxwood-intro.js?v=1"></script>
 </body>
 </html>
