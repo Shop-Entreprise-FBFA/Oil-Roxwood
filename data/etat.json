@@ -9187,15 +9187,27 @@
   "compta": [
    {
     "type": "Dépense déductible",
-    "date": "2026-10-28",
-    "justif": "UMAMI",
+    "date": "",
+    "justif": "",
+    "montant": 0
+   },
+   {
+    "type": "Retrait",
+    "date": "",
+    "justif": "",
     "montant": 0
    },
    {
     "type": "Dépense déductible",
     "date": "2026-10-28",
+    "justif": "UMAMI",
+    "montant": 50000
+   },
+   {
+    "type": "Dépense déductible",
+    "date": "2026-10-28",
     "justif": "HORNYS",
-    "montant": 0
+    "montant": 52500
    },
    {
     "type": "Retrait",
@@ -57427,14 +57439,14 @@
   }
  },
  "_cid": "vqucjhewnw",
- "_maj": 1793288092593,
- "_rev": "5wxvxq96ws9-mvtpfk78",
+ "_maj": 1793288109195,
+ "_rev": "6p9pgcjb5ia-mvtpfunp",
  "_majSec": {
   "fer": 1793208805345,
   "fact": 1793275601458,
   "users": 1793280652377,
   "weeks": 1792976185966,
-  "sheets": 1793288092593,
+  "sheets": 1793288109195,
   "_qcFix1": 1792704634769,
   "_wkFix1": 1792704634769,
   "journal": 1793287685276,
@@ -59366,7 +59378,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-29T15:34:58.052Z",
+  "maj": "2026-10-29T15:35:11.606Z",
   "semaine": 44,
   "totalBarils": 161515,
   "ca": 807575,
