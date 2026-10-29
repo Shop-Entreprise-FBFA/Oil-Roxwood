@@ -1,11 +1,32 @@
 {
- "maj": "2026-10-29T21:02:16.840723+00:00",
+ "maj": "2026-10-29T21:04:21.527639+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1565470915871899650",
+   "t": "2026-10-29T21:02:31.387000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 3708\nplayerDiscord : 950886433508450344\nplayerName : BreezyCat1053\nplayerCharacter : Tyrese Jackson\nplayerId : 384737\nvehiclePlate : FE3726MZ\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Tyrese Jackson",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "3708",
+    "playerdiscord": "950886433508450344",
+    "playername": "BreezyCat1053",
+    "playercharacter": "Tyrese Jackson",
+    "playerid": "384737",
+    "vehicleplate": "FE3726MZ",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1565470462702526538-0",
    "t": "2026-10-29T21:00:43.343000+00:00",
@@ -94309,22 +94330,6 @@
     "playercharacter": "Diego Herrera",
     "playerid": "231487",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1564992514019299392",
-   "t": "2026-10-28T13:21:31.497000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 254x Pétrole Raffiné pour 2540$ par Damon Cross. 1270$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 254,
-   "montant": 2540,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
