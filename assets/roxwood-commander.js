@@ -144,6 +144,10 @@
     if (!(n >= 1 && n <= 100000)) return erreur("La quantité doit être un nombre de bidons (au moins 1).");
     d.quantite = String(n);
     if (!/^\d{4}-\d{2}-\d{2}$/.test(d.date) || !/^\d{2}:\d{2}$/.test(d.heure)) return erreur("Date ou heure invalide.");
+    var auj = new Date(), jour = auj.getFullYear() + "-" + String(auj.getMonth() + 1).padStart(2, "0") + "-" + String(auj.getDate()).padStart(2, "0");
+    var max = new Date(auj.getTime() + 366 * 86400000), jmax = max.getFullYear() + "-" + String(max.getMonth() + 1).padStart(2, "0") + "-" + String(max.getDate()).padStart(2, "0");
+    if (d.date < jour) return erreur("La date de livraison souhaitée ne peut pas être dans le passé.");
+    if (d.date > jmax) return erreur("La date de livraison souhaitée est trop lointaine (un an maximum).");
     try {
       var dernier = +localStorage.getItem(CLE_LAST) || 0;
       if (Date.now() - dernier < ATTENTE_MIN * 60000)
