@@ -168,12 +168,17 @@
         content: "ORX-COMMANDE\n```json\n" + JSON.stringify(propre) + "\n```"
       })
     }).then(function (r) {
-      if (!r.ok) throw new Error("http " + r.status);
+      if (!r.ok) { var er = new Error("http " + r.status); er.statut = r.status; throw er; }
       try { localStorage.setItem(CLE_LAST, String(Date.now())); } catch (x) {}
       $("#cmdEtape1", fond).hidden = true; $("#cmdForm", fond).hidden = true; $("#cmdMerci", fond).hidden = false;
       $("#cmdForm", fond).reset();
-    }).catch(function () {
-      erreur("L'envoi a échoué. Réessaie dans un instant, ou commande directement sur notre Discord (ou au 986).");
+    }).catch(function (e) {
+      var st = e && e.statut;
+      erreur(st === 404 || st === 401 || st === 403
+        ? "La commande en ligne est momentanément indisponible. Commande directement sur notre Discord ou au 986."
+        : st === 429
+          ? "Trop de demandes en même temps. Réessaie dans une minute."
+          : "L'envoi a échoué. Réessaie dans un instant, ou commande directement sur notre Discord (ou au 986).");
     }).then(function () { btn.disabled = false; btn.firstChild.textContent = "Envoyer ma commande"; });
   }
 

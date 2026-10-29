@@ -190,14 +190,21 @@
       form.append("files[1]", pieces[1].blob, pieces[1].nom);
       return fetch(HOOK, { method: "POST", body: form });
     }).then(function (r) {
-      if (!r.ok) throw new Error("http " + r.status);
+      if (!r.ok) { var er = new Error("http " + r.status); er.statut = r.status; throw er; }
       try { localStorage.setItem(CLE_LAST, String(Date.now())); } catch (x) {}
       $("#pstEtape1", fond).hidden = true; $("#pstForm", fond).hidden = true; $("#pstMerci", fond).hidden = false;
       $("#pstForm", fond).reset();
       ["pstCI", "pstPermis"].forEach(function (id) { $("#" + id + "Nom", fond).textContent = "Aucun fichier choisi"; });
     }).catch(function (e) {
+      var st = e && e.statut;
       erreur(e && e.message === "image illisible"
         ? "Une des images n'a pas pu être lue. Essaie avec une capture d'écran au format PNG ou JPEG."
+        : st === 404 || st === 401 || st === 403
+          ? "La candidature en ligne est momentanément indisponible. Postule directement sur notre Discord, ça marche tout de suite."
+        : st === 429
+          ? "Trop de demandes en même temps. Réessaie dans une minute."
+        : st === 413
+          ? "Tes images sont trop lourdes. Essaie avec des captures plus petites."
         : "L'envoi a échoué. Réessaie dans un instant, ou postule directement sur notre Discord.");
     }).then(function () { btn.disabled = false; btn.firstChild.textContent = "Envoyer ma candidature"; });
   }
