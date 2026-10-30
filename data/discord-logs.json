@@ -1,11 +1,32 @@
 {
- "maj": "2026-10-30T07:44:16.100537+00:00",
+ "maj": "2026-10-30T07:46:14.822977+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1565632686385799229",
+   "t": "2026-10-30T07:45:20.483000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 135\nplayerDiscord : 398615462633668630\nplayerName : MoonBiirr\nplayerCharacter : Hassan Cheb\nplayerId : 321847\nvehiclePlate : AS5715VX\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Hassan Cheb",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "135",
+    "playerdiscord": "398615462633668630",
+    "playername": "MoonBiirr",
+    "playercharacter": "Hassan Cheb",
+    "playerid": "321847",
+    "vehicleplate": "AS5715VX",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1565628667986714627-0",
    "t": "2026-10-30T07:29:22.422000+00:00",
@@ -94155,30 +94176,6 @@
     "playercharacter": "Merill Danielson",
     "playerid": "129485",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1565031093801984135-0",
-   "t": "2026-10-28T15:54:49.634000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 68x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -3089.91, 6814.17, 44.73\ntargetPosition : -3089.68, 6814.50, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6\nplayerDiscord : 767332288744128512\nplayerName : JULIO COLLINS\nplayerCharacter : Julio Collins\nplayerId : 356873\nitemId : oil",
-   "nom": "Julio Collins",
-   "quantite": 68,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-3089.91, 6814.17, 44.73",
-    "targetposition": "-3089.68, 6814.50, 43.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6",
-    "playerdiscord": "767332288744128512",
-    "playername": "JULIO COLLINS",
-    "playercharacter": "Julio Collins",
-    "playerid": "356873",
-    "itemid": "oil"
    }
   }
  ]
