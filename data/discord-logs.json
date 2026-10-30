@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-30T20:18:13.895729+00:00",
+ "maj": "2026-10-30T20:20:15.516081+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1565822584094851195",
+   "t": "2026-10-30T20:19:55.625000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 111x Pétrole Raffiné pour 1110$ par Jason Palmer. 555$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 111,
+   "montant": 1110,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1565821855967871158",
    "t": "2026-10-30T20:17:02.026000+00:00",
@@ -93674,30 +93690,6 @@
    "texte": "Coffre\na retiré 9x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -1843.67, 6518.03, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6191\nplayerDiscord : 726178701867221134\nplayerName : Petit Panda\nplayerCharacter : Athéna Andershon\nplayerId : 196876\nitemId : oil",
    "nom": "Athéna Andershon",
    "quantite": 9,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1843.67, 6518.03, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6191",
-    "playerdiscord": "726178701867221134",
-    "playername": "Petit Panda",
-    "playercharacter": "Athéna Andershon",
-    "playerid": "196876",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1565189614669533252-6",
-   "t": "2026-10-29T02:24:43.954000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 4x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -1843.67, 6518.03, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6191\nplayerDiscord : 726178701867221134\nplayerName : Petit Panda\nplayerCharacter : Athéna Andershon\nplayerId : 196876\nitemId : oil",
-   "nom": "Athéna Andershon",
-   "quantite": 4,
    "montant": null,
    "type": "coffre_retrait",
    "salon": "1245400913066066099",
