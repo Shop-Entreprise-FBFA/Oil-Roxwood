@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-30T08:50:14.645222+00:00",
+ "maj": "2026-10-30T08:52:13.556956+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1565649052379521136",
+   "t": "2026-10-30T08:50:22.440000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 330x Pétrole Raffiné pour 3300$ par Grigori Valentine. 1650$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 330,
+   "montant": 3300,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1565648040797147237",
    "t": "2026-10-30T08:46:21.260000+00:00",
@@ -94111,30 +94127,6 @@
    "texte": "Coffre\na retiré 60x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -3085.04, 6815.64, 44.73\ntargetPosition : -3084.39, 6815.87, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1058\nplayerDiscord : 826526979204841482\nplayerName : Orion\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : oil",
    "nom": "Diego Herrera",
    "quantite": 60,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-3085.04, 6815.64, 44.73",
-    "targetposition": "-3084.39, 6815.87, 43.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "1058",
-    "playerdiscord": "826526979204841482",
-    "playername": "Orion",
-    "playercharacter": "Diego Herrera",
-    "playerid": "231487",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1565032816595443825-0",
-   "t": "2026-10-28T16:01:40.380000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 40x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -3085.04, 6815.64, 44.73\ntargetPosition : -3084.39, 6815.87, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1058\nplayerDiscord : 826526979204841482\nplayerName : Orion\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : oil",
-   "nom": "Diego Herrera",
-   "quantite": 40,
    "montant": null,
    "type": "coffre_retrait",
    "salon": "1245400913066066099",
