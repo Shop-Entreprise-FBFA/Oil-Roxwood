@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-30T06:12:13.554055+00:00",
+ "maj": "2026-10-30T06:14:17.998407+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1565609331037315133",
+   "t": "2026-10-30T06:12:32.134000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 330x Pétrole Raffiné pour 3300$ par Grigori Valentine. 1650$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 330,
+   "montant": 3300,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1565608573663183029",
    "t": "2026-10-30T06:09:31.562000+00:00",
@@ -94180,27 +94196,6 @@
     "playercharacter": "Julio Collins",
     "playerid": "356873",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1565027530635874485",
-   "t": "2026-10-28T15:40:40.109000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 456\nplayerDiscord : 439722284760956928\nplayerName : Ice\nplayerCharacter : Ana Fox\nplayerId : 244445\nvehiclePlate : DO6888RF\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Ana Fox",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "456",
-    "playerdiscord": "439722284760956928",
-    "playername": "Ice",
-    "playercharacter": "Ana Fox",
-    "playerid": "244445",
-    "vehicleplate": "DO6888RF",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
