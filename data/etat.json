@@ -7570,7 +7570,7 @@
     "tel": "555 060 306",
     "actif": true,
     "avert": "",
-    "grade": "Responsable Commercial",
+    "grade": "RH",
     "recrut": "Stella Collins",
     "arrivee": "2025-08-16",
     "contrat": true,
@@ -21482,7 +21482,7 @@
   {
    "id": 1783467608217,
    "did": "1053366471574687844",
-   "role": "respcom",
+   "role": "rh",
    "user": "Emma Collins-rodriguez",
    "avatar": "https://cdn.discordapp.com/avatars/1053366471574687844/c613016aec543b8fcfe858f55bf42219.png"
   },
@@ -21574,14 +21574,6 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
-  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -21605,6 +21597,14 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T00:06:23.240Z"
+  },
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -57466,18 +57466,18 @@
    "params": ""
   }
  },
- "_cid": "bot",
- "_maj": 1793339516363,
- "_rev": "p5q0zjqcjtq-mvu4slm1",
+ "_cid": "a7ycpxndelj",
+ "_maj": 1793357327688,
+ "_rev": "egq2z35gl1l-mvuunh9a",
  "_majSec": {
   "fer": 1793296364789,
   "fact": 1793304259558,
-  "users": 1793304250501,
+  "users": 1793357327688,
   "weeks": 1792976185966,
-  "sheets": 1793300051346,
+  "sheets": 1793357327688,
   "_qcFix1": 1792704634769,
   "_wkFix1": 1792704634769,
-  "journal": 1793304250501,
+  "journal": 1793357327688,
   "pending": 1792704634769,
   "prodDer": 1792875193989,
   "runners": 1793287702431,
@@ -57491,7 +57491,7 @@
   "primesExtra": 1792704634769,
   "quotasComHist": 1792976185966,
   "profils": 1793132547984,
-  "_tables": 1793339516363,
+  "_tables": 1793357327570,
   "_permsFix1": 1792704634769,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792704634769,
@@ -57508,6 +57508,16 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1793357327994,
+   "u": "Laurent Roquel",
+   "a": "Grades RH alignés sur Discord : Emma Collins-rodriguez · Responsable Commercial → RH"
+  },
+  {
+   "t": 1793357327994,
+   "u": "Laurent Roquel",
+   "a": "Rôle aligné depuis Discord (relevé du bot) : Emma Collins-rodriguez · Responsable commercial → RH"
+  },
   {
    "t": 1793304253573,
    "u": "Julio Collins",
@@ -58997,16 +59007,6 @@
    "t": 1792342026497,
    "u": "LeJ",
    "a": "Éligibilité : 2 grade(s) réalignés sur l'effectif — Hakim Cheb : Intérimaire → Raffineur · Tonio Munson : Intérimaire → Raffineur"
-  },
-  {
-   "t": 1792339534370,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1792339534130,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
   }
  ],
  "prodDer": {
@@ -59406,7 +59406,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-29T22:45:00.650Z",
+  "maj": "2026-10-30T10:48:51.742Z",
   "semaine": 44,
   "totalBarils": 161515,
   "ca": 807575,
