@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-30T09:20:13.642463+00:00",
+ "maj": "2026-10-30T09:22:15.700851+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1565656852312891593",
+   "t": "2026-10-30T09:21:22.089000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 640x Pétrole Raffiné pour 6400$ par Maximilian Kaufmann. 3200$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 640,
+   "montant": 6400,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1565655337829408949",
    "t": "2026-10-30T09:15:21.008000+00:00",
@@ -94099,30 +94115,6 @@
    "champs": {
     "position": "-3085.03, 6815.55, 44.73",
     "targetposition": "-3084.39, 6815.87, 43.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "1058",
-    "playerdiscord": "826526979204841482",
-    "playername": "Orion",
-    "playercharacter": "Diego Herrera",
-    "playerid": "231487",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1565033100117803193-3",
-   "t": "2026-10-28T16:02:47.977000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 60x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3089.30, 6814.98, 44.73\ntargetPosition : -3089.68, 6814.50, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1058\nplayerDiscord : 826526979204841482\nplayerName : Orion\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : oil",
-   "nom": "Diego Herrera",
-   "quantite": 60,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-3089.30, 6814.98, 44.73",
-    "targetposition": "-3089.68, 6814.50, 43.75",
     "jobid": "76",
     "jobname": "Oil RoxWood",
     "playernetid": "1058",
