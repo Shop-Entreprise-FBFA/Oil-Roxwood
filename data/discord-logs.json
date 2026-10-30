@@ -1,11 +1,32 @@
 {
- "maj": "2026-10-30T05:38:14.009496+00:00",
+ "maj": "2026-10-30T05:40:14.280647+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1565601021848330272",
+   "t": "2026-10-30T05:39:31.069000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 6884\nplayerDiscord : 427832771746988032\nplayerName : Durna\nplayerCharacter : Grigori Valentine\nplayerId : 380049\nvehiclePlate : AY4705SJ\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Grigori Valentine",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "6884",
+    "playerdiscord": "427832771746988032",
+    "playername": "Durna",
+    "playercharacter": "Grigori Valentine",
+    "playerid": "380049",
+    "vehicleplate": "AY4705SJ",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1565599009849090099",
    "t": "2026-10-30T05:31:31.371000+00:00",
@@ -94188,30 +94209,6 @@
     "playercharacter": "Julio Collins",
     "playerid": "356873",
     "itemid": "oil"
-   }
-  },
-  {
-   "id": "1565025292836147435-0",
-   "t": "2026-10-28T15:31:46.576000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 18x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1845.77, 6514.05, 16.73\ntargetPosition : -1845.91, 6514.70, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 367\nplayerDiscord : 867577351173177374\nplayerName : ...\nplayerCharacter : Bryan Storm\nplayerId : 298482\nitemId : refinedoil",
-   "nom": "Bryan Storm",
-   "quantite": 18,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1845.77, 6514.05, 16.73",
-    "targetposition": "-1845.91, 6514.70, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "367",
-    "playerdiscord": "867577351173177374",
-    "playername": "...",
-    "playercharacter": "Bryan Storm",
-    "playerid": "298482",
-    "itemid": "refinedoil"
    }
   }
  ]
