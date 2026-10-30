@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-30T00:34:15.811731+00:00",
+ "maj": "2026-10-30T00:36:12.259986+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1565524544012161117",
+   "t": "2026-10-30T00:35:37.332000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 326x Pétrole Raffiné pour 3260$ par Grigori Valentine. 1630$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 326,
+   "montant": 3260,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1565520265843310734",
    "t": "2026-10-30T00:18:37.337000+00:00",
@@ -94205,30 +94221,6 @@
    "champs": {
     "position": "-1839.71, 6523.54, 16.41",
     "targetposition": "-1840.85, 6523.94, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7318",
-    "playerdiscord": "826526979204841482",
-    "playername": "Orion",
-    "playercharacter": "Diego Herrera",
-    "playerid": "231487",
-    "itemid": "businessCard"
-   }
-  },
-  {
-   "id": "1565008858508951686-2",
-   "t": "2026-10-28T14:26:28.327000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 53x Carte de visite dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1847.74, 6498.29, 16.41\ntargetPosition : -1849.11, 6498.65, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7318\nplayerDiscord : 826526979204841482\nplayerName : Orion\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : businessCard",
-   "nom": "Diego Herrera",
-   "quantite": 53,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1847.74, 6498.29, 16.41",
-    "targetposition": "-1849.11, 6498.65, 15.75",
     "jobid": "76",
     "jobname": "Oil RoxWood",
     "playernetid": "7318",
