@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-30T12:14:14.439899+00:00",
+ "maj": "2026-10-30T12:16:15.262662+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1565700644948414545",
+   "t": "2026-10-30T12:15:23.067000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 661x Pétrole Raffiné pour 6610$ par Hakim Cheb. 3305$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 661,
+   "montant": 6610,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1565699883980034110-0",
    "t": "2026-10-30T12:12:21.638000+00:00",
@@ -93882,30 +93898,6 @@
     "playercharacter": "Julio Collins",
     "playerid": "356873",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1565044912771301416-9",
-   "t": "2026-10-28T16:49:44.333000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 5x Bidon d'essence dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1810.14, 6572.28, 16.91\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1058\nplayerDiscord : 826526979204841482\nplayerName : Orion\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : weapon_petrolcan",
-   "nom": "Diego Herrera",
-   "quantite": 5,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1810.14, 6572.28, 16.91",
-    "targetposition": "-1815.66, 6565.56, 15.98",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "1058",
-    "playerdiscord": "826526979204841482",
-    "playername": "Orion",
-    "playercharacter": "Diego Herrera",
-    "playerid": "231487",
-    "itemid": "weapon_petrolcan"
    }
   }
  ]
