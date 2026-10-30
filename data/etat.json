@@ -15911,7 +15911,7 @@
    },
    {
     "nom": "Bjorn Frost",
-    "grade": "Commercial",
+    "grade": "Full-Patch",
     "menus": false,
     "boissons": false,
     "bidons": false,
@@ -15941,7 +15941,7 @@
    },
    {
     "nom": "Athéna Andershon",
-    "grade": "Raffineur Confirmé",
+    "grade": "Raffineur Expert",
     "menus": false,
     "boissons": false,
     "bidons": false,
@@ -15971,7 +15971,7 @@
    },
    {
     "nom": "Jayson Simth",
-    "grade": "Raffineur Confirmé",
+    "grade": "Raffineur Expert",
     "menus": false,
     "boissons": false,
     "bidons": false,
@@ -15991,7 +15991,7 @@
    },
    {
     "nom": "Hakim Cheb",
-    "grade": "Raffineur",
+    "grade": "Raffineur Confirmé",
     "menus": false,
     "boissons": false,
     "bidons": false,
@@ -16001,7 +16001,7 @@
    },
    {
     "nom": "Jordan Impreza",
-    "grade": "Raffineur",
+    "grade": "Raffineur Expert",
     "menus": false,
     "boissons": false,
     "bidons": false,
@@ -16031,7 +16031,7 @@
    },
    {
     "nom": "Alexander Bart",
-    "grade": "Intérimaire",
+    "grade": "Raffineur Expert",
     "menus": false,
     "boissons": false,
     "bidons": false,
@@ -16041,7 +16041,7 @@
    },
    {
     "nom": "Bingo Dallas",
-    "grade": "Intérimaire",
+    "grade": "Raffineur Expert",
     "menus": false,
     "boissons": false,
     "bidons": false,
@@ -16081,7 +16081,7 @@
    },
    {
     "nom": "Jordan Coleman",
-    "grade": "Raffineur",
+    "grade": "Intérimaire",
     "menus": false,
     "boissons": false,
     "bidons": false,
@@ -16101,7 +16101,7 @@
    },
    {
     "nom": "Lorenzo Shiva",
-    "grade": "Intérimaire",
+    "grade": "Raffineur Confirmé",
     "menus": true,
     "boissons": true,
     "bidons": true,
@@ -16111,7 +16111,7 @@
    },
    {
     "nom": "Merill Danielson",
-    "grade": "Intérimaire",
+    "grade": "Raffineur Confirmé",
     "menus": true,
     "boissons": true,
     "bidons": true,
@@ -16121,7 +16121,7 @@
    },
    {
     "nom": "Mikaël Owens",
-    "grade": "Intérimaire",
+    "grade": "Raffineur",
     "menus": false,
     "boissons": false,
     "bidons": false,
@@ -16131,7 +16131,7 @@
    },
    {
     "nom": "Mouly Franseco",
-    "grade": "Intérimaire",
+    "grade": "Raffineur Confirmé",
     "menus": false,
     "boissons": false,
     "bidons": false,
@@ -57499,17 +57499,17 @@
   }
  },
  "_cid": "bhqgekep0o",
- "_maj": 1793384460436,
- "_rev": "1tpp2k4g434-mvvat1s8",
+ "_maj": 1793384466127,
+ "_rev": "0yawtxqxka3q-mvvat6g5",
  "_majSec": {
   "fer": 1793366439644,
   "fact": 1793378890744,
   "users": 1793378875467,
   "weeks": 1792976185966,
-  "sheets": 1793366978949,
+  "sheets": 1793384466127,
   "_qcFix1": 1792704634769,
   "_wkFix1": 1792704634769,
-  "journal": 1793378875467,
+  "journal": 1793384466127,
   "pending": 1792704634769,
   "prodDer": 1792875193989,
   "runners": 1793287702431,
@@ -57523,7 +57523,7 @@
   "primesExtra": 1792704634769,
   "quotasComHist": 1792976185966,
   "profils": 1793132547984,
-  "_tables": 1793384460436,
+  "_tables": 1793384466127,
   "_permsFix1": 1792704634769,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792704634769,
@@ -57540,6 +57540,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1793384467288,
+   "u": "Diego Herrera",
+   "a": "Éligibilité : 12 grade(s) réalignés sur l'effectif — Bjorn Frost : Commercial → Full-Patch · Athéna Andershon : Raffineur Confirmé → Raffineur Expert · Jayson Simth : Raffineur Confirmé → Raffineur Expert · Hakim Cheb : Raffineur → Raffineur Confirmé…"
+  },
   {
    "t": 1793378881974,
    "u": "Julio Collins",
@@ -59034,11 +59039,6 @@
    "t": 1792365735807,
    "u": "LeJ",
    "a": "Éligibilité : 1 grade(s) réalignés sur l'effectif — Teddy Flynn : Raffineur Expert → Intérimaire"
-  },
-  {
-   "t": 1792365722233,
-   "u": "LeJ",
-   "a": "Éligibilité : 1 grade(s) réalignés sur l'effectif — Teddy Flynn : Raffineur Expert → Intérimaire"
   }
  ],
  "prodDer": {
@@ -59438,7 +59438,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-30T18:21:05.480Z",
+  "maj": "2026-10-30T18:21:11.525Z",
   "semaine": 44,
   "totalBarils": 161515,
   "ca": 807575,
