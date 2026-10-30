@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-30T18:12:16.837737+00:00",
+ "maj": "2026-10-30T18:14:14.023229+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1565790870635028611",
+   "t": "2026-10-30T18:13:54.547000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 320x Pétrole Raffiné pour 3200$ par Jeff Beaumont. 1600$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 320,
+   "montant": 3200,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1565790388369883237",
    "t": "2026-10-30T18:11:59.566000+00:00",
@@ -93901,30 +93917,6 @@
     "playercharacter": "Diego Herrera",
     "playerid": "231487",
     "itemid": "eel"
-   }
-  },
-  {
-   "id": "1565172756121788504-4",
-   "t": "2026-10-29T01:17:44.563000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 4x Saumon du coffre de l'entreprise (Oil RoxWood)\nposition : -1815.40, 6566.12, 16.41\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 5640\nplayerDiscord : 826526979204841482\nplayerName : Orion\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : salmon",
-   "nom": "Diego Herrera",
-   "quantite": 4,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1815.40, 6566.12, 16.41",
-    "targetposition": "-1815.66, 6565.56, 15.98",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "5640",
-    "playerdiscord": "826526979204841482",
-    "playername": "Orion",
-    "playercharacter": "Diego Herrera",
-    "playerid": "231487",
-    "itemid": "salmon"
    }
   }
  ]
