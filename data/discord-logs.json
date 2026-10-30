@@ -1,11 +1,32 @@
 {
- "maj": "2026-10-30T20:14:12.969398+00:00",
+ "maj": "2026-10-30T20:16:17.883891+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1565821337669476485",
+   "t": "2026-10-30T20:14:58.454000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 3863\nplayerDiscord : 867577351173177374\nplayerName : Aritea987\nplayerCharacter : Bryan Storm\nplayerId : 298482\nvehiclePlate : IL4818AV\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Bryan Storm",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "3863",
+    "playerdiscord": "867577351173177374",
+    "playername": "Aritea987",
+    "playercharacter": "Bryan Storm",
+    "playerid": "298482",
+    "vehicleplate": "IL4818AV",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1565821056978255985-0",
    "t": "2026-10-30T20:13:51.532000+00:00",
@@ -93700,30 +93721,6 @@
     "playercharacter": "Athéna Andershon",
     "playerid": "196876",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1565189359534215293-1",
-   "t": "2026-10-29T02:23:43.125000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 12x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -1843.67, 6518.03, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6191\nplayerDiscord : 726178701867221134\nplayerName : Petit Panda\nplayerCharacter : Athéna Andershon\nplayerId : 196876\nitemId : oil",
-   "nom": "Athéna Andershon",
-   "quantite": 12,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1843.67, 6518.03, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6191",
-    "playerdiscord": "726178701867221134",
-    "playername": "Petit Panda",
-    "playercharacter": "Athéna Andershon",
-    "playerid": "196876",
-    "itemid": "oil"
    }
   }
  ]
