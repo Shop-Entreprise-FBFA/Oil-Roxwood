@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-30T19:24:15.338920+00:00",
+ "maj": "2026-10-30T19:26:14.348879+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1565809003492278536",
+   "t": "2026-10-30T19:25:57.757000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 500x Pétrole Raffiné pour 5000$ par Hassan Cheb. 2500$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 500,
+   "montant": 5000,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1565808233375998159-0",
    "t": "2026-10-30T19:22:54.147000+00:00",
@@ -93802,30 +93818,6 @@
     "playername": "Orion",
     "playercharacter": "Diego Herrera",
     "playerid": "231487",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1565186842410877052-0",
-   "t": "2026-10-29T02:13:42.996000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 51x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1843.87, 6517.66, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6191\nplayerDiscord : 726178701867221134\nplayerName : Petit Panda\nplayerCharacter : Athéna Andershon\nplayerId : 196876\nitemId : refinedoil",
-   "nom": "Athéna Andershon",
-   "quantite": 51,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1843.87, 6517.66, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6191",
-    "playerdiscord": "726178701867221134",
-    "playername": "Petit Panda",
-    "playercharacter": "Athéna Andershon",
-    "playerid": "196876",
     "itemid": "refinedoil"
    }
   }
