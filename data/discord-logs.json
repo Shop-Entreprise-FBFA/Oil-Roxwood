@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-30T11:04:16.283955+00:00",
+ "maj": "2026-10-30T11:06:15.729809+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1565682778664734721",
+   "t": "2026-10-30T11:04:23.413000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 173x Pétrole Raffiné pour 1730$ par Grigori Valentine. 865$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 173,
+   "montant": 1730,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1565682041096372287-0",
    "t": "2026-10-30T11:01:27.563000+00:00",
@@ -93966,30 +93982,6 @@
    "champs": {
     "position": "-1840.29, 6524.02, 16.73",
     "targetposition": "-1840.85, 6523.94, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6",
-    "playerdiscord": "767332288744128512",
-    "playername": "JULIO COLLINS",
-    "playercharacter": "Julio Collins",
-    "playerid": "356873",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1565040879809470579-2",
-   "t": "2026-10-28T16:33:42.800000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 137x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1815.71, 6565.93, 16.73\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6\nplayerDiscord : 767332288744128512\nplayerName : JULIO COLLINS\nplayerCharacter : Julio Collins\nplayerId : 356873\nitemId : refinedoil",
-   "nom": "Julio Collins",
-   "quantite": 137,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1815.71, 6565.93, 16.73",
-    "targetposition": "-1815.66, 6565.56, 15.98",
     "jobid": "76",
     "jobname": "Oil RoxWood",
     "playernetid": "6",
