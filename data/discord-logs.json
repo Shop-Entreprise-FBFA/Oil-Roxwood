@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-30T23:34:13.457724+00:00",
+ "maj": "2026-10-30T23:36:14.537991+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1565871908023439532",
+   "t": "2026-10-30T23:35:55.366000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 640x Pétrole Raffiné pour 6400$ par Ricardo Diaz. 3200$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 640,
+   "montant": 6400,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1565869647922729022-0",
    "t": "2026-10-30T23:26:56.516000+00:00",
@@ -93436,30 +93452,6 @@
   },
   {
    "id": "1565192130459078855-1",
-   "t": "2026-10-29T02:34:43.765000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 47x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -3086.51, 6820.47, 44.73\ntargetPosition : -3086.26, 6819.89, 43.78\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6315\nplayerDiscord : 1301627104940785687\nplayerName : TALANTA.A\nplayerCharacter : Carter Fuente\nplayerId : 291258\nitemId : oil",
-   "nom": "Carter Fuente",
-   "quantite": 47,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-3086.51, 6820.47, 44.73",
-    "targetposition": "-3086.26, 6819.89, 43.78",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6315",
-    "playerdiscord": "1301627104940785687",
-    "playername": "TALANTA.A",
-    "playercharacter": "Carter Fuente",
-    "playerid": "291258",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1565192130459078855-2",
    "t": "2026-10-29T02:34:43.765000+00:00",
    "auteur": "Logs - Coffre",
    "texte": "Coffre\na retiré 47x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -3086.51, 6820.47, 44.73\ntargetPosition : -3086.26, 6819.89, 43.78\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6315\nplayerDiscord : 1301627104940785687\nplayerName : TALANTA.A\nplayerCharacter : Carter Fuente\nplayerId : 291258\nitemId : oil",
