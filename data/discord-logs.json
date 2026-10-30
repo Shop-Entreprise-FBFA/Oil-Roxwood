@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-30T01:56:13.535427+00:00",
+ "maj": "2026-10-30T01:58:15.425093+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1565544922453385277",
+   "t": "2026-10-30T01:56:35.931000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 160x Pétrole Raffiné pour 1600$ par Grigori Valentine. 800$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 160,
+   "montant": 1600,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1565544162630041680",
    "t": "2026-10-30T01:53:34.775000+00:00",
@@ -94169,30 +94185,6 @@
    "coffre": "entreprise (Oil RoxWood)",
    "champs": {
     "position": "-1846.09, 6514.76, 16.73",
-    "targetposition": "-1845.91, 6514.70, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7628",
-    "playerdiscord": "867577351173177374",
-    "playername": "...",
-    "playercharacter": "Bryan Storm",
-    "playerid": "298482",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1565011121981755586-3",
-   "t": "2026-10-28T14:35:27.981000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 20x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1846.09, 6514.84, 16.73\ntargetPosition : -1845.91, 6514.70, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7628\nplayerDiscord : 867577351173177374\nplayerName : ...\nplayerCharacter : Bryan Storm\nplayerId : 298482\nitemId : refinedoil",
-   "nom": "Bryan Storm",
-   "quantite": 20,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1846.09, 6514.84, 16.73",
     "targetposition": "-1845.91, 6514.70, 15.74",
     "jobid": "76",
     "jobname": "Oil RoxWood",
