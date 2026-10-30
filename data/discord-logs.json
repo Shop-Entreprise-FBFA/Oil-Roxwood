@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-30T01:52:13.521995+00:00",
+ "maj": "2026-10-30T01:54:14.535407+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1565544162630041680",
+   "t": "2026-10-30T01:53:34.775000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 316x Pétrole Raffiné pour 3160$ par Mohamed Hzrf. 1580$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 316,
+   "montant": 3160,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1565542654765310073",
    "t": "2026-10-30T01:47:35.272000+00:00",
@@ -94185,30 +94201,6 @@
     "playername": "...",
     "playercharacter": "Bryan Storm",
     "playerid": "298482",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1565010867513196569-0",
-   "t": "2026-10-28T14:34:27.311000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 148x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1845.14, 6516.26, 16.73\ntargetPosition : -1844.79, 6516.31, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 8152\nplayerDiscord : 706453716059947079\nplayerName : CleverGoose9528\nplayerCharacter : Merill Danielson\nplayerId : 129485\nitemId : refinedoil",
-   "nom": "Merill Danielson",
-   "quantite": 148,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1845.14, 6516.26, 16.73",
-    "targetposition": "-1844.79, 6516.31, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "8152",
-    "playerdiscord": "706453716059947079",
-    "playername": "CleverGoose9528",
-    "playercharacter": "Merill Danielson",
-    "playerid": "129485",
     "itemid": "refinedoil"
    }
   }
