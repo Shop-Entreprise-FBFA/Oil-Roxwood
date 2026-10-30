@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-30T17:38:18.162796+00:00",
+ "maj": "2026-10-30T17:40:16.152043+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1565782081483571221",
+   "t": "2026-10-30T17:38:59.050000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 324x Pétrole Raffiné pour 3240$ par Jack Berthier. 1620$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 324,
+   "montant": 3240,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1565781582701137981",
    "t": "2026-10-30T17:37:00.131000+00:00",
@@ -93805,22 +93821,6 @@
    "nom": null,
    "quantite": 652,
    "montant": 6520,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1565131510984609865",
-   "t": "2026-10-28T22:33:50.956000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 225x Pétrole Raffiné pour 2250$ par Mouly Franseco. 1125$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 225,
-   "montant": 2250,
    "type": "vente",
    "salon": "1245400913473179729",
    "champs": {
