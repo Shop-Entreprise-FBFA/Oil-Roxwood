@@ -21826,14 +21826,6 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
-  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -21857,6 +21849,14 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T00:06:23.240Z"
+  },
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -57750,9 +57750,9 @@
    "params": ""
   }
  },
- "_cid": "bot",
- "_maj": 1793389284391,
- "_rev": "wus13mb01y-mvvdnpsc",
+ "_cid": "bhqgekep0o",
+ "_maj": 1793389336654,
+ "_rev": "01q93ye64u7c-mvvdpgth",
  "_majSec": {
   "fer": 1793366439644,
   "fact": 1793378890744,
@@ -57761,11 +57761,11 @@
   "sheets": 1793386150837,
   "_qcFix1": 1792704634769,
   "_wkFix1": 1792704634769,
-  "journal": 1793386150837,
+  "journal": 1793389336654,
   "pending": 1792704634769,
   "prodDer": 1793387883473,
   "runners": 1793384481317,
-  "absences": 1793192815425,
+  "absences": 1793389336654,
   "imported": 1792704634769,
   "settings": 1792982385225,
   "closeUndo": 1792976185966,
@@ -57775,7 +57775,7 @@
   "primesExtra": 1792704634769,
   "quotasComHist": 1792976185966,
   "profils": 1793132547984,
-  "_tables": 1793389284391,
+  "_tables": 1793389336654,
   "_permsFix1": 1792704634769,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792704634769,
@@ -57792,6 +57792,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1793389337101,
+   "u": "Diego Herrera",
+   "a": "Absences Discord reprises : Hassan Cheb"
+  },
   {
    "t": 1793386172776,
    "u": "Tyler Collins",
@@ -59286,11 +59291,6 @@
    "t": 1792419654459,
    "u": "?",
    "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1792411748435,
-   "u": "Diego Herrera",
-   "a": "Éligibilité : 10 grade(s) réalignés sur l'effectif — Hassan Cheb : Raffineur Confirmé → Raffineur · Alfro Bensh : Raffineur → Intérimaire · Athéna Andershon : Raffineur → Intérimaire · Clara Soules : Raffineur → Intérimaire…"
   }
  ],
  "prodDer": {
@@ -59694,10 +59694,20 @@
    "motif": "",
    "par": "⚫ Diego Herrera",
    "auto": true
+  },
+  {
+   "id": 1793389342212,
+   "nom": "Hassan Cheb",
+   "du": "2026-11-02",
+   "au": "2026-11-22",
+   "srcId": "1793389283652",
+   "motif": "Voyage Professionnel au CONGO",
+   "par": "Stella Collins",
+   "auto": true
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-30T19:40:55.500Z",
+  "maj": "2026-10-30T19:42:17.189Z",
   "semaine": 44,
   "totalBarils": 219185,
   "ca": 1095925,
