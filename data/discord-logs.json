@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-30T10:06:18.312345+00:00",
+ "maj": "2026-10-30T10:08:13.562855+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1565668175050444913",
+   "t": "2026-10-30T10:06:21.640000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 139x Pétrole Raffiné pour 1390$ par Ana Fox. 695$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 139,
+   "montant": 1390,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1565665405131948075",
    "t": "2026-10-30T09:55:21.240000+00:00",
@@ -94057,30 +94073,6 @@
    "texte": "Coffre\ndépot de 39x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3085.75, 6814.87, 44.73\ntargetPosition : -3084.39, 6815.87, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6\nplayerDiscord : 767332288744128512\nplayerName : JULIO COLLINS\nplayerCharacter : Julio Collins\nplayerId : 356873\nitemId : oil",
    "nom": "Julio Collins",
    "quantite": 39,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-3085.75, 6814.87, 44.73",
-    "targetposition": "-3084.39, 6815.87, 43.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6",
-    "playerdiscord": "767332288744128512",
-    "playername": "JULIO COLLINS",
-    "playercharacter": "Julio Collins",
-    "playerid": "356873",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1565035362353684672-0",
-   "t": "2026-10-28T16:11:47.336000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 42x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3085.75, 6814.87, 44.73\ntargetPosition : -3084.39, 6815.87, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6\nplayerDiscord : 767332288744128512\nplayerName : JULIO COLLINS\nplayerCharacter : Julio Collins\nplayerId : 356873\nitemId : oil",
-   "nom": "Julio Collins",
-   "quantite": 42,
    "montant": null,
    "type": "coffre_depot",
    "salon": "1245400913066066099",
