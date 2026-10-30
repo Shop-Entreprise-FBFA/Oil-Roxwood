@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-30T11:10:16.811829+00:00",
+ "maj": "2026-10-30T11:12:13.213435+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1565684530092711967",
+   "t": "2026-10-30T11:11:20.986000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 537x Pétrole Raffiné pour 5370$ par Helena Rhosé. 2685$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 537,
+   "montant": 5370,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1565683777710194799",
    "t": "2026-10-30T11:08:21.604000+00:00",
@@ -93950,30 +93966,6 @@
    "champs": {
     "position": "-1815.63, 6565.78, 16.73",
     "targetposition": "-1815.66, 6565.56, 15.98",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6",
-    "playerdiscord": "767332288744128512",
-    "playername": "JULIO COLLINS",
-    "playercharacter": "Julio Collins",
-    "playerid": "356873",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1565041133573382209-1",
-   "t": "2026-10-28T16:34:43.302000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 137x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1840.51, 6524.85, 16.73\ntargetPosition : -1840.85, 6523.94, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6\nplayerDiscord : 767332288744128512\nplayerName : JULIO COLLINS\nplayerCharacter : Julio Collins\nplayerId : 356873\nitemId : refinedoil",
-   "nom": "Julio Collins",
-   "quantite": 137,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1840.51, 6524.85, 16.73",
-    "targetposition": "-1840.85, 6523.94, 15.74",
     "jobid": "76",
     "jobname": "Oil RoxWood",
     "playernetid": "6",
