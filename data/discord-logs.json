@@ -1,11 +1,67 @@
 {
- "maj": "2026-10-30T19:06:13.011448+00:00",
+ "maj": "2026-10-30T19:08:17.599902+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1565804474222518323",
+   "t": "2026-10-30T19:07:57.895000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 74x Pétrole Raffiné pour 740$ par Idhir Ramaoui. 370$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 74,
+   "montant": 740,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1565804220739747851",
+   "t": "2026-10-30T19:06:57.460000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 140x Pétrole Raffiné pour 1400$ par Hassan Cheb. 700$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 140,
+   "montant": 1400,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1565804194684870861",
+   "t": "2026-10-30T19:06:51.248000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 66x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1844.66, 6516.53, 16.73\ntargetPosition : -1844.79, 6516.31, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1907\nplayerDiscord : 1346541845949186092\nplayerName : SoggyGoose0922\nplayerCharacter : Xavier Collins\nplayerId : 292769\nitemId : refinedoil",
+   "nom": "Xavier Collins",
+   "quantite": 66,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1844.66, 6516.53, 16.73",
+    "targetposition": "-1844.79, 6516.31, 15.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "1907",
+    "playerdiscord": "1346541845949186092",
+    "playername": "SoggyGoose0922",
+    "playercharacter": "Xavier Collins",
+    "playerid": "292769",
+    "itemid": "refinedoil"
+   }
+  },
   {
    "id": "1565803720908869795",
    "t": "2026-10-30T19:04:58.291000+00:00",
@@ -93785,78 +93841,6 @@
     "playercharacter": "Athéna Andershon",
     "playerid": "196876",
     "itemid": "oil"
-   }
-  },
-  {
-   "id": "1565186334333739148-0",
-   "t": "2026-10-29T02:11:41.861000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 39x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1843.87, 6517.66, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6191\nplayerDiscord : 726178701867221134\nplayerName : Petit Panda\nplayerCharacter : Athéna Andershon\nplayerId : 196876\nitemId : refinedoil",
-   "nom": "Athéna Andershon",
-   "quantite": 39,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1843.87, 6517.66, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6191",
-    "playerdiscord": "726178701867221134",
-    "playername": "Petit Panda",
-    "playercharacter": "Athéna Andershon",
-    "playerid": "196876",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1565186334333739148-1",
-   "t": "2026-10-29T02:11:41.861000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 41x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1843.87, 6517.66, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6191\nplayerDiscord : 726178701867221134\nplayerName : Petit Panda\nplayerCharacter : Athéna Andershon\nplayerId : 196876\nitemId : refinedoil",
-   "nom": "Athéna Andershon",
-   "quantite": 41,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1843.87, 6517.66, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6191",
-    "playerdiscord": "726178701867221134",
-    "playername": "Petit Panda",
-    "playercharacter": "Athéna Andershon",
-    "playerid": "196876",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1565186334333739148-2",
-   "t": "2026-10-29T02:11:41.861000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 41x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1843.87, 6517.66, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6191\nplayerDiscord : 726178701867221134\nplayerName : Petit Panda\nplayerCharacter : Athéna Andershon\nplayerId : 196876\nitemId : refinedoil",
-   "nom": "Athéna Andershon",
-   "quantite": 41,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1843.87, 6517.66, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6191",
-    "playerdiscord": "726178701867221134",
-    "playername": "Petit Panda",
-    "playercharacter": "Athéna Andershon",
-    "playerid": "196876",
-    "itemid": "refinedoil"
    }
   }
  ]
