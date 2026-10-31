@@ -1,11 +1,32 @@
 {
- "maj": "2026-10-31T07:46:14.032082+00:00",
+ "maj": "2026-10-31T07:48:20.288610+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1565995719817560107",
+   "t": "2026-10-31T07:47:54.398000+00:00",
+   "auteur": "Logs - Achat fer",
+   "texte": "Achat fer\na acheté 10x fer pour 50$\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7049\nplayerDiscord : 767332288744128512\nplayerName : JULIO COLLINS\nplayerCharacter : Julio Collins\nplayerId : 356873\nitemId : iron",
+   "nom": "Julio Collins",
+   "quantite": 10,
+   "montant": 50,
+   "type": "achat_fer",
+   "salon": "1247565070423167100",
+   "champs": {
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "7049",
+    "playerdiscord": "767332288744128512",
+    "playername": "JULIO COLLINS",
+    "playercharacter": "Julio Collins",
+    "playerid": "356873",
+    "itemid": "iron"
+   }
+  },
   {
    "id": "1565994952465448985-0",
    "t": "2026-10-31T07:44:51.447000+00:00",
@@ -93235,30 +93256,6 @@
     "playercharacter": "Carter Fuente",
     "playerid": "291258",
     "itemid": "oil"
-   }
-  },
-  {
-   "id": "1565210995423707320-0",
-   "t": "2026-10-29T03:49:41.523000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 30x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1851.48, 6502.55, 16.73\ntargetPosition : -1851.46, 6502.05, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6315\nplayerDiscord : 1301627104940785687\nplayerName : TALANTA.A\nplayerCharacter : Carter Fuente\nplayerId : 291258\nitemId : refinedoil",
-   "nom": "Carter Fuente",
-   "quantite": 30,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1851.48, 6502.55, 16.73",
-    "targetposition": "-1851.46, 6502.05, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6315",
-    "playerdiscord": "1301627104940785687",
-    "playername": "TALANTA.A",
-    "playercharacter": "Carter Fuente",
-    "playerid": "291258",
-    "itemid": "refinedoil"
    }
   }
  ]
