@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-31T12:14:17.308865+00:00",
+ "maj": "2026-10-31T12:16:13.787811+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1566062912550993951",
+   "t": "2026-10-31T12:14:54.394000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 456x Pétrole Raffiné pour 4560$ par Jason Palmer. 2280$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 456,
+   "montant": 4560,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1566062410731626568",
    "t": "2026-10-31T12:12:54.751000+00:00",
@@ -93064,30 +93080,6 @@
    "texte": "Coffre\na retiré 122x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1844.24, 6516.95, 16.73\ntargetPosition : -1844.79, 6516.31, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6784\nplayerDiscord : 1284252197747687534\nplayerName : DustyAnt9093\nplayerCharacter : Lorenzo Shiva\nplayerId : 160460\nitemId : refinedoil",
    "nom": "Lorenzo Shiva",
    "quantite": 122,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1844.24, 6516.95, 16.73",
-    "targetposition": "-1844.79, 6516.31, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6784",
-    "playerdiscord": "1284252197747687534",
-    "playername": "DustyAnt9093",
-    "playercharacter": "Lorenzo Shiva",
-    "playerid": "160460",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1565317193653026823-5",
-   "t": "2026-10-29T10:51:41.154000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 12x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1844.24, 6516.95, 16.73\ntargetPosition : -1844.79, 6516.31, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6784\nplayerDiscord : 1284252197747687534\nplayerName : DustyAnt9093\nplayerCharacter : Lorenzo Shiva\nplayerId : 160460\nitemId : refinedoil",
-   "nom": "Lorenzo Shiva",
-   "quantite": 12,
    "montant": null,
    "type": "coffre_retrait",
    "salon": "1245400913066066099",
