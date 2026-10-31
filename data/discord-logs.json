@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-31T07:16:15.670815+00:00",
+ "maj": "2026-10-31T07:18:13.566493+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1565988162096865344",
+   "t": "2026-10-31T07:17:52.497000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 660x Pétrole Raffiné pour 6600$ par Bryan Storm. 3300$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 660,
+   "montant": 6600,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1565985137957539893-0",
    "t": "2026-10-31T07:05:51.486000+00:00",
@@ -93245,30 +93261,6 @@
     "playername": "TALANTA.A",
     "playercharacter": "Carter Fuente",
     "playerid": "291258",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1565210493134835733",
-   "t": "2026-10-29T03:47:41.768000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 48x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3084.87, 6815.74, 44.73\ntargetPosition : -3084.39, 6815.87, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 5640\nplayerDiscord : 826526979204841482\nplayerName : Orion\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : oil",
-   "nom": "Diego Herrera",
-   "quantite": 48,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-3084.87, 6815.74, 44.73",
-    "targetposition": "-3084.39, 6815.87, 43.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "5640",
-    "playerdiscord": "826526979204841482",
-    "playername": "Orion",
-    "playercharacter": "Diego Herrera",
-    "playerid": "231487",
     "itemid": "oil"
    }
   }
