@@ -1,11 +1,80 @@
 {
- "maj": "2026-10-31T12:48:15.409149+00:00",
+ "maj": "2026-10-31T12:52:15.542436+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1566072231438844026",
+   "t": "2026-10-31T12:51:56.190000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 8305\nplayerDiscord : 867577351173177374\nplayerName : Aritea987\nplayerCharacter : Bryan Storm\nplayerId : 298482\nvehiclePlate : IL4818AV\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Bryan Storm",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "8305",
+    "playerdiscord": "867577351173177374",
+    "playername": "Aritea987",
+    "playercharacter": "Bryan Storm",
+    "playerid": "298482",
+    "vehicleplate": "IL4818AV",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1566072213046693901-0",
+   "t": "2026-10-31T12:51:51.805000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\na retiré 134x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1844.77, 6517.21, 16.73\ntargetPosition : -1844.79, 6516.31, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7169\nplayerDiscord : 1346541845949186092\nplayerName : SoggyGoose0922\nplayerCharacter : Xavier Collins\nplayerId : 292769\nitemId : refinedoil",
+   "nom": "Xavier Collins",
+   "quantite": 134,
+   "montant": null,
+   "type": "coffre_retrait",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1844.77, 6517.21, 16.73",
+    "targetposition": "-1844.79, 6516.31, 15.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "7169",
+    "playerdiscord": "1346541845949186092",
+    "playername": "SoggyGoose0922",
+    "playercharacter": "Xavier Collins",
+    "playerid": "292769",
+    "itemid": "refinedoil"
+   }
+  },
+  {
+   "id": "1566072213046693901-1",
+   "t": "2026-10-31T12:51:51.805000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\na retiré 134x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1844.44, 6516.92, 16.73\ntargetPosition : -1844.79, 6516.31, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7169\nplayerDiscord : 1346541845949186092\nplayerName : SoggyGoose0922\nplayerCharacter : Xavier Collins\nplayerId : 292769\nitemId : refinedoil",
+   "nom": "Xavier Collins",
+   "quantite": 134,
+   "montant": null,
+   "type": "coffre_retrait",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1844.44, 6516.92, 16.73",
+    "targetposition": "-1844.79, 6516.31, 15.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "7169",
+    "playerdiscord": "1346541845949186092",
+    "playername": "SoggyGoose0922",
+    "playercharacter": "Xavier Collins",
+    "playerid": "292769",
+    "itemid": "refinedoil"
+   }
+  },
   {
    "id": "1566070735703900171",
    "t": "2026-10-31T12:45:59.579000+00:00",
@@ -93023,78 +93092,6 @@
     "playercharacter": "Stella Collins",
     "playerid": "232050",
     "itemid": "businessCard"
-   }
-  },
-  {
-   "id": "1565322403427520635-3",
-   "t": "2026-10-29T11:12:23.261000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 67x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1848.13, 6499.09, 16.73\ntargetPosition : -1849.11, 6498.65, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7328\nplayerDiscord : 948542221429379112\nplayerName : SleepyMoth4273\nplayerCharacter : Stella Collins\nplayerId : 232050\nitemId : oil",
-   "nom": "Stella Collins",
-   "quantite": 67,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1848.13, 6499.09, 16.73",
-    "targetposition": "-1849.11, 6498.65, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7328",
-    "playerdiscord": "948542221429379112",
-    "playername": "SleepyMoth4273",
-    "playercharacter": "Stella Collins",
-    "playerid": "232050",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1565322403427520635-4",
-   "t": "2026-10-29T11:12:23.261000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 1x Carte de visite du coffre de l'entreprise (Oil RoxWood)\nposition : -1848.13, 6499.09, 16.73\ntargetPosition : -1849.11, 6498.65, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7328\nplayerDiscord : 948542221429379112\nplayerName : SleepyMoth4273\nplayerCharacter : Stella Collins\nplayerId : 232050\nitemId : businessCard",
-   "nom": "Stella Collins",
-   "quantite": 1,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1848.13, 6499.09, 16.73",
-    "targetposition": "-1849.11, 6498.65, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7328",
-    "playerdiscord": "948542221429379112",
-    "playername": "SleepyMoth4273",
-    "playercharacter": "Stella Collins",
-    "playerid": "232050",
-    "itemid": "businessCard"
-   }
-  },
-  {
-   "id": "1565322403427520635-5",
-   "t": "2026-10-29T11:12:23.261000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 67x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1848.13, 6499.09, 16.73\ntargetPosition : -1849.11, 6498.65, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7328\nplayerDiscord : 948542221429379112\nplayerName : SleepyMoth4273\nplayerCharacter : Stella Collins\nplayerId : 232050\nitemId : oil",
-   "nom": "Stella Collins",
-   "quantite": 67,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1848.13, 6499.09, 16.73",
-    "targetposition": "-1849.11, 6498.65, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7328",
-    "playerdiscord": "948542221429379112",
-    "playername": "SleepyMoth4273",
-    "playercharacter": "Stella Collins",
-    "playerid": "232050",
-    "itemid": "oil"
    }
   }
  ]
