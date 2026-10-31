@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-31T09:30:16.652817+00:00",
+ "maj": "2026-10-31T09:32:13.670959+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1566021634794590290",
+   "t": "2026-10-31T09:30:53.010000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 347x Pétrole Raffiné pour 3470$ par Jason Palmer. 1735$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 347,
+   "montant": 3470,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1566021383677542411",
    "t": "2026-10-31T09:29:53.139000+00:00",
@@ -93158,30 +93174,6 @@
     "playercharacter": "Carter Fuente",
     "playerid": "291258",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1565214519473602675-4",
-   "t": "2026-10-29T04:03:41.722000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 44x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1851.48, 6502.55, 16.73\ntargetPosition : -1851.46, 6502.05, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6315\nplayerDiscord : 1301627104940785687\nplayerName : TALANTA.A\nplayerCharacter : Carter Fuente\nplayerId : 291258\nitemId : oil",
-   "nom": "Carter Fuente",
-   "quantite": 44,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1851.48, 6502.55, 16.73",
-    "targetposition": "-1851.46, 6502.05, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6315",
-    "playerdiscord": "1301627104940785687",
-    "playername": "TALANTA.A",
-    "playercharacter": "Carter Fuente",
-    "playerid": "291258",
-    "itemid": "oil"
    }
   }
  ]
