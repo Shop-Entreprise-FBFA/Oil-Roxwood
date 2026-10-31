@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-31T12:02:13.168952+00:00",
+ "maj": "2026-10-31T12:04:14.579180+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1566060147598426204",
+   "t": "2026-10-31T12:03:55.178000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 660x Pétrole Raffiné pour 6600$ par Bryan Storm. 3300$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 660,
+   "montant": 6600,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1566057112688136204-0",
    "t": "2026-10-31T11:51:51.599000+00:00",
@@ -93077,27 +93093,6 @@
    "salon": "1245400913473179729",
    "champs": {
     "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1565314672046112809",
-   "t": "2026-10-29T10:41:39.956000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 7271\nplayerDiscord : 831877007545204806\nplayerName : carmélia cortez\nplayerCharacter : Carmelia Cortez\nplayerId : 368287\nvehiclePlate : GD7230WT\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Carmelia Cortez",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "7271",
-    "playerdiscord": "831877007545204806",
-    "playername": "carmélia cortez",
-    "playercharacter": "Carmelia Cortez",
-    "playerid": "368287",
-    "vehicleplate": "GD7230WT",
     "jobid": "76",
     "jobname": "Oil RoxWood"
    }
