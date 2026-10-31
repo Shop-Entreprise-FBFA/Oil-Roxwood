@@ -15073,6 +15073,20 @@
     "client": "Employé — Elliot Adkins ⚡",
     "quantite": 15,
     "qui": "Emma Collins-rodriguez"
+   },
+   {
+    "date": "2026-10-31",
+    "client": "Sandy Repairs",
+    "quantite": 100,
+    "qui": "Emma Collins-rodriguez",
+    "fact": 253190
+   },
+   {
+    "date": "2026-10-31",
+    "client": "Sandy Repairs",
+    "quantite": 100,
+    "qui": "William Rodriguez-collins",
+    "fact": 253190
    }
   ],
   "collection": [
@@ -16720,7 +16734,7 @@
     "rib": "21138",
     "tel": "2048",
     "adresse": "Sandy Shores",
-    "lastCmd": "2026-10-27",
+    "lastCmd": "2026-10-31",
     "type": "entreprise",
     "salon": "1436500641492111463"
    },
@@ -17677,8 +17691,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253190,
+  "compteur": 253191,
   "factures": [
+   {
+    "num": 253190,
+    "date": "2026-10-31",
+    "client": "Sandy Repairs",
+    "emetteur": "Emma Collins-rodriguez, William Rodriguez-collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 200,
+      "tva": 0,
+      "pu": 180,
+      "ht": 36000,
+      "ttc": 36000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 36000,
+    "ttc": 36000,
+    "poids": 400,
+    "statut": "attente"
+   },
    {
     "num": 253189,
     "date": "2026-10-31",
@@ -21904,6 +21941,14 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T20:11:53.537Z"
+  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -21927,14 +21972,6 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T00:06:23.240Z"
-  },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -58020,15 +58057,15 @@
    "params": ""
   }
  },
- "_cid": "phkf75p0uzh",
- "_maj": 1793486773978,
- "_rev": "nbayfjt12y-mvwzpxql",
+ "_cid": "2x0nosgi06t",
+ "_maj": 1793486778067,
+ "_rev": "fuzu1bvxysq-mvwzpysm",
  "_majSec": {
   "fer": 1793481983031,
-  "fact": 1793471342241,
+  "fact": 1793486778045,
   "users": 1793477232505,
   "weeks": 1792976185966,
-  "sheets": 1793482119412,
+  "sheets": 1793486778045,
   "_qcFix1": 1792704634769,
   "_wkFix1": 1792704634769,
   "journal": 1793485734571,
@@ -58045,7 +58082,7 @@
   "primesExtra": 1792704634769,
   "quotasComHist": 1792976185966,
   "profils": 1793132547984,
-  "_tables": 1793486773978,
+  "_tables": 1793486778045,
   "_permsFix1": 1792704634769,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792704634769,
@@ -59987,13 +60024,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-31T22:46:16.845Z",
+  "maj": "2026-10-31T22:46:18.214Z",
   "semaine": 44,
   "totalBarils": 284602,
   "ca": 1423010,
   "objectif": 375000,
   "effectif": 125,
-  "clientsServis": 174,
+  "clientsServis": 175,
   "theme": "",
   "top3": [
    {
