@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-31T10:58:14.105799+00:00",
+ "maj": "2026-10-31T11:00:13.830059+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1566044029425160294",
+   "t": "2026-10-31T10:59:52.306000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 661x Pétrole Raffiné pour 6610$ par Hakim Cheb. 3305$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 661,
+   "montant": 6610,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1566041258428866652-0",
    "t": "2026-10-31T10:48:51.649000+00:00",
@@ -93114,27 +93130,6 @@
    "salon": "1245400913473179729",
    "champs": {
     "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1565303353653727405",
-   "t": "2026-10-29T09:56:41.441000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 7001\nplayerDiscord : 1353370377069527233\nplayerName : ShyDeer4974\nplayerCharacter : Didier Cleanton\nplayerId : 349309\nvehiclePlate : ZG7875QV\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Didier Cleanton",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "7001",
-    "playerdiscord": "1353370377069527233",
-    "playername": "ShyDeer4974",
-    "playercharacter": "Didier Cleanton",
-    "playerid": "349309",
-    "vehicleplate": "ZG7875QV",
     "jobid": "76",
     "jobname": "Oil RoxWood"
    }
