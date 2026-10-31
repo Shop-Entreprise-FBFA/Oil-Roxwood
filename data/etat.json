@@ -21904,6 +21904,14 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T20:11:53.537Z"
+  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -21927,14 +21935,6 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T00:06:23.240Z"
-  },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -58020,9 +58020,9 @@
    "params": ""
   }
  },
- "_cid": "phkf75p0uzh",
- "_maj": 1793485693958,
- "_rev": "1ff5ajjjicj-mvwz2sdw",
+ "_cid": "11ma546hu25",
+ "_maj": 1793485734571,
+ "_rev": "cqv77430gs6-mvwz3lh5",
  "_majSec": {
   "fer": 1793481983031,
   "fact": 1793471342241,
@@ -58031,11 +58031,11 @@
   "sheets": 1793482119412,
   "_qcFix1": 1792704634769,
   "_wkFix1": 1792704634769,
-  "journal": 1793482086459,
+  "journal": 1793485734571,
   "pending": 1792704634769,
   "prodDer": 1793387883473,
   "runners": 1793481773917,
-  "absences": 1793389336654,
+  "absences": 1793485734571,
   "imported": 1792704634769,
   "settings": 1792982385225,
   "closeUndo": 1792976185966,
@@ -58045,7 +58045,7 @@
   "primesExtra": 1792704634769,
   "quotasComHist": 1792976185966,
   "profils": 1793132547984,
-  "_tables": 1793485693958,
+  "_tables": 1793485734571,
   "_permsFix1": 1792704634769,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792704634769,
@@ -58062,6 +58062,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1793485734504,
+   "u": "William Rodriguez-Collins",
+   "a": "Absences Discord reprises : Tonio Munson"
+  },
   {
    "t": 1793482088740,
    "u": "Diego Herrera",
@@ -59556,11 +59561,6 @@
    "t": 1792510015622,
    "u": "Julio Collins",
    "a": "Achats de fer : 2 relevé(s) repris du salon"
-  },
-  {
-   "t": 1792510012466,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
   }
  ],
  "prodDer": {
@@ -59974,10 +59974,20 @@
    "motif": "Voyage Professionnel au CONGO",
    "par": "Stella Collins",
    "auto": true
+  },
+  {
+   "id": 1793485739719,
+   "nom": "Tonio Munson",
+   "du": "2026-11-02",
+   "au": "2026-11-08",
+   "srcId": "1793485681694",
+   "motif": "déplacement",
+   "par": "Stella Collins",
+   "auto": true
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-31T22:28:16.820Z",
+  "maj": "2026-10-31T22:28:54.521Z",
   "semaine": 44,
   "totalBarils": 284602,
   "ca": 1423010,
