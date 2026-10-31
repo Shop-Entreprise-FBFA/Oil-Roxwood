@@ -1,11 +1,35 @@
 {
- "maj": "2026-10-31T12:04:14.579180+00:00",
+ "maj": "2026-10-31T12:08:14.679993+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1566060886148391014",
+   "t": "2026-10-31T12:06:51.262000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 32x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1850.20, 6514.50, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7846\nplayerDiscord : 1302006434870853632\nplayerName : DustyLizard9592\nplayerCharacter : Alya Vega\nplayerId : 348190\nitemId : refinedoil",
+   "nom": "Alya Vega",
+   "quantite": 32,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1850.20, 6514.50, 16.73",
+    "targetposition": "-1850.63, 6515.15, 15.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "7846",
+    "playerdiscord": "1302006434870853632",
+    "playername": "DustyLizard9592",
+    "playercharacter": "Alya Vega",
+    "playerid": "348190",
+    "itemid": "refinedoil"
+   }
+  },
   {
    "id": "1566060147598426204",
    "t": "2026-10-31T12:03:55.178000+00:00",
@@ -93073,22 +93097,6 @@
    "nom": null,
    "quantite": 621,
    "montant": 6210,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1565315450760339468",
-   "t": "2026-10-29T10:44:45.616000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 636x Pétrole Raffiné pour 6360$ par Ana Fox. 3180$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 636,
-   "montant": 6360,
    "type": "vente",
    "salon": "1245400913473179729",
    "champs": {
