@@ -1,11 +1,43 @@
 {
- "maj": "2026-10-31T18:54:14.401172+00:00",
+ "maj": "2026-10-31T18:58:17.195070+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1566164001803731116",
+   "t": "2026-10-31T18:56:35.950000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 189x Pétrole Raffiné pour 1890$ par Treyvon Delcruz. 945$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 189,
+   "montant": 1890,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1566163499791552646",
+   "t": "2026-10-31T18:54:36.261000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 69x Pétrole Raffiné pour 690$ par Xavier Collins. 345$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 69,
+   "montant": 690,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1566162493007732789-0",
    "t": "2026-10-31T18:50:36.225000+00:00",
@@ -92694,51 +92726,6 @@
     "playercharacter": "Nikko Mount",
     "playerid": "276376",
     "itemid": "oil"
-   }
-  },
-  {
-   "id": "1565365021662519373-5",
-   "t": "2026-10-29T14:01:44.240000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 24x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3090.47, 6813.86, 44.73\ntargetPosition : -3089.68, 6814.50, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 8364\nplayerDiscord : 767332288744128512\nplayerName : JULIO COLLINS\nplayerCharacter : Julio Collins\nplayerId : 356873\nitemId : oil",
-   "nom": "Julio Collins",
-   "quantite": 24,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-3090.47, 6813.86, 44.73",
-    "targetposition": "-3089.68, 6814.50, 43.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "8364",
-    "playerdiscord": "767332288744128512",
-    "playername": "JULIO COLLINS",
-    "playercharacter": "Julio Collins",
-    "playerid": "356873",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1565365006155907072",
-   "t": "2026-10-29T14:01:40.543000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 8388\nplayerDiscord : 487891709821190145\nplayerName : bloody.aw\nplayerCharacter : Luc Rouza\nplayerId : 382769\nvehiclePlate : AS5715VX\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Luc Rouza",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "8388",
-    "playerdiscord": "487891709821190145",
-    "playername": "bloody.aw",
-    "playercharacter": "Luc Rouza",
-    "playerid": "382769",
-    "vehicleplate": "AS5715VX",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
