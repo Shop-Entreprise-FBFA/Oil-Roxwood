@@ -14995,6 +14995,20 @@
     "client": "Citoyen ⚡",
     "quantite": 20,
     "qui": "Emma Collins-rodriguez"
+   },
+   {
+    "date": "2026-10-31",
+    "client": "Les Mugiwara",
+    "quantite": 100,
+    "qui": "Emma Collins-rodriguez",
+    "fact": 253189
+   },
+   {
+    "date": "2026-10-31",
+    "client": "Les Mugiwara",
+    "quantite": 100,
+    "qui": "William Rodriguez-collins",
+    "fact": 253189
    }
   ],
   "collection": [
@@ -16624,7 +16638,7 @@
     "rib": "",
     "tel": "",
     "adresse": "Los Santos ",
-    "lastCmd": "2026-09-15",
+    "lastCmd": "2026-10-31",
     "type": "famille",
     "salon": "1543609084542984202"
    },
@@ -17599,8 +17613,38 @@
     "prix": 150
    }
   ],
-  "compteur": 253189,
+  "compteur": 253190,
   "factures": [
+   {
+    "num": 253189,
+    "date": "2026-10-31",
+    "client": "Les Mugiwara",
+    "emetteur": "Emma Collins-rodriguez, William Rodriguez-collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 200,
+      "tva": 0,
+      "pu": 180,
+      "ht": 36000,
+      "ttc": 36000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 36000,
+    "ttc": 36000,
+    "poids": 400,
+    "statut": "attente",
+    "envoi": {
+     "t": 1793470886490,
+     "par": "Emma Collins-rodriguez",
+     "statut": "en_cours",
+     "ordre": 1793470887106,
+     "rapport": ""
+    }
+   },
    {
     "num": 253188,
     "date": "2026-10-29",
@@ -21795,6 +21839,14 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T20:11:53.537Z"
+  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -21818,14 +21870,6 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T00:06:23.240Z"
-  },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -57903,15 +57947,15 @@
    "params": ""
   }
  },
- "_cid": "e7r2vmvqgu",
- "_maj": 1793470860107,
- "_rev": "6jwgjc2mvwi-mvwq95bl",
+ "_cid": "2x0nosgi06t",
+ "_maj": 1793470886491,
+ "_rev": "a2wfyqh13cf-mvwq9cod",
  "_majSec": {
   "fer": 1793465494886,
-  "fact": 1793378890744,
+  "fact": 1793470886491,
   "users": 1793434456440,
   "weeks": 1792976185966,
-  "sheets": 1793466197383,
+  "sheets": 1793470885910,
   "_qcFix1": 1792704634769,
   "_wkFix1": 1792704634769,
   "journal": 1793465580938,
@@ -57928,7 +57972,7 @@
   "primesExtra": 1792704634769,
   "quotasComHist": 1792976185966,
   "profils": 1793132547984,
-  "_tables": 1793470813829,
+  "_tables": 1793470886466,
   "_permsFix1": 1792704634769,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792704634769,
@@ -59860,13 +59904,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-31T18:21:16.977Z",
+  "maj": "2026-10-31T18:21:26.509Z",
   "semaine": 44,
   "totalBarils": 530544,
   "ca": 2652720,
   "objectif": 375000,
   "effectif": 124,
-  "clientsServis": 173,
+  "clientsServis": 174,
   "theme": "",
   "top3": [
    {
@@ -61883,6 +61927,48 @@
     "id": 1793275584778,
     "statut": "fait",
     "rapport": "Facture n°253188 postee dans le salon 1247271293317812264."
+   },
+   {
+    "type": "facture_ticket",
+    "payload": {
+     "num": 253189,
+     "salon": "1543609084542984202",
+     "reedition": false,
+     "facture": {
+      "num": 253189,
+      "date": "2026-10-31",
+      "client": "Les Mugiwara",
+      "emetteur": "Emma Collins-rodriguez, William Rodriguez-collins",
+      "postop": false,
+      "lignes": [
+       {
+        "ref": "CMD",
+        "qte": 200,
+        "tva": 0,
+        "pu": 180,
+        "ht": 36000,
+        "ttc": 36000,
+        "desc": "bidons d'essence "
+       }
+      ],
+      "offert": 0,
+      "ht": 36000,
+      "ttc": 36000,
+      "poids": 400,
+      "statut": "attente"
+     },
+     "client": {
+      "nom": "Les Mugiwara",
+      "rib": "",
+      "tel": "",
+      "adresse": "Los Santos ",
+      "lastCmd": "2026-10-31",
+      "type": "famille",
+      "salon": "1543609084542984202"
+     },
+     "par": "Emma Collins-rodriguez"
+    },
+    "id": 1793470887106
    }
   ],
   "oilroxwood_coffres": [
