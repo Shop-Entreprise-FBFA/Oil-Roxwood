@@ -17714,7 +17714,14 @@
     "ht": 36000,
     "ttc": 36000,
     "poids": 400,
-    "statut": "attente"
+    "statut": "attente",
+    "envoi": {
+     "t": 1793486778744,
+     "par": "Emma Collins-rodriguez",
+     "statut": "en_cours",
+     "ordre": 1793486778378,
+     "rapport": ""
+    }
    },
    {
     "num": 253189,
@@ -58058,11 +58065,11 @@
   }
  },
  "_cid": "2x0nosgi06t",
- "_maj": 1793486778067,
- "_rev": "fuzu1bvxysq-mvwzpysm",
+ "_maj": 1793486778744,
+ "_rev": "lfvhuz145a8-mvwzq2z0",
  "_majSec": {
   "fer": 1793481983031,
-  "fact": 1793486778045,
+  "fact": 1793486778744,
   "users": 1793477232505,
   "weeks": 1792976185966,
   "sheets": 1793486778045,
@@ -58082,7 +58089,7 @@
   "primesExtra": 1792704634769,
   "quotasComHist": 1792976185966,
   "profils": 1793132547984,
-  "_tables": 1793486778045,
+  "_tables": 1793486778721,
   "_permsFix1": 1792704634769,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792704634769,
@@ -60024,7 +60031,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-10-31T22:46:18.214Z",
+  "maj": "2026-10-31T22:46:23.628Z",
   "semaine": 44,
   "totalBarils": 284602,
   "ca": 1423010,
@@ -62091,6 +62098,48 @@
     "id": 1793470887106,
     "statut": "fait",
     "rapport": "Facture n°253189 postee dans le salon 1543609084542984202."
+   },
+   {
+    "type": "facture_ticket",
+    "payload": {
+     "num": 253190,
+     "salon": "1436500641492111463",
+     "reedition": false,
+     "facture": {
+      "num": 253190,
+      "date": "2026-10-31",
+      "client": "Sandy Repairs",
+      "emetteur": "Emma Collins-rodriguez, William Rodriguez-collins",
+      "postop": false,
+      "lignes": [
+       {
+        "ref": "CMD",
+        "qte": 200,
+        "tva": 0,
+        "pu": 180,
+        "ht": 36000,
+        "ttc": 36000,
+        "desc": "bidons d'essence "
+       }
+      ],
+      "offert": 0,
+      "ht": 36000,
+      "ttc": 36000,
+      "poids": 400,
+      "statut": "attente"
+     },
+     "client": {
+      "nom": "Sandy Repairs",
+      "rib": "21138",
+      "tel": "2048",
+      "adresse": "Sandy Shores",
+      "lastCmd": "2026-10-31",
+      "type": "entreprise",
+      "salon": "1436500641492111463"
+     },
+     "par": "Emma Collins-rodriguez"
+    },
+    "id": 1793486778378
    }
   ],
   "oilroxwood_coffres": [
