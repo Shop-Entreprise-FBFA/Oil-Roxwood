@@ -1,11 +1,27 @@
 {
- "maj": "2026-10-31T10:16:13.836221+00:00",
+ "maj": "2026-10-31T10:20:17.152280+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1566033968518930515",
+   "t": "2026-10-31T10:19:53.599000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 320x Pétrole Raffiné pour 3200$ par Jeff Beaumont. 1600$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 320,
+   "montant": 3200,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1566031442381774879",
    "t": "2026-10-31T10:09:51.321000+00:00",
@@ -93155,22 +93171,6 @@
     "playercharacter": "Lorenzo Shiva",
     "playerid": "160460",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1565283475295309856",
-   "t": "2026-10-29T08:37:42.071000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 570x Pétrole Raffiné pour 5700$ par Luc Rouza. 2850$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 570,
-   "montant": 5700,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
