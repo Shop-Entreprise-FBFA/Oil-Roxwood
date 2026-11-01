@@ -21959,6 +21959,22 @@
    "public": true,
    "maj": "2026-09-16T11:47:16.417Z"
   },
+  "stella collins": {
+   "nom": "Stella Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-14T13:20:17.287Z"
+  },
+  "julio collins": {
+   "nom": "Julio Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T00:06:23.240Z"
+  },
   "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿": {
    "nom": "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿",
    "photo": "",
@@ -21982,22 +21998,6 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T16:48:15.042Z"
-  },
-  "stella collins": {
-   "nom": "Stella Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-14T13:20:17.287Z"
-  },
-  "julio collins": {
-   "nom": "Julio Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T00:06:23.240Z"
   },
   "william rodriguez-collins": {
    "nom": "William Rodriguez-collins",
@@ -57915,6 +57915,14 @@
    "quantite": 32,
    "montant": 160,
    "did": "767332288744128512"
+  },
+  {
+   "id": "1566399789925404803",
+   "t": "2026-11-01 11:33",
+   "nom": "Julio Collins",
+   "quantite": 14,
+   "montant": 70,
+   "did": "767332288744128512"
   }
  ],
  "settings": {
@@ -58155,11 +58163,11 @@
    "params": ""
   }
  },
- "_cid": "phkf75p0uzh",
- "_maj": 1793541658299,
- "_rev": "7oiio2v4ipf-mvxwebmz",
+ "_cid": "u2b64bauhti",
+ "_maj": 1793541660183,
+ "_rev": "iylu927rb3-mvxweg44",
  "_majSec": {
-  "fer": 1793528840370,
+  "fer": 1793541660183,
   "fact": 1793541617594,
   "users": 1793541649443,
   "weeks": 1793211567861,
@@ -58174,13 +58182,13 @@
   "imported": 1793211567861,
   "settings": 1793211567861,
   "closeUndo": 1793211567861,
-  "quotasCom": 1793528840217,
+  "quotasCom": 1793541660035,
   "bilanExtra": 1793540395543,
   "bilanForce": 1793211567861,
   "primesExtra": 1793211567861,
   "quotasComHist": 1793211567861,
   "profils": 1793211567861,
-  "_tables": 1793541658299,
+  "_tables": 1793541660035,
   "_permsFix1": 1793211567861,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793211567861,
@@ -58197,6 +58205,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1793541662677,
+   "u": "Julio Collins",
+   "a": "Achats de fer : 1 relevé(s) repris du salon"
+  },
   {
    "t": 1793541651927,
    "u": "Julio Collins",
@@ -59691,11 +59704,6 @@
    "t": 1792594366869,
    "u": "Diego Herrera",
    "a": "Achats de fer : 1 relevé(s) repris du salon"
-  },
-  {
-   "t": 1792593713296,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
   }
  ],
  "prodDer": {
@@ -60132,7 +60140,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-01T14:01:02.315Z",
+  "maj": "2026-11-01T14:01:08.116Z",
   "semaine": 44,
   "totalBarils": 295406,
   "ca": 1477030,
@@ -60270,9 +60278,9 @@
  "quotasCom": {
   "sem": 44,
   "achats": {},
-  "vendus": 3180,
-  "parPers": 795,
-  "ferPers": 1590
+  "vendus": 3430,
+  "parPers": 858,
+  "ferPers": 1716
  },
  "bilanExtra": [
   {
