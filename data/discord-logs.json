@@ -1,11 +1,35 @@
 {
- "maj": "2026-11-01T18:26:51.428363+00:00",
+ "maj": "2026-11-01T18:28:51.310055+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1566519356886618263",
+   "t": "2026-11-01T18:28:39.204000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 64x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3085.46, 6815.16, 44.73\ntargetPosition : -3084.39, 6815.87, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 199\nplayerDiscord : 948542221429379112\nplayerName : sarah\nplayerCharacter : Stella Collins\nplayerId : 232050\nitemId : oil",
+   "nom": "Stella Collins",
+   "quantite": 64,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-3085.46, 6815.16, 44.73",
+    "targetposition": "-3084.39, 6815.87, 43.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "199",
+    "playerdiscord": "948542221429379112",
+    "playername": "sarah",
+    "playercharacter": "Stella Collins",
+    "playerid": "232050",
+    "itemid": "oil"
+   }
+  },
   {
    "id": "1566516582627155969",
    "t": "2026-11-01T18:17:37.769000+00:00",
@@ -92957,27 +92981,6 @@
     "playercharacter": "Hakim Cheb",
     "playerid": "321842",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1565713218536607826-0",
-   "t": "2026-10-30T13:05:20.844000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 1367\nplayerDiscord : 950886433508450344\nplayerName : BreezyCat1053\nplayerCharacter : Tyrese Jackson\nplayerId : 384737\nvehiclePlate : AY4705SJ\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Tyrese Jackson",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "1367",
-    "playerdiscord": "950886433508450344",
-    "playername": "BreezyCat1053",
-    "playercharacter": "Tyrese Jackson",
-    "playerid": "384737",
-    "vehicleplate": "AY4705SJ",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
