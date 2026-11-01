@@ -1,11 +1,35 @@
 {
- "maj": "2026-11-01T09:53:38.481855+00:00",
+ "maj": "2026-11-01T09:55:31.747283+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1566389718768287745",
+   "t": "2026-11-01T09:53:31.068000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\na retiré 5x Carte de visite du coffre de l'entreprise (Oil RoxWood)\nposition : -1840.56, 6524.10, 16.73\ntargetPosition : -1840.85, 6523.94, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6108\nplayerDiscord : 593431852291850281\nplayerName : BoldFish7448\nplayerCharacter : Tyler Collins\nplayerId : 209236\nitemId : businessCard",
+   "nom": "Tyler Collins",
+   "quantite": 5,
+   "montant": null,
+   "type": "coffre_retrait",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1840.56, 6524.10, 16.73",
+    "targetposition": "-1840.85, 6523.94, 15.74",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "6108",
+    "playerdiscord": "593431852291850281",
+    "playername": "BoldFish7448",
+    "playercharacter": "Tyler Collins",
+    "playerid": "209236",
+    "itemid": "businessCard"
+   }
+  },
   {
    "id": "1566389211752562759",
    "t": "2026-11-01T09:51:30.186000+00:00",
@@ -92554,22 +92578,6 @@
     "playercharacter": "Nikko Mount",
     "playerid": "276376",
     "itemid": "oil"
-   }
-  },
-  {
-   "id": "1565398459601657947",
-   "t": "2026-10-29T16:14:36.466000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 322x Pétrole Raffiné pour 3220$ par Jack Berthier. 1610$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 322,
-   "montant": 3220,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
