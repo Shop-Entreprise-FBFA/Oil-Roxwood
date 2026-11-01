@@ -8282,7 +8282,7 @@
     "idU": "366823",
     "arrivee": "2026-10-22",
     "discord": "540282853590827009",
-    "avert": "",
+    "avert": "1",
     "contrat": false,
     "recrut": "Marco Bellini",
     "dernierService": "2026-10-22",
@@ -58327,17 +58327,17 @@
   }
  },
  "_cid": "jg272e3tds",
- "_maj": 1793574866956,
- "_rev": "xcx5ndxvl7p-mvyg64os",
+ "_maj": 1793574878963,
+ "_rev": "1q35y80d352-mvyg6bdh",
  "_majSec": {
   "fer": 1793562087182,
   "fact": 1793541843266,
   "users": 1793544319400,
   "weeks": 1793211567861,
-  "sheets": 1793574857770,
+  "sheets": 1793574878938,
   "_qcFix1": 1793211567861,
   "_wkFix1": 1793211567861,
-  "journal": 1793574865009,
+  "journal": 1793574878963,
   "pending": 1793211567861,
   "prodDer": 1793387883473,
   "runners": 1793574067662,
@@ -58351,7 +58351,7 @@
   "primesExtra": 1793211567861,
   "quotasComHist": 1793211567861,
   "profils": 1793211567861,
-  "_tables": 1793574857770,
+  "_tables": 1793574878938,
   "_permsFix1": 1793211567861,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793211567861,
@@ -58368,6 +58368,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1793574879977,
+   "u": "Diego Herrera",
+   "a": "Avertissement : Aize Devinci (intérimaire, aucune prise de service) — total : 1"
+  },
   {
    "t": 1793574866024,
    "u": "Diego Herrera",
@@ -59862,11 +59867,6 @@
    "t": 1792610511579,
    "u": "Julio Collins",
    "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1792610511388,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
   }
  ],
  "prodDer": {
@@ -60273,7 +60273,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-01T23:14:32.380Z",
+  "maj": "2026-11-01T23:14:41.045Z",
   "semaine": 44,
   "totalBarils": 321624,
   "ca": 1608120,
@@ -62527,6 +62527,16 @@
     "id": 1793574859113,
     "statut": "fait",
     "rapport": "Avertissement enregistre pour nikomook_69 (total : 1)."
+   },
+   {
+    "type": "avertissement",
+    "payload": {
+     "discord": "540282853590827009",
+     "nom": "Aize Devinci",
+     "raison": "Aucune prise de service cette semaine",
+     "par": "Diego Herrera"
+    },
+    "id": 1793574880784
    }
   ],
   "oilroxwood_coffres": [
