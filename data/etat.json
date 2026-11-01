@@ -57885,6 +57885,22 @@
    "quantite": 25,
    "montant": 125,
    "did": "1053366471574687844"
+  },
+  {
+   "id": "1566250315869716623:0",
+   "t": "2026-11-01 01:39",
+   "nom": "Julio Collins",
+   "quantite": 100,
+   "montant": 500,
+   "did": "767332288744128512"
+  },
+  {
+   "id": "1566250315869716623:1",
+   "t": "2026-11-01 01:39",
+   "nom": "Julio Collins",
+   "quantite": 32,
+   "montant": 160,
+   "did": "767332288744128512"
   }
  ],
  "settings": {
@@ -58126,10 +58142,10 @@
   }
  },
  "_cid": "v0ln1ovud7g",
- "_maj": 1793528838382,
- "_rev": "dm6zuicufb-mvxorhb0",
+ "_maj": 1793528840370,
+ "_rev": "61wakfgeak4-mvxormzg",
  "_majSec": {
-  "fer": 1793489345123,
+  "fer": 1793528840370,
   "fact": 1793486813671,
   "users": 1793528728422,
   "weeks": 1792976185966,
@@ -58144,13 +58160,13 @@
   "imported": 1792704634769,
   "settings": 1792982385225,
   "closeUndo": 1792976185966,
-  "quotasCom": 1793490875990,
+  "quotasCom": 1793528840217,
   "bilanExtra": 1793287850568,
   "bilanForce": 1792704634769,
   "primesExtra": 1792704634769,
   "quotasComHist": 1792976185966,
   "profils": 1793132547984,
-  "_tables": 1793528838382,
+  "_tables": 1793528840217,
   "_permsFix1": 1792704634769,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1792704634769,
@@ -58167,6 +58183,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1793528842783,
+   "u": "Julio Collins",
+   "a": "Achats de fer : 2 relevé(s) repris du salon"
+  },
   {
    "t": 1793528826053,
    "u": "Julio Collins",
@@ -59661,11 +59682,6 @@
    "t": 1792590337585,
    "u": "Emma Collins",
    "a": "Achats de fer : 6 relevé(s) repris du salon"
-  },
-  {
-   "t": 1792589639569,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
   }
  ],
  "prodDer": {
@@ -60102,7 +60118,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-01T10:27:19.260Z",
+  "maj": "2026-11-01T10:27:26.620Z",
   "semaine": 44,
   "totalBarils": 284602,
   "ca": 1423010,
@@ -60240,9 +60256,9 @@
  "quotasCom": {
   "sem": 44,
   "achats": {},
-  "vendus": 3150,
-  "parPers": 788,
-  "ferPers": 1576
+  "vendus": 3180,
+  "parPers": 795,
+  "ferPers": 1590
  },
  "bilanExtra": [
   {
