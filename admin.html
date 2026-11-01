@@ -2362,11 +2362,16 @@ function commerciauxActifs(){
   return [...m.values()];
 }
 function bidonsVendusSem(){ return ((S.sheets&&S.sheets.ventesSem)||[]).reduce((a,v)=>a+nn(v.quantite),0); }
+/* Paie DIFFÉRÉE : les commerciaux produisent d'abord, ils sont payés ensuite. Les bidons vendus pendant la semaine N
+   sont photographiés à la clôture (`settings.prodComDiffere`) et produits pendant la semaine N+1 ; leur part n'est
+   versée qu'à la clôture suivante. Avant la première clôture faite sous ce régime, il n'y a rien à payer : la part
+   de la semaine précédente a déjà été versée d'avance. */
+function bidonsPayesCom(){ const d=S.settings&&S.settings.prodComDiffere; return d?nn(d.vendus):0; }
 function salaireProdCom(r){
   if(!estCommercial(r)||r.absent||absDe(r.nom)) return 0;
   const n=commerciauxActifs().length;
   if(!n) return 0;
-  return Math.round(bidonsVendusSem()/n)*(S.settings.prixBidonCom??45);
+  return Math.round(bidonsPayesCom()/n)*(S.settings.prixBidonCom??45);
 }
 function toggleAbsent(id){
   if(isMembre()) return toast('👀 Consultation seule pour les membres');
@@ -2826,7 +2831,7 @@ async function semaine(){
   $('#main').innerHTML = `
   <div class="topbar">
     <div><h2>Semaine ${S.settings.semaine} — Primes</h2><div class="sub">${weekRange()} · prime = barils × multiplicateur
-      <span style="cursor:help;color:var(--accent)" title="Plafonds primes : ${fmt(caps().empPrime)} $ employés · ${fmt(caps().patPrime)} $ direction${(()=>{const n=commerciauxActifs().length,b=bidonsVendusSem();return n?`\nCommerciaux : ${fmt(b)} bidons ÷ ${n} actif(s) = ${fmt(Math.round(b/n))} × ${S.settings.prixBidonCom??45} $ = ${money(Math.round(b/n)*(S.settings.prixBidonCom??45))} chacun`:''})()}">ℹ️ détails</span></div></div>
+      <span style="cursor:help;color:var(--accent)" title="Plafonds primes : ${fmt(caps().empPrime)} $ employés · ${fmt(caps().patPrime)} $ direction${(()=>{const n=commerciauxActifs().length,b=bidonsPayesCom(),dd=S.settings.prodComDiffere;return n?`\nCommerciaux (payés après production${dd&&dd.sem?`, bidons vendus en S${dd.sem}`:' — rien à payer cette semaine'}) : ${fmt(b)} bidons ÷ ${n} actif(s) = ${fmt(Math.round(b/n))} × ${S.settings.prixBidonCom??45} $ = ${money(Math.round(b/n)*(S.settings.prixBidonCom??45))} chacun`:''})()}">ℹ️ détails</span></div></div>
     <div style="display:flex;gap:10px">
       <button class="btn btn-ghost" onclick="peModal()">💎 Primes exceptionnelles${(S.primesExtra||[]).length?` (${(S.primesExtra||[]).length})`:''}</button>
       ${S.closeUndo?`<button class="btn btn-ghost" onclick="undoClose()" title="Annuler la dernière clôture">↩ Annuler la clôture</button>`:''}
@@ -2941,6 +2946,9 @@ function closeWeek(){
   S.settings.semaine=semaineCal();
   S.settings.semaineDebut=lundiCourant();   // point de départ de la nouvelle semaine de travail
   qcArchive(); // quotas commerciaux : la semaine close part dans l'historique
+  // paie différée : la part versée à cette clôture était celle de la semaine d'avant ; les bidons de la semaine close
+  // seront produits cette semaine et payés à la prochaine clôture (annulable : `settings` est dans l'instantané)
+  S.settings.prodComDiffere={vendus:bidonsVendusSem(), sem:semClose};
   if(S.sheets&&S.sheets.ventesSem) S.sheets.ventesSem=S.sheets.ventesSem.filter(v=>!/^employ/i.test(String(v.client||''))); // commandes employés remises à zéro
   save(); rerender();
   toast(`🗓️ Semaine clôturée — ${money(primes)} de primes${promus.length?` · promus : ${promus.join(', ')}`:''} · éligibilité regénérée (${eligN} noms). Annulation possible.`);
@@ -4961,7 +4969,7 @@ function bilanData(){
     const estCom=/commercial/i.test(String(r.rang||''));
     const absCom=(run&&run.absent)||!!absDe(r.nom);
     const nCom=commerciauxActifs().length;
-    const prodCom=(estCom&&!absCom&&nCom)?Math.round(bidonsVendusSem()/nCom)*(S.settings.prixBidonCom??45):0;
+    const prodCom=(estCom&&!absCom&&nCom)?Math.round(bidonsPayesCom()/nCom)*(S.settings.prixBidonCom??45):0;
     const base=salFixeDe(r.rang)+prodCom+rec; // additif, comme la feuille Excel d'origine
     const sal=Math.min(base, isPatron(r)?C.patSal:C.empSal)+((run&&run.poste)?bonusRecrue(r.nom):0); // bonus recruteur au-dessus du plafond
     const topB=(!PRIMES_OFF&&run&&rangTop.get(run.id)<3&&run.barils>0)?S.settings.top[rangTop.get(run.id)]:0;
