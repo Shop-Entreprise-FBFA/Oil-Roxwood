@@ -22042,14 +22042,6 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
-  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -22073,6 +22065,14 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T00:06:23.240Z"
+  },
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -58326,9 +58326,9 @@
    "params": ""
   }
  },
- "_cid": "sp3j5fx8zgd",
- "_maj": 1793574523413,
- "_rev": "me07x9r6hi9-mvyfyw11",
+ "_cid": "jg272e3tds",
+ "_maj": 1793574578597,
+ "_rev": "tnjicnf6dt-mvyfzy0r",
  "_majSec": {
   "fer": 1793562087182,
   "fact": 1793541843266,
@@ -58337,11 +58337,11 @@
   "sheets": 1793574079072,
   "_qcFix1": 1793211567861,
   "_wkFix1": 1793211567861,
-  "journal": 1793566793620,
+  "journal": 1793574578597,
   "pending": 1793211567861,
   "prodDer": 1793387883473,
   "runners": 1793574067662,
-  "absences": 1793566793620,
+  "absences": 1793574578597,
   "imported": 1793211567861,
   "settings": 1793211567861,
   "closeUndo": 1793211567861,
@@ -58351,7 +58351,7 @@
   "primesExtra": 1793211567861,
   "quotasComHist": 1793211567861,
   "profils": 1793211567861,
-  "_tables": 1793574472873,
+  "_tables": 1793574578597,
   "_permsFix1": 1793211567861,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793211567861,
@@ -58368,6 +58368,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1793574579556,
+   "u": "Diego Herrera",
+   "a": "7 absence(s) terminée(s) archivée(s) automatiquement"
+  },
   {
    "t": 1793566794195,
    "u": "William Rodriguez-Collins",
@@ -59862,11 +59867,6 @@
    "t": 1792609996101,
    "u": "?",
    "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1792609096976,
-   "u": "Stella Collins",
-   "a": "Achats de fer : 4 relevé(s) repris du salon"
   }
  ],
  "prodDer": {
@@ -60146,66 +60146,6 @@
    "auto": true
   },
   {
-   "id": 1791152152328,
-   "nom": "Corentin Baltre",
-   "du": "2026-09-19",
-   "au": "2026-10-19",
-   "srcId": "1789819330775",
-   "motif": "raison perso",
-   "par": "⚫ Thomas Boyer",
-   "auto": true
-  },
-  {
-   "id": 1791727804391,
-   "nom": "Kobayashi Vincent",
-   "du": "2026-10-11",
-   "au": "2026-10-20",
-   "srcId": "1791727781736",
-   "motif": "Personnel + malade",
-   "par": "⚫ Carter Fuente",
-   "auto": true
-  },
-  {
-   "id": 1791837722616,
-   "nom": "Rayan Espada",
-   "du": "2026-10-12",
-   "au": "2026-10-19",
-   "srcId": "1791837703170",
-   "motif": "Perso",
-   "par": "⚫ Carter Fuente",
-   "auto": true
-  },
-  {
-   "id": 1792061939280,
-   "nom": "Ryan Brooks",
-   "du": "2026-10-15",
-   "au": "2026-10-21",
-   "srcId": "1792061873186",
-   "motif": "Problème de santé..",
-   "par": "🥈⚫ Diego Herrera",
-   "auto": true
-  },
-  {
-   "id": 1792085344946,
-   "nom": "Miguel Brooks",
-   "du": "2026-10-15",
-   "au": "2026-10-21",
-   "srcId": "1792085314412",
-   "motif": "problème familiale",
-   "par": "Stella Collins",
-   "auto": true
-  },
-  {
-   "id": 1792335411288,
-   "nom": "Sali Dute",
-   "du": "2026-10-17",
-   "au": "2026-10-23",
-   "srcId": "1792335384565",
-   "motif": "Perso",
-   "par": "🥈⚫ Diego Herrera",
-   "auto": true
-  },
-  {
    "id": 1792491772516,
    "nom": "Kobayashi Vincent",
    "du": "2026-10-20",
@@ -60223,16 +60163,6 @@
    "srcId": "1792707964547",
    "motif": "Personel",
    "par": "⚫ Diego Herrera",
-   "auto": true
-  },
-  {
-   "id": 1792771097046,
-   "nom": "Jack Hamilton",
-   "du": "2026-09-10",
-   "au": "2026-10-22",
-   "srcId": "1789061347532",
-   "motif": "AUCUN AGENT DE DISPO POUR POSER MON STUFF",
-   "par": "⚫ Juan Sanchez",
    "auto": true
   },
   {
@@ -60333,7 +60263,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-01T23:08:54.565Z",
+  "maj": "2026-11-01T23:09:43.803Z",
   "semaine": 44,
   "totalBarils": 321624,
   "ca": 1608120,
