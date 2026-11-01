@@ -8310,7 +8310,7 @@
     "idU": "339768",
     "arrivee": "2026-09-26",
     "discord": "1379531148882870332",
-    "avert": "1",
+    "avert": "2",
     "contrat": false,
     "recrut": "Thomas Boyer",
     "dernierService": "2026-10-04",
@@ -8321,7 +8321,7 @@
     "nom": "Amine Nasser",
     "rib": "541295",
     "tel": "555 652 237",
-    "avert": "2",
+    "avert": "3",
     "grade": "Intérimaire",
     "recrut": "Thomas Boyer",
     "arrivee": "2026-08-29",
@@ -22042,14 +22042,6 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
-  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -22073,6 +22065,14 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T00:06:23.240Z"
+  },
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -58326,18 +58326,18 @@
    "params": ""
   }
  },
- "_cid": "sp3j5fx8zgd",
- "_maj": 1793574891375,
- "_rev": "1is0nnlqzir-mvyg6lt4",
+ "_cid": "jg272e3tds",
+ "_maj": 1793574901428,
+ "_rev": "98460rmj8w-mvyg6s7k",
  "_majSec": {
   "fer": 1793562087182,
   "fact": 1793541843266,
   "users": 1793544319400,
   "weeks": 1793211567861,
-  "sheets": 1793574878938,
+  "sheets": 1793574901404,
   "_qcFix1": 1793211567861,
   "_wkFix1": 1793211567861,
-  "journal": 1793574878963,
+  "journal": 1793574901428,
   "pending": 1793211567861,
   "prodDer": 1793387883473,
   "runners": 1793574067662,
@@ -58351,7 +58351,7 @@
   "primesExtra": 1793211567861,
   "quotasComHist": 1793211567861,
   "profils": 1793211567861,
-  "_tables": 1793574832842,
+  "_tables": 1793574901404,
   "_permsFix1": 1793211567861,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793211567861,
@@ -58368,6 +58368,16 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1793574902442,
+   "u": "Diego Herrera",
+   "a": "Avertissement : Amine Nasser (intérimaire, aucune prise de service) — total : 3"
+  },
+  {
+   "t": 1793574901135,
+   "u": "Diego Herrera",
+   "a": "Avertissement : Alvaro Water (intérimaire, aucune prise de service) — total : 2"
+  },
   {
    "t": 1793574879977,
    "u": "Diego Herrera",
@@ -59857,16 +59867,6 @@
    "t": 1792635489756,
    "u": "Diego Herrera",
    "a": "Modification des paramètres"
-  },
-  {
-   "t": 1792635417858,
-   "u": "Diego Herrera",
-   "a": "Modification des paramètres"
-  },
-  {
-   "t": 1792610511579,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
   }
  ],
  "prodDer": {
@@ -60273,7 +60273,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-01T23:14:54.568Z",
+  "maj": "2026-11-01T23:15:02.864Z",
   "semaine": 44,
   "totalBarils": 321624,
   "ca": 1608120,
@@ -62539,6 +62539,26 @@
     "id": 1793574880784,
     "statut": "fait",
     "rapport": "Avertissement enregistre pour annonymous971 (total : 1)."
+   },
+   {
+    "type": "avertissement",
+    "payload": {
+     "discord": "1379531148882870332",
+     "nom": "Alvaro Water",
+     "raison": "Aucune prise de service cette semaine",
+     "par": "Diego Herrera"
+    },
+    "id": 1793574901250
+   },
+   {
+    "type": "avertissement",
+    "payload": {
+     "discord": "1323703478782132264",
+     "nom": "Amine Nasser",
+     "raison": "Aucune prise de service cette semaine",
+     "par": "Diego Herrera"
+    },
+    "id": 1793574902947
    }
   ],
   "oilroxwood_coffres": [
