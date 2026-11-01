@@ -15113,6 +15113,20 @@
     "quantite": 125,
     "qui": "Diego Herrera",
     "fact": 253191
+   },
+   {
+    "date": "2026-11-01",
+    "client": "LTD Roxwood",
+    "quantite": 125,
+    "qui": "Stella Collins",
+    "fact": 253192
+   },
+   {
+    "date": "2026-11-01",
+    "client": "LTD Roxwood",
+    "quantite": 125,
+    "qui": "Diego Herrera",
+    "fact": 253192
    }
   ],
   "collection": [
@@ -17717,8 +17731,38 @@
     "prix": 150
    }
   ],
-  "compteur": 253192,
+  "compteur": 253193,
   "factures": [
+   {
+    "num": 253192,
+    "date": "2026-11-01",
+    "client": "LTD Roxwood",
+    "emetteur": "Stella Collins, Diego Herrera",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 250,
+      "tva": 0,
+      "pu": 180,
+      "ht": 45000,
+      "ttc": 45000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 45000,
+    "ttc": 45000,
+    "poids": 500,
+    "statut": "attente",
+    "envoi": {
+     "t": 1793541722700,
+     "par": "Diego Herrera",
+     "statut": "en_cours",
+     "ordre": 1793541724204,
+     "rapport": ""
+    }
+   },
    {
     "num": 253190,
     "date": "2026-10-31",
@@ -17740,7 +17784,7 @@
     "ht": 36000,
     "ttc": 36000,
     "poids": 400,
-    "statut": "payee",
+    "statut": "attente",
     "envoi": {
      "t": 1793486778744,
      "par": "Emma Collins-rodriguez",
@@ -58163,15 +58207,15 @@
    "params": ""
   }
  },
- "_cid": "jj4hh4oais",
- "_maj": 1793541681126,
- "_rev": "h1qqiy5x8go-mvxwf768",
+ "_cid": "phkf75p0uzh",
+ "_maj": 1793541722700,
+ "_rev": "6ox0hrowiw5-mvxwfmty",
  "_majSec": {
   "fer": 1793541660183,
-  "fact": 1793541674587,
+  "fact": 1793541722700,
   "users": 1793541649443,
   "weeks": 1793211567861,
-  "sheets": 1793541175078,
+  "sheets": 1793541722114,
   "_qcFix1": 1793211567861,
   "_wkFix1": 1793211567861,
   "journal": 1793541649443,
@@ -58188,7 +58232,7 @@
   "primesExtra": 1793211567861,
   "quotasComHist": 1793211567861,
   "profils": 1793211567861,
-  "_tables": 1793541674587,
+  "_tables": 1793541722675,
   "_permsFix1": 1793211567861,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793211567861,
@@ -60140,13 +60184,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-01T14:01:43.184Z",
+  "maj": "2026-11-01T14:02:03.478Z",
   "semaine": 44,
   "totalBarils": 295406,
   "ca": 1477030,
   "objectif": 375000,
   "effectif": 125,
-  "clientsServis": 175,
+  "clientsServis": 176,
   "theme": "",
   "top3": [
    {
@@ -62330,6 +62374,56 @@
     "id": 1793541176751,
     "statut": "fait",
     "rapport": "Facture n°253191 postee dans le salon 1440251913601024062."
+   },
+   {
+    "type": "facture_ticket",
+    "payload": {
+     "num": 253192,
+     "salon": "1440251913601024062",
+     "reedition": false,
+     "facture": {
+      "num": 253192,
+      "date": "2026-11-01",
+      "client": "LTD Roxwood",
+      "emetteur": "Stella Collins, Diego Herrera",
+      "postop": false,
+      "lignes": [
+       {
+        "ref": "CMD",
+        "qte": 250,
+        "tva": 0,
+        "pu": 180,
+        "ht": 45000,
+        "ttc": 45000,
+        "desc": "bidons d'essence "
+       }
+      ],
+      "offert": 0,
+      "ht": 45000,
+      "ttc": 45000,
+      "poids": 500,
+      "statut": "attente"
+     },
+     "client": {
+      "nom": "LTD Roxwood",
+      "rib": "20072",
+      "tel": "982",
+      "adresse": "Roxwood",
+      "lastCmd": "2026-11-01",
+      "notes": [
+       {
+        "t": 1789651609747,
+        "par": "Julio Collins",
+        "txt": "je suis parti leur parler et mon dit qu'il avait du stock",
+        "imgs": 0
+       }
+      ],
+      "type": "entreprise",
+      "salon": "1440251913601024062"
+     },
+     "par": "Diego Herrera"
+    },
+    "id": 1793541724204
    }
   ],
   "oilroxwood_coffres": [
