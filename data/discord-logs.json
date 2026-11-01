@@ -1,11 +1,32 @@
 {
- "maj": "2026-11-01T09:59:31.643646+00:00",
+ "maj": "2026-11-01T10:01:32.229193+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1566391477234434099",
+   "t": "2026-11-01T10:00:30.319000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 6119\nplayerDiscord : 1353370377069527233\nplayerName : Fassde2\nplayerCharacter : Didier Cleanton\nplayerId : 349309\nvehiclePlate : ZG7875QV\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Didier Cleanton",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "6119",
+    "playerdiscord": "1353370377069527233",
+    "playername": "Fassde2",
+    "playercharacter": "Didier Cleanton",
+    "playerid": "349309",
+    "vehicleplate": "ZG7875QV",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1566390733751975979",
    "t": "2026-11-01T09:57:33.059000+00:00",
@@ -92543,30 +92564,6 @@
    "champs": {
     "position": "-1849.50, 6514.94, 16.73",
     "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "398",
-    "playerdiscord": "334423976182939648",
-    "playername": "MoodyCat2429",
-    "playercharacter": "Nikko Mount",
-    "playerid": "276376",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1565398723549204580-0",
-   "t": "2026-10-29T16:15:39.396000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 42x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1848.92, 6498.00, 16.73\ntargetPosition : -1849.11, 6498.65, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 398\nplayerDiscord : 334423976182939648\nplayerName : MoodyCat2429\nplayerCharacter : Nikko Mount\nplayerId : 276376\nitemId : refinedoil",
-   "nom": "Nikko Mount",
-   "quantite": 42,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1848.92, 6498.00, 16.73",
-    "targetposition": "-1849.11, 6498.65, 15.75",
     "jobid": "76",
     "jobname": "Oil RoxWood",
     "playernetid": "398",
