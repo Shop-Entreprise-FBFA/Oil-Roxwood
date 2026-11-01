@@ -8342,7 +8342,7 @@
     "idU": "361261",
     "arrivee": "2026-09-22",
     "discord": "1454487521005408319",
-    "avert": "1",
+    "avert": "2",
     "contrat": true,
     "recrut": "Juan Sanchez",
     "dernierService": "2026-11-01",
@@ -8356,7 +8356,7 @@
     "idU": "383951",
     "arrivee": "2026-10-24",
     "discord": "1254438375155302471",
-    "avert": "",
+    "avert": "1",
     "contrat": true,
     "recrut": "Carter Fuente",
     "dernierService": "2026-10-25",
@@ -58327,17 +58327,17 @@
   }
  },
  "_cid": "jg272e3tds",
- "_maj": 1793574901428,
- "_rev": "98460rmj8w-mvyg6s7k",
+ "_maj": 1793574905826,
+ "_rev": "4sfrkl5x9fa-mvyg6yko",
  "_majSec": {
   "fer": 1793562087182,
   "fact": 1793541843266,
   "users": 1793544319400,
   "weeks": 1793211567861,
-  "sheets": 1793574901404,
+  "sheets": 1793574905799,
   "_qcFix1": 1793211567861,
   "_wkFix1": 1793211567861,
-  "journal": 1793574901428,
+  "journal": 1793574905826,
   "pending": 1793211567861,
   "prodDer": 1793387883473,
   "runners": 1793574067662,
@@ -58351,7 +58351,7 @@
   "primesExtra": 1793211567861,
   "quotasComHist": 1793211567861,
   "profils": 1793211567861,
-  "_tables": 1793574901404,
+  "_tables": 1793574905799,
   "_permsFix1": 1793211567861,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793211567861,
@@ -58368,6 +58368,16 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1793574906841,
+   "u": "Diego Herrera",
+   "a": "Avertissement : Antonio Saint (intérimaire, aucune prise de service) — total : 1"
+  },
+  {
+   "t": 1793574904711,
+   "u": "Diego Herrera",
+   "a": "Avertissement : Anis Womkeur (intérimaire, aucune prise de service) — total : 2"
+  },
   {
    "t": 1793574902442,
    "u": "Diego Herrera",
@@ -59857,16 +59867,6 @@
    "t": 1792635879507,
    "u": "Diego Herrera",
    "a": "Modification des paramètres"
-  },
-  {
-   "t": 1792635678503,
-   "u": "Diego Herrera",
-   "a": "Modification des paramètres"
-  },
-  {
-   "t": 1792635489756,
-   "u": "Diego Herrera",
-   "a": "Modification des paramètres"
   }
  ],
  "prodDer": {
@@ -60273,7 +60273,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-01T23:15:02.864Z",
+  "maj": "2026-11-01T23:15:11.112Z",
   "semaine": 44,
   "totalBarils": 321624,
   "ca": 1608120,
@@ -62559,6 +62559,26 @@
      "par": "Diego Herrera"
     },
     "id": 1793574902947
+   },
+   {
+    "type": "avertissement",
+    "payload": {
+     "discord": "1454487521005408319",
+     "nom": "Anis Womkeur",
+     "raison": "Aucune prise de service cette semaine",
+     "par": "Diego Herrera"
+    },
+    "id": 1793574905228
+   },
+   {
+    "type": "avertissement",
+    "payload": {
+     "discord": "1254438375155302471",
+     "nom": "Antonio Saint",
+     "raison": "Aucune prise de service cette semaine",
+     "par": "Diego Herrera"
+    },
+    "id": 1793574907301
    }
   ],
   "oilroxwood_coffres": [
