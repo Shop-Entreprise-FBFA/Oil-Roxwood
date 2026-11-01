@@ -1,11 +1,32 @@
 {
- "maj": "2026-11-01T15:12:52.982013+00:00",
+ "maj": "2026-11-01T15:14:52.318608+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1566470229318439074",
+   "t": "2026-11-01T15:13:26.279000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 280\nplayerDiscord : 1226472675971436614\nplayerName : Jason Palmer┃Visum\nplayerCharacter : Jason Palmer\nplayerId : 362532\nvehiclePlate : AY4705SJ\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Jason Palmer",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "280",
+    "playerdiscord": "1226472675971436614",
+    "playername": "Jason Palmer┃Visum",
+    "playercharacter": "Jason Palmer",
+    "playerid": "362532",
+    "vehicleplate": "AY4705SJ",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1566469982546690090-0",
    "t": "2026-11-01T15:12:27.444000+00:00",
@@ -92373,30 +92394,6 @@
    "coffre": "entreprise (Oil RoxWood)",
    "champs": {
     "position": "-1846.55, 6515.41, 16.73",
-    "targetposition": "-1845.91, 6514.70, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "110",
-    "playerdiscord": "867577351173177374",
-    "playername": "Aritea987",
-    "playercharacter": "Bryan Storm",
-    "playerid": "298482",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1565429668696293561-1",
-   "t": "2026-10-29T18:18:37.294000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 4x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1845.73, 6515.47, 16.73\ntargetPosition : -1845.91, 6514.70, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 110\nplayerDiscord : 867577351173177374\nplayerName : Aritea987\nplayerCharacter : Bryan Storm\nplayerId : 298482\nitemId : refinedoil",
-   "nom": "Bryan Storm",
-   "quantite": 4,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1845.73, 6515.47, 16.73",
     "targetposition": "-1845.91, 6514.70, 15.74",
     "jobid": "76",
     "jobname": "Oil RoxWood",
