@@ -8956,7 +8956,7 @@
     "idU": "272345",
     "arrivee": "2026-10-24",
     "discord": "1561778936491286546",
-    "avert": "",
+    "avert": "1",
     "contrat": true,
     "recrut": "Carter Fuente",
     "dernierService": "2026-10-28",
@@ -22042,14 +22042,6 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
-  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -22073,6 +22065,14 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T00:06:23.240Z"
+  },
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -58326,18 +58326,18 @@
    "params": ""
   }
  },
- "_cid": "sp3j5fx8zgd",
- "_maj": 1793574832842,
- "_rev": "tf50cv98csm-mvyg5bmz",
+ "_cid": "jg272e3tds",
+ "_maj": 1793574857797,
+ "_rev": "mjeu41a4mab-mvyg5uw0",
  "_majSec": {
   "fer": 1793562087182,
   "fact": 1793541843266,
   "users": 1793544319400,
   "weeks": 1793211567861,
-  "sheets": 1793574079072,
+  "sheets": 1793574857770,
   "_qcFix1": 1793211567861,
   "_wkFix1": 1793211567861,
-  "journal": 1793574616791,
+  "journal": 1793574857797,
   "pending": 1793211567861,
   "prodDer": 1793387883473,
   "runners": 1793574067662,
@@ -58351,7 +58351,7 @@
   "primesExtra": 1793211567861,
   "quotasComHist": 1793211567861,
   "profils": 1793211567861,
-  "_tables": 1793574832842,
+  "_tables": 1793574857770,
   "_permsFix1": 1793211567861,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793211567861,
@@ -58368,6 +58368,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1793574858811,
+   "u": "Diego Herrera",
+   "a": "Avertissement : Mathieu Ernadez (intérimaire, quota à 0%) — total : 1"
+  },
   {
    "t": 1793574617750,
    "u": "Diego Herrera",
@@ -59862,11 +59867,6 @@
    "t": 1792610011474,
    "u": "Julio Collins",
    "a": "Vente rapide sans facture : 100 bidon(s) — Citoyen (vendeur : Julio Collins)"
-  },
-  {
-   "t": 1792609996294,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
   }
  ],
  "prodDer": {
@@ -60273,7 +60273,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-01T23:13:54.731Z",
+  "maj": "2026-11-01T23:14:19.680Z",
   "semaine": 44,
   "totalBarils": 321624,
   "ca": 1608120,
@@ -62515,6 +62515,16 @@
     "id": 1793541724204,
     "statut": "fait",
     "rapport": "Facture n°253192 postee dans le salon 1440251913601024062."
+   },
+   {
+    "type": "avertissement",
+    "payload": {
+     "discord": "1561778936491286546",
+     "nom": "Mathieu Ernadez",
+     "raison": "Quota non atteint (0 % cette semaine)",
+     "par": "Diego Herrera"
+    },
+    "id": 1793574859113
    }
   ],
   "oilroxwood_coffres": [
