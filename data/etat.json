@@ -17720,37 +17720,6 @@
   "compteur": 253192,
   "factures": [
    {
-    "num": 253191,
-    "date": "2026-11-01",
-    "client": "LTD Roxwood",
-    "emetteur": "Stella Collins, Diego Herrera",
-    "postop": false,
-    "lignes": [
-     {
-      "ref": "CMD",
-      "qte": 250,
-      "tva": 0,
-      "pu": 180,
-      "ht": 45000,
-      "ttc": 45000,
-      "desc": "bidons d'essence "
-     }
-    ],
-    "offert": 0,
-    "ht": 45000,
-    "ttc": 45000,
-    "poids": 500,
-    "statut": "attente",
-    "envoi": {
-     "t": 1793541175675,
-     "par": "Diego Herrera",
-     "statut": "envoye",
-     "ordre": 1793541176751,
-     "rapport": "Facture n°253191 postee dans le salon 1440251913601024062.",
-     "fin": 1793541212037
-    }
-   },
-   {
     "num": 253190,
     "date": "2026-10-31",
     "client": "Sandy Repairs",
@@ -58186,48 +58155,53 @@
    "params": ""
   }
  },
- "_cid": "2dh9t9m1yfq",
- "_maj": 1793541493815,
- "_rev": "xjrsq3g3wj8-mvxwd8ay",
+ "_cid": "qm9fiow8v2n",
+ "_maj": 1793541630830,
+ "_rev": "irrfm9n07xn-mvxwdoq4",
  "_majSec": {
-  "fer": 1793528089893,
-  "fact": 1793528089893,
-  "users": 1793528089893,
-  "weeks": 1792976185966,
-  "sheets": 1793528089892,
-  "_qcFix1": 1792704634769,
-  "_wkFix1": 1792704634769,
-  "journal": 1793528089897,
-  "pending": 1792704634769,
+  "fer": 1793528840370,
+  "fact": 1793541617594,
+  "users": 1793528728422,
+  "weeks": 1793211567861,
+  "sheets": 1793541175078,
+  "_qcFix1": 1793211567861,
+  "_wkFix1": 1793211567861,
+  "journal": 1793541617594,
+  "pending": 1793211567861,
   "prodDer": 1793387883473,
-  "runners": 1793528089892,
+  "runners": 1793540189260,
   "absences": 1793528085089,
-  "imported": 1792704634769,
-  "settings": 1792982385225,
-  "closeUndo": 1792976185966,
-  "quotasCom": 1793528089897,
-  "bilanExtra": 1793528089897,
-  "bilanForce": 1792704634769,
-  "primesExtra": 1792704634769,
-  "quotasComHist": 1792976185966,
-  "profils": 1793132547984,
-  "_tables": 1793528085643,
-  "_permsFix1": 1792704634769,
+  "imported": 1793211567861,
+  "settings": 1793211567861,
+  "closeUndo": 1793211567861,
+  "quotasCom": 1793528840217,
+  "bilanExtra": 1793540395543,
+  "bilanForce": 1793211567861,
+  "primesExtra": 1793211567861,
+  "quotasComHist": 1793211567861,
+  "profils": 1793211567861,
+  "_tables": 1793541630830,
+  "_permsFix1": 1793211567861,
   "_rolesFix4": 1788489352546,
-  "_rolesFix77": 1792704634769,
-  "affiches": 1792704634769,
-  "_affFix1": 1792704634769,
-  "produits": 1792704634769,
-  "_prodFix1": 1792704634769,
+  "_rolesFix77": 1793211567861,
+  "affiches": 1793211567861,
+  "_affFix1": 1793211567861,
+  "produits": 1793211567861,
+  "_prodFix1": 1793211567861,
   "_recruesIgnore": 1793482086434,
-  "ventesAlias": 1792704634769,
-  "_ventesIgnore": 1792704634769,
-  "_avertVus": 1792704634769,
+  "ventesAlias": 1793211567861,
+  "_ventesIgnore": 1793211567861,
+  "_avertVus": 1793211567861,
   "_signeVus": 1793482086459
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1793541615819,
+   "u": "Stella Collins",
+   "a": "Suppression de la facture n°253191"
+  },
   {
    "t": 1793528842783,
    "u": "Julio Collins",
@@ -59722,11 +59696,6 @@
    "t": 1792590467013,
    "u": "Diego Herrera",
    "a": "Achats de fer : 1 relevé(s) repris du salon"
-  },
-  {
-   "t": 1792590337585,
-   "u": "Emma Collins",
-   "a": "Achats de fer : 6 relevé(s) repris du salon"
   }
  ],
  "prodDer": {
@@ -60163,13 +60132,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-01T14:00:11.339Z",
+  "maj": "2026-11-01T14:00:32.621Z",
   "semaine": 44,
   "totalBarils": 295406,
   "ca": 1477030,
   "objectif": 375000,
   "effectif": 125,
-  "clientsServis": 176,
+  "clientsServis": 175,
   "theme": "",
   "top3": [
    {
@@ -60289,6 +60258,12 @@
     "nom": "William Rodriguez-collins",
     "titre": "Commercial",
     "photo": "https://cdn.discordapp.com/avatars/235844738656239616/6705cf8fc5707bfb269446b197494252.png",
+    "bio": ""
+   },
+   {
+    "nom": "Bjorn Frost",
+    "titre": "Full-Patch",
+    "photo": "https://cdn.discordapp.com/avatars/1096933851659517975/4f470dd063f43e793312c15f24d16887.png",
     "bio": ""
    }
   ]
