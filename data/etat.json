@@ -58896,32 +58896,32 @@
    "sem": 43
   }
  },
- "_cid": "a8smg5kao1",
- "_maj": 1793615711844,
- "_rev": "2chwkr4st75-mvz4hik9",
+ "_cid": "29d6f88my2j",
+ "_maj": 1793541656990,
+ "_rev": "115a0y3vnep-mvz4idvf",
  "_majSec": {
-  "fer": 1793562087182,
-  "fact": 1793580296623,
-  "users": 1793544319400,
-  "weeks": 1793577441993,
-  "sheets": 1793580252528,
+  "fer": 1793541656970,
+  "fact": 1793541656970,
+  "users": 1793541656970,
+  "weeks": 1793541656968,
+  "sheets": 1793541656969,
   "_qcFix1": 1793211567861,
   "_wkFix1": 1793211567861,
-  "journal": 1793614361668,
+  "journal": 1793541656990,
   "pending": 1793211567861,
   "prodDer": 1793387883473,
-  "runners": 1793578921458,
-  "absences": 1793574616791,
+  "runners": 1793541656968,
+  "absences": 1793541656990,
   "imported": 1793211567861,
-  "settings": 1793577441993,
-  "closeUndo": 1793577441993,
-  "quotasCom": 1793580293373,
-  "bilanExtra": 1793574129422,
+  "settings": 1793541656974,
+  "closeUndo": 1793541656974,
+  "quotasCom": 1793541656974,
+  "bilanExtra": 1793541656974,
   "bilanForce": 1793211567861,
   "primesExtra": 1793211567861,
-  "quotasComHist": 1793577441993,
+  "quotasComHist": 1793541656974,
   "profils": 1793211567861,
-  "_tables": 1793615711844,
+  "_tables": 1793541656990,
   "_permsFix1": 1793211567861,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793211567861,
@@ -58938,6 +58938,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1793615754904,
+   "u": "Stella Collins",
+   "a": "Absences Discord reprises : Corentin Baltre · Kobayashi Vincent · Rayan Espada · Ryan Brooks · Miguel Brooks · Sali Dute"
+  },
   {
    "t": 1793614363458,
    "u": "Diego Herrera",
@@ -60432,11 +60437,6 @@
    "t": 1792678160165,
    "u": "Emma Collins",
    "a": "Achats de fer : 1 relevé(s) repris du salon"
-  },
-  {
-   "t": 1792668597578,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
   }
  ],
  "prodDer": {
@@ -60840,10 +60840,70 @@
    "motif": "AUCUN AGENT DE DISPO POUR POSER MON STUFF",
    "par": "⚫ Juan Sanchez",
    "auto": true
+  },
+  {
+   "id": 1793615763869,
+   "nom": "Corentin Baltre",
+   "du": "2026-09-19",
+   "au": "2026-10-19",
+   "srcId": "1789819330775",
+   "motif": "raison perso",
+   "par": "⚫ Thomas Boyer",
+   "auto": true
+  },
+  {
+   "id": 1793615756861,
+   "nom": "Kobayashi Vincent",
+   "du": "2026-10-11",
+   "au": "2026-10-20",
+   "srcId": "1791727781736",
+   "motif": "Personnel + malade",
+   "par": "⚫ Carter Fuente",
+   "auto": true
+  },
+  {
+   "id": 1793615758824,
+   "nom": "Rayan Espada",
+   "du": "2026-10-12",
+   "au": "2026-10-19",
+   "srcId": "1791837703170",
+   "motif": "Perso",
+   "par": "⚫ Carter Fuente",
+   "auto": true
+  },
+  {
+   "id": 1793615759272,
+   "nom": "Ryan Brooks",
+   "du": "2026-10-15",
+   "au": "2026-10-21",
+   "srcId": "1792061873186",
+   "motif": "Problème de santé..",
+   "par": "🥈⚫ Diego Herrera",
+   "auto": true
+  },
+  {
+   "id": 1793615764646,
+   "nom": "Miguel Brooks",
+   "du": "2026-10-15",
+   "au": "2026-10-21",
+   "srcId": "1792085314412",
+   "motif": "problème familiale",
+   "par": "Stella Collins",
+   "auto": true
+  },
+  {
+   "id": 1793615761444,
+   "nom": "Sali Dute",
+   "du": "2026-10-17",
+   "au": "2026-10-23",
+   "srcId": "1792335384565",
+   "motif": "Perso",
+   "par": "🥈⚫ Diego Herrera",
+   "auto": true
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-02T10:35:14.361Z",
+  "maj": "2026-11-02T10:35:54.939Z",
   "semaine": 45,
   "totalBarils": 321624,
   "ca": 1608120,
