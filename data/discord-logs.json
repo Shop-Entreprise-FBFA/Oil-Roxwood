@@ -1,11 +1,35 @@
 {
- "maj": "2026-11-02T13:02:57.601524+00:00",
+ "maj": "2026-11-02T13:04:58.396787+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1566799922383032352",
+   "t": "2026-11-02T13:03:31.231000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\na retiré 74x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -3084.24, 6814.94, 44.73\ntargetPosition : -3084.39, 6815.87, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6710\nplayerDiscord : 439722284760956928\nplayerName : Ice\nplayerCharacter : Ana Fox\nplayerId : 244445\nitemId : oil",
+   "nom": "Ana Fox",
+   "quantite": 74,
+   "montant": null,
+   "type": "coffre_retrait",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-3084.24, 6814.94, 44.73",
+    "targetposition": "-3084.39, 6815.87, 43.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "6710",
+    "playerdiscord": "439722284760956928",
+    "playername": "Ice",
+    "playercharacter": "Ana Fox",
+    "playerid": "244445",
+    "itemid": "oil"
+   }
+  },
   {
    "id": "1566799662655213603-0",
    "t": "2026-11-02T13:02:29.307000+00:00",
@@ -94531,22 +94555,6 @@
     "playercharacter": "Nikko Mount",
     "playerid": "276376",
     "itemid": "oil"
-   }
-  },
-  {
-   "id": "1566195220943470793",
-   "t": "2026-10-31T21:00:39.173000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 128x Pétrole Raffiné pour 1280$ par Xavier Collins. 640$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 128,
-   "montant": 1280,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
