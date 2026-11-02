@@ -58934,9 +58934,9 @@
    "sem": 43
   }
  },
- "_cid": "7gjd1rol9xe",
- "_maj": 1793632852986,
- "_rev": "zvgjd80dy8-mvzep5ow",
+ "_cid": "tqaf2qvq7ui",
+ "_maj": 1793632899104,
+ "_rev": "qudszcoti2-mvzepwdm",
  "_majSec": {
   "fer": 1793562087182,
   "fact": 1793630183888,
@@ -58945,9 +58945,9 @@
   "sheets": 1793632636121,
   "_qcFix1": 1793211567861,
   "_wkFix1": 1793211567861,
-  "journal": 1793632624520,
+  "journal": 1793632899104,
   "pending": 1793211567861,
-  "prodDer": 1793387883473,
+  "prodDer": 1793632899104,
   "runners": 1793578921458,
   "absences": 1793574616791,
   "imported": 1793211567861,
@@ -58959,7 +58959,7 @@
   "primesExtra": 1793211567861,
   "quotasComHist": 1793577441993,
   "profils": 1793211567861,
-  "_tables": 1793632803736,
+  "_tables": 1793632899104,
   "_permsFix1": 1793211567861,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793211567861,
@@ -58976,6 +58976,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1793632900965,
+   "u": "Diego Herrera",
+   "a": "Produits dérivés : colonne « ryujin » ajoutée"
+  },
   {
    "t": 1793632630278,
    "u": "Julio Collins",
@@ -60470,11 +60475,6 @@
    "t": 1792690690394,
    "u": "Julio Collins",
    "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1792690690201,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
   }
  ],
  "prodDer": {
@@ -60502,6 +60502,10 @@
    {
     "n": "Octobre Rose 2K26",
     "p": 3000
+   },
+   {
+    "n": "ryujin",
+    "p": 0
    }
   ],
   "rows": [
@@ -60881,7 +60885,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-02T15:21:07.088Z",
+  "maj": "2026-11-02T15:21:41.674Z",
   "semaine": 45,
   "totalBarils": 321624,
   "ca": 1608120,
