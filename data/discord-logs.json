@@ -1,11 +1,32 @@
 {
- "maj": "2026-11-02T01:16:52.444472+00:00",
+ "maj": "2026-11-02T01:18:52.707049+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1566622235903402187",
+   "t": "2026-11-02T01:17:27.473000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 5831\nplayerDiscord : 867577351173177374\nplayerName : Aritea987\nplayerCharacter : Bryan Storm\nplayerId : 298482\nvehiclePlate : IL4818AV\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Bryan Storm",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "5831",
+    "playerdiscord": "867577351173177374",
+    "playername": "Aritea987",
+    "playercharacter": "Bryan Storm",
+    "playerid": "298482",
+    "vehicleplate": "IL4818AV",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1566619232676880568-0",
    "t": "2026-11-02T01:05:31.448000+00:00",
@@ -92975,30 +92996,6 @@
    "coffre": "entreprise (Oil RoxWood)",
    "champs": {
     "position": "-1850.35, 6514.63, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "66",
-    "playerdiscord": "767332288744128512",
-    "playername": "JULIO COLLINS",
-    "playercharacter": "Julio Collins",
-    "playerid": "356873",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1565779788730474684-2",
-   "t": "2026-10-30T17:29:52.415000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 127x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1850.28, 6515.04, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 66\nplayerDiscord : 767332288744128512\nplayerName : JULIO COLLINS\nplayerCharacter : Julio Collins\nplayerId : 356873\nitemId : refinedoil",
-   "nom": "Julio Collins",
-   "quantite": 127,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1850.28, 6515.04, 16.73",
     "targetposition": "-1850.63, 6515.15, 15.75",
     "jobid": "76",
     "jobname": "Oil RoxWood",
