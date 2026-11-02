@@ -15618,6 +15618,13 @@
     "quantite": 200,
     "qui": "",
     "fact": 253193
+   },
+   {
+    "date": "2026-11-02",
+    "client": "Oil Roxwood",
+    "quantite": 300,
+    "qui": "Emma Collins-rodriguez",
+    "fact": 253194
    }
   ],
   "collection": [
@@ -18044,7 +18051,7 @@
     "rib": "20076",
     "tel": "986",
     "adresse": "Roxwood",
-    "lastCmd": "2026-10-27",
+    "lastCmd": "2026-11-02",
     "type": "entreprise",
     "salon": ""
    },
@@ -18296,8 +18303,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253194,
+  "compteur": 253195,
   "factures": [
+   {
+    "num": 253194,
+    "date": "2026-11-02",
+    "client": "Oil Roxwood",
+    "emetteur": "Emma Collins-rodriguez",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 300,
+      "tva": 0,
+      "pu": 180,
+      "ht": 54000,
+      "ttc": 54000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 54000,
+    "ttc": 54000,
+    "poids": 600,
+    "statut": "attente"
+   },
    {
     "num": 253193,
     "date": "2026-11-02",
@@ -22616,6 +22646,14 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T20:11:53.537Z"
+  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -22639,14 +22677,6 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T00:06:23.240Z"
-  },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -58904,15 +58934,15 @@
    "sem": 43
   }
  },
- "_cid": "a8smg5kao1",
- "_maj": 1793629631971,
- "_rev": "d0858jfb1d-mvzcs0m3",
+ "_cid": "m8oixnmuks",
+ "_maj": 1793629641964,
+ "_rev": "ll291g2a9z8-mvzcs37c",
  "_majSec": {
   "fer": 1793562087182,
-  "fact": 1793629631971,
+  "fact": 1793629641941,
   "users": 1793544319400,
   "weeks": 1793577441993,
-  "sheets": 1793580252528,
+  "sheets": 1793629641941,
   "_qcFix1": 1793211567861,
   "_wkFix1": 1793211567861,
   "journal": 1793614361668,
@@ -58929,7 +58959,7 @@
   "primesExtra": 1793211567861,
   "quotasComHist": 1793577441993,
   "profils": 1793211567861,
-  "_tables": 1793629571826,
+  "_tables": 1793629631971,
   "_permsFix1": 1793211567861,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793211567861,
@@ -60851,13 +60881,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-02T14:27:21.243Z",
+  "maj": "2026-11-02T14:27:24.600Z",
   "semaine": 45,
   "totalBarils": 321624,
   "ca": 1608120,
   "objectif": 375000,
   "effectif": 115,
-  "clientsServis": 177,
+  "clientsServis": 178,
   "theme": "",
   "top3": [
    {
