@@ -1,11 +1,27 @@
 {
- "maj": "2026-11-02T03:22:55.228154+00:00",
+ "maj": "2026-11-02T03:24:55.618579+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1566653961765658626",
+   "t": "2026-11-02T03:23:31.508000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 666x Pétrole Raffiné pour 6660$ par Bryan Storm. 3330$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 666,
+   "montant": 6660,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1566652700748157081-0",
    "t": "2026-11-02T03:18:30.858000+00:00",
@@ -92992,22 +93008,6 @@
     "playercharacter": "Stella Collins",
     "playerid": "232050",
     "itemid": "weapon_petrolcan"
-   }
-  },
-  {
-   "id": "1565784099736518747",
-   "t": "2026-10-30T17:47:00.239000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 734x Pétrole Raffiné pour 7340$ par Stella Collins. 3670$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 734,
-   "montant": 7340,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
