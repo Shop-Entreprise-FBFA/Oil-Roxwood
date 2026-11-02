@@ -22607,14 +22607,6 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
-  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -22638,6 +22630,14 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T00:06:23.240Z"
+  },
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -58895,9 +58895,9 @@
    "sem": 43
   }
  },
- "_cid": "4hxumg6zhs2",
- "_maj": 1793580253119,
- "_rev": "vqj4jn7wka-mvyjdmbz",
+ "_cid": "jg272e3tds",
+ "_maj": 1793580273305,
+ "_rev": "b24pasm2la-mvyjdxu9",
  "_majSec": {
   "fer": 1793562087182,
   "fact": 1793580253119,
@@ -58920,7 +58920,7 @@
   "primesExtra": 1793211567861,
   "quotasComHist": 1793577441993,
   "profils": 1793211567861,
-  "_tables": 1793580253097,
+  "_tables": 1793580273305,
   "_permsFix1": 1793211567861,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793211567861,
@@ -60842,7 +60842,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-02T00:44:20.687Z",
+  "maj": "2026-11-02T00:44:35.601Z",
   "semaine": 45,
   "totalBarils": 321624,
   "ca": 1608120,
@@ -61475,6 +61475,19 @@
     "commercial": "@role",
     "hebdo": true,
     "id": 1792767906282
+   },
+   {
+    "uid": "826526979204841482",
+    "titre": "Commande Yellow Jack",
+    "type": "rdv",
+    "date": "2026-11-09",
+    "deb": "23:00",
+    "fin": "00:00",
+    "note": "",
+    "partage": true,
+    "commercial": "@role",
+    "hebdo": false,
+    "id": 1793580275560
    }
   ],
   "oilroxwood_bot_ordres": [
