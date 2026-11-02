@@ -1,11 +1,59 @@
 {
- "maj": "2026-11-02T23:32:30.416952+00:00",
+ "maj": "2026-11-02T23:34:30.020098+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1566958146520617053-0",
+   "t": "2026-11-02T23:32:14.805000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 36x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1842.59, 6520.87, 16.73\ntargetPosition : -1842.58, 6521.16, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 4183\nplayerDiscord : 1053366471574687844\nplayerName : SlowMouse3303\nplayerCharacter : Emma Collins-rodriguez\nplayerId : 227799\nitemId : refinedoil",
+   "nom": "Emma Collins-rodriguez",
+   "quantite": 36,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1842.59, 6520.87, 16.73",
+    "targetposition": "-1842.58, 6521.16, 15.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "4183",
+    "playerdiscord": "1053366471574687844",
+    "playername": "SlowMouse3303",
+    "playercharacter": "Emma Collins-rodriguez",
+    "playerid": "227799",
+    "itemid": "refinedoil"
+   }
+  },
+  {
+   "id": "1566958146520617053-1",
+   "t": "2026-11-02T23:32:14.805000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\na retiré 36x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -1842.59, 6520.87, 16.73\ntargetPosition : -1842.58, 6521.16, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 4183\nplayerDiscord : 1053366471574687844\nplayerName : SlowMouse3303\nplayerCharacter : Emma Collins-rodriguez\nplayerId : 227799\nitemId : oil",
+   "nom": "Emma Collins-rodriguez",
+   "quantite": 36,
+   "montant": null,
+   "type": "coffre_retrait",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1842.59, 6520.87, 16.73",
+    "targetposition": "-1842.58, 6521.16, 15.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "4183",
+    "playerdiscord": "1053366471574687844",
+    "playername": "SlowMouse3303",
+    "playercharacter": "Emma Collins-rodriguez",
+    "playerid": "227799",
+    "itemid": "oil"
+   }
+  },
   {
    "id": "1566957893834645673-0",
    "t": "2026-11-02T23:31:14.560000+00:00",
@@ -94903,51 +94951,6 @@
     "playercharacter": "Tony Ernandez",
     "playerid": "383610",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1566548498755752138",
-   "t": "2026-11-01T20:24:27.167000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 3545\nplayerDiscord : 340880694203121664\nplayerName : JaiPasDeNom\nplayerCharacter : Ricardo Diaz\nplayerId : 331414\nvehiclePlate : ZG7875QV\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Ricardo Diaz",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "3545",
-    "playerdiscord": "340880694203121664",
-    "playername": "JaiPasDeNom",
-    "playercharacter": "Ricardo Diaz",
-    "playerid": "331414",
-    "vehicleplate": "ZG7875QV",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1566548275492823141",
-   "t": "2026-11-01T20:23:33.937000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 21x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3085.29, 6815.24, 44.73\ntargetPosition : -3084.39, 6815.87, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3794\nplayerDiscord : 593431852291850281\nplayerName : llKyZerxll\nplayerCharacter : Tyler Collins\nplayerId : 209236\nitemId : oil",
-   "nom": "Tyler Collins",
-   "quantite": 21,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-3085.29, 6815.24, 44.73",
-    "targetposition": "-3084.39, 6815.87, 43.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "3794",
-    "playerdiscord": "593431852291850281",
-    "playername": "llKyZerxll",
-    "playercharacter": "Tyler Collins",
-    "playerid": "209236",
-    "itemid": "oil"
    }
   }
  ]
