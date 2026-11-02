@@ -1,11 +1,83 @@
 {
- "maj": "2026-11-02T07:34:51.489131+00:00",
+ "maj": "2026-11-02T07:36:51.626000+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1566717613784961048-0",
+   "t": "2026-11-02T07:36:27.332000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\na retiré 18x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -1844.40, 6517.53, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6359\nplayerDiscord : 867577351173177374\nplayerName : Aritea987\nplayerCharacter : Bryan Storm\nplayerId : 298482\nitemId : oil",
+   "nom": "Bryan Storm",
+   "quantite": 18,
+   "montant": null,
+   "type": "coffre_retrait",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1844.40, 6517.53, 16.73",
+    "targetposition": "-1843.83, 6518.10, 15.74",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "6359",
+    "playerdiscord": "867577351173177374",
+    "playername": "Aritea987",
+    "playercharacter": "Bryan Storm",
+    "playerid": "298482",
+    "itemid": "oil"
+   }
+  },
+  {
+   "id": "1566717613784961048-1",
+   "t": "2026-11-02T07:36:27.332000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 40x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1844.40, 6517.53, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6359\nplayerDiscord : 867577351173177374\nplayerName : Aritea987\nplayerCharacter : Bryan Storm\nplayerId : 298482\nitemId : refinedoil",
+   "nom": "Bryan Storm",
+   "quantite": 40,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1844.40, 6517.53, 16.73",
+    "targetposition": "-1843.83, 6518.10, 15.74",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "6359",
+    "playerdiscord": "867577351173177374",
+    "playername": "Aritea987",
+    "playercharacter": "Bryan Storm",
+    "playerid": "298482",
+    "itemid": "refinedoil"
+   }
+  },
+  {
+   "id": "1566717613784961048-2",
+   "t": "2026-11-02T07:36:27.332000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\na retiré 22x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -1844.40, 6517.53, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6359\nplayerDiscord : 867577351173177374\nplayerName : Aritea987\nplayerCharacter : Bryan Storm\nplayerId : 298482\nitemId : oil",
+   "nom": "Bryan Storm",
+   "quantite": 22,
+   "montant": null,
+   "type": "coffre_retrait",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1844.40, 6517.53, 16.73",
+    "targetposition": "-1843.83, 6518.10, 15.74",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "6359",
+    "playerdiscord": "867577351173177374",
+    "playername": "Aritea987",
+    "playercharacter": "Bryan Storm",
+    "playerid": "298482",
+    "itemid": "oil"
+   }
+  },
   {
    "id": "1566717113622724645-0",
    "t": "2026-11-02T07:34:28.084000+00:00",
@@ -93829,54 +93901,6 @@
    "nom": null,
    "quantite": 660,
    "montant": 6600,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1566039512042442805",
-   "t": "2026-10-31T10:41:55.278000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 326x Pétrole Raffiné pour 3260$ par Idhir Ramaoui. 1630$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 326,
-   "montant": 3260,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1566039002946211883",
-   "t": "2026-10-31T10:39:53.900000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 500x Pétrole Raffiné pour 5000$ par Hakim Cheb. 2500$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 500,
-   "montant": 5000,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1566037241698979922",
-   "t": "2026-10-31T10:32:53.986000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 155x Pétrole Raffiné pour 1550$ par Hakim Cheb. 775$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 155,
-   "montant": 1550,
    "type": "vente",
    "salon": "1245400913473179729",
    "champs": {
