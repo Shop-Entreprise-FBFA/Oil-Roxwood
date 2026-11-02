@@ -15611,7 +15611,15 @@
     "entreprise": "klan-ozumiya"
    }
   ],
-  "ventesSem": [],
+  "ventesSem": [
+   {
+    "date": "2026-11-02",
+    "client": "Yellow Jack",
+    "quantite": 200,
+    "qui": "",
+    "fact": 253193
+   }
+  ],
   "collection": [
    {
     "nom": "Nom",
@@ -18250,12 +18258,8 @@
     "rib": "20008",
     "tel": "918",
     "adresse": "Sandy shores",
-    "lastCmd": "2026-09-15",
+    "lastCmd": "2026-11-02",
     "type": "entreprise",
-    "relance": {
-     "par": "Laurent Roquel",
-     "date": "2026-10-27"
-    },
     "notes": [
      {
       "t": 1793117407328,
@@ -18284,8 +18288,38 @@
     "prix": 150
    }
   ],
-  "compteur": 253193,
+  "compteur": 253194,
   "factures": [
+   {
+    "num": 253193,
+    "date": "2026-11-02",
+    "client": "Yellow Jack",
+    "emetteur": "",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 200,
+      "tva": 0,
+      "pu": 180,
+      "ht": 36000,
+      "ttc": 36000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 36000,
+    "ttc": 36000,
+    "poids": 400,
+    "statut": "attente",
+    "envoi": {
+     "t": 1793580253119,
+     "par": "Emma Collins-rodriguez",
+     "statut": "en_cours",
+     "ordre": 1793580253414,
+     "rapport": ""
+    }
+   },
    {
     "num": 253192,
     "date": "2026-11-01",
@@ -58861,15 +58895,15 @@
    "sem": 43
   }
  },
- "_cid": "sp3j5fx8zgd",
- "_maj": 1793580232736,
- "_rev": "lytieyf97rs-mvyjd1tg",
+ "_cid": "4hxumg6zhs2",
+ "_maj": 1793580253119,
+ "_rev": "8o7w3rs0tt-mvyjdgyb",
  "_majSec": {
   "fer": 1793562087182,
-  "fact": 1793541843266,
+  "fact": 1793580253119,
   "users": 1793544319400,
   "weeks": 1793577441993,
-  "sheets": 1793578952326,
+  "sheets": 1793580252528,
   "_qcFix1": 1793211567861,
   "_wkFix1": 1793211567861,
   "journal": 1793578927227,
@@ -58886,7 +58920,7 @@
   "primesExtra": 1793211567861,
   "quotasComHist": 1793577441993,
   "profils": 1793211567861,
-  "_tables": 1793580232736,
+  "_tables": 1793580253097,
   "_permsFix1": 1793211567861,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793211567861,
@@ -60808,13 +60842,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-02T00:43:54.100Z",
+  "maj": "2026-11-02T00:44:13.715Z",
   "semaine": 45,
   "totalBarils": 321624,
   "ca": 1608120,
   "objectif": 375000,
   "effectif": 115,
-  "clientsServis": 176,
+  "clientsServis": 177,
   "theme": "",
   "top3": [
    {
@@ -63192,6 +63226,56 @@
     "id": 1793577477809,
     "statut": "fait",
     "rapport": "Image d'eligibilite postee sur Discord."
+   },
+   {
+    "type": "facture_ticket",
+    "payload": {
+     "num": 253193,
+     "salon": "1564665719164248077",
+     "reedition": false,
+     "facture": {
+      "num": 253193,
+      "date": "2026-11-02",
+      "client": "Yellow Jack",
+      "emetteur": "",
+      "postop": false,
+      "lignes": [
+       {
+        "ref": "CMD",
+        "qte": 200,
+        "tva": 0,
+        "pu": 180,
+        "ht": 36000,
+        "ttc": 36000,
+        "desc": "bidons d'essence "
+       }
+      ],
+      "offert": 0,
+      "ht": 36000,
+      "ttc": 36000,
+      "poids": 400,
+      "statut": "attente"
+     },
+     "client": {
+      "nom": "Yellow Jack",
+      "rib": "20008",
+      "tel": "918",
+      "adresse": "Sandy shores",
+      "lastCmd": "2026-11-02",
+      "type": "entreprise",
+      "notes": [
+       {
+        "t": 1793117407328,
+        "par": "Laurent Roquel",
+        "txt": "Futurs acheteur",
+        "imgs": 0
+       }
+      ],
+      "salon": "1564665719164248077"
+     },
+     "par": "Emma Collins-rodriguez"
+    },
+    "id": 1793580253414
    }
   ],
   "oilroxwood_coffres": [
