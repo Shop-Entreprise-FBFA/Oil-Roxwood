@@ -6276,45 +6276,112 @@ function pdData(){
   S.prodDer=S.prodDer||{cols:[{n:'Couteau',p:0},{n:'Katana',p:0},{n:'Préservatif',p:0},{n:'Bagues',p:0},{n:'Bracelets',p:0}],rows:[]};
   return S.prodDer;
 }
+function pdStyle(){
+  if(document.getElementById('pdStyle')) return;
+  const s=document.createElement('style'); s.id='pdStyle';
+  s.textContent=`
+  .pd-kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}
+  .pd-kpi{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+  .pd-kpi small{color:var(--muted);text-transform:uppercase;letter-spacing:.1em;font-size:.62rem}
+  .pd-kpi div{font-size:1.7rem;font-weight:800;margin-top:4px;line-height:1.15}
+  .pd-kpi div.g{color:var(--accent)}
+  .pd-tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(176px,1fr));gap:12px;margin-bottom:18px}
+  .pd-tile{background:linear-gradient(160deg,var(--panel-2),var(--panel));border:1px solid var(--line);border-radius:12px;padding:14px;position:relative}
+  .pd-tile .n{font-weight:800;padding-right:26px;word-break:break-word}
+  .pd-tile .v{font-size:1.9rem;font-weight:800;line-height:1;margin-top:10px}
+  .pd-tile .c{color:var(--muted);font-size:.72rem;margin-top:4px}
+  .pd-tile .bar{height:4px;border-radius:3px;background:var(--line);margin-top:10px}
+  .pd-tile .bar i{display:block;height:100%;border-radius:3px;background:var(--accent)}
+  .pd-tile .x{position:absolute;right:8px;top:8px;padding:0 6px;font-size:.65rem}
+  .pd-tile .pr{display:flex;align-items:center;gap:6px;margin-top:6px;font-size:.72rem;color:var(--muted)}
+  .pd-tile .pr input{width:84px;padding:3px 6px;font-size:.78rem;text-align:right;color:var(--accent);font-weight:700}
+  .pd-add{border:1.5px dashed var(--trait-fort,#4A362A);color:var(--accent);display:grid;place-items:center;text-align:center;cursor:pointer;font-weight:800;min-height:130px;background:transparent;border-radius:12px;font-size:.85rem}
+  .pd-add:hover{background:var(--panel)}
+  .pd-cols{display:grid;grid-template-columns:340px 1fr;gap:16px;align-items:start}
+  @media(max-width:1100px){.pd-cols{grid-template-columns:1fr}.pd-kpis{grid-template-columns:repeat(2,1fr)}}
+  .pd-box{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+  .pd-box h4{font-size:.68rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin-bottom:10px;font-weight:700}
+  .pd-rk{display:grid;grid-template-columns:22px 1fr auto;gap:10px;align-items:center;margin:10px 0}
+  .pd-rk .m{color:var(--accent);font-weight:800}
+  .pd-rk .b{height:9px;background:var(--line);border-radius:6px;overflow:hidden;margin-top:4px}
+  .pd-rk .b i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),var(--accent-2))}
+  .pd-row{display:grid;grid-template-columns:128px 190px 1fr 120px 34px;gap:10px;align-items:center;padding:8px 4px;border-top:1px solid var(--line)}
+  .pd-row:first-of-type{border-top:0}
+  .pd-row:hover{background:var(--panel-2)}
+  .pd-row input[type=date],.pd-row input[type=text]{background:transparent;border:1px solid transparent;color:inherit;padding:4px 6px;border-radius:6px;font:inherit;width:100%}
+  .pd-row input:hover,.pd-row input:focus{border-color:var(--line);background:var(--panel)}
+  .pd-chip{display:inline-flex;align-items:center;gap:6px;background:var(--panel-3,#241C17);border:1px solid var(--line);border-radius:8px;padding:2px 4px 2px 10px;margin:2px 6px 2px 0;font-size:.85rem}
+  .pd-chip b{color:var(--accent)}
+  .pd-chip button{background:transparent;border:0;color:var(--muted);cursor:pointer;width:20px;height:20px;border-radius:5px;font-weight:800}
+  .pd-chip button:hover{background:var(--line);color:var(--ink)}
+  .pd-sel{background:transparent;border:1px dashed var(--line);color:var(--muted);border-radius:8px;padding:3px 6px;font-size:.78rem;cursor:pointer}
+  .pd-av{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--line);font-size:.6rem;font-weight:800;margin-right:6px;vertical-align:middle}
+  .pd-hd{color:var(--muted);font-size:.64rem;text-transform:uppercase;letter-spacing:.1em;border-top:0!important}
+  @media(max-width:900px){.pd-row{grid-template-columns:1fr 1fr}}
+  `;
+  document.head.appendChild(s);
+}
 function prodder(){
+  pdStyle();
   const D=pdData();
   const rowHT=r=>D.cols.reduce((a,c)=>a+nn(r.q&&r.q[c.n])*nn(c.p),0);
+  const qte=(r,c)=>nn(r.q&&r.q[c.n]);
+  const ini=n=>String(n||'?').trim().split(/\s+/).map(w=>w[0]||'').slice(0,2).join('').toUpperCase()||'?';
   const tot=D.rows.reduce((a,r)=>a+rowHT(r),0);
+  const art=D.rows.reduce((a,r)=>a+D.cols.reduce((b,c)=>b+qte(r,c),0),0);
+  const parCol=D.cols.map(c=>{ const q=D.rows.reduce((a,r)=>a+qte(r,c),0); return {q,ca:q*nn(c.p)}; });
+  const maxQ=Math.max(1,...parCol.map(x=>x.q));
+  const star=parCol.reduce((b,x,i)=>x.q>(b<0?0:parCol[b].q)?i:b,-1);
+  const vend=new Map();
+  D.rows.forEach(r=>{ const k=String(r.qui||'').trim()||'(sans vendeur)'; vend.set(k,(vend.get(k)||0)+rowHT(r)); });
+  const classement=[...vend.entries()].sort((a,b)=>b[1]-a[1]);
+  const maxV=Math.max(1,...classement.map(x=>x[1]));
+  const ordre=D.rows.map((r,ri)=>({r,ri})).sort((a,b)=>String(b.r.date||'').localeCompare(String(a.r.date||''))||b.ri-a.ri);
+  const LIM=25, tout=!!window._pdTout, vues=tout?ordre:ordre.slice(0,LIM);
+  const nomJs=c=>`decodeURIComponent('${encodeURIComponent(c.n)}')`;
+  const ligne=({r,ri})=>`<div class="pd-row">
+      <input type="date" value="${esc(r.date||'')}" onchange="pdCell(${ri},null,this.value)">
+      <div style="display:flex;align-items:center"><span class="pd-av">${esc(ini(r.qui))}</span><input type="text" list="pdVendeurs" value="${esc(r.qui||'')}" placeholder="Vendeur…" onchange="pdCell(${ri},'_qui',this.value)"></div>
+      <div>${D.cols.filter(c=>qte(r,c)>0).map(c=>`<span class="pd-chip"><b>${fmt(qte(r,c))}×</b> ${esc(c.n)}<button title="Retirer un" onclick="pdQ(${ri},${nomJs(c)},-1)">−</button><button title="Ajouter un" onclick="pdQ(${ri},${nomJs(c)},1)">+</button></span>`).join('')}
+        <select class="pd-sel" onchange="pdAjout(${ri},this.value)"><option value="">＋ produit</option>${D.cols.map((c,ci)=>`<option value="${ci}">${esc(c.n)}</option>`).join('')}</select></div>
+      <b style="text-align:right">${fmt(Math.round(rowHT(r)))} $</b>
+      <button class="btn btn-sm btn-red" title="Supprimer cette vente" onclick="pdRowDel(${ri})">✕</button>
+    </div>`;
   $('#main').innerHTML=`
   <div class="topbar">
-    <div><h2>Produits dérivés</h2><div class="sub">${D.cols.length} produit(s) · ${D.rows.length} vente(s) · les colonnes s'ajoutent et se retirent à la volée</div></div>
-    <div style="display:flex;gap:10px">
-      <button class="btn" style="background:linear-gradient(135deg,#5aa0ff,#3d7fd9);color:#0d1626;font-weight:800" onclick="pdColAdd()">＋ Colonne (produit)</button>
-      <button class="btn btn-gold" onclick="pdRowAdd()">＋ Ligne (vente)</button>
-    </div>
+    <div><h2>Produits dérivés</h2><div class="sub">${D.cols.length} produit(s) · ${D.rows.length} vente(s)</div></div>
+    <div style="display:flex;gap:10px"><button class="btn btn-gold" onclick="pdRowAdd()">＋ Vente</button></div>
   </div>
-  <div class="panel" style="padding:10px 16px;overflow-x:auto">
-    <table class="sheet"><thead><tr>
-      <th style="min-width:130px">Date</th>
-      <th style="min-width:150px">Vendeur</th>
-      ${D.cols.map((c,ci)=>`<th style="min-width:112px">
-        <div style="display:flex;align-items:center;gap:6px;justify-content:space-between">${esc(c.n)}
-          <button class="btn btn-sm btn-red" style="padding:1px 7px" onclick="pdColDel(${ci})" title="Supprimer la colonne ${esc(c.n)}">✕</button></div>
-        <input class="field" type="number" min="0" title="Prix unitaire HT du produit" value="${nn(c.p)||''}" placeholder="prix" style="margin-top:5px;padding:4px 7px;font-size:.75rem;width:92px;text-align:right" onchange="pdColPrix(${ci},this.value)">
-        <div style="font-weight:400;color:var(--muted);font-size:.64rem;text-transform:none;letter-spacing:0">$ HT / unité</div></th>`).join('')}
-      <th style="text-align:right">Prix HT</th><th></th>
-    </tr></thead><tbody>
-    ${D.rows.map((r,ri)=>`<tr>
-      <td><input type="date" value="${esc(r.date||'')}" onchange="pdCell(${ri},null,this.value)"></td>
-      <td><input type="text" list="pdVendeurs" value="${esc(r.qui||'')}" placeholder="Vendeur…" onchange="pdCell(${ri},'_qui',this.value)"></td>
-      ${D.cols.map(c=>`<td><input type="number" min="0" value="${nn(r.q&&r.q[c.n])||''}" placeholder="0" style="text-align:right" onchange="pdCell(${ri},decodeURIComponent('${encodeURIComponent(c.n)}'),this.value)"></td>`).join('')}
-      <td class="calc" style="text-align:right;font-weight:700">${fmt(Math.round(rowHT(r)))} $</td>
-      <td><button class="btn btn-sm btn-red" onclick="pdRowDel(${ri})">✕</button></td>
-    </tr>`).join('')||`<tr><td colspan="${D.cols.length+4}"><div class="empty">Aucune vente enregistrée — « ＋ Ligne » pour commencer 🗡️</div></td></tr>`}
-    </tbody>${D.rows.length?`<tfoot><tr style="border-top:2px solid var(--line)">
-      <td style="font-weight:800;padding:10px 12px">Total</td><td></td>
-      ${D.cols.map(c=>`<td style="text-align:right;color:var(--muted);padding:10px 12px">${fmt(D.rows.reduce((a,r)=>a+nn(r.q&&r.q[c.n]),0))}</td>`).join('')}
-      <td style="text-align:right;font-weight:800;color:var(--accent);padding:10px 12px">${fmt(Math.round(tot))} $</td><td></td>
-    </tr></tfoot>`:''}</table>
-    <p style="color:var(--muted);font-size:.75rem;margin-top:10px">Renseigne le prix unitaire HT sous chaque produit : le Prix HT de chaque ligne se calcule tout seul (quantités × prix).</p>
+  <div class="pd-kpis">
+    <div class="pd-kpi"><small>Chiffre d'affaires HT</small><div class="g">${fmt(Math.round(tot))} $</div></div>
+    <div class="pd-kpi"><small>Ventes</small><div>${fmt(D.rows.length)}</div></div>
+    <div class="pd-kpi"><small>Articles vendus</small><div>${fmt(art)}</div></div>
+    <div class="pd-kpi"><small>Produit star</small><div style="font-size:1.25rem;padding-top:7px">${star>=0?`${esc(D.cols[star].n)} <span style="color:var(--muted);font-size:.9rem">×${fmt(parCol[star].q)}</span>`:'—'}</div></div>
+  </div>
+  <div class="pd-tiles">
+    ${D.cols.map((c,ci)=>`<div class="pd-tile">
+      <button class="btn btn-sm btn-red x" title="Supprimer le produit ${esc(c.n)}" onclick="pdColDel(${ci})">✕</button>
+      <div class="n">${esc(c.n)}</div>
+      <div class="pr"><input class="field" type="number" min="0" value="${nn(c.p)||''}" placeholder="prix" title="Prix unitaire HT" onchange="pdColPrix(${ci},this.value)"> $ / unité</div>
+      <div class="v">${fmt(parCol[ci].q)}</div>
+      <div class="c">vendus · ${fmt(Math.round(parCol[ci].ca))} $</div>
+      <div class="bar"><i style="width:${Math.round(parCol[ci].q/maxQ*100)}%"></i></div></div>`).join('')}
+    <button class="pd-add" onclick="pdColAdd()"><span><span style="font-size:1.6rem;display:block">＋</span>Nouveau produit</span></button>
+  </div>
+  <div class="pd-cols">
+    <div class="pd-box"><h4>🏆 Classement vendeurs</h4>
+      ${classement.length?classement.map(([n,v],i)=>`<div class="pd-rk"><span class="m">${i+1}</span><div>${esc(n)}<div class="b"><i style="width:${Math.round(v/maxV*100)}%"></i></div></div><b>${fmt(Math.round(v))} $</b></div>`).join(''):'<div class="empty">Pas encore de vente</div>'}
+    </div>
+    <div class="pd-box"><h4>Journal des ventes</h4>
+      <div class="pd-row pd-hd"><span>Date</span><span>Vendeur</span><span>Produits vendus</span><span style="text-align:right">Prix HT</span><span></span></div>
+      ${vues.map(ligne).join('')||'<div class="empty">Aucune vente enregistrée — « ＋ Vente » pour commencer 🗡️</div>'}
+      ${ordre.length>LIM?`<div style="text-align:center;margin-top:10px"><button class="btn btn-sm" onclick="window._pdTout=${tout?'false':'true'};prodder()">${tout?'Réduire':`Afficher les ${ordre.length} ventes`}</button></div>`:''}
+    </div>
   </div>
   <datalist id="pdVendeurs">${nomsPostes().map(n=>`<option value="${esc(n)}">`).join('')}</datalist>`;
 }
+function pdQ(ri,k,d){ const D=pdData(), r=D.rows[ri]; if(!r) return; r.q=r.q||{}; pdCell(ri,k,Math.max(0,nn(r.q[k])+d)); }
+function pdAjout(ri,ci){ if(ci==='') return; const D=pdData(), c=D.cols[+ci]; if(!c) return; const r=D.rows[ri]; r.q=r.q||{}; pdCell(ri,c.n,nn(r.q[c.n])+1); }
 function pdColAdd(){
   const n=prompt('Nom du nouveau produit (ex. Couteau, Katana, Bagues…)');
   if(!n||!n.trim()) return;
