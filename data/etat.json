@@ -15650,6 +15650,13 @@
     "client": "Employé — Yann Zigzag ⚡",
     "quantite": 50,
     "qui": "Emma Collins-rodriguez"
+   },
+   {
+    "date": "2026-11-03",
+    "client": "LTD Mirror Park",
+    "quantite": 500,
+    "qui": "Julio Collins",
+    "fact": 253196
    }
   ],
   "collection": [
@@ -17998,7 +18005,7 @@
     "rib": "20021",
     "tel": "931",
     "adresse": "Los Santos",
-    "lastCmd": "2026-09-21",
+    "lastCmd": "2026-11-03",
     "type": "entreprise",
     "salon": "1461345077187051570"
    },
@@ -18328,8 +18335,38 @@
     "prix": 150
    }
   ],
-  "compteur": 253196,
+  "compteur": 253197,
   "factures": [
+   {
+    "num": 253196,
+    "date": "2026-11-03",
+    "client": "LTD Mirror Park",
+    "emetteur": "Julio Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 500,
+      "tva": 0,
+      "pu": 180,
+      "ht": 90000,
+      "ttc": 90000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 90000,
+    "ttc": 90000,
+    "poids": 1000,
+    "statut": "attente",
+    "envoi": {
+     "t": 1793733872775,
+     "par": "Julio Collins",
+     "statut": "en_cours",
+     "ordre": 1793733874177,
+     "rapport": ""
+    }
+   },
    {
     "num": 253195,
     "date": "2026-11-02",
@@ -22685,6 +22722,22 @@
    "public": true,
    "maj": "2026-09-16T11:47:16.417Z"
   },
+  "stella collins": {
+   "nom": "Stella Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-14T13:20:17.287Z"
+  },
+  "julio collins": {
+   "nom": "Julio Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T00:06:23.240Z"
+  },
   "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿": {
    "nom": "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿",
    "photo": "",
@@ -22708,22 +22761,6 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T16:48:15.042Z"
-  },
-  "stella collins": {
-   "nom": "Stella Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-14T13:20:17.287Z"
-  },
-  "julio collins": {
-   "nom": "Julio Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T00:06:23.240Z"
   },
   "william rodriguez-collins": {
    "nom": "William Rodriguez-collins",
@@ -59037,15 +59074,15 @@
    "sem": 43
   }
  },
- "_cid": "1j20km5zt9x",
- "_maj": 1793733838898,
- "_rev": "hz19fzbssvd-mw12tev0",
+ "_cid": "uyg6pc9ffhn",
+ "_maj": 1793733872775,
+ "_rev": "0x98r669ywkj-mw12u2yy",
  "_majSec": {
   "fer": 1793726388767,
-  "fact": 1793636889658,
+  "fact": 1793733872775,
   "users": 1793733829629,
   "weeks": 1793577441993,
-  "sheets": 1793729598232,
+  "sheets": 1793733872242,
   "_qcFix1": 1793211567861,
   "_wkFix1": 1793211567861,
   "journal": 1793733829629,
@@ -59062,7 +59099,7 @@
   "primesExtra": 1793211567861,
   "quotasComHist": 1793577441993,
   "profils": 1793211567861,
-  "_tables": 1793733838898,
+  "_tables": 1793733872766,
   "_permsFix1": 1793211567861,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793211567861,
@@ -60988,13 +61025,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-03T19:24:02.556Z",
+  "maj": "2026-11-03T19:24:33.802Z",
   "semaine": 45,
   "totalBarils": 321624,
   "ca": 1608120,
   "objectif": 375000,
   "effectif": 115,
-  "clientsServis": 179,
+  "clientsServis": 180,
   "theme": "",
   "top3": [
    {
@@ -63475,6 +63512,48 @@
     "id": 1793636146401,
     "statut": "fait",
     "rapport": "Facture n°253195 postee dans le salon 1541425431314436096."
+   },
+   {
+    "type": "facture_ticket",
+    "payload": {
+     "num": 253196,
+     "salon": "1461345077187051570",
+     "reedition": false,
+     "facture": {
+      "num": 253196,
+      "date": "2026-11-03",
+      "client": "LTD Mirror Park",
+      "emetteur": "Julio Collins",
+      "postop": false,
+      "lignes": [
+       {
+        "ref": "CMD",
+        "qte": 500,
+        "tva": 0,
+        "pu": 180,
+        "ht": 90000,
+        "ttc": 90000,
+        "desc": "bidons d'essence "
+       }
+      ],
+      "offert": 0,
+      "ht": 90000,
+      "ttc": 90000,
+      "poids": 1000,
+      "statut": "attente"
+     },
+     "client": {
+      "nom": "LTD Mirror Park",
+      "rib": "20021",
+      "tel": "931",
+      "adresse": "Los Santos",
+      "lastCmd": "2026-11-03",
+      "type": "entreprise",
+      "salon": "1461345077187051570"
+     },
+     "par": "Julio Collins"
+    },
+    "id": 1793733874177
    }
   ],
   "oilroxwood_coffres": [
