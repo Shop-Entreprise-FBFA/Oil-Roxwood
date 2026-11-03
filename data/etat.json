@@ -15644,6 +15644,12 @@
     "client": "Citoyen ⚡",
     "quantite": 6,
     "qui": "Emma Collins-rodriguez"
+   },
+   {
+    "date": "2026-11-03",
+    "client": "Employé — Yann Zigzag ⚡",
+    "quantite": 50,
+    "qui": "Emma Collins-rodriguez"
    }
   ],
   "collection": [
@@ -22695,6 +22701,14 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T20:11:53.537Z"
+  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -22718,14 +22732,6 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T00:06:23.240Z"
-  },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -59031,18 +59037,18 @@
    "sem": 43
   }
  },
- "_cid": "1j20km5zt9x",
- "_maj": 1793729518858,
- "_rev": "3bnpmcpfw97-mw108tlo",
+ "_cid": "1dboydzot4x",
+ "_maj": 1793729598301,
+ "_rev": "mkbyeokhzo-mw10agon",
  "_majSec": {
   "fer": 1793726388767,
   "fact": 1793636889658,
   "users": 1793726385298,
   "weeks": 1793577441993,
-  "sheets": 1793726139994,
+  "sheets": 1793729598232,
   "_qcFix1": 1793211567861,
   "_wkFix1": 1793211567861,
-  "journal": 1793726385298,
+  "journal": 1793729598232,
   "pending": 1793211567861,
   "prodDer": 1793633182662,
   "runners": 1793578921458,
@@ -59056,7 +59062,7 @@
   "primesExtra": 1793211567861,
   "quotasComHist": 1793577441993,
   "profils": 1793211567861,
-  "_tables": 1793729518858,
+  "_tables": 1793729598301,
   "_permsFix1": 1793211567861,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793211567861,
@@ -59073,6 +59079,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1793729598466,
+   "u": "Emma Collins-rodriguez",
+   "a": "Vente rapide sans facture : 50 bidon(s) — Employé Yann Zigzag (vendeur : Emma Collins-rodriguez)"
+  },
   {
    "t": 1793726391371,
    "u": "Julio Collins",
@@ -60567,11 +60578,6 @@
    "t": 1792766718653,
    "u": "Julio Collins",
    "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1792766718512,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
   }
  ],
  "prodDer": {
@@ -60982,7 +60988,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-03T18:12:02.652Z",
+  "maj": "2026-11-03T18:13:19.223Z",
   "semaine": 45,
   "totalBarils": 321624,
   "ca": 1608120,
