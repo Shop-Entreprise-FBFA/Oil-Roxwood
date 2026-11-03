@@ -1,11 +1,27 @@
 {
- "maj": "2026-11-03T17:06:27.680726+00:00",
+ "maj": "2026-11-03T17:08:27.090641+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1567223462031003710",
+   "t": "2026-11-03T17:06:30.952000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 257x Pétrole Raffiné pour 2570$ par Luc Rouza. 1285$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 257,
+   "montant": 2570,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1567223194266636423",
    "t": "2026-11-03T17:05:27.112000+00:00",
@@ -94674,30 +94690,6 @@
     "playercharacter": "Grigori Valentine",
     "playerid": "380049",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1566606405346267158-9",
-   "t": "2026-11-02T00:14:33.174000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 27x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -1843.04, 6517.32, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3639\nplayerDiscord : 427832771746988032\nplayerName : Durna\nplayerCharacter : Grigori Valentine\nplayerId : 380049\nitemId : oil",
-   "nom": "Grigori Valentine",
-   "quantite": 27,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1843.04, 6517.32, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "3639",
-    "playerdiscord": "427832771746988032",
-    "playername": "Durna",
-    "playercharacter": "Grigori Valentine",
-    "playerid": "380049",
-    "itemid": "oil"
    }
   }
  ]
