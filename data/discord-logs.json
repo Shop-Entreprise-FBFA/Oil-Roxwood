@@ -1,11 +1,32 @@
 {
- "maj": "2026-11-03T12:52:30.656216+00:00",
+ "maj": "2026-11-03T12:54:33.463839+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1567159720102461621",
+   "t": "2026-11-03T12:53:13.692000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 6526\nplayerDiscord : 427832771746988032\nplayerName : Durna\nplayerCharacter : Grigori Valentine\nplayerId : 380049\nvehiclePlate : FE3726MZ\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Grigori Valentine",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "6526",
+    "playerdiscord": "427832771746988032",
+    "playername": "Durna",
+    "playercharacter": "Grigori Valentine",
+    "playerid": "380049",
+    "vehicleplate": "FE3726MZ",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1567158969695346902-0",
    "t": "2026-11-03T12:50:14.781000+00:00",
@@ -94784,30 +94805,6 @@
    "quantite": 77,
    "montant": null,
    "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1843.42, 6519.28, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "3639",
-    "playerdiscord": "427832771746988032",
-    "playername": "Durna",
-    "playercharacter": "Grigori Valentine",
-    "playerid": "380049",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1566594069071663181-2",
-   "t": "2026-11-01T23:25:31.977000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 77x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -1843.42, 6519.28, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3639\nplayerDiscord : 427832771746988032\nplayerName : Durna\nplayerCharacter : Grigori Valentine\nplayerId : 380049\nitemId : oil",
-   "nom": "Grigori Valentine",
-   "quantite": 77,
-   "montant": null,
-   "type": "coffre_retrait",
    "salon": "1245400913066066099",
    "coffre": "entreprise (Oil RoxWood)",
    "champs": {
