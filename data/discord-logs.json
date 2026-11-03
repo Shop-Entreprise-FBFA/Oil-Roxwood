@@ -1,11 +1,27 @@
 {
- "maj": "2026-11-03T08:48:30.788145+00:00",
+ "maj": "2026-11-03T08:50:31.394064+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1567098335800856648",
+   "t": "2026-11-03T08:49:18.534000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 187x Pétrole Raffiné pour 1870$ par Jason Palmer. 935$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 187,
+   "montant": 1870,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1567097813094109188-0",
    "t": "2026-11-03T08:47:13.911000+00:00",
@@ -94868,30 +94884,6 @@
     "playercharacter": "William Rodriguez-collins",
     "playerid": "46658",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1566586010005938215-2",
-   "t": "2026-11-01T22:53:30.546000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 1x Fer dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1811.41, 6573.38, 16.90\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1016\nplayerDiscord : 235844738656239616\nplayerName : Wiken\nplayerCharacter : William Rodriguez-collins\nplayerId : 46658\nitemId : iron",
-   "nom": "William Rodriguez-collins",
-   "quantite": 1,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1811.41, 6573.38, 16.90",
-    "targetposition": "-1815.66, 6565.56, 15.98",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "1016",
-    "playerdiscord": "235844738656239616",
-    "playername": "Wiken",
-    "playercharacter": "William Rodriguez-collins",
-    "playerid": "46658",
-    "itemid": "iron"
    }
   }
  ]
