@@ -3717,9 +3717,14 @@ async function eligEnvoyerDiscord(){
   if(!noms.length) return toast('Feuille Éligibilité vide');
   if(!SYNC.cli) return toast('⚠️ Synchro non connectée — recharge la page et réessaie');
   if(!RoxwoodGH.peutEcrire()) return toast('⚠️ Lecture seule — ajoute ton jeton d\'écriture pour envoyer au bot');
+  /* « Récupéré » = la personne est passée prendre son dû : une date de prise renseignée, ou au moins une case
+     Menus / Boissons / Bidons cochée. Le bot affiche un ✔ devant ces noms et un compteur par grade. */
+  const recuperes=((S.sheets&&S.sheets.eligibilite)||[])
+    .filter(x=>String(x.nom||'').trim()&&(String(x.date||'').trim()||x.menus||x.boissons||x.bidons))
+    .map(x=>String(x.nom).trim());
   toast('📤 Envoi au bot…');
   const {data,error}=await SYNC.cli.from('oilroxwood_bot_ordres')
-    .insert({type:'eligibilite_image',payload:{noms}}).select('id').single();
+    .insert({type:'eligibilite_image',payload:{noms,recuperes}}).select('id').single();
   if(error) return toast('⚠️ Échec de l\'envoi : '+error.message);
   await sbPushNow();                       // l'ordre doit être DANS le dépôt, pas seulement en mémoire
   toast('⏳ Ordre déposé — le bot le prend dans les 20 s…');
