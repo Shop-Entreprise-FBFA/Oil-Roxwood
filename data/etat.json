@@ -58960,6 +58960,30 @@
    "quantite": 30,
    "montant": 150,
    "did": "767332288744128512"
+  },
+  {
+   "id": "1567265484632625265:0",
+   "t": "2026-11-03 20:53",
+   "nom": "Julio Collins",
+   "quantite": 100,
+   "montant": 500,
+   "did": "767332288744128512"
+  },
+  {
+   "id": "1567265484632625265:1",
+   "t": "2026-11-03 20:53",
+   "nom": "Julio Collins",
+   "quantite": 48,
+   "montant": 240,
+   "did": "767332288744128512"
+  },
+  {
+   "id": "1567265216545165333",
+   "t": "2026-11-03 20:52",
+   "nom": "Julio Collins",
+   "quantite": 100,
+   "montant": 500,
+   "did": "767332288744128512"
   }
  ],
  "settings": {
@@ -59205,17 +59229,17 @@
   }
  },
  "_cid": "8xiwx0frm3v",
- "_maj": 1793801648841,
- "_rev": "2mky60ihofr-mw277hqw",
+ "_maj": 1793801698330,
+ "_rev": "n6ac4p1014f-mw277xe7",
  "_majSec": {
-  "fer": 1793734340801,
+  "fer": 1793801696612,
   "fact": 1793734357036,
   "users": 1793742597473,
   "weeks": 1793577441993,
   "sheets": 1793796652885,
   "_qcFix1": 1793211567861,
   "_wkFix1": 1793211567861,
-  "journal": 1793796652885,
+  "journal": 1793801698330,
   "pending": 1793211567861,
   "prodDer": 1793633182662,
   "runners": 1793578921458,
@@ -59223,13 +59247,13 @@
   "imported": 1793211567861,
   "settings": 1793577441993,
   "closeUndo": 1793577441993,
-  "quotasCom": 1793734340637,
+  "quotasCom": 1793801696422,
   "bilanExtra": 1793574129422,
   "bilanForce": 1793211567861,
   "primesExtra": 1793211567861,
   "quotasComHist": 1793577441993,
   "profils": 1793211567861,
-  "_tables": 1793801648841,
+  "_tables": 1793801698330,
   "_permsFix1": 1793211567861,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793211567861,
@@ -59246,6 +59270,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1793801698861,
+   "u": "Diego Herrera",
+   "a": "Achats de fer : 3 relevé(s) repris du salon"
+  },
   {
    "t": 1793796655151,
    "u": "Diego Herrera",
@@ -60740,11 +60769,6 @@
    "t": 1792785911317,
    "u": "Diego Herrera",
    "a": "Contrat(s) signé(s) via Discord : Many Carlos"
-  },
-  {
-   "t": 1792785911189,
-   "u": "Diego Herrera",
-   "a": "Recrutements Discord : 1 fiche(s) créée(s), 0 case(s) complétée(s) — Many Carlos"
   }
  ],
  "prodDer": {
@@ -61155,7 +61179,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-04T14:14:44.120Z",
+  "maj": "2026-11-04T14:15:04.399Z",
   "semaine": 45,
   "totalBarils": 321624,
   "ca": 1608120,
@@ -61287,7 +61311,7 @@
  "quotasCom": {
   "sem": 45,
   "achats": {},
-  "vendus": 1186,
+  "vendus": 1188,
   "parPers": 297,
   "ferPers": 594
  },
