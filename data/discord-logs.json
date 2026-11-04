@@ -1,11 +1,27 @@
 {
- "maj": "2026-11-04T08:53:38.273008+00:00",
+ "maj": "2026-11-04T08:55:42.402190+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1567462235322978385",
+   "t": "2026-11-04T08:55:18.941000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 100x Pétrole Raffiné pour 1000$ par Vincent Vega. 500$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 100,
+   "montant": 1000,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1567461475939778582-0",
    "t": "2026-11-04T08:52:17.890000+00:00",
@@ -94231,30 +94247,6 @@
    "champs": {
     "position": "-1851.38, 6502.59, 16.73",
     "targetposition": "-1851.46, 6502.05, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6246",
-    "playerdiscord": "1301627104940785687",
-    "playername": "TALANTA.A",
-    "playercharacter": "Carter Fuente",
-    "playerid": "291258",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1566684145470406683-2",
-   "t": "2026-11-02T05:23:27.864000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 54x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1844.04, 6517.98, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6246\nplayerDiscord : 1301627104940785687\nplayerName : TALANTA.A\nplayerCharacter : Carter Fuente\nplayerId : 291258\nitemId : oil",
-   "nom": "Carter Fuente",
-   "quantite": 54,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1844.04, 6517.98, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
     "jobid": "76",
     "jobname": "Oil RoxWood",
     "playernetid": "6246",
