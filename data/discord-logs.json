@@ -1,11 +1,27 @@
 {
- "maj": "2026-11-04T22:35:38.822406+00:00",
+ "maj": "2026-11-04T22:37:38.308464+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1567668609432559708",
+   "t": "2026-11-04T22:35:22.363000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 632x Pétrole Raffiné pour 6320$ par Cristóbal Perrera. 3160$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 632,
+   "montant": 6320,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1567665598303969282-0",
    "t": "2026-11-04T22:23:24.454000+00:00",
@@ -93829,30 +93845,6 @@
     "playername": "ShySpider2463",
     "playercharacter": "Laurent Roquel",
     "playerid": "282695",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1566778773121269826-0",
-   "t": "2026-11-02T11:39:28.854000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 122x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1851.65, 6515.41, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6507\nplayerDiscord : 593431852291850281\nplayerName : BoldFish7448\nplayerCharacter : Tyler Collins\nplayerId : 209236\nitemId : refinedoil",
-   "nom": "Tyler Collins",
-   "quantite": 122,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1851.65, 6515.41, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6507",
-    "playerdiscord": "593431852291850281",
-    "playername": "BoldFish7448",
-    "playercharacter": "Tyler Collins",
-    "playerid": "209236",
     "itemid": "refinedoil"
    }
   }
