@@ -1,0 +1,172 @@
+/* Nouvelles vues : Effectif (verdicts), Éligibilité, Fiche employé, Facture.
+   Mêmes couleurs que les cartes RH (roxwood-refonte.css). */
+
+/* ---------- Effectif : tableau des verdicts ---------- */
+.vd-seg{display:inline-flex;border:1px solid rgba(177,196,214,.2);border-radius:8px;overflow:hidden}
+.vd-seg button{background:transparent;color:#8fa1b4;border:0;padding:7px 14px;font-weight:700;font-size:.78rem;cursor:pointer;letter-spacing:.04em;text-transform:uppercase}
+.vd-seg button.on{background:#e8a020;color:#1a1005}
+.vd-sum{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:16px}
+.vd-sum div{padding:11px 14px;border-radius:10px;border:1px solid rgba(177,196,214,.16);background:#0f1a27;border-left:4px solid var(--c)}
+.vd-sum b{font-size:1.6rem;display:block;line-height:1;color:var(--c)}
+.vd-sum span{font-size:.7rem;color:#8fa1b4;letter-spacing:.06em;text-transform:uppercase}
+.vd-cols{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;align-items:start}
+.vd-col{padding:14px;border-radius:12px;background:linear-gradient(145deg,#162334,#101a28);border:1px solid rgba(177,196,214,.16);min-height:160px}
+.vd-col h4{margin:0 0 3px;display:flex;justify-content:space-between;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--c)}
+.vd-col .sub{font-size:.72rem;color:#8fa1b4;margin-bottom:10px}
+.vd-vide{color:#6b7a8d;font-size:.8rem;text-align:center;padding:18px 0}
+.vd-carte{padding:10px 11px;border-radius:9px;background:#0f1a27;border:1px solid #1b2a3b;border-left:3px solid var(--c);margin-bottom:8px}
+.vd-carte .vd-t{display:flex;gap:9px;align-items:center;cursor:pointer}
+.vd-carte .vd-t b{display:block;font-size:.86rem;line-height:1.2}
+.vd-carte .vd-t small{font-size:.72rem;color:var(--c);font-weight:700}
+.vd-th{position:relative;height:11px;border-radius:6px;background:#0a1018;overflow:hidden;margin-top:9px}
+.vd-th i{position:absolute;left:0;top:0;bottom:0;border-radius:6px;background:var(--c)}
+.vd-th .z{position:absolute;top:0;bottom:0;opacity:.18}
+.vd-th s{position:absolute;top:-2px;bottom:-2px;width:2px;background:#fff;opacity:.5;text-decoration:none}
+.vd-num{display:flex;justify-content:space-between;font:.72rem Consolas,monospace;color:#8fa1b4;margin-top:4px}
+.vd-num b{color:var(--c)}
+.vd-act{margin-top:8px;display:flex;gap:6px;justify-content:flex-end}
+.vd-bas{margin-top:16px;padding:14px;border-radius:12px;background:linear-gradient(145deg,#162334,#101a28);border:1px solid rgba(177,196,214,.16)}
+.vd-bas h4{margin:0 0 10px;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:#a9c6e4}
+.vd-bas-g{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px}
+.vd-mini{display:flex;gap:9px;align-items:center;padding:9px 11px;border-radius:9px;background:#0f1a27;border:1px solid #1b2a3b;border-left:3px solid var(--c);cursor:pointer}
+.vd-mini b{display:block;font-size:.82rem}.vd-mini small{font-size:.7rem;color:#8fa1b4}
+.vd-mini .vd-chip{margin-left:auto}
+.vd-chip{font-size:.68rem;font-weight:800;padding:3px 9px;border-radius:99px;white-space:nowrap;color:var(--c);background:rgba(255,255,255,.06)}
+@media(max-width:1100px){.vd-cols{grid-template-columns:repeat(2,minmax(0,1fr))}.vd-sum{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:640px){.vd-cols{grid-template-columns:1fr}.vd-sum{grid-template-columns:repeat(2,1fr)}}
+
+/* ---------- Éligibilité : checklist à gros boutons ---------- */
+.el-kpi{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:14px}
+.el-kpi div{padding:14px 16px;border-radius:12px;background:#0f1a27;border:1px solid rgba(177,196,214,.16);border-left:4px solid var(--c)}
+.el-kpi b{display:block;font-size:1.7rem;line-height:1;color:var(--c)}.el-kpi b small{font-size:1rem;color:#8fa1b4}
+.el-kpi span{font-size:.7rem;color:#8fa1b4;letter-spacing:.06em;text-transform:uppercase}
+.el-bar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between;margin-bottom:12px}
+.el-pills{display:flex;gap:7px;flex-wrap:wrap}
+.el-pills button{background:#0f1a27;border:1px solid rgba(177,196,214,.2);color:#c9d4e0;border-radius:99px;padding:6px 14px;font-weight:700;font-size:.8rem;cursor:pointer}
+.el-pills button span{color:#8fa1b4;margin-left:3px;font-size:.72rem}
+.el-pills button.on{border-color:#e8a020;color:#f7c463;background:rgba(232,160,32,.12)}
+.el-grp{display:flex;justify-content:space-between;align-items:center;margin:18px 0 8px;font:800 .95rem "Bahnschrift Condensed",Impact,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#e8a020}
+.el-grp small{font:600 .74rem Consolas,monospace;color:#c9d4e0;letter-spacing:0;text-transform:none}
+.el-row{display:grid;grid-template-columns:minmax(190px,1.1fr) minmax(110px,.8fr) auto 118px minmax(70px,.5fr) 92px 34px;gap:10px;align-items:center;padding:8px 12px;margin-bottom:6px;border-radius:10px;background:#0f1a27;border:1px solid #1b2a3b;border-left:4px solid #334556}
+.el-row.ok{border-left-color:#4fa97b}.el-row.part{border-left-color:#f0a030}
+.el-row .nm{display:flex;gap:10px;align-items:center;font-weight:700;min-width:0}
+.el-row .gr{font-size:.8rem;color:#8fa1b4}
+.el-btns{display:flex;gap:6px}
+.el-b{border:1px solid #334556;background:#131f2e;color:#c9d4e0;border-radius:7px;padding:6px 10px;font-weight:700;font-size:.78rem;cursor:pointer;white-space:nowrap}
+.el-b.on{border-color:#e8a020;background:rgba(232,160,32,.16);color:#f7c463}
+.el-date{font:.78rem Consolas,monospace;color:#eaeef3;border:0;background:transparent;width:112px}
+.el-date.vide{color:#4a5a6c}
+.el-don{background:transparent;border:0;border-bottom:1px dashed #334556;color:#eaeef3;font-size:.78rem;width:100%;padding:3px 2px}
+.el-permis{font:700 .72rem Consolas,monospace;border-radius:6px;padding:5px 8px;border:1px solid #334556;background:#131f2e;color:#6b7a8d;cursor:pointer;text-align:center}
+.el-permis.ok{color:#7fd1a4;background:rgba(74,157,111,.14);border-color:#3a7a58}
+.el-x{background:#131f2e;border:1px solid #334556;color:#c9d4e0;border-radius:6px;width:30px;height:30px;cursor:pointer}
+@media(max-width:900px){.el-row{grid-template-columns:1fr 1fr;row-gap:8px}.el-kpi{grid-template-columns:repeat(2,1fr)}}
+
+/* ---------- Fiche employé à onglets ---------- */
+.fi-head{display:flex;gap:14px;align-items:center;margin-bottom:12px}
+.fi-nom{margin:0;font:800 1.7rem "Bahnschrift Condensed",Impact,sans-serif;letter-spacing:.03em;text-transform:uppercase}
+.fi-tabs{display:flex;gap:4px;border-bottom:1px solid rgba(177,196,214,.16);margin-bottom:16px;flex-wrap:wrap}
+.fi-tabs button{background:transparent;border:0;border-bottom:2px solid transparent;color:#8fa1b4;padding:10px 14px;font-weight:700;font-size:.86rem;cursor:pointer}
+.fi-tabs button.on{color:#f7c463;border-bottom-color:#e8a020}
+.fi-2{display:grid;grid-template-columns:1.25fr 1fr;gap:16px;align-items:start}
+.fi-2c{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.fi-form{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.fi-f{display:flex;flex-direction:column;gap:5px}
+.fi-f span{font:700 .68rem Consolas,monospace;letter-spacing:.1em;text-transform:uppercase;color:#8fa1b4}
+.fi-f input,.fi-f select{background:#0a1018;border:1px solid #243449;border-radius:8px;color:#eaeef3;padding:9px 11px;font-size:.9rem}
+.fi-f input:focus,.fi-f select:focus{outline:none;border-color:#e8a020}
+.fi-box{padding:14px 16px;border-radius:12px;background:linear-gradient(145deg,#162334,#101a28);border:1px solid rgba(177,196,214,.16);margin-bottom:12px}
+.fi-box h5{margin:0 0 10px;font:800 .72rem Consolas,monospace;letter-spacing:.12em;text-transform:uppercase;color:#a9bbcd;display:flex;justify-content:space-between;align-items:center}
+.fi-mut{font-size:.76rem;color:#8fa1b4;margin-top:4px}
+.fi-etat{font-weight:800;font-size:1rem}.fi-etat.abs{color:#22d3ee}.fi-etat.vert{color:#7fd1a4}.fi-etat.orange{color:#f0a030}.fi-etat.rouge{color:#ff8a84}
+.fi-li{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px solid rgba(177,196,214,.1);font-size:.85rem}
+.fi-li:last-child{border-bottom:0}
+.fi-li b.ok{color:#7fd1a4}.fi-li b.ko{color:#ff9a95}
+.fi-chip{font-size:.72rem;font-weight:800;padding:3px 10px;border-radius:99px;letter-spacing:0;text-transform:none}
+.fi-chip.ok{color:#7fd1a4;background:rgba(74,157,111,.16)}.fi-chip.ko{color:#ff9a95;background:rgba(224,82,78,.16)}
+.fi-ab{padding:16px;border-radius:12px;border:1px solid;margin-bottom:12px}
+.fi-ab.cours{background:rgba(34,211,238,.07);border-color:rgba(34,211,238,.4)}.fi-ab.cours h5{color:#22d3ee}
+.fi-ab.venir{background:rgba(232,160,32,.07);border-color:rgba(232,160,32,.4)}.fi-ab.venir h5{color:#f0b030}
+.fi-ab.aucune{text-align:center;background:rgba(255,255,255,.03);border-color:rgba(177,196,214,.16);padding:26px 16px}
+.fi-ab h5{margin:0 0 6px;font:800 .75rem Consolas,monospace;letter-spacing:.1em;text-transform:uppercase}
+.fi-ab-d{font:800 1.5rem "Bahnschrift Condensed",Impact,sans-serif;letter-spacing:.03em}
+.fi-bar{height:8px;border-radius:6px;background:#0a1018;margin:10px 0 6px;overflow:hidden}.fi-bar i{display:block;height:100%;background:#22d3ee;border-radius:6px}
+.fi-bt{display:flex;gap:7px;flex-wrap:wrap;margin:12px 0}
+.fi-pre{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.fi-pre button{background:#0a1018;border:1px solid #334556;color:#c9d4e0;border-radius:99px;padding:5px 12px;font-size:.76rem;font-weight:700;cursor:pointer}
+.fi-pre button:hover{border-color:#e8a020;color:#f7c463}
+.fi-reg div{padding:5px 0;font-size:.84rem;color:#c9d4e0}
+.fi-cal{margin-top:12px}.fi-cal-t{font-size:.78rem;color:#8fa1b4;text-transform:capitalize;margin-bottom:6px;text-align:center}
+.fi-cal-g{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+.fi-cal-g i{font-style:normal;text-align:center;padding:6px 0;border-radius:7px;background:rgba(255,255,255,.04);font-size:.78rem;color:#c9d4e0}
+.fi-cal-g i.h{background:transparent;color:#6b7a8d;font-size:.68rem;padding:2px 0}
+.fi-cal-g i.ab{background:rgba(34,211,238,.18);color:#d7f7fc;font-weight:800}.fi-cal-g i.bord{background:#22d3ee;color:#04222a}
+.fi-cal-g i.auj{outline:1px solid #e8a020}
+.fi-tl{position:relative;padding-left:22px}
+.fi-tl div{position:relative;padding:0 0 14px}
+.fi-tl div::before{content:"";position:absolute;left:-18px;top:5px;width:10px;height:10px;border-radius:50%;background:#334556}
+.fi-tl div.ok::before{background:#4fa97b}
+.fi-tl::before{content:"";position:absolute;left:-13px;top:8px;bottom:14px;width:2px;background:#243449;margin-left:18px}
+.fi-tl b{display:block;font-size:.88rem}.fi-tl small{color:#8fa1b4;font-size:.76rem}
+.fi-kpi{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:12px}
+.fi-kpi div{padding:12px 14px;border-radius:12px;background:#0f1a27;border:1px solid rgba(177,196,214,.16)}
+.fi-kpi span{display:block;font:700 .66rem Consolas,monospace;letter-spacing:.1em;text-transform:uppercase;color:#8fa1b4}
+.fi-kpi b{display:block;font:800 1.7rem "Bahnschrift Condensed",Impact,sans-serif;margin:3px 0}.fi-kpi b.gold{color:#f7c463}
+.fi-kpi small{font-size:.72rem;color:#8fa1b4}
+.fi-chart{position:relative;height:170px;display:flex;gap:14px;align-items:flex-end;padding:8px 6px 26px;border-bottom:1px solid #243449}
+.fi-chart s{position:absolute;left:0;right:0;border-top:2px dashed #e8a020;opacity:.8;text-decoration:none}
+.fi-chart div{flex:1;height:100%;position:relative;display:flex;align-items:flex-end;justify-content:center}
+.fi-chart i{display:block;width:70%;border-radius:5px 5px 0 0}.fi-chart i.ok{background:#4fa97b}.fi-chart i.ko{background:#e0524e}.fi-chart i.vide{background:#334556}
+.fi-chart span{position:absolute;bottom:-22px;font-size:.68rem;color:#8fa1b4;white-space:nowrap}
+.fi-corps{min-height:300px}
+.fi-pied{display:flex;justify-content:space-between;align-items:center;margin-top:16px;padding-top:12px;border-top:1px solid rgba(177,196,214,.16)}
+@media(max-width:820px){.fi-2{grid-template-columns:1fr}.fi-kpi{grid-template-columns:repeat(2,1fr)}.fi-form{grid-template-columns:1fr}}
+
+/* ---------- Nouvelle facture : écran en un coup d'œil ---------- */
+.fact-wrap.solo{display:block}
+.fx-grid{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:16px;align-items:start}
+.fx-main{display:flex;flex-direction:column;gap:14px;min-width:0}
+.fx-card{padding:16px 18px;border-radius:12px;background:linear-gradient(145deg,#162334,#101a28);border:1px solid rgba(177,196,214,.16)}
+.fx-rail{position:sticky;top:12px;display:flex;flex-direction:column;gap:14px}
+.fx-top{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:14px}
+.fx-f{display:flex;flex-direction:column;gap:5px}
+.fx-f span,.fx-lbl{font:700 .68rem Consolas,monospace;letter-spacing:.1em;text-transform:uppercase;color:#8fa1b4}
+.fx-lbl{margin-bottom:8px}
+.fx-f input{background:#0a1018;border:1px solid #243449;border-radius:8px;color:#eaeef3;padding:10px 12px;font-size:.95rem}
+.fx-f input:focus,.fx-search:focus,.fx-in:focus{outline:none;border-color:#e8a020}
+.fx-em{width:100%;min-height:44px;display:flex;flex-wrap:wrap;gap:6px;align-items:center;background:#0a1018;border:1px solid #243449;border-radius:8px;color:#eaeef3;padding:6px 10px;cursor:pointer;text-align:left}
+.fx-modes{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.fx-modes button{background:#0a1018;border:1px solid #243449;color:#eaeef3;border-radius:9px;padding:10px 6px;cursor:pointer;display:flex;flex-direction:column;gap:2px;align-items:center}
+.fx-modes button b{font-size:.95rem}.fx-modes button small{font:.68rem Consolas,monospace;color:#8fa1b4}
+.fx-modes button.on{border-color:#e8a020;background:rgba(232,160,32,.14)}.fx-modes button.on b{color:#f7c463}
+.fx-search{width:100%;background:#0a1018;border:1px solid #e8a020;border-radius:9px;color:#eaeef3;padding:12px 14px;font-size:1rem}
+.fx-cli{display:flex;gap:14px;align-items:center;margin-top:12px;padding:12px 14px;border-radius:10px;background:#0f1a27;border:1px solid #1b2a3b}
+.fx-cli-n{display:block;font-size:1.1rem;margin-bottom:4px}
+.fx-cli-i{display:flex;gap:6px 16px;flex-wrap:wrap;font-size:.8rem;color:#a9bbcd}
+.fx-t{width:100%;border-collapse:collapse}
+.fx-t th{font:700 .68rem Consolas,monospace;letter-spacing:.1em;text-transform:uppercase;color:#8fa1b4;text-align:left;padding:10px 12px;background:#1a1712}
+.fx-t td{padding:8px 10px;border-bottom:1px solid #1a2736;vertical-align:middle}
+.fx-t .r{text-align:right}
+.fx-in{width:100%;background:transparent;border:1px solid transparent;border-radius:6px;color:#eaeef3;padding:7px 8px;font-size:.9rem}
+.fx-in:hover{border-color:#243449}.fx-in.r{text-align:right;width:90px}
+.fx-tot{font:800 1rem Consolas,monospace;white-space:nowrap}
+.fx-step{display:inline-flex;align-items:stretch;border:1px solid #243449;border-radius:8px;overflow:hidden;background:#0a1018}
+.fx-step button{width:32px;background:#131f2e;border:0;color:#f7c463;font-size:1.1rem;cursor:pointer}
+.fx-step input{width:72px;text-align:center;background:transparent;border:0;color:#eaeef3;font:800 1rem Consolas,monospace}
+.fx-x{background:#131f2e;border:1px solid #334556;color:#c9d4e0;border-radius:6px;width:30px;height:30px;cursor:pointer}
+.fx-pied{display:flex;gap:8px;align-items:center;flex-wrap:wrap;padding:10px 14px}
+.fx-mut{font-size:.78rem;color:#8fa1b4}
+.fx-pre{background:#131f2e;border:1px solid #334556;color:#eaeef3;border-radius:99px;padding:5px 14px;font-weight:700;font-size:.8rem;cursor:pointer}
+.fx-pre:hover{border-color:#e8a020}
+.fx-big{font:800 2.8rem/1.1 "Bahnschrift Condensed",Impact,sans-serif;color:#f7c463;margin:4px 0 8px}
+.fx-opt{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px 0;border-top:1px solid rgba(177,196,214,.12);margin-top:10px}
+.fx-opt:first-of-type{margin-top:14px}
+.fx-opt b{display:block;font-size:.92rem}.fx-opt small{font-size:.74rem;color:#8fa1b4}
+.fx-sw{flex:none;width:44px;height:24px;border-radius:99px;background:#243449;position:relative;cursor:pointer;transition:background .15s}
+.fx-sw i{position:absolute;top:3px;left:3px;width:18px;height:18px;border-radius:50%;background:#c9d4e0;transition:left .15s}
+.fx-sw.on{background:#e8a020}.fx-sw.on i{left:23px;background:#1a1005}
+.fx-save{width:100%;margin-top:12px;padding:14px;border:0;border-radius:9px;background:#e8a020;color:#1a1005;font:800 .85rem Consolas,monospace;letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
+.fx-save:hover{background:#f7c463}
+.fx-sec{width:100%;margin-top:8px;padding:12px;border:1px solid #4a5a6c;border-radius:9px;background:transparent;color:#eaeef3;font:700 .8rem Consolas,monospace;letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
+@media(max-width:1100px){.fx-grid{grid-template-columns:1fr}.fx-rail{position:static}}
+@media(max-width:640px){.fx-modes{grid-template-columns:repeat(2,1fr)}}

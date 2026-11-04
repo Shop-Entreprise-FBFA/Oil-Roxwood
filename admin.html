@@ -34,6 +34,7 @@ window.ROXWOOD_CFG = {
 <link rel="stylesheet" href="assets/roxwood-app.css?v=C-119">
 <link rel="stylesheet" href="assets/roxwood-refonte.css?v=R-21">
 <link rel="stylesheet" href="assets/roxwood-portail.css?v=1">
+<link rel="stylesheet" href="assets/roxwood-vues.css?v=1">
 </head>
 <body>
 <script src="assets/roxwood-portail.js?v=1"></script>
@@ -2083,20 +2084,78 @@ function effectif(){
   })()}
   <div class="panel" style="margin-bottom:16px;display:flex;gap:12px;flex-wrap:wrap;align-items:center">
     <input class="field" id="effSearchInput" style="max-width:220px" placeholder="🔍 Rechercher…" value="${esc(search)}" oninput="chercherEffectif(this.value)">
+    <div class="vd-seg" role="tablist" aria-label="Affichage"><button class="${EFF_VUE==='verdicts'?'on':''}" onclick="EFF_VUE='verdicts';effectif()">Verdicts</button><button class="${EFF_VUE==='tableau'?'on':''}" onclick="EFF_VUE='tableau';effectif()">Tableau</button></div>
     <select class="field" style="max-width:200px" onchange="filterG=this.value;effectif()">
       <option value="-1">Tous les grades</option>
       ${GRADES.map((g,i)=>`<option value="${i}" ${String(filterG)===String(i)?'selected':''}>${g.nom}</option>`).join('')}
       ${[...new Set(S.runners.filter(r=>r.poste).map(r=>r.poste))].sort().map(p=>`<option value="p:${esc(p)}" ${String(filterG)==='p:'+p?'selected':''}>💼 ${esc(p)}</option>`).join('')}
     </select>
   </div>
-  <div class="panel" style="padding:8px 16px">
+  ${EFF_VUE==='verdicts'?effVerdictsHTML(R):`<div class="panel" style="padding:8px 16px">
     ${R.length?`<table>
       <thead><tr><th>Runner</th><th>Grade</th><th>Quota semaine</th>${isMembre()?'':'<th>Total barils</th><th style="text-align:right">Actions</th>'}</tr></thead>
       <tbody>${R.map(rowRunner).join('')}</tbody>
     </table>`:'<div class="empty">Aucun runner trouvé</div>'}
-  </div>`;
+  </div>`}`;
   // la frappe reste fluide : le curseur revient dans la barre de recherche après chaque caractère
   if(search){ const el=document.getElementById('effSearchInput'); if(el){ el.focus(); el.setSelectionRange(el.value.length,el.value.length); } }
+}
+/* ---- Effectif : le tableau des verdicts ----
+   Même règles que le tableau (montée, descente < 95 %, avertissement, protections d'absence) :
+   on les lit une seule fois ici pour ranger chaque runner dans sa colonne. */
+let EFF_VUE='verdicts';
+const VD_COUL={up:'#f0b030',ok:'#4fa97b',tol:'#8fb4d9',dn:'#e0524e',wn:'#ff9a3d',pr:'#22d3ee'};
+function verdictRunner(r){
+  if(r.poste) return null;                       // direction : ni quota ni verdict
+  const g=grade(r), ab=absDe(r.nom), q=g.quota||0, b=nn(r.barils), pc=q?Math.round(b/q*100):0;
+  const nxt=(!estStagiaire(r)&&GRADES[r.grade+1])?GRADES[r.grade+1].nom:'', prv=(!estStagiaire(r)&&r.grade>0&&GRADES[r.grade-1])?GRADES[r.grade-1].nom:'';
+  const base={r,q,b,pc,g};
+  if(estStagiaire(r)) return {...base,v:'pr',why:'Stagiaire · période d\'essai'};
+  if(ab) return {...base,v:'pr',why:`Absent du ${frDate(ab.du)} au ${frDate(ab.au)}`};
+  if(r.absent) return {...base,v:'pr',why:'Congé / absence'};
+  if(absFinRecente(r.nom)) return {...base,v:'pr',why:'Absence terminée il y a moins de 7 j'};
+  if(!r._ghost&&eligible(r)) return {...base,v:'up',to:nxt,why:'Seuil de montée atteint'};
+  if(r.grade===0&&estNouveau(r.nom)) return {...base,v:'pr',why:'Recrue de moins de 7 j'};
+  if(r.grade===0&&(r._ghost||(b<q*0.80&&b<=49))) return {...base,v:'wn',why:r._ghost?'Aucune prise de service':'Intérimaire · quasi aucune production'};
+  if(r.grade>0&&!g.merite&&b<q*0.95) return {...base,v:'dn',to:prv,why:`Sous 95 % du quota (${pc} %)`};
+  if(q&&b>=q) return {...base,v:'ok',why:'Quota atteint'};
+  return {...base,v:'tol',why:r.grade===0?'Sous le quota · pas de sanction':'Tolérance 95–100 %'};
+}
+function vdThermo(x){
+  const cap=130, X=v=>v/cap*100, c=VD_COUL[x.v];
+  return `<div class="vd-th"><span class="z" style="left:0;width:${X(80)}%;background:#e0524e"></span><span class="z" style="left:${X(80)}%;width:${X(15)}%;background:#ff9a3d"></span><span class="z" style="left:${X(95)}%;width:${X(5)}%;background:#8fb4d9"></span><span class="z" style="left:${X(100)}%;right:0;background:#4fa97b"></span><i style="width:${Math.min(x.pc,cap)/cap*100}%;background:${c}"></i><s style="left:${X(80)}%"></s><s style="left:${X(95)}%"></s><s style="left:${X(100)}%"></s></div>`;
+}
+function vdCarte(x){
+  const r=x.r, c=VD_COUL[x.v], enc=encodeURIComponent(r.nom), ro=isMembre();
+  let act='';
+  if(!ro){
+    if(x.v==='up'&&!r._ghost) act=`<button class="btn btn-sm btn-gold" onclick="promote(${r.id})">▲ Monter</button>`;
+    else if(x.v==='dn') act=r._ghost?`<button class="btn btn-sm btn-red" onclick="demoteGhost(decodeURIComponent('${enc}'))">▼ Descendre</button>`:`<button class="btn btn-sm btn-red" onclick="demote(${r.id})">▼ Descendre</button>`;
+    else if(x.v==='wn') act=r._ghost?`<button class="btn btn-sm btn-ghost" style="color:#ffa500;border-color:rgba(255,165,0,.4)" onclick="avertirGhost(decodeURIComponent('${enc}'))">⚠ Avertir</button>`:`<button class="btn btn-sm btn-ghost" style="color:#ffa500;border-color:rgba(255,165,0,.4)" onclick="avertir(${r.id})">⚠ Avertir</button>`;
+    else if(estStagiaire(r)) act=`<button class="btn btn-sm btn-gold" onclick="titulariser(decodeURIComponent('${enc}'))">🎓 Titulariser</button>`;
+  }
+  return `<div class="vd-carte" style="--c:${c}">
+    <div class="vd-t" tabindex="0" role="button" onkeydown="actKey(event)" onclick="ficheEmp(decodeURIComponent('${enc}'))" title="Ouvrir la fiche employé">
+      ${avatarHTML(r.nom||'?','width:30px;height:30px;font-size:.72rem;flex:none')}
+      <div style="min-width:0"><b>${esc(r.nom)}</b><small>${x.to?(x.v==='up'?'→ ':'→ ')+esc(x.to):esc(x.why)}</small></div>
+    </div>
+    ${x.to?`<div style="font-size:.72rem;color:#8fa1b4;margin-top:4px">${esc(x.why)}</div>`:''}
+    ${vdThermo(x)}
+    <div class="vd-num"><span>${fmt(x.b)} / ${fmt(x.q)}</span><b>${x.pc} %</b></div>
+    ${act?`<div class="vd-act">${act}</div>`:''}
+  </div>`;
+}
+function effVerdictsHTML(R){
+  const L=R.map(verdictRunner).filter(Boolean), by=v=>L.filter(x=>x.v===v);
+  const par=(a,b)=>b.pc-a.pc;
+  const defs=[['up','▲ Montent','Seuil de montée atteint'],['dn','▼ Descendent','Sous 95 % du quota'],['wn','⚠ Avertissements','Intérimaires quasi sans production'],['pr','🛡 Protégés','Absence, absence récente, recrue']];
+  const kpi=[['up','▲ Montent'],['dn','▼ Descendent'],['wn','⚠ Avertissements'],['tol','≈ À surveiller'],['pr','🛡 Protégés']];
+  const bas=[...by('ok'),...by('tol')].sort(par);
+  const nbDir=R.filter(r=>r.poste).length;
+  return `<div class="vd-sum">${kpi.map(([v,l])=>`<div style="--c:${VD_COUL[v]}"><b>${by(v).length}</b><span>${l}</span></div>`).join('')}</div>
+  <div class="vd-cols">${defs.map(([v,t,s])=>`<div class="vd-col" style="--c:${VD_COUL[v]}"><h4><span>${t}</span><span>${by(v).length}</span></h4><div class="sub">${s}</div>${by(v).length?by(v).sort(par).map(vdCarte).join(''):'<div class="vd-vide">Personne</div>'}</div>`).join('')}</div>
+  <div class="vd-bas"><h4>≈ À surveiller · ✔ Quota atteint <span style="float:right">${bas.length}</span></h4>${bas.length?`<div class="vd-bas-g">${bas.map(x=>`<div class="vd-mini" style="--c:${VD_COUL[x.v]}" tabindex="0" role="button" onkeydown="actKey(event)" onclick="ficheEmp(decodeURIComponent('${encodeURIComponent(x.r.nom)}'))">${avatarHTML(x.r.nom||'?','width:28px;height:28px;font-size:.68rem;flex:none')}<div style="min-width:0"><b>${esc(x.r.nom)}</b><small>${fmt(x.b)} / ${fmt(x.q)} · ${x.pc} %</small></div><span class="vd-chip">${x.v==='ok'?'✔ Quota atteint':'≈ Tolérance'}</span></div>`).join('')}</div>`:'<div class="vd-vide">Personne</div>'}</div>
+  ${nbDir?`<div style="margin-top:10px;font-size:.76rem;color:#8fa1b4">${nbDir} membre(s) de la direction : pas de quota, visibles dans la vue « Tableau ».</div>`:''}`;
 }
 function rowRunner(r){
   const g=grade(r), pc=g.quota?Math.min(100,Math.round(r.barils/g.quota*100)):100;
@@ -3326,6 +3385,7 @@ function corpsFeuille(){
 function chercherFeuille(v){
   const avant=!!sheetSearch;
   sheetSearch=v;
+  if(curSheet==='eligibilite'&&ELIG_VUE==='checklist'){ eligRedessiner(); return; }
   const def=SHEETS_DEF[curSheet];
   const tab=document.querySelector('#main table.sheet');
   // la colonne « poignée » apparaît ou disparaît : là, il faut tout refaire
@@ -3409,6 +3469,7 @@ async function feuilles(){
       ${curSheet==='eligibilite'?'<button class="btn btn-ghost" onclick="eligTriGrade()" title="Complète les grades manquants et réordonne : Patron → Co Patron → … → Intérimaire">⇅ Trier par grade</button><button class="btn btn-ghost" onclick="eligCopyNoms()" title="Copie uniquement les noms, un par ligne — prêt à coller sur Discord">📋 Copier les noms</button><button class="btn btn-ghost" onclick="eligEnvoyerDiscord()" title="Envoie la liste au bot, qui la met en image et la poste sur Discord">🖼️ Poster sur Discord</button>':''}
       ${(curSheet==='rh'||curSheet==='tablette')?`<button class="btn btn-ghost" onclick="sheetUndo()" title="Annule la dernière modification de cette feuille (15 niveaux, session en cours)">↩ Annuler${(SHEET_UNDO[curSheet]||[]).length?` (${SHEET_UNDO[curSheet].length})`:''}</button>`:''}
       <span class="vsep"></span>
+      ${curSheet==='eligibilite'?`<button class="btn btn-ghost" onclick="ELIG_VUE=ELIG_VUE==='checklist'?'tableau':'checklist';feuilles()">${ELIG_VUE==='checklist'?'☰ Vue tableau':'✅ Vue checklist'}</button>`:''}
       ${curSheet==='rh'?`<button class="btn btn-ghost" onclick="RH_VUE=RH_VUE==='cartes'?'tableau':'cartes';feuilles()" title="Changer de présentation">${RH_VUE==='cartes'?'☰ Vue tableau':'▦ Vue cartes'}</button>`:''}
       ${(def.lite&&!(curSheet==='rh'&&RH_VUE==='cartes'))?`<button class="btn btn-ghost" onclick="sheetFull=!sheetFull;feuilles()">${sheetFull?'👁 Colonnes essentielles':'👁 Toutes les colonnes'}</button>`:''}
       <button class="btn btn-ghost" onclick="sheetCsv()">⬇ CSV</button>
@@ -3458,7 +3519,7 @@ async function feuilles(){
   </div>`:''}
   ${def.note?`<div class="warn" style="border-color:rgba(232,98,44,.35);background:rgba(232,98,44,.07);color:var(--accent)">ℹ️ ${def.note}</div>`:''}
   ${sheetRO(curSheet)?'<div class="warn" style="border-color:rgba(90,160,255,.35);background:rgba(90,160,255,.07);color:#9fc3ff">👁 Feuille en consultation seule pour ton rôle</div>':''}
-  ${(curSheet==='rh'&&RH_VUE==='cartes')?`<div class="${sheetRO(curSheet)?'ro-zone':''}">${rhCartesHTML()}</div>`:`  <div class="panel ${sheetRO(curSheet)?'ro-zone':''}" style="padding:10px 16px;overflow-x:auto">
+  ${(curSheet==='eligibilite'&&ELIG_VUE==='checklist')?`<div id="eligZone" class="${sheetRO(curSheet)?'ro-zone':''}">${eligChecklistHTML()}</div>`:(curSheet==='rh'&&RH_VUE==='cartes')?`<div class="${sheetRO(curSheet)?'ro-zone':''}">${rhCartesHTML()}</div>`:`  <div class="panel ${sheetRO(curSheet)?'ro-zone':''}" style="padding:10px 16px;overflow-x:auto">
     <input class="field" id="sheetSearchInput" style="max-width:240px;margin:6px 0 10px" placeholder="🔍 Rechercher…" value="${esc(sheetSearch)}" oninput="chercherFeuille(this.value)">
     <table class="sheet"><thead><tr>${head}<th></th></tr></thead><tbody>${body||`<tr><td colspan="${cols.length+2}"><div class="empty">Aucune ligne</div></td></tr>`}</tbody>${foot}</table>
   </div>`}
@@ -3466,6 +3527,71 @@ async function feuilles(){
   // le champ de recherche n'est plus recréé à chaque frappe (chercherFeuille) ;
   // ce rattrapage ne sert que quand on revient sur la feuille avec un filtre actif
   if(sheetSearch){ const el=document.getElementById('sheetSearchInput'); if(el&&document.activeElement!==el){ el.focus(); el.setSelectionRange(el.value.length,el.value.length); } }
+}
+/* ---- Éligibilité : checklist à gros boutons ----
+   Même feuille (S.sheets.eligibilite), mêmes colonnes, mêmes écritures (cellEdit) :
+   seule la présentation change. Le tableau reste disponible (bouton « Vue tableau »). */
+let ELIG_VUE='checklist', ELIG_FILT='tous';
+function eligEtat(r){ const n=[r.menus,r.boissons,r.bidons].filter(Boolean).length; return n===3?'ok':(n>0||r.date)?'part':'rien'; }
+function eligPermisOk(r){ return /^(ok|oui|✓|✔|valide)/i.test(String(r.permis||'').trim()); }
+function eligGroupe(r){
+  const g=String(r.grade||'').trim(), n=normNom(g);
+  if(!g) return 'Autres';
+  if(/stagiaire/.test(n)) return 'Stagiaires';
+  if(/commercial/.test(n)) return 'Commerciaux';
+  if(n==='interimaire') return 'Intérimaires';
+  if(GRADES.some(x=>normNom(x.nom)===n)||/raffineur/.test(n)) return 'Raffineurs';
+  return 'Direction';
+}
+function eligSet(i,k,v){
+  const r=S.sheets.eligibilite[i]; if(!r) return;
+  cellEdit(i,k,v);
+  // premier clic sur un bouton : la date de prise se met toute seule
+  if((k==='menus'||k==='boissons'||k==='bidons')&&v&&!String(r.date||'').trim()) cellEdit(i,'date',jourISO(dateParis()));
+  // « Don » = le compte connecté qui a remis le dû (celui qui appuie sur le bouton)
+  if(k==='menus'||k==='boissons'||k==='bidons'){
+    if(v){ const cu=currentUser(); cellEdit(i,'don',(cu&&cu.user)||sessionStorage.getItem('orx_user')||''); }
+    else if(!r.menus&&!r.boissons&&!r.bidons) cellEdit(i,'don','');
+  }
+  eligRedessiner();
+}
+function eligRedessiner(){
+  const z=document.getElementById('eligZone'); if(!z) return;
+  const foc=document.activeElement&&document.activeElement.id==='sheetSearchInput';
+  z.innerHTML=eligChecklistHTML();
+  if(foc){ const el=document.getElementById('sheetSearchInput'); if(el){ el.focus(); el.setSelectionRange(el.value.length,el.value.length); } }
+}
+function eligChecklistHTML(){
+  const rows=(S.sheets&&S.sheets.eligibilite)||[], q=sheetSearch.toLowerCase(), ro=sheetRO('eligibilite'), dis=ro?' disabled':'';
+  const L=rows.map((r,i)=>({r,i,e:eligEtat(r),pc:!!String(r.date||'').trim()&&!eligPermisOk(r)}));
+  const nb=f=>L.filter(f).length;
+  const F={tous:['Tous',()=>true],rien:['Pas passés',x=>x.e==='rien'],part:['Partiel',x=>x.e==='part'],ok:['Complet',x=>x.e==='ok'],perm:['Permis à contrôler',x=>x.pc]};
+  if(!F[ELIG_FILT]) ELIG_FILT='tous';
+  const vus=L.filter(F[ELIG_FILT][1]).filter(x=>!q||Object.values(x.r).join(' ').toLowerCase().includes(q));
+  const ordre=['Direction','Commerciaux','Raffineurs','Intérimaires','Stagiaires','Autres'];
+  const grp={}; vus.forEach(x=>{ (grp[eligGroupe(x.r)]=grp[eligGroupe(x.r)]||[]).push(x); });
+  const btn=(x,k,l,ic)=>`<button class="el-b ${x.r[k]?'on':''}"${dis} onclick="eligSet(${x.i},'${k}',${!x.r[k]})">${ic} ${l}</button>`;
+  const ligne=x=>{ const r=x.r, d=/^\d{4}-\d{2}-\d{2}/.test(r.date||'')?String(r.date).slice(0,10):'';
+    return `<div class="el-row ${x.e}">
+      <div class="nm">${avatarHTML(r.nom||'?','width:34px;height:34px;font-size:.78rem;flex:none')}<span style="min-width:0;overflow:hidden;text-overflow:ellipsis">${esc(r.nom||'Sans nom')}</span></div>
+      <div class="gr">${esc(r.grade||'—')}</div>
+      <div class="el-btns">${btn(x,'menus','Menu','🍔')}${btn(x,'boissons','Boisson','🥤')}${btn(x,'bidons','Bidons','🛢️')}</div>
+      <input type="date" class="el-date ${d?'':'vide'}" value="${d}"${dis} title="Date de prise" onchange="eligSet(${x.i},'date',this.value)">
+      <input class="el-don" placeholder="Don…" value="${esc(r.don||'')}"${dis} onchange="cellEdit(${x.i},'don',this.value)">
+      <button class="el-permis ${eligPermisOk(r)?'ok':''}"${dis} title="Contrôle du permis" onclick="eligSet(${x.i},'permis','${eligPermisOk(r)?'':'ok'}')">${eligPermisOk(r)?'✓ permis ok':'permis –'}</button>
+      ${ro?'<span></span>':`<button class="el-x" title="Supprimer la ligne" onclick="rowDel(${x.i})">✕</button>`}
+    </div>`; };
+  return `<div class="el-kpi">
+    <div style="--c:#4fa97b"><b>${nb(x=>x.e==='ok')} <small>/ ${L.length}</small></b><span>ont tout récupéré</span></div>
+    <div style="--c:#f0a030"><b>${nb(x=>x.e==='part')}</b><span>récupération partielle</span></div>
+    <div style="--c:#8fa1b4"><b>${nb(x=>x.e==='rien')}</b><span>pas encore passés</span></div>
+    <div style="--c:#22d3ee"><b>${nb(x=>x.pc)}</b><span>permis à contrôler</span></div>
+  </div>
+  <div class="el-bar">
+    <input class="field" id="sheetSearchInput" style="max-width:260px" placeholder="🔍 Rechercher…" value="${esc(sheetSearch)}" oninput="chercherFeuille(this.value)">
+    <div class="el-pills">${Object.entries(F).map(([k,v])=>`<button class="${ELIG_FILT===k?'on':''}" onclick="ELIG_FILT='${k}';eligRedessiner()">${v[0]} <span>${nb(v[1])}</span></button>`).join('')}</div>
+  </div>
+  ${ordre.filter(g=>grp[g]).map(g=>`<div class="el-grp"><span>${g}</span><small>${grp[g].filter(x=>x.e==='ok').length}/${grp[g].length} complet</small></div>${grp[g].map(ligne).join('')}`).join('')||'<div class="panel"><div class="empty">Aucune ligne</div></div>'}`;
 }
 /* ---- Fiches RH en cartes ----
    Même feuille, mêmes données (S.sheets.rh), mêmes écritures (cellEdit) : seule la présentation change.
@@ -3528,34 +3654,210 @@ function rhCartesHTML(){
   <div class="rel-legende"><span>${liste.length} fiche(s) · clique sur une carte pour la modifier</span></div>
   ${liste.length?`<div class="rh-grille">${liste.map(carte).join('')}</div>`:'<div class="panel"><div class="empty">Aucune fiche</div></div>'}`;
 }
-function rhFiche(i){
+/* ---- Fiche employé à onglets : Identité · Absences · Contrat & dossier · Activité ----
+   Mêmes données qu'avant (S.sheets.rh, S.absences, S.runners, S.weeks), mêmes écritures (cellEdit) :
+   on regroupe seulement tout ce qui concerne la personne au même endroit. */
+let RH_TAB='id', RH_ABS_EDIT=null;
+function rhTabs(i,t){
+  return `<div class="fi-tabs" role="tablist">${[['id','Identité'],['abs','🌴 Absences'],['ctr','Contrat & dossier'],['act','Activité']].map(([k,l])=>`<button class="${t===k?'on':''}" onclick="RH_TAB='${k}';RH_ABS_EDIT=null;rhFiche(${i})">${l}</button>`).join('')}</div>`;
+}
+function rhJoursEntre(a,b){ return Math.round((Date.parse(b)-Date.parse(a))/86400000); }
+/* Un mois en grille (lundi en premier), jours de l'absence surlignés. */
+function rhCalendrier(du,au,ref){
+  const d0=new Date((ref||du)+'T12:00:00'), an=d0.getFullYear(), mo=d0.getMonth();
+  const prem=new Date(an,mo,1), nbj=new Date(an,mo+1,0).getDate(), dec=(prem.getDay()+6)%7, auj=jourISO(dateParis());
+  let h=`<div class="fi-cal"><div class="fi-cal-t">${prem.toLocaleDateString('fr-FR',{month:'long',year:'numeric'})}</div><div class="fi-cal-g">${['L','M','M','J','V','S','D'].map(x=>`<i class="h">${x}</i>`).join('')}`;
+  for(let k=0;k<dec;k++) h+='<i></i>';
+  for(let j=1;j<=nbj;j++){
+    const ds=`${an}-${String(mo+1).padStart(2,'0')}-${String(j).padStart(2,'0')}`;
+    const dans=du&&au&&ds>=du&&ds<=au, bord=ds===du||ds===au;
+    h+=`<i class="${dans?(bord?'ab bord':'ab'):''} ${ds===auj?'auj':''}">${j}</i>`;
+  }
+  return h+'</div></div>';
+}
+function rhAbsDe(r){ return (S.absences||[]).filter(a=>normNom(a.nom)===normNom(r.nom)).sort((a,b)=>a.du.localeCompare(b.du)); }
+function rhAbsMaj(i,msg){ save(); sbPushNow(); rerender(); rhFiche(i); if(msg) toast(msg); }
+function rhAbsPreset(k){
+  const du=$('#fiDu'), au=$('#fiAu'); if(!du||!au) return;
+  const t=dateParis(); du.value=jourISO(t);
+  if(k==='dim'){ const d=new Date(t); d.setDate(t.getDate()+((7-t.getDay())%7)); au.value=jourISO(d); }
+  else if(k==='1s'||k==='2s'){ const d=new Date(t); d.setDate(t.getDate()+(k==='1s'?6:13)); au.value=jourISO(d); }
+  else { au.value=''; au.focus(); try{ au.showPicker(); }catch(e){} }
+}
+function rhAbsSave(i){
   const r=S.sheets.rh[i]; if(!r) return;
-  const ro=sheetRO('rh'), dis=ro?' disabled':'';
-  const t=(k,l,ph='')=>`<label class="cli-f"><span>${l}</span><input type="text" value="${esc(r[k])}" placeholder="${ph}"${dis} onchange="cellEdit(${i},'${k}',this.value);RH_DIRTY=true"></label>`;
-  const d=(k,l)=>{ const v=/^\d{4}-\d{2}-\d{2}/.test(r[k]||'')?String(r[k]).slice(0,10):''; return `<label class="cli-f"><span>${l}</span><input type="date" value="${v}"${dis} onchange="cellEdit(${i},'${k}',this.value);RH_DIRTY=true"></label>`; };
-  const e=rhEtat(r), btnCtr=SHEETS_DEF.rh.cols[0].f(r);
-  openModal(`<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:14px">
-    <div style="display:flex;gap:14px;align-items:center;min-width:0">${avatarHTML(r.nom||'?','width:60px;height:60px;font-size:1.2rem')}
-      <div style="min-width:0"><h3 style="margin:0">${esc(r.nom||'Sans nom')}</h3><div style="margin-top:5px;display:flex;gap:8px;flex-wrap:wrap;align-items:center"><span class="badge ${rhGradeCls(r.grade)}">${esc(r.grade||'—')}</span><span class="rh-etat ${e.cls}" style="margin:0">${esc(e.txt)}</span></div></div></div>
-    <button class="btn btn-sm btn-ghost" onclick="closeModal()">Fermer</button></div>
-  ${ro?'<div class="warn" style="margin-bottom:10px">👁 Consultation seule pour ton rôle</div>':''}
-  <div class="rh-form">
-    ${t('nom','👤 Employé')}${t('grade','🎖️ Grade')}
-    ${t('idU','🆔 ID unique')}${t('discord','🎮 Discord')}
-    ${t('tel','📞 Téléphone')}${t('rib','🏦 RIB')}
-    ${d('arrivee','📅 Arrivée')}${d('dernierService','🕒 Dernière prise de service')}
-    ${t('avert','⚠ Avertissements')}
-    <label class="cli-f"><span>🤝 Recruteur</span><select class="field"${dis} onchange="cellEdit(${i},'recrut',this.value);RH_DIRTY=true">${['',...nomsRecruteurs()].map(o=>`<option ${o===r.recrut?'selected':''}>${esc(o)}</option>`).join('')}</select></label>
-    <label class="rh-check"><input type="checkbox" ${r.contrat?'checked':''}${dis} onchange="cellEdit(${i},'contrat',this.checked);RH_DIRTY=true"> Contrat signé</label>
-  </div>
-  <div style="display:flex;gap:10px;justify-content:space-between;align-items:center;margin-top:16px;flex-wrap:wrap">
-    <div>${btnCtr}</div>
-    <div style="display:flex;gap:8px">
-      <button class="btn btn-ghost btn-sm" onclick="closeModal();ficheEmp(decodeURIComponent('${encodeURIComponent(r.nom||'')}'))" title="Barils, quotas, journal…">📊 Activité</button>
-      ${ro?'':`<button class="btn btn-red btn-sm" onclick="if(confirm('Supprimer cette fiche ?')){closeModal();rowDel(${i});}">🗑 Supprimer</button>`}
+  const du=$('#fiDu').value, au=$('#fiAu').value, motif=String($('#fiMotif').value||'').trim().slice(0,140);
+  if(!du||!au) return toast('⚠️ Choisis les deux dates');
+  if(au<du) return toast('⚠️ La date de fin est avant la date de début');
+  S.absences=S.absences||[];
+  const ed=RH_ABS_EDIT&&S.absences.find(a=>a.id===RH_ABS_EDIT);
+  if(ed){ Object.assign(ed,{du,au,motif}); jlog(`Absence modifiée : ${r.nom} du ${frDate(du)} au ${frDate(au)}`); }
+  else {
+    S.absences.push({id:Date.now(),nom:r.nom,du,au,motif,par:(currentUser()||{}).user||''});
+    jlog(`Absence déclarée : ${r.nom} du ${frDate(du)} au ${frDate(au)}`);
+    sendLog('🌴 Absence déclarée',`**${r.nom}** sera absent(e) du **${frDate(du)}** au **${frDate(au)}** (inclus).\nDescente de grade bloquée sur la période.`,0x22d3ee);
+  }
+  RH_ABS_EDIT=null;
+  rhAbsMaj(i,`🌴 Absence de ${r.nom} enregistrée`);
+}
+function rhAbsEdit(id,i){ RH_ABS_EDIT=id; rhFiche(i); }
+function rhAbsRetour(id,i){ absRetour2(id,()=>rhAbsMaj(i)); }
+function absRetour2(id,apres){
+  const a=(S.absences||[]).find(x=>x.id===id); if(!a) return;
+  const hier=new Date(Date.now()-86400000), h=jourISO(hier);
+  if(!confirm(`Marquer ${a.nom} comme de retour aujourd'hui ?\n(l'absence sera close à hier, il redevient actif : quotas, salaire, descentes)`)) return;
+  if(h<a.du) S.absences=S.absences.filter(x=>x.id!==id); else a.au=h;
+  jlog(`Retour anticipé : ${a.nom}${h<a.du?' (absence annulée)':` (absence close au ${frDate(h)})`}`);
+  sendLog('✔ Retour anticipé',`**${a.nom}** est de retour — son absence est close.`,0x3ddc84);
+  apres(); toast(`✔ ${a.nom} est de retour — de nouveau compté partout`);
+}
+function rhAbsDel(id,i){
+  const a=(S.absences||[]).find(x=>x.id===id); if(!a) return;
+  if(!confirm(`Supprimer l'absence de ${a.nom} (du ${frDate(a.du)} au ${frDate(a.au)}) ?`)) return;
+  S.absences=S.absences.filter(x=>x.id!==id);
+  jlog(`Absence supprimée : ${a.nom} (du ${frDate(a.du)} au ${frDate(a.au)})`);
+  rhAbsMaj(i);
+}
+function rhAvert(i,delta){
+  const r=S.sheets.rh[i]; if(!r) return;
+  const n=Math.max(0,(parseInt(String(r.avert||'').replace(/\D/g,''),10)||0)+delta);
+  if(delta<0&&!confirm(`Retirer un avertissement à ${r.nom} ?`)) return;
+  r.avert=n?String(n):'';
+  jlog(`${delta>0?'Avertissement ajouté':'Avertissement retiré'} : ${r.nom} (${n})`);
+  if(delta>0) sendLog('⚠️ Avertissement',`**${r.nom}** reçoit un avertissement (${n} au total) — saisi depuis la fiche RH.`,0xff9a3d);
+  save(); sbPushNow(); rhFiche(i);
+}
+function rhCopier(txt){
+  navigator.clipboard.writeText(String(txt||'')).then(()=>toast('📋 Copié')).catch(()=>toast('⚠️ Copie refusée'));
+}
+function rhFicheIdentite(i,r,ro,dis){
+  const t=(k,l)=>`<label class="fi-f"><span>${l}</span><input type="text" value="${esc(r[k])}"${dis} onchange="cellEdit(${i},'${k}',this.value);RH_DIRTY=true"></label>`;
+  const d=(k,l)=>{ const v=/^\d{4}-\d{2}-\d{2}/.test(r[k]||'')?String(r[k]).slice(0,10):''; return `<label class="fi-f"><span>${l}</span><input type="date" value="${v}"${dis} onchange="cellEdit(${i},'${k}',this.value);RH_DIRTY=true"></label>`; };
+  const e=rhEtat(r), ab=absDe(r.nom), anc=r.arrivee&&!isNaN(Date.parse(r.arrivee))?Math.floor((nowSrv()-Date.parse(r.arrivee))/86400000):null;
+  const dj=r.dernierService&&!isNaN(Date.parse(r.dernierService))?Math.floor((nowSrv()-Date.parse(r.dernierService))/86400000):null;
+  const nAv=parseInt(String(r.avert||'').replace(/\D/g,''),10)||0;
+  return `<div class="fi-2">
+    <div class="fi-form">
+      ${t('nom','👤 Employé')}
+      <label class="fi-f"><span>🎖️ Grade</span><input type="text" value="${esc(r.grade)}"${dis} onchange="cellEdit(${i},'grade',this.value);RH_DIRTY=true"></label>
+      ${t('idU','🆔 ID unique')}${t('discord','🎮 Discord')}${t('tel','📞 Téléphone')}${t('rib','🏦 RIB')}
+      ${d('arrivee','📅 Arrivée')}${d('dernierService','🕒 Dernière prise de service')}
+      ${t('avert','⚠️ Avertissements')}
+      <label class="fi-f"><span>🤝 Recruteur</span><select${dis} onchange="cellEdit(${i},'recrut',this.value);RH_DIRTY=true">${['',...nomsRecruteurs()].map(o=>`<option ${o===r.recrut?'selected':''}>${esc(o)}</option>`).join('')}</select></label>
     </div>
-  </div>`);
-  $('#modalBox').style.maxWidth='760px'; $('#modalBox').style.width='min(760px,94vw)';
+    <div class="fi-side">
+      <div class="fi-box"><h5>État du pointage</h5>
+        <div class="fi-etat ${e.cls}">${esc(e.txt)}</div>
+        <div class="fi-mut">${dj!==null?`Dernier service : ${frDate(r.dernierService)} · il y a ${dj} j`:'Jamais pointé'}</div>
+        ${ab?'<div class="fi-mut">L\'alerte « démission ? » est désactivée pendant l\'absence.</div>':''}
+      </div>
+      <div class="fi-box"><h5>Dossier</h5>
+        <div class="fi-li"><span>Contrat</span><b class="${r.contrat?'ok':'ko'}">${r.contrat?'✓ signé':'à signer'}</b></div>
+        <div class="fi-li"><span>Avertissements</span><b class="${nAv?'ko':'ok'}">${nAv?nAv:'aucun'}</b></div>
+        <div class="fi-li"><span>Ancienneté</span><b>${anc!==null?anc+' jours':'—'}</b></div>
+      </div>
+      <div class="fi-box"><h5>Raccourcis</h5>
+        <div style="display:flex;gap:7px;flex-wrap:wrap"><button class="btn btn-sm btn-ghost" onclick="rhCopier('${esc(String(r.idU||'')).replace(/'/g,"\\'")}')">⧉ Copier l'ID</button><button class="btn btn-sm btn-ghost" onclick="rhCopier('${esc(String(r.discord||'')).replace(/'/g,"\\'")}')">⧉ Copier Discord</button></div>
+      </div>
+    </div>
+  </div>`;
+}
+function rhFicheAbsences(i,r,ro){
+  const auj=jourISO(dateParis()), liste=rhAbsDe(r);
+  const cours=liste.find(a=>a.du<=auj&&auj<=a.au), venir=liste.find(a=>a.du>auj), finies=liste.filter(a=>a.au<auj).reverse();
+  const ed=RH_ABS_EDIT&&liste.find(a=>a.id===RH_ABS_EDIT);
+  const src=a=>a.auto?`✓ validée sur Discord${a.par?' par '+esc(a.par):''}`:`✎ saisie dans le dashboard${a.par?' par '+esc(a.par):''}`;
+  const btns=a=>ro?'':`<div class="fi-bt">${a.du<=auj&&auj<=a.au?`<button class="btn btn-sm btn-gold" onclick="rhAbsRetour(${a.id},${i})">✔ De retour</button>`:''}<button class="btn btn-sm btn-ghost" onclick="rhAbsEdit(${a.id},${i})">✎ Modifier</button><button class="btn btn-sm btn-red" onclick="rhAbsDel(${a.id},${i})">✕ ${a.du>auj?'Annuler':'Supprimer'}</button></div>`;
+  let carte;
+  if(cours){
+    const tot=rhJoursEntre(cours.du,cours.au)+1, fait=rhJoursEntre(cours.du,auj)+1;
+    carte=`<div class="fi-ab cours"><h5>🌴 Absence en cours</h5><div class="fi-ab-d">${frDate(cours.du)} → ${frDate(cours.au)}</div>
+      <div class="fi-bar"><i style="width:${Math.min(100,Math.round(fait/tot*100))}%"></i></div>
+      <div class="fi-mut">Jour ${fait}/${tot} · retour le <b>${frDate(jourISO(new Date(Date.parse(cours.au+'T12:00:00')+86400000)))}</b></div>
+      <div class="fi-mut">${src(cours)}${cours.motif?' · « '+esc(cours.motif)+' »':''}</div>${btns(cours)}${rhCalendrier(cours.du,cours.au,auj)}</div>`;
+  } else if(venir){
+    const dans=rhJoursEntre(auj,venir.du), tot=rhJoursEntre(venir.du,venir.au)+1;
+    carte=`<div class="fi-ab venir"><h5>🗓 Absence à venir</h5><div class="fi-ab-d">${frDate(venir.du)} → ${frDate(venir.au)}</div>
+      <div class="fi-mut">Commence dans <b>${dans} jour${dans>1?'s':''}</b> · ${tot} jour${tot>1?'s':''} au total</div>
+      <div class="fi-mut">${src(venir)}${venir.motif?' · « '+esc(venir.motif)+' »':''}</div>${btns(venir)}${rhCalendrier(venir.du,venir.au)}</div>`;
+  } else {
+    carte=`<div class="fi-ab aucune"><div style="font-size:2rem">🌴</div><b>Aucune absence déclarée</b><div class="fi-mut">${esc(r.nom.split(' ')[0])} est actif(ve) · quotas et salaire normaux</div></div>`;
+  }
+  const venirSuppl=(cours&&venir)?`<div class="fi-ab venir" style="margin-top:12px"><h5>🗓 Absence à venir</h5><div class="fi-ab-d">${frDate(venir.du)} → ${frDate(venir.au)}</div>${btns(venir)}</div>`:'';
+  const form=ro?'':`<div class="fi-box"><h5>${ed?'Modifier l\'absence':'Déclarer une absence'}</h5>
+      <div class="fi-pre"><button onclick="rhAbsPreset('dim')">Aujourd'hui → dimanche</button><button onclick="rhAbsPreset('1s')">1 semaine</button><button onclick="rhAbsPreset('2s')">2 semaines</button><button onclick="rhAbsPreset('date')">Jusqu'à une date…</button></div>
+      <div class="fi-2c"><label class="fi-f"><span>Du</span><input type="date" id="fiDu" value="${ed?ed.du:auj}"></label><label class="fi-f"><span>Au (inclus)</span><input type="date" id="fiAu" value="${ed?ed.au:''}"></label></div>
+      <label class="fi-f"><span>Motif (facultatif)</span><input type="text" id="fiMotif" placeholder="Vacances, voyage…" value="${ed?esc(ed.motif||''):''}"></label>
+      <button class="btn btn-gold" style="width:100%;margin-top:10px" onclick="rhAbsSave(${i})">${ed?'Enregistrer les modifications':'Déclarer l\'absence'}</button>${ed?`<button class="btn btn-ghost btn-sm" style="width:100%;margin-top:6px" onclick="RH_ABS_EDIT=null;rhFiche(${i})">Annuler la modification</button>`:''}</div>`;
+  const hist=finies.length?`<div class="fi-box"><h5>Historique</h5>${finies.map(a=>`<div class="fi-li"><span>✓ ${frDate(a.du)} → ${frDate(a.au)}${a.motif?' · '+esc(a.motif):''}</span><b class="fi-mut" style="font-weight:600">${a.auto?'Discord':'dashboard'}</b></div>`).join('')}</div>`:'';
+  const regles=`<div class="fi-box"><h5>Pendant l'absence</h5><div class="fi-reg"><div>🛡 Descente de grade bloquée</div><div>🔔 Alerte « démission ? » désactivée</div><div>📊 Retiré(e) du partage des quotas commerciaux</div></div></div>`;
+  return `<div class="fi-2"><div>${carte}${venirSuppl}${cours||venir?regles:''}</div><div>${form}${hist}${cours||venir?'':regles}</div></div>`;
+}
+function rhFicheContrat(i,r,ro){
+  const nAv=parseInt(String(r.avert||'').replace(/\D/g,''),10)||0, btnCtr=SHEETS_DEF.rh.cols[0].f(r);
+  const F=(t,par)=>t?new Date(t).toLocaleDateString('fr-FR'):'';
+  const etapes=[
+    ['Contrat généré',r.contratGen?`${F(r.contratGen.t)} · par ${esc(r.contratGen.par||'?')}`:'pas encore généré',!!r.contratGen],
+    ['Signé par la personne (bouton « Lu et approuvé » ou case cochée)',r.contrat?'signé':'en attente de signature',!!r.contrat],
+  ];
+  const lis=((S._tables&&S._tables.oilroxwood_avertissements)||[]).filter(a=>String(a.discord||'').trim()&&String(a.discord).trim()===String(r.discord||'').trim());
+  return `<div class="fi-2">
+    <div class="fi-box"><h5>Contrat de travail</h5>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px"><span class="fi-chip ${r.contrat?'ok':'ko'}">${r.contrat?'✓ Contrat signé':'✗ Non signé'}</span><label class="fi-mut"><input type="checkbox" ${r.contrat?'checked':''}${ro?' disabled':''} onchange="cellEdit(${i},'contrat',this.checked);RH_DIRTY=true;rhFiche(${i})"> case « signé »</label></div>
+      <div class="fi-tl">${etapes.map(([t,s,ok])=>`<div class="${ok?'ok':''}"><b>${t}</b><small>${s}</small></div>`).join('')}</div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:12px">${btnCtr}</div>
+    </div>
+    <div>
+      <div class="fi-box"><h5>Avertissements <span class="fi-chip ${nAv?'ko':'ok'}">${nAv}</span></h5>
+        ${lis.length?lis.map(a=>`<div class="fi-li"><span>${esc(a.raison||'sans motif')}${a.par?`<br><small class="fi-mut">donné par ${esc(a.par)}</small>`:''}</span></div>`).join(''):`<div class="fi-mut">${nAv?'Compteur : '+nAv+' (saisi à la main ou avant la reprise Discord).':'Aucun avertissement.'}</div>`}
+        ${ro?'':`<div style="display:flex;gap:7px;margin-top:10px;flex-wrap:wrap"><button class="btn btn-sm btn-ghost" onclick="rhAvert(${i},1)">⚠ Donner un avertissement</button>${nAv?`<button class="btn btn-sm btn-red" onclick="rhAvert(${i},-1)">✕ Retirer</button>`:''}</div><div class="fi-mut" style="margin-top:6px">Compté dans la fiche + log Direction. L'annonce dans le ticket se fait avec /avertir sur Discord.</div>`}
+      </div>
+      <div class="fi-box"><h5>Recrutement</h5>
+        <div class="fi-li"><span>Recruteur</span><b>${esc(r.recrut||'—')}</b></div>
+        <div class="fi-li"><span>Arrivée</span><b>${r.arrivee?frDate(r.arrivee):'—'}</b></div>
+      </div>
+    </div></div>`;
+}
+function rhFicheActivite(i,r){
+  const nom=r.nom, low=normNom(nom), run=S.runners.find(x=>normNom(x.nom)===low)||null;
+  const g=run?grade(run):null, q=g?g.quota:0, ab=absDe(nom);
+  const anc=r.arrivee&&!isNaN(Date.parse(r.arrivee))?Math.floor((nowSrv()-Date.parse(r.arrivee))/86400000):null;
+  const hist=(S.weeks||[]).filter(w=>w.detail).slice(-4).map(w=>({num:w.num,x:w.detail.find(d=>normNom(d.nom)===low)}));
+  const J=(S.journal||[]).filter(e=>String(e.a||'').toLowerCase().includes(String(nom||'').toLowerCase().trim())).slice(0,8);
+  const max=Math.max(q,...hist.map(h=>h.x?nn(h.x.barils):0),1);
+  const pc=run&&q?Math.round(run.barils/q*100):null;
+  return `<div class="fi-kpi">
+      <div><span>Barils · semaine</span><b>${run?fmt(run.barils):'0'}</b><small>${ab?'absent — quota non appliqué':pc!==null?pc+' % du quota':'aucun quota'}</small></div>
+      <div><span>Total carrière</span><b>${run?fmt(run.total):'0'}</b><small>${r.arrivee?'depuis le '+frDate(r.arrivee):''}</small></div>
+      <div><span>Prime projetée</span><b class="gold">${run?money(primeProj(run)+primeExtraDe(nom)):'0 $'}</b></div>
+      <div><span>Ancienneté</span><b>${anc!==null?anc+' j':'—'}</b><small>${r.arrivee?'arrivé le '+frDate(r.arrivee):''}</small></div>
+    </div>
+    <div class="fi-2">
+      <div class="fi-box"><h5>4 dernières semaines · barils / quota ${q?fmt(q):''}</h5>
+        ${hist.some(h=>h.x)?`<div class="fi-chart">${q?`<s style="bottom:${q/max*100}%"></s>`:''}${hist.map(h=>h.x?`<div title="S${h.num}"><i class="${h.x.ok?'ok':'ko'}" style="height:${Math.max(3,nn(h.x.barils)/max*100)}%"></i><span>S${h.num} · ${fmt(h.x.barils)} ${h.x.ok?'✓':'✗'}</span></div>`:`<div><i class="vide" style="height:3%"></i><span>S${h.num} · —</span></div>`).join('')}</div>`:'<div class="fi-mut">Pas encore d\'historique de semaine pour cette personne.</div>'}
+      </div>
+      <div class="fi-box"><h5>Journal</h5>${J.length?J.map(e=>`<div class="fi-li"><span>${new Date(e.t).toLocaleDateString('fr-FR',{day:'2-digit',month:'2-digit'})} · ${esc(e.a)}</span></div>`).join(''):'<div class="fi-mut">Aucun événement lié.</div>'}</div>
+    </div>
+    ${isMembre()||!run?'':`<div style="margin-top:12px"><button class="btn btn-sm btn-ghost" onclick="closeModal();show('effectif');openRunnerModal(${run.id})">✎ Modifier dans l'effectif</button></div>`}`;
+}
+function rhFiche(i,tab){
+  const r=S.sheets.rh[i]; if(!r) return;
+  if(tab) RH_TAB=tab;
+  const ro=sheetRO('rh'), dis=ro?' disabled':'', e=rhEtat(r), n=S.sheets.rh.length;
+  const corps=RH_TAB==='abs'?rhFicheAbsences(i,r,ro):RH_TAB==='ctr'?rhFicheContrat(i,r,ro):RH_TAB==='act'?rhFicheActivite(i,r):rhFicheIdentite(i,r,ro,dis);
+  openModal(`<div class="fi-head">
+      ${avatarHTML(r.nom||'?','width:60px;height:60px;font-size:1.2rem;flex:none')}
+      <div style="min-width:0;flex:1"><h3 class="fi-nom">${esc(r.nom||'Sans nom')}</h3>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:5px"><span class="badge ${rhGradeCls(r.grade)}">${esc(r.grade||'—')}</span><span class="rh-etat ${e.cls}">${esc(e.txt)}</span></div></div>
+      <div style="display:flex;gap:8px;align-items:flex-start;flex:none">
+        <button class="btn btn-sm btn-ghost" title="Fiche précédente" onclick="RH_ABS_EDIT=null;rhFiche(${(i-1+n)%n})">◀</button><button class="btn btn-sm btn-ghost" title="Fiche suivante" onclick="RH_ABS_EDIT=null;rhFiche(${(i+1)%n})">▶</button>
+        <button class="btn btn-sm btn-ghost" onclick="closeModal()">Fermer</button></div>
+    </div>
+    ${ro?'<div class="warn" style="margin-bottom:10px">👁 Consultation seule pour ton rôle</div>':''}
+    ${rhTabs(i,RH_TAB)}
+    <div class="fi-corps">${corps}</div>
+    <div class="fi-pied">${ro?'<span></span>':`<button class="btn btn-red btn-sm" onclick="if(confirm('Supprimer cette fiche ?')){closeModal();rowDel(${i});}">🗑 Supprimer la fiche</button>`}<span class="fi-mut">✓ Enregistré automatiquement</span></div>`);
+  $('#modalBox').style.maxWidth='1000px'; $('#modalBox').style.width='min(1000px,95vw)';
 }
 /* Les changements de nom repérés au dernier import : la vue les affiche,
    et seules les Fiches RH s'en servent. Vidée à chaque import. */
@@ -4010,9 +4312,9 @@ async function factures(){
   <div class="topbar"><div><h2>Facturation</h2><div class="sub">${SOCIETE.nom} · Téléphone ${SOCIETE.tel} · RIB ${SOCIETE.rib}</div></div>
     <button class="btn btn-ghost" onclick="venteRapide()">⚡ Vente rapide (sans facture)</button></div>
   <div class="tabs">${tabs.map(([k,l])=>`<button class="tab ${factTab===k?'on':''}" onclick="factTab='${k}';factures()">${l}</button>`).join('')}</div>
-  <div class="fact-wrap">
+  <div class="fact-wrap ${factTab==='new'?'solo':''}">
     <div id="factBody" style="min-width:0"></div>
-    <div class="panel" style="padding:14px 16px">${vrSideHtml()}</div>
+    ${factTab==='new'?'':`<div class="panel" style="padding:14px 16px">${vrSideHtml()}</div>`}
   </div>`;
   ({new:fNew,hist:fHist,clients:fClients,articles:fArticles})[factTab]();
 }
@@ -4107,93 +4409,90 @@ async function venteRapideSave(){
 }
 
 /* ---- nouvelle facture ---- */
+function fModes(){ return [[0,'Virement'],[0.02,'Cayo'],[0.04,'Nord'],[0.05,'LS']]; }
+function fMode(){ const ls=FD.lignes; if(!ls.length) return null; const v=nn(ls[0].tva); return ls.every(l=>nn(l.tva)===v)?v:null; }
+function fSetMode(v){ FD.lignes.forEach(l=>{ if(l.ref!=='Prestation Evenementiel') l.tva=v; }); fNew(); }
+function fSetQteLast(n){ if(!FD.lignes.length) FD.lignes.push({ref:'CMD',qte:0,tva:0.05}); FD.lignes[FD.lignes.length-1].qte=n; fNew(); }
 function fNew(){
-  const c=cli(FD.client), t=factTotaux();
+  const c=cli(FD.client), t=factTotaux(), mode=fMode(), modeNom=(fModes().find(m=>m[0]===mode)||[0,'TVA mixte'])[1];
+  const edit=FD._modifie!=null, salon=salonDe(FD.client);
   const lignes=FD.lignes.map((l,i)=>{
-    const lc=ligneCalc(l);
+    const lc=ligneCalc(l), q=nn(l.qte);
     return `<tr>
-      <td><select class="field" style="padding:7px" onchange="updL(${i},'ref',this.value)">
+      <td><select class="fx-in" onchange="updL(${i},'ref',this.value)">
         ${S.fact.articles.map(a=>`<option ${l.ref===a.ref?'selected':''}>${esc(a.ref)}</option>`).join('')}
         <option value="_libre" ${!art(l.ref)?'selected':''}>Libre…</option></select></td>
-      <td><input class="field" style="padding:7px" value="${esc(lc.desc)}" onchange="updL(${i},'desc',this.value)"></td>
-      <td><input class="field" style="padding:7px;width:90px;text-align:right" type="number" value="${nn(l.qte)}" onchange="updL(${i},'qte',+this.value||0)"></td>
-      <td><input class="field" style="padding:7px;width:100px;text-align:right" type="number" step="0.01" value="${lc.pu}" onchange="updL(${i},'pu',+this.value||0)"></td>
-      <td class="calc" style="text-align:right">${fmt(Math.round(lc.ht))}</td>
-      <td><select class="field" style="padding:7px" onchange="updL(${i},'tva',+this.value)">
-        ${S.fact.tva.map(x=>`<option value="${x}" ${nn(l.tva)===x?'selected':''}>${(x*100).toFixed(0)} %</option>`).join('')}</select></td>
-      <td class="calc" style="text-align:right">${fmt(Math.round(lc.ttc))}</td>
-      <td><button class="btn btn-sm btn-red" onclick="delL(${i})">✕</button></td></tr>`;
+      <td><input class="fx-in" value="${esc(lc.desc)}" onchange="updL(${i},'desc',this.value)"></td>
+      <td><div class="fx-step"><button type="button" onclick="updL(${i},'qte',Math.max(0,${q}-10))">−</button><input type="number" value="${q}" onchange="updL(${i},'qte',+this.value||0)"><button type="button" onclick="updL(${i},'qte',${q}+10)">+</button></div></td>
+      <td class="r"><input class="fx-in r" type="number" step="0.01" value="${lc.pu}" onchange="updL(${i},'pu',+this.value||0)"></td>
+      <td class="r fx-tot">${fmt(Math.round(lc.ht))}</td>
+      <td><button class="fx-x" title="Supprimer la ligne" onclick="delL(${i})">✕</button></td></tr>`;
   }).join('');
+  const emSel=(FD.emetteur||'').split(',').map(s=>s.trim());
+  const sw=(on,fn)=>`<span class="fx-sw ${on?'on':''}" role="switch" aria-checked="${!!on}" tabindex="0" onclick="${fn}" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();${fn}}"><i></i></span>`;
   $('#factBody').innerHTML=`
-  ${FD._modifie!=null?`<div class="panel" style="margin-bottom:16px;border-color:rgba(232,160,32,.45);background:rgba(232,160,32,.06);display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+  ${edit?`<div class="panel" style="margin-bottom:14px;border-color:rgba(232,160,32,.45);background:rgba(232,160,32,.06);display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
     <span style="font-size:.9rem">✎ Tu modifies la <b>facture n°${FD._modifie}</b>, déjà émise. Elle gardera son numéro et son statut de paiement, et la modification sera inscrite au journal.</span>
     <button class="btn btn-sm btn-ghost" onclick="fEditAnnuler()">↩ Abandonner</button>
   </div>`:''}
-  <div class="grid g3" style="margin-bottom:16px;position:relative;z-index:5">
-    <div class="panel"><h3>Facture</h3>
-      <div class="grid g2" style="gap:10px">
-        <div class="f-row"><label class="f-lbl">N°</label><input class="field" type="number" value="${FD.num}" ${FD._modifie!=null?'readonly title="Le numéro ne change pas pendant une modification — voir le bandeau ci-dessus"':''} onchange="FD.num=+this.value||1;fNew()"></div>
-        <div class="f-row"><label class="f-lbl">Date</label><input class="field" type="date" value="${FD.date}" onchange="FD.date=this.value"></div>
-      </div>
-      <div class="f-row"><label class="f-lbl">Émetteur(s) — direction & commerciaux</label>
-        <div class="combo">
-          <button type="button" id="emBtn" class="field" style="text-align:left;cursor:pointer;display:flex;flex-wrap:wrap;gap:6px;align-items:center;min-height:44px" onclick="document.getElementById('emList').classList.toggle('open')">${emBtnHtml()}</button>
-          <div class="combo-list" id="emList">
-            ${nomsPostes().map(n=>{
-              const sel=(FD.emetteur||'').split(',').map(s=>s.trim());
-              const info=posteDe(n);
-              return `<label class="combo-item" style="cursor:pointer"><span>${esc(n)}${info?` <small style="color:var(--muted)">· ${esc(info)}</small>`:''}</span><input type="checkbox" style="accent-color:var(--accent)" ${sel.includes(n)?'checked':''} onchange="emPick('${esc(n)}',this.checked)"></label>`;
-            }).join('')||'<div class="combo-item"><small>Aucun membre à poste (effectif, RH ou comptes)</small></div>'}
+  <div class="fx-grid">
+   <div class="fx-main">
+    <div class="fx-card">
+      <div class="fx-top">
+        <label class="fx-f" style="width:130px"><span>N°</span><input type="number" value="${FD.num}" ${edit?'readonly title="Le numéro ne change pas pendant une modification"':''} onchange="FD.num=+this.value||1;fNew()"></label>
+        <label class="fx-f" style="width:170px"><span>Date</span><input type="date" value="${FD.date}" onchange="FD.date=this.value"></label>
+        <div class="fx-f" style="flex:1;min-width:240px"><span>Émetteur(s)</span>
+          <div class="combo">
+            <button type="button" id="emBtn" class="fx-em" onclick="document.getElementById('emList').classList.toggle('open')">${emBtnHtml()}</button>
+            <div class="combo-list" id="emList">
+              ${nomsPostes().map(n=>{ const info=posteDe(n);
+                return `<label class="combo-item" style="cursor:pointer"><span>${esc(n)}${info?` <small style="color:var(--muted)">· ${esc(info)}</small>`:''}</span><input type="checkbox" style="accent-color:var(--accent)" ${emSel.includes(n)?'checked':''} onchange="emPick('${esc(n)}',this.checked)"></label>`;
+              }).join('')||'<div class="combo-item"><small>Aucun membre à poste (effectif, RH ou comptes)</small></div>'}
+            </div>
           </div>
         </div>
       </div>
+      <div class="fx-lbl">Mode de paiement · détermine la TVA</div>
+      <div class="fx-modes">${fModes().map(([v,n])=>`<button type="button" class="${mode===v?'on':''}" onclick="fSetMode(${v})"><b>${n}</b><small>TVA ${(v*100).toFixed(0)} %</small></button>`).join('')}</div>
     </div>
-    <div class="panel" style="grid-column:span 2"><h3>Client</h3>
-      <div class="f-row"><label class="f-lbl">Nom (base de ${S.fact.clients.length} clients)</label>
-        <div class="combo">
-          <input class="field" id="cliInput" value="${esc(FD.client)}" placeholder="🔍 Tape pour chercher…" autocomplete="off"
-            oninput="cliFilter(this.value)" onfocus="cliFilter(this.value)" onkeydown="cliKey(event)"
-            onblur="cliBlur(this.value)">
-          <div class="combo-list" id="cliList"></div>
-        </div></div>
-      ${c?`<div style="display:flex;gap:14px;flex-wrap:wrap;font-size:.85rem;color:var(--muted)">
-        <span class="chip">📍 <b>${esc(c.adresse||'—')}</b></span>
-        <span class="chip">📞 <b>${esc(c.tel||'—')}</b></span>
-        <span class="chip">🏦 RIB <b>${esc(c.rib||'—')}</b></span></div>`
-      :FD.client?`<div class="warn" style="margin:0">⚠️ Client hors base — <button class="btn btn-sm btn-gold" onclick="addCliFromDraft()">＋ Ajouter à la base</button></div>`:''}
+
+    <div class="fx-card" style="position:relative;z-index:5">
+      <div class="fx-lbl">Client · base de ${S.fact.clients.length}</div>
+      <div class="combo">
+        <input class="fx-search" id="cliInput" value="${esc(FD.client)}" placeholder="🔍 Tape pour chercher un client…" autocomplete="off"
+          oninput="cliFilter(this.value)" onfocus="cliFilter(this.value)" onkeydown="cliKey(event)" onblur="cliBlur(this.value)">
+        <div class="combo-list" id="cliList"></div>
+      </div>
+      ${c?`<div class="fx-cli">${avatarHTML(c.nom,'width:50px;height:50px;font-size:1rem;flex:none')}
+        <div style="min-width:0"><b class="fx-cli-n">${esc(c.nom)}</b>
+          <div class="fx-cli-i"><span>📍 ${esc(c.adresse||'—')}</span><span>📞 ${esc(c.tel||'—')}</span><span>🏦 ${esc(c.rib||'—')}</span><span>${salon?'💬 ticket relié':'💬 aucun ticket relié'}</span></div></div></div>`
+      :FD.client?`<div class="warn" style="margin:10px 0 0">⚠️ Client hors base — <button class="btn btn-sm btn-gold" onclick="addCliFromDraft()">＋ Ajouter à la base</button></div>`:''}
     </div>
-  </div>
-  <div class="panel" style="margin-bottom:16px;padding:12px 16px;overflow-x:auto">
-    <table class="sheet"><thead><tr><th>Référence</th><th>Description</th><th style="text-align:right">Qté</th><th style="text-align:right">PU HT</th><th style="text-align:right">Total HT</th><th>TVA</th><th style="text-align:right">Total TTC</th><th></th></tr></thead>
-    <tbody>${lignes}</tbody></table>
-    <button class="btn btn-ghost btn-sm" style="margin-top:8px" onclick="FD.lignes.push({ref:'CMD',qte:0,tva:0.05});fNew()">＋ Ajouter une ligne</button>
-    <div style="margin-top:12px;padding:10px 14px;border-radius:9px;background:rgba(242,183,5,.06);border:1px solid rgba(242,183,5,.2);font-size:.8rem;color:var(--muted)">
-      ℹ️ <b style="color:var(--neon-c)">Légende TVA / mode de paiement :</b>
-      &nbsp;0 % = Virement&nbsp;·&nbsp;2 % = Cayo&nbsp;·&nbsp;4 % = Nord&nbsp;·&nbsp;5 % = LS
+
+    <div class="fx-card" style="padding:0;overflow:hidden">
+      <table class="fx-t"><thead><tr><th>Réf.</th><th>Description</th><th>Quantité</th><th class="r">PU HT</th><th class="r">Total HT</th><th></th></tr></thead><tbody>${lignes}</tbody></table>
+      <div class="fx-pied">
+        <button class="btn btn-ghost btn-sm" onclick="FD.lignes.push({ref:'CMD',qte:0,tva:${mode===null?0.05:mode}});fNew()">＋ Ajouter une ligne</button>
+        <span class="fx-mut">Préréglages :</span>${[50,100,250,500].map(n=>`<button type="button" class="fx-pre" onclick="fSetQteLast(${n})">${n}</button>`).join('')}
+        ${t.off?`<span class="fx-pre" style="cursor:default">🎁 offerts : ${t.off}</span>`:''}
+      </div>
     </div>
-    ${t.off?`<div class="chip" style="margin-left:10px">🎁 Bidons offerts auto : <b>${t.off}</b> (10 offerts / 100 achetés)</div>`:''}
-  </div>
-  <div class="grid g4" style="margin-bottom:16px">
-    <div class="panel kpi"><div class="lbl">Total HT</div><div class="val">${money(t.ht)}</div></div>
-    <div class="panel kpi"><div class="lbl">Total TTC</div><div class="val gold">${money(t.ttc)}</div></div>
-    <div class="panel kpi"><div class="lbl">Bidons livrés</div><div class="val">${fmt(t.qte)}</div><div class="delta">dont ${t.off} offerts</div></div>
-    <div class="panel kpi"><div class="lbl">Poids total</div><div class="val">${fmt(t.poids)} <span style="font-size:.9rem">kg</span></div><div class="delta">quantité × 2</div></div>
-  </div>
-  <label style="display:flex;align-items:center;gap:16px;cursor:pointer;user-select:none;margin-bottom:16px;padding:16px 20px;border-radius:14px;transition:all .2s;
-    border:2px ${FD.postop?'solid #4A9D6F':'dashed var(--accent)'};background:${FD.postop?'rgba(74,157,111,.08)':'rgba(232,98,44,.08)'}">
-    <input type="checkbox" style="width:24px;height:24px;accent-color:${FD.postop?'#4A9D6F':'var(--accent)'};flex:none;cursor:pointer" ${FD.postop?'checked':''} onchange="FD.postop=this.checked;fNew()">
-    <img src="assets/postop.png" alt="" style="height:34px;flex:none" onerror="this.style.display='none'">
-    <span style="font-weight:800;font-size:1rem">Livraison Post OP
-      <span style="display:block;font-weight:400;color:var(--muted);font-size:.8rem;margin-top:2px">Gratuite — ajoute sur la facture « Livraison assurée par Post OP » avec leur logo</span>
-    </span>
-    ${FD.postop?'<span style="margin-left:auto;color:#4A9D6F;font-weight:800;font-size:1rem;white-space:nowrap">✔ Activée</span>':'<span style="margin-left:auto;color:var(--muted);font-size:.85rem;white-space:nowrap">cocher pour activer</span>'}
-  </label>
-  ${FD._modifie==null?`<label class="fact-ticket"><input type="checkbox" ${FACT_TICKET?'checked':''} onchange="FACT_TICKET=this.checked"> 📨 Envoyer aussi dans le ticket Discord du client <small>(si son ID salon est renseigné dans la Base clients)</small></label>`:''}
-  <div style="display:flex;gap:12px;flex-wrap:wrap">
-    <button class="btn btn-gold" onclick="saveFact()">${FD._modifie!=null?`💾 Enregistrer les modifications (n°${FD._modifie})`:'💾 Enregistrer la facture'}</button>
-    <button class="btn btn-ghost" onclick="printSmart()">🖨️ Imprimer / PDF</button>
-    ${FD._modifie!=null?'<button class="btn btn-ghost" onclick="fEditAnnuler()">↩ Abandonner la modification</button>'
-                      :'<button class="btn btn-ghost" onclick="newDraft();fNew()">↺ Réinitialiser</button>'}
+   </div>
+
+   <aside class="fx-rail">
+    <div class="fx-card fx-total">
+      <div class="fx-lbl">Total à payer</div>
+      <div class="fx-big">${money(t.ttc)}</div>
+      <div class="fx-mut">HT ${money(t.ht)} · TVA ${mode===null?'mixte':(mode*100).toFixed(0)+' %'} (${modeNom}) ${money(t.ttc-t.ht)}</div>
+      <div class="fx-mut">${fmt(t.qte)} bidons · ${fmt(t.poids)} kg</div>
+      <div class="fx-opt"><div><b>🚚 Livraison Post OP</b><small>gratuite · logo sur la facture</small></div>${sw(FD.postop,'FD.postop=!FD.postop;fNew()')}</div>
+      ${edit?'':`<div class="fx-opt"><div><b>📨 Envoyer au ticket Discord</b><small>${salon?'ticket relié au client':'aucun ticket relié'}</small></div>${sw(FACT_TICKET,'FACT_TICKET=!FACT_TICKET;fNew()')}</div>`}
+      <button class="fx-save" onclick="saveFact()">💾 ${edit?`Enregistrer les modifications (n°${FD._modifie})`:'Enregistrer la facture'}</button>
+      <button class="fx-sec" onclick="printSmart()">🖨️ Imprimer / PDF</button>
+      ${edit?'<button class="fx-sec" onclick="fEditAnnuler()">↩ Abandonner la modification</button>':'<button class="fx-sec" onclick="newDraft();fNew()">↺ Réinitialiser</button>'}
+    </div>
+    <div class="fx-card">${vrSideHtml()}</div>
+   </aside>
   </div>`;
 }
 function updL(i,k,v){
@@ -6960,6 +7259,7 @@ function przDot(r){
 /* ================== FICHE EMPLOYÉ UNIFIÉE ================== */
 function ficheEmp(nom){
   const low=String(nom||'').toLowerCase().trim();
+  { const ix=((S.sheets&&S.sheets.rh)||[]).findIndex(x=>normNom(x.nom)===normNom(nom)); if(ix>=0){ RH_TAB='id'; return rhFiche(ix); } }
   const run=S.runners.find(x=>String(x.nom||'').toLowerCase().trim()===low)||null;
   const row=rhRowOf(nom);
   if(!run&&!row) return;
