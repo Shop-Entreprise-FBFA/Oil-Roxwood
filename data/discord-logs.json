@@ -1,11 +1,27 @@
 {
- "maj": "2026-11-04T00:37:36.323377+00:00",
+ "maj": "2026-11-04T00:39:39.919814+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1567337173299101697",
+   "t": "2026-11-04T00:38:21.831000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 128x Pétrole Raffiné pour 1280$ par Grigori Valentine. 640$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 128,
+   "montant": 1280,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1567335928781865162",
    "t": "2026-11-04T00:33:25.115000+00:00",
@@ -94365,30 +94381,6 @@
    "texte": "Coffre\ndépot de 4x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3084.80, 6815.78, 44.73\ntargetPosition : -3084.39, 6815.87, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 5831\nplayerDiscord : 867577351173177374\nplayerName : Aritea987\nplayerCharacter : Bryan Storm\nplayerId : 298482\nitemId : oil",
    "nom": "Bryan Storm",
    "quantite": 4,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-3084.80, 6815.78, 44.73",
-    "targetposition": "-3084.39, 6815.87, 43.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "5831",
-    "playerdiscord": "867577351173177374",
-    "playername": "Aritea987",
-    "playercharacter": "Bryan Storm",
-    "playerid": "298482",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1566673828703371269-1",
-   "t": "2026-11-02T04:42:28.155000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 3x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3084.80, 6815.78, 44.73\ntargetPosition : -3084.39, 6815.87, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 5831\nplayerDiscord : 867577351173177374\nplayerName : Aritea987\nplayerCharacter : Bryan Storm\nplayerId : 298482\nitemId : oil",
-   "nom": "Bryan Storm",
-   "quantite": 3,
    "montant": null,
    "type": "coffre_depot",
    "salon": "1245400913066066099",
