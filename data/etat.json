@@ -15819,6 +15819,13 @@
     "client": "Citoyen ⚡",
     "quantite": 30,
     "qui": "tyler collins"
+   },
+   {
+    "date": "2026-11-05",
+    "client": "LTD Strawberry",
+    "quantite": 100,
+    "qui": "Stella Collins",
+    "fact": 253197
    }
   ],
   "collection": [
@@ -18211,7 +18218,7 @@
     "rib": "20020",
     "tel": "930",
     "adresse": "Los Santos",
-    "lastCmd": "2026-10-29",
+    "lastCmd": "2026-11-05",
     "type": "entreprise",
     "salon": "1247271293317812264"
    },
@@ -18497,8 +18504,38 @@
     "prix": 150
    }
   ],
-  "compteur": 253197,
+  "compteur": 253198,
   "factures": [
+   {
+    "num": 253197,
+    "date": "2026-11-05",
+    "client": "LTD Strawberry",
+    "emetteur": "Stella Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 100,
+      "tva": 0,
+      "pu": 180,
+      "ht": 18000,
+      "ttc": 18000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 18000,
+    "ttc": 18000,
+    "poids": 200,
+    "statut": "attente",
+    "envoi": {
+     "t": 1793918433038,
+     "par": "Stella Collins",
+     "statut": "en_cours",
+     "ordre": 1793918432768,
+     "rapport": ""
+    }
+   },
    {
     "num": 253196,
     "date": "2026-11-03",
@@ -59276,15 +59313,15 @@
    "sem": 43
   }
  },
- "_cid": "simrh83bn5",
- "_maj": 1793918395823,
- "_rev": "m1auky3bql-mw44p21l",
+ "_cid": "44objp8f3jk",
+ "_maj": 1793918433038,
+ "_rev": "amwhvhg6dqw-mw44ptsy",
  "_majSec": {
   "fer": 1793908838996,
-  "fact": 1793734357036,
+  "fact": 1793918433038,
   "users": 1793903205578,
   "weeks": 1793577441993,
-  "sheets": 1793908102259,
+  "sheets": 1793918432471,
   "_qcFix1": 1793211567861,
   "_wkFix1": 1793211567861,
   "journal": 1793908924810,
@@ -59301,7 +59338,7 @@
   "primesExtra": 1793211567861,
   "quotasComHist": 1793577441993,
   "profils": 1793211567861,
-  "_tables": 1793918395823,
+  "_tables": 1793918433022,
   "_permsFix1": 1793211567861,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793211567861,
@@ -61251,13 +61288,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-05T22:39:57.081Z",
+  "maj": "2026-11-05T22:40:33.058Z",
   "semaine": 45,
   "totalBarils": 321624,
   "ca": 1608120,
   "objectif": 375000,
   "effectif": 125,
-  "clientsServis": 180,
+  "clientsServis": 181,
   "theme": "",
   "top3": [
    {
@@ -63755,6 +63792,48 @@
     "id": 1793733874177,
     "statut": "fait",
     "rapport": "Facture n°253196 postee dans le salon 1461345077187051570."
+   },
+   {
+    "type": "facture_ticket",
+    "payload": {
+     "num": 253197,
+     "salon": "1247271293317812264",
+     "reedition": false,
+     "facture": {
+      "num": 253197,
+      "date": "2026-11-05",
+      "client": "LTD Strawberry",
+      "emetteur": "Stella Collins",
+      "postop": false,
+      "lignes": [
+       {
+        "ref": "CMD",
+        "qte": 100,
+        "tva": 0,
+        "pu": 180,
+        "ht": 18000,
+        "ttc": 18000,
+        "desc": "bidons d'essence "
+       }
+      ],
+      "offert": 0,
+      "ht": 18000,
+      "ttc": 18000,
+      "poids": 200,
+      "statut": "attente"
+     },
+     "client": {
+      "nom": "LTD Strawberry",
+      "rib": "20020",
+      "tel": "930",
+      "adresse": "Los Santos",
+      "lastCmd": "2026-11-05",
+      "type": "entreprise",
+      "salon": "1247271293317812264"
+     },
+     "par": "Stella Collins"
+    },
+    "id": 1793918432768
    }
   ],
   "oilroxwood_coffres": [
