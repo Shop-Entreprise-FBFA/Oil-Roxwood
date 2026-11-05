@@ -1,11 +1,27 @@
 {
- "maj": "2026-11-05T09:23:33.937373+00:00",
+ "maj": "2026-11-05T09:25:41.201241+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1567831674102878342",
+   "t": "2026-11-05T09:23:20.010000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 354x Pétrole Raffiné pour 3540$ par Ana Fox. 1770$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 354,
+   "montant": 3540,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1567824116923236363",
    "t": "2026-11-05T08:53:18.238000+00:00",
@@ -93749,30 +93765,6 @@
    "champs": {
     "position": "-3089.20, 6814.21, 44.73",
     "targetposition": "-3089.68, 6814.50, 43.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6899",
-    "playerdiscord": "707695913187016785",
-    "playername": "ShySpider2463",
-    "playercharacter": "Laurent Roquel",
-    "playerid": "282695",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1566807218425176205-9",
-   "t": "2026-11-02T13:32:30.743000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 72x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -3085.12, 6814.62, 44.73\ntargetPosition : -3084.39, 6815.87, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6899\nplayerDiscord : 707695913187016785\nplayerName : ShySpider2463\nplayerCharacter : Laurent Roquel\nplayerId : 282695\nitemId : oil",
-   "nom": "Laurent Roquel",
-   "quantite": 72,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-3085.12, 6814.62, 44.73",
-    "targetposition": "-3084.39, 6815.87, 43.75",
     "jobid": "76",
     "jobname": "Oil RoxWood",
     "playernetid": "6899",
