@@ -1,11 +1,32 @@
 {
- "maj": "2026-11-05T09:39:33.093622+00:00",
+ "maj": "2026-11-05T09:41:34.834037+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1567835954926845953",
+   "t": "2026-11-05T09:40:20.638000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 5906\nplayerDiscord : 198789252329373706\nplayerName : Jack Berthier\nplayerCharacter : Jack Berthier\nplayerId : 276642\nvehiclePlate : GB1899JF\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Jack Berthier",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "5906",
+    "playerdiscord": "198789252329373706",
+    "playername": "Jack Berthier",
+    "playercharacter": "Jack Berthier",
+    "playerid": "276642",
+    "vehicleplate": "GB1899JF",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1567832690793783297",
    "t": "2026-11-05T09:27:22.408000+00:00",
@@ -93728,30 +93749,6 @@
    "quantite": 5,
    "montant": null,
    "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1843.49, 6518.69, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7369",
-    "playerdiscord": "427832771746988032",
-    "playername": "Durna",
-    "playercharacter": "Grigori Valentine",
-    "playerid": "380049",
-    "itemid": "weapon_petrolcan"
-   }
-  },
-  {
-   "id": "1566807218425176205-7",
-   "t": "2026-11-02T13:32:30.743000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 1x Bidon d'essence du coffre de l'entreprise (Oil RoxWood)\nposition : -1843.49, 6518.69, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7369\nplayerDiscord : 427832771746988032\nplayerName : Durna\nplayerCharacter : Grigori Valentine\nplayerId : 380049\nitemId : weapon_petrolcan",
-   "nom": "Grigori Valentine",
-   "quantite": 1,
-   "montant": null,
-   "type": "coffre_retrait",
    "salon": "1245400913066066099",
    "coffre": "entreprise (Oil RoxWood)",
    "champs": {
