@@ -1,11 +1,35 @@
 {
- "maj": "2026-11-05T21:23:32.837702+00:00",
+ "maj": "2026-11-05T21:27:33.451110+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1568013577372303575",
+   "t": "2026-11-05T21:26:09.129000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\na retiré 2x Bidon d'essence du coffre de l'entreprise (Oil RoxWood)\nposition : -1849.08, 6498.73, 16.24\ntargetPosition : -1849.11, 6498.65, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3660\nplayerDiscord : 826526979204841482\nplayerName : Orion\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : weapon_petrolcan",
+   "nom": "Diego Herrera",
+   "quantite": 2,
+   "montant": null,
+   "type": "coffre_retrait",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1849.08, 6498.73, 16.24",
+    "targetposition": "-1849.11, 6498.65, 15.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "3660",
+    "playerdiscord": "826526979204841482",
+    "playername": "Orion",
+    "playercharacter": "Diego Herrera",
+    "playerid": "231487",
+    "itemid": "weapon_petrolcan"
+   }
+  },
   {
    "id": "1568012832006611049",
    "t": "2026-11-05T21:23:11.420000+00:00",
@@ -93632,38 +93656,6 @@
    "nom": null,
    "quantite": 639,
    "montant": 6390,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1566926489440751697",
-   "t": "2026-11-02T21:26:27.169000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 646x Pétrole Raffiné pour 6460$ par Merill Danielson. 3230$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 646,
-   "montant": 6460,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1566925966847119462",
-   "t": "2026-11-02T21:24:22.573000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 525x Pétrole Raffiné pour 5250$ par Vladimir Spoutnarov. 2625$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 525,
-   "montant": 5250,
    "type": "vente",
    "salon": "1245400913473179729",
    "champs": {
