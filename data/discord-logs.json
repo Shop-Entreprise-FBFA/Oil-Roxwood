@@ -1,11 +1,27 @@
 {
- "maj": "2026-11-05T05:39:39.292599+00:00",
+ "maj": "2026-11-05T05:41:37.315371+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1567775798385975297",
+   "t": "2026-11-05T05:41:18.201000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 652x Pétrole Raffiné pour 6520$ par Tyrese Jackson. 3260$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 652,
+   "montant": 6520,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1567772779527278687-0",
    "t": "2026-11-05T05:29:18.449000+00:00",
@@ -93775,30 +93791,6 @@
     "playername": "G - FDO | Tizmax",
     "playercharacter": "Vladimir Spoutnarov",
     "playerid": "364310",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1566805962059288686-0",
-   "t": "2026-11-02T13:27:31.202000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 78x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -3084.55, 6814.52, 44.73\ntargetPosition : -3084.39, 6815.87, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7452\nplayerDiscord : 1170093828338888745\nplayerName : BoldOtter3654\nplayerCharacter : Eve Smith\nplayerId : 380223\nitemId : oil",
-   "nom": "Eve Smith",
-   "quantite": 78,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-3084.55, 6814.52, 44.73",
-    "targetposition": "-3084.39, 6815.87, 43.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7452",
-    "playerdiscord": "1170093828338888745",
-    "playername": "BoldOtter3654",
-    "playercharacter": "Eve Smith",
-    "playerid": "380223",
     "itemid": "oil"
    }
   }
