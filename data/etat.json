@@ -10183,6 +10183,30 @@
   ],
   "compta": [
    {
+    "type": "Retrait",
+    "date": "2026-10-29",
+    "justif": "materiel G6",
+    "montant": 30000
+   },
+   {
+    "type": "Retrait",
+    "date": "2026-10-28",
+    "justif": "ACHAT IMMO",
+    "montant": 280875
+   },
+   {
+    "type": "Retrait",
+    "date": "2026-10-28",
+    "justif": "ACHAT IMMO",
+    "montant": 280875
+   },
+   {
+    "type": "Dépense déductible",
+    "date": "2026-10-28",
+    "justif": "UMAMI",
+    "montant": 50000
+   },
+   {
     "type": "Dépense déductible",
     "date": "2026-10-28",
     "justif": "HORNYS",
@@ -10190,9 +10214,39 @@
    },
    {
     "type": "Retrait",
+    "date": "2026-10-28",
+    "justif": "LTD PALETO",
+    "montant": 20800
+   },
+   {
+    "type": "Retrait",
     "date": "2026-10-27",
-    "justif": "WWI ",
-    "montant": 500000
+    "justif": "ERREUR DE FACTURE ",
+    "montant": 18720
+   },
+   {
+    "type": "Dépense déductible",
+    "date": "2026-10-27",
+    "justif": "WWI COFFRE",
+    "montant": 300000
+   },
+   {
+    "type": "Retrait",
+    "date": "2026-10-27",
+    "justif": "WWI CARTE DE TRAVAIL",
+    "montant": 750000
+   },
+   {
+    "type": "Retrait",
+    "date": "2026-10-27",
+    "justif": "WWI OBJET DE COLLECTION ",
+    "montant": 1290000
+   },
+   {
+    "type": "Retrait",
+    "date": "2026-10-26",
+    "justif": "LTD PALETO",
+    "montant": 208000
    },
    {
     "type": "Dépense déductible",
@@ -59202,22 +59256,22 @@
    "sem": 43
   }
  },
- "_cid": "me0495f98j",
+ "_cid": "9n4f6jjq8w6",
  "_maj": 1793846516838,
- "_rev": "1vkjl0dxshk-mw3hjhi8",
+ "_rev": "s3yddh3x6e-mw3j47o0",
  "_majSec": {
   "fer": 1793801696612,
   "fact": 1793734357036,
-  "users": 1793805180567,
+  "users": 1793813586543,
   "weeks": 1793577441993,
-  "sheets": 1793805180563,
+  "sheets": 1793825261738,
   "_qcFix1": 1793211567861,
   "_wkFix1": 1793211567861,
-  "journal": 1793805180567,
+  "journal": 1793825141687,
   "pending": 1793211567861,
-  "prodDer": 1793805180568,
+  "prodDer": 1793827945192,
   "runners": 1793578921458,
-  "absences": 1793805180567,
+  "absences": 1793806029781,
   "imported": 1793211567861,
   "settings": 1793577441993,
   "closeUndo": 1793577441993,
@@ -59227,7 +59281,7 @@
   "primesExtra": 1793211567861,
   "quotasComHist": 1793577441993,
   "profils": 1793211567861,
-  "_tables": 1793805267045,
+  "_tables": 1793827929000,
   "_permsFix1": 1793211567861,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793211567861,
@@ -59235,20 +59289,15 @@
   "_affFix1": 1793211567861,
   "produits": 1793211567861,
   "_prodFix1": 1793211567861,
-  "_recruesIgnore": 1793805180568,
+  "_recruesIgnore": 1793825141661,
   "ventesAlias": 1793211567861,
   "_ventesIgnore": 1793211567861,
   "_avertVus": 1793211567861,
-  "_signeVus": 1793805180568
+  "_signeVus": 1793825141687
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
-  {
-   "t": 1793825219949,
-   "u": "Diego Herrera",
-   "a": "Contrat de travail généré : Ezekiel Alvarez (Runner)"
-  },
   {
    "t": 1793825143043,
    "u": "Diego Herrera",
@@ -60743,6 +60792,11 @@
    "t": 1792798667547,
    "u": "Julio Collins",
    "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
+  },
+  {
+   "t": 1792798667345,
+   "u": "?",
+   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
   }
  ],
  "prodDer": {
@@ -61170,7 +61224,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-05T11:51:46.016Z",
+  "maj": "2026-11-05T12:35:52.656Z",
   "semaine": 45,
   "totalBarils": 321624,
   "ca": 1608120,
