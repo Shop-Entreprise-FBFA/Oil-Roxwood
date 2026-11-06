@@ -1,11 +1,35 @@
 {
- "maj": "2026-11-06T15:11:38.925104+00:00",
+ "maj": "2026-11-06T15:13:33.898656+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1568282100505911498",
+   "t": "2026-11-06T15:13:10.033000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\na retiré 20x Document du coffre de l'entreprise (Oil RoxWood)\nposition : -1839.88, 6523.91, 16.07\ntargetPosition : -1840.85, 6523.94, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7\nplayerDiscord : 767332288744128512\nplayerName : JULIO COLLINS\nplayerCharacter : Julio Collins\nplayerId : 356873\nitemId : imagesPlaceholder",
+   "nom": "Julio Collins",
+   "quantite": 20,
+   "montant": null,
+   "type": "coffre_retrait",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1839.88, 6523.91, 16.07",
+    "targetposition": "-1840.85, 6523.94, 15.74",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "7",
+    "playerdiscord": "767332288744128512",
+    "playername": "JULIO COLLINS",
+    "playercharacter": "Julio Collins",
+    "playerid": "356873",
+    "itemid": "imagesPlaceholder"
+   }
+  },
   {
    "id": "1568277819069435945",
    "t": "2026-11-06T14:56:09.259000+00:00",
@@ -93843,30 +93867,6 @@
     "itemid": "refinedoil",
     "jobid": "76",
     "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1567210324380229663",
-   "t": "2026-11-03T16:14:18.692000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 156x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1843.20, 6519.39, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 72\nplayerDiscord : 427832771746988032\nplayerName : Durna\nplayerCharacter : Grigori Valentine\nplayerId : 380049\nitemId : refinedoil",
-   "nom": "Grigori Valentine",
-   "quantite": 156,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1843.20, 6519.39, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "72",
-    "playerdiscord": "427832771746988032",
-    "playername": "Durna",
-    "playercharacter": "Grigori Valentine",
-    "playerid": "380049",
-    "itemid": "refinedoil"
    }
   }
  ]
