@@ -7411,6 +7411,20 @@
  "sheets": {
   "rh": [
    {
+    "nom": "Liam Smith",
+    "grade": "Intérimaire",
+    "tel": "555446859",
+    "rib": "411743",
+    "idU": "261960",
+    "arrivee": "2026-11-06",
+    "discord": "1098318110638997596",
+    "avert": "",
+    "contrat": true,
+    "recrut": "Diego Sypher",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
     "nom": "kader benali",
     "grade": "Intérimaire",
     "tel": "555 321 680",
@@ -8235,20 +8249,6 @@
     "discord": "767332288744128512",
     "flagOut": false,
     "dernierService": "2026-11-06"
-   },
-   {
-    "idU": "361708",
-    "nom": "Bjorn Frost",
-    "rib": "536445",
-    "tel": "555-162-191",
-    "avert": "",
-    "grade": "Commercial",
-    "recrut": "Diego Herrera",
-    "arrivee": "2026-08-18",
-    "contrat": true,
-    "discord": "1096933851659517975",
-    "flagOut": true,
-    "dernierService": "2026-10-25"
    },
    {
     "idU": "282 695",
@@ -58825,17 +58825,17 @@
   }
  },
  "_cid": "ckgrlv9gnus",
- "_maj": 1794001932851,
- "_rev": "hqznyw80vus-mw5ifmfy",
+ "_maj": 1794001945745,
+ "_rev": "nk30tjo7s-mw5ifu34",
  "_majSec": {
   "fer": 1793982130838,
   "fact": 1793986560566,
   "users": 1794000247526,
   "weeks": 1793577441993,
-  "sheets": 1793986840470,
+  "sheets": 1794001945745,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1794000247526,
+  "journal": 1794001945745,
   "pending": 1793561085750,
   "prodDer": 1793992709444,
   "runners": 1793986480071,
@@ -58849,7 +58849,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1793577441993,
   "profils": 1793561085750,
-  "_tables": 1794001932851,
+  "_tables": 1794001945682,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -58857,15 +58857,25 @@
   "_affFix1": 1793561085750,
   "produits": 1793561085750,
   "_prodFix1": 1793561085750,
-  "_recruesIgnore": 1793986443879,
+  "_recruesIgnore": 1794001945710,
   "ventesAlias": 1793561085750,
   "_ventesIgnore": 1793561085750,
   "_avertVus": 1793561085750,
-  "_signeVus": 1793986443905
+  "_signeVus": 1794001945745
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1794001946964,
+   "u": "Diego Herrera",
+   "a": "Contrat(s) signé(s) via Discord : Liam Smith"
+  },
+  {
+   "t": 1794001946929,
+   "u": "Diego Herrera",
+   "a": "Recrutements Discord : 1 fiche(s) créée(s), 0 case(s) complétée(s) — Liam Smith"
+  },
   {
    "t": 1794000248133,
    "u": "Julio Collins",
@@ -60355,16 +60365,6 @@
    "t": 1792952103273,
    "u": "Laurent Roquel",
    "a": "Vente rapide sans facture : 10 bidon(s) — Citoyen (vendeur : Laurent Roquel)"
-  },
-  {
-   "t": 1792948456478,
-   "u": "Diego Herrera",
-   "a": "Modification des paramètres"
-  },
-  {
-   "t": 1792948102458,
-   "u": "Diego Herrera",
-   "a": "Accueil : page de lancement et hubs de pôle ouverts à 7 rôle(s) aux permissions personnalisées"
   }
  ],
  "prodDer": {
@@ -60864,12 +60864,12 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-06T21:52:17.758Z",
+  "maj": "2026-11-06T21:52:27.664Z",
   "semaine": 45,
   "totalBarils": 152811,
   "ca": 764055,
   "objectif": 375000,
-  "effectif": 103,
+  "effectif": 104,
   "clientsServis": 182,
   "theme": "",
   "top3": [
@@ -65651,7 +65651,8 @@
   "1793817671203",
   "1793824380305",
   "1793900781727",
-  "1793964308654"
+  "1793964308654",
+  "1793999578947"
  ],
  "_signeVus": [
   "1789477305650",
@@ -65824,7 +65825,8 @@
   "1793817752160",
   "1793824401913",
   "1793900805106",
-  "1793964319622"
+  "1793964319622",
+  "1793999593271"
  ],
  "_agSupp": [
   "1789145270913",
