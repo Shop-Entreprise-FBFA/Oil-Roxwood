@@ -1,11 +1,27 @@
 {
- "maj": "2026-11-06T08:57:36.131616+00:00",
+ "maj": "2026-11-06T09:11:34.160176+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1568190737722380319",
+   "t": "2026-11-06T09:10:07.448000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 171x Pétrole Raffiné pour 1710$ par Alexander Bart. 855$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 171,
+   "montant": 1710,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1568187215819837523",
    "t": "2026-11-06T08:56:07.761000+00:00",
@@ -89930,27 +89946,6 @@
     "playercharacter": "Tyler Collins",
     "playerid": "209236",
     "itemid": "weapon_petrolcan"
-   }
-  },
-  {
-   "id": "1567101840531791933",
-   "t": "2026-11-03T09:03:14.127000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 5959\nplayerDiscord : 439722284760956928\nplayerName : Ice\nplayerCharacter : Ana Fox\nplayerId : 244445\nvehiclePlate : AY4705SJ\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Ana Fox",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "5959",
-    "playerdiscord": "439722284760956928",
-    "playername": "Ice",
-    "playercharacter": "Ana Fox",
-    "playerid": "244445",
-    "vehicleplate": "AY4705SJ",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
