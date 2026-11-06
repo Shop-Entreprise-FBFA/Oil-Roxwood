@@ -1,11 +1,27 @@
 {
- "maj": "2026-11-06T00:15:33.618596+00:00",
+ "maj": "2026-11-06T00:17:32.146062+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1568056610612453430",
+   "t": "2026-11-06T00:17:09.053000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 253x Pétrole Raffiné pour 2530$ par Emma Collins-rodriguez. 1265$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 253,
+   "montant": 2530,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1568056110894555147",
    "t": "2026-11-06T00:15:09.911000+00:00",
@@ -93215,78 +93231,6 @@
     "playercharacter": "Emma Collins-rodriguez",
     "playerid": "227799",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1566969220179165348-0",
-   "t": "2026-11-03T00:16:14.971000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 42x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1842.57, 6520.85, 16.73\ntargetPosition : -1842.58, 6521.16, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 4183\nplayerDiscord : 1053366471574687844\nplayerName : SlowMouse3303\nplayerCharacter : Emma Collins-rodriguez\nplayerId : 227799\nitemId : refinedoil",
-   "nom": "Emma Collins-rodriguez",
-   "quantite": 42,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1842.57, 6520.85, 16.73",
-    "targetposition": "-1842.58, 6521.16, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "4183",
-    "playerdiscord": "1053366471574687844",
-    "playername": "SlowMouse3303",
-    "playercharacter": "Emma Collins-rodriguez",
-    "playerid": "227799",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1566969220179165348-1",
-   "t": "2026-11-03T00:16:14.971000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 41x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -1842.57, 6520.85, 16.73\ntargetPosition : -1842.58, 6521.16, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 4183\nplayerDiscord : 1053366471574687844\nplayerName : SlowMouse3303\nplayerCharacter : Emma Collins-rodriguez\nplayerId : 227799\nitemId : oil",
-   "nom": "Emma Collins-rodriguez",
-   "quantite": 41,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1842.57, 6520.85, 16.73",
-    "targetposition": "-1842.58, 6521.16, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "4183",
-    "playerdiscord": "1053366471574687844",
-    "playername": "SlowMouse3303",
-    "playercharacter": "Emma Collins-rodriguez",
-    "playerid": "227799",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1566969220179165348-2",
-   "t": "2026-11-03T00:16:14.971000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 1x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -1842.57, 6520.85, 16.73\ntargetPosition : -1842.58, 6521.16, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 4183\nplayerDiscord : 1053366471574687844\nplayerName : SlowMouse3303\nplayerCharacter : Emma Collins-rodriguez\nplayerId : 227799\nitemId : oil",
-   "nom": "Emma Collins-rodriguez",
-   "quantite": 1,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1842.57, 6520.85, 16.73",
-    "targetposition": "-1842.58, 6521.16, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "4183",
-    "playerdiscord": "1053366471574687844",
-    "playername": "SlowMouse3303",
-    "playercharacter": "Emma Collins-rodriguez",
-    "playerid": "227799",
-    "itemid": "oil"
    }
   }
  ]
