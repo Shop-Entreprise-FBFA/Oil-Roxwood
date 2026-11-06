@@ -1,11 +1,32 @@
 {
- "maj": "2026-11-06T15:13:33.898656+00:00",
+ "maj": "2026-11-06T15:15:34.845791+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1568282584184787016",
+   "t": "2026-11-06T15:15:05.351000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 259\nplayerDiscord : 317280511292735499\nplayerName : Fred Berthier\nplayerCharacter : Fred Berthier\nplayerId : 364651\nvehiclePlate : AS5715VX\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Fred Berthier",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "259",
+    "playerdiscord": "317280511292735499",
+    "playername": "Fred Berthier",
+    "playercharacter": "Fred Berthier",
+    "playerid": "364651",
+    "vehicleplate": "AS5715VX",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1568282100505911498",
    "t": "2026-11-06T15:13:10.033000+00:00",
@@ -93851,22 +93872,6 @@
     "playercharacter": "Grigori Valentine",
     "playerid": "380049",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1567210342721785880",
-   "t": "2026-11-03T16:14:23.065000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 462x Pétrole Raffiné pour 4620$ par Jason Palmer. 2310$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 462,
-   "montant": 4620,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
