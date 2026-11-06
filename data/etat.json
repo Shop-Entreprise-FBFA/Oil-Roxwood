@@ -15237,6 +15237,13 @@
     "quantite": 125,
     "qui": "Emma Collins-rodriguez",
     "fact": 253198
+   },
+   {
+    "date": "2026-11-06",
+    "client": "Oil Roxwood",
+    "quantite": 500,
+    "qui": "Julio Collins",
+    "fact": 253199
    }
   ],
   "collection": [
@@ -17663,7 +17670,7 @@
     "rib": "20076",
     "tel": "986",
     "adresse": "Roxwood",
-    "lastCmd": "2026-11-02",
+    "lastCmd": "2026-11-06",
     "type": "entreprise",
     "salon": ""
    },
@@ -17927,8 +17934,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253199,
+  "compteur": 253200,
   "factures": [
+   {
+    "num": 253199,
+    "date": "2026-11-06",
+    "client": "Oil Roxwood",
+    "emetteur": "Julio Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 500,
+      "tva": 0,
+      "pu": 180,
+      "ht": 90000,
+      "ttc": 90000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 90000,
+    "ttc": 90000,
+    "poids": 1000,
+    "statut": "attente"
+   },
    {
     "num": 253198,
     "date": "2026-11-06",
@@ -58857,14 +58887,14 @@
   }
  },
  "_cid": "op02vqszv2o",
- "_maj": 1794003685390,
- "_rev": "rr493vpqmy-mw5jh6li",
+ "_maj": 1794003701283,
+ "_rev": "5tkfvxins9e-mw5jhgig",
  "_majSec": {
   "fer": 1794002179264,
-  "fact": 1794002957687,
+  "fact": 1794003701272,
   "users": 1794003595511,
   "weeks": 1793577441993,
-  "sheets": 1794002701188,
+  "sheets": 1794003701272,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
   "journal": 1794003595511,
@@ -58881,7 +58911,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1793577441993,
   "profils": 1793561085750,
-  "_tables": 1794003685390,
+  "_tables": 1794003701272,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -60896,13 +60926,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-06T22:21:30.150Z",
+  "maj": "2026-11-06T22:21:43.000Z",
   "semaine": 45,
   "totalBarils": 152811,
   "ca": 764055,
   "objectif": 375000,
   "effectif": 104,
-  "clientsServis": 182,
+  "clientsServis": 183,
   "theme": "",
   "top3": [
    {
