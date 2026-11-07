@@ -1,11 +1,56 @@
 {
- "maj": "2026-11-07T07:45:35.672771+00:00",
+ "maj": "2026-11-07T07:47:35.133746+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1568532211865493518",
+   "t": "2026-11-07T07:47:01.228000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 5901\nplayerDiscord : 867577351173177374\nplayerName : Mason\nplayerCharacter : Bryan Storm\nplayerId : 298482\nvehiclePlate : IL4818AV\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Bryan Storm",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "5901",
+    "playerdiscord": "867577351173177374",
+    "playername": "Mason",
+    "playercharacter": "Bryan Storm",
+    "playerid": "298482",
+    "vehicleplate": "IL4818AV",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1568531959871840331",
+   "t": "2026-11-07T07:46:01.148000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 52x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3085.25, 6815.20, 44.73\ntargetPosition : -3084.39, 6815.87, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 5834\nplayerDiscord : 767332288744128512\nplayerName : JULIO COLLINS\nplayerCharacter : Julio Collins\nplayerId : 356873\nitemId : oil",
+   "nom": "Julio Collins",
+   "quantite": 52,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-3085.25, 6815.20, 44.73",
+    "targetposition": "-3084.39, 6815.87, 43.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "5834",
+    "playerdiscord": "767332288744128512",
+    "playername": "JULIO COLLINS",
+    "playercharacter": "Julio Collins",
+    "playerid": "356873",
+    "itemid": "oil"
+   }
+  },
   {
    "id": "1568531706254983268",
    "t": "2026-11-07T07:45:00.681000+00:00",
@@ -93899,54 +93944,6 @@
    "texte": "Coffre\na retiré 2x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -1843.79, 6517.86, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 796\nplayerDiscord : 726178701867221134\nplayerName : LoudTurtle7573\nplayerCharacter : Athéna Andershon\nplayerId : 196876\nitemId : oil",
    "nom": "Athéna Andershon",
    "quantite": 2,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1843.79, 6517.86, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "796",
-    "playerdiscord": "726178701867221134",
-    "playername": "LoudTurtle7573",
-    "playercharacter": "Athéna Andershon",
-    "playerid": "196876",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1567577273920389389-4",
-   "t": "2026-11-04T16:32:26.280000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 2x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -1843.79, 6517.86, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 796\nplayerDiscord : 726178701867221134\nplayerName : LoudTurtle7573\nplayerCharacter : Athéna Andershon\nplayerId : 196876\nitemId : oil",
-   "nom": "Athéna Andershon",
-   "quantite": 2,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1843.79, 6517.86, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "796",
-    "playerdiscord": "726178701867221134",
-    "playername": "LoudTurtle7573",
-    "playercharacter": "Athéna Andershon",
-    "playerid": "196876",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1567577273920389389-5",
-   "t": "2026-11-04T16:32:26.280000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 1x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -1843.79, 6517.86, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 796\nplayerDiscord : 726178701867221134\nplayerName : LoudTurtle7573\nplayerCharacter : Athéna Andershon\nplayerId : 196876\nitemId : oil",
-   "nom": "Athéna Andershon",
-   "quantite": 1,
    "montant": null,
    "type": "coffre_retrait",
    "salon": "1245400913066066099",
