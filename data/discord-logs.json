@@ -1,11 +1,27 @@
 {
- "maj": "2026-11-07T08:57:35.149940+00:00",
+ "maj": "2026-11-07T08:59:34.954093+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1568550088698101782",
+   "t": "2026-11-07T08:58:03.397000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 346x Pétrole Raffiné pour 3460$ par Ana Fox. 1730$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 346,
+   "montant": 3460,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1568549837052452865",
    "t": "2026-11-07T08:57:03.400000+00:00",
@@ -93949,30 +93965,6 @@
   },
   {
    "id": "1567586077290528823-2",
-   "t": "2026-11-04T17:07:25.167000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 156x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1843.02, 6518.22, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 796\nplayerDiscord : 726178701867221134\nplayerName : LoudTurtle7573\nplayerCharacter : Athéna Andershon\nplayerId : 196876\nitemId : refinedoil",
-   "nom": "Athéna Andershon",
-   "quantite": 156,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1843.02, 6518.22, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "796",
-    "playerdiscord": "726178701867221134",
-    "playername": "LoudTurtle7573",
-    "playercharacter": "Athéna Andershon",
-    "playerid": "196876",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1567586077290528823-3",
    "t": "2026-11-04T17:07:25.167000+00:00",
    "auteur": "Logs - Coffre",
    "texte": "Coffre\na retiré 156x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1843.02, 6518.22, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 796\nplayerDiscord : 726178701867221134\nplayerName : LoudTurtle7573\nplayerCharacter : Athéna Andershon\nplayerId : 196876\nitemId : refinedoil",
