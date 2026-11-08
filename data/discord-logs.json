@@ -1,11 +1,27 @@
 {
- "maj": "2026-11-08T11:17:33.643409+00:00",
+ "maj": "2026-11-08T11:19:34.643066+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1568947758411284543",
+   "t": "2026-11-08T11:18:15.245000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 307x Pétrole Raffiné pour 3070$ par Xavier Collins. 1535$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 307,
+   "montant": 3070,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1568947500088430693",
    "t": "2026-11-08T11:17:13.656000+00:00",
@@ -93746,30 +93762,6 @@
     "playercharacter": "Nikko Mount",
     "playerid": "276376",
     "itemid": "oil"
-   }
-  },
-  {
-   "id": "1567904161486610458-0",
-   "t": "2026-11-05T14:11:22.349000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 1x Carte Accés POST OP dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1815.24, 6565.64, 16.73\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6630\nplayerDiscord : 1053366471574687844\nplayerName : SlowMouse3303\nplayerCharacter : Emma Collins-rodriguez\nplayerId : 227799\nitemId : _cartepostop",
-   "nom": "Emma Collins-rodriguez",
-   "quantite": 1,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1815.24, 6565.64, 16.73",
-    "targetposition": "-1815.66, 6565.56, 15.98",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6630",
-    "playerdiscord": "1053366471574687844",
-    "playername": "SlowMouse3303",
-    "playercharacter": "Emma Collins-rodriguez",
-    "playerid": "227799",
-    "itemid": "_cartepostop"
    }
   }
  ]
