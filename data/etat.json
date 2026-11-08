@@ -21370,6 +21370,22 @@
    "public": true,
    "maj": "2026-09-16T11:47:16.417Z"
   },
+  "stella collins": {
+   "nom": "Stella Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-14T13:20:17.287Z"
+  },
+  "julio collins": {
+   "nom": "Julio Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T00:06:23.240Z"
+  },
   "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿": {
    "nom": "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿",
    "photo": "",
@@ -21393,22 +21409,6 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T16:48:15.042Z"
-  },
-  "stella collins": {
-   "nom": "Stella Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-14T13:20:17.287Z"
-  },
-  "julio collins": {
-   "nom": "Julio Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T00:06:23.240Z"
   },
   "william rodriguez-collins": {
    "nom": "William Rodriguez-collins",
@@ -58042,18 +58042,18 @@
    "sem": 44
   }
  },
- "_cid": "vcu40s64tbp",
- "_maj": 1794180034774,
- "_rev": "ddues5hcrfo-mw8ggzrh",
+ "_cid": "iekwdxm8bdq",
+ "_maj": 1794180089308,
+ "_rev": "yssy49ks05r-mw8gi4nd",
  "_majSec": {
   "fer": 1794162493780,
   "fact": 1794162343426,
-  "users": 1794179378279,
+  "users": 1794180086558,
   "weeks": 1794179966930,
   "sheets": 1794179978854,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1794179978854,
+  "journal": 1794180086558,
   "pending": 1793561085750,
   "prodDer": 1794148710212,
   "runners": 1794179978885,
@@ -58061,13 +58061,13 @@
   "imported": 1793561085750,
   "settings": 1794179966930,
   "closeUndo": 1794179966930,
-  "quotasCom": 1794179966930,
+  "quotasCom": 1794180089308,
   "bilanExtra": 1793986683739,
   "bilanForce": 1793561085750,
   "primesExtra": 1793561085750,
   "quotasComHist": 1794179966930,
   "profils": 1793561085750,
-  "_tables": 1794180030832,
+  "_tables": 1794180086430,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -58084,6 +58084,16 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1794180087493,
+   "u": "Julio Collins",
+   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
+  },
+  {
+   "t": 1794180087353,
+   "u": "?",
+   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
+  },
   {
    "t": 1794179981105,
    "u": "Diego Herrera",
@@ -59573,16 +59583,6 @@
    "t": 1793124933246,
    "u": "Laurent Roquel",
    "a": "Vente rapide sans facture : 5 bidon(s) — Citoyen (vendeur : Laurent Roquel)"
-  },
-  {
-   "t": 1793123428118,
-   "u": "Diego Herrera",
-   "a": "Achats de fer : 4 relevé(s) repris du salon"
-  },
-  {
-   "t": 1793123247969,
-   "u": "Diego Herrera",
-   "a": "Grades RH alignés sur Discord : Bjorn Frost · Interimaire → Commercial"
   }
  ],
  "prodDer": {
@@ -60076,7 +60076,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-08T23:20:40.973Z",
+  "maj": "2026-11-08T23:21:33.961Z",
   "semaine": 46,
   "totalBarils": 0,
   "ca": 0,
@@ -60194,7 +60194,10 @@
  },
  "quotasCom": {
   "sem": 46,
-  "achats": {}
+  "achats": {},
+  "vendus": 0,
+  "parPers": 0,
+  "ferPers": 0
  },
  "bilanExtra": [
   {
