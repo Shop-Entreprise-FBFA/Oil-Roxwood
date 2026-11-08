@@ -22428,14 +22428,6 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
-  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -22459,6 +22451,14 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T00:06:23.240Z"
+  },
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -59052,9 +59052,9 @@
    "sem": 43
   }
  },
- "_cid": "bot",
- "_maj": 1794101352935,
- "_rev": "755eowb9w25-mw702dgd",
+ "_cid": "vcu40s64tbp",
+ "_maj": 1794136560583,
+ "_rev": "m42l36c85yk-mw7ql6k0",
  "_majSec": {
   "fer": 1794089459012,
   "fact": 1794003711893,
@@ -59063,11 +59063,11 @@
   "sheets": 1794074944778,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1794089873279,
+  "journal": 1794136560536,
   "pending": 1793561085750,
   "prodDer": 1794055933949,
   "runners": 1793986480071,
-  "absences": 1793997713472,
+  "absences": 1794136560536,
   "imported": 1793561085750,
   "settings": 1793577441993,
   "closeUndo": 1793577441993,
@@ -59077,7 +59077,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1793577441993,
   "profils": 1793561085750,
-  "_tables": 1794101352935,
+  "_tables": 1794136560583,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -59094,6 +59094,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1794136562244,
+   "u": "Diego Herrera",
+   "a": "Absences Discord reprises : Ryan Brooks"
+  },
   {
    "t": 1794089877221,
    "u": "Julio Collins",
@@ -60588,11 +60593,6 @@
    "t": 1793034726169,
    "u": "Diego Herrera",
    "a": "Absence déclarée : Jordan Impreza du 26/10/2026 au 12/11/2026"
-  },
-  {
-   "t": 1793031236655,
-   "u": "Stella Collins",
-   "a": "Absences Discord reprises : Mikaël Owens"
   }
  ],
  "prodDer": {
@@ -61096,10 +61096,20 @@
    "motif": "soucis de santé",
    "par": "Stella Collins",
    "auto": true
+  },
+  {
+   "id": 1794136571218,
+   "nom": "Ryan Brooks",
+   "du": "2026-11-08",
+   "au": "2026-12-08",
+   "srcId": "1794101352136",
+   "motif": "Repos forcé après opération",
+   "par": "⚫ Diego Herrera",
+   "auto": true
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-07T22:53:38.845Z",
+  "maj": "2026-11-08T11:16:06.385Z",
   "semaine": 45,
   "totalBarils": 152811,
   "ca": 764055,
