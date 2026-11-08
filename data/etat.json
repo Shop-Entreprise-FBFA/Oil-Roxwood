@@ -58935,7 +58935,7 @@
    "Comptable": 0,
    "Graphiste": 0,
    "Commercial": 0,
-   "Responsable Commercial": 0,
+   "Responsable Commercial": 20000,
    "Assistant de Direction": 0,
    "Responsable Runner": 0
   },
@@ -59139,8 +59139,8 @@
   }
  },
  "_cid": "vcu40s64tbp",
- "_maj": 1794161688827,
- "_rev": "jq7yeu3pi-mw85k0yy",
+ "_maj": 1794161723060,
+ "_rev": "oygcwkx9adf-mw85kfel",
  "_majSec": {
   "fer": 1794160484730,
   "fact": 1794003711893,
@@ -59149,13 +59149,13 @@
   "sheets": 1794158910807,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1794160500997,
+  "journal": 1794161723060,
   "pending": 1793561085750,
   "prodDer": 1794148710212,
   "runners": 1794158854083,
   "absences": 1794136560536,
   "imported": 1793561085750,
-  "settings": 1793577441993,
+  "settings": 1794161721606,
   "closeUndo": 1793577441993,
   "quotasCom": 1794145515435,
   "bilanExtra": 1793986683739,
@@ -59163,7 +59163,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1793577441993,
   "profils": 1793561085750,
-  "_tables": 1794161688827,
+  "_tables": 1794161721606,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -59180,6 +59180,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1794161724319,
+   "u": "Diego Herrera",
+   "a": "Modification des paramètres"
+  },
   {
    "t": 1794160486008,
    "u": "Diego Herrera",
@@ -60674,11 +60679,6 @@
    "t": 1793102144549,
    "u": "Emma Collins-rodriguez",
    "a": "Facture n°253181 modifiée — total 84 240 $ → 81 000 $"
-  },
-  {
-   "t": 1793101904401,
-   "u": "Diego Herrera",
-   "a": "Contrat(s) signé(s) via Discord : Luc Rouza"
   }
  ],
  "prodDer": {
@@ -61202,7 +61202,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-08T18:15:06.730Z",
+  "maj": "2026-11-08T18:15:25.437Z",
   "semaine": 45,
   "totalBarils": 213388,
   "ca": 1066940,
