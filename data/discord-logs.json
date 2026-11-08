@@ -1,11 +1,35 @@
 {
- "maj": "2026-11-08T20:39:33.986477+00:00",
+ "maj": "2026-11-08T20:45:37.694961+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1569090453930905631",
+   "t": "2026-11-08T20:45:16.508000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 44x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3085.78, 6819.88, 44.73\ntargetPosition : -3086.26, 6819.89, 43.78\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 708\nplayerDiscord : 826526979204841482\nplayerName : Orion\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : oil",
+   "nom": "Diego Herrera",
+   "quantite": 44,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-3085.78, 6819.88, 44.73",
+    "targetposition": "-3086.26, 6819.89, 43.78",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "708",
+    "playerdiscord": "826526979204841482",
+    "playername": "Orion",
+    "playercharacter": "Diego Herrera",
+    "playerid": "231487",
+    "itemid": "oil"
+   }
+  },
   {
    "id": "1569088668176748578-0",
    "t": "2026-11-08T20:38:10.751000+00:00",
@@ -92558,62 +92582,6 @@
     "playercharacter": "Clara Soules",
     "playerid": "380202",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1568003269337555045",
-   "t": "2026-11-05T20:45:11.502000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 138x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1845.59, 6515.27, 16.73\ntargetPosition : -1845.91, 6514.70, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1798\nplayerDiscord : 950886433508450344\nplayerName : BreezyCat1053\nplayerCharacter : Tyrese Jackson\nplayerId : 384737\nitemId : refinedoil",
-   "nom": "Tyrese Jackson",
-   "quantite": 138,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1845.59, 6515.27, 16.73",
-    "targetposition": "-1845.91, 6514.70, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "1798",
-    "playerdiscord": "950886433508450344",
-    "playername": "BreezyCat1053",
-    "playercharacter": "Tyrese Jackson",
-    "playerid": "384737",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1568002271852372029",
-   "t": "2026-11-05T20:41:13.683000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 648x Pétrole Raffiné pour 6480$ par Jack Berthier. 3240$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 648,
-   "montant": 6480,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1568002017652379659",
-   "t": "2026-11-05T20:40:13.077000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 444x Pétrole Raffiné pour 4440$ par Lyna Jones. 2220$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 444,
-   "montant": 4440,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
