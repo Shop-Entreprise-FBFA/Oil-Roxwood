@@ -14399,7 +14399,14 @@
     "entreprise": "klan-ozumiya"
    }
   ],
-  "ventesSem": [],
+  "ventesSem": [
+   {
+    "date": "2026-11-08",
+    "client": "Citoyen ⚡",
+    "quantite": 100,
+    "qui": "Julio Collins"
+   }
+  ],
   "collection": [
    {
     "nom": "Nom",
@@ -58043,17 +58050,17 @@
   }
  },
  "_cid": "iekwdxm8bdq",
- "_maj": 1794180089308,
- "_rev": "yssy49ks05r-mw8gi4nd",
+ "_maj": 1794180105339,
+ "_rev": "o3xcuwrgo-mw8gier1",
  "_majSec": {
   "fer": 1794162493780,
   "fact": 1794162343426,
   "users": 1794180086558,
   "weeks": 1794179966930,
-  "sheets": 1794179978854,
+  "sheets": 1794180105339,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1794180086558,
+  "journal": 1794180105339,
   "pending": 1793561085750,
   "prodDer": 1794148710212,
   "runners": 1794179978885,
@@ -58067,7 +58074,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794179966930,
   "profils": 1793561085750,
-  "_tables": 1794180086430,
+  "_tables": 1794180105339,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -58084,6 +58091,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1794180106274,
+   "u": "Julio Collins",
+   "a": "Vente rapide sans facture : 100 bidon(s) — Citoyen (vendeur : Julio Collins)"
+  },
   {
    "t": 1794180087493,
    "u": "Julio Collins",
@@ -59578,11 +59590,6 @@
    "t": 1793128845872,
    "u": "Diego Herrera",
    "a": "Absence supprimée : CHEB Hassan (du 27/10/2026 au 16/11/2026)"
-  },
-  {
-   "t": 1793124933246,
-   "u": "Laurent Roquel",
-   "a": "Vente rapide sans facture : 5 bidon(s) — Citoyen (vendeur : Laurent Roquel)"
   }
  ],
  "prodDer": {
@@ -60076,7 +60083,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-08T23:21:33.961Z",
+  "maj": "2026-11-08T23:21:47.053Z",
   "semaine": 46,
   "totalBarils": 0,
   "ca": 0,
