@@ -1,11 +1,35 @@
 {
- "maj": "2026-11-08T11:45:38.667022+00:00",
+ "maj": "2026-11-08T11:47:32.273885+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1568955057267941408",
+   "t": "2026-11-08T11:47:15.428000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 142x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1844.77, 6518.15, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6218\nplayerDiscord : 198789252329373706\nplayerName : Jack Berthier\nplayerCharacter : Jack Berthier\nplayerId : 276642\nitemId : refinedoil",
+   "nom": "Jack Berthier",
+   "quantite": 142,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1844.77, 6518.15, 16.73",
+    "targetposition": "-1843.83, 6518.10, 15.74",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "6218",
+    "playerdiscord": "198789252329373706",
+    "playername": "Jack Berthier",
+    "playercharacter": "Jack Berthier",
+    "playerid": "276642",
+    "itemid": "refinedoil"
+   }
+  },
   {
    "id": "1568954048776765592",
    "t": "2026-11-08T11:43:14.985000+00:00",
@@ -93706,22 +93730,6 @@
     "playercharacter": "Nikko Mount",
     "playerid": "276376",
     "itemid": "oil"
-   }
-  },
-  {
-   "id": "1567904680258965606",
-   "t": "2026-11-05T14:13:26.034000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 654x Pétrole Raffiné pour 6540$ par Athéna Andershon. 3270$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 654,
-   "montant": 6540,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
