@@ -1,11 +1,32 @@
 {
- "maj": "2026-11-08T12:25:33.720731+00:00",
+ "maj": "2026-11-08T12:27:32.716604+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1568965109504544841",
+   "t": "2026-11-08T12:27:12.068000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 6974\nplayerDiscord : 1075113477405933629\nplayerName : 60gaston\nplayerCharacter : Jason Brooks\nplayerId : 384594\nvehiclePlate : AS5715VX\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Jason Brooks",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "6974",
+    "playerdiscord": "1075113477405933629",
+    "playername": "60gaston",
+    "playercharacter": "Jason Brooks",
+    "playerid": "384594",
+    "vehicleplate": "AS5715VX",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1568956825590562817",
    "t": "2026-11-08T11:54:17.029000+00:00",
@@ -93698,30 +93719,6 @@
     "playercharacter": "Athéna Andershon",
     "playerid": "196876",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1567905158061498426-6",
-   "t": "2026-11-05T14:15:19.951000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 16x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3089.78, 6819.06, 44.73\ntargetPosition : -3090.06, 6818.50, 43.97\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6729\nplayerDiscord : 334423976182939648\nplayerName : MoodyCat2429\nplayerCharacter : Nikko Mount\nplayerId : 276376\nitemId : oil",
-   "nom": "Nikko Mount",
-   "quantite": 16,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-3089.78, 6819.06, 44.73",
-    "targetposition": "-3090.06, 6818.50, 43.97",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6729",
-    "playerdiscord": "334423976182939648",
-    "playername": "MoodyCat2429",
-    "playercharacter": "Nikko Mount",
-    "playerid": "276376",
-    "itemid": "oil"
    }
   }
  ]
