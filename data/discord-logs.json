@@ -1,11 +1,51 @@
 {
- "maj": "2026-11-09T22:23:33.237753+00:00",
+ "maj": "2026-11-09T22:25:32.028606+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1569477948040417314",
+   "t": "2026-11-09T22:25:02.303000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 154x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1844.99, 6514.23, 16.73\ntargetPosition : -1845.91, 6514.70, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3232\nplayerDiscord : 487891709821190145\nplayerName : IcyNewt9023\nplayerCharacter : Luc Rouza\nplayerId : 382769\nitemId : refinedoil",
+   "nom": "Luc Rouza",
+   "quantite": 154,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1844.99, 6514.23, 16.73",
+    "targetposition": "-1845.91, 6514.70, 15.74",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "3232",
+    "playerdiscord": "487891709821190145",
+    "playername": "IcyNewt9023",
+    "playercharacter": "Luc Rouza",
+    "playerid": "382769",
+    "itemid": "refinedoil"
+   }
+  },
+  {
+   "id": "1569477753240031273",
+   "t": "2026-11-09T22:24:15.859000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 77x Pétrole Raffiné pour 770$ par Maya Haddad. 385$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 77,
+   "montant": 770,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1569477443360653365-0",
    "t": "2026-11-09T22:23:01.978000+00:00",
