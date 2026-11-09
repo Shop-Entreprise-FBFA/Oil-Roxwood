@@ -1,11 +1,56 @@
 {
- "maj": "2026-11-09T23:37:31.317340+00:00",
+ "maj": "2026-11-09T23:41:31.799175+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1569497072225353764",
+   "t": "2026-11-09T23:41:01.864000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 76x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1850.03, 6515.18, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 4756\nplayerDiscord : 299584476193882122\nplayerName : Travis Walker | Tesla_wav\nplayerCharacter : Marcus Vance\nplayerId : 376965\nitemId : refinedoil",
+   "nom": "Marcus Vance",
+   "quantite": 76,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1850.03, 6515.18, 16.73",
+    "targetposition": "-1850.63, 6515.15, 15.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "4756",
+    "playerdiscord": "299584476193882122",
+    "playername": "Travis Walker | Tesla_wav",
+    "playercharacter": "Marcus Vance",
+    "playerid": "376965",
+    "itemid": "refinedoil"
+   }
+  },
+  {
+   "id": "1569496821326418011",
+   "t": "2026-11-09T23:40:02.045000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 4854\nplayerDiscord : 709363912071446598\nplayerName : FuzzyOtter7510\nplayerCharacter : Ruby Saavedra\nplayerId : 160625\nvehiclePlate : AS5715VX\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Ruby Saavedra",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "4854",
+    "playerdiscord": "709363912071446598",
+    "playername": "FuzzyOtter7510",
+    "playercharacter": "Ruby Saavedra",
+    "playerid": "160625",
+    "vehicleplate": "AS5715VX",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1569495815209099272-0",
    "t": "2026-11-09T23:36:02.168000+00:00",
@@ -83709,30 +83754,6 @@
    "champs": {
     "position": "-1845.18, 6518.31, 16.73",
     "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "2790",
-    "playerdiscord": "198789252329373706",
-    "playername": "Jack Berthier",
-    "playercharacter": "Jack Berthier",
-    "playerid": "276642",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1568409154282983430",
-   "t": "2026-11-06T23:38:02.014000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 107x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1851.05, 6515.13, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 2790\nplayerDiscord : 198789252329373706\nplayerName : Jack Berthier\nplayerCharacter : Jack Berthier\nplayerId : 276642\nitemId : refinedoil",
-   "nom": "Jack Berthier",
-   "quantite": 107,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1851.05, 6515.13, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
     "jobid": "76",
     "jobname": "Oil RoxWood",
     "playernetid": "2790",
