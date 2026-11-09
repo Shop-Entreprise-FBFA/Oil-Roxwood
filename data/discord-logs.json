@@ -1,11 +1,51 @@
 {
- "maj": "2026-11-09T04:49:32.028756+00:00",
+ "maj": "2026-11-09T04:51:32.211479+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1569212459984879708",
+   "t": "2026-11-09T04:50:05.018000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 660x Pétrole Raffiné pour 6600$ par Bryan Storm. 3300$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 660,
+   "montant": 6600,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1569212456239239221",
+   "t": "2026-11-09T04:50:04.125000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\na retiré 15x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -1843.45, 6518.37, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 5809\nplayerDiscord : 726178701867221134\nplayerName : LoudTurtle7573\nplayerCharacter : Athéna Andershon\nplayerId : 196876\nitemId : oil",
+   "nom": "Athéna Andershon",
+   "quantite": 15,
+   "montant": null,
+   "type": "coffre_retrait",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1843.45, 6518.37, 16.73",
+    "targetposition": "-1843.83, 6518.10, 15.74",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "5809",
+    "playerdiscord": "726178701867221134",
+    "playername": "LoudTurtle7573",
+    "playercharacter": "Athéna Andershon",
+    "playerid": "196876",
+    "itemid": "oil"
+   }
+  },
   {
    "id": "1569212202429317143-0",
    "t": "2026-11-09T04:49:03.612000+00:00",
