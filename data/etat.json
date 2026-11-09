@@ -14502,6 +14502,20 @@
     "client": "Employé — Elliot Adkins ⚡",
     "quantite": 30,
     "qui": "Julio Collins"
+   },
+   {
+    "date": "2026-11-09",
+    "client": "Maja-13",
+    "quantite": 150,
+    "qui": "Julio Collins",
+    "fact": 253201
+   },
+   {
+    "date": "2026-11-09",
+    "client": "Maja-13",
+    "quantite": 150,
+    "qui": "Laurent Roquel",
+    "fact": 253201
    }
   ],
   "collection": [
@@ -15933,7 +15947,7 @@
     "adresse": "Los Santos",
     "tel": "",
     "rib": "",
-    "lastCmd": "2026-10-09",
+    "lastCmd": "2026-11-09",
     "type": "famille",
     "salon": "1558197407039356989"
    },
@@ -17002,8 +17016,38 @@
     "prix": 150
    }
   ],
-  "compteur": 253201,
+  "compteur": 253202,
   "factures": [
+   {
+    "num": 253201,
+    "date": "2026-11-09",
+    "client": "Maja-13",
+    "emetteur": "Julio Collins, Laurent Roquel",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 300,
+      "tva": 0.05,
+      "pu": 180,
+      "ht": 54000,
+      "ttc": 56700,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 54000,
+    "ttc": 56700,
+    "poids": 600,
+    "statut": "attente",
+    "envoi": {
+     "t": 1794249622216,
+     "par": "Julio Collins",
+     "statut": "en_cours",
+     "ordre": 1794249627311,
+     "rapport": ""
+    }
+   },
    {
     "num": 253200,
     "date": "2026-11-09",
@@ -21504,6 +21548,22 @@
    "public": true,
    "maj": "2026-09-16T11:47:16.417Z"
   },
+  "stella collins": {
+   "nom": "Stella Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-14T13:20:17.287Z"
+  },
+  "julio collins": {
+   "nom": "Julio Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T00:06:23.240Z"
+  },
   "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿": {
    "nom": "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿",
    "photo": "",
@@ -21527,22 +21587,6 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T16:48:15.042Z"
-  },
-  "stella collins": {
-   "nom": "Stella Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-14T13:20:17.287Z"
-  },
-  "julio collins": {
-   "nom": "Julio Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T00:06:23.240Z"
   },
   "william rodriguez-collins": {
    "nom": "William Rodriguez-collins",
@@ -58184,15 +58228,15 @@
    "sem": 44
   }
  },
- "_cid": "i6mj02l0b5m",
- "_maj": 1794249556444,
- "_rev": "rayec4q4byi-mw9lw3m6",
+ "_cid": "pz83geioxe",
+ "_maj": 1794249622217,
+ "_rev": "9naw5uele5-mw9lwgex",
  "_majSec": {
   "fer": 1794218540799,
-  "fact": 1794218775655,
+  "fact": 1794249622217,
   "users": 1794249556444,
   "weeks": 1794179966930,
-  "sheets": 1794245050896,
+  "sheets": 1794249621683,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
   "journal": 1794249556444,
@@ -58209,7 +58253,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794179966930,
   "profils": 1793561085750,
-  "_tables": 1794249544825,
+  "_tables": 1794249622207,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -60218,13 +60262,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-09T18:40:10.062Z",
+  "maj": "2026-11-09T18:40:26.649Z",
   "semaine": 46,
   "totalBarils": 0,
   "ca": 0,
   "objectif": 375000,
   "effectif": 106,
-  "clientsServis": 184,
+  "clientsServis": 185,
   "theme": "",
   "top3": [],
   "runners": [],
@@ -62869,6 +62913,48 @@
     "id": 1794218416161,
     "statut": "fait",
     "rapport": "Facture n°253200 postee dans le salon 1556904652900147243."
+   },
+   {
+    "type": "facture_ticket",
+    "payload": {
+     "num": 253201,
+     "salon": "1558197407039356989",
+     "reedition": false,
+     "facture": {
+      "num": 253201,
+      "date": "2026-11-09",
+      "client": "Maja-13",
+      "emetteur": "Julio Collins, Laurent Roquel",
+      "postop": false,
+      "lignes": [
+       {
+        "ref": "CMD",
+        "qte": 300,
+        "tva": 0.05,
+        "pu": 180,
+        "ht": 54000,
+        "ttc": 56700,
+        "desc": "bidons d'essence "
+       }
+      ],
+      "offert": 0,
+      "ht": 54000,
+      "ttc": 56700,
+      "poids": 600,
+      "statut": "attente"
+     },
+     "client": {
+      "nom": "Maja-13",
+      "adresse": "Los Santos",
+      "tel": "",
+      "rib": "",
+      "lastCmd": "2026-11-09",
+      "type": "famille",
+      "salon": "1558197407039356989"
+     },
+     "par": "Julio Collins"
+    },
+    "id": 1794249627311
    }
   ],
   "oilroxwood_coffres": [
