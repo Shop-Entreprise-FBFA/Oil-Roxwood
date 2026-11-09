@@ -1,11 +1,35 @@
 {
- "maj": "2026-11-09T23:49:29.881966+00:00",
+ "maj": "2026-11-09T23:51:31.459055+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1569499337451376773",
+   "t": "2026-11-09T23:50:01.936000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 74x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1850.15, 6514.29, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 4756\nplayerDiscord : 299584476193882122\nplayerName : Travis Walker | Tesla_wav\nplayerCharacter : Marcus Vance\nplayerId : 376965\nitemId : refinedoil",
+   "nom": "Marcus Vance",
+   "quantite": 74,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1850.15, 6514.29, 16.73",
+    "targetposition": "-1850.63, 6515.15, 15.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "4756",
+    "playerdiscord": "299584476193882122",
+    "playername": "Travis Walker | Tesla_wav",
+    "playercharacter": "Marcus Vance",
+    "playerid": "376965",
+    "itemid": "refinedoil"
+   }
+  },
   {
    "id": "1569498848748113972-0",
    "t": "2026-11-09T23:48:05.420000+00:00",
@@ -83756,22 +83780,6 @@
    "nom": null,
    "quantite": 641,
    "montant": 6410,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1568412217982845039",
-   "t": "2026-11-06T23:50:12.457000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 643x Pétrole Raffiné pour 6430$ par Kader Benali. 3215$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 643,
-   "montant": 6430,
    "type": "vente",
    "salon": "1245400913473179729",
    "champs": {
