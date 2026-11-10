@@ -1,11 +1,27 @@
 {
- "maj": "2026-11-10T11:39:31.052700+00:00",
+ "maj": "2026-11-10T11:47:33.040090+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1569679781014933565",
+   "t": "2026-11-10T11:47:03.034000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 639x Pétrole Raffiné pour 6390$ par Jeff Beaumont. 3195$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 639,
+   "montant": 6390,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1569677759297359975-0",
    "t": "2026-11-10T11:39:01.019000+00:00",
@@ -81168,22 +81184,6 @@
     "playercharacter": "Xavier Collins",
     "playerid": "292769",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1568592135589072927",
-   "t": "2026-11-07T11:45:08.157000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 318x Pétrole Raffiné pour 3180$ par Fred Berthier. 1590$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 318,
-   "montant": 3180,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
