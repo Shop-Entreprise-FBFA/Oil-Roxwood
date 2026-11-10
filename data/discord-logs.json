@@ -1,11 +1,80 @@
 {
- "maj": "2026-11-10T09:33:28.094912+00:00",
+ "maj": "2026-11-10T09:35:30.847558+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1569646309218983957",
+   "t": "2026-11-10T09:34:02.736000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 6029\nplayerDiscord : 867577351173177374\nplayerName : Mason\nplayerCharacter : Bryan Storm\nplayerId : 298482\nvehiclePlate : IL4818AV\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Bryan Storm",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "6029",
+    "playerdiscord": "867577351173177374",
+    "playername": "Mason",
+    "playercharacter": "Bryan Storm",
+    "playerid": "298482",
+    "vehicleplate": "IL4818AV",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1569646303477243949-0",
+   "t": "2026-11-10T09:34:01.367000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 22x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3085.33, 6815.60, 44.73\ntargetPosition : -3084.39, 6815.87, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 5880\nplayerDiscord : 767332288744128512\nplayerName : JULIO COLLINS\nplayerCharacter : Julio Collins\nplayerId : 356873\nitemId : oil",
+   "nom": "Julio Collins",
+   "quantite": 22,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-3085.33, 6815.60, 44.73",
+    "targetposition": "-3084.39, 6815.87, 43.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "5880",
+    "playerdiscord": "767332288744128512",
+    "playername": "JULIO COLLINS",
+    "playercharacter": "Julio Collins",
+    "playerid": "356873",
+    "itemid": "oil"
+   }
+  },
+  {
+   "id": "1569646303477243949-1",
+   "t": "2026-11-10T09:34:01.367000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 8x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3085.33, 6815.60, 44.73\ntargetPosition : -3084.39, 6815.87, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 5880\nplayerDiscord : 767332288744128512\nplayerName : JULIO COLLINS\nplayerCharacter : Julio Collins\nplayerId : 356873\nitemId : oil",
+   "nom": "Julio Collins",
+   "quantite": 8,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-3085.33, 6815.60, 44.73",
+    "targetposition": "-3084.39, 6815.87, 43.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "5880",
+    "playerdiscord": "767332288744128512",
+    "playername": "JULIO COLLINS",
+    "playercharacter": "Julio Collins",
+    "playerid": "356873",
+    "itemid": "oil"
+   }
+  },
   {
    "id": "1569646049436504189-0",
    "t": "2026-11-10T09:33:00.799000+00:00",
@@ -81105,102 +81174,6 @@
     "itemid": "refinedoil",
     "jobid": "76",
     "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1568559387835109479-0",
-   "t": "2026-11-07T09:35:00.484000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 141x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1844.82, 6517.38, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 5998\nplayerDiscord : 198789252329373706\nplayerName : Jack Berthier\nplayerCharacter : Jack Berthier\nplayerId : 276642\nitemId : refinedoil",
-   "nom": "Jack Berthier",
-   "quantite": 141,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1844.82, 6517.38, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "5998",
-    "playerdiscord": "198789252329373706",
-    "playername": "Jack Berthier",
-    "playercharacter": "Jack Berthier",
-    "playerid": "276642",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1568559387835109479-1",
-   "t": "2026-11-07T09:35:00.484000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 141x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1844.44, 6517.79, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 5998\nplayerDiscord : 198789252329373706\nplayerName : Jack Berthier\nplayerCharacter : Jack Berthier\nplayerId : 276642\nitemId : refinedoil",
-   "nom": "Jack Berthier",
-   "quantite": 141,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1844.44, 6517.79, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "5998",
-    "playerdiscord": "198789252329373706",
-    "playername": "Jack Berthier",
-    "playercharacter": "Jack Berthier",
-    "playerid": "276642",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1568559387835109479-2",
-   "t": "2026-11-07T09:35:00.484000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 38x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1845.10, 6518.45, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 5998\nplayerDiscord : 198789252329373706\nplayerName : Jack Berthier\nplayerCharacter : Jack Berthier\nplayerId : 276642\nitemId : refinedoil",
-   "nom": "Jack Berthier",
-   "quantite": 38,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1845.10, 6518.45, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "5998",
-    "playerdiscord": "198789252329373706",
-    "playername": "Jack Berthier",
-    "playercharacter": "Jack Berthier",
-    "playerid": "276642",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1568559138579947521",
-   "t": "2026-11-07T09:34:01.057000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 5x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1846.56, 6513.27, 16.73\ntargetPosition : -1845.91, 6514.70, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6032\nplayerDiscord : 1499848677986930882\nplayerName : CleverBeetle1673\nplayerCharacter : Clara Soules\nplayerId : 380202\nitemId : refinedoil",
-   "nom": "Clara Soules",
-   "quantite": 5,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1846.56, 6513.27, 16.73",
-    "targetposition": "-1845.91, 6514.70, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6032",
-    "playerdiscord": "1499848677986930882",
-    "playername": "CleverBeetle1673",
-    "playercharacter": "Clara Soules",
-    "playerid": "380202",
-    "itemid": "refinedoil"
    }
   }
  ]
