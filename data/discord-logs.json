@@ -1,11 +1,32 @@
 {
- "maj": "2026-11-10T10:41:33.147446+00:00",
+ "maj": "2026-11-10T10:51:31.195597+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1569665430866624614",
+   "t": "2026-11-10T10:50:01.692000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 6208\nplayerDiscord : 580059741426941982\nplayerName : MoodyToad0472\nplayerCharacter : Yann Zigzag\nplayerId : 380916\nvehiclePlate : DO6888RF\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Yann Zigzag",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "6208",
+    "playerdiscord": "580059741426941982",
+    "playername": "MoodyToad0472",
+    "playercharacter": "Yann Zigzag",
+    "playerid": "380916",
+    "vehicleplate": "DO6888RF",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1569662920650915842",
    "t": "2026-11-10T10:40:03.210000+00:00",
@@ -80928,22 +80949,6 @@
     "playercharacter": "Jack Berthier",
     "playerid": "276642",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1568577519542603777",
-   "t": "2026-11-07T10:47:03.420000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 413x Pétrole Raffiné pour 4130$ par Kader Benali. 2065$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 413,
-   "montant": 4130,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
