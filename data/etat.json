@@ -7613,6 +7613,76 @@
  "sheets": {
   "rh": [
    {
+    "nom": "Alessio Barone",
+    "grade": "Intérimaire",
+    "tel": "555611608",
+    "rib": "569015",
+    "idU": "385180",
+    "arrivee": "2026-11-09",
+    "discord": "500621189299830798",
+    "avert": "",
+    "contrat": true,
+    "recrut": "Diego Sypher",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
+    "nom": "Ezra Calderón",
+    "grade": "Intérimaire",
+    "tel": "55411395",
+    "rib": "566936",
+    "idU": "184731",
+    "arrivee": "2026-11-09",
+    "discord": "1561821387121758208",
+    "avert": "",
+    "contrat": true,
+    "recrut": "Diego Sypher",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
+    "nom": "Marco Sanchez",
+    "grade": "Intérimaire",
+    "tel": "555-803-725",
+    "rib": "559892",
+    "idU": "142012",
+    "arrivee": "2026-11-09",
+    "discord": "1383749459866812476",
+    "avert": "",
+    "contrat": true,
+    "recrut": "Diego Sypher",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
+    "nom": "Tony Merguez",
+    "grade": "Intérimaire",
+    "tel": "555-364-772",
+    "rib": "569018",
+    "idU": "385177",
+    "arrivee": "2026-11-09",
+    "discord": "688074148676632746",
+    "avert": "",
+    "contrat": true,
+    "recrut": "Diego Sypher",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
+    "nom": "Zoran Kross",
+    "grade": "Intérimaire",
+    "tel": "555859438",
+    "rib": "533276",
+    "idU": "359217",
+    "arrivee": "2026-11-09",
+    "discord": "1059871362967142511",
+    "avert": "",
+    "contrat": true,
+    "recrut": "Diego Sypher",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
     "nom": "Melka Kamel",
     "grade": "Intérimaire",
     "tel": "555628068",
@@ -7621,7 +7691,7 @@
     "arrivee": "2026-11-09",
     "discord": "1113967463856603224",
     "avert": "",
-    "contrat": false,
+    "contrat": true,
     "recrut": "Marco Bellini",
     "dernierService": "",
     "flagOut": false
@@ -59151,17 +59221,17 @@
   }
  },
  "_cid": "gb1pysfttcs",
- "_maj": 1794331106461,
- "_rev": "j9advaqi0bh-mwayey7v",
+ "_maj": 1794331136485,
+ "_rev": "qcjkk00be-mwayfitb",
  "_majSec": {
   "fer": 1794251858360,
   "fact": 1794298296740,
   "users": 1794298247363,
   "weeks": 1794179966930,
-  "sheets": 1794331069217,
+  "sheets": 1794331136485,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1794298247363,
+  "journal": 1794331136485,
   "pending": 1793561085750,
   "prodDer": 1794148710212,
   "runners": 1794331069245,
@@ -59175,7 +59245,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794179966930,
   "profils": 1793561085750,
-  "_tables": 1794331106461,
+  "_tables": 1794331136444,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -59183,15 +59253,25 @@
   "_affFix1": 1793561085750,
   "produits": 1793561085750,
   "_prodFix1": 1793561085750,
-  "_recruesIgnore": 1794245050886,
+  "_recruesIgnore": 1794331136444,
   "ventesAlias": 1793561085750,
   "_ventesIgnore": 1793561085750,
   "_avertVus": 1793561085750,
-  "_signeVus": 1794245050896
+  "_signeVus": 1794331136485
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1794331137151,
+   "u": "Diego Herrera",
+   "a": "Contrat(s) signé(s) via Discord : Melka Kamel, Zoran Kross, Tony Merguez…"
+  },
+  {
+   "t": 1794331137110,
+   "u": "Diego Herrera",
+   "a": "Recrutements Discord : 5 fiche(s) créée(s), 0 case(s) complétée(s) — Zoran Kross, Tony Merguez, Marco Sanchez…"
+  },
   {
    "t": 1794298253531,
    "u": "Julio Collins",
@@ -60681,16 +60761,6 @@
    "t": 1793208805796,
    "u": "Laurent Roquel",
    "a": "Achats de fer : 1 relevé(s) repris du salon"
-  },
-  {
-   "t": 1793208625894,
-   "u": "Laurent Roquel",
-   "a": "Achats de fer : 2 relevé(s) repris du salon"
-  },
-  {
-   "t": 1793207101812,
-   "u": "Laurent Roquel",
-   "a": "Achats de fer : 5 relevé(s) repris du salon"
   }
  ],
  "prodDer": {
@@ -61194,7 +61264,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-10T17:18:31.099Z",
+  "maj": "2026-11-10T17:18:57.791Z",
   "semaine": 46,
   "totalBarils": 60434,
   "ca": 302170,
@@ -66215,7 +66285,12 @@
   "1794238620718",
   "1794239692250",
   "1794239736311",
-  "1794239782398"
+  "1794239782398",
+  "1794252367538",
+  "1794252388755",
+  "1794253487466",
+  "1794256068205",
+  "1794261632156"
  ],
  "_signeVus": [
   "1789477305650",
@@ -66396,7 +66471,13 @@
   "1794238603274",
   "1794238679537",
   "1794239738311",
-  "1794239817960"
+  "1794239817960",
+  "1794245208972",
+  "1794252382086",
+  "1794252414319",
+  "1794253503201",
+  "1794256085126",
+  "1794261643043"
  ],
  "_agSupp": [
   "1789145270913",
