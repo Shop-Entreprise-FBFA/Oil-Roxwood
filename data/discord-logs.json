@@ -1,11 +1,27 @@
 {
- "maj": "2026-11-10T11:21:31.997602+00:00",
+ "maj": "2026-11-10T11:33:29.709106+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1569676006363627584",
+   "t": "2026-11-10T11:32:03.087000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 639x Pétrole Raffiné pour 6390$ par Jeff Beaumont. 3195$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 639,
+   "montant": 6390,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1569673228975341603-0",
    "t": "2026-11-10T11:21:00.906000+00:00",
@@ -80947,46 +80963,6 @@
     "playercharacter": "Bryan Storm",
     "playerid": "298482",
     "vehicleplate": "IL4818AV",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1568588588658991255",
-   "t": "2026-11-07T11:31:02.503000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 66x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1843.58, 6518.68, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6216\nplayerDiscord : 1346541845949186092\nplayerName : SoggyGoose0922\nplayerCharacter : Xavier Collins\nplayerId : 292769\nitemId : refinedoil",
-   "nom": "Xavier Collins",
-   "quantite": 66,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1843.58, 6518.68, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6216",
-    "playerdiscord": "1346541845949186092",
-    "playername": "SoggyGoose0922",
-    "playercharacter": "Xavier Collins",
-    "playerid": "292769",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1568588360027602955",
-   "t": "2026-11-07T11:30:07.993000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 462x Pétrole Raffiné pour 4620$ par Jason Palmer. 2310$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 462,
-   "montant": 4620,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
     "jobid": "76",
     "jobname": "Oil RoxWood"
    }
