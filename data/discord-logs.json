@@ -1,11 +1,27 @@
 {
- "maj": "2026-11-10T10:35:31.903964+00:00",
+ "maj": "2026-11-10T10:41:33.147446+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1569662920650915842",
+   "t": "2026-11-10T10:40:03.210000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 659x Pétrole Raffiné pour 6590$ par Bryan Storm. 3295$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 659,
+   "montant": 6590,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1569661408231301331",
    "t": "2026-11-10T10:34:02.621000+00:00",
@@ -80928,46 +80944,6 @@
     "itemid": "refinedoil",
     "jobid": "76",
     "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1568576015641346179",
-   "t": "2026-11-07T10:41:04.862000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 228x Pétrole Raffiné pour 2280$ par Kader Benali. 1140$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 228,
-   "montant": 2280,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1568575495434539131",
-   "t": "2026-11-07T10:39:00.835000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 36x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1842.37, 6518.02, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6216\nplayerDiscord : 1346541845949186092\nplayerName : SoggyGoose0922\nplayerCharacter : Xavier Collins\nplayerId : 292769\nitemId : refinedoil",
-   "nom": "Xavier Collins",
-   "quantite": 36,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1842.37, 6518.02, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6216",
-    "playerdiscord": "1346541845949186092",
-    "playername": "SoggyGoose0922",
-    "playercharacter": "Xavier Collins",
-    "playerid": "292769",
-    "itemid": "refinedoil"
    }
   }
  ]
