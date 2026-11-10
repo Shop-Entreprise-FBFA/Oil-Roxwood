@@ -15854,12 +15854,12 @@
    {
     "nom": "maxime smith",
     "grade": "Intérimaire",
-    "menus": false,
-    "boissons": false,
-    "bidons": false,
-    "date": "",
-    "don": "",
-    "permis": ""
+    "menus": true,
+    "boissons": true,
+    "bidons": true,
+    "date": "2026-11-09",
+    "don": "Julio Collins",
+    "permis": "ok"
    },
    {
     "nom": "Treyvon Delcruz",
@@ -21549,6 +21549,22 @@
    "public": true,
    "maj": "2026-09-16T11:47:16.417Z"
   },
+  "stella collins": {
+   "nom": "Stella Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-14T13:20:17.287Z"
+  },
+  "julio collins": {
+   "nom": "Julio Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T00:06:23.240Z"
+  },
   "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿": {
    "nom": "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿",
    "photo": "",
@@ -21572,22 +21588,6 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T16:48:15.042Z"
-  },
-  "stella collins": {
-   "nom": "Stella Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-14T13:20:17.287Z"
-  },
-  "julio collins": {
-   "nom": "Julio Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T00:06:23.240Z"
   },
   "william rodriguez-collins": {
    "nom": "William Rodriguez-collins",
@@ -58253,18 +58253,18 @@
    "sem": 44
   }
  },
- "_cid": "i6mj02l0b5m",
- "_maj": 1794264664844,
- "_rev": "4kqgfdmjwx-mw9uw3cb",
+ "_cid": "sav245xgtz",
+ "_maj": 1794298247363,
+ "_rev": "jb27ycbsyy-mwaeurx2",
  "_majSec": {
   "fer": 1794251858360,
   "fact": 1794251306114,
-  "users": 1794252257404,
+  "users": 1794298247363,
   "weeks": 1794179966930,
-  "sheets": 1794249621683,
+  "sheets": 1794252266761,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1794262925784,
+  "journal": 1794298247363,
   "pending": 1793561085750,
   "prodDer": 1794148710212,
   "runners": 1794179978885,
@@ -58278,7 +58278,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794179966930,
   "profils": 1793561085750,
-  "_tables": 1794264664844,
+  "_tables": 1794298247242,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -58295,6 +58295,16 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1794298253531,
+   "u": "Julio Collins",
+   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
+  },
+  {
+   "t": 1794298253403,
+   "u": "?",
+   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
+  },
   {
    "t": 1794262926103,
    "u": "Stella Collins",
@@ -59784,16 +59794,6 @@
    "t": 1793207101812,
    "u": "Laurent Roquel",
    "a": "Achats de fer : 5 relevé(s) repris du salon"
-  },
-  {
-   "t": 1793199333235,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1793199333101,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
   }
  ],
  "prodDer": {
@@ -60297,7 +60297,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-09T22:52:06.251Z",
+  "maj": "2026-11-10T08:10:57.110Z",
   "semaine": 46,
   "totalBarils": 0,
   "ca": 0,
