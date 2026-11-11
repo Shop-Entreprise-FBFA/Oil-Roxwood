@@ -59127,8 +59127,35 @@
   }
  ],
  "sanctions": {
-  "liste": [],
-  "log": []
+  "liste": [
+   {
+    "id": 1794417073901,
+    "nom": "Tyler Collins",
+    "discord": "593431852291850281",
+    "cat": "cond",
+    "st": "R",
+    "issue": "",
+    "date": "2026-11-11",
+    "motif": "test",
+    "par": "Diego Herrera",
+    "conv": "",
+    "convDate": "",
+    "retiree": null,
+    "exam": null
+   }
+  ],
+  "log": [
+   {
+    "t": 1794417073710,
+    "u": "Diego Herrera",
+    "a": "Rappel oral · Conduite inappropriée — « test »",
+    "nom": "Tyler Collins",
+    "cat": "cond",
+    "st": "R",
+    "act": "ajout",
+    "sid": 1794417073901
+   }
+  ]
  },
  "settings": {
   "top": [
@@ -59376,8 +59403,8 @@
   }
  },
  "_cid": "ic7hxgb2xyk",
- "_maj": 1794417036779,
- "_rev": "13k953ccx2ha-mwcdkrqy",
+ "_maj": 1794417071704,
+ "_rev": "lyij2vuwwoe-mwcdlg4m",
  "_majSec": {
   "fer": 1794397855705,
   "fact": 1794403449195,
@@ -59386,7 +59413,7 @@
   "sheets": 1794395564723,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1794403439448,
+  "journal": 1794417071677,
   "pending": 1793561085750,
   "prodDer": 1794148710212,
   "runners": 1794331069245,
@@ -59400,7 +59427,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794179966930,
   "profils": 1793561085750,
-  "_tables": 1794417036779,
+  "_tables": 1794417071704,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -59413,12 +59440,17 @@
   "_ventesIgnore": 1793561085750,
   "_avertVus": 1793561085750,
   "_signeVus": 1794341994922,
-  "sanctions": 1794415778802,
+  "sanctions": 1794417071677,
   "_sancFix1": 1794415778802
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1794417073710,
+   "u": "Diego Herrera",
+   "a": "Sanction : Tyler Collins — Rappel oral (Conduite inappropriée)"
+  },
   {
    "t": 1794403442186,
    "u": "Julio Collins",
@@ -60913,11 +60945,6 @@
    "t": 1793287674339,
    "u": "Diego Herrera",
    "a": "Contrat(s) signé(s) via Discord : MOHAMED HZRF, bendero alenzo, Dani Dubanc…"
-  },
-  {
-   "t": 1793287674316,
-   "u": "Diego Herrera",
-   "a": "Recrutements Discord : 5 fiche(s) créée(s), 0 case(s) complétée(s) — MOHAMED HZRF, bendero alenzo, Dani Dubanc…"
   }
  ],
  "prodDer": {
@@ -61421,7 +61448,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-11T17:10:43.066Z",
+  "maj": "2026-11-11T17:11:14.662Z",
   "semaine": 46,
   "totalBarils": 60434,
   "ca": 302170,
@@ -64261,6 +64288,22 @@
     "id": 1794395568835,
     "statut": "fait",
     "rapport": "Facture n°253204 postee dans le salon 1248767211045257348."
+   },
+   {
+    "type": "sanction",
+    "payload": {
+     "discord": "593431852291850281",
+     "nom": "Tyler Collins",
+     "cat": "cond",
+     "catNom": "Conduite inappropriée",
+     "st": "R",
+     "etape": "Rappel oral",
+     "rappel": true,
+     "motif": "test",
+     "par": "Diego Herrera",
+     "convocation": ""
+    },
+    "id": 1794417074206
    }
   ],
   "oilroxwood_coffres": [
