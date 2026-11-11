@@ -1,11 +1,35 @@
 {
- "maj": "2026-11-11T17:42:57.000310+00:00",
+ "maj": "2026-11-11T17:44:58.399851+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1570131843477545071",
+   "t": "2026-11-11T17:43:23.124000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 52x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3090.28, 6818.74, 44.73\ntargetPosition : -3090.06, 6818.50, 43.97\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 366\nplayerDiscord : 826526979204841482\nplayerName : Orion\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : oil",
+   "nom": "Diego Herrera",
+   "quantite": 52,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-3090.28, 6818.74, 44.73",
+    "targetposition": "-3090.06, 6818.50, 43.97",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "366",
+    "playerdiscord": "826526979204841482",
+    "playername": "Orion",
+    "playercharacter": "Diego Herrera",
+    "playerid": "231487",
+    "itemid": "oil"
+   }
+  },
   {
    "id": "1570131597632602148-0",
    "t": "2026-11-11T17:42:24.510000+00:00",
@@ -83316,27 +83340,6 @@
     "playercharacter": "Julio Collins",
     "playerid": "356873",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1569044901973467277",
-   "t": "2026-11-08T17:44:16.075000+00:00",
-   "auteur": "Logs - Achat fer",
-   "texte": "Achat fer\na acheté 24x fer pour 120$\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 15\nplayerDiscord : 767332288744128512\nplayerName : JULIO COLLINS\nplayerCharacter : Julio Collins\nplayerId : 356873\nitemId : iron",
-   "nom": "Julio Collins",
-   "quantite": 24,
-   "montant": 120,
-   "type": "achat_fer",
-   "salon": "1247565070423167100",
-   "champs": {
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "15",
-    "playerdiscord": "767332288744128512",
-    "playername": "JULIO COLLINS",
-    "playercharacter": "Julio Collins",
-    "playerid": "356873",
-    "itemid": "iron"
    }
   }
  ]
