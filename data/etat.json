@@ -15494,6 +15494,13 @@
     "quantite": 200,
     "qui": "Julio Collins",
     "fact": 253203
+   },
+   {
+    "date": "2026-11-11",
+    "client": "LTD Groove Street",
+    "quantite": 200,
+    "qui": "Julio Collins",
+    "fact": 253204
    }
   ],
   "collection": [
@@ -17646,7 +17653,7 @@
     "rib": "20019",
     "tel": "",
     "adresse": "Los Santos",
-    "lastCmd": "2026-11-06",
+    "lastCmd": "2026-11-11",
     "type": "entreprise",
     "salon": "1248767211045257348"
    },
@@ -17994,8 +18001,38 @@
     "prix": 150
    }
   ],
-  "compteur": 253204,
+  "compteur": 253205,
   "factures": [
+   {
+    "num": 253204,
+    "date": "2026-11-11",
+    "client": "LTD Groove Street",
+    "emetteur": "Julio Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 200,
+      "tva": 0,
+      "pu": 180,
+      "ht": 36000,
+      "ttc": 36000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 36000,
+    "ttc": 36000,
+    "poids": 400,
+    "statut": "attente",
+    "envoi": {
+     "t": 1794395565255,
+     "par": "Julio Collins",
+     "statut": "en_cours",
+     "ordre": 1794395568835,
+     "rapport": ""
+    }
+   },
    {
     "num": 253203,
     "date": "2026-11-11",
@@ -59300,14 +59337,14 @@
   }
  },
  "_cid": "i8c2nzmct2",
- "_maj": 1794395522321,
- "_rev": "zf0bs49vnwf-mwc0rnus",
+ "_maj": 1794395565255,
+ "_rev": "hbcc03b6mm6-mwc0si25",
  "_majSec": {
   "fer": 1794356306588,
-  "fact": 1794356042990,
+  "fact": 1794395565255,
   "users": 1794395522321,
   "weeks": 1794179966930,
-  "sheets": 1794356042455,
+  "sheets": 1794395564723,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
   "journal": 1794395522321,
@@ -59324,7 +59361,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794179966930,
   "profils": 1793561085750,
-  "_tables": 1794395522197,
+  "_tables": 1794395565246,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -61343,13 +61380,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-11T11:12:09.604Z",
+  "maj": "2026-11-11T11:12:48.749Z",
   "semaine": 46,
   "totalBarils": 60434,
   "ca": 302170,
   "objectif": 375000,
   "effectif": 115,
-  "clientsServis": 187,
+  "clientsServis": 188,
   "theme": "",
   "top3": [
    {
@@ -64139,6 +64176,48 @@
     "id": 1794356043948,
     "statut": "fait",
     "rapport": "Facture n°253203 postee dans le salon 1527420039156731934."
+   },
+   {
+    "type": "facture_ticket",
+    "payload": {
+     "num": 253204,
+     "salon": "1248767211045257348",
+     "reedition": false,
+     "facture": {
+      "num": 253204,
+      "date": "2026-11-11",
+      "client": "LTD Groove Street",
+      "emetteur": "Julio Collins",
+      "postop": false,
+      "lignes": [
+       {
+        "ref": "CMD",
+        "qte": 200,
+        "tva": 0,
+        "pu": 180,
+        "ht": 36000,
+        "ttc": 36000,
+        "desc": "bidons d'essence "
+       }
+      ],
+      "offert": 0,
+      "ht": 36000,
+      "ttc": 36000,
+      "poids": 400,
+      "statut": "attente"
+     },
+     "client": {
+      "nom": "LTD Groove Street",
+      "rib": "20019",
+      "tel": "",
+      "adresse": "Los Santos",
+      "lastCmd": "2026-11-11",
+      "type": "entreprise",
+      "salon": "1248767211045257348"
+     },
+     "par": "Julio Collins"
+    },
+    "id": 1794395568835
    }
   ],
   "oilroxwood_coffres": [
