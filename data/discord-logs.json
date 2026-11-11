@@ -1,11 +1,51 @@
 {
- "maj": "2026-11-11T21:00:56.793580+00:00",
+ "maj": "2026-11-11T21:06:57.768411+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1570182957031890945",
+   "t": "2026-11-11T21:06:29.545000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 651x Pétrole Raffiné pour 6510$ par Luc Rouza. 3255$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 651,
+   "montant": 6510,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1570182687489134773",
+   "t": "2026-11-11T21:05:25.281000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 28x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1849.83, 6514.02, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3278\nplayerDiscord : 702826845854498837\nplayerName : BoldTurtle1188\nplayerCharacter : maxime smith\nplayerId : 273368\nitemId : refinedoil",
+   "nom": "maxime smith",
+   "quantite": 28,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1849.83, 6514.02, 16.73",
+    "targetposition": "-1850.63, 6515.15, 15.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "3278",
+    "playerdiscord": "702826845854498837",
+    "playername": "BoldTurtle1188",
+    "playercharacter": "maxime smith",
+    "playerid": "273368",
+    "itemid": "refinedoil"
+   }
+  },
   {
    "id": "1570181448194072873-0",
    "t": "2026-11-11T21:00:29.810000+00:00",
@@ -81566,54 +81606,6 @@
     "playercharacter": "Jack Berthier",
     "playerid": "276642",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1569094712214683652-0",
-   "t": "2026-11-08T21:02:11.762000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 1x Menu boeuf du coffre de l'entreprise (Oil RoxWood)\nposition : -3090.11, 6818.72, 44.83\ntargetPosition : -3090.06, 6818.50, 43.97\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 708\nplayerDiscord : 826526979204841482\nplayerName : Orion\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : beefmenu",
-   "nom": "Diego Herrera",
-   "quantite": 1,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-3090.11, 6818.72, 44.83",
-    "targetposition": "-3090.06, 6818.50, 43.97",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "708",
-    "playerdiscord": "826526979204841482",
-    "playername": "Orion",
-    "playercharacter": "Diego Herrera",
-    "playerid": "231487",
-    "itemid": "beefmenu"
-   }
-  },
-  {
-   "id": "1569094712214683652-1",
-   "t": "2026-11-08T21:02:11.762000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 1x Cayo Banana du coffre de l'entreprise (Oil RoxWood)\nposition : -3090.11, 6818.72, 44.83\ntargetPosition : -3090.06, 6818.50, 43.97\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 708\nplayerDiscord : 826526979204841482\nplayerName : Orion\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : _cayobanana",
-   "nom": "Diego Herrera",
-   "quantite": 1,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-3090.11, 6818.72, 44.83",
-    "targetposition": "-3090.06, 6818.50, 43.97",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "708",
-    "playerdiscord": "826526979204841482",
-    "playername": "Orion",
-    "playercharacter": "Diego Herrera",
-    "playerid": "231487",
-    "itemid": "_cayobanana"
    }
   }
  ]
