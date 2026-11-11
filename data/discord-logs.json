@@ -1,11 +1,35 @@
 {
- "maj": "2026-11-11T15:35:31.907842+00:00",
+ "maj": "2026-11-11T15:37:30.758167+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1570099633370308669",
+   "t": "2026-11-11T15:35:23.636000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 51x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3087.28, 6820.19, 44.73\ntargetPosition : -3086.26, 6819.89, 43.78\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 366\nplayerDiscord : 826526979204841482\nplayerName : Orion\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : oil",
+   "nom": "Diego Herrera",
+   "quantite": 51,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-3087.28, 6820.19, 44.73",
+    "targetposition": "-3086.26, 6819.89, 43.78",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "366",
+    "playerdiscord": "826526979204841482",
+    "playername": "Orion",
+    "playercharacter": "Diego Herrera",
+    "playerid": "231487",
+    "itemid": "oil"
+   }
+  },
   {
    "id": "1570099380248252450",
    "t": "2026-11-11T15:34:23.287000+00:00",
@@ -76085,27 +76109,6 @@
     "playercharacter": "Kader Benali",
     "playerid": "384858",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1569012655627305032",
-   "t": "2026-11-08T15:36:07.947000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 785\nplayerDiscord : 702826845854498837\nplayerName : BoldCat4685\nplayerCharacter : maxime smith\nplayerId : 273368\nvehiclePlate : AS5715VX\njobId : 76\njobName : Oil RoxWood",
-   "nom": "maxime smith",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "785",
-    "playerdiscord": "702826845854498837",
-    "playername": "BoldCat4685",
-    "playercharacter": "maxime smith",
-    "playerid": "273368",
-    "vehicleplate": "AS5715VX",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
