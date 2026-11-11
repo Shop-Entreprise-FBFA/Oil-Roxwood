@@ -59126,6 +59126,10 @@
    "did": "767332288744128512"
   }
  ],
+ "sanctions": {
+  "liste": [],
+  "log": []
+ },
  "settings": {
   "top": [
    0,
@@ -59191,7 +59195,8 @@
     "affiches",
     "dlogs",
     "rh",
-    "commercial"
+    "commercial",
+    "avertissements"
    ],
    "commercial": [
     "accueil",
@@ -59212,7 +59217,8 @@
     "affiches",
     "dlogs",
     "rh",
-    "commercial"
+    "commercial",
+    "avertissements"
    ],
    "respcom": [
     "accueil",
@@ -59261,7 +59267,8 @@
     "maj",
     "rh",
     "commercial",
-    "comptable"
+    "comptable",
+    "avertissements"
    ],
    "comptable": [
     "accueil",
@@ -59368,9 +59375,9 @@
    "sem": 44
   }
  },
- "_cid": "mff0hjr2fu8",
- "_maj": 1794415723844,
- "_rev": "pjf0zj4x02-mwcctl25",
+ "_cid": "ic7hxgb2xyk",
+ "_maj": 1794415778844,
+ "_rev": "dl46yqmljme-mwcctp2j",
  "_majSec": {
   "fer": 1794397855705,
   "fact": 1794403449195,
@@ -59385,7 +59392,7 @@
   "runners": 1794331069245,
   "absences": 1794262925784,
   "imported": 1793561085750,
-  "settings": 1794179966930,
+  "settings": 1794415778802,
   "closeUndo": 1794179966930,
   "quotasCom": 1794397497141,
   "bilanExtra": 1793986683739,
@@ -59393,7 +59400,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794179966930,
   "profils": 1793561085750,
-  "_tables": 1794415723844,
+  "_tables": 1794415778844,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -59405,7 +59412,9 @@
   "ventesAlias": 1793561085750,
   "_ventesIgnore": 1793561085750,
   "_avertVus": 1793561085750,
-  "_signeVus": 1794341994922
+  "_signeVus": 1794341994922,
+  "sanctions": 1794415778802,
+  "_sancFix1": 1794415778802
  },
  "_qcFix1": true,
  "_wkFix1": true,
@@ -61412,7 +61421,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-11T16:49:34.685Z",
+  "maj": "2026-11-11T16:49:39.884Z",
   "semaine": 46,
   "totalBarils": 60434,
   "ca": 302170,
@@ -66737,5 +66746,6 @@
   "1793580275560"
  ],
  "_tablesSupp": [],
- "_accFix1": true
+ "_accFix1": true,
+ "_sancFix1": true
 }
