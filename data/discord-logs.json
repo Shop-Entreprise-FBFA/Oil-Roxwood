@@ -1,11 +1,35 @@
 {
- "maj": "2026-11-11T20:16:56.549150+00:00",
+ "maj": "2026-11-11T20:18:57.889243+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1570170855366070414",
+   "t": "2026-11-11T20:18:24.283000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\na retiré 70x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -3083.75, 6816.38, 44.73\ntargetPosition : -3084.39, 6815.87, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3655\nplayerDiscord : 317280511292735499\nplayerName : SharpDuck3006\nplayerCharacter : Fred Berthier\nplayerId : 364651\nitemId : oil",
+   "nom": "Fred Berthier",
+   "quantite": 70,
+   "montant": null,
+   "type": "coffre_retrait",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-3083.75, 6816.38, 44.73",
+    "targetposition": "-3084.39, 6815.87, 43.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "3655",
+    "playerdiscord": "317280511292735499",
+    "playername": "SharpDuck3006",
+    "playercharacter": "Fred Berthier",
+    "playerid": "364651",
+    "itemid": "oil"
+   }
+  },
   {
    "id": "1570170348761120830",
    "t": "2026-11-11T20:16:23.499000+00:00",
@@ -79842,30 +79866,6 @@
    "texte": "Coffre\ndépot de 37x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3086.98, 6819.52, 44.73\ntargetPosition : -3086.26, 6819.89, 43.78\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 708\nplayerDiscord : 826526979204841482\nplayerName : Orion\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : oil",
    "nom": "Diego Herrera",
    "quantite": 37,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-3086.98, 6819.52, 44.73",
-    "targetposition": "-3086.26, 6819.89, 43.78",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "708",
-    "playerdiscord": "826526979204841482",
-    "playername": "Orion",
-    "playercharacter": "Diego Herrera",
-    "playerid": "231487",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1569083652535619595",
-   "t": "2026-11-08T20:18:14.929000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 61x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3086.98, 6819.52, 44.73\ntargetPosition : -3086.26, 6819.89, 43.78\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 708\nplayerDiscord : 826526979204841482\nplayerName : Orion\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : oil",
-   "nom": "Diego Herrera",
-   "quantite": 61,
    "montant": null,
    "type": "coffre_depot",
    "salon": "1245400913066066099",
