@@ -7613,6 +7613,76 @@
  "sheets": {
   "rh": [
    {
+    "nom": "joe lopez",
+    "grade": "Intérimaire",
+    "tel": "555 358 87",
+    "rib": "459958",
+    "idU": "301624",
+    "arrivee": "2026-11-11",
+    "discord": "902236134678102037",
+    "avert": "",
+    "contrat": true,
+    "recrut": "Marco Bellini",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
+    "nom": "Idris Nananao",
+    "grade": "Intérimaire",
+    "tel": "555-652-778",
+    "rib": "568754",
+    "idU": "384974",
+    "arrivee": "2026-11-11",
+    "discord": "453862273996292118",
+    "avert": "",
+    "contrat": true,
+    "recrut": "Marco Bellini",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
+    "nom": "BOB YARA",
+    "grade": "Intérimaire",
+    "tel": "55523567",
+    "rib": "459961",
+    "idU": "301626",
+    "arrivee": "2026-11-11",
+    "discord": "808727713548206080",
+    "avert": "",
+    "contrat": true,
+    "recrut": "Marco Bellini",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
+    "nom": "Hervé JeanBenoit",
+    "grade": "Intérimaire",
+    "tel": "555 728 676",
+    "rib": "569369",
+    "idU": "385450",
+    "arrivee": "2026-11-11",
+    "discord": "508696133955223553",
+    "avert": "",
+    "contrat": true,
+    "recrut": "Marco Bellini",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
+    "nom": "Gérard Smith",
+    "grade": "Intérimaire",
+    "tel": "555 919 379",
+    "rib": "425883",
+    "idU": "273365",
+    "arrivee": "2026-11-11",
+    "discord": "612206513200562196",
+    "avert": "",
+    "contrat": true,
+    "recrut": "Marco Bellini",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
     "nom": "Otto jimminez",
     "grade": "Intérimaire",
     "tel": "555 334 643",
@@ -16807,7 +16877,7 @@
    },
    {
     "nom": "Kader Benali",
-    "grade": "Raffineur",
+    "grade": "Raffineur Expert",
     "menus": false,
     "boissons": false,
     "bidons": false,
@@ -59477,17 +59547,17 @@
   }
  },
  "_cid": "62oe8mgd6uf",
- "_maj": 1794435972454,
- "_rev": "6mjjn7xjnel-mwcoujxu",
+ "_maj": 1794435983004,
+ "_rev": "jo94rr81xm-mwcourpd",
  "_majSec": {
   "fer": 1794397855705,
   "fact": 1794423772287,
   "users": 1794423760550,
   "weeks": 1794179966930,
-  "sheets": 1794424098361,
+  "sheets": 1794435983004,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1794434744552,
+  "journal": 1794435983004,
   "pending": 1793561085750,
   "prodDer": 1794418682659,
   "runners": 1794331069245,
@@ -59501,7 +59571,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794179966930,
   "profils": 1793561085750,
-  "_tables": 1794435972454,
+  "_tables": 1794435978650,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -59509,17 +59579,32 @@
   "_affFix1": 1793561085750,
   "produits": 1793561085750,
   "_prodFix1": 1793561085750,
-  "_recruesIgnore": 1794341994904,
+  "_recruesIgnore": 1794435978650,
   "ventesAlias": 1793561085750,
   "_ventesIgnore": 1793561085750,
   "_avertVus": 1793561085750,
-  "_signeVus": 1794341994922,
+  "_signeVus": 1794435978661,
   "sanctions": 1794424098361,
   "_sancFix1": 1794415778802
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1794435980846,
+   "u": "Marco Bellini",
+   "a": "Éligibilité : 1 grade(s) réalignés sur l'effectif — Kader Benali : Raffineur → Raffineur Expert"
+  },
+  {
+   "t": 1794435976503,
+   "u": "Marco Bellini",
+   "a": "Contrat(s) signé(s) via Discord : BOB YARA, Gérard Smith, Hervé JeanBenoit…"
+  },
+  {
+   "t": 1794435976492,
+   "u": "Marco Bellini",
+   "a": "Recrutements Discord : 5 fiche(s) créée(s), 0 case(s) complétée(s) — Gérard Smith, Hervé JeanBenoit, BOB YARA…"
+  },
   {
    "t": 1794434746550,
    "u": "Diego Herrera",
@@ -61004,21 +61089,6 @@
    "t": 1793296364672,
    "u": "Laurent Roquel",
    "a": "Achats de fer : 1 relevé(s) repris du salon"
-  },
-  {
-   "t": 1793295382960,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1793295382835,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1793290752641,
-   "u": "Diego Herrera",
-   "a": "Recrutements Discord : 1 fiche(s) créée(s), 0 case(s) complétée(s) — Grigori Valentine"
   }
  ],
  "prodDer": {
@@ -61536,12 +61606,12 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-11T22:26:15.282Z",
+  "maj": "2026-11-11T22:26:25.345Z",
   "semaine": 46,
   "totalBarils": 60434,
   "ca": 302170,
   "objectif": 375000,
-  "effectif": 115,
+  "effectif": 120,
   "clientsServis": 189,
   "theme": "",
   "top3": [
@@ -66580,8 +66650,6 @@
  "_affFix1": true,
  "_prodFix1": true,
  "_recruesIgnore": [
-  "1788483950097",
-  "1788484358109",
   "1788622713571",
   "1789028277714",
   "1789476285329",
@@ -66776,7 +66844,12 @@
   "1794256068205",
   "1794261632156",
   "1794332421495",
-  "1794341428210"
+  "1794341428210",
+  "1794430866625",
+  "1794430897137",
+  "1794430917091",
+  "1794430950994",
+  "1794431276509"
  ],
  "_signeVus": [
   "1789477305650",
@@ -66965,7 +67038,12 @@
   "1794256085126",
   "1794261643043",
   "1794332455933",
-  "1794341450196"
+  "1794341450196",
+  "1794430986802",
+  "1794430989478",
+  "1794431047401",
+  "1794431071595",
+  "1794431299265"
  ],
  "_agSupp": [
   "1789145270913",
