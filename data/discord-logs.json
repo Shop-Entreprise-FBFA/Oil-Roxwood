@@ -1,11 +1,27 @@
 {
- "maj": "2026-11-11T08:39:31.102661+00:00",
+ "maj": "2026-11-11T09:07:33.234892+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1570001626578690110",
+   "t": "2026-11-11T09:05:56.996000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 324x Pétrole Raffiné pour 3240$ par maxime smith. 1620$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 324,
+   "montant": 3240,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1569994822260097026",
    "t": "2026-11-11T08:38:54.720000+00:00",
@@ -71262,48 +71278,6 @@
     "playercharacter": "Diego Herrera",
     "playerid": "231487",
     "itemid": "weapon_petrolcan"
-   }
-  },
-  {
-   "id": "1568908487088672899-0",
-   "t": "2026-11-08T08:42:12.232000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 6102\nplayerDiscord : 1226472675971436614\nplayerName : Jason Palmer┃Visum\nplayerCharacter : Jason Palmer\nplayerId : 362532\nvehiclePlate : AS5715VX\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Jason Palmer",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "6102",
-    "playerdiscord": "1226472675971436614",
-    "playername": "Jason Palmer┃Visum",
-    "playercharacter": "Jason Palmer",
-    "playerid": "362532",
-    "vehicleplate": "AS5715VX",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1568908487088672899-1",
-   "t": "2026-11-08T08:42:12.232000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 6102\nplayerDiscord : 1226472675971436614\nplayerName : Jason Palmer┃Visum\nplayerCharacter : Jason Palmer\nplayerId : 362532\nvehiclePlate : AY4705SJ\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Jason Palmer",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "6102",
-    "playerdiscord": "1226472675971436614",
-    "playername": "Jason Palmer┃Visum",
-    "playercharacter": "Jason Palmer",
-    "playerid": "362532",
-    "vehicleplate": "AY4705SJ",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
