@@ -15487,6 +15487,13 @@
     "client": "Citoyen ⚡",
     "quantite": 300,
     "qui": "Julio Collins"
+   },
+   {
+    "date": "2026-11-11",
+    "client": "bloodside famille",
+    "quantite": 200,
+    "qui": "Julio Collins",
+    "fact": 253203
    }
   ],
   "collection": [
@@ -17162,7 +17169,7 @@
     "rib": "",
     "tel": "555 053 763",
     "adresse": "Los Santos",
-    "lastCmd": "2026-08-30",
+    "lastCmd": "2026-11-11",
     "type": "famille",
     "salon": "1527420039156731934"
    },
@@ -17987,8 +17994,38 @@
     "prix": 150
    }
   ],
-  "compteur": 253203,
+  "compteur": 253204,
   "factures": [
+   {
+    "num": 253203,
+    "date": "2026-11-11",
+    "client": "bloodside famille",
+    "emetteur": "Julio Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 200,
+      "tva": 0.05,
+      "pu": 180,
+      "ht": 36000,
+      "ttc": 37800,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 36000,
+    "ttc": 37800,
+    "poids": 400,
+    "statut": "attente",
+    "envoi": {
+     "t": 1794356042989,
+     "par": "Julio Collins",
+     "statut": "en_cours",
+     "ordre": 1794356043948,
+     "rapport": ""
+    }
+   },
    {
     "num": 253202,
     "date": "2026-11-10",
@@ -59255,14 +59292,14 @@
   }
  },
  "_cid": "2x200zo5g5u",
- "_maj": 1794355987500,
- "_rev": "lzaqpom2u99-mwbd96ke",
+ "_maj": 1794356042990,
+ "_rev": "j8yvh6xlvci-mwbd9cb3",
  "_majSec": {
   "fer": 1794251858360,
-  "fact": 1794298296740,
+  "fact": 1794356042990,
   "users": 1794355987500,
   "weeks": 1794179966930,
-  "sheets": 1794341994922,
+  "sheets": 1794356042455,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
   "journal": 1794355987500,
@@ -59279,7 +59316,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794179966930,
   "profils": 1793561085750,
-  "_tables": 1794355987374,
+  "_tables": 1794356042980,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -61298,13 +61335,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-11T00:13:56.223Z",
+  "maj": "2026-11-11T00:14:03.663Z",
   "semaine": 46,
   "totalBarils": 60434,
   "ca": 302170,
   "objectif": 375000,
   "effectif": 115,
-  "clientsServis": 186,
+  "clientsServis": 187,
   "theme": "",
   "top3": [
    {
@@ -64050,6 +64087,48 @@
     "id": 1794298302927,
     "statut": "fait",
     "rapport": "Facture n°253202 postee dans le salon 1247271293317812264."
+   },
+   {
+    "type": "facture_ticket",
+    "payload": {
+     "num": 253203,
+     "salon": "1527420039156731934",
+     "reedition": false,
+     "facture": {
+      "num": 253203,
+      "date": "2026-11-11",
+      "client": "bloodside famille",
+      "emetteur": "Julio Collins",
+      "postop": false,
+      "lignes": [
+       {
+        "ref": "CMD",
+        "qte": 200,
+        "tva": 0.05,
+        "pu": 180,
+        "ht": 36000,
+        "ttc": 37800,
+        "desc": "bidons d'essence "
+       }
+      ],
+      "offert": 0,
+      "ht": 36000,
+      "ttc": 37800,
+      "poids": 400,
+      "statut": "attente"
+     },
+     "client": {
+      "nom": "bloodside famille",
+      "rib": "",
+      "tel": "555 053 763",
+      "adresse": "Los Santos",
+      "lastCmd": "2026-11-11",
+      "type": "famille",
+      "salon": "1527420039156731934"
+     },
+     "par": "Julio Collins"
+    },
+    "id": 1794356043948
    }
   ],
   "oilroxwood_coffres": [
