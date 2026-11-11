@@ -118,6 +118,7 @@ window.ROXWOOD_CFG = {
     <div class="nav-sec" data-sec="rh">Ressources humaines</div>
     <button class="nav-item" data-view="frh">🗂️ <span class="txt">Fiches RH</span></button>
     <button class="nav-item" data-view="effectif">👥 <span class="txt">Effectif</span></button>
+    <button class="nav-item" data-view="avertissements">⚖️ <span class="txt">Avertissements</span></button>
     <button class="nav-item" data-view="integration">🎓 <span class="txt">Intégration</span></button>
     </div>
     <div class="nav-grp">
@@ -290,6 +291,7 @@ function defaults(){
     produits:[],
     pending:[],
     fer:[],
+    sanctions:{liste:[],log:[]},
     settings:{prix:10, primeBase:5000, top:[15000,10000,5000], limite:24000, semaine:1,
       webhook:'https://discord.com/api/webhooks/1247564402782371985/X8pynlKA1sn26In6aONz4IO7XZl7pwtnW19yvmLKX2DiMq_LXEBZRHGW1rBgyes0h9kg'}
   };
@@ -304,7 +306,7 @@ function load(){
    les contrats et les médias depuis la sortie de Supabase. Sans lui, mergeRemote
    ne reprenait JAMAIS ces tables du dépôt — le dernier qui enregistrait écrasait
    les lignes ajoutées par un autre admin, et toute écriture du bot était perdue. */
-const SEC_KEYS=['runners','weeks','sheets','fact','users','profils','pending','fer','_tables','settings','absences','primesExtra','quotasCom','quotasComHist','journal','bilanExtra','closeUndo','bilanForce','prodDer','imported','affiches','produits','_recruesIgnore','ventesAlias','_ventesIgnore','_qcFix1','_wkFix1','_permsFix1','_rolesFix77','_affFix1','_prodFix1','_avertVus','_signeVus'];
+const SEC_KEYS=['runners','weeks','sheets','fact','users','profils','pending','fer','_tables','settings','absences','sanctions','_sancFix1','primesExtra','quotasCom','quotasComHist','journal','bilanExtra','closeUndo','bilanForce','prodDer','imported','affiches','produits','_recruesIgnore','ventesAlias','_ventesIgnore','_qcFix1','_wkFix1','_permsFix1','_rolesFix77','_affFix1','_prodFix1','_avertVus','_signeVus'];
 /* ---- heure de référence : celle du serveur Supabase, pas celle du PC ----
    Un utilisateur avec une horloge décalée datait ses modifs « dans le futur » et écrasait tout. */
 let CLOCK_SKEW=0;
@@ -949,7 +951,7 @@ const PERMS={
   /* L'ORDRE de cette liste est celui des lignes dans la grille des permissions.
      Il suit le menu, pôle par pôle, pour qu'on règle les droits en lisant la
      même chose des deux côtés. */
-  direction:['accueil','rh','commercial','comptable','frh','effectif','integration',
+  direction:['accueil','rh','commercial','comptable','frh','effectif','avertissements','integration',
              'factures','relances','fventes','quotascom','prodder',
              'ftablette','fcompta','frecues','bilan','cloture','semaine',
              'overview','felig','historique',
@@ -962,7 +964,7 @@ const PERMS={
   //      Le hub « comptable » reste ouvert malgré le nom du rôle : il voit déjà
   //      la Tablette et Semaine & Primes individuellement, le hub ne fait que
   //      les regrouper.
-  rh:       ['accueil','rh','comptable','overview','effectif','semaine','historique','frh','integration','felig','ftablette','moi','profil','quotashist','agenda','affiches','maj','dlogs'],
+  rh:       ['accueil','rh','comptable','overview','effectif','avertissements','semaine','historique','frh','integration','felig','ftablette','moi','profil','quotashist','agenda','affiches','maj','dlogs'],
 
   // Comptable : l'argent de l'entreprise. Pas les dossiers du personnel.
   comptable:['accueil','commercial','comptable','overview','factures','relances','bilan','fcompta','frecues','moi','profil','quotashist','agenda','affiches','maj'],
@@ -970,7 +972,7 @@ const PERMS={
   // Assistant de direction : le bras droit. Tout ce que voit la Direction, sauf
   //      les deux gestes qui n'appartiennent qu'au patron : clôturer la semaine
   //      (irréversible, elle fige les salaires) et changer les Paramètres.
-  assistdir:['accueil','rh','commercial','comptable','overview','effectif','semaine','historique','ftablette','felig','fventes','frh','integration','fcompta','factures','relances','bilan','prodder','quotascom','frecues','moi','produits','profil','quotashist','agenda','affiches','maj','dlogs','journal'],
+  assistdir:['accueil','rh','commercial','comptable','overview','effectif','avertissements','semaine','historique','ftablette','felig','fventes','frh','integration','fcompta','factures','relances','bilan','prodder','quotascom','frecues','moi','produits','profil','quotashist','agenda','affiches','maj','dlogs','journal'],
 
   // Commercial : le commerce, rien d'autre.
   commercial:['accueil','commercial','overview','fventes','factures','relances','quotascom','prodder','moi','produits','profil','quotashist','agenda','affiches','maj'],
@@ -978,12 +980,12 @@ const PERMS={
   // Responsable commercial : pour l'instant exactement un commercial. Le rôle
   //      existe pour qu'on puisse lui ouvrir des cases sans les ouvrir à toute
   //      l'équipe — Paramètres → Permissions par rôle, colonne par colonne.
-  respcom:  ['accueil','commercial','overview','fventes','factures','relances','quotascom','prodder','moi','produits','profil','quotashist','agenda','affiches','maj'],
+  respcom:  ['accueil','commercial','overview','fventes','factures','relances','quotascom','avertissements','prodder','moi','produits','profil','quotashist','agenda','affiches','maj'],
 
   // Responsable Runner : il encadre la production au quotidien. Effectif,
   //      éligibilité, tablette et logs — mais ni la paie détaillée, ni les
   //      factures, ni les fiches du personnel.
-  resprunner:['accueil','rh','commercial','comptable','overview','effectif','semaine','historique','felig','ftablette','prodder','moi','profil','quotashist','agenda','affiches','maj','dlogs'],
+  resprunner:['accueil','rh','commercial','comptable','overview','effectif','avertissements','semaine','historique','felig','ftablette','prodder','moi','profil','quotashist','agenda','affiches','maj','dlogs'],
 
   // Runner : lecture de l'entreprise et son espace personnel.
   membre:   ['accueil','rh','overview','effectif','moi','profil','quotashist','agenda','affiches','maj']
@@ -993,6 +995,13 @@ function isMembre(){
   if(!S.users||!S.users.length) return false; // phase d'installation
   const cu=currentUser();
   return !cu || cu.role==='membre';
+}
+function migrerPermsSanc(){
+  if(S._sancFix1) return false;
+  S._sancFix1=true;
+  const c=S.settings&&S.settings.permsCustom;
+  if(c) Object.keys(c).forEach(r=>{ if(Array.isArray(c[r])&&c[r].includes('effectif')&&!c[r].includes('avertissements')) c[r].push('avertissements'); });
+  return true;
 }
 function allowedViews(){
   if(sessionStorage.getItem('orx_user')==='SECOURS') return PERMS.direction; // clé de secours
@@ -1349,7 +1358,7 @@ function logout(){
 }
 
 /* ---- Canari de version : prévient les onglets restés sur une vieille version ---- */
-const APP_VERSION='C-128';
+const APP_VERSION='C-129';
 /* Le bandeau ne doit dire qu'une chose : « une version plus récente existe ».
    Il comparait deux chaînes avec !==, donc il s'allumait aussi dans l'autre
    sens — quand la page ouverte était PLUS récente que version.json, ce qui
@@ -1744,6 +1753,7 @@ document.querySelectorAll('.nav-item[data-view]').forEach(b=>b.onclick=()=>show(
     fer:'<path d="M4 15l3-6h10l3 6z"/><path d="M4 15h16v3H4z"/>',
     frecues:'<path d="M3 13h5l2 3h4l2-3h5"/><path d="M3 13V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v7"/><path d="M3 13v5a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5"/>',
     moi:'<circle cx="12" cy="8.5" r="3.5"/><path d="M5 20c0-3.5 3-5.5 7-5.5s7 2 7 5.5"/>',
+    avertissements:'<path d="M12 3l9 16H3z"/><path d="M12 10v4M12 17h.01"/>',
     quotashist:'<path d="M4 4v16h16"/><path d="M8 16v-5M12 16V8M16 16v-3"/>',
     agenda:'<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/>',
     maj:'<path d="M12 3l1.8 4.6L18 9l-4.2 1.4L12 15l-1.8-4.6L6 9l4.2-1.4z"/><path d="M18.5 15l.9 2.3 2.3.9-2.3.9-.9 2.3-.9-2.3-2.3-.9 2.3-.9z"/>',
@@ -1830,7 +1840,8 @@ function restaureEcran(o){
 function show(v){
   appliquerGrades();   // une synchro a pu changer les barèmes depuis le dernier rendu
   if(purgeSupprimees()&&!isMembre()){ save(); sbQueue(); }   // rubriques supprimées : leurs données ne reviennent pas
-  if(migrerPerms()&&!isMembre()){ save(); sbQueue(); }       // listes de permissions citant d'anciennes rubriques
+  if(migrerPerms()&&!isMembre()){ save(); sbQueue(); }
+  if(migrerPermsSanc()&&!isMembre()){ save(); sbQueue(); }       // listes de permissions citant d'anciennes rubriques
   if(migrerAffiches()&&!isMembre()){ save(); sbQueue(); }    // rubrique Affiches ajoutée après coup
   if(migrerProduits()&&!isMembre()){ save(); sbQueue(); }    // rubrique Nouveaux produits, idem
   if(migrerAccueil()&&!isMembre()){ save(); sbQueue(); }     // page Accueil + hubs de pôle, idem
@@ -1849,7 +1860,7 @@ function show(v){
   document.querySelectorAll('.nav-item[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===v||(sysV&&!!b.closest('#navTop')&&b.dataset.view==='params')));
   if(v!=='params') delete $('#main').dataset.ptab;
   destroyCharts();
-  ({accueil,rh,commercial,comptable,overview,effectif,semaine,historique,cloture,ftablette,felig,fventes,frh,integration,fcompta,factures,relances,bilan,prodder,quotascom,frecues,moi,profil,quotashist,agenda,affiches,produits,maj,dlogs,journal,params})[v]();
+  ({accueil,rh,commercial,comptable,overview,effectif,semaine,historique,cloture,ftablette,felig,fventes,frh,integration,fcompta,factures,relances,bilan,prodder,quotascom,frecues,moi,profil,quotashist,agenda,affiches,produits,maj,dlogs,journal,params,avertissements})[v]();
   if(sysV) $('#main').insertAdjacentHTML('afterbegin',paramsTabsHTML(v));
   try{ applyRO(); }catch(e){}
   restaureEcran(repere);
@@ -1930,6 +1941,7 @@ function rh(){
   const CARTES=[
     {emoji:'🗂️',titre:'Fiches RH',sub:'Consulter et gérer les fiches du personnel',view:'frh',couleur:col},
     {emoji:'👥',titre:'Effectif',sub:'Suivre les effectifs et les mouvements',view:'effectif',couleur:col},
+    {emoji:'⚖️',titre:'Avertissements',sub:'Registre des sanctions et des convocations',view:'avertissements',couleur:col},
     {emoji:'🎓',titre:'Intégration',sub:"Gérer l'intégration des nouveaux collaborateurs",view:'integration',couleur:col},
   ];
   $('#main').innerHTML = heroHTML('rh','Ressources Humaines','Nos collaborateurs, notre force')
@@ -2100,6 +2112,274 @@ function effectif(){
   // la frappe reste fluide : le curseur revient dans la barre de recherche après chaque caractère
   if(search){ const el=document.getElementById('effSearchInput'); if(el){ el.focus(); el.setSelectionRange(el.value.length,el.value.length); } }
 }
+/* ================== SANCTIONS · registre des avertissements ==================
+   Remplace le simple compteur « Avert. » : chaque sanction est une ligne datée,
+   rangée dans une catégorie, avec son étape sur l'échelle de cette catégorie.
+   · S.sanctions.liste : les sanctions (jamais effacées : une sanction retirée garde sa ligne, marquée « retirée »)
+   · S.sanctions.log   : le journal, qui ne s'efface jamais
+   · le bot lit S.sanctions (via le dépôt) pour tenir le registre Discord à jour, et reçoit un ordre « sanction »
+     pour prévenir la personne dans son ticket.
+   Le compteur « Avert. » de la fiche RH continue d'être tenu (+1 / −1) pour ne rien casser ailleurs. */
+const SANC_CAT={
+  cond:{n:'Conduite inappropriée',ic:'🚗',c:'#ff9a3d',d:'contre-sens · voie ferrée · conduite dangereuse · abandon de véhicule',lad:['R','A1','A2c','L']},
+  arme:{n:'Arme blanche sortie',ic:'🔪',c:'#e0524e',d:'sortir une arme blanche',lad:['A','L']},
+  resp:{n:'Manque de respect',ic:'🗣️',c:'#b58cff',d:'envers un collègue, un client ou la direction',lad:['A1','A2c','L']},
+  quota:{n:'Quota non fait',ic:'📉',c:'#22d3ee',d:'intérimaires et stagiaires de plus de 8 jours, sans aucune production',lad:['A1','A2','L']},
+  com:{n:'Avertissement commercial',ic:'💼',c:'#f0b030',d:'faute dans la vente ou la relation client',lad:['A1','A2c','RT']}};
+const SANC_ST={R:['R','Rappel oral'],A:['A','Avertissement'],A1:['A1','Avert. 1'],A2:['A2','Avert. 2'],A2c:['A2','Avert. 2 + convocation'],L:['L','Licenciement'],RT:['⇩','Rétrogradation ou licenciement']};
+let SANC_FILT='tous', SANC_Q='', SANC_TAB='reg', SANC_D=null, SANC_TOUS=[];
+function sancStore(){ if(!S.sanctions||!Array.isArray(S.sanctions.liste)) S.sanctions={liste:[],log:[]}; if(!Array.isArray(S.sanctions.log)) S.sanctions.log=[]; return S.sanctions; }
+function rolePerso(){ if(sessionStorage.getItem('orx_user')==='SECOURS') return 'direction'; const cu=currentUser(); return cu?cu.role:'direction'; }
+function sancGere(){ return ['direction','assistdir','rh'].includes(rolePerso()); }
+function sancDirection(){ return rolePerso()==='direction'; }
+function sancCatsPermises(){ const r=rolePerso(); return (r==='commercial'||r==='respcom')?['com']:Object.keys(SANC_CAT); }
+function ilPlus(j){ const d=dateParis(); d.setDate(d.getDate()+j); return jourISO(d); }
+function sancLabel(s){
+  if(s.st==='RT') return s.issue==='retro'?'Rétrogradation runner':s.issue==='licenciement'?'Licenciement':'Rétrogradation ou licenciement';
+  return SANC_ST[s.st]?SANC_ST[s.st][1]:String(s.st);
+}
+function sancLadder(cat,st){
+  const C=SANC_CAT[cat], idx=st?C.lad.indexOf(st):-1;
+  return `<span class="lad" style="--c:${C.c}">${C.lad.map((x,i)=>`${i?'<i></i>':''}<span class="st ${i<=idx?'on':i===idx+1?'nx':''}" title="${esc(SANC_ST[x][1])}">${SANC_ST[x][0]}</span>`).join('')}</span>`;
+}
+function sancDesPersonnes(nom){ return sancStore().liste.filter(s=>normNom(s.nom)===normNom(nom)); }
+/* Prochaine étape pour cette personne dans cette catégorie : la marche qui suit la plus haute encore en vigueur. */
+function sancNext(nom,cat){
+  const lad=SANC_CAT[cat].lad, act=sancDesPersonnes(nom).filter(s=>s.cat===cat&&!s.retiree);
+  const idx=act.reduce((m,s)=>Math.max(m,lad.indexOf(s.st)),-1);
+  return idx+1>=lad.length?{st:lad[lad.length-1],fin:true,idx}:{st:lad[idx+1],fin:false,idx};
+}
+/* Un avertissement (jamais un rappel) peut être examiné pour retrait : 30 jours écoulés, aucune autre sanction depuis. */
+function sancRetirable(s){
+  if(s.retiree||!['A','A1'].includes(s.st)) return 0;
+  if(s.exam&&(s.exam.decision==='gardee'||(s.exam.revoir&&s.exam.revoir>jourISO(dateParis())))) return 0;
+  const auj=jourISO(dateParis()), j=Math.round((Date.parse(auj)-Date.parse(s.date))/86400000);
+  if(j<30) return 0;
+  const autre=sancStore().liste.some(x=>x.id!==s.id&&normNom(x.nom)===normNom(s.nom)&&x.date>=s.date);
+  return autre?0:j;
+}
+function sancLog(a,s,act){
+  const L=sancStore(), cu=currentUser();
+  L.log.unshift({t:Date.now(),u:(cu&&cu.user)||sessionStorage.getItem('orx_user')||'?',a,nom:s.nom,cat:s.cat,st:s.st,act,sid:s.id});
+  if(L.log.length>3000) L.log.length=3000;
+}
+function sancMajAvert(nom,delta){
+  const row=rhRowOf(nom); if(!row) return;
+  const n=Math.max(0,(parseInt(String(row.avert||'').replace(/\D/g,''),10)||0)+delta);
+  row.avert=n?String(n):'';
+}
+async function sancDiscord(row,s){
+  const did=String((row&&row.discord)||s.discord||'').trim();
+  if(!/^\d{15,}$/.test(did)) return 'sans-discord';
+  if(!SYNC.cli||!RoxwoodGH.peutEcrire()) return 'lecture-seule';
+  try{
+    const {error}=await SYNC.cli.from('oilroxwood_bot_ordres').insert({type:'sanction',payload:{
+      discord:did,nom:s.nom,cat:s.cat,catNom:SANC_CAT[s.cat].n,st:s.st,etape:sancLabel(s),rappel:s.st==='R',
+      motif:s.motif,par:s.par,convocation:s.conv==='a_planifier'?'à planifier':(s.conv==='planifiee'?'prévue le '+frDate(s.convDate):'')}});
+    return error?'erreur':'ok';
+  }catch(e){ return 'erreur'; }
+}
+async function sancAdd(o){
+  const L=sancStore(), nx=sancNext(o.nom,o.cat), cu=currentUser(), row=rhRowOf(o.nom);
+  const par=o.par||(cu&&cu.user)||sessionStorage.getItem('orx_user')||'dashboard';
+  const s={id:Date.now()+Math.floor(Math.random()*1000),nom:row?row.nom:o.nom,discord:String((row&&row.discord)||'').trim(),cat:o.cat,st:nx.st,
+    issue:nx.st==='RT'?(o.issue||'retro'):'',date:o.date||jourISO(dateParis()),motif:String(o.motif||'').trim().slice(0,300),par,
+    conv:nx.st==='A2c'?(o.convDate?'planifiee':'a_planifier'):'',convDate:o.convDate||'',retiree:null,exam:null};
+  L.liste.unshift(s);
+  sancLog(`${sancLabel(s)} · ${SANC_CAT[s.cat].n} — « ${s.motif} »`,s,'ajout');
+  if(s.st!=='R') sancMajAvert(s.nom,1);
+  jlog(`Sanction : ${s.nom} — ${sancLabel(s)} (${SANC_CAT[s.cat].n})`);
+  sendLog(`${SANC_CAT[s.cat].ic} ${sancLabel(s)}`,`**${s.nom}** · ${SANC_CAT[s.cat].n}\nMotif : ${s.motif}\nDonné par : **${par}**${s.conv==='a_planifier'?'\n📅 Convocation à planifier':''}${s.st==='L'||s.issue==='licenciement'?'\n⚠️ Licenciement proposé — à valider par la Direction':''}`,s.st==='R'?0x8fb4d9:0xff9a3d);
+  save(); sbPushNow();
+  return {s,etat:await sancDiscord(row,s)};
+}
+/* ---- quotas non faits (depuis l'Effectif) ---- */
+function sancQuotaCheck(r,opt){
+  opt=opt||{};
+  if(r.poste) return {ok:false,why:'Direction : pas de quota'};
+  const stg=estStagiaire(r);
+  if(!stg&&r.grade!==0) return {ok:false,why:'Seuls les intérimaires et les stagiaires sont concernés'};
+  const row=rhRowOf(r.nom);
+  if(row&&row.arrivee&&String(row.arrivee).slice(0,10)>=ilYa(8)) return {ok:false,why:'Moins de 8 jours d\'ancienneté'};
+  if(r.absent||absDe(r.nom)) return {ok:false,why:'En absence déclarée'};
+  if(absFinRecente(r.nom)) return {ok:false,why:'Absence terminée il y a moins de 7 jours'};
+  if(!opt.manuel){
+    if(nn(r.barils)!==0) return {ok:false,why:'A produit cette semaine (quota non nul)'};
+    if(sancDesPersonnes(r.nom).some(s=>s.cat==='quota'&&!s.retiree&&s.date>=lundiCourant())) return {ok:false,why:'Déjà averti cette semaine'};
+    const nx=sancNext(r.nom,'quota'); if(nx.fin) return {ok:false,why:'Licenciement déjà proposé'};
+  }
+  return {ok:true};
+}
+function sancRunnerDe(nom){
+  const r=S.runners.find(x=>normNom(x.nom)===normNom(nom)); if(r) return r;
+  const row=rhRowOf(nom); if(!row) return null;
+  const gn=normNom(row.grade);
+  return {nom:row.nom,barils:0,grade:0,_ghost:true,stagiaire:/stagiaire/.test(gn),poste:(gn&&gn!=='interimaire'&&!/stagiaire/.test(gn)&&!GRADES.some(g=>normNom(g.nom)===gn))?row.grade:null};
+}
+async function sancQuota(nom){
+  if(isMembre()) return toast('👀 Consultation seule pour les membres');
+  const r=sancRunnerDe(nom); if(!r) return toast('⚠️ Personne introuvable');
+  const c=sancQuotaCheck(r); if(!c.ok) return toast('⚠️ '+c.why);
+  const nx=sancNext(nom,'quota');
+  if(!confirm(`Avertir ${r.nom} pour quota non fait ?\n→ ${SANC_ST[nx.st][1]}${nx.st==='L'?' (proposition de licenciement)':''}\n\nLa personne sera prévenue dans son ticket Discord.`)) return;
+  const {s,etat}=await sancAdd({nom:r.nom,cat:'quota',motif:`Aucune production cette semaine (semaine ${S.settings.semaine})`});
+  rerender();
+  toast(`⚠ ${s.nom} : ${sancLabel(s)}${avertDiscordNote(etat)}`,7000);
+}
+async function avertirTous(){
+  if(isMembre()) return toast('👀 Consultation seule pour les membres');
+  const noms=SANC_TOUS.slice(); if(!noms.length) return toast('Personne à avertir');
+  const resume=noms.map(n=>`• ${n} → ${SANC_ST[sancNext(n,'quota').st][1]}`).join('\n');
+  if(!confirm(`Avertir ${noms.length} personne(s) pour quota non fait ?\n\n${resume.slice(0,1400)}\n\nChacune est prévenue dans son ticket Discord.`)) return;
+  let ok=0, sansDiscord=0;
+  for(const n of noms){
+    const r=sancRunnerDe(n); if(!r||!sancQuotaCheck(r).ok) continue;
+    const {etat}=await sancAdd({nom:r.nom,cat:'quota',motif:`Aucune production cette semaine (semaine ${S.settings.semaine})`});
+    ok++; if(etat!=='ok') sansDiscord++;
+  }
+  rerender();
+  toast(`⚠ ${ok} avertissement(s) donné(s)${sansDiscord?` · ${sansDiscord} sans message Discord (pas de compte Discord en fiche, ou lecture seule)`:' · tickets Discord prévenus'}`,8000);
+}
+/* ---- retrait, convocation, examen ---- */
+function sancRetirer(id,anticipe){
+  const s=sancStore().liste.find(x=>x.id===id); if(!s||s.retiree) return;
+  if(s.st==='R') return toast('🔒 Un rappel oral ne se retire pas');
+  if(anticipe){ if(!sancDirection()) return toast('Réservé à la Direction'); if(!confirm(`Annuler la sanction de ${s.nom} (${sancLabel(s)}) ?\nÀ n'utiliser que pour une erreur de saisie. La ligne reste dans le journal.`)) return; }
+  else{ if(!sancGere()) return toast('Réservé à la Direction, à l\'assistant de direction et aux RH'); if(!sancRetirable(s)) return toast('Pas retirable : il faut 30 jours sans autre sanction'); if(!confirm(`Retirer l'avertissement de ${s.nom} (${sancLabel(s)}, ${frDate(s.date)}) ?\nLa ligne reste dans le journal.`)) return; }
+  const cu=currentUser();
+  s.retiree={date:jourISO(dateParis()),par:(cu&&cu.user)||sessionStorage.getItem('orx_user')||'?',motif:anticipe?'annulée (erreur de saisie)':'1 mois sans autre sanction'};
+  sancMajAvert(s.nom,-1);
+  sancLog(`Retirée · ${sancLabel(s)} · ${SANC_CAT[s.cat].n} (${s.retiree.motif})`,s,'retrait');
+  jlog(`Sanction retirée : ${s.nom} — ${sancLabel(s)}`);
+  save(); sbPushNow(); rerender(); toast('✓ Sanction retirée — le journal garde la trace');
+}
+function sancExam(id,dec){
+  const s=sancStore().liste.find(x=>x.id===id); if(!s) return;
+  if(!sancGere()) return toast('Réservé à la Direction, à l\'assistant de direction et aux RH');
+  const cu=currentUser(), par=(cu&&cu.user)||'?';
+  s.exam=dec==='gardee'?{decision:'gardee',date:jourISO(dateParis()),par}:{revoir:ilPlus(15),par};
+  sancLog(dec==='gardee'?`Examen : sanction gardée · ${sancLabel(s)}`:`Examen : à revoir dans 15 jours · ${sancLabel(s)}`,s,'examen');
+  save(); sbPushNow(); rerender();
+}
+function sancConv(id,etat){
+  const s=sancStore().liste.find(x=>x.id===id); if(!s||!s.conv) return;
+  if(etat==='planifiee'){
+    const v=prompt('Date de la convocation (JJ/MM/AAAA) :',s.convDate?frDate(s.convDate):''); if(v===null) return rerender();
+    const m=String(v).trim().match(/^(\d{1,2})[\/.-](\d{1,2})[\/.-](\d{4})$/)||null;
+    const iso=m?`${m[3]}-${m[2].padStart(2,'0')}-${m[1].padStart(2,'0')}`:(/^\d{4}-\d{2}-\d{2}$/.test(String(v).trim())?String(v).trim():'');
+    if(!iso){ toast('⚠️ Date non reconnue (JJ/MM/AAAA)'); return rerender(); }
+    s.convDate=iso;
+  }
+  s.conv=etat;
+  sancLog(`Convocation : ${etat==='faite'?'faite':etat==='planifiee'?'planifiée le '+frDate(s.convDate):'à planifier'} · ${s.nom}`,s,'conv');
+  save(); sbPushNow(); rerender();
+}
+/* ---- assistant « Donner une sanction » ---- */
+function sancNomsPossibles(){
+  return [...new Set([...((S.sheets&&S.sheets.rh)||[]).map(x=>String(x.nom||'').trim()),...S.runners.map(r=>String(r.nom||'').trim())].filter(Boolean))].sort((a,b)=>a.localeCompare(b));
+}
+function sancModal(pre){
+  if(isMembre()) return toast('👀 Réservé aux rôles avec accès gestion');
+  SANC_D=Object.assign({nom:'',cat:'',motif:'',date:jourISO(dateParis()),issue:'retro',convDate:''},pre||{});
+  sancModalDraw();
+}
+function sancPick(cat){ SANC_D.cat=cat; sancModalDraw(); }
+function sancNom(v){ const m=sancNomsPossibles().find(n=>normNom(n)===normNom(v)); SANC_D.nom=m||''; SANC_D.saisie=v; sancModalDraw(); }
+function sancModalDraw(){
+  const d=SANC_D, noms=sancNomsPossibles(), ok=!!d.nom, row=ok?rhRowOf(d.nom):null, run=ok?sancRunnerDe(d.nom):null;
+  const permises=sancCatsPermises(), cu=currentUser(), par=(cu&&cu.user)||sessionStorage.getItem('orx_user')||'?';
+  const dej=ok?sancDesPersonnes(d.nom).filter(s=>!s.retiree).length:0;
+  const quotaC=run?sancQuotaCheck(run,{manuel:true}):{ok:false,why:'Choisis d\'abord une personne'};
+  if(d.cat==='quota'&&!quotaC.ok) d.cat='';
+  if(d.cat&&!permises.includes(d.cat)) d.cat='';
+  const tuiles=permises.map(k=>{
+    const C=SANC_CAT[k], dis=k==='quota'&&ok&&!quotaC.ok, sel=d.cat===k;
+    return `<div class="sd-tuile ${sel?'sel':''} ${dis?'dis':''}" style="--c:${C.c}" ${dis?'':`tabindex="0" role="button" onkeydown="actKey(event)" onclick="sancPick('${k}')"`}>
+      <b>${C.ic} ${C.n}</b><small>${dis?'Non applicable : '+esc(quotaC.why):esc(C.d)}</small></div>`; }).join('');
+  let droite='<div class="note-v">Choisis une personne et un motif : l\'étape est calculée toute seule.</div>';
+  let peut=false;
+  if(ok&&d.cat){
+    const nx=sancNext(d.nom,d.cat), C=SANC_CAT[d.cat], act=sancDesPersonnes(d.nom).filter(s=>s.cat===d.cat&&!s.retiree).sort((a,b)=>a.date.localeCompare(b.date));
+    const lab=nx.st==='RT'?'Rétrogradation ou licenciement':SANC_ST[nx.st][1];
+    const hist=act.map(s=>`${sancLabel(s)} (${frDate(s.date)})`).concat([`<b>${esc(lab.toLowerCase())}</b>`]).join(' → ');
+    peut=!!String(d.motif||'').trim();
+    droite=`<div class="sd-etape"><div class="fx-lbl">Étape calculée</div>${sancLadder(d.cat,SANC_CAT[d.cat].lad[Math.max(0,SANC_CAT[d.cat].lad.indexOf(nx.st))])}
+      <div class="sd-gros" style="color:${C.c}">${esc(lab)}</div>
+      <div class="fx-mut">${nx.fin?'Dernière marche déjà atteinte — ':''}${act.length?hist:'Première sanction dans cette catégorie.'}</div>
+      ${nx.st==='A2c'?'<div class="sd-note ok">📅 Une convocation est obligatoire : elle apparaîtra « à planifier » dans le registre.</div>':''}
+      ${nx.st==='A2c'?`<label class="fi-f" style="margin-top:8px"><span>Date de convocation (facultatif)</span><input type="date" value="${esc(d.convDate)}" onchange="SANC_D.convDate=this.value"></label>`:''}
+      ${nx.st==='RT'?`<div class="sd-choix"><label><input type="radio" name="sdissue" ${d.issue==='retro'?'checked':''} onchange="SANC_D.issue='retro'"> Rétrograder runner</label><label><input type="radio" name="sdissue" ${d.issue==='licenciement'?'checked':''} onchange="SANC_D.issue='licenciement'"> Licencier</label></div>`:''}
+      ${nx.st==='L'||nx.st==='RT'?'<div class="sd-note ko">⚠ Étape finale : c\'est une proposition à valider par la Direction, rien n\'est appliqué automatiquement.</div>':''}
+      <div class="fx-mut" style="margin-top:10px">${row&&/^\d{15,}$/.test(String(row.discord||'').trim())?'💬 La personne sera prévenue dans son ticket Discord ('+(d.cat&&nx.st==='R'?'rappel':'avertissement')+').':'💬 Pas de compte Discord en fiche RH : Discord ne sera pas prévenu.'}</div>
+      <div style="display:flex;gap:8px;margin-top:14px"><button class="fx-save" style="margin:0;flex:1" ${peut?'':'disabled'} onclick="sancSave()">Enregistrer la sanction</button><button class="fx-sec" style="margin:0;width:auto;padding:12px 18px" onclick="closeModal()">Annuler</button></div>
+      <div class="fx-mut" style="margin-top:8px">Tout est écrit au journal : qui, quand, quelle étape.</div></div>`;
+  }
+  openModal(`<h3 style="margin:0 0 14px">⚖️ Donner une sanction</h3>
+  <div class="sd-grid"><div>
+    <div class="fx-lbl">1 · Personne</div>
+    <input class="fx-search" style="border-color:#243449" list="sdNoms" placeholder="🔍 Nom de la personne…" value="${esc(d.saisie!==undefined?d.saisie:d.nom)}" onchange="sancNom(this.value)">
+    <datalist id="sdNoms">${noms.map(n=>`<option value="${esc(n)}">`).join('')}</datalist>
+    ${ok?`<div class="sd-pers">${avatarHTML(d.nom,'width:34px;height:34px;font-size:.78rem;flex:none')}<div><b>${esc(d.nom)}</b><div class="fx-mut">${esc((row&&row.grade)||(run&&gTitle(run))||'—')} · ${dej} sanction(s) en vigueur</div></div></div>`:''}
+    <div class="fx-lbl" style="margin-top:16px">2 · Motif</div><div class="sd-tuiles">${tuiles}</div>
+    <div class="fx-lbl" style="margin-top:16px">3 · Détails</div>
+    <input class="fx-search" style="border-color:#243449" placeholder="Motif précis (sera écrit dans le ticket de la personne)" value="${esc(d.motif)}" oninput="SANC_D.motif=this.value;sancBouton()">
+    <div style="display:flex;gap:10px;margin-top:10px"><label class="fi-f"><span>Date</span><input type="date" value="${esc(d.date)}" onchange="SANC_D.date=this.value"></label><label class="fi-f" style="flex:1"><span>Donné par</span><input type="text" value="${esc(par)}" readonly></label></div>
+  </div><div class="sd-droite">${droite}</div></div>`);
+  $('#modalBox').style.maxWidth='980px'; $('#modalBox').style.width='min(980px,95vw)';
+}
+function sancBouton(){
+  const b=document.querySelector('.sd-droite .fx-save'); if(!b) return;
+  b.disabled=!String(SANC_D.motif||'').trim();
+}
+async function sancSave(){
+  const d=SANC_D; if(!d||!d.nom||!d.cat) return toast('⚠️ Choisis la personne et le motif');
+  if(!String(d.motif||'').trim()) return toast('⚠️ Écris le motif');
+  if(!sancCatsPermises().includes(d.cat)) return toast('⚠️ Catégorie non autorisée pour ton rôle');
+  const {s,etat}=await sancAdd({nom:d.nom,cat:d.cat,motif:d.motif,date:d.date,issue:d.issue,convDate:d.convDate});
+  closeModal(); SANC_D=null; rerender();
+  toast(`${SANC_CAT[s.cat].ic} ${s.nom} : ${sancLabel(s)}${avertDiscordNote(etat)}`,7000);
+}
+/* ---- la page « Avertissements » : le registre ---- */
+function chercherSanc(v){ SANC_Q=v; avertissements(); const el=document.getElementById('sancQ'); if(el){ el.focus(); el.setSelectionRange(el.value.length,el.value.length); } }
+function avertissements(){
+  const L=sancStore(), auj=jourISO(dateParis()), q=normNom(SANC_Q), gere=sancGere();
+  const act=L.liste.filter(s=>!s.retiree), ret=L.liste.filter(s=>s.retiree);
+  const aExam=act.filter(s=>sancRetirable(s)).sort((a,b)=>sancRetirable(b)-sancRetirable(a));
+  const base=SANC_FILT==='retirees'?ret:act.filter(s=>SANC_FILT==='tous'||s.cat===SANC_FILT);
+  const vues=base.filter(s=>!q||normNom(s.nom+' '+s.motif+' '+SANC_CAT[s.cat].n).includes(q)).sort((a,b)=>b.date.localeCompare(a.date)||b.id-a.id);
+  const nConv=act.filter(s=>s.conv==='a_planifier').length, nLic=act.filter(s=>s.st==='L'||(s.st==='RT'&&s.issue==='licenciement')).length;
+  const kpi=[['#e8a020',act.length,'Sanctions en vigueur'],['#ff9a3d',nConv,'Convocation à planifier'],['#e0524e',nLic,'Licenciement proposé'],['#4fa97b',aExam.length,'Retrait à examiner']];
+  const grade=n=>{ const r=rhRowOf(n); return r?r.grade:''; };
+  const ligne=s=>{
+    const C=SANC_CAT[s.cat], R=s.st==='R';
+    let action='';
+    if(s.retiree) action=`<span class="fx-mut">retirée le ${frDate(s.retiree.date)}<br>par ${esc(s.retiree.par)}</span>`;
+    else{
+      if(R) action+='<span class="lock" title="Un rappel oral ne se supprime pas">🔒</span>';
+      else if(sancRetirable(s)&&gere) action+=`<button class="btn btn-sm btn-ghost" style="color:#ffb36a;border-color:#8a5a2a" onclick="sancRetirer(${s.id})">Retirer ?</button>`;
+      if(!R&&sancDirection()) action+=` <button class="btn btn-sm btn-ghost" title="Annuler (erreur de saisie) — Direction" onclick="sancRetirer(${s.id},true)">✕</button>`;
+    }
+    const conv=s.conv?(gere?`<select class="rg-conv" onchange="sancConv(${s.id},this.value)"><option value="a_planifier" ${s.conv==='a_planifier'?'selected':''}>📅 À planifier</option><option value="planifiee" ${s.conv==='planifiee'?'selected':''}>📅 Planifiée${s.convDate?' '+frDate(s.convDate).slice(0,5):''}</option><option value="faite" ${s.conv==='faite'?'selected':''}>✓ Faite</option></select>`:`<span class="chip-s" style="--c:#ff9a3d">📅 ${s.conv==='faite'?'faite':s.conv==='planifiee'?'planifiée':'à planifier'}</span>`):'';
+    return `<tr class="${s.retiree?'rg-ret':''}"><td><div style="display:flex;gap:9px;align-items:center;cursor:pointer" onclick="ficheEmp(decodeURIComponent('${encodeURIComponent(s.nom)}'))">${avatarHTML(s.nom,'width:30px;height:30px;font-size:.7rem;flex:none')}<div><b>${esc(s.nom)}</b><div class="fx-mut" style="margin:0">${esc(grade(s.nom))}</div></div></div></td>
+      <td><span class="cat" style="--c:${C.c}">${C.ic} ${C.n}</span><div class="fx-mut" style="margin:2px 0 0">${esc(s.motif)}</div></td>
+      <td>${sancLadder(s.cat,s.st)}</td><td><b>${esc(sancLabel(s))}</b><div style="margin-top:3px">${conv}</div></td>
+      <td class="mo">${frDate(s.date).slice(0,5)}</td><td class="fx-mut" style="margin:0">${esc(s.par)}</td><td style="text-align:right;white-space:nowrap">${action}</td></tr>`; };
+  const examen=aExam.length?aExam.map(s=>`<div class="rg-ex" style="--c:${SANC_CAT[s.cat].c}"><b>${esc(s.nom)}</b><div class="fx-mut" style="margin:2px 0 6px">${SANC_CAT[s.cat].ic} ${esc(sancLabel(s))} · ${frDate(s.date).slice(0,5)} · <b style="color:#7fd1a4">${sancRetirable(s)} j sans autre sanction</b></div>
+      ${gere?`<div class="f"><button class="btn btn-sm btn-ghost" style="color:#ff9a95;border-color:#7a3a38" onclick="sancRetirer(${s.id})">Retirer</button><button class="btn btn-sm btn-ghost" onclick="sancExam(${s.id},'gardee')">Garder</button><button class="btn btn-sm btn-ghost" onclick="sancExam(${s.id},'revoir')">Revoir dans 15 j</button></div>`:''}</div>`).join('')
+    :'<div class="fx-mut">Aucune sanction à examiner pour le moment.</div>';
+  const journal=L.log.slice(0,200).map(e=>`<div class="rg-j"><span class="mo fx-mut" style="margin:0;width:92px">${new Date(e.t).toLocaleDateString('fr-FR',{day:'2-digit',month:'2-digit'})} ${new Date(e.t).toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'})}</span><div style="flex:1"><div style="${e.act==='retrait'?'text-decoration:line-through;opacity:.75':''}"><b>${esc(e.nom)}</b> — ${esc(e.a)}</div><div class="fx-mut" style="margin:0">par ${esc(e.u)}</div></div></div>`).join('')||'<div class="empty">Le journal est vide</div>';
+  const pills=[['tous','Toutes'],...Object.keys(SANC_CAT).map(k=>[k,SANC_CAT[k].ic+' '+SANC_CAT[k].n]),['retirees','Retirées ('+ret.length+')']];
+  $('#main').innerHTML=`<div class="topbar"><div><h2>Avertissements</h2><div class="sub">Le registre des sanctions · ${act.length} en vigueur · tenu à jour sur Discord automatiquement</div></div>
+    <div style="display:flex;gap:10px"><div class="vd-seg"><button class="${SANC_TAB==='reg'?'on':''}" onclick="SANC_TAB='reg';avertissements()">Registre</button><button class="${SANC_TAB==='journal'?'on':''}" onclick="SANC_TAB='journal';avertissements()">Journal</button></div>
+    ${isMembre()?'':'<button class="btn btn-gold" onclick="sancModal()">＋ Donner une sanction</button>'}</div></div>
+  <div class="vd-sum" style="grid-template-columns:repeat(4,1fr)">${kpi.map(([c,n,l])=>`<div style="--c:${c}"><b>${n}</b><span>${l}</span></div>`).join('')}</div>
+  ${SANC_TAB==='journal'?`<div class="panel rg-journal"><div class="fx-lbl">📖 Journal · ne s'efface jamais</div>${journal}</div>`:`
+  <div class="el-bar"><div class="el-pills">${pills.map(([k,l])=>`<button class="${SANC_FILT===k?'on':''}" onclick="SANC_FILT='${k}';avertissements()">${l}</button>`).join('')}</div>
+    <input class="field" id="sancQ" style="max-width:240px" placeholder="🔍 Rechercher…" value="${esc(SANC_Q)}" oninput="chercherSanc(this.value)"></div>
+  <div class="rg-grid"><div class="panel" style="padding:6px 12px;overflow-x:auto">${vues.length?`<table class="rg-t"><thead><tr><th>Personne</th><th>Catégorie · motif</th><th>Échelle</th><th>Étape</th><th>Date</th><th>Par</th><th></th></tr></thead><tbody>${vues.map(ligne).join('')}</tbody></table>`:'<div class="empty">Aucune sanction ici</div>'}</div>
+  <div class="panel" style="padding:14px"><div class="fx-lbl">⏳ À examiner · retrait possible</div><div class="fx-mut" style="margin:0 0 10px">Avertissements de plus d'un mois, sans autre sanction depuis. Rien ne se retire tout seul : c'est à toi de décider. Les rappels n'apparaissent jamais ici.</div>${examen}</div></div>`}`;
+}
+
 /* ---- Effectif : le tableau des verdicts ----
    Même règles que le tableau (montée, descente < 95 %, avertissement, protections d'absence) :
    on les lit une seule fois ici pour ranger chaque runner dans sa colonne. */
@@ -2110,13 +2390,15 @@ function verdictRunner(r){
   const g=grade(r), ab=absDe(r.nom), q=g.quota||0, b=nn(r.barils), pc=q?Math.round(b/q*100):0;
   const nxt=(!estStagiaire(r)&&GRADES[r.grade+1])?GRADES[r.grade+1].nom:'', prv=(!estStagiaire(r)&&r.grade>0&&GRADES[r.grade-1])?GRADES[r.grade-1].nom:'';
   const base={r,q,b,pc,g};
+  const qc=sancQuotaCheck(r);
+  if(qc.ok) return {...base,v:'wn',why:'Aucune production · plus de 8 jours d\'ancienneté'};
+  if(qc.why==='Déjà averti cette semaine'||qc.why==='Licenciement déjà proposé') return {...base,v:'tol',why:qc.why};
   if(estStagiaire(r)) return {...base,v:'pr',why:'Stagiaire · période d\'essai'};
   if(ab) return {...base,v:'pr',why:`Absent du ${frDate(ab.du)} au ${frDate(ab.au)}`};
   if(r.absent) return {...base,v:'pr',why:'Congé / absence'};
   if(absFinRecente(r.nom)) return {...base,v:'pr',why:'Absence terminée il y a moins de 7 j'};
   if(!r._ghost&&eligible(r)) return {...base,v:'up',to:nxt,why:'Seuil de montée atteint'};
   if(r.grade===0&&estNouveau(r.nom)) return {...base,v:'pr',why:'Recrue de moins de 7 j'};
-  if(r.grade===0&&(r._ghost||(b<q*0.80&&b<=49))) return {...base,v:'wn',why:r._ghost?'Aucune prise de service':'Intérimaire · quasi aucune production'};
   if(r.grade>0&&!g.merite&&b<q*0.95) return {...base,v:'dn',to:prv,why:`Sous 95 % du quota (${pc} %)`};
   if(q&&b>=q) return {...base,v:'ok',why:'Quota atteint'};
   return {...base,v:'tol',why:r.grade===0?'Sous le quota · pas de sanction':'Tolérance 95–100 %'};
@@ -2131,7 +2413,7 @@ function vdCarte(x){
   if(!ro){
     if(x.v==='up'&&!r._ghost) act=`<button class="btn btn-sm btn-gold" onclick="promote(${r.id})">▲ Monter</button>`;
     else if(x.v==='dn') act=r._ghost?`<button class="btn btn-sm btn-red" onclick="demoteGhost(decodeURIComponent('${enc}'))">▼ Descendre</button>`:`<button class="btn btn-sm btn-red" onclick="demote(${r.id})">▼ Descendre</button>`;
-    else if(x.v==='wn') act=r._ghost?`<button class="btn btn-sm btn-ghost" style="color:#ffa500;border-color:rgba(255,165,0,.4)" onclick="avertirGhost(decodeURIComponent('${enc}'))">⚠ Avertir</button>`:`<button class="btn btn-sm btn-ghost" style="color:#ffa500;border-color:rgba(255,165,0,.4)" onclick="avertir(${r.id})">⚠ Avertir</button>`;
+    else if(x.v==='wn') act=`<button class="btn btn-sm btn-ghost" style="color:#ffa500;border-color:rgba(255,165,0,.4)" onclick="sancQuota(decodeURIComponent('${enc}'))">⚠ Avertir</button>`;
     else if(estStagiaire(r)) act=`<button class="btn btn-sm btn-gold" onclick="titulariser(decodeURIComponent('${enc}'))">🎓 Titulariser</button>`;
   }
   return `<div class="vd-carte" style="--c:${c}">
@@ -2147,13 +2429,14 @@ function vdCarte(x){
 }
 function effVerdictsHTML(R){
   const L=R.map(verdictRunner).filter(Boolean), by=v=>L.filter(x=>x.v===v);
+  SANC_TOUS=by('wn').map(x=>x.r.nom);
   const par=(a,b)=>b.pc-a.pc;
-  const defs=[['up','▲ Montent','Seuil de montée atteint'],['dn','▼ Descendent','Sous 95 % du quota'],['wn','⚠ Avertissements','Intérimaires quasi sans production'],['pr','🛡 Protégés','Absence, absence récente, recrue']];
+  const defs=[['up','▲ Montent','Seuil de montée atteint'],['dn','▼ Descendent','Sous 95 % du quota'],['wn','⚠ Avertissements','Intérimaires et stagiaires sans aucune production (plus de 8 jours d\'ancienneté)'],['pr','🛡 Protégés','Absence, absence récente, recrue']];
   const kpi=[['up','▲ Montent'],['dn','▼ Descendent'],['wn','⚠ Avertissements'],['tol','≈ À surveiller'],['pr','🛡 Protégés']];
   const bas=[...by('ok'),...by('tol')].sort(par);
   const nbDir=R.filter(r=>r.poste).length;
   return `<div class="vd-sum">${kpi.map(([v,l])=>`<div style="--c:${VD_COUL[v]}"><b>${by(v).length}</b><span>${l}</span></div>`).join('')}</div>
-  <div class="vd-cols">${defs.map(([v,t,s])=>`<div class="vd-col" style="--c:${VD_COUL[v]}"><h4><span>${t}</span><span>${by(v).length}</span></h4><div class="sub">${s}</div>${by(v).length?by(v).sort(par).map(vdCarte).join(''):'<div class="vd-vide">Personne</div>'}</div>`).join('')}</div>
+  <div class="vd-cols">${defs.map(([v,t,s])=>`<div class="vd-col" style="--c:${VD_COUL[v]}"><h4><span>${t}</span><span>${by(v).length}</span></h4><div class="sub">${s}</div>${v==='wn'&&by('wn').length&&!isMembre()?`<button class="btn btn-sm btn-gold" style="margin:0 0 10px;width:100%" onclick="avertirTous()">⚠ Avertir tous (${by('wn').length})</button>`:''}${by(v).length?by(v).sort(par).map(vdCarte).join(''):'<div class="vd-vide">Personne</div>'}</div>`).join('')}</div>
   <div class="vd-bas"><h4>≈ À surveiller · ✔ Quota atteint <span style="float:right">${bas.length}</span></h4>${bas.length?`<div class="vd-bas-g">${bas.map(x=>`<div class="vd-mini" style="--c:${VD_COUL[x.v]}" tabindex="0" role="button" onkeydown="actKey(event)" onclick="ficheEmp(decodeURIComponent('${encodeURIComponent(x.r.nom)}'))">${avatarHTML(x.r.nom||'?','width:28px;height:28px;font-size:.68rem;flex:none')}<div style="min-width:0"><b>${esc(x.r.nom)}</b><small>${fmt(x.b)} / ${fmt(x.q)} · ${x.pc} %</small></div><span class="vd-chip">${x.v==='ok'?'✔ Quota atteint':'≈ Tolérance'}</span></div>`).join('')}</div>`:'<div class="vd-vide">Personne</div>'}</div>
   ${nbDir?`<div style="margin-top:10px;font-size:.76rem;color:#8fa1b4">${nbDir} membre(s) de la direction : pas de quota, visibles dans la vue « Tableau ».</div>`:''}`;
 }
@@ -2167,7 +2450,7 @@ function rowRunner(r){
     <td><div class="prog"><i style="width:0%"></i></div><div class="pct">0 / ${fmt(g.quota)} (0%)</div></td>
     ${isMembre()?'':`<td>0</td><td style="text-align:right;white-space:nowrap;color:var(--muted);font-size:.78rem">
       ${!r.poste&&r.grade>0&&!ab&&!absFinRecente(r.nom)?`<button class="btn btn-sm btn-red" onclick="demoteGhost(decodeURIComponent('${encodeURIComponent(r.nom)}'))" title="Descendre de grade (aucune prise de service)">▼</button> `:''}
-      ${!r.poste&&r.grade===0&&!ab&&!estNouveau(r.nom)?`<button class="btn btn-sm btn-ghost" style="color:#ffa500;border-color:rgba(255,165,0,.4)" onclick="avertirGhost(decodeURIComponent('${encodeURIComponent(r.nom)}'))" title="Sans prise de service — donner un avertissement">⚠</button> `:''}
+      ${sancQuotaCheck(r).ok?`<button class="btn btn-sm btn-ghost" style="color:#ffa500;border-color:rgba(255,165,0,.4)" onclick="avertirGhost(decodeURIComponent('${encodeURIComponent(r.nom)}'))" title="Sans prise de service — donner un avertissement">⚠</button> `:''}
       ${estStagiaire(r)?`<button class="btn btn-sm btn-gold" onclick="titulariser(decodeURIComponent('${encodeURIComponent(r.nom)}'))" title="Titulariser (Stagiaire → Intérimaire)">🎓</button> `:''}
       apparaîtra ici après son 1ᵉʳ pointage</td>`}
   </tr>`;
@@ -2180,7 +2463,7 @@ function rowRunner(r){
     <td style="text-align:right;white-space:nowrap">
       ${eligible(r)?`<button class="btn btn-sm btn-gold" onclick="promote(${r.id})" title="Monter de grade">▲</button>`:''}
       ${!r.poste&&r.grade>0&&!g.merite&&r.barils<g.quota*0.95&&!r.absent&&!ab&&!absFinRecente(r.nom)?`<button class="btn btn-sm btn-red" onclick="demote(${r.id})" title="Descendre de grade (quota réalisé à ${pc}% — sous les 95%)">▼</button>`:''}
-      ${!r.poste&&r.grade===0&&r.barils<g.quota*0.80&&r.barils<=49&&!r.absent&&!ab&&!estNouveau(r.nom)?`<button class="btn btn-sm btn-ghost" style="color:#ffa500;border-color:rgba(255,165,0,.4)" onclick="avertir(${r.id})" title="Sous 80 % du quota (${pc}%) — donner un avertissement">⚠</button>`:''}
+      ${sancQuotaCheck(r).ok?`<button class="btn btn-sm btn-ghost" style="color:#ffa500;border-color:rgba(255,165,0,.4)" onclick="avertir(${r.id})" title="Sous 80 % du quota (${pc}%) — donner un avertissement">⚠</button>`:''}
       ${estStagiaire(r)?`<button class="btn btn-sm btn-gold" onclick="titulariser(decodeURIComponent('${encodeURIComponent(r.nom)}'))" title="Titulariser (Stagiaire → Intérimaire)">🎓</button>`:''}
       <button class="btn btn-sm btn-ghost" onclick="toggleAbsent(${r.id})" title="${r.absent?'Marquer de retour':'Mettre en congé / absence'}">${r.absent?'💼':'🌴'}</button>
       <button class="btn btn-sm btn-ghost" onclick="openRunnerModal(${r.id})">✎</button>
@@ -2310,37 +2593,8 @@ function avertDiscordNote(etat){
     :etat==='lecture-seule'?' · lecture seule : Discord non prévenu'
     :etat==='erreur'?' · envoi au bot impossible : Discord non prévenu':'';
 }
-async function avertir(id){
-  if(isMembre()) return toast('👀 Consultation seule pour les membres');
-  const r=S.runners.find(x=>x.id===id); if(!r) return;
-  if(estNouveau(r.nom)) return toast('🌱 Recrue depuis moins de 7 jours — pas d\'avertissement');
-  if(r.barils>49) return toast('✔ Plus de 49 de production cette semaine — pas d\'avertissement');
-  const g=grade(r), pcA=g.quota?Math.round(r.barils/g.quota*100):0;
-  const row=((S.sheets&&S.sheets.rh)||[]).find(x=>String(x.nom||'').toLowerCase().trim()===String(r.nom||'').toLowerCase().trim());
-  if(!confirm(`Donner un avertissement à ${r.nom} ?\n(Intérimaire · quota réalisé à ${pcA}% cette semaine)\n\nL'avertissement sera compté dans la colonne « Avert. » de sa fiche RH et annoncé sur Discord, comme avec /avertissement.`)) return;
-  let tot='?';
-  if(row){ const n=(parseInt(String(row.avert||'').replace(/\D/g,''),10)||0)+1; row.avert=String(n); tot=n; }
-  const etat=row?await avertDiscord(row,`Quota non atteint (${pcA} % cette semaine)`):'sans-discord';
-  jlog(`Avertissement : ${r.nom} (intérimaire, quota à ${pcA}%)${row?` — total : ${tot}`:''}`);
-  save(); sbPushNow(); rerender();
-  toast(`⚠ Avertissement donné à ${r.nom}${row?` (total : ${tot})`:' — introuvable en fiche RH, pense à l\'y ajouter'}${avertDiscordNote(etat)}`,7000);
-  sendLog('⚠️ Avertissement',`**${r.nom}** (Intérimaire) reçoit un avertissement — quota réalisé à **${pcA}%** cette semaine.${row?`\nTotal d'avertissements : **${tot}**`:''}`,0xffa500);
-}
-async function avertirGhost(nom){
-  // avertissement pour un intérimaire présent uniquement en fiche RH (aucune prise de service)
-  if(isMembre()) return toast('👀 Consultation seule pour les membres');
-  const row=((S.sheets&&S.sheets.rh)||[]).find(x=>String(x.nom||'').toLowerCase().trim()===String(nom).toLowerCase().trim());
-  if(!row) return;
-  if(absDe(nom)) return toast('🌴 Absence déclarée — pas d\'avertissement');
-  if(estNouveau(nom)) return toast('🌱 Recrue depuis moins de 7 jours — pas d\'avertissement');
-  if(!confirm(`Donner un avertissement à ${row.nom} ?\n(Intérimaire · aucune prise de service cette semaine)\n\nL'avertissement sera compté dans la colonne « Avert. » de sa fiche RH et annoncé sur Discord, comme avec /avertissement.`)) return;
-  const n=(parseInt(String(row.avert||'').replace(/\D/g,''),10)||0)+1; row.avert=String(n);
-  const etat=await avertDiscord(row,'Aucune prise de service cette semaine');
-  jlog(`Avertissement : ${row.nom} (intérimaire, aucune prise de service) — total : ${n}`);
-  save(); sbPushNow(); rerender();
-  toast(`⚠ Avertissement donné à ${row.nom} (total : ${n})${avertDiscordNote(etat)}`,7000);
-  sendLog('⚠️ Avertissement',`**${row.nom}** (Intérimaire) reçoit un avertissement — **aucune prise de service** cette semaine.\nTotal d'avertissements : **${n}**`,0xffa500);
-}
+async function avertir(id){ const r=S.runners.find(x=>x.id===id); if(r) return sancQuota(r.nom); }
+async function avertirGhost(nom){ return sancQuota(nom); }
 function titulariser(nom){
   if(isMembre()) return toast('👀 Consultation seule pour les membres');
   const row=rhRowOf(nom);
@@ -3800,7 +4054,7 @@ function rhFicheContrat(i,r,ro){
     ['Contrat généré',r.contratGen?`${F(r.contratGen.t)} · par ${esc(r.contratGen.par||'?')}`:'pas encore généré',!!r.contratGen],
     ['Signé par la personne (bouton « Lu et approuvé » ou case cochée)',r.contrat?'signé':'en attente de signature',!!r.contrat],
   ];
-  const lis=((S._tables&&S._tables.oilroxwood_avertissements)||[]).filter(a=>String(a.discord||'').trim()&&String(a.discord).trim()===String(r.discord||'').trim());
+  const sanc=sancDesPersonnes(r.nom).sort((a,b)=>b.date.localeCompare(a.date));
   return `<div class="fi-2">
     <div class="fi-box"><h5>Contrat de travail</h5>
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px"><span class="fi-chip ${r.contrat?'ok':'ko'}">${r.contrat?'✓ Contrat signé':'✗ Non signé'}</span><label class="fi-mut"><input type="checkbox" ${r.contrat?'checked':''}${ro?' disabled':''} onchange="cellEdit(${i},'contrat',this.checked);RH_DIRTY=true;rhFiche(${i})"> case « signé »</label></div>
@@ -3809,8 +4063,8 @@ function rhFicheContrat(i,r,ro){
     </div>
     <div>
       <div class="fi-box"><h5>Avertissements <span class="fi-chip ${nAv?'ko':'ok'}">${nAv}</span></h5>
-        ${lis.length?lis.map(a=>`<div class="fi-li"><span>${esc(a.raison||'sans motif')}${a.par?`<br><small class="fi-mut">donné par ${esc(a.par)}</small>`:''}</span></div>`).join(''):`<div class="fi-mut">${nAv?'Compteur : '+nAv+' (saisi à la main ou avant la reprise Discord).':'Aucun avertissement.'}</div>`}
-        ${ro?'':`<div style="display:flex;gap:7px;margin-top:10px;flex-wrap:wrap"><button class="btn btn-sm btn-ghost" onclick="rhAvert(${i},1)">⚠ Donner un avertissement</button>${nAv?`<button class="btn btn-sm btn-red" onclick="rhAvert(${i},-1)">✕ Retirer</button>`:''}</div><div class="fi-mut" style="margin-top:6px">Compté dans la fiche + log Direction. L'annonce dans le ticket se fait avec /avertir sur Discord.</div>`}
+        ${sanc.length?sanc.map(x=>`<div class="fi-li" style="${x.retiree?'text-decoration:line-through;opacity:.6':''}"><span>${SANC_CAT[x.cat].ic} <b>${esc(sancLabel(x))}</b> · ${frDate(x.date).slice(0,5)}<br><small class="fi-mut">${esc(x.motif)} — par ${esc(x.par)}</small></span><b class="fi-mut">${x.st==='R'?'🔒':''}</b></div>`).join(''):`<div class="fi-mut">${nAv?'Compteur : '+nAv+' (avant le registre).':'Aucune sanction.'}</div>`}
+        ${ro?'':`<div style="display:flex;gap:7px;margin-top:10px;flex-wrap:wrap"><button class="btn btn-sm btn-ghost" onclick="closeModal();sancModal({nom:decodeURIComponent('${encodeURIComponent(r.nom||'')}')})">⚖️ Donner une sanction</button><button class="btn btn-sm btn-ghost" onclick="closeModal();show('avertissements')">📒 Ouvrir le registre</button></div>`}
       </div>
       <div class="fi-box"><h5>Recrutement</h5>
         <div class="fi-li"><span>Recruteur</span><b>${esc(r.recrut||'—')}</b></div>
@@ -5606,6 +5860,13 @@ function ferDel(id){
 
 /* ================== MISES À JOUR (changelog) ================== */
 const CHANGELOG=[
+ {v:'C-129',d:'11/11/2026',t:'Avertissements : un vrai registre des sanctions',items:[
+   ['⚖️','Registre des sanctions','Nouvelle page Avertissements : conduite, arme blanche, manque de respect, quota non fait, commercial — chacune avec son échelle (rappel, avert. 1, avert. 2 + convocation, licenciement).'],
+   ['🧭','Étape calculée toute seule','L’assistant « Donner une sanction » propose la bonne étape suivante. Les rappels oraux ne se suppriment pas, le licenciement reste une proposition.'],
+   ['⏳','À examiner','Un avertissement de plus d’un mois sans autre sanction est signalé pour qu’on décide de le retirer. Le journal garde tout.'],
+   ['📉','Quotas : « Avertir tous »','Seuls les intérimaires et stagiaires à 0 production, de plus de 8 jours d’ancienneté et hors absence sont concernés.'],
+   ['💬','Tickets et Discord','La personne est prévenue dans son ticket, et le registre est tenu à jour sur Discord automatiquement.'],
+ ]},
  {v:'C-128',d:'04/11/2026',t:'Nouveaux écrans : verdicts, éligibilité, fiche employé, facture',items:[
    ['📊','Effectif en verdicts','Qui monte, qui descend, qui est averti, qui est protégé — avec le quota de chacun. Le tableau reste disponible.'],
    ['✅','Éligibilité en checklist','Gros boutons Menu / Boisson / Bidons, date automatique, et le compte qui a remis le dû dans « Don ».'],
