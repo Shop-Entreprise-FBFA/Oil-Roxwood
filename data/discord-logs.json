@@ -1,11 +1,48 @@
 {
- "maj": "2026-11-11T17:37:01.843638+00:00",
+ "maj": "2026-11-11T17:38:58.238880+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1570130618031931528",
+   "t": "2026-11-11T17:38:30.955000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 380x Pétrole Raffiné pour 3800$ par Marcus Vance. 1900$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 380,
+   "montant": 3800,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1570130584322449562",
+   "t": "2026-11-11T17:38:22.918000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 1646\nplayerDiscord : 536629304323211306\nplayerName : Fox\nplayerCharacter : Zoran Renard\nplayerId : 353172\nvehiclePlate : BM4391ZM\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Zoran Renard",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "1646",
+    "playerdiscord": "536629304323211306",
+    "playername": "Fox",
+    "playercharacter": "Zoran Renard",
+    "playerid": "353172",
+    "vehicleplate": "BM4391ZM",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1570129833672052789-0",
    "t": "2026-11-11T17:35:23.949000+00:00",
