@@ -1,11 +1,27 @@
 {
- "maj": "2026-11-11T12:17:30.168066+00:00",
+ "maj": "2026-11-11T12:57:31.309449+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1570059524046463088",
+   "t": "2026-11-11T12:56:00.828000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 536x Pétrole Raffiné pour 5360$ par Soren Hunter. 2680$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 536,
+   "montant": 5360,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1570049436757926000",
    "t": "2026-11-11T12:15:55.831000+00:00",
@@ -72521,101 +72537,6 @@
     "playercharacter": "Luc Rouza",
     "playerid": "382769",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1568971184513745018",
-   "t": "2026-11-08T12:51:20.463000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 324x Pétrole Raffiné pour 3240$ par Jason Palmer. 1620$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 324,
-   "montant": 3240,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1568969916768452609",
-   "t": "2026-11-08T12:46:18.209000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 136x Pétrole Raffiné pour 1360$ par Jason Palmer. 680$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 136,
-   "montant": 1360,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1568968883170320385",
-   "t": "2026-11-08T12:42:11.780000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 7036\nplayerDiscord : 1457014206154014782\nplayerName : BreezySnaily7262\nplayerCharacter : Kader Benali\nplayerId : 384858\nvehiclePlate : UO6382TD\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Kader Benali",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "7036",
-    "playerdiscord": "1457014206154014782",
-    "playername": "BreezySnaily7262",
-    "playercharacter": "Kader Benali",
-    "playerid": "384858",
-    "vehicleplate": "UO6382TD",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1568967625659387949",
-   "t": "2026-11-08T12:37:11.966000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 7029\nplayerDiscord : 487891709821190145\nplayerName : IcyNewt9023\nplayerCharacter : Luc Rouza\nplayerId : 382769\nvehiclePlate : BM4391ZM\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Luc Rouza",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "7029",
-    "playerdiscord": "487891709821190145",
-    "playername": "IcyNewt9023",
-    "playercharacter": "Luc Rouza",
-    "playerid": "382769",
-    "vehicleplate": "BM4391ZM",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1568965109504544841",
-   "t": "2026-11-08T12:27:12.068000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 6974\nplayerDiscord : 1075113477405933629\nplayerName : 60gaston\nplayerCharacter : Jason Brooks\nplayerId : 384594\nvehiclePlate : AS5715VX\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Jason Brooks",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "6974",
-    "playerdiscord": "1075113477405933629",
-    "playername": "60gaston",
-    "playercharacter": "Jason Brooks",
-    "playerid": "384594",
-    "vehicleplate": "AS5715VX",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
