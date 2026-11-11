@@ -1,11 +1,35 @@
 {
- "maj": "2026-11-11T17:38:58.238880+00:00",
+ "maj": "2026-11-11T17:40:58.863637+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1570131092118438031",
+   "t": "2026-11-11T17:40:23.986000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\na retiré 66x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -3083.55, 6815.63, 44.73\ntargetPosition : -3084.39, 6815.87, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1564\nplayerDiscord : 317280511292735499\nplayerName : SharpDuck3006\nplayerCharacter : Fred Berthier\nplayerId : 364651\nitemId : oil",
+   "nom": "Fred Berthier",
+   "quantite": 66,
+   "montant": null,
+   "type": "coffre_retrait",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-3083.55, 6815.63, 44.73",
+    "targetposition": "-3084.39, 6815.87, 43.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "1564",
+    "playerdiscord": "317280511292735499",
+    "playername": "SharpDuck3006",
+    "playercharacter": "Fred Berthier",
+    "playerid": "364651",
+    "itemid": "oil"
+   }
+  },
   {
    "id": "1570130618031931528",
    "t": "2026-11-11T17:38:30.955000+00:00",
@@ -83049,22 +83073,6 @@
     "playercharacter": "Julio Collins",
     "playerid": "356873",
     "itemid": "iron"
-   }
-  },
-  {
-   "id": "1569043911152898160",
-   "t": "2026-11-08T17:40:19.845000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 319x Pétrole Raffiné pour 3190$ par Luc Rouza. 1595$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 319,
-   "montant": 3190,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
