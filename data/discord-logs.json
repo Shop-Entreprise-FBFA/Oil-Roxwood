@@ -1,11 +1,75 @@
 {
- "maj": "2026-11-12T10:18:56.692402+00:00",
+ "maj": "2026-11-12T10:21:04.937460+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1570382748609290252-0",
+   "t": "2026-11-12T10:20:23.569000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 54x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1849.69, 6497.75, 16.73\ntargetPosition : -1849.11, 6498.65, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6188\nplayerDiscord : 826526979204841482\nplayerName : Orion\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : refinedoil",
+   "nom": "Diego Herrera",
+   "quantite": 54,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1849.69, 6497.75, 16.73",
+    "targetposition": "-1849.11, 6498.65, 15.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "6188",
+    "playerdiscord": "826526979204841482",
+    "playername": "Orion",
+    "playercharacter": "Diego Herrera",
+    "playerid": "231487",
+    "itemid": "refinedoil"
+   }
+  },
+  {
+   "id": "1570382748609290252-1",
+   "t": "2026-11-12T10:20:23.569000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\na retiré 53x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -1849.69, 6497.75, 16.73\ntargetPosition : -1849.11, 6498.65, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6188\nplayerDiscord : 826526979204841482\nplayerName : Orion\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : oil",
+   "nom": "Diego Herrera",
+   "quantite": 53,
+   "montant": null,
+   "type": "coffre_retrait",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1849.69, 6497.75, 16.73",
+    "targetposition": "-1849.11, 6498.65, 15.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "6188",
+    "playerdiscord": "826526979204841482",
+    "playername": "Orion",
+    "playercharacter": "Diego Herrera",
+    "playerid": "231487",
+    "itemid": "oil"
+   }
+  },
+  {
+   "id": "1570382499371032627",
+   "t": "2026-11-12T10:19:24.146000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 606x Pétrole Raffiné pour 6060$ par Jason Palmer. 3030$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 606,
+   "montant": 6060,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1570381993122857102-0",
    "t": "2026-11-12T10:17:23.447000+00:00",
