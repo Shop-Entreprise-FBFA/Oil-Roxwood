@@ -1,11 +1,32 @@
 {
- "maj": "2026-11-12T15:00:57.071876+00:00",
+ "maj": "2026-11-12T15:10:57.336518+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1570455394223132804",
+   "t": "2026-11-12T15:09:03.633000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 76\nplayerDiscord : 1213482703349882880\nplayerName : SlowFish0877\nplayerCharacter : Otto Jimminez\nplayerId : 337319\nvehiclePlate : AS5715VX\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Otto Jimminez",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "76",
+    "playerdiscord": "1213482703349882880",
+    "playername": "SlowFish0877",
+    "playercharacter": "Otto Jimminez",
+    "playerid": "337319",
+    "vehicleplate": "AS5715VX",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1570453210672406689",
    "t": "2026-11-12T15:00:23.034000+00:00",
@@ -87788,102 +87809,6 @@
     "playercharacter": "Julio Collins",
     "playerid": "356873",
     "itemid": "_cartepostop"
-   }
-  },
-  {
-   "id": "1569368498533171228-0",
-   "t": "2026-11-09T15:10:07.507000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 1x Carte Accés POST OP du coffre de l'entreprise (Oil RoxWood)\nposition : -1815.27, 6566.32, 16.73\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 8\nplayerDiscord : 767332288744128512\nplayerName : JULIO COLLINS\nplayerCharacter : Julio Collins\nplayerId : 356873\nitemId : _cartepostop",
-   "nom": "Julio Collins",
-   "quantite": 1,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1815.27, 6566.32, 16.73",
-    "targetposition": "-1815.66, 6565.56, 15.98",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "8",
-    "playerdiscord": "767332288744128512",
-    "playername": "JULIO COLLINS",
-    "playercharacter": "Julio Collins",
-    "playerid": "356873",
-    "itemid": "_cartepostop"
-   }
-  },
-  {
-   "id": "1569368498533171228-1",
-   "t": "2026-11-09T15:10:07.507000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 10x Document dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1840.81, 6524.57, 16.73\ntargetPosition : -1840.85, 6523.94, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 8\nplayerDiscord : 767332288744128512\nplayerName : JULIO COLLINS\nplayerCharacter : Julio Collins\nplayerId : 356873\nitemId : imagesPlaceholder",
-   "nom": "Julio Collins",
-   "quantite": 10,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1840.81, 6524.57, 16.73",
-    "targetposition": "-1840.85, 6523.94, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "8",
-    "playerdiscord": "767332288744128512",
-    "playername": "JULIO COLLINS",
-    "playercharacter": "Julio Collins",
-    "playerid": "356873",
-    "itemid": "imagesPlaceholder"
-   }
-  },
-  {
-   "id": "1569368498533171228-2",
-   "t": "2026-11-09T15:10:07.507000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 10x Document dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1840.81, 6524.57, 16.73\ntargetPosition : -1840.85, 6523.94, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 8\nplayerDiscord : 767332288744128512\nplayerName : JULIO COLLINS\nplayerCharacter : Julio Collins\nplayerId : 356873\nitemId : imagesPlaceholder",
-   "nom": "Julio Collins",
-   "quantite": 10,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1840.81, 6524.57, 16.73",
-    "targetposition": "-1840.85, 6523.94, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "8",
-    "playerdiscord": "767332288744128512",
-    "playername": "JULIO COLLINS",
-    "playercharacter": "Julio Collins",
-    "playerid": "356873",
-    "itemid": "imagesPlaceholder"
-   }
-  },
-  {
-   "id": "1569368498533171228-3",
-   "t": "2026-11-09T15:10:07.507000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 10x Document dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1840.81, 6524.57, 16.73\ntargetPosition : -1840.85, 6523.94, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 8\nplayerDiscord : 767332288744128512\nplayerName : JULIO COLLINS\nplayerCharacter : Julio Collins\nplayerId : 356873\nitemId : imagesPlaceholder",
-   "nom": "Julio Collins",
-   "quantite": 10,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1840.81, 6524.57, 16.73",
-    "targetposition": "-1840.85, 6523.94, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "8",
-    "playerdiscord": "767332288744128512",
-    "playername": "JULIO COLLINS",
-    "playercharacter": "Julio Collins",
-    "playerid": "356873",
-    "itemid": "imagesPlaceholder"
    }
   }
  ]
