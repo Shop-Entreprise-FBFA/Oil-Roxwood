@@ -1,11 +1,35 @@
 {
- "maj": "2026-11-12T18:40:59.720493+00:00",
+ "maj": "2026-11-12T18:43:00.557564+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1570508756524204165",
+   "t": "2026-11-12T18:41:06.197000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\na retiré 18x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1843.73, 6518.98, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 2053\nplayerDiscord : 1457014206154014782\nplayerName : BreezySnaily7262\nplayerCharacter : Kader Benali\nplayerId : 384858\nitemId : refinedoil",
+   "nom": "Kader Benali",
+   "quantite": 18,
+   "montant": null,
+   "type": "coffre_retrait",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1843.73, 6518.98, 16.73",
+    "targetposition": "-1843.83, 6518.10, 15.74",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "2053",
+    "playerdiscord": "1457014206154014782",
+    "playername": "BreezySnaily7262",
+    "playercharacter": "Kader Benali",
+    "playerid": "384858",
+    "itemid": "refinedoil"
+   }
+  },
   {
    "id": "1570508493654466606-0",
    "t": "2026-11-12T18:40:03.524000+00:00",
@@ -85535,38 +85559,6 @@
     "playercharacter": "Julio Collins",
     "playerid": "356873",
     "itemid": "weapon_petrolcan"
-   }
-  },
-  {
-   "id": "1569421845965443253",
-   "t": "2026-11-09T18:42:06.526000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 436x Pétrole Raffiné pour 4360$ par Costa Santa. 2180$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 436,
-   "montant": 4360,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1569421628352495717",
-   "t": "2026-11-09T18:41:14.643000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 486x Pétrole Raffiné pour 4860$ par Luc Rouza. 2430$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 486,
-   "montant": 4860,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
