@@ -1,11 +1,56 @@
 {
- "maj": "2026-11-12T20:13:00.836048+00:00",
+ "maj": "2026-11-12T20:15:01.758105+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1570532142604357802",
+   "t": "2026-11-12T20:14:01.873000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 631\nplayerDiscord : 1142017544736231475\nplayerName : BreezyLizard3848\nplayerCharacter : Soren Hunter\nplayerId : 182613\nvehiclePlate : FE3726MZ\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Soren Hunter",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "631",
+    "playerdiscord": "1142017544736231475",
+    "playername": "BreezyLizard3848",
+    "playercharacter": "Soren Hunter",
+    "playerid": "182613",
+    "vehicleplate": "FE3726MZ",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1570531898969694289",
+   "t": "2026-11-12T20:13:03.786000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\na retiré 33x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1844.31, 6517.56, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 2963\nplayerDiscord : 198789252329373706\nplayerName : Jack Berthier\nplayerCharacter : Jack Berthier\nplayerId : 276642\nitemId : refinedoil",
+   "nom": "Jack Berthier",
+   "quantite": 33,
+   "montant": null,
+   "type": "coffre_retrait",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1844.31, 6517.56, 16.73",
+    "targetposition": "-1843.83, 6518.10, 15.74",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "2963",
+    "playerdiscord": "198789252329373706",
+    "playername": "Jack Berthier",
+    "playercharacter": "Jack Berthier",
+    "playerid": "276642",
+    "itemid": "refinedoil"
+   }
+  },
   {
    "id": "1570531642764955693-0",
    "t": "2026-11-12T20:12:02.702000+00:00",
