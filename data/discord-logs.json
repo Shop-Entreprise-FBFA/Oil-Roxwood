@@ -1,11 +1,123 @@
 {
- "maj": "2026-11-12T16:34:56.523497+00:00",
+ "maj": "2026-11-12T16:36:56.669126+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1570477101700747385",
+   "t": "2026-11-12T16:35:19.099000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 153x Pétrole Raffiné pour 1530$ par Nikko Mount. 765$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 153,
+   "montant": 1530,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1570477030187859976-0",
+   "t": "2026-11-12T16:35:02.049000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\na retiré 152x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1842.75, 6518.16, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 871\nplayerDiscord : 1457014206154014782\nplayerName : BreezySnaily7262\nplayerCharacter : Kader Benali\nplayerId : 384858\nitemId : refinedoil",
+   "nom": "Kader Benali",
+   "quantite": 152,
+   "montant": null,
+   "type": "coffre_retrait",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1842.75, 6518.16, 16.73",
+    "targetposition": "-1843.83, 6518.10, 15.74",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "871",
+    "playerdiscord": "1457014206154014782",
+    "playername": "BreezySnaily7262",
+    "playercharacter": "Kader Benali",
+    "playerid": "384858",
+    "itemid": "refinedoil"
+   }
+  },
+  {
+   "id": "1570477030187859976-1",
+   "t": "2026-11-12T16:35:02.049000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\na retiré 152x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1843.77, 6519.56, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 871\nplayerDiscord : 1457014206154014782\nplayerName : BreezySnaily7262\nplayerCharacter : Kader Benali\nplayerId : 384858\nitemId : refinedoil",
+   "nom": "Kader Benali",
+   "quantite": 152,
+   "montant": null,
+   "type": "coffre_retrait",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1843.77, 6519.56, 16.73",
+    "targetposition": "-1843.83, 6518.10, 15.74",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "871",
+    "playerdiscord": "1457014206154014782",
+    "playername": "BreezySnaily7262",
+    "playercharacter": "Kader Benali",
+    "playerid": "384858",
+    "itemid": "refinedoil"
+   }
+  },
+  {
+   "id": "1570477030187859976-2",
+   "t": "2026-11-12T16:35:02.049000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\na retiré 22x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1843.91, 6519.23, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 871\nplayerDiscord : 1457014206154014782\nplayerName : BreezySnaily7262\nplayerCharacter : Kader Benali\nplayerId : 384858\nitemId : refinedoil",
+   "nom": "Kader Benali",
+   "quantite": 22,
+   "montant": null,
+   "type": "coffre_retrait",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1843.91, 6519.23, 16.73",
+    "targetposition": "-1843.83, 6518.10, 15.74",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "871",
+    "playerdiscord": "1457014206154014782",
+    "playername": "BreezySnaily7262",
+    "playercharacter": "Kader Benali",
+    "playerid": "384858",
+    "itemid": "refinedoil"
+   }
+  },
+  {
+   "id": "1570477030187859976-3",
+   "t": "2026-11-12T16:35:02.049000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 61x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3090.01, 6814.10, 44.73\ntargetPosition : -3089.68, 6814.50, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 365\nplayerDiscord : 707695913187016785\nplayerName : ShySpider2463\nplayerCharacter : Laurent Roquel\nplayerId : 282695\nitemId : oil",
+   "nom": "Laurent Roquel",
+   "quantite": 61,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-3090.01, 6814.10, 44.73",
+    "targetposition": "-3089.68, 6814.50, 43.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "365",
+    "playerdiscord": "707695913187016785",
+    "playername": "ShySpider2463",
+    "playercharacter": "Laurent Roquel",
+    "playerid": "282695",
+    "itemid": "oil"
+   }
+  },
   {
    "id": "1570476777418006675",
    "t": "2026-11-12T16:34:01.784000+00:00",
@@ -87026,22 +87138,6 @@
     "playercharacter": "Diego Herrera",
     "playerid": "231487",
     "itemid": "oil"
-   }
-  },
-  {
-   "id": "1569389930055078042",
-   "t": "2026-11-09T16:35:17.180000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 264x Pétrole Raffiné pour 2640$ par Fred Berthier. 1320$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 264,
-   "montant": 2640,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
