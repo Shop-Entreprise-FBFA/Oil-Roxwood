@@ -59456,6 +59456,22 @@
    "quantite": 10,
    "montant": 50,
    "did": "707695913187016785"
+  },
+  {
+   "id": "1570788592438083677:0",
+   "t": "2026-11-13 14:13",
+   "nom": "Laurent Roquel",
+   "quantite": 100,
+   "montant": 500,
+   "did": "707695913187016785"
+  },
+  {
+   "id": "1570788592438083677:1",
+   "t": "2026-11-13 14:13",
+   "nom": "Stella Collins",
+   "quantite": 135,
+   "montant": 675,
+   "did": "948542221429379112"
   }
  ],
  "sanctions": {
@@ -59708,17 +59724,17 @@
   }
  },
  "_cid": "irejmuc6jrk",
- "_maj": 1794575727852,
- "_rev": "o17rrs7vqga-mwf01yli",
+ "_maj": 1794575732247,
+ "_rev": "2sfc3l83veo-mwf024oi",
  "_majSec": {
-  "fer": 1794500378577,
+  "fer": 1794575732224,
   "fact": 1794575106255,
   "users": 1794574905450,
   "weeks": 1794179966930,
   "sheets": 1794574540410,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1794574905450,
+  "journal": 1794575732247,
   "pending": 1793561085750,
   "prodDer": 1794418682659,
   "runners": 1794331069245,
@@ -59726,13 +59742,13 @@
   "imported": 1793561085750,
   "settings": 1794493778197,
   "closeUndo": 1794179966930,
-  "quotasCom": 1794574927185,
+  "quotasCom": 1794575732247,
   "bilanExtra": 1793986683739,
   "bilanForce": 1793561085750,
   "primesExtra": 1793561085750,
   "quotasComHist": 1794179966930,
   "profils": 1793561085750,
-  "_tables": 1794575727852,
+  "_tables": 1794575732224,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -59751,6 +59767,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1794575729238,
+   "u": "Stella Collins",
+   "a": "Achats de fer : 2 relevé(s) repris du salon"
+  },
   {
    "t": 1794574912762,
    "u": "Julio Collins",
@@ -61245,11 +61266,6 @@
    "t": 1793432408622,
    "u": "?",
    "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1793432361946,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
   }
  ],
  "prodDer": {
@@ -61767,7 +61783,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-13T13:15:28.998Z",
+  "maj": "2026-11-13T13:15:36.882Z",
   "semaine": 46,
   "totalBarils": 60434,
   "ca": 302170,
@@ -61901,7 +61917,7 @@
   "achats": {},
   "vendus": 2265,
   "parPers": 567,
-  "ferPers": 1134
+  "ferPers": 1101
  },
  "bilanExtra": [
   {
