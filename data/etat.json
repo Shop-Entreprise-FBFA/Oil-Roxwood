@@ -15638,6 +15638,20 @@
     "client": "Citoyen ⚡",
     "quantite": 200,
     "qui": "Julio Collins"
+   },
+   {
+    "date": "2026-11-13",
+    "client": "Sandy Repairs",
+    "quantite": 100,
+    "qui": "Laurent Roquel",
+    "fact": 253206
+   },
+   {
+    "date": "2026-11-13",
+    "client": "Sandy Repairs",
+    "quantite": 100,
+    "qui": "Stella Collins",
+    "fact": 253206
    }
   ],
   "collection": [
@@ -17193,7 +17207,7 @@
     "rib": "21138",
     "tel": "2048",
     "adresse": "Sandy Shores",
-    "lastCmd": "2026-10-31",
+    "lastCmd": "2026-11-13",
     "type": "entreprise",
     "salon": "1436500641492111463"
    },
@@ -18146,8 +18160,38 @@
     "prix": 150
    }
   ],
-  "compteur": 253206,
+  "compteur": 253207,
   "factures": [
+   {
+    "num": 253206,
+    "date": "2026-11-13",
+    "client": "Sandy Repairs",
+    "emetteur": "Laurent Roquel, Stella Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 200,
+      "tva": 0,
+      "pu": 180,
+      "ht": 36000,
+      "ttc": 36000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 36000,
+    "ttc": 36000,
+    "poids": 400,
+    "statut": "attente",
+    "envoi": {
+     "t": 1794574540973,
+     "par": "Laurent Roquel",
+     "statut": "en_cours",
+     "ordre": 1794574541874,
+     "rapport": ""
+    }
+   },
    {
     "num": 253205,
     "date": "2026-11-11",
@@ -59662,15 +59706,15 @@
    "sem": 44
   }
  },
- "_cid": "qtduez8jqgf",
- "_maj": 1794574477500,
- "_rev": "v5oed29dsua-mwezbdbv",
+ "_cid": "yaib9ctfshh",
+ "_maj": 1794574540973,
+ "_rev": "qryg083qnci-mwezciwh",
  "_majSec": {
   "fer": 1794500378577,
-  "fact": 1794476208126,
+  "fact": 1794574540973,
   "users": 1794571850491,
   "weeks": 1794179966930,
-  "sheets": 1794529615230,
+  "sheets": 1794574540410,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
   "journal": 1794571850491,
@@ -59687,7 +59731,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794179966930,
   "profils": 1793561085750,
-  "_tables": 1794574421847,
+  "_tables": 1794574540953,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -61722,13 +61766,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-13T12:54:48.379Z",
+  "maj": "2026-11-13T12:55:42.257Z",
   "semaine": 46,
   "totalBarils": 60434,
   "ca": 302170,
   "objectif": 375000,
   "effectif": 123,
-  "clientsServis": 189,
+  "clientsServis": 190,
   "theme": "",
   "top3": [
    {
@@ -64642,6 +64686,48 @@
     "id": 1794424101192,
     "statut": "fait",
     "rapport": "Avert. 1 enregistré pour noob_pro62 mais aucun ticket trouvé : personne non prévenue dans un ticket."
+   },
+   {
+    "type": "facture_ticket",
+    "payload": {
+     "num": 253206,
+     "salon": "1436500641492111463",
+     "reedition": false,
+     "facture": {
+      "num": 253206,
+      "date": "2026-11-13",
+      "client": "Sandy Repairs",
+      "emetteur": "Laurent Roquel, Stella Collins",
+      "postop": false,
+      "lignes": [
+       {
+        "ref": "CMD",
+        "qte": 200,
+        "tva": 0,
+        "pu": 180,
+        "ht": 36000,
+        "ttc": 36000,
+        "desc": "bidons d'essence "
+       }
+      ],
+      "offert": 0,
+      "ht": 36000,
+      "ttc": 36000,
+      "poids": 400,
+      "statut": "attente"
+     },
+     "client": {
+      "nom": "Sandy Repairs",
+      "rib": "21138",
+      "tel": "2048",
+      "adresse": "Sandy Shores",
+      "lastCmd": "2026-11-13",
+      "type": "entreprise",
+      "salon": "1436500641492111463"
+     },
+     "par": "Laurent Roquel"
+    },
+    "id": 1794574541874
    }
   ],
   "oilroxwood_coffres": [
