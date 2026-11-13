@@ -7886,6 +7886,62 @@
  "sheets": {
   "rh": [
    {
+    "nom": "Isaac jackson",
+    "grade": "Intérimaire",
+    "tel": "555 603 178",
+    "rib": "230806",
+    "idU": "116830",
+    "arrivee": "2026-11-13",
+    "discord": "518440900049764362",
+    "avert": "",
+    "contrat": true,
+    "recrut": "Diego Sypher",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
+    "nom": "Thiago Calvarez",
+    "grade": "Intérimaire",
+    "tel": "555744956",
+    "rib": "569558",
+    "idU": "368414",
+    "arrivee": "2026-11-13",
+    "discord": "1187231424370196595",
+    "avert": "",
+    "contrat": true,
+    "recrut": "Diego Sypher",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
+    "nom": "Carlos Calvarez",
+    "grade": "Intérimaire",
+    "tel": "555209072",
+    "rib": "569552",
+    "idU": "356591",
+    "arrivee": "2026-11-13",
+    "discord": "335052610950397962",
+    "avert": "",
+    "contrat": false,
+    "recrut": "Diego Sypher",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
+    "nom": "Ayko Navarro",
+    "grade": "Intérimaire",
+    "tel": "555 145 435",
+    "rib": "566777",
+    "idU": "375831",
+    "arrivee": "2026-11-13",
+    "discord": "1293493270332047393",
+    "avert": "",
+    "contrat": true,
+    "recrut": "Diego Sypher",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
     "nom": "Max Sholby",
     "grade": "Stagiaire",
     "tel": "555 292 892",
@@ -59669,17 +59725,17 @@
   }
  },
  "_cid": "qtduez8jqgf",
- "_maj": 1794603401751,
- "_rev": "nzb1n2020jd-mwfgk7dc",
+ "_maj": 1794603461501,
+ "_rev": "66hnqaaz243-mwfgke3a",
  "_majSec": {
   "fer": 1794576272073,
   "fact": 1794602483613,
   "users": 1794590224470,
   "weeks": 1794179966930,
-  "sheets": 1794602333825,
+  "sheets": 1794603461501,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1794602333825,
+  "journal": 1794603461501,
   "pending": 1793561085750,
   "prodDer": 1794418682659,
   "runners": 1794588450185,
@@ -59693,7 +59749,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794179966930,
   "profils": 1793561085750,
-  "_tables": 1794603401751,
+  "_tables": 1794603461467,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -59701,17 +59757,27 @@
   "_affFix1": 1793561085750,
   "produits": 1793561085750,
   "_prodFix1": 1793561085750,
-  "_recruesIgnore": 1794588455681,
+  "_recruesIgnore": 1794603461467,
   "ventesAlias": 1793561085750,
   "_ventesIgnore": 1793561085750,
   "_avertVus": 1793561085750,
-  "_signeVus": 1794588428971,
+  "_signeVus": 1794603461501,
   "sanctions": 1794493778197,
   "_sancFix1": 1794493778197
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1794603462107,
+   "u": "Diego Herrera",
+   "a": "Contrat(s) signé(s) via Discord : Ayko Navarro, Thiago Calvarez, Isaac jackson"
+  },
+  {
+   "t": 1794603462074,
+   "u": "Diego Herrera",
+   "a": "Recrutements Discord : 4 fiche(s) créée(s), 0 case(s) complétée(s) — Ayko Navarro, Carlos Calvarez, Thiago Calvarez…"
+  },
   {
    "t": 1794602334318,
    "u": "Stella Collins",
@@ -61201,16 +61267,6 @@
    "t": 1793477232659,
    "u": "Julio Collins",
    "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1793477232507,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1793465495476,
-   "u": "Emma Collins-rodriguez",
-   "a": "Achats de fer : 2 relevé(s) repris du salon"
   }
  ],
  "prodDer": {
@@ -61728,12 +61784,12 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-13T20:57:34.032Z",
+  "maj": "2026-11-13T20:57:42.742Z",
   "semaine": 46,
   "totalBarils": 130143,
   "ca": 650715,
   "objectif": 375000,
-  "effectif": 115,
+  "effectif": 119,
   "clientsServis": 190,
   "theme": "",
   "top3": [
@@ -66851,10 +66907,6 @@
  "_affFix1": true,
  "_prodFix1": true,
  "_recruesIgnore": [
-  "1789478557870",
-  "1789559896344",
-  "1789476670083",
-  "1789577570931",
   "1789577576632",
   "1789648441046",
   "1789648524158",
@@ -67050,7 +67102,11 @@
   "1794500996284",
   "1794529572430",
   "1794576667402",
-  "1794514308652"
+  "1794514308652",
+  "1794600883481",
+  "1794603267734",
+  "1794603273923",
+  "1794603296012"
  ],
  "_signeVus": [
   "1789477305650",
@@ -67248,7 +67304,10 @@
   "1794484507393",
   "1794501025704",
   "1794529592637",
-  "1794576678174"
+  "1794576678174",
+  "1794600912616",
+  "1794603284352",
+  "1794603314602"
  ],
  "_agSupp": [
   "1789145270913",
