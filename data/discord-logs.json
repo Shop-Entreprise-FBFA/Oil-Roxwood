@@ -1,11 +1,32 @@
 {
- "maj": "2026-11-13T16:10:56.026445+00:00",
+ "maj": "2026-11-13T16:18:54.586975+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1570834696122663134",
+   "t": "2026-11-13T16:16:16.253000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 870\nplayerDiscord : 815274462470995968\nplayerName : SlowCrab7549\nplayerCharacter : Bene Salvador\nplayerId : 116552\nvehiclePlate : AY0298ZV\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Bene Salvador",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "870",
+    "playerdiscord": "815274462470995968",
+    "playername": "SlowCrab7549",
+    "playercharacter": "Bene Salvador",
+    "playerid": "116552",
+    "vehicleplate": "AY0298ZV",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1570833208793370676",
    "t": "2026-11-13T16:10:21.646000+00:00",
@@ -73885,22 +73906,6 @@
    "nom": null,
    "quantite": 648,
    "montant": 6480,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1569746206509375491",
-   "t": "2026-11-10T16:11:00.106000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 653x Pétrole Raffiné pour 6530$ par Marcus Vance. 3265$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 653,
-   "montant": 6530,
    "type": "vente",
    "salon": "1245400913473179729",
    "champs": {
