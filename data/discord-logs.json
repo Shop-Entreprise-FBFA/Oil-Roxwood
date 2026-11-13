@@ -1,11 +1,27 @@
 {
- "maj": "2026-11-13T12:08:56.483403+00:00",
+ "maj": "2026-11-13T12:18:55.701546+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1570774750664589396",
+   "t": "2026-11-13T12:18:04.142000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 540x Pétrole Raffiné pour 5400$ par Booskap Ba. 2700$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 540,
+   "montant": 5400,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1570772221264396400",
    "t": "2026-11-13T12:08:01.086000+00:00",
@@ -78199,110 +78215,6 @@
     "playercharacter": "Laurent Roquel",
     "playerid": "282695",
     "itemid": "oil"
-   }
-  },
-  {
-   "id": "1569686567906181197-0",
-   "t": "2026-11-10T12:14:01.155000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 148x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1845.77, 6514.06, 16.73\ntargetPosition : -1845.91, 6514.70, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6208\nplayerDiscord : 580059741426941982\nplayerName : MoodyToad0472\nplayerCharacter : Yann Zigzag\nplayerId : 380916\nitemId : refinedoil",
-   "nom": "Yann Zigzag",
-   "quantite": 148,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1845.77, 6514.06, 16.73",
-    "targetposition": "-1845.91, 6514.70, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6208",
-    "playerdiscord": "580059741426941982",
-    "playername": "MoodyToad0472",
-    "playercharacter": "Yann Zigzag",
-    "playerid": "380916",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1569686567906181197-1",
-   "t": "2026-11-10T12:14:01.155000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 28x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1845.84, 6513.97, 16.73\ntargetPosition : -1845.91, 6514.70, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6208\nplayerDiscord : 580059741426941982\nplayerName : MoodyToad0472\nplayerCharacter : Yann Zigzag\nplayerId : 380916\nitemId : refinedoil",
-   "nom": "Yann Zigzag",
-   "quantite": 28,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1845.84, 6513.97, 16.73",
-    "targetposition": "-1845.91, 6514.70, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6208",
-    "playerdiscord": "580059741426941982",
-    "playername": "MoodyToad0472",
-    "playercharacter": "Yann Zigzag",
-    "playerid": "380916",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1569686330601115731",
-   "t": "2026-11-10T12:13:04.577000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 551x Pétrole Raffiné pour 5510$ par Jeff Beaumont. 2755$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 551,
-   "montant": 5510,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1569686314826203177",
-   "t": "2026-11-10T12:13:00.816000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 148x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1845.31, 6514.40, 16.73\ntargetPosition : -1845.91, 6514.70, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6208\nplayerDiscord : 580059741426941982\nplayerName : MoodyToad0472\nplayerCharacter : Yann Zigzag\nplayerId : 380916\nitemId : refinedoil",
-   "nom": "Yann Zigzag",
-   "quantite": 148,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1845.31, 6514.40, 16.73",
-    "targetposition": "-1845.91, 6514.70, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6208",
-    "playerdiscord": "580059741426941982",
-    "playername": "MoodyToad0472",
-    "playercharacter": "Yann Zigzag",
-    "playerid": "380916",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1569686081173987512",
-   "t": "2026-11-10T12:12:05.109000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 570x Pétrole Raffiné pour 5700$ par Costa Santa. 2850$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 570,
-   "montant": 5700,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
