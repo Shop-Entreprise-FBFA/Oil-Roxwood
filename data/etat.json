@@ -7613,6 +7613,20 @@
  "sheets": {
   "rh": [
    {
+    "nom": "Bene Salvador",
+    "grade": "Intérimaire",
+    "tel": "555180076",
+    "rib": "322998",
+    "idU": "116552",
+    "arrivee": "2026-11-12",
+    "discord": "1190954360830701571",
+    "avert": "",
+    "contrat": true,
+    "recrut": "Marco Bellini",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
     "nom": "Dwayne Garcia",
     "grade": "Intérimaire",
     "tel": "555-764-204",
@@ -59635,17 +59649,17 @@
   }
  },
  "_cid": "m1syjl6z24j",
- "_maj": 1794529386421,
- "_rev": "rz06b20obf-mwe8gq4a",
+ "_maj": 1794529392277,
+ "_rev": "byn6oeq3thn-mwe8gwxz",
  "_majSec": {
   "fer": 1794500378577,
   "fact": 1794476208126,
   "users": 1794509262364,
   "weeks": 1794179966930,
-  "sheets": 1794505692115,
+  "sheets": 1794529392277,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1794509262364,
+  "journal": 1794529392277,
   "pending": 1793561085750,
   "prodDer": 1794418682659,
   "runners": 1794331069245,
@@ -59659,7 +59673,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794179966930,
   "profils": 1793561085750,
-  "_tables": 1794529386421,
+  "_tables": 1794529392265,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -59667,17 +59681,27 @@
   "_affFix1": 1793561085750,
   "produits": 1793561085750,
   "_prodFix1": 1793561085750,
-  "_recruesIgnore": 1794489827218,
+  "_recruesIgnore": 1794529392265,
   "ventesAlias": 1793561085750,
   "_ventesIgnore": 1793561085750,
   "_avertVus": 1793561085750,
-  "_signeVus": 1794489827247,
+  "_signeVus": 1794529392277,
   "sanctions": 1794493778197,
   "_sancFix1": 1794493778197
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1794529390628,
+   "u": "Marco Bellini",
+   "a": "Contrat(s) signé(s) via Discord : Bene Salvador"
+  },
+  {
+   "t": 1794529390616,
+   "u": "Marco Bellini",
+   "a": "Recrutements Discord : 1 fiche(s) créée(s), 0 case(s) complétée(s) — Bene Salvador"
+  },
   {
    "t": 1794509268307,
    "u": "Julio Collins",
@@ -61167,16 +61191,6 @@
    "t": 1793389337101,
    "u": "Diego Herrera",
    "a": "Absences Discord reprises : Hassan Cheb"
-  },
-  {
-   "t": 1793386172776,
-   "u": "Tyler Collins",
-   "a": "Contrat(s) signé(s) via Discord : Jeff Beaumont, Tyrese Jackson, Grigori Valentine…"
-  },
-  {
-   "t": 1793386172755,
-   "u": "Tyler Collins",
-   "a": "Recrutements Discord : 5 fiche(s) créée(s), 0 case(s) complétée(s) — Jeff Beaumont, Tyrese Jackson, Jason Palmer…"
   }
  ],
  "prodDer": {
@@ -61694,12 +61708,12 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-13T00:23:08.602Z",
+  "maj": "2026-11-13T00:23:17.447Z",
   "semaine": 46,
   "totalBarils": 60434,
   "ca": 302170,
   "objectif": 375000,
-  "effectif": 121,
+  "effectif": 122,
   "clientsServis": 189,
   "theme": "",
   "top3": [
@@ -66748,7 +66762,6 @@
  "_affFix1": true,
  "_prodFix1": true,
  "_recruesIgnore": [
-  "1789028277714",
   "1789476285329",
   "1789477173617",
   "1789477199475",
@@ -66947,7 +66960,8 @@
   "1794430917091",
   "1794430950994",
   "1794431276509",
-  "1794484472514"
+  "1794484472514",
+  "1794500996284"
  ],
  "_signeVus": [
   "1789477305650",
@@ -67142,7 +67156,8 @@
   "1794431047401",
   "1794431071595",
   "1794431299265",
-  "1794484507393"
+  "1794484507393",
+  "1794501025704"
  ],
  "_agSupp": [
   "1789145270913",
