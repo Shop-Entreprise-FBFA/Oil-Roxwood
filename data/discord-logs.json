@@ -1,11 +1,27 @@
 {
- "maj": "2026-11-13T15:24:56.346683+00:00",
+ "maj": "2026-11-13T15:38:56.147053+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1570824942428229703",
+   "t": "2026-11-13T15:37:30.791000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 133x Pétrole Raffiné pour 1330$ par Xavier Collins. 665$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 133,
+   "montant": 1330,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1570821619532824660-0",
    "t": "2026-11-13T15:24:18.551000+00:00",
@@ -74104,27 +74120,6 @@
     "playercharacter": "Ace Morreti",
     "playerid": "385137",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1569737883076530177",
-   "t": "2026-11-10T15:37:55.645000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 583\nplayerDiscord : 198789252329373706\nplayerName : Jack Berthier\nplayerCharacter : Jack Berthier\nplayerId : 276642\nvehiclePlate : GB1899JF\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Jack Berthier",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "583",
-    "playerdiscord": "198789252329373706",
-    "playername": "Jack Berthier",
-    "playercharacter": "Jack Berthier",
-    "playerid": "276642",
-    "vehicleplate": "GB1899JF",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
