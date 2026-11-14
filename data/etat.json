@@ -18231,7 +18231,14 @@
     "ht": 27000,
     "ttc": 27000,
     "poids": 300,
-    "statut": "attente"
+    "statut": "attente",
+    "envoi": {
+     "t": 1794682189787,
+     "par": "Stella Collins",
+     "statut": "en_cours",
+     "ordre": 1794682187611,
+     "rapport": ""
+    }
    },
    {
     "num": 253206,
@@ -60039,11 +60046,11 @@
   }
  },
  "_cid": "5jl2qg9rfhv",
- "_maj": 1794682189174,
- "_rev": "kpghvwrfcq-mwgrfqb6",
+ "_maj": 1794682189788,
+ "_rev": "wy4yhu0yh9r-mwgrfv4z",
  "_majSec": {
   "fer": 1794665211692,
-  "fact": 1794682189159,
+  "fact": 1794682189788,
   "users": 1794675448436,
   "weeks": 1794179966930,
   "sheets": 1794682189159,
@@ -60063,7 +60070,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794179966930,
   "profils": 1793561085750,
-  "_tables": 1794682189159,
+  "_tables": 1794682189766,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -62115,7 +62122,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-14T18:49:47.250Z",
+  "maj": "2026-11-14T18:49:53.507Z",
   "semaine": 46,
   "totalBarils": 130143,
   "ca": 650715,
@@ -65115,6 +65122,48 @@
     "id": 1794681661606,
     "statut": "fait",
     "rapport": "Rappel oral annoncé dans le ticket de mandatdedepot."
+   },
+   {
+    "type": "facture_ticket",
+    "payload": {
+     "num": 253207,
+     "salon": "1247271293317812264",
+     "reedition": false,
+     "facture": {
+      "num": 253207,
+      "date": "2026-11-14",
+      "client": "LTD Strawberry",
+      "emetteur": "Stella Collins",
+      "postop": false,
+      "lignes": [
+       {
+        "ref": "CMD",
+        "qte": 150,
+        "tva": 0,
+        "pu": 180,
+        "ht": 27000,
+        "ttc": 27000,
+        "desc": "bidons d'essence "
+       }
+      ],
+      "offert": 0,
+      "ht": 27000,
+      "ttc": 27000,
+      "poids": 300,
+      "statut": "attente"
+     },
+     "client": {
+      "nom": "LTD Strawberry",
+      "rib": "20020",
+      "tel": "930",
+      "adresse": "Los Santos",
+      "lastCmd": "2026-11-14",
+      "type": "entreprise",
+      "salon": "1247271293317812264"
+     },
+     "par": "Stella Collins"
+    },
+    "id": 1794682187611
    }
   ],
   "oilroxwood_coffres": [
