@@ -1,11 +1,32 @@
 {
- "maj": "2026-11-14T18:08:56.689559+00:00",
+ "maj": "2026-11-14T18:11:00.418801+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1571225432836022333",
+   "t": "2026-11-14T18:08:55.145000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 1978\nplayerDiscord : 815274462470995968\nplayerName : SlowCrab7549\nplayerCharacter : Bene Salvador\nplayerId : 116552\nvehiclePlate : FE3726MZ\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Bene Salvador",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "1978",
+    "playerdiscord": "815274462470995968",
+    "playername": "SlowCrab7549",
+    "playercharacter": "Bene Salvador",
+    "playerid": "116552",
+    "vehicleplate": "FE3726MZ",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1571224925803384899-0",
    "t": "2026-11-14T18:06:54.259000+00:00",
@@ -93982,30 +94003,6 @@
    "quantite": 26,
    "montant": null,
    "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1815.71, 6565.45, 16.73",
-    "targetposition": "-1815.66, 6565.56, 15.98",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "366",
-    "playerdiscord": "826526979204841482",
-    "playername": "Orion",
-    "playercharacter": "Diego Herrera",
-    "playerid": "231487",
-    "itemid": "weapon_petrolcan"
-   }
-  },
-  {
-   "id": "1570146193382838486-3",
-   "t": "2026-11-11T18:40:24.408000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 26x Bidon d'essence du coffre de l'entreprise (Oil RoxWood)\nposition : -1815.71, 6565.45, 16.73\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 366\nplayerDiscord : 826526979204841482\nplayerName : Orion\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : weapon_petrolcan",
-   "nom": "Diego Herrera",
-   "quantite": 26,
-   "montant": null,
-   "type": "coffre_retrait",
    "salon": "1245400913066066099",
    "coffre": "entreprise (Oil RoxWood)",
    "champs": {
