@@ -1,11 +1,56 @@
 {
- "maj": "2026-11-14T22:42:58.244393+00:00",
+ "maj": "2026-11-14T22:44:56.617116+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1571294658410057730",
+   "t": "2026-11-14T22:43:59.808000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 186\nplayerDiscord : 709363912071446598\nplayerName : FuzzyOtter7510\nplayerCharacter : Ruby Saavedra\nplayerId : 160625\nvehiclePlate : AY4705SJ\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Ruby Saavedra",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "186",
+    "playerdiscord": "709363912071446598",
+    "playername": "FuzzyOtter7510",
+    "playercharacter": "Ruby Saavedra",
+    "playerid": "160625",
+    "vehicleplate": "AY4705SJ",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1571294644619182242",
+   "t": "2026-11-14T22:43:56.520000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 152x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1849.91, 6514.27, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3938\nplayerDiscord : 815274462470995968\nplayerName : SlowCrab7549\nplayerCharacter : Bene Salvador\nplayerId : 116552\nitemId : refinedoil",
+   "nom": "Bene Salvador",
+   "quantite": 152,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1849.91, 6514.27, 16.73",
+    "targetposition": "-1850.63, 6515.15, 15.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "3938",
+    "playerdiscord": "815274462470995968",
+    "playername": "SlowCrab7549",
+    "playercharacter": "Bene Salvador",
+    "playerid": "116552",
+    "itemid": "refinedoil"
+   }
+  },
   {
    "id": "1571293933055643780",
    "t": "2026-11-14T22:41:06.870000+00:00",
