@@ -7886,6 +7886,34 @@
  "sheets": {
   "rh": [
    {
+    "nom": "Mark Dupont",
+    "grade": "Intérimaire",
+    "tel": "555-312-416",
+    "rib": "525680",
+    "idU": "353305",
+    "arrivee": "2026-11-14",
+    "discord": "1072605164504092764",
+    "avert": "",
+    "contrat": false,
+    "recrut": "Diego Herrera",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
+    "nom": "Colt Barn",
+    "grade": "Intérimaire",
+    "tel": "555-269-922",
+    "rib": "567562",
+    "idU": "197246",
+    "arrivee": "2026-11-14",
+    "discord": "467442023025213441",
+    "avert": "",
+    "contrat": true,
+    "recrut": "Diego Herrera",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
     "nom": "Nass Toofast",
     "grade": "Intérimaire",
     "tel": "555 870 740",
@@ -59929,17 +59957,17 @@
   }
  },
  "_cid": "h8e42apb9e",
- "_maj": 1794680860792,
- "_rev": "jzasu7eig8o-mwgqnz4y",
+ "_maj": 1794680898640,
+ "_rev": "vg3v1mtjtfp-mwgqo5r1",
  "_majSec": {
   "fer": 1794665211692,
   "fact": 1794602483613,
   "users": 1794675448436,
   "weeks": 1794179966930,
-  "sheets": 1794678084740,
+  "sheets": 1794680898640,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1794678084740,
+  "journal": 1794680898640,
   "pending": 1793561085750,
   "prodDer": 1794661313882,
   "runners": 1794588450185,
@@ -59953,7 +59981,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794179966930,
   "profils": 1793561085750,
-  "_tables": 1794680860792,
+  "_tables": 1794680898611,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -59961,17 +59989,27 @@
   "_affFix1": 1793561085750,
   "produits": 1793561085750,
   "_prodFix1": 1793561085750,
-  "_recruesIgnore": 1794678084723,
+  "_recruesIgnore": 1794680898611,
   "ventesAlias": 1793561085750,
   "_ventesIgnore": 1793561085750,
   "_avertVus": 1793561085750,
-  "_signeVus": 1794678084740,
+  "_signeVus": 1794680898640,
   "sanctions": 1794493778197,
   "_sancFix1": 1794493778197
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1794680900203,
+   "u": "Diego Herrera",
+   "a": "Contrat(s) signé(s) via Discord : Colt Barn"
+  },
+  {
+   "t": 1794680900174,
+   "u": "Diego Herrera",
+   "a": "Recrutements Discord : 2 fiche(s) créée(s), 0 case(s) complétée(s) — Colt Barn, Mark Dupont"
+  },
   {
    "t": 1794678094219,
    "u": "Tyler Collins",
@@ -61461,16 +61499,6 @@
    "t": 1793528826053,
    "u": "Julio Collins",
    "a": "Vente rapide sans facture : 30 bidon(s) — Employé Athéna Andershon (vendeur : Julio Collins)"
-  },
-  {
-   "t": 1793528730618,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1793528730494,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
   }
  ],
  "prodDer": {
@@ -62005,12 +62033,12 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-14T18:28:12.322Z",
+  "maj": "2026-11-14T18:28:20.893Z",
   "semaine": 46,
   "totalBarils": 130143,
   "ca": 650715,
   "objectif": 375000,
-  "effectif": 120,
+  "effectif": 122,
   "clientsServis": 190,
   "theme": "",
   "top3": [
@@ -67133,8 +67161,6 @@
  "_affFix1": true,
  "_prodFix1": true,
  "_recruesIgnore": [
-  "1789648441046",
-  "1789648524158",
   "1789651026498",
   "1789663348792",
   "1789744672580",
@@ -67332,7 +67358,9 @@
   "1794603267734",
   "1794603273923",
   "1794603296012",
-  "1794651289866"
+  "1794651289866",
+  "1794679477994",
+  "1794680064518"
  ],
  "_signeVus": [
   "1789477305650",
@@ -67534,7 +67562,8 @@
   "1794600912616",
   "1794603284352",
   "1794603314602",
-  "1794651314405"
+  "1794651314405",
+  "1794679504333"
  ],
  "_agSupp": [
   "1789145270913",
