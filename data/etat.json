@@ -15692,6 +15692,13 @@
     "quantite": 150,
     "qui": "Stella Collins",
     "fact": 253207
+   },
+   {
+    "date": "2026-11-14",
+    "client": "LTD Paleto",
+    "quantite": 1000,
+    "qui": "Stella Collins",
+    "fact": 253208
    }
   ],
   "collection": [
@@ -17887,7 +17894,7 @@
     "rib": "20023",
     "tel": "933",
     "adresse": "Paleto",
-    "lastCmd": "2026-10-24",
+    "lastCmd": "2026-11-14",
     "type": "entreprise",
     "salon": "1439681391733248120"
    },
@@ -18208,8 +18215,38 @@
     "prix": 150
    }
   ],
-  "compteur": 253208,
+  "compteur": 253209,
   "factures": [
+   {
+    "num": 253208,
+    "date": "2026-11-14",
+    "client": "LTD Paleto",
+    "emetteur": "Stella Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 1000,
+      "tva": 0,
+      "pu": 180,
+      "ht": 180000,
+      "ttc": 180000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 180000,
+    "ttc": 180000,
+    "poids": 2000,
+    "statut": "attente",
+    "envoi": {
+     "t": 1794690417719,
+     "par": "Julio Collins",
+     "statut": "en_cours",
+     "ordre": 1794690418032,
+     "rapport": ""
+    }
+   },
    {
     "num": 253207,
     "date": "2026-11-14",
@@ -22923,6 +22960,22 @@
    "public": true,
    "maj": "2026-09-16T11:47:16.417Z"
   },
+  "stella collins": {
+   "nom": "Stella Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-14T13:20:17.287Z"
+  },
+  "julio collins": {
+   "nom": "Julio Collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T00:06:23.240Z"
+  },
   "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿": {
    "nom": "𝒮𝑜𝓁𝑜_ℰ𝒞𝟿",
    "photo": "",
@@ -22946,22 +22999,6 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T16:48:15.042Z"
-  },
-  "stella collins": {
-   "nom": "Stella Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-14T13:20:17.287Z"
-  },
-  "julio collins": {
-   "nom": "Julio Collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T00:06:23.240Z"
   },
   "william rodriguez-collins": {
    "nom": "William Rodriguez-collins",
@@ -60046,15 +60083,15 @@
    "sem": 44
   }
  },
- "_cid": "3fyxond60g2",
- "_maj": 1794690400473,
- "_rev": "bzpyv8bbe2q-mwgwbtqp",
+ "_cid": "6uipb1tb8vc",
+ "_maj": 1794690417719,
+ "_rev": "dnbiqjq8fk-mwgwc51m",
  "_majSec": {
   "fer": 1794665211692,
-  "fact": 1794683552710,
+  "fact": 1794690417719,
   "users": 1794690331488,
   "weeks": 1794179966930,
-  "sheets": 1794682189159,
+  "sheets": 1794690417188,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
   "journal": 1794690331488,
@@ -60071,7 +60108,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794179966930,
   "profils": 1793561085750,
-  "_tables": 1794690400473,
+  "_tables": 1794690417710,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -62123,13 +62160,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-14T21:06:43.154Z",
+  "maj": "2026-11-14T21:06:57.802Z",
   "semaine": 46,
   "totalBarils": 130143,
   "ca": 650715,
   "objectif": 375000,
   "effectif": 122,
-  "clientsServis": 191,
+  "clientsServis": 192,
   "theme": "",
   "top3": [
    {
@@ -65167,6 +65204,48 @@
     "id": 1794682187611,
     "statut": "fait",
     "rapport": "Facture n°253207 postee dans le salon 1247271293317812264."
+   },
+   {
+    "type": "facture_ticket",
+    "payload": {
+     "num": 253208,
+     "salon": "1439681391733248120",
+     "reedition": false,
+     "facture": {
+      "num": 253208,
+      "date": "2026-11-14",
+      "client": "LTD Paleto",
+      "emetteur": "Stella Collins",
+      "postop": false,
+      "lignes": [
+       {
+        "ref": "CMD",
+        "qte": 1000,
+        "tva": 0,
+        "pu": 180,
+        "ht": 180000,
+        "ttc": 180000,
+        "desc": "bidons d'essence "
+       }
+      ],
+      "offert": 0,
+      "ht": 180000,
+      "ttc": 180000,
+      "poids": 2000,
+      "statut": "attente"
+     },
+     "client": {
+      "nom": "LTD Paleto",
+      "rib": "20023",
+      "tel": "933",
+      "adresse": "Paleto",
+      "lastCmd": "2026-11-14",
+      "type": "entreprise",
+      "salon": "1439681391733248120"
+     },
+     "par": "Julio Collins"
+    },
+    "id": 1794690418032
    }
   ],
   "oilroxwood_coffres": [
