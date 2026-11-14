@@ -59708,8 +59708,35 @@
   }
  ],
  "sanctions": {
-  "liste": [],
-  "log": []
+  "liste": [
+   {
+    "id": 1794681537100,
+    "nom": "Booskap Ba",
+    "discord": "513525283719217152",
+    "cat": "cond",
+    "st": "R",
+    "issue": "",
+    "date": "2026-11-14",
+    "motif": "conduite dangereuse",
+    "par": "Diego Herrera",
+    "conv": "",
+    "convDate": "",
+    "retiree": null,
+    "exam": null
+   }
+  ],
+  "log": [
+   {
+    "t": 1794681536218,
+    "u": "Diego Herrera",
+    "a": "Rappel oral · Conduite inappropriée — « conduite dangereuse »",
+    "nom": "Booskap Ba",
+    "cat": "cond",
+    "st": "R",
+    "act": "ajout",
+    "sid": 1794681537100
+   }
+  ]
  },
  "settings": {
   "top": [
@@ -59956,9 +59983,9 @@
    "sem": 44
   }
  },
- "_cid": "j1jchr9dv9b",
- "_maj": 1794681485930,
- "_rev": "tqijox4s48-mwgr1hjs",
+ "_cid": "h8e42apb9e",
+ "_maj": 1794681534431,
+ "_rev": "yr88edf738g-mwgr1srk",
  "_majSec": {
   "fer": 1794665211692,
   "fact": 1794602483613,
@@ -59967,7 +59994,7 @@
   "sheets": 1794680898640,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1794680898640,
+  "journal": 1794681534404,
   "pending": 1793561085750,
   "prodDer": 1794661313882,
   "runners": 1794588450185,
@@ -59981,7 +60008,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794179966930,
   "profils": 1793561085750,
-  "_tables": 1794681461823,
+  "_tables": 1794681534431,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -59994,12 +60021,17 @@
   "_ventesIgnore": 1793561085750,
   "_avertVus": 1793561085750,
   "_signeVus": 1794680898640,
-  "sanctions": 1794493778197,
+  "sanctions": 1794681534404,
   "_sancFix1": 1794493778197
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1794681536218,
+   "u": "Diego Herrera",
+   "a": "Sanction : Booskap Ba — Rappel oral (Conduite inappropriée)"
+  },
   {
    "t": 1794680900203,
    "u": "Diego Herrera",
@@ -61494,11 +61526,6 @@
    "t": 1793528842783,
    "u": "Julio Collins",
    "a": "Achats de fer : 2 relevé(s) repris du salon"
-  },
-  {
-   "t": 1793528826053,
-   "u": "Julio Collins",
-   "a": "Vente rapide sans facture : 30 bidon(s) — Employé Athéna Andershon (vendeur : Julio Collins)"
   }
  ],
  "prodDer": {
@@ -62033,7 +62060,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-14T18:38:42.712Z",
+  "maj": "2026-11-14T18:38:57.248Z",
   "semaine": 46,
   "totalBarils": 130143,
   "ca": 650715,
@@ -64997,6 +65024,22 @@
     "id": 1794574541874,
     "statut": "fait",
     "rapport": "Facture n°253206 postee dans le salon 1436500641492111463."
+   },
+   {
+    "type": "sanction",
+    "payload": {
+     "discord": "513525283719217152",
+     "nom": "Booskap Ba",
+     "cat": "cond",
+     "catNom": "Conduite inappropriée",
+     "st": "R",
+     "etape": "Rappel oral",
+     "rappel": true,
+     "motif": "conduite dangereuse",
+     "par": "Diego Herrera",
+     "convocation": ""
+    },
+    "id": 1794681536627
    }
   ],
   "oilroxwood_coffres": [
