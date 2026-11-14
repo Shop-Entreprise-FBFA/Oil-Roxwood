@@ -15706,6 +15706,13 @@
     "quantite": 100,
     "qui": "Julio Collins",
     "fact": 253209
+   },
+   {
+    "date": "2026-11-14",
+    "client": "LTD Roxwood",
+    "quantite": 500,
+    "qui": "Julio Collins",
+    "fact": 253210
    }
   ],
   "collection": [
@@ -17910,7 +17917,7 @@
     "rib": "20072",
     "tel": "982",
     "adresse": "Roxwood",
-    "lastCmd": "2026-11-01",
+    "lastCmd": "2026-11-14",
     "notes": [
      {
       "t": 1789651609747,
@@ -18222,8 +18229,38 @@
     "prix": 150
    }
   ],
-  "compteur": 253210,
+  "compteur": 253211,
   "factures": [
+   {
+    "num": 253210,
+    "date": "2026-11-14",
+    "client": "LTD Roxwood",
+    "emetteur": "Julio Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 500,
+      "tva": 0,
+      "pu": 180,
+      "ht": 90000,
+      "ttc": 90000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 90000,
+    "ttc": 90000,
+    "poids": 1000,
+    "statut": "attente",
+    "envoi": {
+     "t": 1794696404234,
+     "par": "Julio Collins",
+     "statut": "en_cours",
+     "ordre": 1794696405228,
+     "rapport": ""
+    }
+   },
    {
     "num": 253209,
     "date": "2026-11-14",
@@ -60170,14 +60207,14 @@
   }
  },
  "_cid": "lenl5ryc6eo",
- "_maj": 1794696370449,
- "_rev": "i6ynz3pc5p8-mwgzvtjt",
+ "_maj": 1794696404234,
+ "_rev": "072fy4bn5t8f-mwgzwgn9",
  "_majSec": {
   "fer": 1794694746070,
-  "fact": 1794691163699,
+  "fact": 1794696404234,
   "users": 1794696370449,
   "weeks": 1794179966930,
-  "sheets": 1794691159034,
+  "sheets": 1794696403701,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
   "journal": 1794696370449,
@@ -60194,7 +60231,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794179966930,
   "profils": 1793561085750,
-  "_tables": 1794696370328,
+  "_tables": 1794696404224,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -62254,13 +62291,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-14T22:46:14.873Z",
+  "maj": "2026-11-14T22:46:44.805Z",
   "semaine": 46,
   "totalBarils": 130143,
   "ca": 650715,
   "objectif": 375000,
   "effectif": 122,
-  "clientsServis": 193,
+  "clientsServis": 194,
   "theme": "",
   "top3": [
    {
@@ -65342,6 +65379,56 @@
     "id": 1794690418032,
     "statut": "fait",
     "rapport": "Facture n°253208 postee dans le salon 1439681391733248120."
+   },
+   {
+    "type": "facture_ticket",
+    "payload": {
+     "num": 253210,
+     "salon": "1440251913601024062",
+     "reedition": false,
+     "facture": {
+      "num": 253210,
+      "date": "2026-11-14",
+      "client": "LTD Roxwood",
+      "emetteur": "Julio Collins",
+      "postop": false,
+      "lignes": [
+       {
+        "ref": "CMD",
+        "qte": 500,
+        "tva": 0,
+        "pu": 180,
+        "ht": 90000,
+        "ttc": 90000,
+        "desc": "bidons d'essence "
+       }
+      ],
+      "offert": 0,
+      "ht": 90000,
+      "ttc": 90000,
+      "poids": 1000,
+      "statut": "attente"
+     },
+     "client": {
+      "nom": "LTD Roxwood",
+      "rib": "20072",
+      "tel": "982",
+      "adresse": "Roxwood",
+      "lastCmd": "2026-11-14",
+      "notes": [
+       {
+        "t": 1789651609747,
+        "par": "Julio Collins",
+        "txt": "je suis parti leur parler et mon dit qu'il avait du stock",
+        "imgs": 0
+       }
+      ],
+      "type": "entreprise",
+      "salon": "1440251913601024062"
+     },
+     "par": "Julio Collins"
+    },
+    "id": 1794696405228
    }
   ],
   "oilroxwood_coffres": [
