@@ -15699,6 +15699,13 @@
     "quantite": 1000,
     "qui": "Stella Collins",
     "fact": 253208
+   },
+   {
+    "date": "2026-11-14",
+    "client": "Oil Roxwood",
+    "quantite": 100,
+    "qui": "Julio Collins",
+    "fact": 253209
    }
   ],
   "collection": [
@@ -17963,7 +17970,7 @@
     "rib": "20076",
     "tel": "986",
     "adresse": "Roxwood",
-    "lastCmd": "2026-11-06",
+    "lastCmd": "2026-11-14",
     "type": "entreprise",
     "salon": ""
    },
@@ -18215,8 +18222,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253209,
+  "compteur": 253210,
   "factures": [
+   {
+    "num": 253209,
+    "date": "2026-11-14",
+    "client": "Oil Roxwood",
+    "emetteur": "Julio Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 100,
+      "tva": 0,
+      "pu": 180,
+      "ht": 18000,
+      "ttc": 18000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 18000,
+    "ttc": 18000,
+    "poids": 200,
+    "statut": "attente"
+   },
    {
     "num": 253208,
     "date": "2026-11-14",
@@ -60084,14 +60114,14 @@
   }
  },
  "_cid": "wlqilfe218",
- "_maj": 1794691119816,
- "_rev": "gsu1h25k9zw-mwgwrx3x",
+ "_maj": 1794691159044,
+ "_rev": "vu3g04utk58-mwgws1t4",
  "_majSec": {
   "fer": 1794665211692,
-  "fact": 1794690417719,
+  "fact": 1794691159034,
   "users": 1794691105425,
   "weeks": 1794179966930,
-  "sheets": 1794690417188,
+  "sheets": 1794691159034,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
   "journal": 1794691105425,
@@ -60108,7 +60138,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794179966930,
   "profils": 1793561085750,
-  "_tables": 1794691105316,
+  "_tables": 1794691159034,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -62160,13 +62190,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-14T21:19:14.013Z",
+  "maj": "2026-11-14T21:19:20.104Z",
   "semaine": 46,
   "totalBarils": 130143,
   "ca": 650715,
   "objectif": 375000,
   "effectif": 122,
-  "clientsServis": 192,
+  "clientsServis": 193,
   "theme": "",
   "top3": [
    {
