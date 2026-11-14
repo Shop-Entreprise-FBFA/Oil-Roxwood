@@ -1,11 +1,27 @@
 {
- "maj": "2026-11-14T12:44:58.053742+00:00",
+ "maj": "2026-11-14T12:47:00.434954+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1571144106913169489",
+   "t": "2026-11-14T12:45:45.534000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 133x Pétrole Raffiné pour 1330$ par Xavier Collins. 665$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 133,
+   "montant": 1330,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1571143847621296166-0",
    "t": "2026-11-14T12:44:43.714000+00:00",
@@ -94253,30 +94269,6 @@
     "itemid": "refinedoil",
     "jobid": "76",
     "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1570103913095495743-0",
-   "t": "2026-11-11T15:52:24.002000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 140x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1844.36, 6519.05, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 755\nplayerDiscord : 198789252329373706\nplayerName : Jack Berthier\nplayerCharacter : Jack Berthier\nplayerId : 276642\nitemId : refinedoil",
-   "nom": "Jack Berthier",
-   "quantite": 140,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1844.36, 6519.05, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "755",
-    "playerdiscord": "198789252329373706",
-    "playername": "Jack Berthier",
-    "playercharacter": "Jack Berthier",
-    "playerid": "276642",
-    "itemid": "refinedoil"
    }
   }
  ]
