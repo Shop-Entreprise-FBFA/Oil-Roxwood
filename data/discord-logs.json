@@ -1,11 +1,32 @@
 {
- "maj": "2026-11-14T15:54:56.626224+00:00",
+ "maj": "2026-11-14T15:56:56.715843+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1571191712485740597",
+   "t": "2026-11-14T15:54:55.587000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 329\nplayerDiscord : 1499848677986930882\nplayerName : CleverBeetle1673\nplayerCharacter : Clara Soules\nplayerId : 380202\nvehiclePlate : HM1337JY\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Clara Soules",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "329",
+    "playerdiscord": "1499848677986930882",
+    "playername": "CleverBeetle1673",
+    "playercharacter": "Clara Soules",
+    "playerid": "380202",
+    "vehicleplate": "HM1337JY",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1571189698485813309",
    "t": "2026-11-14T15:46:55.412000+00:00",
@@ -94123,30 +94144,6 @@
     "playercharacter": "Zoran Renard",
     "playerid": "353172",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1570135876972060818-0",
-   "t": "2026-11-11T17:59:24.784000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 70x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -3083.08, 6815.05, 44.73\ntargetPosition : -3084.39, 6815.87, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1564\nplayerDiscord : 317280511292735499\nplayerName : SharpDuck3006\nplayerCharacter : Fred Berthier\nplayerId : 364651\nitemId : oil",
-   "nom": "Fred Berthier",
-   "quantite": 70,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-3083.08, 6815.05, 44.73",
-    "targetposition": "-3084.39, 6815.87, 43.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "1564",
-    "playerdiscord": "317280511292735499",
-    "playername": "SharpDuck3006",
-    "playercharacter": "Fred Berthier",
-    "playerid": "364651",
-    "itemid": "oil"
    }
   }
  ]
