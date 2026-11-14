@@ -1,11 +1,123 @@
 {
- "maj": "2026-11-14T22:21:02.157076+00:00",
+ "maj": "2026-11-14T22:24:57.752986+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1571289636242849803",
+   "t": "2026-11-14T22:24:02.430000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 648x Pétrole Raffiné pour 6480$ par Booskap Ba. 3240$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 648,
+   "montant": 6480,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1571289602701136014",
+   "t": "2026-11-14T22:23:54.433000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 4x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1842.38, 6521.72, 16.73\ntargetPosition : -1842.58, 6521.16, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3722\nplayerDiscord : 767332288744128512\nplayerName : JULIO COLLINS\nplayerCharacter : Julio Collins\nplayerId : 356873\nitemId : refinedoil",
+   "nom": "Julio Collins",
+   "quantite": 4,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1842.38, 6521.72, 16.73",
+    "targetposition": "-1842.58, 6521.16, 15.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "3722",
+    "playerdiscord": "767332288744128512",
+    "playername": "JULIO COLLINS",
+    "playercharacter": "Julio Collins",
+    "playerid": "356873",
+    "itemid": "refinedoil"
+   }
+  },
+  {
+   "id": "1571289351092961324-0",
+   "t": "2026-11-14T22:22:54.445000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 118x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1815.06, 6564.82, 16.73\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3722\nplayerDiscord : 767332288744128512\nplayerName : JULIO COLLINS\nplayerCharacter : Julio Collins\nplayerId : 356873\nitemId : refinedoil",
+   "nom": "Julio Collins",
+   "quantite": 118,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1815.06, 6564.82, 16.73",
+    "targetposition": "-1815.66, 6565.56, 15.98",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "3722",
+    "playerdiscord": "767332288744128512",
+    "playername": "JULIO COLLINS",
+    "playercharacter": "Julio Collins",
+    "playerid": "356873",
+    "itemid": "refinedoil"
+   }
+  },
+  {
+   "id": "1571289351092961324-1",
+   "t": "2026-11-14T22:22:54.445000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 82x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1815.57, 6565.20, 16.73\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3722\nplayerDiscord : 767332288744128512\nplayerName : JULIO COLLINS\nplayerCharacter : Julio Collins\nplayerId : 356873\nitemId : refinedoil",
+   "nom": "Julio Collins",
+   "quantite": 82,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1815.57, 6565.20, 16.73",
+    "targetposition": "-1815.66, 6565.56, 15.98",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "3722",
+    "playerdiscord": "767332288744128512",
+    "playername": "JULIO COLLINS",
+    "playercharacter": "Julio Collins",
+    "playerid": "356873",
+    "itemid": "refinedoil"
+   }
+  },
+  {
+   "id": "1571289351092961324-2",
+   "t": "2026-11-14T22:22:54.445000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\na retiré 4x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1815.57, 6565.20, 16.73\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3722\nplayerDiscord : 767332288744128512\nplayerName : JULIO COLLINS\nplayerCharacter : Julio Collins\nplayerId : 356873\nitemId : refinedoil",
+   "nom": "Julio Collins",
+   "quantite": 4,
+   "montant": null,
+   "type": "coffre_retrait",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1815.57, 6565.20, 16.73",
+    "targetposition": "-1815.66, 6565.56, 15.98",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "3722",
+    "playerdiscord": "767332288744128512",
+    "playername": "JULIO COLLINS",
+    "playercharacter": "Julio Collins",
+    "playerid": "356873",
+    "itemid": "refinedoil"
+   }
+  },
   {
    "id": "1571288346070749320-0",
    "t": "2026-11-14T22:18:54.829000+00:00",
@@ -93234,38 +93346,6 @@
     "playercharacter": "Helena Rhosé",
     "playerid": "355128",
     "vehicleplate": "IL4818AV",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1570202346435125340",
-   "t": "2026-11-11T22:23:32.339000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 652x Pétrole Raffiné pour 6520$ par Kader Benali. 3260$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 652,
-   "montant": 6520,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1570201837909577960",
-   "t": "2026-11-11T22:21:31.097000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 350x Pétrole Raffiné pour 3500$ par Fred Berthier. 1750$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 350,
-   "montant": 3500,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
     "jobid": "76",
     "jobname": "Oil RoxWood"
    }
