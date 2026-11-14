@@ -1,11 +1,32 @@
 {
- "maj": "2026-11-14T10:14:59.217385+00:00",
+ "maj": "2026-11-14T10:17:03.947652+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1571106234998726669",
+   "t": "2026-11-14T10:15:16.166000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 5746\nplayerDiscord : 1263102698207576066\nplayerName : NEROX\nplayerCharacter : Nass Toofast\nplayerId : 352140\nvehiclePlate : AS5715VX\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Nass Toofast",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "5746",
+    "playerdiscord": "1263102698207576066",
+    "playername": "NEROX",
+    "playercharacter": "Nass Toofast",
+    "playerid": "352140",
+    "vehicleplate": "AS5715VX",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1571098938944258231",
    "t": "2026-11-14T09:46:16.651000+00:00",
@@ -94276,30 +94297,6 @@
    "texte": "Coffre\ndépot de 16x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3089.54, 6818.69, 44.73\ntargetPosition : -3090.06, 6818.50, 43.97\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 8410\nplayerDiscord : 334423976182939648\nplayerName : MoodyCat2429\nplayerCharacter : Nikko Mount\nplayerId : 276376\nitemId : oil",
    "nom": "Nikko Mount",
    "quantite": 16,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-3089.54, 6818.69, 44.73",
-    "targetposition": "-3090.06, 6818.50, 43.97",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "8410",
-    "playerdiscord": "334423976182939648",
-    "playername": "MoodyCat2429",
-    "playercharacter": "Nikko Mount",
-    "playerid": "276376",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1570088704637141035-2",
-   "t": "2026-11-11T14:51:58.023000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 11x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3089.54, 6818.69, 44.73\ntargetPosition : -3090.06, 6818.50, 43.97\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 8410\nplayerDiscord : 334423976182939648\nplayerName : MoodyCat2429\nplayerCharacter : Nikko Mount\nplayerId : 276376\nitemId : oil",
-   "nom": "Nikko Mount",
-   "quantite": 11,
    "montant": null,
    "type": "coffre_depot",
    "salon": "1245400913066066099",
