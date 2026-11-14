@@ -1,11 +1,80 @@
 {
- "maj": "2026-11-14T19:36:56.956916+00:00",
+ "maj": "2026-11-14T19:38:56.317824+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1571247584654393557",
+   "t": "2026-11-14T19:36:56.550000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 2716\nplayerDiscord : 702826845854498837\nplayerName : BoldTurtle1188\nplayerCharacter : maxime smith\nplayerId : 273368\nvehiclePlate : AY0298ZV\njobId : 76\njobName : Oil RoxWood",
+   "nom": "maxime smith",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "2716",
+    "playerdiscord": "702826845854498837",
+    "playername": "BoldTurtle1188",
+    "playercharacter": "maxime smith",
+    "playerid": "273368",
+    "vehicleplate": "AY0298ZV",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1571247580577403024-0",
+   "t": "2026-11-14T19:36:55.578000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\na retiré 16x Document du coffre de l'entreprise (Oil RoxWood)\nposition : -1255.62, -1438.59, 4.36\ntargetPosition : -1255.33, -1439.12, 3.38\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 861\nplayerDiscord : 826526979204841482\nplayerName : JumpyNewt1770\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : imagesPlaceholder",
+   "nom": "Diego Herrera",
+   "quantite": 16,
+   "montant": null,
+   "type": "coffre_retrait",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1255.62, -1438.59, 4.36",
+    "targetposition": "-1255.33, -1439.12, 3.38",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "861",
+    "playerdiscord": "826526979204841482",
+    "playername": "JumpyNewt1770",
+    "playercharacter": "Diego Herrera",
+    "playerid": "231487",
+    "itemid": "imagesPlaceholder"
+   }
+  },
+  {
+   "id": "1571247580577403024-1",
+   "t": "2026-11-14T19:36:55.578000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\na retiré 8x Document du coffre de l'entreprise (Oil RoxWood)\nposition : -1255.62, -1438.59, 4.36\ntargetPosition : -1255.33, -1439.12, 3.38\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 861\nplayerDiscord : 826526979204841482\nplayerName : JumpyNewt1770\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : imagesPlaceholder",
+   "nom": "Diego Herrera",
+   "quantite": 8,
+   "montant": null,
+   "type": "coffre_retrait",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood)",
+   "champs": {
+    "position": "-1255.62, -1438.59, 4.36",
+    "targetposition": "-1255.33, -1439.12, 3.38",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "861",
+    "playerdiscord": "826526979204841482",
+    "playername": "JumpyNewt1770",
+    "playercharacter": "Diego Herrera",
+    "playerid": "231487",
+    "itemid": "imagesPlaceholder"
+   }
+  },
   {
    "id": "1571247357906124861",
    "t": "2026-11-14T19:36:02.489000+00:00",
@@ -92754,78 +92823,6 @@
     "playername": "QuietAnt0438",
     "playercharacter": "Jeff Beaumont",
     "playerid": "382764",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1570160537881419881-0",
-   "t": "2026-11-11T19:37:24.403000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 128x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1851.02, 6515.84, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 2884\nplayerDiscord : 839178368761987142\nplayerName : PaleSnaily4263\nplayerCharacter : Lyna Jones\nplayerId : 345291\nitemId : refinedoil",
-   "nom": "Lyna Jones",
-   "quantite": 128,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1851.02, 6515.84, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "2884",
-    "playerdiscord": "839178368761987142",
-    "playername": "PaleSnaily4263",
-    "playercharacter": "Lyna Jones",
-    "playerid": "345291",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1570160537881419881-1",
-   "t": "2026-11-11T19:37:24.403000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 128x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1850.99, 6515.87, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 2884\nplayerDiscord : 839178368761987142\nplayerName : PaleSnaily4263\nplayerCharacter : Lyna Jones\nplayerId : 345291\nitemId : refinedoil",
-   "nom": "Lyna Jones",
-   "quantite": 128,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1850.99, 6515.87, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "2884",
-    "playerdiscord": "839178368761987142",
-    "playername": "PaleSnaily4263",
-    "playercharacter": "Lyna Jones",
-    "playerid": "345291",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1570160537881419881-2",
-   "t": "2026-11-11T19:37:24.403000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 58x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1850.99, 6515.87, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 2884\nplayerDiscord : 839178368761987142\nplayerName : PaleSnaily4263\nplayerCharacter : Lyna Jones\nplayerId : 345291\nitemId : refinedoil",
-   "nom": "Lyna Jones",
-   "quantite": 58,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1850.99, 6515.87, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "2884",
-    "playerdiscord": "839178368761987142",
-    "playername": "PaleSnaily4263",
-    "playercharacter": "Lyna Jones",
-    "playerid": "345291",
     "itemid": "refinedoil"
    }
   }
