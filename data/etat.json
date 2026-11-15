@@ -7886,6 +7886,62 @@
  "sheets": {
   "rh": [
    {
+    "nom": "Mia Sanchez",
+    "grade": "Intérimaire",
+    "tel": "555305986",
+    "rib": "569546",
+    "idU": "385581",
+    "arrivee": "2026-11-15",
+    "discord": "679432277767356448",
+    "avert": "",
+    "contrat": true,
+    "recrut": "Marco Bellini",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
+    "nom": "manuel dasilva",
+    "grade": "Intérimaire",
+    "tel": "555567943",
+    "rib": "569767",
+    "idU": "185757",
+    "arrivee": "2026-11-15",
+    "discord": "1571235185603772553",
+    "avert": "",
+    "contrat": true,
+    "recrut": "Marco Bellini",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
+    "nom": "Pierre Lecas",
+    "grade": "Intérimaire",
+    "tel": "555-837055",
+    "rib": "447311",
+    "idU": "235285",
+    "arrivee": "2026-11-15",
+    "discord": "673116943917514752",
+    "avert": "",
+    "contrat": true,
+    "recrut": "Marco Bellini",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
+    "nom": "Draness Louhany",
+    "grade": "Intérimaire",
+    "tel": "555-937-591",
+    "rib": "569547",
+    "idU": "385580",
+    "arrivee": "2026-11-15",
+    "discord": "664777306618724362",
+    "avert": "",
+    "contrat": true,
+    "recrut": "Marco Bellini",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
     "nom": "yanis fekir",
     "grade": "Intérimaire",
     "tel": "555099887",
@@ -60700,17 +60756,17 @@
   }
  },
  "_cid": "g5d6bbh0e7",
- "_maj": 1794758543810,
- "_rev": "916jm6hlcgu-mwi0wcci",
+ "_maj": 1794758555110,
+ "_rev": "8kvcpiuvy0k-mwi0wig4",
  "_majSec": {
   "fer": 1794753186027,
   "fact": 1794752518023,
   "users": 1794752677520,
   "weeks": 1794179966930,
-  "sheets": 1794751501076,
+  "sheets": 1794758555110,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1794753272015,
+  "journal": 1794758555110,
   "pending": 1793561085750,
   "prodDer": 1794693431354,
   "runners": 1794588450185,
@@ -60724,7 +60780,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794179966930,
   "profils": 1793561085750,
-  "_tables": 1794758543810,
+  "_tables": 1794758555099,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -60732,17 +60788,27 @@
   "_affFix1": 1793561085750,
   "produits": 1793561085750,
   "_prodFix1": 1793561085750,
-  "_recruesIgnore": 1794741733627,
+  "_recruesIgnore": 1794758555099,
   "ventesAlias": 1793561085750,
   "_ventesIgnore": 1793561085750,
   "_avertVus": 1793561085750,
-  "_signeVus": 1794741733648,
+  "_signeVus": 1794758555110,
   "sanctions": 1794681659137,
   "_sancFix1": 1794493778197
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1794758551969,
+   "u": "Marco Bellini",
+   "a": "Contrat(s) signé(s) via Discord : Mia Sanchez, Draness Louhany, Pierre Lecas…"
+  },
+  {
+   "t": 1794758551958,
+   "u": "Marco Bellini",
+   "a": "Recrutements Discord : 4 fiche(s) créée(s), 0 case(s) complétée(s) — Draness Louhany, Pierre Lecas, manuel dasilva…"
+  },
   {
    "t": 1794753188861,
    "u": "Laurent Roquel",
@@ -62232,16 +62298,6 @@
    "t": 1793720511584,
    "u": "Julio Collins",
    "a": "Achats de fer : 1 relevé(s) repris du salon"
-  },
-  {
-   "t": 1793720507515,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1793720507389,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
   }
  ],
  "prodDer": {
@@ -62794,12 +62850,12 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-15T16:02:25.026Z",
+  "maj": "2026-11-15T16:02:32.932Z",
   "semaine": 46,
   "totalBarils": 130143,
   "ca": 650715,
   "objectif": 375000,
-  "effectif": 123,
+  "effectif": 127,
   "clientsServis": 196,
   "theme": "",
   "top3": [
@@ -68195,10 +68251,6 @@
  "_affFix1": true,
  "_prodFix1": true,
  "_recruesIgnore": [
-  "1789663348792",
-  "1789744672580",
-  "1789750599148",
-  "1789824796537",
   "1789834789343",
   "1789837553110",
   "1789877172879",
@@ -68394,7 +68446,11 @@
   "1794651289866",
   "1794679477994",
   "1794680064518",
-  "1794690157849"
+  "1794690157849",
+  "1794749967439",
+  "1794749990720",
+  "1794750015185",
+  "1794750351544"
  ],
  "_signeVus": [
   "1789477305650",
@@ -68599,7 +68655,12 @@
   "1794651314405",
   "1794679504333",
   "1794681818998",
-  "1794690183059"
+  "1794690183059",
+  "1794749975729",
+  "1794749985116",
+  "1794750019703",
+  "1794750048917",
+  "1794750363083"
  ],
  "_agSupp": [
   "1789145270913",
