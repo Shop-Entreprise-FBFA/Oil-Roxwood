@@ -1,11 +1,27 @@
 {
- "maj": "2026-11-15T22:08:56.568357+00:00",
+ "maj": "2026-11-15T22:10:51.249481+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1571648352855003327",
+   "t": "2026-11-15T22:09:27.135000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 178x Pétrole Raffiné pour 1780$ par Joshua Vorkuta. 890$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 178,
+   "montant": 1780,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1571648055403479127-0",
    "t": "2026-11-15T22:08:16.217000+00:00",
@@ -93658,30 +93674,6 @@
    "texte": "Coffre\ndépot de 10x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3083.92, 6816.47, 44.73\ntargetPosition : -3084.39, 6815.87, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3144\nplayerDiscord : 334423976182939648\nplayerName : MoodyCat2429\nplayerCharacter : Nikko Mount\nplayerId : 276376\nitemId : oil",
    "nom": "Nikko Mount",
    "quantite": 10,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-3083.92, 6816.47, 44.73",
-    "targetposition": "-3084.39, 6815.87, 43.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "3144",
-    "playerdiscord": "334423976182939648",
-    "playername": "MoodyCat2429",
-    "playercharacter": "Nikko Mount",
-    "playerid": "276376",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1570923039439454263-3",
-   "t": "2026-11-13T22:07:18.941000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 14x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3083.92, 6816.47, 44.73\ntargetPosition : -3084.39, 6815.87, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3144\nplayerDiscord : 334423976182939648\nplayerName : MoodyCat2429\nplayerCharacter : Nikko Mount\nplayerId : 276376\nitemId : oil",
-   "nom": "Nikko Mount",
-   "quantite": 14,
    "montant": null,
    "type": "coffre_depot",
    "salon": "1245400913066066099",
