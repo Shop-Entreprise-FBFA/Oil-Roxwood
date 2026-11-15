@@ -15722,13 +15722,6 @@
     "fact": 253209
    },
    {
-    "date": "2026-11-14",
-    "client": "LTD Roxwood",
-    "quantite": 500,
-    "qui": "Julio Collins",
-    "fact": 253210
-   },
-   {
     "date": "2026-11-15",
     "client": "LTD Groove Street",
     "quantite": 125,
@@ -15741,6 +15734,34 @@
     "quantite": 125,
     "qui": "Laurent Roquel",
     "fact": 253211
+   },
+   {
+    "date": "2026-11-14",
+    "client": "LTD Roxwood",
+    "quantite": 125,
+    "qui": "Julio Collins",
+    "fact": 253210
+   },
+   {
+    "date": "2026-11-14",
+    "client": "LTD Roxwood",
+    "quantite": 125,
+    "qui": "Emma Collins-rodriguez",
+    "fact": 253210
+   },
+   {
+    "date": "2026-11-14",
+    "client": "LTD Roxwood",
+    "quantite": 125,
+    "qui": "Laurent Roquel",
+    "fact": 253210
+   },
+   {
+    "date": "2026-11-14",
+    "client": "LTD Roxwood",
+    "quantite": 125,
+    "qui": "William Rodriguez-Collins",
+    "fact": 253210
    }
   ],
   "collection": [
@@ -18294,17 +18315,17 @@
     "num": 253210,
     "date": "2026-11-14",
     "client": "LTD Roxwood",
-    "emetteur": "Julio Collins",
+    "emetteur": "Julio Collins, Emma Collins-rodriguez, Laurent Roquel, William Rodriguez-Collins",
     "postop": false,
     "lignes": [
      {
       "ref": "CMD",
       "qte": 500,
       "tva": 0,
+      "desc": "bidons d'essence ",
       "pu": 180,
       "ht": 90000,
-      "ttc": 90000,
-      "desc": "bidons d'essence "
+      "ttc": 90000
      }
     ],
     "offert": 0,
@@ -18312,13 +18333,7 @@
     "ttc": 90000,
     "poids": 1000,
     "statut": "payee",
-    "envoi": {
-     "t": 1794696404234,
-     "par": "Julio Collins",
-     "statut": "en_cours",
-     "ordre": 1794696405228,
-     "rapport": ""
-    }
+    "modifiee": 1794748652907
    },
    {
     "num": 253209,
@@ -60434,17 +60449,17 @@
   }
  },
  "_cid": "k0dvoc65lci",
- "_maj": 1794748625752,
- "_rev": "b3ev4lte12e-mwhuzt9c",
+ "_maj": 1794748652928,
+ "_rev": "q0mj3p9m5wh-mwhv0c1f",
  "_majSec": {
   "fer": 1794744362952,
-  "fact": 1794747836386,
+  "fact": 1794748652908,
   "users": 1794747815473,
   "weeks": 1794179966930,
-  "sheets": 1794742988503,
+  "sheets": 1794748652908,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1794747815473,
+  "journal": 1794748652928,
   "pending": 1793561085750,
   "prodDer": 1794693431354,
   "runners": 1794588450185,
@@ -60458,7 +60473,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794179966930,
   "profils": 1793561085750,
-  "_tables": 1794748625752,
+  "_tables": 1794748652908,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -60477,6 +60492,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1794748652808,
+   "u": "Emma Collins-rodriguez",
+   "a": "Facture n°253210 modifiée — émetteur Julio Collins → Julio Collins, Emma Collins-rodriguez, Laurent Roquel, William Rodriguez-Collins"
+  },
   {
    "t": 1794747815547,
    "u": "Julio Collins",
@@ -61971,11 +61991,6 @@
    "t": 1793636107364,
    "u": "Julio Collins",
    "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1793636107237,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
   }
  ],
  "prodDer": {
@@ -62528,7 +62543,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-15T13:17:09.216Z",
+  "maj": "2026-11-15T13:17:33.555Z",
   "semaine": 46,
   "totalBarils": 130143,
   "ca": 650715,
