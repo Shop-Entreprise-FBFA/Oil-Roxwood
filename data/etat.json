@@ -60106,6 +60106,30 @@
    "quantite": 100,
    "montant": 500,
    "did": "767332288744128512"
+  },
+  {
+   "id": "1571495735944552510:0",
+   "t": "2026-11-15 13:03",
+   "nom": "Laurent Roquel",
+   "quantite": 125,
+   "montant": 625,
+   "did": "707695913187016785"
+  },
+  {
+   "id": "1571495735944552510:1",
+   "t": "2026-11-15 13:03",
+   "nom": "Emma Collins-rodriguez",
+   "quantite": 145,
+   "montant": 725,
+   "did": "1053366471574687844"
+  },
+  {
+   "id": "1571495984368848907",
+   "t": "2026-11-15 13:03",
+   "nom": "Emma Collins-rodriguez",
+   "quantite": 110,
+   "montant": 550,
+   "did": "1053366471574687844"
   }
  ],
  "sanctions": {
@@ -60410,10 +60434,10 @@
   }
  },
  "_cid": "k0dvoc65lci",
- "_maj": 1794744337861,
- "_rev": "zablcsh57kj-mwhsg4dz",
+ "_maj": 1794744351683,
+ "_rev": "fa3broz88hf-mwhsgbbg",
  "_majSec": {
-  "fer": 1794743825751,
+  "fer": 1794744351683,
   "fact": 1794743016489,
   "users": 1794743032458,
   "weeks": 1794179966930,
@@ -60434,7 +60458,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794179966930,
   "profils": 1793561085750,
-  "_tables": 1794744337861,
+  "_tables": 1794744351683,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -60453,6 +60477,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1794744351478,
+   "u": "Emma Collins-rodriguez",
+   "a": "Achats de fer : 3 relevé(s) repris du salon"
+  },
   {
    "t": 1794743828808,
    "u": "Laurent Roquel",
@@ -61947,11 +61976,6 @@
    "t": 1793632900965,
    "u": "Diego Herrera",
    "a": "Produits dérivés : colonne « ryujin » ajoutée"
-  },
-  {
-   "t": 1793632630278,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
   }
  ],
  "prodDer": {
@@ -62504,7 +62528,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-15T12:05:51.287Z",
+  "maj": "2026-11-15T12:06:00.268Z",
   "semaine": 46,
   "totalBarils": 130143,
   "ca": 650715,
