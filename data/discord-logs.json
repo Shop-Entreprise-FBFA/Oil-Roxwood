@@ -1,11 +1,53 @@
 {
- "maj": "2026-11-15T01:42:57.626007+00:00",
+ "maj": "2026-11-15T01:44:56.996164+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1571339938442776688",
+   "t": "2026-11-15T01:43:55.409000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbesperta\nplayerNetId : 5199\nplayerDiscord : 1509660929845891272\nplayerName : CleverRabbit6976\nplayerCharacter : Yanis Fekir\nplayerId : 385293\nvehiclePlate : KZ1932QE\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Yanis Fekir",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "5199",
+    "playerdiscord": "1509660929845891272",
+    "playername": "CleverRabbit6976",
+    "playercharacter": "Yanis Fekir",
+    "playerid": "385293",
+    "vehicleplate": "KZ1932QE",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1571339684863287299",
+   "t": "2026-11-15T01:42:54.951000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbesperta\nplayerNetId : 186\nplayerDiscord : 709363912071446598\nplayerName : FuzzyOtter7510\nplayerCharacter : Ruby Saavedra\nplayerId : 160625\nvehiclePlate : SC5907TP\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Ruby Saavedra",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "186",
+    "playerdiscord": "709363912071446598",
+    "playername": "FuzzyOtter7510",
+    "playercharacter": "Ruby Saavedra",
+    "playerid": "160625",
+    "vehicleplate": "SC5907TP",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1571338948247162932",
    "t": "2026-11-15T01:39:59.328000+00:00",
@@ -93736,54 +93778,6 @@
    "coffre": "entreprise (Oil RoxWood)",
    "champs": {
     "position": "-1850.62, 6514.69, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "5857",
-    "playerdiscord": "612206513200562196",
-    "playername": "LoudCat8750",
-    "playercharacter": "Gérard Smith",
-    "playerid": "273365",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1570375703537647749-2",
-   "t": "2026-11-12T09:52:23.893000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 128x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1840.23, 6524.16, 16.73\ntargetPosition : -1840.85, 6523.94, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6003\nplayerDiscord : 767332288744128512\nplayerName : JULIO COLLINS\nplayerCharacter : Julio Collins\nplayerId : 356873\nitemId : refinedoil",
-   "nom": "Julio Collins",
-   "quantite": 128,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1840.23, 6524.16, 16.73",
-    "targetposition": "-1840.85, 6523.94, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6003",
-    "playerdiscord": "767332288744128512",
-    "playername": "JULIO COLLINS",
-    "playercharacter": "Julio Collins",
-    "playerid": "356873",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1570375449513562113",
-   "t": "2026-11-12T09:51:23.329000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 144x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1850.69, 6514.71, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 5857\nplayerDiscord : 612206513200562196\nplayerName : LoudCat8750\nplayerCharacter : Gérard Smith\nplayerId : 273365\nitemId : refinedoil",
-   "nom": "Gérard Smith",
-   "quantite": 144,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1850.69, 6514.71, 16.73",
     "targetposition": "-1850.63, 6515.15, 15.75",
     "jobid": "76",
     "jobname": "Oil RoxWood",
