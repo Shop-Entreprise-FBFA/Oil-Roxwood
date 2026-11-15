@@ -15727,6 +15727,20 @@
     "quantite": 500,
     "qui": "Julio Collins",
     "fact": 253210
+   },
+   {
+    "date": "2026-11-15",
+    "client": "LTD Groove Street",
+    "quantite": 125,
+    "qui": "Emma Collins-rodriguez",
+    "fact": 253211
+   },
+   {
+    "date": "2026-11-15",
+    "client": "LTD Groove Street",
+    "quantite": 125,
+    "qui": "Laurent Roquel",
+    "fact": 253211
    }
   ],
   "collection": [
@@ -17895,7 +17909,7 @@
     "rib": "20019",
     "tel": "",
     "adresse": "Los Santos",
-    "lastCmd": "2026-11-11",
+    "lastCmd": "2026-11-15",
     "type": "entreprise",
     "salon": "1248767211045257348"
    },
@@ -18243,8 +18257,38 @@
     "prix": 150
    }
   ],
-  "compteur": 253211,
+  "compteur": 253212,
   "factures": [
+   {
+    "num": 253211,
+    "date": "2026-11-15",
+    "client": "LTD Groove Street",
+    "emetteur": "Emma Collins-rodriguez, Laurent Roquel",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 250,
+      "tva": 0,
+      "pu": 180,
+      "ht": 45000,
+      "ttc": 45000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 45000,
+    "ttc": 45000,
+    "poids": 500,
+    "statut": "attente",
+    "envoi": {
+     "t": 1794742989082,
+     "par": "Emma Collins-rodriguez",
+     "statut": "en_cours",
+     "ordre": 1794742989825,
+     "rapport": ""
+    }
+   },
    {
     "num": 253210,
     "date": "2026-11-14",
@@ -23057,6 +23101,14 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T20:11:53.537Z"
+  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -23080,14 +23132,6 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T00:06:23.240Z"
-  },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -60348,15 +60392,15 @@
    "sem": 44
   }
  },
- "_cid": "xrqkiph3gsp",
- "_maj": 1794742950838,
- "_rev": "55hp3ah9ve-mwhrmuin",
+ "_cid": "k0dvoc65lci",
+ "_maj": 1794742989082,
+ "_rev": "01150p1qf5jv-mwhrmxvi",
  "_majSec": {
   "fer": 1794742563221,
-  "fact": 1794741524926,
+  "fact": 1794742989082,
   "users": 1794741515441,
   "weeks": 1794179966930,
-  "sheets": 1794741733648,
+  "sheets": 1794742988503,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
   "journal": 1794742651829,
@@ -60373,7 +60417,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794179966930,
   "profils": 1793561085750,
-  "_tables": 1794742921826,
+  "_tables": 1794742989061,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -62443,13 +62487,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-15T11:43:05.471Z",
+  "maj": "2026-11-15T11:43:09.822Z",
   "semaine": 46,
   "totalBarils": 130143,
   "ca": 650715,
   "objectif": 375000,
   "effectif": 123,
-  "clientsServis": 194,
+  "clientsServis": 195,
   "theme": "",
   "top3": [
    {
@@ -65583,6 +65627,48 @@
     "id": 1794696405228,
     "statut": "fait",
     "rapport": "Facture n°253210 postee dans le salon 1440251913601024062."
+   },
+   {
+    "type": "facture_ticket",
+    "payload": {
+     "num": 253211,
+     "salon": "1248767211045257348",
+     "reedition": false,
+     "facture": {
+      "num": 253211,
+      "date": "2026-11-15",
+      "client": "LTD Groove Street",
+      "emetteur": "Emma Collins-rodriguez, Laurent Roquel",
+      "postop": false,
+      "lignes": [
+       {
+        "ref": "CMD",
+        "qte": 250,
+        "tva": 0,
+        "pu": 180,
+        "ht": 45000,
+        "ttc": 45000,
+        "desc": "bidons d'essence "
+       }
+      ],
+      "offert": 0,
+      "ht": 45000,
+      "ttc": 45000,
+      "poids": 500,
+      "statut": "attente"
+     },
+     "client": {
+      "nom": "LTD Groove Street",
+      "rib": "20019",
+      "tel": "",
+      "adresse": "Los Santos",
+      "lastCmd": "2026-11-15",
+      "type": "entreprise",
+      "salon": "1248767211045257348"
+     },
+     "par": "Emma Collins-rodriguez"
+    },
+    "id": 1794742989825
    }
   ],
   "oilroxwood_coffres": [
