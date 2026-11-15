@@ -1,11 +1,27 @@
 {
- "maj": "2026-11-15T18:28:51.251734+00:00",
+ "maj": "2026-11-15T18:30:49.977279+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1571592975434252361",
+   "t": "2026-11-15T18:29:24.129000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 238x Pétrole Raffiné pour 2380$ par Gérard Smith. 1190$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 238,
+   "montant": 2380,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1571592185265262688",
    "t": "2026-11-15T18:26:15.738000+00:00",
@@ -93726,30 +93742,6 @@
     "itemid": "refinedoil",
     "jobid": "76",
     "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1570884283269259338-0",
-   "t": "2026-11-13T19:33:18.750000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 112x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1846.30, 6513.48, 16.73\ntargetPosition : -1845.91, 6514.70, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1665\nplayerDiscord : 1499848677986930882\nplayerName : CleverBeetle1673\nplayerCharacter : Clara Soules\nplayerId : 380202\nitemId : refinedoil",
-   "nom": "Clara Soules",
-   "quantite": 112,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1846.30, 6513.48, 16.73",
-    "targetposition": "-1845.91, 6514.70, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "1665",
-    "playerdiscord": "1499848677986930882",
-    "playername": "CleverBeetle1673",
-    "playercharacter": "Clara Soules",
-    "playerid": "380202",
-    "itemid": "refinedoil"
    }
   }
  ]
