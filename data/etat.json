@@ -7886,6 +7886,20 @@
  "sheets": {
   "rh": [
    {
+    "nom": "yanis fekir",
+    "grade": "Intérimaire",
+    "tel": "555099887",
+    "rib": "569164",
+    "idU": "385293",
+    "arrivee": "2026-11-14",
+    "discord": "1509660929845891272",
+    "avert": "",
+    "contrat": true,
+    "recrut": "Diego Herrera",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
     "nom": "Mark Dupont",
     "grade": "Intérimaire",
     "tel": "555-312-416",
@@ -7894,7 +7908,7 @@
     "arrivee": "2026-11-14",
     "discord": "1072605164504092764",
     "avert": "",
-    "contrat": false,
+    "contrat": true,
     "recrut": "Diego Herrera",
     "dernierService": "",
     "flagOut": false
@@ -60326,18 +60340,18 @@
    "sem": 44
   }
  },
- "_cid": "xrqkiph3gsp",
- "_maj": 1794741688724,
- "_rev": "de0vw15tvrl-mwhqvufv",
+ "_cid": "fa7wllsxg4k",
+ "_maj": 1794741733648,
+ "_rev": "o0calxlbe2g-mwhqw04m",
  "_majSec": {
   "fer": 1794741486186,
   "fact": 1794741524926,
   "users": 1794741515441,
   "weeks": 1794179966930,
-  "sheets": 1794696403701,
+  "sheets": 1794741733648,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1794741586161,
+  "journal": 1794741733648,
   "pending": 1793561085750,
   "prodDer": 1794693431354,
   "runners": 1794588450185,
@@ -60351,7 +60365,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794179966930,
   "profils": 1793561085750,
-  "_tables": 1794741662059,
+  "_tables": 1794741733627,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -60359,17 +60373,27 @@
   "_affFix1": 1793561085750,
   "produits": 1793561085750,
   "_prodFix1": 1793561085750,
-  "_recruesIgnore": 1794680898611,
+  "_recruesIgnore": 1794741733627,
   "ventesAlias": 1793561085750,
   "_ventesIgnore": 1793561085750,
   "_avertVus": 1793561085750,
-  "_signeVus": 1794680898640,
+  "_signeVus": 1794741733648,
   "sanctions": 1794681659137,
   "_sancFix1": 1794493778197
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1794741732282,
+   "u": "Stella Collins",
+   "a": "Contrat(s) signé(s) via Discord : Mark Dupont, yanis fekir"
+  },
+  {
+   "t": 1794741732261,
+   "u": "Stella Collins",
+   "a": "Recrutements Discord : 1 fiche(s) créée(s), 0 case(s) complétée(s) — yanis fekir"
+  },
   {
    "t": 1794741588951,
    "u": "Laurent Roquel",
@@ -61859,16 +61883,6 @@
    "t": 1793577443521,
    "u": "Diego Herrera",
    "a": "Clôture de la semaine 43 — 321 624 barils · 415 349 $ de primes · promus : Merill Danielson, Bryan Storm, Jack Berthier, Lorenzo Shiva, Nemesio Rosario, Ana Fox, Carmelia Cortez, Hakim Cheb, Xavier Collins, Grigori Valentine, Luc Rouza, Santino Rivera, Salva Trucha, Jeff Beaumont, Cillian Veselov, Tyrese Jackson, Jason Palmer, Ricardo Diaz"
-  },
-  {
-   "t": 1793574906841,
-   "u": "Diego Herrera",
-   "a": "Avertissement : Antonio Saint (intérimaire, aucune prise de service) — total : 1"
-  },
-  {
-   "t": 1793574904711,
-   "u": "Diego Herrera",
-   "a": "Avertissement : Anis Womkeur (intérimaire, aucune prise de service) — total : 2"
   }
  ],
  "prodDer": {
@@ -62421,12 +62435,12 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-15T11:22:05.659Z",
+  "maj": "2026-11-15T11:22:13.030Z",
   "semaine": 46,
   "totalBarils": 130143,
   "ca": 650715,
   "objectif": 375000,
-  "effectif": 122,
+  "effectif": 123,
   "clientsServis": 194,
   "theme": "",
   "top3": [
@@ -67734,7 +67748,6 @@
  "_affFix1": true,
  "_prodFix1": true,
  "_recruesIgnore": [
-  "1789651026498",
   "1789663348792",
   "1789744672580",
   "1789750599148",
@@ -67933,7 +67946,8 @@
   "1794603296012",
   "1794651289866",
   "1794679477994",
-  "1794680064518"
+  "1794680064518",
+  "1794690157849"
  ],
  "_signeVus": [
   "1789477305650",
@@ -68136,7 +68150,9 @@
   "1794603284352",
   "1794603314602",
   "1794651314405",
-  "1794679504333"
+  "1794679504333",
+  "1794681818998",
+  "1794690183059"
  ],
  "_agSupp": [
   "1789145270913",
