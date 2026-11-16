@@ -1,11 +1,27 @@
 {
- "maj": "2026-11-16T21:39:00.579103+00:00",
+ "maj": "2026-11-16T21:40:51.380262+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1572003108194623599",
+   "t": "2026-11-16T21:39:07.399000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 282x Pétrole Raffiné pour 2820$ par Jack Berthier. 1410$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 282,
+   "montant": 2820,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1572001334415069220-0",
    "t": "2026-11-16T21:32:04.497000+00:00",
@@ -94707,30 +94723,6 @@
   },
   {
    "id": "1571535224758599755-1",
-   "t": "2026-11-15T14:39:55.295000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 147x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1815.92, 6566.25, 16.73\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7882\nplayerDiscord : 707695913187016785\nplayerName : ShySpider2463\nplayerCharacter : Laurent Roquel\nplayerId : 282695\nitemId : refinedoil",
-   "nom": "Laurent Roquel",
-   "quantite": 147,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1815.92, 6566.25, 16.73",
-    "targetposition": "-1815.66, 6565.56, 15.98",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "7882",
-    "playerdiscord": "707695913187016785",
-    "playername": "ShySpider2463",
-    "playercharacter": "Laurent Roquel",
-    "playerid": "282695",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1571535224758599755-2",
    "t": "2026-11-15T14:39:55.295000+00:00",
    "auteur": "Logs - Coffre",
    "texte": "Coffre\ndépot de 147x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1815.92, 6566.25, 16.73\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 7882\nplayerDiscord : 707695913187016785\nplayerName : ShySpider2463\nplayerCharacter : Laurent Roquel\nplayerId : 282695\nitemId : refinedoil",
