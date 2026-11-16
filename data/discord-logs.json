@@ -1,11 +1,32 @@
 {
- "maj": "2026-11-16T17:14:54.716963+00:00",
+ "maj": "2026-11-16T17:16:51.954689+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1571936936271155304",
+   "t": "2026-11-16T17:16:10.783000+00:00",
+   "auteur": "Logs - Achat fer",
+   "texte": "Achat fer\na acheté 50x fer pour 250$\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 805\nplayerDiscord : 767332288744128512\nplayerName : JULIO COLLINS\nplayerCharacter : Julio Collins\nplayerId : 356873\nitemId : iron",
+   "nom": "Julio Collins",
+   "quantite": 50,
+   "montant": 250,
+   "type": "achat_fer",
+   "salon": "1247565070423167100",
+   "champs": {
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "805",
+    "playerdiscord": "767332288744128512",
+    "playername": "JULIO COLLINS",
+    "playercharacter": "Julio Collins",
+    "playerid": "356873",
+    "itemid": "iron"
+   }
+  },
   {
    "id": "1571936411462930463",
    "t": "2026-11-16T17:14:05.659000+00:00",
@@ -94094,30 +94115,6 @@
    "coffre": "entreprise (Oil RoxWood)",
    "champs": {
     "position": "-1844.87, 6518.78, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "3260",
-    "playerdiscord": "198789252329373706",
-    "playername": "Jack Berthier",
-    "playercharacter": "Jack Berthier",
-    "playerid": "276642",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1571265195605622938-2",
-   "t": "2026-11-14T20:46:55.328000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 39x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1844.82, 6518.90, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3260\nplayerDiscord : 198789252329373706\nplayerName : Jack Berthier\nplayerCharacter : Jack Berthier\nplayerId : 276642\nitemId : refinedoil",
-   "nom": "Jack Berthier",
-   "quantite": 39,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1844.82, 6518.90, 16.73",
     "targetposition": "-1843.83, 6518.10, 15.74",
     "jobid": "76",
     "jobname": "Oil RoxWood",
