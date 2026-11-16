@@ -1,11 +1,32 @@
 {
- "maj": "2026-11-16T07:36:51.197967+00:00",
+ "maj": "2026-11-16T07:38:51.702698+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1571791245179617292",
+   "t": "2026-11-16T07:37:15.320000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 6110\nplayerDiscord : 1214610388868534292\nplayerName : BluntGoose4517\nplayerCharacter : Kael Son\nplayerId : 374332\nvehiclePlate : UQ1823KQ\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Kael Son",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "6110",
+    "playerdiscord": "1214610388868534292",
+    "playername": "BluntGoose4517",
+    "playercharacter": "Kael Son",
+    "playerid": "374332",
+    "vehicleplate": "UQ1823KQ",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1571787470591500320",
    "t": "2026-11-16T07:22:15.388000+00:00",
@@ -93641,30 +93662,6 @@
     "playercharacter": "Nikko Mount",
     "playerid": "276376",
     "itemid": "oil"
-   }
-  },
-  {
-   "id": "1570926069102419995-4",
-   "t": "2026-11-13T22:19:21.269000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 114x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1843.61, 6519.42, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3741\nplayerDiscord : 1226472675971436614\nplayerName : Jason Palmer┃Visum\nplayerCharacter : Jason Palmer\nplayerId : 362532\nitemId : refinedoil",
-   "nom": "Jason Palmer",
-   "quantite": 114,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1843.61, 6519.42, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "3741",
-    "playerdiscord": "1226472675971436614",
-    "playername": "Jason Palmer┃Visum",
-    "playercharacter": "Jason Palmer",
-    "playerid": "362532",
-    "itemid": "refinedoil"
    }
   }
  ]
