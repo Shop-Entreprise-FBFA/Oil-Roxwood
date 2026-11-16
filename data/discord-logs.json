@@ -1,11 +1,48 @@
 {
- "maj": "2026-11-16T15:46:52.193662+00:00",
+ "maj": "2026-11-16T15:48:54.220902+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1571914754413428940",
+   "t": "2026-11-16T15:48:02.216000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 620\nplayerDiscord : 815274462470995968\nplayerName : SlowCrab7549\nplayerCharacter : Bene Salvador\nplayerId : 116552\nvehiclePlate : WG4999VM\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Bene Salvador",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "620",
+    "playerdiscord": "815274462470995968",
+    "playername": "SlowCrab7549",
+    "playercharacter": "Bene Salvador",
+    "playerid": "116552",
+    "vehicleplate": "WG4999VM",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1571914523420397752",
+   "t": "2026-11-16T15:47:07.143000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 649x Pétrole Raffiné pour 6490$ par Jack Berthier. 3245$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 649,
+   "montant": 6490,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1571914252589998292",
    "t": "2026-11-16T15:46:02.572000+00:00",
@@ -94064,54 +94101,6 @@
    "texte": "Coffre\ndépot de 5x Document dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1255.81, -1438.01, 4.36\ntargetPosition : -1255.33, -1439.12, 3.38\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 880\nplayerDiscord : 593431852291850281\nplayerName : BoldFish7448\nplayerCharacter : Tyler Collins\nplayerId : 209236\nitemId : imagesPlaceholder",
    "nom": "Tyler Collins",
    "quantite": 5,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1255.81, -1438.01, 4.36",
-    "targetposition": "-1255.33, -1439.12, 3.38",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "880",
-    "playerdiscord": "593431852291850281",
-    "playername": "BoldFish7448",
-    "playercharacter": "Tyler Collins",
-    "playerid": "209236",
-    "itemid": "imagesPlaceholder"
-   }
-  },
-  {
-   "id": "1571227441727279308-4",
-   "t": "2026-11-14T18:16:54.102000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 3x Document dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1255.81, -1438.01, 4.36\ntargetPosition : -1255.33, -1439.12, 3.38\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 880\nplayerDiscord : 593431852291850281\nplayerName : BoldFish7448\nplayerCharacter : Tyler Collins\nplayerId : 209236\nitemId : imagesPlaceholder",
-   "nom": "Tyler Collins",
-   "quantite": 3,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1255.81, -1438.01, 4.36",
-    "targetposition": "-1255.33, -1439.12, 3.38",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "880",
-    "playerdiscord": "593431852291850281",
-    "playername": "BoldFish7448",
-    "playercharacter": "Tyler Collins",
-    "playerid": "209236",
-    "itemid": "imagesPlaceholder"
-   }
-  },
-  {
-   "id": "1571227441727279308-5",
-   "t": "2026-11-14T18:16:54.102000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 3x Document dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1255.81, -1438.01, 4.36\ntargetPosition : -1255.33, -1439.12, 3.38\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 880\nplayerDiscord : 593431852291850281\nplayerName : BoldFish7448\nplayerCharacter : Tyler Collins\nplayerId : 209236\nitemId : imagesPlaceholder",
-   "nom": "Tyler Collins",
-   "quantite": 3,
    "montant": null,
    "type": "coffre_depot",
    "salon": "1245400913066066099",
