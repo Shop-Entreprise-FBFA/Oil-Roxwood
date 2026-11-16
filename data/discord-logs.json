@@ -1,11 +1,32 @@
 {
- "maj": "2026-11-16T15:24:52.144477+00:00",
+ "maj": "2026-11-16T15:26:54.309051+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1571909219169345669",
+   "t": "2026-11-16T15:26:02.511000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 340\nplayerDiscord : 765099804262924289\nplayerName : SlowFrog6776\nplayerCharacter : Lorenzo Rojas\nplayerId : 255890\nvehiclePlate : DO6888RF\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Lorenzo Rojas",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "340",
+    "playerdiscord": "765099804262924289",
+    "playername": "SlowFrog6776",
+    "playercharacter": "Lorenzo Rojas",
+    "playerid": "255890",
+    "vehicleplate": "DO6888RF",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1571908464094085262-0",
    "t": "2026-11-16T15:23:02.487000+00:00",
@@ -94090,30 +94111,6 @@
     "vehicleplate": "DO6888RF",
     "jobid": "76",
     "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1571221655810867273",
-   "t": "2026-11-14T17:53:54.632000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 101x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1846.13, 6514.38, 16.73\ntargetPosition : -1845.91, 6514.70, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 329\nplayerDiscord : 1499848677986930882\nplayerName : CleverBeetle1673\nplayerCharacter : Clara Soules\nplayerId : 380202\nitemId : refinedoil",
-   "nom": "Clara Soules",
-   "quantite": 101,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1846.13, 6514.38, 16.73",
-    "targetposition": "-1845.91, 6514.70, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "329",
-    "playerdiscord": "1499848677986930882",
-    "playername": "CleverBeetle1673",
-    "playercharacter": "Clara Soules",
-    "playerid": "380202",
-    "itemid": "refinedoil"
    }
   }
  ]
