@@ -1,11 +1,27 @@
 {
- "maj": "2026-11-16T15:42:55.640124+00:00",
+ "maj": "2026-11-16T15:44:53.467193+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1571913517202935961",
+   "t": "2026-11-16T15:43:07.242000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 651x Pétrole Raffiné pour 6510$ par Jeff Beaumont. 3255$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 651,
+   "montant": 6510,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1571913008832057450",
    "t": "2026-11-16T15:41:06.037000+00:00",
@@ -94111,27 +94127,6 @@
     "playercharacter": "Jason Palmer",
     "playerid": "362532",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1571225432836022333",
-   "t": "2026-11-14T18:08:55.145000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 1978\nplayerDiscord : 815274462470995968\nplayerName : SlowCrab7549\nplayerCharacter : Bene Salvador\nplayerId : 116552\nvehiclePlate : FE3726MZ\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Bene Salvador",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "1978",
-    "playerdiscord": "815274462470995968",
-    "playername": "SlowCrab7549",
-    "playercharacter": "Bene Salvador",
-    "playerid": "116552",
-    "vehicleplate": "FE3726MZ",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
