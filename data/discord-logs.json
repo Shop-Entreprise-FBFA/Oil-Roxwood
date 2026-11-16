@@ -1,11 +1,27 @@
 {
- "maj": "2026-11-16T17:12:57.573499+00:00",
+ "maj": "2026-11-16T17:14:54.716963+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1571936411462930463",
+   "t": "2026-11-16T17:14:05.659000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 648x Pétrole Raffiné pour 6480$ par Jeff Beaumont. 3240$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 648,
+   "montant": 6480,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1571934886628040736",
    "t": "2026-11-16T17:08:02.110000+00:00",
@@ -94111,27 +94127,6 @@
     "playercharacter": "Jack Berthier",
     "playerid": "276642",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1571264949970403455",
-   "t": "2026-11-14T20:45:56.764000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 3385\nplayerDiscord : 612206513200562196\nplayerName : LoudCat8750\nplayerCharacter : Gérard Smith\nplayerId : 273365\nvehiclePlate : IL4818AV\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Gérard Smith",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "3385",
-    "playerdiscord": "612206513200562196",
-    "playername": "LoudCat8750",
-    "playercharacter": "Gérard Smith",
-    "playerid": "273365",
-    "vehicleplate": "IL4818AV",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
