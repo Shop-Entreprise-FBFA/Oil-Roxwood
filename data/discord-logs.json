@@ -1,11 +1,27 @@
 {
- "maj": "2026-11-16T19:52:52.500435+00:00",
+ "maj": "2026-11-16T19:54:52.244103+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1571976429032181781",
+   "t": "2026-11-16T19:53:06.591000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 751x Pétrole Raffiné pour 7510$ par Stella Collins. 3755$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 751,
+   "montant": 7510,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1571976178829365356-0",
    "t": "2026-11-16T19:52:06.938000+00:00",
@@ -94711,30 +94727,6 @@
    "texte": "Coffre\na retiré 49x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -1843.74, 6521.25, 16.73\ntargetPosition : -1842.58, 6521.16, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6545\nplayerDiscord : 707695913187016785\nplayerName : ShySpider2463\nplayerCharacter : Laurent Roquel\nplayerId : 282695\nitemId : oil",
    "nom": "Laurent Roquel",
    "quantite": 49,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1843.74, 6521.25, 16.73",
-    "targetposition": "-1842.58, 6521.16, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6545",
-    "playerdiscord": "707695913187016785",
-    "playername": "ShySpider2463",
-    "playercharacter": "Laurent Roquel",
-    "playerid": "282695",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1571517101095784610",
-   "t": "2026-11-15T13:27:54.277000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 31x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -1843.74, 6521.25, 16.73\ntargetPosition : -1842.58, 6521.16, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6545\nplayerDiscord : 707695913187016785\nplayerName : ShySpider2463\nplayerCharacter : Laurent Roquel\nplayerId : 282695\nitemId : oil",
-   "nom": "Laurent Roquel",
-   "quantite": 31,
    "montant": null,
    "type": "coffre_retrait",
    "salon": "1245400913066066099",
