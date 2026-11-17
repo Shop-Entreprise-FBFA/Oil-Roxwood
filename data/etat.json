@@ -7920,7 +7920,7 @@
     "rib": "489089",
     "tel": "555 736 241",
     "actif": true,
-    "avert": "1",
+    "avert": "2",
     "grade": "Co Patron",
     "recrut": "Diego Herrera",
     "arrivee": "2025-08-31",
@@ -58796,6 +58796,23 @@
  "sanctions": {
   "liste": [
    {
+    "id": 1794925538616,
+    "srcId": "1794925526402",
+    "nom": "Diego Herrera",
+    "discord": "826526979204841482",
+    "cat": "resp",
+    "st": "A1",
+    "issue": "",
+    "date": "2026-11-17",
+    "motif": "test",
+    "par": "⚫ Diego Herrera (Discord)",
+    "conv": "",
+    "convDate": "",
+    "retiree": null,
+    "exam": null,
+    "auto": true
+   },
+   {
     "id": 1794918368484,
     "srcId": "1794918261304",
     "nom": "Booskap Ba",
@@ -59884,6 +59901,16 @@
   ],
   "log": [
    {
+    "t": 1794925538611,
+    "u": "⚫ Diego Herrera (Discord)",
+    "a": "Avert. 1 · Manque de respect — « test » (donnée sur Discord)",
+    "nom": "Diego Herrera",
+    "cat": "resp",
+    "st": "A1",
+    "act": "ajout",
+    "sid": 1794925538616
+   },
+   {
     "t": 1794918367653,
     "u": "⚫ Diego Herrera (Discord)",
     "a": "Avert. 1 · Conduite inappropriée — « Abandons de vehicules » (donnée sur Discord)",
@@ -60851,18 +60878,18 @@
    "sem": 45
   }
  },
- "_cid": "bot",
- "_maj": 1794925527166,
- "_rev": "20es8u1yh5k-mwksab8r",
+ "_cid": "d8a8pd95mud",
+ "_maj": 1794925537809,
+ "_rev": "res5hathn4-mwksboiw",
  "_majSec": {
   "fer": 1794865661645,
   "fact": 1794848880210,
   "users": 1794851094412,
   "weeks": 1794784680661,
-  "sheets": 1794918366856,
+  "sheets": 1794925537809,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1794918366856,
+  "journal": 1794925537809,
   "pending": 1793561085750,
   "prodDer": 1794693431354,
   "runners": 1794784703363,
@@ -60876,7 +60903,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794784680661,
   "profils": 1793561085750,
-  "_tables": 1794925527166,
+  "_tables": 1794925537809,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -60889,13 +60916,18 @@
   "_ventesIgnore": 1793561085750,
   "_avertVus": 1793561085750,
   "_signeVus": 1794917236674,
-  "sanctions": 1794918366856,
+  "sanctions": 1794925537809,
   "_sancFix1": 1794493778197,
   "historique": 1794923943457
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1794925538611,
+   "u": "Diego Herrera",
+   "a": "Sanctions Discord reprises : Diego Herrera"
+  },
   {
    "t": 1794918367653,
    "u": "Diego Herrera",
@@ -62390,11 +62422,6 @@
    "t": 1794161724319,
    "u": "Diego Herrera",
    "a": "Modification des paramètres"
-  },
-  {
-   "t": 1794160486008,
-   "u": "Diego Herrera",
-   "a": "Achats de fer : 1 relevé(s) repris du salon"
   }
  ],
  "prodDer": {
@@ -62957,7 +62984,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-17T14:24:38.763Z",
+  "maj": "2026-11-17T14:25:42.632Z",
   "semaine": 47,
   "totalBarils": 0,
   "ca": 0,
