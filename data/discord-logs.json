@@ -1,11 +1,27 @@
 {
- "maj": "2026-11-17T22:59:46.730885+00:00",
+ "maj": "2026-11-17T23:01:46.272396+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1572385959176052737",
+   "t": "2026-11-17T23:00:26.186000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 144x Pétrole Raffiné pour 1440$ par Maruis Caplant. 720$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 144,
+   "montant": 1440,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1572382924026679442-0",
    "t": "2026-11-17T22:48:22.550000+00:00",
@@ -94300,30 +94316,6 @@
     "playercharacter": "Laurent Roquel",
     "playerid": "282695",
     "itemid": "iron"
-   }
-  },
-  {
-   "id": "1571569233060696114-2",
-   "t": "2026-11-15T16:55:03.506000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 60x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1813.40, 6574.43, 16.91\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 195\nplayerDiscord : 707695913187016785\nplayerName : ShySpider2463\nplayerCharacter : Laurent Roquel\nplayerId : 282695\nitemId : refinedoil",
-   "nom": "Laurent Roquel",
-   "quantite": 60,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1813.40, 6574.43, 16.91",
-    "targetposition": "-1815.66, 6565.56, 15.98",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "195",
-    "playerdiscord": "707695913187016785",
-    "playername": "ShySpider2463",
-    "playercharacter": "Laurent Roquel",
-    "playerid": "282695",
-    "itemid": "refinedoil"
    }
   }
  ]
