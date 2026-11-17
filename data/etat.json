@@ -60937,8 +60937,8 @@
    "sem": 45
   }
  },
- "_cid": "p1efpqqf2pa",
- "_maj": 1794940865822,
+ "_cid": "bot",
+ "_maj": 1794940873963,
  "_rev": "jsv5jwq7aw-mwl1g500",
  "_majSec": {
   "fer": 1794865661645,
@@ -60962,7 +60962,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794784680661,
   "profils": 1793561085750,
-  "_tables": 1794940865818,
+  "_tables": 1794940873963,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -69882,7 +69882,137 @@
     "conv": "",
     "convDate": ""
    }
-  ]
+  ],
+  "oilroxwood_evenements": {
+   "giveaways": [
+    {
+     "id": 1,
+     "lot": "250 raffiné",
+     "fin": 1794948123,
+     "gagnants": 10,
+     "role": "",
+     "etat": "en_cours",
+     "salon": "1253183929641336953",
+     "participants": 16,
+     "vainqueurs": []
+    }
+   ],
+   "matchs": [
+    {
+     "id": 3,
+     "num": 3,
+     "a": "Équipe A",
+     "b": "Équipe B",
+     "icone": "⚽",
+     "debut": 1794999600,
+     "nul": true,
+     "score": true,
+     "etat": "termine",
+     "votes": 7,
+     "grille": "TEST",
+     "resultat": {
+      "c": "b",
+      "s": [
+       4,
+       6
+      ]
+     }
+    },
+    {
+     "id": 2,
+     "num": 2,
+     "a": "Équipe A",
+     "b": "Équipe B",
+     "icone": "⚽",
+     "debut": 1794938400,
+     "nul": true,
+     "score": true,
+     "etat": "termine",
+     "votes": 5,
+     "grille": "TEST",
+     "resultat": {
+      "c": "n",
+      "s": [
+       3,
+       3
+      ]
+     }
+    },
+    {
+     "id": 1,
+     "num": 1,
+     "a": "Équipe A",
+     "b": "Équipe B",
+     "icone": "⚽",
+     "debut": 1794935400,
+     "nul": true,
+     "score": true,
+     "etat": "termine",
+     "votes": 5,
+     "grille": "TEST",
+     "resultat": {
+      "c": "a",
+      "s": [
+       3,
+       2
+      ]
+     }
+    }
+   ],
+   "classements": [
+    {
+     "cle": "g:1",
+     "titre": "TEST",
+     "champ": false,
+     "lignes": [
+      {
+       "nom": "#826526979204841482",
+       "pts": 3,
+       "bons": 3
+      },
+      {
+       "nom": "#948542221429379112",
+       "pts": 2,
+       "bons": 2
+      },
+      {
+       "nom": "#1479222400326308032",
+       "pts": 1,
+       "bons": 1
+      },
+      {
+       "nom": "#235844738656239616",
+       "pts": 1,
+       "bons": 1
+      },
+      {
+       "nom": "#334423976182939648",
+       "pts": 1,
+       "bons": 1
+      },
+      {
+       "nom": "#593431852291850281",
+       "pts": 1,
+       "bons": 1
+      }
+     ]
+    }
+   ],
+   "salons": [
+    {
+     "id": "1224116836204019813",
+     "nom": "général",
+     "cat": "Salons textuels"
+    },
+    {
+     "id": "1224116836204019814",
+     "nom": "clips-vidéos-et-temps-forts",
+     "cat": "Salons textuels"
+    }
+   ],
+   "roles": [],
+   "maj": 1794940873
+  }
  },
  "reunions": [],
  "_permsFix1": true,
