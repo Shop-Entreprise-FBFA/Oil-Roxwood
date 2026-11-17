@@ -39,7 +39,7 @@ window.ROXWOOD_CFG = {
 <body>
 <script src="assets/roxwood-portail.js?v=1"></script>
 <script src="assets/contrat-modele.js?v=1"></script>
-<script src="assets/evenements.js?v=1"></script>
+<script src="assets/evenements.js?v=3"></script>
 <div id="noelNeige" aria-hidden="true"></div>
 <div id="noelGuirlande" aria-hidden="true"></div>
 
@@ -1369,7 +1369,7 @@ function logout(){
 }
 
 /* ---- Canari de version : prévient les onglets restés sur une vieille version ---- */
-const APP_VERSION='C-131';
+const APP_VERSION='C-132';
 /* Le bandeau ne doit dire qu'une chose : « une version plus récente existe ».
    Il comparait deux chaînes avec !==, donc il s'allumait aussi dans l'autre
    sens — quand la page ouverte était PLUS récente que version.json, ce qui
@@ -5961,6 +5961,10 @@ function ferDel(id){
 
 /* ================== MISES À JOUR (changelog) ================== */
 const CHANGELOG=[
+ {v:'C-132',d:'17/11/2026',t:'Événements : noms et salons',items:[
+   ['👤','Noms prénom dans les classements','Les classements et les gagnants affichent le nom prénom (retrouvé par l’ID Discord dans la fiche RH) au lieu d’un numéro.'],
+   ['📍','Tous les salons dans la liste','Les salons où le bot ne peut pas écrire sont grisés avec un cadenas, pour savoir quoi autoriser.']
+ ]},
  {v:'C-131',d:'17/11/2026',t:'Événements : giveaways et pronostics',items:[
    ['🎉','Nouvelle page Événements','Dans Ressources humaines : prépare un giveaway ou une grille de pronostics sur le site, le bot la publie sur Discord. Un tableau pour saisir les matchs (calendrier, case Nul, coller une liste), le vainqueur d’un match se déclare en un clic.'],
    ['🏆','Classements automatiques','Un point par bon pronostic, un de plus pour le score exact si activé. Au choix : points d’une seule grille, ou championnat qui cumule plusieurs grilles. Remise à zéro possible.'],

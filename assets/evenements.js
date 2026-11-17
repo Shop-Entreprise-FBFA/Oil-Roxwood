@@ -24,6 +24,12 @@ function evtData() {
   return { giveaways: t.giveaways || [], matchs: t.matchs || [], classements: t.classements || [], salons: t.salons || [],
            roles: t.roles || [], maj: t.maj || 0 };
 }
+/* Nom prénom d'un membre : la fiche RH (lien par l'ID Discord) fait foi ; sinon le nom donné par le bot ; sinon son numéro. */
+function evtNomDe(id, nomBot) {
+  const rh = ((S.sheets && S.sheets.rh) || []).find(r => String(r.discord || '').trim() === String(id));
+  if (rh && rh.nom) return rh.nom;
+  return nomBot && !/^#\d+$/.test(nomBot) ? nomBot : (nomBot || '#' + id);
+}
 function evtTs(dt) { const t = new Date(dt).getTime(); return isNaN(t) ? 0 : Math.round(t / 1000); }
 function evtQuand(ts) {
   return new Date(ts * 1000).toLocaleString('fr-FR', { weekday: 'short', day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' });
@@ -162,7 +168,7 @@ async function evtGW(type, id, msg) {
 
 /* ---- la page ---- */
 function evtOpts(liste, courant, vide) {
-  return (vide ? `<option value="">${esc(vide)}</option>` : '') + liste.map(x => `<option value="${esc(x.id)}" ${String(courant) === String(x.id) ? 'selected' : ''}>${esc(x.cat ? x.cat + ' › ' + x.nom : x.nom)}</option>`).join('');
+  return (vide ? `<option value="">${esc(vide)}</option>` : '') + liste.map(x => `<option value="${esc(x.id)}" ${String(courant) === String(x.id) ? 'selected' : ''} ${x.ok === false ? 'disabled' : ''}>${x.ok === false ? '🔒 ' : ''}${esc(x.cat ? x.cat + ' › ' + x.nom : x.nom)}${x.ok === false ? " — le bot n'a pas accès" : ''}</option>`).join('');
 }
 function evtSalonSel(D, cle, courant, fn) {
   return D.salons.length
@@ -173,6 +179,7 @@ function evtTab(t) { EVT_TAB = t; evenements(); }
 
 function evenements() {
   evtInit();
+  if (!S.sheets && typeof ensureSheets === 'function') ensureSheets().then(() => { if (VIEW === 'evenements') evenements(); }).catch(() => {});
   const D = evtData(), now = Date.now() / 1000;
   const gwCours = D.giveaways.filter(g => g.etat === 'en_cours'), aDeclarer = D.matchs.filter(m => m.etat !== 'termine' && m.debut <= now),
     aVenir = D.matchs.filter(m => m.etat !== 'termine' && m.debut > now), finis = D.matchs.filter(m => m.etat === 'termine');
@@ -220,7 +227,7 @@ function evenements() {
   } else if (EVT_TAB === 'gw') {
     const g = EVT_GW;
     const gl = x => {
-      const v = x.vainqueurs.map(w => esc(w.nom)).join(', ') || 'personne';
+      const v = x.vainqueurs.map(w => esc(evtNomDe(w.id, w.nom))).join(', ') || 'personne';
       const act = x.etat === 'en_cours'
         ? `<button class="btn btn-sm btn-gold" onclick="evtGW('gw_terminer',${x.id},'Terminer ce giveaway maintenant et tirer les gagnants ?')">Terminer maintenant</button> <button class="btn btn-sm btn-ghost" onclick="evtGW('gw_annuler',${x.id},'Annuler ce giveaway sans tirage ?')">Annuler</button>`
         : x.etat === 'termine' ? `<button class="btn btn-sm btn-ghost" onclick="evtGW('gw_relancer',${x.id},'Retirer de nouveaux gagnants ?')">🔁 Relancer</button>` : '';
@@ -244,7 +251,7 @@ function evenements() {
     <div class="panel ev-card"><div class="fx-lbl">📋 Giveaways</div>${D.giveaways.length ? `<div style="overflow-x:auto"><table class="ev-t"><tbody>${D.giveaways.map(gl).join('')}</tbody></table></div>` : '<div class="empty">Aucun giveaway pour le moment</div>'}</div>`;
   } else {
     corps = D.classements.length ? `<div class="ev-cls">${D.classements.map(c => `<div class="panel ev-card"><div class="fx-lbl">🏆 ${esc(c.titre)} ${c.champ ? '<span class="ev-pill o">championnat</span>' : ''}</div>
-      ${c.lignes.length ? `<table class="ev-t"><thead><tr><th>#</th><th>Joueur</th><th>Points</th><th>Bons pronos</th></tr></thead><tbody>${c.lignes.map((l, i) => `<tr><td>${['🥇', '🥈', '🥉'][i] || i + 1}</td><td><b>${esc(l.nom)}</b></td><td><b style="color:#e8a020">${l.pts}</b></td><td>${l.bons}</td></tr>`).join('')}</tbody></table>` : '<div class="empty">Aucun point pour le moment</div>'}
+      ${c.lignes.length ? `<table class="ev-t"><thead><tr><th>#</th><th>Joueur</th><th>Points</th><th>Bons pronos</th></tr></thead><tbody>${c.lignes.map((l, i) => `<tr><td>${['🥇', '🥈', '🥉'][i] || i + 1}</td><td><b>${esc(evtNomDe(l.id, l.nom))}</b></td><td><b style="color:#e8a020">${l.pts}</b></td><td>${l.bons}</td></tr>`).join('')}</tbody></table>` : '<div class="empty">Aucun point pour le moment</div>'}
       ${c.champ ? `<div style="margin-top:10px"><button class="btn btn-sm btn-ghost" onclick="evtResetChamp(decodeURIComponent('${encodeURIComponent(c.titre)}'))">Remettre à zéro</button></div>` : ''}</div>`).join('')}</div>`
       : '<div class="panel ev-card"><div class="empty">Aucun classement : il apparaît dès le premier résultat déclaré</div></div>';
   }
