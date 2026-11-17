@@ -214,3 +214,24 @@
 .hi-row.ret{opacity:.7}
 .hi-d{font:.76rem Consolas,monospace;color:#8fa1b4;padding-top:2px}
 .hi-ic{font-size:1rem}
+
+/* ---- Événements : giveaways et pronostics ---- */
+.ev-card{padding:16px;margin-bottom:14px}
+.ev-bar{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.ev-chk{display:inline-flex;gap:8px;align-items:center;color:#c9d4df;font-size:.84rem;white-space:nowrap}
+.ev-t{width:100%;border-collapse:collapse}
+.ev-t th{font:700 .66rem Consolas,monospace;letter-spacing:.09em;text-transform:uppercase;color:#8fa1b4;text-align:left;padding:6px 8px}
+.ev-t td{padding:6px 8px;vertical-align:middle;border-top:1px solid rgba(177,196,214,.1)}
+.ev-t .field{margin:0}
+.ev-off{opacity:.55}
+.ev-picks{display:flex;gap:6px;flex-wrap:wrap}
+.ev-pick{background:#16212f;color:#c9d4df;border:1px solid rgba(177,196,214,.2);border-radius:8px;padding:7px 13px;font-weight:600;font-size:.82rem;cursor:pointer}
+.ev-pick:hover{border-color:#e8a020}
+.ev-pick.on{color:#fff;border-color:transparent;background:#3b6fd4}
+.ev-pick.on.a{background:#3b6fd4}.ev-pick.on.n{background:#6b7a8c}.ev-pick.on.b{background:#2e9b63}
+.ev-sc{display:flex;gap:6px;align-items:center}.ev-sc .field{width:54px;text-align:center}
+.ev-pill{display:inline-block;padding:2px 9px;border-radius:99px;font-size:.72rem;font-weight:700;background:#1b2736;color:#9aa8b8;vertical-align:middle}
+.ev-pill.ok{background:#173a2a;color:#5fd096}.ev-pill.o{background:#3b2f14;color:#e8a020}
+.ev-warn{border-left:4px solid #e8a020;color:#e8c98a}
+.ev-cls{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:14px}
+@media(max-width:700px){.ev-bar{flex-direction:column;align-items:stretch}}
