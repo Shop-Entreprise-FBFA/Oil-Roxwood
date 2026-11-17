@@ -58722,6 +58722,40 @@
  "sanctions": {
   "liste": [
    {
+    "id": 1794917176802,
+    "srcId": "1794915643481",
+    "nom": "Straviski Vorkuta",
+    "discord": "450325012319305729",
+    "cat": "cond",
+    "st": "R",
+    "issue": "",
+    "date": "2026-11-17",
+    "motif": "abandons de vehicules",
+    "par": "⚫ Diego Herrera (Discord)",
+    "conv": "",
+    "convDate": "",
+    "retiree": null,
+    "exam": null,
+    "auto": true
+   },
+   {
+    "id": 1794917176766,
+    "srcId": "1794915477960",
+    "nom": "Yann Zigzag",
+    "discord": "580059741426941982",
+    "cat": "cond",
+    "st": "R",
+    "issue": "",
+    "date": "2026-11-17",
+    "motif": "conduite dangereuse",
+    "par": "⚫ Diego Herrera (Discord)",
+    "conv": "",
+    "convDate": "",
+    "retiree": null,
+    "exam": null,
+    "auto": true
+   },
+   {
     "id": 1794784352476,
     "nom": "Zerox Brown",
     "discord": "1322958678634004552",
@@ -59759,6 +59793,26 @@
   ],
   "log": [
    {
+    "t": 1794917176148,
+    "u": "⚫ Diego Herrera (Discord)",
+    "a": "Rappel oral · Conduite inappropriée — « abandons de vehicules » (donnée sur Discord)",
+    "nom": "Straviski Vorkuta",
+    "cat": "cond",
+    "st": "R",
+    "act": "ajout",
+    "sid": 1794917176802
+   },
+   {
+    "t": 1794917176148,
+    "u": "⚫ Diego Herrera (Discord)",
+    "a": "Rappel oral · Conduite inappropriée — « conduite dangereuse » (donnée sur Discord)",
+    "nom": "Yann Zigzag",
+    "cat": "cond",
+    "st": "R",
+    "act": "ajout",
+    "sid": 1794917176766
+   },
+   {
     "t": 1794784351559,
     "u": "Diego Herrera",
     "a": "Avert. 1 · Quota non fait — « Aucune production cette semaine (semaine 46) »",
@@ -60450,6 +60504,7 @@
    }
   ]
  },
+ "historique": [],
  "settings": {
   "top": [
    0,
@@ -60695,9 +60750,9 @@
    "sem": 45
   }
  },
- "_cid": "dvsz8ehf4l9",
- "_maj": 1794917045829,
- "_rev": "1da6elakub-mwknaw0o",
+ "_cid": "d8a8pd95mud",
+ "_maj": 1794917176200,
+ "_rev": "5a5o4fnqm8t-mwkncdmp",
  "_majSec": {
   "fer": 1794865661645,
   "fact": 1794848880210,
@@ -60706,7 +60761,7 @@
   "sheets": 1794870585657,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1794910482101,
+  "journal": 1794917176149,
   "pending": 1793561085750,
   "prodDer": 1794693431354,
   "runners": 1794784703363,
@@ -60720,7 +60775,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794784680661,
   "profils": 1793561085750,
-  "_tables": 1794917045829,
+  "_tables": 1794917176200,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -60733,12 +60788,18 @@
   "_ventesIgnore": 1793561085750,
   "_avertVus": 1793561085750,
   "_signeVus": 1794850100681,
-  "sanctions": 1794784350178,
-  "_sancFix1": 1794493778197
+  "sanctions": 1794917176149,
+  "_sancFix1": 1794493778197,
+  "historique": 1794917176149
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1794917176148,
+   "u": "Diego Herrera",
+   "a": "Sanctions Discord reprises : Yann Zigzag · Straviski Vorkuta"
+  },
   {
    "t": 1794910482847,
    "u": "Diego Herrera",
@@ -62233,11 +62294,6 @@
    "t": 1794148693878,
    "u": "?",
    "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1794145510107,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
   }
  ],
  "prodDer": {
@@ -62800,7 +62856,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-17T12:05:07.608Z",
+  "maj": "2026-11-17T12:06:17.089Z",
   "semaine": 47,
   "totalBarils": 0,
   "ca": 0,
