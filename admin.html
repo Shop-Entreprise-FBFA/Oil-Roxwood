@@ -38,6 +38,7 @@ window.ROXWOOD_CFG = {
 </head>
 <body>
 <script src="assets/roxwood-portail.js?v=1"></script>
+<script src="assets/contrat-modele.js?v=1"></script>
 <div id="noelNeige" aria-hidden="true"></div>
 <div id="noelGuirlande" aria-hidden="true"></div>
 
@@ -292,6 +293,7 @@ function defaults(){
     pending:[],
     fer:[],
     sanctions:{liste:[],log:[]},
+    historique:[],
     settings:{prix:10, primeBase:5000, top:[15000,10000,5000], limite:24000, semaine:1,
       webhook:'https://discord.com/api/webhooks/1247564402782371985/X8pynlKA1sn26In6aONz4IO7XZl7pwtnW19yvmLKX2DiMq_LXEBZRHGW1rBgyes0h9kg'}
   };
@@ -306,7 +308,7 @@ function load(){
    les contrats et les médias depuis la sortie de Supabase. Sans lui, mergeRemote
    ne reprenait JAMAIS ces tables du dépôt — le dernier qui enregistrait écrasait
    les lignes ajoutées par un autre admin, et toute écriture du bot était perdue. */
-const SEC_KEYS=['runners','weeks','sheets','fact','users','profils','pending','fer','_tables','settings','absences','sanctions','_sancFix1','primesExtra','quotasCom','quotasComHist','journal','bilanExtra','closeUndo','bilanForce','prodDer','imported','affiches','produits','_recruesIgnore','ventesAlias','_ventesIgnore','_qcFix1','_wkFix1','_permsFix1','_rolesFix77','_affFix1','_prodFix1','_avertVus','_signeVus'];
+const SEC_KEYS=['runners','weeks','sheets','fact','users','profils','pending','fer','_tables','settings','absences','sanctions','historique','_sancFix1','primesExtra','quotasCom','quotasComHist','journal','bilanExtra','closeUndo','bilanForce','prodDer','imported','affiches','produits','_recruesIgnore','ventesAlias','_ventesIgnore','_qcFix1','_wkFix1','_permsFix1','_rolesFix77','_affFix1','_prodFix1','_avertVus','_signeVus'];
 /* ---- heure de référence : celle du serveur Supabase, pas celle du PC ----
    Un utilisateur avec une horloge décalée datait ses modifs « dans le futur » et écrasait tout. */
 let CLOCK_SKEW=0;
@@ -376,7 +378,7 @@ function save(){
    écriture du bot ferait donc disparaître la table des coffres de sa copie —
    puis l'effacerait du dépôt à son prochain envoi. Ces tables-là n'ont qu'un
    auteur, il n'y a rien à arbitrer : on les reprend toujours du dépôt. */
-const TABLES_BOT=['oilroxwood_coffres','oilroxwood_recrues','oilroxwood_absences','oilroxwood_avertissements','oilroxwood_contrats_signes','oilroxwood_ventes'];
+const TABLES_BOT=['oilroxwood_coffres','oilroxwood_recrues','oilroxwood_absences','oilroxwood_avertissements','oilroxwood_sanctions','oilroxwood_contrats_signes','oilroxwood_ventes'];
 /* Tables où PLUSIEURS admins (ou le bot ET un admin) posent chacun leurs
    propres lignes : fusionnées ligne par ligne (union par identifiant),
    jamais en bloc. `_tables` entier portait une seule date de fraîcheur :
@@ -1358,7 +1360,7 @@ function logout(){
 }
 
 /* ---- Canari de version : prévient les onglets restés sur une vieille version ---- */
-const APP_VERSION='C-129';
+const APP_VERSION='C-130';
 /* Le bandeau ne doit dire qu'une chose : « une version plus récente existe ».
    Il comparait deux chaînes avec !==, donc il s'allumait aussi dans l'autre
    sens — quand la page ouverte était PLUS récente que version.json, ce qui
@@ -1845,6 +1847,10 @@ function show(v){
   if(migrerAffiches()&&!isMembre()){ save(); sbQueue(); }    // rubrique Affiches ajoutée après coup
   if(migrerProduits()&&!isMembre()){ save(); sbQueue(); }    // rubrique Nouveaux produits, idem
   if(migrerAccueil()&&!isMembre()){ save(); sbQueue(); }     // page Accueil + hubs de pôle, idem
+  if(!isMembre()){                                           // sanctions données avec /avertissement sur Discord
+    const sa=importerSanctions();
+    if(sa){ jlog(`Sanctions Discord reprises : ${sa.join(' · ')}`); save(); sbQueue(); }
+  }
   if(!isMembre()){                                           // absences validées sur Discord
     const abs=importerAbsences();
     if(abs){ jlog(`Absences Discord reprises : ${abs.join(' · ')}`); save(); sbQueue();
@@ -2142,6 +2148,32 @@ function sancLadder(cat,st){
   const C=SANC_CAT[cat], idx=st?C.lad.indexOf(st):-1;
   return `<span class="lad" style="--c:${C.c}">${C.lad.map((x,i)=>`${i?'<i></i>':''}<span class="st ${i<=idx?'on':i===idx+1?'nx':''}" title="${esc(SANC_ST[x][1])}">${SANC_ST[x][0]}</span>`).join('')}</span>`;
 }
+/* Les sanctions des personnes qui ne sont plus sur la fiche RH disparaissent du listing (elles restent en données et dans le journal). */
+function sancListe(){
+  const L=sancStore().liste, rh=(S.sheets&&S.sheets.rh)||[];
+  if(!rh.length) return L;                       // feuille pas encore chargée : on ne masque rien
+  const noms=new Set(rh.map(x=>normNom(x.nom)));
+  return L.filter(s=>noms.has(normNom(s.nom)));
+}
+/* /avertissement sur Discord : le bot dépose la sanction dans une file, le site la reprend (comme les absences). */
+function importerSanctions(){
+  const file=((S._tables&&S._tables.oilroxwood_sanctions)||[]);
+  if(!file.length) return null;
+  const L=sancStore(), vus=new Set(L.liste.map(s=>String(s.srcId||'')).filter(Boolean)), ajoutes=[];
+  file.forEach(r=>{
+    const src=String(r.id||''), nom=String(r.nom||'').trim();
+    if(!src||vus.has(src)||!nom||!SANC_CAT[r.cat]||!SANC_ST[r.st]) return;
+    const s={id:Date.now()+Math.floor(Math.random()*1000)+ajoutes.length,srcId:src,nom,discord:String(r.discord||'').trim(),cat:r.cat,st:r.st,
+      issue:String(r.issue||''),date:String(r.date||'').slice(0,10)||jourISO(dateParis()),motif:String(r.motif||'').trim().slice(0,300),
+      par:String(r.par||'Discord').trim().slice(0,60),conv:String(r.conv||''),convDate:String(r.convDate||''),retiree:null,exam:null,auto:true};
+    L.liste.unshift(s); vus.add(src);
+    sancLog(`${sancLabel(s)} · ${SANC_CAT[s.cat].n} — « ${s.motif} » (donnée sur Discord)`,s,'ajout');
+    L.log[0].u=s.par;
+    if(s.st!=='R') sancMajAvert(s.nom,1);
+    ajoutes.push(s.nom);
+  });
+  return ajoutes.length?ajoutes:null;
+}
 function sancDesPersonnes(nom){ return sancStore().liste.filter(s=>normNom(s.nom)===normNom(nom)); }
 /* Prochaine étape pour cette personne dans cette catégorie : la marche qui suit la plus haute encore en vigueur. */
 function sancNext(nom,cat){
@@ -2341,9 +2373,10 @@ async function sancSave(){
 }
 /* ---- la page « Avertissements » : le registre ---- */
 function chercherSanc(v){ SANC_Q=v; avertissements(); const el=document.getElementById('sancQ'); if(el){ el.focus(); el.setSelectionRange(el.value.length,el.value.length); } }
-function avertissements(){
-  const L=sancStore(), auj=jourISO(dateParis()), q=normNom(SANC_Q), gere=sancGere();
-  const act=L.liste.filter(s=>!s.retiree), ret=L.liste.filter(s=>s.retiree);
+async function avertissements(){
+  if(!S.sheets) await ensureSheets();
+  const L=sancStore(), tout=sancListe(), masquees=L.liste.length-tout.length, auj=jourISO(dateParis()), q=normNom(SANC_Q), gere=sancGere();
+  const act=tout.filter(s=>!s.retiree), ret=tout.filter(s=>s.retiree);
   const aExam=act.filter(s=>sancRetirable(s)).sort((a,b)=>sancRetirable(b)-sancRetirable(a));
   const base=SANC_FILT==='retirees'?ret:act.filter(s=>SANC_FILT==='tous'||s.cat===SANC_FILT);
   const vues=base.filter(s=>!q||normNom(s.nom+' '+s.motif+' '+SANC_CAT[s.cat].n).includes(q)).sort((a,b)=>b.date.localeCompare(a.date)||b.id-a.id);
@@ -2369,7 +2402,7 @@ function avertissements(){
     :'<div class="fx-mut">Aucune sanction à examiner pour le moment.</div>';
   const journal=L.log.slice(0,200).map(e=>`<div class="rg-j"><span class="mo fx-mut" style="margin:0;width:92px">${new Date(e.t).toLocaleDateString('fr-FR',{day:'2-digit',month:'2-digit'})} ${new Date(e.t).toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'})}</span><div style="flex:1"><div style="${e.act==='retrait'?'text-decoration:line-through;opacity:.75':''}"><b>${esc(e.nom)}</b> — ${esc(e.a)}</div><div class="fx-mut" style="margin:0">par ${esc(e.u)}</div></div></div>`).join('')||'<div class="empty">Le journal est vide</div>';
   const pills=[['tous','Toutes'],...Object.keys(SANC_CAT).map(k=>[k,SANC_CAT[k].ic+' '+SANC_CAT[k].n]),['retirees','Retirées ('+ret.length+')']];
-  $('#main').innerHTML=`<div class="topbar"><div><h2>Avertissements</h2><div class="sub">Le registre des sanctions · ${act.length} en vigueur · tenu à jour sur Discord automatiquement</div></div>
+  $('#main').innerHTML=`<div class="topbar"><div><h2>Avertissements</h2><div class="sub">Le registre des sanctions · ${act.length} en vigueur${masquees?` · ${masquees} de personnes parties masquée(s)`:''} · tenu à jour sur Discord automatiquement</div></div>
     <div style="display:flex;gap:10px"><div class="vd-seg"><button class="${SANC_TAB==='reg'?'on':''}" onclick="SANC_TAB='reg';avertissements()">Registre</button><button class="${SANC_TAB==='journal'?'on':''}" onclick="SANC_TAB='journal';avertissements()">Journal</button></div>
     ${isMembre()?'':'<button class="btn btn-gold" onclick="sancModal()">＋ Donner une sanction</button>'}</div></div>
   <div class="vd-sum" style="grid-template-columns:repeat(4,1fr)">${kpi.map(([c,n,l])=>`<div style="--c:${c}"><b>${n}</b><span>${l}</span></div>`).join('')}</div>
@@ -2378,6 +2411,66 @@ function avertissements(){
     <input class="field" id="sancQ" style="max-width:240px" placeholder="🔍 Rechercher…" value="${esc(SANC_Q)}" oninput="chercherSanc(this.value)"></div>
   <div class="rg-grid"><div class="panel" style="padding:6px 12px;overflow-x:auto">${vues.length?`<table class="rg-t"><thead><tr><th>Personne</th><th>Catégorie · motif</th><th>Échelle</th><th>Étape</th><th>Date</th><th>Par</th><th></th></tr></thead><tbody>${vues.map(ligne).join('')}</tbody></table>`:'<div class="empty">Aucune sanction ici</div>'}</div>
   <div class="panel" style="padding:14px"><div class="fx-lbl">⏳ À examiner · retrait possible</div><div class="fx-mut" style="margin:0 0 10px">Avertissements de plus d'un mois, sans autre sanction depuis. Rien ne se retire tout seul : c'est à toi de décider. Les rappels n'apparaissent jamais ici.</div>${examen}</div></div>`}`;
+}
+
+/* ---- Historique d'un membre ----
+   S.historique : journal permanent par personne (changements de grade, salaires versés à chaque clôture).
+   Les sanctions (même retirées), les absences et les semaines sont lues là où elles vivent déjà. */
+let RH_HF='tout';
+function histoAdd(nom,type,txt,extra){
+  if(!Array.isArray(S.historique)) S.historique=[];
+  S.historique.push(Object.assign({t:Date.now(),d:jourISO(dateParis()),nom,type,txt},extra||{}));
+  if(S.historique.length>6000) S.historique.splice(0,S.historique.length-6000);
+}
+function rhHistEvents(r){
+  const low=normNom(r.nom), ev=[], semPayees=new Set();
+  (S.historique||[]).forEach(h=>{
+    if(normNom(h.nom)!==low) return;
+    if(h.type==='paie') semPayees.add(h.sem);
+    ev.push({d:h.d||jourISO(new Date(h.t)),t:h.t||0,k:h.type==='paie'?'paie':'grade',h});
+  });
+  sancStore().liste.forEach(s=>{
+    if(normNom(s.nom)!==low) return;
+    ev.push({d:s.date,t:s.id,k:'sanction',s});
+    if(s.retiree) ev.push({d:s.retiree.date,t:s.id+1,k:'sanction',s,retrait:true});
+  });
+  (S.absences||[]).forEach(a=>{ if(normNom(a.nom)===low) ev.push({d:a.du,t:a.id||0,k:'absence',a}); });
+  (S.weeks||[]).forEach(w=>{
+    const x=(w.detail||[]).find(d=>normNom(d.nom)===low);
+    if(!x||x.poste||semPayees.has(w.num)) return;
+    const m=String(w.date||'').match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})/);
+    ev.push({d:m?`${m[3]}-${m[2].padStart(2,'0')}-${m[1].padStart(2,'0')}`:'',t:w.num,k:'semaine',w,x});
+  });
+  if(r.arrivee&&/^\d{4}-\d{2}-\d{2}/.test(r.arrivee)) ev.push({d:String(r.arrivee).slice(0,10),t:0,k:'grade',h:{txt:'Arrivée dans l’entreprise'}});
+  return ev.filter(e=>e.d).sort((a,b)=>b.d.localeCompare(a.d)||(b.t-a.t));
+}
+function rhFicheHistorique(i,r){
+  const ev=rhHistEvents(r), F={tout:'Tout',grade:'🎖️ Grades',sanction:'⚖️ Sanctions',paie:'💰 Paies',absence:'🌴 Absences',semaine:'📊 Semaines'};
+  if(!F[RH_HF]) RH_HF='tout';
+  const paies=ev.filter(e=>e.k==='paie'), totalVerse=paies.reduce((a,e)=>a+nn(e.h.total),0);
+  const sancs=sancStore().liste.filter(s=>normNom(s.nom)===normNom(r.nom)), nbRet=sancs.filter(s=>s.retiree).length;
+  const nbGr=ev.filter(e=>e.k==='grade'&&e.h&&/Mont|Desc|Titul/i.test(e.h.txt||'')).length;
+  const vue=ev.filter(e=>RH_HF==='tout'||e.k===RH_HF);
+  const ligne=e=>{
+    let ic='•', txt='', det='';
+    if(e.k==='grade'){ ic=/Desc/i.test(e.h.txt)?'📉':/Mont|Titul/i.test(e.h.txt)?'📈':'🎖️'; txt=esc(e.h.txt); }
+    else if(e.k==='paie'){ const h=e.h; ic='💰'; txt=`Semaine ${h.sem} — total versé <b>${money(h.total)}</b>`;
+      det=`salaire ${money(h.salaire)}${h.prime?` · prime ${money(h.prime)}`:''}${h.top?` · TOP ${money(h.top)}`:''}${h.extra?` · prime exceptionnelle ${money(h.extra)}`:''} · ${fmt(h.barils||0)} barils ${h.quotaOk?'✓':'✗'}`; }
+    else if(e.k==='sanction'){ const s=e.s, C=SANC_CAT[s.cat]; ic='⚖️';
+      txt=e.retrait?`Retirée : ${esc(sancLabel(s))} · ${C.n}`:`<b>${esc(sancLabel(s))}</b> · ${C.ic} ${C.n}`;
+      det=e.retrait?`${esc(s.retiree.motif||'')} — par ${esc(s.retiree.par||'?')}`:`« ${esc(s.motif)} » — par ${esc(s.par)}${s.retiree?` · <i>retirée le ${frDate(s.retiree.date)}</i>`:''}`; }
+    else if(e.k==='absence'){ ic='🌴'; txt=`Absence du ${frDate(e.a.du)} au ${frDate(e.a.au)}`; det=esc(e.a.motif||''); }
+    else if(e.k==='semaine'){ ic='📊'; txt=`Semaine ${e.w.num}`; det=`${fmt(e.x.barils)} / ${fmt(e.x.quota)} barils ${e.x.ok?'✓ quota atteint':'✗ quota non atteint'} <i>(salaire non enregistré avant cette version)</i>`; }
+    return `<div class="hi-row ${e.k}${e.retrait?' ret':''}"><span class="hi-d">${frDate(e.d)}</span><span class="hi-ic">${ic}</span><div><div>${txt}</div>${det?`<div class="fi-mut" style="margin:2px 0 0">${det}</div>`:''}</div></div>`;
+  };
+  return `<div class="fi-kpi">
+    <div><span>Total versé (enregistré)</span><b class="gold">${money(totalVerse)}</b><small>${paies.length} clôture(s)</small></div>
+    <div><span>Sanctions</span><b>${sancs.length}</b><small>dont ${nbRet} retirée(s)</small></div>
+    <div><span>Changements de grade</span><b>${nbGr}</b><small>depuis l'enregistrement</small></div>
+    <div><span>Grade actuel</span><b style="font-size:1.1rem">${esc(r.grade||'—')}</b><small>${r.arrivee?'arrivé le '+frDate(r.arrivee):''}</small></div>
+  </div>
+  <div class="el-pills" style="margin-bottom:12px">${Object.entries(F).map(([k,l])=>`<button class="${RH_HF===k?'on':''}" onclick="RH_HF='${k}';rhFiche(${i})">${l}</button>`).join('')}</div>
+  <div class="hi-liste">${vue.length?vue.map(ligne).join(''):'<div class="fi-mut">Rien à afficher pour ce filtre.</div>'}</div>`;
 }
 
 /* ---- Effectif : le tableau des verdicts ----
@@ -2496,7 +2589,9 @@ function saveRunner(id){
   const gr=poste?0:+v;
   if(id){
     const r=S.runners.find(x=>x.id===id);
+    const ancienTitre=gTitle(r);
     Object.assign(r,{nom,discord:dc,grade:gr,poste});
+    if(gTitle(r)!==ancienTitre) histoAdd(nom,'grade',`Changement de grade : ${ancienTitre} → ${gTitle(r)}`);
     syncRhGrade(r); // répercute le grade/poste sur la feuille RH
   } else {
     S.runners.push({id:Date.now(),nom,discord:dc,grade:gr,poste,barils:0,total:0,runs:[]});
@@ -2532,6 +2627,7 @@ function promote(id){
   const r=S.runners.find(x=>x.id===id);
   if(r.grade<GR_MAX_AUTO){ // la montée automatique s'arrête à Expert : Responsable Runner s'attribue à la main
     r.grade++;
+    histoAdd(r.nom,'grade',`Montée : ${GRADES[r.grade-1].nom} → ${GRADES[r.grade].nom}`);
     const rhMaj=syncRhGrade(r);
     jlog(`Montée de grade : ${r.nom} → ${GRADES[r.grade].nom}`);
     save(); rerender();
@@ -2551,6 +2647,7 @@ function demote(id){
   if(!confirm(`Descendre ${r.nom} de ${GRADES[r.grade].nom} à ${GRADES[r.grade-1].nom} ?\n(quota réalisé à ${pcD}% cette semaine — sous les 95%)`
     +(ap?`\n\n🌴 ATTENTION : ${r.nom} était absent du ${frDate(ap.du)} au ${frDate(ap.au)} — sa production est à lire en tenant compte de ça.`:''))) return;
   r.grade--;
+  histoAdd(r.nom,'grade',`Descente : ${GRADES[r.grade+1].nom} → ${GRADES[r.grade].nom} (quota à ${pcD} %)`);
   const rhMaj=syncRhGrade(r);
   jlog(`Descente de grade : ${r.nom} → ${GRADES[r.grade].nom} (quota à ${pcD}%)`);
   save(); sbPushNow(); rerender();
@@ -2602,6 +2699,7 @@ function titulariser(nom){
   if(!confirm(`Titulariser ${nom} ?\n(Stagiaire → Intérimaire : fin de la période d'essai)`)) return;
   if(row) row.grade='Intérimaire';
   if(run){ run.stagiaire=false; run.grade=0; }
+  histoAdd(nom,'grade','Titularisation : Stagiaire → Intérimaire');
   jlog(`Titularisation : ${nom} (Stagiaire → Intérimaire)`);
   save(); sbPushNow(); rerender();
   toast(`🎓 ${nom} est titularisé — bienvenue chez les Intérimaires !`);
@@ -2620,6 +2718,7 @@ function demoteGhost(nom){
   if(absDe(row.nom)) return toast('🌴 Absence déclarée — descente de grade bloquée');
   if(absFinRecente(row.nom)) return toast('🌴 Absence terminée il y a moins de 7 jours — pas de descente');
   if(!confirm(`Descendre ${row.nom} de ${GRADES[gi].nom} à ${GRADES[gi-1].nom} ?\n(aucune prise de service cette semaine)`)) return;
+  histoAdd(row.nom,'grade',`Descente : ${GRADES[gi].nom} → ${GRADES[gi-1].nom} (aucune prise de service)`);
   row.grade=GRADES[gi-1].nom;
   jlog(`Descente de grade : ${row.nom} → ${GRADES[gi-1].nom} (aucune prise de service)`);
   save(); sbPushNow(); effectif();
@@ -3215,16 +3314,22 @@ function closeWeek(){
   if(!confirm(`Clôturer la semaine ${semClose} ?\n\n• Les primes sont figées (quota + TOP 3)\n• Les montées de grade éligibles sont appliquées\n• La feuille Éligibilité est regénérée (quotas réussis + direction)\n• Les compteurs hebdo repartent à zéro\n\n↩ Tu pourras ANNULER cette clôture juste après en cas d'oubli.`)) return;
   // instantané complet AVANT clôture — permet d'annuler intégralement
   S.closeUndo={ date:new Date().toISOString(), semaine:semClose,
-    snap:JSON.stringify({runners:S.runners,weeks:S.weeks,settings:S.settings,sheets:S.sheets,quotasCom:S.quotasCom,quotasComHist:S.quotasComHist,primesExtra:S.primesExtra||[]}) };
+    snap:JSON.stringify({runners:S.runners,weeks:S.weeks,settings:S.settings,sheets:S.sheets,quotasCom:S.quotasCom,quotasComHist:S.quotasComHist,primesExtra:S.primesExtra||[],historique:S.historique||[]}) };
   const sorted=[...S.runners].sort((a,b)=>b.barils-a.barils);
   let primes=0, promus=[];
   sorted.forEach((r,i)=>{
     if(quotaOK(r)) primes+=primeProj(r);
     if(!PRIMES_OFF && i<3 && r.barils>0) primes+=S.settings.top[i];
   });
+  // salaires versés à cette clôture, gardés par personne dans l'historique (avant la remise à zéro des compteurs)
+  const extraPar={}; (S.primesExtra||[]).forEach(p=>{ const k=normNom(p.nom); extraPar[k]=(extraPar[k]||0)+nn(p.montant); });
+  sorted.forEach((r,i)=>{
+    const sal=Math.round(salaireDe(r)), pr=Math.round(primeProj(r)), top=(!PRIMES_OFF&&i<3&&r.barils>0)?nn((S.settings.top||[])[i]):0, ex=Math.round(extraPar[normNom(r.nom)]||0);
+    histoAdd(r.nom,'paie',`Semaine ${semClose}`,{sem:semClose,salaire:sal,prime:pr,top,extra:ex,total:sal+pr+top+ex,grade:gTitle(r),barils:r.barils,quotaOk:!!quotaOK(r)});
+  });
   primes+=(S.primesExtra||[]).reduce((a,p)=>a+nn(p.montant),0); // primes exceptionnelles de la semaine
   S.primesExtra=[]; // versées avec cette clôture → remise à zéro
-  S.runners.forEach(r=>{ if(eligible(r)){ r.grade++; promus.push(r.nom); syncRhGrade(r); } });
+  S.runners.forEach(r=>{ if(eligible(r)){ r.grade++; promus.push(r.nom); histoAdd(r.nom,'grade',`Montée automatique à la clôture S${semClose} : ${GRADES[r.grade-1].nom} → ${GRADES[r.grade].nom}`); syncRhGrade(r); } });
   // statistiques de la semaine close (archivées dans l'Historique, avec tendances)
   const statsClose=(()=>{
     try{
@@ -3275,6 +3380,7 @@ function undoClose(){
   if(snap.quotasCom!==undefined){ S.quotasCom=snap.quotasCom; S.quotasComHist=snap.quotasComHist; }
   else toast('⚠️ Cette sauvegarde est antérieure au suivi des quotas commerciaux : les achats de fer n\'ont pas pu être restaurés');
   if(snap.primesExtra!==undefined) S.primesExtra=snap.primesExtra;
+  if(snap.historique!==undefined) S.historique=snap.historique;
   delete S.closeUndo;
   save(); sbPushNow(); rerender();
   toast('↩ Clôture annulée — tout est revenu à l\'état précédent');
@@ -3913,7 +4019,7 @@ function rhCartesHTML(){
    on regroupe seulement tout ce qui concerne la personne au même endroit. */
 let RH_TAB='id', RH_ABS_EDIT=null;
 function rhTabs(i,t){
-  return `<div class="fi-tabs" role="tablist">${[['id','Identité'],['abs','🌴 Absences'],['ctr','Contrat & dossier'],['act','Activité']].map(([k,l])=>`<button class="${t===k?'on':''}" onclick="RH_TAB='${k}';RH_ABS_EDIT=null;rhFiche(${i})">${l}</button>`).join('')}</div>`;
+  return `<div class="fi-tabs" role="tablist">${[['id','Identité'],['abs','🌴 Absences'],['ctr','Contrat & dossier'],['hist','Historique'],['act','Activité']].map(([k,l])=>`<button class="${t===k?'on':''}" onclick="RH_TAB='${k}';RH_ABS_EDIT=null;rhFiche(${i})">${l}</button>`).join('')}</div>`;
 }
 function rhJoursEntre(a,b){ return Math.round((Date.parse(b)-Date.parse(a))/86400000); }
 /* Un mois en grille (lundi en premier), jours de l'absence surlignés. */
@@ -4098,7 +4204,7 @@ function rhFiche(i,tab){
   const r=S.sheets.rh[i]; if(!r) return;
   if(tab) RH_TAB=tab;
   const ro=sheetRO('rh'), dis=ro?' disabled':'', e=rhEtat(r), n=S.sheets.rh.length;
-  const corps=RH_TAB==='abs'?rhFicheAbsences(i,r,ro):RH_TAB==='ctr'?rhFicheContrat(i,r,ro):RH_TAB==='act'?rhFicheActivite(i,r):rhFicheIdentite(i,r,ro,dis);
+  const corps=RH_TAB==='abs'?rhFicheAbsences(i,r,ro):RH_TAB==='ctr'?rhFicheContrat(i,r,ro):RH_TAB==='hist'?rhFicheHistorique(i,r):RH_TAB==='act'?rhFicheActivite(i,r):rhFicheIdentite(i,r,ro,dis);
   openModal(`<div class="fi-head">
       ${avatarHTML(r.nom||'?','width:60px;height:60px;font-size:1.2rem;flex:none')}
       <div style="min-width:0;flex:1"><h3 class="fi-nom">${esc(r.nom||'Sans nom')}</h3>
@@ -4205,7 +4311,7 @@ function syncRunners(silent){
     // barils de la semaine = colonne Runs de la Tablette ($ ÷ 5)
     const barilsSem=Math.round(nn(row.runs)/5);
     let r=S.runners.find(x=>x.nom.toLowerCase()===nom.toLowerCase());
-    if(r){ if(r.grade!==g&&r.src==='tablette'){ r.grade=g; updated++; syncRhGrade(r); } r.src='tablette'; r.poste=poste; r.stagiaire=estStg; }
+    if(r){ if(r.grade!==g&&r.src==='tablette'){ if(GRADES[r.grade]&&GRADES[g]) histoAdd(r.nom,'grade',`${g>r.grade?'Montée':'Descente'} : ${GRADES[r.grade].nom} → ${GRADES[g].nom} (tablette)`); r.grade=g; updated++; syncRhGrade(r); } r.src='tablette'; r.poste=poste; r.stagiaire=estStg; }
     else{
       r={id:Date.now()+Math.floor(Math.random()*1e6),nom,discord:'',grade:g,
         barils:0,total:0,runs:[],src:'tablette',poste,stagiaire:estStg};
@@ -4341,34 +4447,18 @@ function eligTriGrade(){
 function contratGen(idU){
   if(isMembre()) return toast('👀 Consultation seule pour les membres');
   const row=S.sheets.rh.find(x=>String(x.idU||'').replace(/\D/g,'')===String(idU)); if(!row) return;
+  if(typeof window.contratModeleHTML!=='function') return alert('Le modèle de contrat n\u2019est pas chargé : recharge la page (Ctrl+F5).');
   const full=String(row.nom||'').trim();
-  const parts=full.split(/\s+/), prenom=parts[0]||'', nomF=parts.slice(1).join(' ')||'';
   const gr=String(row.grade||'').trim();
   const poste=/^(stagiaire|int[ée]rimaire|raffineur)/i.test(gr)?'Runner':(gr||'Runner');
-  const d=String(row.arrivee||'').match(/^(\d{4})-(\d{2})-(\d{2})/);
-  const jo=d?d[3]:'', mo=d?d[2]:'', an=d?d[1]:'';
-  // réduction automatique des polices si le texte est long
-  const posteSize=Math.max(8,Math.min(14,Math.floor(77/(Math.max(1,poste.length)*0.62))));
-  const sigSize=Math.max(16,Math.min(40,Math.floor(274/(Math.max(1,full.length)*0.52))));
-  const T=(x,y,txt,size,extra)=>`<span style="position:absolute;left:${x}px;top:${y-2}px;font-size:${size}px;line-height:1;color:#282624;font-family:'EB Garamond',Georgia,serif;white-space:nowrap;${extra||''}">${esc(txt)}</span>`;
-  const C=(x1,x2,y,txt,size)=>`<span style="position:absolute;left:${x1}px;top:${y-2}px;width:${x2-x1}px;text-align:center;font-size:${size}px;line-height:1;font-weight:700;color:#282624;font-family:'EB Garamond',Georgia,serif">${esc(txt)}</span>`;
-  const HTML=`
-  <div style="position:relative;width:793px;height:1121px">
-    <img src="${new URL('assets/contrat-template.png',location.href).href}" alt="" style="position:absolute;inset:0;width:793px;height:1121px">
-    ${T(112,402,nomF||prenom,19)}
-    ${T(141,427,prenom,19)}
-    ${T(263,452,String(row.idU||'').trim(),19)}
-    ${T(222,477,row.tel||'',19)}
-    ${C(422,457,597,jo,14)}${C(464,490,597,mo,14)}${C(496,539,597,an,14)}
-    ${T(650,597,poste,posteSize,'font-weight:700')}
-    <span style="position:absolute;left:453px;top:998px;width:274px;height:77px;display:flex;align-items:center;justify-content:center;font-family:'Dancing Script',cursive;font-weight:700;font-size:${sigSize}px;color:#141E46">${esc(full)}</span>
-  </div>`;
+  // même document que celui que le bot joint au ticket : le modèle vit dans assets/contrat-modele.js
+  const HTML=window.contratModeleHTML(row,{base:location.href});
   const w=window.open('','_blank','width=840,height=1080');
   if(!w) return alert('Autorise les pop-ups pour générer le contrat.');
   w.document.write(`<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><title>Contrat de travail — ${esc(full)}</title>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
   <style>@page{size:A4;margin:0}body{margin:0}</style></head>
-  <body>${HTML}<script>window.onload=()=>setTimeout(()=>window.print(),700);<\/script></body></html>`);
+  <body>${HTML}<script>window.onload=()=>setTimeout(()=>window.print(),900);<\/script></body></html>`);
   w.document.close();
   if(!row.contratGen){
     row.contratGen={t:nowSrv(),par:(currentUser()||{}).user||'?'};
@@ -5860,6 +5950,12 @@ function ferDel(id){
 
 /* ================== MISES À JOUR (changelog) ================== */
 const CHANGELOG=[
+ {v:'C-130',d:'17/11/2026',t:'Historique des membres, nouveau contrat, sanctions',items:[
+   ['📜','Historique complet par membre','Nouvel onglet dans la fiche : grades, sanctions (même retirées), absences, semaines et salaires versés.'],
+   ['📝','Nouveau contrat de travail','Modèle Wellington & Marley, rempli automatiquement, identique sur le site et dans le ticket.'],
+   ['⚖️','Sanctions','Les sanctions des personnes parties disparaissent du registre, et /avertissement sur Discord alimente le même registre.'],
+   ['🎓','Guide d’intégration','Stockage Intérimaire à 1 000, boutons Absence et Panne, pannes à déclarer dans le ticket.'],
+ ]},
  {v:'C-129',d:'11/11/2026',t:'Avertissements : un vrai registre des sanctions',items:[
    ['⚖️','Registre des sanctions','Nouvelle page Avertissements : conduite, arme blanche, manque de respect, quota non fait, commercial — chacune avec son échelle (rappel, avert. 1, avert. 2 + convocation, licenciement).'],
    ['🧭','Étape calculée toute seule','L’assistant « Donner une sanction » propose la bonne étape suivante. Les rappels oraux ne se suppriment pas, le licenciement reste une proposition.'],

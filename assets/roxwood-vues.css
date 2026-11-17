@@ -206,3 +206,11 @@
 .note-v{color:#8fa1b4;font-size:.85rem;padding:20px 8px}
 .fx-save:disabled{opacity:.45;cursor:not-allowed}
 @media(max-width:1000px){.rg-grid,.sd-grid{grid-template-columns:1fr}}
+
+/* ---------- Historique d'un membre ---------- */
+.hi-liste{max-height:430px;overflow:auto;padding-right:4px}
+.hi-row{display:grid;grid-template-columns:92px 28px 1fr;gap:10px;align-items:start;padding:9px 12px;margin-bottom:6px;border-radius:9px;background:#0f1a27;border:1px solid #1b2a3b;border-left:3px solid #334556;font-size:.86rem}
+.hi-row.paie{border-left-color:#4fa97b}.hi-row.sanction{border-left-color:#ff9a3d}.hi-row.grade{border-left-color:#e8a020}.hi-row.absence{border-left-color:#22d3ee}.hi-row.semaine{border-left-color:#6b7a8d}
+.hi-row.ret{opacity:.7}
+.hi-d{font:.76rem Consolas,monospace;color:#8fa1b4;padding-top:2px}
+.hi-ic{font-size:1rem}
