@@ -1,11 +1,32 @@
 {
- "maj": "2026-11-17T19:20:00.943583+00:00",
+ "maj": "2026-11-17T19:21:49.897425+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1572330847019995327",
+   "t": "2026-11-17T19:21:26.424000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 2537\nplayerDiscord : 779715516293054485\nplayerName : BoldFish1938\nplayerCharacter : Madisson Callahan\nplayerId : 326811\nvehiclePlate : YN6253GU\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Madisson Callahan",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "2537",
+    "playerdiscord": "779715516293054485",
+    "playername": "BoldFish1938",
+    "playercharacter": "Madisson Callahan",
+    "playerid": "326811",
+    "vehicleplate": "YN6253GU",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1572329835190030421",
    "t": "2026-11-17T19:17:25.185000+00:00",
@@ -94451,30 +94472,6 @@
     "playercharacter": "Julio Collins",
     "playerid": "356873",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1571564508466389149-4",
-   "t": "2026-11-15T16:36:17.075000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 2x Bidon d'essence dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1813.08, 6573.51, 16.90\ntargetPosition : -1815.66, 6565.56, 15.98\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 74\nplayerDiscord : 767332288744128512\nplayerName : JULIO COLLINS\nplayerCharacter : Julio Collins\nplayerId : 356873\nitemId : weapon_petrolcan",
-   "nom": "Julio Collins",
-   "quantite": 2,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1813.08, 6573.51, 16.90",
-    "targetposition": "-1815.66, 6565.56, 15.98",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "74",
-    "playerdiscord": "767332288744128512",
-    "playername": "JULIO COLLINS",
-    "playercharacter": "Julio Collins",
-    "playerid": "356873",
-    "itemid": "weapon_petrolcan"
    }
   }
  ]
