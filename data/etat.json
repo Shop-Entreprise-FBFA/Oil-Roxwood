@@ -7920,7 +7920,7 @@
     "rib": "489089",
     "tel": "555 736 241",
     "actif": true,
-    "avert": "2",
+    "avert": "1",
     "grade": "Co Patron",
     "recrut": "Diego Herrera",
     "arrivee": "2025-08-31",
@@ -58808,7 +58808,11 @@
     "par": "⚫ Diego Herrera (Discord)",
     "conv": "",
     "convDate": "",
-    "retiree": null,
+    "retiree": {
+     "date": "2026-11-17",
+     "par": "Diego Herrera",
+     "motif": "annulée (erreur de saisie)"
+    },
     "exam": null,
     "auto": true
    },
@@ -59901,6 +59905,16 @@
   ],
   "log": [
    {
+    "t": 1794925559383,
+    "u": "Diego Herrera",
+    "a": "Retirée · Avert. 1 · Manque de respect (annulée (erreur de saisie))",
+    "nom": "Diego Herrera",
+    "cat": "resp",
+    "st": "A1",
+    "act": "retrait",
+    "sid": 1794925538616
+   },
+   {
     "t": 1794925538611,
     "u": "⚫ Diego Herrera (Discord)",
     "a": "Avert. 1 · Manque de respect — « test » (donnée sur Discord)",
@@ -60879,17 +60893,17 @@
   }
  },
  "_cid": "d8a8pd95mud",
- "_maj": 1794925545802,
- "_rev": "3knrt43uccz-mwksbvby",
+ "_maj": 1794925558581,
+ "_rev": "gxamzep52pk-mwksc252",
  "_majSec": {
   "fer": 1794865661645,
   "fact": 1794848880210,
   "users": 1794851094412,
   "weeks": 1794784680661,
-  "sheets": 1794925537809,
+  "sheets": 1794925558581,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1794925537809,
+  "journal": 1794925558581,
   "pending": 1793561085750,
   "prodDer": 1794693431354,
   "runners": 1794784703363,
@@ -60903,7 +60917,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794784680661,
   "profils": 1793561085750,
-  "_tables": 1794925545802,
+  "_tables": 1794925558581,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -60916,13 +60930,18 @@
   "_ventesIgnore": 1793561085750,
   "_avertVus": 1793561085750,
   "_signeVus": 1794917236674,
-  "sanctions": 1794925537809,
+  "sanctions": 1794925558581,
   "_sancFix1": 1794493778197,
   "historique": 1794923943457
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1794925559383,
+   "u": "Diego Herrera",
+   "a": "Sanction retirée : Diego Herrera — Avert. 1"
+  },
   {
    "t": 1794925538611,
    "u": "Diego Herrera",
@@ -62417,11 +62436,6 @@
    "t": 1794162494647,
    "u": "Laurent Roquel",
    "a": "Achats de fer : 3 relevé(s) repris du salon"
-  },
-  {
-   "t": 1794161724319,
-   "u": "Diego Herrera",
-   "a": "Modification des paramètres"
   }
  ],
  "prodDer": {
@@ -62984,7 +62998,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-17T14:25:51.454Z",
+  "maj": "2026-11-17T14:26:00.278Z",
   "semaine": 47,
   "totalBarils": 0,
   "ca": 0,
