@@ -1,11 +1,32 @@
 {
- "maj": "2026-11-17T11:37:21.881671+00:00",
+ "maj": "2026-11-17T11:39:27.516135+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
   "entreprise (Oil RoxWood)"
  ],
  "messages": [
+  {
+   "id": "1572214479431667784",
+   "t": "2026-11-17T11:39:02.229000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 5992\nplayerDiscord : 612206513200562196\nplayerName : LoudCat8750\nplayerCharacter : Gérard Smith\nplayerId : 273365\nvehiclePlate : YN6253GU\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Gérard Smith",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "5992",
+    "playerdiscord": "612206513200562196",
+    "playername": "LoudCat8750",
+    "playercharacter": "Gérard Smith",
+    "playerid": "273365",
+    "vehicleplate": "YN6253GU",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1572213982578606111",
    "t": "2026-11-17T11:37:03.770000+00:00",
@@ -94530,30 +94551,6 @@
     "playername": "JULIO COLLINS",
     "playercharacter": "Julio Collins",
     "playerid": "356873",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1571546385919115306",
-   "t": "2026-11-15T15:24:16.323000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 56x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1850.40, 6514.77, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 34\nplayerDiscord : 1053366471574687844\nplayerName : SlowMouse3303\nplayerCharacter : Emma Collins-rodriguez\nplayerId : 227799\nitemId : refinedoil",
-   "nom": "Emma Collins-rodriguez",
-   "quantite": 56,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1850.40, 6514.77, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "34",
-    "playerdiscord": "1053366471574687844",
-    "playername": "SlowMouse3303",
-    "playercharacter": "Emma Collins-rodriguez",
-    "playerid": "227799",
     "itemid": "refinedoil"
    }
   }
