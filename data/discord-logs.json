@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-18T18:36:34.762141+00:00",
+ "maj": "2026-11-18T18:38:34.121139+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -13,6 +13,51 @@
   "entreprise (Oil RoxWood) (13848)"
  ],
  "messages": [
+  {
+   "id": "1572682137650597993",
+   "t": "2026-11-18T18:37:20.637000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\na retiré 73x Pétrole Brut du coffre de l'entreprise (Oil RoxWood) (13844)\nposition : -3091.09, 6818.41, 44.73\ntargetPosition : -3090.06, 6818.50, 43.97\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1029\nplayerDiscord : 948542221429379112\nplayerName : SleepyMoth4273\nplayerCharacter : Stella Collins\nplayerId : 232050\nitemId : oil",
+   "nom": "Stella Collins",
+   "quantite": 73,
+   "montant": null,
+   "type": "coffre_retrait",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood) (13844)",
+   "champs": {
+    "position": "-3091.09, 6818.41, 44.73",
+    "targetposition": "-3090.06, 6818.50, 43.97",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "1029",
+    "playerdiscord": "948542221429379112",
+    "playername": "SleepyMoth4273",
+    "playercharacter": "Stella Collins",
+    "playerid": "232050",
+    "itemid": "oil"
+   }
+  },
+  {
+   "id": "1572682127076630579",
+   "t": "2026-11-18T18:37:18.116000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 2514\nplayerDiscord : 679432277767356448\nplayerName : Mia snchz\nplayerCharacter : Mia Sanchez\nplayerId : 385581\nvehiclePlate : AS5715VX\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Mia Sanchez",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "2514",
+    "playerdiscord": "679432277767356448",
+    "playername": "Mia snchz",
+    "playercharacter": "Mia Sanchez",
+    "playerid": "385581",
+    "vehicleplate": "AS5715VX",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1572681622493466844-0",
    "t": "2026-11-18T18:35:17.814000+00:00",
@@ -94241,54 +94286,6 @@
     "playercharacter": "Nikko Mount",
     "playerid": "276376",
     "itemid": "_aloevera"
-   }
-  },
-  {
-   "id": "1571852901607800880-1",
-   "t": "2026-11-16T11:42:15.358000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 15x Bateau De Sushis du coffre de l'entreprise (Oil RoxWood)\nposition : -1850.87, 6502.05, 16.73\ntargetPosition : -1851.46, 6502.05, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6591\nplayerDiscord : 334423976182939648\nplayerName : MoodyCat2429\nplayerCharacter : Nikko Mount\nplayerId : 276376\nitemId : _bateausushi",
-   "nom": "Nikko Mount",
-   "quantite": 15,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1850.87, 6502.05, 16.73",
-    "targetposition": "-1851.46, 6502.05, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6591",
-    "playerdiscord": "334423976182939648",
-    "playername": "MoodyCat2429",
-    "playercharacter": "Nikko Mount",
-    "playerid": "276376",
-    "itemid": "_bateausushi"
-   }
-  },
-  {
-   "id": "1571852901607800880-2",
-   "t": "2026-11-16T11:42:15.358000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 10x Bidon d'essence du coffre de l'entreprise (Oil RoxWood)\nposition : -1850.87, 6502.05, 16.73\ntargetPosition : -1851.46, 6502.05, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6591\nplayerDiscord : 334423976182939648\nplayerName : MoodyCat2429\nplayerCharacter : Nikko Mount\nplayerId : 276376\nitemId : weapon_petrolcan",
-   "nom": "Nikko Mount",
-   "quantite": 10,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1850.87, 6502.05, 16.73",
-    "targetposition": "-1851.46, 6502.05, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6591",
-    "playerdiscord": "334423976182939648",
-    "playername": "MoodyCat2429",
-    "playercharacter": "Nikko Mount",
-    "playerid": "276376",
-    "itemid": "weapon_petrolcan"
    }
   }
  ]
