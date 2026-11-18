@@ -657,7 +657,7 @@ async function sha(t){
 /* L'ORDRE de cette liste est celui des colonnes dans la grille des permissions.
    Il va du plus large au plus étroit, pour qu'on lise la grille de gauche à droite
    comme on descend l'organigramme. */
-const ROLES={direction:'Direction',assistdir:'Assistant de direction',rh:'RH',comptable:'Comptable',
+const ROLES={direction:'Direction',assistdir:'Assistant de direction',drh:'DRH',rh:'RH',comptable:'Comptable',
              respcom:'Responsable commercial',commercial:'Commercial',resprunner:'Responsable Runner',membre:'Membre'};
 
 /* Les 6 pôles qui peuvent avoir leur propre image en bandeau (Paramètres →
@@ -692,6 +692,7 @@ const ROLES_DISCORD_DEF=[
   {id:'1245400912835510286', role:'direction'},   // Patron
   {id:'1468694481153818674', role:'direction'},   // Co Patron
   {id:'',                    role:'assistdir'},   // Assistant de direction — identifiant à coller
+  {id:'',                    role:'drh'},         // DRH — identifiant à coller
   {id:'1246581064219230250', role:'rh'},          // RH
   {id:'1472927781192208518', role:'comptable'},   // Comptable
   {id:'1498757191044305086', role:'respcom'},     // Responsable commercial
@@ -785,7 +786,7 @@ function roleDepuisDiscord(membreRoles){ return roleDiscordConnu(membreRoles)||n
 /* Traduction d'un rôle du dashboard vers le grade écrit sur la fiche RH.
    « direction » est volontairement absent : voir le commentaire plus bas. */
 /* « resprunner » est volontairement absent : voir la quatrième prudence plus bas. */
-const GRADE_DE_ROLE={rh:'RH',comptable:'Comptable',respcom:'Responsable Commercial',
+const GRADE_DE_ROLE={drh:'DRH',rh:'RH',comptable:'Comptable',respcom:'Responsable Commercial',
                      commercial:'Commercial',
                      assistdir:'Assistant de Direction'};
 /* Un grade de fiche RH est soit un POSTE, soit un grade de runner. Seuls les
@@ -969,6 +970,10 @@ const PERMS={
   //      la Tablette et Semaine & Primes individuellement, le hub ne fait que
   //      les regrouper.
   rh:       ['accueil','rh','comptable','overview','effectif','avertissements','evenements','semaine','historique','frh','integration','felig','ftablette','moi','profil','quotashist','agenda','affiches','maj','dlogs'],
+
+  // DRH : le chef des RH. Mêmes droits que le RH, plus le journal. Ajustable
+  //      dans Paramètres → Permissions par rôle.
+  drh:      ['accueil','rh','comptable','overview','effectif','avertissements','evenements','semaine','historique','frh','integration','felig','ftablette','moi','profil','quotashist','agenda','affiches','maj','dlogs','journal'],
 
   // Comptable : l'argent de l'entreprise. Pas les dossiers du personnel.
   comptable:['accueil','commercial','comptable','overview','factures','relances','bilan','fcompta','frecues','moi','profil','quotashist','agenda','affiches','maj'],
@@ -1369,7 +1374,7 @@ function logout(){
 }
 
 /* ---- Canari de version : prévient les onglets restés sur une vieille version ---- */
-const APP_VERSION='C-133';
+const APP_VERSION='C-134';
 /* Le bandeau ne doit dire qu'une chose : « une version plus récente existe ».
    Il comparait deux chaînes avec !==, donc il s'allumait aussi dans l'autre
    sens — quand la page ouverte était PLUS récente que version.json, ce qui
@@ -1640,7 +1645,7 @@ function estGradeRecruteur(g){ return /^(rh|patron|co\s*patron|assistant de dire
 function nomsRecruteurs(){
   const m=new Map(); const add=n=>{ n=String(n||'').trim(); if(n&&!m.has(n.toLowerCase())) m.set(n.toLowerCase(),n); };
   ((S.sheets&&S.sheets.rh)||[]).forEach(x=>{ if(estGradeRecruteur(x.grade)) add(x.nom); });
-  (S.users||[]).filter(u=>u.role==='direction'||u.role==='rh'||u.role==='assistdir').forEach(u=>add(u.user));
+  (S.users||[]).filter(u=>u.role==='direction'||u.role==='rh'||u.role==='drh'||u.role==='assistdir').forEach(u=>add(u.user));
   return [...m.values()].sort((a,b)=>a.localeCompare(b));
 }
 function posteDe(n){
@@ -1660,7 +1665,7 @@ function quotaOK(r){ return r.barils >= grade(r).quota; }
 /* Les postes de l'organigramme, dans l'ordre où on les lit. La liste sert de
    point de départ ; chaque montant se règle dans Paramètres. */
 const POSTES_DEF={'Patron':70000,'Co Patron':70000,'Assistant de Direction':0,'Comptable':50000,
-  'RH':0,'Responsable Commercial':0,'Commercial':0,'Responsable Runner':0,'Graphiste':0};
+  'DRH':0,'RH':0,'Responsable Commercial':0,'Commercial':0,'Responsable Runner':0,'Graphiste':0};
 function salairesPoste(){
   if(!S.settings.salPoste) S.settings.salPoste={...POSTES_DEF};
   const sp=S.settings.salPoste;
@@ -1672,6 +1677,7 @@ function salairesPoste(){
     ['Assistant de Direction','Responsable Runner'].forEach(k=>{ if(sp[k]===undefined) sp[k]=0; });
     delete sp['Web Master'];
   }
+  if(sp['DRH']===undefined) sp['DRH']=0;
   return sp;
 }
 function salFixeDe(rang){
@@ -2147,7 +2153,7 @@ const SANC_ST={R:['R','Rappel oral'],A:['A','Avertissement'],A1:['A1','Avert. 1'
 let SANC_FILT='tous', SANC_Q='', SANC_TAB='reg', SANC_D=null, SANC_TOUS=[];
 function sancStore(){ if(!S.sanctions||!Array.isArray(S.sanctions.liste)) S.sanctions={liste:[],log:[]}; if(!Array.isArray(S.sanctions.log)) S.sanctions.log=[]; return S.sanctions; }
 function rolePerso(){ if(sessionStorage.getItem('orx_user')==='SECOURS') return 'direction'; const cu=currentUser(); return cu?cu.role:'direction'; }
-function sancGere(){ return ['direction','assistdir','rh'].includes(rolePerso()); }
+function sancGere(){ return ['direction','assistdir','drh','rh'].includes(rolePerso()); }
 function sancDirection(){ return rolePerso()==='direction'; }
 function sancCatsPermises(){ const r=rolePerso(); return (r==='commercial'||r==='respcom')?['com']:Object.keys(SANC_CAT); }
 function ilPlus(j){ const d=dateParis(); d.setDate(d.getDate()+j); return jourISO(d); }
@@ -5961,6 +5967,9 @@ function ferDel(id){
 
 /* ================== MISES À JOUR (changelog) ================== */
 const CHANGELOG=[
+ {v:'C-134',d:'18/11/2026',t:'Nouveau rôle : DRH',items:[
+   ['🗂️','Rôle DRH','Un rôle DRH existe entre Assistant de direction et RH, avec les droits du RH plus le Journal (réglables dans Paramètres → Permissions). Il peut gérer avertissements et événements.']
+ ]},
  {v:'C-133',d:'18/11/2026',t:'Événements : recherche de salon',items:[
    ['🔍','Rechercher un salon en tapant','Le choix du salon se fait dans un champ de recherche (nom du salon ou de sa catégorie) au lieu d’un long menu. Les salons où le bot n’a pas accès sont grisés avec un cadenas.']
  ]},
@@ -8034,13 +8043,13 @@ function groupePrevenir(nom){
   if(rh){
     const g=String(rh.grade||'').trim();
     if(/commercial/i.test(g)) return 'commercial';
-    if(/^rh$/i.test(g)) return 'rh';
+    if(/^(d?rh)$/i.test(g)) return 'rh';
     if(/patron|assistant de direction/i.test(g)) return 'direction';
   }
   const u=(S.users||[]).find(x=>normNom(x.user)===n);
   if(u){
     if(u.role==='commercial'||u.role==='respcom') return 'commercial';
-    if(u.role==='rh') return 'rh';
+    if(u.role==='rh'||u.role==='drh') return 'rh';
     if(u.role==='direction'||u.role==='assistdir') return 'direction';
   }
   return '';
@@ -8051,8 +8060,8 @@ function nomsAPrevenir(){
   const partis=new Set(((S.sheets&&S.sheets.rh)||[]).filter(x=>x.flagOut).map(x=>normNom(x.nom)));
   const m=new Map(), add=n=>{ n=String(n||'').trim(); if(n&&!partis.has(normNom(n))&&!m.has(n.toLowerCase())) m.set(n.toLowerCase(),n); };
   (S.runners||[]).filter(r=>estCommercial(r)).forEach(r=>add(r.nom));
-  ((S.sheets&&S.sheets.rh)||[]).forEach(x=>{ if(/commercial|^rh$|patron|assistant de direction/i.test(String(x.grade||'').trim())) add(x.nom); });
-  (S.users||[]).filter(u=>['commercial','respcom','rh','direction','assistdir'].includes(u.role)).forEach(u=>add(u.user));
+  ((S.sheets&&S.sheets.rh)||[]).forEach(x=>{ if(/commercial|^d?rh$|patron|assistant de direction/i.test(String(x.grade||'').trim())) add(x.nom); });
+  (S.users||[]).filter(u=>['commercial','respcom','rh','drh','direction','assistdir'].includes(u.role)).forEach(u=>add(u.user));
   const l=[...m.values()].sort((a,b)=>a.localeCompare(b));
   return l.length?l:nomsPostes();
 }
