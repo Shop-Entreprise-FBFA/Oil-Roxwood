@@ -14059,6 +14059,13 @@
     "quantite": 100,
     "qui": "William Rodriguez-Collins",
     "fact": 253215
+   },
+   {
+    "date": "2026-11-18",
+    "client": "Concessionnaire moto bateau",
+    "quantite": 500,
+    "qui": "Stella Collins",
+    "fact": 253216
    }
   ],
   "collection": [
@@ -15974,7 +15981,7 @@
      }
     ],
     "adresse": "Sandy shores",
-    "lastCmd": "2026-09-27",
+    "lastCmd": "2026-11-18",
     "type": "entreprise",
     "salon": "1553754362029805680"
    },
@@ -16635,8 +16642,38 @@
     "prix": 150
    }
   ],
-  "compteur": 253216,
+  "compteur": 253217,
   "factures": [
+   {
+    "num": 253216,
+    "date": "2026-11-18",
+    "client": "Concessionnaire moto bateau",
+    "emetteur": "Stella Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 500,
+      "tva": 0,
+      "pu": 180,
+      "ht": 90000,
+      "ttc": 90000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 90000,
+    "ttc": 90000,
+    "poids": 1000,
+    "statut": "attente",
+    "envoi": {
+     "t": 1795006862006,
+     "par": "Stella Collins",
+     "statut": "en_cours",
+     "ordre": 1795006859875,
+     "rapport": ""
+    }
+   },
    {
     "num": 253215,
     "date": "2026-11-17",
@@ -61090,15 +61127,15 @@
    "sem": 45
   }
  },
- "_cid": "icjae504in7",
- "_maj": 1795006850882,
- "_rev": "03y4ozhr8qhl-mwm4qicu",
+ "_cid": "3r42pdx1aoy",
+ "_maj": 1795006862006,
+ "_rev": "zgc2qeerg1r-mwm4qlpi",
  "_majSec": {
   "fer": 1795004226152,
-  "fact": 1794933734236,
+  "fact": 1795006862006,
   "users": 1794851094412,
   "weeks": 1794784680661,
-  "sheets": 1795000255038,
+  "sheets": 1795006861441,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
   "journal": 1795004312232,
@@ -61115,7 +61152,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794784680661,
   "profils": 1793561085750,
-  "_tables": 1795006850882,
+  "_tables": 1795006861989,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -63204,13 +63241,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-18T13:00:56.046Z",
+  "maj": "2026-11-18T13:01:00.390Z",
   "semaine": 47,
   "totalBarils": 0,
   "ca": 0,
   "objectif": 375000,
   "effectif": 108,
-  "clientsServis": 199,
+  "clientsServis": 200,
   "theme": "",
   "top3": [],
   "runners": [],
@@ -67853,6 +67890,67 @@
     "id": 1795006559229,
     "statut": "fait",
     "rapport": "Match #4 supprimé"
+   },
+   {
+    "type": "facture_ticket",
+    "payload": {
+     "num": 253216,
+     "salon": "1553754362029805680",
+     "reedition": false,
+     "facture": {
+      "num": 253216,
+      "date": "2026-11-18",
+      "client": "Concessionnaire moto bateau",
+      "emetteur": "Stella Collins",
+      "postop": false,
+      "lignes": [
+       {
+        "ref": "CMD",
+        "qte": 500,
+        "tva": 0,
+        "pu": 180,
+        "ht": 90000,
+        "ttc": 90000,
+        "desc": "bidons d'essence "
+       }
+      ],
+      "offert": 0,
+      "ht": 90000,
+      "ttc": 90000,
+      "poids": 1000,
+      "statut": "attente"
+     },
+     "client": {
+      "nom": "Concessionnaire moto bateau",
+      "rib": "",
+      "tel": "",
+      "notes": [
+       {
+        "t": 1785322275439,
+        "par": "Juan Sanchez",
+        "txt": "En attente d'une réponse"
+       },
+       {
+        "t": 1785441464444,
+        "par": "Juan Sanchez",
+        "txt": "",
+        "imgs": 1
+       },
+       {
+        "t": 1790515682046,
+        "par": "Julio Collins",
+        "txt": "nous on commander 400 bidons",
+        "imgs": 0
+       }
+      ],
+      "adresse": "Sandy shores",
+      "lastCmd": "2026-11-18",
+      "type": "entreprise",
+      "salon": "1553754362029805680"
+     },
+     "par": "Stella Collins"
+    },
+    "id": 1795006859875
    }
   ],
   "oilroxwood_coffres": [
