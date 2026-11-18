@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-18T17:20:37.235264+00:00",
+ "maj": "2026-11-18T17:22:35.781839+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -12,6 +12,27 @@
   "entreprise (Oil RoxWood) (13848)"
  ],
  "messages": [
+  {
+   "id": "1572663253836890295",
+   "t": "2026-11-18T17:22:18.385000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 1739\nplayerDiscord : 1226472675971436614\nplayerName : Jason Palmer┃Visum\nplayerCharacter : Jason Palmer\nplayerId : 362532\nvehiclePlate : AY4705SJ\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Jason Palmer",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "1739",
+    "playerdiscord": "1226472675971436614",
+    "playername": "Jason Palmer┃Visum",
+    "playercharacter": "Jason Palmer",
+    "playerid": "362532",
+    "vehicleplate": "AY4705SJ",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1572659750213128193",
    "t": "2026-11-18T17:08:23.056000+00:00",
@@ -94289,30 +94310,6 @@
    "champs": {
     "position": "-1840.85, 6524.00, 16.73",
     "targetposition": "-1840.85, 6523.94, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6591",
-    "playerdiscord": "334423976182939648",
-    "playername": "MoodyCat2429",
-    "playercharacter": "Nikko Mount",
-    "playerid": "276376",
-    "itemid": "weapon_petrolcan"
-   }
-  },
-  {
-   "id": "1571849879230357532-2",
-   "t": "2026-11-16T11:30:14.767000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 10x Bidon d'essence dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1850.35, 6502.40, 16.73\ntargetPosition : -1851.46, 6502.05, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6591\nplayerDiscord : 334423976182939648\nplayerName : MoodyCat2429\nplayerCharacter : Nikko Mount\nplayerId : 276376\nitemId : weapon_petrolcan",
-   "nom": "Nikko Mount",
-   "quantite": 10,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1850.35, 6502.40, 16.73",
-    "targetposition": "-1851.46, 6502.05, 15.75",
     "jobid": "76",
     "jobname": "Oil RoxWood",
     "playernetid": "6591",
