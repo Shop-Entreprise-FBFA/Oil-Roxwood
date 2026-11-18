@@ -15127,11 +15127,11 @@
    {
     "nom": "Diego Herrera",
     "grade": "Co Patron",
-    "menus": false,
+    "menus": true,
     "boissons": false,
     "bidons": false,
-    "date": "",
-    "don": "",
+    "date": "2026-11-18",
+    "don": "Diego Herrera",
     "permis": ""
    },
    {
@@ -58855,6 +58855,40 @@
  "sanctions": {
   "liste": [
    {
+    "id": 1795000247966,
+    "srcId": "1794998757467",
+    "nom": "Jérome Johns",
+    "discord": "1277928023571562579",
+    "cat": "cond",
+    "st": "R",
+    "issue": "",
+    "date": "2026-11-18",
+    "motif": "utilisation de camion entreprise a but personel sur Los Santos",
+    "par": "⚫ Tyler Collins (Discord)",
+    "conv": "",
+    "convDate": "",
+    "retiree": null,
+    "exam": null,
+    "auto": true
+   },
+   {
+    "id": 1795000247053,
+    "srcId": "1794998500360",
+    "nom": "Idhir Ramaoui",
+    "discord": "1044631856399790123",
+    "cat": "cond",
+    "st": "R",
+    "issue": "",
+    "date": "2026-11-18",
+    "motif": "abandon de véhicule",
+    "par": "⚫ Tyler Collins (Discord)",
+    "conv": "",
+    "convDate": "",
+    "retiree": null,
+    "exam": null,
+    "auto": true
+   },
+   {
     "id": 1794925538616,
     "srcId": "1794925526402",
     "nom": "Diego Herrera",
@@ -59964,6 +59998,26 @@
   ],
   "log": [
    {
+    "t": 1795000247051,
+    "u": "⚫ Tyler Collins (Discord)",
+    "a": "Rappel oral · Conduite inappropriée — « utilisation de camion entreprise a but personel sur Los Santos » (donnée sur Discord)",
+    "nom": "Jérome Johns",
+    "cat": "cond",
+    "st": "R",
+    "act": "ajout",
+    "sid": 1795000247966
+   },
+   {
+    "t": 1795000247051,
+    "u": "⚫ Tyler Collins (Discord)",
+    "a": "Rappel oral · Conduite inappropriée — « abandon de véhicule » (donnée sur Discord)",
+    "nom": "Idhir Ramaoui",
+    "cat": "cond",
+    "st": "R",
+    "act": "ajout",
+    "sid": 1795000247053
+   },
+   {
     "t": 1794925559383,
     "u": "Diego Herrera",
     "a": "Retirée · Avert. 1 · Manque de respect (annulée (erreur de saisie))",
@@ -60954,17 +61008,17 @@
   }
  },
  "_cid": "icjae504in7",
- "_maj": 1795000204824,
- "_rev": "qhg7jzy6n0s-mwm0su18",
+ "_maj": 1795000251516,
+ "_rev": "cbru6bdg45u-mwm0sz0t",
  "_majSec": {
   "fer": 1794865661645,
   "fact": 1794933734236,
   "users": 1794851094412,
   "weeks": 1794784680661,
-  "sheets": 1794998460604,
+  "sheets": 1795000251516,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1794997663678,
+  "journal": 1795000246237,
   "pending": 1793561085750,
   "prodDer": 1794936529631,
   "runners": 1794784703363,
@@ -60978,7 +61032,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794784680661,
   "profils": 1793561085750,
-  "_tables": 1795000204824,
+  "_tables": 1795000247815,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -60991,7 +61045,7 @@
   "_ventesIgnore": 1793561085750,
   "_avertVus": 1793561085750,
   "_signeVus": 1794997663678,
-  "sanctions": 1794925558581,
+  "sanctions": 1795000246237,
   "_sancFix1": 1794493778197,
   "historique": 1794923943457,
   "_evtFix1": 1794947211742
@@ -60999,6 +61053,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1795000247051,
+   "u": "Diego Herrera",
+   "a": "Sanctions Discord reprises : Idhir Ramaoui · Jérome Johns"
+  },
   {
    "t": 1794997663728,
    "u": "Diego Herrera",
@@ -62493,11 +62552,6 @@
    "t": 1794179044787,
    "u": "Julio Collins",
    "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1794179044656,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
   }
  ],
  "prodDer": {
@@ -63067,7 +63121,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-18T11:10:46.028Z",
+  "maj": "2026-11-18T11:10:52.493Z",
   "semaine": 47,
   "totalBarils": 0,
   "ca": 0,
