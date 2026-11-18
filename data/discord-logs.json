@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-18T23:32:38.289762+00:00",
+ "maj": "2026-11-18T23:34:34.413015+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -17,6 +17,46 @@
   "entreprise (Oil RoxWood) (13849)"
  ],
  "messages": [
+  {
+   "id": "1572756615952605339",
+   "t": "2026-11-18T23:33:17.648000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 304x Pétrole Raffiné pour 3040$ par Sapu Kirubakaran. 1520$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 304,
+   "montant": 3040,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1572756607035637902",
+   "t": "2026-11-18T23:33:15.522000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 66x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood) (13847)\nposition : -3088.97, 6814.64, 44.73\ntargetPosition : -3089.68, 6814.50, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 4875\nplayerDiscord : 1053366471574687844\nplayerName : SlowMouse3303\nplayerCharacter : Emma Collins-rodriguez\nplayerId : 227799\nitemId : oil",
+   "nom": "Emma Collins-rodriguez",
+   "quantite": 66,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood) (13847)",
+   "champs": {
+    "position": "-3088.97, 6814.64, 44.73",
+    "targetposition": "-3089.68, 6814.50, 43.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "4875",
+    "playerdiscord": "1053366471574687844",
+    "playername": "SlowMouse3303",
+    "playercharacter": "Emma Collins-rodriguez",
+    "playerid": "227799",
+    "itemid": "oil"
+   }
+  },
   {
    "id": "1572756364671975509",
    "t": "2026-11-18T23:32:17.738000+00:00",
@@ -93871,54 +93911,6 @@
     "itemid": "refinedoil",
     "jobid": "76",
     "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1571874549564317762-0",
-   "t": "2026-11-16T13:08:16.633000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 74x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1848.36, 6499.02, 16.73\ntargetPosition : -1849.11, 6498.65, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6285\nplayerDiscord : 948542221429379112\nplayerName : SleepyMoth4273\nplayerCharacter : Stella Collins\nplayerId : 232050\nitemId : refinedoil",
-   "nom": "Stella Collins",
-   "quantite": 74,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1848.36, 6499.02, 16.73",
-    "targetposition": "-1849.11, 6498.65, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6285",
-    "playerdiscord": "948542221429379112",
-    "playername": "SleepyMoth4273",
-    "playercharacter": "Stella Collins",
-    "playerid": "232050",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1571874549564317762-1",
-   "t": "2026-11-16T13:08:16.633000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 74x Pétrole Brut du coffre de l'entreprise (Oil RoxWood)\nposition : -1848.36, 6499.02, 16.73\ntargetPosition : -1849.11, 6498.65, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6285\nplayerDiscord : 948542221429379112\nplayerName : SleepyMoth4273\nplayerCharacter : Stella Collins\nplayerId : 232050\nitemId : oil",
-   "nom": "Stella Collins",
-   "quantite": 74,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1848.36, 6499.02, 16.73",
-    "targetposition": "-1849.11, 6498.65, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6285",
-    "playerdiscord": "948542221429379112",
-    "playername": "SleepyMoth4273",
-    "playercharacter": "Stella Collins",
-    "playerid": "232050",
-    "itemid": "oil"
    }
   }
  ]
