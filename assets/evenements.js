@@ -170,10 +170,30 @@ async function evtGW(type, id, msg) {
 function evtOpts(liste, courant, vide) {
   return (vide ? `<option value="">${esc(vide)}</option>` : '') + liste.map(x => `<option value="${esc(x.id)}" ${String(courant) === String(x.id) ? 'selected' : ''} ${x.ok === false ? 'disabled' : ''}>${x.ok === false ? '🔒 ' : ''}${esc(x.cat ? x.cat + ' › ' + x.nom : x.nom)}${x.ok === false ? " — le bot n'a pas accès" : ''}</option>`).join('');
 }
+/* Choix du salon : un champ où l'on tape pour chercher (nom du salon ou de sa catégorie), les résultats s'affichent dessous. */
+let EVT_SALONS = [];
+function evtNorm(t) { return String(t || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, ''); }
 function evtSalonSel(D, cle, courant, fn) {
-  return D.salons.length
-    ? `<select class="field" onchange="${fn}('${cle}',this.value)">${evtOpts(D.salons.map(s => Object.assign({}, s, { nom: '#' + s.nom })), courant, '📍 Choisir le salon…')}</select>`
-    : `<input class="field" placeholder="ID du salon (le bot n'a pas encore envoyé sa liste)" value="${esc(courant)}" oninput="${fn}('${cle}',this.value)">`;
+  if (!D.salons.length) return `<input class="field" placeholder="ID du salon (le bot n'a pas encore envoyé sa liste)" value="${esc(courant)}" oninput="${fn}('${cle}',this.value)">`;
+  EVT_SALONS = D.salons;
+  const cur = D.salons.find(x => String(x.id) === String(courant));
+  return `<div class="ev-combo"><input class="field" autocomplete="off" data-fn="${fn}" data-cle="${cle}" placeholder="🔍 Rechercher un salon…" value="${cur ? '#' + esc(cur.nom) : ''}"
+      onfocus="this.select();evtComboMontre(this)" oninput="evtComboMontre(this)" onblur="setTimeout(()=>evtComboCache(this),180)"><div class="ev-combo-l" hidden></div></div>`;
+}
+function evtComboMontre(inp) {
+  const box = inp.nextElementSibling, q = evtNorm(inp.value.replace(/^#/, ''));
+  const ok = EVT_SALONS.filter(x => !q || evtNorm(x.nom).includes(q) || evtNorm(x.cat).includes(q));
+  const vus = ok.slice(0, 60);
+  box.innerHTML = vus.length
+    ? vus.map(x => `<div class="ev-co ${x.ok === false ? 'off' : ''}" ${x.ok === false ? 'title="Pas d’accès du bot à ce salon"' : `onmousedown="evtComboChoix(this,'${esc(x.id)}','${esc(x.nom).replace(/'/g, '&#39;')}')"`}>${x.ok === false ? '🔒 ' : '#'}${esc(x.nom)}<small>${esc(x.cat || '')}</small></div>`).join('') + (ok.length > vus.length ? `<div class="ev-co more">… ${ok.length - vus.length} autre(s) : précise ta recherche</div>` : '')
+    : '<div class="ev-co more">Aucun salon ne correspond</div>';
+  box.hidden = false;
+}
+function evtComboCache(inp) { const box = inp.nextElementSibling; if (box) box.hidden = true; }
+function evtComboChoix(el, id, nom) {
+  const box = el.parentElement, inp = box.previousElementSibling;
+  window[inp.dataset.fn](inp.dataset.cle, id);
+  inp.value = '#' + nom.replace(/&#39;/g, "'"); box.hidden = true; inp.blur();
 }
 function evtTab(t) { EVT_TAB = t; evenements(); }
 

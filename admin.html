@@ -39,7 +39,7 @@ window.ROXWOOD_CFG = {
 <body>
 <script src="assets/roxwood-portail.js?v=1"></script>
 <script src="assets/contrat-modele.js?v=1"></script>
-<script src="assets/evenements.js?v=3"></script>
+<script src="assets/evenements.js?v=4"></script>
 <div id="noelNeige" aria-hidden="true"></div>
 <div id="noelGuirlande" aria-hidden="true"></div>
 
@@ -1369,7 +1369,7 @@ function logout(){
 }
 
 /* ---- Canari de version : prévient les onglets restés sur une vieille version ---- */
-const APP_VERSION='C-132';
+const APP_VERSION='C-133';
 /* Le bandeau ne doit dire qu'une chose : « une version plus récente existe ».
    Il comparait deux chaînes avec !==, donc il s'allumait aussi dans l'autre
    sens — quand la page ouverte était PLUS récente que version.json, ce qui
@@ -5961,6 +5961,9 @@ function ferDel(id){
 
 /* ================== MISES À JOUR (changelog) ================== */
 const CHANGELOG=[
+ {v:'C-133',d:'18/11/2026',t:'Événements : recherche de salon',items:[
+   ['🔍','Rechercher un salon en tapant','Le choix du salon se fait dans un champ de recherche (nom du salon ou de sa catégorie) au lieu d’un long menu. Les salons où le bot n’a pas accès sont grisés avec un cadenas.']
+ ]},
  {v:'C-132',d:'17/11/2026',t:'Événements : noms et salons',items:[
    ['👤','Noms prénom dans les classements','Les classements et les gagnants affichent le nom prénom (retrouvé par l’ID Discord dans la fiche RH) au lieu d’un numéro.'],
    ['📍','Tous les salons dans la liste','Les salons où le bot ne peut pas écrire sont grisés avec un cadenas, pour savoir quoi autoriser.']

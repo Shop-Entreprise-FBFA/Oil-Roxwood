@@ -235,3 +235,8 @@
 .ev-warn{border-left:4px solid #e8a020;color:#e8c98a}
 .ev-cls{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:14px}
 @media(max-width:700px){.ev-bar{flex-direction:column;align-items:stretch}}
+.ev-combo{position:relative}
+.ev-combo-l{position:absolute;z-index:40;left:0;right:0;top:calc(100% + 4px);max-height:280px;overflow:auto;background:#0f1a27;border:1px solid rgba(232,160,32,.5);border-radius:10px;box-shadow:0 14px 30px rgba(0,0,0,.5)}
+.ev-co{padding:8px 12px;cursor:pointer;display:flex;justify-content:space-between;gap:12px;color:#e6e9ee;font-size:.86rem}
+.ev-co:hover{background:#1c2b3e}.ev-co small{color:#7f8fa1;font-size:.7rem;text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:50%}
+.ev-co.off{color:#6b7a8c;cursor:not-allowed}.ev-co.off:hover{background:transparent}.ev-co.more{color:#8fa1b4;cursor:default;font-style:italic}
