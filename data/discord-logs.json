@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-19T06:34:35.839714+00:00",
+ "maj": "2026-11-19T06:36:39.378739+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -17,6 +17,22 @@
   "entreprise (Oil RoxWood) (13849)"
  ],
  "messages": [
+  {
+   "id": "1572862793705590787",
+   "t": "2026-11-19T06:35:12.397000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 137x Pétrole Raffiné pour 1370$ par Yanis Fekir. 685$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 137,
+   "montant": 1370,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1572850464951894077",
    "t": "2026-11-19T05:46:12.993000+00:00",
@@ -93757,30 +93773,6 @@
     "playercharacter": "Nikko Mount",
     "playerid": "276376",
     "itemid": "oil"
-   }
-  },
-  {
-   "id": "1571879576521539592-5",
-   "t": "2026-11-16T13:28:15.153000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 40x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1845.49, 6514.14, 16.73\ntargetPosition : -1845.91, 6514.70, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 6682\nplayerDiscord : 317280511292735499\nplayerName : SharpDuck3006\nplayerCharacter : Fred Berthier\nplayerId : 364651\nitemId : refinedoil",
-   "nom": "Fred Berthier",
-   "quantite": 40,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1845.49, 6514.14, 16.73",
-    "targetposition": "-1845.91, 6514.70, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "6682",
-    "playerdiscord": "317280511292735499",
-    "playername": "SharpDuck3006",
-    "playercharacter": "Fred Berthier",
-    "playerid": "364651",
-    "itemid": "refinedoil"
    }
   }
  ]
