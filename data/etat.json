@@ -7689,7 +7689,7 @@
     "idU": "385846",
     "arrivee": "2026-11-18",
     "discord": "1277928023571562579",
-    "avert": "",
+    "avert": "1",
     "contrat": true,
     "recrut": "Marco Bellini",
     "dernierService": "",
@@ -59025,6 +59025,23 @@
  "sanctions": {
   "liste": [
    {
+    "id": 1795094448329,
+    "srcId": "1795094438053",
+    "nom": "Jérome Johns",
+    "discord": "1277928023571562579",
+    "cat": "cond",
+    "st": "A1",
+    "issue": "",
+    "date": "2026-11-19",
+    "motif": "abandon de vehicule",
+    "par": "Stella Collins (Discord)",
+    "conv": "",
+    "convDate": "",
+    "retiree": null,
+    "exam": null,
+    "auto": true
+   },
+   {
     "id": 1795089510717,
     "srcId": "1795089489444",
     "nom": "Yanis Fekir",
@@ -60202,6 +60219,16 @@
   ],
   "log": [
    {
+    "t": 1795094448053,
+    "u": "Stella Collins (Discord)",
+    "a": "Avert. 1 · Conduite inappropriée — « abandon de vehicule » (donnée sur Discord)",
+    "nom": "Jérome Johns",
+    "cat": "cond",
+    "st": "A1",
+    "act": "ajout",
+    "sid": 1795094448329
+   },
+   {
     "t": 1795089510717,
     "u": "Stella Collins (Discord)",
     "a": "Avert. 1 · Conduite inappropriée — « Abandon de vehicule » (donnée sur Discord)",
@@ -61025,7 +61052,8 @@
    "Commercial": 0,
    "Responsable Commercial": 20000,
    "Assistant de Direction": 0,
-   "Responsable Runner": 0
+   "Responsable Runner": 0,
+   "DRH": 0
   },
   "primeBase": 5000,
   "prixRecrue": 4000,
@@ -61231,24 +61259,24 @@
    "sem": 45
   }
  },
- "_cid": "bot",
- "_maj": 1795094438585,
- "_rev": "hdoflsddtm9-mwnkum45",
+ "_cid": "u7vbfydf8y",
+ "_maj": 1795094448686,
+ "_rev": "utdqxmu8ea-mwnkvy5s",
  "_majSec": {
   "fer": 1795004226152,
   "fact": 1795093739762,
   "users": 1794851094412,
   "weeks": 1794784680661,
-  "sheets": 1795093703781,
+  "sheets": 1795094446410,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1795089516613,
+  "journal": 1795094446410,
   "pending": 1793561085750,
   "prodDer": 1795008622252,
   "runners": 1794784703363,
   "absences": 1795029415448,
   "imported": 1793561085750,
-  "settings": 1794941181114,
+  "settings": 1795094442585,
   "closeUndo": 1794784680661,
   "quotasCom": 1795030786189,
   "bilanExtra": 1794770139783,
@@ -61256,7 +61284,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794784680661,
   "profils": 1793561085750,
-  "_tables": 1795094438585,
+  "_tables": 1795094448686,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -61269,7 +61297,7 @@
   "_ventesIgnore": 1793561085750,
   "_avertVus": 1793561085750,
   "_signeVus": 1795008444841,
-  "sanctions": 1795089516613,
+  "sanctions": 1795094446410,
   "_sancFix1": 1794493778197,
   "historique": 1794923943457,
   "_evtFix1": 1795028752192
@@ -61277,6 +61305,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1795094448053,
+   "u": "Diego Herrera",
+   "a": "Sanctions Discord reprises : Jérome Johns"
+  },
   {
    "t": 1795089510717,
    "u": "Stella Collins",
@@ -62771,11 +62804,6 @@
    "t": 1794179981105,
    "u": "Diego Herrera",
    "a": "Réinitialisation de la feuille « Tablette » (60 lignes)"
-  },
-  {
-   "t": 1794179973833,
-   "u": "Diego Herrera",
-   "a": "Réinitialisation de la feuille « Ventes de la semaine » (13 lignes)"
   }
  ],
  "prodDer": {
@@ -63362,7 +63390,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-19T13:19:47.573Z",
+  "maj": "2026-11-19T13:20:49.840Z",
   "semaine": 47,
   "totalBarils": 0,
   "ca": 0,
