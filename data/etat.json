@@ -59025,6 +59025,23 @@
  "sanctions": {
   "liste": [
    {
+    "id": 1795094905910,
+    "srcId": "1795094896168",
+    "nom": "Tyrese Jackson",
+    "discord": "950886433508450344",
+    "cat": "cond",
+    "st": "R",
+    "issue": "",
+    "date": "2026-11-19",
+    "motif": "prend le terre plein a la transfo",
+    "par": "⚫ Tyler Collins (Discord)",
+    "conv": "",
+    "convDate": "",
+    "retiree": null,
+    "exam": null,
+    "auto": true
+   },
+   {
     "id": 1795094448329,
     "srcId": "1795094438053",
     "nom": "Jérome Johns",
@@ -60219,6 +60236,16 @@
   ],
   "log": [
    {
+    "t": 1795094905683,
+    "u": "⚫ Tyler Collins (Discord)",
+    "a": "Rappel oral · Conduite inappropriée — « prend le terre plein a la transfo » (donnée sur Discord)",
+    "nom": "Tyrese Jackson",
+    "cat": "cond",
+    "st": "R",
+    "act": "ajout",
+    "sid": 1795094905910
+   },
+   {
     "t": 1795094448053,
     "u": "Stella Collins (Discord)",
     "a": "Avert. 1 · Conduite inappropriée — « abandon de vehicule » (donnée sur Discord)",
@@ -61259,9 +61286,9 @@
    "sem": 45
   }
  },
- "_cid": "bot",
- "_maj": 1795094899413,
- "_rev": "p2wizuy7ch-mwnl5ht0",
+ "_cid": "u7vbfydf8y",
+ "_maj": 1795094903947,
+ "_rev": "fj0w8xnpzz8-mwnl5py1",
  "_majSec": {
   "fer": 1795004226152,
   "fact": 1795094756133,
@@ -61270,7 +61297,7 @@
   "sheets": 1795094446410,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1795094446410,
+  "journal": 1795094903947,
   "pending": 1793561085750,
   "prodDer": 1795008622252,
   "runners": 1794784703363,
@@ -61284,7 +61311,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794784680661,
   "profils": 1793561085750,
-  "_tables": 1795094899413,
+  "_tables": 1795094903947,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -61297,7 +61324,7 @@
   "_ventesIgnore": 1793561085750,
   "_avertVus": 1793561085750,
   "_signeVus": 1795008444841,
-  "sanctions": 1795094446410,
+  "sanctions": 1795094903947,
   "_sancFix1": 1794493778197,
   "historique": 1794923943457,
   "_evtFix1": 1795028752192
@@ -61305,6 +61332,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1795094905683,
+   "u": "Diego Herrera",
+   "a": "Sanctions Discord reprises : Tyrese Jackson"
+  },
   {
    "t": 1795094448053,
    "u": "Diego Herrera",
@@ -62799,11 +62831,6 @@
    "t": 1794180087353,
    "u": "?",
    "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1794179981105,
-   "u": "Diego Herrera",
-   "a": "Réinitialisation de la feuille « Tablette » (60 lignes)"
   }
  ],
  "prodDer": {
@@ -63390,7 +63417,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-19T13:28:15.204Z",
+  "maj": "2026-11-19T13:28:25.753Z",
   "semaine": 47,
   "totalBarils": 0,
   "ca": 0,
