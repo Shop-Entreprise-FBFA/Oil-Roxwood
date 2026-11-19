@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-19T22:02:33.988434+00:00",
+ "maj": "2026-11-19T22:04:34.109052+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -18,6 +18,22 @@
   "entreprise (Oil RoxWood) (13849)"
  ],
  "messages": [
+  {
+   "id": "1573096369072382083",
+   "t": "2026-11-19T22:03:21.104000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 651x Pétrole Raffiné pour 6510$ par Bene Salvador. 3255$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 651,
+   "montant": 6510,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1573096106592567499",
    "t": "2026-11-19T22:02:18.524000+00:00",
@@ -73401,102 +73417,6 @@
    "texte": "Coffre\ndépot de 74x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3084.74, 6815.42, 44.73\ntargetPosition : -3084.39, 6815.87, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3924\nplayerDiscord : 1053366471574687844\nplayerName : SlowMouse3303\nplayerCharacter : Emma Collins-rodriguez\nplayerId : 227799\nitemId : oil",
    "nom": "Emma Collins-rodriguez",
    "quantite": 74,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-3084.74, 6815.42, 44.73",
-    "targetposition": "-3084.39, 6815.87, 43.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "3924",
-    "playerdiscord": "1053366471574687844",
-    "playername": "SlowMouse3303",
-    "playercharacter": "Emma Collins-rodriguez",
-    "playerid": "227799",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1572009133773692992-0",
-   "t": "2026-11-16T22:03:04.009000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 144x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1849.58, 6514.38, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3531\nplayerDiscord : 1214610388868534292\nplayerName : BluntGoose4517\nplayerCharacter : Kael Son\nplayerId : 374332\nitemId : refinedoil",
-   "nom": "Kael Son",
-   "quantite": 144,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1849.58, 6514.38, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "3531",
-    "playerdiscord": "1214610388868534292",
-    "playername": "BluntGoose4517",
-    "playercharacter": "Kael Son",
-    "playerid": "374332",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1572009133773692992-1",
-   "t": "2026-11-16T22:03:04.009000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 144x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1850.16, 6514.26, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3531\nplayerDiscord : 1214610388868534292\nplayerName : BluntGoose4517\nplayerCharacter : Kael Son\nplayerId : 374332\nitemId : refinedoil",
-   "nom": "Kael Son",
-   "quantite": 144,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1850.16, 6514.26, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "3531",
-    "playerdiscord": "1214610388868534292",
-    "playername": "BluntGoose4517",
-    "playercharacter": "Kael Son",
-    "playerid": "374332",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1572009133773692992-2",
-   "t": "2026-11-16T22:03:04.009000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 34x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1850.60, 6514.75, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3531\nplayerDiscord : 1214610388868534292\nplayerName : BluntGoose4517\nplayerCharacter : Kael Son\nplayerId : 374332\nitemId : refinedoil",
-   "nom": "Kael Son",
-   "quantite": 34,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1850.60, 6514.75, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "3531",
-    "playerdiscord": "1214610388868534292",
-    "playername": "BluntGoose4517",
-    "playercharacter": "Kael Son",
-    "playerid": "374332",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1572009133773692992-3",
-   "t": "2026-11-16T22:03:04.009000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 71x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood)\nposition : -3084.74, 6815.42, 44.73\ntargetPosition : -3084.39, 6815.87, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3924\nplayerDiscord : 1053366471574687844\nplayerName : SlowMouse3303\nplayerCharacter : Emma Collins-rodriguez\nplayerId : 227799\nitemId : oil",
-   "nom": "Emma Collins-rodriguez",
-   "quantite": 71,
    "montant": null,
    "type": "coffre_depot",
    "salon": "1245400913066066099",
