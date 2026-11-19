@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-19T22:32:33.321593+00:00",
+ "maj": "2026-11-19T22:34:31.828381+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -18,6 +18,46 @@
   "entreprise (Oil RoxWood) (13849)"
  ],
  "messages": [
+  {
+   "id": "1573103940126507009",
+   "t": "2026-11-19T22:33:26.184000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 644x Pétrole Raffiné pour 6440$ par Maruis Caplant. 3220$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 644,
+   "montant": 6440,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1573103939140714639",
+   "t": "2026-11-19T22:33:25.949000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 62x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood) (13847)\nposition : -3088.92, 6814.04, 44.73\ntargetPosition : -3089.68, 6814.50, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3492\nplayerDiscord : 1053366471574687844\nplayerName : SlowMouse3303\nplayerCharacter : Emma Collins-rodriguez\nplayerId : 227799\nitemId : oil",
+   "nom": "Emma Collins-rodriguez",
+   "quantite": 62,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood) (13847)",
+   "champs": {
+    "position": "-3088.92, 6814.04, 44.73",
+    "targetposition": "-3089.68, 6814.50, 43.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "3492",
+    "playerdiscord": "1053366471574687844",
+    "playername": "SlowMouse3303",
+    "playercharacter": "Emma Collins-rodriguez",
+    "playerid": "227799",
+    "itemid": "oil"
+   }
+  },
   {
    "id": "1573103664091103263",
    "t": "2026-11-19T22:32:20.372000+00:00",
@@ -73728,30 +73768,6 @@
     "playercharacter": "Xavier Collins",
     "playerid": "292769",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1572016936861171713",
-   "t": "2026-11-16T22:34:04.410000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 15x Bidon d'essence du coffre de l'entreprise (Oil RoxWood)\nposition : -1256.11, -1438.65, 4.36\ntargetPosition : -1255.33, -1439.12, 3.38\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3924\nplayerDiscord : 1053366471574687844\nplayerName : SlowMouse3303\nplayerCharacter : Emma Collins-rodriguez\nplayerId : 227799\nitemId : weapon_petrolcan",
-   "nom": "Emma Collins-rodriguez",
-   "quantite": 15,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1256.11, -1438.65, 4.36",
-    "targetposition": "-1255.33, -1439.12, 3.38",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "3924",
-    "playerdiscord": "1053366471574687844",
-    "playername": "SlowMouse3303",
-    "playercharacter": "Emma Collins-rodriguez",
-    "playerid": "227799",
-    "itemid": "weapon_petrolcan"
    }
   }
  ]
