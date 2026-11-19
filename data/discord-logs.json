@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-19T23:06:31.479221+00:00",
+ "maj": "2026-11-19T23:08:32.698540+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -18,6 +18,30 @@
   "entreprise (Oil RoxWood) (13849)"
  ],
  "messages": [
+  {
+   "id": "1573112466752147567",
+   "t": "2026-11-19T23:07:19.090000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 74x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood) (13847)\nposition : -3088.92, 6814.04, 44.73\ntargetPosition : -3089.68, 6814.50, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3492\nplayerDiscord : 1053366471574687844\nplayerName : SlowMouse3303\nplayerCharacter : Emma Collins-rodriguez\nplayerId : 227799\nitemId : oil",
+   "nom": "Emma Collins-rodriguez",
+   "quantite": 74,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood) (13847)",
+   "champs": {
+    "position": "-3088.92, 6814.04, 44.73",
+    "targetposition": "-3089.68, 6814.50, 43.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "3492",
+    "playerdiscord": "1053366471574687844",
+    "playername": "SlowMouse3303",
+    "playercharacter": "Emma Collins-rodriguez",
+    "playerid": "227799",
+    "itemid": "oil"
+   }
+  },
   {
    "id": "1573111953369337951-0",
    "t": "2026-11-19T23:05:16.690000+00:00",
@@ -74207,22 +74231,6 @@
    "nom": null,
    "quantite": 350,
    "montant": 3500,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1572025254363144355",
-   "t": "2026-11-16T23:07:07.457000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 125x Pétrole Raffiné pour 1250$ par Xavier Collins. 625$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 125,
-   "montant": 1250,
    "type": "vente",
    "salon": "1245400913473179729",
    "champs": {
