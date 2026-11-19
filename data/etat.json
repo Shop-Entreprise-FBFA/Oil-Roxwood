@@ -59059,6 +59059,21 @@
  "sanctions": {
   "liste": [
    {
+    "id": 1795122631431,
+    "nom": "Isaac jackson",
+    "discord": "518440900049764362",
+    "cat": "cond",
+    "st": "R",
+    "issue": "",
+    "date": "2026-11-19",
+    "motif": "contre sens, conduite dangereuse",
+    "par": "Diego Herrera",
+    "conv": "",
+    "convDate": "",
+    "retiree": null,
+    "exam": null
+   },
+   {
     "id": 1795094905910,
     "srcId": "1795094896168",
     "nom": "Tyrese Jackson",
@@ -60270,6 +60285,16 @@
   ],
   "log": [
    {
+    "t": 1795122631420,
+    "u": "Diego Herrera",
+    "a": "Rappel oral · Conduite inappropriée — « contre sens, conduite dangereuse »",
+    "nom": "Isaac jackson",
+    "cat": "cond",
+    "st": "R",
+    "act": "ajout",
+    "sid": 1795122631431
+   },
+   {
     "t": 1795094905683,
     "u": "⚫ Tyler Collins (Discord)",
     "a": "Rappel oral · Conduite inappropriée — « prend le terre plein a la transfo » (donnée sur Discord)",
@@ -61321,8 +61346,8 @@
   }
  },
  "_cid": "u7vbfydf8y",
- "_maj": 1795122617129,
- "_rev": "k281a2xdbh-mwo1ntxi",
+ "_maj": 1795122630740,
+ "_rev": "vvi6dsxqgen-mwo1nzr3",
  "_majSec": {
   "fer": 1795097743732,
   "fact": 1795094756133,
@@ -61331,7 +61356,7 @@
   "sheets": 1795110403568,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1795110403568,
+  "journal": 1795122630711,
   "pending": 1793561085750,
   "prodDer": 1795008622252,
   "runners": 1794784703363,
@@ -61345,7 +61370,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794784680661,
   "profils": 1793561085750,
-  "_tables": 1795122617129,
+  "_tables": 1795122630740,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -61358,7 +61383,7 @@
   "_ventesIgnore": 1793561085750,
   "_avertVus": 1793561085750,
   "_signeVus": 1795008444841,
-  "sanctions": 1795094903947,
+  "sanctions": 1795122630711,
   "_sancFix1": 1794493778197,
   "historique": 1794923943457,
   "_evtFix1": 1795028752192
@@ -61366,6 +61391,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1795122631420,
+   "u": "Diego Herrera",
+   "a": "Sanction : Isaac jackson — Rappel oral (Conduite inappropriée)"
+  },
   {
    "t": 1795110404284,
    "u": "Laurent Roquel",
@@ -62860,11 +62890,6 @@
    "t": 1794180106274,
    "u": "Julio Collins",
    "a": "Vente rapide sans facture : 100 bidon(s) — Citoyen (vendeur : Julio Collins)"
-  },
-  {
-   "t": 1794180087493,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
   }
  ],
  "prodDer": {
@@ -63451,7 +63476,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-19T21:10:24.582Z",
+  "maj": "2026-11-19T21:10:32.127Z",
   "semaine": 47,
   "totalBarils": 0,
   "ca": 0,
@@ -68375,6 +68400,22 @@
     "id": 1795094375418,
     "statut": "fait",
     "rapport": "3 match(s) publié(s)"
+   },
+   {
+    "type": "sanction",
+    "payload": {
+     "discord": "518440900049764362",
+     "nom": "Isaac jackson",
+     "cat": "cond",
+     "catNom": "Conduite inappropriée",
+     "st": "R",
+     "etape": "Rappel oral",
+     "rappel": true,
+     "motif": "contre sens, conduite dangereuse",
+     "par": "Diego Herrera",
+     "convocation": ""
+    },
+    "id": 1795122631988
    }
   ],
   "oilroxwood_coffres": [
