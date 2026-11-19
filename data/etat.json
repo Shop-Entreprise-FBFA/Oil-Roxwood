@@ -8280,7 +8280,7 @@
     "idU": "385293",
     "arrivee": "2026-11-14",
     "discord": "1509660929845891272",
-    "avert": "",
+    "avert": "1",
     "contrat": true,
     "recrut": "Diego Herrera",
     "dernierService": "2026-11-15",
@@ -58973,6 +58973,23 @@
  "sanctions": {
   "liste": [
    {
+    "id": 1795089510717,
+    "srcId": "1795089489444",
+    "nom": "Yanis Fekir",
+    "discord": "1509660929845891272",
+    "cat": "cond",
+    "st": "A1",
+    "issue": "",
+    "date": "2026-11-19",
+    "motif": "Abandon de vehicule",
+    "par": "Stella Collins (Discord)",
+    "conv": "",
+    "convDate": "",
+    "retiree": null,
+    "exam": null,
+    "auto": true
+   },
+   {
     "id": 1795001333191,
     "srcId": "1795001290384",
     "nom": "Yanis Fekir",
@@ -60133,6 +60150,16 @@
   ],
   "log": [
    {
+    "t": 1795089510717,
+    "u": "Stella Collins (Discord)",
+    "a": "Avert. 1 · Conduite inappropriée — « Abandon de vehicule » (donnée sur Discord)",
+    "nom": "Yanis Fekir",
+    "cat": "cond",
+    "st": "A1",
+    "act": "ajout",
+    "sid": 1795089510717
+   },
+   {
     "t": 1795001332700,
     "u": "⚫ Tyler Collins (Discord)",
     "a": "Rappel oral · Conduite inappropriée — « abandon de véhicule transfo » (donnée sur Discord)",
@@ -61152,18 +61179,18 @@
    "sem": 45
   }
  },
- "_cid": "bot",
- "_maj": 1795089490168,
- "_rev": "w4spw1jga8-mwnhvj3d",
+ "_cid": "mv6hh5bm1bj",
+ "_maj": 1795089516613,
+ "_rev": "4bluxb0aida-mwnhy352",
  "_majSec": {
   "fer": 1795004226152,
   "fact": 1795030781307,
   "users": 1794851094412,
   "weeks": 1794784680661,
-  "sheets": 1795026355713,
+  "sheets": 1795089516613,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1795029415448,
+  "journal": 1795089516613,
   "pending": 1793561085750,
   "prodDer": 1795008622252,
   "runners": 1794784703363,
@@ -61177,7 +61204,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794784680661,
   "profils": 1793561085750,
-  "_tables": 1795089490168,
+  "_tables": 1795089516613,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -61190,7 +61217,7 @@
   "_ventesIgnore": 1793561085750,
   "_avertVus": 1793561085750,
   "_signeVus": 1795008444841,
-  "sanctions": 1795001331830,
+  "sanctions": 1795089516613,
   "_sancFix1": 1794493778197,
   "historique": 1794923943457,
   "_evtFix1": 1795028752192
@@ -61198,6 +61225,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1795089510717,
+   "u": "Stella Collins",
+   "a": "Sanctions Discord reprises : Yanis Fekir"
+  },
   {
    "t": 1795029416284,
    "u": "Diego Herrera",
@@ -62692,11 +62724,6 @@
    "t": 1794179973833,
    "u": "Diego Herrera",
    "a": "Réinitialisation de la feuille « Ventes de la semaine » (13 lignes)"
-  },
-  {
-   "t": 1794179969178,
-   "u": "Diego Herrera",
-   "a": "Clôture de la semaine 44 — 218 228 barils · 331 894 $ de primes · promus : Grigori Valentine, Tyrese Jackson, Jason Palmer, Fred Berthier, Kader Benali"
   }
  ],
  "prodDer": {
@@ -63283,7 +63310,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-19T11:56:31.465Z",
+  "maj": "2026-11-19T11:58:30.758Z",
   "semaine": 47,
   "totalBarils": 0,
   "ca": 0,
