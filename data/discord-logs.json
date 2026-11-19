@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-19T20:58:33.673100+00:00",
+ "maj": "2026-11-19T21:00:35.124766+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -18,6 +18,27 @@
   "entreprise (Oil RoxWood) (13849)"
  ],
  "messages": [
+  {
+   "id": "1573080247992328355",
+   "t": "2026-11-19T20:59:17.539000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 2408\nplayerDiscord : 518440900049764362\nplayerName : mrwn 34\nplayerCharacter : Isaac Jackson\nplayerId : 116830\nvehiclePlate : GJ7700GM\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Isaac Jackson",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "2408",
+    "playerdiscord": "518440900049764362",
+    "playername": "mrwn 34",
+    "playercharacter": "Isaac Jackson",
+    "playerid": "116830",
+    "vehicleplate": "GJ7700GM",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1573080012700258375",
    "t": "2026-11-19T20:58:21.441000+00:00",
@@ -74008,51 +74029,6 @@
     "playercharacter": "Xavier Collins",
     "playerid": "292769",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1571993289152921751",
-   "t": "2026-11-16T21:00:06.357000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 62x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1842.62, 6518.70, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 886\nplayerDiscord : 1346541845949186092\nplayerName : Xavier Collins\nplayerCharacter : Xavier Collins\nplayerId : 292769\nitemId : refinedoil",
-   "nom": "Xavier Collins",
-   "quantite": 62,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1842.62, 6518.70, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "886",
-    "playerdiscord": "1346541845949186092",
-    "playername": "Xavier Collins",
-    "playercharacter": "Xavier Collins",
-    "playerid": "292769",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1571993024232292383",
-   "t": "2026-11-16T20:59:03.195000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 3763\nplayerDiscord : 779715516293054485\nplayerName : BoldFish1938\nplayerCharacter : Madisson Callahan\nplayerId : 326811\nvehiclePlate : WG4999VM\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Madisson Callahan",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "3763",
-    "playerdiscord": "779715516293054485",
-    "playername": "BoldFish1938",
-    "playercharacter": "Madisson Callahan",
-    "playerid": "326811",
-    "vehicleplate": "WG4999VM",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
