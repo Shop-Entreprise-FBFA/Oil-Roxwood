@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-19T22:52:31.753091+00:00",
+ "maj": "2026-11-19T22:54:34.048203+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -18,6 +18,27 @@
   "entreprise (Oil RoxWood) (13849)"
  ],
  "messages": [
+  {
+   "id": "1573109189104902175",
+   "t": "2026-11-19T22:54:17.638000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 3362\nplayerDiscord : 221821522225004544\nplayerName : LoudBat8434\nplayerCharacter : Maruis Caplant\nplayerId : 385893\nvehiclePlate : IL4818AV\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Maruis Caplant",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "3362",
+    "playerdiscord": "221821522225004544",
+    "playername": "LoudBat8434",
+    "playercharacter": "Maruis Caplant",
+    "playerid": "385893",
+    "vehicleplate": "IL4818AV",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1573108690213413015",
    "t": "2026-11-19T22:52:18.693000+00:00",
@@ -74072,102 +74093,6 @@
     "itemid": "refinedoil",
     "jobid": "76",
     "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1572021965454057473",
-   "t": "2026-11-16T22:54:03.320000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 50x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1843.31, 6518.48, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 886\nplayerDiscord : 1346541845949186092\nplayerName : Xavier Collins\nplayerCharacter : Xavier Collins\nplayerId : 292769\nitemId : refinedoil",
-   "nom": "Xavier Collins",
-   "quantite": 50,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1843.31, 6518.48, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "886",
-    "playerdiscord": "1346541845949186092",
-    "playername": "Xavier Collins",
-    "playercharacter": "Xavier Collins",
-    "playerid": "292769",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1572021714110644370-0",
-   "t": "2026-11-16T22:53:03.395000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 125x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1843.11, 6518.56, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 886\nplayerDiscord : 1346541845949186092\nplayerName : Xavier Collins\nplayerCharacter : Xavier Collins\nplayerId : 292769\nitemId : refinedoil",
-   "nom": "Xavier Collins",
-   "quantite": 125,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1843.11, 6518.56, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "886",
-    "playerdiscord": "1346541845949186092",
-    "playername": "Xavier Collins",
-    "playercharacter": "Xavier Collins",
-    "playerid": "292769",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1572021714110644370-1",
-   "t": "2026-11-16T22:53:03.395000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 125x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1843.19, 6518.36, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 886\nplayerDiscord : 1346541845949186092\nplayerName : Xavier Collins\nplayerCharacter : Xavier Collins\nplayerId : 292769\nitemId : refinedoil",
-   "nom": "Xavier Collins",
-   "quantite": 125,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1843.19, 6518.36, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "886",
-    "playerdiscord": "1346541845949186092",
-    "playername": "Xavier Collins",
-    "playercharacter": "Xavier Collins",
-    "playerid": "292769",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1572021714110644370-2",
-   "t": "2026-11-16T22:53:03.395000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 125x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1843.73, 6518.85, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 886\nplayerDiscord : 1346541845949186092\nplayerName : Xavier Collins\nplayerCharacter : Xavier Collins\nplayerId : 292769\nitemId : refinedoil",
-   "nom": "Xavier Collins",
-   "quantite": 125,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1843.73, 6518.85, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "886",
-    "playerdiscord": "1346541845949186092",
-    "playername": "Xavier Collins",
-    "playercharacter": "Xavier Collins",
-    "playerid": "292769",
-    "itemid": "refinedoil"
    }
   }
  ]
