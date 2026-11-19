@@ -14086,6 +14086,27 @@
     "client": "Employé — Mark Dupont ⚡",
     "quantite": 1,
     "qui": "Stella Collins"
+   },
+   {
+    "date": "2026-11-19",
+    "client": "Sandy Repairs",
+    "quantite": 134,
+    "qui": "Laurent Roquel",
+    "fact": 253217
+   },
+   {
+    "date": "2026-11-19",
+    "client": "Sandy Repairs",
+    "quantite": 133,
+    "qui": "Stella Collins",
+    "fact": 253217
+   },
+   {
+    "date": "2026-11-19",
+    "client": "Sandy Repairs",
+    "quantite": 133,
+    "qui": "Emma Collins-rodriguez",
+    "fact": 253217
    }
   ],
   "collection": [
@@ -15709,7 +15730,7 @@
     "rib": "21138",
     "tel": "2048",
     "adresse": "Sandy Shores",
-    "lastCmd": "2026-11-13",
+    "lastCmd": "2026-11-19",
     "type": "entreprise",
     "salon": "1436500641492111463"
    },
@@ -16666,8 +16687,38 @@
     "prix": 150
    }
   ],
-  "compteur": 253217,
+  "compteur": 253218,
   "factures": [
+   {
+    "num": 253217,
+    "date": "2026-11-19",
+    "client": "Sandy Repairs",
+    "emetteur": "Laurent Roquel, Stella Collins, Emma Collins-rodriguez",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 400,
+      "tva": 0,
+      "pu": 180,
+      "ht": 72000,
+      "ttc": 72000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 72000,
+    "ttc": 72000,
+    "poids": 800,
+    "statut": "attente",
+    "envoi": {
+     "t": 1795093704362,
+     "par": "Laurent Roquel",
+     "statut": "en_cours",
+     "ordre": 1795093705568,
+     "rapport": ""
+    }
+   },
    {
     "num": 253216,
     "date": "2026-11-18",
@@ -61180,14 +61231,14 @@
   }
  },
  "_cid": "rtyy8ykr0wj",
- "_maj": 1795093680663,
- "_rev": "liycvw3jmu-mwnkfkzl",
+ "_maj": 1795093704362,
+ "_rev": "dxptqtf0spl-mwnkfzml",
  "_majSec": {
   "fer": 1795004226152,
-  "fact": 1795030781307,
+  "fact": 1795093704362,
   "users": 1794851094412,
   "weeks": 1794784680661,
-  "sheets": 1795089516613,
+  "sheets": 1795093703781,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
   "journal": 1795089516613,
@@ -61204,7 +61255,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794784680661,
   "profils": 1793561085750,
-  "_tables": 1795093680663,
+  "_tables": 1795093704338,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -63310,13 +63361,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-19T13:08:06.273Z",
+  "maj": "2026-11-19T13:08:25.245Z",
   "semaine": 47,
   "totalBarils": 0,
   "ca": 0,
   "objectif": 375000,
   "effectif": 109,
-  "clientsServis": 200,
+  "clientsServis": 201,
   "theme": "",
   "top3": [],
   "runners": [],
@@ -68122,6 +68173,48 @@
     "id": 1795009742560,
     "statut": "fait",
     "rapport": "9 match(s) publié(s)"
+   },
+   {
+    "type": "facture_ticket",
+    "payload": {
+     "num": 253217,
+     "salon": "1436500641492111463",
+     "reedition": false,
+     "facture": {
+      "num": 253217,
+      "date": "2026-11-19",
+      "client": "Sandy Repairs",
+      "emetteur": "Laurent Roquel, Stella Collins, Emma Collins-rodriguez",
+      "postop": false,
+      "lignes": [
+       {
+        "ref": "CMD",
+        "qte": 400,
+        "tva": 0,
+        "pu": 180,
+        "ht": 72000,
+        "ttc": 72000,
+        "desc": "bidons d'essence "
+       }
+      ],
+      "offert": 0,
+      "ht": 72000,
+      "ttc": 72000,
+      "poids": 800,
+      "statut": "attente"
+     },
+     "client": {
+      "nom": "Sandy Repairs",
+      "rib": "21138",
+      "tel": "2048",
+      "adresse": "Sandy Shores",
+      "lastCmd": "2026-11-19",
+      "type": "entreprise",
+      "salon": "1436500641492111463"
+     },
+     "par": "Laurent Roquel"
+    },
+    "id": 1795093705568
    }
   ],
   "oilroxwood_coffres": [
