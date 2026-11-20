@@ -14128,6 +14128,20 @@
     "quantite": 200,
     "qui": "",
     "fact": 253218
+   },
+   {
+    "date": "2026-11-20",
+    "client": "White Hacker",
+    "quantite": 100,
+    "qui": "Laurent Roquel",
+    "fact": 253219
+   },
+   {
+    "date": "2026-11-20",
+    "client": "White Hacker",
+    "quantite": 100,
+    "qui": "William Rodriguez-Collins",
+    "fact": 253219
    }
   ],
   "collection": [
@@ -16715,8 +16729,38 @@
     "prix": 150
    }
   ],
-  "compteur": 253219,
+  "compteur": 253220,
   "factures": [
+   {
+    "num": 253219,
+    "date": "2026-11-20",
+    "client": "White Hacker",
+    "emetteur": "Laurent Roquel, William Rodriguez-Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 200,
+      "tva": 0.04,
+      "pu": 180,
+      "ht": 36000,
+      "ttc": 37440,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 36000,
+    "ttc": 37440,
+    "poids": 400,
+    "statut": "attente",
+    "envoi": {
+     "t": 1795206381523,
+     "par": "Laurent Roquel",
+     "statut": "en_cours",
+     "ordre": 1795206382215,
+     "rapport": ""
+    }
+   },
    {
     "num": 253217,
     "date": "2026-11-19",
@@ -61512,15 +61556,15 @@
    "sem": 45
   }
  },
- "_cid": "l76t6jhf3jb",
- "_maj": 1795206336795,
- "_rev": "qcu29yo1d48-mwpfinro",
+ "_cid": "9ddz70nueg",
+ "_maj": 1795206381523,
+ "_rev": "vetbhd9we-mwpfj1rd",
  "_majSec": {
   "fer": 1795097743732,
-  "fact": 1795206154228,
+  "fact": 1795206381523,
   "users": 1795185457618,
   "weeks": 1794784680661,
-  "sheets": 1795206117461,
+  "sheets": 1795206380941,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
   "journal": 1795206137205,
@@ -61537,7 +61581,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794784680661,
   "profils": 1793561085750,
-  "_tables": 1795206302979,
+  "_tables": 1795206381498,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -63665,13 +63709,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-20T20:26:04.116Z",
+  "maj": "2026-11-20T20:26:22.249Z",
   "semaine": 47,
   "totalBarils": 0,
   "ca": 0,
   "objectif": 375000,
   "effectif": 111,
-  "clientsServis": 201,
+  "clientsServis": 202,
   "theme": "",
   "top3": [],
   "runners": [],
@@ -68737,6 +68781,48 @@
     "id": 1795206118821,
     "statut": "fait",
     "rapport": "Facture n°253218 postee dans le salon 1570246420907298859."
+   },
+   {
+    "type": "facture_ticket",
+    "payload": {
+     "num": 253219,
+     "salon": "1570246420907298859",
+     "reedition": false,
+     "facture": {
+      "num": 253219,
+      "date": "2026-11-20",
+      "client": "White Hacker",
+      "emetteur": "Laurent Roquel, William Rodriguez-Collins",
+      "postop": false,
+      "lignes": [
+       {
+        "ref": "CMD",
+        "qte": 200,
+        "tva": 0.04,
+        "pu": 180,
+        "ht": 36000,
+        "ttc": 37440,
+        "desc": "bidons d'essence "
+       }
+      ],
+      "offert": 0,
+      "ht": 36000,
+      "ttc": 37440,
+      "poids": 400,
+      "statut": "attente"
+     },
+     "client": {
+      "nom": "White Hacker",
+      "adresse": "ROXWOOD",
+      "tel": "",
+      "rib": "",
+      "type": "famille",
+      "salon": "1570246420907298859",
+      "lastCmd": "2026-11-20"
+     },
+     "par": "Laurent Roquel"
+    },
+    "id": 1795206382215
    }
   ],
   "oilroxwood_coffres": [
