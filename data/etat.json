@@ -21855,9 +21855,13 @@
      {
       "pid": "pmwozaetcmji",
       "q": 8
+     },
+     {
+      "pid": "pmwozaw2tdob",
+      "q": 1
      }
     ],
-    "maj": 1795179108383,
+    "maj": 1795179129984,
     "par": "Diego Herrera",
     "nom": "Commercial Recolte",
     "icone": "🗄️",
@@ -21876,6 +21880,12 @@
     "nom": "TSUCHIGAMI",
     "icone": "📦",
     "seuil": 0
+   },
+   {
+    "id": "pmwozaw2tdob",
+    "nom": "Kit de Répa",
+    "icone": "📦",
+    "seuil": 5
    }
   ]
  },
@@ -61410,8 +61420,8 @@
   }
  },
  "_cid": "sfisffxkujg",
- "_maj": 1795179107485,
- "_rev": "4fjsw3hrfi7-mwozajz3",
+ "_maj": 1795179129085,
+ "_rev": "mlb9ble38pc-mwozayam",
  "_majSec": {
   "fer": 1795097743732,
   "fact": 1795094756133,
@@ -61420,7 +61430,7 @@
   "sheets": 1795177433566,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1795179107485,
+  "journal": 1795179129085,
   "pending": 1793561085750,
   "prodDer": 1795123685187,
   "runners": 1794784703363,
@@ -61452,11 +61462,21 @@
   "historique": 1794923943457,
   "_evtFix1": 1795028752192,
   "_stkFix1": 1795179080035,
-  "stocks": 1795179107485
+  "stocks": 1795179129085
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1795179129984,
+   "u": "Diego Herrera",
+   "a": "Stock : coffre « Commercial Recolte » recompté (3 produits, 19 unités)"
+  },
+  {
+   "t": 1795179127782,
+   "u": "Diego Herrera",
+   "a": "Stock : produit créé « Kit de Répa »"
+  },
   {
    "t": 1795179108383,
    "u": "Diego Herrera",
@@ -62946,16 +62966,6 @@
    "t": 1794218771289,
    "u": "?",
    "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1794218541131,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1794218540946,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
   }
  ],
  "prodDer": {
@@ -63549,7 +63559,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-20T12:51:52.095Z",
+  "maj": "2026-11-20T12:52:10.654Z",
   "semaine": 47,
   "totalBarils": 0,
   "ca": 0,
