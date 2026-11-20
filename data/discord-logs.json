@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-20T22:24:33.837332+00:00",
+ "maj": "2026-11-20T22:26:31.975321+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -19,6 +19,27 @@
   "entreprise (Oil RoxWood) (13850)"
  ],
  "messages": [
+  {
+   "id": "1573464474252476467",
+   "t": "2026-11-20T22:26:04.218000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 577\nplayerDiscord : 1547960206896398370\nplayerName : ShyBeetle7478\nplayerCharacter : Salvatore Urus\nplayerId : 379592\nvehiclePlate : OB6053NS\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Salvatore Urus",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "577",
+    "playerdiscord": "1547960206896398370",
+    "playername": "ShyBeetle7478",
+    "playercharacter": "Salvatore Urus",
+    "playerid": "379592",
+    "vehicleplate": "OB6053NS",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1573463787464556636",
    "t": "2026-11-20T22:23:20.475000+00:00",
@@ -66106,22 +66127,6 @@
     "playercharacter": "Freddy Carlson",
     "playerid": "385612",
     "vehicleplate": "AY0298ZV",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1572376899626205217",
-   "t": "2026-11-17T22:24:26.221000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 316x Pétrole Raffiné pour 3160$ par Freddy Carlson. 1580$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 316,
-   "montant": 3160,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
     "jobid": "76",
     "jobname": "Oil RoxWood"
    }
