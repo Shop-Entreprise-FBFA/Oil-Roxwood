@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-20T18:02:29.949424+00:00",
+ "maj": "2026-11-20T18:04:35.782964+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -19,6 +19,75 @@
   "entreprise (Oil RoxWood) (13850)"
  ],
  "messages": [
+  {
+   "id": "1573398555933016126-0",
+   "t": "2026-11-20T18:04:08.066000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\na retiré 1x Kit de réparation du coffre de l'entreprise (Oil RoxWood) (13847)\nposition : -3090.28, 6814.98, 44.73\ntargetPosition : -3089.68, 6814.50, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1442\nplayerDiscord : 826526979204841482\nplayerName : JumpyNewt1770\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : repairKit",
+   "nom": "Diego Herrera",
+   "quantite": 1,
+   "montant": null,
+   "type": "coffre_retrait",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood) (13847)",
+   "champs": {
+    "position": "-3090.28, 6814.98, 44.73",
+    "targetposition": "-3089.68, 6814.50, 43.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "1442",
+    "playerdiscord": "826526979204841482",
+    "playername": "JumpyNewt1770",
+    "playercharacter": "Diego Herrera",
+    "playerid": "231487",
+    "itemid": "repairKit"
+   }
+  },
+  {
+   "id": "1573398555933016126-1",
+   "t": "2026-11-20T18:04:08.066000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 1x Kit de réparation dans le coffre de l'entreprise (Oil RoxWood) (13847)\nposition : -3090.28, 6814.98, 44.73\ntargetPosition : -3089.68, 6814.50, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1442\nplayerDiscord : 826526979204841482\nplayerName : JumpyNewt1770\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : repairKit",
+   "nom": "Diego Herrera",
+   "quantite": 1,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood) (13847)",
+   "champs": {
+    "position": "-3090.28, 6814.98, 44.73",
+    "targetposition": "-3089.68, 6814.50, 43.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "1442",
+    "playerdiscord": "826526979204841482",
+    "playername": "JumpyNewt1770",
+    "playercharacter": "Diego Herrera",
+    "playerid": "231487",
+    "itemid": "repairKit"
+   }
+  },
+  {
+   "id": "1573398287078133792",
+   "t": "2026-11-20T18:03:03.966000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 1445\nplayerDiscord : 277539308850642944\nplayerName : riusma\nplayerCharacter : Freddy Carlson\nplayerId : 385612\nvehiclePlate : YN6253GU\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Freddy Carlson",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "1445",
+    "playerdiscord": "277539308850642944",
+    "playername": "riusma",
+    "playercharacter": "Freddy Carlson",
+    "playerid": "385612",
+    "vehicleplate": "YN6253GU",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1573398060875128974",
    "t": "2026-11-20T18:02:10.035000+00:00",
@@ -59960,78 +60029,6 @@
    "coffre": "entreprise (Oil RoxWood)",
    "champs": {
     "position": "-1851.72, 6514.22, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "1199",
-    "playerdiscord": "1053366471574687844",
-    "playername": "SlowMouse3303",
-    "playercharacter": "Emma Collins-rodriguez",
-    "playerid": "227799",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1572311221690957837-0",
-   "t": "2026-11-17T18:03:27.381000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 148x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1851.22, 6515.47, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1199\nplayerDiscord : 1053366471574687844\nplayerName : SlowMouse3303\nplayerCharacter : Emma Collins-rodriguez\nplayerId : 227799\nitemId : refinedoil",
-   "nom": "Emma Collins-rodriguez",
-   "quantite": 148,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1851.22, 6515.47, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "1199",
-    "playerdiscord": "1053366471574687844",
-    "playername": "SlowMouse3303",
-    "playercharacter": "Emma Collins-rodriguez",
-    "playerid": "227799",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1572311221690957837-1",
-   "t": "2026-11-17T18:03:27.381000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 148x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1851.93, 6514.17, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1199\nplayerDiscord : 1053366471574687844\nplayerName : SlowMouse3303\nplayerCharacter : Emma Collins-rodriguez\nplayerId : 227799\nitemId : refinedoil",
-   "nom": "Emma Collins-rodriguez",
-   "quantite": 148,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1851.93, 6514.17, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "1199",
-    "playerdiscord": "1053366471574687844",
-    "playername": "SlowMouse3303",
-    "playercharacter": "Emma Collins-rodriguez",
-    "playerid": "227799",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1572311221690957837-2",
-   "t": "2026-11-17T18:03:27.381000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 148x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1851.93, 6514.17, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1199\nplayerDiscord : 1053366471574687844\nplayerName : SlowMouse3303\nplayerCharacter : Emma Collins-rodriguez\nplayerId : 227799\nitemId : refinedoil",
-   "nom": "Emma Collins-rodriguez",
-   "quantite": 148,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1851.93, 6514.17, 16.73",
     "targetposition": "-1850.63, 6515.15, 15.75",
     "jobid": "76",
     "jobname": "Oil RoxWood",
