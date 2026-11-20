@@ -7869,7 +7869,7 @@
     "idU": "116552",
     "arrivee": "2026-11-12",
     "discord": "1190954360830701571",
-    "avert": "",
+    "avert": "1",
     "contrat": true,
     "recrut": "Marco Bellini",
     "dernierService": "2026-11-15",
@@ -21843,6 +21843,10 @@
    "actif": true
   }
  ],
+ "stocks": {
+  "coffres": [],
+  "produits": []
+ },
  "pending": [],
  "fer": [
   {
@@ -59059,6 +59063,21 @@
  "sanctions": {
   "liste": [
    {
+    "id": 1795192667157,
+    "nom": "Bene Salvador",
+    "discord": "1190954360830701571",
+    "cat": "cond",
+    "st": "A1",
+    "issue": "",
+    "date": "2026-11-20",
+    "motif": "Deuxième abandon de véhicule sur un emplacement interdit /Non-respect du règlement intérieur.",
+    "par": "Marco Bellini",
+    "conv": "",
+    "convDate": "",
+    "retiree": null,
+    "exam": null
+   },
+   {
     "id": 1795181629658,
     "srcId": "1795181597430",
     "nom": "Freddy Carlson",
@@ -60317,6 +60336,16 @@
   ],
   "log": [
    {
+    "t": 1795192666855,
+    "u": "Marco Bellini",
+    "a": "Avert. 1 · Conduite inappropriée — « Deuxième abandon de véhicule sur un emplacement interdit /Non-respect du règlement intérieur. »",
+    "nom": "Bene Salvador",
+    "cat": "cond",
+    "st": "A1",
+    "act": "ajout",
+    "sid": 1795192667157
+   },
+   {
     "t": 1795181629591,
     "u": "⚫ Tyler Collins (Discord)",
     "a": "Rappel oral · Conduite inappropriée — « prend le terre plain a la transfo » (donnée sur Discord)",
@@ -61400,18 +61429,18 @@
    "sem": 45
   }
  },
- "_cid": "hss0shujx28",
- "_maj": 1795192609952,
- "_rev": "4kezvquec7-mwp7d53o",
+ "_cid": "b9g7w27km1b",
+ "_maj": 1795192669411,
+ "_rev": "dd6jgfyt06e-mwp7d8jz",
  "_majSec": {
   "fer": 1795097743732,
   "fact": 1795094756133,
   "users": 1795185457618,
   "weeks": 1794784680661,
-  "sheets": 1795177433566,
+  "sheets": 1795192669398,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1795185551691,
+  "journal": 1795192669398,
   "pending": 1793561085750,
   "prodDer": 1795185576859,
   "runners": 1794784703363,
@@ -61425,7 +61454,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794784680661,
   "profils": 1793561085750,
-  "_tables": 1795192609952,
+  "_tables": 1795192669411,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -61438,14 +61467,21 @@
   "_ventesIgnore": 1793561085750,
   "_avertVus": 1793561085750,
   "_signeVus": 1795008444841,
-  "sanctions": 1795181630463,
+  "sanctions": 1795192669398,
   "_sancFix1": 1794493778197,
   "historique": 1794923943457,
-  "_evtFix1": 1795028752192
+  "_evtFix1": 1795028752192,
+  "_stkFix1": 1795192609952,
+  "stocks": 1795192609952
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1795192666855,
+   "u": "Marco Bellini",
+   "a": "Sanction : Bene Salvador — Avert. 1 (Conduite inappropriée)"
+  },
   {
    "t": 1795185552260,
    "u": "Emma Collins-rodriguez",
@@ -62940,11 +62976,6 @@
    "t": 1794418987707,
    "u": "Julio Collins",
    "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1794418987580,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
   }
  ],
  "prodDer": {
@@ -63551,7 +63582,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-20T16:37:49.716Z",
+  "maj": "2026-11-20T16:37:54.191Z",
   "semaine": 47,
   "totalBarils": 0,
   "ca": 0,
@@ -68521,6 +68552,22 @@
     "id": 1795178563976,
     "statut": "fait",
     "rapport": "Match #17 supprimé"
+   },
+   {
+    "type": "sanction",
+    "payload": {
+     "discord": "1190954360830701571",
+     "nom": "Bene Salvador",
+     "cat": "cond",
+     "catNom": "Conduite inappropriée",
+     "st": "A1",
+     "etape": "Avert. 1",
+     "rappel": false,
+     "motif": "Deuxième abandon de véhicule sur un emplacement interdit /Non-respect du règlement intérieur.",
+     "par": "Marco Bellini",
+     "convocation": ""
+    },
+    "id": 1795192667462
    }
   ],
   "oilroxwood_coffres": [
@@ -73518,5 +73565,6 @@
  "_tablesSupp": [],
  "_accFix1": true,
  "_sancFix1": true,
- "_evtFix1": true
+ "_evtFix1": true,
+ "_stkFix1": true
 }
