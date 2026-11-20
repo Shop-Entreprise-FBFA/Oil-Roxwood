@@ -8135,7 +8135,7 @@
     "idU": "385179",
     "arrivee": "2026-11-13",
     "discord": "513525283719217152",
-    "avert": "2",
+    "avert": "1",
     "contrat": true,
     "recrut": "Marco Bellini",
     "dernierService": "2026-11-15",
@@ -21718,14 +21718,6 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
-  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -21749,6 +21741,14 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T00:06:23.240Z"
+  },
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -59103,7 +59103,11 @@
     "par": "⚫ Tyler Collins (Discord)",
     "conv": "a_planifier",
     "convDate": "",
-    "retiree": null,
+    "retiree": {
+     "date": "2026-11-20",
+     "par": "Tyler Collins",
+     "motif": "annulée (erreur de saisie)"
+    },
     "exam": null,
     "auto": true
    },
@@ -60381,6 +60385,16 @@
   ],
   "log": [
    {
+    "t": 1795201322761,
+    "u": "Tyler Collins",
+    "a": "Retirée · Avert. 2 + convocation · Conduite inappropriée (annulée (erreur de saisie))",
+    "nom": "Booskap Ba",
+    "cat": "cond",
+    "st": "A2c",
+    "act": "retrait",
+    "sid": 1795200508891
+   },
+   {
     "t": 1795200508052,
     "u": "⚫ Tyler Collins (Discord)",
     "a": "Avert. 2 + convocation · Conduite inappropriée — « prend le terre pleins a la transfo » (donnée sur Discord)",
@@ -61484,18 +61498,18 @@
    "sem": 45
   }
  },
- "_cid": "ozza834x41",
- "_maj": 1795201314866,
- "_rev": "oo1h3b3mnxc-mwpciid4",
+ "_cid": "t3uxz6iqmqa",
+ "_maj": 1795201321160,
+ "_rev": "o936d0cs8-mwpcimgr",
  "_majSec": {
   "fer": 1795097743732,
   "fact": 1795094756133,
   "users": 1795185457618,
   "weeks": 1794784680661,
-  "sheets": 1795200508454,
+  "sheets": 1795201321160,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1795200508454,
+  "journal": 1795201321160,
   "pending": 1793561085750,
   "prodDer": 1795185576859,
   "runners": 1794784703363,
@@ -61509,7 +61523,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794784680661,
   "profils": 1793561085750,
-  "_tables": 1795201314866,
+  "_tables": 1795201321160,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -61522,7 +61536,7 @@
   "_ventesIgnore": 1793561085750,
   "_avertVus": 1793561085750,
   "_signeVus": 1795198801095,
-  "sanctions": 1795200508454,
+  "sanctions": 1795201321160,
   "_sancFix1": 1794493778197,
   "historique": 1794923943457,
   "_evtFix1": 1795028752192,
@@ -61532,6 +61546,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1795201322761,
+   "u": "Tyler Collins",
+   "a": "Sanction retirée : Booskap Ba — Avert. 2 + convocation"
+  },
   {
    "t": 1795200508052,
    "u": "Emma Collins-rodriguez",
@@ -63026,11 +63045,6 @@
    "t": 1794423763859,
    "u": "?",
    "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1794422387187,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
   }
  ],
  "prodDer": {
@@ -63637,7 +63651,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-20T19:01:58.264Z",
+  "maj": "2026-11-20T19:02:03.579Z",
   "semaine": 47,
   "totalBarils": 0,
   "ca": 0,
