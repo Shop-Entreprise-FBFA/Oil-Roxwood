@@ -34,12 +34,13 @@ window.ROXWOOD_CFG = {
 <link rel="stylesheet" href="assets/roxwood-app.css?v=C-119">
 <link rel="stylesheet" href="assets/roxwood-refonte.css?v=R-21">
 <link rel="stylesheet" href="assets/roxwood-portail.css?v=1">
-<link rel="stylesheet" href="assets/roxwood-vues.css?v=1">
+<link rel="stylesheet" href="assets/roxwood-vues.css?v=2">
 </head>
 <body>
 <script src="assets/roxwood-portail.js?v=1"></script>
 <script src="assets/contrat-modele.js?v=1"></script>
 <script src="assets/evenements.js?v=4"></script>
+<script src="assets/stocks.js?v=1"></script>
 <div id="noelNeige" aria-hidden="true"></div>
 <div id="noelGuirlande" aria-hidden="true"></div>
 
@@ -131,6 +132,7 @@ window.ROXWOOD_CFG = {
     <button class="nav-item" data-view="fventes">🛒 <span class="txt">Ventes de la semaine</span></button>
     <button class="nav-item" data-view="quotascom">⚖️ <span class="txt">Quotas &amp; fer</span></button>
     <button class="nav-item" data-view="prodder">🗡️ <span class="txt">Produits dérivés</span></button>
+    <button class="nav-item" data-view="stocks">📦 <span class="txt">Gestion des stocks</span></button>
     </div>
     <div class="nav-grp">
     <div class="nav-sec" data-sec="compta">Compta</div>
@@ -292,6 +294,7 @@ function defaults(){
     profils:{},
     affiches:[],
     produits:[],
+    stocks:{coffres:[],produits:[]},
     pending:[],
     fer:[],
     sanctions:{liste:[],log:[]},
@@ -310,7 +313,7 @@ function load(){
    les contrats et les médias depuis la sortie de Supabase. Sans lui, mergeRemote
    ne reprenait JAMAIS ces tables du dépôt — le dernier qui enregistrait écrasait
    les lignes ajoutées par un autre admin, et toute écriture du bot était perdue. */
-const SEC_KEYS=['runners','weeks','sheets','fact','users','profils','pending','fer','_tables','settings','absences','sanctions','historique','_sancFix1','_evtFix1','primesExtra','quotasCom','quotasComHist','journal','bilanExtra','closeUndo','bilanForce','prodDer','imported','affiches','produits','_recruesIgnore','ventesAlias','_ventesIgnore','_qcFix1','_wkFix1','_permsFix1','_rolesFix77','_affFix1','_prodFix1','_avertVus','_signeVus'];
+const SEC_KEYS=['runners','weeks','sheets','fact','users','profils','pending','fer','_tables','settings','absences','sanctions','historique','_sancFix1','_evtFix1','_stkFix1','stocks','primesExtra','quotasCom','quotasComHist','journal','bilanExtra','closeUndo','bilanForce','prodDer','imported','affiches','produits','_recruesIgnore','ventesAlias','_ventesIgnore','_qcFix1','_wkFix1','_permsFix1','_rolesFix77','_affFix1','_prodFix1','_avertVus','_signeVus'];
 /* ---- heure de référence : celle du serveur Supabase, pas celle du PC ----
    Un utilisateur avec une horloge décalée datait ses modifs « dans le futur » et écrasait tout. */
 let CLOCK_SKEW=0;
@@ -957,7 +960,7 @@ const PERMS={
      Il suit le menu, pôle par pôle, pour qu'on règle les droits en lisant la
      même chose des deux côtés. */
   direction:['accueil','rh','commercial','comptable','frh','effectif','avertissements','evenements','integration',
-             'factures','relances','fventes','quotascom','prodder',
+             'factures','relances','fventes','quotascom','prodder','stocks',
              'ftablette','fcompta','frecues','bilan','cloture','semaine',
              'overview','felig','historique',
              'quotashist',
@@ -981,15 +984,15 @@ const PERMS={
   // Assistant de direction : le bras droit. Tout ce que voit la Direction, sauf
   //      les deux gestes qui n'appartiennent qu'au patron : clôturer la semaine
   //      (irréversible, elle fige les salaires) et changer les Paramètres.
-  assistdir:['accueil','rh','commercial','comptable','overview','effectif','avertissements','evenements','semaine','historique','ftablette','felig','fventes','frh','integration','fcompta','factures','relances','bilan','prodder','quotascom','frecues','moi','produits','profil','quotashist','agenda','affiches','maj','dlogs','journal'],
+  assistdir:['accueil','rh','commercial','comptable','overview','effectif','avertissements','evenements','semaine','historique','ftablette','felig','fventes','frh','integration','fcompta','factures','relances','bilan','prodder','stocks','quotascom','frecues','moi','produits','profil','quotashist','agenda','affiches','maj','dlogs','journal'],
 
   // Commercial : le commerce, rien d'autre.
-  commercial:['accueil','commercial','overview','fventes','factures','relances','quotascom','prodder','moi','produits','profil','quotashist','agenda','affiches','maj'],
+  commercial:['accueil','commercial','overview','fventes','factures','relances','quotascom','prodder','stocks','moi','produits','profil','quotashist','agenda','affiches','maj'],
 
   // Responsable commercial : pour l'instant exactement un commercial. Le rôle
   //      existe pour qu'on puisse lui ouvrir des cases sans les ouvrir à toute
   //      l'équipe — Paramètres → Permissions par rôle, colonne par colonne.
-  respcom:  ['accueil','commercial','overview','fventes','factures','relances','quotascom','avertissements','prodder','moi','produits','profil','quotashist','agenda','affiches','maj'],
+  respcom:  ['accueil','commercial','overview','fventes','factures','relances','quotascom','avertissements','prodder','stocks','moi','produits','profil','quotashist','agenda','affiches','maj'],
 
   // Responsable Runner : il encadre la production au quotidien. Effectif,
   //      éligibilité, tablette et logs — mais ni la paie détaillée, ni les
@@ -1010,6 +1013,13 @@ function migrerPermsSanc(){
   S._sancFix1=true;
   const c=S.settings&&S.settings.permsCustom;
   if(c) Object.keys(c).forEach(r=>{ if(Array.isArray(c[r])&&c[r].includes('effectif')&&!c[r].includes('avertissements')) c[r].push('avertissements'); });
+  return true;
+}
+function migrerPermsStk(){
+  if(S._stkFix1) return false;
+  S._stkFix1=true;
+  const c=S.settings&&S.settings.permsCustom;
+  if(c) Object.keys(c).forEach(r=>{ if(Array.isArray(c[r])&&c[r].includes('prodder')&&['direction','assistdir','respcom','commercial'].includes(r)&&!c[r].includes('stocks')) c[r].push('stocks'); });
   return true;
 }
 function migrerPermsEvt(){
@@ -1374,7 +1384,7 @@ function logout(){
 }
 
 /* ---- Canari de version : prévient les onglets restés sur une vieille version ---- */
-const APP_VERSION='C-134';
+const APP_VERSION='C-135';
 /* Le bandeau ne doit dire qu'une chose : « une version plus récente existe ».
    Il comparait deux chaînes avec !==, donc il s'allumait aussi dans l'autre
    sens — quand la page ouverte était PLUS récente que version.json, ce qui
@@ -1771,6 +1781,7 @@ document.querySelectorAll('.nav-item[data-view]').forEach(b=>b.onclick=()=>show(
     frecues:'<path d="M3 13h5l2 3h4l2-3h5"/><path d="M3 13V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v7"/><path d="M3 13v5a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5"/>',
     moi:'<circle cx="12" cy="8.5" r="3.5"/><path d="M5 20c0-3.5 3-5.5 7-5.5s7 2 7 5.5"/>',
     avertissements:'<path d="M12 3l9 16H3z"/><path d="M12 10v4M12 17h.01"/>',
+    stocks:'<path d="M21 8l-9-5-9 5v8l9 5 9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/>',
     evenements:'<path d="M12 3l2.2 5.6 6 .5-4.6 3.9 1.4 5.9L12 15.8 7 18.9l1.4-5.9L3.8 9.1l6-.5z"/>',
     quotashist:'<path d="M4 4v16h16"/><path d="M8 16v-5M12 16V8M16 16v-3"/>',
     agenda:'<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/>',
@@ -1859,7 +1870,7 @@ function show(v){
   appliquerGrades();   // une synchro a pu changer les barèmes depuis le dernier rendu
   if(purgeSupprimees()&&!isMembre()){ save(); sbQueue(); }   // rubriques supprimées : leurs données ne reviennent pas
   if(migrerPerms()&&!isMembre()){ save(); sbQueue(); }
-  if((migrerPermsSanc()|migrerPermsEvt())&&!isMembre()){ save(); sbQueue(); }       // listes de permissions citant d'anciennes rubriques
+  if((migrerPermsSanc()|migrerPermsEvt()|migrerPermsStk())&&!isMembre()){ save(); sbQueue(); }       // listes de permissions citant d'anciennes rubriques
   if(migrerAffiches()&&!isMembre()){ save(); sbQueue(); }    // rubrique Affiches ajoutée après coup
   if(migrerProduits()&&!isMembre()){ save(); sbQueue(); }    // rubrique Nouveaux produits, idem
   if(migrerAccueil()&&!isMembre()){ save(); sbQueue(); }     // page Accueil + hubs de pôle, idem
@@ -1882,7 +1893,7 @@ function show(v){
   document.querySelectorAll('.nav-item[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===v||(sysV&&!!b.closest('#navTop')&&b.dataset.view==='params')));
   if(v!=='params') delete $('#main').dataset.ptab;
   destroyCharts();
-  ({accueil,rh,commercial,comptable,overview,effectif,semaine,historique,cloture,ftablette,felig,fventes,frh,integration,fcompta,factures,relances,bilan,prodder,quotascom,frecues,moi,profil,quotashist,agenda,affiches,produits,maj,dlogs,journal,params,avertissements,evenements})[v]();
+  ({accueil,rh,commercial,comptable,overview,effectif,semaine,historique,cloture,ftablette,felig,fventes,frh,integration,fcompta,factures,relances,bilan,prodder,quotascom,frecues,moi,profil,quotashist,agenda,affiches,produits,maj,dlogs,journal,params,avertissements,evenements,stocks})[v]();
   if(sysV) $('#main').insertAdjacentHTML('afterbegin',paramsTabsHTML(v));
   try{ applyRO(); }catch(e){}
   restaureEcran(repere);
@@ -1978,6 +1989,7 @@ function commercial(){
     {emoji:'🛒',titre:'Ventes de la semaine',sub:'Suivi des ventes et des performances',view:'fventes',couleur:col},
     {emoji:'⚖️',titre:'Quotas & fer',sub:'Suivre les quotas et le fer racheté',view:'quotascom',couleur:col},
     {emoji:'🗡️',titre:'Produits dérivés',sub:'Gérer les produits dérivés',view:'prodder',couleur:col},
+    {emoji:'📦',titre:'Gestion des stocks',sub:'Contenu de chaque coffre',view:'stocks',couleur:col},
   ];
   $('#main').innerHTML = heroHTML('commercial','Commercial','Développer nos partenariats')
     + cartesHTML(CARTES);
@@ -5967,6 +5979,11 @@ function ferDel(id){
 
 /* ================== MISES À JOUR (changelog) ================== */
 const CHANGELOG=[
+ {v:'C-135',d:'20/11/2026',t:'Gestion des stocks',items:[
+   ['📦','Stock par coffre','Nouvelle page dans Commercial : une carte par coffre avec son contenu, le dernier comptage (date et auteur) et une pastille « à recompter » quand il est trop ancien. Chaque coffre a sa propre liste de produits.'],
+   ['✏️','Recompter en un clic','On recompte un coffre, les chiffres sont préremplis avec le dernier comptage et l’écart s’affiche. On peut ajouter un produit au coffre (ou le créer sur place) et en retirer.'],
+   ['🔎','Recherche et filtres','Recherche d’un coffre ou d’un produit (où est-il, dans quels coffres, quel total), filtres à recompter, rupture, vides, et seuil d’alerte par produit.']
+ ]},
  {v:'C-134',d:'18/11/2026',t:'Nouveau rôle : DRH',items:[
    ['🗂️','Rôle DRH','Un rôle DRH existe entre Assistant de direction et RH, avec les droits du RH plus le Journal (réglables dans Paramètres → Permissions). Il peut gérer avertissements et événements.']
  ]},

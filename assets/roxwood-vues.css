@@ -240,3 +240,36 @@
 .ev-co{padding:8px 12px;cursor:pointer;display:flex;justify-content:space-between;gap:12px;color:#e6e9ee;font-size:.86rem}
 .ev-co:hover{background:#1c2b3e}.ev-co small{color:#7f8fa1;font-size:.7rem;text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:50%}
 .ev-co.off{color:#6b7a8c;cursor:not-allowed}.ev-co.off:hover{background:transparent}.ev-co.more{color:#8fa1b4;cursor:default;font-style:italic}
+
+/* ================== Gestion des stocks (st-*) ================== */
+.st-bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:14px}
+.st-srch{flex:1;min-width:240px}.st-tri{width:auto}
+.st-pill{padding:7px 13px;border-radius:99px;border:1px solid var(--line);background:transparent;color:var(--muted);font-size:.8rem;font-weight:600;cursor:pointer}
+.st-pill.on{background:#F2B705;color:#1a1005;border-color:#F2B705}
+.st-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:12px}
+.st-cf{background:linear-gradient(160deg,var(--panel-2),var(--panel));border:1px solid var(--line);border-radius:12px;padding:12px 14px;display:flex;flex-direction:column}
+.st-cf.dim{opacity:.35}
+.st-cf h4{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:.95rem}
+.st-fr{font-size:.74rem;color:var(--muted);margin:2px 0 8px}.st-fr.vieux{color:#f5b04a}
+.st-ln{display:flex;justify-content:space-between;gap:8px;padding:5px 0;border-bottom:1px dashed var(--line);font-size:.84rem}
+.st-z{color:#e0524e}.st-hl{background:rgba(242,183,5,.18);border-radius:4px;padding:0 4px}
+.st-vide{color:var(--muted);font-size:.8rem;padding:8px 0;font-style:italic}
+.st-more{color:#F7C463;font-size:.76rem;margin-top:5px;cursor:pointer}
+.st-tot{display:flex;justify-content:space-between;margin-top:auto;padding-top:8px;border-top:1px solid var(--line);font-weight:800;font-size:.84rem}
+.st-act{display:flex;gap:6px;margin-top:10px}
+.st-chip{display:inline-block;font-size:.66rem;font-weight:700;padding:3px 9px;border-radius:99px;white-space:nowrap}
+.st-chip.ok{color:#7fd1a4;background:rgba(74,157,111,.14)}.st-chip.ko{color:#f5b04a;background:rgba(240,160,48,.13)}
+.st-warn{background:rgba(224,82,78,.1);border:1px solid rgba(224,82,78,.4);border-radius:10px;padding:10px 14px;margin-bottom:14px;color:#f3b4b1;font-size:.82rem}
+.st-found{background:var(--panel);border:1px solid #F2B705;border-radius:12px;padding:10px 14px;margin-bottom:10px;font-size:.84rem}
+.st-sm{color:var(--muted);font-size:.76rem;margin:2px 0 10px}
+.st-rls{margin:6px 0}.st-rl{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:6px 0;border-bottom:1px dashed var(--line);font-size:.86rem}
+.st-rq{display:flex;align-items:center;gap:8px}.st-num{width:84px;text-align:center}
+.st-ec{font-size:.72rem;color:var(--muted);min-width:96px;font-weight:700}.st-ec.pos{color:#7fd1a4}.st-ec.neg{color:#f58a86}
+.st-x{background:transparent;border:0;color:var(--muted);cursor:pointer;font-size:.95rem;padding:4px 6px}.st-x:hover{color:#f87171}
+.st-add{width:100%;border:1px dashed #F2B705;background:transparent;color:#F7C463;border-radius:8px;padding:9px;font-weight:700;font-size:.82rem;cursor:pointer;margin-top:10px}
+.st-opt{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:8px 10px;border-radius:8px;font-size:.86rem;cursor:pointer}
+.st-opt:hover{background:var(--panel-2)}.st-new{color:#F7C463;font-weight:700;border:1px dashed #F2B705;margin-top:6px}
+.st-cat{display:flex;gap:8px;align-items:center;padding:5px 0}
+.field.st-tri{width:auto;flex:0 0 auto}
+.field.st-num{width:84px;flex:0 0 84px}
+.st-rl>span:first-child{flex:1;min-width:0}.st-rq{flex:0 0 auto;white-space:nowrap}
