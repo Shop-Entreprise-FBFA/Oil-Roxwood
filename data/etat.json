@@ -21843,6 +21843,10 @@
    "actif": true
   }
  ],
+ "stocks": {
+  "coffres": [],
+  "produits": []
+ },
  "pending": [],
  "fer": [
   {
@@ -61425,9 +61429,9 @@
    "sem": 45
   }
  },
- "_cid": "hss0shujx28",
+ "_cid": "tx10kzl91h",
  "_maj": 1795194229952,
- "_rev": "kaatoqenov-mwp8an5b",
+ "_rev": "xsqsbr4hnnq-mwp8bmt7",
  "_majSec": {
   "fer": 1795097743732,
   "fact": 1795094756133,
@@ -61450,7 +61454,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794784680661,
   "profils": 1793561085750,
-  "_tables": 1795194229952,
+  "_tables": 1795194217822,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -61466,7 +61470,9 @@
   "sanctions": 1795192669398,
   "_sancFix1": 1794493778197,
   "historique": 1794923943457,
-  "_evtFix1": 1795028752192
+  "_evtFix1": 1795028752192,
+  "_stkFix1": 1795194229952,
+  "stocks": 1795194229952
  },
  "_qcFix1": true,
  "_wkFix1": true,
@@ -63576,7 +63582,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-20T17:03:52.751Z",
+  "maj": "2026-11-20T17:04:38.971Z",
   "semaine": 47,
   "totalBarils": 0,
   "ca": 0,
@@ -73561,5 +73567,6 @@
  "_tablesSupp": [],
  "_accFix1": true,
  "_sancFix1": true,
- "_evtFix1": true
+ "_evtFix1": true,
+ "_stkFix1": true
 }
