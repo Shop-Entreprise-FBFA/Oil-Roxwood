@@ -21718,6 +21718,14 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T20:11:53.537Z"
+  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -21741,14 +21749,6 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T00:06:23.240Z"
-  },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -21871,6 +21871,10 @@
    "actif": true
   }
  ],
+ "stocks": {
+  "coffres": [],
+  "produits": []
+ },
  "pending": [],
  "fer": [
   {
@@ -61453,9 +61457,9 @@
    "sem": 45
   }
  },
- "_cid": "hss0shujx28",
- "_maj": 1795200362858,
- "_rev": "fkc44cruvjp-mwpbz2u8",
+ "_cid": "ozza834x41",
+ "_maj": 1795200414834,
+ "_rev": "uek8ny0pkna-mwpbz7r8",
  "_majSec": {
   "fer": 1795097743732,
   "fact": 1795094756133,
@@ -61478,7 +61482,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794784680661,
   "profils": 1793561085750,
-  "_tables": 1795200350813,
+  "_tables": 1795200414834,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -61494,7 +61498,9 @@
   "sanctions": 1795192669398,
   "_sancFix1": 1794493778197,
   "historique": 1794923943457,
-  "_evtFix1": 1795028752192
+  "_evtFix1": 1795028752192,
+  "_stkFix1": 1795200362858,
+  "stocks": 1795200362858
  },
  "_qcFix1": true,
  "_wkFix1": true,
@@ -63604,7 +63610,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-20T18:46:51.680Z",
+  "maj": "2026-11-20T18:46:58.052Z",
   "semaine": 47,
   "totalBarils": 0,
   "ca": 0,
@@ -73591,5 +73597,6 @@
  "_tablesSupp": [],
  "_accFix1": true,
  "_sancFix1": true,
- "_evtFix1": true
+ "_evtFix1": true,
+ "_stkFix1": true
 }
