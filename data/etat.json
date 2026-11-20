@@ -21843,6 +21843,92 @@
    "actif": true
   }
  ],
+ "stocks": {
+  "coffres": [
+   {
+    "id": "cmwoz94yrwlq",
+    "items": [
+     {
+      "pid": "pmwoz9v5iqp0",
+      "q": 10
+     },
+     {
+      "pid": "pmwozaetcmji",
+      "q": 8
+     },
+     {
+      "pid": "pmwozaw2tdob",
+      "q": 4
+     },
+     {
+      "pid": "pmwozc5izuyz",
+      "q": 12
+     },
+     {
+      "pid": "pmwozch7ppel",
+      "q": 1
+     }
+    ],
+    "maj": 1795179205047,
+    "par": "Diego Herrera",
+    "nom": "Commercial Recolte",
+    "icone": "🗄️",
+    "delai": 7
+   },
+   {
+    "id": "cmwoze20ssfe",
+    "items": [
+     {
+      "pid": "pmwozeroqmpb",
+      "q": 460
+     }
+    ],
+    "maj": 1795179310646,
+    "par": "Diego Herrera",
+    "nom": "Entrepot Commercial",
+    "icone": "🗄️",
+    "delai": 7
+   }
+  ],
+  "produits": [
+   {
+    "id": "pmwoz9v5iqp0",
+    "nom": "Ryujin",
+    "icone": "📦",
+    "seuil": 0
+   },
+   {
+    "id": "pmwozaetcmji",
+    "nom": "TSUCHIGAMI",
+    "icone": "📦",
+    "seuil": 0
+   },
+   {
+    "id": "pmwozaw2tdob",
+    "nom": "Kit de Répa",
+    "icone": "📦",
+    "seuil": 5
+   },
+   {
+    "id": "pmwozc5izuyz",
+    "nom": "Coeur d'espoir",
+    "icone": "📦",
+    "seuil": 0
+   },
+   {
+    "id": "pmwozch7ppel",
+    "nom": "Roxidou",
+    "icone": "📦",
+    "seuil": 0
+   },
+   {
+    "id": "pmwozeroqmpb",
+    "nom": "Bidons d'Essences",
+    "icone": "📦",
+    "seuil": 150
+   }
+  ]
+ },
  "pending": [],
  "fer": [
   {
@@ -61373,9 +61459,9 @@
    "sem": 45
   }
  },
- "_cid": "hss0shujx28",
- "_maj": 1795179279032,
- "_rev": "23oqz7vlzbj-mwozed4a",
+ "_cid": "sfisffxkujg",
+ "_maj": 1795179309747,
+ "_rev": "9ibh60553c-mwozetvc",
  "_majSec": {
   "fer": 1795097743732,
   "fact": 1795094756133,
@@ -61384,7 +61470,7 @@
   "sheets": 1795177433566,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1795179274553,
+  "journal": 1795179309747,
   "pending": 1793561085750,
   "prodDer": 1795123685187,
   "runners": 1794784703363,
@@ -61398,7 +61484,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794784680661,
   "profils": 1793561085750,
-  "_tables": 1795179279032,
+  "_tables": 1795179309747,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -61414,11 +61500,23 @@
   "sanctions": 1795177433566,
   "_sancFix1": 1794493778197,
   "historique": 1794923943457,
-  "_evtFix1": 1795028752192
+  "_evtFix1": 1795028752192,
+  "_stkFix1": 1795179279032,
+  "stocks": 1795179309747
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1795179310646,
+   "u": "Diego Herrera",
+   "a": "Stock : coffre « Entrepot Commercial » recompté (1 produit, 460 unités)"
+  },
+  {
+   "t": 1795179308714,
+   "u": "Diego Herrera",
+   "a": "Stock : produit créé « Bidons d'Essences »"
+  },
   {
    "t": 1795179275452,
    "u": "Diego Herrera",
@@ -62908,16 +63006,6 @@
    "t": 1794242917718,
    "u": "Julio Collins",
    "a": "Vente rapide sans facture : 30 bidon(s) — Employé Elliot Adkins (vendeur : Julio Collins)"
-  },
-  {
-   "t": 1794242895453,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1794242895311,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
   }
  ],
  "prodDer": {
@@ -63511,7 +63599,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-20T12:54:49.834Z",
+  "maj": "2026-11-20T12:55:11.544Z",
   "semaine": 47,
   "totalBarils": 0,
   "ca": 0,
@@ -73465,5 +73553,6 @@
  "_tablesSupp": [],
  "_accFix1": true,
  "_sancFix1": true,
- "_evtFix1": true
+ "_evtFix1": true,
+ "_stkFix1": true
 }
