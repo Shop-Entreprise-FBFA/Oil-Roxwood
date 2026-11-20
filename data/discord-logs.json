@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-20T21:14:30.862461+00:00",
+ "maj": "2026-11-20T21:24:32.130879+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -19,6 +19,22 @@
   "entreprise (Oil RoxWood) (13850)"
  ],
  "messages": [
+  {
+   "id": "1573448905415467039",
+   "t": "2026-11-20T21:24:12.318000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 320x Pétrole Raffiné pour 3200$ par Salvatore Urus. 1600$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 320,
+   "montant": 3200,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1573446146226126970",
    "t": "2026-11-20T21:13:14.476000+00:00",
@@ -65823,99 +65839,6 @@
     "playercharacter": "Jeff Beaumont",
     "playerid": "382764",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1572359788950462565",
-   "t": "2026-11-17T21:16:26.718000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 32x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1845.27, 6518.33, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 2888\nplayerDiscord : 198789252329373706\nplayerName : Jack Berthier\nplayerCharacter : Jack Berthier\nplayerId : 276642\nitemId : refinedoil",
-   "nom": "Jack Berthier",
-   "quantite": 32,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1845.27, 6518.33, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "2888",
-    "playerdiscord": "198789252329373706",
-    "playername": "Jack Berthier",
-    "playercharacter": "Jack Berthier",
-    "playerid": "276642",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1572359538349441116-0",
-   "t": "2026-11-17T21:15:26.970000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 145x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1844.69, 6518.65, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 2888\nplayerDiscord : 198789252329373706\nplayerName : Jack Berthier\nplayerCharacter : Jack Berthier\nplayerId : 276642\nitemId : refinedoil",
-   "nom": "Jack Berthier",
-   "quantite": 145,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1844.69, 6518.65, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "2888",
-    "playerdiscord": "198789252329373706",
-    "playername": "Jack Berthier",
-    "playercharacter": "Jack Berthier",
-    "playerid": "276642",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1572359538349441116-1",
-   "t": "2026-11-17T21:15:26.970000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 145x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1844.77, 6518.83, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 2888\nplayerDiscord : 198789252329373706\nplayerName : Jack Berthier\nplayerCharacter : Jack Berthier\nplayerId : 276642\nitemId : refinedoil",
-   "nom": "Jack Berthier",
-   "quantite": 145,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1844.77, 6518.83, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "2888",
-    "playerdiscord": "198789252329373706",
-    "playername": "Jack Berthier",
-    "playercharacter": "Jack Berthier",
-    "playerid": "276642",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1572359281850716201",
-   "t": "2026-11-17T21:14:25.816000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 2353\nplayerDiscord : 221821522225004544\nplayerName : LoudBat8434\nplayerCharacter : Maruis Caplant\nplayerId : 385893\nvehiclePlate : IL4818AV\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Maruis Caplant",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "2353",
-    "playerdiscord": "221821522225004544",
-    "playername": "LoudBat8434",
-    "playercharacter": "Maruis Caplant",
-    "playerid": "385893",
-    "vehicleplate": "IL4818AV",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
