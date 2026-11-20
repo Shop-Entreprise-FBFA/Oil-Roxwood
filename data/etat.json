@@ -21844,7 +21844,17 @@
   }
  ],
  "stocks": {
-  "coffres": [],
+  "coffres": [
+   {
+    "id": "cmwoz94yrwlq",
+    "items": [],
+    "maj": 0,
+    "par": "",
+    "nom": "Commercial Recolte",
+    "icone": "🗄️",
+    "delai": 7
+   }
+  ],
   "produits": []
  },
  "pending": [],
@@ -61378,8 +61388,8 @@
   }
  },
  "_cid": "sfisffxkujg",
- "_maj": 1795179009833,
- "_rev": "5s6edb8k6tu-mwoz8e02",
+ "_maj": 1795179045088,
+ "_rev": "bxz26o33p16-mwoz95ph",
  "_majSec": {
   "fer": 1795097743732,
   "fact": 1795094756133,
@@ -61388,7 +61398,7 @@
   "sheets": 1795177433566,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1795177433566,
+  "journal": 1795179045088,
   "pending": 1793561085750,
   "prodDer": 1795123685187,
   "runners": 1794784703363,
@@ -61402,7 +61412,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794784680661,
   "profils": 1793561085750,
-  "_tables": 1795179009833,
+  "_tables": 1795179045088,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -61420,11 +61430,16 @@
   "historique": 1794923943457,
   "_evtFix1": 1795028752192,
   "_stkFix1": 1795179009793,
-  "stocks": 1795179009793
+  "stocks": 1795179045088
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1795179045987,
+   "u": "Diego Herrera",
+   "a": "Stock : coffre créé « Commercial Recolte »"
+  },
   {
    "t": 1795177433979,
    "u": "Diego Herrera",
@@ -62919,11 +62934,6 @@
    "t": 1794217568318,
    "u": "Julio Collins",
    "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1794217568175,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
   }
  ],
  "prodDer": {
@@ -63517,7 +63527,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-20T12:50:11.042Z",
+  "maj": "2026-11-20T12:50:46.949Z",
   "semaine": 47,
   "totalBarils": 0,
   "ca": 0,
