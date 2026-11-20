@@ -21913,9 +21913,102 @@
    },
    {
     "id": "cmwozjfypol5",
-    "items": [],
-    "maj": 0,
-    "par": "",
+    "items": [
+     {
+      "pid": "pmwozeroqmpb",
+      "q": 665
+     },
+     {
+      "pid": "pmwozc5izuyz",
+      "q": 250
+     },
+     {
+      "pid": "pmwozch7ppel",
+      "q": 136
+     },
+     {
+      "pid": "pmwozmttt1fn",
+      "q": 16
+     },
+     {
+      "pid": "pmwozn4gphyf",
+      "q": 19
+     },
+     {
+      "pid": "pmwoznkmk2u6",
+      "q": 18
+     },
+     {
+      "pid": "pmwozntmhp9h",
+      "q": 30
+     },
+     {
+      "pid": "pmwozo1yejnc",
+      "q": 31
+     },
+     {
+      "pid": "pmwozoau7xr5",
+      "q": 31
+     },
+     {
+      "pid": "pmwozokalugl",
+      "q": 31
+     },
+     {
+      "pid": "pmwozowqfbtl",
+      "q": 6
+     },
+     {
+      "pid": "pmwozpem94oa",
+      "q": 5
+     },
+     {
+      "pid": "pmwoz9v5iqp0",
+      "q": 43
+     },
+     {
+      "pid": "pmwozaetcmji",
+      "q": 35
+     },
+     {
+      "pid": "pmwozqisapz2",
+      "q": 64
+     },
+     {
+      "pid": "pmwozqzqjzel",
+      "q": 34
+     },
+     {
+      "pid": "pmwozravao1w",
+      "q": 81
+     },
+     {
+      "pid": "pmwozrmef1i2",
+      "q": 38
+     },
+     {
+      "pid": "pmwozs1djlar",
+      "q": 86
+     },
+     {
+      "pid": "pmwozshhsj0j",
+      "q": 118
+     },
+     {
+      "pid": "pmwozgbj0fe4",
+      "q": 5
+     },
+     {
+      "pid": "pmwozgnjoqye",
+      "q": 2
+     },
+     {
+      "pid": "pmwozgxmx7lw",
+      "q": 4
+     }
+    ],
+    "maj": 1795179982610,
+    "par": "Diego Herrera",
     "nom": "Coffre Commercial Transfo",
     "icone": "🗄️",
     "delai": 7
@@ -22053,6 +22146,18 @@
     "nom": "HORNYS",
     "icone": "📦",
     "seuil": 20
+   },
+   {
+    "id": "pmwozs1djlar",
+    "nom": "CAYO FISH",
+    "icone": "📦",
+    "seuil": 20
+   },
+   {
+    "id": "pmwozshhsj0j",
+    "nom": "BURGER SHOT NORD",
+    "icone": "📦",
+    "seuil": 30
    }
   ]
  },
@@ -61587,8 +61692,8 @@
   }
  },
  "_cid": "sfisffxkujg",
- "_maj": 1795179908853,
- "_rev": "8lc5wooe5sw-mwozrqmv",
+ "_maj": 1795179981651,
+ "_rev": "pw38x3n53k9-mwozt8b5",
  "_majSec": {
   "fer": 1795097743732,
   "fact": 1795094756133,
@@ -61597,7 +61702,7 @@
   "sheets": 1795177433566,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1795179908853,
+  "journal": 1795179981651,
   "pending": 1793561085750,
   "prodDer": 1795123685187,
   "runners": 1794784703363,
@@ -61611,7 +61716,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794784680661,
   "profils": 1793561085750,
-  "_tables": 1795179908853,
+  "_tables": 1795179981651,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -61629,11 +61734,26 @@
   "historique": 1794923943457,
   "_evtFix1": 1795028752192,
   "_stkFix1": 1795179829833,
-  "stocks": 1795179908853
+  "stocks": 1795179981651
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1795179982610,
+   "u": "Diego Herrera",
+   "a": "Stock : coffre « Coffre Commercial Transfo » recompté (23 produits, 1748 unités)"
+  },
+  {
+   "t": 1795179948688,
+   "u": "Diego Herrera",
+   "a": "Stock : produit créé « BURGER SHOT NORD »"
+  },
+  {
+   "t": 1795179927799,
+   "u": "Diego Herrera",
+   "a": "Stock : produit créé « CAYO FISH »"
+  },
   {
    "t": 1795179908391,
    "u": "Diego Herrera",
@@ -63118,21 +63238,6 @@
    "t": 1794356304202,
    "u": "?",
    "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1794355988074,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1794355987937,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1794341983617,
-   "u": "Diego Sypher",
-   "a": "Contrat(s) signé(s) via Discord : Soren Hunter, Otto jimminez"
   }
  ],
  "prodDer": {
@@ -63726,7 +63831,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-20T13:05:13.879Z",
+  "maj": "2026-11-20T13:06:23.441Z",
   "semaine": 47,
   "totalBarils": 0,
   "ca": 0,
