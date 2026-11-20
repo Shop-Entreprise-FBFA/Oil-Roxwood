@@ -14121,6 +14121,13 @@
     "quantite": 400,
     "qui": "Laurent Roquel, Stella Collins, Emma Collins-rodriguez",
     "src": "f253217"
+   },
+   {
+    "date": "2026-11-20",
+    "client": "White Hacker",
+    "quantite": 200,
+    "qui": "",
+    "fact": 253218
    }
   ],
   "collection": [
@@ -15571,7 +15578,8 @@
     "tel": "",
     "rib": "",
     "type": "famille",
-    "salon": "1570246420907298859"
+    "salon": "1570246420907298859",
+    "lastCmd": "2026-11-20"
    },
    {
     "nom": "blach hood order",
@@ -16701,8 +16709,38 @@
     "prix": 150
    }
   ],
-  "compteur": 253218,
+  "compteur": 253219,
   "factures": [
+   {
+    "num": 253218,
+    "date": "2026-11-20",
+    "client": "White Hacker",
+    "emetteur": "",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 200,
+      "tva": 0.04,
+      "pu": 180,
+      "ht": 36000,
+      "ttc": 37440,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 36000,
+    "ttc": 37440,
+    "poids": 400,
+    "statut": "attente",
+    "envoi": {
+     "t": 1795206118038,
+     "par": "Laurent Roquel",
+     "statut": "en_cours",
+     "ordre": 1795206118821,
+     "rapport": ""
+    }
+   },
    {
     "num": 253217,
     "date": "2026-11-19",
@@ -21871,6 +21909,10 @@
    "actif": true
   }
  ],
+ "stocks": {
+  "coffres": [],
+  "produits": []
+ },
  "pending": [],
  "fer": [
   {
@@ -61494,15 +61536,15 @@
    "sem": 45
   }
  },
- "_cid": "hss0shujx28",
- "_maj": 1795206110834,
- "_rev": "v31bm1dwu5i-mwpfd8u4",
+ "_cid": "9ddz70nueg",
+ "_maj": 1795206118038,
+ "_rev": "g70pgsks355-mwpfdedo",
  "_majSec": {
   "fer": 1795097743732,
-  "fact": 1795094756133,
+  "fact": 1795206118038,
   "users": 1795185457618,
   "weeks": 1794784680661,
-  "sheets": 1795201321160,
+  "sheets": 1795206117461,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
   "journal": 1795201321160,
@@ -61519,7 +61561,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794784680661,
   "profils": 1793561085750,
-  "_tables": 1795206110834,
+  "_tables": 1795206118014,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -61535,7 +61577,9 @@
   "sanctions": 1795201321160,
   "_sancFix1": 1794493778197,
   "historique": 1794923943457,
-  "_evtFix1": 1795028752192
+  "_evtFix1": 1795028752192,
+  "_stkFix1": 1795206110834,
+  "stocks": 1795206110834
  },
  "_qcFix1": true,
  "_wkFix1": true,
@@ -63645,13 +63689,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-20T20:21:51.484Z",
+  "maj": "2026-11-20T20:21:58.668Z",
   "semaine": 47,
   "totalBarils": 0,
   "ca": 0,
   "objectif": 375000,
   "effectif": 111,
-  "clientsServis": 201,
+  "clientsServis": 202,
   "theme": "",
   "top3": [],
   "runners": [],
@@ -68673,6 +68717,48 @@
     "id": 1795205536615,
     "statut": "fait",
     "rapport": "✅ Résultat enregistré : 14 bon(s) pronostic(s), 3 score(s) exact(s). Classement mis à jour."
+   },
+   {
+    "type": "facture_ticket",
+    "payload": {
+     "num": 253218,
+     "salon": "1570246420907298859",
+     "reedition": false,
+     "facture": {
+      "num": 253218,
+      "date": "2026-11-20",
+      "client": "White Hacker",
+      "emetteur": "",
+      "postop": false,
+      "lignes": [
+       {
+        "ref": "CMD",
+        "qte": 200,
+        "tva": 0.04,
+        "pu": 180,
+        "ht": 36000,
+        "ttc": 37440,
+        "desc": "bidons d'essence "
+       }
+      ],
+      "offert": 0,
+      "ht": 36000,
+      "ttc": 37440,
+      "poids": 400,
+      "statut": "attente"
+     },
+     "client": {
+      "nom": "White Hacker",
+      "adresse": "ROXWOOD",
+      "tel": "",
+      "rib": "",
+      "type": "famille",
+      "salon": "1570246420907298859",
+      "lastCmd": "2026-11-20"
+     },
+     "par": "Laurent Roquel"
+    },
+    "id": 1795206118821
    }
   ],
   "oilroxwood_coffres": [
@@ -73762,5 +73848,6 @@
  "_tablesSupp": [],
  "_accFix1": true,
  "_sancFix1": true,
- "_evtFix1": true
+ "_evtFix1": true,
+ "_stkFix1": true
 }
