@@ -21888,6 +21888,15 @@
     "nom": "Entrepot Commercial",
     "icone": "🗄️",
     "delai": 7
+   },
+   {
+    "id": "cmwozfowf82i",
+    "items": [],
+    "maj": 0,
+    "par": "",
+    "nom": "Entrepot RH",
+    "icone": "🗄️",
+    "delai": 7
    }
   ],
   "produits": [
@@ -61460,8 +61469,8 @@
   }
  },
  "_cid": "sfisffxkujg",
- "_maj": 1795179309747,
- "_rev": "jkx5emqp7h-mwozew3b",
+ "_maj": 1795179350861,
+ "_rev": "nvcfu8a54ii-mwozfpjd",
  "_majSec": {
   "fer": 1795097743732,
   "fact": 1795094756133,
@@ -61470,7 +61479,7 @@
   "sheets": 1795177433566,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1795179309747,
+  "journal": 1795179350861,
   "pending": 1793561085750,
   "prodDer": 1795123685187,
   "runners": 1794784703363,
@@ -61502,11 +61511,16 @@
   "historique": 1794923943457,
   "_evtFix1": 1795028752192,
   "_stkFix1": 1795179279032,
-  "stocks": 1795179309747
+  "stocks": 1795179350861
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1795179351759,
+   "u": "Diego Herrera",
+   "a": "Stock : coffre créé « Entrepot RH »"
+  },
   {
    "t": 1795179310646,
    "u": "Diego Herrera",
@@ -63001,11 +63015,6 @@
    "t": 1794245049827,
    "u": "Marco Bellini",
    "a": "Recrutements Discord : 6 fiche(s) créée(s), 0 case(s) complétée(s) — Luna Moretti, Ace Moretti, Adrianna Rio…"
-  },
-  {
-   "t": 1794242917718,
-   "u": "Julio Collins",
-   "a": "Vente rapide sans facture : 30 bidon(s) — Employé Elliot Adkins (vendeur : Julio Collins)"
   }
  ],
  "prodDer": {
@@ -63599,7 +63608,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-20T12:55:14.423Z",
+  "maj": "2026-11-20T12:55:52.585Z",
   "semaine": 47,
   "totalBarils": 0,
   "ca": 0,
