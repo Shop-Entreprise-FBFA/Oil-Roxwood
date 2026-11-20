@@ -21858,10 +21858,18 @@
      },
      {
       "pid": "pmwozaw2tdob",
+      "q": 4
+     },
+     {
+      "pid": "pmwozc5izuyz",
+      "q": 12
+     },
+     {
+      "pid": "pmwozch7ppel",
       "q": 1
      }
     ],
-    "maj": 1795179129984,
+    "maj": 1795179205047,
     "par": "Diego Herrera",
     "nom": "Commercial Recolte",
     "icone": "🗄️",
@@ -21890,6 +21898,12 @@
    {
     "id": "pmwozc5izuyz",
     "nom": "Coeur d'espoir",
+    "icone": "📦",
+    "seuil": 0
+   },
+   {
+    "id": "pmwozch7ppel",
+    "nom": "Roxidou",
     "icone": "📦",
     "seuil": 0
    }
@@ -61426,8 +61440,8 @@
   }
  },
  "_cid": "sfisffxkujg",
- "_maj": 1795179188907,
- "_rev": "b8f6amgami5-mwozcayv",
+ "_maj": 1795179204149,
+ "_rev": "3htbw5xcqa6-mwozck9t",
  "_majSec": {
   "fer": 1795097743732,
   "fact": 1795094756133,
@@ -61436,7 +61450,7 @@
   "sheets": 1795177433566,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1795179188907,
+  "journal": 1795179204149,
   "pending": 1793561085750,
   "prodDer": 1795123685187,
   "runners": 1794784703363,
@@ -61450,7 +61464,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794784680661,
   "profils": 1793561085750,
-  "_tables": 1795179188907,
+  "_tables": 1795179204149,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -61468,11 +61482,21 @@
   "historique": 1794923943457,
   "_evtFix1": 1795028752192,
   "_stkFix1": 1795179080035,
-  "stocks": 1795179188907
+  "stocks": 1795179204149
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1795179205047,
+   "u": "Diego Herrera",
+   "a": "Stock : coffre « Commercial Recolte » recompté (5 produits, 35 unités)"
+  },
+  {
+   "t": 1795179201829,
+   "u": "Diego Herrera",
+   "a": "Stock : produit créé « Roxidou »"
+  },
   {
    "t": 1795179186683,
    "u": "Diego Herrera",
@@ -62962,16 +62986,6 @@
    "t": 1794220991588,
    "u": "Julio Collins",
    "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1794220991409,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1794218771425,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
   }
  ],
  "prodDer": {
@@ -63565,7 +63579,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-20T12:53:13.735Z",
+  "maj": "2026-11-20T12:53:25.793Z",
   "semaine": 47,
   "totalBarils": 0,
   "ca": 0,
