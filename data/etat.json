@@ -22015,9 +22015,18 @@
    },
    {
     "id": "cmwoztxjks3e",
-    "items": [],
-    "maj": 0,
-    "par": "",
+    "items": [
+     {
+      "pid": "pmwozugze24v",
+      "q": 27
+     },
+     {
+      "pid": "pmwozaw2tdob",
+      "q": 10
+     }
+    ],
+    "maj": 1795180057452,
+    "par": "Diego Herrera",
     "nom": "Coffre Patron Transfo",
     "icone": "🗄️",
     "delai": 7
@@ -22167,6 +22176,12 @@
     "nom": "BURGER SHOT NORD",
     "icone": "📦",
     "seuil": 30
+   },
+   {
+    "id": "pmwozugze24v",
+    "nom": "Boule de Noel",
+    "icone": "📦",
+    "seuil": 0
    }
   ]
  },
@@ -61701,8 +61716,8 @@
   }
  },
  "_cid": "sfisffxkujg",
- "_maj": 1795180015185,
- "_rev": "6tuuzn91x0u-mwozu0ep",
+ "_maj": 1795180056493,
+ "_rev": "sul2g0yih1-mwozuu5i",
  "_majSec": {
   "fer": 1795097743732,
   "fact": 1795094756133,
@@ -61711,7 +61726,7 @@
   "sheets": 1795177433566,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1795180015185,
+  "journal": 1795180056493,
   "pending": 1793561085750,
   "prodDer": 1795123685187,
   "runners": 1794784703363,
@@ -61743,11 +61758,21 @@
   "historique": 1794923943457,
   "_evtFix1": 1795028752192,
   "_stkFix1": 1795180009814,
-  "stocks": 1795180015185
+  "stocks": 1795180056493
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1795180057452,
+   "u": "Diego Herrera",
+   "a": "Stock : coffre « Coffre Patron Transfo » recompté (2 produits, 37 unités)"
+  },
+  {
+   "t": 1795180041338,
+   "u": "Diego Herrera",
+   "a": "Stock : produit créé « Boule de Noel »"
+  },
   {
    "t": 1795180016144,
    "u": "Diego Herrera",
@@ -63237,16 +63262,6 @@
    "t": 1794395525634,
    "u": "?",
    "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1794356307550,
-   "u": "Julio Collins",
-   "a": "Achats de fer : 1 relevé(s) repris du salon"
-  },
-  {
-   "t": 1794356304349,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
   }
  ],
  "prodDer": {
@@ -63840,7 +63855,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-20T13:06:59.857Z",
+  "maj": "2026-11-20T13:07:38.406Z",
   "semaine": 47,
   "totalBarils": 0,
   "ca": 0,
