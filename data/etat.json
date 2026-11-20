@@ -8280,7 +8280,7 @@
     "idU": "385293",
     "arrivee": "2026-11-14",
     "discord": "1509660929845891272",
-    "avert": "1",
+    "avert": "2",
     "contrat": true,
     "recrut": "Diego Herrera",
     "dernierService": "2026-11-15",
@@ -59059,6 +59059,21 @@
  "sanctions": {
   "liste": [
    {
+    "id": 1795177434834,
+    "nom": "\tYanis Fekir",
+    "discord": "1509660929845891272",
+    "cat": "cond",
+    "st": "A2c",
+    "issue": "",
+    "date": "2026-11-20",
+    "motif": "Abandons de véhicule",
+    "par": "Diego Herrera",
+    "conv": "planifiee",
+    "convDate": "2026-11-20",
+    "retiree": null,
+    "exam": null
+   },
+   {
     "id": 1795122631431,
     "nom": "Isaac jackson",
     "discord": "518440900049764362",
@@ -60285,6 +60300,16 @@
   ],
   "log": [
    {
+    "t": 1795177433979,
+    "u": "Diego Herrera",
+    "a": "Avert. 2 + convocation · Conduite inappropriée — « Abandons de véhicule »",
+    "nom": "\tYanis Fekir",
+    "cat": "cond",
+    "st": "A2c",
+    "act": "ajout",
+    "sid": 1795177434834
+   },
+   {
     "t": 1795122631420,
     "u": "Diego Herrera",
     "a": "Rappel oral · Conduite inappropriée — « contre sens, conduite dangereuse »",
@@ -61346,17 +61371,17 @@
   }
  },
  "_cid": "yfysmnf2z3",
- "_maj": 1795177372323,
- "_rev": "hfil2pw39kb-mwoy9cx5",
+ "_maj": 1795177433593,
+ "_rev": "mad0e7rrga-mwoyaluc",
  "_majSec": {
   "fer": 1795097743732,
   "fact": 1795094756133,
   "users": 1795110375056,
   "weeks": 1794784680661,
-  "sheets": 1795110403568,
+  "sheets": 1795177433566,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1795122630711,
+  "journal": 1795177433566,
   "pending": 1793561085750,
   "prodDer": 1795123685187,
   "runners": 1794784703363,
@@ -61370,7 +61395,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794784680661,
   "profils": 1793561085750,
-  "_tables": 1795177372323,
+  "_tables": 1795177433593,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -61383,7 +61408,7 @@
   "_ventesIgnore": 1793561085750,
   "_avertVus": 1793561085750,
   "_signeVus": 1795008444841,
-  "sanctions": 1795122630711,
+  "sanctions": 1795177433566,
   "_sancFix1": 1794493778197,
   "historique": 1794923943457,
   "_evtFix1": 1795028752192
@@ -61391,6 +61416,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1795177433979,
+   "u": "Diego Herrera",
+   "a": "Sanction : \tYanis Fekir — Avert. 2 + convocation (Conduite inappropriée)"
+  },
   {
    "t": 1795122631420,
    "u": "Diego Herrera",
@@ -62885,11 +62915,6 @@
    "t": 1794217568175,
    "u": "?",
    "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1794180106274,
-   "u": "Julio Collins",
-   "a": "Vente rapide sans facture : 100 bidon(s) — Citoyen (vendeur : Julio Collins)"
   }
  ],
  "prodDer": {
@@ -63483,7 +63508,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-20T12:22:56.682Z",
+  "maj": "2026-11-20T12:23:54.900Z",
   "semaine": 47,
   "totalBarils": 0,
   "ca": 0,
@@ -68425,6 +68450,22 @@
     "id": 1795122631988,
     "statut": "fait",
     "rapport": "Rappel oral annoncé dans le ticket de marwane0012."
+   },
+   {
+    "type": "sanction",
+    "payload": {
+     "discord": "1509660929845891272",
+     "nom": "\tYanis Fekir",
+     "cat": "cond",
+     "catNom": "Conduite inappropriée",
+     "st": "A2c",
+     "etape": "Avert. 2 + convocation",
+     "rappel": false,
+     "motif": "Abandons de véhicule",
+     "par": "Diego Herrera",
+     "convocation": "prévue le 20/11/2026"
+    },
+    "id": 1795177434321
    }
   ],
   "oilroxwood_coffres": [
