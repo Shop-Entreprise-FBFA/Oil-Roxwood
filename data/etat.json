@@ -21874,6 +21874,15 @@
     "nom": "Commercial Recolte",
     "icone": "🗄️",
     "delai": 7
+   },
+   {
+    "id": "cmwoze20ssfe",
+    "items": [],
+    "maj": 0,
+    "par": "",
+    "nom": "Entrepot Commercial",
+    "icone": "🗄️",
+    "delai": 7
    }
   ],
   "produits": [
@@ -61440,8 +61449,8 @@
   }
  },
  "_cid": "sfisffxkujg",
- "_maj": 1795179204149,
- "_rev": "qa7k6blfcp-mwozd9nt",
+ "_maj": 1795179274553,
+ "_rev": "fds4e6y0d56-mwoze2uu",
  "_majSec": {
   "fer": 1795097743732,
   "fact": 1795094756133,
@@ -61450,7 +61459,7 @@
   "sheets": 1795177433566,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1795179204149,
+  "journal": 1795179274553,
   "pending": 1793561085750,
   "prodDer": 1795123685187,
   "runners": 1794784703363,
@@ -61482,11 +61491,16 @@
   "historique": 1794923943457,
   "_evtFix1": 1795028752192,
   "_stkFix1": 1795179204149,
-  "stocks": 1795179204149
+  "stocks": 1795179274553
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1795179275452,
+   "u": "Diego Herrera",
+   "a": "Stock : coffre créé « Entrepot Commercial »"
+  },
   {
    "t": 1795179205047,
    "u": "Diego Herrera",
@@ -62981,11 +62995,6 @@
    "t": 1794242895311,
    "u": "?",
    "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1794220991588,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
   }
  ],
  "prodDer": {
@@ -63579,7 +63588,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-20T12:53:58.697Z",
+  "maj": "2026-11-20T12:54:36.534Z",
   "semaine": 47,
   "totalBarils": 0,
   "ca": 0,
