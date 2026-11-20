@@ -7668,6 +7668,34 @@
  "sheets": {
   "rh": [
    {
+    "nom": "urus salvatore",
+    "grade": "Intérimaire",
+    "tel": "555755028",
+    "rib": "561373",
+    "idU": "379592",
+    "arrivee": "2026-11-20",
+    "discord": "1547960206896398370",
+    "avert": "",
+    "contrat": true,
+    "recrut": "Marco Bellini",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
+    "nom": "Ray Smith",
+    "grade": "Intérimaire",
+    "tel": "555851335",
+    "rib": "570268",
+    "idU": "386145",
+    "arrivee": "2026-11-20",
+    "discord": "1527342265356521607",
+    "avert": "",
+    "contrat": true,
+    "recrut": "Marco Bellini",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
     "nom": "Darian Nguyen",
     "grade": "Intérimaire",
     "tel": "555 526 626",
@@ -21843,6 +21871,10 @@
    "actif": true
   }
  ],
+ "stocks": {
+  "coffres": [],
+  "produits": []
+ },
  "pending": [],
  "fer": [
   {
@@ -61425,18 +61457,18 @@
    "sem": 45
   }
  },
- "_cid": "hss0shujx28",
- "_maj": 1795198730809,
- "_rev": "bapfwhqv7z9-mwpb0gp7",
+ "_cid": "l76t6jhf3jb",
+ "_maj": 1795198801095,
+ "_rev": "9p2rswycc6u-mwpb0kxu",
  "_majSec": {
   "fer": 1795097743732,
   "fact": 1795094756133,
   "users": 1795185457618,
   "weeks": 1794784680661,
-  "sheets": 1795197974260,
+  "sheets": 1795198801095,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1795197962561,
+  "journal": 1795198801095,
   "pending": 1793561085750,
   "prodDer": 1795185576859,
   "runners": 1794784703363,
@@ -61450,7 +61482,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794784680661,
   "profils": 1793561085750,
-  "_tables": 1795198730809,
+  "_tables": 1795198801067,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -61458,19 +61490,31 @@
   "_affFix1": 1793561085750,
   "produits": 1793561085750,
   "_prodFix1": 1793561085750,
-  "_recruesIgnore": 1795008444814,
+  "_recruesIgnore": 1795198801067,
   "ventesAlias": 1793561085750,
   "_ventesIgnore": 1793561085750,
   "_avertVus": 1793561085750,
-  "_signeVus": 1795008444841,
+  "_signeVus": 1795198801095,
   "sanctions": 1795192669398,
   "_sancFix1": 1794493778197,
   "historique": 1794923943457,
-  "_evtFix1": 1795028752192
+  "_evtFix1": 1795028752192,
+  "_stkFix1": 1795198730809,
+  "stocks": 1795198730809
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1795198801140,
+   "u": "Diego Herrera",
+   "a": "Contrat(s) signé(s) via Discord : Ray Smith, urus salvatore"
+  },
+  {
+   "t": 1795198801112,
+   "u": "Diego Herrera",
+   "a": "Recrutements Discord : 2 fiche(s) créée(s), 0 case(s) complétée(s) — Ray Smith, urus salvatore"
+  },
   {
    "t": 1795197962933,
    "u": "Emma Collins-rodriguez",
@@ -62960,16 +63004,6 @@
    "t": 1794422387049,
    "u": "?",
    "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1794421007002,
-   "u": "Diego Herrera",
-   "a": "Vente rapide sans facture : 35 bidon(s) — Citoyen (vendeur : Diego Herrera)"
-  },
-  {
-   "t": 1794420385449,
-   "u": "Diego Herrera",
-   "a": "Vente rapide sans facture : 50 bidon(s) — Employé Cristóbal Perrera (vendeur : Diego Herrera)"
   }
  ],
  "prodDer": {
@@ -63576,12 +63610,12 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-20T18:19:56.683Z",
+  "maj": "2026-11-20T18:20:02.178Z",
   "semaine": 47,
   "totalBarils": 0,
   "ca": 0,
   "objectif": 375000,
-  "effectif": 109,
+  "effectif": 111,
   "clientsServis": 201,
   "theme": "",
   "top3": [],
@@ -73128,8 +73162,6 @@
  "_affFix1": true,
  "_prodFix1": true,
  "_recruesIgnore": [
-  "1790021825546",
-  "1790026942206",
   "1790075652820",
   "1790078391603",
   "1790085730071",
@@ -73327,7 +73359,9 @@
   "1794874144044",
   "1794917622482",
   "1794958727643",
-  "1795007088794"
+  "1795007088794",
+  "1795132431645",
+  "1795191723295"
  ],
  "_signeVus": [
   "1789477305650",
@@ -73549,7 +73583,9 @@
   "1794874155473",
   "1794874188425",
   "1794958767096",
-  "1795007165703"
+  "1795007165703",
+  "1795132555396",
+  "1795191769649"
  ],
  "_agSupp": [
   "1789145270913",
@@ -73561,5 +73597,6 @@
  "_tablesSupp": [],
  "_accFix1": true,
  "_sancFix1": true,
- "_evtFix1": true
+ "_evtFix1": true,
+ "_stkFix1": true
 }
