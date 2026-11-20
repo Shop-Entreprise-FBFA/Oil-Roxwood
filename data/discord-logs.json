@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-20T21:46:32.899043+00:00",
+ "maj": "2026-11-20T21:52:32.908152+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -19,6 +19,22 @@
   "entreprise (Oil RoxWood) (13850)"
  ],
  "messages": [
+  {
+   "id": "1573455971299369132",
+   "t": "2026-11-20T21:52:16.956000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 649x Pétrole Raffiné pour 6490$ par Maruis Caplant. 3245$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 649,
+   "montant": 6490,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1573454427157823550-0",
    "t": "2026-11-20T21:46:08.804000+00:00",
@@ -65766,102 +65782,6 @@
     "playername": "Fox",
     "playercharacter": "Zoran Renard",
     "playerid": "353172",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1572368094368890916-0",
-   "t": "2026-11-17T21:49:26.884000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 141x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1850.47, 6514.89, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 2212\nplayerDiscord : 377179662172028930\nplayerName : QuietAnt0438\nplayerCharacter : Jeff Beaumont\nplayerId : 382764\nitemId : refinedoil",
-   "nom": "Jeff Beaumont",
-   "quantite": 141,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1850.47, 6514.89, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "2212",
-    "playerdiscord": "377179662172028930",
-    "playername": "QuietAnt0438",
-    "playercharacter": "Jeff Beaumont",
-    "playerid": "382764",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1572368094368890916-1",
-   "t": "2026-11-17T21:49:26.884000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 141x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1850.47, 6514.89, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 2212\nplayerDiscord : 377179662172028930\nplayerName : QuietAnt0438\nplayerCharacter : Jeff Beaumont\nplayerId : 382764\nitemId : refinedoil",
-   "nom": "Jeff Beaumont",
-   "quantite": 141,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1850.47, 6514.89, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "2212",
-    "playerdiscord": "377179662172028930",
-    "playername": "QuietAnt0438",
-    "playercharacter": "Jeff Beaumont",
-    "playerid": "382764",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1572368094368890916-2",
-   "t": "2026-11-17T21:49:26.884000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 141x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1850.47, 6514.89, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 2212\nplayerDiscord : 377179662172028930\nplayerName : QuietAnt0438\nplayerCharacter : Jeff Beaumont\nplayerId : 382764\nitemId : refinedoil",
-   "nom": "Jeff Beaumont",
-   "quantite": 141,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1850.47, 6514.89, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "2212",
-    "playerdiscord": "377179662172028930",
-    "playername": "QuietAnt0438",
-    "playercharacter": "Jeff Beaumont",
-    "playerid": "382764",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1572368094368890916-3",
-   "t": "2026-11-17T21:49:26.884000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 99x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1850.47, 6514.89, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 2212\nplayerDiscord : 377179662172028930\nplayerName : QuietAnt0438\nplayerCharacter : Jeff Beaumont\nplayerId : 382764\nitemId : refinedoil",
-   "nom": "Jeff Beaumont",
-   "quantite": 99,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1850.47, 6514.89, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "2212",
-    "playerdiscord": "377179662172028930",
-    "playername": "QuietAnt0438",
-    "playercharacter": "Jeff Beaumont",
-    "playerid": "382764",
     "itemid": "refinedoil"
    }
   }
