@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-20T00:04:32.472226+00:00",
+ "maj": "2026-11-20T00:14:33.447299+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -18,6 +18,22 @@
   "entreprise (Oil RoxWood) (13849)"
  ],
  "messages": [
+  {
+   "id": "1573129064112193638",
+   "t": "2026-11-20T00:13:16.209000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 324x Pétrole Raffiné pour 3240$ par Maruis Caplant. 1620$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 324,
+   "montant": 3240,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1573126809875120259",
    "t": "2026-11-20T00:04:18.757000+00:00",
@@ -75467,59 +75483,6 @@
     "playercharacter": "Isaac Jackson",
     "playerid": "116830",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1572042099589779598",
-   "t": "2026-11-17T00:14:03.672000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 4728\nplayerDiscord : 1214610388868534292\nplayerName : BluntGoose4517\nplayerCharacter : Kael Son\nplayerId : 374332\nvehiclePlate : UQ1823KQ\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Kael Son",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "4728",
-    "playerdiscord": "1214610388868534292",
-    "playername": "BluntGoose4517",
-    "playercharacter": "Kael Son",
-    "playerid": "374332",
-    "vehicleplate": "UQ1823KQ",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1572041852851462277",
-   "t": "2026-11-17T00:13:04.845000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 640x Pétrole Raffiné pour 6400$ par Bene Salvador. 3200$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 640,
-   "montant": 6400,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1572041108446515303",
-   "t": "2026-11-17T00:10:07.365000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 642x Pétrole Raffiné pour 6420$ par Kael Son. 3210$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 642,
-   "montant": 6420,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
