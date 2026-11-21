@@ -22021,12 +22021,24 @@
       "q": 50
      },
      {
-      "pid": "pmwq9n3ilhjp",
-      "q": 726
+      "pid": "pmwq9tn5u89d",
+      "q": 5
+     },
+     {
+      "pid": "pmwq9ttrwir2",
+      "q": 16
+     },
+     {
+      "pid": "pmwq9u73z0mn",
+      "q": 339
+     },
+     {
+      "pid": "pmwq9uezdpeb",
+      "q": 46
      }
     ],
-    "maj": 1795257264767,
-    "par": "Stella Collins",
+    "maj": 1795257304187,
+    "par": "Diego Herrera",
     "nom": "Goma Street",
     "icone": "🗄️",
     "delai": 7
@@ -22096,6 +22108,30 @@
    {
     "id": "pmwq9oxp0rvm",
     "nom": "kokuen",
+    "icone": "📦",
+    "seuil": 0
+   },
+   {
+    "id": "pmwq9tn5u89d",
+    "nom": "papillon noir",
+    "icone": "📦",
+    "seuil": 0
+   },
+   {
+    "id": "pmwq9ttrwir2",
+    "nom": "katana",
+    "icone": "📦",
+    "seuil": 0
+   },
+   {
+    "id": "pmwq9u73z0mn",
+    "nom": "coeur d'espoir",
+    "icone": "📦",
+    "seuil": 0
+   },
+   {
+    "id": "pmwq9uezdpeb",
+    "nom": "capoil",
     "icone": "📦",
     "seuil": 0
    }
@@ -61724,9 +61760,9 @@
    "sem": 45
   }
  },
- "_cid": "zazmr5q134",
- "_maj": 1795257265412,
- "_rev": "90fjlrulzc7-mwq9tq2x",
+ "_cid": "wvtl85jmajq",
+ "_maj": 1795257303874,
+ "_rev": "ih5bnwyw42-mwq9ui3h",
  "_majSec": {
   "fer": 1795097743732,
   "fact": 1795255713995,
@@ -61735,7 +61771,7 @@
   "sheets": 1795255686449,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1795257265412,
+  "journal": 1795257303874,
   "pending": 1793561085750,
   "prodDer": 1795210552257,
   "runners": 1794784703363,
@@ -61749,7 +61785,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794784680661,
   "profils": 1793561085750,
-  "_tables": 1795257265412,
+  "_tables": 1795257303874,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -61767,15 +61803,30 @@
   "historique": 1794923943457,
   "_evtFix1": 1795028752192,
   "_stkFix1": 1795207386387,
-  "stocks": 1795257265412
+  "stocks": 1795257303874
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
   {
-   "t": 1795257264767,
-   "u": "Stella Collins",
-   "a": "Stock : coffre « Goma Street » recompté (11 produits, 1251 unités)"
+   "t": 1795257304187,
+   "u": "Diego Herrera",
+   "a": "Stock : coffre « Goma Street » recompté (14 produits, 931 unités)"
+  },
+  {
+   "t": 1795257301081,
+   "u": "Diego Herrera",
+   "a": "Stock : produit créé « capoil »"
+  },
+  {
+   "t": 1795257290879,
+   "u": "Diego Herrera",
+   "a": "Stock : produit créé « coeur d'espoir »"
+  },
+  {
+   "t": 1795257273596,
+   "u": "Diego Herrera",
+   "a": "Stock : produit créé « katana »"
   },
   {
    "t": 1795257221004,
@@ -63256,21 +63307,6 @@
    "t": 1794482638373,
    "u": "?",
    "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1794476180383,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1794476180248,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1794474049869,
-   "u": "Julio Collins",
-   "a": "Vente rapide sans facture : 200 bidon(s) — Citoyen (vendeur : Julio Collins)"
   }
  ],
  "prodDer": {
@@ -63894,7 +63930,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-21T10:34:28.809Z",
+  "maj": "2026-11-21T10:35:05.117Z",
   "semaine": 47,
   "totalBarils": 0,
   "ca": 0,
