@@ -21979,9 +21979,14 @@
   "coffres": [
    {
     "id": "cmwq9muf0ene",
-    "items": [],
-    "maj": 0,
-    "par": "",
+    "items": [
+     {
+      "pid": "pmwq9ncaj69j",
+      "q": 23
+     }
+    ],
+    "maj": 1795257082101,
+    "par": "Stella Collins",
     "nom": "Goma Street",
     "icone": "🗄️",
     "delai": 7
@@ -61679,9 +61684,9 @@
    "sem": 45
   }
  },
- "_cid": "zxsg1ti73k",
- "_maj": 1795257073863,
- "_rev": "ohi6x4yxwjb-mwq9pmso",
+ "_cid": "tp1i8maxyk7",
+ "_maj": 1795257083147,
+ "_rev": "c1h4w3ubihu-mwq9pqss",
  "_majSec": {
   "fer": 1795097743732,
   "fact": 1795255713995,
@@ -61690,7 +61695,7 @@
   "sheets": 1795255686449,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1795257052792,
+  "journal": 1795257083147,
   "pending": 1793561085750,
   "prodDer": 1795210552257,
   "runners": 1794784703363,
@@ -61704,7 +61709,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794784680661,
   "profils": 1793561085750,
-  "_tables": 1795257073863,
+  "_tables": 1795257083147,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -61722,11 +61727,16 @@
   "historique": 1794923943457,
   "_evtFix1": 1795028752192,
   "_stkFix1": 1795207386387,
-  "stocks": 1795257052792
+  "stocks": 1795257083147
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1795257082101,
+   "u": "Stella Collins",
+   "a": "Stock : coffre « Goma Street » recompté (1 produit, 23 unités)"
+  },
   {
    "t": 1795257053073,
    "u": "Diego Herrera",
@@ -63221,11 +63231,6 @@
    "t": 1794435980846,
    "u": "Marco Bellini",
    "a": "Éligibilité : 1 grade(s) réalignés sur l'effectif — Kader Benali : Raffineur → Raffineur Expert"
-  },
-  {
-   "t": 1794435976503,
-   "u": "Marco Bellini",
-   "a": "Contrat(s) signé(s) via Discord : BOB YARA, Gérard Smith, Hervé JeanBenoit…"
   }
  ],
  "prodDer": {
@@ -63849,7 +63854,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-21T10:31:17.928Z",
+  "maj": "2026-11-21T10:31:23.116Z",
   "semaine": 47,
   "totalBarils": 0,
   "ca": 0,
