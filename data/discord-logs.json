@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-21T20:08:31.749449+00:00",
+ "maj": "2026-11-21T20:12:35.482163+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -18,6 +18,22 @@
   "entreprise (Oil RoxWood) (13850)"
  ],
  "messages": [
+  {
+   "id": "1573793187607089213",
+   "t": "2026-11-21T20:12:15.589000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 152x Pétrole Raffiné pour 1520$ par Luc Rouza. 760$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 152,
+   "montant": 1520,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1573792168274034729",
    "t": "2026-11-21T20:08:12.561000+00:00",
@@ -62624,70 +62640,6 @@
     "vehicleplate": "YN6253GU",
     "jobid": "76",
     "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1572705325507940425",
-   "t": "2026-11-18T20:09:29.053000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 650x Pétrole Raffiné pour 6500$ par Bene Salvador. 3250$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 650,
-   "montant": 6500,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1572705306436309035-0",
-   "t": "2026-11-18T20:09:24.506000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 1x Bidon d'essence du coffre de l'entreprise (Oil RoxWood) (13844)\nposition : -3090.99, 6817.83, 44.73\ntargetPosition : -3090.06, 6818.50, 43.97\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1029\nplayerDiscord : 948542221429379112\nplayerName : SleepyMoth4273\nplayerCharacter : Stella Collins\nplayerId : 232050\nitemId : weapon_petrolcan",
-   "nom": "Stella Collins",
-   "quantite": 1,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood) (13844)",
-   "champs": {
-    "position": "-3090.99, 6817.83, 44.73",
-    "targetposition": "-3090.06, 6818.50, 43.97",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "1029",
-    "playerdiscord": "948542221429379112",
-    "playername": "SleepyMoth4273",
-    "playercharacter": "Stella Collins",
-    "playerid": "232050",
-    "itemid": "weapon_petrolcan"
-   }
-  },
-  {
-   "id": "1572705306436309035-1",
-   "t": "2026-11-18T20:09:24.506000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 1x Nourriture Et Boisson 50 du coffre de l'entreprise (Oil RoxWood) (13844)\nposition : -3090.99, 6817.83, 44.73\ntargetPosition : -3090.06, 6818.50, 43.97\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1029\nplayerDiscord : 948542221429379112\nplayerName : SleepyMoth4273\nplayerCharacter : Stella Collins\nplayerId : 232050\nitemId : _nourritureboisson50",
-   "nom": "Stella Collins",
-   "quantite": 1,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood) (13844)",
-   "champs": {
-    "position": "-3090.99, 6817.83, 44.73",
-    "targetposition": "-3090.06, 6818.50, 43.97",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "1029",
-    "playerdiscord": "948542221429379112",
-    "playername": "SleepyMoth4273",
-    "playercharacter": "Stella Collins",
-    "playerid": "232050",
-    "itemid": "_nourritureboisson50"
    }
   }
  ]
