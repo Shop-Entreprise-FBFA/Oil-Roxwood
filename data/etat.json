@@ -22139,9 +22139,33 @@
      {
       "pid": "pmwq9n3ilhjp",
       "q": 645
+     },
+     {
+      "pid": "pmwqbaotwofh",
+      "q": 64
+     },
+     {
+      "pid": "pmwqbb1wsr4c",
+      "q": 34
+     },
+     {
+      "pid": "pmwqbbeiakia",
+      "q": 81
+     },
+     {
+      "pid": "pmwqbbqgy2ji",
+      "q": 38
+     },
+     {
+      "pid": "pmwqbc7dc3mh",
+      "q": 86
+     },
+     {
+      "pid": "pmwqbcnjellm",
+      "q": 118
      }
     ],
-    "maj": 1795259071039,
+    "maj": 1795259837167,
     "par": "Diego Herrera",
     "nom": "Coffre Eligibilité Transfo",
     "icone": "🗄️",
@@ -22262,6 +22286,24 @@
     "nom": "ticket linterna",
     "icone": "📦",
     "seuil": 20
+   },
+   {
+    "id": "pmwqbbqgy2ji",
+    "nom": "ticket hornys",
+    "icone": "📦",
+    "seuil": 20
+   },
+   {
+    "id": "pmwqbc7dc3mh",
+    "nom": "ticket cayo fish",
+    "icone": "📦",
+    "seuil": 20
+   },
+   {
+    "id": "pmwqbcnjellm",
+    "nom": "ticket burger shot nord",
+    "icone": "📦",
+    "seuil": 30
    }
   ]
  },
@@ -61889,8 +61931,8 @@
   }
  },
  "_cid": "37e1rce1yhx",
- "_maj": 1795259774817,
- "_rev": "63kv7ga4jf-mwqbbj1y",
+ "_maj": 1795259836806,
+ "_rev": "etdy6icm5v-mwqbcsp3",
  "_majSec": {
   "fer": 1795097743732,
   "fact": 1795255713995,
@@ -61899,7 +61941,7 @@
   "sheets": 1795255686449,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1795259774817,
+  "journal": 1795259836806,
   "pending": 1793561085750,
   "prodDer": 1795210552257,
   "runners": 1794784703363,
@@ -61913,7 +61955,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794784680661,
   "profils": 1793561085750,
-  "_tables": 1795259774817,
+  "_tables": 1795259836806,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -61931,11 +61973,31 @@
   "historique": 1794923943457,
   "_evtFix1": 1795028752192,
   "_stkFix1": 1795207386387,
-  "stocks": 1795259774817
+  "stocks": 1795259836806
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1795259837167,
+   "u": "Diego Herrera",
+   "a": "Stock : coffre « Coffre Eligibilité Transfo » recompté (21 produits, 1759 unités)"
+  },
+  {
+   "t": 1795259831594,
+   "u": "Diego Herrera",
+   "a": "Stock : produit créé « ticket burger shot nord »"
+  },
+  {
+   "t": 1795259810640,
+   "u": "Diego Herrera",
+   "a": "Stock : produit créé « ticket cayo fish »"
+  },
+  {
+   "t": 1795259788738,
+   "u": "Diego Herrera",
+   "a": "Stock : produit créé « ticket hornys »"
+  },
   {
    "t": 1795259773234,
    "u": "Diego Herrera",
@@ -63415,26 +63477,6 @@
    "t": 1794529613581,
    "u": "Marco Bellini",
    "a": "Contrat(s) signé(s) via Discord : Booskap Ba"
-  },
-  {
-   "t": 1794529613571,
-   "u": "Marco Bellini",
-   "a": "Recrutements Discord : 1 fiche(s) créée(s), 0 case(s) complétée(s) — Booskap Ba"
-  },
-  {
-   "t": 1794529390628,
-   "u": "Marco Bellini",
-   "a": "Contrat(s) signé(s) via Discord : Bene Salvador"
-  },
-  {
-   "t": 1794529390616,
-   "u": "Marco Bellini",
-   "a": "Recrutements Discord : 1 fiche(s) créée(s), 0 case(s) complétée(s) — Bene Salvador"
-  },
-  {
-   "t": 1794509268307,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
   }
  ],
  "prodDer": {
@@ -64058,7 +64100,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-21T11:16:19.126Z",
+  "maj": "2026-11-21T11:17:18.279Z",
   "semaine": 47,
   "totalBarils": 0,
   "ca": 0,
