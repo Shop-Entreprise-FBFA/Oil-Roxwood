@@ -15302,6 +15302,13 @@
     "client": "Citoyen ⚡",
     "quantite": 50,
     "qui": "Diego Herrera"
+   },
+   {
+    "date": "2026-11-21",
+    "client": "Oil Roxwood",
+    "quantite": 3000,
+    "qui": "Diego Herrera",
+    "fact": 253221
    }
   ],
   "collection": [
@@ -17585,7 +17592,7 @@
     "rib": "20076",
     "tel": "986",
     "adresse": "Roxwood",
-    "lastCmd": "2026-11-16",
+    "lastCmd": "2026-11-21",
     "type": "entreprise",
     "salon": ""
    },
@@ -17897,8 +17904,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253221,
+  "compteur": 253222,
   "factures": [
+   {
+    "num": 253221,
+    "date": "2026-11-21",
+    "client": "Oil Roxwood",
+    "emetteur": "Diego Herrera",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 3000,
+      "tva": 0,
+      "pu": 180,
+      "ht": 540000,
+      "ttc": 540000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 540000,
+    "ttc": 540000,
+    "poids": 6000,
+    "statut": "attente"
+   },
    {
     "num": 253220,
     "date": "2026-11-21",
@@ -63108,15 +63138,15 @@
    "sem": 45
   }
  },
- "_cid": "zazmr5q134",
- "_maj": 1795288198131,
- "_rev": "v1b9ryyua7-mwqs8r0l",
+ "_cid": "37e1rce1yhx",
+ "_maj": 1795288213177,
+ "_rev": "k4ep5xiugv9-mwqs8zs4",
  "_majSec": {
   "fer": 1795097743732,
-  "fact": 1795272546725,
+  "fact": 1795288213147,
   "users": 1795185457618,
   "weeks": 1794784680661,
-  "sheets": 1795287810280,
+  "sheets": 1795288213147,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
   "journal": 1795287810280,
@@ -63133,7 +63163,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794784680661,
   "profils": 1793561085750,
-  "_tables": 1795288198131,
+  "_tables": 1795288213147,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -65287,13 +65317,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-21T19:10:02.949Z",
+  "maj": "2026-11-21T19:10:14.308Z",
   "semaine": 47,
   "totalBarils": 145131,
   "ca": 725655,
   "objectif": 375000,
   "effectif": 108,
-  "clientsServis": 203,
+  "clientsServis": 204,
   "theme": "",
   "top3": [
    {
