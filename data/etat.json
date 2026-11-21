@@ -22076,6 +22076,15 @@
     "nom": "Coffre Commercial Recolte",
     "icone": "🗄️",
     "delai": 7
+   },
+   {
+    "id": "cmwqatqpjuw5",
+    "items": [],
+    "maj": 0,
+    "par": "",
+    "nom": "Coffre Eligibilité Transfo",
+    "icone": "🗄️",
+    "delai": 7
    }
   ],
   "produits": [
@@ -61801,8 +61810,8 @@
   }
  },
  "_cid": "37e1rce1yhx",
- "_maj": 1795258918686,
- "_rev": "ikqgrkl533-mwqat6lv",
+ "_maj": 1795258948963,
+ "_rev": "k4jqd9vmnrt-mwqatral",
  "_majSec": {
   "fer": 1795097743732,
   "fact": 1795255713995,
@@ -61811,7 +61820,7 @@
   "sheets": 1795255686449,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1795257787776,
+  "journal": 1795258948963,
   "pending": 1793561085750,
   "prodDer": 1795210552257,
   "runners": 1794784703363,
@@ -61825,7 +61834,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794784680661,
   "profils": 1793561085750,
-  "_tables": 1795258918686,
+  "_tables": 1795258948963,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -61843,11 +61852,16 @@
   "historique": 1794923943457,
   "_evtFix1": 1795028752192,
   "_stkFix1": 1795207386387,
-  "stocks": 1795257787776
+  "stocks": 1795258948963
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1795258949239,
+   "u": "Diego Herrera",
+   "a": "Stock : coffre créé « Coffre Eligibilité Transfo »"
+  },
   {
    "t": 1795257788014,
    "u": "Diego Herrera",
@@ -63342,11 +63356,6 @@
    "t": 1794499852755,
    "u": "Laurent Roquel",
    "a": "Achats de fer : 6 relevé(s) repris du salon"
-  },
-  {
-   "t": 1794497500740,
-   "u": "Laurent Roquel",
-   "a": "Achats de fer : 1 relevé(s) repris du salon"
   }
  ],
  "prodDer": {
@@ -63970,7 +63979,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-21T11:02:03.187Z",
+  "maj": "2026-11-21T11:02:29.997Z",
   "semaine": 47,
   "totalBarils": 0,
   "ca": 0,
