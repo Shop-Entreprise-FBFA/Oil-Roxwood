@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-21T08:12:30.396994+00:00",
+ "maj": "2026-11-21T08:36:31.485783+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -19,6 +19,27 @@
   "entreprise (Oil RoxWood) (13850)"
  ],
  "messages": [
+  {
+   "id": "1573617734712041523",
+   "t": "2026-11-21T08:35:04.359000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 4773\nplayerDiscord : 612206513200562196\nplayerName : LoudCat8750\nplayerCharacter : Gérard Smith\nplayerId : 273365\nvehiclePlate : AY4705SJ\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Gérard Smith",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "4773",
+    "playerdiscord": "612206513200562196",
+    "playername": "LoudCat8750",
+    "playercharacter": "Gérard Smith",
+    "playerid": "273365",
+    "vehicleplate": "AY4705SJ",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1573611942554112181",
    "t": "2026-11-21T08:12:03.401000+00:00",
@@ -66905,272 +66926,6 @@
     "playername": "BluntGoose4517",
     "playercharacter": "Kael Son",
     "playerid": "374332",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1572530653407219845",
-   "t": "2026-11-18T08:35:23.979000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 5626\nplayerDiscord : 487891709821190145\nplayerName : IcyNewt9023\nplayerCharacter : Luc Rouza\nplayerId : 382769\nvehiclePlate : AY4705SJ\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Luc Rouza",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "5626",
-    "playerdiscord": "487891709821190145",
-    "playername": "IcyNewt9023",
-    "playercharacter": "Luc Rouza",
-    "playerid": "382769",
-    "vehicleplate": "AY4705SJ",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1572530651239026700",
-   "t": "2026-11-18T08:35:23.462000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 353x Pétrole Raffiné pour 3530$ par Yanis Fekir. 1765$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 353,
-   "montant": 3530,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1572529130858090527",
-   "t": "2026-11-18T08:29:20.975000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 292x Pétrole Raffiné pour 2920$ par Yanis Fekir. 1460$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 292,
-   "montant": 2920,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1572529129885138946-0",
-   "t": "2026-11-18T08:29:20.743000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 150x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1844.80, 6515.76, 16.73\ntargetPosition : -1844.79, 6516.31, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 5550\nplayerDiscord : 612206513200562196\nplayerName : LoudCat8750\nplayerCharacter : Gérard Smith\nplayerId : 273365\nitemId : refinedoil",
-   "nom": "Gérard Smith",
-   "quantite": 150,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1844.80, 6515.76, 16.73",
-    "targetposition": "-1844.79, 6516.31, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "5550",
-    "playerdiscord": "612206513200562196",
-    "playername": "LoudCat8750",
-    "playercharacter": "Gérard Smith",
-    "playerid": "273365",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1572529129885138946-1",
-   "t": "2026-11-18T08:29:20.743000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 24x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1844.31, 6516.58, 16.73\ntargetPosition : -1844.79, 6516.31, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 5550\nplayerDiscord : 612206513200562196\nplayerName : LoudCat8750\nplayerCharacter : Gérard Smith\nplayerId : 273365\nitemId : refinedoil",
-   "nom": "Gérard Smith",
-   "quantite": 24,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1844.31, 6516.58, 16.73",
-    "targetposition": "-1844.79, 6516.31, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "5550",
-    "playerdiscord": "612206513200562196",
-    "playername": "LoudCat8750",
-    "playercharacter": "Gérard Smith",
-    "playerid": "273365",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1572528876792320091",
-   "t": "2026-11-18T08:28:20.401000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 150x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1843.96, 6516.07, 16.73\ntargetPosition : -1844.79, 6516.31, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 5550\nplayerDiscord : 612206513200562196\nplayerName : LoudCat8750\nplayerCharacter : Gérard Smith\nplayerId : 273365\nitemId : refinedoil",
-   "nom": "Gérard Smith",
-   "quantite": 150,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1843.96, 6516.07, 16.73",
-    "targetposition": "-1844.79, 6516.31, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "5550",
-    "playerdiscord": "612206513200562196",
-    "playername": "LoudCat8750",
-    "playercharacter": "Gérard Smith",
-    "playerid": "273365",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1572527367849508966",
-   "t": "2026-11-18T08:22:20.641000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 5606\nplayerDiscord : 1214610388868534292\nplayerName : BluntGoose4517\nplayerCharacter : Kael Son\nplayerId : 374332\nvehiclePlate : UQ1823KQ\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Kael Son",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "5606",
-    "playerdiscord": "1214610388868534292",
-    "playername": "BluntGoose4517",
-    "playercharacter": "Kael Son",
-    "playerid": "374332",
-    "vehicleplate": "UQ1823KQ",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1572526614988984412",
-   "t": "2026-11-18T08:19:21.145000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 3x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood)\nposition : -1851.26, 6515.16, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 5550\nplayerDiscord : 612206513200562196\nplayerName : LoudCat8750\nplayerCharacter : Gérard Smith\nplayerId : 273365\nitemId : refinedoil",
-   "nom": "Gérard Smith",
-   "quantite": 3,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1851.26, 6515.16, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "5550",
-    "playerdiscord": "612206513200562196",
-    "playername": "LoudCat8750",
-    "playercharacter": "Gérard Smith",
-    "playerid": "273365",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1572526363196526699-0",
-   "t": "2026-11-18T08:18:21.113000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 144x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1850.78, 6514.39, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 5550\nplayerDiscord : 612206513200562196\nplayerName : LoudCat8750\nplayerCharacter : Gérard Smith\nplayerId : 273365\nitemId : refinedoil",
-   "nom": "Gérard Smith",
-   "quantite": 144,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1850.78, 6514.39, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "5550",
-    "playerdiscord": "612206513200562196",
-    "playername": "LoudCat8750",
-    "playercharacter": "Gérard Smith",
-    "playerid": "273365",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1572526363196526699-1",
-   "t": "2026-11-18T08:18:21.113000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 144x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1850.37, 6514.51, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 5550\nplayerDiscord : 612206513200562196\nplayerName : LoudCat8750\nplayerCharacter : Gérard Smith\nplayerId : 273365\nitemId : refinedoil",
-   "nom": "Gérard Smith",
-   "quantite": 144,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1850.37, 6514.51, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "5550",
-    "playerdiscord": "612206513200562196",
-    "playername": "LoudCat8750",
-    "playercharacter": "Gérard Smith",
-    "playerid": "273365",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1572526363196526699-2",
-   "t": "2026-11-18T08:18:21.113000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 144x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1851.03, 6514.19, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 5550\nplayerDiscord : 612206513200562196\nplayerName : LoudCat8750\nplayerCharacter : Gérard Smith\nplayerId : 273365\nitemId : refinedoil",
-   "nom": "Gérard Smith",
-   "quantite": 144,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1851.03, 6514.19, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "5550",
-    "playerdiscord": "612206513200562196",
-    "playername": "LoudCat8750",
-    "playercharacter": "Gérard Smith",
-    "playerid": "273365",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1572526110019682348",
-   "t": "2026-11-18T08:17:20.751000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 144x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood)\nposition : -1851.19, 6515.68, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 5550\nplayerDiscord : 612206513200562196\nplayerName : LoudCat8750\nplayerCharacter : Gérard Smith\nplayerId : 273365\nitemId : refinedoil",
-   "nom": "Gérard Smith",
-   "quantite": 144,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1851.19, 6515.68, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "5550",
-    "playerdiscord": "612206513200562196",
-    "playername": "LoudCat8750",
-    "playercharacter": "Gérard Smith",
-    "playerid": "273365",
     "itemid": "refinedoil"
    }
   }
