@@ -14142,6 +14142,20 @@
     "quantite": 100,
     "qui": "William Rodriguez-Collins",
     "fact": 253219
+   },
+   {
+    "date": "2026-11-21",
+    "client": "Rockford Records",
+    "quantite": 100,
+    "qui": "Diego Herrera",
+    "fact": 253220
+   },
+   {
+    "date": "2026-11-21",
+    "client": "Rockford Records",
+    "quantite": 100,
+    "qui": "Stella Collins",
+    "fact": 253220
    }
   ],
   "collection": [
@@ -16500,7 +16514,7 @@
     "rib": "20037",
     "tel": "947",
     "adresse": "Los Santos",
-    "lastCmd": "2026-03-14",
+    "lastCmd": "2026-11-21",
     "type": "entreprise",
     "salon": "1482451614336815114"
    },
@@ -16729,8 +16743,38 @@
     "prix": 150
    }
   ],
-  "compteur": 253220,
+  "compteur": 253221,
   "factures": [
+   {
+    "num": 253220,
+    "date": "2026-11-21",
+    "client": "Rockford Records",
+    "emetteur": "Diego Herrera, Stella Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 200,
+      "tva": 0,
+      "pu": 180,
+      "ht": 36000,
+      "ttc": 36000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 36000,
+    "ttc": 36000,
+    "poids": 400,
+    "statut": "attente",
+    "envoi": {
+     "t": 1795255687037,
+     "par": "Diego Herrera",
+     "statut": "en_cours",
+     "ordre": 1795255687298,
+     "rapport": ""
+    }
+   },
    {
     "num": 253219,
     "date": "2026-11-20",
@@ -61558,14 +61602,14 @@
   }
  },
  "_cid": "zxsg1ti73k",
- "_maj": 1795255634436,
- "_rev": "4s32ksveol7-mwq8vq53",
+ "_maj": 1795255687037,
+ "_rev": "kkdbseo8tv-mwq8vtic",
  "_majSec": {
   "fer": 1795097743732,
-  "fact": 1795206417678,
+  "fact": 1795255687037,
   "users": 1795185457618,
   "weeks": 1794784680661,
-  "sheets": 1795206380941,
+  "sheets": 1795255686449,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
   "journal": 1795255634381,
@@ -61582,7 +61626,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794784680661,
   "profils": 1793561085750,
-  "_tables": 1795255634436,
+  "_tables": 1795255687010,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -63727,13 +63771,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-21T10:08:02.583Z",
+  "maj": "2026-11-21T10:08:06.948Z",
   "semaine": 47,
   "totalBarils": 0,
   "ca": 0,
   "objectif": 375000,
   "effectif": 111,
-  "clientsServis": 202,
+  "clientsServis": 203,
   "theme": "",
   "top3": [],
   "runners": [],
@@ -68868,6 +68912,48 @@
     "id": 1795215055904,
     "statut": "fait",
     "rapport": "✅ Résultat enregistré : 1 bon(s) pronostic(s), 0 score(s) exact(s). Classement mis à jour."
+   },
+   {
+    "type": "facture_ticket",
+    "payload": {
+     "num": 253220,
+     "salon": "1482451614336815114",
+     "reedition": false,
+     "facture": {
+      "num": 253220,
+      "date": "2026-11-21",
+      "client": "Rockford Records",
+      "emetteur": "Diego Herrera, Stella Collins",
+      "postop": false,
+      "lignes": [
+       {
+        "ref": "CMD",
+        "qte": 200,
+        "tva": 0,
+        "pu": 180,
+        "ht": 36000,
+        "ttc": 36000,
+        "desc": "bidons d'essence "
+       }
+      ],
+      "offert": 0,
+      "ht": 36000,
+      "ttc": 36000,
+      "poids": 400,
+      "statut": "attente"
+     },
+     "client": {
+      "nom": "Rockford Records",
+      "rib": "20037",
+      "tel": "947",
+      "adresse": "Los Santos",
+      "lastCmd": "2026-11-21",
+      "type": "entreprise",
+      "salon": "1482451614336815114"
+     },
+     "par": "Diego Herrera"
+    },
+    "id": 1795255687298
    }
   ],
   "oilroxwood_coffres": [
