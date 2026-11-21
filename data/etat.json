@@ -21976,7 +21976,17 @@
   }
  ],
  "stocks": {
-  "coffres": [],
+  "coffres": [
+   {
+    "id": "cmwq9muf0ene",
+    "items": [],
+    "maj": 0,
+    "par": "",
+    "nom": "Goma Street",
+    "icone": "🗄️",
+    "delai": 7
+   }
+  ],
   "produits": []
  },
  "pending": [],
@@ -61603,8 +61613,8 @@
   }
  },
  "_cid": "zxsg1ti73k",
- "_maj": 1795256936995,
- "_rev": "t7fkyft7vm-mwq9mp6u",
+ "_maj": 1795256947555,
+ "_rev": "utkw77a5c-mwq9mvcn",
  "_majSec": {
   "fer": 1795097743732,
   "fact": 1795255713995,
@@ -61613,7 +61623,7 @@
   "sheets": 1795255686449,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1795255634381,
+  "journal": 1795256947555,
   "pending": 1793561085750,
   "prodDer": 1795210552257,
   "runners": 1794784703363,
@@ -61627,7 +61637,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794784680661,
   "profils": 1793561085750,
-  "_tables": 1795256936995,
+  "_tables": 1795256947555,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -61645,11 +61655,16 @@
   "historique": 1794923943457,
   "_evtFix1": 1795028752192,
   "_stkFix1": 1795207386387,
-  "stocks": 1795207386387
+  "stocks": 1795256947555
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1795256947836,
+   "u": "Diego Herrera",
+   "a": "Stock : coffre créé « Goma Street »"
+  },
   {
    "t": 1795255634131,
    "u": "Diego Herrera",
@@ -63144,11 +63159,6 @@
    "t": 1794434746550,
    "u": "Diego Herrera",
    "a": "Absences Discord reprises : Javon Keita"
-  },
-  {
-   "t": 1794424100360,
-   "u": "Diego Herrera",
-   "a": "Sanction : Diego Herrera — Avert. 1 (Manque de respect)"
   }
  ],
  "prodDer": {
@@ -63772,7 +63782,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-21T10:29:01.062Z",
+  "maj": "2026-11-21T10:29:09.047Z",
   "semaine": 47,
   "totalBarils": 0,
   "ca": 0,
