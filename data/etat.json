@@ -21987,7 +21987,38 @@
     "delai": 7
    }
   ],
-  "produits": []
+  "produits": [
+   {
+    "id": "pmwq9n3ilhjp",
+    "nom": "Bidons d'essences",
+    "icone": "📦",
+    "seuil": 150
+   },
+   {
+    "id": "pmwq9ncaj69j",
+    "nom": "Anneau du raffineur",
+    "icone": "📦",
+    "seuil": 0
+   },
+   {
+    "id": "pmwq9np6rbl2",
+    "nom": "bracelet du raffineur",
+    "icone": "📦",
+    "seuil": 0
+   },
+   {
+    "id": "pmwq9nv8yqjw",
+    "nom": "flarex",
+    "icone": "📦",
+    "seuil": 0
+   },
+   {
+    "id": "pmwq9nz5kqz6",
+    "nom": "sparky",
+    "icone": "📦",
+    "seuil": 0
+   }
+  ]
  },
  "pending": [],
  "fer": [
@@ -61613,8 +61644,8 @@
   }
  },
  "_cid": "zxsg1ti73k",
- "_maj": 1795256983858,
- "_rev": "ajs8ehgbumo-mwq9npj3",
+ "_maj": 1795257005142,
+ "_rev": "lnv08czf0j-mwq9o3dz",
  "_majSec": {
   "fer": 1795097743732,
   "fact": 1795255713995,
@@ -61623,7 +61654,7 @@
   "sheets": 1795255686449,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1795256947555,
+  "journal": 1795257005142,
   "pending": 1793561085750,
   "prodDer": 1795210552257,
   "runners": 1794784703363,
@@ -61637,7 +61668,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794784680661,
   "profils": 1793561085750,
-  "_tables": 1795256983858,
+  "_tables": 1795257005142,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -61655,11 +61686,16 @@
   "historique": 1794923943457,
   "_evtFix1": 1795028752192,
   "_stkFix1": 1795207386387,
-  "stocks": 1795256947555
+  "stocks": 1795257005142
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1795257005423,
+   "u": "Diego Herrera",
+   "a": "Stock : catalogue enregistré (5 produits)"
+  },
   {
    "t": 1795256947836,
    "u": "Diego Herrera",
@@ -63154,11 +63190,6 @@
    "t": 1794435976492,
    "u": "Marco Bellini",
    "a": "Recrutements Discord : 5 fiche(s) créée(s), 0 case(s) complétée(s) — Gérard Smith, Hervé JeanBenoit, BOB YARA…"
-  },
-  {
-   "t": 1794434746550,
-   "u": "Diego Herrera",
-   "a": "Absences Discord reprises : Javon Keita"
   }
  ],
  "prodDer": {
@@ -63782,7 +63813,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-21T10:29:48.159Z",
+  "maj": "2026-11-21T10:30:06.119Z",
   "semaine": 47,
   "totalBarils": 0,
   "ca": 0,
