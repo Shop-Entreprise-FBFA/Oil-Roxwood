@@ -23013,14 +23013,6 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
-  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -23044,6 +23036,14 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T00:06:23.240Z"
+  },
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -63649,9 +63649,9 @@
    "sem": 45
   }
  },
- "_cid": "nrjm5de2vh",
- "_maj": 1795303224036,
- "_rev": "1ht6lc9l39r-mwr16sgr",
+ "_cid": "fbm3j2jhpdo",
+ "_maj": 1795303245474,
+ "_rev": "edg2te9ant9-mwr179xo",
  "_majSec": {
   "fer": 1795303159484,
   "fact": 1795288301876,
@@ -63660,7 +63660,7 @@
   "sheets": 1795299418140,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1795302058775,
+  "journal": 1795303245474,
   "pending": 1793561085750,
   "prodDer": 1795270452372,
   "runners": 1795260098039,
@@ -63674,7 +63674,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794784680661,
   "profils": 1793561085750,
-  "_tables": 1795303224036,
+  "_tables": 1795303245474,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -63688,8 +63688,8 @@
   "_avertVus": 1793561085750,
   "_signeVus": 1795272484231,
   "sanctions": 1795201321160,
-  "historique": 1794923943457,
   "_sancFix1": 1794493778197,
+  "historique": 1794923943457,
   "_evtFix1": 1795028752192,
   "_stkFix1": 1795207386387,
   "stocks": 1795259898981
@@ -63697,6 +63697,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1795303160313,
+   "u": "Laurent Roquel",
+   "a": "Achats de fer : 16 relevé(s) repris du salon"
+  },
   {
    "t": 1795301968850,
    "u": "Stella Collins",
@@ -65191,11 +65196,6 @@
    "t": 1794602334318,
    "u": "Stella Collins",
    "a": "Vente rapide sans facture : 200 bidon(s) — Citoyen (vendeur : Stella Collins)"
-  },
-  {
-   "t": 1794590233128,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
   }
  ],
  "prodDer": {
@@ -65828,7 +65828,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-21T23:20:28.059Z",
+  "maj": "2026-11-21T23:20:50.700Z",
   "semaine": 47,
   "totalBarils": 145131,
   "ca": 725655,
