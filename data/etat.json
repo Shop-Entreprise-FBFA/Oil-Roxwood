@@ -22244,6 +22244,24 @@
     "nom": "kit de repa",
     "icone": "📦",
     "seuil": 0
+   },
+   {
+    "id": "pmwqbaotwofh",
+    "nom": "ticket umami",
+    "icone": "📦",
+    "seuil": 30
+   },
+   {
+    "id": "pmwqbb1wsr4c",
+    "nom": "ticket casa",
+    "icone": "📦",
+    "seuil": 20
+   },
+   {
+    "id": "pmwqbbeiakia",
+    "nom": "ticket linterna",
+    "icone": "📦",
+    "seuil": 20
    }
   ]
  },
@@ -61870,9 +61888,9 @@
    "sem": 45
   }
  },
- "_cid": "zazmr5q134",
- "_maj": 1795259757857,
- "_rev": "p3lv706426o-mwqbb4j6",
+ "_cid": "37e1rce1yhx",
+ "_maj": 1795259774817,
+ "_rev": "63kv7ga4jf-mwqbbj1y",
  "_majSec": {
   "fer": 1795097743732,
   "fact": 1795255713995,
@@ -61881,7 +61899,7 @@
   "sheets": 1795255686449,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1795259070763,
+  "journal": 1795259774817,
   "pending": 1793561085750,
   "prodDer": 1795210552257,
   "runners": 1794784703363,
@@ -61895,7 +61913,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794784680661,
   "profils": 1793561085750,
-  "_tables": 1795259757857,
+  "_tables": 1795259774817,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -61913,11 +61931,26 @@
   "historique": 1794923943457,
   "_evtFix1": 1795028752192,
   "_stkFix1": 1795207386387,
-  "stocks": 1795259070763
+  "stocks": 1795259774817
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1795259773234,
+   "u": "Diego Herrera",
+   "a": "Stock : produit créé « ticket linterna »"
+  },
+  {
+   "t": 1795259756908,
+   "u": "Diego Herrera",
+   "a": "Stock : produit créé « ticket casa »"
+  },
+  {
+   "t": 1795259739956,
+   "u": "Diego Herrera",
+   "a": "Stock : produit créé « ticket umami »"
+  },
   {
    "t": 1795259071039,
    "u": "Diego Herrera",
@@ -63402,21 +63435,6 @@
    "t": 1794509268307,
    "u": "Julio Collins",
    "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1794509268163,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1794500379298,
-   "u": "Laurent Roquel",
-   "a": "Achats de fer : 1 relevé(s) repris du salon"
-  },
-  {
-   "t": 1794500199328,
-   "u": "Laurent Roquel",
-   "a": "Achats de fer : 3 relevé(s) repris du salon"
   }
  ],
  "prodDer": {
@@ -64040,7 +64058,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-21T11:16:00.306Z",
+  "maj": "2026-11-21T11:16:19.126Z",
   "semaine": 47,
   "totalBarils": 0,
   "ca": 0,
