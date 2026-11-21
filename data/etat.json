@@ -22173,9 +22173,18 @@
    },
    {
     "id": "cmwqbd7tlkel",
-    "items": [],
-    "maj": 0,
-    "par": "",
+    "items": [
+     {
+      "pid": "pmwqbdrbrp7h",
+      "q": 27
+     },
+     {
+      "pid": "pmwqa40d75ri",
+      "q": 10
+     }
+    ],
+    "maj": 1795259899342,
+    "par": "Diego Herrera",
     "nom": "Coffre Patron Transfo",
     "icone": "🗄️",
     "delai": 7
@@ -22313,6 +22322,12 @@
     "nom": "ticket burger shot nord",
     "icone": "📦",
     "seuil": 30
+   },
+   {
+    "id": "pmwqbdrbrp7h",
+    "nom": "boule de noel",
+    "icone": "📦",
+    "seuil": 0
    }
   ]
  },
@@ -61939,9 +61954,9 @@
    "sem": 45
   }
  },
- "_cid": "zazmr5q134",
- "_maj": 1795259864825,
- "_rev": "9od15pyu1lt-mwqbe0et",
+ "_cid": "37e1rce1yhx",
+ "_maj": 1795259898981,
+ "_rev": "1h8h9rstml2-mwqbe4d9",
  "_majSec": {
   "fer": 1795097743732,
   "fact": 1795255713995,
@@ -61950,7 +61965,7 @@
   "sheets": 1795255686449,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1795259857520,
+  "journal": 1795259898981,
   "pending": 1793561085750,
   "prodDer": 1795210552257,
   "runners": 1794784703363,
@@ -61964,7 +61979,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794784680661,
   "profils": 1793561085750,
-  "_tables": 1795259847857,
+  "_tables": 1795259898981,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -61982,11 +61997,21 @@
   "historique": 1794923943457,
   "_evtFix1": 1795028752192,
   "_stkFix1": 1795207386387,
-  "stocks": 1795259857520
+  "stocks": 1795259898981
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1795259899342,
+   "u": "Diego Herrera",
+   "a": "Stock : coffre « Coffre Patron Transfo » recompté (2 produits, 37 unités)"
+  },
+  {
+   "t": 1795259883159,
+   "u": "Diego Herrera",
+   "a": "Stock : produit créé « boule de noel »"
+  },
   {
    "t": 1795259857881,
    "u": "Diego Herrera",
@@ -63476,16 +63501,6 @@
    "t": 1794574912636,
    "u": "?",
    "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1794571858643,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1794571858503,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
   }
  ],
  "prodDer": {
@@ -64109,7 +64124,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-21T11:18:14.933Z",
+  "maj": "2026-11-21T11:18:20.061Z",
   "semaine": 47,
   "totalBarils": 0,
   "ca": 0,
