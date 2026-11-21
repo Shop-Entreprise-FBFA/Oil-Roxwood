@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-21T10:30:34.658522+00:00",
+ "maj": "2026-11-21T10:34:32.616228+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -19,6 +19,22 @@
   "entreprise (Oil RoxWood) (13850)"
  ],
  "messages": [
+  {
+   "id": "1573647195968639047",
+   "t": "2026-11-21T10:32:08.470000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 644x Pétrole Raffiné pour 6440$ par Jack Berthier. 3220$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 644,
+   "montant": 6440,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1573646428159606809-0",
    "t": "2026-11-21T10:29:05.410000+00:00",
@@ -67605,54 +67621,6 @@
     "playercharacter": "Luc Rouza",
     "playerid": "382769",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1572559580179996735-0",
-   "t": "2026-11-18T10:30:20.659000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 5x Bidon d'essence du coffre de l'entreprise (Oil RoxWood)\nposition : -1841.12, 6524.03, 16.73\ntargetPosition : -1840.85, 6523.94, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 5843\nplayerDiscord : 826526979204841482\nplayerName : JumpyNewt1770\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : weapon_petrolcan",
-   "nom": "Diego Herrera",
-   "quantite": 5,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1841.12, 6524.03, 16.73",
-    "targetposition": "-1840.85, 6523.94, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "5843",
-    "playerdiscord": "826526979204841482",
-    "playername": "JumpyNewt1770",
-    "playercharacter": "Diego Herrera",
-    "playerid": "231487",
-    "itemid": "weapon_petrolcan"
-   }
-  },
-  {
-   "id": "1572559580179996735-1",
-   "t": "2026-11-18T10:30:20.659000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 5x Carte de visite du coffre de l'entreprise (Oil RoxWood)\nposition : -1841.12, 6524.03, 16.73\ntargetPosition : -1840.85, 6523.94, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 5843\nplayerDiscord : 826526979204841482\nplayerName : JumpyNewt1770\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : businessCard",
-   "nom": "Diego Herrera",
-   "quantite": 5,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood)",
-   "champs": {
-    "position": "-1841.12, 6524.03, 16.73",
-    "targetposition": "-1840.85, 6523.94, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "5843",
-    "playerdiscord": "826526979204841482",
-    "playername": "JumpyNewt1770",
-    "playercharacter": "Diego Herrera",
-    "playerid": "231487",
-    "itemid": "businessCard"
    }
   }
  ]
