@@ -9286,7 +9286,7 @@
     "idU": "116830",
     "arrivee": "2026-11-13",
     "discord": "518440900049764362",
-    "avert": "",
+    "avert": "1",
     "contrat": true,
     "recrut": "Diego Sypher",
     "dernierService": "2026-11-22",
@@ -23019,14 +23019,6 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
-  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -23050,6 +23042,14 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T00:06:23.240Z"
+  },
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -61288,6 +61288,21 @@
  "sanctions": {
   "liste": [
    {
+    "id": 1795369891373,
+    "nom": "Isaac jackson",
+    "discord": "518440900049764362",
+    "cat": "cond",
+    "st": "A1",
+    "issue": "",
+    "date": "2026-11-22",
+    "motif": "Conduite sur les rails ( entrée de recolte )",
+    "par": "Diego Herrera",
+    "conv": "",
+    "convDate": "",
+    "retiree": null,
+    "exam": null
+   },
+   {
     "id": 1795366264683,
     "nom": "urus salvatore",
     "discord": "1547960206896398370",
@@ -62629,6 +62644,16 @@
   ],
   "log": [
    {
+    "t": 1795369890450,
+    "u": "Diego Herrera",
+    "a": "Avert. 1 · Conduite inappropriée — « Conduite sur les rails ( entrée de recolte ) »",
+    "nom": "Isaac jackson",
+    "cat": "cond",
+    "st": "A1",
+    "act": "ajout",
+    "sid": 1795369891373
+   },
+   {
     "t": 1795366264345,
     "u": "Marco Bellini",
     "a": "Rappel oral · Conduite inappropriée — « déclaration de panne abusive, inadaptée aux situations de panne sèche. »",
@@ -63772,18 +63797,18 @@
    "sem": 45
   }
  },
- "_cid": "hrfvolow9ko",
- "_maj": 1795369873544,
- "_rev": "i4k1gzor3p-mws4vbfm",
+ "_cid": "m42mmmn5vqn",
+ "_maj": 1795369890137,
+ "_rev": "fmndp4s3ec5-mws4vm88",
  "_majSec": {
   "fer": 1795303339609,
   "fact": 1795288301876,
   "users": 1795355202825,
   "weeks": 1794784680661,
-  "sheets": 1795366453852,
+  "sheets": 1795369890109,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1795366269446,
+  "journal": 1795369890109,
   "pending": 1793561085750,
   "prodDer": 1795270452372,
   "runners": 1795260098039,
@@ -63797,7 +63822,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794784680661,
   "profils": 1793561085750,
-  "_tables": 1795369873544,
+  "_tables": 1795369890137,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -63810,7 +63835,7 @@
   "_ventesIgnore": 1793561085750,
   "_avertVus": 1793561085750,
   "_signeVus": 1795272484231,
-  "sanctions": 1795366269446,
+  "sanctions": 1795369890109,
   "_sancFix1": 1794493778197,
   "historique": 1794923943457,
   "_evtFix1": 1795028752192,
@@ -63820,6 +63845,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1795369890450,
+   "u": "Diego Herrera",
+   "a": "Sanction : Isaac jackson — Avert. 1 (Conduite inappropriée)"
+  },
   {
    "t": 1795366264345,
    "u": "Marco Bellini",
@@ -65314,11 +65344,6 @@
    "t": 1794645793630,
    "u": "?",
    "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1794644186566,
-   "u": "Julio Collins",
-   "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
   }
  ],
  "prodDer": {
@@ -65951,7 +65976,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-22T17:51:17.410Z",
+  "maj": "2026-11-22T17:51:31.400Z",
   "semaine": 47,
   "totalBarils": 145131,
   "ca": 725655,
@@ -71242,6 +71267,22 @@
     "id": 1795366264556,
     "statut": "fait",
     "rapport": "Rappel oral annoncé dans le ticket de sicario59150.."
+   },
+   {
+    "type": "sanction",
+    "payload": {
+     "discord": "518440900049764362",
+     "nom": "Isaac jackson",
+     "cat": "cond",
+     "catNom": "Conduite inappropriée",
+     "st": "A1",
+     "etape": "Avert. 1",
+     "rappel": false,
+     "motif": "Conduite sur les rails ( entrée de recolte )",
+     "par": "Diego Herrera",
+     "convocation": ""
+    },
+    "id": 1795369891464
    }
   ],
   "oilroxwood_coffres": [
