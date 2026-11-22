@@ -23019,14 +23019,6 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
-  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -23050,6 +23042,14 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T00:06:23.240Z"
+  },
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -61288,6 +61288,21 @@
  "sanctions": {
   "liste": [
    {
+    "id": 1795365090339,
+    "nom": "Salvatore Urus",
+    "discord": "",
+    "cat": "cond",
+    "st": "R",
+    "issue": "",
+    "date": "2026-11-22",
+    "motif": "déclaration de panne abusive, inadaptée aux situations de panne sèche.",
+    "par": "Marco Bellini",
+    "conv": "",
+    "convDate": "",
+    "retiree": null,
+    "exam": null
+   },
+   {
     "id": 1795347487617,
     "srcId": "1795339944544",
     "nom": "Lorenzo Rojas",
@@ -62599,6 +62614,16 @@
   ],
   "log": [
    {
+    "t": 1795365089982,
+    "u": "Marco Bellini",
+    "a": "Rappel oral · Conduite inappropriée — « déclaration de panne abusive, inadaptée aux situations de panne sèche. »",
+    "nom": "Salvatore Urus",
+    "cat": "cond",
+    "st": "R",
+    "act": "ajout",
+    "sid": 1795365090339
+   },
+   {
     "t": 1795347486618,
     "u": "⚫ Tyler Collins (Discord)",
     "a": "Rappel oral · Conduite inappropriée — « prend le terre plein a la transfo » (donnée sur Discord)",
@@ -63722,9 +63747,9 @@
    "sem": 45
   }
  },
- "_cid": "jbuokz3xfw9",
- "_maj": 1795365048882,
- "_rev": "3c4bmopva1e-mws20whs",
+ "_cid": "vnnjy3vhk2k",
+ "_maj": 1795365095191,
+ "_rev": "i0bknqhssfs-mws20vgp",
  "_majSec": {
   "fer": 1795303339609,
   "fact": 1795288301876,
@@ -63733,7 +63758,7 @@
   "sheets": 1795363979236,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1795363882885,
+  "journal": 1795365095191,
   "pending": 1793561085750,
   "prodDer": 1795270452372,
   "runners": 1795260098039,
@@ -63747,7 +63772,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794784680661,
   "profils": 1793561085750,
-  "_tables": 1795365037854,
+  "_tables": 1795365095191,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -63760,9 +63785,9 @@
   "_ventesIgnore": 1793561085750,
   "_avertVus": 1793561085750,
   "_signeVus": 1795272484231,
-  "sanctions": 1795347486381,
-  "historique": 1794923943457,
+  "sanctions": 1795365095191,
   "_sancFix1": 1794493778197,
+  "historique": 1794923943457,
   "_evtFix1": 1795028752192,
   "_stkFix1": 1795207386387,
   "stocks": 1795259898981
@@ -63770,6 +63795,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1795365089982,
+   "u": "Marco Bellini",
+   "a": "Sanction : Salvatore Urus — Rappel oral (Conduite inappropriée)"
+  },
   {
    "t": 1795363883583,
    "u": "William Rodriguez-Collins",
@@ -65264,11 +65294,6 @@
    "t": 1794644186442,
    "u": "?",
    "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
-  },
-  {
-   "t": 1794607790734,
-   "u": "Diego Herrera",
-   "a": "Vente rapide sans facture : 50 bidon(s) — Citoyen (vendeur : stella collins)"
   }
  ],
  "prodDer": {
@@ -65901,7 +65926,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-22T16:31:39.136Z",
+  "maj": "2026-11-22T16:31:37.801Z",
   "semaine": 47,
   "totalBarils": 145131,
   "ca": 725655,
