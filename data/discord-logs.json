@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-22T22:02:34.121845+00:00",
+ "maj": "2026-11-22T22:04:34.875080+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -18,6 +18,46 @@
   "entreprise (Oil RoxWood) (13850)"
  ],
  "messages": [
+  {
+   "id": "1574183764261605448",
+   "t": "2026-11-22T22:04:16.320000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 620x Pétrole Raffiné pour 6200$ par Booskap Ba. 3100$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 620,
+   "montant": 6200,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1574183486200221767",
+   "t": "2026-11-22T22:03:10.025000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 74x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood) (13846)\nposition : -3085.19, 6815.92, 44.73\ntargetPosition : -3084.39, 6815.87, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3481\nplayerDiscord : 1053366471574687844\nplayerName : SlowMouse3303\nplayerCharacter : Emma Collins-rodriguez\nplayerId : 227799\nitemId : oil",
+   "nom": "Emma Collins-rodriguez",
+   "quantite": 74,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood) (13846)",
+   "champs": {
+    "position": "-3085.19, 6815.92, 44.73",
+    "targetposition": "-3084.39, 6815.87, 43.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "3481",
+    "playerdiscord": "1053366471574687844",
+    "playername": "SlowMouse3303",
+    "playercharacter": "Emma Collins-rodriguez",
+    "playerid": "227799",
+    "itemid": "oil"
+   }
+  },
   {
    "id": "1574182485015658688",
    "t": "2026-11-22T21:59:11.324000+00:00",
@@ -94023,54 +94063,6 @@
    "texte": "Coffre\na retiré 6x Pétrole Brut du coffre de l'entreprise (Oil RoxWood) (13847)\nposition : -3089.09, 6814.44, 44.73\ntargetPosition : -3089.68, 6814.50, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 496\nplayerDiscord : 1053366471574687844\nplayerName : SlowMouse3303\nplayerCharacter : Emma Collins-rodriguez\nplayerId : 227799\nitemId : oil",
    "nom": "Emma Collins-rodriguez",
    "quantite": 6,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood) (13847)",
-   "champs": {
-    "position": "-3089.09, 6814.44, 44.73",
-    "targetposition": "-3089.68, 6814.50, 43.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "496",
-    "playerdiscord": "1053366471574687844",
-    "playername": "SlowMouse3303",
-    "playercharacter": "Emma Collins-rodriguez",
-    "playerid": "227799",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1573369366299283504-5",
-   "t": "2026-11-20T16:08:08.715000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 74x Pétrole Brut du coffre de l'entreprise (Oil RoxWood) (13847)\nposition : -3089.09, 6814.44, 44.73\ntargetPosition : -3089.68, 6814.50, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 496\nplayerDiscord : 1053366471574687844\nplayerName : SlowMouse3303\nplayerCharacter : Emma Collins-rodriguez\nplayerId : 227799\nitemId : oil",
-   "nom": "Emma Collins-rodriguez",
-   "quantite": 74,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood) (13847)",
-   "champs": {
-    "position": "-3089.09, 6814.44, 44.73",
-    "targetposition": "-3089.68, 6814.50, 43.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "496",
-    "playerdiscord": "1053366471574687844",
-    "playername": "SlowMouse3303",
-    "playercharacter": "Emma Collins-rodriguez",
-    "playerid": "227799",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1573369366299283504-6",
-   "t": "2026-11-20T16:08:08.715000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 4x Pétrole Brut du coffre de l'entreprise (Oil RoxWood) (13847)\nposition : -3089.09, 6814.44, 44.73\ntargetPosition : -3089.68, 6814.50, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 496\nplayerDiscord : 1053366471574687844\nplayerName : SlowMouse3303\nplayerCharacter : Emma Collins-rodriguez\nplayerId : 227799\nitemId : oil",
-   "nom": "Emma Collins-rodriguez",
-   "quantite": 4,
    "montant": null,
    "type": "coffre_retrait",
    "salon": "1245400913066066099",
