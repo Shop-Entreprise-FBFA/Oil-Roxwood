@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-22T07:50:29.732340+00:00",
+ "maj": "2026-11-22T08:12:34.047641+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -18,6 +18,27 @@
   "entreprise (Oil RoxWood) (13850)"
  ],
  "messages": [
+  {
+   "id": "1573974326204567603",
+   "t": "2026-11-22T08:12:02.396000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 4615\nplayerDiscord : 765099804262924289\nplayerName : SlowFrog6776\nplayerCharacter : Lorenzo Rojas\nplayerId : 255890\nvehiclePlate : LI7056LS\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Lorenzo Rojas",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "4615",
+    "playerdiscord": "765099804262924289",
+    "playername": "SlowFrog6776",
+    "playercharacter": "Lorenzo Rojas",
+    "playerid": "255890",
+    "vehicleplate": "LI7056LS",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1573968531408560222-0",
    "t": "2026-11-22T07:49:00.809000+00:00",
@@ -65652,54 +65673,6 @@
    "nom": null,
    "quantite": 65,
    "montant": 650,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1572886454554730607",
-   "t": "2026-11-19T08:09:13.583000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 137x Pétrole Raffiné pour 1370$ par Yanis Fekir. 685$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 137,
-   "montant": 1370,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1572885696010657816",
-   "t": "2026-11-19T08:06:12.732000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 137x Pétrole Raffiné pour 1370$ par Yanis Fekir. 685$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 137,
-   "montant": 1370,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1572884940620832829",
-   "t": "2026-11-19T08:03:12.633000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 137x Pétrole Raffiné pour 1370$ par Yanis Fekir. 685$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 137,
-   "montant": 1370,
    "type": "vente",
    "salon": "1245400913473179729",
    "champs": {
