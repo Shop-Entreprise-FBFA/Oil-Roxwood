@@ -63723,7 +63723,7 @@
   }
  },
  "_cid": "bot",
- "_maj": 1795347821474,
+ "_maj": 1795347824698,
  "_rev": "5kwkhs9cqpg-mwrrqijt",
  "_majSec": {
   "fer": 1795303339609,
@@ -63747,7 +63747,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794784680661,
   "profils": 1793561085750,
-  "_tables": 1795347821474,
+  "_tables": 1795347824698,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -73587,10 +73587,16 @@
      "debut": 1795291800,
      "nul": true,
      "score": true,
-     "etat": "ferme",
+     "etat": "termine",
      "votes": 23,
      "grille": "TournOil Roxwood",
-     "resultat": null
+     "resultat": {
+      "c": "b",
+      "s": [
+       26,
+       29
+      ]
+     }
     },
     {
      "id": 15,
@@ -73863,6 +73869,12 @@
      "champ": true,
      "lignes": [
       {
+       "id": "1346352248841568326",
+       "nom": "🟢 Elliot Adkins",
+       "pts": 5,
+       "bons": 5
+      },
+      {
        "id": "277203702530572298",
        "nom": "#277203702530572298",
        "pts": 5,
@@ -73871,12 +73883,6 @@
       {
        "id": "1226472675971436614",
        "nom": "🔴 Jason Palmer",
-       "pts": 4,
-       "bons": 4
-      },
-      {
-       "id": "1346352248841568326",
-       "nom": "🟢 Elliot Adkins",
        "pts": 4,
        "bons": 4
       },
@@ -73901,6 +73907,12 @@
       {
        "id": "1338776295575912581",
        "nom": "🟢 Darian Nguyen",
+       "pts": 4,
+       "bons": 4
+      },
+      {
+       "id": "1213482703349882880",
+       "nom": "🟢 Otto Jimminez",
        "pts": 4,
        "bons": 4
       },
@@ -73937,12 +73949,6 @@
       {
        "id": "702826845854498837",
        "nom": "🔵 Maxime Smith",
-       "pts": 3,
-       "bons": 3
-      },
-      {
-       "id": "1213482703349882880",
-       "nom": "🟢 Otto Jimminez",
        "pts": 3,
        "bons": 3
       },
@@ -73991,6 +73997,12 @@
       {
        "id": "317280511292735499",
        "nom": "🔵 Fred Berthier",
+       "pts": 1,
+       "bons": 1
+      },
+      {
+       "id": "707695913187016785",
+       "nom": "⚫ Laurent Roquel",
        "pts": 1,
        "bons": 1
       }
@@ -75841,7 +75853,7 @@
      "nom": "─── AUTRES ───"
     }
    ],
-   "maj": 1795347795
+   "maj": 1795347824
   }
  },
  "reunions": [],
