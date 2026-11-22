@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-22T21:40:32.468553+00:00",
+ "maj": "2026-11-22T21:44:35.059051+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -18,6 +18,70 @@
   "entreprise (Oil RoxWood) (13850)"
  ],
  "messages": [
+  {
+   "id": "1574178719000432702",
+   "t": "2026-11-22T21:44:13.436000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 324x Pétrole Raffiné pour 3240$ par Nass Toofast. 1620$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 324,
+   "montant": 3240,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1574178466645942453",
+   "t": "2026-11-22T21:43:13.270000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 74x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood) (13846)\nposition : -3085.19, 6815.92, 44.73\ntargetPosition : -3084.39, 6815.87, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3481\nplayerDiscord : 1053366471574687844\nplayerName : SlowMouse3303\nplayerCharacter : Emma Collins-rodriguez\nplayerId : 227799\nitemId : oil",
+   "nom": "Emma Collins-rodriguez",
+   "quantite": 74,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood) (13846)",
+   "champs": {
+    "position": "-3085.19, 6815.92, 44.73",
+    "targetposition": "-3084.39, 6815.87, 43.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "3481",
+    "playerdiscord": "1053366471574687844",
+    "playername": "SlowMouse3303",
+    "playercharacter": "Emma Collins-rodriguez",
+    "playerid": "227799",
+    "itemid": "oil"
+   }
+  },
+  {
+   "id": "1574177950897668176",
+   "t": "2026-11-22T21:41:10.306000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 74x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood) (13846)\nposition : -3085.19, 6815.92, 44.73\ntargetPosition : -3084.39, 6815.87, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3481\nplayerDiscord : 1053366471574687844\nplayerName : SlowMouse3303\nplayerCharacter : Emma Collins-rodriguez\nplayerId : 227799\nitemId : oil",
+   "nom": "Emma Collins-rodriguez",
+   "quantite": 74,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood) (13846)",
+   "champs": {
+    "position": "-3085.19, 6815.92, 44.73",
+    "targetposition": "-3084.39, 6815.87, 43.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "3481",
+    "playerdiscord": "1053366471574687844",
+    "playername": "SlowMouse3303",
+    "playercharacter": "Emma Collins-rodriguez",
+    "playerid": "227799",
+    "itemid": "oil"
+   }
+  },
   {
    "id": "1574177449229422736-0",
    "t": "2026-11-22T21:39:10.699000+00:00",
@@ -94044,64 +94108,6 @@
     "playercharacter": "Bene Salvador",
     "playerid": "116552",
     "vehicleplate": "XP1606YE",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1573354759870480536",
-   "t": "2026-11-20T15:10:06.271000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 98\nplayerDiscord : 513525283719217152\nplayerName : BoldSnaily0553\nplayerCharacter : Booskap Ba\nplayerId : 385179\nvehiclePlate : AY0298ZV\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Booskap Ba",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "98",
-    "playerdiscord": "513525283719217152",
-    "playername": "BoldSnaily0553",
-    "playercharacter": "Booskap Ba",
-    "playerid": "385179",
-    "vehicleplate": "AY0298ZV",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1573349507092062289",
-   "t": "2026-11-20T14:49:13.911000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 5592\nplayerDiscord : 1277928023571562579\nplayerName : JumpyAnt2860\nplayerCharacter : Jérome Johns\nplayerId : 385846\nvehiclePlate : AS5715VX\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Jérome Johns",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "5592",
-    "playerdiscord": "1277928023571562579",
-    "playername": "JumpyAnt2860",
-    "playercharacter": "Jérome Johns",
-    "playerid": "385846",
-    "vehicleplate": "AS5715VX",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1573348509669789817",
-   "t": "2026-11-20T14:45:16.107000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 749x Pétrole Raffiné pour 7490$ par Darian Nguyen. 3745$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 749,
-   "montant": 7490,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
     "jobid": "76",
     "jobname": "Oil RoxWood"
    }
