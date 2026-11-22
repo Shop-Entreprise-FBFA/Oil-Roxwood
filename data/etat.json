@@ -61288,6 +61288,21 @@
  "sanctions": {
   "liste": [
    {
+    "id": 1795366264683,
+    "nom": "urus salvatore",
+    "discord": "1547960206896398370",
+    "cat": "cond",
+    "st": "R",
+    "issue": "",
+    "date": "2026-11-22",
+    "motif": "déclaration de panne abusive, inadaptée aux situations de panne sèche.",
+    "par": "Marco Bellini",
+    "conv": "",
+    "convDate": "",
+    "retiree": null,
+    "exam": null
+   },
+   {
     "id": 1795365090339,
     "nom": "Salvatore Urus",
     "discord": "",
@@ -62614,6 +62629,16 @@
   ],
   "log": [
    {
+    "t": 1795366264345,
+    "u": "Marco Bellini",
+    "a": "Rappel oral · Conduite inappropriée — « déclaration de panne abusive, inadaptée aux situations de panne sèche. »",
+    "nom": "urus salvatore",
+    "cat": "cond",
+    "st": "R",
+    "act": "ajout",
+    "sid": 1795366264683
+   },
+   {
     "t": 1795365089982,
     "u": "Marco Bellini",
     "a": "Rappel oral · Conduite inappropriée — « déclaration de panne abusive, inadaptée aux situations de panne sèche. »",
@@ -63747,9 +63772,9 @@
    "sem": 45
   }
  },
- "_cid": "zi0klicgh3c",
- "_maj": 1795366218880,
- "_rev": "4m01xphmbbo-mws2oy0c",
+ "_cid": "vnnjy3vhk2k",
+ "_maj": 1795366269459,
+ "_rev": "av616s2tu1w-mws2pxl4",
  "_majSec": {
   "fer": 1795303339609,
   "fact": 1795288301876,
@@ -63758,7 +63783,7 @@
   "sheets": 1795363979236,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1795365095191,
+  "journal": 1795366269446,
   "pending": 1793561085750,
   "prodDer": 1795270452372,
   "runners": 1795260098039,
@@ -63772,7 +63797,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1794784680661,
   "profils": 1793561085750,
-  "_tables": 1795366218880,
+  "_tables": 1795366269459,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -63785,7 +63810,7 @@
   "_ventesIgnore": 1793561085750,
   "_avertVus": 1793561085750,
   "_signeVus": 1795272484231,
-  "sanctions": 1795365095191,
+  "sanctions": 1795366269446,
   "_sancFix1": 1794493778197,
   "historique": 1794923943457,
   "_evtFix1": 1795028752192,
@@ -63795,6 +63820,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1795366264345,
+   "u": "Marco Bellini",
+   "a": "Sanction : urus salvatore — Rappel oral (Conduite inappropriée)"
+  },
   {
    "t": 1795365089982,
    "u": "Marco Bellini",
@@ -65289,11 +65319,6 @@
    "t": 1794644186566,
    "u": "Julio Collins",
    "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1794644186442,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
   }
  ],
  "prodDer": {
@@ -65926,7 +65951,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-22T16:50:20.844Z",
+  "maj": "2026-11-22T16:51:06.952Z",
   "semaine": 47,
   "totalBarils": 145131,
   "ca": 725655,
@@ -71199,6 +71224,22 @@
     "id": 1795347843738,
     "statut": "fait",
     "rapport": "✅ Résultat enregistré : 20 bon(s) pronostic(s), 0 score(s) exact(s). Classement mis à jour."
+   },
+   {
+    "type": "sanction",
+    "payload": {
+     "discord": "1547960206896398370",
+     "nom": "urus salvatore",
+     "cat": "cond",
+     "catNom": "Conduite inappropriée",
+     "st": "R",
+     "etape": "Rappel oral",
+     "rappel": true,
+     "motif": "déclaration de panne abusive, inadaptée aux situations de panne sèche.",
+     "par": "Marco Bellini",
+     "convocation": ""
+    },
+    "id": 1795366264556
    }
   ],
   "oilroxwood_coffres": [
