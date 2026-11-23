@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-23T16:52:37.223150+00:00",
+ "maj": "2026-11-23T16:54:37.305134+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -17,6 +17,22 @@
   "entreprise (Oil RoxWood) (13850)"
  ],
  "messages": [
+  {
+   "id": "1574468115755180073",
+   "t": "2026-11-23T16:54:10.999000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 492x Pétrole Raffiné pour 4920$ par Tarik Benben. 2460$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 492,
+   "montant": 4920,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1574467065492938815",
    "t": "2026-11-23T16:50:00.597000+00:00",
@@ -93825,30 +93841,6 @@
    "coffre": "entreprise (Oil RoxWood) (13840)",
    "champs": {
     "position": "-1843.23, 6519.22, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "1483",
-    "playerdiscord": "815274462470995968",
-    "playername": "SlowCrab7549",
-    "playercharacter": "Bene Salvador",
-    "playerid": "116552",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1573440581802135625",
-   "t": "2026-11-20T20:51:07.814000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 156x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood) (13840)\nposition : -1843.93, 6517.60, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1483\nplayerDiscord : 815274462470995968\nplayerName : SlowCrab7549\nplayerCharacter : Bene Salvador\nplayerId : 116552\nitemId : refinedoil",
-   "nom": "Bene Salvador",
-   "quantite": 156,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood) (13840)",
-   "champs": {
-    "position": "-1843.93, 6517.60, 16.73",
     "targetposition": "-1843.83, 6518.10, 15.74",
     "jobid": "76",
     "jobname": "Oil RoxWood",
