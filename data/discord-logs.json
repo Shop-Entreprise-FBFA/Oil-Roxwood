@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-23T13:14:36.994976+00:00",
+ "maj": "2026-11-23T13:16:36.221953+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -17,6 +17,22 @@
   "entreprise (Oil RoxWood) (13850)"
  ],
  "messages": [
+  {
+   "id": "1574413244502769715",
+   "t": "2026-11-23T13:16:08.673000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 742x Pétrole Raffiné pour 7420$ par Darian Nguyen. 3710$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 742,
+   "montant": 7420,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1574412761947963435-0",
    "t": "2026-11-23T13:14:13.623000+00:00",
@@ -93871,30 +93887,6 @@
   },
   {
    "id": "1573419707472674983-1",
-   "t": "2026-11-20T19:28:10.986000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 75x Pétrole Brut du coffre de l'entreprise (Oil RoxWood) (13846)\nposition : -3084.29, 6815.14, 44.73\ntargetPosition : -3084.39, 6815.87, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 2096\nplayerDiscord : 377179662172028930\nplayerName : QuietAnt0438\nplayerCharacter : Jeff Beaumont\nplayerId : 382764\nitemId : oil",
-   "nom": "Jeff Beaumont",
-   "quantite": 75,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood) (13846)",
-   "champs": {
-    "position": "-3084.29, 6815.14, 44.73",
-    "targetposition": "-3084.39, 6815.87, 43.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "2096",
-    "playerdiscord": "377179662172028930",
-    "playername": "QuietAnt0438",
-    "playercharacter": "Jeff Beaumont",
-    "playerid": "382764",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1573419707472674983-2",
    "t": "2026-11-20T19:28:10.986000+00:00",
    "auteur": "Logs - Coffre",
    "texte": "Coffre\na retiré 75x Pétrole Brut du coffre de l'entreprise (Oil RoxWood) (13846)\nposition : -3084.29, 6815.14, 44.73\ntargetPosition : -3084.39, 6815.87, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 2096\nplayerDiscord : 377179662172028930\nplayerName : QuietAnt0438\nplayerCharacter : Jeff Beaumont\nplayerId : 382764\nitemId : oil",
