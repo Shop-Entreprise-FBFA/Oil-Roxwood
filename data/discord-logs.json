@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-23T21:56:35.693539+00:00",
+ "maj": "2026-11-23T21:58:34.509571+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -18,6 +18,22 @@
   "entreprise (Oil RoxWood) (13850)"
  ],
  "messages": [
+  {
+   "id": "1574544371611738233",
+   "t": "2026-11-23T21:57:11.812000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 584x Pétrole Raffiné pour 5840$ par Flavio Bellini. 2920$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 584,
+   "montant": 5840,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1574543574593306667-0",
    "t": "2026-11-23T21:54:01.788000+00:00",
@@ -93816,30 +93832,6 @@
    "quantite": 116,
    "montant": null,
    "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood) (13842)",
-   "champs": {
-    "position": "-1840.59, 6523.40, 16.73",
-    "targetposition": "-1840.85, 6523.94, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "4968",
-    "playerdiscord": "826526979204841482",
-    "playername": "JumpyNewt1770",
-    "playercharacter": "Diego Herrera",
-    "playerid": "231487",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1573664515482976357-2",
-   "t": "2026-11-21T11:40:57.764000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 116x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood) (13842)\nposition : -1840.59, 6523.40, 16.73\ntargetPosition : -1840.85, 6523.94, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 4968\nplayerDiscord : 826526979204841482\nplayerName : JumpyNewt1770\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : refinedoil",
-   "nom": "Diego Herrera",
-   "quantite": 116,
-   "montant": null,
-   "type": "coffre_depot",
    "salon": "1245400913066066099",
    "coffre": "entreprise (Oil RoxWood) (13842)",
    "champs": {
