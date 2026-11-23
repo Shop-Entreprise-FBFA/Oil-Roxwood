@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-23T20:32:35.452779+00:00",
+ "maj": "2026-11-23T20:34:35.466747+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -18,6 +18,27 @@
   "entreprise (Oil RoxWood) (13850)"
  ],
  "messages": [
+  {
+   "id": "1574523186362458204",
+   "t": "2026-11-23T20:33:00.855000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 2944\nplayerDiscord : 198789252329373706\nplayerName : Jack Berthier\nplayerCharacter : Jack Berthier\nplayerId : 276642\nvehiclePlate : GB1899JF\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Jack Berthier",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "2944",
+    "playerdiscord": "198789252329373706",
+    "playername": "Jack Berthier",
+    "playercharacter": "Jack Berthier",
+    "playerid": "276642",
+    "vehicleplate": "GB1899JF",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1574522958246977717",
    "t": "2026-11-23T20:32:06.468000+00:00",
@@ -93879,30 +93900,6 @@
   },
   {
    "id": "1573646370601173062-7",
-   "t": "2026-11-21T10:28:51.687000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 10x Document dans le coffre de l'entreprise (Oil RoxWood) (13850)\nposition : -1255.62, -1438.51, 4.36\ntargetPosition : -1255.33, -1439.12, 3.38\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 4968\nplayerDiscord : 826526979204841482\nplayerName : JumpyNewt1770\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : imagesPlaceholder",
-   "nom": "Diego Herrera",
-   "quantite": 10,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood) (13850)",
-   "champs": {
-    "position": "-1255.62, -1438.51, 4.36",
-    "targetposition": "-1255.33, -1439.12, 3.38",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "4968",
-    "playerdiscord": "826526979204841482",
-    "playername": "JumpyNewt1770",
-    "playercharacter": "Diego Herrera",
-    "playerid": "231487",
-    "itemid": "imagesPlaceholder"
-   }
-  },
-  {
-   "id": "1573646370601173062-8",
    "t": "2026-11-21T10:28:51.687000+00:00",
    "auteur": "Logs - Coffre",
    "texte": "Coffre\ndépot de 10x Document dans le coffre de l'entreprise (Oil RoxWood) (13850)\nposition : -1255.62, -1438.51, 4.36\ntargetPosition : -1255.33, -1439.12, 3.38\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 4968\nplayerDiscord : 826526979204841482\nplayerName : JumpyNewt1770\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : imagesPlaceholder",
