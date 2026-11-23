@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-23T11:02:33.470012+00:00",
+ "maj": "2026-11-23T11:04:31.645224+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -17,6 +17,22 @@
   "entreprise (Oil RoxWood) (13850)"
  ],
  "messages": [
+  {
+   "id": "1574380024033710147",
+   "t": "2026-11-23T11:04:08.296000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 328x Pétrole Raffiné pour 3280$ par Lorenzo Rojas. 1640$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 328,
+   "montant": 3280,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1574379518410494035",
    "t": "2026-11-23T11:02:07.746000+00:00",
@@ -93871,30 +93887,6 @@
     "playercharacter": "Emma Collins-rodriguez",
     "playerid": "227799",
     "itemid": "oil"
-   }
-  },
-  {
-   "id": "1573384459682840769-0",
-   "t": "2026-11-20T17:08:07.258000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 66x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood) (13838)\nposition : -1842.18, 6521.55, 16.73\ntargetPosition : -1842.58, 6521.16, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 496\nplayerDiscord : 1053366471574687844\nplayerName : SlowMouse3303\nplayerCharacter : Emma Collins-rodriguez\nplayerId : 227799\nitemId : refinedoil",
-   "nom": "Emma Collins-rodriguez",
-   "quantite": 66,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood) (13838)",
-   "champs": {
-    "position": "-1842.18, 6521.55, 16.73",
-    "targetposition": "-1842.58, 6521.16, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "496",
-    "playerdiscord": "1053366471574687844",
-    "playername": "SlowMouse3303",
-    "playercharacter": "Emma Collins-rodriguez",
-    "playerid": "227799",
-    "itemid": "refinedoil"
    }
   }
  ]
