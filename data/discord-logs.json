@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-23T21:36:35.693534+00:00",
+ "maj": "2026-11-23T21:38:35.335265+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -18,6 +18,22 @@
   "entreprise (Oil RoxWood) (13850)"
  ],
  "messages": [
+  {
+   "id": "1574539577396305972",
+   "t": "2026-11-23T21:38:08.782000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 659x Pétrole Raffiné pour 6590$ par Lorenzo Rojas. 3295$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 659,
+   "montant": 6590,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1574539059584303301",
    "t": "2026-11-23T21:36:05.326000+00:00",
@@ -93864,30 +93880,6 @@
     "vehicleplate": "IL4818AV",
     "jobid": "76",
     "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1573659010287140918-0",
-   "t": "2026-11-21T11:19:05.223000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 20x Appât à poisson du coffre de l'entreprise (Oil RoxWood) (13841)\nposition : -1848.92, 6499.28, 16.73\ntargetPosition : -1849.11, 6498.65, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 4968\nplayerDiscord : 826526979204841482\nplayerName : JumpyNewt1770\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : fishbait",
-   "nom": "Diego Herrera",
-   "quantite": 20,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood) (13841)",
-   "champs": {
-    "position": "-1848.92, 6499.28, 16.73",
-    "targetposition": "-1849.11, 6498.65, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "4968",
-    "playerdiscord": "826526979204841482",
-    "playername": "JumpyNewt1770",
-    "playercharacter": "Diego Herrera",
-    "playerid": "231487",
-    "itemid": "fishbait"
    }
   }
  ]
