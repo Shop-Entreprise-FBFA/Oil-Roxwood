@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-23T16:48:32.698146+00:00",
+ "maj": "2026-11-23T16:50:35.964141+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -17,6 +17,51 @@
   "entreprise (Oil RoxWood) (13850)"
  ],
  "messages": [
+  {
+   "id": "1574467065492938815",
+   "t": "2026-11-23T16:50:00.597000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 225\nplayerDiscord : 1499848677986930882\nplayerName : CleverBeetle1673\nplayerCharacter : Clara Soules\nplayerId : 380202\nvehiclePlate : BM4391ZM\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Clara Soules",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "225",
+    "playerdiscord": "1499848677986930882",
+    "playername": "CleverBeetle1673",
+    "playercharacter": "Clara Soules",
+    "playerid": "380202",
+    "vehicleplate": "BM4391ZM",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1574466815529197579",
+   "t": "2026-11-23T16:49:01.001000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\na retiré 1x Bidon d'essence du coffre de l'entreprise (Oil RoxWood) (13841)\nposition : -1848.57, 6499.24, 16.73\ntargetPosition : -1849.11, 6498.65, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 549\nplayerDiscord : 826526979204841482\nplayerName : JumpyNewt1770\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : weapon_petrolcan",
+   "nom": "Diego Herrera",
+   "quantite": 1,
+   "montant": null,
+   "type": "coffre_retrait",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood) (13841)",
+   "champs": {
+    "position": "-1848.57, 6499.24, 16.73",
+    "targetposition": "-1849.11, 6498.65, 15.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "549",
+    "playerdiscord": "826526979204841482",
+    "playername": "JumpyNewt1770",
+    "playercharacter": "Diego Herrera",
+    "playerid": "231487",
+    "itemid": "weapon_petrolcan"
+   }
+  },
   {
    "id": "1574466562218266646-0",
    "t": "2026-11-23T16:48:00.607000+00:00",
@@ -93813,38 +93858,6 @@
     "playercharacter": "Bene Salvador",
     "playerid": "116552",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1573440363237089411",
-   "t": "2026-11-20T20:50:15.704000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 182x Pétrole Raffiné pour 1820$ par Salvatore Urus. 910$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 182,
-   "montant": 1820,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1573440098345685083",
-   "t": "2026-11-20T20:49:12.549000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 656x Pétrole Raffiné pour 6560$ par Bene Salvador. 3280$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 656,
-   "montant": 6560,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
