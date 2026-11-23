@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-23T22:44:35.011691+00:00",
+ "maj": "2026-11-23T22:46:37.280764+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -18,6 +18,22 @@
   "entreprise (Oil RoxWood) (13850)"
  ],
  "messages": [
+  {
+   "id": "1574556678102319206",
+   "t": "2026-11-23T22:46:05.908000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 288x Pétrole Raffiné pour 2880$ par Max Bennett. 1440$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 288,
+   "montant": 2880,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1574552881309425709-0",
    "t": "2026-11-23T22:31:00.682000+00:00",
@@ -93777,30 +93793,6 @@
     "playercharacter": "Diego Herrera",
     "playerid": "231487",
     "itemid": "oil"
-   }
-  },
-  {
-   "id": "1573675884584640529-0",
-   "t": "2026-11-21T12:26:08.369000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 107x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood) (13840)\nposition : -1843.25, 6518.56, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 5242\nplayerDiscord : 1226472675971436614\nplayerName : Jason Palmer┃Visum\nplayerCharacter : Jason Palmer\nplayerId : 362532\nitemId : refinedoil",
-   "nom": "Jason Palmer",
-   "quantite": 107,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood) (13840)",
-   "champs": {
-    "position": "-1843.25, 6518.56, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "5242",
-    "playerdiscord": "1226472675971436614",
-    "playername": "Jason Palmer┃Visum",
-    "playercharacter": "Jason Palmer",
-    "playerid": "362532",
-    "itemid": "refinedoil"
    }
   }
  ]
