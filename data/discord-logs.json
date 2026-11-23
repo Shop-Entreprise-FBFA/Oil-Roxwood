@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-23T15:24:34.693094+00:00",
+ "maj": "2026-11-23T15:26:34.811065+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -17,6 +17,27 @@
   "entreprise (Oil RoxWood) (13850)"
  ],
  "messages": [
+  {
+   "id": "1574445926406299679",
+   "t": "2026-11-23T15:26:00.646000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 355\nplayerDiscord : 377179662172028930\nplayerName : QuietAnt0438\nplayerCharacter : Jeff Beaumont\nplayerId : 382764\nvehiclePlate : XP1606YE\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Jeff Beaumont",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "355",
+    "playerdiscord": "377179662172028930",
+    "playername": "QuietAnt0438",
+    "playercharacter": "Jeff Beaumont",
+    "playerid": "382764",
+    "vehicleplate": "XP1606YE",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1574443160313004116",
    "t": "2026-11-23T15:15:01.158000+00:00",
@@ -93834,30 +93855,6 @@
    "texte": "Coffre\na retiré 20x Document du coffre de l'entreprise (Oil RoxWood) (13842)\nposition : -1840.75, 6525.68, 16.73\ntargetPosition : -1840.85, 6523.94, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 2565\nplayerDiscord : 1053366471574687844\nplayerName : SlowMouse3303\nplayerCharacter : Emma Collins-rodriguez\nplayerId : 227799\nitemId : imagesPlaceholder",
    "nom": "Emma Collins-rodriguez",
    "quantite": 20,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood) (13842)",
-   "champs": {
-    "position": "-1840.75, 6525.68, 16.73",
-    "targetposition": "-1840.85, 6523.94, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "2565",
-    "playerdiscord": "1053366471574687844",
-    "playername": "SlowMouse3303",
-    "playercharacter": "Emma Collins-rodriguez",
-    "playerid": "227799",
-    "itemid": "imagesPlaceholder"
-   }
-  },
-  {
-   "id": "1573432353261363372-2",
-   "t": "2026-11-20T20:18:25.977000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 16x Document du coffre de l'entreprise (Oil RoxWood) (13842)\nposition : -1840.75, 6525.68, 16.73\ntargetPosition : -1840.85, 6523.94, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 2565\nplayerDiscord : 1053366471574687844\nplayerName : SlowMouse3303\nplayerCharacter : Emma Collins-rodriguez\nplayerId : 227799\nitemId : imagesPlaceholder",
-   "nom": "Emma Collins-rodriguez",
-   "quantite": 16,
    "montant": null,
    "type": "coffre_retrait",
    "salon": "1245400913066066099",
