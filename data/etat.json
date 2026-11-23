@@ -14075,6 +14075,27 @@
     "client": "Employé — DAVEN PARKER ⚡",
     "quantite": 2,
     "qui": "Laurent Roquel"
+   },
+   {
+    "date": "2026-11-23",
+    "client": "LTD Mirror Park",
+    "quantite": 167,
+    "qui": "Emma Collins-rodriguez",
+    "fact": 253222
+   },
+   {
+    "date": "2026-11-23",
+    "client": "LTD Mirror Park",
+    "quantite": 167,
+    "qui": "Laurent Roquel",
+    "fact": 253222
+   },
+   {
+    "date": "2026-11-23",
+    "client": "LTD Mirror Park",
+    "quantite": 166,
+    "qui": "William Rodriguez-Collins",
+    "fact": 253222
    }
   ],
   "collection": [
@@ -16232,7 +16253,7 @@
     "rib": "20021",
     "tel": "931",
     "adresse": "Los Santos",
-    "lastCmd": "2026-11-03",
+    "lastCmd": "2026-11-23",
     "type": "entreprise",
     "salon": "1461345077187051570"
    },
@@ -16640,8 +16661,38 @@
     "prix": 150
    }
   ],
-  "compteur": 253222,
+  "compteur": 253223,
   "factures": [
+   {
+    "num": 253222,
+    "date": "2026-11-23",
+    "client": "LTD Mirror Park",
+    "emetteur": "Emma Collins-rodriguez, Laurent Roquel, William Rodriguez-Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 500,
+      "tva": 0,
+      "pu": 180,
+      "ht": 90000,
+      "ttc": 90000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 90000,
+    "ttc": 90000,
+    "poids": 1000,
+    "statut": "attente",
+    "envoi": {
+     "t": 1795457853347,
+     "par": "Emma Collins-rodriguez",
+     "statut": "en_cours",
+     "ordre": 1795457854065,
+     "rapport": ""
+    }
+   },
    {
     "num": 253221,
     "date": "2026-11-21",
@@ -64443,14 +64494,14 @@
   }
  },
  "_cid": "iwhq1nf4x4g",
- "_maj": 1795457814695,
- "_rev": "k2ors07o2yb-mwtl894q",
+ "_maj": 1795457853347,
+ "_rev": "ukrlhldpud-mwtl8yq4",
  "_majSec": {
   "fer": 1795303339609,
-  "fact": 1795288301876,
+  "fact": 1795457853347,
   "users": 1795457814268,
   "weeks": 1795434602527,
-  "sheets": 1795454961328,
+  "sheets": 1795457852751,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
   "journal": 1795457814268,
@@ -64467,7 +64518,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1795434602527,
   "profils": 1793561085750,
-  "_tables": 1795457814147,
+  "_tables": 1795457853324,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -66545,13 +66596,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-23T18:17:00.986Z",
+  "maj": "2026-11-23T18:17:34.156Z",
   "semaine": 48,
   "totalBarils": 0,
   "ca": 0,
   "objectif": 375000,
   "effectif": 84,
-  "clientsServis": 204,
+  "clientsServis": 205,
   "theme": "",
   "top3": [],
   "runners": [],
@@ -72584,6 +72635,48 @@
     "id": 1795433477151,
     "statut": "fait",
     "rapport": "Avert. 1 annoncé dans le ticket de rasalghul_667."
+   },
+   {
+    "type": "facture_ticket",
+    "payload": {
+     "num": 253222,
+     "salon": "1461345077187051570",
+     "reedition": false,
+     "facture": {
+      "num": 253222,
+      "date": "2026-11-23",
+      "client": "LTD Mirror Park",
+      "emetteur": "Emma Collins-rodriguez, Laurent Roquel, William Rodriguez-Collins",
+      "postop": false,
+      "lignes": [
+       {
+        "ref": "CMD",
+        "qte": 500,
+        "tva": 0,
+        "pu": 180,
+        "ht": 90000,
+        "ttc": 90000,
+        "desc": "bidons d'essence "
+       }
+      ],
+      "offert": 0,
+      "ht": 90000,
+      "ttc": 90000,
+      "poids": 1000,
+      "statut": "attente"
+     },
+     "client": {
+      "nom": "LTD Mirror Park",
+      "rib": "20021",
+      "tel": "931",
+      "adresse": "Los Santos",
+      "lastCmd": "2026-11-23",
+      "type": "entreprise",
+      "salon": "1461345077187051570"
+     },
+     "par": "Emma Collins-rodriguez"
+    },
+    "id": 1795457854065
    }
   ],
   "oilroxwood_coffres": [
