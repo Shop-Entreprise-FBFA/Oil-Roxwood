@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-23T17:26:34.098352+00:00",
+ "maj": "2026-11-23T17:28:39.782771+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -18,6 +18,27 @@
   "entreprise (Oil RoxWood) (13850)"
  ],
  "messages": [
+  {
+   "id": "1574476379532165375",
+   "t": "2026-11-23T17:27:01.237000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 134\nplayerDiscord : 765099804262924289\nplayerName : SlowFrog6776\nplayerCharacter : Lorenzo Rojas\nplayerId : 255890\nvehiclePlate : GB1899JF\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Lorenzo Rojas",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "134",
+    "playerdiscord": "765099804262924289",
+    "playername": "SlowFrog6776",
+    "playercharacter": "Lorenzo Rojas",
+    "playerid": "255890",
+    "vehicleplate": "GB1899JF",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1574475623580041390",
    "t": "2026-11-23T17:24:01.004000+00:00",
@@ -93860,22 +93881,6 @@
     "playercharacter": "Gérard Smith",
     "playerid": "273365",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1573455971299369132",
-   "t": "2026-11-20T21:52:16.956000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 649x Pétrole Raffiné pour 6490$ par Maruis Caplant. 3245$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 649,
-   "montant": 6490,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
