@@ -14620,6 +14620,20 @@
     "quantite": 100,
     "qui": "Diego Herrera",
     "fact": 253223
+   },
+   {
+    "date": "2026-11-24",
+    "client": "LTD Strawberry",
+    "quantite": 100,
+    "qui": "Laurent Roquel",
+    "fact": 253224
+   },
+   {
+    "date": "2026-11-24",
+    "client": "LTD Strawberry",
+    "quantite": 100,
+    "qui": "Tyler Collins",
+    "fact": 253224
    }
   ],
   "collection": [
@@ -16821,7 +16835,7 @@
     "rib": "20020",
     "tel": "930",
     "adresse": "Los Santos",
-    "lastCmd": "2026-11-14",
+    "lastCmd": "2026-11-24",
     "type": "entreprise",
     "salon": "1247271293317812264"
    },
@@ -17185,8 +17199,38 @@
     "prix": 150
    }
   ],
-  "compteur": 253224,
+  "compteur": 253225,
   "factures": [
+   {
+    "num": 253224,
+    "date": "2026-11-24",
+    "client": "LTD Strawberry",
+    "emetteur": "Laurent Roquel, Tyler Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD",
+      "qte": 200,
+      "tva": 0,
+      "pu": 180,
+      "ht": 36000,
+      "ttc": 36000,
+      "desc": "bidons d'essence "
+     }
+    ],
+    "offert": 0,
+    "ht": 36000,
+    "ttc": 36000,
+    "poids": 400,
+    "statut": "attente",
+    "envoi": {
+     "t": 1795553424380,
+     "par": "Laurent Roquel",
+     "statut": "en_cours",
+     "ordre": 1795553424653,
+     "rapport": ""
+    }
+   },
    {
     "num": 253223,
     "date": "2026-11-23",
@@ -22350,14 +22394,6 @@
    "public": true,
    "maj": "2026-09-12T12:21:43.292Z"
   },
-  "william rodriguez-collins": {
-   "nom": "William Rodriguez-collins",
-   "photo": "",
-   "titre": "",
-   "bio": "",
-   "public": true,
-   "maj": "2026-09-12T20:11:53.537Z"
-  },
   "laurent roquel": {
    "nom": "Laurent Roquel",
    "photo": "",
@@ -22381,6 +22417,14 @@
    "bio": "",
    "public": true,
    "maj": "2026-09-12T00:06:23.240Z"
+  },
+  "william rodriguez-collins": {
+   "nom": "William Rodriguez-collins",
+   "photo": "",
+   "titre": "",
+   "bio": "",
+   "public": true,
+   "maj": "2026-09-12T20:11:53.537Z"
   },
   "thomas boyer": {
    "nom": "Thomas Boyer",
@@ -65049,15 +65093,15 @@
    "sem": 46
   }
  },
- "_cid": "8cfz6cgjgb3",
- "_maj": 1795553396323,
- "_rev": "87m812mhmd-mwv64u9i",
+ "_cid": "s54rnh9h52q",
+ "_maj": 1795553424380,
+ "_rev": "0qk9pivqc8j-mwv65d8j",
  "_majSec": {
   "fer": 1795303339609,
-  "fact": 1795458843561,
+  "fact": 1795553424380,
   "users": 1795538366598,
   "weeks": 1795434602527,
-  "sheets": 1795541768958,
+  "sheets": 1795553423801,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
   "journal": 1795544850047,
@@ -65074,7 +65118,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1795434602527,
   "profils": 1793561085750,
-  "_tables": 1795553396323,
+  "_tables": 1795553424357,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -67182,13 +67226,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-24T20:49:59.862Z",
+  "maj": "2026-11-24T20:50:24.451Z",
   "semaine": 48,
   "totalBarils": 22138,
   "ca": 110690,
   "objectif": 375000,
   "effectif": 90,
-  "clientsServis": 206,
+  "clientsServis": 207,
   "theme": "",
   "top3": [
    {
@@ -73322,6 +73366,48 @@
     "id": 1795458818231,
     "statut": "fait",
     "rapport": "Facture n°253223 postee dans le salon 1556904652900147243."
+   },
+   {
+    "type": "facture_ticket",
+    "payload": {
+     "num": 253224,
+     "salon": "1247271293317812264",
+     "reedition": false,
+     "facture": {
+      "num": 253224,
+      "date": "2026-11-24",
+      "client": "LTD Strawberry",
+      "emetteur": "Laurent Roquel, Tyler Collins",
+      "postop": false,
+      "lignes": [
+       {
+        "ref": "CMD",
+        "qte": 200,
+        "tva": 0,
+        "pu": 180,
+        "ht": 36000,
+        "ttc": 36000,
+        "desc": "bidons d'essence "
+       }
+      ],
+      "offert": 0,
+      "ht": 36000,
+      "ttc": 36000,
+      "poids": 400,
+      "statut": "attente"
+     },
+     "client": {
+      "nom": "LTD Strawberry",
+      "rib": "20020",
+      "tel": "930",
+      "adresse": "Los Santos",
+      "lastCmd": "2026-11-24",
+      "type": "entreprise",
+      "salon": "1247271293317812264"
+     },
+     "par": "Laurent Roquel"
+    },
+    "id": 1795553424653
    }
   ],
   "oilroxwood_coffres": [
