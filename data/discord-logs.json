@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-24T14:50:33.891741+00:00",
+ "maj": "2026-11-24T14:52:34.566159+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -18,6 +18,27 @@
   "entreprise (Oil RoxWood) (13850)"
  ],
  "messages": [
+  {
+   "id": "1574799755408711712",
+   "t": "2026-11-24T14:52:00.054000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 5096\nplayerDiscord : 715788859811561515\nplayerName : JumpyFish9521\nplayerCharacter : Seamus Irish\nplayerId : 386371\nvehiclePlate : AS5715VX\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Seamus Irish",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "5096",
+    "playerdiscord": "715788859811561515",
+    "playername": "JumpyFish9521",
+    "playercharacter": "Seamus Irish",
+    "playerid": "386371",
+    "vehicleplate": "AS5715VX",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1574799262527525017",
    "t": "2026-11-24T14:50:02.542000+00:00",
@@ -93546,30 +93567,6 @@
    "coffre": "entreprise (Oil RoxWood) (13841)",
    "champs": {
     "position": "-1848.83, 6499.62, 16.61",
-    "targetposition": "-1849.11, 6498.65, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "321",
-    "playerdiscord": "826526979204841482",
-    "playername": "JumpyNewt1770",
-    "playercharacter": "Diego Herrera",
-    "playerid": "231487",
-    "itemid": "oil"
-   }
-  },
-  {
-   "id": "1573720656523169850-4",
-   "t": "2026-11-21T15:24:02.831000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 60x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood) (13841)\nposition : -1848.83, 6499.62, 16.73\ntargetPosition : -1849.11, 6498.65, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 321\nplayerDiscord : 826526979204841482\nplayerName : JumpyNewt1770\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : oil",
-   "nom": "Diego Herrera",
-   "quantite": 60,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood) (13841)",
-   "champs": {
-    "position": "-1848.83, 6499.62, 16.73",
     "targetposition": "-1849.11, 6498.65, 15.75",
     "jobid": "76",
     "jobname": "Oil RoxWood",
