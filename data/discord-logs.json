@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-24T13:54:42.120140+00:00",
+ "maj": "2026-11-24T13:56:36.610968+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -18,6 +18,30 @@
   "entreprise (Oil RoxWood) (13850)"
  ],
  "messages": [
+  {
+   "id": "1574785664417796168",
+   "t": "2026-11-24T13:56:00.500000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 56x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood) (13846)\nposition : -3084.49, 6815.76, 44.73\ntargetPosition : -3084.39, 6815.87, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 4778\nplayerDiscord : 826526979204841482\nplayerName : JumpyNewt1770\nplayerCharacter : Diego Herrera\nplayerId : 231487\nitemId : oil",
+   "nom": "Diego Herrera",
+   "quantite": 56,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood) (13846)",
+   "champs": {
+    "position": "-3084.49, 6815.76, 44.73",
+    "targetposition": "-3084.39, 6815.87, 43.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "4778",
+    "playerdiscord": "826526979204841482",
+    "playername": "JumpyNewt1770",
+    "playercharacter": "Diego Herrera",
+    "playerid": "231487",
+    "itemid": "oil"
+   }
+  },
   {
    "id": "1574785159385972787",
    "t": "2026-11-24T13:54:00.091000+00:00",
@@ -93590,27 +93614,6 @@
     "playercharacter": "Diego Herrera",
     "playerid": "231487",
     "itemid": "oil"
-   }
-  },
-  {
-   "id": "1573719147072720959",
-   "t": "2026-11-21T15:18:02.950000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 31\nplayerDiscord : 1564757178865422440\nplayerName : FAFA\nplayerCharacter : Jalil Eden\nplayerId : 386201\nvehiclePlate : AY0298ZV\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Jalil Eden",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "31",
-    "playerdiscord": "1564757178865422440",
-    "playername": "FAFA",
-    "playercharacter": "Jalil Eden",
-    "playerid": "386201",
-    "vehicleplate": "AY0298ZV",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
