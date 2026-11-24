@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-24T22:14:34.953311+00:00",
+ "maj": "2026-11-24T22:18:33.360968+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -19,6 +19,46 @@
   "entreprise (Oil RoxWood) (13850)"
  ],
  "messages": [
+  {
+   "id": "1574912027938398279",
+   "t": "2026-11-24T22:18:07.911000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 74x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood) (13847)\nposition : -3088.71, 6814.80, 44.73\ntargetPosition : -3089.68, 6814.50, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3183\nplayerDiscord : 1053366471574687844\nplayerName : SlowMouse3303\nplayerCharacter : Emma Collins-rodriguez\nplayerId : 227799\nitemId : oil",
+   "nom": "Emma Collins-rodriguez",
+   "quantite": 74,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood) (13847)",
+   "champs": {
+    "position": "-3088.71, 6814.80, 44.73",
+    "targetposition": "-3089.68, 6814.50, 43.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "3183",
+    "playerdiscord": "1053366471574687844",
+    "playername": "SlowMouse3303",
+    "playercharacter": "Emma Collins-rodriguez",
+    "playerid": "227799",
+    "itemid": "oil"
+   }
+  },
+  {
+   "id": "1574911788003369081",
+   "t": "2026-11-24T22:17:10.706000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 648x Pétrole Raffiné pour 6480$ par Damien Mienda. 3240$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 648,
+   "montant": 6480,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1574911031220641868-0",
    "t": "2026-11-24T22:14:10.275000+00:00",
@@ -91645,59 +91685,6 @@
     "playercharacter": "Sapu Kirubakaran",
     "playerid": "385606",
     "vehicleplate": "DO6888RF",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1573824869269774469-0",
-   "t": "2026-11-21T22:18:09.086000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 312x Pétrole Raffiné pour 3120$ par Freddy Carlson. 1560$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 312,
-   "montant": 3120,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1573824869269774469-1",
-   "t": "2026-11-21T22:18:09.086000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 296x Pétrole Raffiné pour 2960$ par Sapu Kirubakaran. 1480$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 296,
-   "montant": 2960,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1573824840727531602",
-   "t": "2026-11-21T22:18:02.281000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 3273\nplayerDiscord : 1213482703349882880\nplayerName : SlowFish0877\nplayerCharacter : Otto Jimminez\nplayerId : 337319\nvehiclePlate : AS5715VX\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Otto Jimminez",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "3273",
-    "playerdiscord": "1213482703349882880",
-    "playername": "SlowFish0877",
-    "playercharacter": "Otto Jimminez",
-    "playerid": "337319",
-    "vehicleplate": "AS5715VX",
     "jobid": "76",
     "jobname": "Oil RoxWood"
    }
