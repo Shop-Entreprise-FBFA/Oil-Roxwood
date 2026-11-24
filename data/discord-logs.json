@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-24T22:42:32.739074+00:00",
+ "maj": "2026-11-24T22:44:35.629154+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -19,6 +19,46 @@
   "entreprise (Oil RoxWood) (13850)"
  ],
  "messages": [
+  {
+   "id": "1574918563372863489",
+   "t": "2026-11-24T22:44:06.080000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 64x Pétrole Brut dans le coffre de l'entreprise (Oil RoxWood) (13847)\nposition : -3090.15, 6814.35, 44.73\ntargetPosition : -3089.68, 6814.50, 43.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 3183\nplayerDiscord : 1053366471574687844\nplayerName : SlowMouse3303\nplayerCharacter : Emma Collins-rodriguez\nplayerId : 227799\nitemId : oil",
+   "nom": "Emma Collins-rodriguez",
+   "quantite": 64,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood) (13847)",
+   "champs": {
+    "position": "-3090.15, 6814.35, 44.73",
+    "targetposition": "-3089.68, 6814.50, 43.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "3183",
+    "playerdiscord": "1053366471574687844",
+    "playername": "SlowMouse3303",
+    "playercharacter": "Emma Collins-rodriguez",
+    "playerid": "227799",
+    "itemid": "oil"
+   }
+  },
+  {
+   "id": "1574918309629927516",
+   "t": "2026-11-24T22:43:05.583000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 223x Pétrole Raffiné pour 2230$ par Damien Mienda. 1115$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 223,
+   "montant": 2230,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1574918057271496744",
    "t": "2026-11-24T22:42:05.416000+00:00",
@@ -91684,111 +91724,6 @@
     "playername": "QuickBeetle4997",
     "playercharacter": "William Rodriguez-collins",
     "playerid": "46658",
-    "itemid": "iron"
-   }
-  },
-  {
-   "id": "1573831446278307861",
-   "t": "2026-11-21T22:44:17.167000+00:00",
-   "auteur": "Logs - Achat fer",
-   "texte": "Achat fer\na acheté 152x fer pour 760$\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 2392\nplayerDiscord : 707695913187016785\nplayerName : ShySpider2463\nplayerCharacter : Laurent Roquel\nplayerId : 282695\nitemId : iron",
-   "nom": "Laurent Roquel",
-   "quantite": 152,
-   "montant": 760,
-   "type": "achat_fer",
-   "salon": "1247565070423167100",
-   "champs": {
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "2392",
-    "playerdiscord": "707695913187016785",
-    "playername": "ShySpider2463",
-    "playercharacter": "Laurent Roquel",
-    "playerid": "282695",
-    "itemid": "iron"
-   }
-  },
-  {
-   "id": "1573831181957464199-0",
-   "t": "2026-11-21T22:43:14.148000+00:00",
-   "auteur": "Logs - Achat fer",
-   "texte": "Achat fer\na acheté 130x fer pour 650$\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 2022\nplayerDiscord : 235844738656239616\nplayerName : QuickBeetle4997\nplayerCharacter : William Rodriguez-collins\nplayerId : 46658\nitemId : iron",
-   "nom": "William Rodriguez-collins",
-   "quantite": 130,
-   "montant": 650,
-   "type": "achat_fer",
-   "salon": "1247565070423167100",
-   "champs": {
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "2022",
-    "playerdiscord": "235844738656239616",
-    "playername": "QuickBeetle4997",
-    "playercharacter": "William Rodriguez-collins",
-    "playerid": "46658",
-    "itemid": "iron"
-   }
-  },
-  {
-   "id": "1573831181957464199-1",
-   "t": "2026-11-21T22:43:14.148000+00:00",
-   "auteur": "Logs - Achat fer",
-   "texte": "Achat fer\na acheté 125x fer pour 625$\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 2392\nplayerDiscord : 707695913187016785\nplayerName : ShySpider2463\nplayerCharacter : Laurent Roquel\nplayerId : 282695\nitemId : iron",
-   "nom": "Laurent Roquel",
-   "quantite": 125,
-   "montant": 625,
-   "type": "achat_fer",
-   "salon": "1247565070423167100",
-   "champs": {
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "2392",
-    "playerdiscord": "707695913187016785",
-    "playername": "ShySpider2463",
-    "playercharacter": "Laurent Roquel",
-    "playerid": "282695",
-    "itemid": "iron"
-   }
-  },
-  {
-   "id": "1573831181957464199-2",
-   "t": "2026-11-21T22:43:14.148000+00:00",
-   "auteur": "Logs - Achat fer",
-   "texte": "Achat fer\na acheté 44x fer pour 220$\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 2022\nplayerDiscord : 235844738656239616\nplayerName : QuickBeetle4997\nplayerCharacter : William Rodriguez-collins\nplayerId : 46658\nitemId : iron",
-   "nom": "William Rodriguez-collins",
-   "quantite": 44,
-   "montant": 220,
-   "type": "achat_fer",
-   "salon": "1247565070423167100",
-   "champs": {
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "2022",
-    "playerdiscord": "235844738656239616",
-    "playername": "QuickBeetle4997",
-    "playercharacter": "William Rodriguez-collins",
-    "playerid": "46658",
-    "itemid": "iron"
-   }
-  },
-  {
-   "id": "1573831181957464199-3",
-   "t": "2026-11-21T22:43:14.148000+00:00",
-   "auteur": "Logs - Achat fer",
-   "texte": "Achat fer\na acheté 100x fer pour 500$\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 2392\nplayerDiscord : 707695913187016785\nplayerName : ShySpider2463\nplayerCharacter : Laurent Roquel\nplayerId : 282695\nitemId : iron",
-   "nom": "Laurent Roquel",
-   "quantite": 100,
-   "montant": 500,
-   "type": "achat_fer",
-   "salon": "1247565070423167100",
-   "champs": {
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "2392",
-    "playerdiscord": "707695913187016785",
-    "playername": "ShySpider2463",
-    "playercharacter": "Laurent Roquel",
-    "playerid": "282695",
     "itemid": "iron"
    }
   }
