@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-25T10:34:34.506833+00:00",
+ "maj": "2026-11-25T10:38:35.684957+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -19,6 +19,22 @@
   "entreprise (Oil RoxWood) (13850)"
  ],
  "messages": [
+  {
+   "id": "1575097983840682047",
+   "t": "2026-11-25T10:37:03.253000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 105x Pétrole Raffiné pour 1050$ par Jason Palmer. 525$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 105,
+   "montant": 1050,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1575096979388764231",
    "t": "2026-11-25T10:33:03.773000+00:00",
@@ -86296,46 +86312,6 @@
    "coffre": "entreprise (Oil RoxWood) (13848)",
    "champs": {
     "position": "-1850.18, 6514.84, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "4771",
-    "playerdiscord": "1564757178865422440",
-    "playername": "FAFA",
-    "playercharacter": "Jalil Eden",
-    "playerid": "386201",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1574011073495965789",
-   "t": "2026-11-22T10:38:03.633000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 648x Pétrole Raffiné pour 6480$ par Jack Berthier. 3240$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 648,
-   "montant": 6480,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1574011064566288468",
-   "t": "2026-11-22T10:38:01.504000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 133x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood) (13848)\nposition : -1851.07, 6514.96, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 4771\nplayerDiscord : 1564757178865422440\nplayerName : FAFA\nplayerCharacter : Jalil Eden\nplayerId : 386201\nitemId : refinedoil",
-   "nom": "Jalil Eden",
-   "quantite": 133,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood) (13848)",
-   "champs": {
-    "position": "-1851.07, 6514.96, 16.73",
     "targetposition": "-1850.63, 6515.15, 15.75",
     "jobid": "76",
     "jobname": "Oil RoxWood",
