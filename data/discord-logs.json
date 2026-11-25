@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-25T10:38:35.684957+00:00",
+ "maj": "2026-11-25T10:42:42.457358+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -19,6 +19,22 @@
   "entreprise (Oil RoxWood) (13850)"
  ],
  "messages": [
+  {
+   "id": "1575098984622588015",
+   "t": "2026-11-25T10:41:01.858000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 74x Pétrole Raffiné pour 740$ par Jason Palmer. 370$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 74,
+   "montant": 740,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1575097983840682047",
    "t": "2026-11-25T10:37:03.253000+00:00",
@@ -86272,54 +86288,6 @@
     "playername": "Jason Palmer┃Visum",
     "playercharacter": "Jason Palmer",
     "playerid": "362532",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1574011563319361648",
-   "t": "2026-11-22T10:40:00.416000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 50x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood) (13848)\nposition : -1850.08, 6515.62, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 4771\nplayerDiscord : 1564757178865422440\nplayerName : FAFA\nplayerCharacter : Jalil Eden\nplayerId : 386201\nitemId : refinedoil",
-   "nom": "Jalil Eden",
-   "quantite": 50,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood) (13848)",
-   "champs": {
-    "position": "-1850.08, 6515.62, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "4771",
-    "playerdiscord": "1564757178865422440",
-    "playername": "FAFA",
-    "playercharacter": "Jalil Eden",
-    "playerid": "386201",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1574011318011175044",
-   "t": "2026-11-22T10:39:01.930000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 133x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood) (13848)\nposition : -1850.18, 6514.84, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 4771\nplayerDiscord : 1564757178865422440\nplayerName : FAFA\nplayerCharacter : Jalil Eden\nplayerId : 386201\nitemId : refinedoil",
-   "nom": "Jalil Eden",
-   "quantite": 133,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood) (13848)",
-   "champs": {
-    "position": "-1850.18, 6514.84, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "4771",
-    "playerdiscord": "1564757178865422440",
-    "playername": "FAFA",
-    "playercharacter": "Jalil Eden",
-    "playerid": "386201",
     "itemid": "refinedoil"
    }
   }
