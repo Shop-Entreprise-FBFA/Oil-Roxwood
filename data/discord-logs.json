@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-25T22:26:34.007357+00:00",
+ "maj": "2026-11-25T22:28:34.543757+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -19,6 +19,22 @@
   "entreprise (Oil RoxWood) (13850)"
  ],
  "messages": [
+  {
+   "id": "1575276929299386419",
+   "t": "2026-11-25T22:28:07.175000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 635x Pétrole Raffiné pour 6350$ par Victor White. 3175$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 635,
+   "montant": 6350,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1575276433796890718",
    "t": "2026-11-25T22:26:09.038000+00:00",
@@ -69375,27 +69391,6 @@
    "salon": "1245400913473179729",
    "champs": {
     "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1574189769569603625",
-   "t": "2026-11-22T22:28:08.097000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 3194\nplayerDiscord : 277539308850642944\nplayerName : riusma\nplayerCharacter : Freddy Carlson\nplayerId : 385612\nvehiclePlate : ZG7875QV\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Freddy Carlson",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "3194",
-    "playerdiscord": "277539308850642944",
-    "playername": "riusma",
-    "playercharacter": "Freddy Carlson",
-    "playerid": "385612",
-    "vehicleplate": "ZG7875QV",
     "jobid": "76",
     "jobname": "Oil RoxWood"
    }
