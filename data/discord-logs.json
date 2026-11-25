@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-25T19:22:35.299690+00:00",
+ "maj": "2026-11-25T19:26:33.683436+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -19,6 +19,27 @@
   "entreprise (Oil RoxWood) (13850)"
  ],
  "messages": [
+  {
+   "id": "1575230869092700343",
+   "t": "2026-11-25T19:25:05.566000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 2356\nplayerDiscord : 593431852291850281\nplayerName : BoldFish7448\nplayerCharacter : Tyler Collins\nplayerId : 209236\nvehiclePlate : AS5715VX\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Tyler Collins",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "2356",
+    "playerdiscord": "593431852291850281",
+    "playername": "BoldFish7448",
+    "playercharacter": "Tyler Collins",
+    "playerid": "209236",
+    "vehicleplate": "AS5715VX",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1575229842830655573-0",
    "t": "2026-11-25T19:21:00.886000+00:00",
@@ -65652,118 +65673,6 @@
     "playercharacter": "Laurent Roquel",
     "playerid": "282695",
     "itemid": "oil"
-   }
-  },
-  {
-   "id": "1574143992159801457",
-   "t": "2026-11-22T19:26:13.912000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 278x Pétrole Raffiné pour 2780$ par Maruis Caplant. 1390$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 278,
-   "montant": 2780,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1574143721329656003-0",
-   "t": "2026-11-22T19:25:09.341000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 149x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood) (13840)\nposition : -1842.95, 6518.25, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 2418\nplayerDiscord : 815274462470995968\nplayerName : SlowCrab7549\nplayerCharacter : Bene Salvador\nplayerId : 116552\nitemId : refinedoil",
-   "nom": "Bene Salvador",
-   "quantite": 149,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood) (13840)",
-   "champs": {
-    "position": "-1842.95, 6518.25, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "2418",
-    "playerdiscord": "815274462470995968",
-    "playername": "SlowCrab7549",
-    "playercharacter": "Bene Salvador",
-    "playerid": "116552",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1574143721329656003-1",
-   "t": "2026-11-22T19:25:09.341000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 140x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood) (13840)\nposition : -1842.80, 6518.06, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 2418\nplayerDiscord : 815274462470995968\nplayerName : SlowCrab7549\nplayerCharacter : Bene Salvador\nplayerId : 116552\nitemId : refinedoil",
-   "nom": "Bene Salvador",
-   "quantite": 140,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood) (13840)",
-   "champs": {
-    "position": "-1842.80, 6518.06, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "2418",
-    "playerdiscord": "815274462470995968",
-    "playername": "SlowCrab7549",
-    "playercharacter": "Bene Salvador",
-    "playerid": "116552",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1574143721329656003-2",
-   "t": "2026-11-22T19:25:09.341000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 140x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood) (13840)\nposition : -1842.80, 6518.06, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 2418\nplayerDiscord : 815274462470995968\nplayerName : SlowCrab7549\nplayerCharacter : Bene Salvador\nplayerId : 116552\nitemId : refinedoil",
-   "nom": "Bene Salvador",
-   "quantite": 140,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood) (13840)",
-   "champs": {
-    "position": "-1842.80, 6518.06, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "2418",
-    "playerdiscord": "815274462470995968",
-    "playername": "SlowCrab7549",
-    "playercharacter": "Bene Salvador",
-    "playerid": "116552",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1574143721329656003-3",
-   "t": "2026-11-22T19:25:09.341000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 35x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood) (13840)\nposition : -1843.15, 6518.20, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 2418\nplayerDiscord : 815274462470995968\nplayerName : SlowCrab7549\nplayerCharacter : Bene Salvador\nplayerId : 116552\nitemId : refinedoil",
-   "nom": "Bene Salvador",
-   "quantite": 35,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood) (13840)",
-   "champs": {
-    "position": "-1843.15, 6518.20, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "2418",
-    "playerdiscord": "815274462470995968",
-    "playername": "SlowCrab7549",
-    "playercharacter": "Bene Salvador",
-    "playerid": "116552",
-    "itemid": "refinedoil"
    }
   }
  ]
