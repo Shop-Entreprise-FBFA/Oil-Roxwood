@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-25T08:20:41.809521+00:00",
+ "maj": "2026-11-25T08:40:34.860410+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -19,6 +19,27 @@
   "entreprise (Oil RoxWood) (13850)"
  ],
  "messages": [
+  {
+   "id": "1575068540984102985",
+   "t": "2026-11-25T08:40:03.529000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 4496\nplayerDiscord : 612206513200562196\nplayerName : LoudCat8750\nplayerCharacter : Gérard Smith\nplayerId : 273365\nvehiclePlate : FE3726MZ\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Gérard Smith",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "4496",
+    "playerdiscord": "612206513200562196",
+    "playername": "LoudCat8750",
+    "playercharacter": "Gérard Smith",
+    "playerid": "273365",
+    "vehicleplate": "FE3726MZ",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1575063505474813958-0",
    "t": "2026-11-25T08:20:02.970000+00:00",
@@ -86700,78 +86721,6 @@
     "itemid": "refinedoil",
     "jobid": "76",
     "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1573981113196478475",
-   "t": "2026-11-22T08:39:00.541000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 88x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood) (13848)\nposition : -1850.12, 6514.35, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 4599\nplayerDiscord : 1383749459866812476\nplayerName : QuickBat6585\nplayerCharacter : Marco Sanchez\nplayerId : 142012\nitemId : refinedoil",
-   "nom": "Marco Sanchez",
-   "quantite": 88,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood) (13848)",
-   "champs": {
-    "position": "-1850.12, 6514.35, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "4599",
-    "playerdiscord": "1383749459866812476",
-    "playername": "QuickBat6585",
-    "playercharacter": "Marco Sanchez",
-    "playerid": "142012",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1573980861445972031-0",
-   "t": "2026-11-22T08:38:00.519000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 141x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood) (13848)\nposition : -1850.28, 6514.81, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 4599\nplayerDiscord : 1383749459866812476\nplayerName : QuickBat6585\nplayerCharacter : Marco Sanchez\nplayerId : 142012\nitemId : refinedoil",
-   "nom": "Marco Sanchez",
-   "quantite": 141,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood) (13848)",
-   "champs": {
-    "position": "-1850.28, 6514.81, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "4599",
-    "playerdiscord": "1383749459866812476",
-    "playername": "QuickBat6585",
-    "playercharacter": "Marco Sanchez",
-    "playerid": "142012",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1573980861445972031-1",
-   "t": "2026-11-22T08:38:00.519000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 141x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood) (13848)\nposition : -1850.85, 6514.91, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 4599\nplayerDiscord : 1383749459866812476\nplayerName : QuickBat6585\nplayerCharacter : Marco Sanchez\nplayerId : 142012\nitemId : refinedoil",
-   "nom": "Marco Sanchez",
-   "quantite": 141,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood) (13848)",
-   "champs": {
-    "position": "-1850.85, 6514.91, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "4599",
-    "playerdiscord": "1383749459866812476",
-    "playername": "QuickBat6585",
-    "playercharacter": "Marco Sanchez",
-    "playerid": "142012",
-    "itemid": "refinedoil"
    }
   }
  ]
