@@ -59,7 +59,6 @@ window.ROXWOOD_CFG = {
     </button>
     <div id="lg_denied" style="display:none"></div>
     <p id="lg_hint" style="display:none">Premier lancement : le premier connecté via Discord devient le compte Direction.</p>
-    <a class="retour" href="index.html">← Retour au site Oil Roxwood</a>
   </div>
 </div>
 
@@ -96,7 +95,7 @@ window.ROXWOOD_CFG = {
 <!-- ============ APP ============ -->
 <div id="app">
   <header id="topbarApp">
-    <div class="brand"><a href="index.html" title="Retourner sur le site public" style="display:flex;align-items:center;gap:11px;text-decoration:none;color:inherit;min-width:0"><span class="logo-wrap"><img id="brandLogo" src="assets/logo.png?v=2" alt="" width="32" height="32" style="object-fit:contain"></span> <span>OIL <b>ROXWOOD</b><small>ESPACE MEMBRE <span id="syncDot" title="État de la synchro — cliquer pour régler le jeton" style="display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--muted);margin-left:5px;vertical-align:middle;cursor:pointer"></span></small></span></a></div>
+    <div class="brand"><a href="#" onclick="show('accueil');return false" title="Accueil" style="display:flex;align-items:center;gap:11px;text-decoration:none;color:inherit;min-width:0"><span class="logo-wrap"><img id="brandLogo" src="assets/logo.png?v=2" alt="" width="32" height="32" style="object-fit:contain"></span> <span>OIL <b>ROXWOOD</b><small>ESPACE MEMBRE <span id="syncDot" title="État de la synchro — cliquer pour régler le jeton" style="display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--muted);margin-left:5px;vertical-align:middle;cursor:pointer"></span></small></span></a></div>
     <nav id="navTop" aria-label="Navigation principale">
       <button class="nav-item" data-view="accueil"><span class="txt">Accueil</span></button>
       <button class="nav-item" data-view="rh"><span class="txt">RH</span></button>
@@ -154,7 +153,6 @@ window.ROXWOOD_CFG = {
     </div>
     <div class="nav-grp">
     <div class="nav-sec" data-sec="vitrine">Vitrine</div>
-    <button class="nav-item" data-view="produits">🛢️ <span class="txt">Nouveaux produits</span></button>
     </div>
     <div class="nav-grp">
     <div class="nav-sec" data-sec="perso">Perso</div>
@@ -274,7 +272,6 @@ purgeSupprimees();
 migrerPerms();
 migrerRoles4();
 migrerAffiches();
-migrerProduits();
 appliquerGrades();   // les réglages de la direction priment sur les valeurs d'usine
 // Réinitialisation unique du mot de passe (juillet 2026) : retour à « roxwood ».
 if(!localStorage.getItem('orx_pwfix1')){
@@ -964,7 +961,7 @@ const PERMS={
              'ftablette','fcompta','frecues','bilan','cloture','semaine',
              'overview','felig','historique',
              'quotashist',
-             'produits','profil','moi','agenda','affiches',
+             'profil','moi','agenda','affiches',
              'dlogs','journal','params','maj'],
 
   // RH : les personnes et ce qu'on leur doit. Ni compta, ni facturation.
@@ -984,20 +981,20 @@ const PERMS={
   // Assistant de direction : le bras droit. Tout ce que voit la Direction, sauf
   //      les deux gestes qui n'appartiennent qu'au patron : clôturer la semaine
   //      (irréversible, elle fige les salaires) et changer les Paramètres.
-  assistdir:['accueil','rh','commercial','comptable','overview','effectif','avertissements','evenements','semaine','historique','ftablette','felig','fventes','frh','integration','fcompta','factures','relances','bilan','prodder','stocks','quotascom','frecues','moi','produits','profil','quotashist','agenda','affiches','maj','dlogs','journal'],
+  assistdir:['accueil','rh','commercial','comptable','overview','effectif','avertissements','evenements','semaine','historique','ftablette','felig','fventes','frh','integration','fcompta','factures','relances','bilan','prodder','stocks','quotascom','frecues','moi','profil','quotashist','agenda','affiches','maj','dlogs','journal'],
 
   // Commercial : le commerce, rien d'autre.
-  commercial:['accueil','commercial','overview','fventes','factures','relances','quotascom','prodder','stocks','moi','produits','profil','quotashist','agenda','affiches','maj'],
+  commercial:['accueil','commercial','overview','fventes','factures','relances','quotascom','prodder','stocks','moi','profil','quotashist','agenda','affiches','maj'],
 
   // Responsable commercial : pour l'instant exactement un commercial. Le rôle
   //      existe pour qu'on puisse lui ouvrir des cases sans les ouvrir à toute
   //      l'équipe — Paramètres → Permissions par rôle, colonne par colonne.
-  respcom:  ['accueil','commercial','overview','fventes','factures','relances','quotascom','avertissements','prodder','stocks','moi','produits','profil','quotashist','agenda','affiches','maj'],
+  respcom:  ['accueil','commercial','overview','fventes','factures','relances','quotascom','avertissements','prodder','stocks','moi','profil','quotashist','agenda','affiches','maj'],
 
   // Responsable Runner : il encadre la production au quotidien. Effectif,
   //      éligibilité, tablette et logs — mais ni la paie détaillée, ni les
   //      factures, ni les fiches du personnel.
-  resprunner:['accueil','rh','commercial','comptable','overview','effectif','avertissements','semaine','historique','felig','ftablette','prodder','moi','profil','quotashist','agenda','affiches','maj','dlogs'],
+  resprunner:['accueil','rh','commercial','comptable','overview','effectif','avertissements','evenements','semaine','historique','felig','integration','ftablette','prodder','moi','profil','quotashist','agenda','affiches','maj','dlogs'],
 
   // Runner : lecture de l'entreprise et son espace personnel.
   membre:   ['accueil','rh','overview','effectif','moi','profil','quotashist','agenda','affiches','maj']
@@ -1142,26 +1139,6 @@ function migrerAccueil(){
     if(touche) n++;
   });
   if(n) jlog(`Accueil : page de lancement et hubs de pôle ouverts à ${n} rôle(s) aux permissions personnalisées`);
-  return n>0;
-}
-
-/* Même reprise pour « Nouveaux produits », mais réservée aux rôles qui l'ont
-   d'usine : le catalogue de la vitrine n'est pas l'affaire de tout le monde. */
-function migrerProduits(){
-  if(S._prodFix1) return false;
-  S._prodFix1=true;
-  const c=S.settings&&S.settings.permsCustom;
-  if(!c||typeof c!=='object') return false;
-  const CONCERNES=['direction','assistdir','respcom','commercial'];
-  let n=0;
-  CONCERNES.forEach(role=>{
-    const l=c[role];
-    if(!Array.isArray(l)||!l.length||l.includes('produits')) return;
-    const i=l.indexOf('profil');
-    if(i>=0) l.splice(i,0,'produits'); else l.push('produits');
-    n++;
-  });
-  if(n) jlog(`Nouveaux produits : rubrique ouverte à ${n} rôle(s) aux permissions personnalisées`);
   return n>0;
 }
 
@@ -1367,7 +1344,6 @@ function enter(){
       chgEtape('Relevé des feuilles', 52);
       await ensureSheets();
       corrigerRecruteursInverses();
-      verifierEquipePubliee();                                  // liste publique de l'équipe à jour ? (sans bloquer l'ouverture)
       chgEtape('Comptage des barils', 80);
       const r=isMembre()?null:syncRunners(true);
       if(!S.settings.semaine) S.settings.semaine=semaineCal(); // idem : jamais de bascule automatique
@@ -1384,7 +1360,7 @@ function logout(){
 }
 
 /* ---- Canari de version : prévient les onglets restés sur une vieille version ---- */
-const APP_VERSION='C-135';
+const APP_VERSION='C-136';
 /* Le bandeau ne doit dire qu'une chose : « une version plus récente existe ».
    Il comparait deux chaînes avec !==, donc il s'allumait aussi dans l'autre
    sens — quand la page ouverte était PLUS récente que version.json, ce qui
@@ -1872,7 +1848,6 @@ function show(v){
   if(migrerPerms()&&!isMembre()){ save(); sbQueue(); }
   if((migrerPermsSanc()|migrerPermsEvt()|migrerPermsStk())&&!isMembre()){ save(); sbQueue(); }       // listes de permissions citant d'anciennes rubriques
   if(migrerAffiches()&&!isMembre()){ save(); sbQueue(); }    // rubrique Affiches ajoutée après coup
-  if(migrerProduits()&&!isMembre()){ save(); sbQueue(); }    // rubrique Nouveaux produits, idem
   if(migrerAccueil()&&!isMembre()){ save(); sbQueue(); }     // page Accueil + hubs de pôle, idem
   if(!isMembre()){                                           // sanctions données avec /avertissement sur Discord
     const sa=importerSanctions();
@@ -1893,7 +1868,7 @@ function show(v){
   document.querySelectorAll('.nav-item[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===v||(sysV&&!!b.closest('#navTop')&&b.dataset.view==='params')));
   if(v!=='params') delete $('#main').dataset.ptab;
   destroyCharts();
-  ({accueil,rh,commercial,comptable,overview,effectif,semaine,historique,cloture,ftablette,felig,fventes,frh,integration,fcompta,factures,relances,bilan,prodder,quotascom,frecues,moi,profil,quotashist,agenda,affiches,produits,maj,dlogs,journal,params,avertissements,evenements,stocks})[v]();
+  ({accueil,rh,commercial,comptable,overview,effectif,semaine,historique,cloture,ftablette,felig,fventes,frh,integration,fcompta,factures,relances,bilan,prodder,quotascom,frecues,moi,profil,quotashist,agenda,affiches,maj,dlogs,journal,params,avertissements,evenements,stocks})[v]();
   if(sysV) $('#main').insertAdjacentHTML('afterbegin',paramsTabsHTML(v));
   try{ applyRO(); }catch(e){}
   restaureEcran(repere);
@@ -2012,7 +1987,6 @@ function overview(){
   const CARTES=[
     {emoji:'✅',titre:'Éligibilité',sub:'Éligibilité des runners aux montées de grade',view:'felig',couleur:col},
     {emoji:'📈',titre:'Historique',sub:'Historique des semaines clôturées',view:'historique',couleur:col},
-    {emoji:'🛢️',titre:'Nouveaux produits',sub:'Produits à afficher sur la vitrine',view:'produits',couleur:col},
     {emoji:'📅',titre:'Mon agenda',sub:'Ton agenda et celui de l’équipe',view:'agenda',couleur:col},
     {emoji:'🖼️',titre:'Affiches',sub:'Affiches et visuels de l’entreprise',view:'affiches',couleur:col},
     {emoji:'📊',titre:'Quotas',sub:'Quotas sur les 3 dernières semaines',view:'quotashist',couleur:col},
@@ -2025,9 +1999,6 @@ function overview(){
   ${CARTES.length?cartesHTML(CARTES):''}
   <div class="topbar">
     <div><h2>Vue d'ensemble</h2><div class="sub">Semaine ${S.settings.semaine} · ${weekRange()}</div></div>
-    <div style="display:flex;gap:10px;align-items:center">
-      <button class="btn btn-gold" onclick="publishStats()">📊 Publier sur le site</button>
-    </div>
   </div>
   <div class="grid g4" style="margin-bottom:18px">
     <div class="panel kpi link" onclick="show('effectif')" onkeydown="actKey(event)" tabindex="0" role="button" title="Ouvrir l'Effectif"><div class="lbl">Effectif</div><div class="val">${R.length}</div><div class="delta">${R.filter(r=>r.grade===3&&!r.poste).length} expert(s)${R.filter(r=>r.grade===GR_RESP&&!r.poste).length?` · ${R.filter(r=>r.grade===GR_RESP&&!r.poste).length} resp. runner`:''}</div></div>
@@ -3452,41 +3423,6 @@ function effectifActifSet(){
   return vus;
 }
 function effectifPublie(){ return effectifActifSet().size; }
-/* Remet la liste publique « Visages de l'équipe » à jour sans attendre qu'on enregistre autre chose.
-   Cette liste n'est recalculée QUE lorsqu'un admin sauvegarde le dashboard (elle part dans le paquet _statsPub, que le bot
-   recopie sur le site). Après un changement de direction, elle restait donc périmée des heures. À l'ouverture du dashboard,
-   un admin avec jeton compare la liste PUBLIÉE (fichier public) à la direction réelle ; s'il y a un écart, il enregistre une fois :
-   le paquet est recalculé et le bot republie. Au plus une vérification toutes les 20 min et par navigateur. */
-async function verifierEquipePubliee(){
-  try{
-    if(!RoxwoodGH.peutEcrire()||isMembre()) return;
-    if(!(S.sheets&&S.sheets.rh)) return;                       // sans les fiches RH, la liste calculée serait incomplète
-    const dernier=+(localStorage.getItem('orx_equipe_verif')||0);
-    if(Date.now()-dernier<20*60*1000) return;
-    try{ await alignerRolesBot(); }catch(e){}                   // départs Discord pris en compte avant de comparer
-    const r=await fetch('data/stats-public.json?ts='+Date.now(),{cache:'no-store'}); if(!r.ok) return;
-    const pub=((await r.json()).equipe||[]);
-    const sig=l=>JSON.stringify(l.map(x=>[x.nom,x.titre,x.photo||'']).sort((a,b)=>String(a[0]).localeCompare(String(b[0]))));
-    if(sig(pub)===sig(equipeDirection())) return;               // déjà à jour
-    localStorage.setItem('orx_equipe_verif',String(Date.now()));
-    jlog('Visages de l’équipe : liste publique périmée, republication demandée ('+equipeDirection().length+' personne(s))');
-    save(); sbQueue();
-  }catch(e){ console.warn('[OilRoxwood] verifierEquipePubliee',e); }
-}
-function equipeDirection(){
-  const noms=new Map();                                   // clé normalisée -> nom affiché
-  (S.runners||[]).forEach(r=>{ const n=normNom(r&&r.nom); if(n&&!noms.has(n)) noms.set(n,r.nom); });
-  ((S.sheets&&S.sheets.rh)||[]).forEach(x=>{ const n=normNom(x&&x.nom); if(n&&!noms.has(n)) noms.set(n,x.nom); });
-  const actifs=effectifActifSet();
-  const out=[];
-  noms.forEach((nom,cle)=>{
-    const poste=posteDe(nom);
-    if(!poste||!actifs.has(cle)||aQuitteDiscord(nom)) return;
-    const pf=profilDe(nom)||{};
-    out.push({nom:pf.nom||nom, titre:pf.titre||poste, photo:photoOk(pf.photo)||profilPhotoAuto(nom)||'', bio:pf.bio||''});
-  });
-  return out.sort((a,b)=>bilanOrdGrade(a.titre)-bilanOrdGrade(b.titre)||String(a.nom).localeCompare(String(b.nom)));
-}
 function statsData(){
   const sorted=[...S.runners].sort((a,b)=>b.barils-a.barils);
   return {
@@ -3507,113 +3443,15 @@ function statsData(){
     /* Le catalogue de la vitrine : uniquement les fiches cochées « en ligne ».
        On y met l'adresse publique de la photo, pas le chemin du dépôt : le site
        n'a pas à savoir comment nos fichiers sont rangés. */
-    produits:(S.produits||[]).filter(p=>p&&p.actif!==false&&p.nom).map(p=>({
-      nom:p.nom, desc:p.desc||'', prix:p.prix||'', photo:p.chemin?affSrc(p):''})),
+    produits:[],
     /* L'équipe : TOUTE la direction, automatiquement — plus aucune case à cocher. Est « direction » toute personne
        qui occupe un poste (Patron, Co Patron, Assistant de direction, RH, Comptable, Responsables, Commerciaux…),
        qu'elle figure dans l'effectif ou seulement en fiche RH. On retire ceux qui ne sont plus dans l'effectif
        actif ni sur le serveur Discord. Photo, titre et « à propos » viennent de « Mon profil » s'ils sont remplis,
        sinon de l'avatar Discord et du poste. */
-    equipe:equipeDirection()
+    equipe:[]
   };
 }
-async function publishStats(){
-  try{ await alignerRolesBot(); }catch(e){}   // relevé des rôles à jour avant de décider qui s'affiche
-  if(!RoxwoodGH.peutEcrire()){ toast('⚠️ Il faut un jeton d\'écriture — clique sur le voyant de synchro'); return; }
-  const C=window.ROXWOOD_CFG||{};
-  const api=`https://api.github.com/repos/${C.owner}/${C.repo}/contents/data/stats-public.json`;
-  const hdr={Authorization:'Bearer '+RoxwoodGH.jeton(),Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'};
-  const data=statsData();
-  toast('📡 Publication en cours…');
-  try{
-    // Un essai, puis un second si le SHA a bougé entre-temps (409 : quelqu'un
-    // d'autre a publié à la même seconde) — sans ça la publication se perdait
-    // en silence et le message renvoyait vers le jeton, sans rapport avec la cause.
-    for(let essai=0; essai<2; essai++){
-      let sha;
-      const g=await fetch(api+'?t='+Date.now(),{headers:hdr,cache:'no-store'});
-      if(g.ok) sha=(await g.json()).sha;
-      const octets=new TextEncoder().encode(JSON.stringify(data,null,1));
-      let bin=''; octets.forEach(o=>bin+=String.fromCharCode(o));
-      const body={message:'📊 Publication des stats publiques',content:btoa(bin),branch:C.branche||'main'};
-      if(sha) body.sha=sha;
-      const r=await fetch(api,{method:'PUT',headers:hdr,body:JSON.stringify(body)});
-      if(r.ok){
-        toast('✅ Stats publiées — visibles sur le site dans ~1 min');
-        sendLog('📊 Stats publiées','Le site public affiche maintenant la semaine '+S.settings.semaine,0x3ddc84);
-        return;
-      }
-      if(r.status===409&&essai===0) continue;  // sha changé entre-temps : on relit et on retente une fois
-      const e=await r.json().catch(()=>({}));
-      toast(r.status===409?'⚠️ Quelqu\'un d\'autre publiait au même moment — réessaie'
-                           :'⚠️ Échec ('+(e.message||r.status)+') — vérifie ton jeton');
-      return;
-    }
-  }catch(e){ toast('⚠️ Erreur réseau pendant la publication'); }
-}
-
-/* ---- Publier le CATALOGUE, et lui seul ----
-
-   Le catalogue partait avec « Publier sur le site », qui réécrit tout le
-   fichier public. Deux ennuis, et le premier s'est produit dès le premier
-   produit créé : on ajoute une fiche, on ne clique pas, et rien n'apparaît —
-   on croit à une panne. Le second est plus vicieux : ce bouton republie AUSSI
-   les chiffres de production, calculés depuis l'effectif chargé dans CE
-   navigateur. Un commercial qui met le catalogue à jour un lundi, tablette
-   vide, remettrait les barils du site à zéro sans le savoir.
-
-   On ne réécrit donc que la clé `produits`, en gardant le reste du fichier tel
-   qu'il est. Et ça part tout seul quand on enregistre : cocher « Afficher sur
-   le site public » ne laisse aucun doute sur l'intention. */
-async function publierProduits(discret){
-  if(!RoxwoodGH.peutEcrire()){
-    if(!discret) toast('⚠️ Il faut un jeton d\'écriture — Mon profil');
-    return false;
-  }
-  const C=window.ROXWOOD_CFG||{};
-  const api=`https://api.github.com/repos/${C.owner}/${C.repo}/contents/data/stats-public.json`;
-  const hdr={Authorization:'Bearer '+RoxwoodGH.jeton(),Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'};
-  try{
-    // Deux essais : si le SHA a bougé entre la lecture et l'écriture (409,
-    // quelqu'un d'autre a publié à la même seconde), on relit le contenu à jour
-    // et on refusionne avant de retenter — sinon la seconde tentative écraserait
-    // ce que l'autre venait d'écrire.
-    for(let essai=0; essai<2; essai++){
-      let sha, actuel={};
-      const g=await fetch(api+'?t='+Date.now(),{headers:hdr,cache:'no-store'});
-      if(g.ok){
-        const j=await g.json(); sha=j.sha;
-        try{
-          const bin=atob(String(j.content||'').replace(/\s/g,''));
-          const o=new Uint8Array(bin.length);
-          for(let i=0;i<bin.length;i++) o[i]=bin.charCodeAt(i);
-          actuel=JSON.parse(new TextDecoder().decode(o))||{};
-        }catch(e){ actuel={}; }
-      }
-      actuel.produits=statsData().produits;
-      actuel.majProduits=new Date(nowSrv()).toISOString();
-      const octets=new TextEncoder().encode(JSON.stringify(actuel,null,1));
-      let bin=''; octets.forEach(o=>bin+=String.fromCharCode(o));
-      const body={message:'🛢️ Catalogue mis à jour',content:btoa(bin),branch:C.branche||'main'};
-      if(sha) body.sha=sha;
-      const r=await fetch(api,{method:'PUT',headers:hdr,body:JSON.stringify(body)});
-      if(r.ok){
-        toast(`✅ Catalogue publié — ${actuel.produits.length} produit(s) en ligne, visibles sur le site dans ~1 min`, 7000);
-        return true;
-      }
-      if(r.status===409&&essai===0) continue;
-      const e=await r.json().catch(()=>({}));
-      // « Not Found » sur un depot public veut dire « ton jeton n'y a pas droit » :
-      // on va chercher la vraie raison plutot que de laisser deviner.
-      let pourquoi=r.status===409?'quelqu\'un d\'autre publiait au même moment — réessaie':(e.message||('HTTP '+r.status));
-      if(r.status!==409){ try{ const d=await RoxwoodGH.verifierAcces(); if(!d.ok) pourquoi=d.msg; }catch(x){} }
-      toast('⚠️ Catalogue NON publié — '+pourquoi, 12000);
-      return false;
-    }
-  }catch(e){ toast('⚠️ Catalogue NON publié — GitHub injoignable ('+(e.message||e)+')', 9000); }
-  return false;
-}
-
 /* ================== FEUILLES (tableur) ================== */
 const SHEETS_DEF = {
   tablette:{ico:'🖥️',label:'Tablette',cols:[
@@ -5979,6 +5817,11 @@ function ferDel(id){
 
 /* ================== MISES À JOUR (changelog) ================== */
 const CHANGELOG=[
+ {v:'C-136',d:'25/11/2026',t:'Le site devient réservé au personnel',items:[
+   ['🔒','Plus de vitrine publique','La page publique (présentation, organigramme, candidature, commande client) est supprimée. L’adresse du site affiche une page « accès réservé » avec un bouton de connexion pour le personnel.'],
+   ['🧹','Dashboard allégé','La rubrique « Nouveaux produits », le bouton « Publier sur le site » et la mise à jour automatique des visages de l’équipe disparaissent. Les données déjà saisies restent intactes.'],
+   ['🏃','Responsable Runner','Accès au site pour Événements, Éligibilité et Intégration (en plus de ses rubriques habituelles).']
+ ]},
  {v:'C-135',d:'20/11/2026',t:'Gestion des stocks',items:[
    ['📦','Stock par coffre','Nouvelle page dans Commercial : une carte par coffre avec son contenu, le dernier comptage (date et auteur) et une pastille « à recompter » quand il est trop ancien. Chaque coffre a sa propre liste de produits.'],
    ['✏️','Recompter en un clic','On recompte un coffre, les chiffres sont préremplis avec le dernier comptage et l’écart s’affiche. On peut ajouter un produit au coffre (ou le créer sur place) et en retirer.'],
@@ -7546,7 +7389,7 @@ function tourSteps(){
   add('relances','Relances',"Les clients à relancer et leur historique.");
   add('prodder','Produits dérivés',"Suivi des produits dérivés vendus.");
   add('moi','Ma semaine',"Ton suivi personnel de la semaine en cours.");
-  add('profil','Mon profil',"Ta photo, ton titre et deux lignes de présentation. Tu peux choisir d'apparaître sur le site public — c'est à toi de cocher, rien ne part sans ton accord.");
+  add('profil','Mon profil',"Ta photo, ton titre et deux lignes de présentation.");
   add('agenda','Mon agenda',"Ton planning personnel (avec option de partage direction).");
   add('dlogs','Logs Discord',"Tu y retrouveras bientôt tous les logs possibles : de chaque personne, de chaque coffre, véhicule, etc.");
   return stp;
@@ -8572,196 +8415,6 @@ function affSuppr(id){
   S.affiches=(S.affiches||[]).filter(x=>x.id!==id);
   jlog(`Affiche supprimée : ${a.titre||'sans titre'}`);
   save(); sbPushNow(); closeModal(); affiches(); toast('🗑 Affiche supprimée');
-}
-
-/* ================== NOUVEAUX PRODUITS (vitrine) ==================
-
-   Le catalogue montre sur le site public ce que l'entreprise vend en ce moment.
-   Il vit ici, pas dans le HTML de la vitrine : sinon il faudrait un dev pour
-   changer un prix, et le prix ne changerait jamais.
-
-   Une fiche n'apparaît sur le site qu'apres « Publier sur le site » (Vue
-   d'ensemble) : c'est le meme geste que pour les stats, et il vaut mieux qu'on
-   puisse preparer trois produits tranquillement avant de les montrer. L'ecran
-   le rappelle, parce qu'un catalogue qui ne part pas est pire que pas de
-   catalogue. */
-function produitsListe(){ return (S.produits=S.produits||[]); }
-function prodPeut(){ return RoxwoodGH.peutEcrire()&&!isMembre()&&!isRO('produits'); }
-
-/* ---- Ce qui est VRAIMENT en ligne ----
-
-   « Enregistré » et « en ligne » sont deux choses différentes, et l'écran les
-   confondait : une fiche cochée « en ligne » s'affichait comme telle même si
-   la publication n'était jamais partie. On croyait le site à jour, il ne
-   l'était pas, et rien à l'écran ne permettait de s'en apercevoir.
-
-   On lit donc le fichier public — celui que la vitrine lit, à la même
-   adresse — et on compare. La pastille de chaque fiche dit l'état réel. */
-let PROD_ENLIGNE=null;   // null = pas encore lu
-async function prodLirePublie(){
-  const C=window.ROXWOOD_CFG||{};
-  try{
-    const r=await fetch(`https://raw.githubusercontent.com/${C.owner}/${C.repo}/${C.branche||'main'}/data/stats-public.json?t=${Date.now()}`,{cache:'no-store'});
-    if(!r.ok) throw 0;
-    const d=await r.json();
-    PROD_ENLIGNE=Array.isArray(d.produits)?d.produits.map(x=>String(x&&x.nom||'')):[];
-  }catch(e){ PROD_ENLIGNE=null; }
-  return PROD_ENLIGNE;
-}
-function prodEstEnLigne(p){
-  if(!PROD_ENLIGNE) return null;                       // on n'a pas pu lire
-  return PROD_ENLIGNE.includes(String(p&&p.nom||''));
-}
-async function produits(){
-  const l=produitsListe();
-  const actifs=l.filter(p=>p.actif!==false).length;
-  const peut=prodPeut();
-  if(PROD_ENLIGNE===null) prodLirePublie().then(()=>{ if(VIEW==='produits') produits(); });
-  const manquants=(PROD_ENLIGNE===null)?[]:l.filter(p=>p.actif!==false&&!prodEstEnLigne(p));
-  const enTrop=(PROD_ENLIGNE===null)?[]:PROD_ENLIGNE.filter(n=>!l.some(p=>p.actif!==false&&p.nom===n));
-  $('#main').innerHTML=`
-  <div class="topbar">
-    <div><h2>🛢️ Nouveaux produits</h2><div class="sub">Ce que la vitrine annonce — ${l.length} fiche(s) · ${actifs} en ligne</div></div>
-    <div style="display:flex;gap:10px;align-items:center">
-      ${peut?`<button class="btn btn-gold" onclick="prodEdit()">＋ Nouveau produit</button>`:''}
-      <button class="btn btn-ghost" onclick="publierProduits().then(()=>{PROD_ENLIGNE=null;produits();})" title="Renvoie les fiches en ligne vers le site public, sans toucher aux chiffres de production">📤 Republier le catalogue</button>
-    </div>
-  </div>
-  ${!peut?`<div class="warn" style="border-color:rgba(90,160,255,.35);background:rgba(90,160,255,.07);color:#9fc3ff">
-    👁 Consultation seule. Pour modifier le catalogue, il faut un jeton d'écriture — dans <b>Mon profil</b>.</div>`:''}
-  ${(PROD_ENLIGNE===null)?`<div class="warn" style="border-color:rgba(160,160,160,.3);background:rgba(160,160,160,.06);color:var(--muted)">
-      ⏳ Lecture du fichier public…</div>`
-   :(manquants.length||enTrop.length)?`<div class="warn" style="border-color:rgba(255,92,92,.5);background:rgba(255,92,92,.09);color:#ffb0b0">
-      <b>⚠️ Le site public n'est pas à jour.</b>
-      ${manquants.length?`${manquants.length} fiche(s) cochée(s) « en ligne » n'y sont pas encore : <b>${manquants.map(p=>esc(p.nom)).join(', ')}</b>.`:''}
-      ${enTrop.length?` ${enTrop.length} fiche(s) y traînent encore alors qu'elles ne devraient plus : <b>${enTrop.map(esc).join(', ')}</b>.`:''}
-      <br><button class="btn btn-sm btn-gold" style="margin-top:9px" onclick="publierProduits().then(()=>{PROD_ENLIGNE=null;produits();})">📤 Publier maintenant</button>
-    </div>`
-   :`<div class="warn" style="border-color:rgba(60,170,110,.4);background:rgba(60,170,110,.07);color:#8fd8b0">
-      ✅ Le site public affiche exactement ces ${actifs} fiche(s). Enregistrer un produit l'y envoie tout de suite ;
-      pour en préparer un sans le montrer, décoche « Afficher sur le site public ».</div>`}
-  ${!l.length?`<div class="panel"><div class="empty">Aucun produit.${peut?' Clique sur « Nouveau produit » pour en créer un.':''}</div></div>`
-   :`<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px">
-      ${l.map((p,i)=>`<div class="panel" style="padding:0;overflow:hidden;display:flex;flex-direction:column;${p.actif===false?'opacity:.5':''}">
-        <div style="background:var(--panel-2);aspect-ratio:16/10;display:flex;align-items:center;justify-content:center;overflow:hidden">
-          ${p.chemin?`<img src="${esc(affSrc(p))}" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">`
-                    :'<span style="color:var(--muted);font-size:.78rem">aucune photo</span>'}
-        </div>
-        <div style="padding:11px 13px 13px;flex:1;display:flex;flex-direction:column">
-          <div style="display:flex;justify-content:space-between;gap:8px;align-items:baseline">
-            <b style="font-size:.92rem;line-height:1.25">${esc(p.nom||'Sans nom')}</b>
-            <span style="font-family:var(--f-mono);color:var(--accent);white-space:nowrap">${p.prix?esc(String(p.prix)):'—'}</span>
-          </div>
-          ${p.desc?`<div style="color:var(--muted);font-size:.78rem;margin-top:5px;line-height:1.45">${esc(p.desc)}</div>`:''}
-          <div style="margin-top:auto;padding-top:10px;display:flex;gap:6px;align-items:center;flex-wrap:wrap">
-            ${(()=>{ const e=prodEstEnLigne(p);
-              if(p.actif===false) return '<span class="badge" style="font-size:.68rem">⏸ non publié (volontaire)</span>';
-              if(e===null) return '<span class="badge" style="font-size:.68rem">● coché en ligne</span>';
-              return e ? '<span class="badge bgrole" style="font-size:.68rem;color:#8fd8b0">✅ sur le site</span>'
-                       : '<span class="badge" style="font-size:.68rem;color:#ffb0b0">⚠️ pas encore sur le site</span>';
-            })()}
-            ${peut?`<span style="margin-left:auto;white-space:nowrap">
-              ${i>0?`<button class="btn btn-sm btn-ghost" onclick="prodMonter(${i})" title="Remonter dans la vitrine">↑</button>`:''}
-              <button class="btn btn-sm btn-ghost" onclick="prodEdit(${p.id})">✎</button>
-            </span>`:''}
-          </div>
-        </div>
-      </div>`).join('')}
-    </div>`}`;
-}
-function prodMonter(i){
-  const l=produitsListe(); if(i<=0||!l[i]) return;
-  [l[i-1],l[i]]=[l[i],l[i-1]];
-  jlog(`Vitrine : « ${l[i-1].nom||'?'} » remonté`);
-  save(); sbPushNow(); produits();
-}
-function prodEdit(id){
-  const l=produitsListe();
-  const p=l.find(x=>x.id===id)||{id:null,nom:'',desc:'',prix:'',chemin:'',actif:true};
-  openModal(`<h3>${id?'✎ Modifier le produit':'🛢️ Nouveau produit'}</h3>
-  <div id="prodApercu" style="background:var(--panel-2);border-radius:10px;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;overflow:hidden;margin-bottom:14px">
-    ${p.chemin?`<img src="${esc(affSrc(p))}" alt="" style="width:100%;height:100%;object-fit:cover">`
-              :'<span style="color:var(--muted);font-size:.8rem">Aucune photo — clique sur « Choisir une photo »</span>'}
-  </div>
-  <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px">
-    <button class="btn btn-ghost btn-sm" onclick="document.getElementById('prodFile').click()">📷 Choisir une photo</button>
-    <input type="file" id="prodFile" accept="image/*" style="display:none" onchange="prodPhoto(this)">
-    ${p.chemin?`<button class="btn btn-ghost btn-sm" onclick="prodPhotoRetirer()">Retirer la photo</button>`:''}
-    <span id="prodPhotoNote" style="font-size:.76rem;color:var(--muted);align-self:center"></span>
-  </div>
-  <div class="f-row"><label class="f-lbl">Nom du produit</label>
-    <input class="field" id="pr_nom" value="${esc(p.nom||'')}" placeholder="Bidon 20 L raffiné" maxlength="60"></div>
-  <div class="f-row"><label class="f-lbl">Description courte</label>
-    <textarea class="field" id="pr_desc" style="min-height:70px" maxlength="220" placeholder="À quoi ça sert, pour qui, ce qui le distingue.">${esc(p.desc||'')}</textarea></div>
-  <div class="f-row"><label class="f-lbl">Prix affiché</label>
-    <input class="field" id="pr_prix" value="${esc(p.prix||'')}" placeholder="1 200 $ / unité" maxlength="40"></div>
-  <p style="color:var(--muted);font-size:.74rem;margin:-4px 0 14px">Texte libre : « 1 200 $ », « à partir de 800 $ », « sur devis »…</p>
-  <label style="display:flex;align-items:center;gap:10px;cursor:pointer;margin-bottom:16px;padding:10px 14px;border-radius:10px;border:1px dashed rgba(242,183,5,.5);background:rgba(242,183,5,.06)">
-    <input type="checkbox" id="pr_actif" style="width:19px;height:19px;accent-color:#F2B705" ${p.actif===false?'':'checked'}>
-    <span style="font-size:.85rem">Afficher sur le site public<br><small style="color:var(--muted)">décoche pour préparer un produit sans le montrer encore</small></span>
-  </label>
-  <div style="display:flex;gap:10px">
-    <button class="btn btn-gold" style="flex:1" onclick="prodSave(${id||'null'})">Enregistrer</button>
-    ${id?`<button class="btn btn-ghost" style="color:#f87171" onclick="prodSuppr(${id})">🗑 Supprimer</button>`:''}
-  </div>`);
-  PROD_PHOTO = p.chemin || '';
-}
-let PROD_PHOTO='';
-async function prodPhoto(inp){
-  const f=(inp.files||[])[0]; inp.value='';
-  if(!f) return;
-  if(!RoxwoodGH.peutEcrire()) return toast('⚠️ Il faut un jeton d\'écriture — Mon profil');
-  const note=document.getElementById('prodPhotoNote');
-  if(note) note.textContent='Envoi en cours…';
-  try{
-    const data=await affPrepare(f);          // même préparation que les affiches
-    const ext=(/^data:image\/(\w+)/.exec(data)||[,'jpg'])[1].replace('jpeg','jpg');
-    const chemin=`assets/produits/${Date.now()}-${Math.random().toString(36).slice(2,7)}.${ext}`;
-    const r=await RoxwoodGH.televerser(chemin, data, `🛢️ Photo produit : ${f.name}`);
-    if(!r.chemin){ if(note) note.textContent=''; return toast('❌ Envoi refusé : '+r.erreur, 8000); }
-    PROD_PHOTO=chemin;
-    const z=document.getElementById('prodApercu');
-    if(z) z.innerHTML=`<img src="${esc(affSrc({chemin}))}" alt="" style="width:100%;height:100%;object-fit:cover">`;
-    if(note) note.textContent='Photo envoyée';
-  }catch(e){ if(note) note.textContent=''; toast('❌ '+(e.message||e), 8000); }
-}
-function prodPhotoRetirer(){
-  PROD_PHOTO='';
-  const z=document.getElementById('prodApercu');
-  if(z) z.innerHTML='<span style="color:var(--muted);font-size:.8rem">Aucune photo</span>';
-  const n=document.getElementById('prodPhotoNote'); if(n) n.textContent='Photo retirée — enregistre pour valider';
-}
-function prodSave(id){
-  const nom=String(($('#pr_nom')||{}).value||'').trim();
-  if(!nom) return toast('⚠️ Donne un nom au produit');
-  const l=produitsListe();
-  const champs={nom, desc:String(($('#pr_desc')||{}).value||'').trim().slice(0,220),
-    prix:String(($('#pr_prix')||{}).value||'').trim().slice(0,40),
-    chemin:PROD_PHOTO, actif:!!(($('#pr_actif')||{}).checked)};
-  const ex=l.find(x=>x.id===id);
-  if(ex){
-    // la photo remplacée ne sert plus à personne : on la retire du dépôt
-    if(ex.chemin&&ex.chemin!==champs.chemin) pieceJointeSuppr(ex.chemin,'Photo produit remplacée');
-    Object.assign(ex,champs);
-    jlog(`Produit modifié : ${nom}`);
-  } else {
-    l.unshift(Object.assign({id:Date.now()+Math.floor(Math.random()*999),
-      par:(currentUser()||{}).user||'', date:jourISO(new Date())}, champs));
-    jlog(`Produit créé : ${nom}`);
-  }
-  save(); sbPushNow(); closeModal(); produits();
-  toast('🛢️ Enregistré — publication du catalogue…');
-  publierProduits(true).then(()=>{ PROD_ENLIGNE=null; produits(); });
-}
-function prodSuppr(id){
-  const l=produitsListe(); const p=l.find(x=>x.id===id); if(!p) return;
-  if(!confirm(`Supprimer « ${p.nom||'ce produit'} » ?\n\nIl disparaîtra du site à la prochaine publication.`)) return;
-  if(p.chemin) pieceJointeSuppr(p.chemin,'Photo produit retirée');
-  S.produits=l.filter(x=>x.id!==id);
-  jlog(`Produit supprimé : ${p.nom||'sans nom'}`);
-  save(); sbPushNow(); closeModal(); produits();
-  toast('🗑 Produit supprimé — mise à jour du site…');
-  publierProduits(true).then(()=>{ PROD_ENLIGNE=null; produits(); });
 }
 
 /* ================== LOGS DISCORD ================== */
