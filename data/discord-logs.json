@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-25T22:22:33.302103+00:00",
+ "maj": "2026-11-25T22:26:34.007357+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -19,6 +19,22 @@
   "entreprise (Oil RoxWood) (13850)"
  ],
  "messages": [
+  {
+   "id": "1575276433796890718",
+   "t": "2026-11-25T22:26:09.038000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 593x Pétrole Raffiné pour 5930$ par Flavio Bellini. 2965$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 593,
+   "montant": 5930,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1575275397753475214-0",
    "t": "2026-11-25T22:22:02.026000+00:00",
@@ -69380,38 +69396,6 @@
     "playercharacter": "Freddy Carlson",
     "playerid": "385612",
     "vehicleplate": "ZG7875QV",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1574189285811298358-0",
-   "t": "2026-11-22T22:26:12.760000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 300x Pétrole Raffiné pour 3000$ par Sapu Kirubakaran. 1500$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 300,
-   "montant": 3000,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1574189285811298358-1",
-   "t": "2026-11-22T22:26:12.760000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 310x Pétrole Raffiné pour 3100$ par Freddy Carlson. 1550$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 310,
-   "montant": 3100,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
     "jobid": "76",
     "jobname": "Oil RoxWood"
    }
