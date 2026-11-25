@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-25T10:56:35.687254+00:00",
+ "maj": "2026-11-25T10:58:35.296735+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -19,6 +19,22 @@
   "entreprise (Oil RoxWood) (13850)"
  ],
  "messages": [
+  {
+   "id": "1575103268273655899",
+   "t": "2026-11-25T10:58:03.160000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 106x Pétrole Raffiné pour 1060$ par Jason Palmer. 530$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 106,
+   "montant": 1060,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1575102762373484605",
    "t": "2026-11-25T10:56:02.544000+00:00",
@@ -86443,22 +86459,6 @@
    "nom": null,
    "quantite": 519,
    "montant": 5190,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1574015860073300019",
-   "t": "2026-11-22T10:57:04.842000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 488x Pétrole Raffiné pour 4880$ par Nass Toofast. 2440$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 488,
-   "montant": 4880,
    "type": "vente",
    "salon": "1245400913473179729",
    "champs": {
