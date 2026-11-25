@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-25T10:30:35.327836+00:00",
+ "maj": "2026-11-25T10:34:34.506833+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -19,6 +19,22 @@
   "entreprise (Oil RoxWood) (13850)"
  ],
  "messages": [
+  {
+   "id": "1575096979388764231",
+   "t": "2026-11-25T10:33:03.773000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 315x Pétrole Raffiné pour 3150$ par Jason Palmer. 1575$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 315,
+   "montant": 3150,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1575095968704110676-0",
    "t": "2026-11-25T10:29:02.807000+00:00",
@@ -86328,30 +86344,6 @@
     "playername": "FAFA",
     "playercharacter": "Jalil Eden",
     "playerid": "386201",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1574009300035051603",
-   "t": "2026-11-22T10:31:00.807000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 153x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood) (13848)\nposition : -1850.44, 6514.77, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 4599\nplayerDiscord : 1383749459866812476\nplayerName : QuickBat6585\nplayerCharacter : Marco Sanchez\nplayerId : 142012\nitemId : refinedoil",
-   "nom": "Marco Sanchez",
-   "quantite": 153,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood) (13848)",
-   "champs": {
-    "position": "-1850.44, 6514.77, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "4599",
-    "playerdiscord": "1383749459866812476",
-    "playername": "QuickBat6585",
-    "playercharacter": "Marco Sanchez",
-    "playerid": "142012",
     "itemid": "refinedoil"
    }
   }
