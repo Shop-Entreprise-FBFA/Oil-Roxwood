@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-26T09:06:31.644283+00:00",
+ "maj": "2026-11-26T09:08:32.998136+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -19,6 +19,75 @@
   "entreprise (Oil RoxWood) (13850)"
  ],
  "messages": [
+  {
+   "id": "1575437804996132986",
+   "t": "2026-11-26T09:07:22.930000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 638\nplayerDiscord : 410157854855528449\nplayerName : BoldDuck0946\nplayerCharacter : Flavio Bellini\nplayerId : 386426\nvehiclePlate : BM4391ZM\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Flavio Bellini",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "638",
+    "playerdiscord": "410157854855528449",
+    "playername": "BoldDuck0946",
+    "playercharacter": "Flavio Bellini",
+    "playerid": "386426",
+    "vehicleplate": "BM4391ZM",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1575437554818355336-0",
+   "t": "2026-11-26T09:06:23.283000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 152x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood) (13837)\nposition : -1845.11, 6514.30, 16.73\ntargetPosition : -1845.91, 6514.70, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 602\nplayerDiscord : 487891709821190145\nplayerName : IcyNewt9023\nplayerCharacter : Luc Rouza\nplayerId : 382769\nitemId : refinedoil",
+   "nom": "Luc Rouza",
+   "quantite": 152,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood) (13837)",
+   "champs": {
+    "position": "-1845.11, 6514.30, 16.73",
+    "targetposition": "-1845.91, 6514.70, 15.74",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "602",
+    "playerdiscord": "487891709821190145",
+    "playername": "IcyNewt9023",
+    "playercharacter": "Luc Rouza",
+    "playerid": "382769",
+    "itemid": "refinedoil"
+   }
+  },
+  {
+   "id": "1575437554818355336-1",
+   "t": "2026-11-26T09:06:23.283000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 22x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood) (13837)\nposition : -1844.99, 6514.34, 16.73\ntargetPosition : -1845.91, 6514.70, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 602\nplayerDiscord : 487891709821190145\nplayerName : IcyNewt9023\nplayerCharacter : Luc Rouza\nplayerId : 382769\nitemId : refinedoil",
+   "nom": "Luc Rouza",
+   "quantite": 22,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood) (13837)",
+   "champs": {
+    "position": "-1844.99, 6514.34, 16.73",
+    "targetposition": "-1845.91, 6514.70, 15.74",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "602",
+    "playerdiscord": "487891709821190145",
+    "playername": "IcyNewt9023",
+    "playercharacter": "Luc Rouza",
+    "playerid": "382769",
+    "itemid": "refinedoil"
+   }
+  },
   {
    "id": "1575437303206125660",
    "t": "2026-11-26T09:05:23.294000+00:00",
@@ -71082,27 +71151,6 @@
     "playercharacter": "Jason Palmer",
     "playerid": "362532",
     "vehicleplate": "AY4705SJ",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1574350828934795336",
-   "t": "2026-11-23T09:08:07.642000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 5130\nplayerDiscord : 1564757178865422440\nplayerName : FAFA\nplayerCharacter : Jalil Eden\nplayerId : 386201\nvehiclePlate : AY0298ZV\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Jalil Eden",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "5130",
-    "playerdiscord": "1564757178865422440",
-    "playername": "FAFA",
-    "playercharacter": "Jalil Eden",
-    "playerid": "386201",
-    "vehicleplate": "AY0298ZV",
     "jobid": "76",
     "jobname": "Oil RoxWood"
    }
