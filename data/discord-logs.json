@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-26T09:26:33.099757+00:00",
+ "maj": "2026-11-26T09:32:33.477184+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -19,6 +19,30 @@
   "entreprise (Oil RoxWood) (13850)"
  ],
  "messages": [
+  {
+   "id": "1575443851705974865",
+   "t": "2026-11-26T09:31:24.578000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 98x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood) (13848)\nposition : -1849.98, 6514.63, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 638\nplayerDiscord : 410157854855528449\nplayerName : BoldDuck0946\nplayerCharacter : Flavio Bellini\nplayerId : 386426\nitemId : refinedoil",
+   "nom": "Flavio Bellini",
+   "quantite": 98,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood) (13848)",
+   "champs": {
+    "position": "-1849.98, 6514.63, 16.73",
+    "targetposition": "-1850.63, 6515.15, 15.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "638",
+    "playerdiscord": "410157854855528449",
+    "playername": "BoldDuck0946",
+    "playercharacter": "Flavio Bellini",
+    "playerid": "386426",
+    "itemid": "refinedoil"
+   }
+  },
   {
    "id": "1575442583172415559",
    "t": "2026-11-26T09:26:22.136000+00:00",
@@ -71103,22 +71127,6 @@
     "playercharacter": "Jalil Eden",
     "playerid": "386201",
     "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1574356871488217130",
-   "t": "2026-11-23T09:32:08.299000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 213x Pétrole Raffiné pour 2130$ par Jack Berthier. 1065$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 213,
-   "montant": 2130,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
    }
   }
  ]
