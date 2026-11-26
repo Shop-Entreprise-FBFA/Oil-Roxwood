@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-26T19:08:33.174527+00:00",
+ "maj": "2026-11-26T19:10:32.872877+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -19,6 +19,94 @@
   "entreprise (Oil RoxWood) (13850)"
  ],
  "messages": [
+  {
+   "id": "1575589396478955634",
+   "t": "2026-11-26T19:09:45.156000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 748x Pétrole Raffiné pour 7480$ par Emma Collins-rodriguez. 3740$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 748,
+   "montant": 7480,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1575589144086970464-0",
+   "t": "2026-11-26T19:08:44.981000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 28x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood) (13840)\nposition : -1843.87, 6518.28, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1765\nplayerDiscord : 221821522225004544\nplayerName : LoudBat8434\nplayerCharacter : Maruis Caplant\nplayerId : 385893\nitemId : refinedoil",
+   "nom": "Maruis Caplant",
+   "quantite": 28,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood) (13840)",
+   "champs": {
+    "position": "-1843.87, 6518.28, 16.73",
+    "targetposition": "-1843.83, 6518.10, 15.74",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "1765",
+    "playerdiscord": "221821522225004544",
+    "playername": "LoudBat8434",
+    "playercharacter": "Maruis Caplant",
+    "playerid": "385893",
+    "itemid": "refinedoil"
+   }
+  },
+  {
+   "id": "1575589144086970464-1",
+   "t": "2026-11-26T19:08:44.981000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\na retiré 28x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood) (13840)\nposition : -1843.87, 6518.28, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1765\nplayerDiscord : 221821522225004544\nplayerName : LoudBat8434\nplayerCharacter : Maruis Caplant\nplayerId : 385893\nitemId : refinedoil",
+   "nom": "Maruis Caplant",
+   "quantite": 28,
+   "montant": null,
+   "type": "coffre_retrait",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood) (13840)",
+   "champs": {
+    "position": "-1843.87, 6518.28, 16.73",
+    "targetposition": "-1843.83, 6518.10, 15.74",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "1765",
+    "playerdiscord": "221821522225004544",
+    "playername": "LoudBat8434",
+    "playercharacter": "Maruis Caplant",
+    "playerid": "385893",
+    "itemid": "refinedoil"
+   }
+  },
+  {
+   "id": "1575589144086970464-2",
+   "t": "2026-11-26T19:08:44.981000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 28x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood) (13840)\nposition : -1843.87, 6518.28, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1765\nplayerDiscord : 221821522225004544\nplayerName : LoudBat8434\nplayerCharacter : Maruis Caplant\nplayerId : 385893\nitemId : refinedoil",
+   "nom": "Maruis Caplant",
+   "quantite": 28,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood) (13840)",
+   "champs": {
+    "position": "-1843.87, 6518.28, 16.73",
+    "targetposition": "-1843.83, 6518.10, 15.74",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "1765",
+    "playerdiscord": "221821522225004544",
+    "playername": "LoudBat8434",
+    "playercharacter": "Maruis Caplant",
+    "playerid": "385893",
+    "itemid": "refinedoil"
+   }
+  },
   {
    "id": "1575588898141376676-0",
    "t": "2026-11-26T19:07:46.343000+00:00",
