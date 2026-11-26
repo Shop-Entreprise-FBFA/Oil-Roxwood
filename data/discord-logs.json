@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-26T13:18:36.353644+00:00",
+ "maj": "2026-11-26T13:32:33.379604+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -19,6 +19,27 @@
   "entreprise (Oil RoxWood) (13850)"
  ],
  "messages": [
+  {
+   "id": "1575503985895280784",
+   "t": "2026-11-26T13:30:21.686000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 1354\nplayerDiscord : 487891709821190145\nplayerName : IcyNewt9023\nplayerCharacter : Luc Rouza\nplayerId : 382769\nvehiclePlate : AY4705SJ\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Luc Rouza",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "1354",
+    "playerdiscord": "487891709821190145",
+    "playername": "IcyNewt9023",
+    "playercharacter": "Luc Rouza",
+    "playerid": "382769",
+    "vehicleplate": "AY4705SJ",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1575500471760724049",
    "t": "2026-11-26T13:16:23.851000+00:00",
@@ -66411,94 +66432,6 @@
     "playercharacter": "Laurent Roquel",
     "playerid": "282695",
     "itemid": "oil"
-   }
-  },
-  {
-   "id": "1574417021406543883",
-   "t": "2026-11-23T13:31:09.157000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 742x Pétrole Raffiné pour 7420$ par Darian Nguyen. 3710$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 742,
-   "montant": 7420,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1574415008211804232",
-   "t": "2026-11-23T13:23:09.174000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 38x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood) (13848)\nposition : -1850.89, 6514.25, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 5505\nplayerDiscord : 880863435422830614\nplayerName : QuickFish4499\nplayerCharacter : Daven Parker\nplayerId : 296190\nitemId : refinedoil",
-   "nom": "Daven Parker",
-   "quantite": 38,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood) (13848)",
-   "champs": {
-    "position": "-1850.89, 6514.25, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "5505",
-    "playerdiscord": "880863435422830614",
-    "playername": "QuickFish4499",
-    "playercharacter": "Daven Parker",
-    "playerid": "296190",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1574414511790629107-0",
-   "t": "2026-11-23T13:21:10.818000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 141x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood) (13848)\nposition : -1850.76, 6514.34, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 5505\nplayerDiscord : 880863435422830614\nplayerName : QuickFish4499\nplayerCharacter : Daven Parker\nplayerId : 296190\nitemId : refinedoil",
-   "nom": "Daven Parker",
-   "quantite": 141,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood) (13848)",
-   "champs": {
-    "position": "-1850.76, 6514.34, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "5505",
-    "playerdiscord": "880863435422830614",
-    "playername": "QuickFish4499",
-    "playercharacter": "Daven Parker",
-    "playerid": "296190",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1574414511790629107-1",
-   "t": "2026-11-23T13:21:10.818000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 141x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood) (13848)\nposition : -1851.03, 6513.96, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 5505\nplayerDiscord : 880863435422830614\nplayerName : QuickFish4499\nplayerCharacter : Daven Parker\nplayerId : 296190\nitemId : refinedoil",
-   "nom": "Daven Parker",
-   "quantite": 141,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood) (13848)",
-   "champs": {
-    "position": "-1851.03, 6513.96, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "5505",
-    "playerdiscord": "880863435422830614",
-    "playername": "QuickFish4499",
-    "playercharacter": "Daven Parker",
-    "playerid": "296190",
-    "itemid": "refinedoil"
    }
   }
  ]
