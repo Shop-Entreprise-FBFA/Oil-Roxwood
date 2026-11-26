@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-26T17:02:36.994370+00:00",
+ "maj": "2026-11-26T17:04:31.629115+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -19,6 +19,86 @@
   "entreprise (Oil RoxWood) (13850)"
  ],
  "messages": [
+  {
+   "id": "1575557703835582496-0",
+   "t": "2026-11-26T17:03:49.041000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 606x Pétrole Raffiné pour 6060$ par Seamus Irish. 3030$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 606,
+   "montant": 6060,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1575557703835582496-1",
+   "t": "2026-11-26T17:03:49.041000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 288x Pétrole Raffiné pour 2880$ par Billy Badav. 1440$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 288,
+   "montant": 2880,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
+  {
+   "id": "1575557428005572673-0",
+   "t": "2026-11-26T17:02:43.278000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 76x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood) (13838)\nposition : -1841.83, 6521.59, 16.73\ntargetPosition : -1842.58, 6521.16, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 460\nplayerDiscord : 1053366471574687844\nplayerName : SlowMouse3303\nplayerCharacter : Emma Collins-rodriguez\nplayerId : 227799\nitemId : refinedoil",
+   "nom": "Emma Collins-rodriguez",
+   "quantite": 76,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood) (13838)",
+   "champs": {
+    "position": "-1841.83, 6521.59, 16.73",
+    "targetposition": "-1842.58, 6521.16, 15.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "460",
+    "playerdiscord": "1053366471574687844",
+    "playername": "SlowMouse3303",
+    "playercharacter": "Emma Collins-rodriguez",
+    "playerid": "227799",
+    "itemid": "refinedoil"
+   }
+  },
+  {
+   "id": "1575557428005572673-1",
+   "t": "2026-11-26T17:02:43.278000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\na retiré 74x Pétrole Brut du coffre de l'entreprise (Oil RoxWood) (13838)\nposition : -1841.83, 6521.59, 16.73\ntargetPosition : -1842.58, 6521.16, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 460\nplayerDiscord : 1053366471574687844\nplayerName : SlowMouse3303\nplayerCharacter : Emma Collins-rodriguez\nplayerId : 227799\nitemId : oil",
+   "nom": "Emma Collins-rodriguez",
+   "quantite": 74,
+   "montant": null,
+   "type": "coffre_retrait",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood) (13838)",
+   "champs": {
+    "position": "-1841.83, 6521.59, 16.73",
+    "targetposition": "-1842.58, 6521.16, 15.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "460",
+    "playerdiscord": "1053366471574687844",
+    "playername": "SlowMouse3303",
+    "playercharacter": "Emma Collins-rodriguez",
+    "playerid": "227799",
+    "itemid": "oil"
+   }
+  },
   {
    "id": "1575556943634898946-0",
    "t": "2026-11-26T17:00:47.795000+00:00",
@@ -66316,102 +66396,6 @@
     "playername": "FAFA",
     "playercharacter": "Jalil Eden",
     "playerid": "386201",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1574470340820869316-0",
-   "t": "2026-11-23T17:03:01.496000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 141x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood) (13837)\nposition : -1846.59, 6514.50, 16.73\ntargetPosition : -1845.91, 6514.70, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 590\nplayerDiscord : 1338776295575912581\nplayerName : Darian589\nplayerCharacter : Darian Nguyen\nplayerId : 287377\nitemId : refinedoil",
-   "nom": "Darian Nguyen",
-   "quantite": 141,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood) (13837)",
-   "champs": {
-    "position": "-1846.59, 6514.50, 16.73",
-    "targetposition": "-1845.91, 6514.70, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "590",
-    "playerdiscord": "1338776295575912581",
-    "playername": "Darian589",
-    "playercharacter": "Darian Nguyen",
-    "playerid": "287377",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1574470340820869316-1",
-   "t": "2026-11-23T17:03:01.496000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 141x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood) (13837)\nposition : -1846.59, 6514.50, 16.73\ntargetPosition : -1845.91, 6514.70, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 590\nplayerDiscord : 1338776295575912581\nplayerName : Darian589\nplayerCharacter : Darian Nguyen\nplayerId : 287377\nitemId : refinedoil",
-   "nom": "Darian Nguyen",
-   "quantite": 141,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood) (13837)",
-   "champs": {
-    "position": "-1846.59, 6514.50, 16.73",
-    "targetposition": "-1845.91, 6514.70, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "590",
-    "playerdiscord": "1338776295575912581",
-    "playername": "Darian589",
-    "playercharacter": "Darian Nguyen",
-    "playerid": "287377",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1574470340820869316-2",
-   "t": "2026-11-23T17:03:01.496000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 89x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood) (13837)\nposition : -1846.59, 6514.50, 16.73\ntargetPosition : -1845.91, 6514.70, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 590\nplayerDiscord : 1338776295575912581\nplayerName : Darian589\nplayerCharacter : Darian Nguyen\nplayerId : 287377\nitemId : refinedoil",
-   "nom": "Darian Nguyen",
-   "quantite": 89,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood) (13837)",
-   "champs": {
-    "position": "-1846.59, 6514.50, 16.73",
-    "targetposition": "-1845.91, 6514.70, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "590",
-    "playerdiscord": "1338776295575912581",
-    "playername": "Darian589",
-    "playercharacter": "Darian Nguyen",
-    "playerid": "287377",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1574470340820869316-3",
-   "t": "2026-11-23T17:03:01.496000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\na retiré 4x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood) (13837)\nposition : -1846.75, 6514.27, 16.73\ntargetPosition : -1845.91, 6514.70, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 590\nplayerDiscord : 1338776295575912581\nplayerName : Darian589\nplayerCharacter : Darian Nguyen\nplayerId : 287377\nitemId : refinedoil",
-   "nom": "Darian Nguyen",
-   "quantite": 4,
-   "montant": null,
-   "type": "coffre_retrait",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood) (13837)",
-   "champs": {
-    "position": "-1846.75, 6514.27, 16.73",
-    "targetposition": "-1845.91, 6514.70, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "590",
-    "playerdiscord": "1338776295575912581",
-    "playername": "Darian589",
-    "playercharacter": "Darian Nguyen",
-    "playerid": "287377",
     "itemid": "refinedoil"
    }
   }
