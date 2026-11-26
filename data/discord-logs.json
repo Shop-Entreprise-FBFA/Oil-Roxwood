@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-26T19:10:32.872877+00:00",
+ "maj": "2026-11-26T19:18:32.750427+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -19,6 +19,22 @@
   "entreprise (Oil RoxWood) (13850)"
  ],
  "messages": [
+  {
+   "id": "1575591175942049945",
+   "t": "2026-11-26T19:16:49.413000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 472x Pétrole Raffiné pour 4720$ par Billy Badav. 2360$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 472,
+   "montant": 4720,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1575589396478955634",
    "t": "2026-11-26T19:09:45.156000+00:00",
@@ -66694,30 +66710,6 @@
     "vehicleplate": "WG4999VM",
     "jobid": "76",
     "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1574503053577551915",
-   "t": "2026-11-23T19:13:00.825000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 96x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood) (13848)\nposition : -1850.58, 6514.63, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 1800\nplayerDiscord : 410157854855528449\nplayerName : BoldDuck0946\nplayerCharacter : Flavio Bellini\nplayerId : 386426\nitemId : refinedoil",
-   "nom": "Flavio Bellini",
-   "quantite": 96,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood) (13848)",
-   "champs": {
-    "position": "-1850.58, 6514.63, 16.73",
-    "targetposition": "-1850.63, 6515.15, 15.75",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "1800",
-    "playerdiscord": "410157854855528449",
-    "playername": "BoldDuck0946",
-    "playercharacter": "Flavio Bellini",
-    "playerid": "386426",
-    "itemid": "refinedoil"
    }
   }
  ]
