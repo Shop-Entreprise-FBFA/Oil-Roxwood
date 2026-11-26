@@ -64951,7 +64951,9 @@
    "respcom": [],
    "assistdir": [],
    "comptable": [],
-   "resprunner": [],
+   "resprunner": [
+    "semaine"
+   ],
    "membre": [
     "felig",
     "overview",
@@ -65183,8 +65185,8 @@
   }
  },
  "_cid": "phkbljb8uvi",
- "_maj": 1795696753474,
- "_rev": "cs5v09iiphc-mwxjhv25",
+ "_maj": 1795696801058,
+ "_rev": "ayj7qya9i3c-mwxjigmf",
  "_majSec": {
   "fer": 1795638618252,
   "fact": 1795625770580,
@@ -65193,13 +65195,13 @@
   "sheets": 1795646036141,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1795696753474,
+  "journal": 1795696801058,
   "pending": 1793561085750,
   "prodDer": 1795270452372,
   "runners": 1795461294847,
   "absences": 1795544850047,
   "imported": 1793561085750,
-  "settings": 1795696753474,
+  "settings": 1795696801058,
   "closeUndo": 1795434602527,
   "quotasCom": 1795646041638,
   "bilanExtra": 1795260339053,
@@ -65230,6 +65232,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1795696802068,
+   "u": "Diego Herrera",
+   "a": "Permissions : Responsable Runner · « semaine » → lecture seule 👁"
+  },
   {
    "t": 1795696754485,
    "u": "Diego Herrera",
@@ -66724,11 +66731,6 @@
    "t": 1794784347866,
    "u": "Diego Herrera",
    "a": "Sanction : Didier Cleanton — Avert. 1 (Quota non fait)"
-  },
-  {
-   "t": 1794784347801,
-   "u": "Diego Herrera",
-   "a": "Sanction : David Richelieu — Avert. 1 (Quota non fait)"
   }
  ],
  "prodDer": {
@@ -67315,7 +67317,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-26T12:39:34.781Z",
+  "maj": "2026-11-26T12:40:02.727Z",
   "semaine": 48,
   "totalBarils": 22138,
   "ca": 110690,
