@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-26T21:42:33.138012+00:00",
+ "maj": "2026-11-26T21:44:32.265176+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -19,6 +19,51 @@
   "entreprise (Oil RoxWood) (13850)"
  ],
  "messages": [
+  {
+   "id": "1575627900072231047",
+   "t": "2026-11-26T21:42:45.128000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\na retiré 28x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood) (13840)\nposition : -1844.23, 6519.17, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 2544\nplayerDiscord : 198789252329373706\nplayerName : Jack Berthier\nplayerCharacter : Jack Berthier\nplayerId : 276642\nitemId : refinedoil",
+   "nom": "Jack Berthier",
+   "quantite": 28,
+   "montant": null,
+   "type": "coffre_retrait",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood) (13840)",
+   "champs": {
+    "position": "-1844.23, 6519.17, 16.73",
+    "targetposition": "-1843.83, 6518.10, 15.74",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "2544",
+    "playerdiscord": "198789252329373706",
+    "playername": "Jack Berthier",
+    "playercharacter": "Jack Berthier",
+    "playerid": "276642",
+    "itemid": "refinedoil"
+   }
+  },
+  {
+   "id": "1575627880942145628",
+   "t": "2026-11-26T21:42:40.567000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 1765\nplayerDiscord : 221821522225004544\nplayerName : LoudBat8434\nplayerCharacter : Maruis Caplant\nplayerId : 385893\nvehiclePlate : IL4818AV\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Maruis Caplant",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "1765",
+    "playerdiscord": "221821522225004544",
+    "playername": "LoudBat8434",
+    "playercharacter": "Maruis Caplant",
+    "playerid": "385893",
+    "vehicleplate": "IL4818AV",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1575627641749381172-0",
    "t": "2026-11-26T21:41:43.539000+00:00",
