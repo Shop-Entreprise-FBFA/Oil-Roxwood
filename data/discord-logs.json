@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-26T21:04:33.213020+00:00",
+ "maj": "2026-11-26T21:06:32.878531+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -19,6 +19,30 @@
   "entreprise (Oil RoxWood) (13850)"
  ],
  "messages": [
+  {
+   "id": "1575618342813958237",
+   "t": "2026-11-26T21:04:46.500000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\na retiré 28x Pétrole Raffiné du coffre de l'entreprise (Oil RoxWood) (13840)\nposition : -1844.93, 6518.58, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 2544\nplayerDiscord : 198789252329373706\nplayerName : Jack Berthier\nplayerCharacter : Jack Berthier\nplayerId : 276642\nitemId : refinedoil",
+   "nom": "Jack Berthier",
+   "quantite": 28,
+   "montant": null,
+   "type": "coffre_retrait",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood) (13840)",
+   "champs": {
+    "position": "-1844.93, 6518.58, 16.73",
+    "targetposition": "-1843.83, 6518.10, 15.74",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "2544",
+    "playerdiscord": "198789252329373706",
+    "playername": "Jack Berthier",
+    "playercharacter": "Jack Berthier",
+    "playerid": "276642",
+    "itemid": "refinedoil"
+   }
+  },
   {
    "id": "1575618088433483778-0",
    "t": "2026-11-26T21:03:45.851000+00:00",
@@ -65760,22 +65784,6 @@
     "playercharacter": "Lia Cruz",
     "playerid": "124466",
     "vehicleplate": "AS5715VX",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1574531292286951537",
-   "t": "2026-11-23T21:05:13.458000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 657x Pétrole Raffiné pour 6570$ par Lorenzo Rojas. 3285$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 657,
-   "montant": 6570,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
     "jobid": "76",
     "jobname": "Oil RoxWood"
    }
