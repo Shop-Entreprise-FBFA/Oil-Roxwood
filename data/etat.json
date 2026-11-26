@@ -65101,6 +65101,7 @@
     "accueil",
     "comptable",
     "evenements",
+    "integration",
     "semaine",
     "overview",
     "felig",
@@ -65182,8 +65183,8 @@
   }
  },
  "_cid": "phkbljb8uvi",
- "_maj": 1795696751547,
- "_rev": "oqipankswn-mwxjheuo",
+ "_maj": 1795696753474,
+ "_rev": "18y0vz5qljo-mwxjhjzg",
  "_majSec": {
   "fer": 1795638618252,
   "fact": 1795625770580,
@@ -65192,13 +65193,13 @@
   "sheets": 1795646036141,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1795696751547,
+  "journal": 1795696753474,
   "pending": 1793561085750,
   "prodDer": 1795270452372,
   "runners": 1795461294847,
   "absences": 1795544850047,
   "imported": 1793561085750,
-  "settings": 1795696751547,
+  "settings": 1795696753474,
   "closeUndo": 1795434602527,
   "quotasCom": 1795646041638,
   "bilanExtra": 1795260339053,
@@ -65229,6 +65230,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1795696754485,
+   "u": "Diego Herrera",
+   "a": "Permissions : Responsable Runner · « integration » → accès complet ✓"
+  },
   {
    "t": 1795696752558,
    "u": "Diego Herrera",
@@ -66723,11 +66729,6 @@
    "t": 1794784347801,
    "u": "Diego Herrera",
    "a": "Sanction : David Richelieu — Avert. 1 (Quota non fait)"
-  },
-  {
-   "t": 1794784347737,
-   "u": "Diego Herrera",
-   "a": "Sanction : Dani Dubanc — Avert. 1 (Quota non fait)"
   }
  ],
  "prodDer": {
@@ -67314,7 +67315,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-26T12:39:13.776Z",
+  "maj": "2026-11-26T12:39:20.429Z",
   "semaine": 48,
   "totalBarils": 22138,
   "ca": 110690,
