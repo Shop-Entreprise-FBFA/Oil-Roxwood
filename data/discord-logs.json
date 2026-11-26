@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-26T09:54:34.501854+00:00",
+ "maj": "2026-11-26T09:58:33.497970+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -19,6 +19,51 @@
   "entreprise (Oil RoxWood) (13850)"
  ],
  "messages": [
+  {
+   "id": "1575450390533644394",
+   "t": "2026-11-26T09:57:23.556000+00:00",
+   "auteur": "Logs - Coffre",
+   "texte": "Coffre\ndépot de 98x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood) (13848)\nposition : -1850.55, 6514.35, 16.73\ntargetPosition : -1850.63, 6515.15, 15.75\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 638\nplayerDiscord : 410157854855528449\nplayerName : BoldDuck0946\nplayerCharacter : Flavio Bellini\nplayerId : 386426\nitemId : refinedoil",
+   "nom": "Flavio Bellini",
+   "quantite": 98,
+   "montant": null,
+   "type": "coffre_depot",
+   "salon": "1245400913066066099",
+   "coffre": "entreprise (Oil RoxWood) (13848)",
+   "champs": {
+    "position": "-1850.55, 6514.35, 16.73",
+    "targetposition": "-1850.63, 6515.15, 15.75",
+    "jobid": "76",
+    "jobname": "Oil RoxWood",
+    "playernetid": "638",
+    "playerdiscord": "410157854855528449",
+    "playername": "BoldDuck0946",
+    "playercharacter": "Flavio Bellini",
+    "playerid": "386426",
+    "itemid": "refinedoil"
+   }
+  },
+  {
+   "id": "1575450384825319476",
+   "t": "2026-11-26T09:57:22.195000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 595\nplayerDiscord : 899043253817585704\nplayerName : BreezyAnt6129\nplayerCharacter : Damien Mienda\nplayerId : 353381\nvehiclePlate : AS5715VX\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Damien Mienda",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "595",
+    "playerdiscord": "899043253817585704",
+    "playername": "BreezyAnt6129",
+    "playercharacter": "Damien Mienda",
+    "playerid": "353381",
+    "vehicleplate": "AS5715VX",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1575449379572023387",
    "t": "2026-11-26T09:53:22.524000+00:00",
@@ -71177,22 +71222,6 @@
    "nom": null,
    "quantite": 726,
    "montant": 7260,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1574363166652235898",
-   "t": "2026-11-23T09:57:09.183000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 328x Pétrole Raffiné pour 3280$ par Lorenzo Rojas. 1640$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 328,
-   "montant": 3280,
    "type": "vente",
    "salon": "1245400913473179729",
    "champs": {
