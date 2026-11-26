@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-26T09:38:32.646682+00:00",
+ "maj": "2026-11-26T09:44:34.988810+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -19,6 +19,27 @@
   "entreprise (Oil RoxWood) (13850)"
  ],
  "messages": [
+  {
+   "id": "1575446862826045522",
+   "t": "2026-11-26T09:43:22.485000+00:00",
+   "auteur": "Logs- Spawn un véhicule",
+   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 578\nplayerDiscord : 612206513200562196\nplayerName : LoudCat8750\nplayerCharacter : Gérard Smith\nplayerId : 273365\nvehiclePlate : FE3726MZ\njobId : 76\njobName : Oil RoxWood",
+   "nom": "Gérard Smith",
+   "quantite": null,
+   "montant": null,
+   "type": "vehicule_spawn",
+   "salon": "1245400913473179732",
+   "champs": {
+    "playernetid": "578",
+    "playerdiscord": "612206513200562196",
+    "playername": "LoudCat8750",
+    "playercharacter": "Gérard Smith",
+    "playerid": "273365",
+    "vehicleplate": "FE3726MZ",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1575445604576788501",
    "t": "2026-11-26T09:38:22.495000+00:00",
@@ -71115,115 +71136,6 @@
    "salon": "1245400913473179729",
    "champs": {
     "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1574359138304270439",
-   "t": "2026-11-23T09:41:08.750000+00:00",
-   "auteur": "Logs - Vente run",
-   "texte": "Vente run\nVente de 122x Pétrole Raffiné pour 1220$ par Jack Berthier. 610$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
-   "nom": null,
-   "quantite": 122,
-   "montant": 1220,
-   "type": "vente",
-   "salon": "1245400913473179729",
-   "champs": {
-    "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1574358631170969685-0",
-   "t": "2026-11-23T09:39:07.840000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 109x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood) (13840)\nposition : -1843.12, 6518.81, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 5160\nplayerDiscord : 1226472675971436614\nplayerName : Jason Palmer┃Visum\nplayerCharacter : Jason Palmer\nplayerId : 362532\nitemId : refinedoil",
-   "nom": "Jason Palmer",
-   "quantite": 109,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood) (13840)",
-   "champs": {
-    "position": "-1843.12, 6518.81, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "5160",
-    "playerdiscord": "1226472675971436614",
-    "playername": "Jason Palmer┃Visum",
-    "playercharacter": "Jason Palmer",
-    "playerid": "362532",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1574358631170969685-1",
-   "t": "2026-11-23T09:39:07.840000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 110x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood) (13840)\nposition : -1842.98, 6518.70, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 5160\nplayerDiscord : 1226472675971436614\nplayerName : Jason Palmer┃Visum\nplayerCharacter : Jason Palmer\nplayerId : 362532\nitemId : refinedoil",
-   "nom": "Jason Palmer",
-   "quantite": 110,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood) (13840)",
-   "champs": {
-    "position": "-1842.98, 6518.70, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "5160",
-    "playerdiscord": "1226472675971436614",
-    "playername": "Jason Palmer┃Visum",
-    "playercharacter": "Jason Palmer",
-    "playerid": "362532",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1574358631170969685-2",
-   "t": "2026-11-23T09:39:07.840000+00:00",
-   "auteur": "Logs - Coffre",
-   "texte": "Coffre\ndépot de 85x Pétrole Raffiné dans le coffre de l'entreprise (Oil RoxWood) (13840)\nposition : -1843.05, 6519.06, 16.73\ntargetPosition : -1843.83, 6518.10, 15.74\njobId : 76\njobName : Oil RoxWood\nplayerNetId : 5160\nplayerDiscord : 1226472675971436614\nplayerName : Jason Palmer┃Visum\nplayerCharacter : Jason Palmer\nplayerId : 362532\nitemId : refinedoil",
-   "nom": "Jason Palmer",
-   "quantite": 85,
-   "montant": null,
-   "type": "coffre_depot",
-   "salon": "1245400913066066099",
-   "coffre": "entreprise (Oil RoxWood) (13840)",
-   "champs": {
-    "position": "-1843.05, 6519.06, 16.73",
-    "targetposition": "-1843.83, 6518.10, 15.74",
-    "jobid": "76",
-    "jobname": "Oil RoxWood",
-    "playernetid": "5160",
-    "playerdiscord": "1226472675971436614",
-    "playername": "Jason Palmer┃Visum",
-    "playercharacter": "Jason Palmer",
-    "playerid": "362532",
-    "itemid": "refinedoil"
-   }
-  },
-  {
-   "id": "1574358630151757895",
-   "t": "2026-11-23T09:39:07.597000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 5130\nplayerDiscord : 1564757178865422440\nplayerName : FAFA\nplayerCharacter : Jalil Eden\nplayerId : 386201\nvehiclePlate : AS5715VX\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Jalil Eden",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "5130",
-    "playerdiscord": "1564757178865422440",
-    "playername": "FAFA",
-    "playercharacter": "Jalil Eden",
-    "playerid": "386201",
-    "vehicleplate": "AS5715VX",
     "jobid": "76",
     "jobname": "Oil RoxWood"
    }
