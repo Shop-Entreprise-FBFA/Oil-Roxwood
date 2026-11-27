@@ -1,9 +1,9 @@
 {
- "t": "2026-11-27T15:43:58+00:00",
+ "t": "2026-11-27T15:58:59+00:00",
  "en_ligne": true,
  "version_cfg": 3,
  "latence_ms": 106,
- "uptime_s": 14248,
+ "uptime_s": 15150,
  "serveur": "Oil Roxwood | FlashbackFA",
  "membres": 1680,
  "cogs": [
@@ -56,8 +56,17 @@
   "WebhooksActiviteCog",
   "WebhooksLogsSupplementairesCog"
  ],
- "cmds24h": 0,
- "top_cmds": [],
+ "cmds24h": 2,
+ "top_cmds": [
+  [
+   "info",
+   1
+  ],
+  [
+   "candidature",
+   1
+  ]
+ ],
  "erreurs24h": 0,
  "erreurs": [],
  "commandes": [
@@ -2338,6 +2347,18 @@
    "id": "1488858938517622834",
    "nom": "👨‍👩‍👧‍👦✅・klan-ozumiya",
    "cat": "╭─ 👪 CLIENTS ・ FAMILLES 👪─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1575900696325398625",
+   "nom": "yann-rosario-entretien",
+   "cat": "╭─ 📝 TICKETS RECRUTEMENT ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1575902046983299132",
+   "nom": "ticket-5573",
+   "cat": "╭─ 📝 TICKETS RECRUTEMENT ─╮",
    "type": "texte"
   }
  ],
