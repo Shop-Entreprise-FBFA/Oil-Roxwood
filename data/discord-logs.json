@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-27T08:56:32.459364+00:00",
+ "maj": "2026-11-27T08:58:32.390410+00:00",
  "salon": "1247565070423167100",
  "fenetreJours": 3,
  "coffres": [
@@ -19,6 +19,22 @@
   "entreprise (Oil RoxWood) (13850)"
  ],
  "messages": [
+  {
+   "id": "1575797763621257277",
+   "t": "2026-11-27T08:57:43.754000+00:00",
+   "auteur": "Logs - Vente run",
+   "texte": "Vente run\nVente de 242x Pétrole Raffiné pour 2420$ par Gérard Smith. 1210$ pour la société\nitemId : refinedoil\njobId : 76\njobName : Oil RoxWood",
+   "nom": null,
+   "quantite": 242,
+   "montant": 2420,
+   "type": "vente",
+   "salon": "1245400913473179729",
+   "champs": {
+    "itemid": "refinedoil",
+    "jobid": "76",
+    "jobname": "Oil RoxWood"
+   }
+  },
   {
    "id": "1575796995723890743",
    "t": "2026-11-27T08:54:40.673000+00:00",
@@ -64788,27 +64804,6 @@
    "salon": "1245400913473179729",
    "champs": {
     "itemid": "refinedoil",
-    "jobid": "76",
-    "jobname": "Oil RoxWood"
-   }
-  },
-  {
-   "id": "1574710669767479348",
-   "t": "2026-11-24T08:58:00.382000+00:00",
-   "auteur": "Logs- Spawn un véhicule",
-   "texte": "Spawn véhicule\nSpawn d'un véhicule appartenant à l'entreprise: gbvoyagerb\nplayerNetId : 4587\nplayerDiscord : 715788859811561515\nplayerName : JumpyFish9521\nplayerCharacter : Seamus Irish\nplayerId : 386371\nvehiclePlate : AY0298ZV\njobId : 76\njobName : Oil RoxWood",
-   "nom": "Seamus Irish",
-   "quantite": null,
-   "montant": null,
-   "type": "vehicule_spawn",
-   "salon": "1245400913473179732",
-   "champs": {
-    "playernetid": "4587",
-    "playerdiscord": "715788859811561515",
-    "playername": "JumpyFish9521",
-    "playercharacter": "Seamus Irish",
-    "playerid": "386371",
-    "vehicleplate": "AY0298ZV",
     "jobid": "76",
     "jobname": "Oil RoxWood"
    }
