@@ -22933,8 +22933,22 @@
   "maintenance": false,
   "messages": {
    "bienvenue": {
-    "desc": "",
-    "salon": "1245479887012237363"
+    "desc": "Hey {membre} ! 👋\n\nBienvenue sur le serveur Discord officiel d'**Oil Roxwood** !\n\nNous sommes heureux de t'accueillir parmi nous. N'hésite pas à découvrir nos différents salons, à consulter le règlement et à échanger avec les autres membres.\n\n🎉 Tu es notre **{nb_membres}ᵉ membre** !\n\nSi tu as la moindre question, notre équipe reste à ta disposition.\n\nNous te souhaitons un agréable moment sur notre serveur ! 💙",
+    "salon": "1245479887012237363",
+    "couleur": "#D4A017",
+    "titre": "🛢️ Bienvenue chez Oil Roxwood !",
+    "pied": "© Oil Roxwood • Roxwood County • Direction générale",
+    "boutons": [
+     {
+      "label": "📋 Recrutement",
+      "url": "https://discord.com/channels/1245400912835510283/1246400361086845010/1473993031873986778"
+     },
+     {
+      "label": "🛒 Passer une commande",
+      "url": "https://discord.com/channels/1245400912835510283/1246400361086845010/1473993031873986778"
+     }
+    ],
+    "image": "https://cdn.discordapp.com/attachments/1119748188497268796/1575849410212925501/oil_2K27_2.png?ex=6b0ac7a1&is=6b097621&hm=cf7d381c471dacbca8ebd86e2f5f5c364fd28723ff5536bb2b9400d85addc617&"
    }
   },
   "planifs": [],
@@ -23285,11 +23299,11 @@
     ]
    }
   },
+  "v": 2,
+  "maj": 1795782227663,
+  "par": "Diego Herrera",
   "actions": [],
   "retours": [],
-  "v": 1,
-  "maj": 1795781576538,
-  "par": "Diego Herrera",
   "historique": [
    {
     "v": 1,
@@ -23316,6 +23330,397 @@
       "bienvenue": {
        "desc": "",
        "salon": "1245479887012237363"
+      }
+     },
+     "planifs": [],
+     "roles": {
+      "staff": [
+       "1245400912835510286",
+       "1468694481153818674",
+       "1572228626722852914",
+       "1549212191432118384"
+      ],
+      "direction": [
+       "1247299609617891453"
+      ],
+      "drh": [
+       "1572228626722852914"
+      ],
+      "resprunner": [
+       "1574891946634248373"
+      ]
+     },
+     "alertes": {
+      "stock": {
+       "salon": "1492998331503345885"
+      }
+     },
+     "moderation": {
+      "salonLogs": "1529598471022313684"
+     },
+     "cmds": {
+      "/add": {
+       "roles": [
+        "staff"
+       ]
+      },
+      "/avertissement": {
+       "roles": [
+        "staff",
+        "drh"
+       ]
+      },
+      "/avertissements": {
+       "roles": [
+        "staff",
+        "drh"
+       ]
+      },
+      "/bienvenue": {
+       "roles": [
+        "staff",
+        "drh",
+        "direction"
+       ]
+      },
+      "/blacklist": {
+       "roles": [
+        "staff",
+        "drh"
+       ]
+      },
+      "/blacklist ajouter": {
+       "roles": [
+        "staff",
+        "drh"
+       ]
+      },
+      "/blacklist liste": {
+       "roles": [
+        "staff",
+        "drh"
+       ]
+      },
+      "/blacklist retirer": {
+       "roles": [
+        "staff"
+       ]
+      },
+      "/candidature": {
+       "roles": [
+        "staff",
+        "drh"
+       ]
+      },
+      "/close": {
+       "roles": [
+        "staff",
+        "drh",
+        "direction"
+       ]
+      },
+      "/cloture-commande": {
+       "roles": [
+        "staff",
+        "direction"
+       ]
+      },
+      "/contrat": {
+       "roles": [
+        "staff",
+        "direction"
+       ]
+      },
+      "/contrat-annuler": {
+       "roles": [
+        "staff",
+        "direction"
+       ]
+      },
+      "/corriger-id": {
+       "roles": [
+        "staff"
+       ]
+      },
+      "/facture": {
+       "on": false,
+       "roles": [
+        "staff"
+       ]
+      },
+      "/gazette": {
+       "roles": [
+        "staff"
+       ],
+       "on": false
+      },
+      "/giveaway": {
+       "roles": [
+        "staff"
+       ]
+      },
+      "/giveaway creer": {
+       "roles": [
+        "staff"
+       ]
+      },
+      "/giveaway liste": {
+       "roles": [
+        "staff"
+       ]
+      },
+      "/giveaway participants": {
+       "roles": [
+        "staff"
+       ]
+      },
+      "/giveaway relancer": {
+       "roles": [
+        "staff"
+       ]
+      },
+      "/giveaway terminer": {
+       "roles": [
+        "staff"
+       ]
+      },
+      "/historique-coffre": {
+       "roles": [
+        "staff"
+       ]
+      },
+      "/historique-ventes": {
+       "roles": [
+        "staff"
+       ]
+      },
+      "/init-absences": {
+       "roles": [
+        "staff",
+        "drh"
+       ]
+      },
+      "/lier-personnage": {
+       "roles": [
+        "staff"
+       ]
+      },
+      "/liste-coffres": {
+       "roles": [
+        "staff"
+       ]
+      },
+      "/logs-recherche": {
+       "roles": [
+        "staff"
+       ]
+      },
+      "/mots-interdits": {
+       "roles": [
+        "staff"
+       ]
+      },
+      "/mots-interdits ajouter": {
+       "roles": [
+        "staff"
+       ]
+      },
+      "/mots-interdits liste": {
+       "roles": [
+        "staff"
+       ]
+      },
+      "/mots-interdits retirer": {
+       "roles": [
+        "staff"
+       ]
+      },
+      "/nommer-coffre": {
+       "roles": [
+        "staff"
+       ]
+      },
+      "/nouvelle-commande": {
+       "roles": [
+        "staff",
+        "direction"
+       ]
+      },
+      "/organigramme-refresh": {
+       "roles": [
+        "staff"
+       ]
+      },
+      "/pari": {
+       "roles": [
+        "staff"
+       ]
+      },
+      "/pari classement": {
+       "roles": [
+        "staff"
+       ]
+      },
+      "/pari grille": {
+       "roles": [
+        "staff"
+       ]
+      },
+      "/pari liste": {
+       "roles": [
+        "staff"
+       ]
+      },
+      "/pari reset-championnat": {
+       "roles": [
+        "staff"
+       ]
+      },
+      "/pari resultat": {
+       "roles": [
+        "staff"
+       ]
+      },
+      "/plaque": {
+       "roles": [
+        "staff",
+        "direction",
+        "drh",
+        "resprunner"
+       ]
+      },
+      "/rattraper-webhooks": {
+       "roles": [
+        "staff"
+       ]
+      },
+      "/recap-mensuel": {
+       "roles": [
+        "staff"
+       ],
+       "on": false
+      },
+      "/remove": {
+       "roles": [
+        "staff",
+        "direction",
+        "drh"
+       ]
+      },
+      "/reset-salon": {
+       "roles": [
+        "staff",
+        "direction"
+       ]
+      },
+      "/retirer-avertissement": {
+       "roles": [
+        "staff",
+        "drh"
+       ]
+      },
+      "/sync-pseudos": {
+       "roles": [
+        "staff"
+       ]
+      },
+      "/timeout": {
+       "roles": [
+        "staff"
+       ]
+      },
+      "/tirage": {
+       "roles": [
+        "staff"
+       ]
+      },
+      "/tombola": {
+       "roles": [
+        "staff"
+       ]
+      },
+      "/tombola annuler": {
+       "roles": [
+        "staff"
+       ]
+      },
+      "/tombola creer": {
+       "roles": [
+        "staff"
+       ]
+      },
+      "/tombola recap": {
+       "roles": [
+        "staff"
+       ]
+      },
+      "/tombola supprimer-vente": {
+       "roles": [
+        "staff"
+       ]
+      },
+      "/tombola tirage": {
+       "roles": [
+        "staff"
+       ]
+      },
+      "/tombola ventes": {
+       "roles": [
+        "staff"
+       ]
+      },
+      "/verifier-acces": {
+       "roles": [
+        "staff"
+       ]
+      },
+      "/verifier-personnages": {
+       "roles": [
+        "staff"
+       ]
+      }
+     }
+    }
+   },
+   {
+    "v": 2,
+    "t": 1795782227663,
+    "par": "Diego Herrera",
+    "n": 6,
+    "ch": [
+     "messages.bienvenue.desc",
+     "messages.bienvenue.couleur",
+     "messages.bienvenue.titre",
+     "messages.bienvenue.pied",
+     "messages.bienvenue.boutons",
+     "messages.bienvenue.image"
+    ],
+    "snap": {
+     "msglog": {
+      "on": true,
+      "alerte": {
+       "salon": "1529598471022313684"
+      }
+     },
+     "maintenance": false,
+     "messages": {
+      "bienvenue": {
+       "desc": "Hey {membre} ! 👋\n\nBienvenue sur le serveur Discord officiel d'**Oil Roxwood** !\n\nNous sommes heureux de t'accueillir parmi nous. N'hésite pas à découvrir nos différents salons, à consulter le règlement et à échanger avec les autres membres.\n\n🎉 Tu es notre **{nb_membres}ᵉ membre** !\n\nSi tu as la moindre question, notre équipe reste à ta disposition.\n\nNous te souhaitons un agréable moment sur notre serveur ! 💙",
+       "salon": "1245479887012237363",
+       "couleur": "#D4A017",
+       "titre": "🛢️ Bienvenue chez Oil Roxwood !",
+       "pied": "© Oil Roxwood • Roxwood County • Direction générale",
+       "boutons": [
+        {
+         "label": "📋 Recrutement",
+         "url": "https://discord.com/channels/1245400912835510283/1246400361086845010/1473993031873986778"
+        },
+        {
+         "label": "🛒 Passer une commande",
+         "url": "https://discord.com/channels/1245400912835510283/1246400361086845010/1473993031873986778"
+        }
+       ],
+       "image": "https://cdn.discordapp.com/attachments/1119748188497268796/1575849410212925501/oil_2K27_2.png?ex=6b0ac7a1&is=6b097621&hm=cf7d381c471dacbca8ebd86e2f5f5c364fd28723ff5536bb2b9400d85addc617&"
       }
      },
      "planifs": [],
@@ -65916,8 +66321,8 @@
   }
  },
  "_cid": "yitaw9pc4a",
- "_maj": 1795782201416,
- "_rev": "qqsjaefzqid-mwyyd009",
+ "_maj": 1795782224841,
+ "_rev": "buggdt2hxl-mwyydfl1",
  "_majSec": {
   "fer": 1795638618252,
   "fact": 1795698633318,
@@ -65926,7 +66331,7 @@
   "sheets": 1795710914497,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
-  "journal": 1795781573737,
+  "journal": 1795782224841,
   "pending": 1793561085750,
   "prodDer": 1795715493528,
   "runners": 1795461294847,
@@ -65940,7 +66345,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1795434602527,
   "profils": 1793561085750,
-  "_tables": 1795782201416,
+  "_tables": 1795782224841,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -65959,12 +66364,17 @@
   "_evtFix1": 1795028752192,
   "_stkFix1": 1795207386387,
   "stocks": 1795259898981,
-  "botcfg": 1795781573737,
+  "botcfg": 1795782224841,
   "_botFix1": 1795777677320
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1795782227663,
+   "u": "Diego Herrera",
+   "a": "Gestion du bot : version 2 enregistrée (6 réglage(s))"
+  },
   {
    "t": 1795781576538,
    "u": "Diego Herrera",
@@ -67459,11 +67869,6 @@
    "t": 1794784348750,
    "u": "Diego Herrera",
    "a": "Sanction : Jamal Kara — Avert. 1 (Quota non fait)"
-  },
-  {
-   "t": 1794784348684,
-   "u": "Diego Herrera",
-   "a": "Sanction : Jake Wesley — Avert. 1 (Quota non fait)"
   }
  ],
  "prodDer": {
@@ -68057,7 +68462,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-27T12:23:28.329Z",
+  "maj": "2026-11-27T12:23:48.517Z",
   "semaine": 48,
   "totalBarils": 22138,
   "ca": 110690,
