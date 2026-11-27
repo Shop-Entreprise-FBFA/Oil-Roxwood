@@ -14748,6 +14748,13 @@
     "quantite": 500,
     "qui": "Stella Collins",
     "fact": 253228
+   },
+   {
+    "date": "2026-11-27",
+    "client": "Mairie San Andreas",
+    "quantite": 50,
+    "qui": "Stella Collins",
+    "fact": 253229
    }
   ],
   "collection": [
@@ -16990,7 +16997,7 @@
     "rib": "",
     "tel": "",
     "adresse": "Paleto",
-    "lastCmd": "2026-03-29",
+    "lastCmd": "2026-11-27",
     "type": "entreprise",
     "salon": "1501235039860559922"
    },
@@ -17345,8 +17352,38 @@
     "prix": 150
    }
   ],
-  "compteur": 253229,
+  "compteur": 253230,
   "factures": [
+   {
+    "num": 253229,
+    "date": "2026-11-27",
+    "client": "Mairie San Andreas",
+    "emetteur": "Stella Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD%",
+      "qte": 50,
+      "tva": 0.05,
+      "pu": 150,
+      "ht": 7500,
+      "ttc": 7875,
+      "desc": "bidons d'essence promo"
+     }
+    ],
+    "offert": 0,
+    "ht": 7500,
+    "ttc": 7875,
+    "poids": 100,
+    "statut": "attente",
+    "envoi": {
+     "t": 1795821540521,
+     "par": "Stella Collins",
+     "statut": "en_cours",
+     "ordre": 1795821540677,
+     "rapport": ""
+    }
+   },
    {
     "num": 253228,
     "date": "2026-11-27",
@@ -66942,14 +66979,14 @@
   }
  },
  "_cid": "udh3ajr326r",
- "_maj": 1795821514903,
- "_rev": "5tktrw884b4-mwzlrjt1",
+ "_maj": 1795821540521,
+ "_rev": "dpvagl2hj4-mwzls0rl",
  "_majSec": {
   "fer": 1795638618252,
-  "fact": 1795821492638,
+  "fact": 1795821540521,
   "users": 1795808173586,
   "weeks": 1795434602527,
-  "sheets": 1795821492638,
+  "sheets": 1795821539946,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
   "journal": 1795808173586,
@@ -66966,7 +67003,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1795434602527,
   "profils": 1793561085750,
-  "_tables": 1795821514903,
+  "_tables": 1795821540503,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -69095,13 +69132,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-27T23:18:38.341Z",
+  "maj": "2026-11-27T23:19:00.321Z",
   "semaine": 48,
   "totalBarils": 22138,
   "ca": 110690,
   "objectif": 375000,
   "effectif": 95,
-  "clientsServis": 211,
+  "clientsServis": 212,
   "theme": "",
   "top3": [
    {
@@ -75366,6 +75403,48 @@
     "id": 1795820966546,
     "statut": "fait",
     "rapport": "Facture n°253228 postee dans le salon 1461345077187051570."
+   },
+   {
+    "type": "facture_ticket",
+    "payload": {
+     "num": 253229,
+     "salon": "1501235039860559922",
+     "reedition": false,
+     "facture": {
+      "num": 253229,
+      "date": "2026-11-27",
+      "client": "Mairie San Andreas",
+      "emetteur": "Stella Collins",
+      "postop": false,
+      "lignes": [
+       {
+        "ref": "CMD%",
+        "qte": 50,
+        "tva": 0.05,
+        "pu": 150,
+        "ht": 7500,
+        "ttc": 7875,
+        "desc": "bidons d'essence promo"
+       }
+      ],
+      "offert": 0,
+      "ht": 7500,
+      "ttc": 7875,
+      "poids": 100,
+      "statut": "attente"
+     },
+     "client": {
+      "nom": "Mairie San Andreas",
+      "rib": "",
+      "tel": "",
+      "adresse": "Paleto",
+      "lastCmd": "2026-11-27",
+      "type": "entreprise",
+      "salon": "1501235039860559922"
+     },
+     "par": "Stella Collins"
+    },
+    "id": 1795821540677
    }
   ],
   "oilroxwood_coffres": [
