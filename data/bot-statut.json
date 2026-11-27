@@ -1,0 +1,3003 @@
+{
+ "t": "2026-11-27T11:46:52+00:00",
+ "en_ligne": true,
+ "version_cfg": null,
+ "latence_ms": 106,
+ "uptime_s": 23,
+ "serveur": "Oil Roxwood | FlashbackFA",
+ "membres": 1680,
+ "cogs": [
+  "AbsencesCog",
+  "AideCog",
+  "AntiSpamCog",
+  "BadgesTopVendeurCog",
+  "BienvenueCog",
+  "BlacklistCog",
+  "BoutonsCommercialCog",
+  "BoutonsTicketCog",
+  "CandidatureCog",
+  "CandidatureSiteCog",
+  "ClassementCog",
+  "CloseTicketCog",
+  "ClotureCommandeCog",
+  "CommandeSiteCog",
+  "CommercialCog",
+  "ConfigSiteCog",
+  "ContratCog",
+  "ContratTravailCog",
+  "DepartDiscordCog",
+  "FactureCog",
+  "GazetteCog",
+  "GiveawayCog",
+  "LogsDirectCog",
+  "LogsRechercheCog",
+  "ModerationCog",
+  "ModerationUtilsCog",
+  "Organigramme",
+  "PanneauCog",
+  "PannesCog",
+  "PronosticsCog",
+  "RHEvenementsCog",
+  "RHGradesCog",
+  "RecapHebdoCog",
+  "RecapMensuelCog",
+  "RelevesSiteCog",
+  "SalonsVocauxTempCog",
+  "SauvegardeCog",
+  "SiteBridgeCog",
+  "StatsCog",
+  "TicketPermissionsAuto",
+  "TicketToolReplaceCog",
+  "TimeoutCog",
+  "TirageCog",
+  "TombolaCog",
+  "VehiculesCog",
+  "VerificationAccesCog",
+  "WebhooksActiviteCog",
+  "WebhooksLogsSupplementairesCog"
+ ],
+ "cmds24h": 0,
+ "top_cmds": [],
+ "erreurs24h": 0,
+ "erreurs": [],
+ "commandes": [
+  {
+   "nom": "add",
+   "desc": "Ajoute un membre a ce ticket (staff ou commercial)",
+   "cog": "CloseTicketCog"
+  },
+  {
+   "nom": "aide",
+   "desc": "Liste toutes les commandes disponibles",
+   "cog": "AideCog"
+  },
+  {
+   "nom": "avertissement",
+   "desc": "Donne une sanction (rappel, avertissement…) — enregistrée sur le site",
+   "cog": "ModerationUtilsCog"
+  },
+  {
+   "nom": "avertissements",
+   "desc": "Registre des sanctions en vigueur — le même que sur le site (staff)",
+   "cog": "ModerationUtilsCog"
+  },
+  {
+   "nom": "bienvenue",
+   "desc": "Souhaite la bienvenue à une personne dans le salon de son entreprise (staff ou commercial)",
+   "cog": "BienvenueCog"
+  },
+  {
+   "nom": "blacklist",
+   "desc": "Gestion de la liste noire de recrutement",
+   "cog": ""
+  },
+  {
+   "nom": "blacklist ajouter",
+   "desc": "Ajoute un ID unique a la blacklist (staff)",
+   "cog": "BlacklistCog"
+  },
+  {
+   "nom": "blacklist liste",
+   "desc": "Affiche toute la blacklist (staff)",
+   "cog": "BlacklistCog"
+  },
+  {
+   "nom": "blacklist retirer",
+   "desc": "Retire un ID unique de la blacklist (staff)",
+   "cog": "BlacklistCog"
+  },
+  {
+   "nom": "candidature",
+   "desc": "Reposte le bouton de formulaire dans ce salon",
+   "cog": "CandidatureCog"
+  },
+  {
+   "nom": "close",
+   "desc": "Supprime ce salon ticket (staff ou commercial)",
+   "cog": "CloseTicketCog"
+  },
+  {
+   "nom": "cloture-commande",
+   "desc": "Envoie un message de remerciement au client (staff ou commercial)",
+   "cog": "ClotureCommandeCog"
+  },
+  {
+   "nom": "contrat",
+   "desc": "Cree un contrat de livraison recurrente (staff ou commercial)",
+   "cog": "ContratCog"
+  },
+  {
+   "nom": "contrat-annuler",
+   "desc": "Annule le contrat actif de ce salon (staff ou commercial)",
+   "cog": "ContratCog"
+  },
+  {
+   "nom": "corriger-id",
+   "desc": "Redirige un ID Discord incorrect (cote jeu) vers le bon compte (staff)",
+   "cog": "WebhooksActiviteCog"
+  },
+  {
+   "nom": "facture",
+   "desc": "Genere et envoie le PDF d'une facture (staff)",
+   "cog": "FactureCog"
+  },
+  {
+   "nom": "gazette",
+   "desc": "Genere la gazette hebdomadaire (staff)",
+   "cog": "GazetteCog"
+  },
+  {
+   "nom": "giveaway",
+   "desc": "Giveaways (staff)",
+   "cog": ""
+  },
+  {
+   "nom": "giveaway creer",
+   "desc": "Lancer un giveaway dans ce salon",
+   "cog": "GiveawayCog"
+  },
+  {
+   "nom": "giveaway liste",
+   "desc": "Giveaways en cours",
+   "cog": "GiveawayCog"
+  },
+  {
+   "nom": "giveaway participants",
+   "desc": "Voir les participants d'un giveaway",
+   "cog": "GiveawayCog"
+  },
+  {
+   "nom": "giveaway relancer",
+   "desc": "Retirer au sort de nouveaux gagnants",
+   "cog": "GiveawayCog"
+  },
+  {
+   "nom": "giveaway terminer",
+   "desc": "Terminer un giveaway maintenant et tirer les gagnants",
+   "cog": "GiveawayCog"
+  },
+  {
+   "nom": "historique-coffre",
+   "desc": "Affiche les mouvements recents d'un coffre (staff)",
+   "cog": "WebhooksActiviteCog"
+  },
+  {
+   "nom": "historique-ventes",
+   "desc": "Liste chaque vente comptée cette semaine pour un membre (staff uniquement)",
+   "cog": "WebhooksActiviteCog"
+  },
+  {
+   "nom": "info",
+   "desc": "Affiche les informations d'un membre (staff et Responsable Runner)",
+   "cog": "StatsCog"
+  },
+  {
+   "nom": "init-absences",
+   "desc": "Poste le bouton de déclaration d'absence dans ce salon (staff uniquement)",
+   "cog": "AbsencesCog"
+  },
+  {
+   "nom": "lier-personnage",
+   "desc": "Relie manuellement un nom de personnage RP à un compte Discord (staff uniquement)",
+   "cog": "WebhooksActiviteCog"
+  },
+  {
+   "nom": "liste-coffres",
+   "desc": "Liste toutes les positions de coffres detectees, nommees ou non (staff)",
+   "cog": "WebhooksActiviteCog"
+  },
+  {
+   "nom": "logs-recherche",
+   "desc": "Recherche dans tout l'historique (moderation, activites, site) (staff)",
+   "cog": "LogsRechercheCog"
+  },
+  {
+   "nom": "mes-stats",
+   "desc": "Affiche tes informations (grade, ancienneté, avertissements, activité)",
+   "cog": "StatsCog"
+  },
+  {
+   "nom": "mots-interdits",
+   "desc": "Gestion de la liste des mots interdits",
+   "cog": ""
+  },
+  {
+   "nom": "mots-interdits ajouter",
+   "desc": "Ajoute un mot a la liste interdite (staff)",
+   "cog": "ModerationCog"
+  },
+  {
+   "nom": "mots-interdits liste",
+   "desc": "Affiche la liste des mots interdits (staff)",
+   "cog": "ModerationCog"
+  },
+  {
+   "nom": "mots-interdits retirer",
+   "desc": "Retire un mot de la liste interdite (staff)",
+   "cog": "ModerationCog"
+  },
+  {
+   "nom": "nommer-coffre",
+   "desc": "Associe un nom a une position de coffre detectee (staff)",
+   "cog": "WebhooksActiviteCog"
+  },
+  {
+   "nom": "nouvelle-commande",
+   "desc": "Reposte le bouton de commande dans ce salon (staff uniquement)",
+   "cog": "CommercialCog"
+  },
+  {
+   "nom": "organigramme-refresh",
+   "desc": "Regenere l'organigramme du salon a partir des roles actuels.",
+   "cog": "Organigramme"
+  },
+  {
+   "nom": "pari",
+   "desc": "Pronostics sportifs gratuits (staff)",
+   "cog": ""
+  },
+  {
+   "nom": "pari classement",
+   "desc": "Afficher le classement d'une grille ou d'un championnat",
+   "cog": "PronosticsCog"
+  },
+  {
+   "nom": "pari grille",
+   "desc": "Publier une grille de pronostics (plusieurs matchs d'un coup)",
+   "cog": "PronosticsCog"
+  },
+  {
+   "nom": "pari liste",
+   "desc": "Matchs ouverts ou en attente de résultat",
+   "cog": "PronosticsCog"
+  },
+  {
+   "nom": "pari reset-championnat",
+   "desc": "Remettre un championnat à zéro",
+   "cog": "PronosticsCog"
+  },
+  {
+   "nom": "pari resultat",
+   "desc": "Déclarer le résultat d'un match et attribuer les points",
+   "cog": "PronosticsCog"
+  },
+  {
+   "nom": "plaque",
+   "desc": "Affiche l'historique récent d'une plaque",
+   "cog": "VehiculesCog"
+  },
+  {
+   "nom": "rattraper-webhooks",
+   "desc": "Relit l'historique de la semaine (fer/coffres/véhicules/ventes) — staff uniquement",
+   "cog": "WebhooksActiviteCog"
+  },
+  {
+   "nom": "recap-mensuel",
+   "desc": "Genere le recap mensuel (staff)",
+   "cog": "RecapMensuelCog"
+  },
+  {
+   "nom": "remove",
+   "desc": "Retire un membre de ce ticket (staff ou commercial)",
+   "cog": "CloseTicketCog"
+  },
+  {
+   "nom": "reset-salon",
+   "desc": "Supprime TOUTE la conversation de ce salon (staff uniquement)",
+   "cog": "ModerationUtilsCog"
+  },
+  {
+   "nom": "retirer-avertissement",
+   "desc": "Explique comment retirer une sanction (cela se fait sur le site)",
+   "cog": "ModerationUtilsCog"
+  },
+  {
+   "nom": "sync-pseudos",
+   "desc": "Recalcule pseudo/badge et déplace/renomme les tickets selon le grade (staff uniquement)",
+   "cog": "RHGradesCog"
+  },
+  {
+   "nom": "timeout",
+   "desc": "Reduit un membre au silence temporairement (staff)",
+   "cog": "TimeoutCog"
+  },
+  {
+   "nom": "tirage",
+   "desc": "Tirage au sort pondere par nombre de tickets (staff)",
+   "cog": "TirageCog"
+  },
+  {
+   "nom": "tombola",
+   "desc": "Gestion des tombolas (direction)",
+   "cog": ""
+  },
+  {
+   "nom": "tombola annuler",
+   "desc": "Annuler une tombola en cours ou programmée",
+   "cog": "TombolaCog"
+  },
+  {
+   "nom": "tombola creer",
+   "desc": "Créer une tombola",
+   "cog": "TombolaCog"
+  },
+  {
+   "nom": "tombola recap",
+   "desc": "Récap cumulé (nom prénom tickets) + fichier complet",
+   "cog": "TombolaCog"
+  },
+  {
+   "nom": "tombola supprimer-vente",
+   "desc": "Supprimer une vente saisie par erreur",
+   "cog": "TombolaCog"
+  },
+  {
+   "nom": "tombola tirage",
+   "desc": "Tirer au sort un gagnant, pondéré par les tickets",
+   "cog": "TombolaCog"
+  },
+  {
+   "nom": "tombola ventes",
+   "desc": "Voir les dernières ventes enregistrées",
+   "cog": "TombolaCog"
+  },
+  {
+   "nom": "vehicules",
+   "desc": "Affiche la plaque de ton dernier véhicule sorti",
+   "cog": "VehiculesCog"
+  },
+  {
+   "nom": "verifier-acces",
+   "desc": "Liste les salons où le bot n'a pas tous les accès nécessaires (staff uniquement)",
+   "cog": "VerificationAccesCog"
+  },
+  {
+   "nom": "verifier-personnages",
+   "desc": "Liste les noms de personnages vus dans les ventes mais pas encore reliés à un Discord (staff)",
+   "cog": "WebhooksActiviteCog"
+  }
+ ],
+ "salons": [
+  {
+   "id": "1567307152811622571",
+   "nom": "🟢-lyna-jones-entretien",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1550508712437883000",
+   "nom": "🟢-marcus-vance",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1569370504320786597",
+   "nom": "🟢-maya-haddad",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1564328515334176788",
+   "nom": "🔴-jack-berthier",
+   "cat": "╭─ 📁 DOSSIERS ・ RAFFINEURS EXPERTS ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1561651018855612466",
+   "nom": "📋notes-marco",
+   "cat": "╭─ 👔 RESSOURCES HUMAINES 👔─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1489566115720986825",
+   "nom": "___hidden___",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1533831828379537548",
+   "nom": "🌙✅・horizon-biotech",
+   "cat": "╭─ 🌾 CLIENTS ・ FARMS 🌾─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1430988235437244437",
+   "nom": "🚑・bcmc",
+   "cat": "╭─ 🏭 CLIENTS ・ ENTREPRISES 🏭─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1548752429514756166",
+   "nom": "ℹ️・infos-officielles",
+   "cat": "╭─ ⭐ GRADÉS ⭐─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1538927274915795126",
+   "nom": "👨‍👩‍👧‍👦✅・devils-sons",
+   "cat": "╭─ 👪 CLIENTS ・ FAMILLES 👪─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1570793901214793789",
+   "nom": "🟢-nass-toofast",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1446242572379881542",
+   "nom": "logs-entrepot-raffinerie",
+   "cat": "╭─ ⚙️ LOGS JEU⚙️ ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1561798081144422501",
+   "nom": "🔵-mikael-owens",
+   "cat": "╭─ 📁 DOSSIERS ・ DÉMISSIONS ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1406342840002547814",
+   "nom": "𝖢-𝖶𝗂𝗅𝗅𝗂𝖺𝗆-𝖢𝗈𝗅𝗅𝗂𝗇𝗌",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1574345860777640007",
+   "nom": "iriselia-vayne",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES 2 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1246398967189864448",
+   "nom": "___hidden___",
+   "cat": "╭─ 📢 OIL ROXWOOD ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1246760979870650409",
+   "nom": "___hidden___",
+   "cat": "",
+   "type": "texte"
+  },
+  {
+   "id": "1479199638425964796",
+   "nom": "___hidden___",
+   "cat": "╭─ 👑 DIRECTION 👑─╮",
+   "type": "vocal"
+  },
+  {
+   "id": "1549522426730254336",
+   "nom": "🧑‍🧑‍🧒‍🧒✅・gaïa-lavyrinthos",
+   "cat": "╭─ 👪 CLIENTS ・ FAMILLES 👪─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1572039763572297828",
+   "nom": "🟢-sapu-kirubakaran",
+   "cat": "╭─ 📁 DOSSIERS ・ DÉMISSIONS ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1250202998223802500",
+   "nom": "🏬✅・ltd-cayo",
+   "cat": "╭─ 🏪 CLIENTS ・ LTD 🏪─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1246760979870650410",
+   "nom": "___hidden___",
+   "cat": "",
+   "type": "texte"
+  },
+  {
+   "id": "1574520727380566117",
+   "nom": "max-bennett",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES 2 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1571614444386001017",
+   "nom": "🟢-straviski-vorkuta",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1498723977760080032",
+   "nom": "___hidden___",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1526218326299250708",
+   "nom": "🧑‍🧑‍🧒‍🧒✅・cartel-paredez",
+   "cat": "╭─ 👪 CLIENTS ・ FAMILLES 👪─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1574455043120300213",
+   "nom": "🟢-flavio-bellini",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1398763448950591629",
+   "nom": "___hidden___",
+   "cat": "╭─ 👔 RESSOURCES HUMAINES 👔─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1247271293317812264",
+   "nom": "🏬✅・ltd-strawberry",
+   "cat": "╭─ 🏪 CLIENTS ・ LTD 🏪─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1563547285999059104",
+   "nom": "🔵-danielson-merill",
+   "cat": "╭─ 📁 DOSSIERS ・ RAFFINEURS ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1500559447695560906",
+   "nom": "___hidden___",
+   "cat": "╭─ 🚛 SERVICE COMMERCIAL 🚛─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1574833342333853787",
+   "nom": "billy-badav",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1549015382163988581",
+   "nom": "🛜・roxwood-network",
+   "cat": "╭─ 🏭 CLIENTS ・ ENTREPRISES 🏭─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1323350990849835069",
+   "nom": "🍔・hornys",
+   "cat": "╭─ 🍔 CLIENTS ・ FAST-FOODS 🍔 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1571614375301881997",
+   "nom": "🟢-joshua-vorkuta-entretien",
+   "cat": "╭─ 📁 DOSSIERS ・ DÉMISSIONS ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1467843206199775232",
+   "nom": "🌷・bellaflora",
+   "cat": "╭─ 🌾 CLIENTS ・ FARMS 🌾─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1537246793677668452",
+   "nom": "🟢-elliot-adkins",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1492998331503345885",
+   "nom": "📢・annonces-commercial",
+   "cat": "╭─ 🚛 SERVICE COMMERCIAL 🚛─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1570949372122894427",
+   "nom": "🟢-colt-barn",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1527745080268689548",
+   "nom": "___hidden___",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1559977725983330394",
+   "nom": "🔴-xavier-collins",
+   "cat": "╭─ 📁 DOSSIERS ・ DÉMISSIONS ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1309552364042326077",
+   "nom": "📦✅・post-op",
+   "cat": "╭─ 🌾 CLIENTS ・ FARMS 🌾─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1528408171708809327",
+   "nom": "___hidden___",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1568221825601642496",
+   "nom": "🟢-marco-sanchez",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1508417879920480397",
+   "nom": "🍸・club-77",
+   "cat": "╭─ 🍸 CLIENTS ・ CLUBS 🍸─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1252013321855434832",
+   "nom": "🍕✅・pizza-this",
+   "cat": "╭─ 🍔 CLIENTS ・ FAST-FOODS 🍔 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1460745636227055802",
+   "nom": "🍸・pacific-bluffs",
+   "cat": "╭─ 🍸 CLIENTS ・ CLUBS 🍸─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1573707559066407094",
+   "nom": "👨‍👩‍👧‍👦・sunshine-famille",
+   "cat": "╭─ 👪 CLIENTS ・ FAMILLES 👪─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1570172821072519178",
+   "nom": "🟢-idris-nananao",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1472965819158892777",
+   "nom": "🔝・promotions",
+   "cat": "╭─ 📈 ÉVOLUTION📈 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1472963473595043900",
+   "nom": "🧰✅・harmony’s",
+   "cat": "╭─ 🔧 CLIENTS ・ GARAGES🔧 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1254806597612343358",
+   "nom": "🔥・lsfd",
+   "cat": "╭─ 🏭 CLIENTS ・ ENTREPRISES 🏭─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1458219275411263520",
+   "nom": "___hidden___",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1504241240995008602",
+   "nom": "___hidden___",
+   "cat": "╭─ ⭐ GRADÉS ⭐─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1574463809442287743",
+   "nom": "soules-clara",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1440651143817724004",
+   "nom": "❗・rappels",
+   "cat": "╭─ 👷 ESPACE EMPLOYÉS 👷─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1434924330344775720",
+   "nom": "🍸✅・the-hen-house",
+   "cat": "╭─ 🍸 CLIENTS ・ CLUBS 🍸─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1436500641492111463",
+   "nom": "🧰・sandy-repair",
+   "cat": "╭─ 🔧 CLIENTS ・ GARAGES🔧 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1573707203884486756",
+   "nom": "🟢-jalil-eden",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1461359674539380870",
+   "nom": "___hidden___",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1288994620918861866",
+   "nom": "___hidden___",
+   "cat": "╭─ 👔 RESSOURCES HUMAINES 👔─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1574393822836817990",
+   "nom": "🟢-tarik-ben",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1471575317771587804",
+   "nom": "___hidden___",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1476604643436920975",
+   "nom": "___hidden___",
+   "cat": "╭─ 📢 OIL ROXWOOD ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1565442398950260806",
+   "nom": "🔴-tyrese-jackson",
+   "cat": "╭─ 📁 DOSSIERS ・ RAFFINEURS EXPERTS ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1553128898022088764",
+   "nom": "___hidden___",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1313267780161765386",
+   "nom": "___hidden___",
+   "cat": "╭─ 🔧 OUTILS DE TRAVAIL🔧 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1547680374706933861",
+   "nom": "🟢-drew-miller",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1564432314103111741",
+   "nom": "___hidden___",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1566548583413580016",
+   "nom": "recompense-tombola-biens-immo",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1475490821037097121",
+   "nom": "___hidden___",
+   "cat": "╭─ 📢 OIL ROXWOOD ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1481653298711892038",
+   "nom": "𝖢𝖯-𝖣𝗂𝖾𝗀𝗈-𝖧𝖾𝗋𝗋𝖾𝗋𝖺",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1568219284667105402",
+   "nom": "🟠-kader-benali",
+   "cat": "╭─ 📁 DOSSIERS ・ RAFFINEURS CONFIRMÉS ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1511833177524670584",
+   "nom": "👨‍👩‍👧‍👦✅・neo-vortex",
+   "cat": "╭─ 👪 CLIENTS ・ FAMILLES 👪─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1246753286191710210",
+   "nom": "📢・annonces-gradés",
+   "cat": "╭─ ⭐ GRADÉS ⭐─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1553754362029805680",
+   "nom": "🏍️✅・concess-moto",
+   "cat": "╭─ 🏭 CLIENTS ・ ENTREPRISES 🏭─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1492164850044899408",
+   "nom": "💬・discussion-gradés",
+   "cat": "╭─ ⭐ GRADÉS ⭐─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1488271961477091542",
+   "nom": "___hidden___",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1471876851789201490",
+   "nom": "🖌️・nyrex-creative",
+   "cat": "╭─ 🏭 CLIENTS ・ ENTREPRISES 🏭─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1573012929832554536",
+   "nom": "___hidden___",
+   "cat": "╭─ 🚛 SERVICE COMMERCIAL 🚛─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1567223236922708158",
+   "nom": "🟢-camelia-flores",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1482451614336815114",
+   "nom": "📽️✅・rockford-records",
+   "cat": "╭─ 🏭 CLIENTS ・ ENTREPRISES 🏭─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1245400913473179730",
+   "nom": "logs-craft",
+   "cat": "╭─ ⚙️ LOGS JEU⚙️ ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1567587353009324082",
+   "nom": "🟢-kais-dais",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1565508482336293015",
+   "nom": "🔵-fred-berthier",
+   "cat": "╭─ 📁 DOSSIERS ・ RAFFINEURS ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1288236074589749369",
+   "nom": "📞・attente de moove",
+   "cat": "╭─ 📩 CONTACT ─╮",
+   "type": "vocal"
+  },
+  {
+   "id": "1260767439160086579",
+   "nom": "🧰・bennys",
+   "cat": "╭─ 🔧 CLIENTS ・ GARAGES🔧 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1547958658418348132",
+   "nom": "___hidden___",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1496967713992478780",
+   "nom": "⛽・globe-oil",
+   "cat": "╭─ 🌾 CLIENTS ・ FARMS 🌾─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1246480766121152556",
+   "nom": "📌・annonces-internes",
+   "cat": "╭─ 👷 ESPACE EMPLOYÉS 👷─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1549417518530166784",
+   "nom": "🧑‍🧑‍🧒‍🧒✅・nox-reapers-mc",
+   "cat": "╭─ 👪 CLIENTS ・ FAMILLES 👪─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1359616368705667142",
+   "nom": "🛠️・pannes",
+   "cat": "╭─ 🔧 OUTILS DE TRAVAIL🔧 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1516752339762155642",
+   "nom": "___hidden___",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1470783990867820707",
+   "nom": "🧑‍🌾・ferme-de-roxwood",
+   "cat": "╭─ 🌾 CLIENTS ・ FARMS 🌾─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1551595673034686555",
+   "nom": "___hidden___",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1488975936589398066",
+   "nom": "🍕・la-linterna",
+   "cat": "╭─ 🍔 CLIENTS ・ FAST-FOODS 🍔 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1245400913066066099",
+   "nom": "logs-coffre",
+   "cat": "╭─ ⚙️ LOGS JEU⚙️ ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1472929343562055711",
+   "nom": "🅿️・stationnement",
+   "cat": "╭─ 🔧 OUTILS DE TRAVAIL🔧 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1556085169746612254",
+   "nom": "___hidden___",
+   "cat": "",
+   "type": "texte"
+  },
+  {
+   "id": "1293276872955793508",
+   "nom": "___hidden___",
+   "cat": "___hidden___",
+   "type": "texte"
+  },
+  {
+   "id": "1570173474821902396",
+   "nom": "🟢-joe-lopez",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1503725116876394646",
+   "nom": "👨‍👩‍👧‍👦✅・klan-zambolie",
+   "cat": "╭─ 👪 CLIENTS ・ FAMILLES 👪─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1399713473742504006",
+   "nom": "___hidden___",
+   "cat": "╭─ 📢 OIL ROXWOOD ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1478223863891493066",
+   "nom": "___hidden___",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1248767211045257348",
+   "nom": "🏬✅ltd-groove-street",
+   "cat": "╭─ 🏪 CLIENTS ・ LTD 🏪─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1472969246009987195",
+   "nom": "⛔・licenciements",
+   "cat": "╭─ 📈 ÉVOLUTION📈 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1245400913473179732",
+   "nom": "logs-spawn-véhicule",
+   "cat": "╭─ ⚙️ LOGS JEU⚙️ ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1328076254758568138",
+   "nom": "___hidden___",
+   "cat": "╭─ ⭐ GRADÉS ⭐─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1571847935774171166",
+   "nom": "🔵-lorenzo-rojas",
+   "cat": "╭─ 📁 DOSSIERS ・ RAFFINEURS ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1246398576268152844",
+   "nom": "___hidden___",
+   "cat": "╭─ 📢 OIL ROXWOOD ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1549881312129585172",
+   "nom": "___hidden___",
+   "cat": "╭─ 👪 CLIENTS ・ FAMILLES 👪─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1542678021905973269",
+   "nom": "___hidden___",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1438646280372097145",
+   "nom": "🍝・casa-del-gusto",
+   "cat": "╭─ 🍔 CLIENTS ・ FAST-FOODS 🍔 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1571513166922252296",
+   "nom": "🟢-pierre-lecas",
+   "cat": "╭─ 📁 DOSSIERS ・ DÉMISSIONS ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1492160356120920255",
+   "nom": "___hidden___",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1574487182163316828",
+   "nom": "lia-cruz",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1328076154586009660",
+   "nom": "💬・discussion-commercial",
+   "cat": "╭─ 🚛 SERVICE COMMERCIAL 🚛─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1472972505210949747",
+   "nom": "❌・avertissements",
+   "cat": "╭─ 📈 ÉVOLUTION📈 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1516897087449600062",
+   "nom": "👨‍👩‍👧‍👦✅・los-caballeros-de-la-muerte",
+   "cat": "╭─ 👪 CLIENTS ・ FAMILLES 👪─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1475864750763020403",
+   "nom": "___hidden___",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1318897305964777553",
+   "nom": "🧑‍🌾・ferme-cayo",
+   "cat": "╭─ 🌾 CLIENTS ・ FARMS 🌾─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1246399931103842425",
+   "nom": "🔑・demande-de-rôles",
+   "cat": "╭─ 🛢️ BIENVENUE🛢️ ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1559656772799561853",
+   "nom": "🎟️・tombola",
+   "cat": "╭─ ⭐ GRADÉS ⭐─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1259628249592496170",
+   "nom": "🚬✅・cayo-cigare",
+   "cat": "╭─ 🌾 CLIENTS ・ FARMS 🌾─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1562923559486226522",
+   "nom": "🟢-pedro-alonzo",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1566596130152784023",
+   "nom": "___hidden___",
+   "cat": "",
+   "type": "texte"
+  },
+  {
+   "id": "1570607047181869136",
+   "nom": "🟢-isaac-jackson",
+   "cat": "╭─ 📁 DOSSIERS ・ DÉMISSIONS ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1561685647780093962",
+   "nom": "___hidden___",
+   "cat": "",
+   "type": "texte"
+  },
+  {
+   "id": "1550847130195722361",
+   "nom": "👔・resp-commercial",
+   "cat": "╭─ 🚛 SERVICE COMMERCIAL 🚛─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1440251913601024062",
+   "nom": "🏬✅・ltd-roxwood",
+   "cat": "╭─ 🏪 CLIENTS ・ LTD 🏪─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1553822095018827909",
+   "nom": "👨‍👩‍👧‍👦📆・die-erben",
+   "cat": "╭─ 📜 CLIENTS ・ FAMILLES SOUS CONTRAT  📜 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1486464514932215899",
+   "nom": "👮・gruppe-sechs",
+   "cat": "╭─ 🏭 CLIENTS ・ ENTREPRISES 🏭─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1245400913473179729",
+   "nom": "logs-vente-run",
+   "cat": "╭─ ⚙️ LOGS JEU⚙️ ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1338828649016721418",
+   "nom": "🦴✅・abattoir",
+   "cat": "╭─ 🌾 CLIENTS ・ FARMS 🌾─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1569738790212337804",
+   "nom": "🟢-otto-jimminez",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1556904652900147243",
+   "nom": "🍃✅・ld-organics",
+   "cat": "╭─ 🌾 CLIENTS ・ FARMS 🌾─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1246482238913118238",
+   "nom": "🟢・recrutement",
+   "cat": "╭─ 📩 CONTACT ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1398332540456144896",
+   "nom": "🧰・ls-custom",
+   "cat": "╭─ 🔧 CLIENTS ・ GARAGES🔧 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1501220503288025089",
+   "nom": "🧑‍🧑‍🧒‍🧒✅・black-hood-order",
+   "cat": "╭─ 👪 CLIENTS ・ FAMILLES 👪─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1558197407039356989",
+   "nom": "👨‍👩‍👧‍👦✅・maja-13",
+   "cat": "╭─ 👪 CLIENTS ・ FAMILLES 👪─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1491790779335577751",
+   "nom": "___hidden___",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1571512052282036264",
+   "nom": "🟢-manuel-dasilva",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1554046897298214943",
+   "nom": "👨‍👩‍👧‍👦✅・wintoria",
+   "cat": "╭─ 👪 CLIENTS ・ FAMILLES 👪─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1493693867575218377",
+   "nom": "___hidden___",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1565084696428413169",
+   "nom": "🟢-mohamed-hzrf",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1321832330720968756",
+   "nom": "🎓・diplômes",
+   "cat": "╭─ ⚙️ Modération⚙️─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1554852066437107732",
+   "nom": "___hidden___",
+   "cat": "",
+   "type": "texte"
+  },
+  {
+   "id": "1375767339219423323",
+   "nom": "🚙・concess-auto",
+   "cat": "╭─ 🏭 CLIENTS ・ ENTREPRISES 🏭─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1574159087694778451",
+   "nom": "🟢-seamus-irish",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1246497095838466059",
+   "nom": "🏛️・organigramme",
+   "cat": "╭─ 🛢️ BIENVENUE🛢️ ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1512182855902695505",
+   "nom": "👨‍👩‍👧‍👦✅・aqua-black",
+   "cat": "╭─ 👪 CLIENTS ・ FAMILLES 👪─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1503671985446846555",
+   "nom": "🏬✅・ltd-little-séoul",
+   "cat": "╭─ 🏪 CLIENTS ・ LTD 🏪─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1245400913066066097",
+   "nom": "logs-prise-de-service",
+   "cat": "╭─ ⚙️ LOGS JEU⚙️ ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1475452582146084924",
+   "nom": "🍸・burning-bush",
+   "cat": "╭─ 🍸 CLIENTS ・ CLUBS 🍸─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1553114496086839428",
+   "nom": "🔴-ryan-brooks",
+   "cat": "╭─ 📁 DOSSIERS ・ RAFFINEURS EXPERTS ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1573702537448652870",
+   "nom": "🟢-daven-parker",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1529598471022313684",
+   "nom": "⚠️・alerte-direction",
+   "cat": "╭─ ⭐ GRADÉS ⭐─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1246400361086845010",
+   "nom": "📩・ticket",
+   "cat": "╭─ 📩 CONTACT ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1562887002435752086",
+   "nom": "𝖱𝖧-𝖣𝗂𝖾𝗀𝗈-𝖲𝗒𝗉𝗁𝖾𝗋",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1245400913066066100",
+   "nom": "logs-compte-entreprise",
+   "cat": "╭─ ⚙️ LOGS JEU⚙️ ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1543680480526991390",
+   "nom": "___hidden___",
+   "cat": "╭─ 👪 CLIENTS ・ FAMILLES 👪─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1555291979028496446",
+   "nom": "🔴・en-live",
+   "cat": "╭─ 📢 OIL ROXWOOD ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1461345077187051570",
+   "nom": "🏬✅・ltd-mirror-park",
+   "cat": "╭─ 🏪 CLIENTS ・ LTD 🏪─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1567161569815699517",
+   "nom": "🟢-vincent-vega",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1556394941968818269",
+   "nom": "🔴-cheb-hassan",
+   "cat": "╭─ 📁 DOSSIERS ・ DÉMISSIONS ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1565113204227571842",
+   "nom": "🔴-jeff-beaumont",
+   "cat": "╭─ 📁 DOSSIERS ・ RAFFINEURS EXPERTS ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1570594683674038273",
+   "nom": "🔴-booskap-ba",
+   "cat": "╭─ 📁 DOSSIERS ・ RAFFINEURS EXPERTS ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1359620779389485187",
+   "nom": "⚠️・sanctions",
+   "cat": "╭─ 📋 DEMANDES📋 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1245479887012237363",
+   "nom": "👋・arrivée",
+   "cat": "╭─ 🛢️ BIENVENUE🛢️ ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1252256295965163693",
+   "nom": "🍸・tequila-la",
+   "cat": "╭─ 🍸 CLIENTS ・ CLUBS 🍸─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1248631630722109602",
+   "nom": "🛌・élégance-déco",
+   "cat": "╭─ 🏭 CLIENTS ・ ENTREPRISES 🏭─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1551921640013692928",
+   "nom": "🟢-anis-wolkeur",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1570053572148600953",
+   "nom": "___hidden___",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1567267720594980966",
+   "nom": "🟢-ruby-saavedra",
+   "cat": "╭─ 📁 DOSSIERS ・ DÉMISSIONS ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1564695471367393351",
+   "nom": "🟢-alya-vega",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1575598039899447391",
+   "nom": "idriss-corleone",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1541425431314436096",
+   "nom": "👨‍👩‍👧‍👦✅・smokebro",
+   "cat": "╭─ 👪 CLIENTS ・ FAMILLES 👪─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1542514543194931292",
+   "nom": "👨‍👩‍👧‍👦✅・la-main-de-minuit",
+   "cat": "╭─ 👪 CLIENTS ・ FAMILLES 👪─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1293961687069884560",
+   "nom": "📊・quotas",
+   "cat": "╭─ 🔧 OUTILS DE TRAVAIL🔧 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1527420039156731934",
+   "nom": "👨‍👩‍👧‍👦✅・bloodside",
+   "cat": "╭─ 👪 CLIENTS ・ FAMILLES 👪─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1489954686961319996",
+   "nom": "___hidden___",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1572597873051177060",
+   "nom": "🔵-darian-nguyen-entretien",
+   "cat": "╭─ 📁 DOSSIERS ・ RAFFINEURS ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1549816817810407454",
+   "nom": "🗣・Entretien en cours",
+   "cat": "╭─ 📩 CONTACT ─╮",
+   "type": "vocal"
+  },
+  {
+   "id": "1477443125763903579",
+   "nom": "___hidden___",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1473259622549819526",
+   "nom": "___hidden___",
+   "cat": "╭─ 🚛 SERVICE COMMERCIAL 🚛─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1548076416405610519",
+   "nom": "🧑‍🧑‍🧒‍🧒✅・fyfty-boys",
+   "cat": "╭─ 👪 CLIENTS ・ FAMILLES 👪─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1551358301311074378",
+   "nom": "🟢-yannn-zigzag",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1463297199738978532",
+   "nom": "🏬・ltd-sandy-shores",
+   "cat": "╭─ 🏪 CLIENTS ・ LTD 🏪─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1488883254407860435",
+   "nom": "___hidden___",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1543602471144919110",
+   "nom": "📸・photo-coffres",
+   "cat": "╭─ ⭐ GRADÉS ⭐─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1546630656090578958",
+   "nom": "👨‍👩‍👧‍👦✅・southside-union",
+   "cat": "╭─ 👪 CLIENTS ・ FAMILLES 👪─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1537836051131932683",
+   "nom": "🏳️・ambassade-de-cayo",
+   "cat": "╭─ 🏭 CLIENTS ・ ENTREPRISES 🏭─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1520167810414940180",
+   "nom": "🏫・université",
+   "cat": "╭─ 🏭 CLIENTS ・ ENTREPRISES 🏭─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1503761698744565910",
+   "nom": "___hidden___",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1254856391416479744",
+   "nom": "🍔✅・burger-shot-nord",
+   "cat": "╭─ 🍔 CLIENTS ・ FAST-FOODS 🍔 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1288236194081148928",
+   "nom": "🗣・Entretien en cours",
+   "cat": "╭─ 📩 CONTACT ─╮",
+   "type": "vocal"
+  },
+  {
+   "id": "1554882885100642406",
+   "nom": "👨‍👩‍👧‍👦✅・panthere-syndicate",
+   "cat": "╭─ 👪 CLIENTS ・ FAMILLES 👪─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1319677658640027699",
+   "nom": "___hidden___",
+   "cat": "╭─ 👷 ESPACE EMPLOYÉS 👷─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1571520818163351753",
+   "nom": "🟢-mia-sanchez",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1570521813107343391",
+   "nom": "🟢-gauchovich-chadayev",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1498595755814817882",
+   "nom": "___hidden___",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1416846722423849201",
+   "nom": "🔊・Convocation",
+   "cat": "╭─ 📋 DEMANDES📋 ─╮",
+   "type": "vocal"
+  },
+  {
+   "id": "1574835279196454996",
+   "nom": "milan-ace-attente-info",
+   "cat": "╭─ 📝 TICKETS RECRUTEMENT ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1252008682888102029",
+   "nom": "🧰✅・paleto-garage",
+   "cat": "╭─ 🔧 CLIENTS ・ GARAGES🔧 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1258098508754452520",
+   "nom": "🎟️・événements-internes",
+   "cat": "╭─ 👷 ESPACE EMPLOYÉS 👷─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1497628901189357729",
+   "nom": "𝖱𝖢-𝖤𝗆𝗆𝖺-𝖢𝗈𝗅𝗅𝗂𝗇𝗌",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1500576313826873444",
+   "nom": "___hidden___",
+   "cat": "╭─ 🚛 SERVICE COMMERCIAL 🚛─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1492551778690928791",
+   "nom": "___hidden___",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1300583603373211648",
+   "nom": "___hidden___",
+   "cat": "___hidden___",
+   "type": "texte"
+  },
+  {
+   "id": "1570086354400968867",
+   "nom": "🔴-gerard-smith",
+   "cat": "╭─ 📁 DOSSIERS ・ RAFFINEURS EXPERTS ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1248329877891846145",
+   "nom": "🍇・vignoble",
+   "cat": "╭─ 🌾 CLIENTS ・ FARMS 🌾─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1564418108863684688",
+   "nom": "🟢-william-hart",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1570116588298838078",
+   "nom": "⚠️・listing-avertissements",
+   "cat": "╭─ 👔 RESSOURCES HUMAINES 👔─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1564329543714734114",
+   "nom": "🔵-carmelia-cortez",
+   "cat": "╭─ 📁 DOSSIERS ・ RAFFINEURS ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1569330105363472424",
+   "nom": "🟢-costa-santa",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1574488166658744420",
+   "nom": "daryl-jenckin",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES 2 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1512149037329944666",
+   "nom": "👨‍👩‍👧‍👦✅・strada-nostra",
+   "cat": "╭─ 👪 CLIENTS ・ FAMILLES 👪─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1245400913473179731",
+   "nom": "logs-recrutement",
+   "cat": "╭─ ⚙️ LOGS JEU⚙️ ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1245400913066066098",
+   "nom": "logs-facture",
+   "cat": "╭─ ⚙️ LOGS JEU⚙️ ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1536708629514948650",
+   "nom": "___hidden___",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1550837807143059487",
+   "nom": "👨‍👩‍👧‍👦✅・dutch-order",
+   "cat": "╭─ 👪 CLIENTS ・ FAMILLES 👪─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1488649728815272067",
+   "nom": "___hidden___",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1501235039860559922",
+   "nom": "⚖️・mairie",
+   "cat": "╭─ 🏭 CLIENTS ・ ENTREPRISES 🏭─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1248694556833353799",
+   "nom": "🍸✅・grapeseed-pub",
+   "cat": "╭─ 🍸 CLIENTS ・ CLUBS 🍸─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1561130271682732092",
+   "nom": "🧑‍🧑‍🧒‍🧒✅・klan-zarkanov",
+   "cat": "╭─ 📜 CLIENTS ・ FAMILLES SOUS CONTRAT  📜 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1472970273954205697",
+   "nom": "🏢・présentation",
+   "cat": "╭─ 🛢️ BIENVENUE🛢️ ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1439681391733248120",
+   "nom": "🏬✅・ltd-paleto",
+   "cat": "╭─ 🏪 CLIENTS ・ LTD 🏪─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1483271929392795752",
+   "nom": "___hidden___",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1572039693745520762",
+   "nom": "🟠-freddy-carlson",
+   "cat": "╭─ 📁 DOSSIERS ・ DÉMISSIONS ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1571981782675361922",
+   "nom": "🟢-matteo-rockefeller",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1546176185254547617",
+   "nom": "🏬・fish-and-grill",
+   "cat": "╭─ 🍔 CLIENTS ・ FAST-FOODS 🍔 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1541523092050804766",
+   "nom": "___hidden___",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1574168448978649250",
+   "nom": "🟢-victor-white",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1571539492123316294",
+   "nom": "🟢-madisson-callahan",
+   "cat": "╭─ 📁 DOSSIERS ・ DÉMISSIONS ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1570670060173922524",
+   "nom": "👨‍👩‍👧‍👦✅・fenice",
+   "cat": "╭─ 👪 CLIENTS ・ FAMILLES 👪─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1533451066077872158",
+   "nom": "___hidden___",
+   "cat": "╭─ 🚛 SERVICE COMMERCIAL 🚛─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1252503214939439206",
+   "nom": "🍦・bean-ice-cream",
+   "cat": "╭─ 🍔 CLIENTS ・ FAST-FOODS 🍔 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1572596745559347230",
+   "nom": "⚽tournoil-roxwood",
+   "cat": "╭─ 👷 ESPACE EMPLOYÉS 👷─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1570246420907298859",
+   "nom": "👨‍👩‍👧‍👦✅・white-hacker",
+   "cat": "╭─ 👪 CLIENTS ・ FAMILLES 👪─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1246400708392124438",
+   "nom": "📢・annonces",
+   "cat": "╭─ 📢 OIL ROXWOOD ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1473400329772072962",
+   "nom": "___hidden___",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1563217043753271369",
+   "nom": "🟢-john-alvarez",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1561659517949837493",
+   "nom": "🛍️・vitrine",
+   "cat": "╭─ 📢 OIL ROXWOOD ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1570172570823688303",
+   "nom": "🟢-herve-jeanbenoit",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1565354733999235122",
+   "nom": "🔴-jason-palmer",
+   "cat": "╭─ 📁 DOSSIERS ・ RAFFINEURS EXPERTS ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1253183929641336953",
+   "nom": "💬・discussion-hrp",
+   "cat": "╭─ 👷 ESPACE EMPLOYÉS 👷─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1552320710133813368",
+   "nom": "___hidden___",
+   "cat": "╭─ ⭐ GRADÉS ⭐─╮",
+   "type": "vocal"
+  },
+  {
+   "id": "1564340595756105833",
+   "nom": "🟠-luc-rouza",
+   "cat": "╭─ 📁 DOSSIERS ・ RAFFINEURS CONFIRMÉS ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1554919254858399764",
+   "nom": "・eclatéa-design",
+   "cat": "╭─ 🏭 CLIENTS ・ ENTREPRISES 🏭─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1247565070423167100",
+   "nom": "logs-achat-fer",
+   "cat": "╭─ ⚙️ LOGS JEU⚙️ ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1262657650580131921",
+   "nom": "___hidden___",
+   "cat": "╭─ 👷 ESPACE EMPLOYÉS 👷─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1486776994229256366",
+   "nom": "___hidden___",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1301574434754269194",
+   "nom": "🥑・ls-avocat",
+   "cat": "╭─ 🏭 CLIENTS ・ ENTREPRISES 🏭─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1472962998162428148",
+   "nom": "🍔⛽・éligibilités",
+   "cat": "╭─ 👷 ESPACE EMPLOYÉS 👷─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1475414519995175012",
+   "nom": "🖌️・atelier-komori",
+   "cat": "╭─ 🏭 CLIENTS ・ ENTREPRISES 🏭─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1570472535470903318",
+   "nom": "🔴-bene-salvador",
+   "cat": "╭─ 📁 DOSSIERS ・ RAFFINEURS EXPERTS ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1562953382962929714",
+   "nom": "🟢-malcom-browns",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1569329881626583111",
+   "nom": "🟢-tony-merguez",
+   "cat": "╭─ 📁 DOSSIERS ・ DÉMISSIONS ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1562115830727053333",
+   "nom": "🟢-ramaoui-idhir",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1486115392387678218",
+   "nom": "___hidden___",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1529929448525140109",
+   "nom": "🤖・alerte-bot",
+   "cat": "╭─ ⭐ GRADÉS ⭐─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1478224024420093983",
+   "nom": "___hidden___",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1507071383224455178",
+   "nom": "___hidden___",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1573360577924042804",
+   "nom": "🟢-urus-salvatore",
+   "cat": "╭─ 📁 DOSSIERS ・ DÉMISSIONS ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1489550641847336970",
+   "nom": "___hidden___",
+   "cat": "╭─ 🌾 CLIENTS ・ FARMS 🌾─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1488562652048396359",
+   "nom": "𝖢𝖯-𝖳𝗒𝗅𝖾𝗋-𝖢𝗈𝗅𝗅𝗂𝗇𝗌",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1433191707477938428",
+   "nom": "🍸・unicorn",
+   "cat": "╭─ 🍸 CLIENTS ・ CLUBS 🍸─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1539686109154508923",
+   "nom": "🎰・ls-event",
+   "cat": "╭─ 🏭 CLIENTS ・ ENTREPRISES 🏭─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1246480899927838866",
+   "nom": "___hidden___",
+   "cat": "╭─ 👷 ESPACE EMPLOYÉS 👷─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1571986398884536522",
+   "nom": "🟢-ewan-rockefeller",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1570378128159940619",
+   "nom": "🟢-dwayne-garcia",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1531840576155160627",
+   "nom": "___hidden___",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1472576882963910841",
+   "nom": "👨‍👩‍👧‍👦✅・famille-moni",
+   "cat": "╭─ 👪 CLIENTS ・ FAMILLES 👪─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1574700716818440282",
+   "nom": "damien-mienda",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES 2 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1566304234872246341",
+   "nom": "___hidden___",
+   "cat": "",
+   "type": "texte"
+  },
+  {
+   "id": "1564665719164248077",
+   "nom": "🍸✅・yellow-jack",
+   "cat": "╭─ 🍸 CLIENTS ・ CLUBS 🍸─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1511793295641153596",
+   "nom": "___hidden___",
+   "cat": "",
+   "type": "texte"
+  },
+  {
+   "id": "1491790961888460901",
+   "nom": "🪖・ls-army",
+   "cat": "╭─ 🏭 CLIENTS ・ ENTREPRISES 🏭─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1561661073856270386",
+   "nom": "🤖・panels-bot",
+   "cat": "╭─ ⭐ GRADÉS ⭐─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1249166018237042750",
+   "nom": "🍸・cayo-beach",
+   "cat": "╭─ 🍸 CLIENTS ・ CLUBS 🍸─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1478895162267533313",
+   "nom": "___hidden___",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1411321153863159818",
+   "nom": "🧑‍🌾・ferme-paleto",
+   "cat": "╭─ 🌾 CLIENTS ・ FARMS 🌾─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1547691386877509682",
+   "nom": "👨‍👩‍👧‍👦✅・aube-noire",
+   "cat": "╭─ 👪 CLIENTS ・ FAMILLES 👪─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1548136265998667876",
+   "nom": "👨‍👩‍👧‍👦✅・silver-luna",
+   "cat": "╭─ 📜 CLIENTS ・ FAMILLES SOUS CONTRAT  📜 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1416465063878856846",
+   "nom": "___hidden___",
+   "cat": "___hidden___",
+   "type": "vocal"
+  },
+  {
+   "id": "1575125675960959116",
+   "nom": "👨‍👩‍👧‍👦✅・famille-komora",
+   "cat": "╭─ 👪 CLIENTS ・ FAMILLES 👪─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1494673061679595640",
+   "nom": "🔵-helena-rhosé",
+   "cat": "╭─ 📁 DOSSIERS ・ RAFFINEURS ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1489561553685581946",
+   "nom": "☢️✅・brat-industry",
+   "cat": "╭─ 🌾 CLIENTS ・ FARMS 🌾─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1569464520823410789",
+   "nom": "🟢-alessio-barone",
+   "cat": "╭─ 📁 DOSSIERS ・ DÉMISSIONS ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1528805778507567309",
+   "nom": "___hidden___",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1479199890855825551",
+   "nom": "___hidden___",
+   "cat": "╭─ 👑 DIRECTION 👑─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1488620439084204183",
+   "nom": "___hidden___",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1288981818389041195",
+   "nom": "logs-coffre-entrepôt",
+   "cat": "╭─ ⚙️ LOGS JEU⚙️ ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1333859153151791134",
+   "nom": "___hidden___",
+   "cat": "╭─ 🔧 OUTILS DE TRAVAIL🔧 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1571511715064057927",
+   "nom": "🟢-draness-louhany",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1481669538050216019",
+   "nom": "𝖢-𝖫𝖺𝗎𝗋𝖾𝗇𝗍-𝖱𝗈𝗊𝗎𝖾𝗅",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1569421782841294929",
+   "nom": "🟢-zoran-kross",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1540718048942624862",
+   "nom": "🎁・objets-collection",
+   "cat": "╭─ ⭐ GRADÉS ⭐─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1259863330445856768",
+   "nom": "___hidden___",
+   "cat": "╭─ ⭐ GRADÉS ⭐─╮",
+   "type": "vocal"
+  },
+  {
+   "id": "1570171196559982723",
+   "nom": "🟢-bob-yara",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1248341245139484796",
+   "nom": "🍣✅・umami",
+   "cat": "╭─ 🍔 CLIENTS ・ FAST-FOODS 🍔 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1291497785996087386",
+   "nom": "___hidden___",
+   "cat": "___hidden___",
+   "type": "texte"
+  },
+  {
+   "id": "1564560343223640076",
+   "nom": "🔴-bryan-storm",
+   "cat": "╭─ 📁 DOSSIERS ・ RAFFINEURS EXPERTS ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1538572711461126234",
+   "nom": "➕ Créer un salon vocal",
+   "cat": "╭─ 👷 ESPACE EMPLOYÉS 👷─╮",
+   "type": "vocal"
+  },
+  {
+   "id": "1566933224117108756",
+   "nom": "🟢-jason-brooks",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1478840758030045335",
+   "nom": "👨‍👩‍👧‍👦✅・famille-krueger",
+   "cat": "╭─ 👪 CLIENTS ・ FAMILLES 👪─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1290652095447568454",
+   "nom": "logs-annonce-custom",
+   "cat": "╭─ ⚙️ LOGS JEU⚙️ ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1569095373790650448",
+   "nom": "🔵-zoran-renard-entretien",
+   "cat": "╭─ 📁 DOSSIERS ・ RAFFINEURS ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1246399623711555614",
+   "nom": "___hidden___",
+   "cat": "╭─ 📢 OIL ROXWOOD ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1572009620547965079",
+   "nom": "🔴-marius-caplant",
+   "cat": "╭─ 📁 DOSSIERS ・ RAFFINEURS EXPERTS ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1440372256298635384",
+   "nom": "🐺✅・loup-blanc-pressing",
+   "cat": "╭─ 🌾 CLIENTS ・ FARMS 🌾─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1245400913066066095",
+   "nom": "___hidden___",
+   "cat": "___hidden___",
+   "type": "texte"
+  },
+  {
+   "id": "1332478013174190100",
+   "nom": "🏠・dynasty-8",
+   "cat": "╭─ 🏭 CLIENTS ・ ENTREPRISES 🏭─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1544735020311117866",
+   "nom": "👨‍👩‍👧‍👦✅・the-black-order",
+   "cat": "╭─ 👪 CLIENTS ・ FAMILLES 👪─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1246482356639105135",
+   "nom": "___hidden___",
+   "cat": "╭─ 📢 OIL ROXWOOD ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1543609084542984202",
+   "nom": "🧑‍🧑‍🧒‍🧒✅・les-mugiwara",
+   "cat": "╭─ 👪 CLIENTS ・ FAMILLES 👪─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1572388552006836245",
+   "nom": "🟢-jerome-johns",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1571352439309738224",
+   "nom": "🟢-kael-son",
+   "cat": "╭─ 📁 DOSSIERS ・ DÉMISSIONS ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1569792781717610568",
+   "nom": "🧑‍🧑‍🧒‍🧒✅・sameblood",
+   "cat": "╭─ 👪 CLIENTS ・ FAMILLES 👪─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1319014926236516407",
+   "nom": "🟢・rc-support",
+   "cat": "╭─ ⚙️ Modération⚙️─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1569807511710605342",
+   "nom": "🟢-mark-dupont",
+   "cat": "╭─ 📁 DOSSIERS ・ DÉMISSIONS ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1567631366823223526",
+   "nom": "🔵-maxime-smith",
+   "cat": "╭─ 📁 DOSSIERS ・ RAFFINEURS ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1570090365329870999",
+   "nom": "🟢-max-sholby",
+   "cat": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1455735836950790164",
+   "nom": "👨‍👩‍👧‍👦✅・les-ricains",
+   "cat": "╭─ 👪 CLIENTS ・ FAMILLES 👪─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1560326938084647004",
+   "nom": "𝖱𝖧-𝖬𝖺𝗋𝖼𝗈-𝖡𝖾𝗅𝗅𝗂𝗇𝗂",
+   "cat": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1366733111429435432",
+   "nom": "🧰・cayo-garage",
+   "cat": "╭─ 🔧 CLIENTS ・ GARAGES🔧 ─╮",
+   "type": "texte"
+  },
+  {
+   "id": "1488858938517622834",
+   "nom": "👨‍👩‍👧‍👦✅・klan-ozumiya",
+   "cat": "╭─ 👪 CLIENTS ・ FAMILLES 👪─╮",
+   "type": "texte"
+  }
+ ],
+ "categories": [
+  {
+   "id": "1319806828032430171",
+   "nom": "╭─ ⚙️ Modération⚙️─╮"
+  },
+  {
+   "id": "1561396214199619614",
+   "nom": "╭─ 🛢️ BIENVENUE🛢️ ─╮"
+  },
+  {
+   "id": "1245479194230657216",
+   "nom": "╭─ 📩 CONTACT ─╮"
+  },
+  {
+   "id": "1561397604485693460",
+   "nom": "╭─ 📢 OIL ROXWOOD ─╮"
+  },
+  {
+   "id": "1246198326236282922",
+   "nom": "╭─ 👷 ESPACE EMPLOYÉS 👷─╮"
+  },
+  {
+   "id": "1332485832095043584",
+   "nom": "╭─ 🔧 OUTILS DE TRAVAIL🔧 ─╮"
+  },
+  {
+   "id": "1359616654207619223",
+   "nom": "╭─ 📋 DEMANDES📋 ─╮"
+  },
+  {
+   "id": "1447648246049800232",
+   "nom": "╭─ 📈 ÉVOLUTION📈 ─╮"
+  },
+  {
+   "id": "1246752660560941147",
+   "nom": "╭─ ⭐ GRADÉS ⭐─╮"
+  },
+  {
+   "id": "1479199345482924082",
+   "nom": "╭─ 👑 DIRECTION 👑─╮"
+  },
+  {
+   "id": "1291497709160628277",
+   "nom": "___hidden___"
+  },
+  {
+   "id": "1473399238816956527",
+   "nom": "╭─ 🎫 TICKETS DIRECTION🎫 ─╮"
+  },
+  {
+   "id": "1450231083776868492",
+   "nom": "╭─ 🎉 TICKETS ÉVÉNEMENTIEL🎉 ─╮"
+  },
+  {
+   "id": "1472996088410804316",
+   "nom": "╭─ 🚛 SERVICE COMMERCIAL 🚛─╮"
+  },
+  {
+   "id": "1475178088022278456",
+   "nom": "╭─ 🚚 TICKETS COMMANDE🚚 ─╮"
+  },
+  {
+   "id": "1324858975790956545",
+   "nom": "╭─ 🚚 COMMANDE EN COURS 🚚─╮"
+  },
+  {
+   "id": "1472972877933445130",
+   "nom": "╭─ 🔧 CLIENTS ・ GARAGES🔧 ─╮"
+  },
+  {
+   "id": "1472971837238677596",
+   "nom": "╭─ 🍸 CLIENTS ・ CLUBS 🍸─╮"
+  },
+  {
+   "id": "1472972937194766376",
+   "nom": "╭─ 🍔 CLIENTS ・ FAST-FOODS 🍔 ─╮"
+  },
+  {
+   "id": "1472971764928614400",
+   "nom": "╭─ 🏪 CLIENTS ・ LTD 🏪─╮"
+  },
+  {
+   "id": "1472971702353793258",
+   "nom": "╭─ 🌾 CLIENTS ・ FARMS 🌾─╮"
+  },
+  {
+   "id": "1246198506159345806",
+   "nom": "╭─ 🏭 CLIENTS ・ ENTREPRISES 🏭─╮"
+  },
+  {
+   "id": "1425131124002390121",
+   "nom": "╭─ 👪 CLIENTS ・ FAMILLES 👪─╮"
+  },
+  {
+   "id": "1538847980399104060",
+   "nom": "╭─ 📜 CLIENTS ・ FAMILLES SOUS CONTRAT  📜 ─╮"
+  },
+  {
+   "id": "1328075305176272916",
+   "nom": "╭─ 👔 RESSOURCES HUMAINES 👔─╮"
+  },
+  {
+   "id": "1534237657272418432",
+   "nom": "╭─ 📝 TICKETS RECRUTEMENT ─╮"
+  },
+  {
+   "id": "1246874694913884230",
+   "nom": "📥—tickets Recrutements—📥"
+  },
+  {
+   "id": "1500579562759913562",
+   "nom": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES ─╮"
+  },
+  {
+   "id": "1288452453502816286",
+   "nom": "╭─ 📁 DOSSIERS ・ INTÉRIMAIRES 2 ─╮"
+  },
+  {
+   "id": "1288452697825087498",
+   "nom": "╭─ 📁 DOSSIERS ・ RAFFINEURS ─╮"
+  },
+  {
+   "id": "1332103971237527643",
+   "nom": "╭─ 📁 DOSSIERS ・ RAFFINEURS CONFIRMÉS ─╮"
+  },
+  {
+   "id": "1513311353266508010",
+   "nom": "╭─ 📁 DOSSIERS ・ RAFFINEURS EXPERTS ─╮"
+  },
+  {
+   "id": "1485633502887018606",
+   "nom": "╭─ 📁 DOSSIERS ・ DÉMISSIONS ─╮"
+  },
+  {
+   "id": "1245400913066066094",
+   "nom": "___hidden___"
+  },
+  {
+   "id": "1245400913066066096",
+   "nom": "╭─ ⚙️ LOGS JEU⚙️ ─╮"
+  }
+ ],
+ "roles": [
+  {
+   "id": "1245400912835510288",
+   "nom": ".🐐",
+   "couleur": "#000000"
+  },
+  {
+   "id": "1246760411676672032",
+   "nom": "Xenon",
+   "couleur": "#000000"
+  },
+  {
+   "id": "1245400912835510287",
+   "nom": "- Référent",
+   "couleur": "#000000"
+  },
+  {
+   "id": "1416380645546131597",
+   "nom": "🌻 - Référent Farm",
+   "couleur": "#ffe789"
+  },
+  {
+   "id": "1245400912835510286",
+   "nom": "👑 - Patron",
+   "couleur": "#ff0000"
+  },
+  {
+   "id": "1533933306888982601",
+   "nom": "Oil Roxwood",
+   "couleur": "#000000"
+  },
+  {
+   "id": "1468694481153818674",
+   "nom": "Co-patron",
+   "couleur": "#ad1457"
+  },
+  {
+   "id": "1245400991054954559",
+   "nom": "🤖・Ticket Tool",
+   "couleur": "#1700ad"
+  },
+  {
+   "id": "1245400912835510285",
+   "nom": "🤖・Accès Panel Ticket",
+   "couleur": "#1700ad"
+  },
+  {
+   "id": "1562635911546535937",
+   "nom": "━━━ DIRECTION ━━━",
+   "couleur": "#000000"
+  },
+  {
+   "id": "1549212191432118384",
+   "nom": "✨・Assistant de direction",
+   "couleur": "#802501"
+  },
+  {
+   "id": "1572228626722852914",
+   "nom": "🧑‍💼・Directeur des Ressources Humaines",
+   "couleur": "#1abc9c"
+  },
+  {
+   "id": "1498757191044305086",
+   "nom": "🧑‍💼・Responsable Commercial",
+   "couleur": "#ad1457"
+  },
+  {
+   "id": "1489593512008618115",
+   "nom": "━━━ GRADÉS ━━━",
+   "couleur": "#000000"
+  },
+  {
+   "id": "1246581064219230250",
+   "nom": "🧑‍💼・Ressources Humaines",
+   "couleur": "#ffd000"
+  },
+  {
+   "id": "1246586673140203601",
+   "nom": "🧑‍💼・Service Commercial",
+   "couleur": "#906bcf"
+  },
+  {
+   "id": "1247299609617891453",
+   "nom": "✨ ・ Direction",
+   "couleur": "#607d8b"
+  },
+  {
+   "id": "1489593856986185878",
+   "nom": "━━━ EMPLOYÉS ━━━",
+   "couleur": "#000000"
+  },
+  {
+   "id": "1574891946634248373",
+   "nom": "🧑‍💼・Responsable Runner",
+   "couleur": "#f1c40f"
+  },
+  {
+   "id": "1513313167931871362",
+   "nom": "💪・Raffineur Expert",
+   "couleur": "#9445b6"
+  },
+  {
+   "id": "1246584841785446480",
+   "nom": "🔱・Raffineur Confirmé",
+   "couleur": "#ce6616"
+  },
+  {
+   "id": "1246585410461896879",
+   "nom": "🛢️・Raffineur",
+   "couleur": "#4a62cc"
+  },
+  {
+   "id": "1288434147257483275",
+   "nom": "🛠️・Intérimaire",
+   "couleur": "#1c7515"
+  },
+  {
+   "id": "1246586906318340096",
+   "nom": "⛽・Employé(e)s",
+   "couleur": "#ffffff"
+  },
+  {
+   "id": "1288242269219979274",
+   "nom": "⏳・Attente de Recrutement",
+   "couleur": "#206694"
+  },
+  {
+   "id": "1562638091875909652",
+   "nom": "─── CLIENTS ───",
+   "couleur": "#000000"
+  },
+  {
+   "id": "1246588015292190792",
+   "nom": "🏢 ・Entreprises Partenaires",
+   "couleur": "#1abc9c"
+  },
+  {
+   "id": "1505302836391579910",
+   "nom": "👨‍👩‍👧‍👦 ・Famille",
+   "couleur": "#2ecc71"
+  },
+  {
+   "id": "1489587221991395549",
+   "nom": "─── LTD ───",
+   "couleur": "#000000"
+  },
+  {
+   "id": "1248322286289817601",
+   "nom": "🏬 ・ LTD Little Seoul",
+   "couleur": "#3498db"
+  },
+  {
+   "id": "1247271103077027914",
+   "nom": "🏬 ・ LTD Strawberry",
+   "couleur": "#3498db"
+  },
+  {
+   "id": "1247608590458687569",
+   "nom": "🏬 ・ LTD Roxwood",
+   "couleur": "#3498db"
+  },
+  {
+   "id": "1248953071112028201",
+   "nom": "🏬 ・ LTD Paleto",
+   "couleur": "#3498db"
+  },
+  {
+   "id": "1248767243127623751",
+   "nom": "🏬 ・ LTD Grove Street",
+   "couleur": "#3498db"
+  },
+  {
+   "id": "1250202845920104518",
+   "nom": "🏬 ・ LTD Cayo",
+   "couleur": "#3498db"
+  },
+  {
+   "id": "1249066953037971477",
+   "nom": "🏬 ・ LTD Mirror Park",
+   "couleur": "#3498db"
+  },
+  {
+   "id": "1255616634757054574",
+   "nom": "🏬 ・ LTD Sandyshore",
+   "couleur": "#3498db"
+  },
+  {
+   "id": "1489587679254413354",
+   "nom": "─── GARAGES ───",
+   "couleur": "#000000"
+  },
+  {
+   "id": "1247237790157242388",
+   "nom": "🧰 ・Harmony's",
+   "couleur": "#ee0202"
+  },
+  {
+   "id": "1252251962473189376",
+   "nom": "🧰 ・ Garage paleto",
+   "couleur": "#ee0202"
+  },
+  {
+   "id": "1260767539005362239",
+   "nom": "🧰・Benny’s",
+   "couleur": "#ee0202"
+  },
+  {
+   "id": "1398332289913589902",
+   "nom": "🧰・LS Custom",
+   "couleur": "#ee0202"
+  },
+  {
+   "id": "1366732974791331942",
+   "nom": "🧰・Cayo Garage",
+   "couleur": "#ee0202"
+  },
+  {
+   "id": "1470189333259747509",
+   "nom": "🧰・Sandy Repair",
+   "couleur": "#ff0000"
+  },
+  {
+   "id": "1489587846745554954",
+   "nom": "─── CLUBS ───",
+   "couleur": "#000000"
+  },
+  {
+   "id": "1249166107923972106",
+   "nom": "🍸 ・Cayo-beach",
+   "couleur": "#e91e63"
+  },
+  {
+   "id": "1256720118420082769",
+   "nom": "🍸・Hen House",
+   "couleur": "#e91e63"
+  },
+  {
+   "id": "1460745562625282414",
+   "nom": "🍸・Pacific Bluffs",
+   "couleur": "#e91e63"
+  },
+  {
+   "id": "1255626260038549654",
+   "nom": "🍸 ・Bahamas",
+   "couleur": "#e91e63"
+  },
+  {
+   "id": "1508489249572388895",
+   "nom": "🍸 ・ Club 77",
+   "couleur": "#e91e63"
+  },
+  {
+   "id": "1248694412507218070",
+   "nom": "🍺 ・ Grapeseed pub",
+   "couleur": "#e91e63"
+  },
+  {
+   "id": "1249010394157289554",
+   "nom": "👄 ・Burning Bush",
+   "couleur": "#e91e63"
+  },
+  {
+   "id": "1433194209157845203",
+   "nom": "💃・Unicorn",
+   "couleur": "#e91e63"
+  },
+  {
+   "id": "1454094645217857628",
+   "nom": "🍻・ Yellow Jack",
+   "couleur": "#e91e63"
+  },
+  {
+   "id": "1252255266053820436",
+   "nom": "🍾 - Tequila-la",
+   "couleur": "#e91e63"
+  },
+  {
+   "id": "1489588077201457303",
+   "nom": "─── FARMS ───",
+   "couleur": "#000000"
+  },
+  {
+   "id": "1309551760939159592",
+   "nom": "📦 ・ Post Op",
+   "couleur": "#1abc9c"
+  },
+  {
+   "id": "1259636723785142342",
+   "nom": "🚬・Cayo Cigare",
+   "couleur": "#1abc9c"
+  },
+  {
+   "id": "1411321012963770388",
+   "nom": "🌿 ・Ferme paleto",
+   "couleur": "#1abc9c"
+  },
+  {
+   "id": "1470784348243493107",
+   "nom": "🧑‍🌾・Ferme de Roxwood",
+   "couleur": "#1abc9c"
+  },
+  {
+   "id": "1275839264264814673",
+   "nom": "🍃 ・ LDorganics",
+   "couleur": "#1abc9c"
+  },
+  {
+   "id": "1338827909124849714",
+   "nom": "🦴 ・Abattoir",
+   "couleur": "#1abc9c"
+  },
+  {
+   "id": "1248331250976952402",
+   "nom": "🍇 ・Vignoble",
+   "couleur": "#1abc9c"
+  },
+  {
+   "id": "1248293527818080325",
+   "nom": "⛽️・ Globe Oil",
+   "couleur": "#1abc9c"
+  },
+  {
+   "id": "1467843607170908320",
+   "nom": "💐・BellaFlora",
+   "couleur": "#1abc9c"
+  },
+  {
+   "id": "1318899137223069727",
+   "nom": "🍌 ・Ferme de Cayo",
+   "couleur": "#1abc9c"
+  },
+  {
+   "id": "1489589101022810273",
+   "nom": "─── FAST-FOODS ───",
+   "couleur": "#000000"
+  },
+  {
+   "id": "1488975516558950480",
+   "nom": "🍹・La Linterna",
+   "couleur": "#e67e22"
+  },
+  {
+   "id": "1254856212101464145",
+   "nom": "🍔 ・Burger Shot Nord",
+   "couleur": "#e67e22"
+  },
+  {
+   "id": "1323350863481274439",
+   "nom": "🍔・Horny's",
+   "couleur": "#e67e22"
+  },
+  {
+   "id": "1546175872002695248",
+   "nom": "🐟・Cayo Fish and Grill",
+   "couleur": "#e67e22"
+  },
+  {
+   "id": "1248341426798985257",
+   "nom": "🍣 ・ Umami",
+   "couleur": "#e67e22"
+  },
+  {
+   "id": "1252252075853615104",
+   "nom": "🍕 ・ Pizza This",
+   "couleur": "#e67e22"
+  },
+  {
+   "id": "1252502982394908692",
+   "nom": "🍦・Bean Ice Cream",
+   "couleur": "#e67e22"
+  },
+  {
+   "id": "1438640612730605598",
+   "nom": "🍝 ・ Casa Del Gusto",
+   "couleur": "#e67e22"
+  },
+  {
+   "id": "1489589272058138644",
+   "nom": "─── ENTREPRISES ───",
+   "couleur": "#000000"
+  },
+  {
+   "id": "1336603223846551584",
+   "nom": "🎙️・Urban Mix",
+   "couleur": "#6e0853"
+  },
+  {
+   "id": "1482453063049543731",
+   "nom": "🎬・Rockford Records",
+   "couleur": "#6e0853"
+  },
+  {
+   "id": "1475414187139403806",
+   "nom": "🎨・Atelier komori",
+   "couleur": "#6e0853"
+  },
+  {
+   "id": "1248631432369143818",
+   "nom": "🪑 ・ Élégance Déco",
+   "couleur": "#6e0853"
+  },
+  {
+   "id": "1301598444812632154",
+   "nom": "⚖️・LS Avocat",
+   "couleur": "#6e0853"
+  },
+  {
+   "id": "1486464875956797500",
+   "nom": "👮・Gruppe Sechs",
+   "couleur": "#6e0853"
+  },
+  {
+   "id": "1471876966948016179",
+   "nom": "🎨・nyrex creative",
+   "couleur": "#6e0853"
+  },
+  {
+   "id": "1332477780708823105",
+   "nom": "🏬・Dynasty 8",
+   "couleur": "#6e0853"
+  },
+  {
+   "id": "1501235392702185715",
+   "nom": "🏠 ・Mairie",
+   "couleur": "#6e0853"
+  },
+  {
+   "id": "1537838494934634526",
+   "nom": "🏳️・Ambassade de Cayo",
+   "couleur": "#6e0853"
+  },
+  {
+   "id": "1382289124484190218",
+   "nom": "🚙 ・Concess Auto",
+   "couleur": "#6e0853"
+  },
+  {
+   "id": "1539686260665221181",
+   "nom": "🎰・LS Event",
+   "couleur": "#6e0853"
+  },
+  {
+   "id": "1553800200341168359",
+   "nom": "🏍️・Concess Moto / Bateau",
+   "couleur": "#6e0853"
+  },
+  {
+   "id": "1520183199060328571",
+   "nom": "🏫・Université",
+   "couleur": "#6e0853"
+  },
+  {
+   "id": "1491790362866352158",
+   "nom": "🪖・LS Army",
+   "couleur": "#4b724b"
+  },
+  {
+   "id": "1554916308703908071",
+   "nom": "🎨・Eclatéa design",
+   "couleur": "#6e0853"
+  },
+  {
+   "id": "1490428478762516511",
+   "nom": "─── CITOYENS ───",
+   "couleur": "#000000"
+  },
+  {
+   "id": "1479929380473147473",
+   "nom": "🗝️・Légendes du Oil",
+   "couleur": "#f1c40f"
+  },
+  {
+   "id": "1245400912835510284",
+   "nom": "🗝️・Citoyen",
+   "couleur": "#ff00f1"
+  },
+  {
+   "id": "1425898414842843174",
+   "nom": "Server Booster",
+   "couleur": "#f47fff"
+  },
+  {
+   "id": "1489593253203546182",
+   "nom": "─── BOTS ───",
+   "couleur": "#000000"
+  },
+  {
+   "id": "1433173495889531031",
+   "nom": "🤖・Bot",
+   "couleur": "#1700ad"
+  },
+  {
+   "id": "1245401099226054700",
+   "nom": "🤖・carl-bot",
+   "couleur": "#1700ad"
+  },
+  {
+   "id": "1249288763595685960",
+   "nom": "🤖・GiveawayBot",
+   "couleur": "#1700ad"
+  },
+  {
+   "id": "1489726842427412743",
+   "nom": "🤖・DraftBot",
+   "couleur": "#1700ad"
+  },
+  {
+   "id": "1562638211711508570",
+   "nom": "─── AUTRES ───",
+   "couleur": "#000000"
+  }
+ ],
+ "avertissements": [],
+ "msglog": {
+  "etat": "eteint",
+  "n": 0
+ }
+}
