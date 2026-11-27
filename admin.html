@@ -34,13 +34,14 @@ window.ROXWOOD_CFG = {
 <link rel="stylesheet" href="assets/roxwood-app.css?v=C-119">
 <link rel="stylesheet" href="assets/roxwood-refonte.css?v=R-21">
 <link rel="stylesheet" href="assets/roxwood-portail.css?v=1">
-<link rel="stylesheet" href="assets/roxwood-vues.css?v=2">
+<link rel="stylesheet" href="assets/roxwood-vues.css?v=3">
 </head>
 <body>
 <script src="assets/roxwood-portail.js?v=1"></script>
 <script src="assets/contrat-modele.js?v=1"></script>
 <script src="assets/evenements.js?v=4"></script>
 <script src="assets/stocks.js?v=1"></script>
+<script src="assets/bot.js?v=1"></script>
 <div id="noelNeige" aria-hidden="true"></div>
 <div id="noelGuirlande" aria-hidden="true"></div>
 
@@ -152,9 +153,6 @@ window.ROXWOOD_CFG = {
     <button class="nav-item" data-view="quotashist">📊 <span class="txt">Quotas 3 semaines</span></button>
     </div>
     <div class="nav-grp">
-    <div class="nav-sec" data-sec="vitrine">Vitrine</div>
-    </div>
-    <div class="nav-grp">
     <div class="nav-sec" data-sec="perso">Perso</div>
     <button class="nav-item" data-view="agenda">📅 <span class="txt">Mon agenda</span></button>
     <button class="nav-item" data-view="affiches">🖼️ <span class="txt">Affiches</span></button>
@@ -163,6 +161,7 @@ window.ROXWOOD_CFG = {
     <div class="nav-sec" data-sec="systeme">Système</div>
     <button class="nav-item" data-view="dlogs">📡 <span class="txt">Logs en direct</span></button>
     <button class="nav-item" data-view="journal">📜 <span class="txt">Journal</span></button>
+    <button class="nav-item" data-view="bot">🤖 <span class="txt">Gestion du bot</span></button>
     <button class="nav-item" data-view="maj">🆕 <span class="txt">Mises à jour</span></button>
     </div>
     <div class="spacer"></div>
@@ -292,6 +291,7 @@ function defaults(){
     affiches:[],
     produits:[],
     stocks:{coffres:[],produits:[]},
+    botcfg:{},
     pending:[],
     fer:[],
     sanctions:{liste:[],log:[]},
@@ -310,7 +310,7 @@ function load(){
    les contrats et les médias depuis la sortie de Supabase. Sans lui, mergeRemote
    ne reprenait JAMAIS ces tables du dépôt — le dernier qui enregistrait écrasait
    les lignes ajoutées par un autre admin, et toute écriture du bot était perdue. */
-const SEC_KEYS=['runners','weeks','sheets','fact','users','profils','pending','fer','_tables','settings','absences','sanctions','historique','_sancFix1','_evtFix1','_stkFix1','stocks','primesExtra','quotasCom','quotasComHist','journal','bilanExtra','closeUndo','bilanForce','prodDer','imported','affiches','produits','_recruesIgnore','ventesAlias','_ventesIgnore','_qcFix1','_wkFix1','_permsFix1','_rolesFix77','_affFix1','_prodFix1','_avertVus','_signeVus'];
+const SEC_KEYS=['runners','weeks','sheets','fact','users','profils','pending','fer','_tables','settings','absences','sanctions','historique','_sancFix1','_evtFix1','_stkFix1','stocks','botcfg','_botFix1','primesExtra','quotasCom','quotasComHist','journal','bilanExtra','closeUndo','bilanForce','prodDer','imported','affiches','produits','_recruesIgnore','ventesAlias','_ventesIgnore','_qcFix1','_wkFix1','_permsFix1','_rolesFix77','_affFix1','_prodFix1','_avertVus','_signeVus'];
 /* ---- heure de référence : celle du serveur Supabase, pas celle du PC ----
    Un utilisateur avec une horloge décalée datait ses modifs « dans le futur » et écrasait tout. */
 let CLOCK_SKEW=0;
@@ -962,7 +962,7 @@ const PERMS={
              'overview','felig','historique',
              'quotashist',
              'profil','moi','agenda','affiches',
-             'dlogs','journal','params','maj'],
+             'dlogs','journal','params','maj','bot'],
 
   // RH : les personnes et ce qu'on leur doit. Ni compta, ni facturation.
   //      La semaine reste ouverte : c'est là qu'ils lisent les salaires à payer.
@@ -1017,6 +1017,13 @@ function migrerPermsStk(){
   S._stkFix1=true;
   const c=S.settings&&S.settings.permsCustom;
   if(c) Object.keys(c).forEach(r=>{ if(Array.isArray(c[r])&&c[r].includes('prodder')&&['direction','assistdir','respcom','commercial'].includes(r)&&!c[r].includes('stocks')) c[r].push('stocks'); });
+  return true;
+}
+function migrerPermsBot(){      // « Gestion du bot » : Direction seulement
+  if(S._botFix1) return false;
+  S._botFix1=true;
+  const c=S.settings&&S.settings.permsCustom;
+  if(c&&Array.isArray(c.direction)&&!c.direction.includes('bot')) c.direction.push('bot');
   return true;
 }
 function migrerPermsEvt(){
@@ -1375,7 +1382,7 @@ function logout(){
 }
 
 /* ---- Canari de version : prévient les onglets restés sur une vieille version ---- */
-const APP_VERSION='C-137';
+const APP_VERSION='C-138';
 /* Le bandeau ne doit dire qu'une chose : « une version plus récente existe ».
    Il comparait deux chaînes avec !==, donc il s'allumait aussi dans l'autre
    sens — quand la page ouverte était PLUS récente que version.json, ce qui
@@ -1861,7 +1868,7 @@ function show(v){
   appliquerGrades();   // une synchro a pu changer les barèmes depuis le dernier rendu
   if(purgeSupprimees()&&!isMembre()){ save(); sbQueue(); }   // rubriques supprimées : leurs données ne reviennent pas
   if(migrerPerms()&&!isMembre()){ save(); sbQueue(); }
-  if((migrerPermsSanc()|migrerPermsEvt()|migrerPermsStk())&&!isMembre()){ save(); sbQueue(); }       // listes de permissions citant d'anciennes rubriques
+  if((migrerPermsSanc()|migrerPermsEvt()|migrerPermsStk()|migrerPermsBot())&&!isMembre()){ save(); sbQueue(); }       // listes de permissions citant d'anciennes rubriques
   if(migrerAffiches()&&!isMembre()){ save(); sbQueue(); }    // rubrique Affiches ajoutée après coup
   if(migrerAccueil()&&!isMembre()){ save(); sbQueue(); }     // page Accueil + hubs de pôle, idem
   if(!isMembre()){                                           // sanctions données avec /avertissement sur Discord
@@ -1883,7 +1890,7 @@ function show(v){
   document.querySelectorAll('.nav-item[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===v||(sysV&&!!b.closest('#navTop')&&b.dataset.view==='params')));
   if(v!=='params') delete $('#main').dataset.ptab;
   destroyCharts();
-  ({accueil,rh,commercial,comptable,overview,effectif,semaine,historique,cloture,ftablette,felig,fventes,frh,integration,fcompta,factures,relances,bilan,prodder,quotascom,frecues,moi,profil,quotashist,agenda,affiches,maj,dlogs,journal,params,avertissements,evenements,stocks})[v]();
+  ({accueil,rh,commercial,comptable,overview,effectif,semaine,historique,cloture,ftablette,felig,fventes,frh,integration,fcompta,factures,relances,bilan,prodder,quotascom,frecues,moi,profil,quotashist,agenda,affiches,maj,dlogs,journal,params,avertissements,evenements,stocks,bot})[v]();
   if(sysV) $('#main').insertAdjacentHTML('afterbegin',paramsTabsHTML(v));
   try{ applyRO(); }catch(e){}
   restaureEcran(repere);
@@ -5832,6 +5839,12 @@ function ferDel(id){
 
 /* ================== MISES À JOUR (changelog) ================== */
 const CHANGELOG=[
+ {v:'C-138',d:'27/11/2026',t:'Gestion du bot depuis le site',items:[
+   ['🤖','Un panneau pour régler le bot','Nouvelle rubrique « Gestion du bot » (Direction) dans Système : état du bot, fonctions allumées ou éteintes, rôles et salons, droits de chaque commande (rôles, délai, salons), messages et annonces programmées, modération, alertes de stock, statut Discord, versions avec retour arrière. Le bot relit les réglages toutes les 45 secondes, sans redémarrage.'],
+   ['🗑️','Messages supprimés et modifiés','Le bot journalise ce qu’il voit passer, chiffré (le dépôt est public) ; le site le déchiffre avec un mot de passe. Tri : important, à trier, ignoré, avec règles automatiques.'],
+   ['📈','Statistiques par semaine','Commandes clients et recrutement, semaine par semaine, avec records, délais et export CSV.'],
+   ['🧹','Petit ménage','Retrait d’un titre « Vitrine » resté vide dans le menu.']
+ ]},
  {v:'C-137',d:'27/11/2026',t:'Portes d’entrée et ménage des comptes',items:[
    ['🚪','Les portes blindées reviennent','L’animation des portes d’acier à la connexion avait disparu avec la vitrine : elle est de retour sur la page d’accès.'],
    ['🗑️','Retirer un compte d’accès','Dans Paramètres, la liste « Qui a un accès » a un bouton Retirer (Direction). Un compte dont le rôle Discord a été retiré n’avait plus d’accès mais restait affiché : on peut maintenant le supprimer. Impossible de retirer soi-même, le développeur ou le dernier compte Direction.']
