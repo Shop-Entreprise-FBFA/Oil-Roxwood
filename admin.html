@@ -1269,6 +1269,21 @@ function currentUser(){
   const u=sessionStorage.getItem('orx_user');
   return (S.users||[]).find(x=>x.user.toLowerCase()===String(u||'').toLowerCase())||null;
 }
+/* Retire un compte d'accès devenu inutile (le rôle Discord a été retiré).
+   Réservé à la Direction ; jamais soi-même, jamais le développeur, jamais le dernier compte Direction. */
+function userRetire(id){
+  const cu=currentUser(), secours=sessionStorage.getItem('orx_user')==='SECOURS';
+  if(!((cu&&cu.role==='direction')||secours)||!RoxwoodGH.peutEcrire()) return toast('⚠️ Réservé à la Direction (avec le jeton d\'écriture)');
+  const u=(S.users||[]).find(x=>String(x.id)===String(id)); if(!u) return;
+  if(estDev(u.did)||(cu&&cu.id===u.id)) return toast('⚠️ Ce compte ne peut pas être retiré');
+  if(u.role==='direction'&&(S.users||[]).filter(x=>x.role==='direction'&&x!==u).length===0) return toast('⚠️ Dernier compte Direction : impossible');
+  if(!confirm('Retirer le compte de '+u.user+' ?\n\nS\'il n\'a plus de rôle reconnu sur Discord, il ne pourra plus entrer. S\'il en a un, son compte se recrée à sa prochaine connexion.')) return;
+  S.users=(S.users||[]).filter(x=>x!==u);
+  save(); sbPushNow();
+  jlog('Compte d\'accès retiré : '+u.user+' ('+(ROLES[u.role]||u.role)+')');
+  toast('🗑️ Compte retiré : '+u.user);
+  params();
+}
 /* Pastille d'identité de la barre latérale — extraite d'enter() pour pouvoir
    la rafraîchir quand quelqu'un change sa photo de profil. */
 function whoami(){
@@ -1360,7 +1375,7 @@ function logout(){
 }
 
 /* ---- Canari de version : prévient les onglets restés sur une vieille version ---- */
-const APP_VERSION='C-136';
+const APP_VERSION='C-137';
 /* Le bandeau ne doit dire qu'une chose : « une version plus récente existe ».
    Il comparait deux chaînes avec !==, donc il s'allumait aussi dans l'autre
    sens — quand la page ouverte était PLUS récente que version.json, ce qui
@@ -5817,6 +5832,10 @@ function ferDel(id){
 
 /* ================== MISES À JOUR (changelog) ================== */
 const CHANGELOG=[
+ {v:'C-137',d:'27/11/2026',t:'Portes d’entrée et ménage des comptes',items:[
+   ['🚪','Les portes blindées reviennent','L’animation des portes d’acier à la connexion avait disparu avec la vitrine : elle est de retour sur la page d’accès.'],
+   ['🗑️','Retirer un compte d’accès','Dans Paramètres, la liste « Qui a un accès » a un bouton Retirer (Direction). Un compte dont le rôle Discord a été retiré n’avait plus d’accès mais restait affiché : on peut maintenant le supprimer. Impossible de retirer soi-même, le développeur ou le dernier compte Direction.']
+ ]},
  {v:'C-136',d:'25/11/2026',t:'Le site devient réservé au personnel',items:[
    ['🔒','Plus de vitrine publique','La page publique (présentation, organigramme, candidature, commande client) est supprimée. L’adresse du site affiche une page « accès réservé » avec un bouton de connexion pour le personnel.'],
    ['🧹','Dashboard allégé','La rubrique « Nouveaux produits », le bouton « Publier sur le site » et la mise à jour automatique des visages de l’équipe disparaissent. Les données déjà saisies restent intactes.'],
@@ -9003,12 +9022,20 @@ async function params(){
           Le retirer : retirer le rôle — la personne ne pourra plus entrer dès sa prochaine visite.
           La correspondance rôle Discord → rôle du dashboard se règle plus bas.
         </p>
-        <table><thead><tr><th>Nom</th><th>Rôle</th><th>Identifiant Discord</th></tr></thead><tbody>
-        ${(S.users||[]).map(u=>`<tr>
+        <p style="color:var(--muted);font-size:.78rem;margin-bottom:12px">
+          ⚠️ Cette liste garde <b>tous les comptes déjà ouverts</b> : un compte ne disparaît pas tout seul quand on retire le rôle Discord. Il perd l'accès (la personne est refusée à sa prochaine connexion) mais reste affiché ici. Utilise <b>Retirer</b> pour nettoyer. Si la personne a encore un rôle reconnu, son compte se recrée tout seul à sa prochaine connexion.
+        </p>
+        <table><thead><tr><th>Nom</th><th>Rôle</th><th>Identifiant Discord</th><th></th></tr></thead><tbody>
+        ${(()=>{ const cu=currentUser(), peut=((!!cu&&cu.role==='direction')||sessionStorage.getItem('orx_user')==='SECOURS')&&RoxwoodGH.peutEcrire()&&!isRO('params');
+          return (S.users||[]).map(u=>{
+            const dernier=u.role==='direction'&&(S.users||[]).filter(x=>x.role==='direction'&&x!==u).length===0;
+            const non=!peut||(cu&&cu.id===u.id)||estDev(u.did)||dernier;
+            return `<tr>
           <td><b>${esc(u.user)}</b></td>
           <td>${esc(ROLES[u.role]||u.role||'—')}</td>
           <td style="font-family:var(--f-mono);font-size:.74rem;color:var(--muted)">${esc(u.did||'—')}</td>
-        </tr>`).join('')||'<tr><td colspan="3"><div class="empty">Aucun compte</div></td></tr>'}
+          <td style="text-align:right">${non?'':`<button class="btn btn-sm btn-red" onclick="userRetire('${u.id}')">Retirer</button>`}</td>
+        </tr>`; }).join('')||'<tr><td colspan="4"><div class="empty">Aucun compte</div></td></tr>'; })()}
         </tbody></table>
       </div>
       <div class="panel" data-ptab="donnees" style="margin-bottom:18px">
