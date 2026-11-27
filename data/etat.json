@@ -14769,6 +14769,13 @@
     "quantite": 1000,
     "qui": "Stella Collins",
     "fact": 253231
+   },
+   {
+    "date": "2026-11-27",
+    "client": "Sandy Repairs",
+    "quantite": 200,
+    "qui": "Stella Collins",
+    "fact": 253232
    }
   ],
   "collection": [
@@ -17159,7 +17166,7 @@
     "rib": "21138",
     "tel": "2048",
     "adresse": "Sandy Shores",
-    "lastCmd": "2026-11-19",
+    "lastCmd": "2026-11-27",
     "type": "entreprise",
     "salon": "1436500641492111463"
    },
@@ -17363,8 +17370,38 @@
     "prix": 150
    }
   ],
-  "compteur": 253232,
+  "compteur": 253233,
   "factures": [
+   {
+    "num": 253232,
+    "date": "2026-11-27",
+    "client": "Sandy Repairs",
+    "emetteur": "Stella Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD%",
+      "qte": 200,
+      "tva": 0,
+      "pu": 150,
+      "ht": 30000,
+      "ttc": 30000,
+      "desc": "bidons d'essence promo"
+     }
+    ],
+    "offert": 0,
+    "ht": 30000,
+    "ttc": 30000,
+    "poids": 400,
+    "statut": "attente",
+    "envoi": {
+     "t": 1795821657815,
+     "par": "Stella Collins",
+     "statut": "en_cours",
+     "ordre": 1795821658071,
+     "rapport": ""
+    }
+   },
    {
     "num": 253231,
     "date": "2026-11-27",
@@ -67053,14 +67090,14 @@
   }
  },
  "_cid": "udh3ajr326r",
- "_maj": 1795821652776,
- "_rev": "0ajse0pm6oad-mwzlufxd",
+ "_maj": 1795821657815,
+ "_rev": "27y7405kfpq-mwzlum45",
  "_majSec": {
   "fer": 1795638618252,
-  "fact": 1795821652776,
+  "fact": 1795821657815,
   "users": 1795808173586,
   "weeks": 1795434602527,
-  "sheets": 1795821626688,
+  "sheets": 1795821657239,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
   "journal": 1795808173586,
@@ -67077,7 +67114,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1795434602527,
   "profils": 1793561085750,
-  "_tables": 1795821652776,
+  "_tables": 1795821657797,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -69206,13 +69243,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-27T23:20:53.281Z",
+  "maj": "2026-11-27T23:21:01.301Z",
   "semaine": 48,
   "totalBarils": 22138,
   "ca": 110690,
   "objectif": 375000,
   "effectif": 95,
-  "clientsServis": 214,
+  "clientsServis": 215,
   "theme": "",
   "top3": [
    {
@@ -75617,6 +75654,48 @@
     "id": 1795821627805,
     "statut": "fait",
     "rapport": "Facture n°253231 postee dans le salon 1260767439160086579."
+   },
+   {
+    "type": "facture_ticket",
+    "payload": {
+     "num": 253232,
+     "salon": "1436500641492111463",
+     "reedition": false,
+     "facture": {
+      "num": 253232,
+      "date": "2026-11-27",
+      "client": "Sandy Repairs",
+      "emetteur": "Stella Collins",
+      "postop": false,
+      "lignes": [
+       {
+        "ref": "CMD%",
+        "qte": 200,
+        "tva": 0,
+        "pu": 150,
+        "ht": 30000,
+        "ttc": 30000,
+        "desc": "bidons d'essence promo"
+       }
+      ],
+      "offert": 0,
+      "ht": 30000,
+      "ttc": 30000,
+      "poids": 400,
+      "statut": "attente"
+     },
+     "client": {
+      "nom": "Sandy Repairs",
+      "rib": "21138",
+      "tel": "2048",
+      "adresse": "Sandy Shores",
+      "lastCmd": "2026-11-27",
+      "type": "entreprise",
+      "salon": "1436500641492111463"
+     },
+     "par": "Stella Collins"
+    },
+    "id": 1795821658071
    }
   ],
   "oilroxwood_coffres": [
