@@ -165,6 +165,7 @@ function botRender() {
   const tabs = BOT_TABS.map(([k, ic, nom]) => `<button class="bt-tab${BOT_TAB === k ? ' on' : ''}" onclick="BOT_TAB='${k}';botRender()">${ic} ${nom}</button>`).join('');
   const corps = ({ apercu: botApercu, fonctions: botFonctions, salons: botSalons, cmds: botCmds, msgs: botMsgs, auto: botAuto, mod: botMod, jmsg: botJmsg, stats: botStats, outils: botOutils, jrn: botJrn })[BOT_TAB]();
   $('#main').innerHTML = `
+  ${paramsTabsHTML('bot')}
   <div class="topbar">
     <div><h2>🤖 Gestion du bot</h2><div class="sub">${en ? '🟢 En ligne' : '🔴 Hors ligne ou inconnu'}${BOT_ST ? ` · signal ${bIlYa(BOT_ST.t)}` : ''} · réglages version ${(S.botcfg || {}).v || 0}${BOT_ST && BOT_ST.version_cfg != null ? (BOT_ST.version_cfg === (S.botcfg || {}).v ? ' · appliqués ✔' : ' · en cours d’application…') : ''}</div></div>
     <div class="bt-save">${ch.length ? `<span class="bt-pill g">${ch.length} changement${ch.length > 1 ? 's' : ''} non enregistré${ch.length > 1 ? 's' : ''}</span>` : ''}

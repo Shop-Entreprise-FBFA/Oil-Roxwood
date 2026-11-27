@@ -1243,7 +1243,7 @@ function actKey(e){
 function applyPerms(){
   const al=allowedViews();
   /* Menu du haut : un bouton non autorisé disparaît, comme avant dans la barre latérale. */
-  document.querySelectorAll('#navTop .nav-item[data-view]').forEach(b=>{ b.style.display=(al.includes(b.dataset.view)||(b.dataset.view==='params'&&['dlogs','journal','maj'].some(x=>al.includes(x))))?'':'none'; });
+  document.querySelectorAll('#navTop .nav-item[data-view]').forEach(b=>{ b.style.display=(al.includes(b.dataset.view)||(b.dataset.view==='params'&&['dlogs','journal','maj','bot'].some(x=>al.includes(x))))?'':'none'; });
   /* Menu « Plus » : mêmes règles qu'avant — un titre de section sans aucun onglet autorisé est masqué.
      Plus de sections repliables : le menu est déjà un tiroir qu'on ouvre et referme. */
   document.querySelectorAll('#navMore .nav-sec').forEach(h=>{
@@ -1382,7 +1382,7 @@ function logout(){
 }
 
 /* ---- Canari de version : prévient les onglets restés sur une vieille version ---- */
-const APP_VERSION='C-138';
+const APP_VERSION='C-139';
 /* Le bandeau ne doit dire qu'une chose : « une version plus récente existe ».
    Il comparait deux chaînes avec !==, donc il s'allumait aussi dans l'autre
    sens — quand la page ouverte était PLUS récente que version.json, ce qui
@@ -1887,7 +1887,7 @@ function show(v){
   const repere=memeVue?repereEcran():null;
   VIEW=v;
   const sysV=['dlogs','journal','maj'].includes(v);
-  document.querySelectorAll('.nav-item[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===v||(sysV&&!!b.closest('#navTop')&&b.dataset.view==='params')));
+  document.querySelectorAll('.nav-item[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===v||((sysV||v==='bot')&&!!b.closest('#navTop')&&b.dataset.view==='params')));
   if(v!=='params') delete $('#main').dataset.ptab;
   destroyCharts();
   ({accueil,rh,commercial,comptable,overview,effectif,semaine,historique,cloture,ftablette,felig,fventes,frh,integration,fcompta,factures,relances,bilan,prodder,quotascom,frecues,moi,profil,quotashist,agenda,affiches,maj,dlogs,journal,params,avertissements,evenements,stocks,bot})[v]();
@@ -5839,6 +5839,9 @@ function ferDel(id){
 
 /* ================== MISES À JOUR (changelog) ================== */
 const CHANGELOG=[
+ {v:'C-139',d:'27/11/2026',t:'Gestion du bot : accès plus visible',items:[
+   ['🤖','Un onglet dans Paramètres','« Gestion du bot » apparaît maintenant dans la barre d’onglets de Paramètres, à côté de Logs en direct, Journal et Mises à jour.']
+ ]},
  {v:'C-138',d:'27/11/2026',t:'Gestion du bot depuis le site',items:[
    ['🤖','Un panneau pour régler le bot','Nouvelle rubrique « Gestion du bot » (Direction) dans Système : état du bot, fonctions allumées ou éteintes, rôles et salons, droits de chaque commande (rôles, délai, salons), messages et annonces programmées, modération, alertes de stock, statut Discord, versions avec retour arrière. Le bot relit les réglages toutes les 45 secondes, sans redémarrage.'],
    ['🗑️','Messages supprimés et modifiés','Le bot journalise ce qu’il voit passer, chiffré (le dépôt est public) ; le site le déchiffre avec un mot de passe. Tri : important, à trier, ignoré, avec règles automatiques.'],
@@ -8951,7 +8954,7 @@ function enteteRepliable(cle,titre,extra){
    Journal et Mises à jour sont des pages à part, rattachées à la même barre d'onglets. */
 let PARAM_TAB='eco';
 const PARAM_ONGLETS=[['eco','💼 Économie'],['apparence','🖼️ Apparence'],['acces','🔐 Accès & permissions'],['grades','📐 Grades & barèmes'],['donnees','💾 Données & Discord']];
-const PARAM_SYS=[['dlogs','📡 Logs en direct'],['journal','📜 Journal'],['maj','🆕 Mises à jour']];
+const PARAM_SYS=[['dlogs','📡 Logs en direct'],['journal','📜 Journal'],['bot','🤖 Gestion du bot'],['maj','🆕 Mises à jour']];
 function paramsTabsHTML(actif){
   const al=allowedViews(), reglages=al.includes('params');
   const neuf=localStorage.getItem('orx_seenver')!==APP_VERSION;
