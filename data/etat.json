@@ -14734,6 +14734,13 @@
     "quantite": 150,
     "qui": "Laurent Roquel",
     "fact": 253226
+   },
+   {
+    "date": "2026-11-27",
+    "client": "LTD Mirror Park",
+    "quantite": 500,
+    "qui": "Stella Collins",
+    "fact": 253228
    }
   ],
   "collection": [
@@ -16923,7 +16930,7 @@
     "rib": "20021",
     "tel": "931",
     "adresse": "Los Santos",
-    "lastCmd": "2026-11-23",
+    "lastCmd": "2026-11-27",
     "type": "entreprise",
     "salon": "1461345077187051570"
    },
@@ -17331,8 +17338,38 @@
     "prix": 150
    }
   ],
-  "compteur": 253227,
+  "compteur": 253229,
   "factures": [
+   {
+    "num": 253228,
+    "date": "2026-11-27",
+    "client": "LTD Mirror Park",
+    "emetteur": "Stella Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD%",
+      "qte": 500,
+      "tva": 0,
+      "pu": 150,
+      "ht": 75000,
+      "ttc": 75000,
+      "desc": "bidons d'essence promo"
+     }
+    ],
+    "offert": 0,
+    "ht": 75000,
+    "ttc": 75000,
+    "poids": 1000,
+    "statut": "attente",
+    "envoi": {
+     "t": 1795780713477,
+     "par": "Stella Collins",
+     "statut": "en_cours",
+     "ordre": 1795820966546,
+     "rapport": ""
+    }
+   },
    {
     "num": 253226,
     "date": "2026-11-27",
@@ -66883,13 +66920,13 @@
  },
  "_cid": "lc1wh5sqkwp",
  "_maj": 1795820921962,
- "_rev": "ipakx318hhc-mwzlf5uh",
+ "_rev": "jbliso7vyfm-mwzlfpy8",
  "_majSec": {
   "fer": 1795638618252,
-  "fact": 1795780683831,
+  "fact": 1795780713477,
   "users": 1795780683831,
   "weeks": 1795434602527,
-  "sheets": 1795780683831,
+  "sheets": 1795780712916,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
   "journal": 1795780683831,
@@ -66906,7 +66943,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1795434602527,
   "profils": 1793561085750,
-  "_tables": 1795780683800,
+  "_tables": 1795780713461,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -69035,13 +69072,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-27T23:09:00.377Z",
+  "maj": "2026-11-27T23:09:26.432Z",
   "semaine": 48,
   "totalBarils": 22138,
   "ca": 110690,
   "objectif": 375000,
   "effectif": 95,
-  "clientsServis": 209,
+  "clientsServis": 210,
   "theme": "",
   "top3": [
    {
@@ -75262,6 +75299,48 @@
     "id": 1795820904994,
     "statut": "fait",
     "rapport": "Facture n°253227 postee dans le salon 1250202998223802500."
+   },
+   {
+    "type": "facture_ticket",
+    "payload": {
+     "num": 253228,
+     "salon": "1461345077187051570",
+     "reedition": false,
+     "facture": {
+      "num": 253228,
+      "date": "2026-11-27",
+      "client": "LTD Mirror Park",
+      "emetteur": "Stella Collins",
+      "postop": false,
+      "lignes": [
+       {
+        "ref": "CMD%",
+        "qte": 500,
+        "tva": 0,
+        "pu": 150,
+        "ht": 75000,
+        "ttc": 75000,
+        "desc": "bidons d'essence promo"
+       }
+      ],
+      "offert": 0,
+      "ht": 75000,
+      "ttc": 75000,
+      "poids": 1000,
+      "statut": "attente"
+     },
+     "client": {
+      "nom": "LTD Mirror Park",
+      "rib": "20021",
+      "tel": "931",
+      "adresse": "Los Santos",
+      "lastCmd": "2026-11-27",
+      "type": "entreprise",
+      "salon": "1461345077187051570"
+     },
+     "par": "Stella Collins"
+    },
+    "id": 1795820966546
    }
   ],
   "oilroxwood_coffres": [
