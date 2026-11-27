@@ -23302,16 +23302,7 @@
   "v": 2,
   "maj": 1795782305323,
   "par": "Diego Herrera",
-  "actions": [
-   {
-    "id": "amwyyf2uji47",
-    "t": 1795782305323,
-    "type": "envoyer",
-    "salon": "1492164850044899408",
-    "texte": "ttteesst",
-    "titre": "test"
-   }
-  ],
+  "actions": [],
   "retours": [
    {
     "id": "amwyydgfzbmg",
@@ -23324,6 +23315,12 @@
     "ok": false,
     "txt": "Forbidden('403 Forbidden (error code: 50013): Missing Permissions')",
     "t": 1795782274341
+   },
+   {
+    "id": "amwyyf2uji47",
+    "ok": true,
+    "txt": "ok",
+    "t": 1795782323177
    }
   ],
   "historique": [
@@ -66342,8 +66339,8 @@
    "sem": 46
   }
  },
- "_cid": "yitaw9pc4a",
- "_maj": 1795782302501,
+ "_cid": "bot",
+ "_maj": 1795782323550,
  "_rev": "7zstreo4npg-mwyyf5qr",
  "_majSec": {
   "fer": 1795638618252,
@@ -66386,7 +66383,7 @@
   "_evtFix1": 1795028752192,
   "_stkFix1": 1795207386387,
   "stocks": 1795259898981,
-  "botcfg": 1795782302501,
+  "botcfg": 1795782323550,
   "_botFix1": 1795777677320
  },
  "_qcFix1": true,
