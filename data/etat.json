@@ -14762,6 +14762,13 @@
     "quantite": 500,
     "qui": "Stella Collins",
     "fact": 253230
+   },
+   {
+    "date": "2026-11-27",
+    "client": "Benny's",
+    "quantite": 1000,
+    "qui": "Stella Collins",
+    "fact": 253231
    }
   ],
   "collection": [
@@ -16310,7 +16317,8 @@
     "tel": "",
     "adresse": "Los Santos",
     "type": "entreprise",
-    "salon": "1260767439160086579"
+    "salon": "1260767439160086579",
+    "lastCmd": "2026-11-27"
    },
    {
     "nom": "blach hood order",
@@ -17355,8 +17363,31 @@
     "prix": 150
    }
   ],
-  "compteur": 253231,
+  "compteur": 253232,
   "factures": [
+   {
+    "num": 253231,
+    "date": "2026-11-27",
+    "client": "Benny's",
+    "emetteur": "Stella Collins",
+    "postop": false,
+    "lignes": [
+     {
+      "ref": "CMD%",
+      "qte": 1000,
+      "tva": 0,
+      "pu": 150,
+      "ht": 150000,
+      "ttc": 150000,
+      "desc": "bidons d'essence promo"
+     }
+    ],
+    "offert": 0,
+    "ht": 150000,
+    "ttc": 150000,
+    "poids": 2000,
+    "statut": "attente"
+   },
    {
     "num": 253230,
     "date": "2026-11-27",
@@ -67014,14 +67045,14 @@
   }
  },
  "_cid": "udh3ajr326r",
- "_maj": 1795821604907,
- "_rev": "kt4lni0msol-mwzltl32",
+ "_maj": 1795821626706,
+ "_rev": "p1fcl6scw3-mwzltvjl",
  "_majSec": {
   "fer": 1795638618252,
-  "fact": 1795821602438,
+  "fact": 1795821626688,
   "users": 1795808173586,
   "weeks": 1795434602527,
-  "sheets": 1795821557901,
+  "sheets": 1795821626688,
   "_qcFix1": 1793561085750,
   "_wkFix1": 1793561085750,
   "journal": 1795808173586,
@@ -67038,7 +67069,7 @@
   "primesExtra": 1793561085750,
   "quotasComHist": 1795434602527,
   "profils": 1793561085750,
-  "_tables": 1795821604907,
+  "_tables": 1795821626688,
   "_permsFix1": 1793561085750,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1793561085750,
@@ -69167,13 +69198,13 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-27T23:20:13.310Z",
+  "maj": "2026-11-27T23:20:26.865Z",
   "semaine": 48,
   "totalBarils": 22138,
   "ca": 110690,
   "objectif": 375000,
   "effectif": 95,
-  "clientsServis": 213,
+  "clientsServis": 214,
   "theme": "",
   "top3": [
    {
