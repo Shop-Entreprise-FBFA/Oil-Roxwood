@@ -1382,7 +1382,7 @@ function logout(){
 }
 
 /* ---- Canari de version : prévient les onglets restés sur une vieille version ---- */
-const APP_VERSION='C-139';
+const APP_VERSION='C-140';
 /* Le bandeau ne doit dire qu'une chose : « une version plus récente existe ».
    Il comparait deux chaînes avec !==, donc il s'allumait aussi dans l'autre
    sens — quand la page ouverte était PLUS récente que version.json, ce qui
@@ -1883,6 +1883,7 @@ function show(v){
   const al=allowedViews();
   if(v==='params'&&!al.includes('params')){ const sv=['dlogs','journal','maj'].find(x=>al.includes(x)); if(sv) v=sv; } // pas de réglages : on atterrit sur sa page système
   if(!al.includes(v)) v=al[0]||'accueil'; // vue non autorisée → première vue permise
+  if(v==='params'){ if(VIEW!=='params'&&!PARAM_KEEP) PARAM_HUB=true; PARAM_KEEP=false; }   // entrée depuis une autre rubrique : tuiles
   const memeVue=(v===VIEW);
   const repere=memeVue?repereEcran():null;
   VIEW=v;
@@ -1941,7 +1942,7 @@ function cartesHTML(CARTES){
   const al=allowedViews();
   return `<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px">
     ${CARTES.map(c=>{ const col=c.couleur||'var(--accent)', ok=al.includes(c.view)||(c.view==='params'&&['dlogs','journal','maj'].some(x=>al.includes(x)));
-      return ok?`<div class="panel kpi link pole-carte" style="--pc:${col}" onclick="show('${c.view}')" onkeydown="actKey(event)" tabindex="0" role="button" title="Ouvrir ${esc(c.titre)}">
+      return ok?`<div class="panel kpi link pole-carte" style="--pc:${col}" onclick="${c.go||`show('${c.view}')`}" onkeydown="actKey(event)" tabindex="0" role="button" title="Ouvrir ${esc(c.titre)}">
       <div class="pole-ico">${c.emoji}</div>
       <div class="pole-titre">${esc(c.titre)}</div>
       <div class="pole-sub">${esc(c.sub)}</div>
@@ -5839,6 +5840,10 @@ function ferDel(id){
 
 /* ================== MISES À JOUR (changelog) ================== */
 const CHANGELOG=[
+ {v:'C-140',d:'27/11/2026',t:'Paramètres en tuiles',items:[
+   ['🧩','Même présentation que les autres rubriques','Paramètres s’ouvre sur des tuiles (Économie, Apparence, Accès & permissions, Grades & barèmes, Données & Discord, Logs en direct, Journal, Gestion du bot, Mises à jour), comme RH, Commercial et Compta. Un clic ouvre la rubrique ; la barre d’onglets reste en haut avec un lien « ← Paramètres » pour revenir aux tuiles.'],
+   ['🐛','Les onglets marchent depuis les pages Système','Depuis Logs en direct, Journal ou Gestion du bot, un clic sur Économie, Apparence… ne faisait rien : il ouvre maintenant la bonne rubrique.']
+ ]},
  {v:'C-139',d:'27/11/2026',t:'Gestion du bot : accès plus visible',items:[
    ['🤖','Un onglet dans Paramètres','« Gestion du bot » apparaît maintenant dans la barre d’onglets de Paramètres, à côté de Logs en direct, Journal et Mises à jour.']
  ]},
@@ -8952,22 +8957,41 @@ function enteteRepliable(cle,titre,extra){
    Les réglages tiennent en une seule page ; chaque panneau porte data-ptab et seul celui de l'onglet actif
    s'affiche (CSS). Les champs restent dans la page, donc saveParams() lit toujours tout. Logs en direct,
    Journal et Mises à jour sont des pages à part, rattachées à la même barre d'onglets. */
-let PARAM_TAB='eco';
+let PARAM_TAB='eco', PARAM_HUB=true, PARAM_KEEP=false;   // PARAM_HUB : on montre les tuiles ; PARAM_KEEP : navigation interne à Paramètres, on ne revient pas aux tuiles
 const PARAM_ONGLETS=[['eco','💼 Économie'],['apparence','🖼️ Apparence'],['acces','🔐 Accès & permissions'],['grades','📐 Grades & barèmes'],['donnees','💾 Données & Discord']];
 const PARAM_SYS=[['dlogs','📡 Logs en direct'],['journal','📜 Journal'],['bot','🤖 Gestion du bot'],['maj','🆕 Mises à jour']];
 function paramsTabsHTML(actif){
   const al=allowedViews(), reglages=al.includes('params');
   const neuf=localStorage.getItem('orx_seenver')!==APP_VERSION;
   return `<div class="tabs" id="paramTabs" role="tablist" aria-label="Sections des paramètres">
-    ${reglages?PARAM_ONGLETS.map(([k,l])=>`<button class="tab${actif==='params'&&PARAM_TAB===k?' active':''}" role="tab" onclick="paramTab('${k}')">${l}</button>`).join(''):''}
+    ${reglages?`<button class="tab" role="tab" onclick="paramHub()" title="Retour aux tuiles de Paramètres">← Paramètres</button>`:''}
+    ${reglages?PARAM_ONGLETS.map(([k,l])=>`<button class="tab${actif==='params'&&PARAM_TAB===k?' active':''}" role="tab" onclick="paramGo('${k}')">${l}</button>`).join(''):''}
     ${PARAM_SYS.filter(([v])=>al.includes(v)).map(([v,l])=>`<button class="tab${actif===v?' active':''}" role="tab" onclick="show('${v}')">${l}${v==='maj'&&neuf?' <span class="nvb dot" title="Nouvelle version !"></span>':''}</button>`).join('')}
   </div>`;
+}
+function paramHub(){ PARAM_HUB=true; PARAM_KEEP=true; show('params'); }
+function paramGo(k){                      // ouvre un onglet de réglages, d'où qu'on vienne (tuiles ou autre rubrique)
+  PARAM_TAB=k; PARAM_HUB=false;
+  if(VIEW==='params'&&$('#paramTabs')) return paramTab(k);
+  PARAM_KEEP=true; show('params');
+}
+function paramsHub(){
+  const al=allowedViews(), col=COULEURS_POLES.params, cartes=[];
+  const R=[['eco','💼','Économie','Prix du pétrole, salaires, limites, objectifs'],['apparence','🖼️','Apparence','Thème et fonds d’écran par section'],
+           ['acces','🔐','Accès & permissions','Qui voit quoi, rôles Discord, comptes'],['grades','📐','Grades & barèmes','Grades, impôts, primes'],
+           ['donnees','💾','Données & Discord','Sauvegardes, webhooks, jeton d’écriture']];
+  if(al.includes('params')) R.forEach(([k,e,t,sub])=>cartes.push({emoji:e,titre:t,sub,view:'params',go:`paramGo('${k}')`,couleur:col}));
+  const S2={dlogs:['📡','Logs en direct','Ce qui se passe sur Discord, en direct'],journal:['📜','Journal','Historique des modifications du dashboard'],
+            bot:['🤖','Gestion du bot','État, droits des commandes, messages, modération'],maj:['🆕','Mises à jour','Nouveautés de chaque version']};
+  PARAM_SYS.forEach(([v])=>{ if(al.includes(v)&&S2[v]) cartes.push({emoji:S2[v][0],titre:S2[v][1],sub:S2[v][2],view:v,couleur:col}); });
+  $('#main').innerHTML=heroHTML('params','Paramètres','Configuration et administration')+cartesHTML(cartes);
 }
 function paramTab(k){
   PARAM_TAB=k; $('#main').dataset.ptab=k;
   document.querySelectorAll('#paramTabs .tab').forEach((b,i)=>b.classList.toggle('active',i<PARAM_ONGLETS.length&&PARAM_ONGLETS[i][0]===k));
 }
 async function params(){
+  if(PARAM_HUB){ paramsHub(); return; }
   $('#main').innerHTML = `
   ${heroHTML('params','Paramètres','Configuration et administration')}
   ${paramsTabsHTML('params')}
