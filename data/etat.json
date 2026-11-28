@@ -8337,6 +8337,76 @@
  "sheets": {
   "rh": [
    {
+    "nom": "Santiago morales",
+    "grade": "Intérimaire",
+    "tel": "555 102 698",
+    "rib": "569732",
+    "idU": "385722",
+    "arrivee": "2026-11-27",
+    "discord": "1261436866180288512",
+    "avert": "",
+    "contrat": true,
+    "recrut": "Marco Bellini",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
+    "nom": "twin mayer",
+    "grade": "Intérimaire",
+    "tel": "555-874-776",
+    "rib": "418461",
+    "idU": "268014",
+    "arrivee": "2026-11-27",
+    "discord": "1313315762336694342",
+    "avert": "",
+    "contrat": true,
+    "recrut": "Marco Bellini",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
+    "nom": "Ezio Balotely",
+    "grade": "Intérimaire",
+    "tel": "555-907912",
+    "rib": "568507",
+    "idU": "377114",
+    "arrivee": "2026-11-27",
+    "discord": "1436160261705961562",
+    "avert": "",
+    "contrat": true,
+    "recrut": "Marco Bellini",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
+    "nom": "Junior CARTER",
+    "grade": "Intérimaire",
+    "tel": "555-427-531",
+    "rib": "569074",
+    "idU": "385224",
+    "arrivee": "2026-11-27",
+    "discord": "1409952610408202301",
+    "avert": "",
+    "contrat": true,
+    "recrut": "Marco Bellini",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
+    "nom": "John Doé",
+    "grade": "Intérimaire",
+    "tel": "555 866 583",
+    "rib": "569073",
+    "idU": "385223",
+    "arrivee": "2026-11-27",
+    "discord": "1288909147080757319",
+    "avert": "",
+    "contrat": true,
+    "recrut": "Marco Bellini",
+    "dernierService": "",
+    "flagOut": false
+   },
+   {
     "nom": "Idriss Corleone",
     "grade": "Intérimaire",
     "tel": "555-905-568",
@@ -8345,7 +8415,7 @@
     "arrivee": "2026-11-26",
     "discord": "1227697834501869629",
     "avert": "",
-    "contrat": false,
+    "contrat": true,
     "recrut": "Marco Bellini",
     "dernierService": "",
     "flagOut": false
@@ -22709,7 +22779,7 @@
    "did": "1479222400326308032",
    "role": "rh",
    "auto": true,
-   "avatar": "https://cdn.discordapp.com/avatars/1479222400326308032/a0ae2e87e5bdf69150b139e6e0172095.png"
+   "avatar": "https://cdn.discordapp.com/avatars/1479222400326308032/dd6946331b2027774f55c839d6b53eab.png"
   },
   {
    "id": 1793132506638,
@@ -23262,1595 +23332,7 @@
    }
   ]
  },
- "botcfg": {
-  "msglog": {
-   "on": true,
-   "alerte": {
-    "salon": "1529598471022313684"
-   }
-  },
-  "maintenance": false,
-  "messages": {
-   "bienvenue": {
-    "desc": "Hey {membre} ! 👋\n\nBienvenue sur le serveur Discord officiel d'**Oil Roxwood** !\n\nNous sommes heureux de t'accueillir parmi nous. N'hésite pas à découvrir nos différents salons, à consulter le règlement et à échanger avec les autres membres.\n\n🎉 Tu es notre **{nb_membres}ᵉ membre** !\n\nSi tu as la moindre question, notre équipe reste à ta disposition.\n\nNous te souhaitons un agréable moment sur notre serveur ! 💙",
-    "salon": "1245479887012237363",
-    "couleur": "#D4A017",
-    "titre": "🛢️ Bienvenue chez Oil Roxwood !",
-    "pied": "© Oil Roxwood • Roxwood County • Direction générale",
-    "boutons": [
-     {
-      "label": "📋 Recrutement",
-      "url": "https://discord.com/channels/1245400912835510283/1246400361086845010/1473993031873986778"
-     },
-     {
-      "label": "🛒 Passer une commande",
-      "url": "https://discord.com/channels/1245400912835510283/1246400361086845010/1473993031873986778"
-     }
-    ],
-    "image": "https://cdn.discordapp.com/attachments/1119748188497268796/1575849410212925501/oil_2K27_2.png?ex=6b0ac7a1&is=6b097621&hm=cf7d381c471dacbca8ebd86e2f5f5c364fd28723ff5536bb2b9400d85addc617&"
-   }
-  },
-  "planifs": [
-   {
-    "id": "pmwyyiahhx7g",
-    "nom": "Nouvelle annonce",
-    "on": true,
-    "jours": [
-     4
-    ],
-    "heure": "13:30",
-    "salon": "1492164850044899408",
-    "texte": "teeeeeeeeeeeeeeeeeeeeest   tttttttttt",
-    "titre": "test"
-   }
-  ],
-  "roles": {
-   "staff": [
-    "1245400912835510286",
-    "1468694481153818674",
-    "1572228626722852914",
-    "1549212191432118384"
-   ],
-   "direction": [
-    "1247299609617891453"
-   ],
-   "drh": [
-    "1572228626722852914"
-   ],
-   "resprunner": [
-    "1574891946634248373"
-   ]
-  },
-  "alertes": {
-   "stock": {
-    "salon": "1492998331503345885"
-   }
-  },
-  "moderation": {
-   "salonLogs": "1529598471022313684"
-  },
-  "cmds": {
-   "/add": {
-    "roles": [
-     "staff"
-    ]
-   },
-   "/avertissement": {
-    "roles": [
-     "staff",
-     "drh"
-    ]
-   },
-   "/avertissements": {
-    "roles": [
-     "staff",
-     "drh"
-    ]
-   },
-   "/bienvenue": {
-    "roles": [
-     "staff",
-     "drh",
-     "direction"
-    ]
-   },
-   "/blacklist": {
-    "roles": [
-     "staff",
-     "drh"
-    ]
-   },
-   "/blacklist ajouter": {
-    "roles": [
-     "staff",
-     "drh"
-    ]
-   },
-   "/blacklist liste": {
-    "roles": [
-     "staff",
-     "drh"
-    ]
-   },
-   "/blacklist retirer": {
-    "roles": [
-     "staff"
-    ]
-   },
-   "/candidature": {
-    "roles": [
-     "staff",
-     "drh"
-    ]
-   },
-   "/close": {
-    "roles": [
-     "staff",
-     "drh",
-     "direction"
-    ]
-   },
-   "/cloture-commande": {
-    "roles": [
-     "staff",
-     "direction"
-    ]
-   },
-   "/contrat": {
-    "roles": [
-     "staff",
-     "direction"
-    ]
-   },
-   "/contrat-annuler": {
-    "roles": [
-     "staff",
-     "direction"
-    ]
-   },
-   "/corriger-id": {
-    "roles": [
-     "staff"
-    ]
-   },
-   "/facture": {
-    "on": false,
-    "roles": [
-     "staff"
-    ]
-   },
-   "/gazette": {
-    "roles": [
-     "staff"
-    ],
-    "on": false
-   },
-   "/giveaway": {
-    "roles": [
-     "staff"
-    ]
-   },
-   "/giveaway creer": {
-    "roles": [
-     "staff"
-    ]
-   },
-   "/giveaway liste": {
-    "roles": [
-     "staff"
-    ]
-   },
-   "/giveaway participants": {
-    "roles": [
-     "staff"
-    ]
-   },
-   "/giveaway relancer": {
-    "roles": [
-     "staff"
-    ]
-   },
-   "/giveaway terminer": {
-    "roles": [
-     "staff"
-    ]
-   },
-   "/historique-coffre": {
-    "roles": [
-     "staff"
-    ]
-   },
-   "/historique-ventes": {
-    "roles": [
-     "staff"
-    ]
-   },
-   "/init-absences": {
-    "roles": [
-     "staff",
-     "drh"
-    ]
-   },
-   "/lier-personnage": {
-    "roles": [
-     "staff"
-    ]
-   },
-   "/liste-coffres": {
-    "roles": [
-     "staff"
-    ]
-   },
-   "/logs-recherche": {
-    "roles": [
-     "staff"
-    ]
-   },
-   "/mots-interdits": {
-    "roles": [
-     "staff"
-    ]
-   },
-   "/mots-interdits ajouter": {
-    "roles": [
-     "staff"
-    ]
-   },
-   "/mots-interdits liste": {
-    "roles": [
-     "staff"
-    ]
-   },
-   "/mots-interdits retirer": {
-    "roles": [
-     "staff"
-    ]
-   },
-   "/nommer-coffre": {
-    "roles": [
-     "staff"
-    ]
-   },
-   "/nouvelle-commande": {
-    "roles": [
-     "staff",
-     "direction"
-    ]
-   },
-   "/organigramme-refresh": {
-    "roles": [
-     "staff"
-    ]
-   },
-   "/pari": {
-    "roles": [
-     "staff"
-    ]
-   },
-   "/pari classement": {
-    "roles": [
-     "staff"
-    ]
-   },
-   "/pari grille": {
-    "roles": [
-     "staff"
-    ]
-   },
-   "/pari liste": {
-    "roles": [
-     "staff"
-    ]
-   },
-   "/pari reset-championnat": {
-    "roles": [
-     "staff"
-    ]
-   },
-   "/pari resultat": {
-    "roles": [
-     "staff"
-    ]
-   },
-   "/plaque": {
-    "roles": [
-     "staff",
-     "direction",
-     "drh",
-     "resprunner"
-    ]
-   },
-   "/rattraper-webhooks": {
-    "roles": [
-     "staff"
-    ]
-   },
-   "/recap-mensuel": {
-    "roles": [
-     "staff"
-    ],
-    "on": false
-   },
-   "/remove": {
-    "roles": [
-     "staff",
-     "direction",
-     "drh"
-    ]
-   },
-   "/reset-salon": {
-    "roles": [
-     "staff",
-     "direction"
-    ]
-   },
-   "/retirer-avertissement": {
-    "roles": [
-     "staff",
-     "drh"
-    ]
-   },
-   "/sync-pseudos": {
-    "roles": [
-     "staff"
-    ]
-   },
-   "/timeout": {
-    "roles": [
-     "staff"
-    ]
-   },
-   "/tirage": {
-    "roles": [
-     "staff"
-    ]
-   },
-   "/tombola": {
-    "roles": [
-     "staff"
-    ]
-   },
-   "/tombola annuler": {
-    "roles": [
-     "staff"
-    ]
-   },
-   "/tombola creer": {
-    "roles": [
-     "staff"
-    ]
-   },
-   "/tombola recap": {
-    "roles": [
-     "staff"
-    ]
-   },
-   "/tombola supprimer-vente": {
-    "roles": [
-     "staff"
-    ]
-   },
-   "/tombola tirage": {
-    "roles": [
-     "staff"
-    ]
-   },
-   "/tombola ventes": {
-    "roles": [
-     "staff"
-    ]
-   },
-   "/verifier-acces": {
-    "roles": [
-     "staff"
-    ]
-   },
-   "/verifier-personnages": {
-    "roles": [
-     "staff"
-    ]
-   }
-  },
-  "v": 3,
-  "maj": 1795782504695,
-  "par": "Diego Herrera",
-  "actions": [],
-  "retours": [
-   {
-    "id": "amwyydgfzbmg",
-    "ok": false,
-    "txt": "Forbidden('403 Forbidden (error code: 50013): Missing Permissions')",
-    "t": 1795782274126
-   },
-   {
-    "id": "amwyydkt5365",
-    "ok": false,
-    "txt": "Forbidden('403 Forbidden (error code: 50013): Missing Permissions')",
-    "t": 1795782274341
-   },
-   {
-    "id": "amwyyf2uji47",
-    "ok": true,
-    "txt": "ok",
-    "t": 1795782323177
-   },
-   {
-    "id": "amwyyg6l2qns",
-    "ok": true,
-    "txt": "ok",
-    "t": 1795782376837
-   }
-  ],
-  "historique": [
-   {
-    "v": 1,
-    "t": 1795781576538,
-    "par": "Diego Herrera",
-    "n": 8,
-    "ch": [
-     "msglog",
-     "maintenance",
-     "messages",
-     "planifs",
-     "roles",
-     "alertes"
-    ],
-    "snap": {
-     "msglog": {
-      "on": true,
-      "alerte": {
-       "salon": "1529598471022313684"
-      }
-     },
-     "maintenance": false,
-     "messages": {
-      "bienvenue": {
-       "desc": "",
-       "salon": "1245479887012237363"
-      }
-     },
-     "planifs": [],
-     "roles": {
-      "staff": [
-       "1245400912835510286",
-       "1468694481153818674",
-       "1572228626722852914",
-       "1549212191432118384"
-      ],
-      "direction": [
-       "1247299609617891453"
-      ],
-      "drh": [
-       "1572228626722852914"
-      ],
-      "resprunner": [
-       "1574891946634248373"
-      ]
-     },
-     "alertes": {
-      "stock": {
-       "salon": "1492998331503345885"
-      }
-     },
-     "moderation": {
-      "salonLogs": "1529598471022313684"
-     },
-     "cmds": {
-      "/add": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/avertissement": {
-       "roles": [
-        "staff",
-        "drh"
-       ]
-      },
-      "/avertissements": {
-       "roles": [
-        "staff",
-        "drh"
-       ]
-      },
-      "/bienvenue": {
-       "roles": [
-        "staff",
-        "drh",
-        "direction"
-       ]
-      },
-      "/blacklist": {
-       "roles": [
-        "staff",
-        "drh"
-       ]
-      },
-      "/blacklist ajouter": {
-       "roles": [
-        "staff",
-        "drh"
-       ]
-      },
-      "/blacklist liste": {
-       "roles": [
-        "staff",
-        "drh"
-       ]
-      },
-      "/blacklist retirer": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/candidature": {
-       "roles": [
-        "staff",
-        "drh"
-       ]
-      },
-      "/close": {
-       "roles": [
-        "staff",
-        "drh",
-        "direction"
-       ]
-      },
-      "/cloture-commande": {
-       "roles": [
-        "staff",
-        "direction"
-       ]
-      },
-      "/contrat": {
-       "roles": [
-        "staff",
-        "direction"
-       ]
-      },
-      "/contrat-annuler": {
-       "roles": [
-        "staff",
-        "direction"
-       ]
-      },
-      "/corriger-id": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/facture": {
-       "on": false,
-       "roles": [
-        "staff"
-       ]
-      },
-      "/gazette": {
-       "roles": [
-        "staff"
-       ],
-       "on": false
-      },
-      "/giveaway": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/giveaway creer": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/giveaway liste": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/giveaway participants": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/giveaway relancer": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/giveaway terminer": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/historique-coffre": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/historique-ventes": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/init-absences": {
-       "roles": [
-        "staff",
-        "drh"
-       ]
-      },
-      "/lier-personnage": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/liste-coffres": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/logs-recherche": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/mots-interdits": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/mots-interdits ajouter": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/mots-interdits liste": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/mots-interdits retirer": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/nommer-coffre": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/nouvelle-commande": {
-       "roles": [
-        "staff",
-        "direction"
-       ]
-      },
-      "/organigramme-refresh": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/pari": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/pari classement": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/pari grille": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/pari liste": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/pari reset-championnat": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/pari resultat": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/plaque": {
-       "roles": [
-        "staff",
-        "direction",
-        "drh",
-        "resprunner"
-       ]
-      },
-      "/rattraper-webhooks": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/recap-mensuel": {
-       "roles": [
-        "staff"
-       ],
-       "on": false
-      },
-      "/remove": {
-       "roles": [
-        "staff",
-        "direction",
-        "drh"
-       ]
-      },
-      "/reset-salon": {
-       "roles": [
-        "staff",
-        "direction"
-       ]
-      },
-      "/retirer-avertissement": {
-       "roles": [
-        "staff",
-        "drh"
-       ]
-      },
-      "/sync-pseudos": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/timeout": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/tirage": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/tombola": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/tombola annuler": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/tombola creer": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/tombola recap": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/tombola supprimer-vente": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/tombola tirage": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/tombola ventes": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/verifier-acces": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/verifier-personnages": {
-       "roles": [
-        "staff"
-       ]
-      }
-     }
-    }
-   },
-   {
-    "v": 2,
-    "t": 1795782227663,
-    "par": "Diego Herrera",
-    "n": 6,
-    "ch": [
-     "messages.bienvenue.desc",
-     "messages.bienvenue.couleur",
-     "messages.bienvenue.titre",
-     "messages.bienvenue.pied",
-     "messages.bienvenue.boutons",
-     "messages.bienvenue.image"
-    ],
-    "snap": {
-     "msglog": {
-      "on": true,
-      "alerte": {
-       "salon": "1529598471022313684"
-      }
-     },
-     "maintenance": false,
-     "messages": {
-      "bienvenue": {
-       "desc": "Hey {membre} ! 👋\n\nBienvenue sur le serveur Discord officiel d'**Oil Roxwood** !\n\nNous sommes heureux de t'accueillir parmi nous. N'hésite pas à découvrir nos différents salons, à consulter le règlement et à échanger avec les autres membres.\n\n🎉 Tu es notre **{nb_membres}ᵉ membre** !\n\nSi tu as la moindre question, notre équipe reste à ta disposition.\n\nNous te souhaitons un agréable moment sur notre serveur ! 💙",
-       "salon": "1245479887012237363",
-       "couleur": "#D4A017",
-       "titre": "🛢️ Bienvenue chez Oil Roxwood !",
-       "pied": "© Oil Roxwood • Roxwood County • Direction générale",
-       "boutons": [
-        {
-         "label": "📋 Recrutement",
-         "url": "https://discord.com/channels/1245400912835510283/1246400361086845010/1473993031873986778"
-        },
-        {
-         "label": "🛒 Passer une commande",
-         "url": "https://discord.com/channels/1245400912835510283/1246400361086845010/1473993031873986778"
-        }
-       ],
-       "image": "https://cdn.discordapp.com/attachments/1119748188497268796/1575849410212925501/oil_2K27_2.png?ex=6b0ac7a1&is=6b097621&hm=cf7d381c471dacbca8ebd86e2f5f5c364fd28723ff5536bb2b9400d85addc617&"
-      }
-     },
-     "planifs": [],
-     "roles": {
-      "staff": [
-       "1245400912835510286",
-       "1468694481153818674",
-       "1572228626722852914",
-       "1549212191432118384"
-      ],
-      "direction": [
-       "1247299609617891453"
-      ],
-      "drh": [
-       "1572228626722852914"
-      ],
-      "resprunner": [
-       "1574891946634248373"
-      ]
-     },
-     "alertes": {
-      "stock": {
-       "salon": "1492998331503345885"
-      }
-     },
-     "moderation": {
-      "salonLogs": "1529598471022313684"
-     },
-     "cmds": {
-      "/add": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/avertissement": {
-       "roles": [
-        "staff",
-        "drh"
-       ]
-      },
-      "/avertissements": {
-       "roles": [
-        "staff",
-        "drh"
-       ]
-      },
-      "/bienvenue": {
-       "roles": [
-        "staff",
-        "drh",
-        "direction"
-       ]
-      },
-      "/blacklist": {
-       "roles": [
-        "staff",
-        "drh"
-       ]
-      },
-      "/blacklist ajouter": {
-       "roles": [
-        "staff",
-        "drh"
-       ]
-      },
-      "/blacklist liste": {
-       "roles": [
-        "staff",
-        "drh"
-       ]
-      },
-      "/blacklist retirer": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/candidature": {
-       "roles": [
-        "staff",
-        "drh"
-       ]
-      },
-      "/close": {
-       "roles": [
-        "staff",
-        "drh",
-        "direction"
-       ]
-      },
-      "/cloture-commande": {
-       "roles": [
-        "staff",
-        "direction"
-       ]
-      },
-      "/contrat": {
-       "roles": [
-        "staff",
-        "direction"
-       ]
-      },
-      "/contrat-annuler": {
-       "roles": [
-        "staff",
-        "direction"
-       ]
-      },
-      "/corriger-id": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/facture": {
-       "on": false,
-       "roles": [
-        "staff"
-       ]
-      },
-      "/gazette": {
-       "roles": [
-        "staff"
-       ],
-       "on": false
-      },
-      "/giveaway": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/giveaway creer": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/giveaway liste": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/giveaway participants": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/giveaway relancer": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/giveaway terminer": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/historique-coffre": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/historique-ventes": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/init-absences": {
-       "roles": [
-        "staff",
-        "drh"
-       ]
-      },
-      "/lier-personnage": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/liste-coffres": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/logs-recherche": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/mots-interdits": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/mots-interdits ajouter": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/mots-interdits liste": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/mots-interdits retirer": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/nommer-coffre": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/nouvelle-commande": {
-       "roles": [
-        "staff",
-        "direction"
-       ]
-      },
-      "/organigramme-refresh": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/pari": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/pari classement": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/pari grille": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/pari liste": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/pari reset-championnat": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/pari resultat": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/plaque": {
-       "roles": [
-        "staff",
-        "direction",
-        "drh",
-        "resprunner"
-       ]
-      },
-      "/rattraper-webhooks": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/recap-mensuel": {
-       "roles": [
-        "staff"
-       ],
-       "on": false
-      },
-      "/remove": {
-       "roles": [
-        "staff",
-        "direction",
-        "drh"
-       ]
-      },
-      "/reset-salon": {
-       "roles": [
-        "staff",
-        "direction"
-       ]
-      },
-      "/retirer-avertissement": {
-       "roles": [
-        "staff",
-        "drh"
-       ]
-      },
-      "/sync-pseudos": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/timeout": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/tirage": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/tombola": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/tombola annuler": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/tombola creer": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/tombola recap": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/tombola supprimer-vente": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/tombola tirage": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/tombola ventes": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/verifier-acces": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/verifier-personnages": {
-       "roles": [
-        "staff"
-       ]
-      }
-     }
-    }
-   },
-   {
-    "v": 3,
-    "t": 1795782504695,
-    "par": "Diego Herrera",
-    "n": 1,
-    "ch": [
-     "planifs"
-    ],
-    "snap": {
-     "msglog": {
-      "on": true,
-      "alerte": {
-       "salon": "1529598471022313684"
-      }
-     },
-     "maintenance": false,
-     "messages": {
-      "bienvenue": {
-       "desc": "Hey {membre} ! 👋\n\nBienvenue sur le serveur Discord officiel d'**Oil Roxwood** !\n\nNous sommes heureux de t'accueillir parmi nous. N'hésite pas à découvrir nos différents salons, à consulter le règlement et à échanger avec les autres membres.\n\n🎉 Tu es notre **{nb_membres}ᵉ membre** !\n\nSi tu as la moindre question, notre équipe reste à ta disposition.\n\nNous te souhaitons un agréable moment sur notre serveur ! 💙",
-       "salon": "1245479887012237363",
-       "couleur": "#D4A017",
-       "titre": "🛢️ Bienvenue chez Oil Roxwood !",
-       "pied": "© Oil Roxwood • Roxwood County • Direction générale",
-       "boutons": [
-        {
-         "label": "📋 Recrutement",
-         "url": "https://discord.com/channels/1245400912835510283/1246400361086845010/1473993031873986778"
-        },
-        {
-         "label": "🛒 Passer une commande",
-         "url": "https://discord.com/channels/1245400912835510283/1246400361086845010/1473993031873986778"
-        }
-       ],
-       "image": "https://cdn.discordapp.com/attachments/1119748188497268796/1575849410212925501/oil_2K27_2.png?ex=6b0ac7a1&is=6b097621&hm=cf7d381c471dacbca8ebd86e2f5f5c364fd28723ff5536bb2b9400d85addc617&"
-      }
-     },
-     "planifs": [
-      {
-       "id": "pmwyyiahhx7g",
-       "nom": "Nouvelle annonce",
-       "on": true,
-       "jours": [
-        4
-       ],
-       "heure": "13:30",
-       "salon": "1492164850044899408",
-       "texte": "teeeeeeeeeeeeeeeeeeeeest   tttttttttt",
-       "titre": "test"
-      }
-     ],
-     "roles": {
-      "staff": [
-       "1245400912835510286",
-       "1468694481153818674",
-       "1572228626722852914",
-       "1549212191432118384"
-      ],
-      "direction": [
-       "1247299609617891453"
-      ],
-      "drh": [
-       "1572228626722852914"
-      ],
-      "resprunner": [
-       "1574891946634248373"
-      ]
-     },
-     "alertes": {
-      "stock": {
-       "salon": "1492998331503345885"
-      }
-     },
-     "moderation": {
-      "salonLogs": "1529598471022313684"
-     },
-     "cmds": {
-      "/add": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/avertissement": {
-       "roles": [
-        "staff",
-        "drh"
-       ]
-      },
-      "/avertissements": {
-       "roles": [
-        "staff",
-        "drh"
-       ]
-      },
-      "/bienvenue": {
-       "roles": [
-        "staff",
-        "drh",
-        "direction"
-       ]
-      },
-      "/blacklist": {
-       "roles": [
-        "staff",
-        "drh"
-       ]
-      },
-      "/blacklist ajouter": {
-       "roles": [
-        "staff",
-        "drh"
-       ]
-      },
-      "/blacklist liste": {
-       "roles": [
-        "staff",
-        "drh"
-       ]
-      },
-      "/blacklist retirer": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/candidature": {
-       "roles": [
-        "staff",
-        "drh"
-       ]
-      },
-      "/close": {
-       "roles": [
-        "staff",
-        "drh",
-        "direction"
-       ]
-      },
-      "/cloture-commande": {
-       "roles": [
-        "staff",
-        "direction"
-       ]
-      },
-      "/contrat": {
-       "roles": [
-        "staff",
-        "direction"
-       ]
-      },
-      "/contrat-annuler": {
-       "roles": [
-        "staff",
-        "direction"
-       ]
-      },
-      "/corriger-id": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/facture": {
-       "on": false,
-       "roles": [
-        "staff"
-       ]
-      },
-      "/gazette": {
-       "roles": [
-        "staff"
-       ],
-       "on": false
-      },
-      "/giveaway": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/giveaway creer": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/giveaway liste": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/giveaway participants": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/giveaway relancer": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/giveaway terminer": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/historique-coffre": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/historique-ventes": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/init-absences": {
-       "roles": [
-        "staff",
-        "drh"
-       ]
-      },
-      "/lier-personnage": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/liste-coffres": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/logs-recherche": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/mots-interdits": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/mots-interdits ajouter": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/mots-interdits liste": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/mots-interdits retirer": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/nommer-coffre": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/nouvelle-commande": {
-       "roles": [
-        "staff",
-        "direction"
-       ]
-      },
-      "/organigramme-refresh": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/pari": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/pari classement": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/pari grille": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/pari liste": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/pari reset-championnat": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/pari resultat": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/plaque": {
-       "roles": [
-        "staff",
-        "direction",
-        "drh",
-        "resprunner"
-       ]
-      },
-      "/rattraper-webhooks": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/recap-mensuel": {
-       "roles": [
-        "staff"
-       ],
-       "on": false
-      },
-      "/remove": {
-       "roles": [
-        "staff",
-        "direction",
-        "drh"
-       ]
-      },
-      "/reset-salon": {
-       "roles": [
-        "staff",
-        "direction"
-       ]
-      },
-      "/retirer-avertissement": {
-       "roles": [
-        "staff",
-        "drh"
-       ]
-      },
-      "/sync-pseudos": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/timeout": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/tirage": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/tombola": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/tombola annuler": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/tombola creer": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/tombola recap": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/tombola supprimer-vente": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/tombola tirage": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/tombola ventes": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/verifier-acces": {
-       "roles": [
-        "staff"
-       ]
-      },
-      "/verifier-personnages": {
-       "roles": [
-        "staff"
-       ]
-      }
-     }
-    }
-   }
-  ]
- },
+ "botcfg": {},
  "pending": [],
  "fer": [
   {
@@ -62899,6 +61381,21 @@
  "sanctions": {
   "liste": [
    {
+    "id": 1795655121553,
+    "nom": "Flavio Bellini",
+    "discord": "410157854855528449",
+    "cat": "cond",
+    "st": "R",
+    "issue": "",
+    "date": "2026-11-26",
+    "motif": "Conduite dangereuse",
+    "par": "Marco Bellini",
+    "conv": "",
+    "convDate": "",
+    "retiree": null,
+    "exam": null
+   },
+   {
     "id": 1795433477122,
     "nom": "Zoran Kross",
     "discord": "1059871362967142511",
@@ -64854,6 +63351,16 @@
    }
   ],
   "log": [
+   {
+    "t": 1795655121170,
+    "u": "Marco Bellini",
+    "a": "Rappel oral · Conduite inappropriée — « Conduite dangereuse »",
+    "nom": "Flavio Bellini",
+    "cat": "cond",
+    "st": "R",
+    "act": "ajout",
+    "sid": 1795655121553
+   },
    {
     "t": 1795433476716,
     "u": "Diego Herrera",
@@ -67328,56 +65835,66 @@
    "sem": 46
   }
  },
- "_cid": "bot",
+ "_cid": "cblqwogwyri",
  "_maj": 1795863617581,
- "_rev": "wnbc7z9o83o-mwznxozg",
+ "_rev": "g04i0oeeaf8-mx0auf3j",
  "_majSec": {
   "fer": 1795823633587,
   "fact": 1795821683561,
-  "users": 1795808173586,
-  "weeks": 1795434602527,
-  "sheets": 1795821702580,
-  "_qcFix1": 1793561085750,
-  "_wkFix1": 1793561085750,
-  "journal": 1795823720427,
-  "pending": 1793561085750,
+  "users": 1795822347550,
+  "weeks": 1795655061205,
+  "sheets": 1795863585200,
+  "_qcFix1": 1795655061205,
+  "_wkFix1": 1795655061205,
+  "journal": 1795863585200,
+  "pending": 1795655061205,
   "prodDer": 1795812656579,
-  "runners": 1795461294847,
-  "absences": 1795544850047,
-  "imported": 1793561085750,
+  "runners": 1795655061205,
+  "absences": 1795655061205,
+  "imported": 1795655061205,
   "settings": 1795696820997,
-  "closeUndo": 1795434602527,
+  "closeUndo": 1795655061205,
   "quotasCom": 1795821726133,
-  "bilanExtra": 1795260339053,
-  "bilanForce": 1793561085750,
-  "primesExtra": 1793561085750,
-  "quotasComHist": 1795434602527,
-  "profils": 1793561085750,
-  "_tables": 1795863617581,
-  "_permsFix1": 1793561085750,
+  "bilanExtra": 1795655061205,
+  "bilanForce": 1795655061205,
+  "primesExtra": 1795655061205,
+  "quotasComHist": 1795655061205,
+  "profils": 1795655061205,
+  "_tables": 1795863577069,
+  "_permsFix1": 1795655061205,
   "_rolesFix4": 1788489352546,
-  "_rolesFix77": 1793561085750,
-  "affiches": 1793633064758,
-  "_affFix1": 1793561085750,
-  "produits": 1793561085750,
-  "_prodFix1": 1793561085750,
-  "_recruesIgnore": 1795795216520,
-  "ventesAlias": 1793561085750,
-  "_ventesIgnore": 1793561085750,
-  "_avertVus": 1793561085750,
-  "_signeVus": 1795795216549,
-  "sanctions": 1795433475377,
-  "_sancFix1": 1794493778197,
-  "historique": 1795434602527,
-  "_evtFix1": 1795028752192,
-  "_stkFix1": 1795207386387,
-  "stocks": 1795259898981,
-  "botcfg": 1795782501843,
-  "_botFix1": 1795777677320
+  "_rolesFix77": 1795655061205,
+  "affiches": 1795655061205,
+  "_affFix1": 1795655061205,
+  "produits": 1795655061205,
+  "_prodFix1": 1795655061205,
+  "_recruesIgnore": 1795863585187,
+  "ventesAlias": 1795655061205,
+  "_ventesIgnore": 1795655061205,
+  "_avertVus": 1795655061205,
+  "_signeVus": 1795863585200,
+  "sanctions": 1795655121941,
+  "_sancFix1": 1795655061205,
+  "historique": 1795655061205,
+  "_evtFix1": 1795655061205,
+  "_stkFix1": 1795655061205,
+  "stocks": 1795655061205,
+  "botcfg": 1795822347550,
+  "_botFix1": 1795822347563
  },
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1795863582631,
+   "u": "Marco Bellini",
+   "a": "Contrat(s) signé(s) via Discord : Idriss Corleone, Ezio Balotely, Junior CARTER…"
+  },
+  {
+   "t": 1795863582618,
+   "u": "Marco Bellini",
+   "a": "Recrutements Discord : 5 fiche(s) créée(s), 0 case(s) complétée(s) — John Doé, Junior CARTER, Ezio Balotely…"
+  },
   {
    "t": 1795823634068,
    "u": "Laurent Roquel",
@@ -68867,16 +67384,6 @@
    "t": 1794784349579,
    "u": "Diego Herrera",
    "a": "Sanction : Liam Smith — Avert. 1 (Quota non fait)"
-  },
-  {
-   "t": 1794784349503,
-   "u": "Diego Herrera",
-   "a": "Sanction : Lenn Kofi — Avert. 1 (Quota non fait)"
-  },
-  {
-   "t": 1794784349432,
-   "u": "Diego Herrera",
-   "a": "Sanction : Korlane Lison — Avert. 1 (Quota non fait)"
   }
  ],
  "prodDer": {
@@ -69482,12 +67989,12 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-28T00:19:24.220Z",
+  "maj": "2026-11-28T11:00:42.607Z",
   "semaine": 48,
   "totalBarils": 22138,
   "ca": 110690,
   "objectif": 375000,
-  "effectif": 95,
+  "effectif": 100,
   "clientsServis": 215,
   "theme": "",
   "top3": [
@@ -80711,11 +79218,6 @@
  "_affFix1": true,
  "_prodFix1": true,
  "_recruesIgnore": [
-  "1790451982492",
-  "1790464827483",
-  "1790520130356",
-  "1790539263148",
-  "1790708269552",
   "1790716949311",
   "1790795229216",
   "1790870927907",
@@ -80910,7 +79412,12 @@
   "1795467767342",
   "1795543628548",
   "1795615370582",
-  "1795722957516"
+  "1795722957516",
+  "1795810022919",
+  "1795810045239",
+  "1795810056387",
+  "1795820283197",
+  "1795820316487"
  ],
  "_signeVus": [
   "1789477305650",
@@ -81145,7 +79652,13 @@
   "1795461943453",
   "1795467820658",
   "1795468539698",
-  "1795543653771"
+  "1795543653771",
+  "1795799815560",
+  "1795810109579",
+  "1795810111904",
+  "1795810115247",
+  "1795820361503",
+  "1795820365998"
  ],
  "_agSupp": [
   "1789145270913",
