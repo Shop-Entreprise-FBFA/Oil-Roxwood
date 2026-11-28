@@ -14814,13 +14814,6 @@
    },
    {
     "date": "2026-11-27",
-    "client": "LTD Mirror Park",
-    "quantite": 500,
-    "qui": "Stella Collins",
-    "fact": 253228
-   },
-   {
-    "date": "2026-11-27",
     "client": "Mairie San Andreas",
     "quantite": 50,
     "qui": "Stella Collins",
@@ -14852,6 +14845,13 @@
     "client": "Citoyen ⚡",
     "quantite": 309,
     "qui": "Stella Collins"
+   },
+   {
+    "date": "2026-11-27",
+    "client": "LTD Mirror Park",
+    "quantite": 500,
+    "qui": "Stella Collins",
+    "fact": 253228
    }
   ],
   "collection": [
@@ -17583,17 +17583,18 @@
       "ref": "CMD%",
       "qte": 500,
       "tva": 0.05,
+      "desc": "bidons d'essence promo",
       "pu": 150,
       "ht": 75000,
-      "ttc": 78750,
-      "desc": "bidons d'essence promo"
+      "ttc": 78750
      }
     ],
     "offert": 0,
     "ht": 75000,
     "ttc": 78750,
     "poids": 1000,
-    "statut": "attente"
+    "statut": "attente",
+    "modifiee": 1795883242222
    },
    {
     "num": 253227,
@@ -66323,18 +66324,18 @@
    "sem": 46
   }
  },
- "_cid": "tfru2ljmorn",
- "_maj": 1795883209791,
- "_rev": "9his80d50xm-mx0miasq",
+ "_cid": "74kor2dxtfq",
+ "_maj": 1795883242247,
+ "_rev": "frkz6ll7zm4-mx0mijh8",
  "_majSec": {
   "fer": 1795869751617,
-  "fact": 1795821683561,
+  "fact": 1795883242222,
   "users": 1795867627837,
   "weeks": 1795655061205,
-  "sheets": 1795880439882,
+  "sheets": 1795883242222,
   "_qcFix1": 1795655061205,
   "_wkFix1": 1795655061205,
-  "journal": 1795877232863,
+  "journal": 1795883242247,
   "pending": 1795655061205,
   "prodDer": 1795812656579,
   "runners": 1795655061205,
@@ -66348,7 +66349,7 @@
   "primesExtra": 1795655061205,
   "quotasComHist": 1795655061205,
   "profils": 1795655061205,
-  "_tables": 1795883173827,
+  "_tables": 1795883242222,
   "_permsFix1": 1795655061205,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1795655061205,
@@ -66373,6 +66374,11 @@
  "_qcFix1": true,
  "_wkFix1": true,
  "journal": [
+  {
+   "t": 1795883242978,
+   "u": "Diego Herrera",
+   "a": "Facture n°253228 modifiée (lignes retouchées)"
+  },
   {
    "t": 1795877178036,
    "u": "Diego Herrera",
@@ -67867,11 +67873,6 @@
    "t": 1794848812229,
    "u": "Julio Collins",
    "a": "Rôle aligné depuis Discord (relevé du bot) : Julio Collins · Commercial → Responsable commercial"
-  },
-  {
-   "t": 1794848812087,
-   "u": "?",
-   "a": "Rôle aligné sur Discord : Julio Collins · Responsable commercial → Commercial"
   }
  ],
  "prodDer": {
@@ -68477,7 +68478,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-28T16:27:12.554Z",
+  "maj": "2026-11-28T16:27:23.804Z",
   "semaine": 48,
   "totalBarils": 22138,
   "ca": 110690,
