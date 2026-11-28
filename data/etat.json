@@ -17594,7 +17594,14 @@
     "ttc": 78750,
     "poids": 1000,
     "statut": "attente",
-    "modifiee": 1795883242222
+    "modifiee": 1795883242222,
+    "envoi": {
+     "t": 1795883249365,
+     "par": "Diego Herrera",
+     "statut": "en_cours",
+     "ordre": 1795883250799,
+     "rapport": ""
+    }
    },
    {
     "num": 253227,
@@ -66325,11 +66332,11 @@
   }
  },
  "_cid": "74kor2dxtfq",
- "_maj": 1795883242247,
- "_rev": "yavzq0ststa-mx0milsa",
+ "_maj": 1795883249365,
+ "_rev": "0p2dgpjwb3kq-mx0miou4",
  "_majSec": {
   "fer": 1795869751617,
-  "fact": 1795883242222,
+  "fact": 1795883249365,
   "users": 1795867627837,
   "weeks": 1795655061205,
   "sheets": 1795883242222,
@@ -66349,7 +66356,7 @@
   "primesExtra": 1795655061205,
   "quotasComHist": 1795655061205,
   "profils": 1795655061205,
-  "_tables": 1795883242222,
+  "_tables": 1795883249338,
   "_permsFix1": 1795655061205,
   "_rolesFix4": 1788489352546,
   "_rolesFix77": 1795655061205,
@@ -68478,7 +68485,7 @@
   }
  ],
  "_statsPub": {
-  "maj": "2026-11-28T16:27:26.794Z",
+  "maj": "2026-11-28T16:27:30.748Z",
   "semaine": 48,
   "totalBarils": 22138,
   "ca": 110690,
@@ -75390,6 +75397,49 @@
     "id": 1795821658071,
     "statut": "fait",
     "rapport": "Facture n°253232 postee dans le salon 1436500641492111463."
+   },
+   {
+    "type": "facture_ticket",
+    "payload": {
+     "num": 253228,
+     "salon": "1461345077187051570",
+     "reedition": false,
+     "facture": {
+      "num": 253228,
+      "date": "2026-11-27",
+      "client": "LTD Mirror Park",
+      "emetteur": "Stella Collins",
+      "postop": false,
+      "lignes": [
+       {
+        "ref": "CMD%",
+        "qte": 500,
+        "tva": 0.05,
+        "desc": "bidons d'essence promo",
+        "pu": 150,
+        "ht": 75000,
+        "ttc": 78750
+       }
+      ],
+      "offert": 0,
+      "ht": 75000,
+      "ttc": 78750,
+      "poids": 1000,
+      "statut": "attente",
+      "modifiee": 1795883242222
+     },
+     "client": {
+      "nom": "LTD Mirror Park",
+      "rib": "20021",
+      "tel": "931",
+      "adresse": "Los Santos",
+      "lastCmd": "2026-11-27",
+      "type": "entreprise",
+      "salon": "1461345077187051570"
+     },
+     "par": "Diego Herrera"
+    },
+    "id": 1795883250799
    }
   ],
   "oilroxwood_coffres": [
